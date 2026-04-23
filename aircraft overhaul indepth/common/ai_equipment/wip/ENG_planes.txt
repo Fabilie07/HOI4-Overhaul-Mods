@@ -1,0 +1,501 @@
+# AI plane design for testing
+
+ENG_fighter = {
+	category = air
+
+	available_for = { ENG }
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+		}
+	}
+
+	great_war_fighter_default = {	# Hawker Fury
+		priority = {
+			factor = 1
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_Fury
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = small_plane_airframe_0
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_straight
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = light_mg_8_2x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0600 #some variants have 525hp others have 640hp
+				engine_cooling_slot = plane_liquid_cooling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	
+	great_war_fighter_improved = {	# Gloster Gladiator Mk.II
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_Gladiator_2
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = small_plane_airframe_0
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0800
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_fixed_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	basic_fighter_default = { #Hawker Hurricane MK.I early
+		priority = {
+			factor = 50
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_hurricane_1_a
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = fabric_skin # early models had fabric wings
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+                fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_wood_2 # only in early models
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	
+	basic_fighter_improved = { #Hawker Hurricane MK.I late
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_hurricane_1_b
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin 
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+                fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	
+	basic_fighter_advanced = { #Hawker Hurricane MK.IIa
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_hurricane_2_a
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin 
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+                fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1100
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	
+	basic_fighter_modern = { #Hawker Hurricane MK.IIb
+		priority = {
+			factor = 500
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_hurricane_2_b
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin 
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+                fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	improved_fighter_default = { #Spitfire MK.Ia
+		priority = {
+			factor = 50
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_spitfire_1_a
+
+		history = yes
+		target_variant = {
+			match_value = 3500
+			type = small_plane_airframe_2
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = round_wings
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				fixed_auxiliary_weapon_slot_4 = empty
+				fixed_auxiliary_weapon_slot_5 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1200
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = empty
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	
+	improved_fighter_improved = { #Spitfire MK.IIb
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_spitfire_2_b
+
+		history = yes
+		target_variant = {
+			match_value = 3500
+			type = small_plane_airframe_2
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = round_wings
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				fixed_auxiliary_weapon_slot_4 = empty
+				fixed_auxiliary_weapon_slot_5 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1200
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_automatic_3
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = empty
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+    improved_fighter_advanced = { #Spitfire MK.IX
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_spitfire_9
+
+		history = yes
+		target_variant = {
+			match_value = 3500
+			type = small_plane_airframe_2
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = round_wings
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = light_mg_8_4x
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				fixed_auxiliary_weapon_slot_4 = empty
+				fixed_auxiliary_weapon_slot_5 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_automatic_4
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = empty
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+    advanced_fighter_default = { #Spitfire MK.XVIII
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = modern_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = ENG_aom_spitfire_18
+
+		history = yes
+		target_variant = {
+			match_value = 3500
+			type = small_plane_airframe_3
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = round_wings
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_vee
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = heavy_mg_12_2x
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				fixed_auxiliary_weapon_slot_4 = empty
+				fixed_auxiliary_weapon_slot_5 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1900 # griffon 65
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_automatic_5
+				hud_slot = plane_crosshair_3
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+}
