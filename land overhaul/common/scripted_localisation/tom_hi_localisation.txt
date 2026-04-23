@@ -1,0 +1,349 @@
+defined_text = {
+	name = tom_hi_tanks_tt
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_1
+		}
+		localization_key = tom_hi_tanks_1_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_2
+		}
+		localization_key = tom_hi_tanks_2_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_3
+		}
+		localization_key = tom_hi_tanks_3_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_4
+		}
+		localization_key = tom_hi_tanks_4_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_5
+		}
+		localization_key = tom_hi_tanks_5_tt_large
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_industry_tt
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_1
+		}
+		localization_key = tom_hi_industry_1_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_2
+		}
+		localization_key = tom_hi_industry_2_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_3
+		}
+		localization_key = tom_hi_industry_3_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_4
+		}
+		localization_key = tom_hi_industry_4_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_5
+		}
+		localization_key = tom_hi_industry_5_tt_large
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_mp_tt
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_1
+		}
+		localization_key = tom_hi_mp_1_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_2
+		}
+		localization_key = tom_hi_mp_2_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_3
+		}
+		localization_key = tom_hi_mp_3_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_4
+		}
+		localization_key = tom_hi_mp_4_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_5
+		}
+		localization_key = tom_hi_mp_5_tt_large
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_specialisation_tt
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_1
+		}
+		localization_key = tom_hi_specialisation_1_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_2
+		}
+		localization_key = tom_hi_specialisation_2_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_3
+		}
+		localization_key = tom_hi_specialisation_3_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_4
+		}
+		localization_key = tom_hi_specialisation_4_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_5
+		}
+		localization_key = tom_hi_specialisation_5_tt_large
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_exp_tt
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_1
+		}
+		localization_key = tom_hi_exp_1_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_2
+		}
+		localization_key = tom_hi_exp_2_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_3
+		}
+		localization_key = tom_hi_exp_3_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_4
+		}
+		localization_key = tom_hi_exp_4_tt_large
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_5
+		}
+		localization_key = tom_hi_exp_5_tt_large
+	}
+}
+
+
+
+defined_text = {
+	name = tom_hi_tank_icon
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_1
+		}
+		localization_key = "GFX_tom_heavy_industry_tanks_missing"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_2
+		}
+		localization_key = "GFX_tom_heavy_industry_tanks_reduced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_3
+		}
+		localization_key = "GFX_tom_heavy_industry_tanks_balanced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_4
+		}
+		localization_key = "GFX_tom_heavy_industry_tanks_focus"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_tanks_5
+		}
+		localization_key = "GFX_tom_heavy_industry_tanks_speciality"
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_industry_icon
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_1
+		}
+		localization_key = "GFX_tom_heavy_industry_industry_missing"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_2
+		}
+		localization_key = "GFX_tom_heavy_industry_industry_reduced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_3
+		}
+		localization_key = "GFX_tom_heavy_industry_industry_balanced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_4
+		}
+		localization_key = "GFX_tom_heavy_industry_industry_focus"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_industry_5
+		}
+		localization_key = "GFX_tom_heavy_industry_industry_speciality"
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_mp_icon
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_1
+		}
+		localization_key = "GFX_tom_heavy_industry_mp_missing"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_2
+		}
+		localization_key = "GFX_tom_heavy_industry_mp_reduced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_3
+		}
+		localization_key = "GFX_tom_heavy_industry_mp_balanced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_4
+		}
+		localization_key = "GFX_tom_heavy_industry_mp_focus"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_mp_5
+		}
+		localization_key = "GFX_tom_heavy_industry_mp_speciality"
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_specialisation_icon
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_1
+		}
+		localization_key = "GFX_tom_heavy_industry_specialisation_missing"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_2
+		}
+		localization_key = "GFX_tom_heavy_industry_specialisation_reduced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_3
+		}
+		localization_key = "GFX_tom_heavy_industry_specialisation_balanced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_4
+		}
+		localization_key = "GFX_tom_heavy_industry_specialisation_focus"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_specialisation_5
+		}
+		localization_key = "GFX_tom_heavy_industry_specialisation_speciality"
+	}
+}
+
+
+defined_text = {
+	name = tom_hi_exp_icon
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_1
+		}
+		localization_key = "GFX_tom_heavy_industry_exp_missing"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_2
+		}
+		localization_key = "GFX_tom_heavy_industry_exp_reduced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_3
+		}
+		localization_key = "GFX_tom_heavy_industry_exp_balanced"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_4
+		}
+		localization_key = "GFX_tom_heavy_industry_exp_focus"
+	}
+	text = {
+		trigger = {
+			has_idea = tom_hi_exp_5
+		}
+		localization_key = "GFX_tom_heavy_industry_exp_speciality"
+	}
+}

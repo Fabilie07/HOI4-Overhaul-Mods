@@ -1,0 +1,1076 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	
+	canards = { 
+		abbreviation = "cana"
+		category = plane_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 4
+			build_cost_ic = 0.5
+		}
+		xp_cost = 1
+	}
+	
+	leading_edge_slats = { 
+		abbreviation = "cana"
+		category = plane_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 2
+			maximum_speed = 5
+			build_cost_ic = 0.5
+		}
+		xp_cost = 1
+	}
+	
+	wing_fences = { 
+		abbreviation = "fenc"
+		category = plane_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.1
+		}
+		multiply_stats = {
+			air_range = -0.02
+		}
+		xp_cost = 1
+	}
+	
+	
+	### Wings
+	
+	biplane = { 
+		abbreviation = "bipl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = -4
+			weight = -4
+		}
+		multiply_stats = {
+			maximum_speed = -0.15
+			build_cost_ic = -0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	triplane = { 
+		abbreviation = "trip"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = -4
+			weight = -6
+		}
+		multiply_stats = {
+			maximum_speed = -0.2
+			build_cost_ic = -0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	monoplane = { 
+		abbreviation = "monopl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.2
+			reliability = 0.05
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	gull_wings = { 
+		abbreviation = "gw"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.3
+			surface_detection = 2
+			sub_detection = 2
+			reliability = 0.05
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	inverted_gull_wings = { 
+		abbreviation = "igw"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.3
+			reliability = 0.1
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	round_wings = { 
+		abbreviation = "rndpl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 4
+			build_cost_ic = 0.3
+			reliability = 0.05
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	clipped_wings = { 
+		abbreviation = "clpl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 2
+			build_cost_ic = 0.3
+			reliability = 0.05
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	forward_swept_wings = { 
+		abbreviation = "fswptpl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.3
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_range = 0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	swept_wings_1 = { 
+		abbreviation = "swptpl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.4
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_range = 0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	swept_wings_2 = { 
+		abbreviation = "swptpl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.6
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.15
+			air_range = 0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	swing_wings = { 
+		abbreviation = "swpl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 4
+			build_cost_ic = 1
+			reliability = -0.05
+		}
+		multiply_stats = {
+			maximum_speed = 0.15
+			air_range = 0.1
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+	
+	delta_wing = { 
+		abbreviation = "depl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 4
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_range = 0.05
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+	}
+	double_delta_wing = { 
+		abbreviation = "ddepl"
+		category = plane_wings
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = 8
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+		dismantle_cost_ic = 1
+		xp_cost = 1
+	}
+	
+	
+	### Tail
+	
+	single_tail = {
+		abbreviation = "tl1"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 2
+		}
+	}
+	t_tail = {
+		abbreviation = "ttl"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 2
+			maximum_speed = 5
+			build_cost_ic = 0.2
+		}
+	}
+	angled_taileron_tail = {
+		abbreviation = "ttl"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 4
+			maximum_speed = 5
+			build_cost_ic = 0.3
+		}
+	}
+	cruciform_tail = {
+		abbreviation = "ctl"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.05
+			maximum_speed = 5
+			build_cost_ic = 0.2
+		}
+	}
+	twin_tail = {
+		abbreviation = "tl2"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.2
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			add_stats = {
+				air_defence = 4
+				air_bombing = 4
+			}
+		}
+	}
+	v_tail = {
+		abbreviation = "vtl"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 6
+			reliability = -0.05
+		}
+	}
+	triple_tail = {
+		abbreviation = "tl3"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.2
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			add_stats = {
+				air_bombing = 6
+			}
+		}
+	}
+	twin_boom = {
+		abbreviation = "twb"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_range = 80
+			build_cost_ic = 0.2
+		}
+	}
+	
+	tailless = {
+		abbreviation = "tll"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_range = 50
+		}
+	}
+	tailless_2 = {
+		abbreviation = "tll2"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_range = 100
+			reliability = -0.05
+		}
+	}
+	tailless_3 = {
+		abbreviation = "tll3"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_range = 200
+			reliability = -0.1
+		}
+	}
+	back_porch = {
+		abbreviation = "back"
+		category = plane_tail
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 5
+		}
+	}
+	
+	
+	### Skeleton
+	
+	wooden_skeleton = {
+		abbreviation = "wsk"
+		category = plane_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = -4
+			reliability = -0.05
+			weight = 2
+		}
+		multiply_stats = {
+			build_cost_ic = -0.07
+		}
+	}
+	steel_skeleton = {
+		abbreviation = "ssk"
+		category = plane_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 4
+			air_agility = -4
+			weight = 6
+			build_cost_ic = 0.2
+		}
+		build_cost_resources = {
+			aluminium = 1
+		}
+	}
+	aluminium_alloy_skeleton = {
+		abbreviation = "aask"
+		category = plane_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 4
+			weight = 4
+			build_cost_ic = 0.2
+		}
+		build_cost_resources = {
+			aluminium = 1
+		}
+	}
+	aluminium_skeleton = {
+		abbreviation = "ask"
+		category = plane_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 6
+			weight = 3
+			build_cost_ic = 0.3
+		}
+		build_cost_resources = {
+			aluminium = 2
+		}
+	}
+	titanium_skeleton = {
+		abbreviation = "tsk"
+		category = plane_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 4
+			air_agility = 6
+			weight = 3
+			build_cost_ic = 0.5
+		}
+		build_cost_resources = {
+			aluminium = 1
+			chromium = 1
+		}
+	}
+	
+	simplified_plane_construction = {
+		abbreviation = "spc"
+		category = plane_skeleton
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = -4
+			weight = 4
+		}
+		multiply_stats = {
+			air_range = -0.1
+			build_cost_ic = -0.12
+		}
+		build_cost_resources = {
+			aluminium = 1
+		}
+	}
+	
+	wooden_skeleton_large = {
+		abbreviation = "wsk"
+		category = plane_skeleton_large
+		gfx = wooden_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = -4
+			reliability = -0.05
+			weight = 4
+		}
+		multiply_stats = {
+			build_cost_ic = -0.07
+		}
+	}
+	steel_skeleton_large = {
+		abbreviation = "ssk"
+		category = plane_skeleton_large
+		gfx = steel_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 4
+			air_agility = -4
+			weight = 8
+			build_cost_ic = 0.4
+		}
+		build_cost_resources = {
+			aluminium = 1
+		}
+	}
+	aluminium_alloy_skeleton_large = {
+		abbreviation = "aask"
+		category = plane_skeleton_large
+		gfx = aluminium_alloy_skeleton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 4
+			weight = 6
+			build_cost_ic = 0.4
+		}
+		build_cost_resources = {
+			aluminium = 2
+		}
+	}
+	
+	simplified_plane_construction_large = {
+		abbreviation = "spc"
+		category = plane_skeleton_large
+		gfx = simplified_plane_construction
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = -6
+			weight = 6
+		}
+		multiply_stats = {
+			air_range = -0.1
+			build_cost_ic = -0.12
+		}
+		build_cost_resources = {
+			aluminium = 2
+		}
+	}
+	
+	
+	
+	### Skin
+	
+	metal_skin = { 
+		abbreviation = "mskin"
+		category = plane_skin
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 6
+			build_cost_ic = 0.2
+		}
+		build_cost_resources = {
+			aluminium = 1
+		}
+		
+		xp_cost = 1
+	}
+	
+	smooth_metal_skin = { 
+		abbreviation = "mskin"
+		category = plane_skin
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 6
+			air_agility = 6
+			build_cost_ic = 1
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+		build_cost_resources = {
+			aluminium = 1
+		}
+		
+		xp_cost = 1
+	}
+
+	paper_skin = { 
+		abbreviation = "pskin"
+		category = plane_skin
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = -4
+		}
+		
+		multiply_stats = {
+			maximum_speed = -0.2
+			build_cost_ic = -0.05
+		}
+		
+		xp_cost = 1
+	}
+	
+	fabric_skin = { 
+		abbreviation = "fskin"
+		category = plane_skin
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 2
+		}
+		
+		xp_cost = 1
+	}
+
+	wooden_skin = { 
+		abbreviation = "wskin"
+		category = plane_skin
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.15
+		}
+
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+		
+		xp_cost = 10
+	}
+	
+	
+	
+	### Wheels
+	
+	fixed_wooden_wheels = { 
+		abbreviation = "wwheel"
+		category = plane_wheels
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = -4
+			reliability = -0.1
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+			air_range = -0.1
+		}
+		
+		xp_cost = 1
+	}
+	big_fixed_wooden_wheels = { 
+		abbreviation = "wwheel"
+		category = plane_large_wheels
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = -6
+			reliability = -0.1
+			weight = 2
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+			air_range = -0.1
+		}
+		
+		xp_cost = 1
+	}
+	
+	rubber_wheels = { 
+		abbreviation = "rwheel"
+		category = plane_wheels
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.2
+			reliability = 0.1
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+		
+		xp_cost = 1
+	}
+	big_rubber_wheels = { 
+		abbreviation = "brwheel"
+		category = plane_large_wheels
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.5
+			reliability = 0.1
+		}
+		build_cost_resources = {
+			rubber = 2
+		}
+		
+		xp_cost = 1
+	}
+
+	fixed_wheels = { 
+		abbreviation = "fwheel"
+		category = plane_wheels
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = -4
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+			air_range = -0.1
+		}
+		mission_type_stats = {
+			limit = { cas }
+			add_stats = {
+				air_ground_attack = 2
+			}
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 2
+			}
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+		
+		xp_cost = 1
+	}
+	big_fixed_wheels = { 
+		abbreviation = "bfwheel"
+		category = plane_large_wheels
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_agility = -6
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+			air_range = -0.1
+		}
+		mission_type_stats = {
+			limit = { strategic_bomber }
+			add_stats = {
+				air_bombing = 4
+			}
+		}
+		build_cost_resources = {
+			rubber = 2
+		}
+		
+		xp_cost = 1
+	}
+
+	plastic_wheels = { 
+		abbreviation = "wwheel"
+		category = plane_wheels
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 0.2
+			reliability = -0.1
+		}
+		
+		xp_cost = 10
+	}
+
+	floats = { 
+		abbreviation = "flo"
+		category = plane_floats
+		gui_category = plane_wheels
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_patrol }
+		}
+
+		add_stats = {
+			build_cost_ic = 0.5
+			air_defence = -4
+			surface_detection = 6
+			sub_detection = 3
+		}
+		multiply_stats = {
+			maximum_speed = -0.3
+		}
+		dismantle_cost_ic = 2.5
+		xp_cost = 1
+	}
+	
+	flying_boat_medium = { 
+		abbreviation = "flbm"
+		category = plane_wheels
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_patrol }
+		}
+
+		add_stats = {
+			build_cost_ic = 1
+			air_defence = -6
+			surface_detection = 8
+			sub_detection = 4
+		}
+		multiply_stats = {
+			maximum_speed = -0.4
+		}
+		dismantle_cost_ic = 2
+		xp_cost = 1
+	}
+	
+	flying_boat_large = { 
+		abbreviation = "flbl"
+		category = plane_large_wheels
+		gui_category = plane_large_wheels
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_patrol }
+		}
+
+		add_stats = {
+			build_cost_ic = 1
+			air_defence = -6
+			surface_detection = 12
+			sub_detection = 6
+		}
+		multiply_stats = {
+			maximum_speed = -0.4
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 5
+	}
+	
+	### Canopy
+	
+	open_cockpit = { 
+		abbreviation = "ocp"
+		category = plane_canopy
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = -0.1
+		}
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+		xp_cost = 1
+	}
+	canopy = { 
+		abbreviation = "cp"
+		category = plane_canopy
+		sfx = sfx_ui_sd_module_turret
+
+		xp_cost = 1
+	}
+	reinforced_canopy = { 
+		abbreviation = "cp"
+		category = plane_canopy
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 2
+			build_cost_ic = 0.1
+		}
+		xp_cost = 1
+	}
+	bubble_canopy = { 
+		abbreviation = "cp"
+		category = plane_canopy
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 4
+			reliability = 0.05 
+			build_cost_ic = 0.2
+		}
+		xp_cost = 1
+	}
+	fuselage_extension = { 
+		abbreviation = "cp"
+		category = plane_canopy
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 5
+			build_cost_ic = 0.2
+		}
+		xp_cost = 1
+	}
+	
+	large_cockpit = {
+		abbreviation = "lcp"
+		category = plane_large_canopy
+		gfx = canopy
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 2
+			build_cost_ic = 0.1
+		}
+		xp_cost = 1
+	}
+	
+	
+	### Fuel Tank Type
+	
+	fuel_tank_concentrated = {
+		abbreviation = "ftc"
+		category = plane_fuel_tank
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.1
+		}
+		multiply_stats = {
+			air_agility = 0.1
+		}
+	}
+	fuel_tank_dispersed = {
+		abbreviation = "ftd"
+		category = plane_fuel_tank
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 2
+			build_cost_ic = 0.1
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+				strategic_bomber
+				naval_bomber
+				port_strike
+			}
+			
+			add_stats = {
+				air_agility = 4
+			}
+		}
+	}
+	fuel_tank_self_sealing = {
+		abbreviation = "fts"
+		category = plane_fuel_tank
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 10
+			build_cost_ic = 0.5
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+				strategic_bomber
+				naval_bomber
+				port_strike
+			}
+			
+			add_stats = {
+				air_agility = 6
+			}
+		}
+		
+		build_cost_resources = {
+			rubber = 1
+		}
+	}
+	
+	
+	### Flaps
+	
+	flaps_0 = {
+		abbreviation = "fl0"
+		category = plane_flaps
+		sfx = sfx_ui_sd_module_turret
+
+		xp_cost = 1
+	}
+	flaps_1 = {
+		abbreviation = "fl1"
+		category = plane_flaps
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.1
+			reliability = 0.05
+		}
+		xp_cost = 1
+	}
+	flaps_2 = {
+		abbreviation = "fl2"
+		category = plane_flaps
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.2
+			reliability = 0.05
+		}
+		multiply_stats = {
+			air_agility = 0.05
+		}
+		xp_cost = 1
+	}
+	flaps_3 = {
+		abbreviation = "fl3"
+		category = plane_flaps
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.3
+			reliability = 0.05
+		}
+		multiply_stats = {
+			air_agility = 0.1
+		}
+		xp_cost = 1
+	}
+	flaps_automatic = {
+		abbreviation = "fla"
+		category = plane_flaps
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.4
+			reliability = 0.1
+		}
+		multiply_stats = {
+			air_agility = 0.1
+		}
+		xp_cost = 1
+	}
+	
+	
+	### Controls
+	
+	controls_wire = {
+		abbreviation = "c1"
+		category = plane_controls
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.1
+		}
+	}
+	controls_assisted = {
+		abbreviation = "c2"
+		category = plane_controls
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.05
+			air_agility = 2
+			build_cost_ic = 0.2
+		}
+	}
+	controls_hydraulic = {
+		abbreviation = "c3"
+		category = plane_controls
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 4
+			build_cost_ic = 0.4
+		}
+	}
+}

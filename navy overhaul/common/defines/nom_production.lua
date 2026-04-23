@@ -1,0 +1,8 @@
+-- Dockyard Output
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 4.7
+
+NDefines.NNavy.WAR_SCORE_GAIN_FOR_SUNK_SHIP_PRODUCTION_COST_FACTOR = 0.05
+
+-- Refit
+
+NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.1	-- Vanilla: 0.2

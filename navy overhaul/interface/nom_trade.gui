@@ -1,0 +1,2534 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "nom_trade_container"
+		position = { x=-700 y=-400}
+		size = { width = 1340 height = 778 }
+
+		moveable = yes
+		orientation = center
+		
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_trait_tree_bg"
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = { x=40 y=8 }
+			font = "hoi_36header"
+			text = "Foreign Ship Building"
+			maxWidth = 440
+			maxHeight = 20
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "ships_title"
+			position = { x = 400 y = 64 }
+			font = "hoi_24header"
+			text = "Ship Models"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType = {
+			name = "ENG_greyed_out"
+			position = { x = 20 y = 70 }
+			spriteType ="GFX_ENG_flag_grey"
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "FRA_greyed_out"
+			position = { x = 20 y = 170 }
+			spriteType ="GFX_FRA_flag_grey"
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "GER_greyed_out"
+			position = { x = 20 y = 270 }
+			spriteType ="GFX_GER_flag_grey"
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "ITA_greyed_out"
+			position = { x = 20 y = 370 }
+			spriteType ="GFX_ITA_flag_grey"
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "JAP_greyed_out"
+			position = { x = 20 y = 470 }
+			spriteType ="GFX_JAP_flag_grey"
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "SOV_greyed_out"
+			position = { x = 20 y = 570 }
+			spriteType ="GFX_SOV_flag_grey"
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "USA_greyed_out"
+			position = { x = 20 y = 670 }
+			spriteType ="GFX_USA_flag_grey"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "ENG_button_1"
+			position = { x = 20 y = 70 }
+			spriteType ="GFX_ENG_flag_button"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "ENG_button_2"
+			position = { x = 20 y = 70 }
+			spriteType ="GFX_ENG_flag_button"
+			frame = 2
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "FRA_button_1"
+			position = { x = 20 y = 170 }
+			spriteType ="GFX_FRA_flag_button"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "FRA_button_2"
+			position = { x = 20 y = 170 }
+			spriteType ="GFX_FRA_flag_button"
+			frame = 2
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "GER_button_1"
+			position = { x = 20 y = 270 }
+			spriteType ="GFX_GER_flag_button"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "GER_button_2"
+			position = { x = 20 y = 270 }
+			spriteType ="GFX_GER_flag_button"
+			frame = 2
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "ITA_button_1"
+			position = { x = 20 y = 370 }
+			spriteType ="GFX_ITA_flag_button"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "ITA_button_2"
+			position = { x = 20 y = 370 }
+			spriteType ="GFX_ITA_flag_button"
+			frame = 2
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "JAP_button_1"
+			position = { x = 20 y = 470 }
+			spriteType ="GFX_JAP_flag_button"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "JAP_button_2"
+			position = { x = 20 y = 470 }
+			spriteType ="GFX_JAP_flag_button"
+			frame = 2
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "SOV_button_1"
+			position = { x = 20 y = 570 }
+			spriteType ="GFX_SOV_flag_button"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "SOV_button_2"
+			position = { x = 20 y = 570 }
+			spriteType ="GFX_SOV_flag_button"
+			frame = 2
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "USA_button_1"
+			position = { x = 20 y = 670 }
+			spriteType ="GFX_USA_flag_button"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "USA_button_2"
+			position = { x = 20 y = 670 }
+			spriteType ="GFX_USA_flag_button"
+			frame = 2
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+		}
+		
+		instantTextboxType = {
+			name = "ENG_title"
+			position = { x = 130 y = 80 }
+			text = "[ENG.GetName]"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "FRA_title"
+			position = { x = 130 y = 180 }
+			text = "[FRA.GetName]"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "GER_title"
+			position = { x = 130 y = 280 }
+			text = "[GER.GetName]"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "ITA_title"
+			position = { x = 130 y = 380 }
+			text = "[ITA.GetName]"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "JAP_title"
+			position = { x = 130 y = 480 }
+			text = "[JAP.GetName]"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "SOV_title"
+			position = { x = 130 y = 580 }
+			text = "[SOV.GetName]"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "USA_title"
+			position = { x = 130 y = 680 }
+			text = "[USA.GetName]"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		
+		### Filters
+		
+		instantTextboxType = {
+			name = "filter_title"
+			position = { x = 806 y = 100 }
+			text = "Visible:"
+			Orientation = "UPPER_LEFT"
+			font = "hoi_24header"
+		}
+
+		instantTextboxType = {
+			name = "filter_title_cv"
+			position = { x = 820 y = 140 }
+			text = "Carriers"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "filter_title_bb"
+			position = { x = 820 y = 180 }
+			text = "Battleships"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "filter_title_bc"
+			position = { x = 820 y = 220 }
+			text = "Battlecruisers"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "filter_title_ca"
+			position = { x = 820 y = 260 }
+			text = "Heavy Cruisers"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "filter_title_cl"
+			position = { x = 820 y = 300 }
+			text = "Light Cruisers"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "filter_title_dd"
+			position = { x = 820 y = 340 }
+			text = "Destroyers"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "filter_title_ss"
+			position = { x = 820 y = 380 }
+			text = "Submarines"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "filter_box_cv"
+			position = { x = 780 y = 136 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_cv_disabled"
+			position = { x = 780 y = 136 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_bb"
+			position = { x = 780 y = 176 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_bb_disabled"
+			position = { x = 780 y = 176 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_bc"
+			position = { x = 780 y = 216 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_bc_disabled"
+			position = { x = 780 y = 216 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_ca"
+			position = { x = 780 y = 256 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_ca_disabled"
+			position = { x = 780 y = 256 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_cl"
+			position = { x = 780 y = 296 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_cl_disabled"
+			position = { x = 780 y = 296 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_dd"
+			position = { x = 780 y = 336 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_dd_disabled"
+			position = { x = 780 y = 336 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_ss"
+			position = { x = 780 y = 376 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "filter_box_ss_disabled"
+			position = { x = 780 y = 376 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		### Trade Deal
+		
+		instantTextboxType = {
+			name = "trade_deal_title"
+			position = { x = 1068 y = 64 }
+			text = "Trade Deal"
+			Orientation = "UPPER_LEFT"
+			font = "hoi_24header"
+		}
+		
+		instantTextboxType = {
+			name = "trade_deal_desc"
+			position = { x = 940 y = 100 }
+			maxWidth = 390
+			text = "trade_deal_desc_tt"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextboxType = {
+			name = "trade_deal_partner"
+			position = { x = 940 y = 225 }
+			maxWidth = 120
+			text = "Current Partner:"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "trade_deal_partner_current"
+			position = { x = 1060 y = 225 }
+			maxWidth = 150
+			text = "[nom_current_trade_partner]"
+			format = right
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name ="trade_deal_button"
+			quadTextureSprite ="GFX_button_261x34"
+			position = { x=988 y=260 }
+			buttonText = "[nom_negotiate_deal]"
+			buttonFont = "hoi_16mbs"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name ="trade_deal_cancel_button"
+			quadTextureSprite ="GFX_button_261x34"
+			position = { x=988 y=300 }
+			buttonText = "Cancel Current Deal"
+			buttonFont = "hoi_16mbs"
+			Orientation = "UPPER_LEFT"
+		}
+		
+
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -43 y = 10 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	containerWindowType = {
+		name = "nom_major_ship_window"
+		size = {width=420 height=426}
+		position = {x=920 y=350}
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		instantTextboxType = {
+			name = "major_title"
+			position = { x = 116 y = 24 }
+			text = "Incoming Requests"
+			Orientation = "UPPER_LEFT"
+			font = "hoi_24header"
+		}
+		
+		instantTextboxType = {
+			name = "dockyards_current"
+			position = { x = 42 y = 60 }
+			maxWidth = 300
+			text = "Current Dockyards used for Commissions:"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "dockyards_current_counter"
+			position = { x = 172 y = 60 }
+			text = nom_current_dockyards
+			Orientation = "UPPER_LEFT"
+			format = right
+		}
+		instantTextboxType = {
+			name = "capitals_dockyards"
+			position = { x = 42 y = 84 }
+			maxWidth = 300
+			text = "Capital Ships & Carriers Dockyard Usage:"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "capitals_dockyard_count"
+			position = { x = 172 y = 84 }
+			text = nom_red_capital
+			Orientation = "UPPER_LEFT"
+			format = right
+		}
+		instantTextboxType = {
+			name = "screens_dockyards"
+			position = { x = 42 y = 108 }
+			maxWidth = 300
+			text = "Screens & Submarines Dockyard Usage:"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "screens_dockyard_count"
+			position = { x = 172 y = 108 }
+			text = nom_red_screen
+			Orientation = "UPPER_LEFT"
+			format = right
+		}
+		
+		instantTextboxType = {
+			name = "preferences_title"
+			position = { x = 22 y = 146 }
+			maxWidth = 300
+			text = "Preferences:"
+			Orientation = "UPPER_LEFT"
+			font = "hoi_20bs"
+		}
+		
+		buttonType = {
+			name = "preference_economy"
+			position = { x = 20 y = 180 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "preference_economy_disabled"
+			position = { x = 20 y = 180 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "preference_steel"
+			position = { x = 20 y = 220 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "preference_steel_disabled"
+			position = { x = 20 y = 220 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "preference_tungsten"
+			position = { x = 20 y = 260 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "preference_tungsten_disabled"
+			position = { x = 20 y = 260 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "preference_chromium"
+			position = { x = 20 y = 300 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "preference_chromium_disabled"
+			position = { x = 20 y = 300 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "preference_rubber"
+			position = { x = 20 y = 340 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "preference_rubber_disabled"
+			position = { x = 20 y = 340 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "preference_nothing"
+			position = { x = 20 y = 380 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "preference_nothing_disabled"
+			position = { x = 20 y = 380 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextboxType = {
+			name = "preference_economy_title"
+			position = { x = 60 y = 184 }
+			text = "Civilian Factories"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "preference_steel_title"
+			position = { x = 60 y = 224 }
+			text = "Steel"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "preference_tungsten_title"
+			position = { x = 60 y = 264 }
+			text = "Tungsten"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "preference_chromium_title"
+			position = { x = 60 y = 304 }
+			text = "Chromium"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "preference_rubber_title"
+			position = { x = 60 y = 344 }
+			text = "Rubber"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "preference_nothing_title"
+			position = { x = 60 y = 384 }
+			text = "No Compensation"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+		instantTextboxType = {
+			name = "automation_title"
+			position = { x = 222 y = 146 }
+			maxWidth = 300
+			text = "Automatically Answer:"
+			Orientation = "UPPER_LEFT"
+			font = "hoi_20bs"
+		}
+		
+		instantTextboxType = {
+			name = "automation_deal_title"
+			position = { x = 260 y = 184 }
+			text = "Trade Deals"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "automation_capital_title"
+			position = { x = 260 y = 224 }
+			text = "Capital Ships"
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextboxType = {
+			name = "automation_screen_title"
+			position = { x = 260 y = 264 }
+			text = "Screens"
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "automation_deal"
+			position = { x = 220 y = 180 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "AUTO_ACCEPT"
+		}
+		buttonType = {
+			name = "automation_deal_refuse"
+			position = { x = 220 y = 180 }
+			quadTextureSprite = "GFX_generic_checkbox_crossed_out"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "AUTO_REFUSE"
+		}
+		buttonType = {
+			name = "automation_deal_disabled"
+			position = { x = 220 y = 180 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "automation_capital"
+			position = { x = 220 y = 220 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "AUTO_ACCEPT"
+		}
+		buttonType = {
+			name = "automation_capital_refuse"
+			position = { x = 220 y = 220 }
+			quadTextureSprite = "GFX_generic_checkbox_crossed_out"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "AUTO_REFUSE"
+		}
+		buttonType = {
+			name = "automation_capital_disabled"
+			position = { x = 220 y = 220 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+		
+		buttonType = {
+			name = "automation_screen"
+			position = { x = 220 y = 260 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 2
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "AUTO_ACCEPT"
+		}
+		buttonType = {
+			name = "automation_screen_refuse"
+			position = { x = 220 y = 260 }
+			quadTextureSprite = "GFX_generic_checkbox_crossed_out"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "AUTO_REFUSE"
+		}
+		buttonType = {
+			name = "automation_screen_disabled"
+			position = { x = 220 y = 260 }
+			quadTextureSprite = "GFX_generic_checkbox"
+			frame = 1
+			Orientation = "UPPER_LEFT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "ENG_ship_window"
+		size = {width=500 height=674}
+		position = { x = 282 y = 96 }
+		Orientation = upper_left
+		
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 16 bottom = 16 left = -5 right = 20 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		iconType = {
+			name = "ENG_cv_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_cv_1_title"
+			position = { x=30 y=4 }
+			text = "Hermes"
+		}
+		buttonType = {
+			name = "ENG_cv_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "ENG"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_bb_1_bg"
+			position = { x = 20 y = 240 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_bb_1_title"
+			position = { x=30 y=244 }
+			text = "Queen Elizabeth"
+		}
+		buttonType = {
+			name = "ENG_bb_1"
+			position = { x = 52 y = 248 }
+			spriteType = "GFX_early_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "ENG"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_bb_2_bg"
+			position = { x = 20 y = 80 }
+		}
+		instantTextboxType = {
+			name = "ENG_bb_2_title"
+			position = { x=30 y=84 }
+			text = "King George V"
+		}
+		buttonType = {
+			name = "ENG_bb_2"
+			position = { x = 52 y = 88 }
+			spriteType = "GFX_ENG_basic_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "21 February 1939"
+				PARTNER = "ENG"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_bb_3_bg"
+			position = { x = 20 y = 160 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_bb_3_title"
+			position = { x=30 y=164 }
+			text = "King George V (1943 Refit)"
+		}
+		buttonType = {
+			name = "ENG_bb_3"
+			position = { x = 52 y = 168 }
+			spriteType = "GFX_ENG_basic_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "1 March 1943"
+				PARTNER = "ENG"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_bc_1_bg"
+			position = { x = 20 y = 320 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_bc_1_title"
+			position = { x=30 y=324 }
+			text = "Renown"
+		}
+		buttonType = {
+			name = "ENG_bc_1"
+			position = { x = 52 y = 328 }
+			spriteType = "GFX_early_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "ENG"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_ca_1_bg"
+			position = { x = 20 y = 400 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_ca_1_title"
+			position = { x=30 y=404 }
+			text = "County Class (Norfolk)"
+		}
+		buttonType = {
+			name = "ENG_ca_1"
+			position = { x = 52 y = 408 }
+			spriteType = "GFX_ship_hull_cruiser_1_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "ENG"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_ca_2_bg"
+			position = { x = 20 y = 480 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_ca_2_title"
+			position = { x=30 y=484 }
+			text = "County Class (1941 Refit)"
+		}
+		buttonType = {
+			name = "ENG_ca_2"
+			position = { x = 52 y = 488 }
+			spriteType = "GFX_ship_hull_cruiser_1_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "1 March 1941"
+				PARTNER = "ENG"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_cl_1_bg"
+			position = { x = 20 y = 560 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_cl_1_title"
+			position = { x=30 y=564 }
+			text = "Town Class"
+		}
+		buttonType = {
+			name = "ENG_cl_1"
+			position = { x = 52 y = 568 }
+			spriteType = "GFX_ENG_basic_ship_hull_cruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "23 January 1936"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_cl_2_bg"
+			position = { x = 20 y = 640 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_cl_2_title"
+			position = { x=30 y=644 }
+			text = "Town Class (Edinburgh)"
+		}
+		buttonType = {
+			name = "ENG_cl_2"
+			position = { x = 52 y = 648 }
+			spriteType = "GFX_ENG_basic_ship_hull_cruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "17 March 1939"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_cl_3_bg"
+			position = { x = 20 y = 720 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_cl_3_title"
+			position = { x=30 y=724 }
+			text = "Crown Colony Class"
+		}
+		buttonType = {
+			name = "ENG_cl_3"
+			position = { x = 52 y = 728 }
+			spriteType = "GFX_ENG_improved_ship_hull_cruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "31 May 1939"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_dd_1_bg"
+			position = { x = 20 y = 800 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_dd_1_title"
+			position = { x=30 y=804 }
+			text = "E/F Class"
+		}
+		buttonType = {
+			name = "ENG_dd_1"
+			position = { x = 52 y = 808 }
+			spriteType = "GFX_basic_ship_hull_light_medium"
+		}
+		
+		iconType = {
+			name = "ENG_dd_2_bg"
+			position = { x = 20 y = 880 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_dd_2_title"
+			position = { x=30 y=884 }
+			text = "L/M Class"
+		}
+		buttonType = {
+			name = "ENG_dd_2"
+			position = { x = 52 y = 888 }
+			spriteType = "GFX_improved_ship_hull_light_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "22 April 1940"
+			}
+		}
+		
+		iconType = {
+			name = "ENG_ss_1_bg"
+			position = { x = 20 y = 960 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ENG_ss_1_title"
+			position = { x=30 y=964 }
+			text = "R Class"
+		}
+		buttonType = {
+			name = "ENG_ss_1"
+			position = { x = 52 y = 968 }
+			spriteType = "GFX_early_ship_hull_submarine_medium"
+		}
+	}
+	
+	containerWindowType = {
+		name = "FRA_ship_window"
+		size = {width=500 height=674}
+		position = { x = 282 y = 96 }
+		Orientation = upper_left
+		
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 16 bottom = 16 left = -5 right = 20 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		iconType = {
+			name = "FRA_cv_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_cv_1_title"
+			position = { x=30 y=4 }
+			text = "Béarn"
+		}
+		buttonType = {
+			name = "FRA_cv_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "FRA"
+			}
+		}
+		
+		iconType = {
+			name = "FRA_bb_1_bg"
+			position = { x=20 y=80 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_bb_1_title"
+			position = { x=30 y=84 }
+			text = "Dunkerque"
+		}
+		buttonType = {
+			name = "FRA_bb_1"
+			position = { x = 52 y = 88 }
+			spriteType = "GFX_FRA_basic_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "FRA"
+			}
+		}
+		
+		iconType = {
+			name = "FRA_bb_2_bg"
+			position = { x=20 y=160 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_bb_2_title"
+			position = { x=30 y=164 }
+			text = "Richelieu"
+		}
+		buttonType = {
+			name = "FRA_bb_2"
+			position = { x = 52 y = 168 }
+			spriteType = "GFX_FRA_basic_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "17 January 1939"
+				PARTNER = "FRA"
+			}
+		}
+		
+		iconType = {
+			name = "FRA_ca_1_bg"
+			position = { x=20 y=240 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_ca_1_title"
+			position = { x=30 y=244 }
+			text = "Algérie"
+		}
+		buttonType = {
+			name = "FRA_ca_1"
+			position = { x = 52 y = 248 }
+			spriteType = "GFX_ship_hull_cruiser_1_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "FRA"
+			}
+		}
+		
+		iconType = {
+			name = "FRA_cl_1_bg"
+			position = { x=20 y=320 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_cl_1_title"
+			position = { x=30 y=324 }
+			text = "La Galissonnière"
+		}
+		buttonType = {
+			name = "FRA_cl_1"
+			position = { x = 52 y = 328 }
+			spriteType = "GFX_early_ship_hull_cruiser_medium"
+		}
+		
+		iconType = {
+			name = "FRA_dd_1_bg"
+			position = { x=20 y=400 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_dd_1_title"
+			position = { x=30 y=404 }
+			text = "Le Fantasque"
+		}
+		buttonType = {
+			name = "FRA_dd_1"
+			position = { x = 52 y = 408 }
+			spriteType = "GFX_early_ship_hull_light_medium"
+		}
+		
+		iconType = {
+			name = "FRA_dd_2_bg"
+			position = { x=20 y=480 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_dd_2_title"
+			position = { x=30 y=484 }
+			text = "Mogador"
+		}
+		buttonType = {
+			name = "FRA_dd_2"
+			position = { x = 52 y = 488 }
+			spriteType = "GFX_basic_ship_hull_light_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "9 June 1937"
+			}
+		}
+		
+		iconType = {
+			name = "FRA_ss_1_bg"
+			position = { x=20 y=560 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "FRA_ss_1_title"
+			position = { x=30 y=564 }
+			text = "Surcouf"
+		}
+		buttonType = {
+			name = "FRA_ss_1"
+			position = { x = 52 y = 568 }
+			spriteType = "GFX_FRA_ship_hull_cruiser_submarine_medium"
+		}
+	}
+	
+	containerWindowType = {
+		name = "GER_ship_window"
+		size = {width=500 height=674}
+		position = { x = 282 y = 96 }
+		Orientation = upper_left
+		
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 16 bottom = 16 left = -5 right = 20 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		iconType = {
+			name = "GER_cv_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_cv_1_title"
+			position = { x=30 y=4 }
+			text = "Graf Zeppelin"
+		}
+		buttonType = {
+			name = "GER_cv_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "8 December 1938"
+				PARTNER = "GER"
+			}
+		}
+		
+		iconType = {
+			name = "GER_bb_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_bb_1_title"
+			position = { x=30 y=4 }
+			text = "Scharnhorst"
+		}
+		buttonType = {
+			name = "GER_bb_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "3 October 1936"
+				PARTNER = "GER"
+			}
+		}
+		
+		iconType = {
+			name = "GER_bb_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_bb_2_title"
+			position = { x=30 y=4 }
+			text = "Bismarck"
+		}
+		buttonType = {
+			name = "GER_bb_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_GER_improved_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "14 February 1939"
+				PARTNER = "GER"
+			}
+		}
+		
+		iconType = {
+			name = "GER_ca_1_bg"
+			position = { x=20 y=160 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_ca_1_title"
+			position = { x=30 y=164 }
+			text = "Deutschland"
+		}
+		buttonType = {
+			name = "GER_ca_1"
+			position = { x = 52 y = 168 }
+			spriteType = "GFX_ship_hull_cruiser_panzerschiff_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "GER"
+			}
+		}
+		
+		iconType = {
+			name = "GER_ca_2_bg"
+			position = { x=20 y=240 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_ca_2_title"
+			position = { x=30 y=244 }
+			text = "Admiral Hipper"
+		}
+		buttonType = {
+			name = "GER_ca_2"
+			position = { x = 52 y = 248 }
+			spriteType = "GFX_ship_hull_cruiser_2_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "6 February 1937"
+				PARTNER = "GER"
+			}
+		}
+		
+		iconType = {
+			name = "GER_cl_1_bg"
+			position = { x=20 y=320 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_cl_1_title"
+			position = { x=30 y=324 }
+			text = "Königsberg"
+		}
+		buttonType = {
+			name = "GER_cl_1"
+			position = { x = 52 y = 328 }
+			spriteType = "GFX_basic_ship_hull_cruiser_medium"
+		}
+		
+		iconType = {
+			name = "GER_dd_1_bg"
+			position = { x=20 y=400 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_dd_1_title"
+			position = { x=30 y=404 }
+			text = "Typ 1934"
+		}
+		buttonType = {
+			name = "GER_dd_1"
+			position = { x = 52 y = 408 }
+			spriteType = "GFX_basic_ship_hull_light_medium"
+		}
+		
+		iconType = {
+			name = "GER_ss_1_bg"
+			position = { x=20 y=480 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_ss_1_title"
+			position = { x=30 y=484 }
+			text = "Typ VII"
+		}
+		buttonType = {
+			name = "GER_ss_1"
+			position = { x = 52 y = 488 }
+			spriteType = "GFX_basic_ship_hull_submarine_medium"
+		}
+		
+		iconType = {
+			name = "GER_ss_2_bg"
+			position = { x=20 y=560 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_ss_2_title"
+			position = { x=30 y=564 }
+			text = "Typ VII C/41"
+		}
+		buttonType = {
+			name = "GER_ss_2"
+			position = { x = 52 y = 568 }
+			spriteType = "GFX_basic_ship_hull_submarine_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "14 October 1941"
+			}
+		}
+		
+		iconType = {
+			name = "GER_ss_3_bg"
+			position = { x=20 y=720 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "GER_ss_3_title"
+			position = { x=30 y=724 }
+			text = "Typ IX C/40"
+		}
+		buttonType = {
+			name = "GER_ss_3"
+			position = { x = 52 y = 728 }
+			spriteType = "GFX_ship_hull_cruiser_submarine_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "7 August 1939"
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "ITA_ship_window"
+		size = {width=500 height=674}
+		position = { x = 282 y = 96 }
+		Orientation = upper_left
+		
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 16 bottom = 16 left = -5 right = 20 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		iconType = {
+			name = "ITA_bb_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_bb_1_title"
+			position = { x=30 y=4 }
+			text = "Conte di Cavour"
+		}
+		buttonType = {
+			name = "ITA_bb_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "ITA"
+			}
+		}
+		
+		iconType = {
+			name = "ITA_bb_2_bg"
+			position = { x=20 y=80 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_bb_2_title"
+			position = { x=30 y=84 }
+			text = "Littorio"
+		}
+		buttonType = {
+			name = "ITA_bb_2"
+			position = { x = 52 y = 88 }
+			spriteType = "GFX_basic_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "25 July 1937"
+				PARTNER = "ITA"
+			}
+		}
+		
+		iconType = {
+			name = "ITA_ca_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_ca_1_title"
+			position = { x=30 y=4 }
+			text = "Trento"
+		}
+		buttonType = {
+			name = "ITA_ca_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_ship_hull_cruiser_1_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "ITA"
+			}
+		}
+		
+		iconType = {
+			name = "ITA_ca_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_ca_2_title"
+			position = { x=30 y=4 }
+			text = "Bolzano"
+		}
+		buttonType = {
+			name = "ITA_ca_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_ship_hull_cruiser_2_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "ITA"
+			}
+		}
+		
+		iconType = {
+			name = "ITA_cl_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_cl_1_title"
+			position = { x=30 y=4 }
+			text = "Montecuccoli"
+		}
+		buttonType = {
+			name = "ITA_cl_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_cruiser_medium"
+		}
+		
+		iconType = {
+			name = "ITA_cl_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_cl_2_title"
+			position = { x=30 y=4 }
+			text = "Duca degli Abruzzi"
+		}
+		buttonType = {
+			name = "ITA_cl_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_cruiser_medium"
+		}
+		
+		iconType = {
+			name = "ITA_cl_3_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_cl_3_title"
+			position = { x=30 y=4 }
+			text = "Capitani Romani"
+		}
+		buttonType = {
+			name = "ITA_cl_3"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_improved_ship_hull_cruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "3 April 1939"
+			}
+		}
+		
+		iconType = {
+			name = "ITA_dd_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_dd_1_title"
+			position = { x=30 y=4 }
+			text = "Maestrale"
+		}
+		buttonType = {
+			name = "ITA_dd_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_light_medium"
+		}
+		
+		iconType = {
+			name = "ITA_ss_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_ss_1_title"
+			position = { x=30 y=4 }
+			text = "Calvi"
+		}
+		buttonType = {
+			name = "ITA_ss_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_submarine_medium"
+		}
+		
+		iconType = {
+			name = "ITA_ss_2_bg"
+			position = { x=20 y=720 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "ITA_ss_2_title"
+			position = { x=30 y=724 }
+			text = "CB"
+		}
+		buttonType = {
+			name = "ITA_ss_2"
+			position = { x = 52 y = 728 }
+			spriteType = "GFX_ship_hull_midget_submarine_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "27 January 1941"
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "JAP_ship_window"
+		size = {width=500 height=674}
+		position = { x = 282 y = 96 }
+		Orientation = upper_left
+		
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 16 bottom = 16 left = -5 right = 20 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		iconType = {
+			name = "JAP_cv_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_cv_1_title"
+			position = { x=30 y=4 }
+			text = "Akagi"
+		}
+		buttonType = {
+			name = "JAP_cv_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_cv_2_bg"
+			position = { x=20 y=80 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_cv_2_title"
+			position = { x=30 y=84 }
+			text = "Tone"
+		}
+		buttonType = {
+			name = "JAP_cv_2"
+			position = { x = 52 y = 88 }
+			spriteType = "GFX_ship_hull_carrier_hybrid_ca_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "21 November 1937"
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_cv_3_bg"
+			position = { x=20 y=160 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_cv_3_title"
+			position = { x=30 y=164 }
+			text = "Taiho"
+		}
+		buttonType = {
+			name = "JAP_cv_3"
+			position = { x = 52 y = 168 }
+			spriteType = "GFX_improved_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "7 April 1943"
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_bb_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_bb_1_title"
+			position = { x=30 y=4 }
+			text = "Nagato"
+		}
+		buttonType = {
+			name = "JAP_bb_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_JAP_ship_hull_heavy_2_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_bb_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_bb_2_title"
+			position = { x=30 y=4 }
+			text = "Yamato"
+		}
+		buttonType = {
+			name = "JAP_bb_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_ship_hull_super_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "8 August 1940"
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_bb_3_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_bb_3_title"
+			position = { x=30 y=4 }
+			text = "Yamato (1945)"
+		}
+		buttonType = {
+			name = "JAP_bb_3"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_ship_hull_super_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "1 January 1945"
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_bc_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_bc_1_title"
+			position = { x=30 y=4 }
+			text = "Kongo"
+		}
+		buttonType = {
+			name = "JAP_bc_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_JAP_ship_hull_heavy_1_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_bc_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_bc_2_title"
+			position = { x=30 y=4 }
+			text = "Amagi (1941)"
+		}
+		buttonType = {
+			name = "JAP_bc_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_JAP_ship_hull_heavy_3_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "1 January 1941"
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_ca_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_ca_1_title"
+			position = { x=30 y=4 }
+			text = "Takao"
+		}
+		buttonType = {
+			name = "JAP_ca_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_ship_hull_cruiser_2_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "JAP"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_dd_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_dd_1_title"
+			position = { x=30 y=4 }
+			text = "Fubuki"
+		}
+		buttonType = {
+			name = "JAP_dd_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_light_medium"
+		}
+		
+		iconType = {
+			name = "JAP_dd_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_dd_2_title"
+			position = { x=30 y=4 }
+			text = "Kagero"
+		}
+		buttonType = {
+			name = "JAP_dd_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_light_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "28 June 1938"
+			}
+		}
+		
+		iconType = {
+			name = "JAP_ss_1_bg"
+			position = { x=20 y=880 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "JAP_ss_1_title"
+			position = { x=30 y=884 }
+			text = "I-400"
+		}
+		buttonType = {
+			name = "JAP_ss_1"
+			position = { x = 52 y = 888 }
+			spriteType = "GFX_ship_hull_cruiser_submarine_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "18 January 1943"
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "SOV_ship_window"
+		size = {width=500 height=674}
+		position = { x = 282 y = 96 }
+		Orientation = upper_left
+		
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 16 bottom = 16 left = -5 right = 20 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		iconType = {
+			name = "SOV_bb_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "SOV_bb_1_title"
+			position = { x=30 y=4 }
+			text = "Gangut"
+		}
+		buttonType = {
+			name = "SOV_bb_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "SOV"
+			}
+		}
+		
+		iconType = {
+			name = "SOV_bb_2_bg"
+			position = { x=20 y=80 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "SOV_bb_2_title"
+			position = { x=30 y=84 }
+			text = "Sovetsky Soyuz"
+		}
+		buttonType = {
+			name = "SOV_bb_2"
+			position = { x = 52 y = 88 }
+			spriteType = "GFX_improved_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "1 January 1941"
+				PARTNER = "SOV"
+			}
+		}
+		
+		iconType = {
+			name = "SOV_bc_1_bg"
+			position = { x=20 y=160 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "SOV_bc_1_title"
+			position = { x=30 y=164 }
+			text = "Kronshtadt"
+		}
+		buttonType = {
+			name = "SOV_bc_1"
+			position = { x = 52 y = 168 }
+			spriteType = "GFX_improved_battlecruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "1 January 1942"
+				PARTNER = "SOV"
+			}
+		}
+		
+		iconType = {
+			name = "SOV_ca_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "SOV_ca_1_title"
+			position = { x=30 y=4 }
+			text = "Kirov"
+		}
+		buttonType = {
+			name = "SOV_ca_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_ship_hull_cruiser_2_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "30 November 1936"
+				PARTNER = "SOV"
+			}
+		}
+		
+		iconType = {
+			name = "SOV_dd_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "SOV_dd_1_title"
+			position = { x=30 y=4 }
+			text = "Leningrad"
+		}
+		buttonType = {
+			name = "SOV_dd_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_light_medium"
+		}
+		
+		iconType = {
+			name = "SOV_dd_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "SOV_dd_2_title"
+			position = { x=30 y=4 }
+			text = "Storozhevoy"
+		}
+		buttonType = {
+			name = "SOV_dd_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_light_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "2 October 1938"
+			}
+		}
+		
+		iconType = {
+			name = "SOV_dd_3_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "SOV_dd_3_title"
+			position = { x=30 y=4 }
+			text = "Ognevoy"
+		}
+		buttonType = {
+			name = "SOV_dd_3"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_improved_ship_hull_light_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "12 November 1940"
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "USA_ship_window"
+		size = {width=500 height=674}
+		position = { x = 282 y = 96 }
+		Orientation = upper_left
+		
+		verticalScrollbar = "right_vertical_slider"
+		margin = { top = 16 bottom = 16 left = -5 right = 20 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+		
+		iconType = {
+			name = "USA_cv_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_cv_1_title"
+			position = { x=30 y=4 }
+			text = "Yorktown"
+		}
+		buttonType = {
+			name = "USA_cv_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "4 April 1936"
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_cv_2_bg"
+			position = { x=20 y=80 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_cv_2_title"
+			position = { x=30 y=84 }
+			text = "Yorktown (1943 Refit)"
+		}
+		buttonType = {
+			name = "USA_cv_2"
+			position = { x = 52 y = 88 }
+			spriteType = "GFX_basic_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "6 November 1943"
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_cv_3_bg"
+			position = { x=20 y=160 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_cv_3_title"
+			position = { x=30 y=164 }
+			text = "Essex"
+		}
+		buttonType = {
+			name = "USA_cv_3"
+			position = { x = 52 y = 168 }
+			spriteType = "GFX_improved_ship_hull_carrier_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "31 July 1937"
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_bb_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_bb_1_title"
+			position = { x=30 y=4 }
+			text = "Colorado"
+		}
+		buttonType = {
+			name = "USA_bb_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_USA_ship_hull_heavy_1_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_bb_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_bb_2_title"
+			position = { x=30 y=4 }
+			text = "North Carolina"
+		}
+		buttonType = {
+			name = "USA_bb_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "13 June 1940"
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_bb_3_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_bb_3_title"
+			position = { x=30 y=4 }
+			text = "Iowa"
+		}
+		buttonType = {
+			name = "USA_bb_3"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_USA_improved_ship_hull_heavy_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "27 August 1942"
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_ca_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_ca_1_title"
+			position = { x=30 y=4 }
+			text = "New Orleans"
+		}
+		buttonType = {
+			name = "USA_ca_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_ship_hull_cruiser_1_capital_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_no_date
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_ca_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_ca_2_title"
+			position = { x=30 y=4 }
+			text = "Baltimore"
+		}
+		buttonType = {
+			name = "USA_ca_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_USA_improved_heavy_cruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements_capital
+				DATE = "28 July 1942"
+				PARTNER = "USA"
+			}
+		}
+		
+		iconType = {
+			name = "USA_cl_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_cl_1_title"
+			position = { x=30 y=4 }
+			text = "Brooklyn"
+		}
+		buttonType = {
+			name = "USA_cl_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_basic_ship_hull_cruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "7 November 1936"
+			}
+		}
+		
+		iconType = {
+			name = "USA_cl_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_cl_2_title"
+			position = { x=30 y=4 }
+			text = "Atlanta"
+		}
+		buttonType = {
+			name = "USA_cl_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_improved_ship_hull_cruiser_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "26 July 1941"
+			}
+		}
+		
+		iconType = {
+			name = "USA_dd_1_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_dd_1_title"
+			position = { x=30 y=4 }
+			text = "Wickes"
+		}
+		buttonType = {
+			name = "USA_dd_1"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_early_ship_hull_light_medium"
+		}
+		
+		iconType = {
+			name = "USA_dd_2_bg"
+			position = { x=20 y=0 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_dd_2_title"
+			position = { x=30 y=4 }
+			text = "Fletcher"
+		}
+		buttonType = {
+			name = "USA_dd_2"
+			position = { x = 52 y = 8 }
+			spriteType = "GFX_improved_ship_hull_light_medium"
+			bound_tooltip = {
+				localization_key = loc_nom_trade_requirements
+				DATE = "3 May 1942"
+			}
+		}
+		
+		iconType = {
+			name = "USA_ss_1_bg"
+			position = { x=20 y=960 }
+			spriteType = "GFX_naval_equipment_item_large"
+		}
+		instantTextboxType = {
+			name = "USA_ss_1_title"
+			position = { x=30 y=964 }
+			text = "Porpoise"
+		}
+		buttonType = {
+			name = "USA_ss_1"
+			position = { x = 52 y = 968 }
+			spriteType = "GFX_basic_ship_hull_submarine_medium"
+		}
+	}
+	
+	containerWindowType = {
+		name = "nom_ship_confirmation_popup"
+		position = { x = -538 y = -250 }
+		size = { width = 1096 height = 531 }
+		orientation= center
+		moveable = yes
+		hide_sound = menu_close_window
+		click_to_front = yes
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+		
+		instantTextboxType = {
+			name = "ship_confirmation_title"
+			position = { x = 24 y = 20 }
+			text = "nom_ship_duration_tt"
+			maxWidth = 800
+			Orientation = "UPPER_LEFT"
+			font = "hoi_24header"
+		}
+		
+		containerWindowType = {
+			name = "designer_image_container"
+			position = { x=10 y=50 }
+			size = { width = 1076 height = 471 }
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "designer_image"
+				position = { x=12 y=12 }
+				spriteType = "GFX_ENG_cv_1"
+				alwaystransparent = yes
+			}
+			
+			buttonType = {
+				name = "cancel_button"
+				position = { x=760 y=410}
+				quadTextureSprite ="GFX_button_123x34"
+				buttonText = "Cancel"
+				buttonFont = "hoi_18mbs"
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "send_button"
+				position = { x=920 y=410}
+				quadTextureSprite ="GFX_button_123x34"
+				buttonText = nom_send_pp_tt
+				buttonFont = "hoi_18mbs"
+				shortcut = "RETURN"
+				clicksound = click_ok
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "trade_deal_popup"
+		position = { x = -225 y = -160 }
+		size = { width = 500 height = 260 }
+		orientation= center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		containerWindowType = {
+			name = "paper_background"
+			position = { x = 13 y = 75 }
+			size = { width = 474 height = 123 }
+
+			background = {
+				name = "Background"
+				#spriteType ="GFX_tiled_paper_bg"
+				spriteType = "GFX_agency_popup_bg"
+			}
+		}
+
+		iconType = {
+			name ="diplo_popup_header_bg"
+			spriteType = "GFX_diplo_popup_header_bg"
+			position = { x= 1 y = 8 }
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 72 y = 29 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Send Request"
+			format = center
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
+			truncate = yes
+		}
+		
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 72 y = 119 }
+			borderSize = {x = 0 y = 0}
+			text = "[nom_request_confirmation]"
+			format = center
+			maxWidth = 350
+		}
+		
+		iconType = {
+			name ="diplo_popup_bottom"
+			spriteType = "GFX_diplo_popup_bottom"
+			position = { x= 3 y = 189 }
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=40 y = 203}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Cancel"
+			buttonFont = "hoi_18mbs"
+			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "send_button"
+			position = { x=340 y =203}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Send"
+			buttonFont = "hoi_18mbs"
+			shortcut = "RETURN"
+			clicksound = click_ok
+		}
+		
+	}
+	
+	containerWindowType = {
+		name = "trade_deal_cancel_popup"
+		position = { x = -225 y = -160 }
+		size = { width = 500 height = 260 }
+		orientation= center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		containerWindowType = {
+			name = "paper_background"
+			position = { x = 13 y = 75 }
+			size = { width = 474 height = 123 }
+
+			background = {
+				name = "Background"
+				#spriteType ="GFX_tiled_paper_bg"
+				spriteType = "GFX_agency_popup_bg"
+			}
+		}
+
+		iconType = {
+			name ="diplo_popup_header_bg"
+			spriteType = "GFX_diplo_popup_header_bg"
+			position = { x= 1 y = 8 }
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 72 y = 29 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Cancel Trade Deal"
+			format = center
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
+			truncate = yes
+		}
+		
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 72 y = 119 }
+			borderSize = {x = 0 y = 0}
+			text = "Are you sure that you want to cancel our current Trade Deal?"
+			format = center
+			maxWidth = 350
+		}
+		
+		iconType = {
+			name ="diplo_popup_bottom"
+			spriteType = "GFX_diplo_popup_bottom"
+			position = { x= 3 y = 189 }
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=40 y = 203}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Stop"
+			buttonFont = "hoi_18mbs"
+			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "send_button"
+			position = { x=340 y =203}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Accept"
+			buttonFont = "hoi_18mbs"
+			shortcut = "RETURN"
+			clicksound = click_ok
+		}
+		
+	}
+
+
+	containerWindowType = {
+		name = "nom_trade_open"
+		position = { x=338 y=9 }
+		size = { width = 100 height = 100 }
+
+		buttonType = {
+			name = "open_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_button_148x34_light"
+			buttonText = "OPEN_SHIP_COMMISSION"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_close
+		}
+	}
+}

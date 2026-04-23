@@ -1,0 +1,21 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = {
+					has_war = yes
+				}
+				
+				set_variable = { var = aom_sb_consumer_goods value = has_bombing_war_support }
+				set_variable = { var = aom_sb_production_growth value = has_bombing_war_support }
+				set_variable = { var = aom_sb_supply_usage value = has_bombing_war_support }
+				set_variable = { var = aom_sb_air_defence value = has_bombing_war_support }
+				
+				multiply_variable = { aom_sb_consumer_goods = -2 }
+				multiply_variable = { aom_sb_production_growth = 2.5 }
+				multiply_variable = { aom_sb_supply_usage = -3 }
+				multiply_variable = { aom_sb_air_defence = 2 }
+			}
+		}
+	}
+}

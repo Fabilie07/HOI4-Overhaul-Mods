@@ -1,0 +1,45 @@
+nom_ai_reduced_desire_to_invade = {
+	allowed = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -30
+	}
+}
+
+nom_allies_reduced_desire_to_invade = {
+	allowed = {
+		OR = {
+			original_tag = USA
+			original_tag = ENG
+		}
+		is_historical_focus_on = yes
+	}
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = -20
+	}
+}
+
+nom_major_dockyard_construction = {
+	allowed = {
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+	}
+	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 40
+	}
+}

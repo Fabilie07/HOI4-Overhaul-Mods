@@ -1,0 +1,13 @@
+﻿
+units= {
+	fleet = {
+		name = "Convert"			
+		naval_base = 1562 # San Diego
+		task_force = {				
+			name = "Convert Task Force"
+			location = 1562 # San Diego
+			### Battleship Division 1 ###			
+			ship = { name = "Battleship to Convert" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_super_dreadnought_3 = { amount = 1 owner = USA version_name = "Convert BB" } } }							
+		}				
+	}
+} 

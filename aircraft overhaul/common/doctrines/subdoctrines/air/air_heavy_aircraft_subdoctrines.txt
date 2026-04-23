@@ -1,0 +1,332 @@
+@doctrine_cost = 35
+
+air_subdoctrine_heavy_extended_bombing_campaigns = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_HEAVY_EXTENDED_BOMBING_CAMPAIGNS
+    description = SUBDOCTRINE_HEAVY_EXTENDED_BOMBING_CAMPAIGNS_DESC
+    icon = GFX_doctrine_mass_destruction_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_heavy_extended_bombing_campaigns }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_strat_bomber = {
+		air_bombing = 0.1
+	}
+	air_strategic_bomber_bombing_factor = 0.1
+
+    rewards = {
+		concentrated_bomb_pattern = {
+			air_strategic_bomber_bombing_factor = 0.05
+		}
+		multi_formation_drops = {
+			category_strat_bomber = {
+				air_bombing = 0.05
+			}
+		}
+		constant_bombing = {
+			air_strategic_bomber_bombing_factor = 0.05
+		}
+        ensure_bomb_release = {
+			category_strat_bomber = {
+				air_bombing = 0.05
+			}
+		}
+		to_ashes_and_dust = {
+			air_strategic_bomber_bombing_factor = 0.05
+		}
+    }
+}
+
+air_subdoctrine_heavy_nighttime_raids = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_HEAVY_NIGHTTIME_RAIDS
+    description = SUBDOCTRINE_HEAVY_NIGHTTIME_RAIDS_DESC
+    icon = GFX_doctrine_night_bombing_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_heavy_nighttime_raids }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	strategic_bomb_visibility = -0.1
+	air_strategic_bomber_night_penalty = -0.2
+
+    rewards = {
+		radar_guidance = {
+			air_strategic_bomber_night_penalty = -0.05
+		}
+		nighttime_flying = {
+			air_night_penalty = -0.1
+		}
+		spotter_squadrons = {
+			air_strategic_bomber_night_penalty = -0.05
+		}
+        nighttime_formations = {
+			air_night_penalty = -0.1
+		}
+		nightly_destruction = {
+			air_strategic_bomber_night_penalty = -0.05
+		}
+    }
+}
+
+air_subdoctrine_heavy_long_range_bombing = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_HEAVY_LONG_RANGE_BOMBING
+    description = SUBDOCTRINE_HEAVY_LONG_RANGE_BOMBING_DESC
+    icon = GFX_doctrine_offensive_formations_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_heavy_long_range_bombing }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	strat_bomber = {
+		air_range = 0.15
+	}
+	strat_bomber_intercontinental = {
+		air_range = 0.15
+	}
+
+    rewards = {
+		cruising_speed = {
+			strat_bomber = {
+				air_range = 0.05
+			}
+			strat_bomber_intercontinental = {
+				air_range = 0.05
+			}
+		}
+		full_length_escort = {
+			category_fighter = {
+				air_range = 0.05
+			}
+		}
+		high_altitude_cruising = {
+			strat_bomber = {
+				air_range = 0.05
+			}
+			strat_bomber_intercontinental = {
+				air_range = 0.05
+			}
+		}
+        long_range_aircraft = {
+			category_fighter = {
+				air_range = 0.05
+			}
+		}
+		intercontinental_reach = {
+			strat_bomber = {
+				air_range = 0.05
+			}
+			strat_bomber_intercontinental = {
+				air_range = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_heavy_flying_fortresses = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_HEAVY_FLYING_FORTRESSES
+    description = SUBDOCTRINE_HEAVY_FLYING_FORTRESSES_DESC
+    icon = GFX_doctrine_flying_fortress_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_heavy_flying_fortresses }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_strat_bomber = {
+		air_defence = 0.15
+		air_attack = 0.05
+	}
+
+    rewards = {
+		box_formations = {
+			category_strat_bomber = {
+				air_defence = 0.05
+			}
+		}
+		interweaving_firing_arcs = {
+			category_strat_bomber = {
+				air_attack = 0.05
+			}
+		}
+		bomber_coordination = {
+			category_strat_bomber = {
+				air_defence = 0.05
+			}
+		}
+        long_range_defensive_fire = {
+			category_strat_bomber = {
+				air_attack = 0.05
+			}
+		}
+		unstoppable_bomber_force = {
+			category_strat_bomber = {
+				air_defence = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_heavy_limited_bombing_campaigns = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_HEAVY_LIMITED_BOMBING_CAMPAIGNS
+    description = SUBDOCTRINE_HEAVY_LIMITED_BOMBING_CAMPAIGNS_DESC
+    icon = GFX_doctrine_infiltration_bombing_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_heavy_limited_bombing_campaigns }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_strat_bomber = {
+		air_agility = 0.15
+	}
+	strategic_bomb_visibility = -0.1
+
+    rewards = {
+		undefended_targets = {
+			category_strat_bomber = {
+				air_agility = 0.05
+			}
+		}
+		unpredictable_courses = {
+			strategic_bomb_visibility = -0.05
+		}
+		regular_direction_change = {
+			category_strat_bomber = {
+				air_agility = 0.05
+			}
+		}
+        surprise_bombings = {
+			strategic_bomb_visibility = -0.05
+		}
+		plane_preservation = {
+			category_strat_bomber = {
+				air_agility = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_heavy_naval_aircraft = {
+    track = heavy_aircraft
+    name = SUBDOCTRINE_HEAVY_NAVAL_AIRCRAFT
+    description = SUBDOCTRINE_HEAVY_NAVAL_AIRCRAFT_DESC
+    icon = GFX_doctrine_force_rotation_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_heavy_naval_aircraft }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	maritime_patrol_plane = {
+		air_range = 0.1
+		surface_detection = 0.1
+		sub_detection = 0.1
+	}
+	large_naval_bomber = {
+		air_range = 0.1
+		naval_strike_attack = 0.1
+	}
+
+    rewards = {
+		long_range_patrols = {
+			maritime_patrol_plane = {
+				air_range = 0.05
+			}
+			large_naval_bomber = {
+				air_range = 0.05
+			}
+		}
+		overwhelming_payload = {
+			maritime_patrol_plane = {
+				naval_strike_attack = 0.05
+			}
+			large_naval_bomber = {
+				naval_strike_attack = 0.05
+			}
+		}
+		radar_direction_finding = {
+			maritime_patrol_plane = {
+				surface_detection = 0.1
+				sub_detection = 0.1
+			}
+			large_naval_bomber = {
+				surface_detection = 0.1
+				sub_detection = 0.1
+			}
+		}
+        oceanfaring_aircraft = {
+			maritime_patrol_plane = {
+				air_range = 0.05
+			}
+			large_naval_bomber = {
+				air_range = 0.05
+			}
+		}
+		route_interdiction = {
+			maritime_patrol_plane = {
+				naval_strike_attack = 0.05
+			}
+			large_naval_bomber = {
+				naval_strike_attack = 0.05
+			}
+		}
+    }
+	
+	mastery = {
+		multiplier = 50.0
+		equipment = {
+			maritime_patrol_plane
+			naval_bomber
+		}
+	}
+}

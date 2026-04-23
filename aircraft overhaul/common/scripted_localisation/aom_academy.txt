@@ -1,0 +1,166 @@
+defined_text = {
+	name = aom_academy_slot_1_icon
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_self
+		}
+		localization_key = "GFX_aom_academy_generic_1"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_ENG
+		}
+		localization_key = "GFX_aom_academy_ENG_1"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_FRA
+		}
+		localization_key = "GFX_aom_academy_FRA_1"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_GER
+		}
+		localization_key = "GFX_aom_academy_GER_1"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_ITA
+		}
+		localization_key = "GFX_aom_academy_ITA_1"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_JAP
+		}
+		localization_key = "GFX_aom_academy_JAP_1"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_SOV
+		}
+		localization_key = "GFX_aom_academy_SOV_1"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_USA
+		}
+		localization_key = "GFX_aom_academy_USA_1"
+	}
+	text = {
+		localization_key = "GFX_aom_academy_empty"
+	}
+}
+
+
+defined_text = {
+	name = aom_academy_slot_2_icon
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_self
+		}
+		localization_key = "GFX_aom_academy_generic_2"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_ENG
+		}
+		localization_key = "GFX_aom_academy_ENG_2"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_FRA
+		}
+		localization_key = "GFX_aom_academy_FRA_2"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_GER
+		}
+		localization_key = "GFX_aom_academy_GER_2"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_ITA
+		}
+		localization_key = "GFX_aom_academy_ITA_2"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_JAP
+		}
+		localization_key = "GFX_aom_academy_JAP_2"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_SOV
+		}
+		localization_key = "GFX_aom_academy_SOV_2"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_USA
+		}
+		localization_key = "GFX_aom_academy_USA_2"
+	}
+	text = {
+		localization_key = "GFX_aom_academy_empty"
+	}
+}
+
+
+defined_text = {
+	name = aom_academy_slot_3_icon
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_self
+		}
+		localization_key = "GFX_aom_academy_generic_3"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_ENG
+		}
+		localization_key = "GFX_aom_academy_ENG_3"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_FRA
+		}
+		localization_key = "GFX_aom_academy_FRA_3"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_GER
+		}
+		localization_key = "GFX_aom_academy_GER_3"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_ITA
+		}
+		localization_key = "GFX_aom_academy_ITA_3"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_JAP
+		}
+		localization_key = "GFX_aom_academy_JAP_3"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_SOV
+		}
+		localization_key = "GFX_aom_academy_SOV_3"
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_USA
+		}
+		localization_key = "GFX_aom_academy_USA_3"
+	}
+	text = {
+		localization_key = "GFX_aom_academy_empty"
+	}
+}

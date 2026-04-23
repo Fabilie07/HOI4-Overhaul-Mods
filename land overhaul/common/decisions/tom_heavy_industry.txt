@@ -1,0 +1,254 @@
+TOM_heavy_industry_decisions = {
+	tom_hi_repurpose_dockyard_cranes = {
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = ITA
+					tag = JAP
+					tag = USA
+				}
+				factor = 0
+			}
+		}
+		
+		icon = GFX_decision_generic_merge_plant_ship
+		
+		cost = 30
+		days_re_enable = 360
+		days_remove = 365
+		
+		modifier = {
+			industrial_capacity_dockyard = -0.2
+			industrial_capacity_factory = 0.1
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+				var = tom_hi_tank_current
+				value = 25
+				tooltip = tom_hi_tank_current_tt
+			}
+			
+			custom_override_tooltip = {
+				tom_hi_current_visual_update_effect = yes
+				tom_hi_check_monthly_change_update = yes
+				tom_hi_update_ideas_effect = yes
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+	}
+	
+	tom_hi_issue_design_contest = {
+		ai_will_do = {
+			factor = 10
+		}
+		
+		icon = GFX_decision_generic_merge_plant_tank
+		
+		cost = 30
+		days_re_enable = 180
+		days_remove = 180
+		
+		modifier = {
+			research_speed_factor = 0.1
+			military_industrial_organization_funds_gain = 0.1
+		}
+		
+		remove_effect = {
+			add_to_variable = {
+				var = tom_hi_industry_current
+				value = 25
+				tooltip = tom_hi_industry_current_tt
+			}
+			
+			custom_override_tooltip = {
+				tom_hi_current_visual_update_effect = yes
+				tom_hi_check_monthly_change_update = yes
+				tom_hi_update_ideas_effect = yes
+			}
+		}
+	}
+	
+	tom_hi_offer_investment_in_military_infrastructure = {
+		ai_will_do = {
+			factor = 2
+		}
+		
+		icon = GFX_decision_generic_construction
+		
+		cost = 15
+		days_re_enable = 180
+		days_remove = 180
+		
+		modifier = {
+			production_speed_infrastructure_factor = 0.2
+			production_speed_supply_node_factor = 0.15
+			production_speed_rail_way_factor = 0.15
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+				var = tom_hi_industry_current
+				value = 20
+				tooltip = tom_hi_industry_current_tt
+			}
+			
+			custom_override_tooltip = {
+				tom_hi_current_visual_update_effect = yes
+				tom_hi_check_monthly_change_update = yes
+				tom_hi_update_ideas_effect = yes
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+	}
+	
+	tom_hi_fire_corrupt_officials = {
+		ai_will_do = {
+			factor = 10
+		}
+		
+		icon = GFX_decision_SOV_place_hq
+		
+		cost = 30
+		days_re_enable = 180
+		days_remove = 180
+		
+		modifier = {
+			consumer_goods_factor = -0.2
+		}
+		
+		complete_effect = {
+			add_to_variable = {
+				var = tom_hi_industry_current
+				value = -25
+				tooltip = tom_hi_industry_current_tt
+			}
+			
+			custom_override_tooltip = {
+				tom_hi_current_visual_update_effect = yes
+				tom_hi_check_monthly_change_update = yes
+				tom_hi_update_ideas_effect = yes
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+	}
+	
+	tom_hi_push_for_standardized_practices = {
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 15
+			}
+		}
+		
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		cost = 15
+		days_re_enable = 270
+		days_remove = 90
+		
+		modifier = {
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.2
+		}
+		
+		remove_effect = {
+			add_to_variable = {
+				var = tom_hi_mp_current
+				value = 25
+				tooltip = tom_hi_mp_current_tt
+			}
+			add_to_variable = {
+				var = tom_hi_exp_current
+				value = -15
+				tooltip = tom_hi_exp_current_tt
+			}
+			
+			custom_override_tooltip = {
+				tom_hi_current_visual_update_effect = yes
+				tom_hi_check_monthly_change_update = yes
+				tom_hi_update_ideas_effect = yes
+			}
+		}
+	}
+	
+	tom_hi_tank_development_decision = {
+		icon = generic_tank
+
+		cost = 30
+		days_re_enable = 360
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = armor_modules
+				bonus = 1
+				uses = 3
+				category = armor_modules
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_to_variable = {
+				var = tom_hi_specialisation_current
+				value = 25
+				tooltip = tom_hi_specialisation_current_tt
+			}
+			
+			custom_override_tooltip = {
+				tom_hi_current_visual_update_effect = yes
+				tom_hi_check_monthly_change_update = yes
+				tom_hi_update_ideas_effect = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tom_hi_tank_advancement_decision = {
+		icon = generic_tank
+
+		cost = 30
+		days_re_enable = 360
+
+		complete_effect = {
+			add_tech_bonus = {
+				ahead_reduction = 1.5
+				uses = 1
+				category = armor
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.75
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_to_variable = {
+				var = tom_hi_exp_current
+				value = 25
+				tooltip = tom_hi_exp_current_tt
+			}
+			
+			custom_override_tooltip = {
+				tom_hi_current_visual_update_effect = yes
+				tom_hi_check_monthly_change_update = yes
+				tom_hi_update_ideas_effect = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

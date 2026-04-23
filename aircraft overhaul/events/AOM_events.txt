@@ -1,0 +1,170 @@
+add_namespace = AOM_event
+
+country_event = { #Joint Development Program
+	id = AOM_event.1
+	title = AOM_event.1.t
+	desc = AOM_event.1.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = AOM_event.1.a
+
+		air_experience = 10
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = air_equipment
+		}
+		add_design_template_bonus = {
+			name = air_equipment
+			uses = 1
+			cost_factor = 1
+			equipment = small_plane_airframe
+			equipment = medium_plane_airframe
+			equipment = large_plane_airframe
+		}
+	}
+}
+
+country_event = { #Joint Training Exercise
+	id = AOM_event.2
+	title = AOM_event.2.t
+	desc = AOM_event.2.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = AOM_event.2.a
+
+		air_experience = 25
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = air_doctrine
+		}
+	}
+}
+
+country_event = { #International Aircraft Development
+	id = AOM_event.3
+	title = AOM_event.3.t
+	desc = AOM_event.3.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = AOM_event.3.a
+
+		add_timed_idea = {
+			idea = AOM_international_development_idea
+			days = 365
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = plane_modules_tech
+		}
+		add_design_template_bonus = {
+			name = air_equipment
+			uses = 1
+			cost_factor = 1
+			equipment = small_plane_airframe
+			equipment = medium_plane_airframe
+			equipment = large_plane_airframe
+		}
+	}
+}
+
+country_event = { #FROM invites us to Joint Development Program
+	id = AOM_event.4
+	title = AOM_event.4.t
+	desc = AOM_event.4.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = AOM_event.4.a
+
+		add_political_power = -10
+		add_timed_idea = {
+			idea = AOM_international_development_idea
+			days = 365
+		}
+		add_tech_bonus = {
+			bonus = 1.5
+			uses = 1
+			category = plane_modules_tech
+		}
+		add_design_template_bonus = {
+			name = air_equipment
+			uses = 1
+			cost_factor = 1
+			equipment = small_plane_airframe
+			equipment = medium_plane_airframe
+			equipment = large_plane_airframe
+		}
+
+		FROM = { country_event = AOM_event.5 }
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				has_political_power < 15
+				factor = 0
+			}
+		}
+	}
+
+	option = {
+		name = AOM_event.4.b
+
+		add_political_power = 25
+
+		FROM = { country_event = AOM_event.6 }
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #FROM joins the Program
+	id = AOM_event.5
+	title = AOM_event.5.t
+	desc = AOM_event.5.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = AOM_event.5.a
+
+		add_political_power = 7
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = { #FROM refuses
+	id = AOM_event.6
+	title = AOM_event.6.t
+	desc = AOM_event.6.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	is_triggered_only = yes
+
+	option = {
+		name = AOM_event.6.a
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

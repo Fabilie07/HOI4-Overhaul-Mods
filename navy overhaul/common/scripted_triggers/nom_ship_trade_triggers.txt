@@ -1,0 +1,430 @@
+nom_can_build_foreign_ship = {
+	any_owned_state = {
+		NOT = { has_state_flag = nom_state_building_foreign_ship }
+		dockyard > 1
+	}
+	country_exists = THIS
+	has_capitulated = no
+
+	ROOT = {
+		OR = {
+			NOT = { has_variable = nom_trade_deal_partner }
+			check_variable = { nom_trade_deal_partner = PREV }
+		}
+		NOT = { is_embargoing = PREV }
+		NOT = { tag = PREV }
+	}
+	NOT = {
+		OR = {
+			has_war_with = ROOT
+			is_embargoing = ROOT
+			any_country = {
+				is_ally_with = ROOT
+				has_war_with = THIS
+			}
+		}
+	}
+}
+
+nom_can_build_capital_ship = {
+	any_owned_state = {
+		NOT = { has_state_flag = nom_state_building_foreign_capital_ship }
+		dockyard > 3
+	}
+}
+
+nom_ai_wants_cv = {
+	OR = {
+		AND = {
+			date < 1940.01.01
+			arms_factory > 39
+			check_variable = { nom_ai_capital_commission_counter < 1 }
+			has_navy_size = {
+				size < 1
+				archetype = ship_hull_carrier
+			}
+		}
+		AND = {
+			date < 1944.01.02
+			arms_factory > 59
+			check_variable = { nom_ai_capital_commission_counter < 2 }
+			has_navy_size = {
+				size < 2
+				archetype = ship_hull_carrier
+			}
+		}
+		AND = {
+			date > 1944.01.01
+			arms_factory > 79
+			check_variable = { nom_ai_capital_commission_counter < 3 }
+			has_navy_size = {
+				size < 3
+				archetype = ship_hull_carrier
+			}
+		}
+	}
+	NOT = { has_country_flag = nom_ai_recently_requested_ship }
+}
+
+nom_ai_wants_bb = {
+	OR = {
+		AND = {
+			date < 1940.01.01
+			check_variable = { nom_ai_capital_commission_counter < 2 }
+			has_navy_size = {
+				size < 2
+				archetype = ship_hull_heavy
+			}
+		}
+		AND = {
+			date < 1944.01.02
+			check_variable = { nom_ai_capital_commission_counter < 3 }
+			has_navy_size = {
+				size < 4
+				archetype = ship_hull_heavy
+			}
+		}
+		AND = {
+			date > 1944.01.01
+			check_variable = { nom_ai_capital_commission_counter < 4 }
+			has_navy_size = {
+				size < 6
+				archetype = ship_hull_heavy
+			}
+		}
+	}
+	NOT = { has_country_flag = nom_ai_recently_requested_ship }
+}
+
+nom_ai_wants_bc = {
+	OR = {
+		AND = {
+			date < 1940.01.01
+			check_variable = { nom_ai_capital_commission_counter < 2 }
+			has_navy_size = {
+				size < 2
+				archetype = ship_hull_heavy
+			}
+		}
+		AND = {
+			date < 1944.01.02
+			check_variable = { nom_ai_capital_commission_counter < 3 }
+			has_navy_size = {
+				size < 4
+				archetype = ship_hull_heavy
+			}
+		}
+		AND = {
+			date > 1944.01.01
+			check_variable = { nom_ai_capital_commission_counter < 4 }
+			has_navy_size = {
+				size < 6
+				archetype = ship_hull_heavy
+			}
+		}
+	}
+	NOT = { has_country_flag = nom_ai_recently_requested_ship }
+}
+
+nom_ai_wants_ca = {
+	OR = {
+		AND = {
+			date < 1940.01.01
+			check_variable = { nom_ai_capital_commission_counter < 3 }
+			has_navy_size = {
+				size < 4
+				type = capital_ship
+				archetype = ship_hull_cruiser
+			}
+		}
+		AND = {
+			date < 1944.01.02
+			check_variable = { nom_ai_capital_commission_counter < 4 }
+			has_navy_size = {
+				size < 6
+				type = capital_ship
+				archetype = ship_hull_cruiser
+			}
+		}
+		AND = {
+			date > 1944.01.01
+			check_variable = { nom_ai_capital_commission_counter < 5 }
+			has_navy_size = {
+				size < 8
+				type = capital_ship
+				archetype = ship_hull_cruiser
+			}
+		}
+	}
+	NOT = { has_country_flag = nom_ai_recently_requested_ship }
+}
+
+nom_ai_wants_cl = {
+	OR = {
+		AND = {
+			date < 1940.01.01
+			check_variable = { nom_ai_screen_commission_counter < 4 }
+			has_navy_size = {
+				size < 6
+				type = screen
+				archetype = ship_hull_cruiser
+			}
+		}
+		AND = {
+			date < 1944.01.02
+			check_variable = { nom_ai_screen_commission_counter < 5 }
+			has_navy_size = {
+				size < 9
+				type = screen
+				archetype = ship_hull_cruiser
+			}
+		}
+		AND = {
+			date > 1944.01.01
+			check_variable = { nom_ai_screen_commission_counter < 6 }
+			has_navy_size = {
+				size < 12
+				type = screen
+				archetype = ship_hull_cruiser
+			}
+		}
+	}
+	NOT = { has_country_flag = nom_ai_recently_requested_ship }
+}
+
+nom_ai_wants_dd = {
+	OR = {
+		AND = {
+			date < 1940.01.01
+			check_variable = { nom_ai_screen_commission_counter < 5 }
+			has_navy_size = {
+				size < 12
+				archetype = ship_hull_destroyer
+			}
+		}
+		AND = {
+			date < 1944.01.02
+			check_variable = { nom_ai_screen_commission_counter < 6 }
+			has_navy_size = {
+				size < 18
+				archetype = ship_hull_destroyer
+			}
+		}
+		AND = {
+			date > 1944.01.01
+			check_variable = { nom_ai_screen_commission_counter < 7 }
+			has_navy_size = {
+				size < 24
+				archetype = ship_hull_destroyer
+			}
+		}
+	}
+	NOT = { has_country_flag = nom_ai_recently_requested_ship }
+}
+
+nom_ai_wants_ss = {
+	OR = {
+		AND = {
+			date < 1940.01.01
+			check_variable = { nom_ai_screen_commission_counter < 6 }
+			has_navy_size = {
+				size < 8
+				archetype = ship_hull_submarine
+			}
+		}
+		AND = {
+			date < 1944.01.02
+			check_variable = { nom_ai_screen_commission_counter < 7 }
+			has_navy_size = {
+				size < 12
+				archetype = ship_hull_submarine
+			}
+		}
+		AND = {
+			date > 1944.01.01
+			check_variable = { nom_ai_screen_commission_counter < 8 }
+			has_navy_size = {
+				size < 16
+				archetype = ship_hull_submarine
+			}
+		}
+	}
+	NOT = { has_country_flag = nom_ai_recently_requested_ship }
+}
+
+ENG_cv_1_available_trigger = {
+	ENG = { nom_can_build_capital_ship = yes }
+}
+ENG_bb_1_available_trigger = {
+	ENG = { nom_can_build_capital_ship = yes }
+}
+ENG_bb_2_available_trigger = {
+	date > 1939.02.21
+	ENG = { nom_can_build_capital_ship = yes }
+}
+ENG_bb_3_available_trigger = {
+	date > 1943.03.01
+	ENG = { nom_can_build_capital_ship = yes }
+}
+ENG_bc_1_available_trigger = {
+	ENG = { nom_can_build_capital_ship = yes }
+}
+ENG_ca_1_available_trigger = {
+	ENG = { nom_can_build_capital_ship = yes }
+}
+ENG_ca_2_available_trigger = {
+	date > 1941.03.01
+	ENG = { nom_can_build_capital_ship = yes }
+}
+ENG_cl_1_available_trigger = {
+	date > 1936.01.23
+}
+ENG_cl_2_available_trigger = {
+	date > 1938.03.17
+}
+ENG_cl_3_available_trigger = {
+	date > 1939.05.31
+}
+ENG_dd_2_available_trigger = {
+	date > 1940.04.22
+}
+
+FRA_cv_1_available_trigger = {
+	FRA = { nom_can_build_capital_ship = yes }
+}
+FRA_bb_2_available_trigger = {
+	date > 1939.01.17
+	FRA = { nom_can_build_capital_ship = yes }
+}
+FRA_dd_2_available_trigger = {
+	date > 1937.06.09
+}
+
+GER_cv_1_available_trigger = {
+	date > 1938.12.08
+	GER = { nom_can_build_capital_ship = yes }
+}
+GER_bb_1_available_trigger = {
+	date > 1937.10.03
+	GER = { nom_can_build_capital_ship = yes }
+}
+GER_bb_2_available_trigger = {
+	date > 1939.02.14
+	GER = { nom_can_build_capital_ship = yes }
+}
+GER_ca_1_available_trigger = {
+	GER = { nom_can_build_capital_ship = yes }
+}
+GER_ca_2_available_trigger = {
+	date > 1937.02.06
+	GER = { nom_can_build_capital_ship = yes }
+}
+GER_ss_2_available_trigger = {
+	date > 1941.10.14
+}
+GER_ss_3_available_trigger = {
+	date > 1939.08.07
+}
+
+ITA_bb_1_available_trigger = {
+	ITA = { nom_can_build_capital_ship = yes }
+}
+ITA_bb_2_available_trigger = {
+	date > 1937.07.25
+	ITA = { nom_can_build_capital_ship = yes }
+}
+ITA_cl_3_available_trigger = {
+	date > 1939.04.03
+}
+ITA_ss_2_available_trigger = {
+	date > 1941.01.27
+}
+
+JAP_cv_2_available_trigger = {
+	date > 1937.11.21
+	JAP = { nom_can_build_capital_ship = yes }
+}
+JAP_cv_3_available_trigger = {
+	date > 1943.04.07
+	JAP = { nom_can_build_capital_ship = yes }
+}
+JAP_bb_1_available_trigger = {
+	JAP = { nom_can_build_capital_ship = yes }
+}
+JAP_bb_2_available_trigger = {
+	date > 1940.08.08
+	JAP = { nom_can_build_capital_ship = yes }
+}
+JAP_bb_3_available_trigger = {
+	date > 1945.01.01
+	JAP = { nom_can_build_capital_ship = yes }
+}
+JAP_bc_2_available_trigger = {
+	date > 1941.01.01
+	JAP = { nom_can_build_capital_ship = yes }
+}
+JAP_dd_2_available_trigger = {
+	date > 1938.06.28
+}
+JAP_ss_1_available_trigger = {
+	date > 1943.01.18
+}
+
+SOV_bb_1_available_trigger = {
+	SOV = { nom_can_build_capital_ship = yes }
+}
+SOV_bb_2_available_trigger = {
+	date > 1941.01.01
+	SOV = { nom_can_build_capital_ship = yes }
+}
+SOV_bc_1_available_trigger = {
+	date > 1942.01.01
+	SOV = { nom_can_build_capital_ship = yes }
+}
+SOV_ca_1_available_trigger = {
+	date > 1936.11.30
+	SOV = { nom_can_build_capital_ship = yes }
+}
+SOV_dd_2_available_trigger = {
+	date > 1938.10.02
+}
+SOV_dd_3_available_trigger = {
+	date > 1940.11.12
+}
+
+USA_cv_1_available_trigger = {
+	date > 1936.04.04
+	USA = { nom_can_build_capital_ship = yes }
+}
+USA_cv_2_available_trigger = {
+	date > 1943.11.06
+	USA = { nom_can_build_capital_ship = yes }
+}
+USA_cv_3_available_trigger = {
+	date > 1942.07.31
+	USA = { nom_can_build_capital_ship = yes }
+}
+USA_bb_1_available_trigger = {
+	USA = { nom_can_build_capital_ship = yes }
+}
+USA_bb_2_available_trigger = {
+	date > 1940.06.13
+	USA = { nom_can_build_capital_ship = yes }
+}
+USA_bb_3_available_trigger = {
+	date > 1942.08.27
+	USA = { nom_can_build_capital_ship = yes }
+}
+USA_ca_2_available_trigger = {
+	date > 1942.07.28
+	USA = { nom_can_build_capital_ship = yes }
+}
+USA_cl_1_available_trigger = {
+	date > 1936.11.07
+}
+USA_cl_2_available_trigger = {
+	date > 1941.07.26
+}
+USA_dd_2_available_trigger = {
+	date > 1942.05.03
+}

@@ -1,0 +1,274 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_great_war_fleet_doctrine_medium"
+		texturefile = "gfx/interface/doctrines/great_war_fleet_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_interwar_fleet_doctrine_medium"
+		texturefile = "gfx/interface/doctrines/interwar_fleet_doctrine.dds"
+	}	
+	SpriteType = {
+		name = "GFX_earlywar_fleet_doctrine_medium"
+		texturefile = "gfx/interface/doctrines/earlywar_fleet_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_midwar_fleet_doctrine_medium"
+		texturefile = "gfx/interface/doctrines/midwar_fleet_doctrine.dds"
+	}
+	SpriteType = {
+		name = "GFX_latewar_fleet_doctrine_medium"
+		texturefile = "gfx/interface/doctrines/latewar_fleet_doctrine.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_screening_formations_medium"
+		texturefile = "gfx/interface/doctrines/screening_formations.dds"
+	}
+	SpriteType = {
+		name = "GFX_supporting_role_medium"
+		texturefile = "gfx/interface/doctrines/supporting_role.dds"
+	}
+	SpriteType = {
+		name = "GFX_twin_hunter_medium"
+		texturefile = "gfx/interface/doctrines/twin_hunter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_convoy_dispersion_medium"
+		texturefile = "gfx/interface/doctrines/convoy_dispersion.dds"
+	}
+	SpriteType = {
+		name = "GFX_oil_tankers_medium"
+		texturefile = "gfx/interface/doctrines/oil_tankers.dds"
+	}
+	SpriteType = {
+		name = "GFX_dedicated_supply_ships_medium"
+		texturefile = "gfx/interface/doctrines/dedicated_supply_ships.dds"
+	}
+	SpriteType = {
+		name = "GFX_fleet_convoys_medium"
+		texturefile = "gfx/interface/doctrines/fleet_convoys.dds"
+	}
+	SpriteType = {
+		name = "GFX_army_transport_vessels_medium"
+		texturefile = "gfx/interface/doctrines/army_transport_vessels.dds"
+	}
+	SpriteType = {
+		name = "GFX_amphibious_landing_craft_medium"
+		texturefile = "gfx/interface/doctrines/amphibious_landing_craft.dds"
+	}
+	SpriteType = {
+		name = "GFX_mass_landings_medium"
+		texturefile = "gfx/interface/doctrines/mass_landings.dds"
+	}
+	SpriteType = {
+		name = "GFX_staggered_operations_medium"
+		texturefile = "gfx/interface/doctrines/staggered_operations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_defended_convoys_medium"
+		texturefile = "gfx/interface/doctrines/defended_convoys.dds"
+	}
+	SpriteType = {
+		name = "GFX_response_forces_medium"
+		texturefile = "gfx/interface/doctrines/response_forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_the_threat_below_medium"
+		texturefile = "gfx/interface/doctrines/the_threat_below.dds"
+	}
+	SpriteType = {
+		name = "GFX_relentless_pursuit_medium"
+		texturefile = "gfx/interface/doctrines/relentless_pursuit.dds"
+	}
+	SpriteType = {
+		name = "GFX_flood_the_ocean_medium"
+		texturefile = "gfx/interface/doctrines/flood_the_ocean.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_trade_blockade_medium"
+		texturefile = "gfx/interface/doctrines/trade_blockade.dds"
+	}
+	SpriteType = {
+		name = "GFX_search_and_destroy_medium"
+		texturefile = "gfx/interface/doctrines/search_and_destroy.dds"
+	}
+	SpriteType = {
+		name = "GFX_hit_and_run_fleet_medium"
+		texturefile = "gfx/interface/doctrines/hit_and_run_fleet.dds"
+	}
+	SpriteType = {
+		name = "GFX_capital_ship_raiding_medium"
+		texturefile = "gfx/interface/doctrines/capital_ship_raiding.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_ship_bait_medium"
+		texturefile = "gfx/interface/doctrines/heavy_ship_bait.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_regular_exercises_medium"
+		texturefile = "gfx/interface/doctrines/regular_exercises.dds"
+	}
+	SpriteType = {
+		name = "GFX_fleet_training_plan_medium"
+		texturefile = "gfx/interface/doctrines/fleet_training_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_maneuver_training_medium"
+		texturefile = "gfx/interface/doctrines/maneuver_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_merit_based_career_ladder_medium"
+		texturefile = "gfx/interface/doctrines/merit_based_career_ladder.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_gunnery_exercises_medium"
+		texturefile = "gfx/interface/doctrines/gunnery_exercises.dds"
+	}
+	SpriteType = {
+		name = "GFX_moving_target_practice_medium"
+		texturefile = "gfx/interface/doctrines/moving_target_practice.dds"
+	}
+	SpriteType = {
+		name = "GFX_drone_targeting_medium"
+		texturefile = "gfx/interface/doctrines/drone_targeting.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_damage_control_teams_medium"
+		texturefile = "gfx/interface/doctrines/damage_control_teams.dds"
+	}
+	SpriteType = {
+		name = "GFX_indiscriminate_damage_control_training_medium"
+		texturefile = "gfx/interface/doctrines/indiscriminate_damage_control_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_fight_till_the_end_medium"
+		texturefile = "gfx/interface/doctrines/fight_till_the_end.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_naval_aviation_medium"
+		texturefile = "gfx/interface/doctrines/naval_aviation.dds"
+	}
+	SpriteType = {
+		name = "GFX_land_based_nav_bombers_medium"
+		texturefile = "gfx/interface/doctrines/land_based_naval_bombers.dds"
+	}
+	SpriteType = {
+		name = "GFX_naval_air_branch_medium"
+		texturefile = "gfx/interface/doctrines/naval_air_branch.dds"
+	}
+	SpriteType = {
+		name = "GFX_preemptive_strike_medium"
+		texturefile = "gfx/interface/doctrines/preemptive_strike.dds"
+	}
+	SpriteType = {
+		name = "GFX_precise_strikes_medium"
+		texturefile = "gfx/interface/doctrines/precise_strikes.dds"
+	}
+	SpriteType = {
+		name = "GFX_repair_disruption_medium"
+		texturefile = "gfx/interface/doctrines/repair_disruption.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_carrier_arm_medium"
+		texturefile = "gfx/interface/doctrines/carrier_arm.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_fighters_medium"
+		texturefile = "gfx/interface/doctrines/carrier_fighters.dds"
+	}
+	SpriteType = {
+		name = "GFX_flattop_defender_medium"
+		texturefile = "gfx/interface/doctrines/flattop_defenders.dds"
+	}
+	SpriteType = {
+		name = "GFX_thatch_weave_medium"
+		texturefile = "gfx/interface/doctrines/thach_weave.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_interception_medium"
+		texturefile = "gfx/interface/doctrines/early_interception.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_bombers_medium"
+		texturefile = "gfx/interface/doctrines/carrier_bombers.dds"
+	}
+	SpriteType = {
+		name = "GFX_ap_bomb_usage_medium"
+		texturefile = "gfx/interface/doctrines/ap_bomb_usage.dds"
+	}
+	SpriteType = {
+		name = "GFX_dive_bomb_training_medium"
+		texturefile = "gfx/interface/doctrines/dive_bomb_training.dds"
+	}
+	SpriteType = {
+		name = "GFX_defensive_flying_medium"
+		texturefile = "gfx/interface/doctrines/defensive_flying.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_torpedo_bombers_medium"
+		texturefile = "gfx/interface/doctrines/carrier_torpedo_bombers.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_arm_medium"
+		texturefile = "gfx/interface/doctrines/carrier_arm.dds"
+	}
+	SpriteType = {
+		name = "GFX_late_release_medium"
+		texturefile = "gfx/interface/doctrines/late_release.dds"
+	}
+	SpriteType = {
+		name = "GFX_wave_skimming_medium"
+		texturefile = "gfx/interface/doctrines/wave_skimming.dds"
+	}
+	SpriteType = {
+		name = "GFX_group_concentration_medium"
+		texturefile = "gfx/interface/doctrines/group_concentration.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_night_attacks_medium"
+		texturefile = "gfx/interface/doctrines/night_attacks.dds"
+	}
+	SpriteType = {
+		name = "GFX_night_spotting_medium"
+		texturefile = "gfx/interface/doctrines/night_spotting.dds"
+	}
+	SpriteType = {
+		name = "GFX_target_identification_medium"
+		texturefile = "gfx/interface/doctrines/target_identification.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_dockyard_expansion_medium"
+		texturefile = "gfx/interface/doctrines/dockyard_expansion.dds"
+	}
+	SpriteType = {
+		name = "GFX_drydocks_medium"
+		texturefile = "gfx/interface/doctrines/drydocks.dds"
+	}
+	SpriteType = {
+		name = "GFX_quality_control_medium"
+		texturefile = "gfx/interface/doctrines/quality_control.dds"
+	}
+	SpriteType = {
+		name = "GFX_high_quality_steel_medium"
+		texturefile = "gfx/interface/doctrines/high_quality_steel.dds"
+	}
+	SpriteType = {
+		name = "GFX_mass_ship_production_medium"
+		texturefile = "gfx/interface/doctrines/mass_ship_production.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_cranes_medium"
+		texturefile = "gfx/interface/doctrines/heavy_cranes.dds"
+	}
+}

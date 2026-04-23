@@ -1,0 +1,36 @@
+﻿l_english:
+
+ sp_land_two_plane_stabilizer:0 "Two-Plane Stabilizer"
+ sp_land_two_plane_stabilizer_desc:0 "Compensating for the tank turning means adding complex mechanisation to the turret drive, but it greatly improves the tank's ability to fire on the move."
+ sp_land_night_vision:0 "Vehicle-Mounted Night Vision Equipment"
+ sp_land_night_vision_desc:0 "Using infrared light and cameras, tanks can be fitted with spotlights invisble to the enemy."
+ sp_land_rocket_mortars:0 "Rocket Mortars"
+ sp_land_rocket_mortars_desc:0 "Rocket-propelled projectiles are slow and have little range, but they can carry devastating amounts of explosives. They are excellent at destroying fortifications and the like."
+ sp_land_amphibious_tank:0 "Amphibious Tank"
+ sp_land_amphibious_tank_desc:0 "Armored Vehicles that can either float or drive underwater. They can provide immediate armored support during landings or cross rivers without bridges."
+ sp_land_main_battle_tank:0 "Main Battle Tank"
+ sp_land_main_battle_tank_desc:0 "A tank that performs the roles of both medium and heavy tanks. Modern armor and engine technology allow the creation of an all-rounder tank."
+ 
+ # Chassis
+ sp_land_reward_mbt_chassis:0 "Welding Faults"
+ sp_land_reward_mbt_chassis_desc:0 "During testing, some of the welding on the prototype's chassis came undone. Our designers suspect that the current chassis can not handle its own weight."
+ sp_land_reward_option_mbt_chassis_redesign:0 "Design a new Chassis"
+ sp_land_reward_option_mbt_chassis_strengthen:0 "Strengthen the Structure"
+ sp_land_reward_option_mbt_chassis_ignore:0 "Ignore it"
+ # Turret Ring
+ sp_land_reward_mbt_turret_ring:0 "Turret Ring Cracks"
+ sp_land_reward_mbt_turret_ring_desc:0 "The prototype's turret ring has formed cracks. The cause for this is the weight of the turret, as well as its unbalanced weight ditribution."
+ sp_land_reward_option_mbt_turret_ring_redesign:0 "Widen the Ring"
+ sp_land_reward_option_mbt_turret_ring_reinforce:0 "Strengthen the Ring"
+ sp_land_reward_option_mbt_turret_ring_ignore:0 "It will be destroyed before this becomes an issue"
+ # Engine
+ sp_land_reward_mbt_engine:0 "Underpowered Engine"
+ sp_land_reward_mbt_engine_desc:0 "Some of our designers are worried that the prototype is underpowered. This could lead to problems, especially in difficult terrain."
+ sp_land_reward_option_mbt_engine_redesign:0 "Make room for a bigger Engine"
+ sp_land_reward_option_mbt_engine_tuning:0 "Increase the torque"
+ sp_land_reward_option_mbt_engine_ignore:0 "As long as it moves..."
+ # Armor
+ sp_land_reward_mbt_armor:0 "Weak Protection"
+ sp_land_reward_mbt_armor_desc:0 "The armor protection of the prototype is not deemed adequate. Other countries possess weapons that may be capable of piercing it easily."
+ sp_land_reward_option_mbt_armor_increase:0 "Increase the Thickness"
+ sp_land_reward_option_mbt_armor_ignore:0 "The days of Heavy Tanks are over"

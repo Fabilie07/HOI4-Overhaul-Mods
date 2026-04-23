@@ -1,0 +1,56 @@
+scripted_gui = {
+	nom_handbook = {
+		context_type = player_context
+		window_name = "nom_handbook_container"
+
+		visible = {
+			has_country_flag = nom_handbook_open
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = nom_handbook_open
+			}
+
+			prev_button_click = {
+				if = {
+					limit = {
+						check_variable = { nom_handbook_page > 1 }
+					}
+					subtract_from_variable = { nom_handbook_page = 1 }
+				}
+			}
+			prev_button_shift_click = {
+				set_variable = { nom_handbook_page = 1 }
+			}
+			next_button_click = {
+				if = {
+					limit = {
+						check_variable = { nom_handbook_page < 7 }
+					}
+					add_to_variable = { nom_handbook_page = 1 }
+				}
+			}
+			next_button_shift_click = {
+				set_variable = { nom_handbook_page = 7 }
+			}
+		}
+	}
+
+	nom_handbook_open_clicker = {
+		context_type = player_context
+		window_name = "nom_handbook_open"
+		parent_window_token = top_bar
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			open_button_click = {
+				set_country_flag = nom_handbook_open
+				set_variable = { nom_handbook_page = 1 }
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+sp_air_napalm_bombs = {
+	specialization = specialization_air 	
+	icon = GFX_sp_air_napalm_bombs
+
+	project_tags = {
+		sp_tag_aircraft
+		sp_tag_bomb
+	}
+
+	allowed = {
+		has_dlc = "Gotterdammerung"		
+	}
+
+	available = { 
+		if = {
+			limit = { has_dlc = "By Blood Alone" }
+			FROM = {
+				has_tech = early_bombs
+			}
+		}
+		else = {
+			FROM = {
+				has_tech = strategic_bomber2
+			}
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_air = 1
+	}
+	
+	resource_cost = {
+		resources = {
+			rubber = 4
+			aluminium = 4
+		}
+	}
+	
+	prototype_time = sp_time.prototype.medium
+
+	complexity = sp_complexity.medium
+
+	project_output = {
+		enable_equipment_modules = {
+			limit = { has_dlc = "By Blood Alone" }
+			napalm_bombs
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_air_political_interference_generic_reward
+		sp_air_generic_aerodynamics_advancements_reward
+		sp_air_generic_reward_scientist_xp_1
+		sp_air_generic_reward_scientist_xp_2
+		sp_air_generic_reward_scientist_xp_3
+		sp_air_generic_reward_air_xp_1
+		sp_air_generic_reward_air_xp_2
+		sp_air_generic_reward_air_xp_3
+		sp_air_generic_reward_major_progress_1
+		sp_air_generic_reward_major_progress_2
+		sp_air_generic_reward_major_progress_3
+		sp_air_generic_reward_test_failure_1
+		sp_air_generic_reward_test_failure_2
+		sp_air_generic_reward_test_failure_3		
+	}
+}

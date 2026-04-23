@@ -1,0 +1,333 @@
+tom_startup_rare_metals_historical = {
+	# Argentinia
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 958
+	}
+	
+	# Belgian Congo
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 889
+	}
+	
+	# British Malaya
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 336
+	}
+
+	# Brazil
+	add_resource = {
+		type = rare_metals
+		amount = 24
+		state = 496
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 32
+		state = 499
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 500
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 943
+	}
+	
+	# Dutch East Indies
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 335
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 672
+	}
+	
+	# France
+	add_resource = {
+		type = rare_metals
+		amount = 16
+		state = 543
+	}
+	
+	# India
+	add_resource = {
+		type = rare_metals
+		amount = 72
+		state = 423
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 32
+		state = 982
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 426
+	}
+	
+	# South Africa
+	add_resource = {
+		type = rare_metals
+		amount = 48
+		state = 681
+	}
+	
+	# Sweden
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 919
+	}
+	
+	# UK
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 902
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 4
+		state = 447
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 4
+		state = 907
+	}
+	
+	# USA
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 363
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 364
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 366
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 387
+	}
+}
+
+tom_startup_rare_metals_additional = {
+	# China
+	add_resource = {
+		type = rare_metals
+		amount = 16
+		state = 595
+	}
+	
+	# Czechoslovakia
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 9
+	}
+	
+	# Denmark
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 99
+	}
+	
+	# Ethiopia
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 835
+	}
+	
+	# Germany
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 51
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 56
+	}
+	
+	# Greece
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 47
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 185
+	}
+	
+	# Hungary
+	add_resource = {
+		type = rare_metals
+		amount = 16
+		state = 43
+	}
+	
+	# Iran
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 266
+	}
+	
+	# Latvia
+	add_resource = {
+		type = rare_metals
+		amount = 16
+		state = 809
+	}
+	
+	# Manchukuo
+	add_resource = {
+		type = rare_metals
+		amount = 16
+		state = 716
+	}
+	
+	# Soviets
+	add_resource = {
+		type = rare_metals
+		amount = 24
+		state = 573
+	}
+	
+	# Sweden
+	add_resource = {
+		type = rare_metals
+		amount = 8
+		state = 916
+	}
+	
+	# Portugal
+	add_resource = {
+		type = rare_metals
+		amount = 24
+		state = 112
+	}
+	add_resource = {
+		type = rare_metals
+		amount = 12
+		state = 180
+	}
+}
+
+tom_startup_rare_metals_random = {
+	random_country = {
+		random_owned_controlled_state = {
+			add_resource = {
+				type = rare_metals
+				amount = 72
+			}
+		}
+	}
+	
+	random_country = {
+		random_owned_controlled_state = {
+			add_resource = {
+				type = rare_metals
+				amount = 48
+			}
+		}
+	}
+	
+	for_loop_effect = {
+		end = 2
+		random_country = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rare_metals
+					amount = 32
+				}
+			}
+		}
+	}
+	
+	for_loop_effect = {
+		end = 3
+		random_country = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rare_metals
+					amount = 24
+				}
+			}
+		}
+	}
+	
+	for_loop_effect = {
+		end = 5
+		random_country = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rare_metals
+					amount = 16
+				}
+			}
+		}
+	}
+	
+	for_loop_effect = {
+		end = 10
+		random_country = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rare_metals
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	for_loop_effect = {
+		end = 14
+		random_country = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rare_metals
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	for_loop_effect = {
+		end = 4
+		random_country = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = rare_metals
+					amount = 4
+				}
+			}
+		}
+	}
+}

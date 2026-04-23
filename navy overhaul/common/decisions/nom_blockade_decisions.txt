@@ -1,0 +1,1128 @@
+@blockade_cost = 25
+
+nom_blockade_decisions = {
+	nom_blockade_GER = {
+		available = {
+			nom_blockade_GER_trigger = yes
+		}
+		visible = {
+			GER = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_GER_flag
+			GER = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_ITA = {
+		available = {
+			nom_blockade_ITA_trigger = yes
+		}
+		visible = {
+			ITA = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_ITA_flag
+			ITA = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_ENG = {
+		available = {
+			nom_blockade_ENG_trigger = yes
+		}
+		visible = {
+			ENG = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_ENG_flag
+			ENG = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_FRA = {
+		available = {
+			nom_blockade_FRA_trigger = yes
+		}
+		visible = {
+			FRA = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_FRA_flag
+			FRA = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_USA = {
+		available = {
+			nom_blockade_USA_trigger = yes
+		}
+		visible = {
+			USA = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_USA_flag
+			USA = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_JAP = {
+		available = {
+			nom_blockade_JAP_trigger = yes
+		}
+		visible = {
+			JAP = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_JAP_flag
+			JAP = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_SOV = {
+		available = {
+			nom_blockade_SOV_trigger = yes
+		}
+		visible = {
+			SOV = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_SOV_flag
+			SOV = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_CHI = {
+		available = {
+			nom_blockade_CHI_trigger = yes
+		}
+		visible = {
+			not = {
+				tag = CHI
+				tag = PRC
+				WTT_is_chinese_warlord = yes
+			}
+			
+			any_country = {
+				or = {
+					tag = CHI
+					tag = PRC
+					WTT_is_chinese_warlord = yes
+				}
+				has_war_with = ROOT
+				nom_is_blockaded = no
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_CHI_flag
+			every_country = {
+				limit = {
+					or = {
+						tag = CHI
+						tag = PRC
+						WTT_is_chinese_warlord = yes
+					}
+					has_war_with = ROOT
+					nom_is_blockaded = no
+				}
+				nom_blockade_effect = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_BEN = {
+		available = {
+			nom_blockade_BEN_trigger = yes
+		}
+		target_root_trigger = {
+			# has_war_with = FROM
+		}
+		targets = { HOL BEL LUX }
+		targets_dynamic = yes
+		visible = {
+			FROM = {
+				nom_is_blockaded = no
+				# nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			FROM = {
+				nom_blockade_effect = yes
+				set_variable = { nom_blockaded_by = ROOT }
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_FIN = {
+		available = {
+			nom_blockade_FIN_trigger = yes
+		}
+		visible = {
+			FIN = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_FIN_flag
+			FIN = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_SWE = {
+		available = {
+			nom_blockade_SWE_trigger = yes
+		}
+		visible = {
+			SWE = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_SWE_flag
+			SWE = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_DEN = {
+		available = {
+			nom_blockade_DEN_trigger = yes
+		}
+		visible = {
+			DEN = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_DEN_flag
+			DEN = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_NOR = {
+		available = {
+			nom_blockade_NOR_trigger = yes
+		}
+		visible = {
+			NOR = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_NOR_flag
+			NOR = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_SPR = {
+		available = {
+			nom_blockade_SPR_trigger = yes
+		}
+		visible = {
+			not = {
+				has_global_flag = spanish_civil_war
+			}
+			any_country = {
+				original_tag = SPR
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_SPR_flag
+			random_country = {
+				limit = {
+					original_tag = SPR
+					nom_is_blockaded = no
+					nom_blockade_decision_visible = yes
+				}
+				nom_blockade_effect = yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_POR = {
+		available = {
+			nom_blockade_POR_trigger = yes
+		}
+		visible = {
+			POR = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_POR_flag
+			POR = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_TUR = {
+		available = {
+			nom_blockade_TUR_trigger = yes
+		}
+		visible = {
+			TUR = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_TUR_flag
+			TUR = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_blockade_GRE = {
+		available = {
+			nom_blockade_GRE_trigger = yes
+		}
+		visible = {
+			GRE = {
+				nom_is_blockaded = no
+				nom_blockade_decision_visible = yes
+			}
+		}
+
+		cost = @blockade_cost
+
+		complete_effect = {
+			set_country_flag = tag_blockading_GRE_flag
+			GRE = { nom_blockade_effect = yes }
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	nom_break_through_blockade_GER = {
+		visible = {
+			original_tag = GER
+			any_country = {
+				has_country_flag = tag_blockading_GER_flag
+				nom_blockade_GER_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_GER_flag
+					}
+					clr_country_flag = tag_blockading_GER_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_ITA = {
+		visible = {
+			original_tag = ITA
+			any_country = {
+				has_country_flag = tag_blockading_ITA_flag
+				nom_blockade_ITA_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_ITA_flag
+					}
+					clr_country_flag = tag_blockading_ITA_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_ENG = {
+		visible = {
+			original_tag = ENG
+			any_country = {
+				has_country_flag = tag_blockading_ENG_flag
+				nom_blockade_ENG_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_ENG_flag
+					}
+					clr_country_flag = tag_blockading_ENG_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_FRA = {
+		visible = {
+			original_tag = FRA
+			any_country = {
+				has_country_flag = tag_blockading_FRA_flag
+				nom_blockade_FRA_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_FRA_flag
+					}
+					clr_country_flag = tag_blockading_FRA_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_USA = {
+		visible = {
+			original_tag = USA
+			any_country = {
+				has_country_flag = tag_blockading_USA_flag
+				nom_blockade_USA_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_USA_flag
+					}
+					clr_country_flag = tag_blockading_USA_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_JAP = {
+		visible = {
+			original_tag = JAP
+			any_country = {
+				has_country_flag = tag_blockading_JAP_flag
+				nom_blockade_JAP_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_JAP_flag
+					}
+					clr_country_flag = tag_blockading_JAP_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_SOV = {
+		visible = {
+			original_tag = SOV
+			any_country = {
+				has_country_flag = tag_blockading_SOV_flag
+				nom_blockade_SOV_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_SOV_flag
+					}
+					clr_country_flag = tag_blockading_SOV_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_CHI = {
+		visible = {
+			or = {
+				tag = CHI
+				tag = PRC
+				WTT_is_chinese_warlord = yes
+			}
+			nom_is_blockaded = yes
+		}
+		
+		available = {
+			any_country = {
+				has_country_flag = tag_blockading_CHI_flag
+				nom_blockade_CHI_trigger = no
+			}
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_CHI_flag
+					}
+					clr_country_flag = tag_blockading_CHI_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_BEN = {
+		allowed = {
+			OR = {
+				original_tag = HOL
+				original_tag = BEL
+				original_tag = LUX
+			}
+		}
+		visible = {
+			var:nom_blockaded_by = {
+				nom_blockade_BEN_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			clear_variable = nom_blockaded_by 
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_FIN = {
+		visible = {
+			original_tag = FIN
+			any_country = {
+				has_country_flag = tag_blockading_FIN_flag
+				nom_blockade_FIN_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_FIN_flag
+					}
+					clr_country_flag = tag_blockading_FIN_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_SWE = {
+		visible = {
+			original_tag = SWE
+			any_country = {
+				has_country_flag = tag_blockading_SWE_flag
+				nom_blockade_SWE_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_SWE_flag
+					}
+					clr_country_flag = tag_blockading_SWE_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_DEN = {
+		visible = {
+			original_tag = DEN
+			any_country = {
+				has_country_flag = tag_blockading_DEN_flag
+				nom_blockade_DEN_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_DEN_flag
+					}
+					clr_country_flag = tag_blockading_DEN_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_NOR = {
+		visible = {
+			original_tag = NOR
+			any_country = {
+				has_country_flag = tag_blockading_NOR_flag
+				nom_blockade_NOR_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_NOR_flag
+					}
+					clr_country_flag = tag_blockading_NOR_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_SPR = {
+		visible = {
+			original_tag = SPR
+			any_country = {
+				has_country_flag = tag_blockading_SPR_flag
+				nom_blockade_GER_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_SPR_flag
+					}
+					clr_country_flag = tag_blockading_SPR_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_POR = {
+		visible = {
+			original_tag = POR
+			any_country = {
+				has_country_flag = tag_blockading_POR_flag
+				nom_blockade_GER_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_POR_flag
+					}
+					clr_country_flag = tag_blockading_POR_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_TUR = {
+		visible = {
+			original_tag = TUR
+			any_country = {
+				has_country_flag = tag_blockading_TUR_flag
+				nom_blockade_GER_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_TUR_flag
+					}
+					clr_country_flag = tag_blockading_TUR_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_break_through_blockade_GRE = {
+		visible = {
+			original_tag = GRE
+			any_country = {
+				has_country_flag = tag_blockading_GRE_flag
+				nom_blockade_GRE_trigger = no
+			}
+			nom_is_blockaded = yes
+		}
+
+		complete_effect = {
+			nom_blockade_stop_effect = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = tag_blockading_GRE_flag
+					}
+					clr_country_flag = tag_blockading_GRE_flag
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	nom_smuggle_goods = {
+		icon = GFX_decision_generic_consumer_goods
+		visible = {
+			has_navy_size = {
+				size > 0
+				type = submarine
+			}
+			nom_is_blockaded = yes
+		}
+		available = {
+			has_navy_size = {
+				size > 2
+				type = submarine
+			}
+		}
+
+		days_remove = 30
+		cost = 5
+		
+		modifier = {
+			consumer_goods_factor = -0.1
+			production_speed_buildings_factor = 0.05
+
+			war_support_weekly = 0.005
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	nom_smuggle_iron = {
+		icon = GFX_decision_steel
+		visible = {
+			has_navy_size = {
+				size > 0
+				type = submarine
+			}
+		}
+		available = {
+			has_navy_size = {
+				size > 4
+				type = submarine
+			}
+		}
+
+		days_remove = 30
+		cost = 5
+		
+		modifier = { civilian_factory_use = 2 }
+		
+		complete_effect = {
+			random_core_state = {
+				limit = { is_coastal = yes }
+				set_state_flag = iron_smuggle_flag
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+		
+		remove_effect = {
+			random_core_state = {
+				limit = { has_state_flag = iron_smuggle_flag }
+				clr_state_flag = iron_smuggle_flag
+				add_resource = {
+					type = steel
+					amount = -16
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nom_smuggle_bauxite = {
+		icon = GFX_decision_aluminium
+		visible = {
+			has_navy_size = {
+				size > 0
+				type = submarine
+			}
+		}
+		available = {
+			has_navy_size = {
+				size > 4
+				type = submarine
+			}
+		}
+
+		days_remove = 30
+		cost = 5
+		
+		modifier = { civilian_factory_use = 2 }
+		
+		complete_effect = {
+			random_core_state = {
+				limit = { is_coastal = yes }
+				set_state_flag = bauxite_smuggle_flag
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+		
+		remove_effect = {
+			random_core_state = {
+				limit = { has_state_flag = bauxite_smuggle_flag }
+				clr_state_flag = bauxite_smuggle_flag
+				add_resource = {
+					type = aluminium
+					amount = -8
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nom_smuggle_tungsten = {
+		icon = GFX_decision_tungsten
+		visible = {
+			has_navy_size = {
+				size > 0
+				type = submarine
+			}
+		}
+		available = {
+			has_navy_size = {
+				size > 4
+				type = submarine
+			}
+		}
+
+		days_remove = 30
+		cost = 5
+		
+		modifier = { civilian_factory_use = 2 }
+		
+		complete_effect = {
+			random_core_state = {
+				limit = { is_coastal = yes }
+				set_state_flag = tungsten_smuggle_flag
+				add_resource = {
+					type = tungsten
+					amount = 8
+				}
+			}
+		}
+		
+		remove_effect = {
+			random_core_state = {
+				limit = { has_state_flag = tungsten_smuggle_flag }
+				clr_state_flag = tungsten_smuggle_flag
+				add_resource = {
+					type = tungsten
+					amount = -8
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nom_smuggle_chromium = {
+		icon = GFX_decision_chromium
+		visible = {
+			has_navy_size = {
+				size > 0
+				type = submarine
+			}
+		}
+		available = {
+			has_navy_size = {
+				size > 4
+				type = submarine
+			}
+		}
+
+		days_remove = 30
+		cost = 5
+		
+		modifier = { civilian_factory_use = 2 }
+		
+		complete_effect = {
+			random_core_state = {
+				limit = { is_coastal = yes }
+				set_state_flag = chromium_smuggle_flag
+				add_resource = {
+					type = chromium
+					amount = 8
+				}
+			}
+		}
+		
+		remove_effect = {
+			random_core_state = {
+				limit = { has_state_flag = chromium_smuggle_flag }
+				clr_state_flag = chromium_smuggle_flag
+				add_resource = {
+					type = chromium
+					amount = -8
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nom_smuggle_rubber = {
+		icon = GFX_decision_rubber
+		visible = {
+			has_navy_size = {
+				size > 0
+				type = submarine
+			}
+		}
+		available = {
+			has_navy_size = {
+				size > 4
+				type = submarine
+			}
+		}
+
+		days_remove = 30
+		cost = 10
+		
+		modifier = { civilian_factory_use = 3 }
+		
+		complete_effect = {
+			random_core_state = {
+				limit = { is_coastal = yes }
+				set_state_flag = rubber_smuggle_flag
+				add_resource = {
+					type = rubber
+					amount = 8
+				}
+			}
+		}
+		
+		remove_effect = {
+			random_core_state = {
+				limit = { has_state_flag = rubber_smuggle_flag }
+				clr_state_flag = rubber_smuggle_flag
+				add_resource = {
+					type = rubber
+					amount = -8
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

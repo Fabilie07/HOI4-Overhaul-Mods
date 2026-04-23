@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	nom_trade_deal_signed_modifier = {
+		value = 20
+	}
+}

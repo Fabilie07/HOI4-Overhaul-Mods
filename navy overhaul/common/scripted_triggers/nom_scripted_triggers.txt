@@ -1,0 +1,585 @@
+nom_blockade_decision_visible = {
+	ROOT = {
+		has_war_with = PREV
+		naval_strength_comparison = {
+			other = PREV
+			ratio > 1
+			sub_units_def_weight = {
+				carrier = 10
+				battleship = 20
+				battle_cruiser = 15
+				heavy_cruiser = 10
+				light_cruiser = 5
+				destroyer = 2
+				submarine = 2
+			}
+		}
+	}
+	
+	any_controlled_state = {
+		is_coastal = yes
+	}
+}
+
+nom_is_blockaded = {
+	OR = {
+		has_idea = nom_blockade_1_idea
+		has_idea = nom_blockade_2_idea
+	}
+}
+
+nom_blockade_GER_trigger = {
+
+	# Eastern North Sea
+	has_naval_control = 173
+
+
+	OR = {				# NORTHERN FRANCE / BENELUX
+		NOT = { 
+			GER = {
+				OR = {
+					has_full_control_of_state = 15
+					has_full_control_of_state = 29
+					has_full_control_of_state = 6
+					has_full_control_of_state = 7
+					has_full_control_of_state = 36
+				}
+			}
+		}
+
+		# English Channel
+		has_naval_control = 18
+	}
+
+
+	OR = {				# WESTERN FRANCE
+		NOT = { 
+			GER = {
+				OR = {
+					has_full_control_of_state = 14
+					has_full_control_of_state = 30
+					has_full_control_of_state = 23
+					has_full_control_of_state = 19
+				}
+			}
+		}
+
+		# Bay of Biscay
+		has_naval_control = 42
+	}
+
+
+	OR = {				# NORWAY
+		NOT = {
+			NOR = {
+				all_core_state = {
+					OR = {
+						state = 914
+						is_fully_controlled_by = GER
+						controller = {
+							is_puppet_of = GER
+						}
+					}
+				}
+			}
+		}
+
+		# Norwegian Coast
+		has_naval_control = 174
+	}
+
+
+	OR = {				# PORTUGAL
+		NOT = { 
+			POR = {
+				all_core_state = {
+					OR = {
+						is_fully_controlled_by = GER
+						controller = {
+							is_puppet_of = GER
+						}
+					}
+				}
+			}
+		}
+
+		# Iberian Coast
+		has_naval_control = 47
+	}
+}
+
+
+nom_blockade_ITA_trigger = {
+
+	# Adriatic Sea
+	has_naval_control = 168
+
+	# Tyrrhenian Sea
+	has_naval_control = 169
+
+
+	OR = {				# SOUTHERN FRANCE
+		NOT = { 
+			ITA = {
+				OR = {
+					has_full_control_of_state = 21
+					has_full_control_of_state = 851
+				}
+			}
+		}
+
+		# Western Mediterranean Sea
+		has_naval_control = 68
+	}
+
+
+	OR = {				# WESTERN FRANCE
+		NOT = { 
+			ITA = {
+				OR = {
+					has_full_control_of_state = 14
+					has_full_control_of_state = 30
+					has_full_control_of_state = 23
+					has_full_control_of_state = 19
+				}
+			}
+		}
+
+		# Bay of Biscay
+		has_naval_control = 42
+	}
+
+
+	OR = {				# GREECE
+		NOT = {
+			GRE = {
+				all_core_state = {
+					OR = {
+						state = 182
+						state = 187
+						is_fully_controlled_by = ITA
+						controller = {
+							is_puppet_of = ITA
+						}
+					}
+				}
+			}
+		}
+		
+		AND = {
+			# Central Mediterranean Sea
+			has_naval_control = 29
+
+			# Eastern Mediterranean Sea
+			has_naval_control = 69
+
+			# Aegean Sea
+			has_naval_control = 202
+		}
+	}
+}
+
+
+nom_blockade_ENG_trigger = {
+
+	# English Channel
+	has_naval_control = 18
+
+	# North Sea
+	has_naval_control = 16
+
+	# Western Approaches
+	has_naval_control = 43
+}
+
+
+nom_blockade_FRA_trigger = {
+
+	# English Channel
+	has_naval_control = 18
+
+	# Bay of Biscay
+	has_naval_control = 42
+
+	# Western Mediterranean Sea
+	has_naval_control = 68
+
+	# Tyrrhenian Sea
+	has_naval_control = 169
+
+	OR = {				# PORTUGAL
+		NOT = {
+			OR = {
+				180 = {
+					OR = {
+						is_fully_controlled_by = FRA
+						controller = {
+							is_puppet_of = FRA
+						}
+					}
+				}
+				112 = {
+					OR = {
+						is_fully_controlled_by = FRA
+						controller = {
+							is_puppet_of = FRA
+						}
+					}
+				}
+				179 = {
+					OR = {
+						is_fully_controlled_by = FRA
+						controller = {
+							is_puppet_of = FRA
+						}
+					}
+				}
+			}
+		}
+
+		# Iberian Coast
+		has_naval_control = 47
+	}
+}
+
+
+nom_blockade_USA_trigger = {
+
+	OR = {
+		AND = {							### WEST COAST
+			# Northwest Coast
+			has_naval_control = 171
+			
+			# North Pacific
+			has_naval_control = 114
+
+			# Western Seaboard
+			has_naval_control = 89
+			
+			OR = {
+				NOT = {
+					MEX = {
+						all_core_state = {
+							OR = {
+								is_fully_controlled_by = USA
+								controller = { is_puppet_of = USA }
+							}
+						}
+					}
+				}
+				# Mexican Coast
+				has_naval_control = 106
+			}
+		}
+		
+		
+		AND = {							### EAST COAST
+			# Eastern Seaboard
+			has_naval_control = 54
+			
+			# Florida Coast
+			has_naval_control = 170
+			
+			# Gulf of Mexico
+			has_naval_control = 52
+			
+			OR = {
+				NOT = {
+					MEX = {
+						all_core_state = {
+							OR = {
+								is_fully_controlled_by = USA
+								controller = { is_puppet_of = USA }
+							}
+						}
+					}
+				}
+				# Carribean Sea
+				has_naval_control = 53
+			}
+		}
+	}
+}
+
+
+nom_blockade_JAP_trigger = {
+
+	# Coast of Japan
+	has_naval_control = 90
+
+	# Sea of Japan
+	has_naval_control = 79
+
+	# East China Sea
+	has_naval_control = 76
+}
+
+
+nom_blockade_SOV_trigger = {
+	OR = {
+		AND = {
+			# Gulf of Finland
+			has_naval_control = 9
+
+			# Black Sea
+			has_naval_control = 30
+			
+			OR = {
+				NOT = {
+					SOV = { 
+						OR = {
+							has_full_control_of_state = 190 #Kurzeme
+							has_full_control_of_state = 189 #Zemaitja
+							has_full_control_of_state = 188 #Memel
+						}
+					}
+				}
+				
+				# Lower Baltic Sea
+				has_naval_control = 206
+			}
+		}
+		
+		AND = {
+			# Sea of Japan
+			has_naval_control = 79
+			
+			# Sea of Okhotsk
+			has_naval_control = 87
+			
+			OR = {
+				NOT = {
+					SOV = { 
+						OR = {
+							has_full_control_of_state = 597
+							has_full_control_of_state = 598
+							has_full_control_of_state = 608
+							has_full_control_of_state = 609
+							has_full_control_of_state = 613
+							has_full_control_of_state = 716
+							has_full_control_of_state = 743
+							has_full_control_of_state = 745
+						}
+					}
+				}
+				
+				# Lower Baltic Sea
+				has_naval_control = 206
+			}
+		}
+	}
+}
+
+
+nom_blockade_CHI_trigger = {
+
+	# Yellow Sea
+	has_naval_control = 77
+
+	# South China Sea
+	has_naval_control = 75
+
+	# East China Sea
+	has_naval_control = 76
+		
+	OR = {
+		NOT = {
+			any_country = { 
+				or = {
+					tag = CHI
+					tag = PRC
+					WTT_is_chinese_warlord = yes
+				}
+				has_full_control_of_state = 525 # Cambodia
+			}
+		}
+			
+		# Gulf of Thailand
+		has_naval_control = 73
+	}
+		
+	OR = {
+		NOT = {
+			any_country = { 
+				or = {
+					tag = CHI
+					tag = PRC
+					WTT_is_chinese_warlord = yes
+				}
+				has_full_control_of_state = 525 # South Korea
+			}
+		}
+		
+		# Sea of Japan
+		has_naval_control = 79
+	}
+}
+nom_blockade_BEN_trigger = {	# BeNeLux Countries
+	OR = {
+		# Eastern North Sea
+		FROM = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_blockade_has_no_access_in_tt
+					SEAZONE = "Eastern North Sea"
+				}
+				NOT = {
+					OR = {
+						has_full_control_of_state = 7
+						has_full_control_of_state = 36
+					}
+				}
+			}
+		}
+		ROOT = { has_naval_control = 173 }
+	}
+	OR = {
+		# English Channel
+		FROM = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_blockade_has_no_access_in_tt
+					SEAZONE = "English Channel"
+				}
+				NOT = {
+					OR = {
+						has_full_control_of_state = 6
+						has_full_control_of_state = 7
+						has_full_control_of_state = 15
+						has_full_control_of_state = 29
+						has_full_control_of_state = 35
+					}
+				}
+			}
+		}
+		ROOT = { has_naval_control = 18 }
+	}
+	OR = {
+		# Bay of Biscay
+		FROM = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_blockade_has_no_access_in_tt
+					SEAZONE = "Bay of Biscay"
+				}
+				NOT = {
+					OR = {
+						has_full_control_of_state = 14
+						has_full_control_of_state = 19
+						has_full_control_of_state = 23
+					}
+				}
+			}
+		}
+		ROOT = { has_naval_control = 42 }
+	}
+}
+nom_blockade_FIN_trigger = {	# FINLAND
+
+	# Gulf of Finland
+	has_naval_control = 9
+	
+	# Barents Sea
+	has_naval_control = 46
+
+	# Gulf ot Bothnia
+	has_naval_control = 279
+}
+
+nom_blockade_SWE_trigger = {	# SWEDEN
+
+	# Eastern North Sea
+	has_naval_control = 173
+
+	# Danish Belts
+	has_naval_control = 207
+}
+
+nom_blockade_DEN_trigger = {	# DENMARK
+
+	# Eastern North Sea
+	has_naval_control = 173
+
+	# Danish Belts
+	has_naval_control = 207
+}
+
+nom_blockade_NOR_trigger = {	# NORWAY
+
+	# Eastern North Sea
+	has_naval_control = 173
+
+	# Norwegian Coast
+	has_naval_control = 174
+	
+	# Barents Sea
+	has_naval_control = 46
+}
+
+nom_blockade_SPR_trigger = {	# SPAIN
+
+	# Bay of Biscay
+	has_naval_control = 42
+
+	# Iberian Coast
+	has_naval_control = 47
+
+	# Western Mediterranean Sea
+	has_naval_control = 68
+}
+
+nom_blockade_POR_trigger = {	# PORTUGAL
+
+	OR = {
+		NOT = {
+			POR = {
+				or = {
+					has_full_control_of_state = 171	# Galicia
+					has_full_control_of_state = 790	# Asturias
+					has_full_control_of_state = 792	# Pais Vasco
+				}
+			}
+		}
+		# Bay of Biscay
+		has_naval_control = 42
+	}
+
+	# Iberian Coast
+	has_naval_control = 47
+
+	OR = {
+		NOT = {
+			POR = {
+				or = {
+					has_full_control_of_state = 173	# Granada
+					has_full_control_of_state = 168	# Murcia
+					has_full_control_of_state = 167	# Valencia
+					has_full_control_of_state = 165	# Cataluna
+				}
+			}
+		}
+		# Western Mediterranean Sea
+		has_naval_control = 68
+	}
+}
+
+nom_blockade_TUR_trigger = {	# TURKEY
+
+	# Eastern Mediterranean Sea
+	has_naval_control = 69
+
+	# Aegean Sea
+	has_naval_control = 202
+}
+
+nom_blockade_GRE_trigger = {	# GREECE
+
+	# Central Mediterranean Sea
+	has_naval_control = 29
+
+	# Eastern Mediterranean Sea
+	has_naval_control = 69
+	
+	# Aegean Sea
+	has_naval_control = 202
+}

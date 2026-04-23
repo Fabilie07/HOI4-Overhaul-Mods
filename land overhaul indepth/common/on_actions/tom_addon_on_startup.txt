@@ -1,0 +1,42 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { has_tech = basic_light_tank_chassis }
+
+				add_design_template_bonus = {
+					name = light_tank_chassis_1
+					uses = 2
+					cost_factor = 0.75
+					equipment = light_tank_chassis_1
+				}
+			}
+			
+			every_country = {
+				limit = { has_tech = improved_light_tank_chassis }
+
+				add_design_template_bonus = {
+					name = light_tank_chassis_2
+					uses = 2
+					cost_factor = 0.75
+					equipment = light_tank_chassis_2
+				}
+			}
+			
+			every_country = {
+				limit = { has_tech = basic_heavy_tank_chassis }
+
+				add_design_template_bonus = {
+					name = heavy_tank_chassis_1
+					uses = 2
+					cost_factor = 0.75
+					equipment = heavy_tank_chassis_1
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = tom_designer_addon
+		}
+	}
+}

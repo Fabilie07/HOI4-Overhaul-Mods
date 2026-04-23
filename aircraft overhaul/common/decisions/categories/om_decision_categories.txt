@@ -1,0 +1,9 @@
+
+TOM_heavy_industry_decisions = {
+	visible_when_empty = yes
+	scripted_gui = tom_heavy_industry_gui
+	priority = 900
+}
+
+# Might be removed even before release
+om_doctrine_decisions = {  }

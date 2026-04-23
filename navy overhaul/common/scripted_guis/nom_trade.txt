@@ -1,0 +1,2959 @@
+scripted_gui = {
+	
+	nom_trade_window = {
+		context_type = player_context
+		window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_open
+			not = { has_country_flag = nom_trade_pending }
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = nom_trade_open
+			}
+			
+			ENG_button_1_click = {
+				set_country_flag = nom_trade_ENG
+				clr_country_flag = nom_trade_FRA
+				clr_country_flag = nom_trade_GER
+				clr_country_flag = nom_trade_ITA
+				clr_country_flag = nom_trade_JAP
+				clr_country_flag = nom_trade_USA
+				clr_country_flag = nom_trade_SOV
+			}
+			ENG_button_2_click = {
+				clr_country_flag = nom_trade_ENG
+			}
+			
+			FRA_button_1_click = {
+				set_country_flag = nom_trade_FRA
+				clr_country_flag = nom_trade_ENG
+				clr_country_flag = nom_trade_GER
+				clr_country_flag = nom_trade_ITA
+				clr_country_flag = nom_trade_JAP
+				clr_country_flag = nom_trade_USA
+				clr_country_flag = nom_trade_SOV
+			}
+			FRA_button_2_click = {
+				clr_country_flag = nom_trade_FRA
+			}
+			
+			GER_button_1_click = {
+				set_country_flag = nom_trade_GER
+				clr_country_flag = nom_trade_ENG
+				clr_country_flag = nom_trade_FRA
+				clr_country_flag = nom_trade_ITA
+				clr_country_flag = nom_trade_JAP
+				clr_country_flag = nom_trade_USA
+				clr_country_flag = nom_trade_SOV
+			}
+			GER_button_2_click = {
+				clr_country_flag = nom_trade_GER
+			}
+			
+			ITA_button_1_click = {
+				set_country_flag = nom_trade_ITA
+				clr_country_flag = nom_trade_ENG
+				clr_country_flag = nom_trade_FRA
+				clr_country_flag = nom_trade_GER
+				clr_country_flag = nom_trade_JAP
+				clr_country_flag = nom_trade_USA
+				clr_country_flag = nom_trade_SOV
+			}
+			ITA_button_2_click = {
+				clr_country_flag = nom_trade_ITA
+			}
+			
+			JAP_button_1_click = {
+				set_country_flag = nom_trade_JAP
+				clr_country_flag = nom_trade_ENG
+				clr_country_flag = nom_trade_FRA
+				clr_country_flag = nom_trade_GER
+				clr_country_flag = nom_trade_ITA
+				clr_country_flag = nom_trade_USA
+				clr_country_flag = nom_trade_SOV
+			}
+			JAP_button_2_click = {
+				clr_country_flag = nom_trade_JAP
+			}
+			
+			SOV_button_1_click = {
+				set_country_flag = nom_trade_SOV
+				clr_country_flag = nom_trade_ENG
+				clr_country_flag = nom_trade_FRA
+				clr_country_flag = nom_trade_GER
+				clr_country_flag = nom_trade_ITA
+				clr_country_flag = nom_trade_USA
+				clr_country_flag = nom_trade_JAP
+			}
+			SOV_button_2_click = {
+				clr_country_flag = nom_trade_SOV
+			}
+			
+			USA_button_1_click = {
+				set_country_flag = nom_trade_USA
+				clr_country_flag = nom_trade_ENG
+				clr_country_flag = nom_trade_FRA
+				clr_country_flag = nom_trade_GER
+				clr_country_flag = nom_trade_ITA
+				clr_country_flag = nom_trade_JAP
+				clr_country_flag = nom_trade_SOV
+			}
+			USA_button_2_click = {
+				clr_country_flag = nom_trade_USA
+			}
+			
+			filter_box_cv_click = {
+				set_country_flag = nom_trade_filter_cv
+				nom_trade_cv_filter = yes
+			}
+			filter_box_cv_disabled_click = {
+				clr_country_flag = nom_trade_filter_cv
+				nom_trade_cv_filter_off = yes
+			}
+			filter_box_bb_click = {
+				set_country_flag = nom_trade_filter_bb
+				nom_trade_bb_filter = yes
+			}
+			filter_box_bb_disabled_click = {
+				clr_country_flag = nom_trade_filter_bb
+				nom_trade_bb_filter_off = yes
+			}
+			filter_box_bc_click = {
+				set_country_flag = nom_trade_filter_bc
+				nom_trade_bc_filter = yes
+			}
+			filter_box_bc_disabled_click = {
+				clr_country_flag = nom_trade_filter_bc
+				nom_trade_bc_filter_off = yes
+			}
+			filter_box_ca_click = {
+				set_country_flag = nom_trade_filter_ca
+				nom_trade_ca_filter = yes
+			}
+			filter_box_ca_disabled_click = {
+				clr_country_flag = nom_trade_filter_ca
+				nom_trade_ca_filter_off = yes
+			}
+			filter_box_cl_click = {
+				set_country_flag = nom_trade_filter_cl
+				nom_trade_cl_filter = yes
+			}
+			filter_box_cl_disabled_click = {
+				clr_country_flag = nom_trade_filter_cl
+				nom_trade_cl_filter_off = yes
+			}
+			filter_box_dd_click = {
+				set_country_flag = nom_trade_filter_dd
+				nom_trade_dd_filter = yes
+			}
+			filter_box_dd_disabled_click = {
+				clr_country_flag = nom_trade_filter_dd
+				nom_trade_dd_filter_off = yes
+			}
+			filter_box_ss_click = {
+				set_country_flag = nom_trade_filter_ss
+			}
+			filter_box_ss_disabled_click = {
+				clr_country_flag = nom_trade_filter_ss
+			}
+			
+			trade_deal_button_click = {
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = nom_trade_ENG
+							has_country_flag = nom_trade_FRA
+							has_country_flag = nom_trade_GER
+							has_country_flag = nom_trade_ITA
+							has_country_flag = nom_trade_JAP
+							has_country_flag = nom_trade_SOV
+							has_country_flag = nom_trade_USA
+						}
+					}
+					set_country_flag = nom_deal_confirmation_pending
+					nom_skip_trade_deal = yes
+				}
+			}
+			
+			trade_deal_cancel_button_click = {
+				if = {
+					limit = {
+						has_variable = nom_trade_deal_partner
+					}
+					set_country_flag = nom_deal_cancellation_pending
+					nom_skip_trade_cancel = yes
+				}
+			}
+		}
+		
+		triggers = {
+			ENG_button_1_visible = {
+				not = { has_country_flag = nom_trade_ENG }
+				ENG = { nom_can_build_foreign_ship = yes }
+			}
+			ENG_button_2_visible = {
+				has_country_flag = nom_trade_ENG
+				ENG = { nom_can_build_foreign_ship = yes }
+			}
+			
+			FRA_button_1_visible = {
+				not = { has_country_flag = nom_trade_FRA }
+				FRA = { nom_can_build_foreign_ship = yes }
+			}
+			FRA_button_2_visible = {
+				has_country_flag = nom_trade_FRA
+				FRA = { nom_can_build_foreign_ship = yes }
+			}
+			
+			GER_button_1_visible = {
+				not = { has_country_flag = nom_trade_GER }
+				GER = { nom_can_build_foreign_ship = yes }
+			}
+			GER_button_2_visible = {
+				has_country_flag = nom_trade_GER
+				GER = { nom_can_build_foreign_ship = yes }
+			}
+			
+			ITA_button_1_visible = {
+				not = { has_country_flag = nom_trade_ITA }
+				ITA = { nom_can_build_foreign_ship = yes }
+			}
+			ITA_button_2_visible = {
+				has_country_flag = nom_trade_ITA
+				ITA = { nom_can_build_foreign_ship = yes }
+			}
+			
+			JAP_button_1_visible = {
+				not = { has_country_flag = nom_trade_JAP }
+				JAP = { nom_can_build_foreign_ship = yes }
+			}
+			JAP_button_2_visible = {
+				has_country_flag = nom_trade_JAP
+				JAP = { nom_can_build_foreign_ship = yes }
+			}
+			
+			SOV_button_1_visible = {
+				not = { has_country_flag = nom_trade_SOV }
+				SOV = { nom_can_build_foreign_ship = yes }
+			}
+			SOV_button_2_visible = {
+				has_country_flag = nom_trade_SOV
+				SOV = { nom_can_build_foreign_ship = yes }
+			}
+			
+			USA_button_1_visible = {
+				not = { has_country_flag = nom_trade_USA }
+				USA = { nom_can_build_foreign_ship = yes }
+			}
+			USA_button_2_visible = {
+				has_country_flag = nom_trade_USA
+				USA = { nom_can_build_foreign_ship = yes }
+			}
+			
+			filter_box_cv_visible = {
+				not = { has_country_flag = nom_trade_filter_cv }
+			}
+			filter_box_cv_disabled_visible = {
+				has_country_flag = nom_trade_filter_cv
+			}
+			filter_box_bb_visible = {
+				not = { has_country_flag = nom_trade_filter_bb }
+			}
+			filter_box_bb_disabled_visible = {
+				has_country_flag = nom_trade_filter_bb
+			}
+			filter_box_bc_visible = {
+				not = { has_country_flag = nom_trade_filter_bc }
+			}
+			filter_box_bc_disabled_visible = {
+				has_country_flag = nom_trade_filter_bc
+			}
+			filter_box_ca_visible = {
+				not = { has_country_flag = nom_trade_filter_ca }
+			}
+			filter_box_ca_disabled_visible = {
+				has_country_flag = nom_trade_filter_ca
+			}
+			filter_box_cl_visible = {
+				not = { has_country_flag = nom_trade_filter_cl }
+			}
+			filter_box_cl_disabled_visible = {
+				has_country_flag = nom_trade_filter_cl
+			}
+			filter_box_dd_visible = {
+				not = { has_country_flag = nom_trade_filter_dd }
+			}
+			filter_box_dd_disabled_visible = {
+				has_country_flag = nom_trade_filter_dd
+			}
+			filter_box_ss_visible = {
+				not = { has_country_flag = nom_trade_filter_ss }
+			}
+			filter_box_ss_disabled_visible = {
+				has_country_flag = nom_trade_filter_ss
+			}
+			
+			trade_deal_button_click_enabled = {
+				has_political_power > 74
+				not = { has_variable = nom_trade_deal_partner }
+			}
+		}
+		
+		ai_enabled = {
+			always = yes
+		}
+		
+		ai_check = {
+			dockyard > 0
+			OR = {
+				AND = {
+					date < 1940.01.01
+					OR = {
+						check_variable = { nom_ai_capital_commission < 3 }
+						check_variable = { nom_ai_screen_commission < 4 }
+					}
+				}
+				AND = {
+					date < 1944.01.02
+					OR = {
+						check_variable = { nom_ai_capital_commission < 4 }
+						check_variable = { nom_ai_screen_commission < 8 }
+					}
+				}
+				AND = {
+					date > 1944.01.01
+					OR = {
+						check_variable = { nom_ai_capital_commission < 5 }
+						check_variable = { nom_ai_screen_commission < 11 }
+					}
+				}
+			}
+		}
+		
+		ai_weights = {
+			ENG_button_1_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_opinion = { target = ENG value < -10 }
+					}
+					modifier = {
+						add = 10
+						has_government = ENG
+					}
+				}
+			}
+			FRA_button_1_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_opinion = { target = FRA value < -10 }
+					}
+					modifier = {
+						add = 10
+						has_government = FRA
+					}
+				}
+			}
+			GER_button_1_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_opinion = { target = GER value < -10 }
+					}
+					modifier = {
+						add = 10
+						has_government = GER
+					}
+				}
+			}
+			ITA_button_1_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_opinion = { target = ITA value < -10 }
+					}
+					modifier = {
+						add = 10
+						has_government = ITA
+					}
+				}
+			}
+			JAP_button_1_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_opinion = { target = JAP value < -10 }
+					}
+					modifier = {
+						add = 10
+						has_government = JAP
+					}
+				}
+			}
+			SOV_button_1_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_opinion = { target = SOV value < -10 }
+					}
+					modifier = {
+						add = 10
+						has_government = SOV
+					}
+				}
+			}
+			USA_button_1_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_opinion = { target = USA value < -10 }
+					}
+					modifier = {
+						add = 10
+						has_government = USA
+					}
+				}
+			}
+			
+			trade_deal_button_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 100
+						OR = {
+							AND = {
+								has_country_flag = nom_trade_ENG
+								is_ally_with = ENG
+							}
+							AND = {
+								has_country_flag = nom_trade_FRA
+								is_ally_with = FRA
+							}
+							AND = {
+								has_country_flag = nom_trade_GER
+								is_ally_with = GER
+							}
+							AND = {
+								has_country_flag = nom_trade_ITA
+								is_ally_with = ITA
+							}
+							AND = {
+								has_country_flag = nom_trade_JAP
+								is_ally_with = JAP
+							}
+							AND = {
+								has_country_flag = nom_trade_SOV
+								is_ally_with = SOV
+							}
+							AND = {
+								has_country_flag = nom_trade_USA
+								is_ally_with = USA
+							}
+						}
+					}
+				}
+			}
+			
+			trade_deal_cancel_button_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 100
+						has_variable = nom_trade_deal_partner
+						not = { has_country_flag = nom_ai_deal_satisfaction }
+					}
+				}
+			}
+			
+			ENG_button_2_click = { ai_will_do = { base = 0 } }
+			FRA_button_2_click = { ai_will_do = { base = 0 } }
+			GER_button_2_click = { ai_will_do = { base = 0 } }
+			ITA_button_2_click = { ai_will_do = { base = 0 } }
+			JAP_button_2_click = { ai_will_do = { base = 0 } }
+			SOV_button_2_click = { ai_will_do = { base = 0 } }
+			USA_button_2_click = { ai_will_do = { base = 0 } }
+			
+			filter_box_cv_click = { ai_will_do = { base = 0 } }
+			filter_box_bb_click = { ai_will_do = { base = 0 } }
+			filter_box_bc_click = { ai_will_do = { base = 0 } }
+			filter_box_ca_click = { ai_will_do = { base = 0 } }
+			filter_box_cl_click = { ai_will_do = { base = 0 } }
+			filter_box_dd_click = { ai_will_do = { base = 0 } }
+			filter_box_ss_click = { ai_will_do = { base = 0 } }
+		}
+	}
+	
+	nom_major_trade_window = {
+		context_type = player_context
+		window_name = "nom_major_ship_window"
+		parent_window_name = "nom_trade_container"
+		
+		visible = {
+			OR = {
+				tag = ENG
+				tag = FRA
+				tag = GER
+				tag = ITA
+				tag = JAP
+				tag = SOV
+				tag = USA
+			}
+		}
+		
+		triggers = {
+			preference_economy_visible = { has_country_flag = nom_trade_preference_economy_flag }
+			preference_economy_disabled_visible = { not = { has_country_flag = nom_trade_preference_economy_flag } }
+			preference_steel_visible = { has_country_flag = nom_trade_preference_steel_flag }
+			preference_steel_disabled_visible = { not = { has_country_flag = nom_trade_preference_steel_flag } }
+			preference_tungsten_visible = { has_country_flag = nom_trade_preference_tungsten_flag }
+			preference_tungsten_disabled_visible = { not = { has_country_flag = nom_trade_preference_tungsten_flag } }
+			preference_chromium_visible = { has_country_flag = nom_trade_preference_chromium_flag }
+			preference_chromium_disabled_visible = { not = { has_country_flag = nom_trade_preference_chromium_flag } }
+			preference_rubber_visible = { has_country_flag = nom_trade_preference_rubber_flag }
+			preference_rubber_disabled_visible = { not = { has_country_flag = nom_trade_preference_rubber_flag } }
+			preference_nothing_visible = { has_country_flag = nom_trade_preference_nothing_flag }
+			preference_nothing_disabled_visible = { not = { has_country_flag = nom_trade_preference_nothing_flag } }
+			
+			automation_deal_visible = {
+				has_country_flag = nom_trade_deal_automation_flag
+				not = { has_country_flag = nom_trade_deal_refuse_flag }
+			}
+			automation_deal_refuse_visible = {
+				has_country_flag = nom_trade_deal_automation_flag
+				has_country_flag = nom_trade_deal_refuse_flag
+			}
+			automation_deal_disabled_visible = {
+				not = {
+					has_country_flag = nom_trade_deal_automation_flag
+					has_country_flag = nom_trade_deal_refuse_flag
+				}
+			}
+			automation_capital_visible = {
+				has_country_flag = nom_trade_capital_automation_flag
+				not = { has_country_flag = nom_trade_capital_refuse_flag }
+			}
+			automation_capital_refuse_visible = {
+				has_country_flag = nom_trade_capital_automation_flag
+				has_country_flag = nom_trade_capital_refuse_flag
+			}
+			automation_capital_disabled_visible = {
+				not = {
+					has_country_flag = nom_trade_capital_automation_flag
+					has_country_flag = nom_trade_capital_refuse_flag
+				}
+			}
+			automation_screen_visible = {
+				has_country_flag = nom_trade_screen_automation_flag
+				not = { has_country_flag = nom_trade_screen_refuse_flag }
+			}
+			automation_screen_refuse_visible = {
+				has_country_flag = nom_trade_screen_automation_flag
+				has_country_flag = nom_trade_screen_refuse_flag
+			}
+			automation_screen_disabled_visible = {
+				not = {
+					has_country_flag = nom_trade_screen_automation_flag
+					has_country_flag = nom_trade_screen_refuse_flag
+				}
+			}
+		}
+		
+		effects = {
+			preference_economy_click = { clr_country_flag = nom_trade_preference_economy_flag }
+			preference_economy_disabled_click = { set_country_flag = nom_trade_preference_economy_flag }
+			preference_steel_click = { clr_country_flag = nom_trade_preference_steel_flag }
+			preference_steel_disabled_click = { set_country_flag = nom_trade_preference_steel_flag }
+			preference_tungsten_click = { clr_country_flag = nom_trade_preference_tungsten_flag }
+			preference_tungsten_disabled_click = { set_country_flag = nom_trade_preference_tungsten_flag }
+			preference_chromium_click = { clr_country_flag = nom_trade_preference_chromium_flag }
+			preference_chromium_disabled_click = { set_country_flag = nom_trade_preference_chromium_flag }
+			preference_rubber_click = { clr_country_flag = nom_trade_preference_rubber_flag }
+			preference_rubber_disabled_click = { set_country_flag = nom_trade_preference_rubber_flag }
+			preference_nothing_click = { clr_country_flag = nom_trade_preference_nothing_flag }
+			preference_nothing_disabled_click = { set_country_flag = nom_trade_preference_nothing_flag }
+			
+			automation_deal_click = { clr_country_flag = nom_trade_deal_automation_flag }
+			automation_deal_refuse_click = { clr_country_flag = nom_trade_deal_refuse_flag }
+			automation_deal_disabled_click = {
+				set_country_flag = nom_trade_deal_automation_flag
+				set_country_flag = nom_trade_deal_refuse_flag
+			}
+			automation_capital_click = { clr_country_flag = nom_trade_capital_automation_flag }
+			automation_capital_refuse_click = { clr_country_flag = nom_trade_capital_refuse_flag }
+			automation_capital_disabled_click = {
+				set_country_flag = nom_trade_capital_automation_flag
+				set_country_flag = nom_trade_capital_refuse_flag
+			}
+			automation_screen_click = { clr_country_flag = nom_trade_screen_automation_flag }
+			automation_screen_refuse_click = { clr_country_flag = nom_trade_screen_refuse_flag }
+			automation_screen_disabled_click = {
+				set_country_flag = nom_trade_screen_automation_flag
+				set_country_flag = nom_trade_screen_refuse_flag
+			}
+		}
+		
+		ai_enabled = { always = no }
+	}
+	
+	nom_ENG_ship_window = {
+		context_type = player_context
+		window_name = "ENG_ship_window"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_ENG
+			ENG = { nom_can_build_foreign_ship = yes }
+		}
+		
+		triggers = {
+			ENG_cv_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			ENG_cv_1_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			ENG_cv_1_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			ENG_bb_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_1_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_1_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_2_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_2_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_3_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_3_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bb_3_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ENG_bc_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			ENG_bc_1_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			ENG_bc_1_title_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			ENG_ca_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ENG_ca_1_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ENG_ca_1_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ENG_ca_2_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ENG_ca_2_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ENG_ca_2_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ENG_cl_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_1_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_1_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_2_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_2_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_2_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_3_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_3_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_cl_3_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ENG_dd_1_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ENG_dd_1_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ENG_dd_1_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ENG_dd_2_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ENG_dd_2_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ENG_dd_2_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ENG_ss_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			ENG_ss_1_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			ENG_ss_1_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			
+			ENG_cv_1_click_enabled = { ENG_cv_1_available_trigger = yes }
+			ENG_bb_1_click_enabled = { ENG_bb_1_available_trigger = yes }
+			ENG_bb_2_click_enabled = { ENG_bb_2_available_trigger = yes }
+			ENG_bb_3_click_enabled = { ENG_bb_3_available_trigger = yes }
+			ENG_bc_1_click_enabled = { ENG_bc_1_available_trigger = yes }
+			ENG_ca_1_click_enabled = { ENG_ca_1_available_trigger = yes }
+			ENG_ca_2_click_enabled = { ENG_ca_2_available_trigger = yes }
+			ENG_cl_1_click_enabled = { ENG_cl_1_available_trigger = yes }
+			ENG_cl_2_click_enabled = { ENG_cl_2_available_trigger = yes }
+			ENG_cl_3_click_enabled = { ENG_cl_3_available_trigger = yes }
+			ENG_dd_2_click_enabled = { ENG_dd_2_available_trigger = yes }
+		}
+		
+		properties = {
+			ENG_cv_1_bg = { image = "[loc_ENG_cv_1_bg_image]" }
+			ENG_bb_1_bg = { x=20 y=nom_offset_ENG^0 image = "[loc_ENG_bb_1_bg_image]" }
+			ENG_bb_1 = { x=52 y=nom_offset_ENG^1 }
+			ENG_bb_1_title = { x=30 y=nom_offset_ENG^2 }
+			ENG_bb_2_bg = { x=20 y=nom_offset_ENG^3 image = "[loc_ENG_bb_2_bg_image]" }
+			ENG_bb_2 = { x=52 y=nom_offset_ENG^4 }
+			ENG_bb_2_title = { x=30 y=nom_offset_ENG^5 }
+			ENG_bb_3_bg = { x=20 y=nom_offset_ENG^6 image = "[loc_ENG_bb_3_bg_image]" }
+			ENG_bb_3 = { x=52 y=nom_offset_ENG^7 }
+			ENG_bb_3_title = { x=30 y=nom_offset_ENG^8 }
+			ENG_bc_1_bg = { x=20 y=nom_offset_ENG^9 image = "[loc_ENG_bc_1_bg_image]" }
+			ENG_bc_1 = { x=52 y=nom_offset_ENG^10 }
+			ENG_bc_1_title = { x=30 y=nom_offset_ENG^11 }
+			ENG_ca_1_bg = { x=20 y=nom_offset_ENG^12 image = "[loc_ENG_ca_1_bg_image]" }
+			ENG_ca_1 = { x=52 y=nom_offset_ENG^13 }
+			ENG_ca_1_title = { x=30 y=nom_offset_ENG^14 }
+			ENG_ca_2_bg = { x=20 y=nom_offset_ENG^15 image = "[loc_ENG_ca_2_bg_image]" }
+			ENG_ca_2 = { x=52 y=nom_offset_ENG^16 }
+			ENG_ca_2_title = { x=30 y=nom_offset_ENG^17 }
+			ENG_cl_1_bg = { x=20 y=nom_offset_ENG^18 image = "[loc_ENG_cl_1_bg_image]" }
+			ENG_cl_1 = { x=52 y=nom_offset_ENG^19 }
+			ENG_cl_1_title = { x=30 y=nom_offset_ENG^20 }
+			ENG_cl_2_bg = { x=20 y=nom_offset_ENG^21 image = "[loc_ENG_cl_2_bg_image]" }
+			ENG_cl_2 = { x=52 y=nom_offset_ENG^22 }
+			ENG_cl_2_title = { x=30 y=nom_offset_ENG^23 }
+			ENG_cl_3_bg = { x=20 y=nom_offset_ENG^24 image = "[loc_ENG_cl_2_bg_image]" }
+			ENG_cl_3 = { x=52 y=nom_offset_ENG^25 }
+			ENG_cl_3_title = { x=30 y=nom_offset_ENG^26 }
+			ENG_dd_1_bg = { x=20 y=nom_offset_ENG^27 }
+			ENG_dd_1 = { x=52 y=nom_offset_ENG^28 }
+			ENG_dd_1_title = { x=30 y=nom_offset_ENG^29 }
+			ENG_dd_2_bg = { x=20 y=nom_offset_ENG^30 image = "[loc_ENG_dd_2_bg_image]" }
+			ENG_dd_2 = { x=52 y=nom_offset_ENG^31 }
+			ENG_dd_2_title = { x=30 y=nom_offset_ENG^32 }
+			ENG_ss_1_bg = { x=20 y=nom_offset_ENG^33 }
+			ENG_ss_1 = { x=52 y=nom_offset_ENG^34 }
+			ENG_ss_1_title = { x=30 y=nom_offset_ENG^35 }
+		}
+		
+		effects = {
+			ENG_cv_1_click = {
+				set_variable = { nom_ship_trade_duration = 228 }	# IC / 22
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_cv_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_bb_1_click = {
+				set_variable = { nom_ship_trade_duration = 326 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_bb_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_bb_2_click = {
+				set_variable = { nom_ship_trade_duration = 542 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_bb_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_bb_3_click = {
+				set_variable = { nom_ship_trade_duration = 572 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_bb_3_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_bc_1_click = {
+				set_variable = { nom_ship_trade_duration = 314 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_bc_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_ca_1_click = {
+				set_variable = { nom_ship_trade_duration = 195 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_ca_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_ca_2_click = {
+				set_variable = { nom_ship_trade_duration = 252 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_ca_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_cl_1_click = {
+				set_variable = { nom_ship_trade_duration = 321 } # IC / 14
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_cl_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_cl_2_click = {
+				set_variable = { nom_ship_trade_duration = 378 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_cl_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_cl_3_click = {
+				set_variable = { nom_ship_trade_duration = 393 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_cl_3_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_dd_1_click = {
+				set_variable = { nom_ship_trade_duration = 112 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_dd_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_dd_2_click = {
+				set_variable = { nom_ship_trade_duration = 147 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_dd_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ENG_ss_1_click = {
+				set_variable = { nom_ship_trade_duration = 48 }
+				multiply_variable = { nom_ship_trade_duration = ENG.nom_commission_efficiency }
+				set_country_flag = ENG_ss_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_check = {
+			NOT = {
+				has_country_flag = nom_trade_pending
+				has_country_flag = nom_ai_recently_requested_ship
+				has_political_power < 10
+			}
+			ENG = { nom_can_build_foreign_ship = yes }
+		}
+		
+		ai_weights = {
+			ENG_cv_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			ENG_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			ENG_bb_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			ENG_bb_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			ENG_bc_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bc = yes
+					}
+				}
+			}
+			ENG_ca_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			ENG_ca_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			ENG_cl_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			ENG_cl_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			ENG_cl_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			ENG_dd_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			ENG_dd_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			ENG_ss_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ENG }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+		}
+	}
+	
+	nom_FRA_ship_window = {
+		context_type = player_context
+		window_name = "FRA_ship_window"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_FRA
+			FRA = { nom_can_build_foreign_ship = yes }
+		}
+		
+		triggers = {
+			FRA_cv_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			FRA_cv_1_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			FRA_cv_1_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			FRA_bb_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			FRA_bb_1_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			FRA_bb_1_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			FRA_bb_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			FRA_bb_2_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			FRA_bb_2_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			FRA_ca_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			FRA_ca_1_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			FRA_ca_1_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			FRA_cl_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			FRA_cl_1_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			FRA_cl_1_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			FRA_dd_1_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			FRA_dd_1_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			FRA_dd_1_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			FRA_dd_2_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			FRA_dd_2_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			FRA_dd_2_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			FRA_ss_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			FRA_ss_1_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			FRA_ss_1_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			
+			FRA_cv_1_click_enabled = { FRA_cv_1_available_trigger = yes }
+			FRA_bb_1_click_enabled = { FRA_cv_1_available_trigger = yes }
+			FRA_bb_2_click_enabled = { FRA_bb_2_available_trigger = yes }
+			FRA_ca_1_click_enabled = { FRA_cv_1_available_trigger = yes }
+			FRA_dd_2_click_enabled = { FRA_dd_2_available_trigger = yes }
+		}
+		
+		properties = {
+			FRA_cv_1_bg = { image = "[loc_FRA_cv_1_bg_image]" }
+			FRA_bb_1_bg = { x=20 y=nom_offset_FRA^0 image = "[loc_FRA_cv_1_bg_image]" }
+			FRA_bb_1 = { x=52 y=nom_offset_FRA^1 }
+			FRA_bb_1_title = { x=30 y=nom_offset_FRA^2 }
+			FRA_bb_2_bg = { x=20 y=nom_offset_FRA^3 image = "[loc_FRA_bb_2_bg_image]" }
+			FRA_bb_2 = { x=52 y=nom_offset_FRA^4 }
+			FRA_bb_2_title = { x=30 y=nom_offset_FRA^5 }
+			FRA_ca_1_bg = { x=20 y=nom_offset_FRA^6 image = "[loc_FRA_cv_1_bg_image]" }
+			FRA_ca_1 = { x=52 y=nom_offset_FRA^7 }
+			FRA_ca_1_title = { x=30 y=nom_offset_FRA^8 }
+			FRA_cl_1_bg = { x=20 y=nom_offset_FRA^9 }
+			FRA_cl_1 = { x=52 y=nom_offset_FRA^10 }
+			FRA_cl_1_title = { x=30 y=nom_offset_FRA^11 }
+			FRA_dd_1_bg = { x=20 y=nom_offset_FRA^12 }
+			FRA_dd_1 = { x=52 y=nom_offset_FRA^13 }
+			FRA_dd_1_title = { x=30 y=nom_offset_FRA^14 }
+			FRA_dd_2_bg = { x=20 y=nom_offset_FRA^15 image = "[loc_FRA_dd_2_bg_image]" }
+			FRA_dd_2 = { x=52 y=nom_offset_FRA^16 }
+			FRA_dd_2_title = { x=30 y=nom_offset_FRA^17 }
+			FRA_ss_1_bg = { x=20 y=nom_offset_FRA^18 }
+			FRA_ss_1 = { x=52 y=nom_offset_FRA^19 }
+			FRA_ss_1_title = { x=30 y=nom_offset_FRA^20 }
+		}
+		
+		effects = {
+			FRA_cv_1_click = {
+				set_variable = { nom_ship_trade_duration = 208 }	# IC / 22
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_cv_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			FRA_bb_1_click = {
+				set_variable = { nom_ship_trade_duration = 450 }
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_bb_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			FRA_bb_2_click = {
+				set_variable = { nom_ship_trade_duration = 499 }
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_bb_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			FRA_ca_1_click = {
+				set_variable = { nom_ship_trade_duration = 212 }
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_ca_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			FRA_cl_1_click = {
+				set_variable = { nom_ship_trade_duration = 324 }	# IC / 14
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_cl_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			FRA_dd_1_click = {
+				set_variable = { nom_ship_trade_duration = 99 }
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_dd_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			FRA_dd_2_click = {
+				set_variable = { nom_ship_trade_duration = 131 }
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_dd_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			FRA_ss_1_click = {
+				set_variable = { nom_ship_trade_duration = 68 }
+				multiply_variable = { nom_ship_trade_duration = FRA.nom_commission_efficiency }
+				set_country_flag = FRA_ss_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_check = {
+			NOT = {
+				has_country_flag = nom_trade_pending
+				has_country_flag = nom_ai_recently_requested_ship
+				has_political_power < 10
+			}
+			FRA = { nom_can_build_foreign_ship = yes }
+		}
+		
+		ai_weights = {
+			FRA_cv_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			FRA_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			FRA_bb_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			FRA_ca_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			FRA_cl_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			FRA_dd_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			FRA_dd_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			FRA_ss_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_FRA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ss = yes
+					}
+				}
+			}
+		}
+	}
+	
+	nom_GER_ship_window = {
+		context_type = player_context
+		window_name = "GER_ship_window"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_GER
+			GER = { nom_can_build_foreign_ship = yes }
+		}
+		
+		triggers = {
+			GER_cv_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			GER_cv_1_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			GER_cv_1_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			GER_bb_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			GER_bb_1_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			GER_bb_1_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			GER_bb_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			GER_bb_2_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			GER_bb_2_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			GER_ca_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			GER_ca_1_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			GER_ca_1_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			GER_ca_2_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			GER_ca_2_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			GER_ca_2_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			GER_cl_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			GER_cl_1_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			GER_cl_1_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			GER_dd_1_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			GER_dd_1_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			GER_dd_1_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			GER_ss_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_1_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_1_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_2_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_2_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_2_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_3_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_3_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			GER_ss_3_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			
+			GER_cv_1_click_enabled = { GER_cv_1_available_trigger = yes }
+			GER_bb_1_click_enabled = { GER_bb_1_available_trigger = yes }
+			GER_bb_2_click_enabled = { GER_bb_2_available_trigger = yes }
+			GER_ca_1_click_enabled = { GER_ca_1_available_trigger = yes }
+			GER_ca_2_click_enabled = { GER_ca_2_available_trigger = yes }
+			GER_ss_2_click_enabled = { GER_ss_2_available_trigger = yes }
+			GER_ss_3_click_enabled = { GER_ss_3_available_trigger = yes }
+		}
+		
+		properties = {
+			GER_cv_1_bg = { image = "[loc_GER_cv_1_bg_image]" }
+			GER_bb_1_bg = { y=nom_offset_GER^0 image = "[loc_GER_bb_1_bg_image]" }
+			GER_bb_1 = { y=nom_offset_GER^1 }
+			GER_bb_1_title = { y=nom_offset_GER^2 }
+			GER_bb_2_bg = { x=20 y=nom_offset_GER^3 image = "[loc_GER_bb_2_bg_image]" }
+			GER_bb_2 = { x=52 y=nom_offset_GER^4 }
+			GER_bb_2_title = { x=30 y=nom_offset_GER^5 }
+			GER_ca_1_bg = { x=20 y=nom_offset_GER^6 image = "[loc_GER_ca_1_bg_image]" }
+			GER_ca_1 = { x=52 y=nom_offset_GER^7 }
+			GER_ca_1_title = { x=30 y=nom_offset_GER^8 }
+			GER_ca_2_bg = { x=20 y=nom_offset_GER^9 image = "[loc_GER_ca_2_bg_image]" }
+			GER_ca_2 = { x=52 y=nom_offset_GER^10 }
+			GER_ca_2_title = { x=30 y=nom_offset_GER^11 }
+			GER_cl_1_bg = { x=20 y=nom_offset_GER^12 }
+			GER_cl_1 = { x=52 y=nom_offset_GER^13 }
+			GER_cl_1_title = { x=30 y=nom_offset_GER^14 }
+			GER_dd_1_bg = { x=20 y=nom_offset_GER^15 }
+			GER_dd_1 = { x=52 y=nom_offset_GER^16 }
+			GER_dd_1_title = { x=30 y=nom_offset_GER^17 }
+			GER_ss_1_bg = { x=20 y=nom_offset_GER^18 }
+			GER_ss_1 = { x=52 y=nom_offset_GER^19 }
+			GER_ss_1_title = { x=30 y=nom_offset_GER^20 }
+			GER_ss_2_bg = { x=20 y=nom_offset_GER^21 image = "[loc_GER_ss_2_bg_image]" }
+			GER_ss_2 = { x=52 y=nom_offset_GER^22 }
+			GER_ss_2_title = { x=30 y=nom_offset_GER^23 }
+			GER_ss_3_bg = { x=20 y=nom_offset_GER^24 image = "[loc_GER_ss_3_bg_image]" }
+			GER_ss_3 = { x=52 y=nom_offset_GER^25 }
+			GER_ss_3_title = { x=30 y=nom_offset_GER^26 }
+		}
+		
+		effects = {
+			GER_cv_1_click = {
+				set_variable = { nom_ship_trade_duration = 371 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_cv_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			GER_bb_1_click = {
+				set_variable = { nom_ship_trade_duration = 467 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_bb_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			GER_bb_2_click = {
+				set_variable = { nom_ship_trade_duration = 528 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_bb_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			GER_ca_1_click = {
+				set_variable = { nom_ship_trade_duration = 330 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_ca_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			GER_ca_2_click = {
+				set_variable = { nom_ship_trade_duration = 239 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_ca_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			GER_cl_1_click = {
+				set_variable = { nom_ship_trade_duration = 260 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_cl_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			GER_dd_1_click = {
+				set_variable = { nom_ship_trade_duration = 99 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_dd_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			GER_ss_1_click = {
+				set_variable = { nom_ship_trade_duration = 69 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_ss_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			GER_ss_2_click = {
+				set_variable = { nom_ship_trade_duration = 90 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_ss_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			GER_ss_3_click = {
+				set_variable = { nom_ship_trade_duration = 107 }
+				multiply_variable = { nom_ship_trade_duration = GER.nom_commission_efficiency }
+				set_country_flag = GER_ss_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_check = {
+			NOT = {
+				has_country_flag = nom_trade_pending
+				has_country_flag = nom_ai_recently_requested_ship
+				has_political_power < 10
+			}
+			GER = { nom_can_build_foreign_ship = yes }
+		}
+		
+		ai_weights = {
+			GER_cv_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			GER_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			GER_bb_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			GER_ca_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			GER_ca_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			GER_cl_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			GER_dd_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			GER_ss_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ss = yes
+					}
+				}
+			}
+			GER_ss_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_ss = yes
+					}
+				}
+			}
+			GER_ss_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_GER }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_ss = yes
+					}
+				}
+			}
+		}
+	}
+	
+	nom_ITA_ship_window = {
+		context_type = player_context
+		window_name = "ITA_ship_window"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_ITA
+			ITA = { nom_can_build_foreign_ship = yes }
+		}
+		
+		triggers = {
+			ITA_bb_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ITA_bb_1_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ITA_bb_1_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ITA_bb_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ITA_bb_2_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ITA_bb_2_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			ITA_ca_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ITA_ca_1_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ITA_ca_1_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ITA_ca_2_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ITA_ca_2_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ITA_ca_2_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			ITA_cl_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_1_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_1_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_2_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_2_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_2_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_3_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_3_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_cl_3_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			ITA_dd_1_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ITA_dd_1_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ITA_dd_1_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			ITA_ss_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			ITA_ss_1_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			ITA_ss_1_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			ITA_ss_2_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			ITA_ss_2_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			ITA_ss_2_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			
+			ITA_bb_1_click_enabled = { ITA_bb_1_available_trigger = yes }
+			ITA_bb_2_click_enabled = { ITA_bb_2_available_trigger = yes }
+			ITA_ca_1_click_enabled = { ITA_bb_1_available_trigger = yes }
+			ITA_ca_2_click_enabled = { ITA_bb_1_available_trigger = yes }
+			ITA_cl_3_click_enabled = { ITA_cl_3_available_trigger = yes }
+			ITA_ss_2_click_enabled = { ITA_ss_2_available_trigger = yes }
+		}
+		
+		properties = {
+			ITA_bb_1_bg = { image = "[loc_ITA_bb_1_bg_image]" }
+			ITA_bb_2_bg = { image = "[loc_ITA_bb_2_bg_image]" }
+			ITA_ca_1_bg = { y = nom_offset_ITA^0 image = "[loc_ITA_bb_1_bg_image]" }
+			ITA_ca_1 = { y = nom_offset_ITA^1 }
+			ITA_ca_1_title = { y = nom_offset_ITA^2 }
+			ITA_ca_2_bg = { y = nom_offset_ITA^3 image = "[loc_ITA_bb_1_bg_image]" }
+			ITA_ca_2 = { y = nom_offset_ITA^4 }
+			ITA_ca_2_title = { y = nom_offset_ITA^5 }
+			ITA_cl_1_bg = { y = nom_offset_ITA^6 }
+			ITA_cl_1 = { y = nom_offset_ITA^7 }
+			ITA_cl_1_title = { y = nom_offset_ITA^8 }
+			ITA_cl_2_bg = { y = nom_offset_ITA^9 }
+			ITA_cl_2 = { y = nom_offset_ITA^10 }
+			ITA_cl_2_title = { y = nom_offset_ITA^11 }
+			ITA_cl_3_bg = { y = nom_offset_ITA^12 image = "[loc_ITA_cl_3_bg_image]"}
+			ITA_cl_3 = { y = nom_offset_ITA^13 }
+			ITA_cl_3_title = { y = nom_offset_ITA^14 }
+			ITA_dd_1_bg = { y = nom_offset_ITA^15 }
+			ITA_dd_1 = { y = nom_offset_ITA^16 }
+			ITA_dd_1_title = { y = nom_offset_ITA^17 }
+			ITA_ss_1_bg = { y = nom_offset_ITA^18 }
+			ITA_ss_1 = { y = nom_offset_ITA^19 }
+			ITA_ss_1_title = { y = nom_offset_ITA^20 }
+			ITA_ss_2_bg = { y = nom_offset_ITA^21 image = "[loc_ITA_ss_2_bg_image]" }
+			ITA_ss_2 = { y = nom_offset_ITA^22 }
+			ITA_ss_2_title = { y = nom_offset_ITA^23 }
+		}
+		
+		effects = {
+			ITA_bb_1_click = {
+				set_variable = { nom_ship_trade_duration = 403 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_bb_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_bb_2_click = {
+				set_variable = { nom_ship_trade_duration = 517 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_bb_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_ca_1_click = {
+				set_variable = { nom_ship_trade_duration = 202 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_ca_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_ca_2_click = {
+				set_variable = { nom_ship_trade_duration = 248 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_ca_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_cl_1_click = {
+				set_variable = { nom_ship_trade_duration = 244 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_cl_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_cl_2_click = {
+				set_variable = { nom_ship_trade_duration = 317 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_cl_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_cl_3_click = {
+				set_variable = { nom_ship_trade_duration = 447 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_cl_3_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_dd_1_click = {
+				set_variable = { nom_ship_trade_duration = 81 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_dd_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_ss_1_click = {
+				set_variable = { nom_ship_trade_duration = 49 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_ss_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			ITA_ss_2_click = {
+				set_variable = { nom_ship_trade_duration = 28 }
+				multiply_variable = { nom_ship_trade_duration = ITA.nom_commission_efficiency }
+				set_country_flag = ITA_ss_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_check = {
+			NOT = {
+				has_country_flag = nom_trade_pending
+				has_country_flag = nom_ai_recently_requested_ship
+				has_political_power < 10
+			}
+			ITA = { nom_can_build_foreign_ship = yes }
+		}
+		
+		ai_weights = {
+			ITA_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			ITA_bb_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			ITA_ca_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			ITA_ca_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			ITA_cl_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			ITA_cl_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			ITA_cl_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			ITA_dd_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			ITA_ss_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ss = yes
+					}
+				}
+			}
+			ITA_ss_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_ITA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ss = yes
+					}
+				}
+			}
+		}
+	}
+	
+	nom_JAP_ship_window = {
+		context_type = player_context
+		window_name = "JAP_ship_window"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_JAP
+			JAP = { nom_can_build_foreign_ship = yes }
+		}
+		
+		triggers = {
+			JAP_cv_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_1_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_1_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_2_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_2_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_2_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_3_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_3_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_cv_3_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			JAP_bb_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			JAP_bb_1_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			JAP_bb_1_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			JAP_bb_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			JAP_bb_2_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			JAP_bb_2_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			JAP_bc_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			JAP_bc_1_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			JAP_bc_1_title_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			JAP_bc_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			JAP_bc_2_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			JAP_bc_2_title_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			JAP_ca_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			JAP_ca_1_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			JAP_ca_1_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			JAP_dd_1_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			JAP_dd_1_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			JAP_dd_1_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			JAP_dd_2_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			JAP_dd_2_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			JAP_dd_2_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			JAP_ss_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			JAP_ss_1_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			JAP_ss_1_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			
+			JAP_cv_1_click_enabled = { JAP_bb_1_available_trigger = yes }
+			JAP_cv_2_click_enabled = { JAP_cv_2_available_trigger = yes }
+			JAP_cv_3_click_enabled = { JAP_cv_3_available_trigger = yes }
+			JAP_bb_1_click_enabled = { JAP_bb_1_available_trigger = yes }
+			JAP_bb_2_click_enabled = { JAP_bb_2_available_trigger = yes }
+			JAP_bb_3_click_enabled = { JAP_bb_3_available_trigger = yes }
+			JAP_bc_1_click_enabled = { JAP_bb_1_available_trigger = yes }
+			JAP_bc_2_click_enabled = { JAP_bc_2_available_trigger = yes }
+			JAP_ca_1_click_enabled = { JAP_bb_1_available_trigger = yes }
+			JAP_dd_2_click_enabled = { JAP_dd_2_available_trigger = yes }
+			JAP_ss_1_click_enabled = { JAP_ss_1_available_trigger = yes }
+		}
+		
+		properties = {
+			JAP_cv_1_bg = { image = "[loc_JAP_bb_1_bg_image]" }
+			JAP_cv_2_bg = { image = "[loc_JAP_cv_2_bg_image]" }
+			JAP_cv_3_bg = { image = "[loc_JAP_cv_3_bg_image]" }
+			JAP_bb_1_bg = { y=nom_offset_JAP^0 image = "[loc_JAP_bb_1_bg_image]" }
+			JAP_bb_1 = { y=nom_offset_JAP^1 }
+			JAP_bb_1_title = { y=nom_offset_JAP^2 }
+			JAP_bb_2_bg = { y=nom_offset_JAP^3 image = "[loc_JAP_bb_2_bg_image]" }
+			JAP_bb_2 = { y=nom_offset_JAP^4 }
+			JAP_bb_2_title = { y=nom_offset_JAP^5 }
+			JAP_bb_3_bg = { y=nom_offset_JAP^6 image = "[loc_JAP_bb_3_bg_image]" }
+			JAP_bb_3 = { y=nom_offset_JAP^7 }
+			JAP_bb_3_title = { y=nom_offset_JAP^8 }
+			JAP_bc_1_bg = { y=nom_offset_JAP^9 image = "[loc_JAP_bb_1_bg_image]" }
+			JAP_bc_1 = { y=nom_offset_JAP^10 }
+			JAP_bc_1_title = { y=nom_offset_JAP^11 }
+			JAP_bc_2_bg = { y=nom_offset_JAP^12 image = "[loc_JAP_bc_2_bg_image]" }
+			JAP_bc_2 = { y=nom_offset_JAP^13 }
+			JAP_bc_2_title = { y=nom_offset_JAP^14 }
+			JAP_ca_1_bg = { y=nom_offset_JAP^15 image = "[loc_JAP_bb_1_bg_image]" }
+			JAP_ca_1 = { y=nom_offset_JAP^16 }
+			JAP_ca_1_title = { y=nom_offset_JAP^17 }
+			JAP_dd_1_bg = { y=nom_offset_JAP^18 }
+			JAP_dd_1 = { y=nom_offset_JAP^19 }
+			JAP_dd_1_title = { y=nom_offset_JAP^20 }
+			JAP_dd_2_bg = { y=nom_offset_JAP^21 image = "[loc_JAP_dd_2_bg_image]" }
+			JAP_dd_2 = { y=nom_offset_JAP^22 }
+			JAP_dd_2_title = { y=nom_offset_JAP^23 }
+			JAP_ss_1_bg = { y=nom_offset_JAP^24 image = "[loc_JAP_ss_1_bg_image]" }
+			JAP_ss_1 = { y=nom_offset_JAP^25 }
+			JAP_ss_1_title = { y=nom_offset_JAP^26 }
+		}
+		
+		effects = {
+			JAP_cv_1_click = {
+				set_variable = { nom_ship_trade_duration = 305 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_cv_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_cv_2_click = {
+				set_variable = { nom_ship_trade_duration = 293 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_cv_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_cv_3_click = {
+				set_variable = { nom_ship_trade_duration = 491 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_cv_3_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_bb_1_click = {
+				set_variable = { nom_ship_trade_duration = 411 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_bb_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_bb_2_click = {
+				set_variable = { nom_ship_trade_duration = 890 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_bb_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_bb_3_click = {
+				set_variable = { nom_ship_trade_duration = 899 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_bb_3_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_bc_1_click = {
+				set_variable = { nom_ship_trade_duration = 345 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_bc_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_bc_2_click = {
+				set_variable = { nom_ship_trade_duration = 496 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_bc_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_ca_1_click = {
+				set_variable = { nom_ship_trade_duration = 239 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_ca_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_dd_1_click = {
+				set_variable = { nom_ship_trade_duration = 95 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_dd_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_dd_2_click = {
+				set_variable = { nom_ship_trade_duration = 107 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_dd_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			JAP_ss_1_click = {
+				set_variable = { nom_ship_trade_duration = 106 }
+				multiply_variable = { nom_ship_trade_duration = JAP.nom_commission_efficiency }
+				set_country_flag = JAP_ss_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_check = {
+			NOT = {
+				has_country_flag = nom_trade_pending
+				has_country_flag = nom_ai_recently_requested_ship
+				has_political_power < 10
+			}
+			JAP = { nom_can_build_foreign_ship = yes }
+		}
+		
+		ai_weights = {
+			JAP_cv_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			JAP_cv_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			JAP_cv_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			JAP_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			JAP_bb_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			JAP_bb_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			JAP_bc_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bc = yes
+					}
+				}
+			}
+			JAP_bc_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bc = yes
+					}
+				}
+			}
+			JAP_ca_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			JAP_dd_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			JAP_dd_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			JAP_ss_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_JAP }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ss = yes
+					}
+				}
+			}
+		}
+	}
+	
+	nom_SOV_ship_window = {
+		context_type = player_context
+		window_name = "SOV_ship_window"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_SOV
+			SOV = { nom_can_build_foreign_ship = yes }
+		}
+		
+		triggers = {
+			SOV_bb_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			SOV_bb_1_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			SOV_bb_1_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			SOV_bb_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			SOV_bb_2_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			SOV_bb_2_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			SOV_bc_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			SOV_bc_1_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			SOV_bc_1_title_visible = { not = { has_country_flag = nom_trade_filter_bc } }
+			SOV_ca_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			SOV_ca_1_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			SOV_ca_1_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			SOV_dd_1_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_1_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_1_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_2_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_2_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_2_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_3_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_3_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			SOV_dd_3_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			
+			SOV_bb_1_click_enabled = { SOV_bb_1_available_trigger = yes }
+			SOV_bb_2_click_enabled = { SOV_bb_2_available_trigger = yes }
+			SOV_bc_1_click_enabled = { SOV_bc_1_available_trigger = yes }
+			SOV_ca_1_click_enabled = { SOV_ca_1_available_trigger = yes }
+			SOV_dd_2_click_enabled = { SOV_dd_2_available_trigger = yes }
+			SOV_dd_3_click_enabled = { SOV_dd_3_available_trigger = yes }
+		}
+		
+		properties = {
+			SOV_bb_1_bg = { y=nom_offset_SOV^0 image = "[loc_SOV_bb_1_bg_image]" }
+			SOV_bb_1 = { y=nom_offset_SOV^1 }
+			SOV_bb_1_title = { y=nom_offset_SOV^2 }
+			SOV_bb_2_bg = { y=nom_offset_SOV^3 image = "[loc_SOV_bb_2_bg_image]" }
+			SOV_bb_2 = { y=nom_offset_SOV^4 }
+			SOV_bb_2_title = { y=nom_offset_SOV^5 }
+			SOV_bc_1_bg = { y=nom_offset_SOV^6 image = "[loc_SOV_bc_1_bg_image]" }
+			SOV_bc_1 = { y=nom_offset_SOV^7 }
+			SOV_bc_1_title = { y=nom_offset_SOV^8 }
+			SOV_ca_1_bg = { y=nom_offset_SOV^9 image = "[loc_SOV_ca_1_bg_image]" }
+			SOV_ca_1 = { y=nom_offset_SOV^10 }
+			SOV_ca_1_title = { y=nom_offset_SOV^11 }
+			SOV_dd_1_bg = { y=nom_offset_SOV^12 }
+			SOV_dd_1 = { y=nom_offset_SOV^13 }
+			SOV_dd_1_title = { y=nom_offset_SOV^14 }
+			SOV_dd_2_bg = { y=nom_offset_SOV^15 image = "[loc_SOV_dd_2_bg_image]" }
+			SOV_dd_2 = { y=nom_offset_SOV^16 }
+			SOV_dd_2_title = { y=nom_offset_SOV^17 }
+			SOV_dd_3_bg = { y=nom_offset_SOV^18 image = "[loc_SOV_dd_3_bg_image]" }
+			SOV_dd_3 = { y=nom_offset_SOV^19 }
+			SOV_dd_3_title = { y=nom_offset_SOV^20 }
+		}
+		
+		effects = {
+			SOV_bb_1_click = {
+				set_variable = { nom_ship_trade_duration = 348 }
+				multiply_variable = { nom_ship_trade_duration = SOV.nom_commission_efficiency }
+				set_country_flag = SOV_bb_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			SOV_bb_2_click = {
+				set_variable = { nom_ship_trade_duration = 547 }
+				multiply_variable = { nom_ship_trade_duration = SOV.nom_commission_efficiency }
+				set_country_flag = SOV_bb_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			SOV_bc_1_click = {
+				set_variable = { nom_ship_trade_duration = 433 }
+				multiply_variable = { nom_ship_trade_duration = SOV.nom_commission_efficiency }
+				set_country_flag = SOV_bc_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			SOV_ca_1_click = {
+				set_variable = { nom_ship_trade_duration = 179 }
+				multiply_variable = { nom_ship_trade_duration = SOV.nom_commission_efficiency }
+				set_country_flag = SOV_ca_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			SOV_dd_1_click = {
+				set_variable = { nom_ship_trade_duration = 85 }
+				multiply_variable = { nom_ship_trade_duration = SOV.nom_commission_efficiency }
+				set_country_flag = SOV_dd_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			SOV_dd_2_click = {
+				set_variable = { nom_ship_trade_duration = 94 }
+				multiply_variable = { nom_ship_trade_duration = SOV.nom_commission_efficiency }
+				set_country_flag = SOV_dd_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			SOV_dd_3_click = {
+				set_variable = { nom_ship_trade_duration = 137 }
+				multiply_variable = { nom_ship_trade_duration = SOV.nom_commission_efficiency }
+				set_country_flag = SOV_dd_3_flag
+				nom_skip_confirmation_effect = yes
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_check = {
+			NOT = {
+				has_country_flag = nom_trade_pending
+				has_country_flag = nom_ai_recently_requested_ship
+				has_political_power < 10
+			}
+			SOV = { nom_can_build_foreign_ship = yes }
+		}
+		
+		ai_weights = {
+			SOV_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_SOV }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			SOV_bb_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_SOV }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			SOV_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_SOV }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bc = yes
+					}
+				}
+			}
+			SOV_ca_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_SOV }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			SOV_dd_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_SOV }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			SOV_dd_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_SOV }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			SOV_dd_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_SOV }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+		}
+	}
+	
+	nom_USA_ship_window = {
+		context_type = player_context
+		window_name = "USA_ship_window"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_trade_USA
+			USA = { nom_can_build_foreign_ship = yes }
+		}
+		
+		triggers = {
+			USA_cv_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_1_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_1_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_2_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_2_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_2_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_3_bg_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_3_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_cv_3_title_visible = { not = { has_country_flag = nom_trade_filter_cv } }
+			USA_bb_1_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_1_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_1_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_2_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_2_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_2_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_3_bg_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_3_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_bb_3_title_visible = { not = { has_country_flag = nom_trade_filter_bb } }
+			USA_ca_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			USA_ca_1_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			USA_ca_1_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			USA_ca_2_bg_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			USA_ca_2_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			USA_ca_2_title_visible = { not = { has_country_flag = nom_trade_filter_ca } }
+			USA_cl_1_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			USA_cl_1_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			USA_cl_1_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			USA_cl_2_bg_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			USA_cl_2_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			USA_cl_2_title_visible = { not = { has_country_flag = nom_trade_filter_cl } }
+			USA_dd_1_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			USA_dd_1_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			USA_dd_1_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			USA_dd_2_bg_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			USA_dd_2_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			USA_dd_2_title_visible = { not = { has_country_flag = nom_trade_filter_dd } }
+			USA_ss_1_bg_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			USA_ss_1_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			USA_ss_1_title_visible = { not = { has_country_flag = nom_trade_filter_ss } }
+			
+			USA_cv_1_click_enabled = { USA_cv_1_available_trigger = yes }
+			USA_cv_2_click_enabled = { USA_cv_2_available_trigger = yes }
+			USA_cv_3_click_enabled = { USA_cv_3_available_trigger = yes }
+			USA_bb_1_click_enabled = { USA_bb_1_available_trigger = yes }
+			USA_bb_2_click_enabled = { USA_bb_2_available_trigger = yes }
+			USA_bb_3_click_enabled = { USA_bb_3_available_trigger = yes }
+			USA_ca_1_click_enabled = { USA_bb_1_available_trigger = yes }
+			USA_ca_2_click_enabled = { USA_ca_2_available_trigger = yes }
+			USA_cl_1_click_enabled = { USA_cl_1_available_trigger = yes }
+			USA_cl_2_click_enabled = { USA_cl_2_available_trigger = yes }
+			USA_dd_2_click_enabled = { USA_dd_2_available_trigger = yes }
+		}
+		
+		properties = {
+			USA_cv_1_bg = { image = "[loc_USA_cv_1_bg_image]" }
+			USA_cv_2_bg = { image = "[loc_USA_cv_2_bg_image]" }
+			USA_cv_3_bg = { image = "[loc_USA_cv_3_bg_image]" }
+			USA_bb_1_bg = { y=nom_offset_USA^0 image = "[loc_USA_bb_1_bg_image]" }
+			USA_bb_1 = { y=nom_offset_USA^1 }
+			USA_bb_1_title = { y=nom_offset_USA^2 }
+			USA_bb_2_bg = { y=nom_offset_USA^3 image = "[loc_USA_bb_2_bg_image]" }
+			USA_bb_2 = { y=nom_offset_USA^4 }
+			USA_bb_2_title = { y=nom_offset_USA^5 }
+			USA_bb_3_bg = { y=nom_offset_USA^6 image = "[loc_USA_bb_3_bg_image]" }
+			USA_bb_3 = { y=nom_offset_USA^7 }
+			USA_bb_3_title = { y=nom_offset_USA^8 }
+			USA_ca_1_bg = { y=nom_offset_USA^9 image = "[loc_USA_bb_1_bg_image]" }
+			USA_ca_1 = { y=nom_offset_USA^10 }
+			USA_ca_1_title = { y=nom_offset_USA^11 }
+			USA_ca_2_bg = { y=nom_offset_USA^12 image = "[loc_USA_ca_2_bg_image]" }
+			USA_ca_2 = { y=nom_offset_USA^13 }
+			USA_ca_2_title = { y=nom_offset_USA^14 }
+			USA_cl_1_bg = { y=nom_offset_USA^15 image = "[loc_USA_cl_1_bg_image]" }
+			USA_cl_1 = { y=nom_offset_USA^16 }
+			USA_cl_1_title = { y=nom_offset_USA^17 }
+			USA_cl_2_bg = { y=nom_offset_USA^18 image = "[loc_USA_cl_2_bg_image]" }
+			USA_cl_2 = { y=nom_offset_USA^19 }
+			USA_cl_2_title = { y=nom_offset_USA^20 }
+			USA_dd_1_bg = { y=nom_offset_USA^21 }
+			USA_dd_1 = { y=nom_offset_USA^22 }
+			USA_dd_1_title = { y=nom_offset_USA^23 }
+			USA_dd_2_bg = { y=nom_offset_USA^24 image = "[loc_USA_dd_2_bg_image]" }
+			USA_dd_2 = { y=nom_offset_USA^25 }
+			USA_dd_2_title = { y=nom_offset_USA^26 }
+			USA_ss_1_bg = { y=nom_offset_USA^27 }
+			USA_ss_1 = { y=nom_offset_USA^28 }
+			USA_ss_1_title = { y=nom_offset_USA^29 }
+		}
+		
+		effects = {
+			USA_cv_1_click = {
+				set_variable = { nom_ship_trade_duration = 364 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_cv_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_cv_2_click = {
+				set_variable = { nom_ship_trade_duration = 405 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_cv_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_cv_3_click = {
+				set_variable = { nom_ship_trade_duration = 449 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_cv_3_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_bb_1_click = {
+				set_variable = { nom_ship_trade_duration = 421 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_bb_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_bb_2_click = {
+				set_variable = { nom_ship_trade_duration = 496 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_bb_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_bb_3_click = {
+				set_variable = { nom_ship_trade_duration = 627 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_bb_3_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_ca_1_click = {
+				set_variable = { nom_ship_trade_duration = 194 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_ca_1_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_ca_2_click = {
+				set_variable = { nom_ship_trade_duration = 304 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_ca_2_flag
+				set_country_flag = nom_capital_ship_request
+				nom_skip_confirmation_effect = yes
+			}
+			USA_cl_1_click = {
+				set_variable = { nom_ship_trade_duration = 348 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_cl_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			USA_cl_2_click = {
+				set_variable = { nom_ship_trade_duration = 339 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_cl_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			USA_dd_1_click = {
+				set_variable = { nom_ship_trade_duration = 75 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_dd_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+			USA_dd_2_click = {
+				set_variable = { nom_ship_trade_duration = 153 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_dd_2_flag
+				nom_skip_confirmation_effect = yes
+			}
+			USA_ss_1_click = {
+				set_variable = { nom_ship_trade_duration = 53 }
+				multiply_variable = { nom_ship_trade_duration = USA.nom_commission_efficiency }
+				set_country_flag = USA_ss_1_flag
+				nom_skip_confirmation_effect = yes
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_check = {
+			NOT = {
+				has_country_flag = nom_trade_pending
+				has_country_flag = nom_ai_recently_requested_ship
+				has_political_power < 10
+			}
+			USA = { nom_can_build_foreign_ship = yes }
+		}
+		
+		ai_weights = {
+			USA_cv_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			USA_cv_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			USA_cv_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_cv = yes
+					}
+				}
+			}
+			USA_bb_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			USA_bb_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			USA_bb_3_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 20
+						nom_ai_wants_bb = yes
+					}
+				}
+			}
+			USA_ca_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			USA_ca_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_ca = yes
+					}
+				}
+			}
+			USA_cl_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			USA_cl_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_cl = yes
+					}
+				}
+			}
+			USA_dd_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			USA_dd_2_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 15
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+			USA_ss_1_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						factor = 0
+						not = { has_country_flag = nom_trade_USA }
+					}
+					modifier = {
+						add = 10
+						nom_ai_wants_dd = yes
+					}
+				}
+			}
+		}
+	}
+	
+	nom_ship_confirmation_popup = {
+		context_type = player_context
+		window_name = "nom_ship_confirmation_popup"
+		parent_window_name = "nom_trade_container"
+		
+		visible = { has_variable = nom_ship_trade_duration }
+		
+		properties = {
+			designer_image = { image = "[nom_designer_gfx]" }
+		}
+		
+		effects = {
+			cancel_button_click = {
+				clear_variable = nom_ship_trade_duration
+				clr_country_flag = nom_capital_ship_request
+				nom_clear_ship_type_flag_effect = yes
+			}
+			send_button_click = {
+				clr_country_flag = nom_trade_open
+				set_country_flag = nom_trade_pending
+				add_political_power = -10
+				
+				if = {
+					limit = { has_country_flag = nom_capital_ship_request }
+					clr_country_flag = nom_capital_ship_request
+					
+					if = {
+						limit = { has_country_flag = nom_trade_ENG }
+						ENG = { nom_trade_capital_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_FRA }
+						FRA = { nom_trade_capital_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_GER }
+						GER = { nom_trade_capital_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_ITA }
+						ITA = { nom_trade_capital_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_JAP }
+						JAP = { nom_trade_capital_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_SOV }
+						SOV = { nom_trade_capital_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_USA }
+						USA = { nom_trade_capital_automatic = yes }
+					}
+				}
+				else = {
+					if = {
+						limit = { has_country_flag = nom_trade_ENG }
+						ENG = { nom_trade_screen_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_FRA }
+						FRA = { nom_trade_screen_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_GER }
+						GER = { nom_trade_screen_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_ITA }
+						ITA = { nom_trade_screen_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_JAP }
+						JAP = { nom_trade_screen_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_SOV }
+						SOV = { nom_trade_screen_automatic = yes }
+					}
+					else_if = {
+						limit = { has_country_flag = nom_trade_USA }
+						USA = { nom_trade_screen_automatic = yes }
+					}
+				}
+			}
+		}
+		
+		triggers = {
+			send_button_click_enabled = {
+				has_political_power > 10
+			}
+		}
+		
+		ai_enabled = { always = no }
+	}
+	
+	nom_trade_deal_popup = {
+		context_type = player_context
+		window_name = "trade_deal_popup"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_deal_confirmation_pending
+		}
+
+		effects = {
+			cancel_button_click = {
+				clr_country_flag = nom_deal_confirmation_pending
+			}
+			
+			send_button_click = {
+				clr_country_flag = nom_deal_confirmation_pending
+				add_political_power = -75
+				
+				if = {
+					limit = { has_country_flag = nom_trade_ENG }
+					ENG = { nom_trade_deal_automatic = yes }
+				}
+				else_if = {
+					limit = { has_country_flag = nom_trade_FRA }
+					FRA = { nom_trade_deal_automatic = yes }
+				}
+				else_if = {
+					limit = { has_country_flag = nom_trade_GER }
+					GER = { nom_trade_deal_automatic = yes }
+				}
+				else_if = {
+					limit = { has_country_flag = nom_trade_ITA }
+					ITA = { nom_trade_deal_automatic = yes }
+				}
+				else_if = {
+					limit = { has_country_flag = nom_trade_JAP }
+					JAP = { nom_trade_deal_automatic = yes }
+				}
+				else_if = {
+					limit = { has_country_flag = nom_trade_SOV }
+					SOV = { nom_trade_deal_automatic = yes }
+				}
+				else_if = {
+					limit = { has_country_flag = nom_trade_USA }
+					USA = { nom_trade_deal_automatic = yes }
+				}
+			}
+		}
+		
+		ai_enabled = { always = no }
+	}
+	
+	nom_trade_deal_cancel_popup = {
+		context_type = player_context
+		window_name = "trade_deal_cancel_popup"
+		parent_window_name = "nom_trade_container"
+
+		visible = {
+			has_country_flag = nom_deal_cancellation_pending
+		}
+
+		effects = {
+			cancel_button_click = {
+				clr_country_flag = nom_deal_cancellation_pending
+			}
+			
+			send_button_click = {
+				clr_country_flag = nom_deal_cancellation_pending
+				
+				var:nom_trade_deal_partner = {
+					nom_trade_deal_cancel_automatic = yes
+				}
+				clear_variable = nom_trade_deal_partner
+			}
+		}
+		
+		ai_enabled = { always = no }
+	}
+
+	nom_trade_open_clicker = {
+		context_type = player_context
+		window_name = "nom_trade_open"
+		parent_window_token = production_tab
+
+		visible = {
+			always = yes
+		}
+		
+		triggers = {
+			open_button_click_enabled = {
+				not = {
+					has_country_flag = nom_trade_open
+					has_country_flag = nom_trade_pending
+				}
+			}
+		}
+
+		effects = {
+			open_button_click = {
+				set_country_flag = nom_trade_open
+			}
+		}
+		
+		ai_enabled = { always = yes }
+		
+		ai_weights = {
+			open_button_click = { ai_will_do = { base = 10 } weight = 1 }
+		}
+		ai_max_weight_taken_per_test = 1
+	}
+}

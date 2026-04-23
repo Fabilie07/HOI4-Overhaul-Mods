@@ -1,0 +1,3 @@
+technology_categories = {
+	armor_modules
+}

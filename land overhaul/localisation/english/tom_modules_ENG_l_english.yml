@@ -1,0 +1,23 @@
+﻿l_english:
+
+ ENG_tank_machine_gun_2x:0 "2x .303 Vickers MG"
+ ENG_tank_heavy_machine_gun:0 ".5 Vickers MG"
+ ENG_tank_heavy_machine_gun_2x:0 "2x .5 Vickers MG"
+ ENG_tank_heavy_machine_gun_4x:0 "4x .5 Vickers MG"
+ ENG_tank_small_cannon:0 "Ordenance QF 2-Pounder Mk IX"
+ ENG_tank_small_cannon_2:0 "Ordenance QF 2-Pounder Mk X"
+ ENG_tank_medium_velocity_cannon:0 "Ordenance QF 75mm"
+ ENG_tank_medium_cannon:0 "Ordenance QF 6-Pounder"
+ ENG_tank_medium_cannon_2:0 "77mm HV"
+ ENG_tank_high_velocity_cannon_1:0 "Ordenance QF 17-Pounder Mk II"
+ ENG_tank_high_velocity_cannon_2:0 "Ordenance QF 17-Pounder Mk IV"
+ ENG_tank_high_velocity_cannon_3:0 "Ordenance QF 20-Pounder"
+ ENG_tank_super_heavy_cannon:0 "Ordenance QF 32-Pounder"
+ ENG_tank_modern_cannon:0 "105mm L7"
+
+ ENG_tank_medium_howitzer:0 "Ordenance QF 25-Pounder"
+
+ ENG_tank_gasoline_engine:0 "Meadows MAT H12"
+ ENG_tank_gasoline_engine_2:0 "Nuffield Liberty Mk II"
+ ENG_tank_gasoline_engine_3:0 "Rolls-Royce Meteor V12"
+ ENG_tank_modern_gasoline_engine:0 "Rolls-Royce Meteor 4B"

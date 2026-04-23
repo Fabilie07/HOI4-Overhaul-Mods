@@ -1,0 +1,245 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	
+	### Wood
+	
+	propeller_wood_2 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_fixed
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.1
+		}
+		
+		dismantle_cost_resources = {
+			aluminium = 1
+		}
+	}
+	propeller_wood_3 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_fixed
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 1
+			reliability = -0.1
+			build_cost_ic = 0.1
+		}
+		
+		dismantle_cost_resources = {
+			aluminium = 1
+		}
+	}
+	
+	
+	### Metal
+	
+	propeller_fixed_2 = {
+		abbreviation = "pf2"
+		category = propeller
+		gui_category = propeller_fixed
+		gfx = propeller_2
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.05
+		}
+	}
+	propeller_fixed_3 = {
+		abbreviation = "pf3"
+		category = propeller
+		gui_category = propeller_fixed
+		gfx = propeller_3
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 1
+			reliability = -0.05
+			build_cost_ic = 0.1
+		}
+	}
+	
+	propeller_2 = {
+		abbreviation = "su1"
+		category = propeller
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 1
+			build_cost_ic = 0.2
+		}
+	}
+	propeller_3 = {
+		abbreviation = "su1"
+		category = propeller
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 2
+			build_cost_ic = 0.3
+		}
+	}
+	propeller_4 = {
+		abbreviation = "su1"
+		category = propeller
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 3
+			build_cost_ic = 0.4
+		}
+	}
+	propeller_5 = {
+		abbreviation = "su1"
+		category = propeller
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 4
+			build_cost_ic = 0.5
+		}
+	}
+	propeller_6 = {
+		abbreviation = "su1"
+		category = propeller
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 5
+			build_cost_ic = 0.6
+		}
+	}
+	
+	
+	### Constant Speed
+	
+	propeller_automatic_3 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_automatic
+		gfx = propeller_3
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 2
+			reliability = 0.05
+			build_cost_ic = 0.4
+		}
+	}
+	propeller_automatic_4 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_automatic
+		gfx = propeller_4
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 3
+			reliability = 0.05
+			build_cost_ic = 0.5
+		}
+	}
+	propeller_automatic_5 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_automatic
+		gfx = propeller_5
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 4
+			reliability = 0.05
+			build_cost_ic = 0.6
+		}
+	}
+	propeller_automatic_6 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_automatic
+		gfx = propeller_6
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 5
+			reliability = 0.05
+			build_cost_ic = 0.7
+		}
+	}
+	
+	
+	### Counter-Rotating
+	
+	propeller_counter_2 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_counter
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 2
+			thrust = 2
+			reliability = 0.05
+			build_cost_ic = 0.5
+		}
+	}
+	propeller_counter_3 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_counter
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 3
+			thrust = 2
+			reliability = 0.05
+			build_cost_ic = 0.6
+		}
+	}
+	propeller_counter_4 = {
+		abbreviation = "su1"
+		category = propeller
+		gui_category = propeller_counter
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 4
+			thrust = 2
+			reliability = 0.05
+			build_cost_ic = 0.7
+		}
+	}
+	
+	
+	### Jet Nozzle
+	
+	jet_fixed_nozzle = {
+		abbreviation = "noz"
+		category = nozzle
+		sfx = sfx_ui_sd_module_turret
+	}
+	jet_variable_nozzle = {
+		abbreviation = "noz"
+		category = nozzle
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 10
+			build_cost_ic = 0.5
+		}
+	}
+	jet_turning_nozzle = {
+		abbreviation = "noz"
+		category = nozzle
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 4
+			build_cost_ic = 0.5
+		}
+	}
+}

@@ -1,0 +1,1259 @@
+guiTypes = {
+
+	# small_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# cv_small_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# small_plane_interceptor_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_interceptor_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_interceptor"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	
+	# cv_small_plane_interceptor_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_interceptor_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_interceptor"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	
+	# small_plane_heavy_fighter_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_heavy_fighter_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_heavy_fighter"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	
+	# cv_small_plane_heavy_fighter_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_heavy_fighter_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_heavy_fighter"
+			position = { x=0 y=0 }
+		}
+	}
+	
+
+	# small_plane_cas_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_cas_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# cv_small_plane_cas_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_cas_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_cas_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_cas_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_cas_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_cas_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_cas_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_cas_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_cas_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# small_plane_naval_bomber_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_naval_bomber_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# cv_small_plane_naval_bomber_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_naval_bomber_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_naval_bomber_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_naval_bomber_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_naval_bomber_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_naval_bomber_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_naval_bomber_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_naval_bomber_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# small_plane_scout_plane_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_scout_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_scout_plane"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# cv_small_plane_scout_plane_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_scout_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_scout_plane"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# small_plane_maritime_patrol_plane_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_maritime_patrol_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_maritime_patrol_plane"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# cv_small_plane_maritime_patrol_plane_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_maritime_patrol_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_maritime_patrol_plane"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# medium_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+
+
+
+	# medium_plane_fighter_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_fighter_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_fighter_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# medium_plane_interceptor_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_interceptor_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_interceptor"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# medium_plane_cas_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_cas_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_cas"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# medium_plane_naval_bomber_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_naval_bomber_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_naval_bomber"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# medium_plane_suicide_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_suicide_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_suicide"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# medium_plane_maritime_patrol_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_maritime_patrol_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_maritime_patrol_plane"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# medium_plane_scout_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_medium_plane_scout_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_scout_plane_airframe"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# large_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_large_plane_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# large_plane_naval_bomber_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_naval_bomber_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_naval_bomber"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# large_plane_scout_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_scout_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_scout_plane"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# large_plane_maritime_patrol_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_maritime_patrol_plane_airframe"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_maritime_patrol_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_maritime_patrol_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_large_plane_maritime_patrol_plane_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_maritime_patrol_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# small_plane_suicide_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_small_plane_suicide_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# cv_small_plane_suicide_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_suicide_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_suicide_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_suicide_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_suicide_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_suicide_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_suicide_airframe_5"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_5"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_cv_small_plane_suicide_airframe_6"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_small_plane_airframe_6"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# intercontinental_plane_airframe
+	
+	containerWindowType = {
+		name = "equipment_designer_intercontinental_plane_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	# transport_plane_equipment
+	
+	containerWindowType = {
+		name = "equipment_designer_transport_plane_equipment_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_transport_plane_equipment_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_transport_plane_equipment_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_transport_plane_equipment_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_medium_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	
+	# Mothership
+	
+	containerWindowType = {
+		name = "equipment_designer_mothership_equipment_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "equipment_designer_mothership_equipment_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_large_plane_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+}

@@ -1,0 +1,16 @@
+on_actions = {
+	on_monthly = {
+		# Heavy Industry
+		effect = {
+			add_to_variable = { tom_hi_tank_current = tom_hi_tank_change }
+			add_to_variable = { tom_hi_industry_current = tom_hi_industry_change }
+			add_to_variable = { tom_hi_mp_current = tom_hi_mp_change }
+			add_to_variable = { tom_hi_specialisation_current = tom_hi_specialisation_change }
+			add_to_variable = { tom_hi_exp_current = tom_hi_exp_change }
+			
+			tom_hi_current_visual_update_effect = yes
+			tom_hi_check_monthly_change_update = yes
+			tom_hi_update_ideas_effect = yes
+		}
+	}
+}

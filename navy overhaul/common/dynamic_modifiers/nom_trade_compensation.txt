@@ -1,0 +1,9 @@
+nom_trade_compensation = {
+	enable = { always = yes }
+
+	civilian_factory_use = ROOT.nom_trade_compensation_civs
+	country_resource_steel = ROOT.nom_trade_compensation_steel
+	country_resource_tungsten = ROOT.nom_trade_compensation_tungsten
+	country_resource_chromium = ROOT.nom_trade_compensation_chromium
+	country_resource_rubber = ROOT.nom_trade_compensation_rubber
+}

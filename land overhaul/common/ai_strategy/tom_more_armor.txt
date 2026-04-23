@@ -1,0 +1,96 @@
+tom_more_armor_1 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+}
+
+tom_more_armor_2 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		num_of_military_factories > 70
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+}
+
+tom_more_armor_3 = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		num_of_military_factories > 140
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+}
+
+tom_more_armor_wartime = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 10
+	}
+}
+
+# tom_more_modern_armor = { # To prevent no-strength MBT Divisions
+	# allowed = {
+		# always = yes
+	# }
+	# enable = {
+		# ROOT = { is_special_project_completed = sp:sp_land_main_battle_tank }
+	# }
+	
+	# ai_strategy = {
+		# type = equipment_production_factor
+		# id = armor
+		# value = 20
+	# }
+# }

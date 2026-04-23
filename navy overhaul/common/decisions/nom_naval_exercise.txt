@@ -1,0 +1,96 @@
+nom_naval_exercise = {
+	coastal_gunnery_exercise = {
+		visible = {
+			has_war = no
+			any_owned_state = { is_coastal = yes }
+		}
+		available = {
+			has_navy_size = {
+				size > 0
+				type = capital_ship
+			}
+		}
+
+		custom_cost_trigger = { command_power > 14.9 }
+		custom_cost_text = decision_cost_CP_15
+
+		days_re_enable = 160
+		days_remove = 20
+
+		modifier = {
+			experience_gain_navy_factor = 0.4
+			experience_gain_navy_unit_factor = 0.15
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+		remove_effect = {
+			navy_experience = 10
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ship_modules_tech
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = nom_ai_no_exercises
+					option = ENABLED
+				}
+			}
+		}
+	}
+
+	coastal_maneuver_exercise = {
+		visible = {
+			has_war = no
+			any_owned_state = { is_coastal = yes }
+		}
+		available = {
+			has_navy_size = {
+				size > 4
+			}
+		}
+
+		custom_cost_trigger = { command_power > 14.9 }
+		custom_cost_text = decision_cost_CP_15
+
+		days_re_enable = 160
+		days_remove = 20
+
+		modifier = {
+			experience_gain_navy_factor = 0.4
+			experience_gain_navy_unit_factor = 0.15
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+		remove_effect = {
+			navy_experience = 20
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = nom_ai_no_exercises
+					option = ENABLED
+				}
+			}
+		}
+	}
+}

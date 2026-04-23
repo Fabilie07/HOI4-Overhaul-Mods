@@ -1,0 +1,1619 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	
+	### Number
+	
+	engine_1x = {
+		abbreviation = "en1"
+		category = plane_engine_number
+		gfx = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+	}
+	engine_2x = {
+		abbreviation = "en2"
+		category = plane_engine_number_2
+		gui_category = plane_engine_number
+		gfx = twin_plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			thrust = 0.5
+			build_cost_ic = 0.2
+			fuel_consumption = 1
+		}
+	}
+	engine_3x = {
+		abbreviation = "en3"
+		category = plane_engine_number_3
+		gui_category = plane_engine_number
+		gfx = medium_plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			thrust = 1
+			build_cost_ic = 0.4
+			fuel_consumption = 2
+		}
+	}
+	engine_4x = {
+		abbreviation = "en4"
+		category = plane_engine_number_4
+		gui_category = plane_engine_number
+		gfx = quad_large_plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			thrust = 1.5
+			build_cost_ic = 0.6
+			fuel_consumption = 3
+		}
+	}
+	engine_5x = {
+		abbreviation = "en5"
+		category = plane_engine_number_6
+		gui_category = plane_engine_number
+		#gfx = quad_large_plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			thrust = 2
+			build_cost_ic = 0.8
+			fuel_consumption = 4
+		}
+	}
+	engine_6x = {
+		abbreviation = "en6"
+		category = plane_engine_number_6
+		gui_category = plane_engine_number
+		gfx = large_plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			thrust = 2.5
+			build_cost_ic = 1
+			fuel_consumption = 5
+		}
+	}
+	engine_7x = {
+		abbreviation = "en7"
+		category = plane_engine_number_8
+		gui_category = plane_engine_number
+		# gfx = large_plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			thrust = 3
+			build_cost_ic = 1.2
+			fuel_consumption = 6
+		}
+	}
+	engine_8x = {
+		abbreviation = "en8"
+		category = plane_engine_number_8
+		gui_category = plane_engine_number
+		# gfx = large_plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			thrust = 3.5
+			build_cost_ic = 1.4
+			fuel_consumption = 7
+		}
+	}
+	
+	
+	
+	### Type
+	
+	engine_type_straight = {
+		abbreviation = "inl"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 4
+		}
+		multiply_stats = {
+			build_cost_ic = -0.02
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_injection }
+			engine_power_slot = { plane_kilowatt }
+			engine_cooling_slot = { plane_early_cooling }
+			supercharger_type_slot = { supercharger }
+			propeller_slot = { propeller }
+		}
+	}
+	engine_type_rotary = {
+		abbreviation = "rad"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 2
+		}
+		multiply_stats = {
+			build_cost_ic = -0.02
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_injection }
+			engine_power_slot = { plane_kilowatt }
+			engine_cooling_slot = { plane_early_cooling }
+			supercharger_type_slot = { supercharger }
+			propeller_slot = { propeller }
+		}
+	}
+	engine_type_vee = {
+		abbreviation = "inl"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 6
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_injection }
+			engine_power_slot = { plane_kilowatt }
+			supercharger_type_slot = { supercharger }
+			propeller_slot = { propeller }
+		}
+	}
+	engine_type_radial = {
+		abbreviation = "rad"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 4
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_injection }
+			engine_power_slot = { plane_kilowatt }
+			supercharger_type_slot = { supercharger }
+			propeller_slot = { propeller }
+		}
+	}
+	engine_type_push = {
+		abbreviation = "rad"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		mission_type_stats = {
+			limit = { interception }
+			multiply_stats = {
+				air_attack = 0.05
+			}
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_injection }
+			engine_power_slot = { plane_kilowatt }
+			supercharger_type_slot = { supercharger }
+			propeller_slot = { propeller }
+		}
+	}
+	engine_type_push_pull = {
+		abbreviation = "rad"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 5
+			thrust = 4
+			build_cost_ic = 1
+		}
+		
+		mission_type_stats = {
+			limit = { interception }
+			multiply_stats = {
+				air_attack = 0.1
+			}
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_injection }
+			engine_power_slot = { plane_kilowatt }
+			supercharger_type_slot = { supercharger }
+			propeller_slot = { propeller }
+		}
+	}
+	engine_type_turboprop = {
+		abbreviation = "rad"
+		category = plane_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 5
+			air_agility = 4
+			thrust = 6
+			build_cost_ic = 1
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_bypass }
+			engine_power_slot = { plane_kilowatt }
+			supercharger_type_slot = { compressor }
+			propeller_slot = { propeller }
+		}
+	}
+	engine_type_jet = {
+		abbreviation = "jet"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 30
+			build_cost_ic = 0.4
+			reliability = -0.1
+		}
+		multiply_stats = {
+			air_range = -0.4
+		}
+		
+		build_cost_resources = {
+			chromium = 2
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_bypass }
+			engine_power_slot = { plane_kilonewton }
+			supercharger_type_slot = { compressor }
+			propeller_slot = { nozzle }
+		}
+	}
+	engine_type_jet_afterburner = {
+		abbreviation = "jet"
+		category = plane_jet_engine_type
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 40
+			air_agility = 6
+			fuel_consumption = 1
+			build_cost_ic = 0.6
+			reliability = -0.1
+		}
+		multiply_stats = {
+			air_range = -0.4
+		}
+		
+		build_cost_resources = {
+			chromium = 2
+		}
+		
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_bypass }
+			engine_power_slot = { plane_kilonewton }
+			supercharger_type_slot = { compressor }
+			propeller_slot = { nozzle }
+		}
+	}
+	rocket_engine_1 = {
+		abbreviation = "rok"
+		category = plane_jet_engine_type
+		gfx = engine_type_rocket
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			maximum_speed = 40
+			build_cost_ic = 0.4
+			reliability = -0.2
+		}
+		multiply_stats = {
+			air_range = -0.9
+		}
+		
+		mission_type_stats = {
+			limit = { interception }
+			multiply_stats = {
+				air_attack = 0.2
+				air_defence = 0.5
+			}
+		}
+		
+		build_cost_resources = {
+			tungsten = 2
+		}
+		
+		allowed_module_categories = {
+			engine_power_slot = { plane_kilonewton }
+			supercharger_type_slot = { plane_rocket_fuel }
+			propeller_slot = { nozzle }
+		}
+	}
+	
+	
+	
+	### Injection / Bypass
+	
+	prop_carburetor = {
+		abbreviation = "carb"
+		category = plane_injection
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			fuel_consumption = -0.1
+			build_cost_ic = -0.02
+		}
+		xp_cost = 1
+	}
+	prop_injection = {
+		abbreviation = "inj"
+		category = plane_injection
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			maximum_speed = 0.04
+			air_agility = 0.02
+		}
+		xp_cost = 1
+	}
+	prop_water_injection = {
+		abbreviation = "inj"
+		category = plane_injection
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.02
+			build_cost_ic = 0.1
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.08
+			air_agility = 0.04
+		}
+		xp_cost = 1
+	}
+	prop_methanol_injection = {
+		abbreviation = "inj"
+		category = plane_injection
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.04
+			build_cost_ic = 0.2
+			weight = 1
+		}
+		multiply_stats = {
+			maximum_speed = 0.12
+			air_agility = 0.06
+		}
+		xp_cost = 1
+	}
+	prop_nitrous_injection = {
+		abbreviation = "inj"
+		category = plane_injection
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.04
+			build_cost_ic = 0.2
+			weight = 2
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_range = 0.1
+			air_agility = 0.05
+		}
+		xp_cost = 1
+	}
+	
+	jet_turbojet = {
+		abbreviation = "inj"
+		category = plane_bypass
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.1
+		}
+		multiply_stats = {
+			maximum_speed = 0.15
+		}
+		xp_cost = 1
+	}
+	jet_low_bypass = {
+		abbreviation = "inj"
+		category = plane_bypass
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.05
+			build_cost_ic = 0.1
+		}
+		multiply_stats = {
+			maximum_speed = 0.2
+			air_agility = 0.1
+			air_range = 0.2
+		}
+		xp_cost = 1
+	}
+	jet_medium_bypass = {
+		abbreviation = "inj"
+		category = plane_bypass
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.1
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_range = 0.3
+		}
+		xp_cost = 1
+	}
+	jet_high_bypass = {
+		abbreviation = "inj"
+		category = plane_bypass
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.1
+		}
+		multiply_stats = {
+			air_range = 0.4
+		}
+		xp_cost = 1
+	}
+	
+	rocket_no_injection = {
+		abbreviation = "inj"
+		category = plane_rocket_no_injection
+		gui_category = plane_rocket_injection
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 0
+	}
+	rocket_injection_holes = {
+		abbreviation = "inj"
+		category = plane_rocket_injection
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 1
+	}
+	rocket_engine_2 = {
+		abbreviation = "inj"
+		category = plane_rocket_injection
+		gfx = rocket_injection_centripetal
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.05
+		}
+		multiply_stats = {
+			air_range = 0.05
+		}
+		xp_cost = 1
+	}
+	rocket_engine_3 = {
+		abbreviation = "inj"
+		category = plane_rocket_injection
+		gfx = rocket_injection_impinging
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.1
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		xp_cost = 1
+	}
+	
+	
+	### Cooling
+	
+	plane_no_cowling = {
+		abbreviation = "inj"
+		category = plane_early_cooling
+		gui_category = plane_cooling
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+	}
+	plane_air_cooling = {
+		abbreviation = "inj"
+		category = plane_cooling
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 2
+		}
+	}
+	plane_airodynamic_cooling = {
+		abbreviation = "inj"
+		category = plane_cooling
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_agility = 4
+			air_defence = 2
+		}
+	}
+	plane_water_cooling = {
+		abbreviation = "inj"
+		category = plane_cooling
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.05
+		}
+	}
+	plane_oil_cooling = {
+		abbreviation = "inj"
+		category = plane_cooling
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.1
+			build_cost_ic = 0.1
+		}
+	}
+	
+	
+	### Superchargers
+	
+	no_supercharger = {
+		abbreviation = "su1"
+		category = supercharger
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 1
+	}
+	supercharger_single_speed = {
+		abbreviation = "su1"
+		category = supercharger
+		sfx = sfx_ui_sd_module_turret
+		parent = no_supercharger
+		
+		add_stats = {
+			build_cost_ic = 0.1
+		}
+		multiply_stats = {
+			air_range = 0.05
+		}
+		xp_cost = 1
+	}
+	supercharger_twin_speed = {
+		abbreviation = "su2"
+		category = supercharger
+		sfx = sfx_ui_sd_module_turret
+		parent = supercharger_single_speed
+		
+		add_stats = {
+			air_agility = 2
+			build_cost_ic = 0.2
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		xp_cost = 1
+	}
+	supercharger_triple_speed = {
+		abbreviation = "su3"
+		category = supercharger
+		sfx = sfx_ui_sd_module_turret
+		parent = supercharger_twin_speed
+		
+		add_stats = {
+			air_agility = 4
+			build_cost_ic = 0.3
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = 0.1
+			}
+		}
+		xp_cost = 1
+	}
+	basic_turbocharger = {
+		abbreviation = "tu"
+		category = supercharger
+		sfx = sfx_ui_sd_module_turret
+		parent = supercharger_triple_speed
+		
+		add_stats = {
+			thrust = 4
+			air_agility = 4
+			build_cost_ic = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+		
+		build_cost_resources = {
+			chromium = 1
+		}
+		xp_cost = 1
+	}
+	improved_turbocharger = {
+		abbreviation = "tu2"
+		category = supercharger
+		sfx = sfx_ui_sd_module_turret
+		parent = basic_turbocharger
+		
+		add_stats = {
+			thrust = 4
+			air_agility = 6
+			build_cost_ic = 0.7
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			air_range = 0.1
+		}
+		
+		build_cost_resources = {
+			chromium = 1
+		}
+		xp_cost = 1
+	}
+	
+	centrifugal_compressor = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			weight = 2
+		}
+		multiply_stats = {
+			maximum_speed = -0.1
+			air_range = 0.1
+		}
+		xp_cost = 1
+	}
+	axial_compressor_1 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 1
+	}
+	axial_compressor_2 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 2
+			build_cost_ic = 0.2
+		}
+		xp_cost = 1
+	}
+	axial_compressor_3 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 4
+			build_cost_ic = 0.4
+		}
+		xp_cost = 1
+	}
+	axial_compressor_4 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 6
+			build_cost_ic = 0.6
+		}
+		xp_cost = 1
+	}
+	axial_compressor_5 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 8
+			build_cost_ic = 0.8
+		}
+		xp_cost = 1
+	}
+	axial_compressor_6 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 10
+			build_cost_ic = 1.0
+		}
+		xp_cost = 1
+	}
+	axial_compressor_7 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 12
+			build_cost_ic = 1.2
+		}
+		xp_cost = 1
+	}
+	axial_compressor_8 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 14
+			build_cost_ic = 1.4
+		}
+		xp_cost = 1
+	}
+	axial_compressor_9 = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 16
+			build_cost_ic = 1.6
+		}
+		xp_cost = 1
+	}
+	
+	two_spool_compressor = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 20
+			build_cost_ic = 1.5
+		}
+		xp_cost = 1
+	}
+	three_spool_compressor = {
+		abbreviation = "cc"
+		category = compressor
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 12
+			build_cost_ic = 1.5
+			fuel_consumption = -0.4
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		xp_cost = 1
+	}
+	
+	rocket_solid_fuel = {
+		abbreviation = "sf"
+		category = plane_rocket_fuel
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 0
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_rocket_no_injection }
+		}
+	}
+	rocket_solid_fuel_oxidizer = {
+		abbreviation = "sf"
+		category = plane_rocket_fuel
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.05
+			build_cost_ic = 0.1
+		}
+		multiply_stats = {
+			air_range = 0.05
+		}
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_rocket_no_injection }
+		}
+	}
+	rocket_liquid_fuel = {
+		abbreviation = "sf"
+		category = plane_rocket_fuel
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.2
+		}
+		multiply_stats = {
+			air_range = 0.1
+		}
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_rocket_injection }
+		}
+	}
+	rocket_liquid_fuel_2 = {
+		abbreviation = "sf"
+		category = plane_rocket_fuel
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.2
+			fuel_consumption = 0.3
+		}
+		multiply_stats = {
+			air_range = 0.15
+		}
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_rocket_injection }
+		}
+	}
+	rocket_liquid_fuel_oxidizer = {
+		abbreviation = "sf"
+		category = plane_rocket_fuel
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.3
+		}
+		multiply_stats = {
+			air_range = 0.15
+		}
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_rocket_injection }
+		}
+	}
+	rocket_liquid_fuel_2_oxidizer = {
+		abbreviation = "sf"
+		category = plane_rocket_fuel
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 0.3
+			fuel_consumption = 0.3
+		}
+		multiply_stats = {
+			air_range = 0.2
+		}
+		xp_cost = 1
+		allowed_module_categories = {
+			fixed_engine_injection_slot = { plane_rocket_injection }
+		}
+	}
+	
+	
+	### Engine Power
+	
+	engine_power_0400 = {
+		abbreviation = "5h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 8
+			build_cost_ic = 0.2
+			fuel_consumption = 0.1
+		}
+		xp_cost = 1
+	}
+	engine_power_0500 = {
+		abbreviation = "5h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 10
+			build_cost_ic = 0.25
+			fuel_consumption = 0.12
+		}
+		xp_cost = 1
+	}
+	engine_power_0600 = {
+		abbreviation = "6h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 12
+			build_cost_ic = 0.3
+			fuel_consumption = 0.14
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+		xp_cost = 1
+	}
+	engine_power_0700 = {
+		abbreviation = "7h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 14
+			build_cost_ic = 0.35
+			fuel_consumption = 0.16
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+		xp_cost = 1
+	}
+	engine_power_0800 = {
+		abbreviation = "8h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 16
+			build_cost_ic = 0.4
+			fuel_consumption = 0.18
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+		xp_cost = 1
+	}
+	engine_power_0900 = {
+		abbreviation = "9h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 18
+			build_cost_ic = 0.45
+			fuel_consumption = 0.2
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+		xp_cost = 1
+	}
+	engine_power_1000 = {
+		abbreviation = "10h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 20
+			build_cost_ic = 0.5
+			fuel_consumption = 0.22
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.2
+		}
+		xp_cost = 1
+	}
+	engine_power_1100 = {
+		abbreviation = "11h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 22
+			build_cost_ic = 0.55
+			fuel_consumption = 0.24
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.2
+		}
+		xp_cost = 1
+	}
+	engine_power_1200 = {
+		abbreviation = "12h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 24
+			build_cost_ic = 0.6
+			fuel_consumption = 0.26
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.2
+		}
+		xp_cost = 1
+	}
+	engine_power_1300 = {
+		abbreviation = "13h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 26
+			build_cost_ic = 0.65
+			fuel_consumption = 0.28
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.2
+		}
+		xp_cost = 1
+	}
+	engine_power_1400 = {
+		abbreviation = "14h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 28
+			build_cost_ic = 0.7
+			fuel_consumption = 0.3
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.3
+		}
+		xp_cost = 1
+	}
+	engine_power_1500 = {
+		abbreviation = "15h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 30
+			build_cost_ic = 0.75
+			fuel_consumption = 0.32
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.3
+		}
+		xp_cost = 1
+	}
+	engine_power_1600 = {
+		abbreviation = "16h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 32
+			build_cost_ic = 0.8
+			fuel_consumption = 0.34
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.3
+		}
+		xp_cost = 1
+	}
+	engine_power_1700 = {
+		abbreviation = "17h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 34
+			build_cost_ic = 0.85
+			fuel_consumption = 0.36
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.3
+		}
+		xp_cost = 1
+	}
+	engine_power_1800 = {
+		abbreviation = "18h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 36
+			build_cost_ic = 0.9
+			fuel_consumption = 0.38
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.3
+		}
+		xp_cost = 1
+	}
+	engine_power_1900 = {
+		abbreviation = "19h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 38
+			build_cost_ic = 0.95
+			fuel_consumption = 0.4
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.3
+		}
+		xp_cost = 1
+	}
+	engine_power_2000 = {
+		abbreviation = "20h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 40
+			build_cost_ic = 1
+			fuel_consumption = 0.42
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.4
+		}
+		xp_cost = 1
+	}
+	engine_power_2100 = {
+		abbreviation = "21h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 42
+			build_cost_ic = 1.1
+			fuel_consumption = 0.44
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.4
+		}
+		xp_cost = 1
+	}
+	engine_power_2200 = {
+		abbreviation = "22h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 44
+			build_cost_ic = 1.2
+			fuel_consumption = 0.46
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.4
+		}
+		xp_cost = 1
+	}
+	engine_power_2300 = {
+		abbreviation = "23h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 46
+			build_cost_ic = 1.3
+			fuel_consumption = 0.48
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.4
+		}
+		xp_cost = 1
+	}
+	engine_power_2400 = {
+		abbreviation = "24h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 48
+			build_cost_ic = 1.4
+			fuel_consumption = 0.5
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.4
+		}
+		xp_cost = 1
+	}
+	engine_power_2500 = {
+		abbreviation = "25h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 50
+			build_cost_ic = 1.5
+			fuel_consumption = 0.52
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	engine_power_2600 = {
+		abbreviation = "26h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 52
+			build_cost_ic = 1.6
+			fuel_consumption = 0.54
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	engine_power_2700 = {
+		abbreviation = "27h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 54
+			build_cost_ic = 1.7
+			fuel_consumption = 0.56
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	engine_power_2800 = {
+		abbreviation = "28h"
+		category = plane_kilowatt
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 56
+			build_cost_ic = 1.8
+			fuel_consumption = 0.58
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	
+	
+	jet_power_07 = {
+		abbreviation = "7k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 20
+			build_cost_ic = 1
+			fuel_consumption = 0.35
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	jet_power_08 = {
+		abbreviation = "8k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 22
+			build_cost_ic = 1.1
+			fuel_consumption = 0.4
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	jet_power_09 = {
+		abbreviation = "9k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 24
+			build_cost_ic = 1.2
+			fuel_consumption = 0.45
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	jet_power_10 = {
+		abbreviation = "10k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 26
+			build_cost_ic = 1.3
+			fuel_consumption = 0.5
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	jet_power_12 = {
+		abbreviation = "12k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 30
+			build_cost_ic = 1.4
+			fuel_consumption = 0.6
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+		xp_cost = 1
+	}
+	jet_power_14 = {
+		abbreviation = "14k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 34
+			build_cost_ic = 1.5
+			fuel_consumption = 0.7
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.6
+		}
+		xp_cost = 1
+	}
+	jet_power_16 = {
+		abbreviation = "16k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 38
+			build_cost_ic = 1.6
+			fuel_consumption = 0.8
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.6
+		}
+		xp_cost = 1
+	}
+	jet_power_18 = {
+		abbreviation = "18k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 42
+			build_cost_ic = 1.7
+			fuel_consumption = 0.9
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.6
+		}
+		xp_cost = 1
+	}
+	jet_power_20 = {
+		abbreviation = "20k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 46
+			build_cost_ic = 1.8
+			fuel_consumption = 1
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.7
+		}
+		xp_cost = 1
+	}
+	jet_power_25 = {
+		abbreviation = "25k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 50
+			build_cost_ic = 1.9
+			fuel_consumption = 1.1
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.7
+		}
+		xp_cost = 1
+	}
+	jet_power_30 = {
+		abbreviation = "30k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 54
+			build_cost_ic = 2
+			fuel_consumption = 1.2
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.7
+		}
+		xp_cost = 1
+	}
+	jet_power_35 = {
+		abbreviation = "35k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 58
+			build_cost_ic = 2.1
+			fuel_consumption = 1.3
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.8
+		}
+		xp_cost = 1
+	}
+	jet_power_40 = {
+		abbreviation = "40k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 62
+			build_cost_ic = 2.2
+			fuel_consumption = 1.4
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.8
+		}
+		xp_cost = 1
+	}
+	jet_power_45 = {
+		abbreviation = "45k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 66
+			build_cost_ic = 2.3
+			fuel_consumption = 1.5
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.8
+		}
+		xp_cost = 1
+	}
+	jet_power_50 = {
+		abbreviation = "50k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 70
+			build_cost_ic = 2.4
+			fuel_consumption = 1.6
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.9
+		}
+		xp_cost = 1
+	}
+	jet_power_60 = {
+		abbreviation = "60k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 74
+			build_cost_ic = 2.5
+			fuel_consumption = 1.7
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.9
+		}
+		xp_cost = 1
+	}
+	jet_power_70 = {
+		abbreviation = "70k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 78
+			build_cost_ic = 2.6
+			fuel_consumption = 1.8
+		}
+		
+		multiply_stats = {
+			maximum_speed = 0.9
+		}
+		xp_cost = 1
+	}
+	jet_power_80 = {
+		abbreviation = "80k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 82
+			build_cost_ic = 2.7
+			fuel_consumption = 1.9
+		}
+		
+		multiply_stats = {
+			maximum_speed = 1
+		}
+		xp_cost = 1
+	}
+	jet_power_90 = {
+		abbreviation = "90k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 86
+			build_cost_ic = 2.8
+			fuel_consumption = 2
+		}
+		
+		multiply_stats = {
+			maximum_speed = 1
+		}
+		xp_cost = 1
+	}
+	jet_power_99 = {
+		abbreviation = "100k"
+		category = plane_kilonewton
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			thrust = 90
+			build_cost_ic = 2.9
+			fuel_consumption = 2.1
+		}
+		
+		multiply_stats = {
+			maximum_speed = 1
+		}
+		xp_cost = 1
+	}
+}

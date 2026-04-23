@@ -1,0 +1,559 @@
+aom_starting_aircraft_designs_effect = {
+	if = {
+		limit = {
+			has_tech = iw_small_airframe
+		}
+		create_equipment_variant = {
+			name = "[AOM] Interwar Bomber"
+			type = large_plane_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_10_strategic_bomber
+				custom_skeleton_slot = wooden_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = big_fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0100_10x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_8x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = empty
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret
+				special_type_slot_4 = lmg_defense_turret
+			}
+		}
+		
+		create_equipment_variant = {
+			name = "[AOM] Interwar Medium Bomber"
+			type = medium_plane_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_09_tactical_bomber
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0050_20x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_0800
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = medium_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret_2x
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		
+		create_equipment_variant = {
+			name = "[AOM] Interwar CV Naval Bomber"
+			type = cv_small_plane_naval_bomber_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = torpedo_18_2
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Interwar CV CAS"
+			type = cv_small_plane_cas_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0050_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Interwar CV Fighter"
+			type = cv_small_plane_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		
+		create_equipment_variant = {
+			name = "[AOM] Interwar Naval Bomber"
+			type = small_plane_naval_bomber_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = torpedo_18_2
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Interwar CAS"
+			type = small_plane_cas_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0050_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Interwar Fighter"
+			type = small_plane_airframe_0
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			has_tech = basic_large_airframe
+		}
+		create_equipment_variant = {
+			name = "[AOM] Basic Bomber"
+			type = large_plane_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_10_strategic_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = big_fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0250_5x
+				fixed_auxiliary_weapon_slot_1 = bomb_0250_5x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				hud_slot = empty
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret_2x
+				special_type_slot_4 = fuel_tanks_large
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			has_tech = basic_medium_airframe
+		}
+		create_equipment_variant = {
+			name = "[AOM] Basic Medium Bomber"
+			type = medium_plane_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_09_tactical_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0100_10x
+				fixed_auxiliary_weapon_slot_1 = bomb_0100_10x
+				fixed_auxiliary_weapon_slot_2 = bomb_0100_1x
+				fixed_auxiliary_weapon_slot_3 = bomb_0100_1x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = medium_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret_2x
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			has_tech = basic_small_airframe
+		}
+		create_equipment_variant = {
+			name = "[AOM] Basic CV Naval Bomber"
+			type = cv_small_plane_naval_bomber_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = torpedo_18_2
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Basic CV CAS"
+			type = cv_small_plane_cas_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = bomb_0250_2x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Basic CV Fighter"
+			type = cv_small_plane_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = empty
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_4x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		
+		create_equipment_variant = {
+			name = "[AOM] Basic Naval Bomber"
+			type = small_plane_naval_bomber_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = torpedo_18_2
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Basic CAS"
+			type = small_plane_cas_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = bomb_0250_2x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+		create_equipment_variant = {
+			name = "[AOM] Basic Fighter"
+			type = small_plane_airframe_1
+			mark_older_equipment_obsolete = yes
+			
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = empty
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_4x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+}

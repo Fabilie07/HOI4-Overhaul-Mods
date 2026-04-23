@@ -1,0 +1,24 @@
+leader_traits = {
+	talented_joungster = { 
+		type = navy
+		trait_type = personality_trait
+		
+		modifier = {
+			experience_gain_factor = 0.5
+		}
+		new_commander_weight = {
+			factor = 1  
+			modifier = {
+				FROM = { has_idea = best_of_the_best_naval_academy_spirit }
+				factor = 3
+			}
+			modifier = {
+				FROM = { has_idea = naval_academy_scholarships_spirit }
+				factor = 3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

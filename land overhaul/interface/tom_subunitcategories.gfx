@@ -1,0 +1,19 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_unit_category_light_armor"
+		texturefile = "gfx/interface/unit_categories/category_light_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_medium_armor"
+		texturefile = "gfx/interface/unit_categories/category_medium_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_heavy_armor"
+		texturefile = "gfx/interface/unit_categories/category_heavy_armor.dds"
+		legacy_lazy_load = no
+	}
+	
+}

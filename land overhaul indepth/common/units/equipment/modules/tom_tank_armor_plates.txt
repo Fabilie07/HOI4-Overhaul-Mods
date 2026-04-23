@@ -1,0 +1,1886 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+	
+	### Armor Thickness
+	
+	tank_armor_front_10 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 1
+			breakthrough = 1
+			defense = 1
+			build_cost_ic = 0.03
+		}
+	}
+	tank_armor_front_15 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 1.5
+			breakthrough = 1
+			defense = 1
+			build_cost_ic = 0.05
+		}
+	}
+	tank_armor_front_20 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 2
+			breakthrough = 1
+			defense = 1
+			build_cost_ic = 0.07
+		}
+	}
+	tank_armor_front_25 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 2.5
+			breakthrough = 1.5
+			defense = 1.5
+			build_cost_ic = 0.08
+		}
+	}
+	tank_armor_front_30 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 3
+			breakthrough = 1.5
+			defense = 1.5
+			build_cost_ic = 0.1
+		}
+	}
+	tank_armor_front_35 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 3.5
+			breakthrough = 1.5
+			defense = 1.5
+			build_cost_ic = 0.12
+		}
+	}
+	tank_armor_front_40 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 4
+			breakthrough = 2
+			defense = 2
+			maximum_speed = -0.1
+			build_cost_ic = 0.13
+		}
+	}
+	tank_armor_front_45 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 4.5
+			breakthrough = 2
+			defense = 2
+			maximum_speed = -0.1
+			build_cost_ic = 0.15
+		}
+	}
+	tank_armor_front_50 = {
+		category = tank_armor_front
+		gui_category = tank_light_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 5
+			breakthrough = 2
+			defense = 2
+			maximum_speed = -0.1
+			build_cost_ic = 0.17
+		}
+	}
+	
+	tank_armor_front_55 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 5.5
+			breakthrough = 2.5
+			defense = 2.5
+			maximum_speed = -0.1
+			build_cost_ic = 0.18
+		}
+	}
+	tank_armor_front_60 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 6
+			breakthrough = 2.5
+			defense = 2.5
+			maximum_speed = -0.2
+			build_cost_ic = 0.2
+		}
+	}
+	tank_armor_front_65 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 6.5
+			breakthrough = 2.5
+			defense = 2.5
+			maximum_speed = -0.2
+			build_cost_ic = 0.22
+		}
+	}
+	tank_armor_front_70 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 7
+			breakthrough = 3
+			defense = 3
+			maximum_speed = -0.2
+			build_cost_ic = 0.23
+		}
+	}
+	tank_armor_front_75 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 7.5
+			breakthrough = 3
+			defense = 3
+			maximum_speed = -0.2
+			build_cost_ic = 0.25
+		}
+	}
+	tank_armor_front_80 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 8
+			breakthrough = 3
+			defense = 3
+			maximum_speed = -0.3
+			build_cost_ic = 0.27
+		}
+	}
+	
+	tank_armor_front_85 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 8.5
+			breakthrough = 3.5
+			defense = 3.5
+			maximum_speed = -0.3
+			build_cost_ic = 0.28
+		}
+	}
+	tank_armor_front_90 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 9
+			breakthrough = 3.5
+			defense = 3.5
+			maximum_speed = -0.3
+			build_cost_ic = 0.3
+		}
+	}
+	tank_armor_front_95 = {
+		category = tank_medium_armor_front
+		gui_category = tank_medium_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 9.5
+			breakthrough = 3.5
+			defense = 3.5
+			maximum_speed = -0.3
+			build_cost_ic = 0.32
+		}
+	}
+	tank_armor_front_100 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 10
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.33
+		}
+	}
+	tank_armor_front_105 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 10.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.35
+		}
+	}
+	tank_armor_front_110 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 11
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.37
+		}
+	}
+	tank_armor_front_115 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 11.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.38
+		}
+	}
+	tank_armor_front_120 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 12
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.4
+		}
+	}
+	tank_armor_front_125 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 12.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.42
+		}
+	}
+	tank_armor_front_130 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 13
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.43
+		}
+	}
+	tank_armor_front_135 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 13.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.45
+		}
+	}
+	tank_armor_front_140 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 14
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.6
+			build_cost_ic = 0.47
+		}
+	}
+	tank_armor_front_145 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 14.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.6
+			build_cost_ic = 0.48
+		}
+	}
+	tank_armor_front_150 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 15
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.6
+			build_cost_ic = 0.5
+		}
+	}
+	tank_armor_front_160 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 16
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.6
+			build_cost_ic = 0.53
+		}
+	}
+	tank_armor_front_180 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 18
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.7
+			build_cost_ic = 0.6
+		}
+	}
+	tank_armor_front_200 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 20
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.7
+			build_cost_ic = 0.67
+		}
+	}
+	tank_armor_front_225 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 22.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.8
+			build_cost_ic = 0.75
+		}
+	}
+	tank_armor_front_250 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 25
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.8
+			build_cost_ic = 0.83
+		}
+	}
+	tank_armor_front_275 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 27.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.9
+			build_cost_ic = 0.92
+		}
+	}
+	tank_armor_front_300 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 30
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.9
+			build_cost_ic = 1
+		}
+	}
+	tank_armor_front_325 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 32.5
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -0.9
+			build_cost_ic = 1.08
+		}
+	}
+	tank_armor_front_350 = {
+		category = tank_heavy_armor_front
+		gui_category = tank_heavy_armor
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 35
+			breakthrough = 4
+			defense = 4
+			maximum_speed = -1
+			build_cost_ic = 1.15
+		}
+	}
+	
+	tank_armor_side_10 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_10
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 1
+			breakthrough = 1
+			build_cost_ic = 0.03
+		}
+	}
+	tank_armor_side_15 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_15
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 1.5
+			breakthrough = 1
+			build_cost_ic = 0.05
+		}
+	}
+	tank_armor_side_20 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_20
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 2
+			breakthrough = 1
+			build_cost_ic = 0.07
+		}
+	}
+	tank_armor_side_25 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_25
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 2.5
+			breakthrough = 1.5
+			build_cost_ic = 0.08
+		}
+	}
+	tank_armor_side_30 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_30
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 3
+			breakthrough = 1.5
+			build_cost_ic = 0.1
+		}
+	}
+	tank_armor_side_35 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_35
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 3.5
+			breakthrough = 1.5
+			build_cost_ic = 0.12
+		}
+	}
+	tank_armor_side_40 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_40
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 4
+			breakthrough = 2
+			build_cost_ic = 0.13
+		}
+	}
+	tank_armor_side_45 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_45
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 4.5
+			breakthrough = 2
+			build_cost_ic = 0.15
+		}
+	}
+	tank_armor_side_50 = {
+		category = tank_armor_side
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_50
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 5
+			breakthrough = 2
+			maximum_speed = -0.1
+			build_cost_ic = 0.17
+		}
+	}
+	
+	tank_armor_side_55 = {
+		category = tank_medium_armor_side
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_55
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 5.5
+			breakthrough = 2.5
+			maximum_speed = -0.1
+			build_cost_ic = 0.18
+		}
+	}
+	tank_armor_side_60 = {
+		category = tank_medium_armor_side
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_60
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 6
+			breakthrough = 2.5
+			maximum_speed = -0.1
+			build_cost_ic = 0.2
+		}
+	}
+	tank_armor_side_65 = {
+		category = tank_medium_armor_side
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_65
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 6.5
+			breakthrough = 2.5
+			maximum_speed = -0.1
+			build_cost_ic = 0.22
+		}
+	}
+	tank_armor_side_70 = {
+		category = tank_medium_armor_side
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_70
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 7
+			breakthrough = 3
+			maximum_speed = -0.2
+			build_cost_ic = 0.23
+		}
+	}
+	tank_armor_side_75 = {
+		category = tank_medium_armor_side
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_75
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 7.5
+			breakthrough = 3
+			maximum_speed = -0.2
+			build_cost_ic = 0.25
+		}
+	}
+	tank_armor_side_80 = {
+		category = tank_medium_armor_side
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_80
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 8
+			breakthrough = 3
+			maximum_speed = -0.2
+			build_cost_ic = 0.27
+		}
+	}
+	
+	tank_armor_side_85 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_85
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 8.5
+			breakthrough = 3.5
+			maximum_speed = -0.2
+			build_cost_ic = 0.28
+		}
+	}
+	tank_armor_side_90 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_90
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 9
+			breakthrough = 3.5
+			maximum_speed = -0.3
+			build_cost_ic = 0.3
+		}
+	}
+	tank_armor_side_95 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_95
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 9.5
+			breakthrough = 3.5
+			maximum_speed = -0.3
+			build_cost_ic = 0.32
+		}
+	}
+	tank_armor_side_100 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_100
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 10
+			breakthrough = 4
+			maximum_speed = -0.3
+			build_cost_ic = 0.33
+		}
+	}
+	tank_armor_side_105 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_105
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 10.5
+			breakthrough = 4
+			maximum_speed = -0.3
+			build_cost_ic = 0.35
+		}
+	}
+	tank_armor_side_110 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_110
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 11
+			breakthrough = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.37
+		}
+	}
+	tank_armor_side_115 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_115
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 11.5
+			breakthrough = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.38
+		}
+	}
+	tank_armor_side_120 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_120
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 12
+			breakthrough = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.4
+		}
+	}
+	tank_armor_side_125 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_125
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 12.5
+			breakthrough = 4
+			maximum_speed = -0.4
+			build_cost_ic = 0.42
+		}
+	}
+	tank_armor_side_130 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_130
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 13
+			breakthrough = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.43
+		}
+	}
+	tank_armor_side_135 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_135
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 13.5
+			breakthrough = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.45
+		}
+	}
+	tank_armor_side_140 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_140
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 14
+			breakthrough = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.47
+		}
+	}
+	tank_armor_side_145 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_145
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 14.5
+			breakthrough = 4
+			maximum_speed = -0.5
+			build_cost_ic = 0.48
+		}
+	}
+	tank_armor_side_150 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_150
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 15
+			breakthrough = 4
+			maximum_speed = -0.6
+			build_cost_ic = 0.5
+		}
+	}
+	tank_armor_side_160 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_160
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 16
+			breakthrough = 4
+			maximum_speed = -0.6
+			build_cost_ic = 0.53
+		}
+	}
+	tank_armor_side_180 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_180
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 18
+			breakthrough = 4
+			maximum_speed = -0.7
+			build_cost_ic = 0.6
+		}
+	}
+	tank_armor_side_200 = {
+		category = tank_heavy_armor_side
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_200
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 20
+			breakthrough = 4
+			maximum_speed = -0.7
+			build_cost_ic = 0.67
+		}
+	}
+	
+	tank_armor_rear_10 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_10
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 1
+			build_cost_ic = 0.03
+		}
+	}
+	tank_armor_rear_15 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_15
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 1.5
+			build_cost_ic = 0.05
+		}
+	}
+	tank_armor_rear_20 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_20
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 2
+			build_cost_ic = 0.07
+		}
+	}
+	tank_armor_rear_25 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_25
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 2.5
+			build_cost_ic = 0.08
+		}
+	}
+	tank_armor_rear_30 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_30
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 3
+			build_cost_ic = 0.1
+		}
+	}
+	tank_armor_rear_35 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_35
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 3.5
+			build_cost_ic = 0.12
+		}
+	}
+	tank_armor_rear_40 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_40
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 4
+			maximum_speed = -0.1
+			build_cost_ic = 0.13
+		}
+	}
+	tank_armor_rear_45 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_45
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 4.5
+			maximum_speed = -0.1
+			build_cost_ic = 0.15
+		}
+	}
+	tank_armor_rear_50 = {
+		category = tank_armor_rear
+		gui_category = tank_light_armor
+		gfx = tank_armor_front_50
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 5
+			maximum_speed = -0.1
+			build_cost_ic = 0.17
+		}
+	}
+	
+	tank_armor_rear_55 = {
+		category = tank_medium_armor_rear
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_55
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 5.5
+			maximum_speed = -0.1
+			build_cost_ic = 0.18
+		}
+	}
+	tank_armor_rear_60 = {
+		category = tank_medium_armor_rear
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_60
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 6
+			maximum_speed = -0.2
+			build_cost_ic = 0.2
+		}
+	}
+	tank_armor_rear_65 = {
+		category = tank_medium_armor_rear
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_65
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 6.5
+			maximum_speed = -0.2
+			build_cost_ic = 0.22
+		}
+	}
+	tank_armor_rear_70 = {
+		category = tank_medium_armor_rear
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_70
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 7
+			maximum_speed = -0.2
+			build_cost_ic = 0.23
+		}
+	}
+	tank_armor_rear_75 = {
+		category = tank_medium_armor_rear
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_75
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 7.5
+			maximum_speed = -0.2
+			build_cost_ic = 0.25
+		}
+	}
+	tank_armor_rear_80 = {
+		category = tank_medium_armor_rear
+		gui_category = tank_medium_armor
+		gfx = tank_armor_front_80
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 8
+			maximum_speed = -0.3
+			build_cost_ic = 0.27
+		}
+	}
+	
+	tank_armor_rear_85 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_85
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 8.5
+			maximum_speed = -0.3
+			build_cost_ic = 0.28
+		}
+	}
+	tank_armor_rear_90 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_90
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 9
+			maximum_speed = -0.3
+			build_cost_ic = 0.3
+		}
+	}
+	tank_armor_rear_95 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_95
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 9.5
+			maximum_speed = -0.3
+			build_cost_ic = 0.32
+		}
+	}
+	tank_armor_rear_100 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_100
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 10
+			maximum_speed = -0.4
+			build_cost_ic = 0.33
+		}
+	}
+	tank_armor_rear_105 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_105
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 10.5
+			maximum_speed = -0.4
+			build_cost_ic = 0.35
+		}
+	}
+	tank_armor_rear_110 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_110
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 11
+			maximum_speed = -0.4
+			build_cost_ic = 0.37
+		}
+	}
+	tank_armor_rear_115 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_115
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 11.5
+			maximum_speed = -0.4
+			build_cost_ic = 0.38
+		}
+	}
+	tank_armor_rear_120 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_120
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 12
+			maximum_speed = -0.5
+			build_cost_ic = 0.4
+		}
+	}
+	tank_armor_rear_125 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_125
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 12.5
+			maximum_speed = -0.5
+			build_cost_ic = 0.42
+		}
+	}
+	tank_armor_rear_130 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_130
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 13
+			maximum_speed = -0.5
+			build_cost_ic = 0.43
+		}
+	}
+	tank_armor_rear_135 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_135
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 13.5
+			maximum_speed = -0.5
+			build_cost_ic = 0.45
+		}
+	}
+	tank_armor_rear_140 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_140
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 14
+			maximum_speed = -0.6
+			build_cost_ic = 0.47
+		}
+	}
+	tank_armor_rear_145 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_105
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 14.5
+			maximum_speed = -0.6
+			build_cost_ic = 0.48
+		}
+	}
+	tank_armor_rear_150 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_150
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 15
+			maximum_speed = -0.6
+			build_cost_ic = 0.5
+		}
+	}
+	tank_armor_rear_160 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_160
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 16
+			maximum_speed = -0.6
+			build_cost_ic = 0.53
+		}
+	}
+	tank_armor_rear_180 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_180
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 18
+			maximum_speed = -0.7
+			build_cost_ic = 0.6
+		}
+	}
+	tank_armor_rear_200 = {
+		category = tank_heavy_armor_rear
+		gui_category = tank_heavy_armor
+		gfx = tank_armor_front_200
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			armor_value = 20
+			maximum_speed = -0.7
+			build_cost_ic = 0.67
+		}
+	}
+	
+	###Angles
+	
+	tank_ufp_0 = {
+		category = tank_angle_upper_front
+		gfx = angle_0
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+	}
+	tank_ufp_10 = {
+		category = tank_angle_upper_front
+		gfx = angle_20
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.04
+			build_cost_ic = 0.01
+		}
+	}
+	tank_ufp_0_2 = {
+		category = tank_angle_upper_front
+		gfx = ufp_0
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			build_cost_ic = 0.01
+		}
+	}
+	tank_ufp_10_2 = {
+		category = tank_angle_upper_front
+		gfx = ufp_10
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.04
+			build_cost_ic = 0.02
+		}
+	}
+	tank_ufp_curved = {
+		category = tank_angle_upper_front
+		gfx = angle_curved
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.14
+			build_cost_ic = 0.03
+		}
+	}
+	tank_ufp_improved_curved = {
+		category = tank_angle_upper_front
+		gfx = angle_improved_curved
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.3
+			build_cost_ic = 0.08
+		}
+	}
+	tank_ufp_pike = {
+		category = tank_angle_upper_front
+		gfx = angle_pike
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.26
+			build_cost_ic = 0.06
+		}
+	}
+	tank_ufp_45 = {
+		category = tank_angle_upper_front
+		gfx = angle_45
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.2
+			defense = 0.1
+			build_cost_ic = 0.06
+		}
+	}
+	tank_ufp_50 = {
+		category = tank_angle_upper_front
+		gfx = angle_45
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.24
+			defense = 0.1
+			build_cost_ic = 0.07
+		}
+	}
+	tank_ufp_55 = {
+		category = tank_angle_upper_front
+		gfx = angle_45
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.28
+			defense = 0.1
+			build_cost_ic = 0.08
+		}
+	}
+	tank_ufp_60 = {
+		category = tank_angle_upper_front
+		gfx = angle_70
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.32
+			defense = 0.1
+			build_cost_ic = 0.08
+		}
+	}
+	tank_ufp_65 = {
+		category = tank_angle_upper_front
+		gfx = angle_70
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.36
+			defense = 0.1
+			build_cost_ic = 0.09
+		}
+	}
+	tank_ufp_70 = {
+		category = tank_angle_upper_front
+		gfx = angle_70
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.02
+		}
+		multiply_stats = {
+			armor_value = 0.4
+			defense = 0.1
+			build_cost_ic = 0.1
+		}
+	}
+	
+	tank_up_curved = {
+		category = tank_angle_upper
+		gfx = angle_curved
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.14
+			build_cost_ic = 0.03
+		}
+	}
+	tank_up_improved_curved = {
+		category = tank_angle_upper
+		gfx = angle_improved_curved
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.24
+			build_cost_ic = 0.06
+		}
+	}
+	tank_up_0 = {
+		category = tank_angle_upper
+		gfx = angle_0
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+	}
+	tank_up_10 = {
+		category = tank_angle_upper
+		gfx = angle_20
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.04
+			build_cost_ic = 0.01
+		}
+	}
+	tank_up_20 = {
+		category = tank_angle_upper
+		gfx = angle_20
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.08
+			build_cost_ic = 0.02
+		}
+	}
+	tank_up_30 = {
+		category = tank_angle_upper
+		gfx = angle_20
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.12
+			build_cost_ic = 0.03
+		}
+	}
+	tank_up_40 = {
+		category = tank_angle_upper
+		gfx = angle_45
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.16
+			build_cost_ic = 0.04
+		}
+	}
+	tank_up_50 = {
+		category = tank_angle_upper
+		gfx = angle_45
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.2
+			build_cost_ic = 0.05
+		}
+	}
+	
+	tank_lp_curved = {
+		category = tank_angle_lower
+		gfx = angle_curved_neg
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.14
+			build_cost_ic = 0.03
+		}
+	}
+	tank_lp_improved_curved = {
+		category = tank_angle_lower
+		gfx = angle_improved_curved_neg
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.22
+			build_cost_ic = 0.06
+		}
+	}
+	tank_sponson_0 = {
+		category = tank_angle_lower_side
+		gui_category = tank_angle_lower
+		gfx = angle_0_sponson
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			reliability = 0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+		}
+		xp_cost = 1
+	}
+	tank_sponson_10 = {
+		category = tank_angle_lower_side
+		gui_category = tank_angle_lower
+		gfx = angle_10_sponson
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		add_stats = {
+			reliability = 0.05
+		}
+		multiply_stats = {
+			armor_value = 0.04
+			build_cost_ic = 0.03
+		}
+	}
+	tank_lp_0 = {
+		category = tank_angle_lower
+		gfx = angle_0
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+	}
+	tank_lp_10 = {
+		category = tank_angle_lower
+		gfx = angle_20_neg
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.04
+			build_cost_ic = 0.01
+		}
+	}
+	tank_lp_20 = {
+		category = tank_angle_lower
+		gfx = angle_20_neg
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.08
+			build_cost_ic = 0.02
+		}
+	}
+	tank_lp_30 = {
+		category = tank_angle_lower
+		gfx = angle_20_neg
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.12
+			build_cost_ic = 0.03
+		}
+	}
+	tank_lp_40 = {
+		category = tank_angle_lower
+		gfx = angle_45_neg
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.16
+			build_cost_ic = 0.04
+		}
+	}
+	tank_lp_50 = {
+		category = tank_angle_lower
+		gfx = angle_45_neg
+		sfx = sfx_ui_sd_module_sonar
+		
+		xp_cost = 1
+		multiply_stats = {
+			armor_value = 0.2
+			build_cost_ic = 0.05
+		}
+	}
+	
+	###Armor Types
+
+	tank_riveted_armor = {
+		abbreviation = "riv"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+
+		xp_cost = 8
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+	}
+
+	tank_cast_armor = {
+		abbreviation = "cas"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		multiply_stats = {
+			build_cost_ic = 0.2
+			armor_value = 0.4
+			breakthrough = 0.2
+		}
+	}
+
+	tank_cast_turret_armor = {
+		abbreviation = "split"
+		category = tank_turret_armor_type
+		gui_category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		multiply_stats = {
+			build_cost_ic = 0.1
+			armor_value = 0.4
+			breakthrough = 0.2
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+
+	tank_welded_armor = {
+		abbreviation = "wel"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 8
+
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		multiply_stats = {
+			armor_value = 0.3
+			breakthrough = 0.2
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+
+	tank_lq_welded_armor = {
+		abbreviation = "lqwel"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 8
+
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		multiply_stats = {
+			armor_value = 0.2
+			breakthrough = 0.2
+		}
+	}
+
+	tank_modern_welded_armor = {
+		abbreviation = "wel"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 8
+
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		multiply_stats = {
+			build_cost_ic = 0.1
+			armor_value = 0.4
+			breakthrough = 0.3
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+	
+	tank_modern_cast_turret_armor = {
+		abbreviation = "split"
+		category = tank_turret_armor_type
+		gui_category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+
+		dismantle_cost_ic = 1
+		xp_cost = 8
+		multiply_stats = {
+			armor_value = 0.4
+			breakthrough = 0.25
+		}
+
+		build_cost_resources = {
+			chromium = 1
+		}
+	}
+}

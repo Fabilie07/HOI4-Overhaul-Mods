@@ -1,0 +1,192 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+### Engine Types
+
+	tank_gasoline_engine = {
+		abbreviation = "gas"
+		category = tank_engine_type
+		gui_category = tank_gas_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 1
+			fuel_consumption = 2
+			maximum_speed = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.15
+		}
+	}
+
+	tank_gasoline_engine_2 = {
+		abbreviation = "gas2"
+		category = tank_engine_type
+		gui_category = tank_gas_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 1.5
+			fuel_consumption = 2.5
+			maximum_speed = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_gasoline_engine_3 = {
+		abbreviation = "gas3"
+		category = tank_engine_type
+		gui_category = tank_gas_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2
+			fuel_consumption = 3
+			maximum_speed = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.35
+		}
+	}
+
+	tank_modern_gasoline_engine = {
+		abbreviation = "gas4"
+		category = tank_engine_type
+		gui_category = tank_gas_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2
+			fuel_consumption = 2
+			maximum_speed = 0.5
+		}
+		multiply_stats = {
+			maximum_speed = 0.4
+		}
+	}
+
+	tank_diesel_engine = {
+		abbreviation = "die"
+		category = tank_engine_type
+		gui_category = tank_die_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 1 
+			fuel_consumption = 2
+			reliability = 0.2
+		}
+		multiply_stats = {  }
+	}
+
+	tank_diesel_engine_2 = { #400hp
+		abbreviation = "die2"
+		category = tank_engine_type
+		gui_category = tank_die_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 1.5
+			fuel_consumption = 2.5
+			reliability = 0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+		}
+	}
+
+	tank_diesel_engine_3 = {
+		abbreviation = "die3"
+		category = tank_engine_type
+		gui_category = tank_die_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2
+			fuel_consumption = 3
+			reliability = 0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.2
+		}
+	}
+
+	tank_modern_diesel_engine = {
+		abbreviation = "die4"
+		category = tank_engine_type
+		gui_category = tank_die_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2
+			fuel_consumption = 2
+			reliability = 0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.25
+		}
+	}
+
+	tank_petrol_electric_engine = {
+		abbreviation = "pel"
+		category = tank_engine_type
+		gui_category = tank_exp_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			fuel_consumption = 2
+			build_cost_ic = 1.5
+			reliability = -0.5
+			breakthrough = 2
+			defense = 2
+		}
+		multiply_stats = {
+			breakthrough = 0.15
+			defense = 0.15
+			build_cost_ic = 0.15
+		}
+	}
+
+	tank_petrol_electric_engine_2 = {
+		abbreviation = "pel2"
+		category = tank_engine_type
+		gui_category = tank_exp_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			fuel_consumption = 2
+			build_cost_ic = 3
+			reliability = -0.4
+			breakthrough = 2
+			defense = 2
+		}
+		multiply_stats = {
+			maximum_speed = 0.1
+			breakthrough = 0.15
+			defense = 0.15
+			build_cost_ic = 0.15
+		}
+	}
+
+	tank_gas_turbine_engine = {
+		abbreviation = "tur"
+		category = tank_engine_type
+		gui_category = tank_exp_engine
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 2
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 0.5
+		}
+
+		multiply_stats = {
+			maximum_speed = 0.5
+		}
+	}
+
+}

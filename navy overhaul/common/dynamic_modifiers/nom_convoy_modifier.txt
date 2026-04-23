@@ -1,0 +1,7 @@
+convoy_losses_modifier = {
+	enable = { always = yes }
+
+	industrial_capacity_factory = ROOT.has_convoys_war_support
+	industrial_capacity_dockyard = ROOT.has_convoys_war_support
+	production_factory_efficiency_gain_factor = ROOT.has_convoys_war_support
+}

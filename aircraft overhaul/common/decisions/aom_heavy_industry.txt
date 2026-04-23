@@ -1,0 +1,180 @@
+TOM_heavy_industry_decisions = {
+	
+	aom_hi_convert_civilian_planes = {
+		ai_will_do = {
+			factor = 0
+		}
+		
+		icon = generic_air
+		
+		cost = 15
+		days_re_enable = 270
+		days_remove = 90
+		
+		modifier = {
+			equipment_conversion_speed = 0.2
+		}
+		
+		remove_effect = {
+			create_equipment_variant = {
+				name = "Converted Civilian Plane"
+				type = medium_plane_airframe_0
+				modules = {
+					fixed_main_weapon_slot = medium_bomb_bay
+					engine_type_slot = engine_1_3x
+					role_slot = role_09_tactical_bomber
+					supercharger_type_slot = empty
+					wings_type_slot = monoplane
+					skin_type_slot = metal_skin
+					wheels_type_slot = rubber_wheels
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe_0
+				amount = 100
+				variant_name = "Converted Civilian Plane"
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				add_to_variable = {
+					var = tom_hi_industry_current
+					value = -10
+					tooltip = tom_hi_industry_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+			}
+		}
+	}
+	
+	aom_hi_increase_aircraft_plant_size = {
+		ai_will_do = {
+			factor = 0
+		}
+		
+		icon = GFX_decision_generic_construction
+		
+		cost = 15
+		days_re_enable = 290
+		days_remove = 70
+		
+		modifier = {
+			production_speed_arms_factory_factor = 0.1
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				add_to_variable = {
+					var = tom_hi_tank_current
+					value = 15
+					tooltip = tom_hi_tank_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+				
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+		}
+	}
+	
+	
+	plane_development_decision = {
+		icon = generic_air
+
+		cost = 30
+		days_re_enable = 360
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = plane_modules_tech
+				bonus = 1
+				uses = 3
+				category = plane_modules_tech
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				add_to_variable = {
+					var = tom_hi_specialisation_current
+					value = 15
+					tooltip = tom_hi_specialisation_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	plane_advancement_decision = {
+		icon = generic_air
+
+		cost = 30
+		days_re_enable = 360
+
+		complete_effect = {
+			add_tech_bonus = {
+				ahead_reduction = 1.5
+				uses = 1
+				category = air_equipment
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.75
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				add_to_variable = {
+					var = tom_hi_exp_current
+					value = 15
+					tooltip = tom_hi_exp_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

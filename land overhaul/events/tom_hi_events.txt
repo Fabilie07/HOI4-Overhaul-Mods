@@ -1,0 +1,205 @@
+add_namespace = tom_hi_ai_adjustment
+
+country_event = { # Game Start - Buildup
+	id = tom_hi_ai_adjustment.1
+
+	hidden = yes
+	trigger = {
+		always = yes
+	}
+	fire_only_once = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			
+			set_variable = { tom_hi_tank_target = 15 }
+			set_variable = { tom_hi_tank_target_pointer = 2 }
+			resize_array = { tom_hi_tank_target_array = 3 }
+			
+			set_variable = { tom_hi_industry_target = 35 }
+			set_variable = { tom_hi_industry_target_pointer = 6 }
+			resize_array = { tom_hi_industry_target_array = 7 }
+			
+			set_variable = { tom_hi_mp_target = 65 }
+			set_variable = { tom_hi_mp_target_pointer = 12 }
+			resize_array = { tom_hi_mp_target_array = 13 }
+			
+			set_variable = { tom_hi_specialisation_target = 15 }
+			set_variable = { tom_hi_specialisation_target_pointer = 2 }
+			resize_array = { tom_hi_specialisation_target_array = 3 }
+			
+			set_variable = { tom_hi_exp_target = 65 }
+			set_variable = { tom_hi_exp_target_pointer = 12 }
+			resize_array = { tom_hi_exp_target_array = 13 }
+			
+			tom_hi_check_monthly_change_update = yes
+		}
+	}
+}
+
+
+country_event = { # 1938 - Buildup & Slow Transition
+	id = tom_hi_ai_adjustment.2
+
+	hidden = yes
+	trigger = {
+		date > 1938.01.01
+	}
+	fire_only_once = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			
+			set_variable = { tom_hi_tank_target = 15 }
+			set_variable = { tom_hi_tank_target_pointer = 2 }
+			resize_array = { tom_hi_tank_target_array = 3 }
+			
+			set_variable = { tom_hi_industry_target = 65 }
+			set_variable = { tom_hi_industry_target_pointer = 12 }
+			resize_array = { tom_hi_industry_target_array = 13 }
+			
+			set_variable = { tom_hi_mp_target = 65 }
+			set_variable = { tom_hi_mp_target_pointer = 12 }
+			resize_array = { tom_hi_mp_target_array = 13 }
+			
+			set_variable = { tom_hi_specialisation_target = 15 }
+			set_variable = { tom_hi_specialisation_target_pointer = 2 }
+			resize_array = { tom_hi_specialisation_target_array = 3 }
+			
+			set_variable = { tom_hi_exp_target = 35 }
+			set_variable = { tom_hi_exp_target_pointer = 6 }
+			resize_array = { tom_hi_exp_target_array = 7 }
+			
+			tom_hi_check_monthly_change_update = yes
+		}
+	}
+}
+
+
+country_event = { # 1940 - War!
+	id = tom_hi_ai_adjustment.3
+
+	hidden = yes
+	trigger = {
+		date > 1940.01.01
+	}
+	fire_only_once = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			
+			set_variable = { tom_hi_tank_target = 15 }
+			set_variable = { tom_hi_tank_target_pointer = 2 }
+			resize_array = { tom_hi_tank_target_array = 3 }
+			
+			set_variable = { tom_hi_industry_target = 65 }
+			set_variable = { tom_hi_industry_target_pointer = 12 }
+			resize_array = { tom_hi_industry_target_array = 13 }
+			
+			set_variable = { tom_hi_mp_target = 85 }
+			set_variable = { tom_hi_mp_target_pointer = 16 }
+			resize_array = { tom_hi_mp_target_array = 17 }
+			
+			set_variable = { tom_hi_specialisation_target = 15 }
+			set_variable = { tom_hi_specialisation_target_pointer = 2 }
+			resize_array = { tom_hi_specialisation_target_array = 3 }
+			
+			set_variable = { tom_hi_exp_target = 35 }
+			set_variable = { tom_hi_exp_target_pointer = 6 }
+			resize_array = { tom_hi_exp_target_array = 7 }
+			
+			tom_hi_check_monthly_change_update = yes
+		}
+	}
+}
+
+
+country_event = { # 1942 - Even more War!
+	id = tom_hi_ai_adjustment.4
+
+	hidden = yes
+	trigger = {
+		date > 1942.01.01
+	}
+	fire_only_once = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			
+			set_variable = { tom_hi_tank_target = 15 }
+			set_variable = { tom_hi_tank_target_pointer = 2 }
+			resize_array = { tom_hi_tank_target_array = 3 }
+			
+			set_variable = { tom_hi_industry_target = 85 }
+			set_variable = { tom_hi_industry_target_pointer = 16 }
+			resize_array = { tom_hi_industry_target_array = 17 }
+			
+			set_variable = { tom_hi_mp_target = 85 }
+			set_variable = { tom_hi_mp_target_pointer = 16 }
+			resize_array = { tom_hi_mp_target_array = 17 }
+			
+			set_variable = { tom_hi_specialisation_target = 15 }
+			set_variable = { tom_hi_specialisation_target_pointer = 2 }
+			resize_array = { tom_hi_specialisation_target_array = 3 }
+			
+			set_variable = { tom_hi_exp_target = 35 }
+			set_variable = { tom_hi_exp_target_pointer = 6 }
+			resize_array = { tom_hi_exp_target_array = 7 }
+			
+			tom_hi_check_monthly_change_update = yes
+		}
+	}
+}
+
+
+country_event = { # 1944 - No more Research
+	id = tom_hi_ai_adjustment.5
+
+	hidden = yes
+	trigger = {
+		date > 1944.01.01
+	}
+	fire_only_once = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			
+			set_variable = { tom_hi_tank_target = 15 }
+			set_variable = { tom_hi_tank_target_pointer = 2 }
+			resize_array = { tom_hi_tank_target_array = 3 }
+			
+			set_variable = { tom_hi_industry_target = 85 }
+			set_variable = { tom_hi_industry_target_pointer = 16 }
+			resize_array = { tom_hi_industry_target_array = 17 }
+			
+			set_variable = { tom_hi_mp_target = 85 }
+			set_variable = { tom_hi_mp_target_pointer = 16 }
+			resize_array = { tom_hi_mp_target_array = 17 }
+			
+			set_variable = { tom_hi_specialisation_target = 15 }
+			set_variable = { tom_hi_specialisation_target_pointer = 2 }
+			resize_array = { tom_hi_specialisation_target_array = 3 }
+			
+			set_variable = { tom_hi_exp_target = 15 }
+			set_variable = { tom_hi_exp_target_pointer = 2 }
+			resize_array = { tom_hi_exp_target_array = 3 }
+			
+			tom_hi_check_monthly_change_update = yes
+		}
+	}
+}

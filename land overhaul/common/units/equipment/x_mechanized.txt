@@ -1,0 +1,15 @@
+duplicate_archetypes = {
+
+	mechanized_aa_equipment = {
+		archetype = mechanized_equipment
+		type = { armor anti_air }
+		for_each = {
+			hardness = { set = 0.5 }
+		}
+	}
+
+	mechanized_destroyer_equipment = {
+		archetype = mechanized_equipment
+		type = { armor anti_tank }
+	}
+}

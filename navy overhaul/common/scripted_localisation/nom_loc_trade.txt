@@ -1,0 +1,1649 @@
+defined_text = {
+	name = nom_current_trade_partner
+	text = {
+		trigger = {
+			not = { has_variable = nom_trade_deal_partner }
+		}
+		localization_key = TRADE_PARTNER_NA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = nom_trade_deal_partner
+				value = ENG
+			}
+		}
+		localization_key = TRADE_PARTNER_ENG
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = nom_trade_deal_partner
+				value = FRA
+			}
+		}
+		localization_key = TRADE_PARTNER_FRA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = nom_trade_deal_partner
+				value = GER
+			}
+		}
+		localization_key = TRADE_PARTNER_GER
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = nom_trade_deal_partner
+				value = ITA
+			}
+		}
+		localization_key = TRADE_PARTNER_ITA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = nom_trade_deal_partner
+				value = JAP
+			}
+		}
+		localization_key = TRADE_PARTNER_JAP
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = nom_trade_deal_partner
+				value = SOV
+			}
+		}
+		localization_key = TRADE_PARTNER_SOV
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = nom_trade_deal_partner
+				value = USA
+			}
+		}
+		localization_key = TRADE_PARTNER_USA
+	}
+}
+
+defined_text = {
+	name = nom_negotiate_deal
+	text = {
+		trigger = {
+			not = {
+				has_country_flag = nom_trade_ENG
+				has_country_flag = nom_trade_FRA
+				has_country_flag = nom_trade_GER
+				has_country_flag = nom_trade_ITA
+				has_country_flag = nom_trade_JAP
+				has_country_flag = nom_trade_SOV
+				has_country_flag = nom_trade_USA
+			}
+		}
+		localization_key = TRADE_DEAL_NA
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_ENG
+		}
+		localization_key = TRADE_DEAL_ENG
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_FRA
+		}
+		localization_key = TRADE_DEAL_FRA
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_GER
+		}
+		localization_key = TRADE_DEAL_GER
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_ITA
+		}
+		localization_key = TRADE_DEAL_ITA
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_JAP
+		}
+		localization_key = TRADE_DEAL_JAP
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_SOV
+		}
+		localization_key = TRADE_DEAL_SOV
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_USA
+		}
+		localization_key = TRADE_DEAL_USA
+	}
+}
+
+defined_text = {
+	name = nom_request_confirmation
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_ENG
+		}
+		localization_key = TRADE_REQUEST_ENG
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_FRA
+		}
+		localization_key = TRADE_REQUEST_FRA
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_GER
+		}
+		localization_key = TRADE_REQUEST_GER
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_ITA
+		}
+		localization_key = TRADE_REQUEST_ITA
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_JAP
+		}
+		localization_key = TRADE_REQUEST_JAP
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_SOV
+		}
+		localization_key = TRADE_REQUEST_SOV
+	}
+	text = {
+		trigger = {
+			has_country_flag = nom_trade_USA
+		}
+		localization_key = TRADE_REQUEST_USA
+	}
+}
+
+
+### Designer Images
+
+defined_text = {
+	name = nom_designer_gfx
+	text = {
+		trigger = {
+			has_country_flag = ENG_cv_1_flag
+		}
+		localization_key = "GFX_ENG_cv_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bb_1_flag
+		}
+		localization_key = "GFX_ENG_bb_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bb_2_flag
+		}
+		localization_key = "GFX_ENG_bb_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bb_3_flag
+		}
+		localization_key = "GFX_ENG_bb_3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bc_1_flag
+		}
+		localization_key = "GFX_ENG_bc_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_ca_1_flag
+		}
+		localization_key = "GFX_ENG_ca_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_ca_2_flag
+		}
+		localization_key = "GFX_ENG_ca_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_cl_1_flag
+		}
+		localization_key = "GFX_ENG_cl_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_cl_2_flag
+		}
+		localization_key = "GFX_ENG_cl_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_cl_3_flag
+		}
+		localization_key = "GFX_ENG_cl_3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_dd_1_flag
+		}
+		localization_key = "GFX_ENG_dd_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_dd_2_flag
+		}
+		localization_key = "GFX_ENG_dd_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_ss_1_flag
+		}
+		localization_key = "GFX_ENG_ss_1"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = FRA_cv_1_flag
+		}
+		localization_key = "GFX_FRA_cv_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_bb_1_flag
+		}
+		localization_key = "GFX_FRA_bb_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_bb_2_flag
+		}
+		localization_key = "GFX_FRA_bb_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_ca_1_flag
+		}
+		localization_key = "GFX_FRA_ca_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_cl_1_flag
+		}
+		localization_key = "GFX_FRA_cl_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_dd_1_flag
+		}
+		localization_key = "GFX_FRA_dd_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_dd_2_flag
+		}
+		localization_key = "GFX_FRA_dd_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_ss_1_flag
+		}
+		localization_key = "GFX_FRA_ss_1"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = GER_cv_1_flag
+		}
+		localization_key = "GFX_GER_cv_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_bb_1_flag
+		}
+		localization_key = "GFX_GER_bb_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_bb_2_flag
+		}
+		localization_key = "GFX_GER_bb_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ca_1_flag
+		}
+		localization_key = "GFX_GER_ca_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ca_2_flag
+		}
+		localization_key = "GFX_GER_ca_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_cl_1_flag
+		}
+		localization_key = "GFX_GER_cl_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_dd_1_flag
+		}
+		localization_key = "GFX_GER_dd_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ss_1_flag
+		}
+		localization_key = "GFX_GER_ss_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ss_2_flag
+		}
+		localization_key = "GFX_GER_ss_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ss_3_flag
+		}
+		localization_key = "GFX_GER_ss_3"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = ITA_bb_1_flag
+		}
+		localization_key = "GFX_ITA_bb_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_bb_2_flag
+		}
+		localization_key = "GFX_ITA_bb_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ca_1_flag
+		}
+		localization_key = "GFX_ITA_ca_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ca_2_flag
+		}
+		localization_key = "GFX_ITA_ca_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_cl_1_flag
+		}
+		localization_key = "GFX_ITA_cl_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_cl_2_flag
+		}
+		localization_key = "GFX_ITA_cl_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_cl_3_flag
+		}
+		localization_key = "GFX_ITA_cl_3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_dd_1_flag
+		}
+		localization_key = "GFX_ITA_dd_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ss_1_flag
+		}
+		localization_key = "GFX_ITA_ss_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ss_2_flag
+		}
+		localization_key = "GFX_ITA_ss_2"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = JAP_cv_1_flag
+		}
+		localization_key = "GFX_JAP_cv_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_cv_2_flag
+		}
+		localization_key = "GFX_JAP_cv_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_cv_3_flag
+		}
+		localization_key = "GFX_JAP_cv_3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bb_1_flag
+		}
+		localization_key = "GFX_JAP_bb_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bb_2_flag
+		}
+		localization_key = "GFX_JAP_bb_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bb_3_flag
+		}
+		localization_key = "GFX_JAP_bb_3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bc_1_flag
+		}
+		localization_key = "GFX_JAP_bc_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bc_2_flag
+		}
+		localization_key = "GFX_JAP_bc_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_ca_1_flag
+		}
+		localization_key = "GFX_JAP_ca_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_dd_1_flag
+		}
+		localization_key = "GFX_JAP_dd_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_dd_2_flag
+		}
+		localization_key = "GFX_JAP_dd_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_ss_1_flag
+		}
+		localization_key = "GFX_JAP_ss_1"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = SOV_bb_1_flag
+		}
+		localization_key = "GFX_SOV_bb_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_bb_2_flag
+		}
+		localization_key = "GFX_SOV_bb_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_bc_1_flag
+		}
+		localization_key = "GFX_SOV_bc_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_ca_1_flag
+		}
+		localization_key = "GFX_SOV_ca_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_dd_1_flag
+		}
+		localization_key = "GFX_SOV_dd_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_dd_2_flag
+		}
+		localization_key = "GFX_SOV_dd_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_dd_3_flag
+		}
+		localization_key = "GFX_SOV_dd_3"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = USA_cv_1_flag
+		}
+		localization_key = "GFX_USA_cv_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cv_2_flag
+		}
+		localization_key = "GFX_USA_cv_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cv_3_flag
+		}
+		localization_key = "GFX_USA_cv_3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_bb_1_flag
+		}
+		localization_key = "GFX_USA_bb_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_bb_2_flag
+		}
+		localization_key = "GFX_USA_bb_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_bb_3_flag
+		}
+		localization_key = "GFX_USA_bb_3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ca_1_flag
+		}
+		localization_key = "GFX_USA_ca_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ca_2_flag
+		}
+		localization_key = "GFX_USA_ca_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cl_1_flag
+		}
+		localization_key = "GFX_USA_cl_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cl_2_flag
+		}
+		localization_key = "GFX_USA_cl_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_dd_1_flag
+		}
+		localization_key = "GFX_USA_dd_1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_dd_2_flag
+		}
+		localization_key = "GFX_USA_dd_2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ss_1_flag
+		}
+		localization_key = "GFX_USA_ss_1"
+	}
+}
+
+
+### Ship Titles
+
+defined_text = {
+	name = nom_ship_title_loc
+	text = {
+		trigger = {
+			has_country_flag = ENG_cv_1_flag
+		}
+		localization_key = "Hermes Class Escort Carrier"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bb_1_flag
+		}
+		localization_key = "Queen Elizabeth Class Superdreadnought"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bb_2_flag
+		}
+		localization_key = "King George V Class Fast Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bb_3_flag
+		}
+		localization_key = "King George V Class Fast Battleship with 1943 Outfit"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_bc_1_flag
+		}
+		localization_key = "Renown Class Battlecruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_ca_1_flag
+		}
+		localization_key = "County Class Heavy Cruiser Model Norfolk"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_ca_2_flag
+		}
+		localization_key = "County Class Heavy Cruiser with London's 1941 Outfit"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_cl_1_flag
+		}
+		localization_key = "Town Class Light Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_cl_2_flag
+		}
+		localization_key = "Town Class Light Cruiser Model Edinburgh"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_cl_3_flag
+		}
+		localization_key = "Crown Colony (Fiji) Class Light Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_dd_1_flag
+		}
+		localization_key = "E/F Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_dd_2_flag
+		}
+		localization_key = "L/M CLass Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ENG_ss_1_flag
+		}
+		localization_key = "R Class Submarine"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = FRA_cv_1_flag
+		}
+		localization_key = "Béarn Class Escort Carrier"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_bb_1_flag
+		}
+		localization_key = "Dunkerque Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_bb_2_flag
+		}
+		localization_key = "Richelieu Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_ca_1_flag
+		}
+		localization_key = "Algérie Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_cl_1_flag
+		}
+		localization_key = "La Galissonnière Class Light Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_dd_1_flag
+		}
+		localization_key = "Le Fantasque Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_dd_2_flag
+		}
+		localization_key = "Mogador Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FRA_ss_1_flag
+		}
+		localization_key = "Surcouf Class Large Submarine"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = GER_cv_1_flag
+		}
+		localization_key = "Graf Zeppelin Class Carrier"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_bb_1_flag
+		}
+		localization_key = "Scharnhorst Class Fast Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_bb_2_flag
+		}
+		localization_key = "Bismarck Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ca_1_flag
+		}
+		localization_key = "Deutschland Class Panzerschiff"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ca_2_flag
+		}
+		localization_key = "Admiral Hipper Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_cl_1_flag
+		}
+		localization_key = "Königsberg Class Light Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_dd_1_flag
+		}
+		localization_key = "Typ 1934 Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ss_1_flag
+		}
+		localization_key = "Typ VII Submarine"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ss_2_flag
+		}
+		localization_key = "Typ VII C/41 Submarine"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GER_ss_3_flag
+		}
+		localization_key = "Typ IX C/40 Cruise Submarine"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = ITA_bb_1_flag
+		}
+		localization_key = "Conte di Cavour Class Superdreadnought"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_bb_2_flag
+		}
+		localization_key = "Littorio Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ca_1_flag
+		}
+		localization_key = "Trento Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ca_2_flag
+		}
+		localization_key = "Bolzano Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_cl_1_flag
+		}
+		localization_key = "Montecuccoli Class Light Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_cl_2_flag
+		}
+		localization_key = "Duca degli Abruzzi Class Light Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_cl_3_flag
+		}
+		localization_key = "Capitani Romani Class Destroyer Leader"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_dd_1_flag
+		}
+		localization_key = "Maestrale Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ss_1_flag
+		}
+		localization_key = "Calvi Class Submarine"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ITA_ss_2_flag
+		}
+		localization_key = "CB Class Midget Submarine"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = JAP_cv_1_flag
+		}
+		localization_key = "Akagi Class Carrier"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_cv_2_flag
+		}
+		localization_key = "Tone Class Aircraft Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_cv_3_flag
+		}
+		localization_key = "Taiho Class Carrier"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bb_1_flag
+		}
+		localization_key = "Nagato Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bb_2_flag
+		}
+		localization_key = "Yamato Class Super Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bb_3_flag
+		}
+		localization_key = "Yamato Class Super Battleship with 1945 Outfit"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bc_1_flag
+		}
+		localization_key = "Kongo Class Fast Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bc_2_flag
+		}
+		localization_key = "Amagi Class Battlecruiser with 1941 Outfit"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_ca_1_flag
+		}
+		localization_key = "Takao Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_dd_1_flag
+		}
+		localization_key = "Fubuki Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_dd_2_flag
+		}
+		localization_key = "Kagero Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_ss_1_flag
+		}
+		localization_key = "I-400 Class Aircraft Submarine"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = SOV_bb_1_flag
+		}
+		localization_key = "Gangut Class Dreadnought"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_bb_2_flag
+		}
+		localization_key = "Sovetsky Soyuz Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_bc_1_flag
+		}
+		localization_key = "Kronshtadt Class Battlecruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_ca_1_flag
+		}
+		localization_key = "Kirov Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_dd_1_flag
+		}
+		localization_key = "Leningrad Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_dd_2_flag
+		}
+		localization_key = "Storozhevoy Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SOV_dd_3_flag
+		}
+		localization_key = "Ognevoy Class Destroyer"
+	}
+	
+	text = {
+		trigger = {
+			has_country_flag = USA_cv_1_flag
+		}
+		localization_key = "Yorktown Class Carrier"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cv_2_flag
+		}
+		localization_key = "Yorktown Class Carrier with 1943 Refit"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cv_3_flag
+		}
+		localization_key = "Essex Class Carrier"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_bb_1_flag
+		}
+		localization_key = "Colorado Class Superdreadnought"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_bb_2_flag
+		}
+		localization_key = "North Carolina Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_bb_3_flag
+		}
+		localization_key = "Iowa Class Battleship"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ca_1_flag
+		}
+		localization_key = "New Orleans Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ca_2_flag
+		}
+		localization_key = "Baltimore Class Heavy Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cl_1_flag
+		}
+		localization_key = "Brooklyn Class Light Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_cl_2_flag
+		}
+		localization_key = "Atlanta Class Light AA Cruiser"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_dd_1_flag
+		}
+		localization_key = "Wickes Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_dd_2_flag
+		}
+		localization_key = "Fletcher Class Destroyer"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_ss_1_flag
+		}
+		localization_key = "Porpoise Class Submarine"
+	}
+}
+
+### Background Images
+
+defined_text = {
+	name = loc_ENG_cv_1_bg_image
+	text = {
+		trigger = { ENG_cv_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_cv_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_bb_1_bg_image
+	text = {
+		trigger = { ENG_bb_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_bb_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_bb_2_bg_image
+	text = {
+		trigger = { ENG_bb_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_bb_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_bb_3_bg_image
+	text = {
+		trigger = { ENG_bb_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_bb_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_bc_1_bg_image
+	text = {
+		trigger = { ENG_bc_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_bc_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_ca_1_bg_image
+	text = {
+		trigger = { ENG_ca_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_ca_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_ca_2_bg_image
+	text = {
+		trigger = { ENG_ca_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_ca_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_cl_1_bg_image
+	text = {
+		trigger = { ENG_cl_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_cl_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_cl_2_bg_image
+	text = {
+		trigger = { ENG_cl_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_cl_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_cl_3_bg_image
+	text = {
+		trigger = { ENG_cl_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_cl_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ENG_dd_2_bg_image
+	text = {
+		trigger = { ENG_dd_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ENG_dd_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_FRA_cv_1_bg_image
+	text = {
+		trigger = { FRA_cv_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { FRA_cv_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_FRA_bb_2_bg_image
+	text = {
+		trigger = { FRA_bb_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { FRA_bb_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_FRA_dd_2_bg_image
+	text = {
+		trigger = { FRA_dd_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { FRA_dd_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_GER_cv_1_bg_image
+	text = {
+		trigger = { GER_cv_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { GER_cv_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_GER_bb_1_bg_image
+	text = {
+		trigger = { GER_bb_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { GER_bb_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_GER_bb_2_bg_image
+	text = {
+		trigger = { GER_bb_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { GER_bb_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_GER_ca_1_bg_image
+	text = {
+		trigger = { GER_ca_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { GER_ca_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_GER_ca_2_bg_image
+	text = {
+		trigger = { GER_ca_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { GER_ca_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_GER_ss_2_bg_image
+	text = {
+		trigger = { GER_ss_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { GER_ss_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_GER_ss_3_bg_image
+	text = {
+		trigger = { GER_ss_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { GER_ss_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_ITA_bb_1_bg_image
+	text = {
+		trigger = { ITA_bb_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ITA_bb_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_ITA_bb_2_bg_image
+	text = {
+		trigger = { ITA_bb_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ITA_bb_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_ITA_cl_3_bg_image
+	text = {
+		trigger = { ITA_cl_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ITA_cl_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_ITA_ss_2_bg_image
+	text = {
+		trigger = { ITA_ss_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { ITA_ss_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_JAP_cv_2_bg_image
+	text = {
+		trigger = { JAP_cv_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_cv_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_JAP_cv_3_bg_image
+	text = {
+		trigger = { JAP_cv_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_cv_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_JAP_bb_1_bg_image
+	text = {
+		trigger = { JAP_bb_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_bb_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_JAP_bb_2_bg_image
+	text = {
+		trigger = { JAP_bb_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_bb_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_JAP_bb_3_bg_image
+	text = {
+		trigger = { JAP_bb_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_bb_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_JAP_bc_2_bg_image
+	text = {
+		trigger = { JAP_bc_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_bc_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_JAP_dd_2_bg_image
+	text = {
+		trigger = { JAP_dd_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_dd_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_JAP_ss_1_bg_image
+	text = {
+		trigger = { JAP_ss_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { JAP_ss_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_SOV_bb_1_bg_image
+	text = {
+		trigger = { SOV_bb_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { SOV_bb_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_SOV_bb_2_bg_image
+	text = {
+		trigger = { SOV_bb_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { SOV_bb_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_SOV_bc_1_bg_image
+	text = {
+		trigger = { SOV_bc_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { SOV_bc_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_SOV_ca_1_bg_image
+	text = {
+		trigger = { SOV_ca_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { SOV_ca_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_SOV_dd_1_bg_image
+	text = {
+		trigger = { SOV_dd_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { SOV_dd_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_SOV_dd_2_bg_image
+	text = {
+		trigger = { SOV_dd_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { SOV_dd_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_SOV_dd_3_bg_image
+	text = {
+		trigger = { SOV_dd_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { SOV_dd_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+
+defined_text = {
+	name = loc_USA_cv_1_bg_image
+	text = {
+		trigger = { USA_cv_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_cv_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_cv_2_bg_image
+	text = {
+		trigger = { USA_cv_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_cv_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_cv_3_bg_image
+	text = {
+		trigger = { USA_cv_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_cv_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_bb_1_bg_image
+	text = {
+		trigger = { USA_bb_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_bb_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_bb_2_bg_image
+	text = {
+		trigger = { USA_bb_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_bb_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_bb_3_bg_image
+	text = {
+		trigger = { USA_bb_3_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_bb_3_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_ca_2_bg_image
+	text = {
+		trigger = { USA_ca_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_ca_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_cl_1_bg_image
+	text = {
+		trigger = { USA_cl_1_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_cl_1_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_cl_2_bg_image
+	text = {
+		trigger = { USA_cl_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_cl_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}
+defined_text = {
+	name = loc_USA_dd_2_bg_image
+	text = {
+		trigger = { USA_dd_2_available_trigger = yes }
+		localization_key = NOM_SHIP_AVAILABLE_BG
+	}
+	text = {
+		trigger = { USA_dd_2_available_trigger = no }
+		localization_key = NOM_SHIP_UNAVAILABLE_BG
+	}
+}

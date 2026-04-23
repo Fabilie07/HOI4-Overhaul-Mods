@@ -1,0 +1,38 @@
+ideas = {
+	country = {
+		nom_blockade_1_idea = {
+			allowed = { always = yes }
+			cancel = { has_war = no }
+			removal_cost = -1
+			picture = nom_blockade
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.15
+				industry_repair_factor = -0.4
+				industrial_capacity_factory = -0.05
+
+				surrender_limit = -0.1
+				war_support_weekly = -0.005
+				fuel_gain_factor = -0.1
+			}
+		}
+		nom_blockade_2_idea = {
+			allowed = { always = yes }
+			cancel = { has_war = no }
+			removal_cost = -1
+			picture = nom_blockade
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.25
+				industry_repair_factor = -0.4
+				industrial_capacity_factory = -0.1
+
+				surrender_limit = -0.1
+				war_support_weekly = -0.005
+				fuel_gain_factor = -0.1
+			}
+		}
+	}
+}

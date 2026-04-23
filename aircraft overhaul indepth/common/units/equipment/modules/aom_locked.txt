@@ -1,0 +1,10 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	
+	plane_locked = {
+		category = plane_module_locked
+		xp_cost = 0
+	}
+}

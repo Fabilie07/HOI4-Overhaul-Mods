@@ -1,0 +1,11 @@
+aom_strat_bombing_modifier = {
+	enable = { always = yes }
+
+	consumer_goods_factor = ROOT.aom_sb_consumer_goods
+	industrial_capacity_factory = ROOT.has_bombing_war_support
+	industrial_capacity_dockyard = ROOT.has_bombing_war_support
+	production_factory_efficiency_gain_factor = ROOT.aom_sb_production_growth
+	stability_factor = ROOT.has_bombing_war_support
+	supply_consumption_factor = ROOT.aom_sb_supply_usage
+	air_defence_factor = ROOT.aom_sb_air_defence
+}

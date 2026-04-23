@@ -1,0 +1,51 @@
+﻿l_english:
+
+ TOM_tank_academy_decisions: "Tank Academy"
+ 
+ tom_found_tank_academy:0 "Found Tank Academy"
+ 
+ tom_tank_academy_unlock_tt:0 "Unlock §YTank Academy Project§! Decisions"
+ tom_academy_2_self:0 "[ROOT.GetFlag] Assign the Nation's Experts"
+ tom_academy_2_ENG:0 "[ENG.GetFlag] Invite [ENG.GetAdjectiveCap] Experts"
+ tom_academy_2_FRA:0 "[FRA.GetFlag] Invite [FRA.GetAdjectiveCap] Experts"
+ tom_academy_2_GER:0 "[GER.GetFlag] Invite [GER.GetAdjectiveCap] Experts"
+ tom_academy_2_ITA:0 "[ITA.GetFlag] Invite [ITA.GetAdjectiveCap] Experts"
+ tom_academy_2_JAP:0 "[JAP.GetFlag] Invite [JAP.GetAdjectiveCap] Experts"
+ tom_academy_2_SOV:0 "[SOV.GetFlag] Invite [SOV.GetAdjectiveCap] Experts"
+ tom_academy_2_USA:0 "[USA.GetFlag] Invite [USA.GetAdjectiveCap] Experts"
+ 
+ tom_academy_3_self:0 "[ROOT.GetFlag] Draft New Doctrine"
+ tom_academy_3_ENG:0 "[ENG.GetFlag] Follow [ENG.GetAdjectiveCap] Doctrine"
+ tom_academy_3_FRA:0 "[FRA.GetFlag] Follow [FRA.GetAdjectiveCap] Doctrine"
+ tom_academy_3_GER:0 "[GER.GetFlag] Follow [GER.GetAdjectiveCap] Doctrine"
+ tom_academy_3_ITA:0 "[ITA.GetFlag] Follow [ITA.GetAdjectiveCap] Doctrine"
+ tom_academy_3_JAP:0 "[JAP.GetFlag] Follow [JAP.GetAdjectiveCap] Doctrine"
+ tom_academy_3_SOV:0 "[SOV.GetFlag] Follow [SOV.GetAdjectiveCap] Doctrine"
+ tom_academy_3_USA:0 "[USA.GetFlag] Follow [USA.GetAdjectiveCap] Doctrine"
+ 
+ tom_academy_4_self:0 "[ROOT.GetFlag] Learn from Frontline Combat"
+ tom_academy_4_ENG:0 "[ENG.GetFlag] Study [ENG.GetAdjectiveCap] Warfare"
+ tom_academy_4_FRA:0 "[FRA.GetFlag] Study [FRA.GetAdjectiveCap] Warfare"
+ tom_academy_4_GER:0 "[GER.GetFlag] Study [GER.GetAdjectiveCap] Warfare"
+ tom_academy_4_ITA:0 "[ITA.GetFlag] Study [ITA.GetAdjectiveCap] Warfare"
+ tom_academy_4_JAP:0 "[JAP.GetFlag] Study [JAP.GetAdjectiveCap] Warfare"
+ tom_academy_4_SOV:0 "[SOV.GetFlag] Study [SOV.GetAdjectiveCap] Warfare"
+ tom_academy_4_USA:0 "[USA.GetFlag] Study [USA.GetAdjectiveCap] Warfare"
+ 
+ 
+ TOM_heavy_industry_decisions: "Heavy Industry"
+ 
+ tom_hi_tank_development_decision:0 "Broaden the Tank Force's Capabilities"
+ tom_hi_tank_advancement_decision:0 "Push Prototype Tank into Production"
+ tom_hi_repurpose_dockyard_cranes:0 "Repurpose Dockyard Cranes"
+ tom_hi_issue_design_contest:0 "Issue Design Contest"
+ tom_hi_offer_investment_in_military_infrastructure:0 "Offer Investment into Military Infrastructure"
+ tom_hi_fire_corrupt_officials:0 "Fire Corrupt Officials"
+ tom_hi_push_for_standardized_practices:0 "Push for Standardized Practices"
+ 
+ 
+ tom_hi_tank_current_tt:0 "Heavy Cranes: $RIGHT|Y=%%1$"
+ tom_hi_industry_current_tt:0 "Civilian Involvement: $RIGHT|Y=%%1$"
+ tom_hi_mp_current_tt:0 "Mass Production: $RIGHT|Y=%%1$"
+ tom_hi_specialisation_current_tt:0 "Specialisation: $RIGHT|Y=%%1$"
+ tom_hi_exp_current_tt:0 "Prototype Production: $RIGHT|Y=%%1$"

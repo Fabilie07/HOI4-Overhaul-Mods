@@ -1,0 +1,41 @@
+technologies = {
+
+	tom_research_bonus = {
+
+		research_speed_factor = 0.05
+		
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = 0 }
+		}
+	}
+	
+	TOM_academy_2_ITA_tech = {
+
+		category_light_armor = {
+			mountain = {
+				attack = 0.1
+			}
+		}
+		
+		light_tank_recon = {
+			mountain = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		
+		allow = { always = no }
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 0 y = 0 }
+		}
+	}
+}

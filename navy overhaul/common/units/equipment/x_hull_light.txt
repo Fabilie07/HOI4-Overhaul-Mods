@@ -1,0 +1,200 @@
+equipments = {
+
+	destroyer_1 = {
+		year = 1922
+
+		archetype = ship_hull_light
+		priority = 2000
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_tanks_slot = empty
+
+			fixed_ship_armor_slot = light_ship_armor_1
+			fixed_ship_deck_slot = empty
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = empty
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = empty
+
+			rear_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_torpedo_1_2x
+			mid_4_custom_slot = ship_light_battery_1
+			front_1_custom_slot = ship_light_battery_1
+
+			right_1_custom_slot = empty
+			right_2_custom_slot = empty
+			right_3_custom_slot = empty
+			right_4_custom_slot = empty
+			left_1_custom_slot = empty
+			left_2_custom_slot = empty
+			left_3_custom_slot = empty
+			left_4_custom_slot = empty
+		}
+
+	}
+	destroyer_2 = {
+		year = 1936
+
+		archetype = ship_hull_light
+		priority = 2000
+		parent = destroyer_1
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_sonar_slot = ship_sonar_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_tanks_slot = empty
+
+			fixed_ship_armor_slot = light_ship_armor_2
+			fixed_ship_deck_slot = empty
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = empty
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = empty
+
+			rear_1_custom_slot = ship_depth_charge_2
+			mid_1_custom_slot = ship_light_battery_2
+			mid_2_custom_slot = ship_anti_air_2
+			mid_3_custom_slot = ship_torpedo_1_3x
+			mid_4_custom_slot = ship_light_battery_2
+			front_1_custom_slot = ship_light_battery_2
+
+			right_1_custom_slot = empty
+			right_2_custom_slot = empty
+			right_3_custom_slot = empty
+			right_4_custom_slot = empty
+			left_1_custom_slot = empty
+			left_2_custom_slot = empty
+			left_3_custom_slot = empty
+			left_4_custom_slot = empty
+		}
+		naval_range = 1800
+		max_strength = 40
+		build_cost_ic = 500
+		reliability = 1.0
+		resources = {
+			steel = 1
+		}
+		manpower = 325
+	}
+	
+	destroyer_3 = {
+		year = 1940
+
+		archetype = ship_hull_light
+		priority = 2000
+		parent = destroyer_2
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_sonar_slot = ship_sonar_2
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_3
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_tanks_slot = empty
+
+			fixed_ship_armor_slot = light_ship_armor_3
+			fixed_ship_deck_slot = empty
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = empty
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = empty
+
+			rear_1_custom_slot = ship_depth_charge_3
+			mid_1_custom_slot = ship_light_battery_2_2x
+			mid_2_custom_slot = ship_anti_air_3
+			mid_3_custom_slot = ship_torpedo_2_3x
+			mid_4_custom_slot = ship_light_battery_2_2x
+			front_1_custom_slot = ship_light_battery_2_2x
+
+			right_1_custom_slot = empty
+			right_2_custom_slot = empty
+			right_3_custom_slot = empty
+			right_4_custom_slot = empty
+			left_1_custom_slot = empty
+			left_2_custom_slot = empty
+			left_3_custom_slot = empty
+			left_4_custom_slot = empty
+		}
+		resources = {
+			steel = 2
+		}
+
+		surface_detection = 20
+		surface_visibility = 10
+		naval_range = 2000
+		max_strength = 50
+		build_cost_ic = 550
+		reliability = 1.2
+		manpower = 400
+	}
+	
+	destroyer_4 = {
+		year = 1944
+
+		archetype = ship_hull_light
+		priority = 2000
+		parent = destroyer_3
+		module_slots = inherit
+		default_modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_sonar_slot = ship_sonar_3
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_4
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_tanks_slot = empty
+
+			fixed_ship_armor_slot = light_ship_armor_4
+			fixed_ship_deck_slot = empty
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = empty
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = empty
+
+			rear_1_custom_slot = ship_depth_charge_4
+			mid_1_custom_slot = ship_light_battery_3_2x
+			mid_2_custom_slot = ship_anti_air_4
+			mid_3_custom_slot = ship_torpedo_2_5x
+			mid_4_custom_slot = ship_light_battery_3_2x
+			front_1_custom_slot = ship_light_battery_3_2x
+
+			right_1_custom_slot = empty
+			right_2_custom_slot = empty
+			right_3_custom_slot = empty
+			right_4_custom_slot = empty
+			left_1_custom_slot = empty
+			left_2_custom_slot = empty
+			left_3_custom_slot = empty
+			left_4_custom_slot = empty
+		}
+
+		surface_detection = 20
+		naval_range = 2500
+		max_strength = 60
+		build_cost_ic = 600
+		reliability = 1.25
+		resources = {
+			steel = 2
+		}
+		manpower = 500
+	}
+
+
+}

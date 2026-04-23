@@ -1,0 +1,42 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_rare_metals_spawns
+						option = HISTORICAL
+					}
+				}
+				random_country = {
+					tom_startup_rare_metals_historical = yes
+				}
+			}
+			
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_rare_metals_spawns
+						option = BALANCED
+					}
+				}
+				random_country = {
+					tom_startup_rare_metals_historical = yes
+					tom_startup_rare_metals_additional = yes
+				}
+			}
+			
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_rare_metals_spawns
+						option = RANDOM
+					}
+				}
+				random_country = {
+					tom_startup_rare_metals_random = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+﻿l_english:
+
+ USA_tank_machine_gun_2x:0 "2x 7.62mm M1919"
+ USA_tank_heavy_machine_gun:0 "12.7mm M2"
+ USA_tank_heavy_machine_gun_2x:0 "2x 12.7mm M2"
+ USA_tank_heavy_machine_gun_4x:0 "4x 12.7mm M2"
+ USA_tank_small_cannon:0 "37mm M5"
+ USA_tank_small_cannon_2:0 "37mm M6"
+ USA_tank_medium_velocity_cannon:0 "75mm M3"
+ USA_tank_medium_cannon:0 "76mm M1"
+ USA_tank_medium_cannon_2:0 "76mm M1A1C"
+ USA_tank_heavy_cannon:0 "90mm M3"
+ USA_tank_heavy_cannon_2:0 "90mm M3A1"
+ USA_tank_heavy_cannon_3:0 "90mm M3A1"
+ USA_tank_high_velocity_cannon_3:0 "90mm T15E1"
+ USA_tank_super_heavy_cannon:0 "105mm T5E1"
+ USA_tank_modern_cannon:0 "90mm M36"
+
+ USA_tank_close_support_gun:0 "75mm M2 Howitzer"
+ USA_tank_medium_howitzer:0 "105mm M2A1"
+ USA_tank_medium_howitzer_2:0 "105mm M4"
+ USA_tank_heavy_howitzer:0 "155mm T7"
+
+ USA_tank_light_ap:0 "M74 AP"
+ USA_tank_light_heat:0 "M66 HEAT"
+ USA_tank_light_he:0 "M48 HE"
+
+ USA_tank_medium_aphe:0 "M61 APCBC-HE"
+ USA_tank_medium_ap:0 "M72 AP-T"
+ USA_tank_medium_apcr:0 "M93 HVAP"
+ USA_tank_medium_heat:0 "M67 HEAT"
+ USA_tank_medium_he:0 "M1 HE"
+
+ USA_tank_heavy_aphe:0 "M82 APC"
+ USA_tank_heavy_ap:0 "M77 AP"
+ USA_tank_heavy_he:0 "M107 HE"
+
+ USA_tank_super_heavy_ap:0 "T32 AP-T"
+
+ USA_tank_smoke:0 "M88 Smoke"
+
+ USA_tank_gasoline_engine:0 "Twin Cadillac Series 42"
+ USA_tank_gasoline_engine_2:0 "Continental R975 Radial"
+ USA_tank_gasoline_engine_3:0 "Ford GAA V8"
+ USA_tank_modern_gasoline_engine:0 "Continental AV-1790-5A V12"

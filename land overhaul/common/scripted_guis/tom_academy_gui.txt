@@ -1,0 +1,19 @@
+scripted_gui = {
+	tom_academy_gui = {
+		context_type = decision_category
+		window_name = "tom_academy_window"
+		dirty = tom_academy_update
+		
+		properties = {
+			academy_poster_left = {
+				image = [tom_academy_slot_1_icon]
+			}
+			academy_poster_center = {
+				image = [tom_academy_slot_2_icon]
+			}
+			academy_poster_right = {
+				image = [tom_academy_slot_3_icon]
+			}
+		}
+	}
+}

@@ -1,0 +1,303 @@
+# AI plane design for testing
+
+ENG_fighter = {
+	category = air
+
+	blocked_for = { }
+
+	available_for = { ENG }
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+	}
+
+	great_war_fighter_default = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = empty
+				wings_type_slot = biplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = fixed_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			engine_1_1x
+			light_mg_4x
+		}
+	}
+	#hurricane
+	basic_fighter_default = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = empty
+				wings_type_slot = round_wings
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty	
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			light_mg_4x
+			aircraft_cannon_1_1x
+			engine_2_1x
+			armor_plate_small
+		}
+	}
+
+	#spitfire
+	improved_fighter_default = {
+		priority = {
+			factor = 300
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3000
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_3_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = supercharger
+				wings_type_slot = round_wings
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = fuel_tanks_small	
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = {
+			light_mg_4x
+			engine_3_1x
+			engine_2_1x
+			armor_plate_small
+		}
+	}
+
+	improved_fighter_improved = {
+		name = spitfireMkVb
+		priority = {
+			factor = 350
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3250
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				engine_type_slot = engine_3_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = supercharger
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = fuel_tanks_small	
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = self_sealing_fuel_tanks_small	
+			}
+		}
+
+		allowed_modules = {
+			aircraft_cannon_1_2x
+			engine_3_1x
+			turbocharger
+			armor_plate_small
+		}
+	}
+
+	improved_fighter_improved_more = {
+		name = spitfireMkIXC
+		priority = {
+			factor = 375
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3250
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				engine_type_slot = engine_3_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = turbocharger
+				wings_type_slot = round_wings
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = fuel_tanks_small	
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = self_sealing_fuel_tanks_small	
+			}
+		}
+
+		allowed_modules = {
+			aircraft_cannon_1_2x
+			engine_3_1x
+			turbocharger
+			armor_plate_small
+		}
+	}
+
+	improved_fighter_improved_griffin = {
+		name = spitfireMk21
+		priority = {
+			factor = 400
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3750
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				engine_type_slot = engine_4_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = turbocharger
+				wings_type_slot = round_wings
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = fuel_tanks_small	
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = self_sealing_fuel_tanks_small
+				special_type_slot_5 = aerodynamic_construction
+			}
+		}
+
+		allowed_modules = {
+			aircraft_cannon_1_2x
+			engine_3_1x
+			engine_2_1x
+			armor_plate_small
+		}
+	}
+
+	advanced_fighter_imrpoved = {
+		name = spitefulXIV
+		priority = {
+			factor = 500
+		}
+
+		target_variant = {
+			match_value = 4500
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				engine_type_slot = engine_4_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = turbocharger
+				wings_type_slot = round_wings
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = fuel_tanks_small	
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = self_sealing_fuel_tanks_small
+				special_type_slot_5 = drop_tanks
+				special_type_slot_6 = aerodynamic_construction	
+			}
+		}
+
+		allowed_modules = { 
+			aircraft_cannon_2_2x
+			heavy_mg_4x
+			engine_4_1x
+			engine_2_1x
+			engine_2_2x
+			armor_plate_small
+		}
+	}
+
+	jet_fighter_default = {
+		priority = {
+			factor = 600
+		}
+			
+		visible = no
+		
+		target_variant = {
+			match_value = 5000
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				engine_type_slot = jet_engine_2x
+				role_slot = role_01_fighter
+				supercharger_type_slot = empty
+				wings_type_slot = round_wings
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = fuel_tanks_small	
+				special_type_slot_5 = aerodynamic_construction	
+			}
+		}
+
+		allowed_modules = { 
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_2x
+			jet_engine_2x
+			armor_plate_small
+		}
+	}
+}

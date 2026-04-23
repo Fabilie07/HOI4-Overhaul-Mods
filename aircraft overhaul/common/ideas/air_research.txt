@@ -1,0 +1,38 @@
+ideas = {
+	hidden_ideas = {
+		speed_focus = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = SWE_formation_flying
+	
+			research_bonus = {
+				cat_air_engine = 0.2
+			}
+		}
+		
+		agility_focus = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = SWE_formation_flying
+	
+			research_bonus = {
+				light_air = 0.15
+			}
+		}
+		
+		unconventional_focus = {
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = SWE_formation_flying
+			
+			modifier = {
+				sp_air_mothership_aircraft_speed_factor = 0.1
+				sp_aom_vertical_cannons_speed_factor = 0.1
+				sp_aom_alternative_materials_speed_factor = 0.1
+			}
+			research_bonus = {
+				air_special = 0.2
+			}
+		}
+	}
+}

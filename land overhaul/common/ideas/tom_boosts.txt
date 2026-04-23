@@ -1,0 +1,88 @@
+ideas = {
+	country = {
+		TOM_ai_production_boost_1 = {
+			equipment_bonus = {
+				light_tank_chassis = { build_cost_ic = -0.1 }
+				armored_support_vehicle = { build_cost_ic = -0.1 }
+				amphibious_tank_chassis = { build_cost_ic = -0.1 }
+				medium_tank_chassis = { build_cost_ic = -0.1 }
+				heavy_tank_chassis = { build_cost_ic = -0.1 }
+				modern_tank_chassis = { build_cost_ic = -0.1 }
+				super_heavy_tank_chassis = { build_cost_ic = -0.1 }
+				land_cruiser_chassis = { build_cost_ic = -0.1 }
+				
+				armored_car_equipment = { build_cost_ic = -0.1 }
+				mechanized_equipment = { build_cost_ic = -0.1 }
+				amphibious_mechanized_equipment = { build_cost_ic = -0.1 }
+			}
+		}
+		
+		TOM_ai_production_boost_2 = {
+			equipment_bonus = {
+				light_tank_chassis = { build_cost_ic = -0.2 }
+				armored_support_vehicle = { build_cost_ic = -0.2 }
+				amphibious_tank_chassis = { build_cost_ic = -0.2 }
+				medium_tank_chassis = { build_cost_ic = -0.2 }
+				heavy_tank_chassis = { build_cost_ic = -0.2 }
+				modern_tank_chassis = { build_cost_ic = -0.2 }
+				super_heavy_tank_chassis = { build_cost_ic = -0.2 }
+				land_cruiser_chassis = { build_cost_ic = -0.2 }
+				
+				armored_car_equipment = { build_cost_ic = -0.2 }
+				mechanized_equipment = { build_cost_ic = -0.2 }
+				amphibious_mechanized_equipment = { build_cost_ic = -0.2 }
+			}
+		}
+		
+		TOM_ai_production_boost_3 = {
+			equipment_bonus = {
+				light_tank_chassis = { build_cost_ic = -0.3 }
+				armored_support_vehicle = { build_cost_ic = -0.3 }
+				amphibious_tank_chassis = { build_cost_ic = -0.3 }
+				medium_tank_chassis = { build_cost_ic = -0.3 }
+				heavy_tank_chassis = { build_cost_ic = -0.3 }
+				modern_tank_chassis = { build_cost_ic = -0.3 }
+				super_heavy_tank_chassis = { build_cost_ic = -0.3 }
+				land_cruiser_chassis = { build_cost_ic = -0.3 }
+				
+				armored_car_equipment = { build_cost_ic = -0.3 }
+				mechanized_equipment = { build_cost_ic = -0.3 }
+				amphibious_mechanized_equipment = { build_cost_ic = -0.3 }
+			}
+		}
+		
+		TOM_ai_production_boost_4 = {
+			equipment_bonus = {
+				light_tank_chassis = { build_cost_ic = -0.4 }
+				armored_support_vehicle = { build_cost_ic = -0.4 }
+				amphibious_tank_chassis = { build_cost_ic = -0.4 }
+				medium_tank_chassis = { build_cost_ic = -0.4 }
+				heavy_tank_chassis = { build_cost_ic = -0.4 }
+				modern_tank_chassis = { build_cost_ic = -0.4 }
+				super_heavy_tank_chassis = { build_cost_ic = -0.4 }
+				land_cruiser_chassis = { build_cost_ic = -0.4 }
+				
+				armored_car_equipment = { build_cost_ic = -0.4 }
+				mechanized_equipment = { build_cost_ic = -0.4 }
+				amphibious_mechanized_equipment = { build_cost_ic = -0.4 }
+			}
+		}
+		
+		TOM_ai_production_boost_5 = {
+			equipment_bonus = {
+				light_tank_chassis = { build_cost_ic = -0.5 }
+				armored_support_vehicle = { build_cost_ic = -0.5 }
+				amphibious_tank_chassis = { build_cost_ic = -0.5 }
+				medium_tank_chassis = { build_cost_ic = -0.5 }
+				heavy_tank_chassis = { build_cost_ic = -0.5 }
+				modern_tank_chassis = { build_cost_ic = -0.5 }
+				super_heavy_tank_chassis = { build_cost_ic = -0.5 }
+				land_cruiser_chassis = { build_cost_ic = -0.5 }
+				
+				armored_car_equipment = { build_cost_ic = -0.5 }
+				mechanized_equipment = { build_cost_ic = -0.5 }
+				amphibious_mechanized_equipment = { build_cost_ic = -0.5 }
+			}
+		}
+	}
+}

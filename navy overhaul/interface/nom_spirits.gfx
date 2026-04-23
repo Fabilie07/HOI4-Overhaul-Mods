@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_naval_maneuver_section_spirit"
+		texturefile = "gfx/interface/ideas/generic_navy_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_research_publishing_spirit"
+		texturefile = "gfx/interface/ideas/idea_generic_the_london_naval_treaty.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_flexible_contracts_mio_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_flexible_contracts.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mass_production_spirit"
+		texturefile = "gfx/interface/ideas/liberty_ships_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_naval_repair_yards_spirit"
+		texturefile = "gfx/interface/officer_corp/spirits/spirit_idea_naval_refit_yards.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_naval_refit_yards_spirit"
+		texturefile = "gfx/interface/ideas/idea_SWE_coastal_support.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nom_blockade"
+		texturefile = "gfx/interface/ideas/nom_blockade_idea.dds"
+	}
+}

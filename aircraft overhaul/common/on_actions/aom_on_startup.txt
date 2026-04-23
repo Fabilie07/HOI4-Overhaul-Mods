@@ -1,0 +1,158 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					has_tech = iw_small_airframe
+				}
+				set_technology = { bba_airship = 1 popup = no}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = aom_free_designs_rule
+						option = ENABLED
+					}
+				}
+				
+				every_country = {
+					add_design_template_bonus = {
+						name = air_equipment
+						uses = 9999
+						cost_factor = 1
+						equipment = small_plane_airframe
+						equipment = small_plane_cas_airframe
+						equipment = small_plane_naval_bomber_airframe
+						equipment = small_plane_suicide_airframe
+						equipment = cv_small_plane_airframe
+						equipment = cv_small_plane_cas_airframe
+						equipment = cv_small_plane_naval_bomber_airframe
+						equipment = cv_small_plane_suicide_airframe
+						equipment = medium_plane_airframe
+						equipment = medium_plane_fighter_airframe
+						equipment = medium_plane_scout_airframe
+						equipment = large_plane_airframe
+						equipment = large_plane_maritime_patrol_airframe
+						equipment = airship_equipment
+						equipment = strat_bomber_intercontinental_equipment
+						equipment = mothership_equipment
+						equipment = transport_plane_equipment
+						equipment = helicopter_equipment
+						equipment = attack_helicopter_equipment
+					}
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				add_dynamic_modifier = {
+					modifier = aom_strat_bombing_modifier
+				}
+				aom_starting_aircraft_designs_effect = yes
+			}
+			ENG = { load_oob = 00_aom_ENG_1936_air_bba }
+			FRA = { load_oob = 00_aom_FRA_1936_air_bba }
+			GER = { load_oob = 00_aom_GER_1936_air_bba }
+			ITA = { load_oob = 00_aom_ITA_1936_air_bba }
+			JAP = { load_oob = 00_aom_JAP_1936_air_bba }
+			SOV = { load_oob = 00_aom_SOV_1936_air_bba }
+			USA = { load_oob = 00_aom_USA_1936_air_bba }
+		}
+		
+		# Doctrine Resets
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = aom_doctrine_resets
+						option = ONE
+					}
+				}
+				
+				every_country = {
+					set_variable = { aom_fighter_resets_left = 1 }
+					set_variable = { aom_interceptor_resets_left = 1 }
+					set_variable = { aom_cas_resets_left = 1 }
+					set_variable = { aom_medium_resets_left = 1 }
+					set_variable = { aom_heavy_resets_left = 1 }
+					set_variable = { aom_naval_resets_left = 1 }
+					set_variable = { aom_operations_resets_left = 1 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = aom_doctrine_resets
+						option = TWO
+					}
+				}
+				
+				every_country = {
+					set_variable = { aom_fighter_resets_left = 2 }
+					set_variable = { aom_interceptor_resets_left = 2 }
+					set_variable = { aom_cas_resets_left = 2 }
+					set_variable = { aom_medium_resets_left = 2 }
+					set_variable = { aom_heavy_resets_left = 2 }
+					set_variable = { aom_naval_resets_left = 2 }
+					set_variable = { aom_operations_resets_left = 2 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = aom_doctrine_resets
+						option = THREE
+					}
+				}
+				
+				every_country = {
+					set_variable = { aom_fighter_resets_left = 3 }
+					set_variable = { aom_interceptor_resets_left = 3 }
+					set_variable = { aom_cas_resets_left = 3 }
+					set_variable = { aom_medium_resets_left = 3 }
+					set_variable = { aom_heavy_resets_left = 3 }
+					set_variable = { aom_naval_resets_left = 3 }
+					set_variable = { aom_operations_resets_left = 3 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = aom_doctrine_resets
+						option = FOUR
+					}
+				}
+				
+				every_country = {
+					set_variable = { aom_fighter_resets_left = 4 }
+					set_variable = { aom_interceptor_resets_left = 4 }
+					set_variable = { aom_cas_resets_left = 4 }
+					set_variable = { aom_medium_resets_left = 4 }
+					set_variable = { aom_heavy_resets_left = 4 }
+					set_variable = { aom_naval_resets_left = 4 }
+					set_variable = { aom_operations_resets_left = 4 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = aom_doctrine_resets
+						option = FIVE
+					}
+				}
+				
+				every_country = {
+					set_variable = { aom_fighter_resets_left = 5 }
+					set_variable = { aom_interceptor_resets_left = 5 }
+					set_variable = { aom_cas_resets_left = 5 }
+					set_variable = { aom_medium_resets_left = 5 }
+					set_variable = { aom_heavy_resets_left = 5 }
+					set_variable = { aom_naval_resets_left = 5 }
+					set_variable = { aom_operations_resets_left = 5 }
+				}
+			}
+		}
+	}
+}

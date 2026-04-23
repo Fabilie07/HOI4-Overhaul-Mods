@@ -1,0 +1,276 @@
+@doctrine_cost = 35
+
+air_subdoctrine_interceptor_homeland_defence = {
+    track = interceptor_aircraft
+    name = SUBDOCTRINE_INTERCEPTOR_HOMELAND_DEFENCE
+    description = SUBDOCTRINE_INTERCEPTOR_HOMELAND_DEFENCE_DESC
+    icon = GFX_doctrine_home_defence_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_interceptor_homeland_defence }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_interception_detect_factor = 0.1
+	air_home_defence_factor = 0.2
+
+    rewards = {
+		rapid_response = {
+			air_home_defence_factor = 0.05
+		}
+		civilian_spotters = {
+			air_interception_detect_factor = 0.1
+		}
+		always_alert = {
+			air_home_defence_factor = 0.05
+		}
+        continuous_patrols = {
+			air_intercept_efficiency = 0.1
+		}
+		protected_return_routes = {
+			air_home_defence_factor = 0.1
+		}
+    }
+}
+
+air_subdoctrine_interceptor_aerial_decimation = {
+    track = interceptor_aircraft
+    name = SUBDOCTRINE_INTERCEPTOR_AERIAL_DECIMATION
+    description = SUBDOCTRINE_INTERCEPTOR_AERIAL_DECIMATION_DESC
+    icon = GFX_formation_fighting_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_interceptor_aerial_decimation }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_interceptor = {
+		air_attack = 0.15
+	}
+
+    rewards = {
+		head_on_attacks = {
+			category_interceptor = {
+				air_attack = 0.05
+			}
+		}
+		fearless_hunters = {
+			category_interceptor = {
+				air_attack = 0.05
+			}
+		}
+		formation_disruption = {
+			category_interceptor = {
+				air_attack = 0.05
+			}
+		}
+        coordinated_attacks = {
+			category_interceptor = {
+				air_attack = 0.05
+			}
+		}
+		bomber_decimation = {
+			category_interceptor = {
+				air_attack = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_interceptor_all_out_interception = {
+    track = interceptor_aircraft
+    name = SUBDOCTRINE_INTERCEPTOR_ALL_OUT_INTERCEPTION
+    description = SUBDOCTRINE_INTERCEPTOR_ALL_OUT_INTERCEPTION_DESC
+    icon = GFX_doctrine_offensive_formations_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_interceptor_all_out_interception }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_intercept_efficiency = 0.1
+	air_untrained_pilots_penalty_factor = -0.15
+
+    rewards = {
+		interception_focus = {
+			air_intercept_efficiency = 0.05
+		}
+		attack_formations = {
+			air_untrained_pilots_penalty_factor = -0.05
+		}
+		massed_attacks = {
+			air_intercept_efficiency = 0.05
+		}
+        aerial_charge = {
+			air_untrained_pilots_penalty_factor = -0.1
+		}
+		suicidal_attacks = {
+			air_intercept_efficiency = 0.05
+		}
+    }
+}
+
+air_subdoctrine_interceptor_light_interceptors = {
+    track = interceptor_aircraft
+    name = SUBDOCTRINE_INTERCEPTOR_LIGHT_INTERCEPTORS
+    description = SUBDOCTRINE_INTERCEPTOR_LIGHT_INTERCEPTORS_DESC
+    icon = GFX_multialtitude_flying_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_interceptor_light_interceptors }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_light_interceptor = {
+		air_defence = 0.1
+		air_agility = 0.15
+	}
+
+    rewards = {
+		agile_aircraft = {
+			category_light_interceptor = {
+				air_agility = 0.05
+			}
+		}
+		rapid_ascent = {
+			category_light_interceptor = {
+				air_defence = 0.05
+			}
+		}
+		escort_focus = {
+			category_light_interceptor = {
+				air_agility = 0.05
+			}
+		}
+        fighter_cooperation = {
+			category_light_interceptor = {
+				air_defence = 0.05
+			}
+		}
+		low_fuel_loads = {
+			category_light_interceptor = {
+				air_agility = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_interceptor_heavy_interceptors = {
+    track = interceptor_aircraft
+    name = SUBDOCTRINE_INTERCEPTOR_HEAVY_INTERCEPTORS
+    description = SUBDOCTRINE_INTERCEPTOR_HEAVY_INTERCEPTORS_DESC
+    icon = GFX_doctrine_forward_interception_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_interceptor_heavy_interceptors }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	heavy_interceptor = {
+		air_attack = 0.05
+		air_range = 0.15
+	}
+
+    rewards = {
+		high_altitude_flying = {
+			heavy_interceptor = {
+				air_range = 0.05
+			}
+		}
+		bomber_focus = {
+			heavy_interceptor = {
+				air_attack = 0.05
+			}
+		}
+		forward_interception = {
+			heavy_interceptor = {
+				air_range = 0.05
+			}
+		}
+        bomber_ambushes = {
+			heavy_interceptor = {
+				air_attack = 0.05
+			}
+		}
+		high_fuel_loads = {
+			heavy_interceptor = {
+				air_range = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_interceptor_technological_marvels = {
+    track = interceptor_aircraft
+    name = SUBDOCTRINE_INTERCEPTOR_TECHNOLOGICAL_MARVELS
+    description = SUBDOCTRINE_INTERCEPTOR_TECHNOLOGICAL_MARVELS_DESC
+    icon = GFX_air_superiority_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_interceptor_technological_marvels }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	research_speed_factor = 0.05
+	special_project_speed_factor = 0.1
+
+    rewards = {
+		unconventional_thinking = {
+			special_project_speed_factor = 0.05
+		}
+		high_altitude_engines = {
+			research_speed_factor = 0.03
+		}
+		experimental_weapons = {
+			special_project_speed_factor = 0.05
+		}
+        air_to_air_rockets = {
+			research_speed_factor = 0.04
+		}
+		guidance_systems = {
+			special_project_speed_factor = 0.05
+		}
+    }
+}

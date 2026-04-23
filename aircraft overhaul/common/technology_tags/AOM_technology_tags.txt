@@ -1,0 +1,4 @@
+technology_categories = {
+	air_secret_weapon
+	air_special
+}

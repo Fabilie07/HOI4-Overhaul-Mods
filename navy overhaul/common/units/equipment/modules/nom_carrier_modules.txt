@@ -1,0 +1,275 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+
+########### Deck
+	
+	ship_plane_elevator_1 = {
+		abbreviation = "sda"
+		category = ship_elevator_1
+		allowed_module_categories = {
+			fixed_ship_hangar_slot = { ship_carrier_hangar_1 }
+			deck_1_custom_slot = { ship_elevator_2 }
+			deck_2_custom_slot = { ship_elevator_2 }
+			deck_3_custom_slot = { ship_elevator_2 }
+			deck_4_custom_slot = { ship_elevator_2 }
+		}
+
+		add_stats = {
+			build_cost_ic = 100
+			reliability = -0.1
+		}
+	}
+	
+	ship_plane_elevator_2 = {
+		abbreviation = "sda"
+		category = ship_elevator_2
+		gui_category = ship_elevator_1
+		allowed_module_categories = {
+			fixed_ship_hangar_slot = { ship_carrier_hangar_2 }
+			deck_1_custom_slot = { ship_elevator_3 }
+			deck_2_custom_slot = { ship_elevator_3 }
+			deck_3_custom_slot = { ship_elevator_3 }
+			deck_4_custom_slot = { ship_elevator_3 }
+		}
+
+		add_stats = {
+			build_cost_ic = 100
+			reliability = -0.1
+		}
+	}
+	
+	ship_plane_elevator_3 = {
+		abbreviation = "sda"
+		category = ship_elevator_3
+		gui_category = ship_elevator_1
+		allowed_module_categories = {
+			fixed_ship_hangar_slot = { ship_carrier_hangar_3 }
+		}
+
+		add_stats = {
+			build_cost_ic = 100
+			reliability = -0.1
+		}
+	}
+	
+	ship_carrier_hangar_none = {
+		abbreviation = "hno"
+		category = ship_carrier_hangar_0
+		gui_category = ship_carrier_deck
+		
+		add_stats = {
+			carrier_size = 1
+		}
+		multiply_stats = {
+			build_cost_ic = -0.05
+		}
+	}
+	
+	ship_carrier_hangar_double_deck = {
+		abbreviation = "hno"
+		category = ship_carrier_hangar_1
+		gui_category = ship_carrier_deck
+		
+		add_stats = {
+			carrier_size = 3
+			build_cost_ic = 600
+			reliability = -0.1
+		}
+		multiply_stats = {
+			max_strength = -0.05
+		}
+	}
+	
+	ship_carrier_hangar_triple_deck = {
+		abbreviation = "hno"
+		category = ship_carrier_hangar_1
+		gui_category = ship_carrier_deck
+		
+		add_stats = {
+			carrier_size = 5
+			build_cost_ic = 800
+			reliability = -0.2
+		}
+		multiply_stats = {
+			max_strength = -0.15
+		}
+	}
+	
+	ship_carrier_hangar_small = {
+		abbreviation = "hno"
+		category = ship_carrier_hangar_1
+		gui_category = ship_carrier_hangar
+		
+		add_stats = {
+			carrier_size = 4
+			build_cost_ic = 600
+		}
+		multiply_stats = {
+			max_strength = -0.1
+		}
+	}
+	
+	ship_carrier_hangar_medium = {
+		abbreviation = "hno"
+		category = ship_carrier_hangar_2
+		gui_category = ship_carrier_hangar
+		
+		add_stats = {
+			carrier_size = 6
+			build_cost_ic = 800
+		}
+		multiply_stats = {
+			max_strength = -0.3
+		}
+	}
+	
+	ship_carrier_hangar_large = {
+		abbreviation = "hno"
+		category = ship_carrier_hangar_3
+		gui_category = ship_carrier_hangar
+		
+		add_stats = {
+			carrier_size = 8
+			build_cost_ic = 1000
+		}
+		multiply_stats = {
+			max_strength = -0.5
+		}
+	}
+
+	ship_arresting_cable = {
+		abbreviation = "sda"
+		category = ship_carrier_rear
+
+		add_stats = {
+			max_organisation = 10
+			build_cost_ic = 25
+		}
+	}
+	ship_catapult = {
+		abbreviation = "sda"
+		category = ship_carrier_front
+
+		add_stats = {
+			max_organisation = 20
+			build_cost_ic = 120
+		}
+	}
+	
+	ship_carrier_superstructure_0 = {
+		abbreviation = "cta"
+		category = ship_carrier_tower
+
+		add_stats = {
+			carrier_surface_detection = 4
+			carrier_sub_detection = 1
+			build_cost_ic = 20
+		}
+	}
+	ship_carrier_superstructure_1 = {
+		abbreviation = "cta"
+		category = ship_carrier_tower
+		parent = ship_carrier_superstructure_0
+
+		add_stats = {
+			carrier_surface_detection = 8
+			carrier_sub_detection = 3
+			build_cost_ic = 50
+		}
+	}
+	ship_carrier_superstructure_2 = {
+		abbreviation = "ctb"
+		category = ship_carrier_tower
+		parent = ship_carrier_superstructure_1
+
+		add_stats = {
+			carrier_surface_detection = 12
+			carrier_sub_detection = 5
+			build_cost_ic = 70
+		}
+	}
+	ship_carrier_superstructure_3 = {
+		abbreviation = "ctb"
+		category = ship_carrier_tower
+		parent = ship_carrier_superstructure_2
+
+		add_stats = {
+			carrier_surface_detection = 16
+			carrier_sub_detection = 8
+			build_cost_ic = 90
+		}
+	}
+	
+	
+	ship_armor_ice_carrier_deck_1 = {
+		abbreviation = "sdr"
+		category = ship_ice_carrier_armor
+		gfx = ship_armor_ice_carrier_deck_1
+
+		multiply_stats = {
+			build_cost_ic = 0.1
+			naval_speed = -0.1
+		}
+
+		build_cost_resources = {
+			steel = 2
+		}
+
+		add_stats = {
+			max_strength = 30
+			naval_weather_penalty_factor = -0.05
+			armor_value = 2
+		}
+
+		dismantle_cost_ic = 3000
+	}
+
+	ship_armor_ice_carrier_deck_2 = {
+		abbreviation = "sdr"
+		category = ship_ice_carrier_armor
+		gfx = ship_armor_ice_carrier_deck_2
+		parent = ship_armor_ice_carrier_deck_1
+		multiply_stats = {
+			build_cost_ic = 0.15
+			naval_speed = -0.15
+		}
+
+		build_cost_resources = {
+			steel = 2
+		}
+
+		add_stats = {
+			max_strength = 35
+			naval_weather_penalty_factor = -0.1
+			armor_value = 4
+		}
+
+		dismantle_cost_ic = 3500
+	}
+
+	ship_armor_ice_carrier_deck_3 = {
+		abbreviation = "sdr"
+		category = ship_ice_carrier_armor
+		gfx = ship_armor_ice_carrier_deck_3
+		parent = ship_armor_ice_carrier_deck_2
+		multiply_stats = {
+			build_cost_ic = 0.2
+			naval_speed = -0.15
+		}
+
+		build_cost_resources = {
+			steel = 3
+		}
+
+		add_stats = {
+			max_strength = 40
+			naval_weather_penalty_factor = -0.15
+			armor_value = 6
+		}
+
+		dismantle_cost_ic = 4000
+	}		
+
+}

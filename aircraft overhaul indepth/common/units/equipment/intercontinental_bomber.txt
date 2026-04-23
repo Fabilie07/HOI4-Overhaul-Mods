@@ -1,0 +1,568 @@
+equipments = {
+	strat_bomber_intercontinental_equipment = {
+		year = 1942
+
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
+
+		is_archetype = yes
+		is_convertable = no
+		picture = archetype_fighter_equipment
+		is_buildable = no
+		type = {
+			strategic_bomber			
+		}
+
+		allowed_types = {
+			strategic_bomber
+		}
+
+		allow_mission_type = training
+		group_by = archetype
+		sprite = strat_bomber_intercontinental
+		air_map_icon_frame = 11
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 5
+		
+		module_slots = {
+			role_slot = {
+				required = yes
+				allowed_module_categories = {
+				}
+			}
+			custom_skeleton_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_skeleton_large
+				}
+			}
+			custom_skin_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_skin
+				}
+			}
+			custom_airframe_tail_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_tail
+				}
+			}
+			custom_airframe_wings_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_wings
+				}
+			}
+			custom_airframe_wheels_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_large_wheels
+				}
+			}
+			
+			fixed_engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_engine_type
+					plane_jet_engine_type
+				}
+			}
+			fixed_engine_injection_slot = {
+				required = yes
+				allowed_module_categories = {
+				}
+			}
+			fixed_canopy_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_large_canopy
+				}
+			}
+			fixed_fuel_tank_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_fuel_tank
+				}
+			}
+			fixed_flaps_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_flaps
+				}
+			}
+			fixed_controls_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_controls
+				}
+			}
+			fixed_radar_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_radar
+				}
+			}
+			fixed_radio_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_radio
+				}
+			}
+			fixed_ammunition_slot = {
+				required = no
+				allowed_module_categories = {
+					
+				}
+			}
+			fixed_secondary_ammunition_slot = {
+				required = no
+				allowed_module_categories = {
+					
+				}
+			}
+			
+			fixed_main_weapon_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_lmg_2x
+					plane_lmg_4x
+					plane_hmg_2x
+					plane_hmg_4x
+					plane_cannon_1x
+					plane_cannon_2x
+					nav_bomber_weapon
+					strat_weapon
+				}
+			}
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					plane_lmg_2x
+					plane_lmg_4x
+					plane_hmg_2x
+					plane_hmg_4x
+					plane_cannon_1x
+					plane_cannon_2x
+					nav_bomber_weapon
+					strat_weapon
+				}
+			}
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					plane_lmg_2x
+					plane_lmg_4x
+					plane_hmg_2x
+					plane_hmg_4x
+					plane_cannon_1x
+					plane_cannon_2x
+					nav_bomber_weapon
+					mine_warfare_offense
+					strat_weapon
+				}
+			}
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					plane_lmg_2x
+					plane_lmg_4x
+					plane_hmg_2x
+					plane_hmg_4x
+					plane_cannon_1x
+					plane_cannon_2x
+					nav_bomber_weapon
+					mine_warfare_offense
+					strat_weapon
+				}
+			}
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					plane_lmg_2x
+					plane_lmg_4x
+					plane_hmg_2x
+					plane_hmg_4x
+					plane_cannon_1x
+					plane_cannon_2x
+					nav_bomber_weapon
+					mine_warfare_offense
+					strat_weapon
+				}
+			}
+			fixed_auxiliary_weapon_slot_5 = { 
+				required = no
+				allowed_module_categories = {
+					plane_lmg_2x
+					plane_lmg_4x
+					plane_hmg_2x
+					plane_hmg_4x
+					plane_cannon_1x
+					plane_cannon_2x
+					nav_bomber_weapon
+					mine_warfare_offense
+					strat_weapon
+				}
+			}
+
+			engine_number_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_engine_number_4
+					plane_engine_number_6
+					plane_engine_number_8
+				}
+			}
+			engine_power_slot = {
+				required = yes
+				allowed_module_categories = {
+				}
+			}
+			engine_cooling_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_cooling
+				}
+			}
+			supercharger_type_slot = {
+				required = yes
+				allowed_module_categories = {
+				}
+			}
+			propeller_slot = {
+				required = yes
+				allowed_module_categories = {
+				}
+			}
+			hud_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module
+					plane_special_module_large
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_electronics
+					plane_special_module_defense_turret
+				}
+			}
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module
+					plane_special_module_large
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_electronics
+					plane_special_module_defense_turret
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module
+					plane_special_module_large
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_electronics
+					plane_special_module_defense_turret
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module
+					plane_special_module_large
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_electronics
+					plane_special_module_defense_turret
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module
+					plane_special_module_large
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_electronics
+					plane_special_module_defense_turret
+				}
+			}
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module
+					plane_special_module_large
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_electronics
+					plane_special_module_defense_turret
+				}
+			}
+			special_type_slot_7 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module
+					plane_special_module_large
+					plane_special_module_bomb_sights
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_electronics
+					plane_special_module_defense_turret
+				}
+			}
+		}
+
+		default_modules = {
+			custom_skeleton_slot = wooden_skeleton_large
+			custom_skin_slot = paper_skin
+			custom_airframe_tail_slot = twin_tail
+			custom_airframe_wings_slot = biplane
+			custom_airframe_wheels_slot = big_rubber_wheels
+			fixed_engine_type_slot = engine_type_rotary
+			fixed_engine_injection_slot = prop_carburetor
+			fixed_canopy_slot = large_cockpit
+			fixed_fuel_tank_slot = fuel_tank_concentrated
+			fixed_flaps_slot = flaps_0
+			fixed_controls_slot = controls_wire
+			fixed_main_weapon_slot = empty
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_number_slot = engine_4x
+			engine_power_slot = engine_power_0400
+			engine_cooling_slot = plane_no_cowling
+			supercharger_type_slot = no_supercharger
+			propeller_slot = propeller_wood_2
+			hud_slot = empty
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+		}
+		
+		module_count_limit = {
+			module = role_01_fighter
+			count < 1
+		}
+		module_count_limit = {
+			module = role_02_interceptor
+			count < 1
+		}
+		module_count_limit = {
+			module = role_03_heavy_fighter
+			count < 1
+		}
+		module_count_limit = {
+			module = role_04_cas
+			count < 1
+		}
+		module_count_limit = {
+			module = role_05_naval_bomber
+			count < 1
+		}
+		module_count_limit = {
+			module = role_06_scout_plane
+			count < 1
+		}
+		module_count_limit = {
+			module = role_07_suicide
+			count < 1
+		}
+		module_count_limit = {
+			module = role_08_maritime_patrol_plane
+			count < 1
+		}
+		module_count_limit = {
+			module = role_09_tactical_bomber
+			count < 1
+		}
+		
+		module_count_limit = {
+			module = fixed_explosive_charge
+			count < 2
+		}
+
+		module_count_limit = {
+			module = flying_boat_large
+			count < 2
+		}
+
+		module_count_limit = {
+			module = recon_camera
+			count < 2
+		}
+
+		module_count_limit = {
+			module = demining_coil
+			count < 2
+		}
+
+		module_count_limit = {
+			module = torpedo_mounting
+			count < 4
+		}
+
+		module_count_limit = {
+			module = tank_buster_1
+			count < 5
+		}
+
+		module_count_limit = {
+			module = tank_buster_2
+			count < 3
+		}
+
+		module_count_limit = {
+			module = bomb_toss_computer
+			count < 2
+		}
+
+		module_count_limit = {
+			module = refueling_probe
+			count < 2
+		}
+		
+		module_count_limit = {
+			module = canards
+			count < 2
+		}
+		module_count_limit = {
+			module = leading_edge_slats
+			count < 2
+		}
+		module_count_limit = {
+			module = wing_fences
+			count < 2
+		}
+
+		module_count_limit = {
+			category = nav_bomber_weapon
+			count < 4
+		}
+
+		module_count_limit = {
+			category = plane_special_module_bomb_sights
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_radio_navigation
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_air_ground_radar
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_air_air_radar
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_defense_turret
+			count < 7
+		}
+	}
+
+	intercontinental_plane_airframe_1 = {
+		abbreviation = "afl0"
+		year = 1946
+
+		archetype = strat_bomber_intercontinental_equipment
+		derived_variant_name = strat_bomber_intercontinental_equipment_1
+		module_slots = inherit
+		priority = 5
+
+		air_range = 8000
+		maximum_speed = 400
+		air_agility = 40
+		air_defence = 50
+		weight = 10
+		build_cost_ic = 25
+		reliability = 0.8
+		resources = {
+			aluminium = 6
+		}
+
+		upgrades = {
+			aom_plane_strat_upgrade
+			aom_plane_lift_upgrade
+		}
+	}
+
+
+	# Non-BBA Equipment
+	strat_bomber_intercontinental_equipment_1 = { 
+		year = 1942
+
+		archetype = strat_bomber_intercontinental_equipment
+		priority = 100
+
+		allow_mission_type = {
+			strategic_bomber
+		}
+
+		air_range = 12000
+		maximum_speed = 450
+		air_agility = 12
+		air_attack = 60
+		air_defence = 55
+		air_bombing = 36
+
+		upgrades = {
+			plane_bomb_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		lend_lease_cost = 20
+		air_superiority = 0.01
+		reliability = 0.75
+
+		surface_detection = 1 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+
+		resources = {
+			#oil = 1
+			aluminium = 6
+			rubber = 4
+		}
+		build_cost_ic = 140 #
+		manpower = 100
+		fuel_consumption = 1.25
+
+	}
+}

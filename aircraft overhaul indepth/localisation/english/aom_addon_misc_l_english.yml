@@ -1,0 +1,51 @@
+﻿l_english:
+
+ aomplus_plane_ammo_upgrade: "Magazine Capacity"
+ aomplus_plane_quality_upgrade: "Construction Quality"
+ aomplus_plane_visibility_upgrade: "Pilot Visibility"
+ 
+ sp_air_napalm_bombs: "Napalm Bombs"
+ sp_air_napalm_bombs_desc: "A dangerous mixture of flammable fuel and sticky gels creates napalm, which burns as hot as phosphorous and sticks to all surfaces."
+ 
+ RULE_AI_DESIGNS: "AI Design Focus"
+ RULE_AOM_AI_DESIGNS: "Air Design Focus"
+ RULE_DESIGNS_HIST: "Standard"
+ RULE_DESIGNS_CHA: "Improved Designs"
+ RULE_DESIGNS_HIST_DESC: "The normal setting, in which the AI uses historically appropriate aircraft designs"
+ RULE_DESIGNS_CHA_DESC: "The AI will use better designs. Useful for people who want a challenge"
+ 
+ 
+ # GER Aircraft Names
+ GER_aom_he_51_a: "He 51 A"
+ GER_aom_he_51_b: "He 51 B"
+ GER_aom_bf_109_b: "Bf 109 B"
+ GER_aom_bf_109_e: "Bf 109 E"
+ GER_aom_bf_109_e_3: "Bf 109 E-3"
+ GER_aom_bf_109_g: "Bf 109 G-6/R6"
+ GER_aom_fw_190_a: "Fw 190 A-5"
+ GER_aom_fw_190_d: "Fw 190 D-9"
+ GER_aom_ta_152_c: "Ta 152 C"
+ GER_aom_me_262_a: "Me 262 A"
+ GER_aom_me_1111: "Me P.1111"
+ GER_aom_f4: "F4-F"
+ 
+ GER_aom_hs_123: "Hs 123"
+ GER_aom_ju_87_a: "Ju 87 A"
+ GER_aom_ju_87_d: "Ju 87 D"
+ GER_aom_hs_129_b: "Hs 129 B-3"
+ GER_aom_me_262_a_2: "Me 262 A-2a"
+ 
+ GER_aom_ju_188: "Ju 188 A"
+ GER_aom_ju_288: "Ju 288 C"
+ 
+ GER_aom_bf_110_c: "Bf 110 C"
+ GER_aom_bf_110_g: "Bf 110 G"
+ GER_aom_me_410: "Me 410"
+ GER_aom_ar_440: "Ar 440"
+ 
+ GER_aom_fw_200: "Fw 200 C"
+ GER_aom_he_177: "He 177"
+ GER_aom_me_264: "Me 264"
+ GER_aom_ju_ef_132: "Ju EF 132"
+ 
+ GER_aom_bv_238: "BV 238"

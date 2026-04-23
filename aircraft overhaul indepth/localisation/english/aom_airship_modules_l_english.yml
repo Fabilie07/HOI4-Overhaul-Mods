@@ -1,0 +1,55 @@
+﻿l_english:
+
+ EQ_MOD_SLOT_sensors_type_slot_TITLE:0 "Sensors"
+ EQ_MOD_SLOT_gas_type_slot_TITLE:0 "Gas Type"
+ EQ_MOD_SLOT_gas_cell_type_slot_TITLE:0 "Gas Cell Material"
+ EQ_MOD_SLOT_skeleton_type_slot_TITLE:0 "Body Structure"
+
+ EQ_MOD_CAT_airship_weapon_TITLE:0 "Weapons"
+ EQ_MOD_CAT_airship_sensors_TITLE:0 "Sensors"
+ EQ_MOD_CAT_airship_gas_TITLE:0 "Gas Type"
+ EQ_MOD_CAT_airship_gas_cell_TITLE:0 "Gas Cells"
+ EQ_MOD_CAT_airship_skin_TITLE:0 "Outer Skin"
+ EQ_MOD_CAT_airship_skeleton_TITLE:0 "Internal Structure"
+ EQ_MOD_CAT_airship_special_module_TITLE:0 "Special Modules"
+ 
+ airship_bomb_bay:0 "Bomb Bay"
+ airship_bomb_bay_desc:0 "An internal compartment carrying bombs that can be dropped through a movable door."
+ airship_depth_charges:0 "Depth Charges"
+ airship_depth_charges_desc:0 "Large Explosives set to be fused at a certain depth. They are used to strike Submarines."
+ airship_recon_camera:0 "Camera Array"
+ airship_recon_camera_desc:0 "Multiple cameras are used to photograph locations of strategic importance."
+ airship_airdropped_mines:0 "Airdropped Mines"
+ airship_airdropped_mines_desc:0 "Mines are dropped from Airships, remaining just beneath the water's surface until a ship triggers them."
+ 
+ airship_radar:0 "Naval Search Radar"
+ airship_radar_desc:0 "A Radar Antenna can detect ships beyond the horizon. The Airship's elevated position increases that range even further."
+ airship_sonar:0 "Sonar Buoys"
+ airship_sonar_desc:0 "Floating Sonar Sensor Arrays are dropped into the water. They transmit their data back to the Airship, locating Submarines."
+ 
+ airship_helium:0 "Helium"
+ airship_helium_desc:0 "As a noble gas, Helium is exceedingly unreactive. This makes it a much safer alternative to other gases, but it is harder to procure as well."
+ airship_hydrogen:0 "Hydrogen"
+ airship_hydrogen_desc:0 "The lightest chemical element is the best gas to use for an Airship, at least in theory. It is highly dangerous due to its high flammability and reactiveness."
+ 
+ airship_cell_goldbeater:0 "Goldbeater's Skin Cells"
+ airship_cell_goldbeater_desc:0 "Gas cells made from processed cattle intestines are the traditional way of keeping the gas inside of the ship."
+ airship_cell_fabric:0 "Cotton Cells"
+ airship_cell_fabric_desc:0 "Using multiple layers of cotton combined with a gelatinous compound reduces the loss of gas over time."
+ airship_cell_rubber:0 "Rubber Cells"
+ airship_cell_rubber_desc:0 "Special rubber cells are more resistant against damage."
+ 
+ airship_metal_skin:0 "Metal Skin"
+ airship_metal_skin_desc:0 "Metal is heavy, but it is also very sturdy."
+ airship_fabric_skin:0 "Fabric Skin"
+ airship_fabric_skin_desc:0 "The entire Hull of the Airship is made from Fabric."
+ 
+ airship_no_skeleton:0 "No Skeleton"
+ airship_no_skeleton_desc:0 "Airships that don't rely on a rigid structure to keep their form are called Blimps."
+ airship_metal_skeleton:0 "Metal Skeleton"
+ airship_metal_skeleton_desc:0 "A rigid skeleton made from Aluminium or other lightweight alloys keeps the Airship in its proper shape."
+ 
+ fuel_tanks_airship:0 "Extra Fuel Tanks"
+ fuel_tanks_airship_desc:0 "The properties of being lighter than air allow Airships to travel great distances, but they too are limited by fuel loads."
+ extra_chambers_airship:0 "Extra Gas Chambers"
+ extra_chambers_airship_desc:0 "A larger degree of subdivision means that the airship can take more damage before losing lift."

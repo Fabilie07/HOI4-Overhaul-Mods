@@ -1,0 +1,25 @@
+SpriteTypes = {
+
+	### USA
+	
+	SpriteType = {
+		name = "GFX_USA_cas_5"
+		texturefile = "gfx/interface/equipment/USA_cas_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_cas_6"
+		texturefile = "gfx/interface/equipment/USA_cas_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_cv_fighter_6"
+		texturefile = "gfx/interface/equipment/USA_cv_fighter_6.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_cv_cas_5"
+		texturefile = "gfx/interface/equipment/USA_cv_cas_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_cv_cas_6"
+		texturefile = "gfx/interface/equipment/USA_cv_cas_6.dds"
+	}
+}

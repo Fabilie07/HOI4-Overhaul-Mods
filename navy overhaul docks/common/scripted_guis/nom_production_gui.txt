@@ -1,0 +1,27 @@
+scripted_gui = {
+	nom_production_gui = {
+		context_type = player_context
+		window_name = "nom_production_container"
+		parent_window_name = "production_lines"
+		
+		triggers = {
+			nom_production_blocker_1_visible = { check_variable = { nom_dockyard_limit < 1 } }
+			nom_production_blocker_2_visible = { check_variable = { nom_dockyard_limit < 2 } }
+			nom_production_blocker_3_visible = { check_variable = { nom_dockyard_limit < 3 } }
+			nom_production_blocker_4_visible = { check_variable = { nom_dockyard_limit < 4 } }
+			nom_production_blocker_5_visible = { check_variable = { nom_dockyard_limit < 5 } }
+			nom_production_blocker_6_visible = { check_variable = { nom_dockyard_limit < 6 } }
+			nom_production_blocker_7_visible = { check_variable = { nom_dockyard_limit < 7 } }
+			nom_production_blocker_8_visible = { check_variable = { nom_dockyard_limit < 8 } }
+			nom_production_blocker_9_visible = { check_variable = { nom_dockyard_limit < 9 } }
+			nom_production_blocker_10_visible = { check_variable = { nom_dockyard_limit < 10 } }
+		}
+		
+		dynamic_lists = {
+			blocker_grid = {
+				array = nom_blocker_array
+				entry_container = "nom_production_blocker_entry"
+			}
+		}
+	}
+}

@@ -1,0 +1,131 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_TC_aom_addon_plane_blueprint"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_blueprint.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_2x"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_2x.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_4x"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_4x.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_2x"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_2x.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_4x"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_4x.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_1x"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_1x.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_2x"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_2x.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_2x_2"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_2x_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_4x_2"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_4x_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_2x_2"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_2x_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_4x_2"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_4x_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_1x_2"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_1x_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_2x_2"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_2x_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_2x_3"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_2x_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_4x_3"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_4x_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_2x_3"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_2x_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_4x_3"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_4x_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_1x_3"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_1x_3.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_2x_3"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_2x_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_2x_4"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_2x_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_4x_4"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_4x_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_2x_4"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_2x_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_4x_4"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_4x_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_1x_4"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_1x_4.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_2x_4"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_2x_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_2x_5"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_2x_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_lmg_4x_5"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_lmg_4x_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_2x_5"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_2x_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_hmg_4x_5"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_hmg_4x_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_1x_5"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_1x_5.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_aom_addon_cannon_2x_5"
+		texturefile = "gfx/interface/equipmentdesigner/planes/generic/addon_plane_cannon_2x_5.dds"
+	}
+}

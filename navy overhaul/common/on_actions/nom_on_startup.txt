@@ -1,0 +1,348 @@
+on_actions = {
+	on_startup = {
+	
+		### Convoy Modifier
+		effect = {
+			every_country = {
+				add_dynamic_modifier = { modifier = convoy_losses_modifier }
+				add_dynamic_modifier = { modifier = nom_trade_compensation }
+			}
+			
+			every_country = {
+				add_to_array = { nom_offset_ENG = 80 }
+				add_to_array = { nom_offset_ENG = 88 }
+				add_to_array = { nom_offset_ENG = 84 }
+				add_to_array = { nom_offset_ENG = 160 }
+				add_to_array = { nom_offset_ENG = 168 }
+				add_to_array = { nom_offset_ENG = 164 }
+				add_to_array = { nom_offset_ENG = 240 }
+				add_to_array = { nom_offset_ENG = 248 }
+				add_to_array = { nom_offset_ENG = 244 }
+				add_to_array = { nom_offset_ENG = 320 }
+				add_to_array = { nom_offset_ENG = 328 }
+				add_to_array = { nom_offset_ENG = 324 }
+				add_to_array = { nom_offset_ENG = 400 }
+				add_to_array = { nom_offset_ENG = 408 }
+				add_to_array = { nom_offset_ENG = 404 }
+				add_to_array = { nom_offset_ENG = 480 }
+				add_to_array = { nom_offset_ENG = 488 }
+				add_to_array = { nom_offset_ENG = 484 }
+				add_to_array = { nom_offset_ENG = 560 }
+				add_to_array = { nom_offset_ENG = 568 }
+				add_to_array = { nom_offset_ENG = 564 }
+				add_to_array = { nom_offset_ENG = 640 }
+				add_to_array = { nom_offset_ENG = 648 }
+				add_to_array = { nom_offset_ENG = 644 }
+				add_to_array = { nom_offset_ENG = 720 }
+				add_to_array = { nom_offset_ENG = 728 }
+				add_to_array = { nom_offset_ENG = 724 }
+				add_to_array = { nom_offset_ENG = 800 }
+				add_to_array = { nom_offset_ENG = 808 }
+				add_to_array = { nom_offset_ENG = 804 }
+				add_to_array = { nom_offset_ENG = 880 }
+				add_to_array = { nom_offset_ENG = 888 }
+				add_to_array = { nom_offset_ENG = 884 }
+				add_to_array = { nom_offset_ENG = 960 }
+				add_to_array = { nom_offset_ENG = 968 }
+				add_to_array = { nom_offset_ENG = 964 }
+				
+				add_to_array = { nom_offset_FRA = 80 }
+				add_to_array = { nom_offset_FRA = 88 }
+				add_to_array = { nom_offset_FRA = 84 }
+				add_to_array = { nom_offset_FRA = 160 }
+				add_to_array = { nom_offset_FRA = 168 }
+				add_to_array = { nom_offset_FRA = 164 }
+				add_to_array = { nom_offset_FRA = 240 }
+				add_to_array = { nom_offset_FRA = 248 }
+				add_to_array = { nom_offset_FRA = 244 }
+				add_to_array = { nom_offset_FRA = 320 }
+				add_to_array = { nom_offset_FRA = 328 }
+				add_to_array = { nom_offset_FRA = 324 }
+				add_to_array = { nom_offset_FRA = 400 }
+				add_to_array = { nom_offset_FRA = 408 }
+				add_to_array = { nom_offset_FRA = 404 }
+				add_to_array = { nom_offset_FRA = 480 }
+				add_to_array = { nom_offset_FRA = 488 }
+				add_to_array = { nom_offset_FRA = 484 }
+				add_to_array = { nom_offset_FRA = 560 }
+				add_to_array = { nom_offset_FRA = 568 }
+				add_to_array = { nom_offset_FRA = 564 }
+				
+				add_to_array = { nom_offset_GER = 80 }
+				add_to_array = { nom_offset_GER = 88 }
+				add_to_array = { nom_offset_GER = 84 }
+				add_to_array = { nom_offset_GER = 160 }
+				add_to_array = { nom_offset_GER = 168 }
+				add_to_array = { nom_offset_GER = 164 }
+				add_to_array = { nom_offset_GER = 240 }
+				add_to_array = { nom_offset_GER = 248 }
+				add_to_array = { nom_offset_GER = 244 }
+				add_to_array = { nom_offset_GER = 320 }
+				add_to_array = { nom_offset_GER = 328 }
+				add_to_array = { nom_offset_GER = 324 }
+				add_to_array = { nom_offset_GER = 400 }
+				add_to_array = { nom_offset_GER = 408 }
+				add_to_array = { nom_offset_GER = 404 }
+				add_to_array = { nom_offset_GER = 480 }
+				add_to_array = { nom_offset_GER = 488 }
+				add_to_array = { nom_offset_GER = 484 }
+				add_to_array = { nom_offset_GER = 560 }
+				add_to_array = { nom_offset_GER = 568 }
+				add_to_array = { nom_offset_GER = 564 }
+				add_to_array = { nom_offset_GER = 640 }
+				add_to_array = { nom_offset_GER = 648 }
+				add_to_array = { nom_offset_GER = 644 }
+				add_to_array = { nom_offset_GER = 720 }
+				add_to_array = { nom_offset_GER = 728 }
+				add_to_array = { nom_offset_GER = 724 }
+				
+				add_to_array = { nom_offset_ITA = 160 }
+				add_to_array = { nom_offset_ITA = 168 }
+				add_to_array = { nom_offset_ITA = 164 }
+				add_to_array = { nom_offset_ITA = 240 }
+				add_to_array = { nom_offset_ITA = 248 }
+				add_to_array = { nom_offset_ITA = 244 }
+				add_to_array = { nom_offset_ITA = 320 }
+				add_to_array = { nom_offset_ITA = 328 }
+				add_to_array = { nom_offset_ITA = 324 }
+				add_to_array = { nom_offset_ITA = 400 }
+				add_to_array = { nom_offset_ITA = 408 }
+				add_to_array = { nom_offset_ITA = 404 }
+				add_to_array = { nom_offset_ITA = 480 }
+				add_to_array = { nom_offset_ITA = 488 }
+				add_to_array = { nom_offset_ITA = 484 }
+				add_to_array = { nom_offset_ITA = 560 }
+				add_to_array = { nom_offset_ITA = 568 }
+				add_to_array = { nom_offset_ITA = 564 }
+				add_to_array = { nom_offset_ITA = 640 }
+				add_to_array = { nom_offset_ITA = 648 }
+				add_to_array = { nom_offset_ITA = 644 }
+				add_to_array = { nom_offset_ITA = 720 }
+				add_to_array = { nom_offset_ITA = 728 }
+				add_to_array = { nom_offset_ITA = 724 }
+				
+				add_to_array = { nom_offset_JAP = 240 }
+				add_to_array = { nom_offset_JAP = 248 }
+				add_to_array = { nom_offset_JAP = 244 }
+				add_to_array = { nom_offset_JAP = 320 }
+				add_to_array = { nom_offset_JAP = 328 }
+				add_to_array = { nom_offset_JAP = 324 }
+				add_to_array = { nom_offset_JAP = 400 }
+				add_to_array = { nom_offset_JAP = 408 }
+				add_to_array = { nom_offset_JAP = 404 }
+				add_to_array = { nom_offset_JAP = 480 }
+				add_to_array = { nom_offset_JAP = 488 }
+				add_to_array = { nom_offset_JAP = 484 }
+				add_to_array = { nom_offset_JAP = 560 }
+				add_to_array = { nom_offset_JAP = 568 }
+				add_to_array = { nom_offset_JAP = 564 }
+				add_to_array = { nom_offset_JAP = 640 }
+				add_to_array = { nom_offset_JAP = 648 }
+				add_to_array = { nom_offset_JAP = 644 }
+				add_to_array = { nom_offset_JAP = 720 }
+				add_to_array = { nom_offset_JAP = 728 }
+				add_to_array = { nom_offset_JAP = 724 }
+				add_to_array = { nom_offset_JAP = 800 }
+				add_to_array = { nom_offset_JAP = 808 }
+				add_to_array = { nom_offset_JAP = 804 }
+				add_to_array = { nom_offset_JAP = 880 }
+				add_to_array = { nom_offset_JAP = 888 }
+				add_to_array = { nom_offset_JAP = 884 }
+				
+				add_to_array = { nom_offset_SOV = 0 }
+				add_to_array = { nom_offset_SOV = 8 }
+				add_to_array = { nom_offset_SOV = 4 }
+				add_to_array = { nom_offset_SOV = 80 }
+				add_to_array = { nom_offset_SOV = 88 }
+				add_to_array = { nom_offset_SOV = 84 }
+				add_to_array = { nom_offset_SOV = 160 }
+				add_to_array = { nom_offset_SOV = 168 }
+				add_to_array = { nom_offset_SOV = 164 }
+				add_to_array = { nom_offset_SOV = 240 }
+				add_to_array = { nom_offset_SOV = 248 }
+				add_to_array = { nom_offset_SOV = 244 }
+				add_to_array = { nom_offset_SOV = 320 }
+				add_to_array = { nom_offset_SOV = 328 }
+				add_to_array = { nom_offset_SOV = 324 }
+				add_to_array = { nom_offset_SOV = 400 }
+				add_to_array = { nom_offset_SOV = 408 }
+				add_to_array = { nom_offset_SOV = 404 }
+				add_to_array = { nom_offset_SOV = 480 }
+				add_to_array = { nom_offset_SOV = 488 }
+				add_to_array = { nom_offset_SOV = 484 }
+				
+				add_to_array = { nom_offset_USA = 240 }
+				add_to_array = { nom_offset_USA = 248 }
+				add_to_array = { nom_offset_USA = 244 }
+				add_to_array = { nom_offset_USA = 320 }
+				add_to_array = { nom_offset_USA = 328 }
+				add_to_array = { nom_offset_USA = 324 }
+				add_to_array = { nom_offset_USA = 400 }
+				add_to_array = { nom_offset_USA = 408 }
+				add_to_array = { nom_offset_USA = 404 }
+				add_to_array = { nom_offset_USA = 480 }
+				add_to_array = { nom_offset_USA = 488 }
+				add_to_array = { nom_offset_USA = 484 }
+				add_to_array = { nom_offset_USA = 560 }
+				add_to_array = { nom_offset_USA = 568 }
+				add_to_array = { nom_offset_USA = 564 }
+				add_to_array = { nom_offset_USA = 640 }
+				add_to_array = { nom_offset_USA = 648 }
+				add_to_array = { nom_offset_USA = 644 }
+				add_to_array = { nom_offset_USA = 720 }
+				add_to_array = { nom_offset_USA = 728 }
+				add_to_array = { nom_offset_USA = 724 }
+				add_to_array = { nom_offset_USA = 800 }
+				add_to_array = { nom_offset_USA = 808 }
+				add_to_array = { nom_offset_USA = 804 }
+				add_to_array = { nom_offset_USA = 880 }
+				add_to_array = { nom_offset_USA = 888 }
+				add_to_array = { nom_offset_USA = 884 }
+				add_to_array = { nom_offset_USA = 960 }
+				add_to_array = { nom_offset_USA = 968 }
+				add_to_array = { nom_offset_USA = 964 }
+			}
+			
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = ENG
+						original_tag = FRA
+						original_tag = GER
+						original_tag = ITA
+						original_tag = JAP
+						original_tag = SOV
+						original_tag = USA
+					}
+				}
+				set_variable = { nom_commission_efficiency = 1 }
+			}
+			
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				
+				set_country_flag = nom_trade_deal_automation_flag
+				set_country_flag = nom_trade_deal_refuse_flag
+				set_country_flag = nom_trade_capital_automation_flag
+				set_country_flag = nom_trade_capital_refuse_flag
+				set_country_flag = nom_trade_screen_automation_flag
+				set_country_flag = nom_trade_screen_refuse_flag
+			}
+		}
+		
+		### Free Ship Designs
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = nom_free_designs_rule
+						option = ENABLED
+					}
+				}
+				
+				every_country = {
+					add_design_template_bonus = {
+						name = naval_equipment
+						uses = 9999
+						cost_factor = 1
+						equipment = ship_hull_light
+						equipment = ship_hull_submarine
+						equipment = ship_hull_cruiser
+						equipment = ship_hull_heavy
+						equipment = ship_hull_carrier
+					}
+				}
+			}
+		}
+		
+		### Major Trade Ports
+		effect = {
+			7 = {	# Rotterdam
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			15 = {	# Le Havre
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			58 = {	# Hamburg
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			126 = {	# London
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			282 = {	# Yokohama
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			1021 = {	# Singapore
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			358 = {	# New York
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			378 = {	# San Diego
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			408 = {	# Vladivostok
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			613 = {	# Shanghai
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			736 = {	# Trieste
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+			982 = {	# Cochin
+				set_building_level = {
+					type = nom_commercial_port
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

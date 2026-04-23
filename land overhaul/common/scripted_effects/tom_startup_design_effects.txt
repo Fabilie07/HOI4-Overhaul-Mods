@@ -1,0 +1,117 @@
+tom_startup_armored_car_designs_effect = {
+	create_equipment_variant = {
+		type = gw_armored_car_equipment
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			ac_main_armament_slot = ac_machine_gun_2x
+			turret_type_slot = ac_two_man_turret
+			suspension_type_slot = ac_four_wheeled_suspension
+			armor_type_slot = ac_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+	
+	create_equipment_variant = {
+		type = armored_car_equipment_1
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			ac_main_armament_slot = ac_heavy_machine_gun
+			turret_type_slot = ac_two_man_turret
+			suspension_type_slot = ac_four_wheeled_suspension
+			armor_type_slot = ac_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+
+	create_equipment_variant = {
+		type = armored_car_equipment_2
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			ac_main_armament_slot = ac_small_cannon
+			turret_type_slot = ac_two_man_turret
+			suspension_type_slot = ac_four_wheeled_suspension
+			armor_type_slot = ac_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+}
+
+tom_startup_mechanized_designs_effect = {
+	create_equipment_variant = {
+		type = mechanized_equipment_1
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mech_main_armament_slot = mech_machine_gun_2x
+			turret_type_slot = mech_machine_gun_mount
+			suspension_type_slot = mech_half_tracked_suspension
+			armor_type_slot = ac_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+	
+	create_equipment_variant = {
+		type = mechanized_equipment_2
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mech_main_armament_slot = mech_machine_gun_2x
+			turret_type_slot = mech_machine_gun_mount
+			suspension_type_slot = mech_half_tracked_suspension
+			armor_type_slot = ac_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+	
+	create_equipment_variant = {
+		type = mechanized_equipment_3
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mech_main_armament_slot = mech_machine_gun_2x
+			turret_type_slot = mech_machine_gun_mount
+			suspension_type_slot = mech_half_tracked_suspension
+			armor_type_slot = ac_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+}
+
+tom_startup_amphibious_mechanized_designs_effect = {
+	create_equipment_variant = {
+		type = amphibious_mechanized_equipment_1
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mech_main_armament_slot = mech_machine_gun_2x
+			turret_type_slot = mech_machine_gun_mount
+			suspension_type_slot = mech_half_tracked_suspension
+			armor_type_slot = ac_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+
+	create_equipment_variant = {
+		type = amphibious_mechanized_equipment_2
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mech_main_armament_slot = mech_machine_gun_2x
+			turret_type_slot = mech_machine_gun_mount
+			suspension_type_slot = mech_half_tracked_suspension
+			armor_type_slot = ac_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+		}
+	}
+}

@@ -1,0 +1,477 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "tom_heavy_industry_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 380 }
+		
+		gridboxType = {
+			name = "entry_bg_grid"
+			position = { x=-39 y=-20 }
+			size = { width=380 height=308 }
+			slotsize = {width=76 height=308 }
+			orientation = "UPPER_LEFT"
+			max_slots_horizontal = 5
+			max_slots_vertical = 1
+		}
+		
+		iconType = {
+			name ="tank_section_icon"
+			spriteType = "GFX_tom_heavy_industry_tanks_balanced"
+			position = { x=123 y=-20 }
+			pdx_tooltip = TOM_HI_TANK_IDEA_TT
+		}
+		iconType = {
+			name ="industry_section_icon"
+			spriteType = "GFX_tom_heavy_industry_industry_balanced"
+			position = { x=199 y=-22 }
+			pdx_tooltip = TOM_HI_INDUSTRY_IDEA_TT
+		}
+		iconType = {
+			name ="mass_production_section_icon"
+			spriteType = "GFX_tom_heavy_industry_massproduction_balanced"
+			position = { x=275 y=-20 }
+			pdx_tooltip = TOM_HI_MP_IDEA_TT
+		}
+		iconType = {
+			name ="specialisation_section_icon"
+			spriteType = "GFX_tom_heavy_industry_specialisation_balanced"
+			position = { x=351 y=-22 }
+			pdx_tooltip = TOM_HI_SPECIALISATION_IDEA_TT
+		}
+		iconType = {
+			name ="experimental_section_icon"
+			spriteType = "GFX_tom_heavy_industry_exp_balanced"
+			position = { x=427 y=-20 }
+			pdx_tooltip = TOM_HI_EXP_IDEA_TT
+		}
+		
+		### TANKS
+		iconType = {
+			name = "tank_scrollbar_bg"
+			spriteType = "GFX_tom_hi_scrollbar_bg"
+			position = { x=124 y=41 }
+		}
+
+		buttonType = {
+			name = "tank_scrollbar_increase"
+			quadTextureSprite = "GFX_scroll_up"
+			position = { x = 126 y = 44 }
+		}
+		
+		buttonType = {
+			name = "tank_scrollbar_decrease"
+			quadTextureSprite = "GFX_scroll_down"
+			position = { x= 126 y = 265 }
+		}
+		
+		gridboxType = {
+			name = "tank_scrollbar_grid"
+			position = { x=129 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		
+		iconType = {
+			name ="tank_progress_bar_bg"
+			spriteType = "GFX_tom_hi_progress_bar_bg"
+			position = { x=142 y=44 }
+		}
+		
+		gridboxType = {
+			name = "tank_progressbar_grid"
+			position = { x=160 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		iconType = {
+			name ="tank_progress_bar_sections"
+			spriteType = "GFX_tom_hi_progress_bar_milestone"
+			position = { x=147 y=99 }
+			alwaystransparent = yes
+		}
+		
+		
+		### INDUSTRY
+		iconType = {
+			name = "industry_scrollbar_bg"
+			spriteType = "GFX_tom_hi_scrollbar_bg"
+			position = { x=200 y=41 }
+		}
+
+		buttonType = {
+			name = "industry_scrollbar_increase"
+			quadTextureSprite = "GFX_scroll_up"
+			position = { x = 202 y = 44 }
+		}
+		
+		buttonType = {
+			name = "industry_scrollbar_decrease"
+			quadTextureSprite = "GFX_scroll_down"
+			position = { x= 202 y = 265 }
+		}
+		
+		gridboxType = {
+			name = "industry_scrollbar_grid"
+			position = { x=205 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		
+		iconType = {
+			name ="industry_progress_bar_bg"
+			spriteType = "GFX_tom_hi_progress_bar_bg"
+			position = { x=218 y=44 }
+		}
+		
+		gridboxType = {
+			name = "industry_progressbar_grid"
+			position = { x=236 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		iconType = {
+			name ="industry_progress_bar_sections"
+			spriteType = "GFX_tom_hi_progress_bar_milestone"
+			position = { x=223 y=99 }
+			alwaystransparent = yes
+		}
+		
+		
+		### MASS PRODUCTION
+		iconType = {
+			name = "mp_scrollbar_bg"
+			spriteType = "GFX_tom_hi_scrollbar_bg"
+			position = { x=276 y=41 }
+		}
+
+		buttonType = {
+			name = "mp_scrollbar_increase"
+			quadTextureSprite = "GFX_scroll_up"
+			position = { x = 278 y = 44 }
+		}
+		
+		buttonType = {
+			name = "mp_scrollbar_decrease"
+			quadTextureSprite = "GFX_scroll_down"
+			position = { x= 278 y = 265 }
+		}
+		
+		gridboxType = {
+			name = "mp_scrollbar_grid"
+			position = { x=281 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		
+		iconType = {
+			name ="mp_progress_bar_bg"
+			spriteType = "GFX_tom_hi_progress_bar_bg"
+			position = { x=294 y=44 }
+		}
+		
+		gridboxType = {
+			name = "mp_progressbar_grid"
+			position = { x=312 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		iconType = {
+			name ="mp_progress_bar_sections"
+			spriteType = "GFX_tom_hi_progress_bar_milestone"
+			position = { x=299 y=99 }
+			alwaystransparent = yes
+		}
+		
+		
+		### SPECIALISATION
+		iconType = {
+			name = "specialisation_scrollbar_bg"
+			spriteType = "GFX_tom_hi_scrollbar_bg"
+			position = { x=352 y=41 }
+		}
+
+		buttonType = {
+			name = "specialisation_scrollbar_increase"
+			quadTextureSprite = "GFX_scroll_up"
+			position = { x=354 y = 44 }
+		}
+		
+		buttonType = {
+			name = "specialisation_scrollbar_decrease"
+			quadTextureSprite = "GFX_scroll_down"
+			position = { x=354 y = 265 }
+		}
+		
+		gridboxType = {
+			name = "specialisation_scrollbar_grid"
+			position = { x=357 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		
+		iconType = {
+			name ="specialisation_progress_bar_bg"
+			spriteType = "GFX_tom_hi_progress_bar_bg"
+			position = { x=370 y=44 }
+		}
+		
+		gridboxType = {
+			name = "specialisation_progressbar_grid"
+			position = { x=388 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		iconType = {
+			name ="specialisation_progress_bar_sections"
+			spriteType = "GFX_tom_hi_progress_bar_milestone"
+			position = { x=375 y=99 }
+			alwaystransparent = yes
+		}
+		
+		
+		### EXPERIMENTAL
+		iconType = {
+			name = "exp_scrollbar_bg"
+			spriteType = "GFX_tom_hi_scrollbar_bg"
+			position = { x=428 y=41 }
+		}
+
+		buttonType = {
+			name = "exp_scrollbar_increase"
+			quadTextureSprite = "GFX_scroll_up"
+			position = { x=430 y = 44 }
+		}
+		
+		buttonType = {
+			name = "exp_scrollbar_decrease"
+			quadTextureSprite = "GFX_scroll_down"
+			position = { x=430 y = 265 }
+		}
+		
+		gridboxType = {
+			name = "exp_scrollbar_grid"
+			position = { x=433 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		
+		iconType = {
+			name ="exp_progress_bar_bg"
+			spriteType = "GFX_tom_hi_progress_bar_bg"
+			position = { x=446 y=44 }
+		}
+		
+		gridboxType = {
+			name = "exp_progressbar_grid"
+			position = { x=464 y=62 }
+			size = { width=8 height=200 }
+			slotsize = {width=8 height=10 }
+			format = "LOWER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 20
+		}
+		
+		iconType = {
+			name ="exp_progress_bar_sections"
+			spriteType = "GFX_tom_hi_progress_bar_milestone"
+			position = { x=451 y=99 }
+			alwaystransparent = yes
+		}
+		
+		
+		iconType = {
+			name = "background_picture"
+			position = { x=12 y=-8 }
+			spriteType = "GFX_tom_hi_background_picture"
+		}
+		
+		iconType = {
+			name = "tooltip_bg"
+			position = { x=8 y=150 }
+			spriteType = "GFX_constructions_bg4"
+		}
+		
+		iconType = {
+			name = "target_bg"
+			position = { x=8 y=282 }
+			spriteType = "GFX_tom_hi_tooltip_bg"
+		}
+		iconType = {
+			name = "current_bg"
+			position = { x=8 y=314 }
+			spriteType = "GFX_tom_hi_tooltip_bg"
+		}
+		iconType = {
+			name = "change_bg"
+			position = { x=8 y=346 }
+			spriteType = "GFX_tom_hi_tooltip_bg"
+		}
+		
+		instantTextBoxType = {
+			name = "target_tt"
+			position = { x=34 y=290 }
+			text = "Target:"
+			font = "hoi_16mbs"
+		}
+		instantTextBoxType = {
+			name = "current_tt"
+			position = { x=26 y=322 }
+			text = "Value:"
+			font = "hoi_16mbs"
+		}
+		instantTextBoxType = {
+			name = "increase_tt"
+			position = { x=26 y=354 }
+			text = "Change:"
+			font = "hoi_16mbs"
+		}
+		
+		instantTextBoxType = {
+			name = "tank_target"
+			position = { x=140 y=288 }
+			text = "[?tom_hi_tank_target|%%0]"
+		}
+		instantTextBoxType = {
+			name = "tank_current"
+			position = { x=132 y=320 }
+			text = "[?tom_hi_tank_current|%%1]"
+		}
+		instantTextBoxType = {
+			name = "tank_change"
+			position = { x=132 y=352 }
+			text = "[?tom_hi_tank_change|%%=1]"
+		}
+		
+		instantTextBoxType = {
+			name = "industry_target"
+			position = { x=216 y=288 }
+			text = "[?tom_hi_industry_target|%%0]"
+		}
+		instantTextBoxType = {
+			name = "industry_current"
+			position = { x=208 y=320 }
+			text = "[?tom_hi_industry_current|%%1]"
+		}
+		instantTextBoxType = {
+			name = "industry_change"
+			position = { x=208 y=352 }
+			text = "[?tom_hi_industry_change|%%=1]"
+		}
+		
+		instantTextBoxType = {
+			name = "mp_target"
+			position = { x=292 y=288 }
+			text = "[?tom_hi_mp_target|%%0]"
+		}
+		instantTextBoxType = {
+			name = "mp_current"
+			position = { x=284 y=320 }
+			text = "[?tom_hi_mp_current|%%1]"
+		}
+		instantTextBoxType = {
+			name = "mp_change"
+			position = { x=284 y=352 }
+			text = "[?tom_hi_mp_change|%%=1]"
+		}
+		
+		instantTextBoxType = {
+			name = "specialisation_target"
+			position = { x=368 y=288 }
+			text = "[?tom_hi_specialisation_target|%%0]"
+		}
+		instantTextBoxType = {
+			name = "specialisation_current"
+			position = { x=360 y=320 }
+			text = "[?tom_hi_specialisation_current|%%1]"
+		}
+		instantTextBoxType = {
+			name = "specialisation_change"
+			position = { x=360 y=352 }
+			text = "[?tom_hi_specialisation_change|%%=1]"
+		}
+		
+		instantTextBoxType = {
+			name = "exp_target"
+			position = { x=444 y=288 }
+			text = "[?tom_hi_exp_target|%%0]"
+		}
+		instantTextBoxType = {
+			name = "exp_current"
+			position = { x=436 y=320 }
+			text = "[?tom_hi_exp_current|%%1]"
+		}
+		instantTextBoxType = {
+			name = "exp_change"
+			position = { x=436 y=352 }
+			text = "[?tom_hi_exp_change|%%=1]"
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "scrollbar_entry_container"
+		
+		iconType = {
+			name ="scrollbar_section"
+			spriteType = "GFX_tom_hi_scrollbar_bar"
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "progressbar_entry_container"
+		
+		iconType = {
+			name ="progressbar_section"
+			spriteType = "GFX_tom_hi_progress_bar_bar"
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "entry_bg_container"
+		size = { width=80 height=308 }
+		
+		background = {
+			name ="tiled_bg"
+			spriteType = "GFX_tiled_plain_bg"
+		}
+	}
+}

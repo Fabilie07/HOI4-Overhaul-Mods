@@ -1,0 +1,69 @@
+﻿l_english:
+
+ air_decisions:0 "Aircraft Overhaul"
+ TOM_heavy_industry_decisions: "Heavy Industry"
+
+ plane_development_decision:0 "Open-Minded Aircraft Design"
+ plane_advancement_decision:0 "Push Prototype Aircraft into Production"
+ aom_hi_convert_civilian_planes:0 "Convert Civilian Planes"
+ aom_hi_increase_aircraft_plant_size:0 "Increase Aircraft Plant Size"
+ 
+ 
+ AOM_plane_academy_decisions: "Air Academy"
+ 
+ aom_found_plane_academy:0 "Found Plane Academy"
+ 
+ aom_plane_academy_unlock_tt:0 "Unlock §YAir Academy Project§! Decisions"
+ aom_academy_2_self:0 "[ROOT.GetFlag] Assign the Nation's Experts"
+ aom_academy_2_ENG:0 "[ENG.GetFlag] Invite [ENG.GetAdjectiveCap] Experts"
+ aom_academy_2_FRA:0 "[FRA.GetFlag] Invite [FRA.GetAdjectiveCap] Experts"
+ aom_academy_2_GER:0 "[GER.GetFlag] Invite [GER.GetAdjectiveCap] Experts"
+ aom_academy_2_ITA:0 "[ITA.GetFlag] Invite [ITA.GetAdjectiveCap] Experts"
+ aom_academy_2_JAP:0 "[JAP.GetFlag] Invite [JAP.GetAdjectiveCap] Experts"
+ aom_academy_2_SOV:0 "[SOV.GetFlag] Invite [SOV.GetAdjectiveCap] Experts"
+ aom_academy_2_USA:0 "[USA.GetFlag] Invite [USA.GetAdjectiveCap] Experts"
+ 
+ aom_academy_3_self:0 "[ROOT.GetFlag] Draft New Doctrine"
+ aom_academy_3_ENG:0 "[ENG.GetFlag] Follow [ENG.GetAdjectiveCap] Doctrine"
+ aom_academy_3_FRA:0 "[FRA.GetFlag] Follow [FRA.GetAdjectiveCap] Doctrine"
+ aom_academy_3_GER:0 "[GER.GetFlag] Follow [GER.GetAdjectiveCap] Doctrine"
+ aom_academy_3_ITA:0 "[ITA.GetFlag] Follow [ITA.GetAdjectiveCap] Doctrine"
+ aom_academy_3_JAP:0 "[JAP.GetFlag] Follow [JAP.GetAdjectiveCap] Doctrine"
+ aom_academy_3_SOV:0 "[SOV.GetFlag] Follow [SOV.GetAdjectiveCap] Doctrine"
+ aom_academy_3_USA:0 "[USA.GetFlag] Follow [USA.GetAdjectiveCap] Doctrine"
+ 
+ aom_academy_4_self:0 "[ROOT.GetFlag] Learn from Frontline Combat"
+ aom_academy_4_ENG:0 "[ENG.GetFlag] Study [ENG.GetAdjectiveCap] Air Combat"
+ aom_academy_4_FRA:0 "[FRA.GetFlag] Study [FRA.GetAdjectiveCap] Air Combat"
+ aom_academy_4_GER:0 "[GER.GetFlag] Study [GER.GetAdjectiveCap] Air Combat"
+ aom_academy_4_ITA:0 "[ITA.GetFlag] Study [ITA.GetAdjectiveCap] Air Combat"
+ aom_academy_4_JAP:0 "[JAP.GetFlag] Study [JAP.GetAdjectiveCap] Air Combat"
+ aom_academy_4_SOV:0 "[SOV.GetFlag] Study [SOV.GetAdjectiveCap] Air Combat"
+ aom_academy_4_USA:0 "[USA.GetFlag] Study [USA.GetAdjectiveCap] Air Combat"
+ 
+ 
+ aom_call_for_the_highest_service:0 "Call for the Highest Service"
+ aom_call_for_the_highest_service_desc:0 "A government's first priority is to protect its citizens. Times are dire indeed when, in order to fulfil that obligation to the many, the few must be called forth to willingly give their lives as heroes."
+ 
+ om_doctrine_decisions:0 "Doctrine Decisions"
+ 
+ aom_reset_track_fighter:0 "Reset Fighter Aircraft Track"
+ aom_reset_track_interceptor:0 "Reset Interceptor Aircraft Track"
+ aom_reset_track_cas:0 "Reset Strike Aircraft Track"
+ aom_reset_track_medium:0 "Reset Tactical Bombers Track"
+ aom_reset_track_heavy:0 "Reset Strategic Bombers Track"
+ aom_reset_track_naval:0 "Reset Naval Aircraft Track"
+ aom_reset_track_operations:0 "Reset Air Operations Track"
+ 
+ aom_reset_track_tt:0 "Resets the $TRACK|Y$ Doctrine Track, retaining the Doctrine Boni. This cannot be reversed."
+ aom_resets_left_fighter_tt:0 "§YResets left:§! [?aom_fighter_resets_left]"
+ aom_resets_left_interceptor_tt:0 "§YResets left:§! [?aom_interceptor_resets_left]"
+ aom_resets_left_cas_tt:0 "§YResets left:§! [?aom_cas_resets_left]"
+ aom_resets_left_medium_tt:0 "§YResets left:§! [?aom_medium_resets_left]"
+ aom_resets_left_heavy_tt:0 "§YResets left:§! [?aom_heavy_resets_left]"
+ aom_resets_left_naval_tt:0 "§YResets left:§! [?aom_naval_resets_left]"
+ aom_resets_left_operations_tt:0 "§YResets left:§! [?aom_operations_resets_left]"
+ 
+ decision_cost_air_xp_35:0 "£GFX_air_experience  §Y35§!"
+ decision_cost_air_xp_35_blocked:0 "£GFX_air_experience  §R35§!"
+ decision_cost_air_xp_35_tooltip:0 "It costs £GFX_air_experience  §Y35§! to take this decisions"

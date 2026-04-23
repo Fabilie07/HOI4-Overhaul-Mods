@@ -1,0 +1,40 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "generic_airship_mesh"
+		file = "gfx/models/units/planes/Airship.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "generic_fighter_6_mesh"
+		file = "gfx/models/units/planes/generic_fighter_6.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "generic_tac_bomber_5_mesh"
+		file = "gfx/models/units/planes/generic_tac_bomber_5.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "generic_tac_bomber_6_mesh"
+		file = "gfx/models/units/planes/generic_tac_bomber_6.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "generic_strat_bomber_5_mesh"
+		file = "gfx/models/units/planes/generic_strat_bomber_5.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "USA_fighter_6_mesh"
+		file = "gfx/models/units/planes/USA_fighter_6.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+	pdxmesh = {
+		name = "SOV_fighter_6_mesh"
+		file = "gfx/models/units/planes/SOV_fighter_6.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+}

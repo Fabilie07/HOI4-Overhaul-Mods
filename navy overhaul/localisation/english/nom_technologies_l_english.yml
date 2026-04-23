@@ -1,0 +1,38 @@
+﻿l_english:
+
+ advanced_sonar:0 "Improved Sonar"
+ advanced_sonar_desc:0 "Fine-tuning and filtering of sonar noise enhances the technologies accuracy and sensitivity."
+ modern_sonar:0 "Modern Sonar"
+ modern_sonar_desc:0 "This Sonar has an enlarged search area capable of detecting submarines at any bearing and depth."
+
+ ship_range_improvements:0 "Larger Fuel Tanks"
+ ship_range_improvements_desc:0 "Smarter allocation of internal space allows for greater range."
+ ship_range_improvements2:0 "Improved Fuel Tanks"
+ ship_range_improvements2_desc:0 "Smarter allocation of internal space allows for greater range."
+
+ early_ship_hull_cruiser:0 "$ship_hull_cruiser_1$"
+ early_ship_hull_cruiser_desc:0 "$ship_hull_cruiser_1_desc$"
+ early_ship_hull_heavy:0 "$ship_hull_heavy_1$"
+ early_ship_hull_heavy_desc:0 "$ship_hull_heavy_1_desc$"
+ ship_hull_escort_carrier:0 "Escort Carrier Hull"
+ ship_hull_carrier_conversion_super_heavy:0 "Converted Super Heavy Battleship"
+ ship_hull_carrier_conversion_bb_2: "Converted Fast Battleship"
+ ship_hull_carrier_hybrid_bb:0 "Hybrid Battleship"
+ ship_hull_carrier_hybrid_ca:0 "Hybrid Cruiser"
+
+ deck_conversion1:0 "Carrier Conversion"
+ deck_conversion1_desc:0 "Repurposing ships as aircraft carriers can bolster a countries naval airforce."
+ deck_conversion2:0 "Carrier Conversion II"
+ deck_conversion2_desc:0 "Larger and more complex conversions open up new possibilities in carrier combat."
+ 
+ naval_engineering:0 "Naval Engineering I"
+ naval_engineering_desc:0 "Improved welding techniques and the usage of large cranes speed up the Production and Modification of ships."
+ naval_engineering2:0 "Naval Engineering II"
+ naval_engineering2_desc:0 "Modern Welding improves the speed at which ships are built. Drydocks, both floating and stationary, speed up repairs of damaged ships."
+
+
+ basic_shells:0 "Improved Shells"
+ basic_shells_desc:0 "Shells with better flight characteristics retain a lot of penetrating power even at long ranges."
+ improved_shells:0 "Advanced Shells"
+ improved_shells_desc:0 "Caps can increase the penetration at higher angles, increasing the penetrating power especially against the lightly armored decks of enemy ships."
+

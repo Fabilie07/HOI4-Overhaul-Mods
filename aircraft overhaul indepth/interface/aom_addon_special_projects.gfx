@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_sp_air_napalm_bombs"
+		texturefile = "gfx/interface/special_project/project_icons/napalm_bombs.dds"
+	}
+}

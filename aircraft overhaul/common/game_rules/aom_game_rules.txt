@@ -1,0 +1,59 @@
+aom_free_designs_rule = {
+	name = "RULE_FREE_AIR_DESIGNS"
+	group = "RULE_FREE_DESIGNS"
+
+	default = {
+		name = DISABLED
+		text = "RULE_DESIGNS_DISABLED"
+		desc = "RULE_DESIGNS_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_DESIGNS_ENABLED"
+		desc = "RULE_DESIGNS_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
+aom_doctrine_resets = {
+	name = "RULE_AOM_DOCTRINE_RESETS"
+	group = "RULE_GROUP_AOM"
+	
+	option = {
+		name = DISABLED
+		text = "RULE_RESETS_DISABLED"
+		desc = "RULE_RESETS_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ONE
+		text = "RULE_RESETS_1"
+		desc = "RULE_RESETS_1_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = TWO
+		text = "RULE_RESETS_2"
+		desc = "RULE_RESETS_2_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = THREE
+		text = "RULE_RESETS_3"
+		desc = "RULE_RESETS_3_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FOUR
+		text = "RULE_RESETS_4"
+		desc = "RULE_RESETS_4_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FIVE
+		text = "RULE_RESETS_5"
+		desc = "RULE_RESETS_5_DESC"
+		allow_achievements = yes
+	}
+}

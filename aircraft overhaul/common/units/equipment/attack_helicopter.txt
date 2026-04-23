@@ -1,0 +1,75 @@
+equipments = {
+	attack_helicopter_equipment = {
+		year = 1936
+
+		is_archetype = yes
+		picture = archetype_helicopter_equipment #TODO_GK
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		module_slots = {
+			left_1_slot = {
+				required = no
+				allowed_module_categories = {
+					ah_weapon
+				}
+			}
+			left_2_slot = {
+				required = yes
+				allowed_module_categories = {
+					ah_weapon
+				}
+			}
+			right_1_slot = {
+				required = no
+				allowed_module_categories = {
+					ah_weapon
+				}
+			}
+			right_2_slot = {
+				required = no
+				allowed_module_categories = {
+					ah_weapon
+				}
+			}
+		}
+		
+		#Misc Abilities
+		maximum_speed = 12
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense 		= 8
+		breakthrough 	= 12
+		hardness 		= 0.50
+		armor_value 	= 8
+
+		#Space taken in convoy
+		lend_lease_cost = 3
+
+		build_cost_ic = 10
+		resources = {
+			aluminium = 3
+		}
+
+		fuel_consumption = 2
+	}
+
+	attack_helicopter_equipment_1 = {
+		year = 1944
+		active = no
+
+		archetype = attack_helicopter_equipment
+		priority = 15	
+		
+		module_slots = inherit
+		
+		upgrades = {
+			aom_ah_engine_upgrade
+			aom_ah_armor_upgrade
+		}
+	}
+}

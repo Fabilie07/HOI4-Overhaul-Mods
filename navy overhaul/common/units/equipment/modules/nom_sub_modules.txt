@@ -1,0 +1,670 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+
+	ship_torpedo_sub_1 = {
+		abbreviation = "scfl"
+		category = ship_torpedo_sub
+		sfx = sfx_ui_sd_module_turret
+
+		
+		add_stats = {
+			torpedo_attack = 14
+			sub_visibility = 0.5
+			build_cost_ic = 80
+			reliability = -0.04
+		}
+		
+		build_cost_resources = {
+			steel = 0
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_sub_2 = {
+		abbreviation = "scgm"
+		category = ship_torpedo_sub
+		parent = ship_torpedo_sub_1
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 18
+			sub_visibility = 1
+			build_cost_ic = 100
+			naval_torpedo_hit_chance_factor = 0.01
+			reliability = -0.06
+		}
+
+		can_convert_from = {
+			module_category = ship_torpedo_sub
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_sub_3 = {
+		abbreviation = "scn"
+		category = ship_torpedo_sub
+		parent = ship_torpedo_sub_2
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 22
+			sub_visibility = 1.5
+			build_cost_ic = 120
+			naval_torpedo_hit_chance_factor = 0.015
+			reliability = -0.08
+		}
+
+		can_convert_from = {
+			module_category = ship_torpedo_sub
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_torpedo_sub_4 = {
+		abbreviation = "sco"
+		category = ship_torpedo_sub
+		parent = ship_torpedo_sub_3
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 28
+			sub_visibility = 2
+			build_cost_ic = 140
+			naval_torpedo_hit_chance_factor = 0.02
+			reliability = -0.1
+		}
+
+		can_convert_from = {
+			module_category = ship_torpedo_sub
+			convert_cost_ic = 60
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+	
+	ship_torpedo_sub_nuclear = {
+		abbreviation = "sco"
+		category = ship_torpedo_sub
+		parent = ship_torpedo_sub_4
+		
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 32
+			build_cost_ic = 250
+			naval_torpedo_hit_chance_factor = 0.05
+			reliability = -0.15
+		}
+
+		can_convert_from = {
+			module_category = ship_torpedo_sub
+			convert_cost_ic = 200
+		}
+		critical_parts = { damaged_torpedoes }
+	}
+
+	ship_mine_layer_sub = {
+		abbreviation = "scq"
+		category = ship_mine_layer_sub
+		gfx = ship_mine_layer_sub
+		
+		add_stats = {
+			mines_planting = 1
+			build_cost_ic = 90
+			reliability = -0.1
+		}
+	}
+	
+	ship_very_light_battery_sub = {
+		abbreviation = "smg"
+		category = ship_light_battery_sub
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 1
+			lg_armor_piercing = 1
+			convoy_raiding_coordination = 0.1
+			build_cost_ic = 60	
+		}
+		multiply_stats = {
+			sub_visibility = 0.02
+		}
+
+		critical_parts = { damaged_light_guns }
+	}
+	
+	ship_light_battery_sub = {
+		abbreviation = "smg"
+		category = ship_light_battery_sub
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 2
+			lg_armor_piercing = 2
+			convoy_raiding_coordination = 0.2
+			build_cost_ic = 110	
+		}
+		multiply_stats = {
+			sub_visibility = 0.05
+		}
+
+		critical_parts = { damaged_light_guns }
+	}
+	
+	ship_medium_battery_sub = {
+		abbreviation = "smg"
+		category = ship_light_battery_sub
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			hg_attack = 10
+			hg_armor_piercing = 20
+			convoy_raiding_coordination = 0.2
+			build_cost_ic = 200
+		}
+		multiply_stats = {
+			sub_visibility = 0.05
+		}
+
+		critical_parts = { damaged_light_guns }
+	}
+	
+	ship_airplane_launcher_sub = {
+		abbreviation = "smg"
+		category = ship_airplane_launcher_sub
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_airplane_launcher_1
+		
+		add_stats = {
+			submarine_carrier_size = 1
+			surface_detection = 8
+			convoy_raiding_coordination = 0.2
+			reliability = -0.1
+			build_cost_ic = 250
+		}
+		multiply_stats = {
+			sub_visibility = 0.1
+		}
+	}
+	
+	sub_missile_launcher = {
+		abbreviation = "sml"
+		category = ship_rocket
+		add_equipment_type = missile_launcher
+		allow_equipment_type = { missile ballistic_missile }
+
+		add_stats = {
+			build_cost_ic = 1500
+			reliability = -0.1 
+		}
+		multiply_stats = {
+			sub_visibility = 0.15
+		}
+		dismantle_cost_ic = 700 
+	}
+
+	slbm_launcher = {
+		abbreviation = "slb"
+		category = ship_nuclear_rocket
+		add_equipment_type = missile_launcher
+		allow_equipment_type = { nuclear_missile }
+
+		add_stats = {
+			build_cost_ic = 2000
+			reliability = -0.15 
+		}
+		multiply_stats = {
+			sub_visibility = 0.2 
+		}
+		dismantle_cost_ic = 1000 
+	}
+
+	sub_ship_engine_1 = {
+		abbreviation = "sbr"
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		
+		
+		add_stats = {
+			#naval_speed = 5
+			fuel_consumption = 7
+			#build_cost_ic = 90
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			build_cost_ic = 0.1
+
+		}
+
+		
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 250
+		}
+	}
+	sub_ship_engine_2 = {
+		abbreviation = "sbs"
+		category = sub_ship_engine
+		parent = sub_ship_engine_1
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			#naval_speed = 5
+			fuel_consumption = 8
+			#build_cost_ic = 120
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.1
+			build_cost_ic = 0.125
+			sub_visibility = -0.05
+		}
+		
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_ship_engine_1
+			convert_cost_ic = 230
+		}
+	}
+	sub_ship_engine_3 = {
+		abbreviation = "sbt"
+		category = sub_ship_engine
+		parent = sub_ship_engine_2
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			#naval_speed = 5
+			fuel_consumption = 10
+			#build_cost_ic = 150
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.15
+			build_cost_ic = 0.15
+			sub_visibility = -0.1
+		}
+		
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_ship_engine_2
+			convert_cost_ic = 230
+		}
+	}
+	sub_ship_engine_4 = {
+		abbreviation = "sbu"
+		category = sub_ship_engine
+		parent = sub_ship_engine_3
+		sfx = sfx_ui_sd_module_engine
+
+		
+		add_stats = {
+			#naval_speed = 5
+			fuel_consumption = 10
+			#build_cost_ic = 170
+		}
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			build_cost_ic = 0.20
+			sub_visibility = -0.15
+		}
+		
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 250
+		}
+		
+		can_convert_from = {
+			module = sub_ship_engine_3
+			convert_cost_ic = 230
+		}
+	}
+	
+	ship_engine_sub_aip_1 = {
+		abbreviation = "sne"
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		gfx = sub_ship_aip_engine_1
+		add_stats = {
+			fuel_consumption = 40
+		}
+
+		multiply_stats = {
+			naval_range= -0.66
+			build_cost_ic = 0.25
+			sub_visibility = -0.15
+			naval_speed = 0.15
+		}
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 300
+		}
+		
+		can_convert_from = {
+			module = sub_ship_engine_2
+			convert_cost_ic = 270
+		}
+	}
+	ship_engine_sub_aip_2 = {
+		abbreviation = "sne"
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		gfx = sub_ship_aip_engine_2
+		add_stats = {
+			fuel_consumption = 30
+		}
+
+		multiply_stats = {
+			naval_range= -0.33
+			build_cost_ic = 0.3
+			sub_visibility = -0.17
+			naval_speed = 0.15
+		}
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 300
+		}
+		
+		can_convert_from = {
+			module = ship_engine_sub_aip_1
+			convert_cost_ic = 270
+		}
+	}	
+	ship_engine_sub_aip_3 = {
+		abbreviation = "sne"
+		category = sub_ship_engine
+		sfx = sfx_ui_sd_module_engine
+		gfx = sub_ship_aip_engine_3
+		add_stats = {
+			fuel_consumption = 20
+		}
+
+		multiply_stats = {
+			#naval_range= -0.75
+			build_cost_ic = 0.35
+			sub_visibility = -0.2
+			naval_speed = 0.35
+		}
+		can_convert_from = {
+			module_category = sub_ship_engine
+			convert_cost_ic = 300
+		}
+		
+		can_convert_from = {
+			module = ship_engine_sub_aip_2
+			convert_cost_ic = 270
+		}
+	}	
+	
+	sub_ship_nuclear_engine_1 = {
+		abbreviation = "sbn"
+		category = sub_ship_nuclear_engine
+		sfx = sfx_ui_sd_module_engine
+		
+		multiply_stats = {
+			naval_speed = 0.2
+			sub_visibility = -0.2
+			build_cost_ic = 0.45
+			fuel_consumption = -1
+		}
+	}
+	
+	ship_anechoic_tile = {
+		abbreviation = "scsat"
+		category = ship_sub_coating
+		gfx = ship_sub_anechoic_tile_1
+		multiply_stats = {
+			sub_visibility = -0.15
+			build_cost_ic = 0.25
+		}
+		build_cost_resources = {
+			rubber = 2
+		}
+	}
+	
+	ship_sub_sonar_1 = {
+		abbreviation = "sba"
+		category = ship_sub_sonar
+		gfx = ship_sonar_1
+
+		add_stats = {
+			surface_detection = 8
+			sub_detection = 4
+			build_cost_ic = 25
+		}
+		xp_cost = 1
+	}
+	ship_sub_sonar_2 = {
+		abbreviation = "sba"
+		category = ship_sub_sonar
+		gfx = ship_sonar_2
+
+		add_stats = {
+			surface_detection = 12
+			sub_detection = 6
+			build_cost_ic = 40
+		}
+		xp_cost = 1
+	}
+	ship_sub_sonar_3 = {
+		abbreviation = "sba"
+		category = ship_sub_sonar
+		gfx = ship_sonar_3
+
+		add_stats = {
+			surface_detection = 16
+			sub_detection = 8
+			build_cost_ic = 55
+		}
+		xp_cost = 1
+	}
+	ship_sub_sonar_4 = {
+		abbreviation = "sba"
+		category = ship_sub_sonar
+		gfx = ship_sonar_4
+
+		add_stats = {
+			surface_detection = 20
+			sub_detection = 10
+			build_cost_ic = 70
+		}
+		xp_cost = 1
+	}
+	
+	ship_sub_radar_1 = {
+		abbreviation = "sba"
+		category = ship_sub_radar
+		gfx = ship_radar_1
+
+		add_stats = {
+			build_cost_ic = 25
+		}
+		multiply_stats = {
+			sub_visibility = -0.08
+			anti_air_attack = 0.5
+		}
+		xp_cost = 1
+	}
+	ship_sub_radar_2 = {
+		abbreviation = "sba"
+		category = ship_sub_radar
+		gfx = ship_radar_2
+
+		add_stats = {
+			build_cost_ic = 40
+		}
+		multiply_stats = {
+			sub_visibility = -0.12
+			anti_air_attack = 1
+		}
+		xp_cost = 1
+	}
+
+	sub_periscope_1 = {
+		abbreviation = "sba"
+		category = ship_sub_periscope
+
+		add_stats = {
+			sub_visibility = -0.5
+			surface_detection = 4
+			build_cost_ic = 10
+		}
+		xp_cost = 1
+	}
+	sub_periscope_2 = {
+		abbreviation = "sba"
+		category = ship_sub_periscope
+
+		add_stats = {
+			sub_visibility = -1
+			surface_detection = 6
+			build_cost_ic = 15
+		}
+		xp_cost = 1
+	}
+
+	sub_torpedo_computer_1 = {
+		abbreviation = "sba"
+		category = ship_torpedo_computer
+
+		add_stats = {
+			naval_torpedo_hit_chance_factor = 0.04
+			build_cost_ic = 25
+		}
+		xp_cost = 1
+	}
+	sub_torpedo_computer_2 = {
+		abbreviation = "sba"
+		category = ship_torpedo_computer
+
+		add_stats = {
+			naval_torpedo_hit_chance_factor = 0.06
+			build_cost_ic = 35
+		}
+		xp_cost = 1
+	}
+	sub_torpedo_computer_3 = {
+		abbreviation = "sba"
+		category = ship_torpedo_computer
+
+		add_stats = {
+			naval_torpedo_hit_chance_factor = 0.08
+			build_cost_ic = 45
+		}
+		xp_cost = 1
+	}
+
+	sub_batteries_1 = {
+		abbreviation = "sba"
+		category = ship_sub_batteries
+
+		add_stats = {
+			sub_visibility = -1
+		}
+		xp_cost = 1
+	}
+	sub_batteries_2 = {
+		abbreviation = "sba"
+		category = ship_sub_batteries
+
+		add_stats = {
+			sub_visibility = -1.5
+			reliability = -0.1
+		}
+		xp_cost = 1
+	}
+	sub_batteries_3 = {
+		abbreviation = "sba"
+		category = ship_sub_batteries
+
+		add_stats = {
+			sub_visibility = -2
+			reliability = -0.15
+			build_cost_ic = 20
+		}
+		xp_cost = 1
+	}
+
+	sub_ballast_tank = {
+		abbreviation = "sba"
+		category = ship_sub_mid
+
+		multiply_stats = {
+			sub_visibility = -0.1
+			naval_speed = -0.05
+			build_cost_ic = 0.1
+		}
+		xp_cost = 3
+	}
+	sub_watertight_compartment = {
+		abbreviation = "sba"
+		category = ship_sub_mid
+
+		add_stats = {
+			max_strength = 5
+			reliability = 0.1
+		}
+		xp_cost = 1
+	}
+	sub_advanced_reload = {
+		abbreviation = "sba"
+		category = ship_sub_reload
+
+		multiply_stats = {
+			torpedo_attack = 0.15
+			mines_planting = 0.5
+			build_cost_ic = 0.12
+		}
+		xp_cost = 3
+	}
+
+	ship_sub_snorkel_1 = {
+		abbreviation = "scw"
+		category = ship_sub_snorkel
+		gfx = ship_sub_snorkel_1
+		
+		multiply_stats = {
+			sub_visibility = -0.1 
+		}
+		
+		add_stats = {
+			build_cost_ic = 50
+		}
+	}
+	ship_sub_snorkel_2 = {
+		abbreviation = "scx"
+		category = ship_sub_snorkel
+		gfx = ship_sub_snorkel_2
+		parent = ship_sub_snorkel_1
+		multiply_stats = {
+			sub_visibility = -0.2
+		}
+		
+		add_stats = {
+			build_cost_ic = 70
+		}
+
+		can_convert_from = {
+			module_category = ship_sub_snorkel
+			convert_cost_ic = 30
+		}
+	}
+
+}

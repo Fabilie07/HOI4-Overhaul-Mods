@@ -1,0 +1,15 @@
+duplicate_archetypes = {
+
+	armored_car_aa_equipment = {
+		archetype = armored_car_equipment
+		type = { armor anti_air }
+		for_each = {
+			hardness = { set = 0.5 }
+		}
+	}
+
+	armored_car_destroyer_equipment = {
+		archetype = armored_car_equipment
+		type = { armor anti_tank }
+	}
+}

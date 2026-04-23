@@ -1,0 +1,372 @@
+ideas = {
+	hidden_ideas = {
+		nom_academy_1 = { # Base
+			picture = generic_navy_bonus
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+			modifier = {
+				naval_mastery_gain_factor = 0.05
+				naval_doctrine_cost_factor = -0.1
+				experience_gain_navy = 0.1
+			}
+		}
+		
+		nom_academy_2_self = {
+			modifier = {
+				navy_intel_to_others = -0.1
+				naval_mastery_gain_factor = 0.1
+			}
+		}
+		nom_academy_3_self = {
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				naval_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					max_organisation = 0.1
+				}
+				ship_hull_submarine = {
+					max_organisation = 0.1
+				}
+			}
+		}
+		nom_academy_4_self = {
+			modifier = {
+				positioning = 0.05
+				strike_force_movement_org_loss = -0.1
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					max_organisation = 0.1
+				}
+			}
+		}
+		
+		nom_academy_2_ENG = {
+			research_bonus = {
+				asw_tech = 0.1
+			}
+			modifier = {
+				navy_max_range = 500
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					max_organisation = 0.05
+					max_strength = 0.1
+				}
+			}
+		}
+		nom_academy_3_ENG = {
+			modifier = {
+				convoy_escort_efficiency = 0.1
+				convoy_retreat_speed = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_escort_carrier = {
+					sub_detection = 0.1
+					build_cost_ic = -0.1
+				}
+				ship_hull_light = {
+					sub_detection = 0.15
+				}
+				ship_hull_cruiser = {
+					sub_detection = 0.1
+				}
+			}
+		}
+		nom_academy_4_ENG = {
+			modifier = {
+				navy_org_factor = 0.1
+				positioning = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					max_organisation = 0.1
+					max_strength = 0.1
+					anti_air_attack = 0.15
+				}
+				ship_hull_cruiser = {
+					anti_air_attack = 0.15
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					sub_detection = 0.2
+					surface_detection = 0.1
+				}
+			}
+		}
+		
+		nom_academy_2_FRA = {
+			modifier = {
+				critical_receive_chance = -0.1
+				naval_speed_factor = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					naval_speed = 0.15
+				}
+			}
+		}
+		nom_academy_3_FRA = {
+			modifier = {
+				naval_defense_factor = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					naval_speed = 0.05
+					lg_attack = 0.1
+				}
+				ship_hull_cruiser = {
+					naval_speed = 0.05
+					lg_attack = 0.05
+				}
+				ship_hull_heavy = {
+					hg_attack = 0.05
+					lg_attack = 0.1
+				}
+			}
+		}
+		nom_academy_4_FRA = {
+			modifier = {
+				naval_morale_factor = 0.15
+				repair_speed_factor = 0.2
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					naval_speed = 0.1
+				}
+			}
+		}
+		
+		nom_academy_2_GER = {
+			equipment_bonus = {
+				ship_hull_cruiser_panzerschiff = {
+					naval_range = 0.15
+				}
+				ship_hull_cruiser = {
+					hg_attack = 0.1
+					lg_attack = 0.1
+					armor_value = 0.1
+				}
+				ship_hull_heavy = {
+					naval_speed = 0.1 
+				}
+			}
+		}
+		nom_academy_3_GER = {
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.1
+				screening_without_screens = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					torpedo_attack = 0.1
+					convoy_raiding_coordination = 0.1
+					build_cost_ic = -0.05
+				}
+				ship_hull_cruiser = {
+					convoy_raiding_coordination = 0.05
+				}
+				ship_hull_heavy = {
+					convoy_raiding_coordination = 0.05
+				}
+			}
+		}
+		nom_academy_4_GER = {
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.15
+				sub_retreat_speed = 0.1
+				navy_submarine_attack_factor = 0.05
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					sub_visibility = -0.1
+					anti_air_attack = 0.1
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		
+		nom_academy_2_ITA = {
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.1
+				trait_green_water_expert_xp_gain_factor = 0.5
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					naval_torpedo_damage_reduction_factor = 0.2
+				}
+			}
+		}
+		nom_academy_3_ITA = {
+			modifier = {
+				navy_weather_penalty = -0.2
+				navy_visibility = -0.1
+				shore_bombardment_bonus = 0.15
+				naval_torpedo_enemy_critical_chance_factor = -0.15
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					hg_attack = 0.05
+				}
+				ship_hull_heavy = {
+					hg_attack = 0.05
+				}
+			}
+		}
+		nom_academy_4_ITA = {
+			modifier = {
+				naval_retreat_speed = 0.2
+				naval_mines_damage_factor = 0.25
+				mines_planting_by_fleets_factor = 0.1
+				naval_accidents_chance = -0.1
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					max_organisation = 0.1
+				}
+			}
+		}
+		
+		nom_academy_2_JAP = {
+			modifier = {
+				navy_max_range_factor = 0.1
+				naval_torpedo_hit_chance_factor = 0.15
+				sp_naval_super_heavy_battleship_speed_factor = 0.2
+			}
+			equipment_bonus = {
+				ship_hull_carrier = {
+					max_organisation = 0.1
+				}
+				ship_hull_light = {
+					torpedo_attack = 0.1
+				}
+				ship_hull_cruiser = {
+					torpedo_attack = 0.1
+				}
+			}
+		}
+		nom_academy_3_JAP = {
+			modifier = {
+				navy_max_range_factor = 0.15
+				naval_invasion_plan_cap = 5
+				naval_torpedo_screen_penetration_factor = 0.2
+				sortie_efficiency = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_super_heavy_1 = {
+					hg_attack = 0.1
+					armor_value = 0.15
+				}
+			}
+		}
+		nom_academy_4_JAP = {
+			modifier = {
+				naval_night_attack = 0.15
+				trait_air_controller_xp_gain_factor = 0.5
+				naval_has_potf_in_combat_defense = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					max_organisation = 0.15
+				}
+			}
+		}
+		
+		nom_academy_2_SOV = {
+			modifier = {
+				ships_at_battle_start = 0.2
+				navy_weather_penalty = -0.2
+				naval_retreat_speed = 0.2
+			}
+			equipment_bonus = {
+				ship_hull_submarine = {
+					naval_range = -0.2
+					sub_visibility = -0.1
+				}
+				ship_hull_destroyer = {
+					naval_range = -0.2
+					surface_visibility = -0.1
+					lg_attack = -0.1
+					torpedo_attack = 0.2
+				}
+			}
+		}
+		nom_academy_3_SOV = {
+			modifier = {
+				naval_enemy_fleet_size_ratio_penalty_factor = 0.25
+				production_speed_bunker_factor = 0.15
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					surface_visibility = -0.1
+				}
+				ship_hull_heavy = {
+					surface_visibility = -0.1
+				}
+			}
+		}
+		nom_academy_4_SOV = {
+			modifier = {
+				convoy_raiding_efficiency_factor = 0.2
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					armor_value = 0.1
+					max_strength = 0.15
+				}
+			}
+		}
+		
+		nom_academy_2_USA = {
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				navy_max_range_factor = 0.2
+				experience_gain_navy_unit_factor = 0.2
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.05
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		nom_academy_3_USA = {
+			modifier = {
+				naval_critical_effect_factor = -0.1
+				critical_receive_chance = -0.15
+				carrier_capacity_penalty_reduction = -0.1
+				navy_anti_air_attack_factor = 0.1
+			}
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.2
+				}
+				convoy = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		nom_academy_4_USA = {
+			modifier = {
+				screening_efficiency = 0.15
+				industrial_capacity_dockyard = 0.1
+				carrier_night_traffic = 0.2
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					max_strength = 0.1
+					max_organisation = 0.1
+				}
+				ship_hull_carrier = {
+					max_strength = 0.05
+					max_organisation = 0.1
+				}
+			}
+		}
+	}
+}

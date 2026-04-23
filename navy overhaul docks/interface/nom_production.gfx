@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_nom_blocker"
+		texturefile = "gfx/interface/nom_dockyard_blocker.dds"
+	}
+}

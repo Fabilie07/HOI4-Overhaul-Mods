@@ -1,0 +1,1081 @@
+nom_sell_ship_dockyards = {
+	random_owned_state = {
+		limit = {
+			NOT = { has_state_flag = nom_state_building_foreign_ship }
+			dockyard > 1
+		}
+		
+		set_state_flag = nom_state_building_foreign_ship
+		remove_building = {
+			type = dockyard
+			level = 2
+		}
+		add_extra_state_shared_building_slots = -2
+	}
+	add_to_variable = { nom_used_dockyards_commission = 2 }
+	add_political_power = 10
+}
+nom_sell_ship_return_dockyards = {
+	random_owned_state = {
+		limit = {
+			has_state_flag = nom_state_building_foreign_ship
+		}
+		
+		clr_state_flag = nom_state_building_foreign_ship
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = dockyard
+			level = 2
+			instant_build = yes
+		}
+	}
+	add_to_variable = { nom_used_dockyards_commission = -2 }
+	navy_experience = 10
+	country_event = NOM_trade.31
+}
+
+nom_sell_ship_capital_dockyards = {
+	random_owned_state = {
+		limit = {
+			NOT = { has_state_flag = nom_state_building_foreign_capital_ship }
+			dockyard > 3
+		}
+		
+		set_state_flag = nom_state_building_foreign_capital_ship
+		remove_building = {
+			type = dockyard
+			level = 4
+		}
+		add_extra_state_shared_building_slots = -4
+	}
+	add_to_variable = { nom_used_dockyards_commission = 4 }
+	add_political_power = 10
+}
+nom_sell_ship_capital_return_dockyards = {
+	random_owned_state = {
+		limit = {
+			has_state_flag = nom_state_building_foreign_capital_ship
+		}
+		
+		clr_state_flag = nom_state_building_foreign_ship
+		add_extra_state_shared_building_slots = 4
+		add_building_construction = {
+			type = dockyard
+			level = 4
+			instant_build = yes
+		}
+	}
+	add_to_variable = { nom_used_dockyards_commission = -4 }
+	navy_experience = 25
+	country_event = NOM_trade.30
+}
+
+nom_build_time_reduction_small = {
+	add_to_variable = { nom_commission_efficiency = -0.01 }
+}
+nom_build_time_reduction_medium = {
+	add_to_variable = { nom_commission_efficiency = -0.1 }
+}
+nom_build_time_reduction_big = {
+	add_to_variable = { nom_commission_efficiency = -0.15 }
+}
+
+nom_screen_ship_request = {
+	if = {
+		limit = { has_state_flag = nom_trade_ENG }
+		ENG = { country_event = NOM_trade.16 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_FRA }
+		FRA = { country_event = NOM_trade.16 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_GER }
+		GER = { country_event = NOM_trade.16 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_ITA }
+		ITA = { country_event = NOM_trade.16 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_JAP }
+		JAP = { country_event = NOM_trade.16 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_SOV }
+		SOV = { country_event = NOM_trade.16 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_USA }
+		USA = { country_event = NOM_trade.16 }
+	}
+}
+
+nom_capital_ship_request = {
+	if = {
+		limit = { has_state_flag = nom_trade_ENG }
+		ENG = { country_event = NOM_trade.15 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_FRA }
+		FRA = { country_event = NOM_trade.15 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_GER }
+		GER = { country_event = NOM_trade.15 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_ITA }
+		ITA = { country_event = NOM_trade.15 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_JAP }
+		JAP = { country_event = NOM_trade.15 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_SOV }
+		SOV = { country_event = NOM_trade.15 }
+	}
+	else_if = {
+		limit = { has_state_flag = nom_trade_USA }
+		USA = { country_event = NOM_trade.15 }
+	}
+}
+
+nom_trade_deal_automatic = {
+	if = {
+		limit = { has_country_flag = nom_trade_deal_automation_flag }
+		
+		if = {
+			limit = { has_country_flag = nom_trade_deal_refuse_flag }
+			
+			ROOT = { country_event = { id = NOM_trade.5 hours = 4 } }
+		}
+		else = {
+			random_list = {
+				10 = {
+					ROOT = { country_event = { id = NOM_trade.2 hours = 4 } }
+					modifier = {
+						factor = 0
+						NOT = { has_country_flag = nom_trade_preference_economy_flag }
+					}
+				}
+				10 = {
+					ROOT = { country_event = { id = NOM_trade.3 hours = 4 } }
+					modifier = {
+						factor = 0
+						NOT = { has_country_flag = nom_trade_preference_steel_flag }
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_tungsten_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_chromium_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_rubber_flag
+					}
+				}
+				10 = {
+					ROOT = { country_event = { id = NOM_trade.3 hours = 4 } }
+					modifier = {
+						factor = 0
+						NOT = { has_country_flag = nom_trade_preference_tungsten_flag }
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_steel_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_chromium_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_rubber_flag
+					}
+				}
+				10 = {
+					ROOT = { country_event = { id = NOM_trade.3 hours = 4 } }
+					modifier = {
+						factor = 0
+						NOT = { has_country_flag = nom_trade_preference_chromium_flag }
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_tungsten_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_steel_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_rubber_flag
+					}
+				}
+				10 = {
+					ROOT = { country_event = { id = NOM_trade.3 hours = 4 } }
+					modifier = {
+						factor = 0
+						NOT = { has_country_flag = nom_trade_preference_rubber_flag }
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_tungsten_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_chromium_flag
+					}
+					modifier = {
+						factor = 0.5
+						has_country_flag = nom_trade_preference_steel_flag
+					}
+				}
+				10 = {
+					ROOT = { country_event = { id = NOM_trade.4 hours = 4 } }
+					modifier = {
+						factor = 0
+						NOT = { has_country_flag = nom_trade_preference_nothing_flag }
+					}
+				}
+			}
+		}
+	}
+	else = {
+		country_event = { id = NOM_trade.1 hours = 1 }
+	}
+}
+
+nom_trade_deal_cancel_automatic = {
+	if = {
+		limit = { has_country_flag = nom_trade_deal_automation_flag }
+		
+		remove_from_array = { nom_trade_deal_countries = ROOT }
+
+		if = {
+			limit = { ROOT = { has_country_flag = nom_trade_deal_economy_flag } }
+			add_offsite_building = {
+				type = industrial_complex
+				level = -5
+			}
+			ROOT = { add_to_variable = { nom_trade_compensation_civs = -5 } }
+			clr_country_flag = nom_trade_deal_economy_flag
+		}
+		else_if = {
+			limit = { ROOT = { has_country_flag = nom_trade_deal_steel_flag } }
+			add_to_variable = { nom_trade_compensation_steel = -40 }
+			ROOT = { add_to_variable = { nom_trade_compensation_steel = 40 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "40"
+					TYPE = "Steel"
+				}
+			}
+			clr_country_flag = nom_trade_deal_steel_flag
+		}
+		else_if = {
+			limit = { ROOT = { has_country_flag = nom_trade_deal_tungsten_flag } }
+			add_to_variable = { nom_trade_compensation_tungsten = -20 }
+			ROOT = { add_to_variable = { nom_trade_compensation_tungsten = 20 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "20"
+					TYPE = "Tungsten"
+				}
+			}
+			clr_country_flag = nom_trade_deal_tungsten_flag
+		}
+		else_if = {
+			limit = { ROOT = { has_country_flag = nom_trade_deal_chromium_flag } }
+			add_to_variable = { nom_trade_compensation_chromium = -20 }
+			ROOT = { add_to_variable = { nom_trade_compensation_chromium = 20 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "20"
+					TYPE = "Chromium"
+				}
+			}
+			clr_country_flag = nom_trade_deal_chromium_flag
+		}
+		else_if = {
+			limit = { ROOT = { has_country_flag = nom_trade_deal_rubber_flag } }
+			add_to_variable = { nom_trade_compensation_rubber = -20 }
+			ROOT = { add_to_variable = { nom_trade_compensation_rubber = 20 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "20"
+					TYPE = "Rubber"
+				}
+			}
+			clr_country_flag = nom_trade_deal_rubber_flag
+		}
+		else_if = {
+			limit = { ROOT = { has_relation_modifier = { target = PREV modifier = nom_trade_deal_signed_modifier } } }
+			ROOT = { remove_opinion_modifier = { target = PREV modifier = nom_trade_deal_signed_modifier } }
+		}
+	}
+	else = {
+		country_event = { id = NOM_trade.8 hours = 1 }
+	}
+}
+
+nom_trade_capital_automatic = {
+	if = {
+		limit = { has_country_flag = nom_trade_capital_automation_flag }
+		
+		if = {
+			limit = { has_country_flag = nom_trade_capital_refuse_flag }
+			
+			FROM = { country_event = { id = NOM_trade.19 hours = 4 } }
+		}
+		else = {
+			country_event = { id = NOM_trade.101 hours = 1 }
+		}
+	}
+	else = {
+		country_event = { id = NOM_trade.15 hours = 1 }
+	}
+	
+	clear_variable = FROM
+}
+
+nom_trade_screen_automatic = {
+	if = {
+		limit = { has_country_flag = nom_trade_screen_automation_flag }
+		
+		if = {
+			limit = { has_country_flag = nom_trade_screen_refuse_flag }
+			
+			FROM = { country_event = { id = NOM_trade.19 hours = 4 } }
+		}
+		else = {
+			country_event = { id = NOM_trade.102 hours = 1 }
+		}
+	}
+	else = {
+		country_event = { id = NOM_trade.16 hours = 1 }
+	}
+	
+	clear_variable = FROM
+}
+
+nom_trade_cv_filter = {
+	for_loop_effect = {
+		start = 0
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = -240 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = -240 }
+	}
+}
+nom_trade_cv_filter_off = {
+	for_loop_effect = {
+		start = 0
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = 240 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = 240 }
+	}
+}
+
+nom_trade_bb_filter = {
+	for_loop_effect = {
+		start = 9
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = -240 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = -240 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_SOV^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = -240 }
+	}
+}
+nom_trade_bb_filter_off = {
+	for_loop_effect = {
+		start = 9
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = 240 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 0
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = 240 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_SOV^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = 240 }
+	}
+}
+
+nom_trade_bc_filter = {
+	for_loop_effect = {
+		start = 12
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_SOV^temp = -80 }
+	}
+}
+nom_trade_bc_filter_off = {
+	for_loop_effect = {
+		start = 12
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_SOV^temp = 80 }
+	}
+}
+
+nom_trade_ca_filter = {
+	for_loop_effect = {
+		start = 18
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 12
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 12
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_SOV^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = -160 }
+	}
+}
+nom_trade_ca_filter_off = {
+	for_loop_effect = {
+		start = 18
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 9
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 12
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 6
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 12
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_SOV^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = 160 }
+	}
+}
+
+nom_trade_cl_filter = {
+	for_loop_effect = {
+		start = 27
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = -240 }
+	}
+	for_loop_effect = {
+		start = 12
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = -240 }
+	}
+	for_loop_effect = {
+		start = 21
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = -160 }
+	}
+}
+nom_trade_cl_filter_off = {
+	for_loop_effect = {
+		start = 27
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = 240 }
+	}
+	for_loop_effect = {
+		start = 12
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 15
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = 240 }
+	}
+	for_loop_effect = {
+		start = 21
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = 160 }
+	}
+}
+
+nom_trade_dd_filter = {
+	for_loop_effect = {
+		start = 33
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = -80 }
+	}
+	for_loop_effect = {
+		start = 24
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = -160 }
+	}
+	for_loop_effect = {
+		start = 27
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = -160 }
+	}
+}
+nom_trade_dd_filter_off = {
+	for_loop_effect = {
+		start = 33
+		end = 36
+		value = temp
+		
+		add_to_variable = { nom_offset_ENG^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 21
+		value = temp
+		
+		add_to_variable = { nom_offset_FRA^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_GER^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 18
+		end = 24
+		value = temp
+		
+		add_to_variable = { nom_offset_ITA^temp = 80 }
+	}
+	for_loop_effect = {
+		start = 24
+		end = 27
+		value = temp
+		
+		add_to_variable = { nom_offset_JAP^temp = 160 }
+	}
+	for_loop_effect = {
+		start = 27
+		end = 30
+		value = temp
+		
+		add_to_variable = { nom_offset_USA^temp = 160 }
+	}
+}
+
+nom_skip_confirmation_effect = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		clr_country_flag = nom_trade_open
+		set_country_flag = nom_trade_pending
+		set_country_flag = {
+			flag = nom_ai_recently_requested_ship
+			days = 30
+			value = 1
+		}
+		add_political_power = -10
+		
+		if = {
+			limit = { has_country_flag = nom_capital_ship_request }
+			clr_country_flag = nom_capital_ship_request
+			
+			if = {
+				limit = { has_country_flag = nom_trade_ENG }
+				ENG = { nom_trade_capital_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_FRA }
+				FRA = { nom_trade_capital_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_GER }
+				GER = { nom_trade_capital_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_ITA }
+				ITA = { nom_trade_capital_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_JAP }
+				JAP = { nom_trade_capital_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_SOV }
+				SOV = { nom_trade_capital_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_USA }
+				USA = { nom_trade_capital_automatic = yes }
+			}
+		}
+		else = {
+			if = {
+				limit = { has_country_flag = nom_trade_ENG }
+				ENG = { nom_trade_screen_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_FRA }
+				FRA = { nom_trade_screen_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_GER }
+				GER = { nom_trade_screen_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_ITA }
+				ITA = { nom_trade_screen_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_JAP }
+				JAP = { nom_trade_screen_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_SOV }
+				SOV = { nom_trade_screen_automatic = yes }
+			}
+			else_if = {
+				limit = { has_country_flag = nom_trade_USA }
+				USA = { nom_trade_screen_automatic = yes }
+			}
+		}
+	}
+}
+
+nom_skip_trade_deal = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		
+		clr_country_flag = nom_deal_confirmation_pending
+		add_political_power = -75
+		
+		if = {
+			limit = { has_country_flag = nom_trade_ENG }
+			ENG = { nom_trade_deal_automatic = yes }
+		}
+		else_if = {
+			limit = { has_country_flag = nom_trade_FRA }
+			FRA = { nom_trade_deal_automatic = yes }
+		}
+		else_if = {
+			limit = { has_country_flag = nom_trade_GER }
+			GER = { nom_trade_deal_automatic = yes }
+		}
+		else_if = {
+			limit = { has_country_flag = nom_trade_ITA }
+			ITA = { nom_trade_deal_automatic = yes }
+		}
+		else_if = {
+			limit = { has_country_flag = nom_trade_JAP }
+			JAP = { nom_trade_deal_automatic = yes }
+		}
+		else_if = {
+			limit = { has_country_flag = nom_trade_SOV }
+			SOV = { nom_trade_deal_automatic = yes }
+		}
+		else_if = {
+			limit = { has_country_flag = nom_trade_USA }
+			USA = { nom_trade_deal_automatic = yes }
+		}
+	}
+}
+
+nom_skip_trade_cancel = {
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		
+		clr_country_flag = nom_deal_cancellation_pending
+				
+		var:nom_trade_deal_partner = {
+			nom_trade_deal_cancel_automatic = yes
+		}
+		clear_variable = nom_trade_deal_partner
+	}
+}
+
+nom_clear_ship_type_flag_effect = {
+	clr_country_flag = ENG_cv_1_flag
+	clr_country_flag = ENG_bb_1_flag
+	clr_country_flag = ENG_bb_2_flag
+	clr_country_flag = ENG_bb_3_flag
+	clr_country_flag = ENG_bc_1_flag
+	clr_country_flag = ENG_ca_1_flag
+	clr_country_flag = ENG_ca_2_flag
+	clr_country_flag = ENG_cl_1_flag
+	clr_country_flag = ENG_cl_2_flag
+	clr_country_flag = ENG_cl_3_flag
+	clr_country_flag = ENG_dd_1_flag
+	clr_country_flag = ENG_dd_2_flag
+	clr_country_flag = ENG_ss_1_flag
+	
+	clr_country_flag = FRA_cv_1_flag
+	clr_country_flag = FRA_bb_1_flag
+	clr_country_flag = FRA_bb_2_flag
+	clr_country_flag = FRA_ca_1_flag
+	clr_country_flag = FRA_cl_1_flag
+	clr_country_flag = FRA_dd_1_flag
+	clr_country_flag = FRA_dd_2_flag
+	clr_country_flag = FRA_ss_1_flag
+	
+	clr_country_flag = GER_cv_1_flag
+	clr_country_flag = GER_bb_1_flag
+	clr_country_flag = GER_bb_2_flag
+	clr_country_flag = GER_ca_1_flag
+	clr_country_flag = GER_ca_2_flag
+	clr_country_flag = GER_cl_1_flag
+	clr_country_flag = GER_dd_1_flag
+	clr_country_flag = GER_ss_1_flag
+	clr_country_flag = GER_ss_2_flag
+	clr_country_flag = GER_ss_3_flag
+	
+	clr_country_flag = ITA_bb_1_flag
+	clr_country_flag = ITA_bb_2_flag
+	clr_country_flag = ITA_ca_1_flag
+	clr_country_flag = ITA_ca_2_flag
+	clr_country_flag = ITA_cl_1_flag
+	clr_country_flag = ITA_cl_2_flag
+	clr_country_flag = ITA_cl_3_flag
+	clr_country_flag = ITA_dd_1_flag
+	clr_country_flag = ITA_ss_1_flag
+	clr_country_flag = ITA_ss_2_flag
+	clr_country_flag = ITA_ss_3_flag
+	
+	clr_country_flag = JAP_cv_1_flag
+	clr_country_flag = JAP_cv_2_flag
+	clr_country_flag = JAP_cv_3_flag
+	clr_country_flag = JAP_bb_1_flag
+	clr_country_flag = JAP_bb_2_flag
+	clr_country_flag = JAP_bb_3_flag
+	clr_country_flag = JAP_bc_1_flag
+	clr_country_flag = JAP_bc_2_flag
+	clr_country_flag = JAP_ca_1_flag
+	clr_country_flag = JAP_dd_1_flag
+	clr_country_flag = JAP_dd_2_flag
+	clr_country_flag = JAP_ss_1_flag
+	
+	clr_country_flag = SOV_bb_1_flag
+	clr_country_flag = SOV_ca_1_flag
+	clr_country_flag = SOV_dd_1_flag
+	clr_country_flag = SOV_dd_2_flag
+	clr_country_flag = SOV_dd_3_flag
+	
+	clr_country_flag = USA_cv_1_flag
+	clr_country_flag = USA_cv_2_flag
+	clr_country_flag = USA_cv_3_flag
+	clr_country_flag = USA_bb_1_flag
+	clr_country_flag = USA_bb_2_flag
+	clr_country_flag = USA_bb_3_flag
+	clr_country_flag = USA_ca_1_flag
+	clr_country_flag = USA_ca_2_flag
+	clr_country_flag = USA_cl_1_flag
+	clr_country_flag = USA_cl_2_flag
+	clr_country_flag = USA_dd_1_flag
+	clr_country_flag = USA_dd_2_flag
+	clr_country_flag = USA_ss_1_flag
+}

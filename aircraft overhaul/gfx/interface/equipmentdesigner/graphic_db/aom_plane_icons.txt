@@ -1,0 +1,344 @@
+default = {
+	small_plane_airframe_6 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 5
+			models = {
+				USA_fighter_1960_entity
+				SOV_fighter_1960_entity
+				generic_fighter_1960_entity
+			}
+		}
+	}
+	cv_small_plane_airframe_6 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 5
+			models = {
+				USA_fighter_1960_entity
+				SOV_fighter_1960_entity
+				generic_fighter_1960_entity
+			}
+		}
+	}
+	medium_plane_airframe_5 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_1953_medium_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 5
+			models = {
+				generic_tac_bomber_1953_entity
+			}
+		}
+	}
+	medium_plane_airframe_6 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_1960_medium_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 5
+			models = {
+				generic_tac_bomber_1960_entity
+			}
+		}
+	}
+	large_plane_airframe_5 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_1953_large_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 5
+			models = {
+				generic_strat_bomber_1953_entity
+			}
+		}
+	}
+	large_plane_airframe_6 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_1960_large_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 5
+			models = {
+				generic_strat_bomber_1953_entity
+			}
+		}
+	}
+}
+
+GER = {
+	small_plane_cas_airframe_0 = {
+		pool = {
+			weight = 1.1
+			icons = {
+				GFX_GER_iw_small_airframe_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_GER_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 10
+			models = {
+				USA_fighter_1960_entity
+			}
+		}
+	}
+	cv_small_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_GER_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 10
+			models = {
+				USA_fighter_1960_entity
+			}
+		}
+	}
+	
+	medium_plane_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_GER_1953_medium_airframe_medium
+			}
+		}
+	}
+	medium_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_GER_1960_medium_airframe_medium
+			}
+		}
+	}
+	large_plane_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_GER_1953_large_airframe_medium
+			}
+		}
+	}
+	large_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_GER_1960_large_airframe_medium
+			}
+		}
+	}
+}
+
+ITA = {
+	small_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_ITA_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 10
+			models = {
+				USA_fighter_1960_entity
+			}
+		}
+	}
+	cv_small_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_ITA_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 10
+			models = {
+				USA_fighter_1960_entity
+			}
+		}
+	}
+}
+
+USA = {
+	small_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 10
+			models = {
+				USA_fighter_1960_entity
+			}
+		}
+	}
+	small_plane_cas_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_cas_5
+			}
+		}
+	}
+	small_plane_cas_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_cas_6
+			}
+		}
+	}
+	cv_small_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_cv_fighter_6
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_cv_cas_5
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_cv_cas_6
+			}
+		}
+	}
+	medium_plane_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_1953_medium_airframe_medium
+			}
+		}
+	}
+	medium_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_1960_medium_airframe_medium
+			}
+		}
+	}
+	large_plane_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_1953_large_airframe_medium
+			}
+		}
+	}
+	large_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_USA_1960_large_airframe_medium
+			}
+		}
+	}
+}
+
+SOV = {
+	small_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_SOV_1960_small_airframe_medium
+			}
+		}
+		
+		pool = {
+			weight = 10
+			models = {
+				SOV_fighter_1960_entity
+			}
+		}
+	}
+	medium_plane_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_SOV_1953_medium_airframe_medium
+			}
+		}
+	}
+	medium_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_SOV_1960_medium_airframe_medium
+			}
+		}
+	}
+	large_plane_airframe_5 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_SOV_1953_large_airframe_medium
+			}
+		}
+	}
+	large_plane_airframe_6 = {
+		pool = {
+			weight = 10
+			icons = {
+				GFX_SOV_1960_large_airframe_medium
+			}
+		}
+	}
+}

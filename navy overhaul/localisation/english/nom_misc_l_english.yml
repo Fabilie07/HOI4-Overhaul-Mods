@@ -1,0 +1,115 @@
+﻿l_english:
+
+ nom_commercial_port: "Major Trade Port"
+ nom_commercial_port_desc: "This building is a gateway to mass overseas trade. It provides a significant boost to the industry of the region. Regions with this building are more prosperous and world-open."
+
+ PRODUCTION_MATERIALS_TANKPLANT:0 "Heavy Manufacture"
+ tankplant_desc:0 "The capacity of a nation to produce heavy vehicles seperate from the amount of production capacity."
+
+ dockyard_desc:0 "This building provides the state with industry for building new ships and §Y+1§! £resources_strip|7"
+
+ category_land_nav:0 "Land-Based Naval Bomber"
+ category_cv_fighter:0 "Carrier Fighter"
+ category_cv_cas:0 "Carrier Close Air Support"
+ category_cv_nav:0 "Carrier Naval Bomber"
+ 
+ 
+ RULE_FREE_DESIGNS: "Free Equipment Designs"
+ RULE_FREE_NAVY_DESIGNS: "Free Ship Designs"
+ RULE_NAVY_DESIGNS_DISABLED: "Disabled"
+ RULE_NAVY_DESIGNS_DISABLED_DESC: "Ship Designs will cost the normal amount of Navy EXP."
+ RULE_NAVY_DESIGNS_ENABLED: "Enabled"
+ RULE_NAVY_DESIGNS_ENABLED_DESC: "All Ship Designs will be free."
+ 
+ RULE_GROUP_NOM: "Navy Overhaul Mod"
+ RULE_AI_NO_NAVY_EXERCISES: "No AI Exercises"
+ RULE_NAVY_AI_EXERCISE_DISABLED_DESC: "AI countries will conduct naval exercises as usual."
+ RULE_NAVY_AI_EXERCISE_ENABLED_DESC: "AI countries will not conduct naval exercises, preventing desync in multiplayer games."
+
+ NOM_joint_maneuver_idea:0 "Joint Maneuver Exercise Underway"
+
+ NOM_event.1.t:0 "Joint Maneuver Exercise"
+ NOM_event.1.d:0 "Our alliance is conducting a joint naval exercise meant to simulate actual combat routines and enemy encounters. This will push forward our understanding of Naval Warfare as well as Shipbuilding."
+ NOM_event.1.a:0 "We will participate!"
+ NOM_event.1.b:0 "Not this time."
+
+ NOM_event.2.t:0 "Joint Exercise Ends"
+ NOM_event.2.d:0 "The naval exercise that has been held in the last few weeks has come to an end. Now we can utilize the knowledge earned during it to advance our navy to new standards."
+ NOM_event.2.a:0 "This was a worthwhile effort."
+
+
+ talented_joungster:0 "Talented Youngster"
+ talented_joungster_desc:0 "§LWith innate ability and the will to get better come improved results.§!"
+
+
+ nom_academy_1: "Tank Academy Founded"
+ nom_academy_2_self: "[ROOT.GetAdjectiveCap] Early Naval Thinking"
+ nom_academy_2_ENG: "[ENG.GetAdjectiveCap] Early Naval Thinking"
+ nom_academy_2_FRA: "[FRA.GetAdjectiveCap] Early Naval Thinking"
+ nom_academy_2_GER: "[GER.GetAdjectiveCap] Early Naval Thinking"
+ nom_academy_2_ITA: "[ITA.GetAdjectiveCap] Early Naval Thinking"
+ nom_academy_2_JAP: "[JAP.GetAdjectiveCap] Early Naval Thinking"
+ nom_academy_2_SOV: "[SOV.GetAdjectiveCap] Early Naval Thinking"
+ nom_academy_2_USA: "[USA.GetAdjectiveCap] Early Naval Thinking"
+ 
+ nom_academy_3_self: "[ROOT.GetAdjectiveCap] Intermediate Naval Thinking"
+ nom_academy_3_ENG: "[ENG.GetAdjectiveCap] Intermediate Naval Thinking"
+ nom_academy_3_FRA: "[FRA.GetAdjectiveCap] Intermediate Naval Thinking"
+ nom_academy_3_GER: "[GER.GetAdjectiveCap] Intermediate Naval Thinking"
+ nom_academy_3_ITA: "[ITA.GetAdjectiveCap] Intermediate Naval Thinking"
+ nom_academy_3_JAP: "[JAP.GetAdjectiveCap] Intermediate Naval Thinking"
+ nom_academy_3_SOV: "[SOV.GetAdjectiveCap] Intermediate Naval Thinking"
+ nom_academy_3_USA: "[USA.GetAdjectiveCap] Intermediate Naval Thinking"
+ 
+ nom_academy_4_self: "[ROOT.GetAdjectiveCap] Advanced Naval Thinking"
+ nom_academy_4_ENG: "[ENG.GetAdjectiveCap] Advanced Naval Thinking"
+ nom_academy_4_FRA: "[FRA.GetAdjectiveCap] Advanced Naval Thinking"
+ nom_academy_4_GER: "[GER.GetAdjectiveCap] Advanced Naval Thinking"
+ nom_academy_4_ITA: "[ITA.GetAdjectiveCap] Advanced Naval Thinking"
+ nom_academy_4_JAP: "[JAP.GetAdjectiveCap] Advanced Naval Thinking"
+ nom_academy_4_SOV: "[SOV.GetAdjectiveCap] Advanced Naval Thinking"
+ nom_academy_4_USA: "[USA.GetAdjectiveCap] Advanced Naval Thinking"
+
+
+
+ convoy_losses_modifier:0 "Recent Convoy Losses"
+
+ nom_blockade_1_idea:0 "Harbors Blockaded"
+ nom_blockade_1_idea_desc:0 "An enemy nation has enacted a blockade using heavy Warships. Only few transport ships can slip through undetected and most are sent back or sunk. This will have a negative impact on our economy and food resources."
+ nom_blockade_2_idea:0 "Harbors Blockaded"
+ nom_blockade_2_idea_desc:0 "An enemy nation has enacted a blockade using heavy Warships. Only few transport ships can slip through undetected and most are sent back or sunk. This will have a negative impact on our economy and food resources."
+ 
+ 
+ sp_naval_cruiser_submarine_preference_c: "Internal Hangars"
+ 
+ sp_naval_pocket_battleship: "Pocket Battleship"
+ GER_sp_naval_pocket_battleship: "Panzerschiff"
+ sp_naval_pocket_battleship_desc: "A pocket battleship trades gun count for higher calibers and thicker armor."
+ sp_naval_pocket_battleship_unique_reward_a: "Design Focus"
+ sp_naval_pocket_battleship_unique_reward_a_desc: "What shall the main focus of the pocket battleship be?"
+ sp_naval_pocket_battleship_preference_a: "Firepower"
+ sp_naval_pocket_battleship_preference_b: "Protection"
+ 
+ sp_naval_hybrid_carrier: "Hybrid Carrier"
+ sp_naval_hybrid_carrier_desc: "Combining heavy firepower with the ability to carry and service Aircraft allows for true versatility."
+ sp_naval_hybrid_carrier_unique_reward_a: "Weight Distribution"
+ sp_naval_hybrid_carrier_unique_reward_a_desc: "Concerns have arisen as to how the available displacement is best utilized."
+ sp_naval_hybrid_carrier_preference_a: "Carry more guns"
+ sp_naval_hybrid_carrier_preference_b: "Make space for aircraft"
+ sp_hybrid_carrier_gun_bonus: "Increased Armaments"
+ sp_hybrid_carrier_gun_bonus: "Increased Planes"
+ 
+ sp_naval_super_heavy_carrier: "Super Heavy Carrier"
+ sp_naval_super_heavy_carrier_desc: "Converting Super Heavy Ships to Carriers creates extremely sturdy and large platforms."
+ sp_naval_super_heavy_carrier_unique_reward_a: "Armor Concerns"
+ sp_naval_super_heavy_carrier_unique_reward_a_desc: "The heavy Armor Belts will cause the ship to be top-heavy. To ensure stability, measures must be taken."
+ sp_naval_super_heavy_carrier_unique_reward_b: "Ship Engine"
+ sp_naval_super_heavy_carrier_unique_reward_b_desc: "The projected weight is still uncertain, so a preemptive change to the engine may prove useful."
+ sp_naval_super_heavy_carrier_unique_reward_c: "Aircraft Storage"
+ sp_naval_super_heavy_carrier_unique_reward_c_desc: "It is to be decided where the hangar is placed and how large it will be."
+ sp_naval_super_heavy_carrier_reduce_armor: "Reduce Armor as needed"
+ sp_naval_super_heavy_carrier_keep_armor: "Increase Horizontal Stability"
+ sp_naval_super_heavy_carrier_keep_engine: "The old engine will suffice"
+ sp_naval_super_heavy_carrier_new_engine: "Design a more powerful system"
+ sp_naval_super_heavy_carrier_expand_hangar: "Hollow out the hull"
+ sp_naval_super_heavy_carrier_raise_deck: "Raise the flight deck"

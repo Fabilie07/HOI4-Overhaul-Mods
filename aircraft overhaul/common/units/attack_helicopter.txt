@@ -1,0 +1,63 @@
+sub_units = {
+	attack_helicopter_brigade = {
+		abbreviation = "HELB"
+		sprite = helicopter_brigade
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = no
+		affects_speed = yes
+
+		type = {
+			armor
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_support_battalions
+			category_army
+			category_helicopter_support_companies
+		}
+
+	
+		combat_width = 0
+	
+		#Size Definitions
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.3
+		manpower = 500
+		training_time = 120
+
+		#Misc Abilities
+		weight = 0.1
+		supply_consumption = 0.070
+		can_be_parachuted = yes
+		recon = 1
+		
+		battalion_mult = {
+			category = category_front_line
+			breakthrough = 0.05
+		}
+		
+		essential = {
+			helicopter_equipment
+		}
+		
+		need = {
+			attack_helicopter_equipment = 15
+		}
+		
+		hills = {
+			attack = 0.1
+		}
+		mountain = {
+			attack = 0.1
+		}
+		urban = {
+			attack = 0.1
+		}
+	}
+}

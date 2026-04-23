@@ -1,0 +1,110 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_tom_academy_empty"
+		texturefile = "gfx/interface/tom_academy/academy_empty.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_generic_1"
+		texturefile = "gfx/interface/tom_academy/academy_generic_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_generic_2"
+		texturefile = "gfx/interface/tom_academy/academy_generic_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_generic_3"
+		texturefile = "gfx/interface/tom_academy/academy_generic_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_academy_ENG_1"
+		texturefile = "gfx/interface/tom_academy/academy_ENG_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_ENG_2"
+		texturefile = "gfx/interface/tom_academy/academy_ENG_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_ENG_3"
+		texturefile = "gfx/interface/tom_academy/academy_ENG_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_academy_FRA_1"
+		texturefile = "gfx/interface/tom_academy/academy_FRA_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_FRA_2"
+		texturefile = "gfx/interface/tom_academy/academy_FRA_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_FRA_3"
+		texturefile = "gfx/interface/tom_academy/academy_FRA_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_academy_GER_1"
+		texturefile = "gfx/interface/tom_academy/academy_GER_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_GER_2"
+		texturefile = "gfx/interface/tom_academy/academy_GER_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_GER_3"
+		texturefile = "gfx/interface/tom_academy/academy_GER_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_academy_ITA_1"
+		texturefile = "gfx/interface/tom_academy/academy_ITA_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_ITA_2"
+		texturefile = "gfx/interface/tom_academy/academy_ITA_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_ITA_3"
+		texturefile = "gfx/interface/tom_academy/academy_ITA_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_academy_JAP_1"
+		texturefile = "gfx/interface/tom_academy/academy_JAP_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_JAP_2"
+		texturefile = "gfx/interface/tom_academy/academy_JAP_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_JAP_3"
+		texturefile = "gfx/interface/tom_academy/academy_JAP_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_academy_SOV_1"
+		texturefile = "gfx/interface/tom_academy/academy_SOV_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_SOV_2"
+		texturefile = "gfx/interface/tom_academy/academy_SOV_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_SOV_3"
+		texturefile = "gfx/interface/tom_academy/academy_SOV_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_academy_USA_1"
+		texturefile = "gfx/interface/tom_academy/academy_USA_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_USA_2"
+		texturefile = "gfx/interface/tom_academy/academy_USA_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_academy_USA_3"
+		texturefile = "gfx/interface/tom_academy/academy_USA_3.dds"
+	}
+}

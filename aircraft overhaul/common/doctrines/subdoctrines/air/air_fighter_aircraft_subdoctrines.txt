@@ -1,0 +1,273 @@
+@doctrine_cost = 35
+
+air_subdoctrine_fighter_tactical_dominance = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_FIGHTER_TACTICAL_DOMINANCE
+    description = SUBDOCTRINE_FIGHTER_TACTICAL_DOMINANCE_DESC
+    icon = GFX_fighter_veteran_initiative_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_fighter_tactical_dominance }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_fighter = {
+		air_attack = 0.05
+		air_agility = 0.05
+	}
+	air_wing_xp_loss_when_killed_factor = -0.1
+
+    rewards = {
+		surprise_attacks = {
+			category_fighter = {
+				air_defence = 0.05
+			}
+		}
+		aerial_pressure = {
+			air_wing_xp_loss_when_killed_factor = -0.1
+			army_bonus_air_superiority_factor = 0.05
+		}
+		aggressive_maneuvering = {
+			category_fighter = {
+				air_attack = 0.05
+				air_agility = 0.05
+			}
+		}
+        rapid_sorties = {
+			army_bonus_air_superiority_factor = 0.1
+		}
+		shoot_on_sight = {
+			category_fighter = {
+				air_attack = 0.05
+				air_defence = 0.05
+			}
+		}
+    }
+}
+
+
+air_subdoctrine_fighter_strategic_dominance = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_FIGHTER_STRATEGIC_DOMINANCE
+    description = SUBDOCTRINE_FIGHTER_STRATEGIC_DOMINANCE_DESC
+    icon = GFX_doctrine_air_skirmish_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_fighter_strategic_dominance }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_attack_factor = 0.05
+	air_power_projection_factor = 0.1
+	air_superiority_efficiency = 0.1
+
+    rewards = {
+		pilot_rotation = {
+			air_defence_factor = 0.05
+		}
+		energy_fighting = {
+			air_superiority_efficiency = 0.1
+		}
+		mission_focused_flying = {
+			air_mission_efficiency = 0.05
+		}
+        numerical_superiority = {
+			air_attack_factor = 0.05
+		}
+		air_attrition = {
+			air_defence_factor = 0.05
+			air_power_projection_factor = 0.1
+		}
+    }
+}
+
+
+air_subdoctrine_fighter_long_range_operations = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_FIGHTER_LONG_RANGE_OPERATIONS
+    description = SUBDOCTRINE_FIGHTER_LONG_RANGE_OPERATIONS_DESC
+    icon = GFX_doctrine_air_offense_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_fighter_long_range_operations }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_range_factor = 0.05
+	category_heavy_fighter = {
+		air_defence = 0.05
+		air_range = 0.1
+	}
+
+    rewards = {
+		cruising_speed = {
+			air_range_factor = 0.05
+		}
+		loose_escorts = {
+			air_escort_efficiency = 0.1
+		}
+		energy_trapping = {
+			category_heavy_fighter = {
+				air_defence = 0.05
+				air_range = 0.05
+			}
+		}
+        high_altitude_flying = {
+			air_range_factor = 0.05
+		}
+		power_projection = {
+			category_heavy_fighter = {
+				air_range = 0.15
+			}
+		}
+    }
+}
+
+
+air_subdoctrine_fighter_all_conditions = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_FIGHTER_ALL_CONDITIONS
+    description = SUBDOCTRINE_FIGHTER_ALL_CONDITIONS_DESC
+    icon = GFX_fighter_sweeps_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_fighter_all_conditions }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_accidents_factor = -0.1
+	air_weather_penalty = -0.1
+	air_night_penalty = -0.05
+	production_speed_air_base_factor = 0.1
+
+    rewards = {
+		rigorous_training = {
+			air_accidents_factor = -0.1
+		}
+		dirt_runways = {
+			production_speed_air_base_factor = 0.15
+		}
+        fast_altitude_gain = {
+			air_weather_penalty = -0.1
+		}
+		enhanced_direction = {
+			air_night_penalty = -0.05
+		}
+		regular_maintenance = {
+			air_accidents_factor = -0.05
+			air_weather_penalty = -0.05
+		}
+    }
+}
+
+
+air_subdoctrine_fighter_individual_superiority = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_FIGHTER_INDIVIDUAL_SUPERIORITY
+    description = SUBDOCTRINE_FIGHTER_INDIVIDUAL_SUPERIORITY_DESC
+    icon = GFX_fighter_ace_initiative_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_fighter_individual_superiority }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_ace_generation_chance_factor = 0.1
+	air_ace_bonuses_factor = 0.1
+	air_agility_factor = 0.05
+
+    rewards = {
+		elite_airforce = {
+			air_ace_generation_chance_factor = 0.1
+		}
+		airborne_knights = {
+			air_ace_bonuses_factor = 0.05
+		}
+        pursuit_of_glory = {
+			air_ace_generation_chance_factor = 0.1
+		}
+		excellent_pilots = {
+			air_agility_factor = 0.05
+		}
+		heroes_of_the_sky = {
+			air_ace_bonuses_factor = 0.1
+		}
+    }
+}
+
+
+air_subdoctrine_fighter_airborne_mercenaries = {
+    track = fighter_aircraft
+    name = SUBDOCTRINE_FIGHTER_AIRBORNE_MERCENARIES
+    description = SUBDOCTRINE_FIGHTER_AIRBORNE_MERCENARIES_DESC
+    icon = GFX_doctrine_force_rotation_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_fighter_airborne_mercenaries }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_volunteer_cap = 2
+	send_volunteers_tension = -0.15
+	air_fuel_consumption_factor = -0.1
+
+    rewards = {
+		foreign_legion = {
+			air_volunteer_cap = 2
+		}
+		systematic_operations = {
+			air_fuel_consumption_factor = -0.07
+		}
+        diplomatic_actions = {
+			send_volunteers_tension = -0.1
+		}
+		increased_assistance = {
+			air_volunteer_cap = 2
+		}
+		global_presence = {
+			air_fuel_consumption_factor = -0.08
+		}
+    }
+}

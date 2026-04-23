@@ -1,0 +1,10 @@
+default = {
+	medium_tank_chassis_breakthrough = {
+		pool = {
+			weight = 3 #Should appear at the bottom of the list
+			icons = { 
+				GFX_medium_tank_chassis_breakthrough_medium
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_technology_bba_air_techs_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_aom_air_doctrine_1_bg"
+		textureFile = "gfx/interface/techtree/aom_air_doctrine_1_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_aom_air_doctrine_2_bg"
+		textureFile = "gfx/interface/techtree/aom_air_doctrine_2_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TC_airship"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/airship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TC_attack_helicopter"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/attack_helicopter_blueprint.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_attack_helicopter_rockets"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/attack_helicopter_rockets.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_attack_helicopter_gun"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/attack_helicopter_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_SM_attack_helicopter_guided_missile"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/attack_helicopter_guided_missile.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TC_small_plane_airframe_6"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_fighter_6.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_medium_plane_airframe_5"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_tac_bomber_5.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_medium_plane_airframe_6"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_tac_bomber_6.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_large_plane_airframe_6"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_strat_bomber_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TC_small_interceptor"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/small_interceptor.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_small_heavy_fighter"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/small_heavy_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_small_scout_plane"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/small_scout_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_small_maritime_patrol_plane"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/small_maritime_patrol_plane.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TC_medium_interceptor"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/medium_interceptor.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_medium_cas"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/medium_cas.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_medium_naval_bomber"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/medium_naval_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_medium_maritime_patrol_plane"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/medium_maritime_patrol_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_medium_suicide"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/medium_suicide.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_TC_large_naval_bomber"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/large_naval_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_large_scout_plane"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/large_scout_plane.dds"
+	}
+}
+
+spriteTypes = {	
+	### Large images for DIVISIONS
+
+	spriteType = { name = "GFX_unit_attack_helicopter_brigade_icon_medium"							textureFile = "gfx/interface/equipment/attack_helicopter_counter.dds" noOfFrames = 2 }
+	
+}

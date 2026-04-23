@@ -1,0 +1,162 @@
+TOM_heavy_industry_decisions = {
+	
+	nom_hi_emergency_refit_program = {
+		ai_will_do = {
+			factor = 0
+		}
+		
+		icon = GFX_decision_generic_wreckers
+		
+		cost = 15
+		days_re_enable = 180
+		days_remove = 180
+		
+		modifier = {
+			refit_speed = 0.4
+			industrial_capacity_dockyard = -0.1
+		}
+		
+		remove_effect = {		
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				add_to_variable = {
+					var = tom_hi_exp_current
+					value = -20
+					tooltip = tom_hi_exp_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+			}
+		}
+	}
+	
+	nom_hi_offer_investment_for_warship_production = {
+		ai_will_do = {
+			factor = 0
+		}
+		
+		icon = GFX_decision_generic_merge_plant_ship
+		
+		cost = 15
+		days_re_enable = 90
+		days_remove = 270
+		
+		modifier = {
+			production_speed_dockyard_factor = 0.15
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				add_to_variable = {
+					var = tom_hi_industry_current
+					value = 15
+					tooltip = tom_hi_industry_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+				
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+		}
+	}
+	
+	
+	ship_development_decision = {
+		icon = generic_naval
+
+		cost = 30
+		days_re_enable = 360
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = ship_modules_tech
+				bonus = 1
+				uses = 3
+				category = ship_modules_tech
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				add_to_variable = {
+					var = tom_hi_specialisation_current
+					value = 15
+					tooltip = tom_hi_specialisation_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ship_advancement_decision = {
+		icon = generic_naval
+
+		cost = 30
+		days_re_enable = 360
+
+		complete_effect = {
+			add_tech_bonus = {
+				ahead_reduction = 1.5
+				uses = 1
+				category = naval_equipment
+			}
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.75
+			}
+			
+			if = {
+				limit = {
+					has_global_flag = has_heavy_industry_flag
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				
+				add_to_variable = {
+					var = tom_hi_exp_current
+					value = 15
+					tooltip = tom_hi_exp_current_tt
+				}
+				
+				custom_override_tooltip = {
+					tom_hi_current_visual_update_effect = yes
+					tom_hi_check_monthly_change_update = yes
+					tom_hi_update_ideas_effect = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

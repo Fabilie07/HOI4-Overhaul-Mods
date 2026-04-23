@@ -1,0 +1,30 @@
+﻿l_english:
+
+ ITA_tank_machine_gun_2x:0 "2x 8mm Breda mod. 38"
+ ITA_tank_heavy_machine_gun:0 "13.2mm Breda mod. 31"
+ ITA_tank_heavy_machine_gun_2x:0 "2x 13.2mm Breda mod. 31"
+ ITA_tank_heavy_machine_gun_4x:0 "4x 13.2mm Breda mod. 31"
+ ITA_tank_small_cannon:0 "37mm Vickers-Terni L/40"
+ ITA_tank_small_cannon_2:0 "47mm Cannone da 47/32"
+ ITA_tank_close_support_gun:0 "75mm Obice da 75/18 mod. 34"
+ ITA_tank_medium_velocity_gun:0 "75mm Cannone da 75/32 mod. 37"
+ ITA_tank_medium_cannon:0 "47mm Cannone da 47/40 mod. 38"
+ ITA_tank_medium_cannon_2:0 "75mm Cannone da 75/34 mod. 39"
+ ITA_tank_heavy_cannon:0 "90mm Cannone da 90/53 mod. 41"
+ 
+ ITA_tank_light_aphe:0 "Granata Perforante mod. 35"
+ ITA_tank_light_he:0 "Granata mod. 35"
+ ITA_tank_light_heat:0 "EPS M42"
+ ITA_tank_medium_aphe:0 "Granata Perforante mod. 39"
+ ITA_tank_medium_he:0 "Granata 75/32"
+ ITA_tank_medium_heat:0 "EPS M42"
+ ITA_tank_heavy_aphe:0 "Granata Perforante da 90"
+ ITA_tank_heavy_he:0 "Granata da 90"
+ ITA_tank_heavy_heat:0 "Effeto Pronto mod. 34"
+
+ ITA_tank_auto_cannon:0 "20mm Breda mod. 35"
+
+ ITA_tank_diesel_engine:0 "SPA 8 TB M40"
+ ITA_tank_diesel_engine_2:0 "SPA 8 TB M41"
+ ITA_tank_diesel_engine_3:0 "SPA 342 V12"
+ ITA_tank_gasoline_engine_2:0 "SPA 15 TB M42"

@@ -1,0 +1,900 @@
+# CHANGE basic: 8 reduced: 4 slow: 2
+
+tom_hi_check_monthly_change_update = {
+	tom_hi_change_speed_effect = yes
+
+	if = {		# Reduce
+		limit = {
+			check_variable = {
+				var = tom_hi_tank_target
+				value = tom_hi_tank_current
+				compare = less_than
+			}
+		}
+		multiply_variable = { tom_hi_tank_change = -1 }
+	}
+	else_if = {	# No Change
+		limit = {
+			check_variable = {
+				var = tom_hi_tank_target
+				value = tom_hi_tank_current
+				compare = equals
+			}
+		}
+		set_variable = { tom_hi_tank_change = 0 }
+	}
+	
+	if = {		# Reduce
+		limit = {
+			check_variable = {
+				var = tom_hi_industry_target
+				value = tom_hi_industry_current
+				compare = less_than
+			}
+		}
+		multiply_variable = { tom_hi_industry_change = -1 }
+	}
+	else_if = {	# No Change
+		limit = {
+			check_variable = {
+				var = tom_hi_industry_target
+				value = tom_hi_industry_current
+				compare = equals
+			}
+		}
+		set_variable = { tom_hi_industry_change = 0 }
+	}
+	
+	if = {		# Reduce
+		limit = {
+			check_variable = {
+				var = tom_hi_mp_target
+				value = tom_hi_mp_current
+				compare = less_than
+			}
+		}
+		multiply_variable = { tom_hi_mp_change = -1 }
+	}
+	else_if = {	# No Change
+		limit = {
+			check_variable = {
+				var = tom_hi_mp_target
+				value = tom_hi_mp_current
+				compare = equals
+			}
+		}
+		set_variable = { tom_hi_mp_change = 0 }
+	}
+	
+	if = {		# Reduce
+		limit = {
+			check_variable = {
+				var = tom_hi_specialisation_target
+				value = tom_hi_specialisation_current
+				compare = less_than
+			}
+		}
+		multiply_variable = { tom_hi_specialisation_change = -1 }
+	}
+	else_if = {	# No Change
+		limit = {
+			check_variable = {
+				var = tom_hi_specialisation_target
+				value = tom_hi_specialisation_current
+				compare = equals
+			}
+		}
+		set_variable = { tom_hi_specialisation_change = 0 }
+	}
+	
+	if = {		# Reduce
+		limit = {
+			check_variable = {
+				var = tom_hi_exp_target
+				value = tom_hi_exp_current
+				compare = less_than
+			}
+		}
+		multiply_variable = { tom_hi_exp_change = -1 }
+	}
+	else_if = {	# No Change
+		limit = {
+			check_variable = {
+				var = tom_hi_exp_target
+				value = tom_hi_exp_current
+				compare = equals
+			}
+		}
+		set_variable = { tom_hi_exp_change = 0 }
+	}
+	tom_hi_change_clamp_effect = yes
+}
+
+tom_hi_change_speed_effect = {
+	# tom_hi_tank_change
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_tank_current
+					value = 20
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_tank_current
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_tank_change = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_tank_current
+					value = 40
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_tank_current
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_tank_change = 4 }
+	}
+	else = {
+		set_variable = { tom_hi_tank_change = 8 }
+	}
+	
+	# tom_hi_industry_change
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_industry_current
+					value = 20
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_industry_current
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_industry_change = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_industry_current
+					value = 40
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_industry_current
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_industry_change = 4 }
+	}
+	else = {
+		set_variable = { tom_hi_industry_change = 8 }
+	}
+	
+	# tom_hi_mp_change
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_mp_current
+					value = 20
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_mp_current
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_mp_change = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_mp_current
+					value = 40
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_mp_current
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_mp_change = 4 }
+	}
+	else = {
+		set_variable = { tom_hi_mp_change = 8 }
+	}
+	
+	# tom_hi_specialisation_change
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_specialisation_current
+					value = 20
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_specialisation_current
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_specialisation_change = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_specialisation_current
+					value = 40
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_specialisation_current
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_specialisation_change = 4 }
+	}
+	else = {
+		set_variable = { tom_hi_specialisation_change = 8 }
+	}
+	
+	# tom_hi_exp_change
+	if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_exp_current
+					value = 20
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_exp_current
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_exp_change = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = {
+					var = tom_hi_exp_current
+					value = 40
+					compare = less_than
+				}
+				check_variable = {
+					var = tom_hi_exp_current
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		set_variable = { tom_hi_exp_change = 4 }
+	}
+	else = {
+		set_variable = { tom_hi_exp_change = 8 }
+	}
+	
+	multiply_variable = { tom_hi_tank_change = tom_hi_speed_reduction }
+	multiply_variable = { tom_hi_industry_change = tom_hi_speed_reduction }
+	multiply_variable = { tom_hi_mp_change = tom_hi_speed_reduction }
+	multiply_variable = { tom_hi_specialisation_change = tom_hi_speed_reduction }
+	multiply_variable = { tom_hi_exp_change = tom_hi_speed_reduction }
+}
+
+
+tom_hi_change_clamp_effect = {
+	set_temp_variable = { tank_target_current_difference = tom_hi_tank_target }
+	subtract_from_temp_variable = { tank_target_current_difference = tom_hi_tank_current }
+	if = {
+		limit = {
+			check_variable = {
+				var = tank_target_current_difference
+				value = 0
+				compare = less_than
+			}
+		}
+		clamp_variable = {
+			var = tom_hi_tank_change
+			min = tank_target_current_difference
+		}
+	}
+	else = {
+		clamp_variable = {
+			var = tom_hi_tank_change
+			max = tank_target_current_difference
+		}
+	}
+	
+	set_temp_variable = { industry_target_current_difference = tom_hi_industry_target }
+	subtract_from_temp_variable = { industry_target_current_difference = tom_hi_industry_current }
+	if = {
+		limit = {
+			check_variable = {
+				var = industry_target_current_difference
+				value = 0
+				compare = less_than
+			}
+		}
+		clamp_variable = {
+			var = tom_hi_industry_change
+			min = industry_target_current_difference
+		}
+	}
+	else = {
+		clamp_variable = {
+			var = tom_hi_industry_change
+			max = industry_target_current_difference
+		}
+	}
+	
+	set_temp_variable = { mp_target_current_difference = tom_hi_mp_target }
+	subtract_from_temp_variable = { mp_target_current_difference = tom_hi_mp_current }
+	if = {
+		limit = {
+			check_variable = {
+				var = mp_target_current_difference
+				value = 0
+				compare = less_than
+			}
+		}
+		clamp_variable = {
+			var = tom_hi_mp_change
+			min = mp_target_current_difference
+		}
+	}
+	else = {
+		clamp_variable = {
+			var = tom_hi_mp_change
+			max = mp_target_current_difference
+		}
+	}
+	
+	set_temp_variable = { specialisation_target_current_difference = tom_hi_specialisation_target }
+	subtract_from_temp_variable = { specialisation_target_current_difference = tom_hi_specialisation_current }
+	if = {
+		limit = {
+			check_variable = {
+				var = specialisation_target_current_difference
+				value = 0
+				compare = less_than
+			}
+		}
+		clamp_variable = {
+			var = tom_hi_specialisation_change
+			min = specialisation_target_current_difference
+		}
+	}
+	else = {
+		clamp_variable = {
+			var = tom_hi_specialisation_change
+			max = specialisation_target_current_difference
+		}
+	}
+	
+	set_temp_variable = { exp_target_current_difference = tom_hi_exp_target }
+	subtract_from_temp_variable = { exp_target_current_difference = tom_hi_exp_current }
+	if = {
+		limit = {
+			check_variable = {
+				var = exp_target_current_difference
+				value = 0
+				compare = less_than
+			}
+		}
+		clamp_variable = {
+			var = tom_hi_exp_change
+			min = exp_target_current_difference
+		}
+	}
+	else = {
+		clamp_variable = {
+			var = tom_hi_exp_change
+			max = exp_target_current_difference
+		}
+	}
+}
+
+
+
+
+tom_hi_current_visual_update_effect = {
+	tom_hi_current_clamp_effect = yes
+	
+	set_variable = { tom_hi_tank_current_pointer = tom_hi_tank_current }
+	divide_variable = { tom_hi_tank_current_pointer = 5 }
+	round_variable = tom_hi_tank_current_pointer
+	resize_array = { tom_hi_tank_current_array = tom_hi_tank_current_pointer }
+	
+	set_variable = { tom_hi_industry_current_pointer = tom_hi_industry_current }
+	divide_variable = { tom_hi_industry_current_pointer = 5 }
+	round_variable = tom_hi_industry_current_pointer
+	resize_array = { tom_hi_industry_current_array = tom_hi_industry_current_pointer }
+	
+	set_variable = { tom_hi_mp_current_pointer = tom_hi_mp_current }
+	divide_variable = { tom_hi_mp_current_pointer = 5 }
+	round_variable = tom_hi_mp_current_pointer
+	resize_array = { tom_hi_mp_current_array = tom_hi_mp_current_pointer }
+	
+	set_variable = { tom_hi_specialisation_current_pointer = tom_hi_specialisation_current }
+	divide_variable = { tom_hi_specialisation_current_pointer = 5 }
+	round_variable = tom_hi_specialisation_current_pointer
+	resize_array = { tom_hi_specialisation_current_array = tom_hi_specialisation_current_pointer }
+	
+	set_variable = { tom_hi_exp_current_pointer = tom_hi_exp_current }
+	divide_variable = { tom_hi_exp_current_pointer = 5 }
+	round_variable = tom_hi_exp_current_pointer
+	resize_array = { tom_hi_exp_current_array = tom_hi_exp_current_pointer }
+}
+
+tom_hi_current_clamp_effect = {
+	clamp_variable = {
+		var = tom_hi_tank_current
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = tom_hi_industry_current
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = tom_hi_mp_current
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = tom_hi_specialisation_current
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = tom_hi_exp_current
+		min = 0
+		max = 100
+	}
+}
+
+tom_hi_update_ideas_effect = {
+	# tom_hi_tank_current
+	if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_tank_current
+				value = 20
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_tanks_2
+			tom_hi_tanks_3
+			tom_hi_tanks_4
+			tom_hi_tanks_5
+		}
+		add_ideas = tom_hi_tanks_1
+		set_variable = { tom_hi_tanks_reduction = 0.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_tank_current
+				value = 40
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_tanks_1
+			tom_hi_tanks_3
+			tom_hi_tanks_4
+			tom_hi_tanks_5
+		}
+		add_ideas = tom_hi_tanks_2
+		set_variable = { tom_hi_tanks_reduction = 0.05 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_tank_current
+				value = 60
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_tanks_1
+			tom_hi_tanks_2
+			tom_hi_tanks_4
+			tom_hi_tanks_5
+		}
+		add_ideas = tom_hi_tanks_3
+		set_variable = { tom_hi_tanks_reduction = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_tank_current
+				value = 80
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_tanks_1
+			tom_hi_tanks_2
+			tom_hi_tanks_3
+			tom_hi_tanks_5
+		}
+		add_ideas = tom_hi_tanks_4
+		set_variable = { tom_hi_tanks_reduction = 0.05 }
+	}
+	else = {
+		remove_ideas = {
+			tom_hi_tanks_1
+			tom_hi_tanks_2
+			tom_hi_tanks_3
+			tom_hi_tanks_4
+		}
+		add_ideas = tom_hi_tanks_5
+		set_variable = { tom_hi_tanks_reduction = 0.1 }
+	}
+	
+	
+	# tom_hi_industry_current
+	if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_industry_current
+				value = 20
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_industry_2
+			tom_hi_industry_3
+			tom_hi_industry_4
+			tom_hi_industry_5
+		}
+		add_ideas = tom_hi_industry_1
+		set_variable = { tom_hi_industry_reduction = 0.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_industry_current
+				value = 40
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_industry_1
+			tom_hi_industry_3
+			tom_hi_industry_4
+			tom_hi_industry_5
+		}
+		add_ideas = tom_hi_industry_2
+		set_variable = { tom_hi_industry_reduction = 0.05 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_industry_current
+				value = 60
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_industry_1
+			tom_hi_industry_2
+			tom_hi_industry_4
+			tom_hi_industry_5
+		}
+		add_ideas = tom_hi_industry_3
+		set_variable = { tom_hi_industry_reduction = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_industry_current
+				value = 80
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_industry_1
+			tom_hi_industry_2
+			tom_hi_industry_3
+			tom_hi_industry_5
+		}
+		add_ideas = tom_hi_industry_4
+		set_variable = { tom_hi_industry_reduction = 0.05 }
+	}
+	else = {
+		remove_ideas = {
+			tom_hi_industry_1
+			tom_hi_industry_2
+			tom_hi_industry_3
+			tom_hi_industry_4
+		}
+		add_ideas = tom_hi_industry_5
+		set_variable = { tom_hi_industry_reduction = 0.1 }
+	}
+	
+	
+	# tom_hi_mp_current
+	if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_mp_current
+				value = 20
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_mp_2
+			tom_hi_mp_3
+			tom_hi_mp_4
+			tom_hi_mp_5
+		}
+		add_ideas = tom_hi_mp_1
+		set_variable = { tom_hi_mp_reduction = 0.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_mp_current
+				value = 40
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_mp_1
+			tom_hi_mp_3
+			tom_hi_mp_4
+			tom_hi_mp_5
+		}
+		add_ideas = tom_hi_mp_2
+		set_variable = { tom_hi_mp_reduction = 0.05 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_mp_current
+				value = 60
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_mp_1
+			tom_hi_mp_2
+			tom_hi_mp_4
+			tom_hi_mp_5
+		}
+		add_ideas = tom_hi_mp_3
+		set_variable = { tom_hi_mp_reduction = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_mp_current
+				value = 80
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_mp_1
+			tom_hi_mp_2
+			tom_hi_mp_3
+			tom_hi_mp_5
+		}
+		add_ideas = tom_hi_mp_4
+		set_variable = { tom_hi_mp_reduction = 0.05 }
+	}
+	else = {
+		remove_ideas = {
+			tom_hi_mp_1
+			tom_hi_mp_2
+			tom_hi_mp_3
+			tom_hi_mp_4
+		}
+		add_ideas = tom_hi_mp_5
+		set_variable = { tom_hi_mp_reduction = 0.1 }
+	}
+	
+	
+	# tom_hi_specialisation_current
+	if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_specialisation_current
+				value = 20
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_specialisation_2
+			tom_hi_specialisation_3
+			tom_hi_specialisation_4
+			tom_hi_specialisation_5
+		}
+		add_ideas = tom_hi_specialisation_1
+		set_variable = { tom_hi_specialisation_reduction = 0.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_specialisation_current
+				value = 40
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_specialisation_1
+			tom_hi_specialisation_3
+			tom_hi_specialisation_4
+			tom_hi_specialisation_5
+		}
+		add_ideas = tom_hi_specialisation_2
+		set_variable = { tom_hi_specialisation_reduction = 0.05 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_specialisation_current
+				value = 60
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_specialisation_1
+			tom_hi_specialisation_2
+			tom_hi_specialisation_4
+			tom_hi_specialisation_5
+		}
+		add_ideas = tom_hi_specialisation_3
+		set_variable = { tom_hi_specialisation_reduction = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_specialisation_current
+				value = 80
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_specialisation_1
+			tom_hi_specialisation_2
+			tom_hi_specialisation_3
+			tom_hi_specialisation_5
+		}
+		add_ideas = tom_hi_specialisation_4
+		set_variable = { tom_hi_specialisation_reduction = 0.05 }
+	}
+	else = {
+		remove_ideas = {
+			tom_hi_specialisation_1
+			tom_hi_specialisation_2
+			tom_hi_specialisation_3
+			tom_hi_specialisation_4
+		}
+		add_ideas = tom_hi_specialisation_5
+		set_variable = { tom_hi_specialisation_reduction = 0.1 }
+	}
+	
+	
+	# tom_hi_exp_current
+	if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_exp_current
+				value = 20
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_exp_2
+			tom_hi_exp_3
+			tom_hi_exp_4
+			tom_hi_exp_5
+		}
+		add_ideas = tom_hi_exp_1
+		set_variable = { tom_hi_exp_reduction = 0.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_exp_current
+				value = 40
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_exp_1
+			tom_hi_exp_3
+			tom_hi_exp_4
+			tom_hi_exp_5
+		}
+		add_ideas = tom_hi_exp_2
+		set_variable = { tom_hi_exp_reduction = 0.05 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_exp_current
+				value = 60
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_exp_1
+			tom_hi_exp_2
+			tom_hi_exp_4
+			tom_hi_exp_5
+		}
+		add_ideas = tom_hi_exp_3
+		set_variable = { tom_hi_exp_reduction = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = tom_hi_exp_current
+				value = 80
+				compare = less_than
+			}
+		}
+		remove_ideas = {
+			tom_hi_exp_1
+			tom_hi_exp_2
+			tom_hi_exp_3
+			tom_hi_exp_5
+		}
+		add_ideas = tom_hi_exp_4
+		set_variable = { tom_hi_exp_reduction = 0.05 }
+	}
+	else = {
+		remove_ideas = {
+			tom_hi_exp_1
+			tom_hi_exp_2
+			tom_hi_exp_3
+			tom_hi_exp_4
+		}
+		add_ideas = tom_hi_exp_5
+		set_variable = { tom_hi_exp_reduction = 0.1 }
+	}
+	
+	set_variable = { tom_hi_speed_reduction = 1 }
+	subtract_from_variable = { tom_hi_speed_reduction = tom_hi_tanks_reduction }
+	subtract_from_variable = { tom_hi_speed_reduction = tom_hi_industry_reduction }
+	subtract_from_variable = { tom_hi_speed_reduction = tom_hi_mp_reduction }
+	subtract_from_variable = { tom_hi_speed_reduction = tom_hi_specialisation_reduction }
+	subtract_from_variable = { tom_hi_speed_reduction = tom_hi_exp_reduction }
+}

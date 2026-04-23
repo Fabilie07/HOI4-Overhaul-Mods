@@ -1,0 +1,809 @@
+political_actions = {
+	aom_call_for_the_highest_service = {
+		icon = generic_air
+		cost = 100
+		
+		allowed = {
+			NOT = {
+				OR = {
+					tag = JAP #has a focus
+					tag = ITA #has a focus
+				}
+			}
+		}
+		
+		available = {
+			OR = {
+				AND = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+					}
+					has_war_support > 0.7
+				}
+				AND = {
+					has_government = neutrality
+					has_war_support > 0.8
+				}
+				AND = {
+					has_government = democratic
+					has_war_support > 0.9
+					has_stability > 0.9
+				}
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_tech = suicide_charge
+			}
+			has_war = yes
+			has_deployed_air_force_size = {
+				size > 250
+			}
+		}
+		
+		complete_effect = {
+			set_rule = {
+				can_use_kamikaze_pilots = yes
+			}
+			set_technology = { suicide_charge = 1 }
+			add_stability = -0.05
+			add_named_threat = {
+				threat = 2
+				name = aom_call_for_the_highest_service
+			}
+		}
+	}
+}
+
+om_doctrine_decisions = {
+
+	aom_reset_track_fighter = {
+		visible = {
+			check_variable = { aom_fighter_resets_left > 0 }
+			has_subdoctrine_in_track = fighter_aircraft
+		}
+		
+		available = {
+			has_completed_track = fighter_aircraft
+			hidden_trigger = {
+				has_air_experience > 34.9
+			}
+		}
+		
+		custom_cost_text = decision_cost_air_xp_35
+		custom_cost_trigger = {
+			has_air_experience > 34.9
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_doctrine = air_subdoctrine_fighter_tactical_dominance
+					}
+					set_technology = { aom_doctrine_fighter_tactical_dominance = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_fighter_strategic_dominance
+					}
+					set_technology = { aom_doctrine_fighter_strategic_dominance = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_fighter_long_range_operations
+					}
+					set_technology = { aom_doctrine_fighter_long_range_operations = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_fighter_all_conditions
+					}
+					set_technology = { aom_doctrine_fighter_all_conditions = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_fighter_individual_superiority
+					}
+					set_technology = { aom_doctrine_fighter_individual_superiority = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_fighter_airborne_mercenaries
+					}
+					set_technology = { aom_doctrine_fighter_airborne_mercenaries = 1 popup = no }
+				}
+				
+				
+				if = {
+					limit = { NOT = { has_tech = aom_doctrine_fighter_tactical_dominance } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_fighter_tactical_dominance }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_fighter_strategic_dominance } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_fighter_strategic_dominance }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_fighter_long_range_operations } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_fighter_long_range_operations }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_fighter_all_conditions } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_fighter_all_conditions }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_fighter_individual_superiority } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_fighter_individual_superiority }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_fighter_airborne_mercenaries } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_fighter_airborne_mercenaries }
+				}
+				
+				subtract_from_variable = { aom_fighter_resets_left = 1 }
+				air_experience = -35
+			}
+			custom_effect_tooltip = {
+				localization_key = aom_reset_track_tt
+				TRACK = "Fighter Aircraft"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = aom_resets_left_fighter_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	aom_reset_track_interceptor = {
+		visible = {
+			check_variable = { aom_interceptor_resets_left > 0 }
+			has_subdoctrine_in_track = interceptor_aircraft
+		}
+		
+		available = {
+			has_completed_track = interceptor_aircraft
+			hidden_trigger = {
+				has_air_experience > 34.9
+			}
+		}
+		
+		custom_cost_text = decision_cost_air_xp_35
+		custom_cost_trigger = {
+			has_air_experience > 34.9
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_doctrine = air_subdoctrine_interceptor_homeland_defence
+					}
+					set_technology = { aom_doctrine_interceptor_homeland_defence = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_interceptor_aerial_decimation
+					}
+					set_technology = { aom_doctrine_interceptor_aerial_decimation = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_interceptor_all_out_interception
+					}
+					set_technology = { aom_doctrine_interceptor_all_out_interception = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_interceptor_light_interceptors
+					}
+					set_technology = { aom_doctrine_interceptor_light_interceptors = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_interceptor_heavy_interceptors
+					}
+					set_technology = { aom_doctrine_interceptor_heavy_interceptors = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_interceptor_technological_marvels
+					}
+					set_technology = { aom_doctrine_interceptor_technological_marvels = 1 popup = no }
+				}
+				
+				
+				if = {
+					limit = { NOT = { has_tech = aom_doctrine_interceptor_homeland_defence } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_interceptor_homeland_defence }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_interceptor_aerial_decimation } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_interceptor_aerial_decimation }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_interceptor_all_out_interception } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_interceptor_all_out_interception }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_interceptor_light_interceptors } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_interceptor_light_interceptors }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_interceptor_heavy_interceptors } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_interceptor_heavy_interceptors }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_interceptor_technological_marvels } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_interceptor_technological_marvels }
+				}
+				
+				subtract_from_variable = { aom_interceptor_resets_left = 1 }
+				air_experience = -35
+			}
+			custom_effect_tooltip = {
+				localization_key = aom_reset_track_tt
+				TRACK = "Interceptor Aircraft"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = aom_resets_left_interceptor_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	aom_reset_track_cas = {
+		visible = {
+			check_variable = { aom_cas_resets_left > 0 }
+			has_subdoctrine_in_track = cas_aircraft
+		}
+		
+		available = {
+			has_completed_track = cas_aircraft
+			hidden_trigger = {
+				has_air_experience > 34.9
+			}
+		}
+		
+		custom_cost_text = decision_cost_air_xp_35
+		custom_cost_trigger = {
+			has_air_experience > 34.9
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_doctrine = air_subdoctrine_cas_dive_bombing
+					}
+					set_technology = { aom_doctrine_cas_dive_bombing = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_cas_low_level_strikes
+					}
+					set_technology = { aom_doctrine_cas_low_level_strikes = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_cas_multi_role_fighters
+					}
+					set_technology = { aom_doctrine_cas_multi_role_fighters = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_cas_ground_air_communication
+					}
+					set_technology = { aom_doctrine_cas_ground_air_communication = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_cas_nighttime_attacks
+					}
+					set_technology = { aom_doctrine_cas_nighttime_attacks = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_cas_naval_strike_aircraft
+					}
+					set_technology = { aom_doctrine_cas_naval_strike_aircraft = 1 popup = no }
+				}
+				
+				
+				if = {
+					limit = { NOT = { has_tech = aom_doctrine_cas_dive_bombing } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_cas_dive_bombing }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_cas_low_level_strikes } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_cas_low_level_strikes }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_cas_multi_role_fighters } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_cas_multi_role_fighters }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_cas_ground_air_communication } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_cas_ground_air_communication }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_cas_nighttime_attacks } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_cas_nighttime_attacks }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_cas_naval_strike_aircraft } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_cas_naval_strike_aircraft }
+				}
+				
+				subtract_from_variable = { aom_cas_resets_left = 1 }
+				air_experience = -35
+			}
+			custom_effect_tooltip = {
+				localization_key = aom_reset_track_tt
+				TRACK = "Strike Aircraft"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = aom_resets_left_cas_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	aom_reset_track_medium = {
+		visible = {
+			check_variable = { aom_medium_resets_left > 0 }
+			has_subdoctrine_in_track = medium_aircraft
+		}
+		
+		available = {
+			has_completed_track = medium_aircraft
+			hidden_trigger = {
+				has_air_experience > 34.9
+			}
+		}
+		
+		custom_cost_text = decision_cost_air_xp_35
+		custom_cost_trigger = {
+			has_air_experience > 34.9
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_doctrine = air_subdoctrine_medium_frontline_bombers
+					}
+					set_technology = { aom_doctrine_medium_frontline_bombers = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_medium_supplementary_role
+					}
+					set_technology = { aom_doctrine_medium_supplementary_role = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_medium_precision_bombing
+					}
+					set_technology = { aom_doctrine_medium_precision_bombing = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_medium_scouting_force
+					}
+					set_technology = { aom_doctrine_medium_scouting_force = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_medium_fast_bombers
+					}
+					set_technology = { aom_doctrine_medium_fast_bombers = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_medium_strike_aircraft
+					}
+					set_technology = { aom_doctrine_medium_strike_aircraft = 1 popup = no }
+				}
+				
+				
+				if = {
+					limit = { NOT = { has_tech = aom_doctrine_medium_frontline_bombers } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_medium_frontline_bombers }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_medium_supplementary_role } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_medium_supplementary_role }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_medium_precision_bombing } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_medium_precision_bombing }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_medium_scouting_force } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_medium_scouting_force }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_medium_fast_bombers } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_medium_fast_bombers }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_medium_strike_aircraft } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_medium_strike_aircraft }
+				}
+				
+				subtract_from_variable = { aom_medium_resets_left = 1 }
+				air_experience = -35
+			}
+			custom_effect_tooltip = {
+				localization_key = aom_reset_track_tt
+				TRACK = "Tactical Bombers"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = aom_resets_left_medium_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	aom_reset_track_heavy = {
+		visible = {
+			check_variable = { aom_heavy_resets_left > 0 }
+			has_subdoctrine_in_track = heavy_aircraft
+		}
+		
+		available = {
+			has_completed_track = heavy_aircraft
+			hidden_trigger = {
+				has_air_experience > 34.9
+			}
+		}
+		
+		custom_cost_text = decision_cost_air_xp_35
+		custom_cost_trigger = {
+			has_air_experience > 34.9
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_doctrine = air_subdoctrine_heavy_extended_bombing_campaigns
+					}
+					set_technology = { aom_doctrine_heavy_extended_bombing_campaigns = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_heavy_nighttime_raids
+					}
+					set_technology = { aom_doctrine_heavy_nighttime_raids = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_heavy_long_range_bombing
+					}
+					set_technology = { aom_doctrine_heavy_long_range_bombing = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_heavy_flying_fortresses
+					}
+					set_technology = { aom_doctrine_heavy_flying_fortresses = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_heavy_limited_bombing_campaigns
+					}
+					set_technology = { aom_doctrine_heavy_limited_bombing_campaigns = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_heavy_naval_aircraft
+					}
+					set_technology = { aom_doctrine_heavy_naval_aircraft = 1 popup = no }
+				}
+				
+				
+				if = {
+					limit = { NOT = { has_tech = aom_doctrine_heavy_extended_bombing_campaigns } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_heavy_extended_bombing_campaigns }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_heavy_nighttime_raids } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_heavy_nighttime_raids }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_heavy_long_range_bombing } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_heavy_long_range_bombing }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_heavy_flying_fortresses } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_heavy_flying_fortresses }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_heavy_limited_bombing_campaigns } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_heavy_limited_bombing_campaigns }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_heavy_naval_aircraft } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_heavy_naval_aircraft }
+				}
+				
+				subtract_from_variable = { aom_heavy_resets_left = 1 }
+				air_experience = -35
+			}
+			custom_effect_tooltip = {
+				localization_key = aom_reset_track_tt
+				TRACK = "Strategic Bombers"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = aom_resets_left_heavy_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	aom_reset_track_naval = {
+		visible = {
+			check_variable = { aom_naval_resets_left > 0 }
+			has_subdoctrine_in_track = naval_aircraft
+		}
+		
+		available = {
+			has_completed_track = naval_aircraft
+			hidden_trigger = {
+				has_air_experience > 34.9
+			}
+		}
+		
+		custom_cost_text = decision_cost_air_xp_35
+		custom_cost_trigger = {
+			has_air_experience > 34.9
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_doctrine = air_subdoctrine_naval_open_water_patrols
+					}
+					set_technology = { aom_doctrine_naval_open_water_patrols = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_naval_seazone_dominance
+					}
+					set_technology = { aom_doctrine_naval_seazone_dominance = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_naval_fleet_suppression
+					}
+					set_technology = { aom_doctrine_naval_fleet_suppression = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_naval_light_naval_bombers
+					}
+					set_technology = { aom_doctrine_naval_light_naval_bombers = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_naval_carrier_to_land_operations
+					}
+					set_technology = { aom_doctrine_naval_carrier_to_land_operations = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_naval_carrier_air_fleet
+					}
+					set_technology = { aom_doctrine_naval_carrier_air_fleet = 1 popup = no }
+				}
+				
+				
+				if = {
+					limit = { NOT = { has_tech = aom_doctrine_naval_open_water_patrols } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_naval_open_water_patrols }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_naval_seazone_dominance } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_naval_seazone_dominance }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_naval_fleet_suppression } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_naval_fleet_suppression }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_naval_light_naval_bombers } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_naval_light_naval_bombers }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_naval_carrier_to_land_operations } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_naval_carrier_to_land_operations }
+				}
+				else_if = {
+					limit = { NOT = { has_tech = aom_doctrine_naval_carrier_air_fleet } }
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_naval_carrier_air_fleet }
+				}
+				
+				subtract_from_variable = { aom_naval_resets_left = 1 }
+				air_experience = -35
+			}
+			custom_effect_tooltip = {
+				localization_key = aom_reset_track_tt
+				TRACK = "Naval Aircraft"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = aom_resets_left_naval_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+	aom_reset_track_operations = {
+		visible = {
+			check_variable = { aom_operations_resets_left > 0 }
+			has_subdoctrine_in_track = air_operations
+			OR = {
+				AND = {
+					NOT = { has_tech = aom_doctrine_operations_airborne_assaults }
+					NOT = { has_doctrine = air_subdoctrine_operations_airborne_assaults }
+					has_tech = paratroopers
+				}
+				AND = {
+					NOT = { has_tech = aom_doctrine_operations_global_operations }
+					NOT = { has_doctrine = air_subdoctrine_operations_global_operations }
+				}
+				AND = {
+					NOT = { has_tech = aom_doctrine_operations_suicide_attacks }
+					NOT = { has_doctrine = air_subdoctrine_operations_suicide_attacks }
+					has_tech = suicide_charge
+				}
+				AND = {
+					NOT = { has_tech = aom_doctrine_operations_helicopter_assaults }
+					NOT = { has_doctrine = air_subdoctrine_operations_helicopter_assaults }
+					is_special_project_completed = sp:sp_air_helicopter
+				}
+				AND = {
+					NOT = { has_tech = aom_doctrine_operations_nuclear_war }
+					NOT = { has_doctrine = air_subdoctrine_operations_nuclear_war }
+					has_tech = atomic_research
+				}
+				AND = {
+					NOT = { has_tech = aom_doctrine_operations_missile_warfare }
+					NOT = { has_doctrine = air_subdoctrine_operations_missile_warfare }
+					has_tech = experimental_rockets
+				}
+			}
+		}
+		
+		available = {
+			has_completed_track = air_operations
+			hidden_trigger = {
+				has_air_experience > 34.9
+			}
+		}
+		
+		custom_cost_text = decision_cost_air_xp_35
+		custom_cost_trigger = {
+			has_air_experience > 34.9
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_doctrine = air_subdoctrine_operations_airborne_assaults
+					}
+					set_technology = { aom_doctrine_operations_airborne_assaults = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_operations_global_operations
+					}
+					set_technology = { aom_doctrine_operations_global_operations = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_operations_suicide_attacks
+					}
+					set_technology = { aom_doctrine_operations_suicide_attacks = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_operations_helicopter_assaults
+					}
+					set_technology = { aom_doctrine_operations_helicopter_assaults = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_operations_nuclear_war
+					}
+					set_technology = { aom_doctrine_operations_nuclear_war = 1 popup = no }
+				}
+				else_if = {
+					limit = {
+						has_doctrine = air_subdoctrine_operations_missile_warfare
+					}
+					set_technology = { aom_doctrine_operations_missile_warfare = 1 popup = no }
+				}
+				
+				
+				if = {
+					limit = {
+						NOT = { has_tech = aom_doctrine_operations_airborne_assaults }
+						has_tech = paratroopers
+					}
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_operations_airborne_assaults }
+				}
+				else_if = {
+					limit = {
+						NOT = { has_tech = aom_doctrine_operations_global_operations }
+					}
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_operations_global_operations }
+				}
+				else_if = {
+					limit = {
+						NOT = { has_tech = aom_doctrine_operations_suicide_attacks }
+						has_tech = suicide_charge
+					}
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_operations_suicide_attacks }
+				}
+				else_if = {
+					limit = {
+						NOT = { has_tech = aom_doctrine_operations_helicopter_assaults }
+						is_special_project_completed = sp:sp_air_helicopter
+					}
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_operations_helicopter_assaults }
+				}
+				else_if = {
+					limit = {
+						NOT = { has_tech = aom_doctrine_operations_nuclear_war }
+						has_tech = atomic_research
+					}
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_operations_nuclear_war }
+				}
+				else_if = {
+					limit = {
+						NOT = { has_tech = aom_doctrine_operations_missile_warfare }
+						has_tech = experimental_rockets
+					}
+					set_sub_doctrine = { sub_doctrine = air_subdoctrine_operations_missile_warfare }
+				}
+				
+				subtract_from_variable = { aom_operations_resets_left = 1 }
+				air_experience = -35
+			}
+			custom_effect_tooltip = {
+				localization_key = aom_reset_track_tt
+				TRACK = "Operations"
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = aom_resets_left_operations_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,241 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				tom_startup_armored_car_designs_effect = yes
+				tom_startup_mechanized_designs_effect = yes
+				tom_startup_amphibious_mechanized_designs_effect = yes
+			}
+		}
+	
+	
+		effect = {
+			every_country = {
+				limit = { has_tech = gw_artillery }
+
+				set_technology = { small_cannon_tech = 1 popup = no }
+				set_technology = { close_support_gun_tech = 1 popup = no }
+			}
+
+			every_country = {
+				limit = { has_tech = interwar_antitank }
+
+				set_technology = { small_cannon_tech2 = 1 popup = no }
+				set_technology = { tank_ammo1 = 1 popup = no }
+			}
+
+			every_country = {
+				limit = { has_tech = interwar_antiair }
+
+				set_technology = { auto_cannon_tech = 1 popup = no }
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_free_designs_rule
+						option = ENABLED
+					}
+				}
+				
+				every_country = {
+					add_design_template_bonus = {
+						name = light_tank_chassis
+						uses = 9999
+						cost_factor = 1
+						equipment = light_tank_chassis
+						equipment = light_tank_aa_chassis
+						equipment = light_tank_amphibious_chassis
+						equipment = light_tank_artillery_chassis
+						equipment = light_tank_destroyer_chassis
+						equipment = light_tank_flame_chassis
+					}
+					add_design_template_bonus = {
+						name = medium_tank_chassis
+						uses = 9999
+						cost_factor = 1
+						equipment = medium_tank_chassis
+						equipment = medium_tank_aa_chassis
+						equipment = medium_tank_amphibious_chassis
+						equipment = medium_tank_artillery_chassis
+						equipment = medium_tank_destroyer_chassis
+						equipment = medium_tank_flame_chassis
+					}
+					add_design_template_bonus = {
+						name = heavy_tank_chassis
+						uses = 9999
+						cost_factor = 1
+						equipment = heavy_tank_chassis
+						equipment = heavy_tank_aa_chassis
+						equipment = heavy_tank_amphibious_chassis
+						equipment = heavy_tank_artillery_chassis
+						equipment = heavy_tank_destroyer_chassis
+						equipment = heavy_tank_flame_chassis
+					}
+					add_design_template_bonus = {
+						name = super_heavy_tank_chassis
+						uses = 9999
+						cost_factor = 1
+						equipment = super_heavy_tank_chassis
+						equipment = super_heavy_tank_aa_chassis
+						equipment = super_heavy_tank_amphibious_chassis
+						equipment = super_heavy_tank_artillery_chassis
+						equipment = super_heavy_tank_destroyer_chassis
+						equipment = super_heavy_tank_flame_chassis
+					}
+					add_design_template_bonus = {
+						name = modern_tank_chassis
+						uses = 9999
+						cost_factor = 1
+						equipment = modern_tank_chassis
+						equipment = modern_tank_aa_chassis
+						equipment = modern_tank_artillery_chassis
+						equipment = modern_tank_destroyer_chassis
+					}
+					
+					add_design_template_bonus = {
+						name = mechanized_equipment
+						uses = 9999
+						cost_factor = 1
+						equipment = mechanized_equipment
+						equipment = mechanized_aa_equipment
+						equipment = mechanized_destroyer_equipment
+					}
+					add_design_template_bonus = {
+						name = armored_car_equipment
+						uses = 9999
+						cost_factor = 1
+						equipment = armored_car_equipment
+						equipment = armored_car_aa_equipment
+						equipment = armored_car_destroyer_equipment
+					}
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_ai_boosted_tank_production
+						option = ENABLED_1
+					}
+				}
+				every_country = {
+					limit = { is_ai = yes }
+					add_ideas = { TOM_ai_production_boost_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_ai_boosted_tank_production
+						option = ENABLED_2
+					}
+				}
+				every_country = {
+					limit = { is_ai = yes }
+					add_ideas = { TOM_ai_production_boost_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_ai_boosted_tank_production
+						option = ENABLED_3
+					}
+				}
+				every_country = {
+					limit = { is_ai = yes }
+					add_ideas = { TOM_ai_production_boost_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_ai_boosted_tank_production
+						option = ENABLED_4
+					}
+				}
+				every_country = {
+					limit = { is_ai = yes }
+					add_ideas = { TOM_ai_production_boost_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_ai_boosted_tank_production
+						option = ENABLED_5
+					}
+				}
+				every_country = {
+					limit = { is_ai = yes }
+					add_ideas = { TOM_ai_production_boost_5 }
+				}
+			}
+		}
+		
+		# Heavy Industry
+		effect = {
+			set_global_flag = has_heavy_industry_flag
+		
+			every_country = {
+				set_variable = { tom_hi_tank_target_pointer = 9 }	# Used to resize array
+				set_variable = { tom_hi_tank_target = 50 }			# Used to calculate exact percentage value
+				resize_array = { tom_hi_tank_target_array = 10 }	# Used to visually depict scrollbar
+				
+				set_variable = { tom_hi_industry_target_pointer = 9 }
+				set_variable = { tom_hi_industry_target = 50 }
+				resize_array = { tom_hi_industry_target_array = 10 }
+				
+				set_variable = { tom_hi_mp_target_pointer = 9 }
+				set_variable = { tom_hi_mp_target = 50 }	
+				resize_array = { tom_hi_mp_target_array = 10 }
+				
+				set_variable = { tom_hi_specialisation_target_pointer = 9 }
+				set_variable = { tom_hi_specialisation_target = 50 }	
+				resize_array = { tom_hi_specialisation_target_array = 10 }
+				
+				set_variable = { tom_hi_exp_target_pointer = 9 }
+				set_variable = { tom_hi_exp_target = 50 }
+				resize_array = { tom_hi_exp_target_array = 10 }
+				
+				
+				set_variable = { tom_hi_tank_current = 50 }
+				resize_array = { tom_hi_tank_current_array = 10 }
+				
+				set_variable = { tom_hi_industry_current = 50 }
+				resize_array = { tom_hi_industry_current_array = 10 }
+				
+				set_variable = { tom_hi_mp_current = 50 }
+				resize_array = { tom_hi_mp_current_array = 10 }
+				
+				set_variable = { tom_hi_specialisation_current = 50 }
+				resize_array = { tom_hi_specialisation_current_array = 10 }
+				
+				set_variable = { tom_hi_exp_current = 50 }
+				resize_array = { tom_hi_exp_current_array = 10 }
+				
+				set_variable = { tom_hi_speed_reduction = 1 }
+				set_variable = { tom_hi_tanks_reduction = 0 }
+				set_variable = { tom_hi_industry_reduction = 0 }
+				set_variable = { tom_hi_mp_reduction = 0 }
+				set_variable = { tom_hi_specialisation_reduction = 0 }
+				set_variable = { tom_hi_exp_reduction = 0 }
+				
+				tom_hi_check_monthly_change_update = yes
+				
+				add_ideas = {
+					tom_hi_tanks_3
+					tom_hi_industry_3
+					tom_hi_mp_3
+					tom_hi_specialisation_3
+					tom_hi_exp_3
+				}
+			}
+		}
+	}
+}

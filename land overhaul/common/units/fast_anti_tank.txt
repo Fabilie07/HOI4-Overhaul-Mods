@@ -1,0 +1,115 @@
+sub_units = {
+	armored_car_destroyer = {
+		abbreviation = "CARTD"
+		#sprite = light_armor
+		sprite = armored_car
+		map_icon_category = armored
+		priority = 501
+		ai_priority = 200
+		active = no
+		
+		type = {
+			motorized
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+
+		combat_width = 0
+
+		need = {
+			armored_car_destroyer_equipment = 30
+		}
+		manpower = 300
+		max_organisation = 20
+		default_morale = 0.3
+		training_time = 90
+		max_strength = 2
+		weight = 0.8
+		supply_consumption = 0.02
+
+		soft_attack = -0.5
+		breakthrough = -0.2
+		defense = -0.5
+		armor_value = -0.2
+
+		# Small Car no need Big Engine
+		fuel_consumption = -0.5
+
+		mountain = {
+			attack = 0.1
+		    	movement = 0.1
+		}
+		desert = {
+			attack = 0.1
+			movement = 0.2
+		}
+		plains = {
+			attack = 0.1
+			movement = 0.2
+		}
+
+		same_support_type = fast_anti_tank
+	}
+
+	mechanized_destroyer = {
+		abbreviation = "MTD"
+		sprite = mechanized
+		map_icon_category = infantry
+		priority = 501
+		ai_priority = 200
+		active = no
+		
+		type = {
+			mechanized
+			support
+		}
+		
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_all_infantry
+			category_army
+		}
+
+
+		combat_width = 0
+
+		need = {
+			mechanized_destroyer_equipment = 40
+		}
+		manpower = 500
+		max_organisation = 20
+		default_morale = 0.3
+		training_time = 90
+		max_strength = 2
+		weight = 0.8
+		supply_consumption = 0.02
+
+		armor_value = -0.2
+
+		marsh = {
+			attack = 0.1
+		    	movement = 0.1
+		}
+		forest = {
+			attack = 0.1
+			movement = 0.2
+		}
+		jungle = {
+			attack = 0.1
+			movement = 0.2
+		}
+
+		same_support_type = fast_anti_tank
+	}
+}

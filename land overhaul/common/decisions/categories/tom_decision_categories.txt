@@ -1,0 +1,5 @@
+TOM_tank_academy_decisions = {
+	visible_when_empty = yes
+	scripted_gui = tom_academy_gui
+	priority = 898
+}

@@ -1,0 +1,206 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+	
+	ship_locked = {
+		category = ship_module_locked
+		xp_cost = 0
+	}
+
+	### COMMUNICATION / RADIOS
+
+	ship_signals = {
+		abbreviation = "sig"
+		category = ship_radio
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			surface_detection = 2
+		}
+		xp_cost = 2
+	}
+
+	ship_radio_1 = {
+		abbreviation = "sig1"
+		category = ship_radio
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			surface_visibility = 2
+			surface_detection = 5
+			sub_detection = 2
+			build_cost_ic = 30
+		}
+		xp_cost = 2
+	}
+
+	ship_radio_2 = {
+		abbreviation = "sig2"
+		category = ship_radio
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			surface_detection = 10
+			sub_detection = 4
+			build_cost_ic = 50
+		}
+		xp_cost = 2
+	}
+	ship_radio_3 = {
+		abbreviation = "sig3"
+		category = ship_radio
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			surface_detection = 15
+			sub_detection = 5
+			build_cost_ic = 70
+		}
+		xp_cost = 2
+	}
+
+	### FUNNELS
+
+	funnel_1x = {
+		abbreviation = "fun1"
+		category = ship_funnel
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			surface_visibility = -5
+		}
+		xp_cost = 3
+	}
+
+	funnel_2x = {
+		abbreviation = "fun2"
+		category = ship_funnel
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			surface_visibility = -2
+			build_cost_ic = 20
+		}
+		multiply_stats = {
+			naval_speed = 0.03
+		}
+		xp_cost = 3
+	}
+
+	funnel_3x = {
+		abbreviation = "fun3"
+		category = ship_funnel
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			surface_visibility = 2
+			build_cost_ic = 40
+		}
+		multiply_stats = {
+			naval_speed = 0.05
+		}
+		xp_cost = 3
+	}
+
+	funnel_4x = {
+		abbreviation = "fun4"
+		category = ship_funnel
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			surface_visibility = 5
+			build_cost_ic = 60
+		}
+		multiply_stats = {
+			naval_speed = 0.07
+		}
+		xp_cost = 3
+	}
+
+	### Fuel Tanks / Smoke
+
+	ship_smoke_generator = {
+		abbreviation = "sdb"
+		category = ship_tanks
+		
+		multiply_stats = {
+			surface_visibility = -0.1
+		}
+		xp_cost = 1
+	}
+
+	ship_extra_fuel_tank = {
+		abbreviation = "sdb"
+		category = ship_tanks
+		
+		multiply_stats = {
+			naval_range = 0.2
+			build_cost_ic = 0.02
+		}
+		dismantle_cost_ic = 300
+		xp_cost = 1
+	}
+
+	ship_extra_fuel_tank_2 = {
+		abbreviation = "sdb"
+		category = ship_tanks
+		
+		multiply_stats = {
+			naval_range = 0.5
+			build_cost_ic = 0.03
+		}
+		dismantle_cost_ic = 500
+		xp_cost = 1
+	}
+
+	### DAMAGE CONTROL
+
+	water_pump = {
+		abbreviation = "dc1"
+		category = ship_damage_control
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.1
+			build_cost_ic = 5
+		}
+		xp_cost = 2
+	}
+
+	dc_lockers = {
+		abbreviation = "dc2"
+		category = ship_damage_control
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.2
+			build_cost_ic = 50
+		}
+		xp_cost = 2
+	}
+
+	dc_control_room = {
+		abbreviation = "dc3"
+		category = ship_damage_control
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.3
+			build_cost_ic = 100
+		}
+		xp_cost = 2
+	}
+
+	dc_advanced_automatic = {
+		abbreviation = "dc4"
+		category = ship_damage_control
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.4
+			build_cost_ic = 200
+		}
+		xp_cost = 2
+	}
+}

@@ -1,0 +1,391 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_naval_equipment_unavailable_large"
+		texturefile = "gfx/interface/naval_equipment_large_unavailable.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_checkbox_crossed_out"
+		texturefile = "gfx/interface/buttons/generic_checkbox_crossed_out.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ENG_flag_button"
+		texturefile = "gfx/interface/buttons/ENG_flag_button.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_FRA_flag_button"
+		texturefile = "gfx/interface/buttons/FRA_flag_button.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_GER_flag_button"
+		texturefile = "gfx/interface/buttons/GER_flag_button.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_ITA_flag_button"
+		texturefile = "gfx/interface/buttons/ITA_flag_button.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_JAP_flag_button"
+		texturefile = "gfx/interface/buttons/JAP_flag_button.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_SOV_flag_button"
+		texturefile = "gfx/interface/buttons/SOV_flag_button.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_USA_flag_button"
+		texturefile = "gfx/interface/buttons/USA_flag_button.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_ENG_flag_grey"
+		texturefile = "gfx/interface/buttons/ENG_flag_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_flag_grey"
+		texturefile = "gfx/interface/buttons/FRA_flag_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_flag_grey"
+		texturefile = "gfx/interface/buttons/GER_flag_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_flag_grey"
+		texturefile = "gfx/interface/buttons/ITA_flag_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_flag_grey"
+		texturefile = "gfx/interface/buttons/JAP_flag_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_flag_grey"
+		texturefile = "gfx/interface/buttons/SOV_flag_grey.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_flag_grey"
+		texturefile = "gfx/interface/buttons/USA_flag_grey.dds"
+	}
+	
+	
+	# ENG
+	spriteType = {
+		name = "GFX_ENG_cv_1"
+		texturefile = "gfx/interface/ship_trade/ENG_cv_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_bb_1"
+		texturefile = "gfx/interface/ship_trade/ENG_bb_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_bb_2"
+		texturefile = "gfx/interface/ship_trade/ENG_bb_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_bb_3"
+		texturefile = "gfx/interface/ship_trade/ENG_bb_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_bc_1"
+		texturefile = "gfx/interface/ship_trade/ENG_bc_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_ca_1"
+		texturefile = "gfx/interface/ship_trade/ENG_ca_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_ca_2"
+		texturefile = "gfx/interface/ship_trade/ENG_ca_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_cl_1"
+		texturefile = "gfx/interface/ship_trade/ENG_cl_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_cl_2"
+		texturefile = "gfx/interface/ship_trade/ENG_cl_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_cl_3"
+		texturefile = "gfx/interface/ship_trade/ENG_cl_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_dd_1"
+		texturefile = "gfx/interface/ship_trade/ENG_dd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_dd_2"
+		texturefile = "gfx/interface/ship_trade/ENG_dd_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_ss_1"
+		texturefile = "gfx/interface/ship_trade/ENG_ss_1.dds"
+	}
+	
+	#FRA
+	spriteType = {
+		name = "GFX_FRA_cv_1"
+		texturefile = "gfx/interface/ship_trade/FRA_cv_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_bb_1"
+		texturefile = "gfx/interface/ship_trade/FRA_bb_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_bb_2"
+		texturefile = "gfx/interface/ship_trade/FRA_bb_2.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_ca_1"
+		texturefile = "gfx/interface/ship_trade/FRA_ca_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_cl_1"
+		texturefile = "gfx/interface/ship_trade/FRA_cl_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_dd_1"
+		texturefile = "gfx/interface/ship_trade/FRA_dd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_dd_2"
+		texturefile = "gfx/interface/ship_trade/FRA_dd_2.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_ss_1"
+		texturefile = "gfx/interface/ship_trade/FRA_ss_1.dds"
+	}
+	
+	#GER
+	spriteType = {
+		name = "GFX_GER_cv_1"
+		texturefile = "gfx/interface/ship_trade/GER_cv_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_bb_1"
+		texturefile = "gfx/interface/ship_trade/GER_bb_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_bb_2"
+		texturefile = "gfx/interface/ship_trade/GER_bb_2.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ca_1"
+		texturefile = "gfx/interface/ship_trade/GER_ca_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ca_2"
+		texturefile = "gfx/interface/ship_trade/GER_ca_2.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_cl_1"
+		texturefile = "gfx/interface/ship_trade/GER_cl_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_dd_1"
+		texturefile = "gfx/interface/ship_trade/GER_dd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ss_1"
+		texturefile = "gfx/interface/ship_trade/GER_ss_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ss_2"
+		texturefile = "gfx/interface/ship_trade/GER_ss_2.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_ss_3"
+		texturefile = "gfx/interface/ship_trade/GER_ss_3.dds"
+	}
+	
+	#ITA
+	spriteType = {
+		name = "GFX_ITA_bb_1"
+		texturefile = "gfx/interface/ship_trade/ITA_bb_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_bb_2"
+		texturefile = "gfx/interface/ship_trade/ITA_bb_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_ca_1"
+		texturefile = "gfx/interface/ship_trade/ITA_ca_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_ca_2"
+		texturefile = "gfx/interface/ship_trade/ITA_ca_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_cl_1"
+		texturefile = "gfx/interface/ship_trade/ITA_cl_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_cl_2"
+		texturefile = "gfx/interface/ship_trade/ITA_cl_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_cl_3"
+		texturefile = "gfx/interface/ship_trade/ITA_cl_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_dd_1"
+		texturefile = "gfx/interface/ship_trade/ITA_dd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_ss_1"
+		texturefile = "gfx/interface/ship_trade/ITA_ss_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_ss_2"
+		texturefile = "gfx/interface/ship_trade/ITA_ss_2.dds"
+	}
+	
+	#JAP
+	spriteType = {
+		name = "GFX_JAP_cv_1"
+		texturefile = "gfx/interface/ship_trade/JAP_cv_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_cv_2"
+		texturefile = "gfx/interface/ship_trade/JAP_cv_2.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_cv_3"
+		texturefile = "gfx/interface/ship_trade/JAP_cv_3.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_bb_1"
+		texturefile = "gfx/interface/ship_trade/JAP_bb_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_bb_2"
+		texturefile = "gfx/interface/ship_trade/JAP_bb_2.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_bb_3"
+		texturefile = "gfx/interface/ship_trade/JAP_bb_3.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_bc_1"
+		texturefile = "gfx/interface/ship_trade/JAP_bc_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_bc_2"
+		texturefile = "gfx/interface/ship_trade/JAP_bc_2.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_ca_1"
+		texturefile = "gfx/interface/ship_trade/JAP_ca_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_dd_1"
+		texturefile = "gfx/interface/ship_trade/JAP_dd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_dd_2"
+		texturefile = "gfx/interface/ship_trade/JAP_dd_2.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_ss_1"
+		texturefile = "gfx/interface/ship_trade/JAP_ss_1.dds"
+	}
+	
+	#SOV
+	spriteType = {
+		name = "GFX_SOV_bb_1"
+		texturefile = "gfx/interface/ship_trade/SOV_bb_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_bb_2"
+		texturefile = "gfx/interface/ship_trade/SOV_bb_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_bc_1"
+		texturefile = "gfx/interface/ship_trade/SOV_bc_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_ca_1"
+		texturefile = "gfx/interface/ship_trade/SOV_ca_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_dd_1"
+		texturefile = "gfx/interface/ship_trade/SOV_dd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_dd_2"
+		texturefile = "gfx/interface/ship_trade/SOV_dd_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_dd_3"
+		texturefile = "gfx/interface/ship_trade/SOV_dd_3.dds"
+	}
+	
+	#USA
+	spriteType = {
+		name = "GFX_USA_cv_1"
+		texturefile = "gfx/interface/ship_trade/USA_cv_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_cv_2"
+		texturefile = "gfx/interface/ship_trade/USA_cv_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_cv_3"
+		texturefile = "gfx/interface/ship_trade/USA_cv_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_bb_1"
+		texturefile = "gfx/interface/ship_trade/USA_bb_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_bb_2"
+		texturefile = "gfx/interface/ship_trade/USA_bb_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_bb_3"
+		texturefile = "gfx/interface/ship_trade/USA_bb_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_ca_1"
+		texturefile = "gfx/interface/ship_trade/USA_ca_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_ca_2"
+		texturefile = "gfx/interface/ship_trade/USA_ca_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_cl_1"
+		texturefile = "gfx/interface/ship_trade/USA_cl_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_cl_2"
+		texturefile = "gfx/interface/ship_trade/USA_cl_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_dd_1"
+		texturefile = "gfx/interface/ship_trade/USA_dd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_dd_2"
+		texturefile = "gfx/interface/ship_trade/USA_dd_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_ss_1"
+		texturefile = "gfx/interface/ship_trade/USA_ss_1.dds"
+	}
+}

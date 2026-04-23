@@ -1,0 +1,57 @@
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "nom_academy_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height=220 }
+		
+		#BACKGROUND
+		background = {
+			name ="academy_bg"
+			spriteType = "GFX_propaganda_bg"
+		}
+
+		#POSTER LEFT
+		iconType = {
+			name ="academy_poster_left"
+			position = { x=10 y=0 }
+		}
+		instantTextBoxType = {
+			name = "academy_poster_left_title"
+			position = { x=12 y=10 }
+			font = "hoi4_typewriter22"
+			text = "Early"
+			format = center
+			maxWidth = 160
+		}
+
+		#POSTER CENTER
+		iconType = {
+			name ="academy_poster_center"
+			position = { x=170 y=0 }
+		}
+		instantTextBoxType = {
+			name = "academy_poster_center_title"
+			position = { x=172 y=10 }
+			font = "hoi4_typewriter22"
+			text = "Intermediate"
+			format = center
+			maxWidth = 160
+		}
+
+		#POSTER RIGHT
+		iconType = {
+			name ="academy_poster_right"
+			position = { x=330 y=0 }
+		}
+		instantTextBoxType = {
+			name = "academy_poster_right_title"
+			position = { x=332 y=10 }
+			font = "hoi4_typewriter22"
+			text = "Advanced"
+			format = center
+			maxWidth = 160
+		}
+	}
+}

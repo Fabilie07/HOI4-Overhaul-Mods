@@ -1,0 +1,15 @@
+default = {
+	attack_helicopter_equipment_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_attack_helicopter_icon_1
+				GFX_attack_helicopter_icon_2
+				GFX_attack_helicopter_icon_3
+			}
+			models = {
+				infantry_entity
+			}
+		}
+	}
+}

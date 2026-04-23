@@ -1,0 +1,158 @@
+﻿	
+	
+air_wings = {
+	### 1 USAAF Wing -- Los Angeles
+	378 = {
+		# 7th Bombardment Group 
+		# 19th Bombardment Group 
+		medium_plane_airframe_0 = {
+			owner = "USA" 
+			amount = 60
+			version_name = "[AOM] Interwar Medium Bomber"
+		}
+		# 17th Attack Group 
+		small_plane_cas_airframe_0 = {
+			owner = "USA" 
+			amount = 48
+			version_name = "[AOM] Interwar CAS"
+		}
+	}
+
+	### 2 USAAF Wing -- Norfolk
+	362 = { 
+		# 1st Pursuit Group 
+		# 8th Pursuit Group 
+		small_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 72
+			version_name = "[AOM] Interwar Fighter"
+		}
+		small_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 72
+			version_name = "[AOM] Interwar Fighter"
+		}
+		# 2nd Bombardment Group 
+		# 9th Bombardment Group 
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 96
+			version_name = "[AOM] Basic Medium Bomber"
+		}
+	}
+
+	### 3 USAAF Wing -- Louisiana
+	371 = { 
+		# 20th Pursuit Group 
+		small_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 96
+			version_name = "[AOM] Interwar Fighter"
+		}
+		# 3rd Attack Group 
+		small_plane_cas_airframe_0 = {
+			owner = "USA" 
+			amount = 48
+			version_name = "[AOM] Interwar CAS"
+		}
+	}
+
+	### 18th Composite Wing -- Hawaii
+	629 = { 
+		# 18th Pursuit Group 
+		small_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 48
+			version_name = "[AOM] Interwar Fighter"
+		}
+		# 5th Composite Group 
+		medium_plane_airframe_0 = {
+			owner = "USA" 
+			amount = 36
+			version_name = "[AOM] Interwar Medium Bomber"
+		}
+	}
+
+	### 19th Composite Wing -- Panama Canal
+	685 = { 
+		# 16th Pursuit Group 
+		small_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 96
+			version_name = "[AOM] Interwar Fighter"
+		}
+		# 6th Composite Group 
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 12
+			version_name = "[AOM] Basic Medium Bomber"
+		}
+	}
+
+	### Philippines Composite Group -- Manilla
+#	327 = { 
+#		# 4th Composite Group 
+#		fighter_equipment_0 =  {
+#			owner = "USA" 
+#			amount = 36
+#		}
+#	}
+
+	### USN Atlantic Naval Patrol Division -- Norfolk
+	362 = { 
+		# Naval Patrol Wing 3 
+		medium_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 36
+			version_name = "[AOM] Interwar Medium Bomber"
+		}
+	}
+	### USN Pacific Naval Patrol Division -- San Diego
+	378 = { 
+		# Naval Patrol Wing 1 
+		# Naval Patrol Wing 2 
+		medium_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 72
+			version_name = "[AOM] Interwar Medium Bomber"
+		}
+	}
+	"USS Ranger" = {
+		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "[AOM] Interwar CV Fighter"} # historical: 36
+		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 version_name = "[AOM] Interwar CV CAS" } # historical: 15
+		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 version_name = "[AOM] Interwar CV CAS" } # historical: 15
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 version_name = "[AOM] Interwar CV Naval Bomber" } # historical: 12			
+	}
+	"USS Lexington" = {
+		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "[AOM] Interwar CV Fighter"} # historical: 16
+		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 version_name = "[AOM] Interwar CV CAS" } # historical: 30
+		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 version_name = "[AOM] Interwar CV CAS" } # historical: 30
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 version_name = "[AOM] Interwar CV Naval Bomber" } # historical: 12
+	}
+	"USS Saratoga" = {
+		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "[AOM] Interwar CV Fighter"} # historical: 16
+		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 version_name = "[AOM] Interwar CV CAS" } # historical: 30
+		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 version_name = "[AOM] Interwar CV CAS" } # historical: 30
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 version_name = "[AOM] Interwar CV Naval Bomber" } # historical: 12
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "USA" 
+			version_name = "[AOM] Basic Fighter"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+		industrial_manufacturer = mio:USA_north_american_aviation_organization
+	}
+
+}
+#####################

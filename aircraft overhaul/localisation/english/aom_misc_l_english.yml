@@ -1,0 +1,50 @@
+﻿l_english:
+
+ RULE_FREE_DESIGNS: "Free Equipment Designs"
+ RULE_FREE_AIR_DESIGNS: "Free Aircraft Designs"
+ RULE_DESIGNS_DISABLED: "Disabled"
+ RULE_DESIGNS_DISABLED_DESC: "Plane Designs will cost the normal amount of Air EXP."
+ RULE_DESIGNS_ENABLED: "Enabled"
+ RULE_DESIGNS_ENABLED_DESC: "All Plane Designs will be free."
+ 
+ RULE_GROUP_AOM: "BBA Aircraft Overhaul"
+ RULE_AOM_DOCTRINE_RESETS: "Air Doctrine Resets"
+ RULE_RESETS_DISABLED: "Disabled"
+ RULE_RESETS_DISABLED_DESC: "Doctrines cannot be reset. Not recommended."
+ RULE_RESETS_1: "1"
+ RULE_RESETS_1_DESC: "Each Air Doctrine Track can be reset once, retaining the previous boni."
+ RULE_RESETS_2: "2"
+ RULE_RESETS_2_DESC: "Each Air Doctrine Track can be reset twice, retaining the previous boni."
+ RULE_RESETS_3: "3"
+ RULE_RESETS_3_DESC: "Each Air Doctrine Track can be reset three times, retaining the previous boni."
+ RULE_RESETS_4: "4"
+ RULE_RESETS_4_DESC: "Each Air Doctrine Track can be reset four times, retaining the previous boni."
+ RULE_RESETS_5: "5"
+ RULE_RESETS_5_DESC: "Each Air Doctrine Track can be reset five times, retaining the previous boni."
+ 
+ cat_air_engine_research:0 "Aircraft Engine Research Speed"
+ air_special_research:0 "Special Air Technology Research Speed"
+ 
+ sp_aom_vertical_cannons_speed_factor:0 "Vertical Cannons Research Speed"
+ sp_aom_alternative_materials_speed_factor:0 "Alternative Materials Research Speed"
+
+ aom_plane_ammo_upgrade:0 "Ammunition"
+ aom_plane_wing_upgrade:0 "Integrity"
+ aom_plane_strat_upgrade:0 "Bomb Bay"
+ aom_plane_lift_upgrade:0 "Wing Size"
+
+ EQ_MOD_SLOT_supercharger_type_slot_TITLE:0 "Supercharger"
+ EQ_MOD_SLOT_wings_type_slot_TITLE:0 "Wing Form"
+ EQ_MOD_SLOT_skin_type_slot_TITLE:0 "Skin"
+ EQ_MOD_SLOT_wheels_type_slot_TITLE:0 "Gear"
+
+ medium_plane_air_transport_airframe_desc:0 "$transport_plane_equipment_desc$"
+ medium_plane_air_transport_airframe:1 "$transport_plane_equipment$"
+ 
+ category_transport:0 "Transport Aircraft"
+ category_airship:0 "Airships"
+ category_interceptor:0 "Interceptors"
+ category_light_interceptor:0 "Light Interceptors"
+
+ adjuster_mission_paradrop:0 "$AIRWING_MISSION_TYPE_PARADROP$"
+ adjuster_mission_air_supply:0 "$AIRWING_MISSION_TYPE_AIR_SUPPLY$"

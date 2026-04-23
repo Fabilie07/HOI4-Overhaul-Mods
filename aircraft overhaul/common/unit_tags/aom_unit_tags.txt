@@ -1,0 +1,7 @@
+sub_unit_categories = {
+	category_transport_plane
+	category_airship
+	
+	category_interceptor
+	category_light_interceptor
+}

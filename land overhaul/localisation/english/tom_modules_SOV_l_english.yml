@@ -1,0 +1,53 @@
+﻿l_english:
+
+ SOV_tank_machine_gun_2x:0 "2x 7.62mm DT"
+ SOV_tank_heavy_machine_gun:0 "12.7mm DShKT"
+ SOV_tank_heavy_machine_gun_2x:0 "2x 12.7mm DShKT"
+ SOV_tank_heavy_machine_gun_4x:0 "4x 12.7mm DShKT"
+
+ SOV_tank_small_cannon:0 "37mm Model 30"
+ SOV_tank_small_cannon_2:0 "45mm L46 20-K"
+ SOV_tank_medium_cannon:0 "76mm F-34"
+ SOV_tank_medium_cannon_2:0 "85mm D-5T"
+ SOV_tank_heavy_cannon:0 "122mm D-25"
+ SOV_tank_heavy_cannon_2:0 "122mm D-25T"
+ SOV_tank_heavy_cannon_3:0 "122mm D-25S"
+ SOV_tank_high_velocity_cannon_1:0 "57mm ZiS-2"
+ SOV_tank_high_velocity_cannon_2:0 "57mm ZiS-4"
+ SOV_tank_high_velocity_cannon_3:0 "100mm D-10S"
+ SOV_tank_super_heavy_cannon:0 "152mm ML-20S"
+ SOV_tank_modern_cannon:0 "100mm D-10T"
+
+ SOV_tank_close_support_gun:0 "76mm ZiS-5"
+ SOV_tank_medium_howitzer:0 "122mm M-30S"
+ SOV_tank_medium_howitzer_2:0 "122mm M-30S"
+ SOV_tank_heavy_howitzer:0 "152mm M-10T"
+ 
+ SOV_tank_anti_air_cannon:0 "25mm 72-K M1940"
+ SOV_tank_anti_air_cannon_2x:0 "2x 25mm 72-K M1940"
+ SOV_tank_anti_air_cannon_4x:0 "4x 25mm 72-K M1940"
+ SOV_tank_anti_air_cannon_2:0 "37mm 61-K M1939"
+ SOV_tank_anti_air_cannon_2_2x:0 "2x 37mm 61-K M1939"
+ SOV_tank_anti_air_cannon_3:0 "76mm M1938"
+
+ SOV_tank_light_aphe:0 "B-240"
+ SOV_tank_light_apcr:0 "UBR-240P"
+ SOV_tank_light_heat:0 "OF-350"
+ SOV_tank_light_he:0 "BR-353A"
+
+ SOV_tank_medium_aphe:0 "BR-350"
+ SOV_tank_medium_apcr:0 "BR-350P"
+ SOV_tank_medium_heat:0 "OF-462"
+ SOV_tank_medium_he:0 "BP-460A"
+
+ SOV_tank_heavy_aphe:0 "BR-471"
+ SOV_tank_heavy_he:0 "OF-530"
+
+ SOV_tank_super_heavy_aphe:0 "BR-540"
+
+ SOV_tank_gasoline_engine:0 "400hp M-5"
+ SOV_tank_gasoline_engine_2:0 "500hp M-17T"
+
+ SOV_tank_diesel_engine_2:0 "450hp V2"
+ SOV_tank_diesel_engine_3:0 "500hp V12"
+ SOV_tank_modern_diesel_engine:0 "520hp V44"

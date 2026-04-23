@@ -1,0 +1,67 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_advanced_sonar_medium"
+		texturefile = "gfx/interface/technologies/sonar_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_sonar_medium"
+		texturefile = "gfx/interface/technologies/sonar_4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_improved_shells_medium"
+		texturefile = "gfx/interface/technologies/improved_heavy_shell.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_basic_shells_medium"
+		texturefile = "gfx/interface/technologies/basic_light_shell.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ship_range_improvements_medium"
+		texturefile = "gfx/interface/technologies/fuel_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ship_range_improvements2_medium"
+		texturefile = "gfx/interface/technologies/fuel_tank_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_deck_conversion2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/converted_bb_2.dds"
+	}
+	SpriteType = {	
+		name = "GFX_deck_conversion1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/ship_hull_carrier_conversion_ca.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_dp_light_battery_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_battery_icn_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sp_naval_pocket_battleship"
+		texturefile = "gfx/interface/special_project/project_icons/sp_pocket_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_sp_naval_hybrid_carrier"
+		texturefile = "gfx/interface/special_project/project_icons/sp_hybrid_carrier.dds"
+	}
+	SpriteType = {
+		name = "GFX_sp_naval_super_heavy_carrier"
+		texturefile = "gfx/interface/special_project/project_icons/sp_super_heavy_carrier.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_naval_engineering_medium"
+		texturefile = "gfx/interface/technologies/naval_engineering_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_naval_engineering2_medium"
+		texturefile = "gfx/interface/technologies/naval_engineering_2.dds"
+	}
+}

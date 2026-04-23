@@ -1,0 +1,23 @@
+
+nom_naval_exercise = {
+	icon = generic_research
+	priority = 889
+	visible = {
+		always = yes
+	}
+}
+
+nom_blockade_decisions = {
+	icon = GFX_decision_category_MTG_naval_treaties
+	priority = 890
+
+	visible = {
+		always = no
+	}
+}
+
+nom_naval_academy_decisions = {
+	visible_when_empty = yes
+	scripted_gui = nom_academy_gui
+	priority = 897
+}

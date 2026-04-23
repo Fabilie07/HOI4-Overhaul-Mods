@@ -1,0 +1,16 @@
+guiTypes = {
+
+	# small_plane_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_airship_equipment"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_airship"
+			position = { x=0 y=0 }
+		}
+	}
+}

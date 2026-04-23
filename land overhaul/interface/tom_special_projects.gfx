@@ -1,0 +1,28 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_sp_land_two_plane_stabilizer"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_two_plane_stabilizer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sp_land_night_vision"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_night_vision.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sp_land_rocket_mortars"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_rocket_mortars.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_sp_land_amphibious_tank"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_amphibious_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sp_land_main_battle_tank"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_main_battle_tank.dds"
+	}
+	
+}

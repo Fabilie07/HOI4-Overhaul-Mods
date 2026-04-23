@@ -1,0 +1,20 @@
+﻿l_english:
+
+ heavy_tank_spearhead:0 "Heavy Spearhead (Support)"
+ heavy_tank_spearhead_desc: "A small group of Heavy Breakthrough Tanks can assault the enemy where they are weak. They clear a path for other mobile units to break through the enemy's line."
+ mobile_spg_support:0 "Mobile Artillery (Support)"
+ mobile_spg_support_desc: "Mobile Artillery Pieces are capable of quickly relocating, making them far less prone to getting hit with counterfire. Their speed increases the effectiveness in restricted environments."
+ infantry_tank_support:0 "Infantry Tank (Support)"
+ infantry_tank_support_desc: "Infantry Support Tanks provide covering fire and draw attention away from more vulnerable targets."
+ heavy_tank_destroyer_support:0 "Mobile Anti-Tank Bunkers (Support)"
+ heavy_tank_destroyer_support_desc: "Powerful Ambush Vehicles with thick armor are perfect for stopping armored advances."
+
+ armored_car_aa:0 "Wheeled SPAA (Support)"
+ armored_car_destroyer:0 "Wheeled TD (Support)"
+ mechanized_aa:0 "Mechanized SPAA (Support)"
+ mechanized_destroyer:0 "Mechanized TD (Support)"
+ 
+ category_light_armor:0 "Light Armor"
+ category_medium_armor:0 "Medium Armor"
+ category_heavy_armor:0 "Heavy Armor"
+ category_mechanical:0 "Mechanical Vehicles"

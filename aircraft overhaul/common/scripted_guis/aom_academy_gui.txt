@@ -1,0 +1,19 @@
+scripted_gui = {
+	aom_academy_gui = {
+		context_type = decision_category
+		window_name = "aom_academy_window"
+		dirty = aom_academy_update
+		
+		properties = {
+			academy_poster_left = {
+				image = [aom_academy_slot_1_icon]
+			}
+			academy_poster_center = {
+				image = [aom_academy_slot_2_icon]
+			}
+			academy_poster_right = {
+				image = [aom_academy_slot_3_icon]
+			}
+		}
+	}
+}

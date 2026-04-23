@@ -1,0 +1,12 @@
+version="1.32"
+tags={
+	"Balance"
+	"Technologies"
+	"Gameplay"
+}
+dependencies={
+	"NSB Tank Overhaul"
+}
+name="NSB Tank Overhaul - In-Depth Designer Addon"
+supported_version="1.17.*"
+remote_file_id="3361759799"

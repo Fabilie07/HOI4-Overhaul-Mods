@@ -1,0 +1,374 @@
+@doctrine_cost = 35
+
+air_subdoctrine_naval_open_water_patrols = {
+    track = naval_aircraft
+    name = SUBDOCTRINE_NAVAL_OPEN_WATER_PATROLS
+    description = SUBDOCTRINE_NAVAL_OPEN_WATER_PATROLS_DESC
+    icon = GFX_doctrine_force_rotation_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_naval_open_water_patrols }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_maritime_patrol_bomber = {
+		air_range = 0.05
+		sub_detection = 0.05
+	}
+	air_range_factor = 0.1
+
+    rewards = {
+		extended_patrols = {
+			category_maritime_patrol_bomber = {
+				air_range = 0.05
+				sub_detection = 0.05
+			}
+		}
+		seaplane_tenders = {
+			air_range_factor = 0.05
+		}
+		constant_patrols = {
+			category_maritime_patrol_bomber = {
+				air_range = 0.05
+				sub_detection = 0.05
+			}
+		}
+        closing_the_gap = {
+			air_range_factor = 0.05
+		}
+		aerial_escorts = {
+			category_maritime_patrol_bomber = {
+				air_range = 0.05
+				sub_detection = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_naval_seazone_dominance = {
+    track = naval_aircraft
+    name = SUBDOCTRINE_NAVAL_SEAZONE_DOMINANCE
+    description = SUBDOCTRINE_NAVAL_SEAZONE_DOMINANCE_DESC
+    icon = GFX_doctrine_naval_strike_torpedo_tactics_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_naval_seazone_dominance }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	air_nav_efficiency = 0.1
+	mines_planting_by_air_factor = 0.15
+	mines_sweeping_by_air_factor = 0.15
+
+    rewards = {
+		route_control = {
+			mines_planting_by_air_factor = 0.05
+			mines_sweeping_by_air_factor = 0.05
+		}
+		navy_cooperation = {
+			air_nav_efficiency = 0.05
+		}
+		aerial_blockade = {
+			category_nav_bomber = {
+				naval_strike_attack = 0.1
+			}
+			category_maritime_patrol_bomber = {
+				naval_strike_attack = 0.05
+				surface_detection = 0.1
+			}
+		}
+        shipping_lane_deniance = {
+			mines_planting_by_air_factor = 0.05
+			mines_sweeping_by_air_factor = 0.05
+		}
+		open_water_attacks = {
+			air_nav_efficiency = 0.05
+		}
+    }
+}
+
+air_subdoctrine_naval_fleet_suppression = {
+    track = naval_aircraft
+    name = SUBDOCTRINE_NAVAL_FLEET_SUPPRESSION
+    description = SUBDOCTRINE_NAVAL_FLEET_SUPPRESSION_DESC
+    icon = GFX_doctrine_base_strike_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_naval_fleet_suppression }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	port_strike = 0.1
+	category_tac_bomber = {
+		naval_strike_attack = 0.1
+		air_agility = 0.05
+	}
+	category_strat_bomber = {
+		naval_strike_attack = 0.1
+		air_agility = 0.05
+	}
+
+    rewards = {
+		destruction_in_port = {
+			port_strike = 0.05
+		}
+		level_ship_bombing = {
+			category_tac_bomber = {
+				naval_strike_attack = 0.05
+			}
+			category_strat_bomber = {
+				naval_strike_attack = 0.05
+			}
+		}
+		repeated_port_strikes = {
+			port_strike = 0.05
+		}
+        high_altitude_ship_attacks = {
+			category_tac_bomber = {
+				naval_strike_attack = 0.05
+				air_agility = 0.05
+			}
+			category_strat_bomber = {
+				naval_strike_attack = 0.05
+				air_agility = 0.05
+			}
+		}
+		repair_disruption = {
+			port_strike = 0.05
+		}
+    }
+}
+
+air_subdoctrine_naval_light_naval_bombers = {
+    track = naval_aircraft
+    name = SUBDOCTRINE_NAVAL_LIGHT_NAVAL_BOMBERS
+    description = SUBDOCTRINE_NAVAL_LIGHT_NAVAL_BOMBERS_DESC
+    icon = GFX_doctrine_massed_strikes_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_naval_light_naval_bombers }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	nav_bomber = {
+		naval_strike_attack = 0.05
+		naval_strike_targetting = 0.05
+		air_agility = 0.1
+	}
+	cv_nav_bomber = {
+		naval_strike_attack = 0.05
+		naval_strike_targetting = 0.05
+		air_agility = 0.1
+	}
+	cv_cas = {
+		naval_strike_attack = 0.05
+		naval_strike_targetting = 0.05
+		air_agility = 0.1
+	}
+
+    rewards = {
+		defensive_maneuvers = {
+			nav_bomber = {
+				air_agility = 0.05
+			}
+			cv_nav_bomber = {
+				air_agility = 0.05
+			}
+			cv_cas = {
+				air_agility = 0.05
+			}
+		}
+		late_release = {
+			nav_bomber = {
+				naval_strike_attack = 0.05
+				naval_strike_targetting = 0.05
+			}
+			cv_nav_bomber = {
+				naval_strike_attack = 0.05
+				naval_strike_targetting = 0.05
+			}
+			cv_cas = {
+				naval_strike_attack = 0.05
+				naval_strike_targetting = 0.05
+			}
+		}
+		constant_sorties = {
+			nav_bomber = {
+				fuel_consumption = -0.15
+			}
+			cv_nav_bomber = {
+				fuel_consumption = -0.15
+			}
+			cv_cas = {
+				fuel_consumption = -0.15
+			}
+		}
+        multi_angle_atttacks = {
+			nav_bomber = {
+				naval_strike_attack = 0.05
+				naval_strike_targetting = 0.05
+			}
+			cv_nav_bomber = {
+				naval_strike_attack = 0.05
+				naval_strike_targetting = 0.05
+			}
+			cv_cas = {
+				naval_strike_attack = 0.05
+				naval_strike_targetting = 0.05
+			}
+		}
+		extensive_survivability_training = {
+			nav_bomber = {
+				air_agility = 0.05
+			}
+			cv_nav_bomber = {
+				air_agility = 0.05
+			}
+			cv_cas = {
+				air_agility = 0.05
+			}
+		}
+    }
+}
+
+air_subdoctrine_naval_carrier_to_land_operations = {
+    track = naval_aircraft
+    name = SUBDOCTRINE_NAVAL_CARRIER_TO_LAND_OPERATIONS
+    description = SUBDOCTRINE_NAVAL_CARRIER_TO_LAND_OPERATIONS_DESC
+    icon = GFX_doctrine_carrier_operations_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_naval_carrier_to_land_operations }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	category_carrier_fighter = {
+		air_range = 0.1
+		air_defence = 0.15
+	}
+	category_carrier_cas = {
+		air_range = 0.1
+		air_ground_attack = 0.15
+	}
+	carrier_scout_plane = {
+		air_range = 0.15
+	}
+	navy_carrier_air_agility_factor = 0.1
+
+    rewards = {
+		floating_air_bases = {
+			category_carrier_fighter = {
+				air_defence = 0.1
+			}
+			category_carrier_cas = {
+				air_ground_attack = 0.05
+				air_defence = 0.05
+			}
+		}
+		inland_operations = {
+			category_carrier_fighter = {
+				air_range = 0.1
+			}
+			category_carrier_cas = {
+				air_range = 0.1
+			}
+			carrier_scout_plane = {
+				air_range = 0.1
+			}
+		}
+		offshore_starts = {
+			navy_carrier_air_agility_factor = 0.1
+		}
+        opportunistic_attacks = {
+			category_carrier_fighter = {
+				air_attack = 0.1
+			}
+			category_carrier_cas = {
+				air_ground_attack = 0.05
+			}
+		}
+		branch_interoperation = {
+			category_carrier_fighter = {
+				air_defence = 0.1
+			}
+			category_carrier_cas = {
+				air_defence = 0.1
+			}
+		}
+    }
+}
+
+air_subdoctrine_naval_carrier_air_fleet = {
+    track = naval_aircraft
+    name = SUBDOCTRINE_NAVAL_CARRIER_AIR_FLEET
+    description = SUBDOCTRINE_NAVAL_CARRIER_AIR_FLEET_DESC
+    icon = GFX_doctrine_naval_strike_tactics_medium
+
+    xp_cost = @doctrine_cost
+    xp_type = air
+
+    available = {
+        NOT = { has_tech = aom_doctrine_naval_carrier_air_fleet }
+    }
+
+    ai_will_do = {
+        base = 1
+    }
+
+    # EFFECTS
+	sortie_efficiency = 0.1
+	fighter_sortie_efficiency = 0.2
+
+    rewards = {
+		coordinated_strikes = {
+			navy_carrier_air_targetting_factor = 0.1
+		}
+		constant_air_patrol = {
+			fighter_sortie_efficiency = 0.1
+		}
+		rapid_carrier_sorties = {
+			carrier_sortie_hours_delay = -1
+		}
+        flightdeck_coordination = {
+			sortie_efficiency = 0.1
+		}
+		opposition_destruction = {
+			navy_carrier_air_targetting_factor = 0.1
+		}
+    }
+}

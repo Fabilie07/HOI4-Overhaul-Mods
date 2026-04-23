@@ -1,0 +1,214 @@
+generic_mechanized = {
+	category = land
+	roles = { land_mechanized }
+	
+	available_for = {}
+
+	priority = {
+		factor = 1000
+	}
+	
+	mechanized_1940 = {
+		priority = {
+			factor = 1
+			modifier = { 
+				has_tech = mechanised_infantry2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mechanized_equipment_1
+			modules = {
+				mech_main_armament_slot = mech_machine_gun_2x
+				turret_type_slot = mech_machine_gun_mount
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				additional_weapon_slot = empty
+				ammunition_slot = empty
+				radio_type_slot = tank_radio_1
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 3
+				mech_nsb_armor_upgrade = {
+					base = 1
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+	}
+	
+	mechanized_1942 = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = mechanised_infantry3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mechanized_equipment_2
+			modules = {
+				mech_main_armament_slot = mech_machine_gun_2x
+				turret_type_slot = mech_machine_gun_mount
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				additional_weapon_slot = empty
+				ammunition_slot = empty
+				radio_type_slot = tank_radio_2
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 3
+				mech_nsb_armor_upgrade = {
+					base = 1
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+	}
+	
+	mechanized_1944 = {
+		priority = {
+			factor = 100
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mechanized_equipment_3
+			modules = {
+				mech_main_armament_slot = mech_machine_gun_2x
+				turret_type_slot = mech_machine_gun_mount
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				additional_weapon_slot = empty
+				ammunition_slot = empty
+				radio_type_slot = tank_radio_3
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 4
+				mech_nsb_armor_upgrade = {
+					base = 2
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+
+generic_amphibious_mechanized = {
+	category = land
+	roles = { land_amphibious_mechanized }
+	
+	available_for = {}
+
+	priority = {
+		factor = 100
+	}
+	
+	amphibious_mechanized_1941 = {
+		priority = {
+			factor = 1
+			modifier = { 
+				has_tech = amphibious_mechanized_infantry_2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = amphibious_mechanized_equipment_1
+			modules = {
+				mech_main_armament_slot = mech_machine_gun_2x
+				turret_type_slot = mech_machine_gun_mount
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				additional_weapon_slot = empty
+				ammunition_slot = empty
+				radio_type_slot = tank_radio_2
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 3
+				mech_nsb_armor_upgrade = {
+					base = 1
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+	}
+	
+	amphibious_mechanized_1943 = {
+		priority = {
+			factor = 10
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = amphibious_mechanized_equipment_2
+			modules = {
+				mech_main_armament_slot = mech_machine_gun_2x
+				turret_type_slot = mech_machine_gun_mount
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				additional_weapon_slot = empty
+				ammunition_slot = empty
+				radio_type_slot = tank_radio_3
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 4
+				mech_nsb_armor_upgrade = {
+					base = 2
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,473 @@
+sp_land_two_plane_stabilizer = {
+	specialization = specialization_land
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = improved_computing_machine
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	resource_cost = {
+		resources = {
+			chromium = 8
+			tungsten = 8
+		}
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.medium
+	
+	project_output = {
+		enable_equipment_modules = {
+			two_plane_stabilizer 
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}
+
+sp_land_night_vision = {
+	specialization = specialization_land
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = night_vision
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	resource_cost = {
+		resources = {
+			chromium = 8
+			tungsten = 8
+		}
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+	
+	project_output = {
+		enable_equipment_modules = {
+			sw_night_vision 
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}
+
+sp_land_rocket_mortars = {
+	specialization = specialization_land
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = rocket_artillery
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	resource_cost = {
+		resources = {
+			steel = 4
+			tungsten = 4
+		}
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.medium
+	
+	project_output = {
+		enable_equipment_modules = {
+			tank_medium_rocket_mortar
+			tank_heavy_rocket_mortar
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}
+
+
+
+sp_land_main_battle_tank = {
+	specialization = specialization_land
+
+	project_tags = sp_tag_tank
+	
+	allowed = {
+		FROM = { has_dlc = "No Step Back" }
+	}
+
+	ai_will_do = {
+		base = 1
+	}
+	
+	available = {
+		FROM = {
+			or = {
+				has_tech = modern_light_tank_chassis
+				has_tech = main_battle_tank_chassis
+				has_tech = modern_heavy_tank_chassis
+			}
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 3
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.large
+	
+	resource_cost = {
+		resources = { 
+			steel = 12
+			chromium = 8
+		}
+	}
+	
+	project_output = {
+		country_effects = {
+			add_design_template_bonus = {
+				name = sp_land_main_battle_tank
+				uses = 1
+				cost_factor = 1
+				equipment = modern_tank_chassis
+			}
+		}
+
+		enable_equipments = {
+			modern_tank_chassis_1 
+		}
+		
+		enable_equipment_modules = {
+			tank_modern_tank_turret
+			tank_modern_cannon
+		}
+
+		enable_subunits = { 
+			modern_armor
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+	
+	unique_prototype_rewards = {
+		sp_land_reward_mbt_chassis = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 20
+				max = 70
+			}
+
+			weight = {
+				base = 6
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_chassis_redesign
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							armor_value = 0.05
+						}
+					}
+
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.medium
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_chassis_strengthen
+				
+				iteration_output = {
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.low
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_chassis_ignore
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							reliability = -0.05
+						}
+					}
+				}
+			}
+		}
+		
+		sp_land_reward_mbt_turret_ring = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 40
+				max = 100
+			}
+
+			weight = {
+				base = 6
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_turret_ring_redesign
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							armor_value = 0.05
+							breakthrough = 0.05
+						}
+					}
+
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.medium
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_turret_ring_reinforce
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							armor_value = 0.03
+						}
+					}
+					
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.low
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_turret_ring_ignore
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							reliability = -0.05
+						}
+					}
+				}
+			}
+		}
+		
+		sp_land_reward_mbt_engine = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 20
+				max = 80
+			}
+
+			weight = {
+				base = 6
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_engine_redesign
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							build_cost_ic = 0.06
+							maximum_speed = 0.15
+						}
+					}
+
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.medium
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_engine_tuning
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							reliability = -0.05
+							maximum_speed = 0.05
+						}
+					}
+					
+					country_effects = {
+						FROM = {
+							add_project_progress_ratio = constant:sp_progress.loss.low
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_engine_ignore
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							reliability = -0.1
+						}
+					}
+				}
+			}
+		}
+		
+		sp_land_reward_mbt_armor = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 40
+				max = 100
+			}
+
+			weight = {
+				base = 6
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_armor_increase
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							build_cost_ic = 0.04
+							armor_value = 0.1
+							breakthrough = 0.1
+						}
+					}
+				}
+			}
+
+			option = {
+				token = sp_land_reward_option_mbt_armor_ignore
+				
+				iteration_output = {
+					equipment_bonus = {
+						modern_tank_chassis_1 = {
+							reliability = 0.1
+						}
+					}
+				}
+			}
+		}
+	}
+}

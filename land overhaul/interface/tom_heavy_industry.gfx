@@ -1,0 +1,143 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_tom_hi_background_picture"
+		texturefile = "gfx/interface/om_heavy_industry/background_picture.dds"
+	}
+
+
+	### TOOLTIP
+	SpriteType = {
+		name = "GFX_tom_hi_tooltip_bg"
+		texturefile = "gfx/interface/om_heavy_industry/tooltip_bg.dds"
+	}
+
+	### SCROLL BAR
+	SpriteType = {
+		name = "GFX_tom_hi_scrollbar_bg"
+		texturefile = "gfx/interface/om_heavy_industry/scrollbar_bg.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_hi_scrollbar_bar"
+		texturefile = "gfx/interface/om_heavy_industry/scrollbar_bar.dds"
+	}
+
+	### PROGRESS BAR
+	SpriteType = {
+		name = "GFX_tom_hi_progress_bar_bg"
+		texturefile = "gfx/interface/om_heavy_industry/progressbar_bg.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_hi_progress_bar_bar"
+		texturefile = "gfx/interface/om_heavy_industry/progressbar_bar.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_hi_progress_bar_milestone"
+		texturefile = "gfx/interface/om_heavy_industry/progressbar_milestone.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_tanks_speciality"
+		texturefile = "gfx/interface/om_heavy_industry/tanks_speciality.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_tanks_focus"
+		texturefile = "gfx/interface/om_heavy_industry/tanks_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_tanks_balanced"
+		texturefile = "gfx/interface/om_heavy_industry/tanks_balanced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_tanks_reduced"
+		texturefile = "gfx/interface/om_heavy_industry/tanks_reduced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_tanks_missing"
+		texturefile = "gfx/interface/om_heavy_industry/tanks_missing.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_industry_speciality"
+		texturefile = "gfx/interface/om_heavy_industry/industry_speciality.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_industry_focus"
+		texturefile = "gfx/interface/om_heavy_industry/industry_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_industry_balanced"
+		texturefile = "gfx/interface/om_heavy_industry/industry_balanced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_industry_reduced"
+		texturefile = "gfx/interface/om_heavy_industry/industry_reduced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_industry_missing"
+		texturefile = "gfx/interface/om_heavy_industry/industry_missing.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_massproduction_speciality"
+		texturefile = "gfx/interface/om_heavy_industry/massproduction_speciality.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_massproduction_focus"
+		texturefile = "gfx/interface/om_heavy_industry/massproduction_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_massproduction_balanced"
+		texturefile = "gfx/interface/om_heavy_industry/massproduction_balanced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_massproduction_reduced"
+		texturefile = "gfx/interface/om_heavy_industry/massproduction_reduced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_massproduction_missing"
+		texturefile = "gfx/interface/om_heavy_industry/massproduction_missing.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_specialisation_speciality"
+		texturefile = "gfx/interface/om_heavy_industry/specialisation_speciality.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_specialisation_focus"
+		texturefile = "gfx/interface/om_heavy_industry/specialisation_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_specialisation_balanced"
+		texturefile = "gfx/interface/om_heavy_industry/specialisation_balanced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_specialisation_reduced"
+		texturefile = "gfx/interface/om_heavy_industry/specialisation_reduced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_specialisation_missing"
+		texturefile = "gfx/interface/om_heavy_industry/specialisation_missing.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_exp_speciality"
+		texturefile = "gfx/interface/om_heavy_industry/exp_speciality.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_exp_focus"
+		texturefile = "gfx/interface/om_heavy_industry/exp_focus.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_exp_balanced"
+		texturefile = "gfx/interface/om_heavy_industry/exp_balanced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_exp_reduced"
+		texturefile = "gfx/interface/om_heavy_industry/exp_reduced.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_heavy_industry_exp_missing"
+		texturefile = "gfx/interface/om_heavy_industry/exp_missing.dds"
+	}
+}

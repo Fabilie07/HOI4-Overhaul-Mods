@@ -1,0 +1,243 @@
+generic_mechanized = {
+	category = land
+	roles = { land_mechanized }
+	
+	available_for = {}
+
+	priority = {
+		factor = 1000
+	}
+	
+	mechanized_1940 = {
+		priority = {
+			factor = 20
+			modifier = { 
+				has_tech = mechanised_chassis2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mechanized_equipment_1
+			modules = {
+				fixed_engine_power_slot = tank_0080_hp
+				fixed_engine_type_slot = tank_gasoline_engine
+				fixed_engine_cooling_slot = tank_air_cooling
+				fixed_engine_fuel_slot = tank_300_liter
+				fixed_armor_rear_slot = tank_armor_rear_10
+				fixed_armor_upper_side_slot = tank_armor_side_10
+				fixed_armor_lower_side_slot = tank_armor_side_10
+				fixed_armor_upper_front_slot = tank_armor_front_10
+				fixed_armor_lower_front_slot = tank_armor_front_10
+				fixed_turret_type_slot = mech_machine_gun_mount
+				fixed_mech_main_armament_slot = mech_machine_gun_2x
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				radio_type_slot = tank_radio_module
+			}
+		}
+	}
+	
+	mechanized_1942 = {
+		priority = {
+			factor = 50
+			modifier = { 
+				has_tech = mechanised_chassis3
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mechanized_equipment_2
+			modules = {
+				fixed_engine_power_slot = tank_0080_hp
+				fixed_engine_type_slot = tank_gasoline_engine
+				fixed_engine_cooling_slot = tank_air_cooling
+				fixed_engine_fuel_slot = tank_300_liter
+				fixed_armor_rear_slot = tank_armor_rear_10
+				fixed_armor_upper_side_slot = tank_armor_side_10
+				fixed_armor_lower_side_slot = tank_armor_side_10
+				fixed_armor_upper_front_slot = tank_armor_front_10
+				fixed_armor_lower_front_slot = tank_armor_front_10
+				fixed_turret_type_slot = mech_machine_gun_mount
+				fixed_mech_main_armament_slot = mech_machine_gun_2x
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				radio_type_slot = tank_radio_module
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 3
+				mech_nsb_armor_upgrade = {
+					base = 1
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			mech_machine_gun_2x
+			mech_heavy_machine_gun
+
+			mech_expanded_troop_carrier
+			mech_gun_port
+			mech_larger_tank
+			mech_shovel_equipment
+		}
+	}
+	
+	mechanized_1944 = {
+		priority = {
+			factor = 100
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mechanized_equipment_3
+			modules = {
+				fixed_engine_power_slot = tank_0080_hp
+				fixed_engine_type_slot = tank_gasoline_engine
+				fixed_engine_cooling_slot = tank_air_cooling
+				fixed_engine_fuel_slot = tank_300_liter
+				fixed_armor_rear_slot = tank_armor_rear_10
+				fixed_armor_upper_side_slot = tank_armor_side_10
+				fixed_armor_lower_side_slot = tank_armor_side_10
+				fixed_armor_upper_front_slot = tank_armor_front_10
+				fixed_armor_lower_front_slot = tank_armor_front_10
+				fixed_turret_type_slot = mech_machine_gun_mount
+				fixed_mech_main_armament_slot = mech_machine_gun_2x
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				radio_type_slot = tank_radio_module
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 4
+				mech_nsb_armor_upgrade = {
+					base = 2
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			mech_machine_gun_2x
+			mech_heavy_machine_gun
+
+			mech_expanded_troop_carrier
+			mech_gun_port
+			mech_larger_tank
+			mech_shovel_equipment
+		}
+	}
+}
+
+
+generic_amphibious_mechanized = {
+	category = land
+	roles = { land_amphibious_mechanized }
+	
+	available_for = {}
+
+	priority = {
+		factor = 100
+	}
+	
+	amphibious_mechanized_1941 = {
+		priority = {
+			factor = 20
+			modifier = { 
+				has_tech = amphibious_mechanized_equipment2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = amphibious_mechanized_equipment_1
+			modules = {
+				fixed_mech_main_armament_slot = mech_machine_gun
+				fixed_turret_type_slot = mech_machine_gun_mount
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				fixed_engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				radio_type_slot = tank_radio_module
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 3
+				mech_nsb_armor_upgrade = {
+					base = 1
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			mech_machine_gun_2x
+			mech_heavy_machine_gun
+
+			mech_expanded_troop_carrier
+			mech_gun_port
+			mech_larger_tank
+			mech_shovel_equipment
+		}
+	}
+	
+	amphibious_mechanized_1943 = {
+		priority = {
+			factor = 50
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = amphibious_mechanized_equipment_2
+			modules = {
+				fixed_mech_main_armament_slot = mech_machine_gun
+				fixed_turret_type_slot = mech_machine_gun_mount
+				suspension_type_slot = mech_half_tracked_suspension
+				armor_type_slot = ac_riveted_armor
+				fixed_engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				radio_type_slot = tank_radio_module
+			}
+			upgrades = {
+				ac_nsb_engine_upgrade = 4
+				mech_nsb_armor_upgrade = {
+					base = 2
+					modifier = {
+						add = 1
+						has_war = yes
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			mech_machine_gun_2x
+			mech_heavy_machine_gun
+
+			mech_expanded_troop_carrier
+			mech_gun_port
+			mech_larger_tank
+			mech_shovel_equipment
+		}
+	}
+}

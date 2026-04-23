@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_medium_tank_chassis_breakthrough_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/breakthrough_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sp_land_breakthrough_tank"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_breakthrough_tank.dds"
+	}
+	
+}

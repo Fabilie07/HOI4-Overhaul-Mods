@@ -1,0 +1,386 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+
+	airship_bomb_bay = {
+		abbreviation = "lbb"
+		category = airship_weapon
+		gfx = large_bomb_bay
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 9
+			weight = 2
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			strategic_bomber
+			port_strike
+		}
+		mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			add_stats = {
+				air_bombing = 5
+				weight = 8
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				port_strike
+			}
+			add_stats = {
+				naval_strike_attack = 2
+				weight = 8
+			}
+		}
+		dismantle_cost_ic = 12
+	}
+	
+	airship_depth_charges = {
+		abbreviation = "adc"
+		category = airship_weapon
+		gfx = ship_depth_charge
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 6
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			naval_bomber
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+			}
+			add_stats = {
+				naval_strike_attack = 10
+				weight = 6
+			}
+		}
+		dismantle_cost_ic = 12
+	}
+
+	airship_recon_camera = {
+		abbreviation = "rca"
+		category = airship_weapon
+		gfx = recon_camera
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+			weight = 2
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			recon
+		}
+	}
+
+	airship_airdropped_mines = {
+		abbreviation = "adm"
+		category = airship_weapon
+		gfx = airdropped_mines
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+			weight = 6
+			mines_planting = 0.08
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			naval_mines_planting
+		}
+	}
+	
+	## Sensors
+	
+	airship_radar = {
+		abbreviation = "ar"
+		category = airship_radar
+		gfx = air_ground_radar_1
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 2
+			weight = 4
+		}
+
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+				strategic_bomber
+				naval_patrol
+			}
+			add_stats = {
+				night_penalty = -0.3
+				surface_detection = 10
+				sub_detection = 5
+			}
+		}
+		xp_cost = 1
+	}
+	
+	airship_sonar = {
+		abbreviation = "as"
+		category = airship_sonar
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 2
+			weight = 4
+		}
+
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				naval_patrol
+			}
+			add_stats = {
+				night_penalty = -0.1
+				surface_detection = 10
+				sub_detection = 15
+			}
+		}
+		xp_cost = 1
+	}
+	
+	## Size ##
+	
+	airship_size_small = {
+		abbreviation = "as"
+		category = airship_size
+		sfx = sfx_ui_sd_module_turret
+		
+		multiply_stats = {
+			build_cost_ic = -0.2
+			air_range = -0.3
+		}
+		
+		allowed_module_categories = {
+			engine_number_slot = { plane_engine_number_2 }
+		}
+		
+		xp_cost = 1
+	}
+	
+	airship_size_medium = {
+		abbreviation = "am"
+		category = airship_size
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 1
+	}
+	
+	airship_size_large = {
+		abbreviation = "al"
+		category = airship_size
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 12
+		}
+		
+		multiply_stats = {
+			air_bombing = 0.05
+			build_cost_ic = 0.1
+		}
+		
+		allowed_module_categories = {
+			engine_number_slot = { plane_engine_number_6 plane_engine_number_8 }
+			fixed_auxiliary_weapon_slot_4 = { airship_weapon }
+			fixed_auxiliary_weapon_slot_5 = { airship_weapon }
+		}
+		
+		xp_cost = 1
+	}
+	
+	## Control Car ##
+	
+	airship_control_receded = {
+		abbreviation = "acs"
+		category = airship_control
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_defence = 4
+			weight = 2
+		}
+		
+		xp_cost = 1
+	}
+	
+	airship_control_outside = {
+		abbreviation = "acs"
+		category = airship_control
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			surface_detection = 2
+			sub_detection = 1
+		}
+		
+		xp_cost = 1
+	}
+	
+	## Gas ##
+	
+	airship_helium = { 
+		abbreviation = "he"
+		category = airship_gas
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = 0.2
+			build_cost_ic = 2
+		}
+		
+		xp_cost = 1
+	}
+	
+	airship_hydrogen = { 
+		abbreviation = "hy"
+		category = airship_gas
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			reliability = -0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+		
+		xp_cost = 1
+	}
+	
+	## Gas Cells ##
+	
+	airship_cell_goldbeater = { 
+		abbreviation = "gold"
+		category = airship_gas_cell
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 1
+	}
+	
+	airship_cell_fabric = { 
+		abbreviation = "gold"
+		category = airship_gas_cell
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_range = 500
+			build_cost_ic = 5
+		}
+		
+		xp_cost = 1
+	}
+	
+	airship_cell_rubber = { 
+		abbreviation = "gold"
+		category = airship_gas_cell
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			air_range = 500
+			air_defence = 4
+		}
+		
+		build_cost_resources = {
+			rubber = 2
+		}
+		
+		xp_cost = 1
+	}
+
+	## Skin ##
+
+	airship_metal_skin = { 
+		abbreviation = "mskin"
+		category = airship_skin
+		gfx = metal_skin
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 6
+			weight = 4
+		}
+		build_cost_resources = {
+			aluminium = 1
+		}
+		
+		xp_cost = 1
+	}
+
+	airship_fabric_skin = { 
+		abbreviation = "pskin"
+		category = airship_skin
+		gfx = fabric_skin
+		sfx = sfx_ui_sd_module_turret
+		
+		xp_cost = 1
+	}
+	
+	## Skeleton ##
+	
+	airship_no_skeleton = { 
+		abbreviation = "mskin"
+		category = airship_skeleton
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+		
+		xp_cost = 1
+	}
+	airship_metal_skeleton = { 
+		abbreviation = "mskin"
+		category = airship_skeleton
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			air_defence = 8
+		}
+		
+		xp_cost = 1
+	}
+
+	## Special Modules
+
+	fuel_tanks_airship = {
+		abbreviation = "fta"
+		category = airship_special_module
+		gfx = fuel_tanks_small
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+			weight = 5
+		}
+		multiply_stats = {
+			air_range = 0.4
+		}
+		xp_cost = 1
+		dismantle_cost_ic = 0.5
+	}
+	
+	extra_chambers_airship = {
+		abbreviation = "fts"
+		category = airship_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 2
+			air_defence = 8
+		}
+		xp_cost = 1
+	}
+
+}

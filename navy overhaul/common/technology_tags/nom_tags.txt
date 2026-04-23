@@ -1,0 +1,4 @@
+technology_categories = {
+	cl_tech
+	ca_tech
+}

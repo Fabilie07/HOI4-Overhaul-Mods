@@ -1,0 +1,425 @@
+# AI plane design for testing
+
+GER_fighter = {
+	category = air
+
+	available_for = { GER }
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+	}
+
+	great_war_fighter_default = {
+		priority = {
+			factor = 5
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_type_slot = engine_1_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = empty
+				wings_type_slot = biplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = fixed_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			engine_1_1x
+			light_mg_2x
+		}
+	}
+
+	basic_fighter_default = { #BF 109 E
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_1x
+				engine_type_slot = engine_2_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = empty
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
+			}
+		}
+
+		allowed_modules = {
+			light_mg_2x
+			aircraft_cannon_1_2x
+			engine_2_1x
+			armor_plate_small
+		}
+	}
+
+	basic_fighter_improved = { #BF 109 G these were basically entirely new airplaens compared to the BF 109 E
+		priority = {
+			factor = 250
+			modifier = { 
+				has_tech = improved_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3000
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+				engine_type_slot = engine_2_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = empty
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = fuel_tanks_small	
+			}
+		}
+
+		allowed_modules = {
+			light_mg_4x
+			aircraft_cannon_1_2x
+			engine_3_1x
+			armor_plate_small
+			drop_tanks
+			self_sealing_fuel_tanks_small
+		}
+	}
+
+	improved_fighter_basic = { #FW 190 A
+		priority = {
+			factor = 300
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3500
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				engine_type_slot = engine_3_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = supercharger
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = armor_plate_small	
+			}
+		}
+
+		allowed_modules = {
+			light_mg_4x
+			aircraft_cannon_1_2x
+			engine_3_1x
+			armor_plate_small
+			drop_tanks
+		}
+	}
+
+	improved_fighter_basic = { #FW 190 D
+		priority = {
+			factor = 350
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 3500
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				engine_type_slot = engine_3_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = turbocharger
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = armor_plate_small	
+				special_type_slot_4 = self_sealing_fuel_tanks_small
+			}
+		}
+
+		allowed_modules = {
+			light_mg_4x
+			aircraft_cannon_1_2x
+			engine_4_1x
+			supercharger
+			armor_plate_small
+			drop_tanks
+		}
+	}
+
+
+	advanced_fighter_default = { #Ta 152
+		priority = {
+			factor = 400
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = large_aircraft_cannon_1x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_2x
+				engine_type_slot = engine_4_1x
+				role_slot = role_01_fighter
+				supercharger_type_slot = turbocharger
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = self_sealing_fuel_tanks_small	
+				special_type_slot_4 = armor_plate_small
+			}
+		}
+
+		allowed_modules = { 
+			aircraft_cannon_1_2x
+			aircraft_cannon_2_1x
+			engine_4_1x
+			armor_plate_small
+			self_sealing_fuel_tanks_small
+			aerodynamic_construction
+		}
+	}
+	jet_fighter_default = { #Me 262
+		priority = {
+			factor = 500
+		}
+
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = large_aircraft_cannon_2x
+				fixed_auxiliary_weapon_slot_1 = large_aircraft_cannon_2x
+				engine_type_slot = jet_engine_2x
+				role_slot = role_01_fighter
+				supercharger_type_slot = empty
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = rubber_wheels
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks	
+				special_type_slot_3 = self_sealing_fuel_tanks_small	
+				special_type_slot_4 = aerodynamic_construction	
+			}
+		}
+
+		allowed_modules = { 
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_2x
+			jet_engine_2x
+			armor_plate_small
+		}
+	}
+}
+
+GER_cas = {
+	category = air
+
+	available_for = {GER}
+
+	roles = {
+		air_cas
+	}
+
+	priority = {
+		factor = 100
+	}
+	cas_0 = { #Hs 123
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		target_variant = {
+			match_value = 500
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				role_slot = role_04_cas
+				supercharger_type_slot = empty
+				wings_type_slot = biplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = fixed_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = lmg_defense_turret
+			}
+			
+		}
+
+		allowed_modules = {
+			bomb_locks
+			engine_1_1x
+			armor_plate_small
+			fuel_tanks_small
+		}
+	}
+	cas_1 = { #Ju 87
+		priority = {
+			factor = 200
+			
+		}
+
+
+		target_variant = {
+			match_value = 1000
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				role_slot = role_04_cas
+				supercharger_type_slot = empty
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = fixed_wheels
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = dive_brakes_small	
+			}
+			
+		}
+
+		allowed_modules = {
+			bomb_locks
+			engine_2_1x
+			armor_plate_small
+			fuel_tanks_small
+			lmg_defense_turret
+			dive_brakes_small
+		}
+	}
+	cas_2 = { #Ju 87 G
+		priority = {
+			factor = 300
+		}
+		target_variant = {
+			match_value = 1500
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = tank_buster_1
+				engine_type_slot = engine_3_1x
+				role_slot = role_04_cas
+				supercharger_type_slot = supercharger
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = fixed_wheels
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = empty
+			}
+		}
+
+		allowed_modules = {
+			bomb_locks
+			tank_buster_1
+			engine_3_1x
+		}
+	}
+	cas_2_bombs = { #Ju 87 D
+		priority = {
+			factor = 350
+		}
+		target_variant = {
+			match_value = 1500
+			type = small_plane_cas_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				engine_type_slot = engine_3_1x
+				role_slot = role_04_cas
+				supercharger_type_slot = supercharger
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = fixed_wheels
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = dive_brakes_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+
+		allowed_modules = {
+			bomb_locks
+			tank_buster_1
+			engine_3_1x
+		}
+	}
+	cas_3 = { #Hs 129
+		priority = {
+			factor = 400
+		}
+		target_variant = {
+			match_value = 2500
+			type = small_plane_cas_airframe_3
+			modules = {
+				fixed_main_weapon_slot = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_1 = tank_buster_2
+				fixed_auxiliary_weapon_slot_2 = light_mg_2x
+				engine_type_slot = engine_3_2x
+				role_slot = role_04_cas
+				supercharger_type_slot = supercharger
+				wings_type_slot = monoplane
+				skin_type_slot = metal_skin
+				wheels_type_slot = fixed_wheels
+				special_type_slot_1 = empty
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_2 = fuel_tanks_small
+			}
+		}
+
+		allowed_modules = {
+			tank_buster_2
+			bomb_locks
+			engine_2_2x
+		}
+	}
+}

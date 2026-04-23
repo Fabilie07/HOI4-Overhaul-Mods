@@ -1,0 +1,13 @@
+﻿l_english:
+ 
+ tank_nsb_engine_quality_upgrade:0 "Engine Tuning"
+ tank_nsb_armor_quality_upgrade:0 "Armor Quality"
+ tank_nsb_crew_quality_upgrade:0 "Crew Space"
+ tank_nsb_track_width_upgrade:0 "Track Width"
+ 
+ light_tank_buff_idea:0 "Chassis Advancements"
+ medium_tank_buff_idea:0 "Chassis Advancements"
+ heavy_tank_buff_idea:0 "Chassis Advancements"
+ 
+ sp_land_breakthrough_tank: "Breakthrough Tank"
+ sp_land_breakthrough_tank_desc: "By welding additional armor plates onto the tank or redesigning certain armor parts, they can carry much heavier armor."

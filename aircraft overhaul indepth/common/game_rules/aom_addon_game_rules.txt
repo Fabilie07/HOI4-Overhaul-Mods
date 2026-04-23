@@ -1,0 +1,17 @@
+aom_addon_ai_designs = {
+	name = "RULE_AOM_AI_DESIGNS"
+	group = "RULE_AI_DESIGNS"
+
+	default = {
+		name = HISTORICAL
+		text = "RULE_DESIGNS_HIST"
+		desc = "RULE_DESIGNS_HIST_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CHALLENGE
+		text = "RULE_DESIGNS_CHA"
+		desc = "RULE_DESIGNS_CHA_DESC"
+		allow_achievements = yes
+	}
+}

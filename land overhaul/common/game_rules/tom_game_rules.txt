@@ -1,0 +1,83 @@
+tom_ai_boosted_tank_production = {
+	name = "RULE_AI_TANK_PRODUCTION"
+	group = "RULE_GROUP_TOM"
+
+	default = {
+		name = DISABLED
+		text = "RULE_TANK_DESIGNS_DISABLED"
+		desc = "RULE_AI_TANK_PRODUCTION_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_1
+		text = "RULE_AI_TANK_PRODUCTION_1"
+		desc = "RULE_AI_TANK_PRODUCTION_1_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_2
+		text = "RULE_AI_TANK_PRODUCTION_2"
+		desc = "RULE_AI_TANK_PRODUCTION_2_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_3
+		text = "RULE_AI_TANK_PRODUCTION_3"
+		desc = "RULE_AI_TANK_PRODUCTION_3_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_4
+		text = "RULE_AI_TANK_PRODUCTION_4"
+		desc = "RULE_AI_TANK_PRODUCTION_4_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_5
+		text = "RULE_AI_TANK_PRODUCTION_5"
+		desc = "RULE_AI_TANK_PRODUCTION_5_DESC"
+		allow_achievements = yes
+	}
+}
+
+tom_rare_metals_spawns = {
+	name = "RULE_RARE_METALS_SPAWN"
+	group = "RULE_GROUP_TOM"
+	
+	default = {
+		name = HISTORICAL
+		text = "RULE_RARE_METALS_HIST"
+		desc = "RULE_RARE_METALS_HIST_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BALANCED
+		text = "RULE_RARE_METALS_BALANCED"
+		desc = "RULE_RARE_METALS_BALANCED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_RARE_METALS_RANDOM"
+		desc = "RULE_RARE_METALS_RANDOM_DESC"
+		allow_achievements = yes
+	}
+}
+
+tom_free_designs_rule = {
+	name = "RULE_FREE_TANK_DESIGNS"
+	group = "RULE_FREE_DESIGNS"
+
+	default = {
+		name = DISABLED
+		text = "RULE_TANK_DESIGNS_DISABLED"
+		desc = "RULE_TANK_DESIGNS_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_TANK_DESIGNS_ENABLED"
+		desc = "RULE_TANK_DESIGNS_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}

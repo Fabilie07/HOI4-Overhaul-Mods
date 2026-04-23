@@ -1,0 +1,173 @@
+leader_traits = {
+	light_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_agility = 0.1
+				maximum_speed = 0.1
+				build_cost_ic = -0.1
+			}
+			cv_small_plane_airframe = {
+				air_agility = 0.1
+				maximum_speed = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	light_aircraft_manufacturer_2 = {
+		random = no
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_agility = 0.2
+				maximum_speed = 0.1
+				build_cost_ic = -0.1
+			}
+			cv_small_plane_airframe = {
+				air_agility = 0.2
+				maximum_speed = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
+	CAS_manufacturer = {
+		random = no
+		equipment_bonus = {
+			small_plane_cas_airframe = {
+				air_ground_attack = 0.1
+				reliability = 0.1
+				build_cost_ic = -0.1
+			}
+			cv_small_plane_cas_airframe = {
+				air_ground_attack = 0.1
+				reliability = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	medium_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			medium_plane_fighter_airframe = {
+				reliability = 0.2
+				build_cost_ic = -0.1
+			}
+			medium_plane_airframe = {
+				reliability = 0.2
+				build_cost_ic = -0.1
+			}
+			medium_plane_scout_plane_airframe = {
+				reliability = 0.2
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fuel_efficient_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_range = 0.2
+			}
+			medium_plane_fighter_airframe = {
+				air_range = 0.2
+				reliability = 0.2
+			}
+			medium_plane_airframe = {
+				reliability = 0.2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+
+			large_plane_airframe = {
+				air_bombing = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	naval_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			small_plane_naval_bomber_airframe = {
+				air_range = 0.1
+				naval_strike_attack = 0.1
+				build_cost_ic = -0.1
+			}
+			cv_small_plane_naval_bomber_airframe = {
+				air_range = 0.1
+				naval_strike_attack = 0.1
+				build_cost_ic = -0.1
+			}
+			cv_small_plane_airframe = {
+				air_range = 0.1
+				air_agility = 0.1
+				build_cost_ic = -0.1
+			}
+			cv_small_plane_cas_airframe = {
+				air_range = 0.1
+				naval_strike_attack = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	multi_role_aircraft_manufacturer = {
+		random = no
+		equipment_bonus = {
+			small_plane_naval_bomber_airframe = {
+				reliability = 0.1
+			}
+			medium_plane_airframe = {
+				reliability = 0.1
+				build_cost_ic = -0.1
+			}
+			small_plane_cas_airframe = {
+				reliability = 0.1
+			}
+			medium_plane_scout_plane_airframe = {
+				reliability = 0.1
+				build_cost_ic = -0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

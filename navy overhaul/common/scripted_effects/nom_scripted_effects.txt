@@ -1,0 +1,63 @@
+nom_blockade_effect = {
+	if = {
+		limit = {
+			OR = {
+				has_idea = uncontrolled_exports
+				has_idea = free_trade
+				has_idea = export_focus
+			}
+		}
+
+		add_ideas = { nom_blockade_2_idea }
+	}
+	else = {
+		add_ideas = { nom_blockade_1_idea }
+	}
+	
+	every_country = {
+		limit = {
+			not = {
+				or = {
+					is_embargoing = PREV
+					is_embargoed_by = PREV
+					has_war_with = PREV
+					
+					tag = PREV
+					is_ally_with = PREV
+					is_neighbor_of = PREV
+				}
+			}
+			
+		}
+		
+		add_to_array = {
+			array = PREV.blockade_embargo_targets
+			value = THIS
+		}
+		
+		send_embargo = PREV
+	}
+}
+
+nom_blockade_stop_effect = {
+	remove_ideas = { 
+		nom_blockade_2_idea
+		nom_blockade_1_idea
+	}
+	
+	every_country = {
+		limit = {
+			is_in_array = { PREV.blockade_embargo_targets = THIS }
+		}
+		
+		remove_from_array = {
+			array = PREV.blockade_embargo_targets
+			value = THIS
+		}
+		diplomatic_relation = {
+			country = PREV
+			relation = embargo
+			active = no
+		}
+	}
+}

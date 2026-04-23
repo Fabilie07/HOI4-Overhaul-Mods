@@ -1,0 +1,2402 @@
+# AI plane design for testing
+
+generic_fighter = {
+	category = air
+
+	# blocked_for = {GER}#ENG USA}
+
+	available_for = {}
+
+	roles = {
+		air_fighter
+	}
+
+	priority = {
+		factor = 1000
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+
+	great_war_fighter_default = {
+		priority = {
+			factor = 10
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = small_plane_airframe_0
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	basic_fighter_default = {
+		priority = {
+			factor = 50
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_airframe_1
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = { module = plane_radio_1 module = empty }
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_4x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = { module = fuel_tanks_small module = empty }
+				special_type_slot_2 = { module = armor_plate_small module = empty }
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	improved_fighter_default = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = small_plane_airframe_2
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = cannon_20_1x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_12_2x
+				fixed_auxiliary_weapon_slot_3 = heavy_mg_12_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_automatic_3
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	advanced_fighter_default = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = advanced_small_airframe 
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_3
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = basic_turbocharger
+				propeller_slot = propeller_automatic_3
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	jet_fighter_default = {
+		priority = {
+			factor = 300
+			modifier = { 
+				has_tech = 1953_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_4
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_1
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_turbojet
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = improved_cannon_20_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_10
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = axial_compressor_5
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	jet_fighter_2_default = {
+		priority = {
+			factor = 400
+			modifier = { 
+				has_tech = 1960_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_5
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_1
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_turbojet
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = ir_missile_1
+				fixed_auxiliary_weapon_slot_3 = ir_missile_1
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_20
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	jet_fighter_3_default = {
+		priority = {
+			factor = 500
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = small_plane_airframe_6
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_2
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet_afterburner
+				fixed_engine_injection_slot = jet_low_bypass
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radar_slot = aa_radar_4
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = ir_missile_2
+				fixed_auxiliary_weapon_slot_3 = ir_missile_2
+				fixed_auxiliary_weapon_slot_4 = radar_missile_2
+				fixed_auxiliary_weapon_slot_5 = radar_missile_2
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_50
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+}
+
+generic_cas = {
+	category = air
+
+	# blocked_for = {GER} #ENG USA}
+
+	available_for = {}
+
+	roles = {
+		air_cas
+	}
+
+	priority = {
+		factor = 100
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+	cas_1 = {
+		priority = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_tech = improved_small_airframe
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = small_plane_cas_airframe_1
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = bomb_0250_2x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	cas_2 = {
+		priority = {
+			factor = 200
+			modifier = {
+				factor = 0
+				has_tech = advanced_small_airframe
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 1500
+			type = small_plane_cas_airframe_2
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = bomb_0500_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_0250_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = drop_tanks
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	cas_3 = {
+		priority = {
+			factor = 300
+			modifier = {
+				factor = 0
+				has_tech = modern_small_airframe
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = small_plane_cas_airframe_3
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_0250_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_automatic_3
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = hmg_defense_turret
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = drop_tanks
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	cas_4 = {
+		priority = {
+			factor = 400
+			modifier = {
+				factor = 0
+				has_tech = 1953_small_airframe
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = small_plane_cas_airframe_4
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_turbojet
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_2 = rocket_rails
+				fixed_auxiliary_weapon_slot_3 = rocket_rails
+				engine_number_slot = engine_2x
+				engine_power_slot = jet_power_14
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = axial_compressor_5
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	cas_5 = {
+		priority = {
+			factor = 400
+			modifier = {
+				factor = 0
+				has_tech = 1960_small_airframe
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = small_plane_cas_airframe_5
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_1
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_low_bypass
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_2 = heavy_rocket_rails_2x
+				fixed_auxiliary_weapon_slot_3 = heavy_rocket_rails_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_40
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	cas_6 = {
+		priority = {
+			factor = 400
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = small_plane_cas_airframe_6
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_2
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet_afterburner
+				fixed_engine_injection_slot = jet_low_bypass
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_1 = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_2 = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_3 = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_4 = rocket_pod_rack
+				fixed_auxiliary_weapon_slot_5 = rocket_pod_rack
+				engine_number_slot = engine_2x
+				engine_power_slot = jet_power_60
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_variable_nozzle
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+}
+
+generic_naval_bomber = {
+	category = air
+
+	# blocked_for = {GER} #ENG USA}
+
+	available_for = {}
+
+	roles = {
+		air_naval_bomber
+	}
+	priority = {
+		factor = 500
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+	naval_bomber_1 = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = torpedo_18_2
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	naval_bomber_2 = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = advanced_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 1500
+			type = small_plane_naval_bomber_airframe_2
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = torpedo_21_2
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_12_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	naval_bomber_3 = {
+		priority = {
+			factor = 200
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = small_plane_naval_bomber_airframe_3
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = torpedo_24_2
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = drop_tanks
+				special_type_slot_5 = empty
+			}
+
+		}
+	}
+}
+
+generic_cv_fighter = {
+	category = air
+
+	# blocked_for = { ENG }
+
+	available_for = {}
+
+	roles = {
+		air_cv_fighter
+	}
+
+	priority = {
+		factor = 1000
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+ 	  			size < 1
+			}
+			factor = 0
+		}
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+
+	great_war_cv_fighter_default = {
+		priority = {
+			factor = 1
+			modifier = { 
+				has_tech = basic_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = cv_small_plane_airframe_0
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_rotary
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = open_cockpit
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_no_cowling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_wood_2
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+
+	basic_cv_fighter_default = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = cv_small_plane_airframe_1
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_4x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+
+	improved_cv_fighter_default = {
+		priority = {
+			factor = 150
+			modifier = { 
+				has_tech = advanced_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = cv_small_plane_airframe_2
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = cannon_20_1x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_12_2x
+				fixed_auxiliary_weapon_slot_3 = heavy_mg_12_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_automatic_3
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+
+	advanced_cv_fighter_default = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = modern_small_airframe
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = cv_small_plane_airframe_3
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = basic_turbocharger
+				propeller_slot = propeller_automatic_3
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	jet_cv_fighter_default = {
+		priority = {
+			factor = 250
+			modifier = { 
+				has_tech = 1953_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = cv_small_plane_airframe_4
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_1
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_turbojet
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = improved_cannon_20_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_10
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = axial_compressor_5
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	jet_cv_fighter_2_default = {
+		priority = {
+			factor = 300
+			modifier = { 
+				has_tech = 1960_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = cv_small_plane_airframe_5
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_1
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_turbojet
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = ir_missile_1
+				fixed_auxiliary_weapon_slot_3 = ir_missile_1
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_20
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	jet_fighter_3_default = {
+		priority = {
+			factor = 400
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = cv_small_plane_airframe_6
+			modules = {
+				role_slot = role_01_fighter
+				custom_skeleton_slot = aluminium_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_2
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet_afterburner
+				fixed_engine_injection_slot = jet_low_bypass
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_assisted
+				fixed_radar_slot = aa_radar_4
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = improved_cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = ir_missile_2
+				fixed_auxiliary_weapon_slot_3 = ir_missile_2
+				fixed_auxiliary_weapon_slot_4 = radar_missile_2
+				fixed_auxiliary_weapon_slot_5 = radar_missile_2
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_50
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = empty
+			}
+		}
+	}
+}
+
+generic_cv_cas = {
+	category = air
+
+	#blocked_for = { ENG USA FRA JAP }
+	# blocked_for = { ENG }
+
+	available_for = {}
+
+	roles = {
+		air_cv_cas
+	}
+
+	priority = {
+		factor = 100
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+ 	  			size < 1
+			}
+			factor = 0
+		}
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+	cv_cas_1 = {
+		priority = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_tech = improved_small_airframe
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = cv_small_plane_cas_airframe_1
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = bomb_0250_2x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_1
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			
+		}
+	}
+	cv_cas_2 = {
+		priority = {
+			factor = 200
+			modifier = {
+				factor = 0
+				has_tech = advanced_small_airframe
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 1500
+			type = cv_small_plane_cas_airframe_2
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = bomb_0500_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_0250_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	cv_cas_3 = {
+		priority = {
+			factor = 300
+			modifier = {
+				factor = 0
+				has_tech = modern_small_airframe
+				is_special_project_completed = sp:sp_air_axial_jet_engine
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = cv_small_plane_cas_airframe_3
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_0250_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_automatic_3
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = hmg_defense_turret
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	cv_cas_4 = {
+		priority = {
+			factor = 400
+			modifier = {
+				factor = 0
+				has_tech = 1953_small_airframe
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = cv_small_plane_cas_airframe_4
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_turbojet
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_2 = rocket_rails
+				fixed_auxiliary_weapon_slot_3 = rocket_rails
+				engine_number_slot = engine_2x
+				engine_power_slot = jet_power_14
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = axial_compressor_5
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = dive_brakes_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	cv_cas_5 = {
+		priority = {
+			factor = 400
+			modifier = {
+				factor = 0
+				has_tech = 1960_small_airframe
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = cv_small_plane_cas_airframe_5
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_1
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_low_bypass
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_concentrated
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_1 = bomb_1000_1x
+				fixed_auxiliary_weapon_slot_2 = heavy_rocket_rails_2x
+				fixed_auxiliary_weapon_slot_3 = heavy_rocket_rails_2x
+				engine_number_slot = engine_1x
+				engine_power_slot = jet_power_40
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	cv_cas_6 = {
+		priority = {
+			factor = 400
+		}
+		history = yes
+		target_variant = {
+			match_value = 2500
+			type = cv_small_plane_cas_airframe_6
+			modules = {
+				role_slot = role_04_cas
+				custom_skeleton_slot = aluminium_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = swept_wings_2
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet_afterburner
+				fixed_engine_injection_slot = jet_low_bypass
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_self_sealing
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_1 = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_2 = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_3 = bomb_rack_1000_2x
+				fixed_auxiliary_weapon_slot_4 = rocket_pod_rack
+				fixed_auxiliary_weapon_slot_5 = rocket_pod_rack
+				engine_number_slot = engine_2x
+				engine_power_slot = jet_power_60
+				engine_cooling_slot = plane_oil_cooling
+				supercharger_type_slot = two_spool_compressor
+				propeller_slot = jet_variable_nozzle
+				hud_slot = plane_bomb_reticle_2
+				special_type_slot_1 = armor_plate_small
+				special_type_slot_2 = drop_tanks
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = empty
+			}
+		}
+	}
+}
+
+generic_cv_naval_bomber = {
+	category = air
+
+	#blocked_for = {  ENG USA FRA JAP }
+	# blocked_for = { ENG }
+
+	available_for = {}
+
+	roles = {
+		air_cv_naval_bomber
+	}
+
+	priority = {
+		factor = 500
+		modifier = {
+			has_navy_size = {
+				unit = carrier
+ 	  			size < 1
+			}
+			factor = 0
+		}
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+	cv_naval_bomber_1 = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = cv_small_plane_naval_bomber_airframe_1
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_1
+				fixed_main_weapon_slot = torpedo_18_2
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+	cv_naval_bomber_2 = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = advanced_small_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+		history = yes
+		target_variant = {
+			match_value = 1500
+			type = cv_small_plane_naval_bomber_airframe_2
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = torpedo_21_2
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+		}
+	}
+
+	cv_naval_bomber_3 = {
+		priority = {
+			factor = 200
+		}
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = cv_small_plane_naval_bomber_airframe_3
+			modules = {
+				role_slot = role_05_naval_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = floats
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = torpedo_24_2
+				fixed_auxiliary_weapon_slot_1 = empty
+				engine_number_slot = engine_1x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_torp_reticle_1
+				special_type_slot_1 = drop_tanks
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = armor_plate_small
+				special_type_slot_4 = empty
+			}
+
+		}
+	}
+}
+
+
+
+generic_tactical_bomber = {
+	category = air
+
+	# blocked_for = {GER} #ENG USA}
+
+	available_for = {}
+
+	roles = {
+		air_tactical_bomber
+	}
+
+	priority = {
+		factor = 2000
+		modifier = {
+			num_of_factories < 100
+			factor = 0.5
+		}
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+
+	gw_tac_bomber_default = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = basic_medium_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = medium_plane_airframe_0
+			modules = {
+				role_slot = role_09_tactical_bomber
+				custom_skeleton_slot = wooden_skeleton
+				custom_skin_slot = fabric_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0050_20x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_3 = empty
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_0800
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = no_supercharger
+				propeller_slot = propeller_3
+				hud_slot = hud_cas
+				special_type_slot_1 = medium_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret_2x
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	tac_bomber_1_default = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_medium_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = medium_plane_airframe_1
+			modules = {
+				role_slot = role_09_tactical_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0100_10x
+				fixed_auxiliary_weapon_slot_1 = bomb_0100_10x
+				fixed_auxiliary_weapon_slot_2 = bomb_0100_1x
+				fixed_auxiliary_weapon_slot_3 = bomb_0100_1x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = hud_cas
+				special_type_slot_1 = medium_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret_2x
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	tac_bomber_2_default = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = advanced_medium_airframe
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 3000
+			type = medium_plane_airframe_2
+			modules = {
+				role_slot = role_09_tactical_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_2
+				fixed_main_weapon_slot = bomb_0500_4x
+				fixed_auxiliary_weapon_slot_1 = bomb_0100_10x
+				fixed_auxiliary_weapon_slot_2 = bomb_0100_2x
+				fixed_auxiliary_weapon_slot_3 = bomb_0100_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = hud_cas
+				special_type_slot_1 = medium_bomb_bay
+				special_type_slot_2 = hmg_defense_turret
+				special_type_slot_3 = hmg_defense_turret
+				special_type_slot_4 = fuel_tanks_medium
+				special_type_slot_5 = empty
+			}
+		}
+	}
+
+	tac_bomber_3_default = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = modern_medium_airframe
+				is_special_project_completed = sp: sp_air_axial_jet_engine
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = medium_plane_airframe_3
+			modules = {
+				role_slot = role_09_tactical_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = reinforced_canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_0500_4x
+				fixed_auxiliary_weapon_slot_1 = bomb_0500_4x
+				fixed_auxiliary_weapon_slot_2 = bomb_0250_2x
+				fixed_auxiliary_weapon_slot_3 = bomb_0250_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_2200
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = basic_turbocharger
+				propeller_slot = propeller_automatic_4
+				hud_slot = hud_cas
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = hmg_defense_turret_2x
+				special_type_slot_4 = fuel_tanks_medium
+				special_type_slot_5 = empty
+			}
+		}
+	}
+	jet_tac_bomber_default = {
+		priority = {
+			factor = 100
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = medium_plane_airframe_4
+			modules = {
+				role_slot = role_09_tactical_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = cruciform_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_jet
+				fixed_engine_injection_slot = jet_turbojet
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio_3
+				fixed_main_weapon_slot = bomb_1000_2x
+				fixed_auxiliary_weapon_slot_1 = bomb_1000_2x
+				fixed_auxiliary_weapon_slot_2 = bomb_0500_1x
+				fixed_auxiliary_weapon_slot_3 = bomb_0500_1x
+				fixed_auxiliary_weapon_slot_4 = empty
+				fixed_auxiliary_weapon_slot_5 = empty
+				fixed_auxiliary_weapon_slot_6 = empty
+				fixed_auxiliary_weapon_slot_7 = empty
+				engine_number_slot = engine_2x
+				engine_power_slot = jet_power_20
+				engine_cooling_slot = plane_water_cooling
+				supercharger_type_slot = axial_compressor_5
+				propeller_slot = jet_fixed_nozzle
+				hud_slot = hud_cas
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = cannon_defense_turret_2x
+				special_type_slot_3 = empty
+				special_type_slot_4 = fuel_tanks_medium
+				special_type_slot_5 = empty
+			}
+			
+		}
+	}
+}
+
+generic_heavy_fighter = {
+	category = air
+
+	# blocked_for = {GER} #ENG USA}
+
+	available_for = {}
+
+	roles = {
+		air_heavy_fighter
+	}
+
+	priority = {
+		factor = 500
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+	heavy_fighter_1 = {
+		priority = {
+			factor = 100
+			
+		}
+		
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = medium_plane_fighter_airframe_1
+			modules = {
+				role_slot = role_03_heavy_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = round_wings
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_7_2x
+				fixed_auxiliary_weapon_slot_3 = bomb_0100_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = small_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				special_type_slot_6 = empty
+			}
+		}
+	}
+
+	heavy_fighter_2 = {
+		priority = {
+			factor = 200
+			
+		}
+		
+		history = yes
+		target_variant = {
+			match_value = 1500
+			type = medium_plane_fighter_airframe_2
+			modules = {
+				role_slot = role_03_heavy_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = round_wings
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = heavy_mg_12_4x
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = bomb_0100_2x
+				fixed_auxiliary_weapon_slot_3 = bomb_0100_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = small_bomb_bay
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = fuel_tanks_medium
+			}
+		}
+	}
+
+	heavy_fighter_3 = {
+		priority = {
+			factor = 200
+			
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = medium_plane_fighter_airframe_3
+			modules = {
+				role_slot = role_03_heavy_fighter
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = round_wings
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_12_4x
+				fixed_auxiliary_weapon_slot_3 = bomb_0250_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_twin_speed
+				propeller_slot = propeller_4
+				hud_slot = plane_crosshair_2
+				special_type_slot_1 = small_bomb_bay
+				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_3 = fuel_tanks_medium
+			}
+		}
+	}
+}
+
+
+generic_scout_plane = {
+	category = air
+	blocked_for = {}
+	available_for = {}
+
+	roles = {
+		air_scout_plane
+	}
+
+	priority = {
+		factor = 200
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+	}
+
+	scout_plane_1_default = {
+		priority = {
+			factor = 10
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = medium_plane_scout_plane_airframe_1
+			modules = {
+				role_slot = role_06_scout_plane
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = recon_camera
+				fixed_auxiliary_weapon_slot_1 = light_mg_7_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = fuel_tanks_medium
+			}
+		}
+	}
+
+	scout_plane_2_default = {
+		priority = {
+			factor = 10
+			
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = medium_plane_scout_plane_airframe_2
+			modules = {
+				role_slot = role_06_scout_plane
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = recon_camera
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_12_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1200
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = fuel_tanks_medium
+			}
+		}
+	}
+
+	scout_plane_3_default = {
+		priority = {
+			factor = 10
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = medium_plane_scout_plane_airframe_3
+			modules = {
+				role_slot = role_06_scout_plane
+				custom_skeleton_slot = aluminium_alloy_skeleton
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = single_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = canopy
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_2
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = recon_camera
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_12_2x
+				engine_number_slot = engine_2x
+				engine_power_slot = engine_power_1500
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				hud_slot = plane_crosshair_1
+				special_type_slot_1 = fuel_tanks_medium
+				special_type_slot_2 = fuel_tanks_medium
+			}
+		}
+	}
+}
+
+generic_strategic_bomber = {
+	category = air
+
+	# blocked_for = {GER} #ENG USA SOV}
+
+	available_for = {}
+
+	roles = {
+		air_strategic_bomber
+	}
+
+	priority = {
+		factor = 200
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+
+	strat_bomber_0_default = {
+		priority = {
+			factor = 5
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 500
+			type = large_plane_airframe_0
+			modules = {
+				role_slot = role_10_strategic_bomber
+				custom_skeleton_slot = wooden_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = biplane
+				custom_airframe_wheels_slot = big_fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_carburetor
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0100_10x
+				fixed_auxiliary_weapon_slot_1 = bomb_0050_8x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_0600
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger_single_speed
+				propeller_slot = propeller_3
+				hud_slot = empty
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret
+				special_type_slot_4 = lmg_defense_turret
+			}
+		}
+	}
+
+	strat_bomber_1_default = {
+		priority = {
+			factor = 10
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = large_plane_airframe_1
+			modules = {
+				role_slot = role_10_strategic_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = big_fixed_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+				fixed_main_weapon_slot = bomb_0250_5x
+				fixed_auxiliary_weapon_slot_1 = bomb_0250_5x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_1000
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				hud_slot = empty
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_3 = lmg_defense_turret_2x
+				special_type_slot_4 = fuel_tanks_large
+			}
+		}
+	}
+
+	strat_bomber_2_default = {
+		priority = {
+			factor = 10
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = large_plane_airframe_2
+			modules = {
+				role_slot = role_10_strategic_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = big_rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio
+				fixed_main_weapon_slot = bomb_0500_4x
+				fixed_auxiliary_weapon_slot_1 = bomb_0500_4x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_1800
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				hud_slot = empty
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = armor_plate_large
+				special_type_slot_3 = fuel_tanks_large
+				special_type_slot_4 = hmg_defense_turret_2x
+				special_type_slot_5 = hmg_defense_turret_2x
+				special_type_slot_6 = hmg_defense_turret_2x
+				special_type_slot_7 = radio_navigation_1
+			}
+		}
+	}
+
+	strat_bomber_3_default = {
+		priority = {
+			factor = 10
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = large_plane_airframe_3
+			modules = {
+				role_slot = role_10_strategic_bomber
+				custom_skeleton_slot = aluminium_alloy_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_tail
+				custom_airframe_wings_slot = monoplane
+				custom_airframe_wheels_slot = big_rubber_wheels
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_wire
+				fixed_radio_slot = plane_radio
+				fixed_main_weapon_slot = bomb_1000_3x
+				fixed_auxiliary_weapon_slot_1 = bomb_1000_3x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_2400
+				engine_cooling_slot = plane_air_cooling
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_4
+				hud_slot = empty
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = armor_plate_large
+				special_type_slot_3 = fuel_tanks_large
+				special_type_slot_4 = hmg_defense_turret_4x
+				special_type_slot_5 = hmg_defense_turret_4x
+				special_type_slot_6 = hmg_defense_turret_4x
+				special_type_slot_7 = radio_navigation_1
+			}
+		}
+	}
+}
+
+generic_maritime_patrol = {
+	category = air
+
+	# blocked_for = {GER} #ENG USA}
+
+	available_for = {}
+
+	roles = {
+		air_maritime_patrol
+	}
+
+	priority = {
+		factor = 200
+		modifier = {
+			num_of_factories < 50
+			factor = 0
+		}
+		modifier = {
+			all_owned_state = {
+				is_coastal = no
+			}
+			factor = 0
+		}
+		modifier = {
+			has_game_rule = {
+				rule = aom_addon_ai_designs
+				option = CHALLENGE
+			}
+			factor = 0
+		}
+	}
+
+	maritime_patrol_1_default = {
+		priority = {
+			factor = 10
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 1000
+			type = large_plane_maritime_patrol_plane_airframe_1
+			modules = {
+				role_slot = role_08_maritime_patrol_plane
+				custom_skeleton_slot = aluminium_alloy_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_boom
+				custom_airframe_wings_slot = gull_wings
+				custom_airframe_wheels_slot = flying_boat_large
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_assisted
+				fixed_radio_slot = plane_radio
+				fixed_main_weapon_slot = torpedo_18_2
+				fixed_auxiliary_weapon_slot_1 = torpedo_18_2
+				fixed_auxiliary_weapon_slot_2 = bomb_0050_8x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_0900
+				engine_cooling_slot = plane_air_cooling
+				hud_slot = hud_nav
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				special_type_slot_1 = fuel_tanks_large
+				special_type_slot_2 = lmg_defense_turret_2x
+			}
+		}
+	}
+
+	maritime_patrol_2_default = {
+		priority = {
+			factor = 10
+			
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 2000
+			type = large_plane_maritime_patrol_plane_airframe_2
+			modules = {
+				role_slot = role_08_maritime_patrol_plane
+				custom_skeleton_slot = aluminium_alloy_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_boom
+				custom_airframe_wings_slot = gull_wings
+				custom_airframe_wheels_slot = flying_boat_large
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_assisted
+				fixed_radar_slot = { module = air_ground_radar_2 module = air_ground_radar_1 module = empty }
+				fixed_radio_slot = plane_radio
+				fixed_main_weapon_slot = torpedo_21_2
+				fixed_auxiliary_weapon_slot_1 = torpedo_21_2
+				fixed_auxiliary_weapon_slot_2 = bomb_0100_10x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_1400
+				engine_cooling_slot = plane_air_cooling
+				hud_slot = hud_nav
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_3
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = fuel_tanks_large
+				special_type_slot_3 = armor_plate_large
+				special_type_slot_4 = hmg_defense_turret_2x
+			}
+		}
+	}
+
+	maritime_patrol_3_default = {
+		priority = {
+			factor = 10
+		}
+
+		history = yes
+		target_variant = {
+			match_value = 4000
+			type = large_plane_maritime_patrol_plane_airframe_3
+			modules = {
+				role_slot = role_08_maritime_patrol_plane
+				custom_skeleton_slot = aluminium_alloy_skeleton_large
+				custom_skin_slot = metal_skin
+				custom_airframe_tail_slot = twin_boom
+				custom_airframe_wings_slot = gull_wings
+				custom_airframe_wheels_slot = flying_boat_large
+				fixed_engine_type_slot = engine_type_radial
+				fixed_engine_injection_slot = prop_injection
+				fixed_canopy_slot = large_cockpit
+				fixed_fuel_tank_slot = fuel_tank_dispersed
+				fixed_flaps_slot = flaps_3
+				fixed_controls_slot = controls_assisted
+				fixed_radar_slot = air_ground_radar_2
+				fixed_radio_slot = plane_radio
+				fixed_main_weapon_slot = torpedo_24_2
+				fixed_auxiliary_weapon_slot_1 = torpedo_24_2
+				fixed_auxiliary_weapon_slot_2 = bomb_0250_5x
+				fixed_auxiliary_weapon_slot_3 = bomb_0250_5x
+				engine_number_slot = engine_4x
+				engine_power_slot = engine_power_2000
+				engine_cooling_slot = plane_air_cooling
+				hud_slot = hud_nav
+				supercharger_type_slot = supercharger
+				propeller_slot = propeller_4
+				special_type_slot_1 = large_bomb_bay
+				special_type_slot_2 = fuel_tanks_large
+				special_type_slot_3 = armor_plate_large
+				special_type_slot_4 = hmg_defense_turret_4x
+			}
+		}
+	}
+}
+

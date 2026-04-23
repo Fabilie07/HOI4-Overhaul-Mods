@@ -1,0 +1,100 @@
+﻿l_english:
+
+ TOM_HI_TANK_IDEA_TT:0 "[tom_hi_tanks_tt]"
+ TOM_HI_INDUSTRY_IDEA_TT:0 "[tom_hi_industry_tt]"
+ TOM_HI_MP_IDEA_TT:0 "[tom_hi_mp_tt]"
+ TOM_HI_SPECIALISATION_IDEA_TT:0 "[tom_hi_specialisation_tt]"
+ TOM_HI_EXP_IDEA_TT:0 "[tom_hi_exp_tt]"
+ 
+ tom_hi_tanks_1_tt_large:0 "§YCurrent:§! \n$tom_hi_tanks_1_tt$ \n\nAbove §C20%§!: \n§g$tom_hi_tanks_2_tt$§!"
+ tom_hi_tanks_2_tt_large:0 "§YCurrent:§! \n$tom_hi_tanks_2_tt$ \n\nBelow §C20%§!: \n§g$tom_hi_tanks_1_tt$§! \n\nAbove §C40%§!: \n§g$tom_hi_tanks_3_tt$§!"
+ tom_hi_tanks_3_tt_large:0 "§YCurrent:§! \n$tom_hi_tanks_3_tt$ \n\nBelow §C40%§!: \n§g$tom_hi_tanks_2_tt$§! \n\nAbove §C60%§!: \n§g$tom_hi_tanks_4_tt$§!"
+ tom_hi_tanks_4_tt_large:0 "§YCurrent:§! \n$tom_hi_tanks_4_tt$ \n\nBelow §C60%§!: \n§g$tom_hi_tanks_3_tt$§! \n\nAbove §C80%§!: \n§g$tom_hi_tanks_5_tt$§!"
+ tom_hi_tanks_5_tt_large:0 "§YCurrent:§! \n$tom_hi_tanks_5_tt$ \n\nBelow §C80%§!: \n§g$tom_hi_tanks_4_tt$§!"
+ 
+ tom_hi_industry_1_tt_large:0 "§YCurrent:§! \n$tom_hi_industry_1_tt$ \n\nAbove §C20%§!: \n§g$tom_hi_industry_2_tt$§!"
+ tom_hi_industry_2_tt_large:0 "§YCurrent:§! \n$tom_hi_industry_2_tt$ \n\nBelow §C20%§!: \n§g$tom_hi_industry_1_tt$§! \n\nAbove §C40%§!: \n§g$tom_hi_industry_3_tt$§!"
+ tom_hi_industry_3_tt_large:0 "§YCurrent:§! \n$tom_hi_industry_3_tt$ \n\nBelow §C40%§!: \n§g$tom_hi_industry_2_tt$§! \n\nAbove §C60%§!: \n§g$tom_hi_industry_4_tt$§!"
+ tom_hi_industry_4_tt_large:0 "§YCurrent:§! \n$tom_hi_industry_4_tt$ \n\nBelow §C60%§!: \n§g$tom_hi_industry_3_tt$§! \n\nAbove §C80%§!: \n§g$tom_hi_industry_5_tt$§!"
+ tom_hi_industry_5_tt_large:0 "§YCurrent:§! \n$tom_hi_industry_5_tt$ \n\nBelow §C80%§!: \n§g$tom_hi_industry_4_tt$§!"
+ 
+ tom_hi_mp_1_tt_large:0 "§YCurrent:§! \n$tom_hi_mp_1_tt$ \n\nAbove §C20%§!: \n§g$tom_hi_mp_2_tt$§!"
+ tom_hi_mp_2_tt_large:0 "§YCurrent:§! \n$tom_hi_mp_2_tt$ \n\nBelow §C20%§!: \n§g$tom_hi_mp_1_tt$§! \n\nAbove §C40%§!: \n§g$tom_hi_mp_3_tt$§!"
+ tom_hi_mp_3_tt_large:0 "§YCurrent:§! \n$tom_hi_mp_3_tt$ \n\nBelow §C40%§!: \n§g$tom_hi_mp_2_tt$§! \n\nAbove §C60%§!: \n§g$tom_hi_mp_4_tt$§!"
+ tom_hi_mp_4_tt_large:0 "§YCurrent:§! \n$tom_hi_mp_4_tt$ \n\nBelow §C60%§!: \n§g$tom_hi_mp_3_tt$§! \n\nAbove §C80%§!: \n§g$tom_hi_mp_5_tt$§!"
+ tom_hi_mp_5_tt_large:0 "§YCurrent:§! \n$tom_hi_mp_5_tt$ \n\nBelow §C80%§!: \n§g$tom_hi_mp_4_tt$§!"
+ 
+ tom_hi_specialisation_1_tt_large:0 "§YCurrent:§! \n$tom_hi_specialisation_1_tt$ \n\nAbove §C20%§!: \n§g$tom_hi_specialisation_2_tt$§!"
+ tom_hi_specialisation_2_tt_large:0 "§YCurrent:§! \n$tom_hi_specialisation_2_tt$ \n\nBelow §C20%§!: \n§g$tom_hi_specialisation_1_tt$§! \n\nAbove §C40%§!: \n§g$tom_hi_specialisation_3_tt$§!"
+ tom_hi_specialisation_3_tt_large:0 "§YCurrent:§! \n$tom_hi_specialisation_3_tt$ \n\nBelow §C40%§!: \n§g$tom_hi_specialisation_2_tt$§! \n\nAbove §C60%§!: \n§g$tom_hi_specialisation_4_tt$§!"
+ tom_hi_specialisation_4_tt_large:0 "§YCurrent:§! \n$tom_hi_specialisation_4_tt$ \n\nBelow §C60%§!: \n§g$tom_hi_specialisation_3_tt$§! \n\nAbove §C80%§!: \n§g$tom_hi_specialisation_5_tt$§!"
+ tom_hi_specialisation_5_tt_large:0 "§YCurrent:§! \n$tom_hi_specialisation_5_tt$ \n\nBelow §C80%§!: \n§g$tom_hi_specialisation_4_tt$§!"
+ 
+ tom_hi_exp_1_tt_large:0 "§YCurrent:§! \n$tom_hi_exp_1_tt$ \n\nAbove §C20%§!: \n§g$tom_hi_exp_2_tt$§!"
+ tom_hi_exp_2_tt_large:0 "§YCurrent:§! \n$tom_hi_exp_2_tt$ \n\nBelow §C20%§!: \n§g$tom_hi_exp_1_tt$§! \n\nAbove §C40%§!: \n§g$tom_hi_exp_3_tt$§!"
+ tom_hi_exp_3_tt_large:0 "§YCurrent:§! \n$tom_hi_exp_3_tt$ \n\nBelow §C40%§!: \n§g$tom_hi_exp_2_tt$§! \n\nAbove §C60%§!: \n§g$tom_hi_exp_4_tt$§!"
+ tom_hi_exp_4_tt_large:0 "§YCurrent:§! \n$tom_hi_exp_4_tt$ \n\nBelow §C60%§!: \n§g$tom_hi_exp_3_tt$§! \n\nAbove §C80%§!: \n§g$tom_hi_exp_5_tt$§!"
+ tom_hi_exp_5_tt_large:0 "§YCurrent:§! \n$tom_hi_exp_5_tt$ \n\nBelow §C80%§!: \n§g$tom_hi_exp_4_tt$§!"
+ 
+ 
+ # Must be updated if ideas are changed!
+ tom_hi_tanks_1_tt:0 "$tom_hi_tanks_1$\n\n£GFX_unit_medium_armor_icon_small Medium Tank: £GFX_production_cost Production Cost: +10%\n£GFX_unit_modern_armor_icon_small Modern Tank: £GFX_production_cost Production Cost: +10%\n£GFX_unit_heavy_armor_icon_small Heavy Tank: £GFX_production_cost Production Cost: +30%\n£GFX_unit_super_heavy_armor_icon_small Super Heavy Tank: £GFX_production_cost Production Cost: +40%\n£GFX_unit_land_cruiser_icon_small Land Cruiser: £GFX_production_cost Production Cost: +50%\n£GFX_unit_strat_bomber_icon_small Strategic Bomber: £GFX_production_cost Production Cost: +20%\nFactory Output: +10%"
+ tom_hi_tanks_2_tt:0 "$tom_hi_tanks_2$\n\n£GFX_unit_medium_armor_icon_small Medium Tank: £GFX_production_cost Production Cost: +5%\n£GFX_unit_modern_armor_icon_small Modern Tank: £GFX_production_cost Production Cost: +5%\n£GFX_unit_heavy_armor_icon_small Heavy Tank: £GFX_production_cost Production Cost: +20%\n£GFX_unit_super_heavy_armor_icon_small Super Heavy Tank: £GFX_production_cost Production Cost: +25%\n£GFX_unit_land_cruiser_icon_small Land Cruiser: £GFX_production_cost Production Cost: +25%\n£GFX_unit_strat_bomber_icon_small Strategic Bomber: £GFX_production_cost Production Cost: +15%\nFactory Output: +5%"
+ tom_hi_tanks_3_tt:0 "$tom_hi_tanks_3$\n\n£GFX_unit_heavy_armor_icon_small Heavy Tank: £GFX_production_cost Production Cost: +10%\n£GFX_unit_super_heavy_armor_icon_small Super Heavy Tank: £GFX_production_cost Production Cost: +10%\n£GFX_unit_land_cruiser_icon_small Land Cruiser: £GFX_production_cost Production Cost: +10%\n£GFX_unit_strat_bomber_icon_small Strategic Bomber: £GFX_production_cost Production Cost: +10%\nFactory Output: +2%"
+ tom_hi_tanks_4_tt:0 "$tom_hi_tanks_4$\n\n£GFX_unit_heavy_armor_icon_small Heavy Tank: £GFX_production_cost Production Cost: -10%\n£GFX_unit_super_heavy_armor_icon_small Super Heavy Tank: £GFX_production_cost Production Cost: -10%\n£GFX_unit_land_cruiser_icon_small Land Cruiser: £GFX_production_cost Production Cost: -10%\nFactory Output: -8%\nProduction Efficiency Growth: -10%"
+ tom_hi_tanks_5_tt:0 "$tom_hi_tanks_5$\n\n£GFX_unit_heavy_armor_icon_small Heavy Tank: £GFX_production_cost Production Cost: -20%\n£GFX_unit_super_heavy_armor_icon_small Super Heavy Tank: £GFX_production_cost Production Cost: -20%\n£GFX_unit_land_cruiser_icon_small Land Cruiser: £GFX_production_cost Production Cost: -20%\nFactory Output: -15%\nProduction Efficiency Growth: -20%"
+ 
+ tom_hi_industry_1_tt:0 "$tom_hi_industry_1$\n\nMilitary Factory Construction Speed: -10%\nCivilian to Military Factory Conversion Speed: -40%\nResearch Bonus: -15%\nInfrastructure Construction Speed: +20%\nCivilian Factory Construction Speed: +5%\nConsumer Goods Factories Factor: -20%"
+ tom_hi_industry_2_tt:0 "$tom_hi_industry_2$\n\nMilitary Factory Construction Speed: -5%\nCivilian to Military Factory Conversion Speed: -20%\nResearch Bonus: -8%\nInfrastructure Construction Speed: +10%\nConsumer Goods Factories Factor: -10%"
+ tom_hi_industry_3_tt:0 "$tom_hi_industry_3$\n\nCivilian to Military Factory Conversion Speed: +10%\nResearch Bonus: -2%\nFunds Gain (MIOs): +5%\nInfrastructure Construction Speed: +10%"
+ tom_hi_industry_4_tt:0 "$tom_hi_industry_4$\n\nCivilian to Military Factory Conversion Speed: +20%\nResearch Bonus: +5%\nFunds Gain (MIOs): +15%\nFactory Output: +2%\nConsumer Goods Factories Factor: +15%"
+ tom_hi_industry_5_tt:0 "$tom_hi_industry_5$\n\nCivilian to Military Factory Conversion Speed: +40%\nResearch Bonus: +10%\nFunds Gain (MIOs): +25%\nFactory Output: +5%\nConsumer Goods Factories Factor: +30%"
+ 
+ tom_hi_mp_1_tt:0 "$tom_hi_mp_1$\n\nProduction Efficiency Cap: -20%\nProduction Efficiency Retention: +25%\nProduction Efficiency Growth: +25%\nFactory Output: +5%"
+ tom_hi_mp_2_tt:0 "$tom_hi_mp_2$\n\nProduction Efficiency Cap: -10%\nProduction Efficiency Retention: +10%\nProduction Efficiency Growth: +10%"
+ tom_hi_mp_3_tt:0 "$tom_hi_mp_3$\n\nProduction Efficiency Cap: +5%\nProduction Efficiency Retention: -10%"
+ tom_hi_mp_4_tt:0 "$tom_hi_mp_4$\n\nProduction Efficiency Cap: +10%\nProduction Efficiency Retention: -20%\nProduction Efficiency Growth: -10%"
+ tom_hi_mp_5_tt:0 "$tom_hi_mp_5$\n\nProduction Efficiency Cap: +20%\nProduction Efficiency Retention: -25%\nProduction Efficiency Growth: -20%"
+ 
+ tom_hi_specialisation_1_tt:0 "$tom_hi_specialisation_1$\n\n£GFX_unit_medium_sp_anti_air_brigade_icon_small Self-Propelled Anti-Air: Production Cost: +30%\n£GFX_unit_medium_sp_artillery_brigade_icon_small Self-Propelled Artillery: Production Cost: +30%\n£GFX_unit_medium_tank_destroyer_brigade_icon_small Tank Destroyer: Production Cost: +30%\n£GFX_unit_amphibious_medium_armor_icon_small Amphibious Armor: Production Cost: +30%\n£GFX_unit_medium_flame_tank_icon_small Flamethrower Tank: Production Cost: +30%\nProduction Efficiency Growth: +10%"
+ tom_hi_specialisation_2_tt:0 "$tom_hi_specialisation_2$\n\n£GFX_unit_medium_sp_anti_air_brigade_icon_small Self-Propelled Anti-Air: Production Cost: +15%\n£GFX_unit_medium_sp_artillery_brigade_icon_small Self-Propelled Artillery: Production Cost: +15%\n£GFX_unit_medium_tank_destroyer_brigade_icon_small Tank Destroyer: Production Cost: +15%\n£GFX_unit_amphibious_medium_armor_icon_small Amphibious Armor: Production Cost: +15%\n£GFX_unit_medium_flame_tank_icon_small Flamethrower Tank: Production Cost: +15%\nProduction Efficiency Growth: +5%"
+ tom_hi_specialisation_3_tt:0 "$tom_hi_specialisation_3$\n\n£GFX_unit_medium_sp_anti_air_brigade_icon_small Self-Propelled Anti-Air: Production Cost: -5%\n£GFX_unit_medium_sp_artillery_brigade_icon_small Self-Propelled Artillery: Production Cost: -5%\n£GFX_unit_medium_tank_destroyer_brigade_icon_small Tank Destroyer: Production Cost: -5%\n£GFX_unit_amphibious_medium_armor_icon_small Amphibious Armor: Production Cost: -5%\n£GFX_unit_medium_flame_tank_icon_small Flamethrower Tank: Production Cost: -5%\nProduction Efficiency Growth: -5%"
+ tom_hi_specialisation_4_tt:0 "$tom_hi_specialisation_4$\n\n£GFX_unit_medium_sp_anti_air_brigade_icon_small Self-Propelled Anti-Air: Production Cost: -10%\n£GFX_unit_medium_sp_artillery_brigade_icon_small Self-Propelled Artillery: Production Cost: -10%\n£GFX_unit_medium_tank_destroyer_brigade_icon_small Tank Destroyer: Production Cost: -10%\n£GFX_unit_amphibious_medium_armor_icon_small Amphibious Armor: Production Cost: -10%\n£GFX_unit_medium_flame_tank_icon_small Flamethrower Tank: Production Cost: -10%\nProduction Efficiency Growth: -10%"
+ tom_hi_specialisation_5_tt:0 "$tom_hi_specialisation_5$\n\n£GFX_unit_medium_sp_anti_air_brigade_icon_small Self-Propelled Anti-Air: Production Cost: -20%\n£GFX_unit_medium_sp_artillery_brigade_icon_small Self-Propelled Artillery: Production Cost: -20%\n£GFX_unit_medium_tank_destroyer_brigade_icon_small Tank Destroyer: Production Cost: -20%\n£GFX_unit_amphibious_medium_armor_icon_small Amphibious Armor: Production Cost: -20%\n£GFX_unit_medium_flame_tank_icon_small Flamethrower Tank: Production Cost: -20%\nProduction Efficiency Growth: -15%"
+ 
+ tom_hi_exp_1_tt:0 "$tom_hi_exp_1$\n\nProduction Efficiency Cap: +10%\nResearch Bonus: -15%"
+ tom_hi_exp_2_tt:0 "$tom_hi_exp_2$\n\nProduction Efficiency Cap: +5%\nResearch Bonus: -5%"
+ tom_hi_exp_3_tt:0 "$tom_hi_exp_3$\n\nProduction Efficiency Cap: -2%\nResearch Bonus: +2%"
+ tom_hi_exp_4_tt:0 "$tom_hi_exp_4$\n\nProduction Efficiency Cap: -5%\nResearch Bonus: +5%\nSpecial Projects Speed: 10%"
+ tom_hi_exp_5_tt:0 "$tom_hi_exp_5$\n\nProduction Efficiency Cap: -10%\nResearch Bonus: +15%\nSpecial Projects Speed: 20%"
+ 
+ 
+ tom_hi_tanks_1:0 "Heavy Cranes - Missing"
+ tom_hi_tanks_2:0 "Heavy Cranes - Reduced"
+ tom_hi_tanks_3:0 "Heavy Cranes - Balanced"
+ tom_hi_tanks_4:0 "Heavy Cranes - Focused"
+ tom_hi_tanks_5:0 "Heavy Cranes - Specialised"
+ 
+ tom_hi_industry_1:0 "Civilian Involvement - Missing"
+ tom_hi_industry_2:0 "Civilian Involvement - Reduced"
+ tom_hi_industry_3:0 "Civilian Involvement - Balanced"
+ tom_hi_industry_4:0 "Civilian Involvement - Focused"
+ tom_hi_industry_5:0 "Civilian Involvement - Specialised"
+ 
+ tom_hi_mp_1:0 "Mass Production - Missing"
+ tom_hi_mp_2:0 "Mass Production - Reduced"
+ tom_hi_mp_3:0 "Mass Production - Balanced"
+ tom_hi_mp_4:0 "Mass Production - Focused"
+ tom_hi_mp_5:0 "Mass Production - Specialised"
+ 
+ tom_hi_specialisation_1:0 "Specialisation - Missing"
+ tom_hi_specialisation_2:0 "Specialisation - Reduced"
+ tom_hi_specialisation_3:0 "Specialisation - Balanced"
+ tom_hi_specialisation_4:0 "Specialisation - Focused"
+ tom_hi_specialisation_5:0 "Specialisation - Specialised"
+ 
+ tom_hi_exp_1:0 "Prototype Production - Missing"
+ tom_hi_exp_2:0 "Prototype Production - Reduced"
+ tom_hi_exp_3:0 "Prototype Production - Balanced"
+ tom_hi_exp_4:0 "Prototype Production - Focused"
+ tom_hi_exp_5:0 "Prototype Production - Specialised"

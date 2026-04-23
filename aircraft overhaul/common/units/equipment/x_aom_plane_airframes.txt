@@ -1,0 +1,120 @@
+# This file must be evaluated after the file(s) defining the archetypes being duplicated.
+# The equipment attributes alias, type, variant_name, and derived_variant_name are not duplicated.
+
+duplicate_archetypes = {
+
+	# small_plane
+	
+	small_plane_interceptor_airframe = {
+		archetype = small_plane_airframe
+		type = interceptor
+		air_map_icon_frame = 1
+		interface_overview_category_index = 1
+	}
+
+	small_plane_heavy_fighter_airframe = {
+		archetype = small_plane_airframe
+		type = heavy_fighter
+		air_map_icon_frame = 8
+		interface_overview_category_index = 1
+	}
+	
+	small_plane_scout_plane_airframe = {
+		archetype = small_plane_airframe
+		type = scout_plane
+		air_map_icon_frame = 13
+		interface_overview_category_index = 7
+	}
+	
+	small_plane_maritime_patrol_plane_airframe = {
+		archetype = small_plane_airframe
+		type = maritime_patrol_plane
+		air_map_icon_frame = 14
+		interface_overview_category_index = 8
+	}
+	
+	# cv_small_plane
+	
+	cv_small_plane_interceptor_airframe = {
+		archetype = cv_small_plane_airframe
+		type = interceptor
+		air_map_icon_frame = 16
+		interface_overview_category_index = 1
+	}
+
+	cv_small_plane_heavy_fighter_airframe = {
+		archetype = cv_small_plane_airframe
+		type = heavy_fighter
+		air_map_icon_frame = 8
+		interface_overview_category_index = 1
+	}
+	
+	cv_small_plane_scout_plane_airframe = {
+		archetype = cv_small_plane_airframe
+		type = scout_plane
+		air_map_icon_frame = 13
+		interface_overview_category_index = 7
+	}
+	
+	cv_small_plane_maritime_patrol_plane_airframe = {
+		archetype = cv_small_plane_airframe
+		type = maritime_patrol_plane
+		air_map_icon_frame = 14
+		interface_overview_category_index = 8
+	}
+	
+	# medium_plane
+
+	medium_plane_interceptor_airframe = {
+		archetype = medium_plane_airframe
+		type = interceptor
+		picture = archetype_heavy_fighter_equipment
+		ai_type = heavy_fighter
+		air_map_icon_frame = 8
+		interface_overview_category_index = 3
+	}
+	
+	medium_plane_cas_airframe = {
+		archetype = medium_plane_airframe
+		type = cas
+		air_map_icon_frame = 6
+		interface_overview_category_index = 4
+	}
+	
+	medium_plane_naval_bomber_airframe = {
+		archetype = medium_plane_airframe
+		type = naval_bomber
+		air_map_icon_frame = 6
+		interface_overview_category_index = 8
+	}
+	
+	medium_plane_suicide_airframe = {
+		archetype = medium_plane_airframe
+		type = suicide
+		air_map_icon_frame = 15
+		interface_overview_category_index = -1
+	}
+	
+	medium_plane_maritime_patrol_plane_airframe = {
+		archetype = medium_plane_airframe
+		type = maritime_patrol_plane
+		air_map_icon_frame = 14
+		interface_overview_category_index = 8
+	}
+	
+	# large_plane
+	
+	large_plane_naval_bomber_airframe = {
+		archetype =  large_plane_airframe
+		type = naval_bomber
+		air_map_icon_frame = 6
+		interface_overview_category_index = 8
+	}
+	
+	large_plane_scout_plane_airframe = {
+		archetype =  large_plane_airframe
+		type = scout_plane
+		air_map_icon_frame = 13
+		interface_overview_category_index = 7
+	}
+}

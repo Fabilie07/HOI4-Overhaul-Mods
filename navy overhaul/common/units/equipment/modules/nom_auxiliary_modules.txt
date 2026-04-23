@@ -1,0 +1,22 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+	
+	### Role
+
+	auxiliary_role_mine_layer = {
+		abbreviation = "am1"
+		category = ship_auxiliary_role
+		allowed_module_categories = {
+			rear_1_custom_slot = { ship_mine_layer }
+			left_1_custom_slot = { ship_mine_layer }
+			right_1_custom_slot = { ship_mine_layer }
+		}
+		
+		add_stats = {
+			build_cost_ic = 100
+		}
+		xp_cost = 1
+	}
+}

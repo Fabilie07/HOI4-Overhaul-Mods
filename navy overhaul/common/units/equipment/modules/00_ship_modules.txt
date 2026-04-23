@@ -1,0 +1,325 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+
+### ### ###  ###      ##   ##  #  # ### ###   ##  #        ## #   #  ## ### ### #   # 
+#    #  #  # #       #  # #  # ## #  #  #  # #  # #       #    # #  #    #  #   ## ## 
+##   #  ###  ##      #    #  # # ##  #  ###  #  # #        #    #    #   #  ##  # # # 
+#    #  #  # #       #  # #  # #  #  #  #  # #  # #         #   #     #  #  #   #   # 
+#   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     ##    #   ##   #  ### #   # 
+
+	ship_fire_control_system_0 = {
+		abbreviation = "sbf"
+		category = ship_fire_control_system
+		gfx = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 60
+			naval_light_gun_hit_chance_factor = 0.025
+			naval_heavy_gun_hit_chance_factor = 0.025
+		}
+		
+		multiply_stats = {
+		}
+		xp_cost = 2
+	}
+
+	ship_fire_control_system_1 = {
+		abbreviation = "sbg"
+		category = ship_fire_control_system
+		parent = ship_fire_control_system_0
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			build_cost_ic = 135
+			naval_light_gun_hit_chance_factor = 0.05
+			naval_heavy_gun_hit_chance_factor = 0.05
+		}
+		
+		multiply_stats = {
+			anti_air_attack = 0.1
+		}
+
+		can_convert_from = {
+			module = ship_fire_control_system_0
+			convert_cost_ic = 85
+		}
+		xp_cost = 2
+	}
+	ship_fire_control_system_2 = {
+		abbreviation = "sbh"
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_fire_control_system_1
+		
+		add_stats = {
+			build_cost_ic = 165
+			naval_light_gun_hit_chance_factor = 0.075
+			naval_heavy_gun_hit_chance_factor = 0.075
+		}
+		
+		multiply_stats = {
+			anti_air_attack = 0.15
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_1
+			convert_cost_ic = 105
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 145
+		}
+		xp_cost = 2
+	}
+	ship_fire_control_system_3 = {
+		abbreviation = "sbi"
+		category = ship_fire_control_system
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_fire_control_system_2
+		
+		add_stats = {
+			build_cost_ic = 225
+			naval_light_gun_hit_chance_factor = 0.1
+			naval_heavy_gun_hit_chance_factor = 0.1
+		}
+		
+		multiply_stats = {
+			anti_air_attack = 0.2
+		}
+		can_convert_from = {
+			module = ship_fire_control_system_2
+			convert_cost_ic = 110
+		}
+		can_convert_from = {
+			module_category = ship_fire_control_system
+			convert_cost_ic = 145
+		}
+		xp_cost = 2
+	}
+
+
+###   ##  ###   ##  ###  
+#  # #  # #  # #  # #  # 
+###  #### #  # #### ###  
+#  # #  # #  # #  # #  # 
+#  # #  # ###  #  # #  # 
+
+
+
+	ship_radar_1 = {
+		abbreviation = "sbj"
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			build_cost_ic = 100
+			surface_detection = 6
+			sub_detection = 3
+		}
+		xp_cost = 3
+	}
+	ship_radar_2 = {
+		abbreviation = "sbk"
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_radar_1
+		multiply_stats = {
+			anti_air_attack = 0.05
+		}
+		add_stats = {
+			naval_light_gun_hit_chance_factor = 0.025
+			naval_heavy_gun_hit_chance_factor = 0.025
+			build_cost_ic = 130
+			surface_detection = 8
+			sub_detection = 4
+		}
+		
+		can_convert_from = {
+			module = ship_radar_1
+			convert_cost_ic = 30
+		}
+		xp_cost = 3
+	}
+	ship_radar_3 = {
+		abbreviation = "sbl"
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_radar_2
+		multiply_stats = {
+			anti_air_attack = 0.075
+		}
+		add_stats = {
+			naval_light_gun_hit_chance_factor = 0.05
+			naval_heavy_gun_hit_chance_factor = 0.05
+			surface_detection = 14
+			sub_detection = 7
+			build_cost_ic = 160
+		}
+		can_convert_from = {
+			module = ship_radar_2
+			convert_cost_ic = 50
+		}
+		can_convert_from = {
+			module_category = ship_radar
+			convert_cost_ic = 80
+		}
+		xp_cost = 3
+	}
+	ship_radar_4 = {
+		abbreviation = "sbm"
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_radar_3
+		multiply_stats = {
+			anti_air_attack = 0.1
+		}
+		add_stats = {
+			naval_light_gun_hit_chance_factor = 0.1
+			naval_heavy_gun_hit_chance_factor = 0.1
+			build_cost_ic = 190
+			surface_detection = 20
+			sub_detection = 10
+		}
+		can_convert_from = {
+			module = ship_radar_3
+			convert_cost_ic = 50
+		}
+		can_convert_from = {
+			module_category = ship_radar
+			convert_cost_ic = 110
+		}
+		xp_cost = 3
+	}
+
+ ##  ### ###   ##  ###   ##  ### ###     #    ##  #  # #  #  ##  #  # ### ###  
+#  #  #  #  # #  # #  # #  # #    #      #   #  # #  # ## # #  # #  # #   #  # 
+####  #  ###  #    ###  #### ##   #      #   #### #  # # ## #    #### ##  ###  
+#  #  #  #  # #  # #  # #  # #    #      #   #  # #  # #  # #  # #  # #   #  # 
+#  # ### #  #  ##  #  # #  # #    #      ### #  #  ##  #  #  ##  #  # ### #  # 
+	ship_airplane_launcher_1 = {
+		abbreviation = "scy"
+		category = ship_airplane_launcher
+		gfx = ship_airplane_launcher_1
+		
+		add_stats = {
+			surface_detection = 7
+			sub_detection = 2
+			build_cost_ic = 80
+		}
+		xp_cost = 1
+	}
+	ship_airplane_launcher_2 = {
+		abbreviation = "scz"
+		category = ship_airplane_launcher
+		gfx = ship_airplane_launcher_2
+		parent = ship_airplane_launcher_1
+		add_stats = {
+			surface_detection = 10
+			sub_detection = 3
+			build_cost_ic = 100
+		}
+		can_convert_from = {
+			module_category = ship_airplane_launcher
+			convert_cost_ic = 40
+		}
+		xp_cost = 1
+	}
+	
+	ship_seaplane_tender_1 = {
+		abbreviation = "sfa"
+		category = ship_seaplane_tender
+
+		add_stats = {
+			surface_detection = 2
+			sub_detection = 5
+			build_cost_ic = 50
+		}
+		xp_cost = 1
+	}
+
+	ship_seaplane_tender_2 = {
+		abbreviation = "sfb"
+		category = ship_seaplane_tender
+
+		add_stats = {
+			surface_detection = 3
+			sub_detection = 7
+			build_cost_ic = 65
+		}
+		can_convert_from = {
+			module_category = ship_seaplane_tender
+			convert_cost_ic = 30
+		}
+		xp_cost = 1
+	}
+
+ ##  ##  #  #  ##  ###  
+#   #  # ## # #  # #  # 
+ #  #  # # ## #### ###  
+  # #  # #  # #  # #  # 
+##   ##  #  # #  # #  # 
+
+
+	ship_sonar_1 = {
+		abbreviation = "sdc"
+		category = ship_sonar
+		gfx = ship_sonar_1
+		sfx = sfx_ui_sd_module_sonar
+		
+		add_stats = {
+			sub_detection = 8
+			build_cost_ic = 40
+		}
+		xp_cost = 3
+	}
+	ship_sonar_2 = {
+		abbreviation = "sdd"
+		category = ship_sonar
+		gfx = ship_sonar_2
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_1
+		add_stats = {
+			sub_detection = 12
+			build_cost_ic = 60
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 25
+		}
+		xp_cost = 3
+	}
+	ship_sonar_3 = {
+		abbreviation = "sdd"
+		category = ship_sonar
+		gfx = ship_sonar_3
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_2
+		add_stats = {
+			sub_detection = 16
+			build_cost_ic = 70
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 30
+		}
+		xp_cost = 3
+	}
+	ship_sonar_4 = {
+		abbreviation = "sdd"
+		category = ship_sonar
+		gfx = ship_sonar_4
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_2
+		add_stats = {
+			sub_detection = 20
+			build_cost_ic = 80
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 35
+		}
+		xp_cost = 3
+	}
+}

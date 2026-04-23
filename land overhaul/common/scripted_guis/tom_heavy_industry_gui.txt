@@ -1,0 +1,622 @@
+scripted_gui = {
+	tom_heavy_industry_gui = {
+		context_type = decision_category
+		window_name = "tom_heavy_industry_window"
+		
+		effects = {
+			tank_scrollbar_decrease_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_tank_target_pointer
+							value = 0
+							compare = greater_than_or_equals
+						}
+					}
+					remove_from_array = {
+						array = tom_hi_tank_target_array
+						index = tom_hi_tank_target_pointer
+					}
+					add_to_variable = { tom_hi_tank_target_pointer = -1 }
+					add_to_variable = { tom_hi_tank_target = -5 }
+					
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			tank_scrollbar_decrease_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_tank_target_pointer
+							value = 3
+							compare = greater_than_or_equals
+						}
+					}
+					
+					remove_from_array = {
+						array = tom_hi_tank_target_array
+						index = tom_hi_tank_target_pointer
+					}
+					add_to_variable = { tom_hi_tank_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_tank_target_array
+						index = tom_hi_tank_target_pointer
+					}
+					add_to_variable = { tom_hi_tank_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_tank_target_array
+						index = tom_hi_tank_target_pointer
+					}
+					add_to_variable = { tom_hi_tank_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_tank_target_array
+						index = tom_hi_tank_target_pointer
+					}
+					add_to_variable = { tom_hi_tank_target_pointer = -1 }
+					add_to_variable = { tom_hi_tank_target = -20 }
+				}
+				else = {
+					clear_array = tom_hi_tank_target_array
+					set_variable = { tom_hi_tank_target_pointer = -1 }
+					set_variable = { tom_hi_tank_target = 0 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			tank_scrollbar_increase_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_tank_target_pointer
+							value = 19
+							compare = less_than
+						}
+					}
+					add_to_array = {
+						array = tom_hi_tank_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_tank_target_pointer = 1 }
+					add_to_variable = { tom_hi_tank_target = 5 }
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			tank_scrollbar_increase_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_tank_target_pointer
+							value = 16
+							compare = less_than
+						}
+					}
+					
+					add_to_array = {
+						array = tom_hi_tank_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_tank_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_tank_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_tank_target_pointer = 4 }
+					add_to_variable = { tom_hi_tank_target = 20 }
+				}
+				else = {
+					resize_array = { tom_hi_tank_target_array = 20 }
+					set_variable = { tom_hi_tank_target_pointer = 19 }
+					set_variable = { tom_hi_tank_target = 100 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			
+			industry_scrollbar_decrease_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_industry_target_pointer
+							value = 0
+							compare = greater_than_or_equals
+						}
+					}
+					remove_from_array = {
+						array = tom_hi_industry_target_array
+						index = tom_hi_industry_target_pointer
+					}
+					add_to_variable = { tom_hi_industry_target_pointer = -1 }
+					add_to_variable = { tom_hi_industry_target = -5 }
+					
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			industry_scrollbar_decrease_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_industry_target_pointer
+							value = 3
+							compare = greater_than_or_equals
+						}
+					}
+					
+					remove_from_array = {
+						array = tom_hi_industry_target_array
+						index = tom_hi_industry_target_pointer
+					}
+					add_to_variable = { tom_hi_industry_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_industry_target_array
+						index = tom_hi_industry_target_pointer
+					}
+					add_to_variable = { tom_hi_industry_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_industry_target_array
+						index = tom_hi_industry_target_pointer
+					}
+					add_to_variable = { tom_hi_industry_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_industry_target_array
+						index = tom_hi_industry_target_pointer
+					}
+					add_to_variable = { tom_hi_industry_target_pointer = -1 }
+					add_to_variable = { tom_hi_industry_target = -20 }
+				}
+				else = {
+					clear_array = tom_hi_industry_target_array
+					set_variable = { tom_hi_industry_target_pointer = -1 }
+					set_variable = { tom_hi_industry_target = 0 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			industry_scrollbar_increase_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_industry_target_pointer
+							value = 19
+							compare = less_than
+						}
+					}
+					add_to_array = {
+						array = tom_hi_industry_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_industry_target_pointer = 1 }
+					add_to_variable = { tom_hi_industry_target = 5 }
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			industry_scrollbar_increase_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_industry_target_pointer
+							value = 16
+							compare = less_than
+						}
+					}
+					
+					add_to_array = {
+						array = tom_hi_industry_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_industry_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_industry_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_industry_target_pointer = 4 }
+					add_to_variable = { tom_hi_industry_target = 20 }
+				}
+				else = {
+					resize_array = { tom_hi_industry_target_array = 20 }
+					set_variable = { tom_hi_industry_target_pointer = 19 }
+					set_variable = { tom_hi_industry_target = 100 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			
+			mp_scrollbar_decrease_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_mp_target_pointer
+							value = 0
+							compare = greater_than_or_equals
+						}
+					}
+					remove_from_array = {
+						array = tom_hi_mp_target_array
+						index = tom_hi_mp_target_pointer
+					}
+					add_to_variable = { tom_hi_mp_target_pointer = -1 }
+					add_to_variable = { tom_hi_mp_target = -5 }
+					
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			mp_scrollbar_decrease_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_mp_target_pointer
+							value = 3
+							compare = greater_than_or_equals
+						}
+					}
+					
+					remove_from_array = {
+						array = tom_hi_mp_target_array
+						index = tom_hi_mp_target_pointer
+					}
+					add_to_variable = { tom_hi_mp_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_mp_target_array
+						index = tom_hi_mp_target_pointer
+					}
+					add_to_variable = { tom_hi_mp_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_mp_target_array
+						index = tom_hi_mp_target_pointer
+					}
+					add_to_variable = { tom_hi_mp_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_mp_target_array
+						index = tom_hi_mp_target_pointer
+					}
+					add_to_variable = { tom_hi_mp_target_pointer = -1 }
+					add_to_variable = { tom_hi_mp_target = -20 }
+				}
+				else = {
+					clear_array = tom_hi_mp_target_array
+					set_variable = { tom_hi_mp_target_pointer = -1 }
+					set_variable = { tom_hi_mp_target = 0 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			mp_scrollbar_increase_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_mp_target_pointer
+							value = 19
+							compare = less_than
+						}
+					}
+					add_to_array = {
+						array = tom_hi_mp_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_mp_target_pointer = 1 }
+					add_to_variable = { tom_hi_mp_target = 5 }
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			mp_scrollbar_increase_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_mp_target_pointer
+							value = 16
+							compare = less_than
+						}
+					}
+					
+					add_to_array = {
+						array = tom_hi_mp_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_mp_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_mp_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_mp_target_pointer = 4 }
+					add_to_variable = { tom_hi_mp_target = 20 }
+				}
+				else = {
+					resize_array = { tom_hi_mp_target_array = 20 }
+					set_variable = { tom_hi_mp_target_pointer = 19 }
+					set_variable = { tom_hi_mp_target = 100 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			
+			specialisation_scrollbar_decrease_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_specialisation_target_pointer
+							value = 0
+							compare = greater_than_or_equals
+						}
+					}
+					remove_from_array = {
+						array = tom_hi_specialisation_target_array
+						index = tom_hi_specialisation_target_pointer
+					}
+					add_to_variable = { tom_hi_specialisation_target_pointer = -1 }
+					add_to_variable = { tom_hi_specialisation_target = -5 }
+					
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			specialisation_scrollbar_decrease_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_specialisation_target_pointer
+							value = 3
+							compare = greater_than_or_equals
+						}
+					}
+					
+					remove_from_array = {
+						array = tom_hi_specialisation_target_array
+						index = tom_hi_specialisation_target_pointer
+					}
+					add_to_variable = { tom_hi_specialisation_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_specialisation_target_array
+						index = tom_hi_specialisation_target_pointer
+					}
+					add_to_variable = { tom_hi_specialisation_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_specialisation_target_array
+						index = tom_hi_specialisation_target_pointer
+					}
+					add_to_variable = { tom_hi_specialisation_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_specialisation_target_array
+						index = tom_hi_specialisation_target_pointer
+					}
+					add_to_variable = { tom_hi_specialisation_target_pointer = -1 }
+					add_to_variable = { tom_hi_specialisation_target = -20 }
+				}
+				else = {
+					clear_array = tom_hi_specialisation_target_array
+					set_variable = { tom_hi_specialisation_target_pointer = -1 }
+					set_variable = { tom_hi_specialisation_target = 0 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			specialisation_scrollbar_increase_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_specialisation_target_pointer
+							value = 19
+							compare = less_than
+						}
+					}
+					add_to_array = {
+						array = tom_hi_specialisation_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_specialisation_target_pointer = 1 }
+					add_to_variable = { tom_hi_specialisation_target = 5 }
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			specialisation_scrollbar_increase_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_specialisation_target_pointer
+							value = 16
+							compare = less_than
+						}
+					}
+					
+					add_to_array = {
+						array = tom_hi_specialisation_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_specialisation_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_specialisation_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_specialisation_target_pointer = 4 }
+					add_to_variable = { tom_hi_specialisation_target = 20 }
+				}
+				else = {
+					resize_array = { tom_hi_specialisation_target_array = 20 }
+					set_variable = { tom_hi_specialisation_target_pointer = 19 }
+					set_variable = { tom_hi_specialisation_target = 100 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			
+			exp_scrollbar_decrease_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_exp_target_pointer
+							value = 0
+							compare = greater_than_or_equals
+						}
+					}
+					remove_from_array = {
+						array = tom_hi_exp_target_array
+						index = tom_hi_exp_target_pointer
+					}
+					add_to_variable = { tom_hi_exp_target_pointer = -1 }
+					add_to_variable = { tom_hi_exp_target = -5 }
+					
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			exp_scrollbar_decrease_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_exp_target_pointer
+							value = 3
+							compare = greater_than_or_equals
+						}
+					}
+					
+					remove_from_array = {
+						array = tom_hi_exp_target_array
+						index = tom_hi_exp_target_pointer
+					}
+					add_to_variable = { tom_hi_exp_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_exp_target_array
+						index = tom_hi_exp_target_pointer
+					}
+					add_to_variable = { tom_hi_exp_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_exp_target_array
+						index = tom_hi_exp_target_pointer
+					}
+					add_to_variable = { tom_hi_exp_target_pointer = -1 }
+					remove_from_array = {
+						array = tom_hi_exp_target_array
+						index = tom_hi_exp_target_pointer
+					}
+					add_to_variable = { tom_hi_exp_target_pointer = -1 }
+					add_to_variable = { tom_hi_exp_target = -20 }
+				}
+				else = {
+					clear_array = tom_hi_exp_target_array
+					set_variable = { tom_hi_exp_target_pointer = -1 }
+					set_variable = { tom_hi_exp_target = 0 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+			
+			exp_scrollbar_increase_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_exp_target_pointer
+							value = 19
+							compare = less_than
+						}
+					}
+					add_to_array = {
+						array = tom_hi_exp_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_exp_target_pointer = 1 }
+					add_to_variable = { tom_hi_exp_target = 5 }
+					tom_hi_check_monthly_change_update = yes
+				}
+			}
+			exp_scrollbar_increase_shift_click = {
+				if = {
+					limit = {
+						check_variable = {
+							var = tom_hi_exp_target_pointer
+							value = 16
+							compare = less_than
+						}
+					}
+					
+					add_to_array = {
+						array = tom_hi_exp_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_exp_target_array
+						value = 0
+					}
+					add_to_array = {
+						array = tom_hi_exp_target_array
+						value = 0
+					}
+					add_to_variable = { tom_hi_exp_target_pointer = 4 }
+					add_to_variable = { tom_hi_exp_target = 20 }
+				}
+				else = {
+					resize_array = { tom_hi_exp_target_array = 20 }
+					set_variable = { tom_hi_exp_target_pointer = 19 }
+					set_variable = { tom_hi_exp_target = 100 }
+				}
+				tom_hi_check_monthly_change_update = yes
+			}
+		}
+		
+		properties = {
+			tank_section_icon = { image = [tom_hi_tank_icon] }
+			industry_section_icon = { image = [tom_hi_industry_icon] }
+			mp_section_icon = { image = [tom_hi_mp_icon] }
+			specialisation_section_icon = { image = [tom_hi_specialisation_icon] }
+			exp_section_icon = { image = [tom_hi_exp_icon] }
+		}
+		
+		dynamic_lists = {
+			entry_bg_grid = {
+				array = tom_hi_tank_target_array
+				entry_container = "entry_bg_container"
+			}
+			
+			tank_scrollbar_grid = {
+				array = tom_hi_tank_target_array
+				entry_container = "scrollbar_entry_container"
+			}
+			tank_progressbar_grid = {
+				array = tom_hi_tank_current_array
+				entry_container = "progressbar_entry_container"
+			}
+			
+			industry_scrollbar_grid = {
+				array = tom_hi_industry_target_array
+				entry_container = "scrollbar_entry_container"
+			}
+			industry_progressbar_grid = {
+				array = tom_hi_industry_current_array
+				entry_container = "progressbar_entry_container"
+			}
+			
+			mp_scrollbar_grid = {
+				array = tom_hi_mp_target_array
+				entry_container = "scrollbar_entry_container"
+			}
+			mp_progressbar_grid = {
+				array = tom_hi_mp_current_array
+				entry_container = "progressbar_entry_container"
+			}
+			
+			specialisation_scrollbar_grid = {
+				array = tom_hi_specialisation_target_array
+				entry_container = "scrollbar_entry_container"
+			}
+			specialisation_progressbar_grid = {
+				array = tom_hi_specialisation_current_array
+				entry_container = "progressbar_entry_container"
+			}
+			
+			exp_scrollbar_grid = {
+				array = tom_hi_exp_target_array
+				entry_container = "scrollbar_entry_container"
+			}
+			exp_progressbar_grid = {
+				array = tom_hi_exp_current_array
+				entry_container = "progressbar_entry_container"
+			}
+		}
+	}
+}

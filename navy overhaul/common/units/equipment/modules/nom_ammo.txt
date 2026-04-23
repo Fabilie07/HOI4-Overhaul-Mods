@@ -1,0 +1,130 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "Man the Guns" 
+	}
+
+	### Light
+
+	cannon_high_explosive = {
+		abbreviation = "he"
+		category = ammo_cannon
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			lg_attack = 0.1
+			lg_armor_piercing = 0.1
+		}
+		xp_cost = 0
+	}
+
+	cannon_armor_piercing = {
+		abbreviation = "ap"
+		category = ammo_cannon
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			hg_attack = 0.08
+			hg_armor_piercing = 0.15
+		}
+		xp_cost = 0
+	}
+
+	cannon_semi_armor_piercing = {
+		abbreviation = "sap"
+		category = ammo_cannon
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.1
+			hg_attack = 0.05
+			hg_armor_piercing = 0.1
+		}
+		xp_cost = 0
+	}
+
+	cannon_beehive = {
+		abbreviation = "ft"
+		category = ammo_cannon
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			anti_air_attack = 0.1
+		}
+		xp_cost = 0
+	}
+	cannon_variable_time = {
+		abbreviation = "hevt"
+		category = ammo_cannon
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			anti_air_attack = 0.2
+		}
+		xp_cost = 0
+	}
+
+	### Torpedo
+
+	torpedo_ammo = {
+		abbreviation = "at"
+		category = ammo_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			torpedo_attack = 0.025
+		}
+
+		xp_cost = 0
+	}
+	torpedo_ammo_2 = {
+		abbreviation = "at2"
+		category = ammo_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			torpedo_attack = 0.1
+			build_cost_ic = 0.1
+		}
+		xp_cost = 0
+	}
+	torpedo_ammo_3 = {
+		abbreviation = "at3"
+		category = ammo_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			torpedo_attack = 0.2
+			build_cost_ic = 0.15
+		}
+		xp_cost = 0
+	}
+
+	oxygen_torpedo_ammo = {
+		abbreviation = "ato"
+		category = ammo_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		multiply_stats = {
+			torpedo_attack = 0.2
+		}
+		add_stats = {
+			reliability = -0.1
+		}
+		xp_cost = 0
+	}
+
+	### Plane
+
+	plane_ammo = {
+		abbreviation = "at"
+		category = ammo_plane
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			reliability = 0.1
+		}
+
+		xp_cost = 10
+	}
+}

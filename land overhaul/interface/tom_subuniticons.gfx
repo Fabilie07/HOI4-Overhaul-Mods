@@ -1,0 +1,18 @@
+spriteTypes = {	
+	### Large images for DIVISIONS
+
+	spriteType = { name = "GFX_unit_light_flame_tank_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_flame_tank_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_flamethrower_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_flame_tank_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_flamethrower_tank_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_heavy_tank_spearhead_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mobile_spg_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_artillery_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_infantry_tank_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_tank_destroyer_support_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_at_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_armored_car_aa_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_armored_car_aa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_armored_car_destroyer_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_armored_car_destroyer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mechanized_aa_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_aa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mechanized_destroyer_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_destroyer_icon.dds" noOfFrames = 2 }
+	
+}

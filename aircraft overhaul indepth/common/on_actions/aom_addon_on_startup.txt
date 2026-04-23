@@ -1,0 +1,99 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					has_tech = iw_small_airframe
+				}
+				
+				add_design_template_bonus = {
+					name = small_plane_airframe_0
+					uses = 3
+					cost_factor = 0.9
+					equipment = small_plane_airframe_0
+					equipment = small_plane_cas_airframe_0
+					equipment = small_plane_naval_bomber_airframe_0
+					equipment = small_plane_suicide_airframe_0
+				}
+				add_design_template_bonus = {
+					name = cv_small_plane_airframe_0
+					uses = 3
+					cost_factor = 0.9
+					equipment = cv_small_plane_airframe_0
+					equipment = cv_small_plane_cas_airframe_0
+					equipment = cv_small_plane_naval_bomber_airframe_0
+					equipment = cv_small_plane_suicide_airframe_0
+				}
+				add_design_template_bonus = {
+					name = medium_plane_airframe_0
+					uses = 3
+					cost_factor = 0.9
+					equipment = medium_plane_airframe_0
+					equipment = medium_plane_scout_plane_airframe_0
+					equipment = medium_plane_fighter_airframe_0
+				}
+				add_design_template_bonus = {
+					name = large_plane_airframe_0
+					uses = 3
+					cost_factor = 0.9
+					equipment = large_plane_airframe_0
+					equipment = large_plane_maritime_patrol_plane_airframe_0
+				}
+			}
+			
+			every_country = {
+				limit = {
+					has_tech = basic_small_airframe
+				}
+				
+				add_design_template_bonus = {
+					name = small_plane_airframe_1
+					uses = 3
+					cost_factor = 0.9
+					equipment = small_plane_airframe_1
+					equipment = small_plane_cas_airframe_1
+					equipment = small_plane_naval_bomber_airframe_1
+					equipment = small_plane_suicide_airframe_1
+				}
+				add_design_template_bonus = {
+					name = cv_small_plane_airframe_1
+					uses = 3
+					cost_factor = 0.9
+					equipment = cv_small_plane_airframe_1
+					equipment = cv_small_plane_cas_airframe_1
+					equipment = cv_small_plane_naval_bomber_airframe_1
+					equipment = cv_small_plane_suicide_airframe_1
+				}
+			}
+			
+			every_country = {
+				limit = {
+					has_tech = basic_medium_airframe
+				}
+				
+				add_design_template_bonus = {
+					name = medium_plane_airframe_1
+					uses = 3
+					cost_factor = 0.9
+					equipment = medium_plane_airframe_1
+					equipment = medium_plane_scout_plane_airframe_1
+					equipment = medium_plane_fighter_airframe_1
+				}
+			}
+			
+			every_country = {
+				limit = {
+					has_tech = basic_large_airframe
+				}
+				
+				add_design_template_bonus = {
+					name = large_plane_airframe_1
+					uses = 3
+					cost_factor = 0.9
+					equipment = large_plane_airframe_1
+					equipment = large_plane_maritime_patrol_plane_airframe_1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+﻿l_english:
+
+ AOM_international_development_idea:0 "International Aircraft Development"
+ AOM_international_development_research_idea:0 "International Aircraft Development"
+ AOM_international_development_production_idea:0 "International Aircraft Development"
+ AOM_international_development_doctrine_idea:0 "International Aircraft Development"
+ 
+ unconventional_focus:0 "Unconventional Aircraft Thinking"
+ 
+ aom_free_designs_idea: "Free Aircraft Designs"
+ aom_strat_bombing_modifier: "Enemy Bombing"
+ 
+ 
+ AOM_academy_1: "Air Academy Founded"
+ AOM_academy_2_self: "[ROOT.GetAdjectiveCap] Early Air Thinking"
+ AOM_academy_2_ENG: "[ENG.GetAdjectiveCap] Early Air Thinking"
+ AOM_academy_2_FRA: "[FRA.GetAdjectiveCap] Early Air Thinking"
+ AOM_academy_2_GER: "[GER.GetAdjectiveCap] Early Air Thinking"
+ AOM_academy_2_ITA: "[ITA.GetAdjectiveCap] Early Air Thinking"
+ AOM_academy_2_JAP: "[JAP.GetAdjectiveCap] Early Air Thinking"
+ AOM_academy_2_SOV: "[SOV.GetAdjectiveCap] Early Air Thinking"
+ AOM_academy_2_USA: "[USA.GetAdjectiveCap] Early Air Thinking"
+ 
+ AOM_academy_3_self: "[ROOT.GetAdjectiveCap] Intermediate Air Thinking"
+ AOM_academy_3_ENG: "[ENG.GetAdjectiveCap] Intermediate Air Thinking"
+ AOM_academy_3_FRA: "[FRA.GetAdjectiveCap] Intermediate Air Thinking"
+ AOM_academy_3_GER: "[GER.GetAdjectiveCap] Intermediate Air Thinking"
+ AOM_academy_3_ITA: "[ITA.GetAdjectiveCap] Intermediate Air Thinking"
+ AOM_academy_3_JAP: "[JAP.GetAdjectiveCap] Intermediate Air Thinking"
+ AOM_academy_3_SOV: "[SOV.GetAdjectiveCap] Intermediate Air Thinking"
+ AOM_academy_3_USA: "[USA.GetAdjectiveCap] Intermediate Air Thinking"
+ 
+ AOM_academy_4_self: "[ROOT.GetAdjectiveCap] Advanced Air Thinking"
+ AOM_academy_4_ENG: "[ENG.GetAdjectiveCap] Advanced Air Thinking"
+ AOM_academy_4_FRA: "[FRA.GetAdjectiveCap] Advanced Air Thinking"
+ AOM_academy_4_GER: "[GER.GetAdjectiveCap] Advanced Air Thinking"
+ AOM_academy_4_ITA: "[ITA.GetAdjectiveCap] Advanced Air Thinking"
+ AOM_academy_4_JAP: "[JAP.GetAdjectiveCap] Advanced Air Thinking"
+ AOM_academy_4_SOV: "[SOV.GetAdjectiveCap] Advanced Air Thinking"
+ AOM_academy_4_USA: "[USA.GetAdjectiveCap] Advanced Air Thinking"

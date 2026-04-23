@@ -1,0 +1,105 @@
+
+fighter_aircraft = {
+    name = DOCTRINE_TRACK_FIGHTER_AIRCRAFT
+    background = "GFX_air_superiority_bg"
+    icon = "GFX_doctrine_milestone_fighter_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 50.0 
+        equipment = {
+            fighter
+			interceptor
+			heavy_fighter
+        }
+    }
+}
+
+interceptor_aircraft = {
+    name = DOCTRINE_TRACK_INTERCEPTOR_AIRCRAFT
+    background = "GFX_doctrine_interceptor_bg"
+    icon = "GFX_doctrine_milestone_interceptor_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 100.0 
+         equipment = {
+			interceptor
+        }
+    }
+}
+
+cas_aircraft = {
+    name = DOCTRINE_TRACK_STRIKE_AIRCRAFT
+    background = "GFX_battlefield_destruction_bg"
+    icon = "GFX_doctrine_milestone_striker_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 50.0 
+        equipment = {
+			cas
+		}
+    }
+}
+
+medium_aircraft = {
+    name = DOCTRINE_TRACK_MEDIUM_AIRCRAFT
+    background = "GFX_operational_destruction_bg"
+    icon = "GFX_doctrine_milestone_medium_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 50.0 
+        equipment = {
+			tactical_bomber
+			heavy_fighter
+		}
+    }
+}
+
+heavy_aircraft = {
+    name = DOCTRINE_TRACK_HEAVY_AIRCRAFT
+    background = "GFX_strategic_destruction_bg"
+    icon = "GFX_doctrine_milestone_heavy_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 50.0 
+        equipment = {
+			strategic_bomber
+		}
+    }
+}
+
+naval_aircraft = {
+    name = DOCTRINE_TRACK_NAVAL_AIRCRAFT
+    background = "GFX_doctrine_naval_aircraft_bg"
+    icon = "GFX_doctrine_milestone_naval_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 50.0 
+        equipment = {
+			naval_bomber
+			maritime_patrol_plane
+		}
+    }
+}
+
+air_operations = {
+	name = DOCTRINE_TRACK_AIR_OPERATIONS
+	background = "GFX_doctrine_operations_bg"
+	icon = "GFX_doctrine_milestone_operations_air"
+    icon_frame = "GFX_doctrine_decor_air"
+	mastery = {
+        multiplier = 10
+        equipment = {
+			fighter
+			interceptor
+			heavy_fighter
+			cas
+			naval_bomber
+			scout_plane
+			suicide
+			maritime_patrol_plane
+			tactical_bomber
+			strategic_bomber
+			air_transport
+		}
+    }
+}

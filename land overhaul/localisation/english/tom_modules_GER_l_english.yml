@@ -1,0 +1,53 @@
+﻿l_english:
+
+ GER_tank_machine_gun_2x:0 "2x 7.92mm MG 13"
+ GER_tank_auto_cannon:0 "2cm KwK 30"
+ GER_tank_auto_cannon_2:0 "2cm KwK 38"
+ GER_tank_small_cannon:0 "3,7cm KwK 36"
+ GER_tank_small_cannon_2:0 "5cm KwK 38"
+ GER_tank_small_high_velocity_cannon:0 "5cm KwK 39 L/60"
+ GER_tank_medium_cannon:0 "7,5cm KwK 40"
+ GER_tank_medium_cannon_2:0 "7,5cm KwK 40 L/48"
+ GER_tank_heavy_cannon:0 "8,8cm KwK 36"
+ GER_tank_heavy_cannon_2:0 "10,5cm K.18"
+ GER_tank_heavy_cannon_3:0 "10,5cm KwK L/68"
+ GER_tank_high_velocity_cannon_2:0 "7,5cm KwK 42"
+ GER_tank_high_velocity_cannon_3:0 "8,8cm KwK 43"
+ GER_tank_super_heavy_cannon:0 "12,8cm KwK 44"
+ GER_tank_modern_cannon:0 "90mm L/40,4"
+
+ GER_tank_close_support_gun:0 "7,5cm KwK 37"
+ GER_tank_medium_howitzer:0 "10,5cm leFH 18"
+ GER_tank_medium_howitzer_2:0 "10,5cm StuH 42"
+ GER_tank_heavy_howitzer:0 "15cm StuH 43 L/12"
+ 
+ GER_tank_anti_air_cannon:0 "2cm Flak 30"
+ GER_tank_anti_air_cannon_2x:0 "2cm Flakzwilling 38"
+ GER_tank_anti_air_cannon_4x:0 "2cm Flakvierling 38"
+ GER_tank_anti_air_cannon_2:0 "3,7cm Flak 36"
+ GER_tank_anti_air_cannon_2_2x:0 "3,7cm Flakzwilling 37"
+ GER_tank_anti_air_cannon_3:0 "8,8cm Flak 41"
+
+ GER_tank_light_aphe:0 "Panzergranate"
+ GER_tank_light_apcr:0 "Panzergranate 40"
+ GER_tank_light_heat:0 "Granate Hl/B"
+ GER_tank_light_he:0 "Sprenggranate 34"
+
+ GER_tank_medium_aphe:0 "Panzergranate 39"
+ GER_tank_medium_apcr:0 "Panzergranate 40"
+ GER_tank_medium_heat:0 "Granate Hl/C"
+ GER_tank_medium_he:0 "Sprenggranate 42"
+
+ GER_tank_heavy_aphe:0 "Panzergranate 39"
+ GER_tank_heavy_apcr:0 "Panzergranate 40"
+ GER_tank_heavy_he:0 "Sprenggranate L/5.0"
+
+ GER_tank_super_heavy_aphe:0 "Panzergranate 43"
+
+ GER_tank_gasoline_engine:0 "Maybach HL62 TRM"
+ GER_tank_gasoline_engine_2:0 "Maybach HL120 TRM"
+ GER_tank_gasoline_engine_3:0 "Maybach HL230 P30"
+ GER_tank_modern_gasoline_engine:0 "Maybach HL234"
+
+ GER_tank_petrol_electric_engine:0 "Porsche Typ 100"
+ GER_tank_petrol_electric_engine_2:0 "Porsche Typ 101"

@@ -1,0 +1,19 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_TC_mechanized_equipment"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mechanized_blueprint.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_amphibious_mechanized_equipment"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_amphibious_mechanized_blueprint.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_mechanized_aa_equipment"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mechanized_aa_blueprint.dds"
+	}
+	spriteType = {
+		name = "GFX_TC_mechanized_at_chassis"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/generic/generic_mechanized_at_blueprint.dds"
+	}
+}

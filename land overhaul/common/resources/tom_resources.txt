@@ -1,0 +1,7 @@
+resources = {
+	rare_metals = {
+		icon_frame = 8
+		cic = 0.25
+		convoys = 0.1
+	}
+}

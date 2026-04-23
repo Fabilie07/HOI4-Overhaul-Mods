@@ -1,0 +1,35 @@
+nom_free_designs_rule = {
+	name = "RULE_FREE_NAVY_DESIGNS"
+	group = "RULE_FREE_DESIGNS"
+
+	default = {
+		name = DISABLED
+		text = "RULE_NAVY_DESIGNS_DISABLED"
+		desc = "RULE_NAVY_DESIGNS_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_NAVY_DESIGNS_ENABLED"
+		desc = "RULE_NAVY_DESIGNS_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
+nom_ai_no_exercises = {
+	name = "RULE_AI_NO_NAVY_EXERCISES"
+	group = "RULE_GROUP_NOM"
+
+	default = {
+		name = DISABLED
+		text = "RULE_NAVY_DESIGNS_DISABLED"
+		desc = "RULE_NAVY_AI_EXERCISE_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_NAVY_DESIGNS_ENABLED"
+		desc = "RULE_NAVY_AI_EXERCISE_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}

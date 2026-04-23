@@ -1,0 +1,478 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+### Engine Types
+	tank_gasoline_engine = {
+		abbreviation = "gas"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			maximum_speed = 1
+			fuel_consumption = 2
+		}
+	}
+	
+	tank_diesel_engine = {
+		abbreviation = "die"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = 0.15
+			fuel_consumption = 2
+		}
+		multiply_stats = {  }
+	}
+
+	tank_petrol_electric_engine = {
+		abbreviation = "pel"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.5
+			fuel_consumption = 2
+		}
+		multiply_stats = {
+			breakthrough = 0.15
+			defense = 0.15
+		}
+	}
+
+	tank_gas_turbine_engine = {
+		abbreviation = "tur"
+		category = tank_engine_type
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			build_cost_ic = 1
+			fuel_consumption = 4
+			reliability = -0.1
+			maximum_speed = 2
+		}
+	}
+
+### Engine Power
+	tank_0080_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			maximum_speed = -0.2
+			fuel_consumption = -0.12
+			build_cost_ic = -0.12
+		}
+		xp_cost = 2
+	}
+	tank_0100_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			maximum_speed = -0.15
+			fuel_consumption = -0.1
+			build_cost_ic = -0.1
+		}
+		xp_cost = 2
+	}
+	tank_0120_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			maximum_speed = -0.1
+			fuel_consumption = -0.08
+			build_cost_ic = -0.08
+		}
+		xp_cost = 2
+	}
+	tank_0140_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			maximum_speed = -0.05
+			fuel_consumption = -0.06
+			build_cost_ic = -0.06
+		}
+		xp_cost = 2
+	}
+	tank_0160_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.1
+		}
+		multiply_stats = {
+			maximum_speed = 0.03
+			fuel_consumption = -0.04
+			build_cost_ic = -0.04
+		}
+		xp_cost = 2
+	}
+	tank_0180_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.1
+		}
+		multiply_stats = {
+			maximum_speed = 0.06
+			fuel_consumption = -0.02
+			build_cost_ic = -0.02
+		}
+		xp_cost = 2
+	}
+	
+	tank_0200_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.09
+			fuel_consumption = 0.05
+			build_cost_ic = 0.02
+		}
+		xp_cost = 2
+	}
+	tank_0250_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.12
+			fuel_consumption = 0.1
+			build_cost_ic = 0.04
+		}
+		xp_cost = 2
+	}
+	tank_0300_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.15
+			fuel_consumption = 0.15
+			build_cost_ic = 0.06
+		}
+		xp_cost = 2
+	}
+	tank_0350_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.18
+			fuel_consumption = 0.2
+			build_cost_ic = 0.08
+		}
+		xp_cost = 2
+	}
+	tank_0400_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.21
+			fuel_consumption = 0.25
+			build_cost_ic = 0.1
+		}
+		xp_cost = 2
+	}
+	tank_0450_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.24
+			fuel_consumption = 0.3
+			build_cost_ic = 0.12
+		}
+		xp_cost = 2
+	}
+	tank_0500_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.2
+		}
+		multiply_stats = {
+			maximum_speed = 0.27
+			fuel_consumption = 0.35
+			build_cost_ic = 0.14
+		}
+		xp_cost = 2
+	}
+	
+	tank_0600_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.3
+		}
+		multiply_stats = {
+			maximum_speed = 0.32
+			fuel_consumption = 0.5
+			build_cost_ic = 0.2
+		}
+		xp_cost = 2
+	}
+	tank_0700_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.3
+		}
+		multiply_stats = {
+			maximum_speed = 0.37
+			fuel_consumption = 0.65
+			build_cost_ic = 0.25
+		}
+		xp_cost = 2
+	}
+	tank_0800_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.35
+		}
+		multiply_stats = {
+			maximum_speed = 0.42
+			fuel_consumption = 0.8
+			build_cost_ic = 0.3
+		}
+		xp_cost = 2
+	}
+	tank_0900_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.35
+		}
+		multiply_stats = {
+			maximum_speed = 0.47
+			fuel_consumption = 0.95
+			build_cost_ic = 0.35
+		}
+		xp_cost = 2
+	}
+	tank_1000_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.4
+		}
+		multiply_stats = {
+			maximum_speed = 0.52
+			fuel_consumption = 1.1
+			build_cost_ic = 0.4
+		}
+		xp_cost = 2
+	}
+	tank_1100_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.4
+		}
+		multiply_stats = {
+			maximum_speed = 0.56
+			fuel_consumption = 1.25
+			build_cost_ic = 0.45
+		}
+		xp_cost = 2
+	}
+	tank_1200_hp = {
+		abbreviation = "tur"
+		category = tank_engine_power
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = -0.45
+		}
+		multiply_stats = {
+			maximum_speed = 0.6
+			fuel_consumption = 1.4
+			build_cost_ic = 0.5
+		}
+		xp_cost = 2
+	}
+	
+### Engine Cooling
+	tank_air_cooling = {
+		abbreviation = "tur"
+		category = tank_engine_cooling
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 2
+	}
+	tank_filtered_cooling = {
+		abbreviation = "tur"
+		category = tank_engine_cooling
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			reliability = 0.1
+			build_cost_ic = 0.5
+		}
+		xp_cost = 2
+	}
+	tank_vent_cooling = {
+		abbreviation = "tur"
+		category = tank_engine_cooling
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.5
+		}
+		xp_cost = 2
+	}
+	tank_watertight_vents = {
+		abbreviation = "tur"
+		category = tank_engine_cooling
+		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			breakthrough = 2
+			reliability = 0.05
+			build_cost_ic = 0.8
+		}
+		xp_cost = 2
+	}
+	
+### Fuel Tanks
+
+	tank_200_liter = {
+		abbreviation = "tur"
+		category = tank_engine_fuel
+		sfx = sfx_ui_sd_module_engine
+
+		multiply_stats = {
+			build_cost_ic = -0.06
+		}
+		xp_cost = 2
+	}
+	tank_300_liter = {
+		abbreviation = "tur"
+		category = tank_engine_fuel
+		sfx = sfx_ui_sd_module_engine
+		
+		add_stats = {
+			fuel_capacity = 40
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = -0.02
+		}
+		xp_cost = 2
+	}
+	tank_400_liter = {
+		abbreviation = "tur"
+		category = tank_engine_fuel
+		sfx = sfx_ui_sd_module_engine
+		
+		add_stats = {
+			fuel_capacity = 80
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+		}
+		xp_cost = 2
+	}
+	tank_500_liter = {
+		abbreviation = "tur"
+		category = tank_engine_fuel
+		sfx = sfx_ui_sd_module_engine
+		
+		add_stats = {
+			fuel_capacity = 120
+			reliability = -0.1
+		}
+		multiply_stats = {
+			build_cost_ic = 0.06
+		}
+		xp_cost = 2
+	}
+	tank_750_liter = {
+		abbreviation = "tur"
+		category = tank_engine_fuel
+		sfx = sfx_ui_sd_module_engine
+		
+		add_stats = {
+			fuel_capacity = 160
+			reliability = -0.1
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1
+		}
+		xp_cost = 2
+	}
+	tank_1000_liter = {
+		abbreviation = "tur"
+		category = tank_engine_fuel
+		sfx = sfx_ui_sd_module_engine
+		
+		add_stats = {
+			fuel_capacity = 200
+			reliability = -0.15
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+		}
+		xp_cost = 2
+	}
+}

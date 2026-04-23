@@ -1,0 +1,72 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ship_hull_carrier_conversion_super_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/super_heavy_carrier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_hull_carrier_hybrid_bb_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/hybrid_bb.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_hull_carrier_hybrid_ca_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/hybrid_ca.dds"
+	}
+
+################# JAPAN
+
+	spriteType = {
+		name = "GFX_JAP_ship_hull_heavy_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/JAP_battlecruiser_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_ship_hull_heavy_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/JAP_battleship_2.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_ship_hull_heavy_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/JAP_battlecruiser_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/JAP_battlecruiser_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/JAP_battleship_2.dds"
+	}
+	SpriteType = {	
+		name = "GFX_JAP_early_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/JAP_battlecruiser_1.dds"
+	}
+
+############### USA
+
+	spriteType = {
+		name = "GFX_USA_ship_hull_heavy_1_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/USA_battleship_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_ship_hull_heavy_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/USA_battleship_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_ship_hull_heavy_4_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/USA_battleship_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_USA_early_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/USA_battleship_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/USA_battleship_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/USA_battleship_4.dds"
+	}
+}

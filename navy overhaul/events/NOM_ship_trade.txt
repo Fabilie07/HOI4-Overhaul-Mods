@@ -1,0 +1,6618 @@
+add_namespace = NOM_trade
+add_namespace = NOM_trade.ENG
+add_namespace = NOM_trade.FRA
+add_namespace = NOM_trade.GER
+add_namespace = NOM_trade.ITA
+add_namespace = NOM_trade.JAP
+add_namespace = NOM_trade.SOV
+add_namespace = NOM_trade.USA
+
+# 1-9: Trade Deal
+# 10-20: Ship Trade
+
+
+country_event = {	# FROM wants to sign a Naval Treaty
+	id = NOM_trade.1
+	title = NOM_trade.1.title
+	desc = NOM_trade.1.desc
+	
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {	# Demand economic compensation
+		name = NOM_trade.1.a
+		trigger = { FROM = { num_of_civilian_factories_available_for_projects > 4 } }
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.2
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 10 }
+			}
+			modifier = {
+				add = -90
+				has_opinion = { target = FROM value > 30 }
+			}
+		}
+	}
+	
+	option = {	# Negotiate resource rights
+		name = NOM_trade.1.b
+		trigger = {
+			FROM = {
+				OR = {
+					steel > 19
+					tungsten > 9
+					chromium > 9
+					rubber > 9
+				}
+			}
+		}
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.3
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 30 }
+			}
+			modifier = {
+				add = -95
+				has_opinion = { target = FROM value > 70 }
+			}
+		}
+	}
+	
+	option = {	# Accept
+		name = NOM_trade.1.c
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.4
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 70 }
+			}
+		}
+	}
+	
+	option = {	# Refuse
+		name = NOM_trade.1.d
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.5
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -99
+				has_opinion = { target = FROM value > -10 }
+			}
+		}
+	}
+}
+
+country_event = {	# FROM demands compensation
+	id = NOM_trade.2
+	title = NOM_trade.2.title
+	desc = NOM_trade.2.desc
+	
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {	# Accept
+		name = NOM_trade.2.a
+		
+		set_country_flag = nom_trade_deal_economy_flag
+		set_country_flag = { flag = nom_ai_deal_satisfaction days = 365 value = 1 }
+		add_to_variable = { nom_trade_compensation_civs = 5 }
+		
+		set_variable = { nom_trade_deal_partner = FROM }
+		FROM = {
+			add_to_array = {
+				array = THIS.nom_trade_deal_countries
+				value = PREV
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			country_event = {
+				id = NOM_trade.6
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+	}
+	
+	option = {	# Refuse
+		name = NOM_trade.2.b
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.7
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				num_of_civilian_factories_available_for_projects < 9
+			}
+		}
+	}
+}
+
+country_event = {	# FROM demands resources
+	id = NOM_trade.3
+	title = NOM_trade.3.title
+	desc = NOM_trade.3.desc
+	
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {	# Provide the Ship's Steel
+		name = NOM_trade.3.a
+		trigger = { steel > 39 }
+		
+		set_country_flag = nom_trade_deal_steel_flag
+		set_country_flag = { flag = nom_ai_deal_satisfaction days = 365 value = 1 }
+		add_to_variable = { nom_trade_compensation_steel = -40 }
+		
+		if = {
+			limit = { FROM = { has_country_flag = nom_trade_preference_steel_flag } }
+			custom_override_tooltip = { tooltip = nom_preferred_option_tt }
+		}
+		
+		set_variable = { nom_trade_deal_partner = FROM }
+		FROM = {
+			add_to_array = {
+				array = THIS.nom_trade_deal_countries
+				value = PREV
+			}
+			add_to_variable = { nom_trade_compensation_steel = 40 }
+			country_event = {
+				id = NOM_trade.6
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_steel_flag }
+			}
+			modifier = {
+				factor = 2
+				steel > 99
+			}
+		}
+	}
+	
+	option = {	# Compensate with Tungsten
+		name = NOM_trade.3.b
+		trigger = { tungsten > 19 }
+		
+		set_country_flag = nom_trade_deal_tungsten_flag
+		set_country_flag = { flag = nom_ai_deal_satisfaction days = 365 }
+		add_to_variable = { nom_trade_compensation_tungsten = -20 }
+		
+		if = {
+			limit = { FROM = { has_country_flag = nom_trade_preference_tungsten_flag } }
+			custom_override_tooltip = { tooltip = nom_preferred_option_tt }
+		}
+		
+		set_variable = { nom_trade_deal_partner = FROM }
+		FROM = {
+			add_to_array = {
+				array = THIS.nom_trade_deal_countries
+				value = PREV
+			}
+			add_to_variable = { nom_trade_compensation_tungsten = 20 }
+			country_event = {
+				id = NOM_trade.6
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_tungsten_flag }
+			}
+			modifier = {
+				factor = 2
+				tungsten > 49
+			}
+		}
+	}
+	
+	option = {	# Compensate with Chromium
+		name = NOM_trade.3.c
+		trigger = { chromium > 19 }
+		
+		set_country_flag = nom_trade_deal_chromium_flag
+		set_country_flag = { flag = nom_ai_deal_satisfaction days = 365 }
+		add_to_variable = { nom_trade_compensation_chromium = -20 }
+		
+		if = {
+			limit = { FROM = { has_country_flag = nom_trade_preference_chromium_flag } }
+			custom_override_tooltip = { tooltip = nom_preferred_option_tt }
+		}
+		
+		set_variable = { nom_trade_deal_partner = FROM }
+		FROM = {
+			add_to_array = {
+				array = THIS.nom_trade_deal_countries
+				value = PREV
+			}
+			add_to_variable = { nom_trade_compensation_chromium = 20 }
+			country_event = {
+				id = NOM_trade.6
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_chromium_flag }
+			}
+			modifier = {
+				factor = 2
+				chromium > 49
+			}
+		}
+	}
+	
+	option = {	# Compensate with Rubber
+		name = NOM_trade.3.d
+		trigger = { rubber > 19 }
+		
+		set_country_flag = nom_trade_deal_rubber_flag
+		set_country_flag = { flag = nom_ai_deal_satisfaction days = 365 }
+		add_to_variable = { nom_trade_compensation_rubber = -20 }
+		
+		if = {
+			limit = { FROM = { has_country_flag = nom_trade_preference_rubber_flag } }
+			custom_override_tooltip = { tooltip = nom_preferred_option_tt }
+		}
+		
+		set_variable = { nom_trade_deal_partner = FROM }
+		FROM = {
+			add_to_array = {
+				array = THIS.nom_trade_deal_countries
+				value = PREV
+			}
+			add_to_variable = { nom_trade_compensation_rubber = 20 }
+			country_event = {
+				id = NOM_trade.6
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_rubber_flag }
+			}
+			modifier = {
+				factor = 2
+				rubber > 49
+			}
+		}
+	}
+	
+	option = {	# Refuse
+		name = NOM_trade.2.b
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.7
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 30
+				steel < 100
+				tungsten < 50
+				chromium < 50
+				rubber < 50
+			}
+		}
+	}
+}
+
+country_event = {	# FROM agrees to sign the treaty
+	id = NOM_trade.4
+	title = NOM_trade.4.title
+	desc = NOM_trade.4.desc
+	
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {	# To longlasting relations!
+		name = NOM_trade.4.a
+		
+		add_opinion_modifier = {
+			target = FROM
+			modifier = nom_trade_deal_signed_modifier
+		}
+		set_country_flag = { flag = nom_ai_deal_satisfaction days = 365 value = 1 }
+		set_variable = { nom_trade_deal_partner = FROM }
+		
+		FROM = {
+			add_to_array = {
+				array = THIS.nom_trade_deal_countries
+				value = PREV
+			}
+			country_event = {
+				id = NOM_trade.6
+				hours = 4
+			}
+		}
+	}
+}
+
+country_event = {	# FROM refuses the Treaty
+	id = NOM_trade.5
+	title = NOM_trade.5.title
+	desc = NOM_trade.5.desc
+	
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {	# Too bad
+		name = NOM_trade.5.a
+	}
+}
+
+
+country_event = {	# Trade Deal with FROM is signed
+	id = NOM_trade.6
+	title = NOM_trade.6.title
+	desc = NOM_trade.6.desc
+	
+	picture = GFX_report_event_generic_croatia_handshake
+	
+	is_triggered_only = yes
+	
+	option = {	# Wonderful!
+		name = NOM_trade.6.a
+		
+		add_political_power = 75
+	}
+}
+
+country_event = {	# Negotiations with FROM fail
+	id = NOM_trade.7
+	title = NOM_trade.7.title
+	desc = NOM_trade.7.desc
+	
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {	# It's their loss
+		name = NOM_trade.7.a
+	}
+}
+
+country_event = {	# FROM withdraws from the Trade Deal
+	id = NOM_trade.8
+	title = NOM_trade.8.title
+	desc = NOM_trade.8.desc
+	
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {	# Unfortunate
+		name = NOM_trade.8.a
+		
+		remove_from_array = { nom_trade_deal_countries = FROM }
+
+		if = {
+			limit = { FROM = { has_country_flag = nom_trade_deal_economy_flag } }
+			add_offsite_building = {
+				type = industrial_complex
+				level = -5
+			}
+			FROM = { add_to_variable = { nom_trade_compensation_civs = -5 } }
+			clr_country_flag = nom_trade_deal_economy_flag
+		}
+		else_if = {
+			limit = { FROM = { has_country_flag = nom_trade_deal_steel_flag } }
+			add_to_variable = { nom_trade_compensation_steel = -40 }
+			FROM = { add_to_variable = { nom_trade_compensation_steel = 40 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "40"
+					TYPE = "Steel"
+				}
+			}
+			clr_country_flag = nom_trade_deal_steel_flag
+		}
+		else_if = {
+			limit = { FROM = { has_country_flag = nom_trade_deal_tungsten_flag } }
+			add_to_variable = { nom_trade_compensation_tungsten = -20 }
+			FROM = { add_to_variable = { nom_trade_compensation_tungsten = 20 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "20"
+					TYPE = "Tungsten"
+				}
+			}
+			clr_country_flag = nom_trade_deal_tungsten_flag
+		}
+		else_if = {
+			limit = { FROM = { has_country_flag = nom_trade_deal_chromium_flag } }
+			add_to_variable = { nom_trade_compensation_chromium = -20 }
+			FROM = { add_to_variable = { nom_trade_compensation_chromium = 20 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "20"
+					TYPE = "Chromium"
+				}
+			}
+			clr_country_flag = nom_trade_deal_chromium_flag
+		}
+		else_if = {
+			limit = { FROM = { has_country_flag = nom_trade_deal_rubber_flag } }
+			add_to_variable = { nom_trade_compensation_rubber = -20 }
+			FROM = { add_to_variable = { nom_trade_compensation_rubber = 20 } }
+			
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_trade_deal_end_tt
+					AMOUNT = "20"
+					TYPE = "Rubber"
+				}
+			}
+			clr_country_flag = nom_trade_deal_rubber_flag
+		}
+		else_if = {
+			limit = { FROM = { has_relation_modifier = { target = PREV modifier = nom_trade_deal_signed_modifier } } }
+			FROM = { remove_opinion_modifier = { target = PREV modifier = nom_trade_deal_signed_modifier } }
+		}
+	}
+}
+
+
+
+
+country_event = {	# FROM agrees to construct our ship
+	id = NOM_trade.10
+	title = NOM_trade.10.title
+	desc = NOM_trade.10.desc
+	
+	picture = GFX_report_event_generic_croatia_handshake
+	
+	is_triggered_only = yes
+	
+	option = {	# Wonderful!
+		name = NOM_trade.10.a
+		country_event = NOM_trade.17
+		
+		FROM = { nom_sell_ship_dockyards = yes }
+		add_to_variable = { nom_ai_screen_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+	option = {	# We reconsidered...
+		name = NOM_trade.10.b
+		clr_country_flag = nom_trade_pending
+		nom_clear_ship_type_flag_effect = yes
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {	# FROM agrees to construct our ship (Capital)
+	id = NOM_trade.18
+	title = NOM_trade.10.title
+	desc = NOM_trade.10.desc
+	
+	picture = GFX_report_event_generic_croatia_handshake
+	
+	is_triggered_only = yes
+	
+	option = {	# Wonderful!
+		name = NOM_trade.10.a
+		country_event = NOM_trade.17
+		
+		FROM = { nom_sell_ship_capital_dockyards = yes }
+		add_to_variable = { nom_ai_capital_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+	
+	option = {	# We reconsidered...
+		name = NOM_trade.10.b
+		clr_country_flag = nom_trade_pending
+		nom_clear_ship_type_flag_effect = yes
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {	# FROM refuses to construct our ship
+	id = NOM_trade.19
+	title = NOM_trade.19.title
+	desc = NOM_trade.19.desc
+	
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {	# A shame
+		name = NOM_trade.19.a
+		clr_country_flag = nom_trade_pending
+		nom_clear_ship_type_flag_effect = yes
+	}
+}
+
+country_event = {	# FROM wants economic compensation (Capital Ship)
+	id = NOM_trade.11
+	title = NOM_trade.11.title
+	desc = NOM_trade.11.desc
+	
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	
+	option = {	# Accept
+		name = NOM_trade.11.a
+		trigger = { num_of_civilian_factories_available_for_projects > 1 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "2"
+				TYPE = "Civilian Factories"
+			}
+			
+			add_to_variable = { nom_trade_compensation_civs = 2 }
+			FROM = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+				country_event = {
+					id = NOM_trade.20
+					days = PREV.nom_ship_trade_duration
+				}
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_capital_dockyards = yes }
+		add_to_variable = { nom_ai_capital_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 20
+				num_of_civilian_factories_available_for_projects < 9
+			}
+		}
+	}
+	
+	option = {	# Refuse
+		name = NOM_trade.11.b
+		clr_country_flag = nom_trade_pending
+		nom_clear_ship_type_flag_effect = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {	# FROM wants economic compensation (Screen)
+	id = NOM_trade.12
+	title = NOM_trade.11.title
+	desc = NOM_trade.11.desc
+	
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	
+	option = {	# Accept
+		name = NOM_trade.11.a
+		trigger = { num_of_civilian_factories_available_for_projects > 0 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "1"
+				TYPE = "Civilian Factory"
+			}
+			
+			add_to_variable = { nom_trade_compensation_civs = 1 }
+			FROM = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+				country_event = { id = NOM_trade.21 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_dockyards = yes }
+		add_to_variable = { nom_ai_screen_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 30
+				num_of_civilian_factories_available_for_projects < 9
+			}
+		}
+	}
+	
+	option = {	# Refuse
+		name = NOM_trade.11.b
+		clr_country_flag = nom_trade_pending
+		nom_clear_ship_type_flag_effect = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {	# FROM wants resources (Capital Ship)
+	id = NOM_trade.13
+	title = NOM_trade.13.title
+	desc = NOM_trade.13.desc
+	
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	
+	option = {	# Send them steel
+		name = NOM_trade.13.a
+		trigger = { steel > 15 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "16"
+				TYPE = "Steel"
+			}
+			
+			add_to_variable = { nom_trade_compensation_steel = -16 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_steel = 16 }
+				country_event = { id = NOM_trade.22 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_capital_dockyards = yes }
+		add_to_variable = { nom_ai_capital_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				steel > 99
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_steel_flag }
+			}
+		}
+	}
+	
+	option = {	# Send them tungsten
+		name = NOM_trade.13.b
+		trigger = { tungsten > 7 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "8"
+				TYPE = "Tungsten"
+			}
+			
+			add_to_variable = { nom_trade_compensation_tungsten = -8 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_tungsten = 8 }
+				country_event = { id = NOM_trade.24 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_capital_dockyards = yes }
+		add_to_variable = { nom_ai_capital_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				tungsten > 49
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_tungsten_flag }
+			}
+		}
+	}
+	
+	option = {	# Send them chromium
+		name = NOM_trade.13.c
+		trigger = { chromium > 7 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "8"
+				TYPE = "Chromium"
+			}
+			
+			add_to_variable = { nom_trade_compensation_chromium = -8 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_chromium = 8 }
+				country_event = { id = NOM_trade.26 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_capital_dockyards = yes }
+		add_to_variable = { nom_ai_capital_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				chromium > 49
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_chromium_flag }
+			}
+		}
+	}
+	
+	option = {	# Send them rubber
+		name = NOM_trade.13.d
+		trigger = { rubber > 7 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "8"
+				TYPE = "Rubber"
+			}
+			
+			add_to_variable = { nom_trade_compensation_rubber = -8 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_rubber = 8 }
+				country_event = { id = NOM_trade.28 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_capital_dockyards = yes }
+		add_to_variable = { nom_ai_capital_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				rubber > 49
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_rubber_flag }
+			}
+		}
+	}
+	
+	option = {	# Refuse
+		name = NOM_trade.11.b
+		clr_country_flag = nom_trade_pending
+		nom_clear_ship_type_flag_effect = yes
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 30
+				steel < 100
+				tungsten < 50
+				chromium < 50
+				rubber < 50
+			}
+		}
+	}
+}
+
+country_event = {	# FROM wants resources (Screen)
+	id = NOM_trade.14
+	title = NOM_trade.13.title
+	desc = NOM_trade.13.desc
+	
+	picture = GFX_report_event_gre_cabinet_meeting
+	
+	is_triggered_only = yes
+	
+	option = {	# Send them steel
+		name = NOM_trade.13.a
+		trigger = { steel > 7 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "8"
+				TYPE = "Steel"
+			}
+			
+			add_to_variable = { nom_trade_compensation_steel = -8 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_steel = 8 }
+				country_event = { id = NOM_trade.23 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_dockyards = yes }
+		add_to_variable = { nom_ai_screen_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				steel > 99
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_steel_flag }
+			}
+		}
+	}
+	
+	option = {	# Send them tungsten
+		name = NOM_trade.13.b
+		trigger = { tungsten > 3 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "4"
+				TYPE = "Tungsten"
+			}
+			
+			add_to_variable = { nom_trade_compensation_tungsten = -4 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_tungsten = 4 }
+				country_event = { id = NOM_trade.25 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_dockyards = yes }
+		add_to_variable = { nom_ai_screen_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				tungsten > 49
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_tungsten_flag }
+			}
+		}
+	}
+	
+	option = {	# Send them chromium
+		name = NOM_trade.13.c
+		trigger = { chromium > 3 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "4"
+				TYPE = "Chromium"
+			}
+			
+			add_to_variable = { nom_trade_compensation_chromium = -4 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_chromium = 4 }
+				country_event = { id = NOM_trade.27 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_dockyards = yes }
+		add_to_variable = { nom_ai_screen_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				chromium > 49
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_chromium_flag }
+			}
+		}
+	}
+	
+	option = {	# Send them rubber
+		name = NOM_trade.13.d
+		trigger = { rubber > 3 }
+		
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_compensation_tt
+				AMOUNT = "4"
+				TYPE = "Rubber"
+			}
+			
+			add_to_variable = { nom_trade_compensation_rubber = -4 }
+			FROM = {
+				add_to_variable = { nom_trade_compensation_rubber = 4 }
+				country_event = { id = NOM_trade.29 days = PREV.nom_ship_trade_duration }
+			}
+			country_event = NOM_trade.17
+		}
+		
+		FROM = { nom_sell_ship_dockyards = yes }
+		add_to_variable = { nom_ai_screen_commission_counter = 1 }
+		
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 2
+				rubber > 49
+			}
+			modifier = {
+				add = 5
+				FROM = { has_country_flag = nom_trade_preference_rubber_flag }
+			}
+		}
+	}
+	
+	option = {	# Refuse
+		name = NOM_trade.11.b
+		clr_country_flag = nom_trade_pending
+		nom_clear_ship_type_flag_effect = yes
+		
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 30
+				steel < 100
+				tungsten < 50
+				chromium < 50
+				rubber < 50
+			}
+		}
+	}
+}
+
+
+
+country_event = {	# FROM wants us to build a ship (Capital Ship)
+	id = NOM_trade.15
+	title = NOM_trade.15.title
+	desc = NOM_trade.15.desc
+	
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {	# Demand Economic Compensation
+		name = NOM_trade.15.a
+		trigger = {
+			NOT = {
+				is_in_array = {
+					array = nom_trade_deal_countries
+					value = FROM
+				}
+			}
+			FROM = { num_of_civilian_factories_available_for_projects > 1 }
+		}
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.11
+				hours = 4
+			}
+		}
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_receive_tt
+				AMOUNT = "2"
+				TYPE = "Civilian Factories"
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion { target = FROM value < 0 }
+			}
+			modifier = {
+				add = -90
+				has_opinion = { target = FROM value > 40 }
+			}
+		}
+	}
+	
+	option = {	# Demand Resources
+		name = NOM_trade.15.b
+		trigger = {
+			NOT = {
+				is_in_array = {
+					array = nom_trade_deal_countries
+					value = FROM
+				}
+			}
+			FROM = {
+				OR = {
+					steel > 15
+					tungsten > 7
+					chromium > 7
+					rubber > 7
+				}
+			}
+		}
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.13
+				hours = 4
+			}
+		}
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_receive_tt
+				AMOUNT = "16 Steel or"
+				TYPE = "8 Tungsten, Chromium or Rubber"
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion { target = FROM value < 40 }
+			}
+			modifier = {
+				add = -95
+				has_opinion = { target = FROM value > 70 }
+			}
+		}
+	}
+	
+	option = {	# Agree to build the ship
+		name = NOM_trade.15.c
+			
+		FROM = {
+			country_event = {
+				id = NOM_trade.18
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 70 }
+			}
+		}
+	}
+	
+	option = {	# Refuse to build the ship
+		name = NOM_trade.15.d
+			
+		FROM = {
+			country_event = {
+				id = NOM_trade.19
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -99
+				has_opinion = { target = FROM value > 0 }
+			}
+		}
+	}
+}
+
+
+country_event = {	# FROM wants us to build a ship (Screen)
+	id = NOM_trade.16
+	title = NOM_trade.16.title
+	desc = NOM_trade.16.desc
+	
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {	# Demand Economic Compensation
+		name = NOM_trade.15.a
+		trigger = {
+			NOT = {
+				is_in_array = {
+					array = nom_trade_deal_countries
+					value = FROM
+				}
+			}
+			FROM = { num_of_civilian_factories_available_for_projects > 0 }
+		}
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.12
+				hours = 4
+			}
+		}
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_receive_tt
+				AMOUNT = "1"
+				TYPE = "Civilian Factories"
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 0 }
+			}
+			modifier = {
+				add = -90
+				has_opinion = { target = FROM value > 40 }
+			}
+		}
+	}
+	
+	option = {	# Demand Resources
+		name = NOM_trade.15.b
+		trigger = {
+			NOT = {
+				is_in_array = {
+					array = nom_trade_deal_countries
+					value = FROM
+				}
+			}
+			FROM = {
+				OR = {
+					steel > 7
+					tungsten > 3
+					chromium > 3
+					rubber > 3
+				}
+			}
+		}
+		
+		FROM = {
+			country_event = {
+				id = NOM_trade.14
+				hours = 4
+			}
+		}
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = nom_trade_receive_tt
+				AMOUNT = "8 Steel or"
+				TYPE = "4 Tungsten, Chromium or Rubber"
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 40 }
+			}
+			modifier = {
+				add = -95
+				has_opinion = { target = FROM value > 70 }
+			}
+		}
+	}
+	
+	option = {	# Agree to build the ship
+		name = NOM_trade.15.c
+			
+		FROM = {
+			country_event = {
+				id = NOM_trade.10
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_opinion = { target = FROM value < 70 }
+			}
+		}
+	}
+	
+	option = {	# Refuse to build the ship
+		name = NOM_trade.15.d
+			
+		FROM = {
+			country_event = {
+				id = NOM_trade.19
+				hours = 4
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				add = -99
+				has_opinion = { target = FROM value > 0 }
+			}
+		}
+	}
+}
+
+country_event = {	# Economy Rollback (Capital)
+	id = NOM_trade.20
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_civs = -2 }
+			add_to_variable = { nom_ai_capital_commission_counter = -1 }
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = -2
+		}
+	}
+}
+
+country_event = {	# Economy Rollback (Screen)
+	id = NOM_trade.21
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_civs = -1 }
+			add_to_variable = { nom_ai_screen_commission_counter = -1 }
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = -1
+		}
+	}
+}
+
+country_event = {	# Steel Rollback (Capital)
+	id = NOM_trade.22
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_steel = 16 }
+			add_to_variable = { nom_ai_capital_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_steel = -16 }
+	}
+}
+
+country_event = {	# Steel Rollback (Screen)
+	id = NOM_trade.23
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_steel = 8 }
+			add_to_variable = { nom_ai_screen_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_steel = -8 }
+	}
+}
+
+country_event = {	# Tungsten Rollback (Capital)
+	id = NOM_trade.24
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_tungsten = 8 }
+			add_to_variable = { nom_ai_capital_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_tungsten = -8 }
+	}
+}
+
+country_event = {	# Tungsten Rollback (Screen)
+	id = NOM_trade.25
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_tungsten = 4 }
+			add_to_variable = { nom_ai_screen_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_tungsten = -4 }
+	}
+}
+
+country_event = {	# Chromium Rollback (Capital)
+	id = NOM_trade.26
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_chromium = 8 }
+			add_to_variable = { nom_ai_capital_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_chromium = -8 }
+	}
+}
+
+country_event = {	# Chromium Rollback (Screen)
+	id = NOM_trade.27
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_chromium = 4 }
+			add_to_variable = { nom_ai_screen_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_chromium = -4 }
+	}
+}
+
+country_event = {	# Rubber Rollback (Capital)
+	id = NOM_trade.28
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_rubber = 8 }
+			add_to_variable = { nom_ai_capital_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_rubber = -8 }
+	}
+}
+
+country_event = {	# Rubber Rollback (Screen)
+	id = NOM_trade.29
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = {
+			add_to_variable = { nom_trade_compensation_rubber = 4 }
+			add_to_variable = { nom_ai_screen_commission_counter = -1 }
+		}
+		add_to_variable = { nom_trade_compensation_rubber = -4 }
+	}
+}
+
+country_event = {	# Capital Construction Complete
+	id = NOM_trade.30
+	title = NOM_trade.30.title
+	desc = NOM_trade.30.desc
+	
+	picture = GFX_report_event_sailors_in_working_rig
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+	
+	option = {
+		name = NOM_trade.30.a
+		effect_tooltip = {
+			navy_experience = 25
+		}
+	}
+}
+
+country_event = {	# Screen Construction Complete
+	id = NOM_trade.31
+	title = NOM_trade.31.title
+	desc = NOM_trade.31.desc
+	
+	picture = GFX_report_event_sailors_in_working_rig
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+	
+	option = {
+		name = NOM_trade.30.a
+		effect_tooltip = {
+			navy_experience = 10
+		}
+	}
+}
+
+country_event = {	# Industry I
+	id = NOM_trade.55
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_tech = concentrated_industry
+			has_tech = dispersed_industry
+		}
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+		not = { has_country_flag = nom_trade_55 }
+	}
+	
+	immediate = {
+		nom_build_time_reduction_medium = yes
+		set_country_flag = nom_trade_55
+	}
+}
+country_event = {	# Industry II
+	id = NOM_trade.56
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_tech = concentrated_industry2
+			has_tech = dispersed_industry2
+		}
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+		not = { has_country_flag = nom_trade_56 }
+	}
+	
+	immediate = {
+		nom_build_time_reduction_medium = yes
+		set_country_flag = nom_trade_56
+	}
+}
+country_event = {	# Industry III
+	id = NOM_trade.57
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_tech = concentrated_industry3
+			has_tech = dispersed_industry3
+		}
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+		not = { has_country_flag = nom_trade_57 }
+	}
+	
+	immediate = {
+		nom_build_time_reduction_medium = yes
+		set_country_flag = nom_trade_57
+	}
+}
+country_event = {	# Industry IV
+	id = NOM_trade.58
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_tech = concentrated_industry4
+			has_tech = dispersed_industry4
+		}
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+		not = { has_country_flag = nom_trade_58 }
+	}
+	
+	immediate = {
+		nom_build_time_reduction_medium = yes
+		set_country_flag = nom_trade_58
+	}
+}
+country_event = {	# Industry V
+	id = NOM_trade.59
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			has_tech = concentrated_industry5
+			has_tech = dispersed_industry5
+		}
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+		not = { has_country_flag = nom_trade_59 }
+	}
+	
+	immediate = {
+		nom_build_time_reduction_medium = yes
+		set_country_flag = nom_trade_59
+	}
+}
+
+country_event = {	# Naval Engineering
+	id = NOM_trade.60
+	hidden = yes
+	
+	trigger = {
+		has_tech = { naval_engineering }
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+		not = { has_country_flag = nom_trade_60 }
+	}
+	
+	immediate = {
+		nom_build_time_reduction_big = yes
+		set_country_flag = nom_trade_60
+	}
+}
+country_event = { # Naval Engineering 2
+	id = NOM_trade.61
+	hidden = yes
+	
+	trigger = {
+		has_tech = { naval_engineering2 }
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+			original_tag = GER
+			original_tag = ITA
+			original_tag = JAP
+			original_tag = SOV
+			original_tag = USA
+		}
+		not = { has_country_flag = nom_trade_60 }
+	}
+	
+	immediate = {
+		nom_build_time_reduction_big = yes
+		set_country_flag = nom_trade_60
+	}
+}
+
+country_event = {	# Ship construction start: Switch for ship type / duration
+	id = NOM_trade.17
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_country_flag = nom_trade_pending
+		
+		if = {
+			limit = { has_country_flag = ENG_cv_1_flag }
+			country_event = { id = NOM_trade.ENG.1 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_cv_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_bb_1_flag }
+			country_event = { id = NOM_trade.ENG.11 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_bb_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_bb_2_flag }
+			country_event = { id = NOM_trade.ENG.12 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_bb_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_bb_3_flag }
+			country_event = { id = NOM_trade.ENG.13 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_bb_3_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_bc_1_flag }
+			country_event = { id = NOM_trade.ENG.21 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_bc_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_ca_1_flag }
+			country_event = { id = NOM_trade.ENG.31 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_ca_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_ca_2_flag }
+			country_event = { id = NOM_trade.ENG.32 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_ca_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_cl_1_flag }
+			country_event = { id = NOM_trade.ENG.41 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_cl_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_cl_2_flag }
+			country_event = { id = NOM_trade.ENG.42 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_cl_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_cl_3_flag }
+			country_event = { id = NOM_trade.ENG.43 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_cl_3_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_dd_1_flag }
+			country_event = { id = NOM_trade.ENG.51 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_dd_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_dd_2_flag }
+			country_event = { id = NOM_trade.ENG.52 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_dd_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ENG_ss_1_flag }
+			country_event = { id = NOM_trade.ENG.61 days = nom_ship_trade_duration }
+			clr_country_flag = ENG_ss_1_flag
+		}
+		
+		else_if = {
+			limit = { has_country_flag = FRA_cv_1_flag }
+			country_event = { id = NOM_trade.FRA.1 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_cv_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = FRA_bb_1_flag }
+			country_event = { id = NOM_trade.FRA.11 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_bb_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = FRA_bb_2_flag }
+			country_event = { id = NOM_trade.FRA.12 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_bb_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = FRA_ca_1_flag }
+			country_event = { id = NOM_trade.FRA.31 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_ca_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = FRA_cl_1_flag }
+			country_event = { id = NOM_trade.FRA.41 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_cl_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = FRA_dd_1_flag }
+			country_event = { id = NOM_trade.FRA.51 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_dd_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = FRA_dd_2_flag }
+			country_event = { id = NOM_trade.FRA.52 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_dd_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = FRA_ss_1_flag }
+			country_event = { id = NOM_trade.FRA.61 days = nom_ship_trade_duration }
+			clr_country_flag = FRA_ss_1_flag
+		}
+		
+		else_if = {
+			limit = { has_country_flag = GER_cv_1_flag }
+			country_event = { id = NOM_trade.GER.1 days = nom_ship_trade_duration }
+			clr_country_flag = GER_cv_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_bb_1_flag }
+			country_event = { id = NOM_trade.GER.11 days = nom_ship_trade_duration }
+			clr_country_flag = GER_bb_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_bb_2_flag }
+			country_event = { id = NOM_trade.GER.12 days = nom_ship_trade_duration }
+			clr_country_flag = GER_bb_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_ca_1_flag }
+			country_event = { id = NOM_trade.GER.31 days = nom_ship_trade_duration }
+			clr_country_flag = GER_ca_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_ca_2_flag }
+			country_event = { id = NOM_trade.GER.32 days = nom_ship_trade_duration }
+			clr_country_flag = GER_ca_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_cl_1_flag }
+			country_event = { id = NOM_trade.GER.41 days = nom_ship_trade_duration }
+			clr_country_flag = GER_cl_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_dd_1_flag }
+			country_event = { id = NOM_trade.GER.51 days = nom_ship_trade_duration }
+			clr_country_flag = GER_dd_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_ss_1_flag }
+			country_event = { id = NOM_trade.GER.61 days = nom_ship_trade_duration }
+			clr_country_flag = GER_ss_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_ss_2_flag }
+			country_event = { id = NOM_trade.GER.62 days = nom_ship_trade_duration }
+			clr_country_flag = GER_ss_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = GER_ss_3_flag }
+			country_event = { id = NOM_trade.GER.63 days = nom_ship_trade_duration }
+			clr_country_flag = GER_ss_3_flag
+		}
+		
+		else_if = {
+			limit = { has_country_flag = ITA_bb_1_flag }
+			country_event = { id = NOM_trade.ITA.11 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_bb_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_bb_2_flag }
+			country_event = { id = NOM_trade.ITA.12 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_bb_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_ca_1_flag }
+			country_event = { id = NOM_trade.ITA.31 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_ca_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_ca_2_flag }
+			country_event = { id = NOM_trade.ITA.32 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_ca_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_cl_1_flag }
+			country_event = { id = NOM_trade.ITA.41 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_cl_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_cl_2_flag }
+			country_event = { id = NOM_trade.ITA.42 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_cl_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_cl_3_flag }
+			country_event = { id = NOM_trade.ITA.43 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_cl_3_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_dd_1_flag }
+			country_event = { id = NOM_trade.ITA.51 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_dd_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_ss_1_flag }
+			country_event = { id = NOM_trade.ITA.61 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_ss_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = ITA_ss_2_flag }
+			country_event = { id = NOM_trade.ITA.62 days = nom_ship_trade_duration }
+			clr_country_flag = ITA_ss_2_flag
+		}
+		
+		else_if = {
+			limit = { has_country_flag = JAP_cv_1_flag }
+			country_event = { id = NOM_trade.JAP.1 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_cv_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_cv_2_flag }
+			country_event = { id = NOM_trade.JAP.2 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_cv_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_cv_3_flag }
+			country_event = { id = NOM_trade.JAP.3 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_cv_3_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_bb_1_flag }
+			country_event = { id = NOM_trade.JAP.11 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_bb_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_bb_2_flag }
+			country_event = { id = NOM_trade.JAP.12 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_bb_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_bb_3_flag }
+			country_event = { id = NOM_trade.JAP.13 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_bb_3_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_bc_1_flag }
+			country_event = { id = NOM_trade.JAP.21 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_bc_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_bc_2_flag }
+			country_event = { id = NOM_trade.JAP.22 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_bc_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_ca_1_flag }
+			country_event = { id = NOM_trade.JAP.31 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_ca_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_dd_1_flag }
+			country_event = { id = NOM_trade.JAP.51 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_dd_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_dd_2_flag }
+			country_event = { id = NOM_trade.JAP.52 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_dd_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = JAP_ss_1_flag }
+			country_event = { id = NOM_trade.JAP.61 days = nom_ship_trade_duration }
+			clr_country_flag = JAP_ss_1_flag
+		}
+		
+		else_if = {
+			limit = { has_country_flag = SOV_bb_1_flag }
+			country_event = { id = NOM_trade.SOV.11 days = nom_ship_trade_duration }
+			clr_country_flag = SOV_bb_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = SOV_bb_2_flag }
+			country_event = { id = NOM_trade.SOV.12 days = nom_ship_trade_duration }
+			clr_country_flag = SOV_bb_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = SOV_bc_1_flag }
+			country_event = { id = NOM_trade.SOV.21 days = nom_ship_trade_duration }
+			clr_country_flag = SOV_bc_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = SOV_ca_1_flag }
+			country_event = { id = NOM_trade.SOV.31 days = nom_ship_trade_duration }
+			clr_country_flag = SOV_ca_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = SOV_dd_1_flag }
+			country_event = { id = NOM_trade.SOV.51 days = nom_ship_trade_duration }
+			clr_country_flag = SOV_dd_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = SOV_dd_2_flag }
+			country_event = { id = NOM_trade.SOV.52 days = nom_ship_trade_duration }
+			clr_country_flag = SOV_dd_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = SOV_dd_3_flag }
+			country_event = { id = NOM_trade.SOV.53 days = nom_ship_trade_duration }
+			clr_country_flag = SOV_dd_3_flag
+		}
+		
+		else_if = {
+			limit = { has_country_flag = USA_cv_1_flag }
+			country_event = { id = NOM_trade.USA.1 days = nom_ship_trade_duration }
+			clr_country_flag = USA_cv_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_cv_2_flag }
+			country_event = { id = NOM_trade.USA.2 days = nom_ship_trade_duration }
+			clr_country_flag = USA_cv_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_cv_3_flag }
+			country_event = { id = NOM_trade.USA.3 days = nom_ship_trade_duration }
+			clr_country_flag = USA_cv_3_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_bb_1_flag }
+			country_event = { id = NOM_trade.USA.11 days = nom_ship_trade_duration }
+			clr_country_flag = USA_bb_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_bb_2_flag }
+			country_event = { id = NOM_trade.USA.12 days = nom_ship_trade_duration }
+			clr_country_flag = USA_bb_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_bb_3_flag }
+			country_event = { id = NOM_trade.USA.13 days = nom_ship_trade_duration }
+			clr_country_flag = USA_bb_3_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_ca_1_flag }
+			country_event = { id = NOM_trade.USA.31 days = nom_ship_trade_duration }
+			clr_country_flag = USA_ca_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_ca_2_flag }
+			country_event = { id = NOM_trade.USA.32 days = nom_ship_trade_duration }
+			clr_country_flag = USA_ca_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_cl_1_flag }
+			country_event = { id = NOM_trade.USA.41 days = nom_ship_trade_duration }
+			clr_country_flag = USA_cl_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_cl_2_flag }
+			country_event = { id = NOM_trade.USA.42 days = nom_ship_trade_duration }
+			clr_country_flag = USA_cl_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_dd_1_flag }
+			country_event = { id = NOM_trade.USA.51 days = nom_ship_trade_duration }
+			clr_country_flag = USA_dd_1_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_dd_2_flag }
+			country_event = { id = NOM_trade.USA.52 days = nom_ship_trade_duration }
+			clr_country_flag = USA_dd_2_flag
+		}
+		else_if = {
+			limit = { has_country_flag = USA_ss_1_flag }
+			country_event = { id = NOM_trade.USA.61 days = nom_ship_trade_duration }
+			clr_country_flag = USA_ss_1_flag
+		}
+		
+		set_country_flag = { flag = nom_ai_deal_satisfaction days = 365 value = 1 }
+		clear_variable = nom_ship_trade_duration
+		nom_clear_ship_type_flag_effect = yes
+	}
+}
+
+
+country_event = {	# Auto Accept (Capital)
+	id = NOM_trade.101
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		random_list = {
+			10 = {
+				FROM = { country_event = { id = NOM_trade.11 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_economy_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.13 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_steel_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_tungsten_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_chromium_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_rubber_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.13 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_tungsten_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_steel_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_chromium_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_rubber_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.13 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_chromium_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_tungsten_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_steel_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_rubber_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.13 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_rubber_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_tungsten_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_chromium_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_steel_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.18 hours = 4 } }
+				modifier = {
+					factor = 0
+					NOT = { has_country_flag = nom_trade_preference_nothing_flag }
+					NOT = {
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 100
+					is_in_array = {
+						array = nom_trade_deal_countries
+						value = FROM
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {	# Auto Accept (Screen)
+	id = NOM_trade.102
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		random_list = {
+			10 = {
+				FROM = { country_event = { id = NOM_trade.12 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_economy_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.14 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_steel_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_tungsten_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_chromium_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_rubber_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.14 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_tungsten_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_steel_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_chromium_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_rubber_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.14 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_chromium_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_tungsten_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_steel_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_rubber_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.14 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = { has_country_flag = nom_trade_preference_rubber_flag }
+			
+						is_in_array = {
+							array = nom_trade_deal_countries
+							value = FROM
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_tungsten_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_chromium_flag
+				}
+				modifier = {
+					factor = 0.5
+					has_country_flag = nom_trade_preference_steel_flag
+				}
+			}
+			10 = {
+				FROM = { country_event = { id = NOM_trade.10 hours = 4 } }
+				modifier = {
+					factor = 0
+					OR = {
+						has_country_flag = nom_trade_preference_economy_flag
+						has_country_flag = nom_trade_preference_steel_flag
+						has_country_flag = nom_trade_preference_tungsten_flag
+						has_country_flag = nom_trade_preference_chromium_flag
+						has_country_flag = nom_trade_preference_rubber_flag
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+# 1-10: Carrier
+# 11-20: Battleship
+# 21-30: Battlecruiser
+# 31-40: Heavy Cruiser
+# 41-50: Light Cruiser
+# 51-60: Destroyer
+# 61-70: Submarines
+
+
+### ENG
+
+country_event = {
+	id = NOM_trade.ENG.1
+	title = NOM_trade.ENG.1.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Hermes"
+			type = ship_hull_escort_carrier
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+
+				rear_1_custom_slot = ship_arresting_cable
+				mid_2_custom_slot = dp_ship_secondaries_1
+				mid_3_custom_slot = dp_ship_secondaries_1
+				mid_4_custom_slot = dp_ship_secondaries_1
+				front_1_custom_slot = ship_anti_air_1
+
+				right_1_custom_slot = ship_casemate_1
+				right_2_custom_slot = ship_casemate_1
+				right_3_custom_slot = ship_casemate_1
+
+				left_1_custom_slot = ship_casemate_1
+				left_2_custom_slot = ship_casemate_1
+				left_3_custom_slot = ship_casemate_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_escort_carrier
+				version_name = "[Commission] Hermes"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+
+country_event = {
+	id = NOM_trade.ENG.11
+	title = NOM_trade.ENG.11.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Queen Elizabeth"
+			type = ship_hull_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bb_1
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_4
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_heavy_battery_1_2x
+				mid_1_custom_slot = ship_heavy_battery_1_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_heavy_battery_1_2x
+				front_1_custom_slot = ship_heavy_battery_1_2x
+
+				right_1_custom_slot = ship_casemate_2
+				right_2_custom_slot = ship_casemate_2
+				right_3_custom_slot = ship_casemate_2
+				right_4_custom_slot = ship_casemate_2
+
+				left_1_custom_slot = ship_casemate_2
+				left_2_custom_slot = ship_casemate_2
+				left_3_custom_slot = ship_casemate_2
+				left_4_custom_slot = ship_casemate_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_1
+				version_name = "[Commission] Queen Elizabeth"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.12
+	title = NOM_trade.ENG.12.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] King George V"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_torpedo_protection_slot = torpedo_protection_4
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_heavy_battery_2_4x
+				mid_1_custom_slot = ship_anti_air_2
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_4x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] King George V"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.13
+	title = NOM_trade.ENG.13.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] King George V (1943 Refit)"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_3
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_torpedo_protection_slot = torpedo_protection_4
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_heavy_battery_2_4x
+				mid_1_custom_slot = ship_anti_air_4
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_4
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_4x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] King George V (1943 Refit)"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+
+country_event = {
+	id = NOM_trade.ENG.21
+	title = NOM_trade.ENG.21.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Renown"
+			type = ship_hull_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bc_2
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_4
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_heavy_battery_1_2x
+				mid_1_custom_slot = ship_anti_air_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_1_2x
+				front_1_custom_slot = ship_heavy_battery_1_2x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1
+				right_4_custom_slot = dp_ship_secondaries_1
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1
+				left_4_custom_slot = dp_ship_secondaries_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_1
+				version_name = "[Commission] Renown"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+
+country_event = {
+	id = NOM_trade.ENG.31
+	title = NOM_trade.ENG.31.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] County (Norfolk)"
+			type = ship_hull_cruiser_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_funnel_slot = funnel_3x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_medium_battery_2_2x
+				mid_1_custom_slot = ship_medium_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_medium_battery_2_2x
+				front_1_custom_slot = ship_medium_battery_2_2x
+
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = ship_anti_air_1
+
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = ship_anti_air_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_1
+				version_name = "[Commission] County (Norfolk)"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.32
+	title = NOM_trade.ENG.32.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] County (1941 Refit)"
+			type = ship_hull_cruiser_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
+
+				rear_1_custom_slot = ship_medium_battery_2_2x
+				mid_1_custom_slot = ship_medium_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_medium_battery_2_2x
+				front_1_custom_slot = ship_medium_battery_2_2x
+
+				right_1_custom_slot = ship_anti_air_2
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_torpedo_2_4x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+				
+				left_1_custom_slot = ship_anti_air_2
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_torpedo_2_4x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_1
+				version_name = "[Commission] County (1941 Refit)"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.41
+	title = NOM_trade.ENG.41.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Town"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_airplane_launcher_1
+				mid_4_custom_slot = ship_light_medium_battery_2_3x
+				front_1_custom_slot = ship_light_medium_battery_2_3x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = ship_anti_air_1
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = ship_torpedo_1_3x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = ship_anti_air_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Town"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.42
+	title = NOM_trade.ENG.42.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Town (Edinburgh)"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_sonar_slot = ship_sonar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_airplane_launcher_2
+				mid_4_custom_slot = ship_light_medium_battery_2_3x
+				front_1_custom_slot = ship_light_medium_battery_2_3x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = ship_torpedo_1_3x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Town (Edinburgh)"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.43
+	title = NOM_trade.ENG.43.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Crown Colony"
+			type = ship_hull_cruiser_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_sonar_slot = ship_sonar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_airplane_launcher_2
+				mid_4_custom_slot = ship_light_medium_battery_2_3x
+				front_1_custom_slot = ship_light_medium_battery_2_3x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = ship_torpedo_1_3x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_3
+				version_name = "[Commission] Crown Colony"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.51
+	title = NOM_trade.ENG.51.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] E/F Class"
+			type = ship_hull_light_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_sonar_slot = ship_sonar_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = light_ship_armor_2
+				fixed_ship_deck_slot = light_ship_deck_1
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = dp_light_battery_2
+				mid_1_custom_slot = dp_light_battery_2
+				mid_2_custom_slot = ship_torpedo_1_4x
+				mid_3_custom_slot = ship_torpedo_1_4x
+				mid_4_custom_slot = dp_light_battery_2
+				front_1_custom_slot = dp_light_battery_2
+
+				right_1_custom_slot = ship_depth_charge_1
+				right_2_custom_slot = ship_anti_air_1
+
+				left_1_custom_slot = ship_depth_charge_1
+				left_2_custom_slot = ship_anti_air_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				version_name = "[Commission] E/F Class"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.52
+	title = NOM_trade.ENG.52.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] L/M Class"
+			type = ship_hull_light_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_sonar_slot = ship_sonar_2
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = light_ship_armor_2
+				fixed_ship_deck_slot = light_ship_deck_1
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = dp_light_battery_2_2x
+				mid_1_custom_slot = ship_anti_air_2
+				mid_2_custom_slot = ship_torpedo_2_4x
+				mid_3_custom_slot = ship_torpedo_2_4x
+				mid_4_custom_slot = dp_light_battery_2_2x
+				front_1_custom_slot = dp_light_battery_2_2x
+
+				right_1_custom_slot = ship_depth_charge_2
+				right_2_custom_slot = ship_anti_air_1
+
+				left_1_custom_slot = ship_depth_charge_2
+				left_2_custom_slot = ship_anti_air_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_3
+				version_name = "[Commission] L/M Class"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ENG.61
+	title = NOM_trade.ENG.61.title
+	desc = NOM_trade.ENG.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] R Class"
+			type = ship_hull_submarine_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_engine_slot = sub_ship_engine_1
+				fixed_ship_periscope_slot = sub_periscope_1
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_batteries_slot = sub_batteries_1
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_torpedo_sub_1
+				mid_3_custom_slot = sub_ballast_tank
+				front_1_custom_slot = ship_torpedo_sub_3
+				
+				right_1_custom_slot = ship_locked
+				right_2_custom_slot = ship_locked
+				right_3_custom_slot = ship_locked
+				right_4_custom_slot = ship_locked
+				
+				left_1_custom_slot = ship_locked
+				top_3_custom_slot = ship_anti_air_2
+				left_4_custom_slot = ship_locked
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_1
+				version_name = "[Commission] R Class"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ENG = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+
+country_event = {
+	id = NOM_trade.FRA.1
+	title = NOM_trade.FRA.1.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Béarn"
+			type = ship_hull_escort_carrier
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_arresting_cable
+				front_1_custom_slot = ship_anti_air_1
+
+				right_1_custom_slot = ship_casemate_2
+				right_2_custom_slot = ship_casemate_2
+				right_3_custom_slot = ship_anti_air_1
+				right_4_custom_slot = ship_casemate_2
+
+				left_1_custom_slot = ship_casemate_2
+				left_2_custom_slot = ship_casemate_2
+				left_3_custom_slot = ship_anti_air_1
+				left_4_custom_slot = ship_casemate_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_escort_carrier
+				version_name = "[Commission] Béarn"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.FRA.11
+	title = NOM_trade.FRA.11.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Dunkerque"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = ship_armor_bb_2
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_airplane_launcher_1
+				mid_1_custom_slot = dp_ship_secondaries_2_2x
+				mid_2_custom_slot = dp_ship_secondaries_2_2x
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_heavy_battery_1_4x
+				front_1_custom_slot = ship_heavy_battery_1_4x
+
+				right_1_custom_slot = dp_ship_secondaries_2_2x
+				right_2_custom_slot = dp_ship_secondaries_2_2x
+				right_3_custom_slot = dp_ship_secondaries_2_2x
+				right_4_custom_slot = ship_anti_air_1
+
+				left_1_custom_slot = dp_ship_secondaries_2_2x
+				left_2_custom_slot = dp_ship_secondaries_2_2x
+				left_3_custom_slot = dp_ship_secondaries_2_2x
+				left_4_custom_slot = ship_anti_air_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] Dunkerque"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.FRA.12
+	title = NOM_trade.FRA.12.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Richelieu"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_airplane_launcher_1
+				mid_1_custom_slot = ship_secondaries_2_3x
+				mid_2_custom_slot = ship_anti_air_3
+				mid_3_custom_slot = ship_anti_air_3
+				mid_4_custom_slot = ship_heavy_battery_2_4x
+				front_1_custom_slot = ship_heavy_battery_2_4x
+
+				right_1_custom_slot = ship_anti_air_3
+				right_2_custom_slot = ship_secondaries_2_3x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_anti_air_3
+				left_2_custom_slot = ship_secondaries_2_3x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] Richelieu"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.FRA.31
+	title = NOM_trade.FRA.31.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Algérie"
+			type = ship_hull_cruiser_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_medium_battery_1_2x
+				mid_1_custom_slot = ship_medium_battery_1_2x
+				mid_2_custom_slot = ship_airplane_launcher_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_medium_battery_1_2x
+				front_1_custom_slot = ship_medium_battery_1_2x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_torpedo_1_3x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_torpedo_1_3x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_1
+				version_name = "[Commission] Algérie"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.FRA.41
+	title = NOM_trade.FRA.41.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] La Galissonnière"
+			type = ship_hull_cruiser_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_3
+				mid_3_custom_slot = ship_anti_air_3
+				mid_4_custom_slot = ship_light_medium_battery_2_3x
+				front_1_custom_slot = ship_light_medium_battery_2_3x
+
+				right_1_custom_slot = dp_ship_secondaries_2_2x
+				right_2_custom_slot = ship_torpedo_1_2x
+				right_3_custom_slot = dp_ship_secondaries_2_2x
+
+				left_1_custom_slot = dp_ship_secondaries_2_2x
+				left_2_custom_slot = ship_torpedo_1_2x
+				left_3_custom_slot = dp_ship_secondaries_2_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_1
+				version_name = "[Commission] La Galissonnière"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.FRA.51
+	title = NOM_trade.FRA.51.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Le Fantasque"
+			type = ship_hull_light_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_4
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_light_battery_2
+				mid_1_custom_slot = ship_light_battery_2
+				mid_2_custom_slot = ship_light_battery_2
+				mid_3_custom_slot = ship_torpedo_1_3x
+				mid_4_custom_slot = ship_light_battery_2
+				front_1_custom_slot = ship_light_battery_2
+
+				right_1_custom_slot = ship_depth_charge_1
+				right_2_custom_slot = ship_anti_air_1
+				right_3_custom_slot = ship_torpedo_1_3x
+
+				left_1_custom_slot = ship_depth_charge_1
+				left_2_custom_slot = ship_anti_air_1
+				left_3_custom_slot = ship_torpedo_1_3x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_1
+				version_name = "[Commission] Le Fantasque"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.FRA.52
+	title = NOM_trade.FRA.52.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Mogador"
+			type = ship_hull_light_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_4
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_light_battery_2_2x
+				mid_1_custom_slot = ship_light_battery_2_2x
+				mid_2_custom_slot = ship_anti_air_1
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_light_battery_2_2x
+				front_1_custom_slot = ship_light_battery_2_2x
+
+				right_1_custom_slot = ship_depth_charge_1
+				right_2_custom_slot = ship_torpedo_1_2x
+				right_3_custom_slot = ship_torpedo_1_3x
+
+				left_1_custom_slot = ship_depth_charge_1
+				left_2_custom_slot = ship_torpedo_1_2x
+				left_3_custom_slot = ship_torpedo_1_3x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				version_name = "[Commission] Mogador"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.FRA.61
+	title = NOM_trade.FRA.61.title
+	desc = NOM_trade.FRA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Surcouf"
+			type = ship_hull_cruiser_submarine
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_engine_slot = sub_ship_engine_1
+				fixed_ship_periscope_slot = sub_periscope_1
+				fixed_ship_damage_control_slot = water_pump
+
+				rear_1_custom_slot = ship_torpedo_sub_1
+				mid_2_custom_slot = sub_watertight_compartment
+				mid_3_custom_slot = sub_ballast_tank
+				top_3_custom_slot = ship_medium_battery_sub
+				front_1_custom_slot = ship_torpedo_sub_2
+				
+				right_1_custom_slot = ship_locked
+				right_2_custom_slot = ship_locked
+				right_3_custom_slot = ship_locked
+				right_4_custom_slot = ship_locked
+				
+				left_1_custom_slot = ship_locked
+				left_4_custom_slot = ship_locked
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				version_name = "[Commission] Surcouf"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		FRA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+
+### GERMANY
+country_event = {
+	id = NOM_trade.GER.1
+	title = NOM_trade.GER.1.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Graf Zeppelin"
+			type = ship_hull_carrier_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = dp_ship_secondaries_1_2x
+				mid_1_custom_slot = dp_ship_secondaries_1_2x
+				mid_2_custom_slot = dp_ship_secondaries_1_2x
+				mid_3_custom_slot = dp_ship_secondaries_1_2x
+				mid_4_custom_slot = dp_ship_secondaries_1_2x
+				front_1_custom_slot = dp_ship_secondaries_1_2x
+
+				right_1_custom_slot = ship_casemate_2
+				right_2_custom_slot = ship_casemate_2
+				right_3_custom_slot = ship_casemate_2
+				right_4_custom_slot = ship_casemate_2
+
+				left_1_custom_slot = ship_casemate_2
+				left_2_custom_slot = ship_casemate_2
+				left_3_custom_slot = ship_casemate_2
+				left_4_custom_slot = ship_casemate_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_1
+				version_name = "[Commission] Graf Zeppelin"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.11
+	title = NOM_trade.GER.11.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Scharnhorst"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = ship_armor_bb_2
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_5
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_heavy_battery_1_3x
+				mid_1_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_3
+				mid_4_custom_slot = ship_heavy_battery_1_3x
+				front_1_custom_slot = ship_heavy_battery_1_3x
+
+				right_1_custom_slot = ship_secondaries_2_2x
+				right_2_custom_slot = ship_torpedo_2_3x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = ship_secondaries_2_2x
+
+				left_1_custom_slot = ship_secondaries_2_2x
+				left_2_custom_slot = ship_torpedo_2_3x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = ship_secondaries_2_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] Scharnhorst"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.12
+	title = NOM_trade.GER.12.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Bismarck"
+			type = ship_hull_heavy_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_5
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_heavy_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_2
+				mid_3_custom_slot = ship_anti_air_3
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
+
+				right_1_custom_slot = ship_secondaries_2_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_secondaries_2_2x
+				right_4_custom_slot = ship_secondaries_2_2x
+
+				left_1_custom_slot = ship_secondaries_2_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_secondaries_2_2x
+				left_4_custom_slot = ship_secondaries_2_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_3
+				version_name = "[Commission] Bismarck"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.31
+	title = NOM_trade.GER.31.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Deutschland"
+			type = ship_hull_cruiser_panzerschiff
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_2
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				mid_1_custom_slot = ship_heavy_battery_1_3x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				front_1_custom_slot = ship_heavy_battery_1_3x
+
+				right_1_custom_slot = ship_torpedo_2_4x
+				right_2_custom_slot = ship_secondaries_1_1x
+				right_3_custom_slot = ship_secondaries_1_1x
+				right_4_custom_slot = ship_secondaries_1_1x
+
+				left_1_custom_slot = ship_torpedo_2_4x
+				left_2_custom_slot = ship_secondaries_1_1x
+				left_3_custom_slot = ship_secondaries_1_1x
+				left_4_custom_slot = ship_secondaries_1_1x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_panzerschiff
+				version_name = "[Commission] Deutschland"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.32
+	title = NOM_trade.GER.32.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Admiral Hipper"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_sonar_slot = ship_sonar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_2
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_medium_battery_2_2x
+				mid_1_custom_slot = ship_medium_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_3
+				mid_4_custom_slot = ship_medium_battery_2_2x
+				front_1_custom_slot = ship_medium_battery_2_2x
+
+				right_1_custom_slot = ship_torpedo_2_3x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_torpedo_2_3x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_torpedo_2_3x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_torpedo_2_3x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Admiral Hipper"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.41
+	title = NOM_trade.GER.41.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Königsberg"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_citadel_slot = ship_citadel_2
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_mine_layer_1
+				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_2_custom_slot = ship_light_medium_battery_2_3x
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_anti_air_1
+				front_1_custom_slot = ship_light_medium_battery_2_3x
+
+				right_2_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = ship_torpedo_1_3x
+
+				left_2_custom_slot = ship_torpedo_1_3x
+				left_3_custom_slot = ship_torpedo_1_3x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Königsberg"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.51
+	title = NOM_trade.GER.51.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Typ 1934"
+			type = ship_hull_light_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = light_ship_armor_1
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_light_battery_2_2x
+				mid_1_custom_slot = ship_light_battery_2
+				mid_2_custom_slot = ship_torpedo_2_4x
+				mid_3_custom_slot = ship_torpedo_2_4x
+				mid_4_custom_slot = ship_light_battery_2
+				front_1_custom_slot = ship_light_battery_2
+
+				right_1_custom_slot = ship_depth_charge_1
+				right_2_custom_slot = ship_anti_air_2
+
+				left_1_custom_slot = ship_depth_charge_1
+				left_2_custom_slot = ship_anti_air_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				version_name = "[Commission] Typ 1934"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.61
+	title = NOM_trade.GER.61.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Typ VII"
+			type = ship_hull_submarine_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_engine_slot = sub_ship_engine_2
+				fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
+				fixed_ship_sonar_slot = ship_sub_sonar_2
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_batteries_slot = sub_batteries_1
+				fixed_ship_periscope_slot = sub_periscope_2
+				fixed_ship_damage_control_slot = water_pump
+
+				rear_1_custom_slot = ship_torpedo_sub_1
+				mid_1_custom_slot = sub_watertight_compartment
+				mid_2_custom_slot = sub_ballast_tank
+				mid_3_custom_slot = sub_ballast_tank
+				mid_4_custom_slot = sub_watertight_compartment
+				front_1_custom_slot = ship_torpedo_sub_3
+				
+				right_1_custom_slot = ship_locked
+				right_2_custom_slot = ship_locked
+				right_3_custom_slot = ship_locked
+				right_4_custom_slot = ship_locked
+				
+				left_1_custom_slot = ship_locked
+				top_2_custom_slot = ship_anti_air_2
+				top_3_custom_slot = ship_very_light_battery_sub
+				left_4_custom_slot = ship_locked
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_2
+				version_name = "[Commission] Typ VII"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.62
+	title = NOM_trade.GER.62.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Typ VII C/41"
+			type = ship_hull_submarine_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_engine_slot = sub_ship_engine_2
+				fixed_ship_fire_control_system_slot = sub_torpedo_computer_2
+				fixed_ship_sonar_slot = ship_sub_sonar_3
+				fixed_ship_radar_slot = ship_sub_radar_1
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_batteries_slot = sub_batteries_2
+				fixed_ship_periscope_slot = sub_periscope_2
+				fixed_ship_snorkel_slot = ship_sub_snorkel_1
+				fixed_ship_damage_control_slot = dc_lockers
+
+				rear_1_custom_slot = ship_torpedo_sub_1
+				mid_1_custom_slot = sub_watertight_compartment
+				mid_2_custom_slot = sub_ballast_tank
+				mid_3_custom_slot = sub_ballast_tank
+				mid_4_custom_slot = sub_watertight_compartment
+				front_1_custom_slot = ship_torpedo_sub_3
+				
+				right_1_custom_slot = ship_locked
+				right_2_custom_slot = ship_locked
+				right_3_custom_slot = ship_locked
+				right_4_custom_slot = ship_locked
+				
+				left_1_custom_slot = ship_locked
+				top_2_custom_slot = ship_anti_air_3
+				top_3_custom_slot = ship_very_light_battery_sub
+				left_4_custom_slot = ship_locked
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_2
+				version_name = "[Commission] Typ VII C/41"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.GER.63
+	title = NOM_trade.GER.63.title
+	desc = NOM_trade.GER.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Typ IX C/40"
+			type = ship_hull_cruiser_submarine
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_engine_slot = sub_ship_engine_3
+				fixed_ship_fire_control_system_slot = sub_torpedo_computer_2
+				fixed_ship_sonar_slot = ship_sub_sonar_3
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_batteries_slot = sub_batteries_2
+				fixed_ship_periscope_slot = sub_periscope_2
+				fixed_ship_snorkel_slot = ship_sub_snorkel_1
+				fixed_ship_damage_control_slot = dc_lockers
+
+				rear_1_custom_slot = ship_torpedo_sub_2
+				mid_1_custom_slot = sub_watertight_compartment
+				mid_2_custom_slot = sub_ballast_tank
+				mid_3_custom_slot = sub_ballast_tank
+				mid_4_custom_slot = sub_watertight_compartment
+				front_1_custom_slot = ship_torpedo_sub_3
+				
+				right_1_custom_slot = ship_locked
+				right_2_custom_slot = ship_locked
+				right_3_custom_slot = ship_locked
+				right_4_custom_slot = ship_locked
+				
+				left_1_custom_slot = ship_locked
+				top_2_custom_slot = ship_anti_air_2
+				top_3_custom_slot = ship_light_battery_sub
+				left_4_custom_slot = ship_locked
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				version_name = "[Commission] Typ IX C/40"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		GER = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+
+### ITALY
+country_event = {
+	id = NOM_trade.ITA.11
+	title = NOM_trade.ITA.11.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Conte di Cavour"
+			type = ship_hull_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bb_1
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_4
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_heavy_battery_1_3x
+				mid_1_custom_slot = ship_heavy_battery_1_2x
+				mid_2_custom_slot = dp_ship_secondaries_1_2x
+				mid_3_custom_slot = dp_ship_secondaries_1_2x
+				mid_4_custom_slot = ship_heavy_battery_1_2x
+				front_1_custom_slot = ship_heavy_battery_1_3x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = ship_secondaries_1_2x
+				right_3_custom_slot = ship_secondaries_1_2x
+				right_4_custom_slot = ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = ship_secondaries_1_2x
+				left_3_custom_slot = ship_secondaries_1_2x
+				left_4_custom_slot = ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_1
+				version_name = "[Commission] Conte di Cavour"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.12
+	title = NOM_trade.ITA.12.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Littorio"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_airplane_launcher_1
+				mid_1_custom_slot = ship_heavy_battery_2_3x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_2_3x
+				front_1_custom_slot = ship_heavy_battery_2_3x
+
+				right_1_custom_slot = ship_secondaries_2_3x
+				right_2_custom_slot = dp_ship_secondaries_2_2x
+				right_3_custom_slot = dp_ship_secondaries_2_2x
+				right_4_custom_slot = ship_secondaries_2_3x
+
+				left_1_custom_slot = ship_secondaries_2_3x
+				left_2_custom_slot = dp_ship_secondaries_2_2x
+				left_3_custom_slot = dp_ship_secondaries_2_2x
+				left_4_custom_slot = ship_secondaries_2_3x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] Littorio"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.31
+	title = NOM_trade.ITA.31.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Trento"
+			type = ship_hull_cruiser_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_medium_battery_2_2x
+				mid_1_custom_slot = ship_medium_battery_2_2x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_airplane_launcher_1
+				mid_4_custom_slot = ship_medium_battery_2_2x
+				front_1_custom_slot = ship_medium_battery_2_2x
+
+				right_1_custom_slot = ship_torpedo_1_4x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_torpedo_1_4x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_1
+				version_name = "[Commission] Trento"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.32
+	title = NOM_trade.ITA.32.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Bolzano"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_medium_battery_3_2x
+				mid_1_custom_slot = ship_medium_battery_3_2x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_airplane_launcher_1
+				mid_4_custom_slot = ship_medium_battery_3_2x
+				front_1_custom_slot = ship_medium_battery_3_2x
+
+				right_1_custom_slot = ship_torpedo_1_4x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_torpedo_1_4x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Bolzano"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.41
+	title = NOM_trade.ITA.41.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Montecuccoli"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_light_medium_battery_2_2x
+				mid_1_custom_slot = ship_light_medium_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = dp_ship_secondaries_1_2x
+				mid_4_custom_slot = ship_light_medium_battery_2_2x
+				front_1_custom_slot = ship_light_medium_battery_2_2x
+
+				right_2_custom_slot = ship_torpedo_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+
+				left_2_custom_slot = ship_torpedo_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Montecuccoli"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.42
+	title = NOM_trade.ITA.42.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Duca degli Abruzzi"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_1_custom_slot = ship_light_medium_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_light_medium_battery_2_2x
+				front_1_custom_slot = ship_light_medium_battery_2_3x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = ship_torpedo_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = ship_torpedo_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Duca degli Abruzzi"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.43
+	title = NOM_trade.ITA.43.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Capitani Romani"
+			type = ship_hull_cruiser_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_4
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
+
+				rear_1_custom_slot = dp_ship_medium_1
+				mid_1_custom_slot = dp_ship_medium_1
+				mid_2_custom_slot = ship_torpedo_2_4x
+				mid_3_custom_slot = ship_torpedo_2_4x
+				mid_4_custom_slot = dp_ship_medium_1
+				front_1_custom_slot = dp_ship_medium_1
+
+				right_1_custom_slot = ship_mine_layer_1
+				right_3_custom_slot = ship_anti_air_2
+
+				left_1_custom_slot = ship_mine_layer_1
+				left_3_custom_slot = ship_anti_air_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_3
+				version_name = "[Commission] Capitani Romani"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.51
+	title = NOM_trade.ITA.51.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Maestrale"
+			type = ship_hull_light_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_mine_layer_1
+				mid_1_custom_slot = ship_light_battery_2_2x
+				mid_2_custom_slot = ship_torpedo_1_3x
+				mid_3_custom_slot = ship_torpedo_1_3x
+				mid_4_custom_slot = ship_anti_air_1
+				front_1_custom_slot = ship_light_battery_2_2x
+
+				right_1_custom_slot = ship_depth_charge_1
+
+				left_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_1
+				version_name = "[Commission] Maestrale"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.61
+	title = NOM_trade.ITA.61.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Calvi"
+			type = ship_hull_submarine_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_engine_slot = sub_ship_engine_2
+				fixed_ship_periscope_slot = sub_periscope_2
+				fixed_ship_damage_control_slot = water_pump
+
+				rear_1_custom_slot = ship_torpedo_sub_2
+				mid_2_custom_slot = sub_watertight_compartment
+				mid_3_custom_slot = sub_ballast_tank
+				front_1_custom_slot = ship_torpedo_sub_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_2
+				version_name = "[Commission] Calvi"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.ITA.62
+	title = NOM_trade.ITA.62.title
+	desc = NOM_trade.ITA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] CB"
+			type = ship_hull_midget_submarine
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_engine_slot = sub_ship_engine_2
+				fixed_ship_batteries_slot = sub_batteries_2
+				fixed_ship_periscope_slot = sub_periscope_2
+				fixed_ship_damage_control_slot = water_pump
+
+				rear_1_custom_slot = ship_locked
+				mid_1_custom_slot = ship_locked
+				mid_2_custom_slot = sub_ballast_tank
+				mid_3_custom_slot = sub_ballast_tank
+				mid_4_custom_slot = ship_locked
+				front_1_custom_slot = ship_torpedo_sub_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_midget_submarine
+				version_name = "[Commission] CB"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		ITA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+
+### JAPAN
+country_event = {
+	id = NOM_trade.JAP.1
+	title = NOM_trade.JAP.1.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Akagi"
+			type = ship_hull_carrier_conversion_bb
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_arresting_cable
+				mid_1_custom_slot = ship_deck_space
+				front_1_custom_slot = ship_anti_air_2
+
+				right_1_custom_slot = ship_casemate_2
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = ship_casemate_2
+
+				left_1_custom_slot = ship_anti_air_2
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = ship_anti_air_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_conversion_bb
+				version_name = "[Commission] Akagi"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.2
+	title = NOM_trade.JAP.2.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Tone"
+			type = ship_hull_carrier_hybrid_ca
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = carrier_ship_engine_3
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
+
+				rear_1_custom_slot = ship_anti_air_2
+				mid_1_custom_slot = ship_anti_air_2
+				mid_2_custom_slot = ship_medium_battery_2_2x
+				mid_3_custom_slot = ship_medium_battery_2_2x
+				mid_4_custom_slot = ship_medium_battery_2_2x
+				front_1_custom_slot = ship_medium_battery_2_2x
+
+				right_1_custom_slot = ship_torpedo_1_3x
+				right_2_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_torpedo_1_3x
+				left_2_custom_slot = ship_torpedo_1_3x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_hybrid_ca
+				version_name = "[Commission] Tone"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.3
+	title = NOM_trade.JAP.3.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Taiho"
+			type = ship_hull_carrier_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_engine_slot = carrier_ship_engine_3
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_deck_slot = medium_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_arresting_cable
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_anti_air_2
+				front_1_custom_slot = ship_anti_air_2
+
+				right_1_custom_slot = dp_ship_secondaries_2_2x
+				right_2_custom_slot = ship_anti_air_2
+				right_3_custom_slot = dp_ship_secondaries_2_2x
+				right_4_custom_slot = dp_ship_secondaries_2_2x
+
+				left_1_custom_slot = dp_ship_secondaries_2_2x
+				left_2_custom_slot = dp_ship_secondaries_2_2x
+				left_3_custom_slot = ship_anti_air_2
+				left_4_custom_slot = dp_ship_secondaries_2_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_2
+				version_name = "[Commission] Taiho"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.11
+	title = NOM_trade.JAP.11.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Nagato"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bb_2
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_beehive
+
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_heavy_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
+
+				right_1_custom_slot = ship_casemate_1
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = ship_casemate_1
+
+				left_1_custom_slot = ship_casemate_1
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = ship_casemate_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] Nagato"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.12
+	title = NOM_trade.JAP.12.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Yamato"
+			type = ship_hull_super_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = super_heavy_ship_armor
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_beehive
+
+				rear_1_custom_slot = ship_airplane_launcher_2
+				mid_1_custom_slot = ship_super_heavy_battery_1
+				mid_2_custom_slot = ship_secondaries_2_3x
+				mid_3_custom_slot = ship_secondaries_2_3x
+				mid_4_custom_slot = ship_super_heavy_battery_1
+				front_1_custom_slot = ship_super_heavy_battery_1
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_secondaries_2_3x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_secondaries_2_3x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_super_heavy_1
+				version_name = "[Commission] Yamato"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.13
+	title = NOM_trade.JAP.13.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Yamato (1945)"
+			type = ship_hull_super_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_3
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = super_heavy_ship_armor
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_beehive
+
+				rear_1_custom_slot = ship_airplane_launcher_2
+				mid_1_custom_slot = ship_super_heavy_battery_1
+				mid_2_custom_slot = ship_secondaries_2_3x
+				mid_3_custom_slot = ship_secondaries_2_3x
+				mid_4_custom_slot = ship_super_heavy_battery_1
+				front_1_custom_slot = ship_super_heavy_battery_1
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_anti_air_4
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_anti_air_4
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_super_heavy_1
+				version_name = "[Commission] Yamato (1945)"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.21
+	title = NOM_trade.JAP.21.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Kongo"
+			type = ship_hull_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bc_1
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_4
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_beehive
+
+				rear_1_custom_slot = ship_heavy_battery_1_2x
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_heavy_battery_1_2x
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_1_2x
+				front_1_custom_slot = ship_heavy_battery_1_2x
+
+				right_1_custom_slot = ship_secondaries_1_1x
+				right_2_custom_slot = ship_secondaries_1_1x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = ship_secondaries_1_1x
+
+				left_1_custom_slot = ship_secondaries_1_1x
+				left_2_custom_slot = ship_secondaries_1_1x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = ship_secondaries_1_1x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_1
+				version_name = "[Commission] Kongo"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.22
+	title = NOM_trade.JAP.22.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Amagi"
+			type = ship_hull_heavy_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bc_2
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_beehive
+
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_heavy_battery_2_2x
+				mid_2_custom_slot = ship_heavy_battery_2_2x
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_3
+				version_name = "[Commission] Amagi"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.31
+	title = NOM_trade.JAP.31.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Takao"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
+
+				rear_1_custom_slot = ship_medium_battery_1_2x
+				mid_1_custom_slot = ship_medium_battery_1_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_medium_battery_1_2x
+				mid_4_custom_slot = ship_medium_battery_1_2x
+				front_1_custom_slot = ship_medium_battery_1_2x
+
+				right_1_custom_slot = ship_torpedo_2_4x
+				right_2_custom_slot = ship_torpedo_2_4x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_torpedo_2_4x
+				left_2_custom_slot = ship_torpedo_2_4x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Takao"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.51
+	title = NOM_trade.JAP.51.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Fubuki"
+			type = ship_hull_light_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = light_ship_armor_1
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
+
+				rear_1_custom_slot = ship_light_battery_2_2x
+				mid_1_custom_slot = ship_light_battery_2_2x
+				mid_2_custom_slot = ship_torpedo_1_3x
+				mid_3_custom_slot = ship_torpedo_1_3x
+				mid_4_custom_slot = ship_torpedo_1_3x
+				front_1_custom_slot = ship_light_battery_2_2x
+
+				right_2_custom_slot = ship_anti_air_1
+
+				left_2_custom_slot = ship_anti_air_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_1
+				version_name = "[Commission] Fubuki"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.52
+	title = NOM_trade.JAP.52.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Kagero"
+			type = ship_hull_light_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = light_ship_armor_1
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
+
+				rear_1_custom_slot = ship_light_battery_2_2x
+				mid_1_custom_slot = ship_light_battery_2_2x
+				mid_2_custom_slot = ship_torpedo_2_4x
+				mid_3_custom_slot = ship_torpedo_2_4x
+				mid_4_custom_slot = ship_anti_air_2
+				front_1_custom_slot = ship_light_battery_2_2x
+
+				right_1_custom_slot = ship_depth_charge_1
+
+				left_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				version_name = "[Commission] Kagero"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.JAP.61
+	title = NOM_trade.JAP.61.title
+	desc = NOM_trade.JAP.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] I-400"
+			type = ship_hull_cruiser_submarine
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_engine_slot = sub_ship_engine_3
+				fixed_ship_fire_control_system_slot = sub_torpedo_computer_2
+				fixed_ship_sonar_slot = ship_sub_sonar_1
+				fixed_ship_tanks_slot = ship_extra_fuel_tank_2
+				fixed_ship_batteries_slot = sub_batteries_2
+				fixed_ship_periscope_slot = sub_periscope_2
+				fixed_ship_damage_control_slot = dc_lockers
+
+				mid_1_custom_slot = sub_watertight_compartment
+				mid_2_custom_slot = sub_ballast_tank
+				mid_3_custom_slot = sub_ballast_tank
+				mid_4_custom_slot = sub_watertight_compartment
+				front_1_custom_slot = ship_torpedo_sub_4
+				
+				right_1_custom_slot = ship_locked
+				right_2_custom_slot = ship_locked
+				right_3_custom_slot = ship_locked
+				right_4_custom_slot = ship_locked
+				
+				left_1_custom_slot = ship_locked
+				top_2_custom_slot = ship_anti_air_2
+				top_3_custom_slot = ship_airplane_launcher_sub
+				left_4_custom_slot = ship_locked
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_submarine
+				version_name = "[Commission] I-400"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		JAP = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+
+### SOVIET UNION
+country_event = {
+	id = NOM_trade.SOV.11
+	title = NOM_trade.SOV.11.title
+	desc = NOM_trade.SOV.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Gangut"
+			type = ship_hull_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_citadel_slot = ship_citadel_4
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_armor_slot = ship_armor_bb_1
+				fixed_ship_torpedo_protection_slot = torpedo_protection_1
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_heavy_battery_1_3x
+				mid_1_custom_slot = ship_anti_air_1
+				mid_2_custom_slot = ship_heavy_battery_1_3x
+				mid_3_custom_slot = ship_heavy_battery_1_3x
+				mid_4_custom_slot = ship_anti_air_1
+				front_1_custom_slot = ship_heavy_battery_1_3x
+				
+				right_1_custom_slot = ship_casemate_2
+				right_2_custom_slot = ship_casemate_2
+				right_3_custom_slot = ship_casemate_2
+				right_4_custom_slot = ship_casemate_2
+
+				left_1_custom_slot = ship_casemate_2
+				left_2_custom_slot = ship_casemate_2
+				left_3_custom_slot = ship_casemate_2
+				left_4_custom_slot = ship_casemate_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_1
+				version_name = "[Commission] Gangut"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		SOV = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.SOV.12
+	title = NOM_trade.SOV.12.title
+	desc = NOM_trade.SOV.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Sovetsky Soyuz"
+			type = ship_hull_heavy_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_airplane_launcher_2
+				mid_1_custom_slot = ship_heavy_battery_3_3x
+				mid_2_custom_slot = dp_ship_secondaries_1_2x
+				mid_3_custom_slot = dp_ship_secondaries_1_2x
+				mid_4_custom_slot = ship_heavy_battery_3_3x
+				front_1_custom_slot = ship_heavy_battery_3_3x
+				
+				right_1_custom_slot = ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_secondaries_1_2x
+				right_4_custom_slot = ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_secondaries_1_2x
+				left_4_custom_slot = ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_3
+				version_name = "[Commission] Sovetsky Soyuz"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		SOV = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.SOV.21
+	title = NOM_trade.SOV.21.title
+	desc = NOM_trade.SOV.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Kronshtadt"
+			type = ship_hull_heavy_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_armor_slot = ship_armor_bc_2
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = ship_anti_air_3
+				mid_3_custom_slot = ship_airplane_launcher_2
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
+				
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_secondaries_1_2x
+				right_4_custom_slot = ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_secondaries_1_2x
+				left_4_custom_slot = ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_3
+				version_name = "[Commission] Kronshtadt"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		SOV = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.SOV.31
+	title = NOM_trade.SOV.31.title
+	desc = NOM_trade.SOV.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Kirov"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_medium_battery_1_3x
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_medium_battery_1_3x
+				front_1_custom_slot = ship_medium_battery_1_3x
+
+				right_1_custom_slot = ship_torpedo_1_3x
+				right_2_custom_slot = dp_ship_secondaries_1
+				right_3_custom_slot = dp_ship_secondaries_1
+				right_4_custom_slot = dp_ship_secondaries_1
+
+				left_1_custom_slot = ship_torpedo_1_3x
+				left_2_custom_slot = dp_ship_secondaries_1
+				left_3_custom_slot = dp_ship_secondaries_1
+				left_4_custom_slot = dp_ship_secondaries_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Kirov"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		SOV = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.SOV.51
+	title = NOM_trade.SOV.51.title
+	desc = NOM_trade.SOV.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Leningrad"
+			type = ship_hull_light_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_light_battery_2
+				mid_1_custom_slot = ship_light_battery_2
+				mid_2_custom_slot = ship_light_battery_2
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_light_battery_2
+				front_1_custom_slot = ship_light_battery_2
+
+				right_1_custom_slot = ship_torpedo_1_4x
+
+				left_1_custom_slot = ship_torpedo_1_4x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				version_name = "[Commission] Leningrad"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		SOV = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.SOV.52
+	title = NOM_trade.SOV.52.title
+	desc = NOM_trade.SOV.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Storozhevoy"
+			type = ship_hull_light_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_light_battery_2
+				mid_1_custom_slot = ship_light_battery_2
+				mid_2_custom_slot = ship_torpedo_2_3x
+				mid_3_custom_slot = ship_torpedo_2_3x
+				mid_4_custom_slot = ship_light_battery_2
+				front_1_custom_slot = ship_light_battery_2
+
+				right_1_custom_slot = ship_mine_layer_1
+				right_3_custom_slot = ship_anti_air_2
+
+				left_1_custom_slot = ship_depth_charge_1
+				left_3_custom_slot = ship_anti_air_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_2
+				version_name = "[Commission] Storozhevoy"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		SOV = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.SOV.53
+	title = NOM_trade.SOV.53.title
+	desc = NOM_trade.SOV.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Ognevoy"
+			type = ship_hull_light_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_sonar_slot = ship_sonar_2
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
+
+				rear_1_custom_slot = ship_light_battery_2_2x
+				mid_1_custom_slot = ship_anti_air_2
+				mid_2_custom_slot = ship_torpedo_2_3x
+				mid_3_custom_slot = ship_torpedo_2_3x
+				mid_4_custom_slot = ship_anti_air_2
+				front_1_custom_slot = ship_light_battery_2_2x
+
+				right_1_custom_slot = ship_mine_layer_1
+				right_3_custom_slot = ship_anti_air_2
+
+				left_1_custom_slot = ship_depth_charge_3
+				left_3_custom_slot = ship_anti_air_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_3
+				version_name = "[Commission] Ognevoy"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		SOV = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+
+### USA
+country_event = {
+	id = NOM_trade.USA.1
+	title = NOM_trade.USA.1.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Yorktown"
+			type = ship_hull_carrier_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_arresting_cable
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+				front_1_custom_slot = ship_anti_air_1
+
+				right_1_custom_slot = dp_ship_secondaries_1
+				right_2_custom_slot = ship_anti_air_1
+				right_3_custom_slot = ship_anti_air_1
+				right_4_custom_slot = dp_ship_secondaries_1
+
+				left_1_custom_slot = dp_ship_secondaries_1
+				left_2_custom_slot = ship_anti_air_1
+				left_3_custom_slot = ship_anti_air_1
+				left_4_custom_slot = dp_ship_secondaries_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_1
+				version_name = "[Commission] Yorktown"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.2
+	title = NOM_trade.USA.2.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Yorktown (1943 Refit)"
+			type = ship_hull_carrier_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_3
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = plane_ammo
+
+				rear_1_custom_slot = ship_arresting_cable
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_anti_air_2
+				front_1_custom_slot = ship_anti_air_2
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = ship_anti_air_3
+				left_2_custom_slot = ship_anti_air_3
+				left_3_custom_slot = ship_anti_air_3
+				left_4_custom_slot = ship_anti_air_3
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_1
+				version_name = "[Commission] Yorktown (1943 Refit)"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.3
+	title = NOM_trade.USA.3.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Essex"
+			type = ship_hull_carrier_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_3
+				fixed_ship_engine_slot = carrier_ship_engine_3
+				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_variable_time
+				fixed_ship_ammo_2_slot = plane_ammo
+
+				rear_1_custom_slot = ship_arresting_cable
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_anti_air_2
+				front_1_custom_slot = ship_anti_air_3
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = ship_anti_air_3
+				left_3_custom_slot = ship_anti_air_3
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_carrier_2
+				version_name = "[Commission] Essex"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.11
+	title = NOM_trade.USA.11.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Colorado"
+			type = ship_hull_heavy_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_heavy_battery_2_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
+
+				right_1_custom_slot = ship_secondaries_1_1x
+				right_2_custom_slot = ship_secondaries_1_1x
+				right_3_custom_slot = ship_secondaries_1_1x
+				right_4_custom_slot = ship_secondaries_1_1x
+
+				left_1_custom_slot = ship_secondaries_1_1x
+				left_2_custom_slot = ship_secondaries_1_1x
+				left_3_custom_slot = ship_secondaries_1_1x
+				left_4_custom_slot = ship_secondaries_1_1x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_1
+				version_name = "[Commission] Colorado"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.12
+	title = NOM_trade.USA.12.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] North Carolina"
+			type = ship_hull_heavy_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_airplane_launcher_1
+				mid_1_custom_slot = ship_heavy_battery_2_3x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_2_3x
+				front_1_custom_slot = ship_heavy_battery_2_3x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_2
+				version_name = "[Commission] North Carolina"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.13
+	title = NOM_trade.USA.13.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Iowa"
+			type = ship_hull_heavy_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_4
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_tanks_slot = ship_extra_fuel_tank_2
+				fixed_ship_armor_slot = ship_armor_bb_4
+				fixed_ship_deck_slot = heavy_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_torpedo_protection_slot = torpedo_protection_4
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_variable_time
+
+				rear_1_custom_slot = ship_airplane_launcher_2
+				mid_1_custom_slot = ship_heavy_battery_3_3x
+				mid_2_custom_slot = ship_anti_air_3
+				mid_3_custom_slot = ship_anti_air_3
+				mid_4_custom_slot = ship_heavy_battery_3_3x
+				front_1_custom_slot = ship_heavy_battery_3_3x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = dp_ship_secondaries_1_2x
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = dp_ship_secondaries_1_2x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_heavy_3
+				version_name = "[Commission] Iowa"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.31
+	title = NOM_trade.USA.31.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] New Orleans"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = ship_medium_battery_1_3x
+				mid_2_custom_slot = ship_airplane_launcher_1
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_medium_battery_1_3x
+				front_1_custom_slot = ship_medium_battery_1_3x
+
+				right_1_custom_slot = empty
+				right_2_custom_slot = dp_ship_secondaries_1
+				right_3_custom_slot = dp_ship_secondaries_1
+				right_4_custom_slot = empty
+
+				left_1_custom_slot = empty
+				left_2_custom_slot = dp_ship_secondaries_1
+				left_3_custom_slot = dp_ship_secondaries_1
+				left_4_custom_slot = empty
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] New Orleans"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.32
+	title = NOM_trade.USA.32.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Baltimore"
+			type = ship_hull_cruiser_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+				fixed_ship_radar_slot = ship_radar_3
+				fixed_ship_engine_slot = cruiser_ship_engine_3
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_tanks_slot = ship_extra_fuel_tank_2
+				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_deck_slot = medium_ship_deck_2
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+				rear_1_custom_slot = ship_airplane_launcher_1
+				mid_1_custom_slot = ship_medium_battery_2_3x
+				mid_2_custom_slot = dp_ship_secondaries_1_2x
+				mid_3_custom_slot = dp_ship_secondaries_1_2x
+				mid_4_custom_slot = ship_medium_battery_2_3x
+				front_1_custom_slot = ship_medium_battery_2_3x
+
+				right_1_custom_slot = ship_anti_air_2
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_4_custom_slot = ship_anti_air_3
+
+				left_1_custom_slot = ship_anti_air_2
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_4_custom_slot = ship_anti_air_3
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_3
+				version_name = "[Commission] Baltimore"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_capital_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.41
+	title = NOM_trade.USA.41.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Brooklyn"
+			type = ship_hull_cruiser_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+
+				rear_1_custom_slot = ship_airplane_launcher_1
+				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_2_custom_slot = ship_light_medium_battery_2_3x
+				mid_3_custom_slot = ship_light_medium_battery_2_3x
+				mid_4_custom_slot = ship_light_medium_battery_2_3x
+				front_1_custom_slot = ship_light_medium_battery_2_3x
+
+				right_1_custom_slot = ship_anti_air_1
+				right_2_custom_slot = dp_ship_secondaries_1
+				right_3_custom_slot = dp_ship_secondaries_1
+				right_4_custom_slot = ship_anti_air_1
+
+				left_1_custom_slot = ship_anti_air_1
+				left_2_custom_slot = dp_ship_secondaries_1
+				left_3_custom_slot = dp_ship_secondaries_1
+				left_4_custom_slot = ship_anti_air_1
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_2
+				version_name = "[Commission] Brooklyn"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.42
+	title = NOM_trade.USA.42.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Atlanta"
+			type = ship_hull_cruiser_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_sonar_slot = ship_sonar_2
+				fixed_ship_engine_slot = cruiser_ship_engine_3
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_deck_slot = medium_ship_deck_1
+				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_damage_control_slot = dc_control_room
+				fixed_ship_ammo_1_slot = cannon_variable_time
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
+
+				rear_1_custom_slot = dp_ship_secondaries_1_2x
+				mid_1_custom_slot = dp_ship_secondaries_1_2x
+				mid_2_custom_slot = dp_ship_secondaries_1_2x
+				mid_3_custom_slot = dp_ship_secondaries_1_2x
+				mid_4_custom_slot = dp_ship_secondaries_1_2x
+				front_1_custom_slot = dp_ship_secondaries_1_2x
+
+				right_1_custom_slot = dp_ship_secondaries_1_2x
+				right_2_custom_slot = ship_torpedo_2_4x
+				right_3_custom_slot = ship_anti_air_2
+				right_4_custom_slot = ship_anti_air_2
+
+				left_1_custom_slot = dp_ship_secondaries_1_2x
+				left_2_custom_slot = ship_torpedo_2_4x
+				left_3_custom_slot = ship_anti_air_2
+				left_4_custom_slot = ship_anti_air_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_cruiser_3
+				version_name = "[Commission] Atlanta"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.51
+	title = NOM_trade.USA.51.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Wickes"
+			type = ship_hull_light_1
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_engine_slot = light_ship_engine_0
+				fixed_ship_funnel_slot = funnel_4x
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = ship_light_battery_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_anti_air_1
+				mid_3_custom_slot = ship_light_battery_1
+				mid_4_custom_slot = ship_light_battery_1
+				front_1_custom_slot = ship_light_battery_1
+
+				right_2_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = ship_torpedo_1_3x
+
+				left_2_custom_slot = ship_torpedo_1_3x
+				left_3_custom_slot = ship_torpedo_1_3x
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_1
+				version_name = "[Commission] Wickes"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.52
+	title = NOM_trade.USA.52.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Fletcher"
+			type = ship_hull_light_3
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = ship_radar_2
+				fixed_ship_sonar_slot = ship_sonar_3
+				fixed_ship_engine_slot = light_ship_engine_3
+				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
+
+				rear_1_custom_slot = dp_light_battery_2
+				mid_1_custom_slot = dp_light_battery_2_2x
+				mid_2_custom_slot = ship_torpedo_2_4x
+				mid_3_custom_slot = ship_torpedo_2_4x
+				mid_4_custom_slot = dp_light_battery_2
+				front_1_custom_slot = dp_light_battery_2
+				
+				right_1_custom_slot = ship_depth_charge_2
+				right_2_custom_slot = ship_anti_air_1
+				right_3_custom_slot = ship_anti_air_2
+				
+				left_1_custom_slot = ship_depth_charge_2
+				left_2_custom_slot = ship_anti_air_1
+				left_3_custom_slot = ship_anti_air_2
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_light_3
+				version_name = "[Commission] Fletcher"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
+
+country_event = {
+	id = NOM_trade.USA.61
+	title = NOM_trade.USA.61.title
+	desc = NOM_trade.USA.1.desc
+	
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_trade.ENG.1.a
+		create_equipment_variant = {
+			name = "[Commission] Porpoise"
+			type = ship_hull_submarine_2
+			allow_without_tech = yes
+			modules = {
+				fixed_ship_radio_slot = ship_signals
+				fixed_ship_engine_slot = sub_ship_engine_2
+				fixed_ship_batteries_slot = sub_batteries_1
+				fixed_ship_periscope_slot = sub_periscope_1
+				fixed_ship_damage_control_slot = water_pump
+
+				rear_1_custom_slot = ship_torpedo_sub_1
+				mid_2_custom_slot = sub_watertight_compartment
+				mid_3_custom_slot = sub_ballast_tank
+				front_1_custom_slot = ship_torpedo_sub_2
+				
+				top_2_custom_slot = ship_anti_air_1
+				top_3_custom_slot = ship_very_light_battery_sub
+			}
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = ship_hull_submarine_2
+				version_name = "[Commission] Porpoise"
+			}
+			requested_factories = 1
+			progress = 0.99
+			amount = 1
+		}
+		
+		USA = { nom_sell_ship_return_dockyards = yes }
+	}
+}
