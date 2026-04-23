@@ -306,6 +306,22 @@ equipment_modules = {
 		dismantle_cost_ic = 300
 		xp_cost = 1
 	}
+	light_ship_deck_3 = {
+		abbreviation = "lsd2"
+		category = ship_light_deck_armor
+		gfx = ship_deck_armor_3
+		
+		multiply_stats = {
+			naval_speed = -0.03
+			build_cost_ic = 0.2
+			anti_air_attack = 0.15
+		}
+		add_stats = {
+			max_strength = 30
+		}
+		dismantle_cost_ic = 400
+		xp_cost = 1
+	}
 
 	medium_ship_deck_1 = {
 		abbreviation = "msd1"
@@ -341,6 +357,23 @@ equipment_modules = {
 		dismantle_cost_ic = 600
 		xp_cost = 1
 	}
+	medium_ship_deck_3 = {
+		abbreviation = "msd2"
+		category = ship_medium_deck_armor
+		gfx = ship_deck_armor_3
+		
+		multiply_stats = {
+			naval_speed = -0.03
+			build_cost_ic = 0.2
+			anti_air_attack = 0.16
+		}
+		add_stats = {
+			armor_value = 4
+			max_strength = 50
+		}
+		dismantle_cost_ic = 800
+		xp_cost = 1
+	}
 
 	heavy_ship_deck_1 = {
 		abbreviation = "hsd1"
@@ -372,6 +405,23 @@ equipment_modules = {
 		add_stats = {
 			armor_value = 10
 			max_strength = 54
+		}
+		dismantle_cost_ic = 900
+		xp_cost = 1
+	}
+	heavy_ship_deck_3 = {
+		abbreviation = "hsd3"
+		category = ship_heavy_deck_armor
+		gfx = ship_deck_armor_3
+		
+		multiply_stats = {
+			naval_speed = -0.03
+			build_cost_ic = 0.2
+			anti_air_attack = 0.2
+		}
+		add_stats = {
+			armor_value = 14
+			max_strength = 72
 		}
 		dismantle_cost_ic = 900
 		xp_cost = 1

@@ -1,4 +1,4 @@
-version="1.3"
+version="1.4"
 tags={
 	"Balance"
 	"Military"
@@ -11,5 +11,5 @@ dependencies={
 	"Kaiserreich"
 }
 name="*DEV* MTG Navy Overhaul"
-supported_version="1.17.*"
+supported_version="1.18.*"
 remote_file_id="3345879306"
