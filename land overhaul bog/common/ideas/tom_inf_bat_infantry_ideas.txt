@@ -1,0 +1,63 @@
+ideas = {
+	country = {
+		tom_inf_bat_infantry_lmg_support = {
+			removal_cost = -1
+			
+			modifier = {
+				great_war_infantry_mastery_gain_factor = 0.1
+			}
+		}
+		tom_inf_bat_infantry_lmg_line = {
+			removal_cost = -1
+			
+			modifier = {
+				assault_infantry_mastery_gain_factor = 0.1
+			}
+		}
+		
+		tom_inf_bat_infantry_mmg_support = {
+			removal_cost = -1
+			
+			modifier = {
+				great_war_infantry_mastery_gain_factor = 0.1
+			}
+		}
+		tom_inf_bat_infantry_mmg_line = {
+			removal_cost = -1
+			
+			modifier = {
+				large_unit_tactics_mastery_gain_factor = 0.1
+			}
+		}
+		
+		tom_inf_bat_infantry_hmg_support = {
+			removal_cost = -1
+			
+			modifier = {
+				great_war_infantry_mastery_gain_factor = 0.1
+			}
+		}
+		tom_inf_bat_infantry_hmg_line = {
+			removal_cost = -1
+			
+			modifier = {
+				defensive_postures_mastery_gain_factor = 0.1
+			}
+		}
+		
+		tom_inf_bat_infantry_mortar_support = {
+			removal_cost = -1
+			
+			modifier = {
+				combat_support_track_mastery_gain_factor = 0.05
+			}
+		}
+		tom_inf_bat_infantry_mortar_line = {
+			removal_cost = -1
+			
+			modifier = {
+				operations_track_mastery_gain_factor = 0.05
+			}
+		}
+	}
+}

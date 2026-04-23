@@ -1,0 +1,284 @@
+tom_inf_horse_decisions = {
+	tom_inf_hide_supply_depot_raids = {
+		visible = {
+			NOT = { has_country_flag = tom_inf_supply_depot_raids_hidden }
+		}
+		
+		complete_effect = {
+			set_country_flag = tom_inf_supply_depot_raids_hidden
+		}
+	}
+	
+	tom_inf_show_supply_depot_raids = {
+		visible = {
+			has_country_flag = tom_inf_supply_depot_raids_hidden
+		}
+		
+		complete_effect = {
+			clr_country_flag = tom_inf_supply_depot_raids_hidden
+		}
+	}
+	
+	
+	tom_inf_show_motorization = {
+		available = { always = no }
+		icon = GFX_decision_generic_motorized
+		
+		complete_effect = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = tom_inf_show_motorization_tt
+			if = {
+				limit = {
+					has_idea = tom_inf_motorization_level_1
+				}
+				show_ideas_tooltip = tom_inf_motorization_level_1
+			}
+			else_if = {
+				limit = {
+					has_idea = tom_inf_motorization_level_2
+				}
+				show_ideas_tooltip = tom_inf_motorization_level_2
+			}
+			else_if = {
+				limit = {
+					has_idea = tom_inf_motorization_level_3
+				}
+				show_ideas_tooltip = tom_inf_motorization_level_3
+			}
+			else_if = {
+				limit = {
+					has_idea = tom_inf_motorization_level_4
+				}
+				show_ideas_tooltip = tom_inf_motorization_level_4
+			}
+			else_if = {
+				limit = {
+					has_idea = tom_inf_motorization_level_5
+				}
+				show_ideas_tooltip = tom_inf_motorization_level_5
+			}
+		}
+	}
+	
+	tom_inf_breeding_programs = {
+		cost = 25
+		days_remove = 365
+		icon = GFX_decision_generic_cavalry
+		
+		complete_effect = {
+			add_to_variable = {
+				var = tom_inf_horse_mult
+				value = 0.045
+				tooltip = tom_inf_horse_mult
+			}
+		}
+		
+		remove_effect = {
+			add_to_variable = {
+				var = tom_inf_horse_mult
+				value = -0.045
+				tooltip = tom_inf_horse_mult
+			}
+		}
+	}
+	
+	tom_inf_buy_horses = {
+		cost = 25
+		days_re_enable = 180
+		icon = GFX_decision_generic_cavalry
+		
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = tom_inf_horse
+				amount = 25000
+			}
+		}
+	}
+	
+	
+	tom_inf_increase_motorization_to_2 = {
+		visible = { has_idea = tom_inf_motorization_level_1 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_1
+				add_idea = tom_inf_motorization_level_2
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 800
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 40
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			set_country_flag = tom_inf_motorization_used
+		}
+	}
+	tom_inf_increase_motorization_to_3 = {
+		visible = { has_idea = tom_inf_motorization_level_2 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_2
+				add_idea = tom_inf_motorization_level_3
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 600
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 80
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			set_country_flag = tom_inf_motorization_used
+		}
+	}
+	tom_inf_increase_motorization_to_4 = {
+		visible = { has_idea = tom_inf_motorization_level_3 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_3
+				add_idea = tom_inf_motorization_level_4
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 400
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 120
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			set_country_flag = tom_inf_motorization_used
+		}
+	}
+	tom_inf_increase_motorization_to_5 = {
+		visible = { has_idea = tom_inf_motorization_level_4 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_4
+				add_idea = tom_inf_motorization_level_5
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 0
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 200
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			set_country_flag = tom_inf_motorization_used
+		}
+	}
+	
+	tom_inf_decrease_motorization_to_1 = {
+		visible = { has_idea = tom_inf_motorization_level_2 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_2
+				add_idea = tom_inf_motorization_level_1
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 1000
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 0
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			clr_country_flag = tom_inf_motorization_used
+		}
+	}
+	tom_inf_decrease_motorization_to_2 = {
+		visible = { has_idea = tom_inf_motorization_level_3 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_3
+				add_idea = tom_inf_motorization_level_2
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 800
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 40
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			clr_country_flag = tom_inf_motorization_used
+		}
+	}
+	tom_inf_decrease_motorization_to_3 = {
+		visible = { has_idea = tom_inf_motorization_level_4 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_4
+				add_idea = tom_inf_motorization_level_3
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 600
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 80
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			clr_country_flag = tom_inf_motorization_used
+		}
+	}
+	tom_inf_decrease_motorization_to_4 = {
+		visible = { has_idea = tom_inf_motorization_level_5 }
+		
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = tom_inf_motorization_level_5
+				add_idea = tom_inf_motorization_level_4
+			}
+			
+			set_variable = {
+				var = tom_horse_supply_mult
+				value = 400
+				tooltip = tom_inf_horse_per_hub_tt
+			}
+			set_variable = {
+				var = tom_truck_supply_mult
+				value = 120
+				tooltip = tom_inf_truck_per_hub_tt
+			}
+			
+			clr_country_flag = tom_inf_motorization_used
+		}
+	}
+}

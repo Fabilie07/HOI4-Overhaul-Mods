@@ -1,0 +1,442 @@
+spriteTypes = {
+	### CATEGORIES
+	spriteType = {
+		name = "GFX_EMI_inf_clip"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/clip.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_magazine"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/magazine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_small_cartridge"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_intermediate_cartridge"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_rifle_cartridge"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_grenade"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/grenade_frag.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_support_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/support_shotgun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_support_equipment"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/shovel.dds"
+		legacy_lazy_load = no
+	}
+	
+
+	### FIRING MODES
+	spriteType = {
+		name = "GFX_EMI_inf_bolt_action"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/bolt_action.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_lever_action"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/lever_action.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_semi_auto"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/semi_auto.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_full_auto"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/full_auto.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### MAGAZINES
+	spriteType = {
+		name = "GFX_EMI_inf_clip_05"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/clip_05.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_clip_10"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/clip_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_magazine_05"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/magazine_05.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_magazine_10"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/magazine_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_magazine_15"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/magazine_15.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_magazine_20"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/magazine_20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_magazine_25"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/magazine_25.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_magazine_30"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/magazine_30.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### BACKPACK
+	spriteType = {
+		name = "GFX_EMI_inf_backpack_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/backpack_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_backpack_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/backpack_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_backpack_3"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/backpack_3.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### WATER
+	spriteType = {
+		name = "GFX_EMI_inf_canteen_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/canteen_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_canteen_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/canteen_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_canteen_3"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/canteen_3.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### FIRST AID
+	spriteType = {
+		name = "GFX_EMI_inf_first_aid_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/first_aid_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_first_aid_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/first_aid_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_first_aid_3"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/first_aid_3.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### SIGHTS
+	spriteType = {
+		name = "GFX_EMI_inf_sights_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/sights_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_sights_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/sights_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_sights_3"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/sights_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_sights_sniper"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/sights_telescopic.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### BARREL
+	spriteType = {
+		name = "GFX_EMI_inf_barrel_sawed_off"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_sawed_off.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_barrel_carbine"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_carbine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_barrel_rifle"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_rifle.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_barrel_extended"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_extended.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### SIDEARM
+	spriteType = {
+		name = "GFX_EMI_inf_sidearm_pistol"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/sidearm_pistol.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_sidearm_revolver"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/sidearm_revolver.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### SUPPORT WEAPON
+	spriteType = {
+		name = "GFX_EMI_inf_support_carbine_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/support_carbine_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_support_carbine_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/support_carbine_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_support_shotgun_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/support_shotgun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_support_smg_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/support_smg_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_support_smg_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/support_smg_2.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### GRENADE
+	spriteType = {
+		name = "GFX_EMI_inf_grenade_frag"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/grenade_frag.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_grenade_impact"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/grenade_impact.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_grenade_bundle"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/grenade_bundle.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_grenade_incendiary"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/grenade_incendiary.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_grenade_smoke"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/grenade_smoke.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### SUPPORT
+	spriteType = {
+		name = "GFX_EMI_inf_rifle_grenade"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/rifle_grenade.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_portable_at_rocket"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/portable_at_rocket.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_shovel"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/shovel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_bayonet"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/bayonet.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_pocket_knife"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/pocket_knife.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cleaning_kit"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cleaning_kit.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### CARTRIDGE
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_55"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_55.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_60"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_60.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_65"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_65.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_70"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_70.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_75"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_75.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_80"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_80.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_85"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_85.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_small_90"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_small_90.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_55"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_55.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_60"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_60.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_65"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_65.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_70"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_70.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_75"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_75.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_80"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_80.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_85"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_85.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_intermediate_90"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_intermediate_90.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_55"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_55.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_60"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_60.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_65"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_65.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_70"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_70.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_75"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_75.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_80"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_80.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_85"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_85.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_cartridge_rifle_90"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_rifle_90.dds"
+		legacy_lazy_load = no
+	}
+}
+
+
+
+
+
+

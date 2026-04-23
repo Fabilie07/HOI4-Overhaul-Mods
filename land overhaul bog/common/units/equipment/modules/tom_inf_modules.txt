@@ -1,0 +1,995 @@
+equipment_modules = {
+	# FIRING MODES
+	inf_bolt_action = {
+		category = inf_fire_mode
+		
+		add_stats = {
+			soft_attack = 2
+			defense = 4
+			reliability = 0.05
+			build_cost_ic = 0.05
+		}
+	}
+	
+	inf_lever_action = {
+		category = inf_fire_mode
+		
+		add_stats = {
+			soft_attack = 2
+			breakthrough = 1
+			build_cost_ic = 0.05
+		}
+	}
+	
+	inf_semi_auto = {
+		category = inf_fire_mode
+		
+		add_stats = {
+			soft_attack = 4
+			breakthrough = 1
+			reliability = -0.1
+			build_cost_ic = 0.2
+		}
+		
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	
+	inf_full_auto = {
+		category = inf_fire_mode
+		
+		add_stats = {
+			soft_attack = 8
+			breakthrough = 2
+			reliability = -0.2
+			build_cost_ic = 0.4
+		}
+		
+		build_cost_resources = {
+			steel = 1
+		}
+	}
+	
+	
+	# MAGAZINES
+	inf_tube_05 = {
+		category = inf_magazine
+		
+		add_stats = {
+			defense = 4
+			build_cost_ic = 0.04
+		}
+		multiply_stats = {
+			soft_attack = 0.02
+		}
+		
+		xp_cost = 2
+	}
+	inf_tube_08 = {
+		category = inf_magazine
+		
+		add_stats = {
+			defense = 4
+			build_cost_ic = 0.05
+		}
+		multiply_stats = {
+			soft_attack = 0.03
+		}
+		
+		xp_cost = 2
+	}
+	inf_tube_10 = {
+		category = inf_magazine
+		
+		add_stats = {
+			defense = 4
+			build_cost_ic = 0.06
+		}
+		multiply_stats = {
+			soft_attack = 0.04
+		}
+		
+		xp_cost = 2
+	}
+	
+	inf_clip_05 = {
+		category = inf_magazine
+		gui_category = inf_clip
+		
+		multiply_stats = {
+			soft_attack = 0.02
+		}
+		
+		xp_cost = 2
+	}
+	inf_clip_10 = {
+		category = inf_magazine
+		gui_category = inf_clip
+		
+		add_stats = {
+			build_cost_ic = 0.02
+		}
+		multiply_stats = {
+			soft_attack = 0.04
+		}
+		
+		xp_cost = 2
+	}
+	
+	inf_magazine_05 = {
+		category = inf_magazine
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.04
+		}
+		multiply_stats = {
+			soft_attack = 0.02
+		}
+		
+		xp_cost = 2
+	}
+	inf_magazine_10 = {
+		category = inf_magazine
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.06
+		}
+		multiply_stats = {
+			soft_attack = 0.04
+		}
+		
+		xp_cost = 2
+	}
+	inf_magazine_15 = {
+		category = inf_magazine
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.08
+			reliability = -0.1
+		}
+		multiply_stats = {
+			soft_attack = 0.06
+		}
+		
+		xp_cost = 2
+	}
+	inf_magazine_20 = {
+		category = inf_magazine
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.1
+			reliability = -0.1
+		}
+		multiply_stats = {
+			soft_attack = 0.08
+		}
+		
+		xp_cost = 2
+	}
+	inf_magazine_25 = {
+		category = inf_magazine
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.12
+			reliability = -0.2
+		}
+		multiply_stats = {
+			soft_attack = 0.1
+		}
+		
+		xp_cost = 2
+	}
+	inf_magazine_30 = {
+		category = inf_magazine
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.14
+			reliability = -0.2
+		}
+		multiply_stats = {
+			soft_attack = 0.12
+		}
+		
+		xp_cost = 2
+	}
+	
+	
+	# BACKPACK
+	inf_backpack_1 = {
+		category = inf_bag
+		
+		add_stats = {
+			supply_consumption = 0.1
+			maximum_speed = 0.4
+		}
+		xp_cost = 2
+	}
+	
+	inf_backpack_2 = {
+		category = inf_bag
+		
+		add_stats = {
+			supply_consumption = 0.06
+			build_cost_ic = 0.03
+		}
+		xp_cost = 2
+	}
+	
+	inf_backpack_3 = {
+		category = inf_bag
+		
+		add_stats = {
+			maximum_speed = -0.4
+			supply_consumption = 0.04
+			build_cost_ic = 0.06
+		}
+		xp_cost = 2
+	}
+	
+	
+	# WATER
+	inf_canteen_1 = {
+		category = inf_water
+		
+		add_stats = {
+			default_morale = 0.1
+		}
+		xp_cost = 2
+	}
+	inf_canteen_2 = {
+		category = inf_water
+		
+		add_stats = {
+			default_morale = 0.15
+			build_cost_ic = 0.02
+		}
+		xp_cost = 2
+	}
+	inf_canteen_3 = {
+		category = inf_water
+		
+		add_stats = {
+			default_morale = 0.2
+			build_cost_ic = 0.04
+		}
+		xp_cost = 2
+	}
+	
+	
+	# FIRST AID
+	inf_first_aid_1 = {
+		category = inf_first_aid
+		
+		add_stats = {
+			max_strength = 0.1
+			build_cost_ic = 0.05
+		}
+		xp_cost = 2
+	}
+	inf_first_aid_2 = {
+		category = inf_first_aid
+		
+		add_stats = {
+			max_strength = 0.15
+			build_cost_ic = 0.1
+		}
+		xp_cost = 2
+	}
+	inf_first_aid_3 = {
+		category = inf_first_aid
+		
+		add_stats = {
+			max_strength = 0.2
+			build_cost_ic = 0.15
+		}
+		xp_cost = 2
+	}
+	
+	
+	# SIGHTS
+	inf_sights_1 = {
+		category = inf_sights
+		
+		add_stats = {
+			soft_attack = 0.5
+		}
+		xp_cost = 2
+	}
+	inf_sights_2 = {
+		category = inf_sights
+		
+		add_stats = {
+			soft_attack = 0.8
+			build_cost_ic = 0.01
+		}
+		xp_cost = 2
+	}
+	inf_sights_3 = {
+		category = inf_sights
+		
+		add_stats = {
+			soft_attack = 1
+			build_cost_ic = 0.02
+		}
+		xp_cost = 2
+	}
+	
+	inf_sights_sniper = {
+		category = inf_sights
+		add_equipment_type = anti_tank
+		allow_equipment_type = anti_tank
+		
+		forbid_equipment_type_exact_match_for_category = {
+			inf_sights = armor
+		}
+		
+		multiply_stats = {
+			soft_attack = -0.5
+			defense = -0.5
+			breakthrough = -0.5
+		}
+		add_stats = {
+			build_cost_ic = 0.15
+		}
+		can_convert_from = {
+			module_category = inf_sights
+			convert_cost_ic = 0.05
+		}
+		xp_cost = 2
+	}
+	inf_sights_night = {
+		category = inf_sights
+		
+		add_stats = {
+			soft_attack = 2
+			breakthrough = 8
+			build_cost_ic = 0.25
+		}
+		xp_cost = 2
+	}
+	
+	
+	# BARREL
+	inf_barrel_sawed_off = {
+		category = inf_barrel
+		
+		add_stats = {
+			breakthrough = 2
+		}
+		
+		multiply_stats = {
+			hard_attack = -1
+		}
+		xp_cost = 3
+	}
+	
+	inf_barrel_carbine = {
+		category = inf_barrel
+		
+		add_stats = {
+			breakthrough = 1
+		}
+		xp_cost = 3
+	}
+	
+	inf_barrel_rifle = {
+		category = inf_barrel
+		
+		add_stats = {
+			build_cost_ic = 0.02
+		}
+		
+		multiply_stats = {
+			soft_attack = 0.02
+		}
+		xp_cost = 3
+	}
+	
+	inf_barrel_extended = {
+		category = inf_barrel
+		
+		add_stats = {
+			build_cost_ic = 0.04
+		}
+		
+		multiply_stats = {
+			soft_attack = 0.05
+		}
+		
+		build_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 3
+	}
+	
+	
+	# SIDEARMS
+	inf_sidearm_pistol = {
+		category = inf_sidearm
+		
+		add_stats = {
+			defense = 2
+			breakthrough = 1
+		}
+		xp_cost = 2
+	}
+	
+	inf_sidearm_revolver = {
+		category = inf_sidearm
+		
+		add_stats = {
+			defense = 3
+		}
+		xp_cost = 2
+	}
+	
+	# Primary Sidearm
+	inf_support_carbine_1 = {
+		category = inf_support_weapon
+		
+		add_stats = {
+			soft_attack = 3
+			defense = 6
+			
+			reliability = -0.05
+			build_cost_ic = 0.3
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 2
+	}
+	
+	inf_support_carbine_2 = {
+		category = inf_support_weapon
+		
+		add_stats = {
+			soft_attack = 4
+			defense = 8
+			
+			reliability = -0.05
+			build_cost_ic = 0.35
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 2
+	}
+	
+	inf_support_shotgun_1 = {
+		category = inf_support_weapon
+		
+		add_stats = {
+			soft_attack = 2
+			breakthrough = 4
+			
+			reliability = -0.05
+			build_cost_ic = 0.3
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 2
+	}
+	
+	inf_support_smg_1 = {
+		category = inf_support_weapon
+		
+		add_stats = {
+			soft_attack = 4
+			breakthrough = 8
+			defense = 2
+			
+			reliability = -0.15
+			build_cost_ic = 0.55
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 2
+	}
+	
+	inf_support_smg_2 = {
+		category = inf_support_weapon
+		
+		add_stats = {
+			soft_attack = 6
+			breakthrough = 12
+			defense = 4
+			
+			reliability = -0.1
+			build_cost_ic = 0.6
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 2
+	}
+	
+	
+	# GRENADES
+	inf_grenade_frag = {
+		category = inf_grenade
+		
+		add_stats = {
+			breakthrough = 1
+			soft_attack = 2
+			
+			build_cost_ic = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_grenade_impact = {
+		category = inf_grenade
+		
+		add_stats = {
+			soft_attack = 2.5
+			
+			build_cost_ic = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_grenade_bundle = {
+		category = inf_grenade
+		
+		add_stats = {
+			soft_attack = 1.5
+			hard_attack = 1.5
+			
+			build_cost_ic = 0.04
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_grenade_incendiary = {
+		category = inf_grenade
+		
+		add_stats = {
+			defense = 4
+			hard_attack = 0.5
+			
+			build_cost_ic = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_grenade_smoke = {
+		category = inf_grenade
+		
+		add_stats = {
+			breakthrough = 3
+			defense = 3
+			
+			build_cost_ic = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	
+	
+	# SUPPORT
+	
+	inf_rifle_grenade = {
+		category = inf_support_equipment
+		
+		add_stats = {
+			breakthrough = 6
+			
+			build_cost_ic = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_portable_at_rocket = {
+		category = inf_support_equipment
+		
+		add_stats = {
+			hard_attack = 4
+			ap_attack = 10
+			
+			build_cost_ic = 0.05
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_shovel = {
+		category = inf_support_equipment
+		
+		add_stats = {
+			entrenchment = 0.2
+			
+			build_cost_ic = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_bayonet = {
+		category = inf_support_equipment
+		
+		add_stats = {
+			breakthrough = 1
+			
+			build_cost_ic = 0.01
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_pocket_knife = {
+		category = inf_support_equipment
+		
+		add_stats = {
+			defense = 2
+			
+			build_cost_ic = 0.01
+		}
+		
+		xp_cost = 1
+	}
+	
+	inf_cleaning_kit = {
+		category = inf_support_equipment
+		
+		add_stats = {
+			reliability = 0.1
+			
+			build_cost_ic = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	
+	
+	# CARTRIDGES
+	inf_cartridge_small_55 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.2
+			reliability = 0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.2
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_small_60 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.23
+			reliability = 0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.19
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_small_65 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.26
+			reliability = 0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.18
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_small_70 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.29
+			reliability = 0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.17
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_small_75 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.32
+			reliability = 0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.16
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_small_80 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.35
+			reliability = 0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.15
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_small_85 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.38
+			reliability = 0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.13
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_small_90 = {
+		category = inf_cartridge
+		gui_category = inf_small_cartridge
+		
+		add_stats = {
+			soft_attack = 0.42
+			reliability = 0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+		xp_cost = 4
+	}
+	
+	
+	inf_cartridge_intermediate_55 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.55
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.02
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_intermediate_60 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.6
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.01
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_intermediate_65 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.65
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_intermediate_70 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.7
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.01
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_intermediate_75 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.75
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.02
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_intermediate_80 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.8
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.03
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_intermediate_85 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.85
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.045
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_intermediate_90 = {
+		category = inf_cartridge
+		gui_category = inf_intermediate_cartridge
+		
+		add_stats = {
+			soft_attack = 0.9
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.06
+		}
+		xp_cost = 4
+	}
+	
+	inf_cartridge_rifle_55 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 0.7
+			hard_attack = 0.5
+			reliability = -0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.03
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_rifle_60 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 0.75
+			hard_attack = 0.5
+			reliability = -0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.04
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_rifle_65 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 0.8
+			hard_attack = 0.5
+			reliability = -0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.05
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_rifle_70 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 0.85
+			hard_attack = 0.5
+			reliability = -0.05
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.06
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_rifle_75 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 0.9
+			hard_attack = 0.5
+			reliability = -0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.07
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_rifle_80 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 1
+			hard_attack = 0.5
+			reliability = -0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.08
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_rifle_85 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 1.1
+			hard_attack = 0.5
+			reliability = -0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.1
+		}
+		xp_cost = 4
+	}
+	inf_cartridge_rifle_90 = {
+		category = inf_cartridge
+		gui_category = inf_rifle_cartridge
+		
+		add_stats = {
+			soft_attack = 1.2
+			hard_attack = 0.5
+			reliability = -0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = 0.12
+		}
+		xp_cost = 4
+	}
+}

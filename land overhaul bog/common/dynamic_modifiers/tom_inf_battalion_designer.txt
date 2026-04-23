@@ -1,0 +1,5 @@
+tom_inf_support_composition = {
+	icon = GFX_unplanned_offensive
+	combat_support_track_mastery_gain_factor = tom_inf_doctrine_mastery_support
+	land_mastery_gain_factor = tom_inf_doctrine_mastery_all
+}

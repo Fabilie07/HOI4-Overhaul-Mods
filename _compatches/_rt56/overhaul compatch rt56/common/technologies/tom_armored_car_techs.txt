@@ -1,0 +1,191 @@
+technologies = {
+	armored_car1 = {
+
+		enable_subunits = {
+			armored_car_equipment
+		}
+
+		enable_equipments = {
+			gw_armored_car_equipment
+		}
+
+		enable_equipment_modules = {
+			ac_one_man_turret
+			ac_two_man_turret
+			ac_open_top_turret
+			ac_four_wheeled_suspension
+			ac_six_wheeled_suspension
+			ac_riveted_armor
+			ac_welded_armor
+			
+			ac_machine_gun
+			ac_machine_gun_2x
+			ac_heavy_machine_gun
+			ac_auto_cannon
+			ac_small_cannon
+		}
+		
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+		path = {
+			leads_to_tech = armored_car2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1914
+		folder = {
+			name = r56_vechicles_folder
+			position = { x = -2 y = 1 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car2 = {
+
+		enable_equipments = {
+			armored_car_equipment_1
+		}
+
+		enable_equipment_modules = {
+			ac_eight_wheeled_suspension
+			
+			ac_gun_shield_turret
+			ac_auto_cannon_2
+			ac_small_cannon_2
+			ac_heavy_machine_gun_2x
+			ac_heavy_machine_gun_4x
+		}
+		
+		enable_subunits = {
+			armored_car_aa
+		}
+		
+		path = {
+			leads_to_tech = armored_car3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = r56_vechicles_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car3 = {
+
+		enable_equipments = {
+			armored_car_equipment_2
+		}
+
+		enable_equipment_modules = {
+			ac_high_velocity_cannon
+			ac_close_support_gun
+			ac_medium_cannon
+		}
+		
+		enable_subunits = {
+			armored_car_destroyer
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = r56_vechicles_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+}

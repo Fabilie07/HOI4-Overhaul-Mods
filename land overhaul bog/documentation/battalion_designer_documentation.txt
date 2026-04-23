@@ -1,0 +1,262 @@
+DOCUMENTATION
+
+WARNING: The Battalion Designer is a custom-built GUI from the ground up. As such, changing anything about it comes with a lot of effort.
+
+BATTALION IDs:
+0: Empty - Never used
+1: Infantry
+2: Motorized
+3: Mechanized
+4: Cavalry
+
+10: Mountaineer
+11: Paratrooper
+12: Marine
+13: Marine Commando
+14: Ranger
+
+20: Mechanized Mountaineers
+22: Amphibious Mechanized
+24: Mechanized Rangers
+
+
+COMPANIES ALLOWED:
+Infantry:
+	Empty
+	Rifle
+	Support
+	Service
+
+Motorized:
+	Empty
+	Motorized Rifle
+	Support
+	Service
+
+Mechanized:
+	Empty
+	Mechanized Rifle
+	Support
+	Service
+
+Cavalry:
+	Empty
+	Mechanized Rifle
+	Support
+	Service
+
+Mountaineer:
+	Empty
+	Mountaineer
+	Support
+	Service
+
+Paratrooper:
+	Empty
+	Paratrooper
+	Service
+
+Marine:
+	Empty
+	Marine
+	Support
+	Service
+
+Marine Commando:
+	Empty
+	Marine
+	Service
+
+Ranger:
+	Empty
+	Ranger
+	Support
+	Service
+
+Mechanized Mountaineers:
+	Empty
+	Mechanized Mountaineer
+	Support
+	Service
+
+Amphibious Mechanized:
+	Empty
+	Amtrak
+	Support
+	Service
+
+Mechanized Rangers:
+	Empty
+	Mechanized Rangers
+	Support
+	Service
+
+
+COMPANY IDs:
+0: Empty
+
+10: Rifle
+11: Support
+12: Service
+13: Motorized Rifle
+14: Mechanized Rifle
+15: Cavalry
+
+20: Mountaineer
+21: Paratrooper
+22: Marine
+23: Marine Commando
+24: Ranger
+
+30: Mechanized Mountaineer
+32: Amtrak
+34: Mechanized Rangers
+
+
+PLATOON IDs: #Platoon ID: Company ID + Identifier
+All else: Empty Add
+
+# Rifle:
+1000: Rifle
+1001: LMG
+1002: MMG
+1003: HMG
+
+1010: Mortar
+
+1020: AT Rifle
+1021: AT Rocket
+
+# Support:
+1100: LMG
+1101: MMG
+1102: HMG
+
+1110: Mortar
+1111: Artillery
+1112: Super Heavy Artillery
+
+1120: AT Rifle
+1121: AT Gun
+1122: AT Rocket
+
+1130: AA Gun
+
+# Service:
+1200: Truck
+1201: Mechanized
+
+1210: Engineer
+1211: Assault Engineer
+1212: Flamethrower
+
+1220: Cavalry Recon
+1221: Motorized Recon
+1222: Armored Car Recon
+1223: Sniper
+
+1230: Hospital
+
+1240: Signal
+
+# Motorized
+1300: Motorized Rifle
+
+# Mechanized
+1400: Mechanized Rifle
+
+# Cavalry
+1500: Mounted Rifle
+
+# Mountaineer
+2000: Mountaineer
+
+# Paratrooper
+2100: Paratrooper
+
+# Marine
+2200: Marine
+
+# Marine Commando
+2300: Marine Commando
+
+# Ranger
+2400: Ranger
+
+# Mechanized Mountaineer
+3000: Mechanized Mountaineer
+
+# Amtrak
+3200: Amtrak
+
+# Mechanized Rangers
+3400: Mechanized Mountaineer
+
+
+PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
+1: Empty Add
+
+2: Rifle
+3: LMG
+4: MMG
+5: HMG
+
+6: Mortar
+7: Artillery
+8: Super Heavy Artillery
+
+9: AT Rifle
+10: AT Rocket
+11: AT Gun
+
+12: AA Gun
+
+13: Truck
+14: Mechanized
+
+15: Engineer
+16: Assault Engineer
+17: Flamethrower
+
+18: Cavalry Recon
+19: Motorized Recon
+20: Armored Car Recon
+21: Sniper
+
+22: Hospital
+
+23: Signal
+
+24: Mountaineer
+25: Paratrooper
+26: Marine
+27: Marine Commando
+28: Ranger
+
+29: Remove
+
+30: Mechanized Mountaineers
+31: Amphibious Mechanized
+32: Mechanized Rangers
+
+33: Locked
+
+34: Cavalry
+
+
+Terrain IDs: # Necessary for visual depicition of Terrain Boni
+1: Forest
+2: Hills
+3: Mountain
+4: Plains
+5: Urban
+6: Jungle
+7: Marsh
+8: Desert
+
+10: Fort
+11: Amphibious
+12: River
+13: Snow
+14: Mud (TODO)
+15: Night

@@ -1,0 +1,372 @@
+default = {
+	infantry_equipment = {
+		pool = {
+			weight = 0.1
+			icons = {
+				GFX_infantry_weapons_medium
+			}
+			models = {
+				infantry_entity
+			}
+		}
+	}
+	infantry_equipment_1 = {
+		pool = {
+			weight = 0.1
+			icons = {
+				GFX_infantry_weapons1_medium
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 0.1
+			icons = {
+				GFX_improved_infantry_weapons_medium
+			}
+			models = {
+				infantry_2_entity
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 0.1
+			icons = {
+				GFX_advanced_infantry_weapons_medium
+			}
+			models = {
+				infantry_3_entity
+			}
+		}
+	}
+	
+	sniper_chassis = {
+		pool = {
+			weight = 0.2
+			icons = {
+				GFX_sniper_chassis_0_medium
+			}
+		}
+	}
+	sniper_chassis_2 = {
+		pool = {
+			weight = 0.2
+			icons = {
+				GFX_sniper_chassis_1_medium
+			}
+		}
+	}
+	sniper_chassis_3 = {
+		pool = {
+			weight = 0.2
+			icons = {
+				GFX_sniper_chassis_1_medium
+			}
+		}
+	}
+}
+
+
+ENG = {
+	infantry_equipment_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_ENG_infantry_weapons1_medium
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_ENG_improved_infantry_weapons_medium
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_ENG_advanced_infantry_weapons_medium
+			}
+		}
+	}
+}
+
+
+FRA = {
+	infantry_equipment = {
+		pool = {
+			weight = 1
+			models = {
+				FRA_infantry_entity
+			}
+		}
+	}
+	infantry_equipment_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_FRA_infantry_weapons_medium
+			}
+		}
+	}
+	infantry_equipment_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_FRA_infantry_weapons1_medium
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_FRA_improved_infantry_weapons_medium
+			}
+			models = {
+				FRA_infantry_2_entity
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_FRA_advanced_infantry_weapons_medium
+			}
+			models = {
+				FRA_infantry_3_entity
+			}
+		}
+	}
+}
+
+
+GER = {
+	infantry_equipment = {
+		pool = {
+			weight = 1
+			models = {
+				GER_infantry_entity
+			}
+		}
+	}
+	infantry_equipment_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GER_infantry_weapons_medium
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GER_improved_infantry_weapons_medium
+			}
+			models = {
+				GER_infantry_2_entity
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GER_advanced_infantry_weapons_medium
+			}
+			models = {
+				GER_infantry_3_entity
+			}
+		}
+	}
+}
+
+
+ITA = {
+	infantry_equipment = {
+		pool = {
+			weight = 1
+			models = {
+				ITA_infantry_entity
+			}
+		}
+	}
+	infantry_equipment_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_ITA_infantry_weapons_medium
+			}
+		}
+	}
+	infantry_equipment_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_ITA_infantry_weapons1_medium
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_ITA_improved_infantry_weapons_medium
+			}
+			models = {
+				ITA_infantry_2_entity
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_ITA_advanced_infantry_weapons_medium
+			}
+			models = {
+				ITA_infantry_3_entity
+			}
+		}
+	}
+}
+
+
+JAP = {
+	infantry_equipment = {
+		pool = {
+			weight = 1
+			models = {
+				JAP_infantry_entity
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_JAP_improved_infantry_weapons_medium
+			}
+			models = {
+				JAP_infantry_2_entity
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_JAP_advanced_infantry_weapons_medium
+			}
+			models = {
+				JAP_infantry_3_entity
+			}
+		}
+	}
+}
+
+
+SOV = {
+	infantry_equipment = {
+		pool = {
+			weight = 1
+			models = {
+				SOV_infantry_entity
+			}
+		}
+	}
+	infantry_equipment_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_SOV_infantry_weapons_medium
+			}
+		}
+	}
+	infantry_equipment_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_SOV_infantry_weapons1_medium
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_SOV_improved_infantry_weapons_medium
+			}
+			models = {
+				SOV_infantry_2_entity
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_SOV_advanced_infantry_weapons_medium
+			}
+			models = {
+				SOV_infantry_3_entity
+			}
+		}
+	}
+}
+
+
+USA = {
+	infantry_equipment = {
+		pool = {
+			weight = 1
+			models = {
+				USA_infantry_entity
+			}
+		}
+	}
+	infantry_equipment_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_infantry_weapons_medium
+			}
+		}
+	}
+	infantry_equipment_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_infantry_weapons1_medium
+			}
+		}
+	}
+	infantry_equipment_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_improved_infantry_weapons_medium
+			}
+			models = {
+				USA_infantry_2_entity
+			}
+		}
+	}
+	infantry_equipment_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_advanced_infantry_weapons_medium
+			}
+			models = {
+				USA_infantry_3_entity
+			}
+		}
+	}
+}

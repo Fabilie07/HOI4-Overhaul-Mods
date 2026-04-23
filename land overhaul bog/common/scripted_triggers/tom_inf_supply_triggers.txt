@@ -1,0 +1,12 @@
+tom_inf_state_bordering_enemy_trigger = {
+	any_neighbor_state = {
+		controller = {
+			NOT = {
+				OR = {
+					tag = PREV.PREV.PREV
+					is_ally_with = PREV.PREV.PREV
+				}
+			}
+		}
+	}
+}

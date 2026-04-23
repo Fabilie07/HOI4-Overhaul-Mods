@@ -1,0 +1,7 @@
+tom_inf_supply_depot_raided = {
+	icon = GFX_unplanned_offensive
+	attrition = 0.8
+	local_supplies_for_controller = -1
+	army_speed_factor_for_controller = -0.2
+	disable_strategic_redeployment = 1
+}

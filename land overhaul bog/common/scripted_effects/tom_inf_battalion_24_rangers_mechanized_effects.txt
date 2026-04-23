@@ -1,0 +1,928 @@
+tom_inf_bat_startup_effect_rangers_mechanized = {
+	# Set rangers_mechanized Battalion Arrays to Start Values
+	resize_array = { tom_inf_bat_rangers_mechanized_base_stats_array = 11 }
+	resize_array = { tom_inf_bat_rangers_mechanized_combat_stats_array = 11 }
+	resize_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_1 = 2 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_type = token:infantry_equipment }
+	add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count = 90 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_type = token:mechanized_equipment }
+	add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count = 45 }
+	
+	add_to_array = { tom_inf_bat_rangers_mechanized_companies_array = 34 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_companies_array = 11 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_companies_array = 12 }
+	
+	# Company IDs
+	add_to_array = { tom_inf_battalion_rangers_mechanized_company_array = 34 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_company_array = 34 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_company_array = 34 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_company_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_company_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_company_array = 0 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 3400 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = 0 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_34_count = 3 }
+	set_variable = { tom_inf_bat_rangers_mechanized_3400_count = 9 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_34_max = 4 }
+	set_variable = { tom_inf_bat_rangers_mechanized_11_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_12_max = 1 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_3400_max = 16 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1001_max = 4 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1002_max = 4 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1003_max = 4 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1010_max = 4 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1020_max = 4 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1021_max = 4 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_1111_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1112_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1121_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1130_max = 1 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_1200_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1210_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1211_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1212_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1220_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1221_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1222_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1223_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1230_max = 1 }
+	set_variable = { tom_inf_bat_rangers_mechanized_1240_max = 1 }
+	
+	add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = 1 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = 3 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = 5 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = 6 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = 7 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = 11 }
+	add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = 12 }
+	
+	resize_array = { tom_inf_bat_rangers_mechanized_terrain_movement_array = 7 }
+	resize_array = { tom_inf_bat_rangers_mechanized_terrain_attack_array = 7 }
+	resize_array = { tom_inf_bat_rangers_mechanized_terrain_defense_array = 7 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_movement_array^0 = 10 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_movement_array^3 = 15 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_movement_array^6 = -20 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_attack_array^0 = 10 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_attack_array^1 = -5 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_attack_array^2 = -20 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_attack_array^3 = 10 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_attack_array^4 = -10 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_attack_array^5 = -40 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_attack_array^6 = -20 }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_defense_array^0 = 10 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_defense_array^2 = -5 }
+	set_variable = { tom_inf_bat_rangers_mechanized_terrain_defense_array^3 = 10 }
+}
+
+tom_inf_bat_open_designer_rangers_mechanized_effect = {
+	for_each_loop = {
+		array = tom_inf_battalion_rangers_mechanized_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_rangers_mechanized_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_platoon_array = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_base_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_base_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_combat_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_combat_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_equipment_stats_array_1
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_1 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_equipment_stats_array_2_type
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_needed = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_terrain_bonus_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_bonus_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_terrain_movement_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_movement_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_terrain_attack_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_attack_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_rangers_mechanized_terrain_defense_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_defense_array = temp_v }
+	}
+	
+	tom_inf_bat_open_support_rangers_mechanized_effect = yes
+	tom_inf_bat_open_subunit_counts_rangers_mechanized_effect = yes	
+}
+
+tom_inf_bat_open_subunit_counts_rangers_mechanized_effect = {
+	set_variable = { tom_inf_bat_popup_34_count = tom_inf_bat_rangers_mechanized_34_count }
+	set_variable = { tom_inf_bat_popup_11_count = tom_inf_bat_rangers_mechanized_11_count }
+	set_variable = { tom_inf_bat_popup_12_count = tom_inf_bat_rangers_mechanized_12_count }
+	
+	set_variable = { tom_inf_bat_popup_3400_count = tom_inf_bat_rangers_mechanized_3400_count }
+	set_variable = { tom_inf_bat_popup_1001_count = tom_inf_bat_rangers_mechanized_1001_count }
+	set_variable = { tom_inf_bat_popup_1002_count = tom_inf_bat_rangers_mechanized_1002_count }
+	set_variable = { tom_inf_bat_popup_1003_count = tom_inf_bat_rangers_mechanized_1003_count }
+	set_variable = { tom_inf_bat_popup_1010_count = tom_inf_bat_rangers_mechanized_1010_count }
+	set_variable = { tom_inf_bat_popup_1020_count = tom_inf_bat_rangers_mechanized_1020_count }
+	set_variable = { tom_inf_bat_popup_1021_count = tom_inf_bat_rangers_mechanized_1021_count }
+	
+	set_variable = { tom_inf_bat_popup_1100_count = tom_inf_bat_rangers_mechanized_1100_count }
+	set_variable = { tom_inf_bat_popup_1101_count = tom_inf_bat_rangers_mechanized_1101_count }
+	set_variable = { tom_inf_bat_popup_1102_count = tom_inf_bat_rangers_mechanized_1102_count }
+	set_variable = { tom_inf_bat_popup_1110_count = tom_inf_bat_rangers_mechanized_1110_count }
+	set_variable = { tom_inf_bat_popup_1111_count = tom_inf_bat_rangers_mechanized_1111_count }
+	set_variable = { tom_inf_bat_popup_1112_count = tom_inf_bat_rangers_mechanized_1112_count }
+	set_variable = { tom_inf_bat_popup_1120_count = tom_inf_bat_rangers_mechanized_1120_count }
+	set_variable = { tom_inf_bat_popup_1121_count = tom_inf_bat_rangers_mechanized_1121_count }
+	set_variable = { tom_inf_bat_popup_1122_count = tom_inf_bat_rangers_mechanized_1122_count }
+	set_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_rangers_mechanized_1130_count }
+	
+	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_rangers_mechanized_1210_count }
+	set_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_rangers_mechanized_1211_count }
+	set_variable = { tom_inf_bat_popup_1212_count = tom_inf_bat_rangers_mechanized_1212_count }
+	set_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_rangers_mechanized_1220_count }
+	set_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_rangers_mechanized_1221_count }
+	set_variable = { tom_inf_bat_popup_1222_count = tom_inf_bat_rangers_mechanized_1222_count }
+	set_variable = { tom_inf_bat_popup_1223_count = tom_inf_bat_rangers_mechanized_1223_count }
+	set_variable = { tom_inf_bat_popup_1230_count = tom_inf_bat_rangers_mechanized_1230_count }
+	set_variable = { tom_inf_bat_popup_1240_count = tom_inf_bat_rangers_mechanized_1240_count }
+	
+	
+	set_variable = { tom_inf_bat_popup_34_max = tom_inf_bat_rangers_mechanized_34_max }
+	set_variable = { tom_inf_bat_popup_11_max = tom_inf_bat_rangers_mechanized_11_max }
+	set_variable = { tom_inf_bat_popup_12_max = tom_inf_bat_rangers_mechanized_12_max }
+	
+	set_variable = { tom_inf_bat_popup_3400_max = tom_inf_bat_rangers_mechanized_3400_max }
+	set_variable = { tom_inf_bat_popup_1001_max = tom_inf_bat_rangers_mechanized_1001_max }
+	set_variable = { tom_inf_bat_popup_1002_max = tom_inf_bat_rangers_mechanized_1002_max }
+	set_variable = { tom_inf_bat_popup_1003_max = tom_inf_bat_rangers_mechanized_1003_max }
+	set_variable = { tom_inf_bat_popup_1010_max = tom_inf_bat_rangers_mechanized_1010_max }
+	set_variable = { tom_inf_bat_popup_1020_max = tom_inf_bat_rangers_mechanized_1020_max }
+	set_variable = { tom_inf_bat_popup_1021_max = tom_inf_bat_rangers_mechanized_1021_max }
+	
+	set_variable = { tom_inf_bat_popup_1100_max = tom_inf_bat_rangers_mechanized_1100_max }
+	set_variable = { tom_inf_bat_popup_1101_max = tom_inf_bat_rangers_mechanized_1101_max }
+	set_variable = { tom_inf_bat_popup_1102_max = tom_inf_bat_rangers_mechanized_1102_max }
+	set_variable = { tom_inf_bat_popup_1110_max = tom_inf_bat_rangers_mechanized_1110_max }
+	set_variable = { tom_inf_bat_popup_1111_max = tom_inf_bat_rangers_mechanized_1111_max }
+	set_variable = { tom_inf_bat_popup_1112_max = tom_inf_bat_rangers_mechanized_1112_max }
+	set_variable = { tom_inf_bat_popup_1120_max = tom_inf_bat_rangers_mechanized_1120_max }
+	set_variable = { tom_inf_bat_popup_1121_max = tom_inf_bat_rangers_mechanized_1121_max }
+	set_variable = { tom_inf_bat_popup_1122_max = tom_inf_bat_rangers_mechanized_1122_max }
+	set_variable = { tom_inf_bat_popup_1130_max = tom_inf_bat_rangers_mechanized_1130_max }
+	
+	set_variable = { tom_inf_bat_popup_1210_max = tom_inf_bat_rangers_mechanized_1210_max }
+	set_variable = { tom_inf_bat_popup_1211_max = tom_inf_bat_rangers_mechanized_1211_max }
+	set_variable = { tom_inf_bat_popup_1212_max = tom_inf_bat_rangers_mechanized_1212_max }
+	set_variable = { tom_inf_bat_popup_1220_max = tom_inf_bat_rangers_mechanized_1220_max }
+	set_variable = { tom_inf_bat_popup_1221_max = tom_inf_bat_rangers_mechanized_1221_max }
+	set_variable = { tom_inf_bat_popup_1222_max = tom_inf_bat_rangers_mechanized_1222_max }
+	set_variable = { tom_inf_bat_popup_1223_max = tom_inf_bat_rangers_mechanized_1223_max }
+	set_variable = { tom_inf_bat_popup_1230_max = tom_inf_bat_rangers_mechanized_1230_max }
+	set_variable = { tom_inf_bat_popup_1240_max = tom_inf_bat_rangers_mechanized_1240_max }
+}
+
+tom_inf_bat_save_designer_rangers_mechanized_effect = {
+	if = {
+		limit = {
+			tom_inf_save_button_increase_rangers_mechanized_trigger = yes
+		}
+		tom_inf_bat_add_effect_rangers_mechanized = yes
+		
+		clear_array = tom_inf_bat_rangers_mechanized_base_stats_array
+		clear_array = tom_inf_bat_rangers_mechanized_combat_stats_array
+		clear_array = tom_inf_bat_rangers_mechanized_equipment_stats_array_1
+		clear_array = tom_inf_bat_rangers_mechanized_equipment_stats_array_2_type
+		clear_array = tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count
+		
+		clear_array = tom_inf_bat_rangers_mechanized_terrain_bonus_array
+		clear_array = tom_inf_bat_rangers_mechanized_terrain_movement_array
+		clear_array = tom_inf_bat_rangers_mechanized_terrain_attack_array
+		clear_array = tom_inf_bat_rangers_mechanized_terrain_defense_array
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_base_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_base_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_combat_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_combat_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_1
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_1 = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_type
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_type = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_count
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count = temp_v }
+		}
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_bonus_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_terrain_bonus_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_movement_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_terrain_movement_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_attack_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_terrain_attack_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_defense_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_rangers_mechanized_terrain_defense_array = temp_v }
+		}
+	}
+	
+	tom_inf_bat_update_support_rangers_mechanized_effect = yes
+	
+	clear_array = tom_inf_battalion_rangers_mechanized_company_array
+	clear_array = tom_inf_battalion_rangers_mechanized_platoon_array
+	
+	for_each_loop = {
+		array = tom_inf_battalion_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_rangers_mechanized_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_rangers_mechanized_platoon_array = temp_v }
+	}
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_34_count = tom_inf_bat_popup_34_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_11_count = tom_inf_bat_popup_11_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_12_count = tom_inf_bat_popup_12_count }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_3400_count = tom_inf_bat_popup_3400_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1001_count = tom_inf_bat_popup_1001_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1002_count = tom_inf_bat_popup_1002_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1003_count = tom_inf_bat_popup_1003_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1010_count = tom_inf_bat_popup_1010_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1020_count = tom_inf_bat_popup_1020_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1021_count = tom_inf_bat_popup_1021_count }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_1100_count = tom_inf_bat_popup_1100_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1101_count = tom_inf_bat_popup_1101_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1102_count = tom_inf_bat_popup_1102_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1110_count = tom_inf_bat_popup_1110_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1111_count = tom_inf_bat_popup_1111_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1112_count = tom_inf_bat_popup_1112_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1120_count = tom_inf_bat_popup_1120_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1121_count = tom_inf_bat_popup_1121_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1122_count = tom_inf_bat_popup_1122_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1130_count = tom_inf_bat_popup_1130_count }
+	
+	set_variable = { tom_inf_bat_rangers_mechanized_1210_count = tom_inf_bat_popup_1210_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1211_count = tom_inf_bat_popup_1211_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1212_count = tom_inf_bat_popup_1212_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1220_count = tom_inf_bat_popup_1220_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1221_count = tom_inf_bat_popup_1221_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1222_count = tom_inf_bat_popup_1222_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1223_count = tom_inf_bat_popup_1223_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1230_count = tom_inf_bat_popup_1230_count }
+	set_variable = { tom_inf_bat_rangers_mechanized_1240_count = tom_inf_bat_popup_1240_count }
+	
+	tom_inf_bat_set_doctrine_variables_rangers_mechanized_effect = yes
+}
+
+tom_inf_bat_set_doctrine_variables_rangers_mechanized_effect = {
+	set_temp_variable = { doctrine_bonus_support = 0 }
+	set_temp_variable = { doctrine_bonus_all = 0 }
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1001
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1001_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1001_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1001_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1002
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1002_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1002_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1002_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1003
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1003_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1003_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1003_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1010
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1010_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1010_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1010_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1020
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1020_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1020_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1020_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1021
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1021_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1021_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1021_count }
+	}
+	
+	set_variable = { tom_inf_doctrine_mastery_support_rangers_mechanized = doctrine_bonus_support }
+	set_variable = { tom_inf_doctrine_mastery_all_rangers_mechanized = doctrine_bonus_all }
+}
+
+tom_inf_bat_open_support_rangers_mechanized_effect = {
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_rangers_mechanized_1001
+		}
+		set_country_flag = tom_inf_bat_support_1001
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_rangers_mechanized_1002
+		}
+		set_country_flag = tom_inf_bat_support_1002
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_rangers_mechanized_1003
+		}
+		set_country_flag = tom_inf_bat_support_1003
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_rangers_mechanized_1010
+		}
+		set_country_flag = tom_inf_bat_support_1010
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_rangers_mechanized_1020
+		}
+		set_country_flag = tom_inf_bat_support_1020
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_rangers_mechanized_1021
+		}
+		set_country_flag = tom_inf_bat_support_1021
+	}
+}
+
+tom_inf_bat_update_support_rangers_mechanized_effect = {
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1001
+		}
+		set_country_flag = tom_inf_bat_support_rangers_mechanized_1001
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1002
+		}
+		set_country_flag = tom_inf_bat_support_rangers_mechanized_1002
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1003
+		}
+		set_country_flag = tom_inf_bat_support_rangers_mechanized_1003
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1010
+		}
+		set_country_flag = tom_inf_bat_support_rangers_mechanized_1010
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1020
+		}
+		set_country_flag = tom_inf_bat_support_rangers_mechanized_1020
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1021
+		}
+		set_country_flag = tom_inf_bat_support_rangers_mechanized_1021
+	}
+}
+
+tom_inf_bat_add_effect_rangers_mechanized = {
+	# Adds necessary techs after saving a larger Battalion. Performance intensive due to fuckload of triggers, so use only when needed
+	# !!Only enter valid Techs!! Will crash the game otherwise
+	
+	### COMPANIES
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_34_count > 3 }
+		}
+		# Enlarge Support Column for the 4th Rifle Company
+		if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1001
+				NOT = { has_tech = tom_inf_bat_rangers_mechanized_1001_tech_4 }
+			}
+			set_technology = { tom_inf_bat_rangers_mechanized_1001_tech_4 = 1 popup = no }
+		}
+		if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1002
+				NOT = { has_tech = tom_inf_bat_rangers_mechanized_1002_tech_4 }
+			}
+			set_technology = { tom_inf_bat_rangers_mechanized_1002_tech_4 = 1 popup = no }
+		}
+		if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1003
+				NOT = { has_tech = tom_inf_bat_rangers_mechanized_1003_tech_4 }
+			}
+			set_technology = { tom_inf_bat_rangers_mechanized_1003_tech_4 = 1 popup = no }
+		}
+		if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1010
+				NOT = { has_tech = tom_inf_bat_rangers_mechanized_1010_tech_4 }
+			}
+			set_technology = { tom_inf_bat_rangers_mechanized_1010_tech_4 = 1 popup = no }
+		}
+		if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1020
+				NOT = { has_tech = tom_inf_bat_rangers_mechanized_1020_tech_4 }
+			}
+			set_technology = { tom_inf_bat_rangers_mechanized_1020_tech_4 = 1 popup = no }
+		}
+		if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1021
+				NOT = { has_tech = tom_inf_bat_rangers_mechanized_1021_tech_4 }
+			}
+			set_technology = { tom_inf_bat_rangers_mechanized_1021_tech_4 = 1 popup = no }
+		}
+	}
+	
+	### PLATOONS
+	# Rifle
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3400_count > 9 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_3400_tech_10 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_3400_tech_10 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3400_count > 10 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_3400_tech_11 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_3400_tech_11 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3400_count > 11 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_3400_tech_12 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_3400_tech_12 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3400_count > 12 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_3400_tech_13 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_3400_tech_13 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3400_count > 13 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_3400_tech_14 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_3400_tech_14 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3400_count > 14 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_3400_tech_15 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_3400_tech_15 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3400_count > 15 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_3400_tech_16 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_3400_tech_16 = 1 popup = no }
+	}
+	
+	# LMG
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1001_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1001_tech_1 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 1 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1001_tech_2 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1001_tech_2 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 2 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1001_tech_3 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1001_tech_3 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 3 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1001_tech_4 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1001_tech_4 = 1 popup = no }
+	}
+	
+	# MMG
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1002_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1002_tech_1 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 1 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1002_tech_2 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1002_tech_2 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 2 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1002_tech_3 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1002_tech_3 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 3 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1002_tech_4 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1002_tech_4 = 1 popup = no }
+	}
+	
+	# HMG
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1003_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1003_tech_1 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 1 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1003_tech_2 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1003_tech_2 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 2 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1003_tech_3 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1003_tech_3 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 3 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1003_tech_4 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1003_tech_4 = 1 popup = no }
+	}
+	
+	# Mortar
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1010_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1010_tech_1 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 1 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1010_tech_2 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1010_tech_2 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 2 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1010_tech_3 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1010_tech_3 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 3 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1010_tech_4 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1010_tech_4 = 1 popup = no }
+	}
+	
+	# Artillery
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1111_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1111_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1111_tech_1 = 1 popup = no }
+	}
+	
+	# Super Heavy Artillery
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1112_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1112_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1112_tech_1 = 1 popup = no }
+	}
+	
+	# AT Rifle
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1020_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1020_tech_1 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 1 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1020_tech_2 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1020_tech_2 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 2 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1020_tech_3 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1020_tech_3 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 3 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1020_tech_4 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1020_tech_4 = 1 popup = no }
+	}
+	
+	# AT Gun
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1121_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1121_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1121_tech_1 = 1 popup = no }
+	}
+	
+	# AT Rocket
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1021_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1021_tech_1 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 1 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1021_tech_2 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1021_tech_2 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 2 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1021_tech_3 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1021_tech_3 = 1 popup = no }
+	}
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 3 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1021_tech_4 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1021_tech_4 = 1 popup = no }
+	}
+	
+	# AA Gun
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1130_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1130_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1130_tech_1 = 1 popup = no }
+	}
+	
+	# Engineer
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1210_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1210_tech_1 = 1 popup = no }
+	}
+	
+	# Assault Engineer
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1211_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1211_tech_1 = 1 popup = no }
+	}
+	
+	# Flamethrower
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1212_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1212_tech_1 = 1 popup = no }
+	}
+	
+	# Cav Recon
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1220_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1220_tech_1 = 1 popup = no }
+	}
+	
+	# Mot Recon
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1221_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1221_tech_1 = 1 popup = no }
+	}
+	
+	# Armored Car Recon
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1222_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1222_tech_1 = 1 popup = no }
+	}
+	
+	# Sniper
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1223_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1223_tech_1 = 1 popup = no }
+	}
+	
+	# Field Hospital
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1230_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1230_tech_1 = 1 popup = no }
+	}
+	
+	# Signal
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count > 0 }
+			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1240_tech_1 }
+		}
+		set_technology = { tom_inf_bat_rangers_mechanized_1240_tech_1 = 1 popup = no }
+	}
+}

@@ -1,0 +1,20 @@
+sub_units = {
+	transport_plane = {
+		sprite = medium_plane
+		priority = 6
+		active = yes
+		type = air_transport
+		need = { transport_plane_equipment = 1 }
+		categories = { category_transport_plane }		
+		land_air_wing_size = 100
+	}
+	airship = {
+		sprite = airship
+		priority = 6
+		active = yes
+		type = air_transport
+		need = { airship_equipment = 1 }
+		categories = { category_transport_plane }		
+		land_air_wing_size = 10
+	}
+}

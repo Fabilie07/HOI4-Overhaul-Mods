@@ -1,0 +1,251 @@
+guiTypes = {
+	containerWindowType = {
+		name = "equipment_designer_sniper_chassis"
+		# NOTE: to keep aligned with the window "equipment_modules" in tank_designer_view.gui
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_IE_infantry_equipment_blueprint"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			
+			
+			### FIRE MODE
+			containerWindowType = {
+				name = "firing_mode_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "inf_bolt_action"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_fire_bolt_action"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_lever_action"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_fire_lever_action"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_semi_auto"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_fire_semi_auto"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_full_auto"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_fire_full_auto"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			### MAGAZINE
+			containerWindowType = {
+				name = "magazine_type_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "inf_clip_10"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_clip_10"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_magazine_05"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_magazine_05"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_magazine_10"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_magazine_10"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_magazine_15"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_magazine_15"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_magazine_20"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_magazine_20"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_magazine_25"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_magazine_25"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_magazine_30"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_magazine_30"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			### BARREL
+			containerWindowType = {
+				name = "barrel_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "inf_barrel_carbine"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_barrel_carbine"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_barrel_rifle"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_barrel_rifle"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_barrel_extended"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_barrel_extended"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			### SIGHTS
+			containerWindowType = {
+				name = "sights_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "inf_sights_1"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_sights_1"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_sights_2"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_sights_1"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_sights_3"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_sights_2"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "inf_sights_sniper"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_infantry_equipment_sights_sniper"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+		}
+	}
+}

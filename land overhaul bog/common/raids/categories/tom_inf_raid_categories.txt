@@ -1,0 +1,27 @@
+categories = {
+
+	coastal_marine_raids = {
+	    intel_source = naval
+	    faction_influence_score_on_success = 50
+	    visible = {
+	    	always = yes
+	    }
+		# available = {
+			# has_tech = marines
+		# }
+	}
+	
+	land_special_forces_raids = {
+	    intel_source = army
+	    faction_influence_score_on_success = 50
+	    visible = {
+	    	always = yes
+	    }
+		# available = {
+			# OR = {
+				# has_tech = tech_mountaineers
+				# has_tech = rangers_tech
+			# }
+		# }
+	}
+}

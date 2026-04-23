@@ -1,0 +1,124 @@
+
+tom_inf_save_button_click_effect = {
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_infantry
+		}
+		
+		tom_inf_bat_save_designer_infantry_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized
+		}
+		
+		tom_inf_bat_save_designer_motorized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mechanized
+		}
+		
+		tom_inf_bat_save_designer_mechanized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_cavalry
+		}
+		
+		tom_inf_bat_save_designer_cavalry_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+		}
+		
+		tom_inf_bat_save_designer_mountaineer_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+		}
+		
+		tom_inf_bat_save_designer_paratrooper_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine
+		}
+		
+		tom_inf_bat_save_designer_marine_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+		}
+		
+		tom_inf_bat_save_designer_marine_commando_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_ranger
+		}
+		
+		tom_inf_bat_save_designer_ranger_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+		}
+		
+		tom_inf_bat_save_designer_mountaineers_mechanized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+		}
+		
+		tom_inf_bat_save_designer_amphibious_mechanized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+		}
+		
+		tom_inf_bat_save_designer_rangers_mechanized_effect = yes
+	}
+	
+	tom_inf_update_doctrine_variables_effect = yes
+	tom_inf_bat_close_designer_effect = yes
+}
+
+
+tom_inf_update_doctrine_variables_effect = {
+	clear_variable = tom_inf_doctrine_mastery_support
+	clear_variable = tom_inf_doctrine_mastery_all
+	
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_infantry }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_infantry }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_motorized }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_motorized }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_cavalry }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_cavalry }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_mountaineer }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_mountaineer }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_paratrooper }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_paratrooper }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_marine }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_marine }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_marine_commando }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_marine_commando }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_ranger }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_ranger }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_mountaineers_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_mountaineers_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_amphibious_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_amphibious_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_rangers_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_rangers_mechanized }
+	
+	divide_variable = { tom_inf_doctrine_mastery_support = 100 }
+	divide_variable = { tom_inf_doctrine_mastery_all = 100 }
+}

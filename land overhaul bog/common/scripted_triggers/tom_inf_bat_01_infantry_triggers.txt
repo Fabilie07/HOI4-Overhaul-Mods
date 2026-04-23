@@ -1,0 +1,63 @@
+tom_inf_save_button_instant_click_infantry_trigger = {
+	check_variable = { tom_inf_bat_popup_10_count = tom_inf_bat_infantry_10_count }
+	check_variable = { tom_inf_bat_popup_11_count = tom_inf_bat_infantry_11_count }
+	check_variable = { tom_inf_bat_popup_12_count = tom_inf_bat_infantry_12_count }
+	
+	check_variable = { tom_inf_bat_popup_1000_count = tom_inf_bat_infantry_1000_count }
+	check_variable = { tom_inf_bat_popup_1001_count = tom_inf_bat_infantry_1001_count }
+	check_variable = { tom_inf_bat_popup_1002_count = tom_inf_bat_infantry_1002_count }
+	check_variable = { tom_inf_bat_popup_1003_count = tom_inf_bat_infantry_1003_count }
+	check_variable = { tom_inf_bat_popup_1010_count = tom_inf_bat_infantry_1010_count }
+	check_variable = { tom_inf_bat_popup_1020_count = tom_inf_bat_infantry_1020_count }
+	check_variable = { tom_inf_bat_popup_1021_count = tom_inf_bat_infantry_1021_count }
+	
+	check_variable = { tom_inf_bat_popup_1111_count = tom_inf_bat_infantry_1111_count }
+	check_variable = { tom_inf_bat_popup_1112_count = tom_inf_bat_infantry_1112_count }
+	check_variable = { tom_inf_bat_popup_1121_count = tom_inf_bat_infantry_1121_count }
+	check_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_infantry_1130_count }
+	
+	check_variable = { tom_inf_bat_popup_1200_count = tom_inf_bat_infantry_1200_count }
+	check_variable = { tom_inf_bat_popup_1201_count = tom_inf_bat_infantry_1201_count }
+	check_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_infantry_1210_count }
+	check_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_infantry_1211_count }
+	check_variable = { tom_inf_bat_popup_1212_count = tom_inf_bat_infantry_1212_count }
+	check_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_infantry_1220_count }
+	check_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_infantry_1221_count }
+	check_variable = { tom_inf_bat_popup_1222_count = tom_inf_bat_infantry_1222_count }
+	check_variable = { tom_inf_bat_popup_1223_count = tom_inf_bat_infantry_1223_count }
+	check_variable = { tom_inf_bat_popup_1230_count = tom_inf_bat_infantry_1230_count }
+	check_variable = { tom_inf_bat_popup_1240_count = tom_inf_bat_infantry_1240_count }
+}
+
+tom_inf_save_button_increase_infantry_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_10_count > tom_inf_bat_infantry_10_count }
+		check_variable = { tom_inf_bat_popup_11_count > tom_inf_bat_infantry_11_count }
+		check_variable = { tom_inf_bat_popup_12_count > tom_inf_bat_infantry_12_count }
+		
+		check_variable = { tom_inf_bat_popup_1000_count > tom_inf_bat_infantry_1000_count }
+		check_variable = { tom_inf_bat_popup_1001_count > tom_inf_bat_infantry_1001_count }
+		check_variable = { tom_inf_bat_popup_1002_count > tom_inf_bat_infantry_1002_count }
+		check_variable = { tom_inf_bat_popup_1003_count > tom_inf_bat_infantry_1003_count }
+		check_variable = { tom_inf_bat_popup_1010_count > tom_inf_bat_infantry_1010_count }
+		check_variable = { tom_inf_bat_popup_1020_count > tom_inf_bat_infantry_1020_count }
+		check_variable = { tom_inf_bat_popup_1021_count > tom_inf_bat_infantry_1021_count }
+		
+		check_variable = { tom_inf_bat_popup_1111_count > tom_inf_bat_infantry_1111_count }
+		check_variable = { tom_inf_bat_popup_1112_count > tom_inf_bat_infantry_1112_count }
+		check_variable = { tom_inf_bat_popup_1121_count > tom_inf_bat_infantry_1121_count }
+		check_variable = { tom_inf_bat_popup_1130_count > tom_inf_bat_infantry_1130_count }
+		
+		check_variable = { tom_inf_bat_popup_1200_count > tom_inf_bat_infantry_1200_count }
+		check_variable = { tom_inf_bat_popup_1201_count > tom_inf_bat_infantry_1201_count }
+		check_variable = { tom_inf_bat_popup_1210_count > tom_inf_bat_infantry_1210_count }
+		check_variable = { tom_inf_bat_popup_1211_count > tom_inf_bat_infantry_1211_count }
+		check_variable = { tom_inf_bat_popup_1212_count > tom_inf_bat_infantry_1212_count }
+		check_variable = { tom_inf_bat_popup_1220_count > tom_inf_bat_infantry_1220_count }
+		check_variable = { tom_inf_bat_popup_1221_count > tom_inf_bat_infantry_1221_count }
+		check_variable = { tom_inf_bat_popup_1222_count > tom_inf_bat_infantry_1222_count }
+		check_variable = { tom_inf_bat_popup_1223_count > tom_inf_bat_infantry_1223_count }
+		check_variable = { tom_inf_bat_popup_1230_count > tom_inf_bat_infantry_1230_count }
+		check_variable = { tom_inf_bat_popup_1240_count > tom_inf_bat_infantry_1240_count }
+	}
+}

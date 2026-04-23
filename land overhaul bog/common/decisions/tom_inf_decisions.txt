@@ -1,0 +1,19 @@
+tom_inf_battalion_composition = {
+	tom_inf_set_nato_symbols = {
+		visible = { NOT = { has_country_flag = tom_inf_nato_icons } }
+		
+		complete_effect = {
+			set_country_flag = tom_inf_nato_icons
+			add_to_variable = { tom_inf_updater = 1 }
+		}
+	}
+	
+	tom_inf_set_default_symbols = {
+		visible = { has_country_flag = tom_inf_nato_icons }
+		
+		complete_effect = {
+			clr_country_flag = tom_inf_nato_icons
+			add_to_variable = { tom_inf_updater = 1 }
+		}
+	}
+}

@@ -1,0 +1,15 @@
+tom_inf_battalion_composition = {
+	visible_when_empty = yes
+	scripted_gui = tom_inf_battalion_gui
+	priority = 999
+	icon = GFX_decision_category_army_reform
+	
+	visible = {
+		has_tech = infantry_weapons
+	}
+}
+
+tom_inf_horse_decisions = {
+	visible_when_empty = yes
+	priority = 900
+}

@@ -1,0 +1,956 @@
+equipments = {
+	mothership_airframe = {
+		year = 1942
+
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_fighter_equipment
+		is_buildable = no
+		type = fighter
+		
+		allowed_types = {
+			fighter
+			interceptor
+		}
+		
+		allow_mission_type = training
+		group_by = archetype
+		sprite = mothership
+		air_map_icon_frame = 1
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 1
+		#air_superiority = 0.01
+		reliability = 0.8
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		lend_lease_cost = 17
+		manpower = 100
+		fuel_consumption = 1
+		build_cost_ic = 18
+		
+		resources = {
+			aluminium = 3
+			rubber = 2
+		}
+		
+		module_slots = {
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					quad_large_plane_radial_engine_type
+					quad_large_plane_engine_type
+					large_plane_engine_type
+					large_plane_radial_engine_type
+				}
+			}
+			
+			fixed_wing_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wing low_speed_plane_wing
+				}
+			}
+
+			fixed_radar_slot = {
+				required = no
+				allowed_module_categories = {		
+					plane_special_module_multi_purpose_radar plane_special_module_air_ground_radar
+				}
+			}
+			fixed_aux_prop_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_aux_propulsion
+					plane_aux_propulsion_large plane_aux_propulsion_medium					
+				}
+			}			
+			
+			fixed_optics_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_special_module_mothership
+				}
+			}
+			
+			fixed_engine_mod_slot = {
+				required = no
+				allowed_module_categories = {
+										
+				}
+			}
+			
+			fixed_fuel_type_slot = {
+				required = no
+				allowed_module_categories = {
+					fuel_type
+				}
+			}
+			
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module
+					plane_special_wing_mod	
+				}
+			}
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module
+					plane_special_wing_mod	
+				}
+			}
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module
+					plane_special_wing_mod	
+				}
+			}	
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module
+					plane_special_wing_mod										
+				}
+			}	
+
+			fixed_electronics_slot = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+				}
+			}
+
+			fixed_body_modifications_slot = { 
+				required = no
+				allowed_module_categories = {
+					
+				}
+			}
+
+			fixed_tail_modifications_slot = { 
+				required = no
+				allowed_module_categories = {
+					
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {	
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar					
+					
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+			
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+		}
+
+		module_count_limit = {
+			category = radar_jammers_cat
+			count < 2
+		}	
+
+		module_count_limit = {
+			category = ecm_pod_module
+			count < 2
+		}	
+
+		module_count_limit = {
+			category = plane_special_module_rwr_cat
+			count < 2
+		}	
+		
+		module_count_limit = {
+			module = fixed_explosive_charge
+			count < 2
+		}
+
+		module_count_limit = {
+			module = self_sealing_fuel_tanks_large
+			count < 2
+		}
+
+		module_count_limit = {
+			module = non_strategic_materials_large
+			count < 2
+		}
+
+		module_count_limit = {
+			module = flying_boat_large
+			count < 2
+		}
+
+		module_count_limit = {
+			module = recon_camera
+			count < 2
+		}
+
+		module_count_limit = {
+			module = demining_coil
+			count < 2
+		}
+
+		module_count_limit = {
+			module = torpedo_mounting
+			count < 4
+		}
+
+		module_count_limit = {
+			module = tank_buster_1
+			count < 5
+		}
+
+		module_count_limit = {
+			module = tank_buster_2
+			count < 3
+		}
+
+		module_count_limit = {
+			module = pressurized_cabin_large
+			count < 2
+		}
+
+		module_count_limit = {
+			module = high_octane_fuel_l
+			count < 2
+		}
+
+		module_count_limit = {
+			module = high_octane_fuel_m
+			count < 2
+		}
+
+		module_count_limit = {
+			module = high_octane_fuel_2
+			count < 2
+		}
+
+		module_count_limit = {
+			module = low_octane_fuel_l
+			count < 2
+		}
+
+		module_count_limit = {
+			module = low_octane_fuel_m
+			count < 2
+		}
+
+		module_count_limit = {
+			module = low_octane_fuel_s
+			count < 2
+		}	
+
+		module_count_limit = {
+			module = module_countermeasure_dispenser_large
+			count < 2
+		}		
+		
+		module_count_limit = {
+			category = plane_special_module_mothership
+			count < 2
+		}
+		
+		module_count_limit = {
+			category = nav_bomber_weapon
+			count < 4
+		}
+
+		module_count_limit = {
+			category = plane_special_module_radio_navigation
+			count < 2
+		}
+
+		# module_count_limit = {
+			# category = #plane_special_module_air_ground_radar
+			# count < 2
+		# }
+
+		module_count_limit = {
+			category = plane_special_module_air_air_radar
+			count < 2
+		}
+				
+		module_count_limit = {
+			category = plane_special_wing_mod
+			count < 2
+		}
+		
+		module_count_limit = {
+			category = plane_special_mod
+			count < 2
+		}		
+
+		module_count_limit = {
+			module = fly_by_wire
+			count < 2
+		}
+
+		default_modules = {
+			fixed_main_weapon_slot = empty
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = empty
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty			
+		}
+	}
+
+	mothership_airframe_0 = { #Is actually 5 planes strapped to another bigger plane. Its the tuna of the air
+		year = 1942
+
+		archetype = mothership_airframe
+		priority = 100
+
+		# allow_mission_type = {
+			# air_superiority
+			# interception
+		# }
+		
+		air_range = 950
+		maximum_speed = 0
+		air_agility = 20 #57
+		air_attack = 0 #53
+		air_defence = 20  #8
+		weight = 17
+
+		# upgrades = {
+			# plane_gun_upgrade
+			# plane_range_upgrade
+			# plane_engine_upgrade
+			# plane_reliability_upgrade
+		# }
+		
+		lend_lease_cost = 20
+		air_superiority = 13
+
+		surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+
+		resources = {
+			#oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		build_cost_ic = 18 #
+		manpower = 100
+		fuel_consumption = 1.32
+		
+		
+		module_slots = {
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					quad_large_plane_radial_engine_type
+					quad_large_plane_engine_type
+					large_plane_engine_type
+					large_plane_radial_engine_type
+				}
+			}
+			
+			fixed_wing_slot = inherit			
+
+			fixed_radar_slot = inherit	
+			
+			fixed_aux_prop_slot = inherit	
+			
+			fixed_optics_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_special_module_mothership
+				}
+			}
+			
+			fixed_engine_mod_slot = inherit
+			
+			fixed_fuel_type_slot = inherit
+			
+			fixed_main_weapon_slot = inherit
+
+			fixed_auxiliary_weapon_slot_1 = inherit
+			
+			fixed_auxiliary_weapon_slot_2 = inherit
+			
+			fixed_auxiliary_weapon_slot_3 = inherit	
+			
+			fixed_auxiliary_weapon_slot_4 = inherit	
+
+			fixed_electronics_slot = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+				}
+			}
+
+			fixed_body_modifications_slot = inherit
+
+			fixed_tail_modifications_slot = inherit
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {	
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar					
+					
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+			
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+		}
+	}
+
+	mothership_airframe_1 = { #Is actually 5 planes strapped to another bigger plane. Its the tuna of the air
+		year = 1942
+		parent = mothership_airframe_0
+
+		archetype = mothership_airframe
+		priority = 100
+
+		# allow_mission_type = {
+			# air_superiority
+			# interception
+		# }
+		
+		air_range = 1900
+		maximum_speed = 0
+		air_agility = 28 #57
+		air_attack = 0 #53
+		air_defence = 35  #8
+		weight = 20
+		
+		build_cost_ic = 23 #
+
+		# upgrades = {
+			# plane_gun_upgrade
+			# plane_range_upgrade
+			# plane_engine_upgrade
+			# plane_reliability_upgrade
+		# }
+		
+		lend_lease_cost = 20
+		air_superiority = 13
+
+		surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+
+		resources = {
+			#oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		manpower = 100
+		fuel_consumption = 1.32		
+		
+		module_slots = {
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					quad_large_plane_radial_engine_type
+					quad_large_plane_engine_type
+					large_plane_engine_type
+					quad_large_plane_jet_engine_type
+					large_plane_jet_engine_type
+					large_plane_radial_engine_type
+				}
+			}
+			
+			fixed_wing_slot = inherit			
+
+			fixed_radar_slot = inherit	
+			
+			fixed_aux_prop_slot = inherit	
+			
+			fixed_optics_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_special_module_mothership
+				}
+			}
+			
+			fixed_engine_mod_slot = inherit
+			
+			fixed_fuel_type_slot = inherit
+			
+			fixed_main_weapon_slot = inherit
+
+			fixed_auxiliary_weapon_slot_1 = inherit
+			
+			fixed_auxiliary_weapon_slot_2 = inherit
+			
+			fixed_auxiliary_weapon_slot_3 = inherit	
+			
+			fixed_auxiliary_weapon_slot_4 = inherit	
+
+			fixed_electronics_slot = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+				}
+			}
+
+			fixed_body_modifications_slot = inherit
+
+			fixed_tail_modifications_slot = inherit
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {	
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar	
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+			
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+				}
+			}
+		}
+	}
+
+	mothership_airframe_2 = { #Is actually 5 planes strapped to another bigger plane. Its the tuna of the air
+		year = 1942
+		parent = mothership_airframe_1
+
+		archetype = mothership_airframe
+		priority = 100
+
+		# allow_mission_type = {
+			# air_superiority
+			# interception
+		# }
+		
+		air_range = 3600
+		maximum_speed = 0
+		air_agility = 36 #57
+		air_attack = 0 #53
+		air_defence = 50  #8
+		weight = 24
+
+		build_cost_ic = 25 #
+		
+		# upgrades = {
+			# plane_gun_upgrade
+			# plane_range_upgrade
+			# plane_engine_upgrade
+			# plane_reliability_upgrade
+		# }
+		
+		lend_lease_cost = 20
+		air_superiority = 13
+
+		surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+
+		resources = {
+			#oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		manpower = 100
+		fuel_consumption = 1.32
+						
+		module_slots = {
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					quad_large_plane_radial_engine_type
+					quad_large_plane_engine_type
+					quad_large_plane_turboprop_engine_type
+					large_plane_engine_type
+					quad_large_plane_jet_engine_type
+					large_plane_jet_engine_type
+					quad_large_plane_jet_engine_type
+					quad_large_plane_second_gen_turbofan_engine_type
+					large_plane_second_gen_turbofan_engine_type
+					quad_large_plane_second_gen_jet_engine_type
+					large_plane_second_gen_jet_engine_type
+					large_plane_jet_engine_type
+					large_plane_radial_engine_type
+					super_large_plane_turboprop_engine_type
+					super_large_plane_jet_engine_type
+				}
+			}			
+			
+			fixed_wing_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wing 
+					low_speed_plane_wing
+				}
+			}
+			
+			fixed_radar_slot = inherit	
+			
+			fixed_aux_prop_slot = inherit	
+			
+			fixed_optics_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_special_module_mothership
+				}
+			}
+			
+			fixed_engine_mod_slot = inherit
+			
+			fixed_fuel_type_slot = inherit
+			
+			fixed_main_weapon_slot = inherit
+
+			fixed_auxiliary_weapon_slot_1 = inherit
+			
+			fixed_auxiliary_weapon_slot_2 = inherit
+			
+			fixed_auxiliary_weapon_slot_3 = inherit	
+			
+			fixed_auxiliary_weapon_slot_4 = inherit	
+
+			fixed_electronics_slot = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+				}
+			}
+
+			fixed_body_modifications_slot = inherit
+
+			fixed_tail_modifications_slot = inherit
+
+			special_type_slot_1 = inherit
+
+			special_type_slot_2 = inherit
+			
+			special_type_slot_3 = inherit
+
+			special_type_slot_4 = inherit
+
+			special_type_slot_5 = inherit
+		}
+	}
+
+	mothership_airframe_3 = { #Is actually 5 planes strapped to another bigger plane. Its the tuna of the air
+		year = 1942
+		parent = mothership_airframe_2
+		archetype = mothership_airframe
+		priority = 100
+
+		# allow_mission_type = {
+			# air_superiority
+			# interception
+		# }
+		
+		air_range = 7000
+		maximum_speed = 0
+		air_agility = 47 #57
+		air_attack = 0 #53
+		air_defence = 60  #8
+		weight = 46
+
+		build_cost_ic = 34 #
+		
+		# upgrades = {
+			# plane_gun_upgrade
+			# plane_range_upgrade
+			# plane_engine_upgrade
+			# plane_reliability_upgrade
+		# }
+		
+		lend_lease_cost = 20
+		air_superiority = 13
+
+		surface_detection = 40 # For airwing of 100 planes (Destroyer I: 20 surface detection)
+
+		resources = {
+			#oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		manpower = 100
+		fuel_consumption = 1.32
+				
+		module_slots = {
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					quad_large_plane_radial_engine_type
+					quad_large_plane_engine_type
+					quad_large_plane_turboprop_engine_type
+					large_plane_engine_type
+					quad_large_plane_jet_engine_type
+					large_plane_jet_engine_type
+					quad_large_plane_jet_engine_type
+					quad_large_plane_second_gen_turbofan_engine_type
+					large_plane_second_gen_turbofan_engine_type
+					quad_large_plane_second_gen_jet_engine_type
+					large_plane_second_gen_jet_engine_type
+					large_plane_jet_engine_type
+					large_plane_radial_engine_type
+					super_large_plane_turboprop_engine_type
+					super_large_plane_jet_engine_type
+				}
+			}
+						
+			fixed_wing_slot = {
+				required = no
+				allowed_module_categories = {
+					plane_wing 
+					low_speed_plane_wing
+				}
+			}			
+
+			fixed_radar_slot = inherit	
+			
+			fixed_aux_prop_slot = inherit	
+			
+			fixed_optics_slot = {
+				required = yes
+				allowed_module_categories = {
+					plane_special_module_mothership
+				}
+			}
+			
+			fixed_engine_mod_slot = inherit
+			
+			fixed_fuel_type_slot = inherit
+			
+			fixed_main_weapon_slot = inherit
+
+			fixed_auxiliary_weapon_slot_1 = inherit
+			
+			fixed_auxiliary_weapon_slot_2 = inherit
+			
+			fixed_auxiliary_weapon_slot_3 = inherit	
+			
+			fixed_auxiliary_weapon_slot_4 = inherit	
+
+			fixed_electronics_slot = { 
+				required = no
+				allowed_module_categories = {
+					ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+				}
+			}
+
+			fixed_body_modifications_slot = inherit
+
+			fixed_tail_modifications_slot = inherit
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {	
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar	
+					
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+					
+				}
+			}
+			
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+					
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+					
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					plane_special_module_large ecm_pod_module plane_special_module_rwr_cat radar_jammers_cat
+					plane_special_module_defense_turret plane_special_module_defense_turret_remote plane_special_module_defense_turret_x2 plane_special_module_defense_turret_remote_x2
+					plane_special_module_electronics_cat plane_special_module_electronics_mad_cat
+					plane_special_module_radio_navigation
+					#plane_special_module_air_ground_radar
+					
+				}
+			}
+		}
+	}
+}

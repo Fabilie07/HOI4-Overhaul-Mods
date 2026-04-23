@@ -1,0 +1,68 @@
+tom_inf_horse_count_effect = {
+	set_variable = { tom_inf_civilian_horse = num_equipment@tom_inf_horse }
+	subtract_from_variable = { tom_inf_civilian_horse = num_equipment_in_armies@tom_inf_horse }
+	
+	set_variable = { tom_inf_horse_add = tom_inf_civilian_horse }
+	multiply_variable = { tom_inf_horse_add = tom_inf_horse_mult }
+	
+	
+	tom_inf_supply_transport_add_effect = yes
+	
+	set_variable = { tom_truck_supply_daily_fuel = tom_truck_supply_needed }
+	multiply_variable = { tom_truck_supply_daily_fuel = -0.4 }
+	
+	add_fuel = tom_truck_supply_daily_fuel
+	
+	tom_inf_supply_penalty_effect = yes
+}
+
+tom_inf_supply_transport_add_effect = {
+	set_variable = { tom_horse_supply_needed_prev = tom_horse_supply_needed }
+	set_variable = { tom_horse_supply_needed = num_of_supply_nodes }
+	multiply_variable = { tom_horse_supply_needed = tom_horse_supply_mult }
+	
+	subtract_from_variable = { tom_horse_supply_needed_prev = tom_horse_supply_needed }
+	subtract_from_variable = { tom_inf_civilian_horse = tom_horse_supply_needed }
+	
+	set_variable = { tom_truck_supply_needed_prev = tom_truck_supply_needed }
+	set_variable = { tom_truck_supply_needed = num_of_supply_nodes }
+	multiply_variable = { tom_truck_supply_needed = tom_truck_supply_mult }
+	
+	subtract_from_variable = { tom_truck_supply_needed_prev = tom_truck_supply_needed }
+	
+	add_equipment_to_stockpile = {
+		type = horse_0
+		amount = tom_horse_supply_needed_prev
+	}
+	if = {
+		limit = {
+			has_tech = tech_trucks
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = tom_truck_supply_needed_prev
+		}
+	}
+}
+
+tom_inf_supply_penalty_effect = {
+	if = {
+		limit = {
+			or = {
+				has_equipment = { tom_inf_horse < 1 }
+				
+				and = {
+					has_country_flag = tom_inf_motorization_used
+					has_equipment = { motorized_equipment < 1 }
+				}
+			}
+		}
+		
+		log = "No Deficit"
+		
+		add_ideas = { tom_inf_supply_deficit }
+	}
+	else = {
+		remove_ideas = { tom_inf_supply_deficit }
+	}
+}

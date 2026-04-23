@@ -1,0 +1,15 @@
+﻿l_english:
+ 
+ tom_inf_show_supply_depot_raids:0 "Show Supply Depot Raids"
+ tom_inf_hide_supply_depot_raids:0 "Hide Supply Depot Raids"
+ 
+ tom_inf_supply_depot:0 "Supply Depot"
+ 
+ tom_inf_supply_depot_raided:0 "Supplies Raided"
+ 
+ raid_type_tom_inf_raid_naval_supply_hub:0 "Raid Naval Supply Hub"
+ raid_type_tom_inf_raid_coastal_supply_depots:0 "Raid Coastal Supplies"
+ raid_type_tom_inf_raid_supply_depots:0 "Raid Stocked Supplies"
+ 
+ raid_target_name_naval_supply_hub:0 "Naval Supply Hub"
+ raid_target_name_tom_inf_supply_depot:0 "Supply Depot"

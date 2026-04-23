@@ -1,0 +1,109 @@
+technologies = {
+	tom_inf_horse_artillery_tech = { # Used to improve compatibility
+		allow = {
+			always = no
+		}
+		
+		artillery = {
+			need = {
+				tom_inf_horse = 24
+			}
+		}
+		rocket_artillery = {
+			need = {
+				tom_inf_horse = 24
+			}
+		}
+		super_heavy_artillery = {
+			need = {
+				tom_inf_horse = 24
+			}
+		}
+		anti_tank = {
+			need = {
+				tom_inf_horse = 24
+			}
+		}
+		anti_air = {
+			need = {
+				tom_inf_horse = 20
+			}
+		}
+		
+		artillery_brigade = {
+			need = {
+				tom_inf_horse = 48
+			}
+		}
+		rocket_artillery_brigade = {
+			need = {
+				tom_inf_horse = 48
+			}
+		}
+		anti_tank_brigade = {
+			need = {
+				tom_inf_horse = 36
+			}
+		}
+		anti_air_brigade = {
+			need = {
+				tom_inf_horse = 36
+			}
+		}
+	}
+	
+	tom_inf_trickleback_tech = {
+		allow = {
+			always = no
+		}
+		
+		infantry = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		motorized = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		mechanized = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		cavalry = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		mountaineers = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		paratrooper = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		marine = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		marine_commando = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		ranger_battalion = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		mountaineers_mechanized = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		amphibious_mechanized = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+		rangers_mechanized = {
+			casualty_trickleback = -1
+			experience_loss_factor = 1
+		}
+	}
+}

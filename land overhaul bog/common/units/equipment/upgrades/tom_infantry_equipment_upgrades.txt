@@ -1,0 +1,47 @@
+upgrades = {
+
+	tom_inf_ammo_upgrade = {
+		abbreviation = "ammo"
+		max_level = 10 #each level represents ~50 rounds
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 1
+			cost_by_level_for_licensed_equipment = 5
+		}
+
+		level_requirements = {
+			6 = {
+				has_tech = tech_logistics_company
+			}
+		}
+		add_stats = {
+			defense = 1
+			breakthrough = 0.2
+			build_cost_ic = 0.02
+		}
+	}
+
+	tom_inf_simplicity_upgrade = {
+		abbreviation = "ammo"
+		max_level = 10 #each level represents ~50 rounds
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 1
+			cost_by_level_for_licensed_equipment = 5
+		}
+
+		level_requirements = {
+			6 = {
+				has_tech = tech_maintenance_company
+			}
+		}
+		add_stats = {
+			reliability = -0.02
+		}
+		multiply_stats = {
+			build_cost_ic = -0.01
+		}
+	}
+}

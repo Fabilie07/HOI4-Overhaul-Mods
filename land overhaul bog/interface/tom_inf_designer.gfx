@@ -1,0 +1,136 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_blueprint"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_fire_bolt_action"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_fire_bolt_action.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_fire_lever_action"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_fire_lever_action.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_fire_semi_auto"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_fire_semi_auto.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_fire_full_auto"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_fire_full_auto.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_barrel_carbine"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_barrel_carbine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_barrel_rifle"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_barrel_rifle.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_barrel_extended"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_barrel_extended.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_clip_10"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_clip_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_magazine_05"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_magazine_05.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_magazine_10"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_magazine_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_magazine_15"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_magazine_15.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_magazine_20"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_magazine_20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_magazine_25"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_magazine_25.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_magazine_30"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_magazine_30.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_sights_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_sights_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_sights_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_sights_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_infantry_equipment_sights_sniper"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/infantry_equipment_sights_sniper.dds"
+		legacy_lazy_load = no
+	}
+	
+	### MG
+	spriteType = {
+		name = "GFX_IE_hmg_chassis_blueprint"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_hmg_chassis_barrel_standard"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_barrel_standard.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_hmg_chassis_barrel_water"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_barrel_water.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_hmg_chassis_barrel_air"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_barrel_air.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_hmg_chassis_belt_fed"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_mag_beltfed.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_hmg_chassis_magazine"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_mag_magazine.dds"
+		legacy_lazy_load = no
+	}
+}
+
+
+
+
+
+

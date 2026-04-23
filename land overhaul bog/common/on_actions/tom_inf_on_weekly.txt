@@ -1,0 +1,30 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {				
+				tom_inf_supply_depot_build_effect = yes
+				tom_inf_supply_depot_build_effect = yes
+				tom_inf_supply_depot_build_effect = yes
+				tom_inf_supply_depot_build_effect = yes
+				tom_inf_supply_depot_build_effect = yes
+			}
+		}
+	}
+	
+	on_weekly = {
+		effect = {
+			tom_inf_supply_depot_build_effect = yes
+		}
+	}
+	
+	on_state_control_changed = {
+		effect = {
+			FROM.FROM = {
+				set_building_level = {
+					type = tom_inf_supply_depot
+					level = 0
+				}
+			}
+		}
+	}
+}

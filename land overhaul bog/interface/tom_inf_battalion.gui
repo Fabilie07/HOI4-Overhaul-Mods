@@ -1,0 +1,93 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "tom_inf_battalion_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height=82 }#506 }
+		
+		@battalion_row_y = 12
+		@battalion_button_row_y = 23
+		@company_row_y = 120
+		@company_button_row_y = 131
+		
+		@middle_column_x = 217
+		@column_1_x = 12
+		@column_2_x = 94
+		@column_3_x = 176
+		@column_4_x = 258
+		@column_5_x = 340
+		@column_6_x = 422
+		
+		
+		@stat_add_x = 122
+		@stat_mult_x = 172
+		
+		### HEADERS
+		
+		containerWindowType = {
+			name = "switch_button_bg"
+			position = { x=152 y=28 }
+			size = { width=206 height=32 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_tiled_decisions_bg_small"
+			}
+		}
+		
+		iconType = {
+			name = "battalion_left_bg"
+			position = { x=177 y=23 }
+			spriteType = "GFX_tom_inf_new_battalion_slot"
+			scale = 0.7
+		}
+		iconType = {
+			name = "battalion_button_left"
+			position = { x=177 y=30 }
+			quadTextureSprite = "GFX_tom_inf_infantry_subunit_slot_icon"
+			scale = 0.7
+		}
+
+		iconType = {
+			name = "battalion_right_bg"
+			position = { x=279 y=23 }
+			spriteType = "GFX_tom_inf_new_battalion_slot"
+			scale = 0.7
+		}
+		iconType = {
+			name = "battalion_button_right"
+			position = { x=279 y=30 }
+			quadTextureSprite = "GFX_tom_inf_infantry_subunit_slot_icon"
+			scale = 0.7
+		}
+		
+		iconType = {
+			name = "battalion_bg"
+			position = { x=@middle_column_x y=@battalion_row_y }
+			spriteType = "GFX_tom_inf_new_battalion_slot"
+		}
+		
+		buttonType = {
+			name = "battalion_button"
+			position = { x=@middle_column_x y=@battalion_button_row_y }
+			pdx_tooltip = bat_open
+			quadTextureSprite = "GFX_tom_inf_infantry_subunit_slot_icon"
+		}
+		
+		buttonType = {
+			name = "switch_battalion_right_button"
+			position = { x=333 y=36 }
+			quadTextureSprite = "GFX_scroll_right"
+			pdx_tooltip = bat_switch_right
+			clicksound = click_default
+		}
+		
+		buttonType = {
+			name = "switch_battalion_left_button"
+			position = { x=160 y=36 }
+			quadTextureSprite = "GFX_scroll_left"
+			pdx_tooltip = bat_switch_right
+			clicksound = click_default
+		}
+	}
+}

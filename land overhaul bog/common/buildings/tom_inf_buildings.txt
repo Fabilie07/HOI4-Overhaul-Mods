@@ -1,0 +1,16 @@
+buildings = {
+	tom_inf_supply_depot = {
+		base_cost = 1000
+		icon_frame = 15
+		is_buildable = no
+		
+		level_cap = {
+			state_max = 5
+		}
+		state_modifiers = {
+			supply_factor = 0.05
+			army_speed_factor_for_controller = 0.02
+		}
+		tags = { supply_building }
+	}
+}

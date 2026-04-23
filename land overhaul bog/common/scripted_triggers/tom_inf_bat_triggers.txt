@@ -1,0 +1,716 @@
+
+tom_inf_save_button_instant_click_trigger = {
+	# Check if all Platoons/Companies are the same number as before - skipping confirmation and add effects
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_infantry
+		}
+		tom_inf_save_button_instant_click_infantry_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized
+		}
+		tom_inf_save_button_instant_click_motorized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mechanized
+		}
+		tom_inf_save_button_instant_click_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_cavalry
+		}
+		tom_inf_save_button_instant_click_cavalry_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+		}
+		tom_inf_save_button_instant_click_mountaineer_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+		}
+		tom_inf_save_button_instant_click_paratrooper_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine
+		}
+		tom_inf_save_button_instant_click_marine_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+		}
+		tom_inf_save_button_instant_click_marine_commando_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_ranger
+		}
+		tom_inf_save_button_instant_click_ranger_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+		}
+		tom_inf_save_button_instant_click_mountaineers_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+		}
+		tom_inf_save_button_instant_click_amphibious_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+		}
+		tom_inf_save_button_instant_click_rangers_mechanized_trigger = yes
+	}
+}
+
+tom_inf_save_button_increase_trigger = {
+	# Check upon saving if any new Platoons/Companies have been added
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_infantry
+		}
+		tom_inf_save_button_increase_infantry_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized
+		}
+		tom_inf_save_button_increase_motorized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mechanized
+		}
+		tom_inf_save_button_increase_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_cavalry
+		}
+		tom_inf_save_button_increase_cavalry_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+		}
+		tom_inf_save_button_increase_mountaineer_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+		}
+		tom_inf_save_button_increase_paratrooper_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine
+		}
+		tom_inf_save_button_increase_marine_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+		}
+		tom_inf_save_button_increase_marine_commando_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_ranger
+		}
+		tom_inf_save_button_increase_ranger_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+		}
+		tom_inf_save_button_increase_mountaineers_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+		}
+		tom_inf_save_button_increase_amphibious_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+		}
+		tom_inf_save_button_increase_rangers_mechanized_trigger = yes
+	}
+}
+
+tom_inf_bat_no_equipment_trigger = {
+	check_variable =  { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = 0 }
+	OR = {
+		AND = {
+			has_country_flag = tom_inf_bat_current_infantry
+			check_variable = { tom_inf_bat_infantry_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_motorized
+			check_variable = { tom_inf_bat_motorized_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_mechanized
+			check_variable = { tom_inf_bat_mechanized_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_cavalry
+			check_variable = { tom_inf_bat_cavalry_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+			check_variable = { tom_inf_bat_mountaineer_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+			check_variable = { tom_inf_bat_paratrooper_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_marine
+			check_variable = { tom_inf_bat_marine_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+			check_variable = { tom_inf_bat_marine_commando_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_ranger
+			check_variable = { tom_inf_bat_ranger_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+			check_variable = { tom_inf_bat_mountaineers_mechanized_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+			check_variable = { tom_inf_bat_amphibious_mechanized_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+		AND = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+			check_variable = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count^equipment_index = 0 }
+		}
+	}
+}
+
+tom_inf_bat_4_company_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_10_count = 4 }
+		check_variable = { tom_inf_bat_popup_13_count = 4 }
+		check_variable = { tom_inf_bat_popup_14_count = 4 }
+		check_variable = { tom_inf_bat_popup_15_count = 4 }
+		check_variable = { tom_inf_bat_popup_20_count = 4 }
+		check_variable = { tom_inf_bat_popup_21_count = 4 }
+		check_variable = { tom_inf_bat_popup_22_count = 4 }
+		check_variable = { tom_inf_bat_popup_23_count = 4 }
+		check_variable = { tom_inf_bat_popup_24_count = 4 }
+		check_variable = { tom_inf_bat_popup_30_count = 4 }
+		check_variable = { tom_inf_bat_popup_32_count = 4 }
+		check_variable = { tom_inf_bat_popup_34_count = 4 }
+	}
+}
+
+
+tom_inf_company_icon_trigger = {
+	# Returns icon frame as company_icon_frame
+	if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 10 }
+				check_variable = { v = 10 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 11 }
+				check_variable = { v = 11 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 5 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 12 }
+				check_variable = { v = 12 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 6 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 13 }
+				check_variable = { v = 13 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 13 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 14 }
+				check_variable = { v = 14 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 14 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 15 }
+				check_variable = { v = 15 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 34 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 20 }
+				check_variable = { v = 20 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 24 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 21 }
+				check_variable = { v = 21 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 25 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 22 }
+				check_variable = { v = 22 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 26 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 23 }
+				check_variable = { v = 23 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 27 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 24 }
+				check_variable = { v = 24 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 28 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 30 }
+				check_variable = { v = 30 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 30 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 32 }
+				check_variable = { v = 32 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 31 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 34 }
+				check_variable = { v = 34 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 32 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = -1 }
+				check_variable = { v = -1 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 29 }
+	}
+	else = {
+		set_temp_variable = { company_icon_frame = 1 }
+	}
+}
+
+tom_inf_platoon_icon_trigger = {
+	# Returns icon frame as platoon_icon_frame
+	if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1000 }
+				check_variable = { v = 1000 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 2 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1001 }
+				check_variable = { platoon_value = 1100 }
+				check_variable = { v = 1001 }
+				check_variable = { v = 1100 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 3 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1002 }
+				check_variable = { platoon_value = 1101 }
+				check_variable = { v = 1002 }
+				check_variable = { v = 1101 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 4 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1003 }
+				check_variable = { platoon_value = 1102 }
+				check_variable = { v = 1003 }
+				check_variable = { v = 1102 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 5 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1010 }
+				check_variable = { platoon_value = 1110 }
+				check_variable = { v = 1010 }
+				check_variable = { v = 1110 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 6 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1111 }
+				check_variable = { v = 1111 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 7 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1112 }
+				check_variable = { v = 1112 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 8 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1020 }
+				check_variable = { platoon_value = 1120 }
+				check_variable = { v = 1020 }
+				check_variable = { v = 1120 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 9 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1021 }
+				check_variable = { platoon_value = 1122 }
+				check_variable = { v = 1021 }
+				check_variable = { v = 1122 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 10 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1121 }
+				check_variable = { v = 1121 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 11 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1130 }
+				check_variable = { v = 1130 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 12 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1200 }
+				check_variable = { v = 1200 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 13 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1201 }
+				check_variable = { v = 1201 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 14 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1210 }
+				check_variable = { v = 1210 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 15 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1211 }
+				check_variable = { v = 1211 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 16 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1212 }
+				check_variable = { v = 1212 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 17 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1220 }
+				check_variable = { v = 1220 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 18 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1221 }
+				check_variable = { v = 1221 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 19 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1222 }
+				check_variable = { v = 1222 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 20 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1223 }
+				check_variable = { v = 1223 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 21 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1230 }
+				check_variable = { v = 1230 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 22 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1240 }
+				check_variable = { v = 1240 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 23 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1300 }
+				check_variable = { v = 1300 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 13 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1400 }
+				check_variable = { v = 1400 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 14 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 1500 }
+				check_variable = { v = 1500 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 34 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 2000 }
+				check_variable = { v = 2000 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 24 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 2100 }
+				check_variable = { v = 2100 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 25 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 2200 }
+				check_variable = { v = 2200 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 26 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 2300 }
+				check_variable = { v = 2300 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 27 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 2400 }
+				check_variable = { v = 2400 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 28 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 3000 }
+				check_variable = { v = 3000 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 30 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 3200 }
+				check_variable = { v = 3200 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 31 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 3400 }
+				check_variable = { v = 3400 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 32 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = -1 }
+				check_variable = { v = -1 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 29 }
+	}
+	else = {
+		set_temp_variable = { prev_slot_index = platoon_index }
+		add_to_temp_variable = { prev_slot_index = -6 }
+		
+		set_temp_variable = { company_slot_index = platoon_index }
+		modulo_temp_variable = { company_slot_index = 6 }
+		
+		if = { # No Company
+			limit = {
+				check_variable = { tom_inf_battalion_company_array^company_slot_index = 0 }
+			}
+			set_temp_variable = { platoon_icon_frame = 33 }
+		}
+		else_if = { # Previous is 0
+			limit = {
+				check_variable = { prev_slot_index > -1 }
+				check_variable = { tom_inf_battalion_platoon_array^prev_slot_index = 0 }
+			}
+			set_temp_variable = { platoon_icon_frame = 33 }
+		}
+		else = {
+			set_temp_variable = { platoon_icon_frame = 0 }
+		}
+	}
+	
+	NOT = {
+		check_variable = { platoon_icon_frame = 33 }
+	}
+}

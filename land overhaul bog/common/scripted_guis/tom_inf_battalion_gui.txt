@@ -1,0 +1,358 @@
+scripted_gui = {
+
+	# Decision Window
+	tom_inf_battalion_gui = {
+		context_type = decision_category
+		window_name = "tom_inf_battalion_window"
+		
+		effects = {
+			battalion_button_click = { tom_inf_bat_open_designer_effect = yes }
+			switch_battalion_right_button_click = { tom_inf_bat_cycle_right_effect = yes }
+			switch_battalion_left_button_click = { tom_inf_bat_cycle_left_effect = yes }
+			switch_battalion_right_button_shift_click = { tom_inf_bat_cycle_right_shift_effect = yes }
+			switch_battalion_left_button_shift_click = { tom_inf_bat_cycle_left_shift_effect = yes }
+		}
+		
+		properties = {
+			battalion_button = {
+				image = "[tom_inf_bat_subunit_icon]"
+				frame = tom_inf_battalion_frame
+			}
+			battalion_button_left = {
+				image = "[tom_inf_bat_subunit_icon]"
+				frame = tom_inf_battalion_frame_left
+			}
+			battalion_button_right = {
+				image = "[tom_inf_bat_subunit_icon]"
+				frame = tom_inf_battalion_frame_right
+			}
+		}
+	}
+	
+	
+	# Popup Window
+	tom_inf_battalion_editor_gui = {
+		context_type = player_context
+		window_name = "tom_inf_battalion_designer_window"
+		
+		visible = {
+			has_country_flag = tom_inf_battalion_designer_open
+		}
+		
+		triggers = {
+			save_button_click_enabled = {
+				OR = {
+					tom_inf_save_button_instant_click_trigger = yes
+					tom_inf_save_button_increase_trigger = yes
+				}
+			}
+			
+			debug_button_visible = {
+				is_debug = yes
+			}
+		}
+		
+		effects = {
+			close_button_click = { tom_inf_bat_close_designer_effect = yes }
+			save_button_click = {
+				if = {
+					limit = {
+						tom_inf_save_button_increase_trigger = no
+					}
+					tom_inf_save_button_click_effect = yes
+					tom_inf_bat_close_designer_effect = yes
+				}
+				else = {
+					set_country_flag = tom_inf_bat_save_confirmation
+				}
+			}
+			
+			debug_button_click = {
+				set_country_flag = tom_inf_bat_debug_open
+			}
+		}
+		
+		properties = {
+			battalion_icon = {
+				image = "[tom_inf_bat_subunit_icon]"
+				frame = tom_inf_battalion_frame
+			}
+		}
+	}
+	
+	tom_inf_battalion_save_confirmation_popup = {
+		context_type = player_context
+		window_name = "tom_inf_bat_save_confirmation_popup"
+		
+		visible = {
+			has_country_flag = tom_inf_bat_save_confirmation
+		}
+		
+		effects = {
+			cancel_button_click = {
+				clr_country_flag = tom_inf_bat_save_confirmation
+			}
+			send_button_click = {
+				clr_country_flag = tom_inf_bat_save_confirmation
+				tom_inf_save_button_click_effect = yes
+				tom_inf_bat_close_designer_effect = yes
+			}
+		}
+	}
+	
+	tom_inf_battalion_editor_add_gui = {
+		context_type = player_context
+		window_name = "tom_inf_battalion_designer_add"
+		parent_window_name = "tom_inf_battalion_designer_window"
+		
+		visible = {
+			has_country_flag = tom_inf_battalion_designer_add_open
+		}
+		
+		triggers = {
+			platoon_add_button_click_enabled = {
+				tom_inf_subunit_unavailable_trigger = no
+			}
+			
+			equipment_icon_visible = {
+				if = {
+					limit = {
+						has_country_flag = tom_inf_bat_designer_add_company
+					}
+					tom_inf_company_icon_trigger = yes
+					
+					set_temp_variable = { designer_icon_frame = company_icon_frame }
+				}
+				else = {
+					tom_inf_platoon_icon_trigger = yes
+					
+					set_temp_variable = { designer_icon_frame = platoon_icon_frame }
+				}
+			}
+			validity_icon_visible = {
+				tom_inf_subunit_unavailable_trigger = yes
+			}
+		}
+		
+		effects = {
+			btn_back_click = {
+				clr_country_flag = tom_inf_battalion_designer_add_open
+				clr_country_flag = tom_inf_bat_designer_add_company
+			}
+			platoon_add_button_click = {
+				tom_inf_subunit_add_effect = yes
+				clr_country_flag = tom_inf_battalion_designer_add_open
+				clr_country_flag = tom_inf_bat_designer_add_company
+			}
+		}
+		
+		properties = {
+			equipment_icon = {
+				image = "[tom_inf_bat_subunit_icon]"
+				frame = designer_icon_frame
+			}
+		}
+		
+		dynamic_lists = {
+			gb_modules = {
+				array = tom_inf_bat_temp_slot_add_array
+				entry_container = tom_inf_battalion_designer_add_entry
+			}
+		}
+	}
+	
+	tom_inf_battalion_editor_terrain_gui = {
+		context_type = player_context
+		window_name = "tom_inf_bat_terrain_window"
+		parent_window_name = "tom_inf_battalion_designer_window"
+		
+		triggers = {
+			terrain_movement_visible = {
+				if = {
+					limit = {
+						check_variable = { tom_inf_bat_popup_terrain_movement_array^i = 0 }
+					}
+					set_temp_variable = { movement_frame = 3 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { tom_inf_bat_popup_terrain_movement_array^i > 0 }
+					}
+					set_temp_variable = { movement_frame = 1 }
+				}
+				else = {
+					set_temp_variable = { movement_frame = 2 }
+				}
+			}
+			
+			terrain_attack_visible = {
+				if = {
+					limit = {
+						check_variable = { tom_inf_bat_popup_terrain_attack_array^i = 0 }
+					}
+					set_temp_variable = { attack_frame = 3 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { tom_inf_bat_popup_terrain_attack_array^i > 0 }
+					}
+					set_temp_variable = { attack_frame = 1 }
+				}
+				else = {
+					set_temp_variable = { attack_frame = 2 }
+				}
+			}
+			
+			terrain_defense_visible = {
+				if = {
+					limit = {
+						check_variable = { tom_inf_bat_popup_terrain_defense_array^i = 0 }
+					}
+					set_temp_variable = { defense_frame = 3 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { tom_inf_bat_popup_terrain_defense_array^i > 0 }
+					}
+					set_temp_variable = { defense_frame = 1 }
+				}
+				else = {
+					set_temp_variable = { defense_frame = 2 }
+				}
+			}
+		}
+		
+		properties = {
+			terrain_icon = { image = [tom_inf_bat_terrain_icon_loc] }
+			terrain_movement = { frame = movement_frame }
+			terrain_attack = { frame = attack_frame }
+			terrain_defense = { frame = defense_frame }
+		}
+		
+		dynamic_lists = {
+			terrain_stats_grid = {
+				array = tom_inf_bat_popup_terrain_bonus_array
+				entry_container = tom_inf_bat_terrain_entry
+			}
+		}
+	}
+	
+	tom_inf_battalion_editor_designer_gui = {
+		context_type = player_context
+		window_name = "tom_inf_battalion_designer_companies"
+		parent_window_name = "tom_inf_battalion_designer_window"
+		
+		triggers = {
+			company_button_click_enabled = { # Not actually a Trigger: This just handles Icon Frames
+				tom_inf_company_icon_trigger = yes
+			}
+			
+			platoon_button_click_enabled = { # Not actually a Trigger: This just handles Icon Frames
+				tom_inf_platoon_icon_trigger = yes
+			}
+			
+			debug_value_text_company_visible = { has_country_flag = tom_inf_bat_debug_open }
+			debug_value_text_platoon_visible = { has_country_flag = tom_inf_bat_debug_open }
+		}
+		
+		effects = {
+			company_button_click = {
+				set_country_flag = tom_inf_battalion_designer_add_open
+				set_country_flag = tom_inf_bat_designer_add_company
+				tom_inf_company_reference_effect = yes
+				
+				set_variable = { tom_inf_bat_current_slot = company_index }
+				set_variable = { tom_inf_bat_current_value = company_value }
+			}
+			platoon_button_click = {
+				set_country_flag = tom_inf_battalion_designer_add_open
+				tom_inf_company_platoon_reference_effect = yes
+				
+				set_variable = { tom_inf_bat_current_slot = platoon_index }
+				set_variable = { tom_inf_bat_current_value = platoon_value }
+			}
+		}
+		
+		properties = {
+			company_button = {
+				image = "[tom_inf_bat_subunit_icon]"
+				frame = company_icon_frame
+			}
+			platoon_button = {
+				image = "[tom_inf_bat_subunit_icon]"
+				frame = platoon_icon_frame
+			}
+		}
+		
+		dynamic_lists = {
+			company_grid = {
+				array = tom_inf_battalion_company_array
+				value = company_value
+				index = company_index
+				entry_container = "tom_inf_battalion_designer_company_entry"
+			}
+			
+			platoon_grid = {
+				array = tom_inf_battalion_platoon_array
+				value = platoon_value
+				index = platoon_index
+				entry_container = "tom_inf_battalion_designer_platoon_entry"
+			}
+		}
+	}
+	
+	tom_inf_battalion_editor_stats_gui = {
+		context_type = player_context
+		window_name = "tom_inf_battalion_designer_stats"
+		parent_window_name = "tom_inf_battalion_designer_window"
+		
+		dynamic_lists = {
+			base_stats_grid = {
+				array = tom_inf_battalion_base_stats_array
+				entry_container = "tom_inf_battalion_designer_base_stats_entry"
+			}
+			combat_stats_grid = {
+				array = tom_inf_battalion_combat_stats_array
+				entry_container = "tom_inf_battalion_designer_combat_stats_entry"
+			}
+			equipment_stats_grid = {
+				array = tom_inf_battalion_equipment_stats_array_1
+				entry_container = "tom_inf_battalion_designer_equipment_1_stats_entry"
+			}
+			variable_equipment_stats_grid = {
+				array = tom_inf_bat_popup_equipment_stats_array_2_type
+				entry_container = "tom_inf_battalion_designer_equipment_2_stats_entry"
+			}
+			variable_equipment_stats_needed_grid = {
+				array = tom_inf_bat_popup_equipment_stats_array_2_needed
+				entry_container = "tom_inf_battalion_designer_equipment_needed_stats_entry"
+			}
+		}
+	}
+	
+	
+	# DEBUG
+	tom_inf_battalion_debug_popup_gui = {
+		context_type = player_context
+		window_name = "tom_inf_bat_debug_popup"
+		
+		visible = {
+			has_country_flag = tom_inf_bat_debug_open
+		}
+		
+		triggers = {
+			support_1001_icon_visible = { has_country_flag = tom_inf_bat_support_1001 }
+			support_1002_icon_visible = { has_country_flag = tom_inf_bat_support_1002 }
+			support_1003_icon_visible = { has_country_flag = tom_inf_bat_support_1003 }
+			support_1010_icon_visible = { has_country_flag = tom_inf_bat_support_1010 }
+			support_1020_icon_visible = { has_country_flag = tom_inf_bat_support_1020 }
+			support_1021_icon_visible = { has_country_flag = tom_inf_bat_support_1021 }
+		}
+		
+		effects = {
+			cancel_button_click = {
+				clr_country_flag = tom_inf_bat_debug_open
+			}
+		}
+	}
+}

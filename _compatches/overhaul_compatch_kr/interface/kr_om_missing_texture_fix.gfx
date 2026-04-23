@@ -1,0 +1,25 @@
+spriteTypes = {	
+	# Vanilla Textures used by Overhaul Mods
+	
+	spriteType = {
+		name = "GFX_propaganda_bg"
+		texturefile = "gfx/interface/kr_om_fix/propaganda_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_hull_cruiser_panzerschiff_medium"
+		texturefile = "gfx/interface/kr_om_fix/ship_hull_panzerschiff.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_hull_super_heavy_medium"
+		texturefile = "gfx/interface/kr_om_fix/heavy_battleship.dds"
+	}
+	spriteType = {
+		name = "GFX_improved_battlecruiser_medium"
+		texturefile = "gfx/interface/kr_om_fix/improved_battlecruiser.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_improved_heavy_cruiser_medium"
+		texturefile = "gfx/interface/kr_om_fix/USA_improved_heavy_cruiser.dds"
+	}
+}

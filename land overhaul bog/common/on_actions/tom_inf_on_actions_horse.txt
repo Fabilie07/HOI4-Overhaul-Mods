@@ -1,0 +1,109 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			add_equipment_to_stockpile = {
+				type = horse_0
+				amount = tom_inf_horse_add
+			}
+		}
+	}
+	
+	on_daily = {
+		effect = {	
+			tom_inf_horse_count_effect = yes
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			ENG = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 1000000
+				}
+			}
+			
+			FRA = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 2500000
+				}
+			}
+			
+			GER = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 1500000
+				}
+			}
+			
+			HUN = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 800000
+				}
+			}
+			
+			ITA = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 900000
+				}
+			}
+			
+			JAP = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 600000
+				}
+			}
+			
+			USA = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 4000000
+				}
+			}
+			
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 6000000
+				}
+			}
+			
+			every_country = {
+				limit = {
+					NOT = {
+						tag = ENG
+						tag = FRA
+						tag = GER
+						tag = HUN
+						tag = ITA
+						tag = JAP
+						tag = USA
+						tag = SOV
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = horse_0
+					amount = 150000
+				}
+			}
+			
+			every_country = {
+				set_variable = { tom_horse_supply_mult = 1000 }
+				set_variable = { tom_truck_supply_mult = 0 }
+				set_variable = { tom_truck_supply_daily_fuel = 0 }
+				set_variable = { tom_inf_horse_mult = 0.005 }
+				
+				set_technology = { tom_inf_horse_artillery_tech = 1 popup = no }
+				
+				add_ideas = tom_inf_motorization_level_1
+				# add_dynamic_modifier = { modifier = tom_inf_supply_truck_fuel_consumption }
+				
+				tom_inf_horse_count_effect = yes
+			}
+		}
+	}
+}

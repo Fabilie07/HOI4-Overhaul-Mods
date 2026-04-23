@@ -1,0 +1,46 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_tom_inf_battalion_designer_popup_bg"
+		texturefile = "gfx/interface/counters_battalion/battalion_designer_popup_bg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tom_inf_new_battalion_slot"
+		texturefile = "gfx/interface/counters_battalion/new_battalion_slot.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_inf_new_company_slot"
+		texturefile = "gfx/interface/counters_battalion/new_company_slot.dds"
+	}
+	SpriteType = {
+		name = "GFX_tom_inf_new_platoon_slot"
+		texturefile = "gfx/interface/counters_battalion/new_platoon_slot.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tom_inf_add_platoon_button"
+		texturefile = "gfx/interface/counters_battalion/add_platoon_button.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_tom_inf_subunit_slot_empty"
+		texturefile = "gfx/interface/counters_battalion/icons/subunit_slot_empty.dds"
+	}
+	
+	# HOI4
+	SpriteType = {
+		name = "GFX_tom_inf_infantry_subunit_slot_icon"
+		texturefile = "gfx/interface/counters_battalion/icons/STRIP_subunit_slot_icon.dds"
+		noOfFrames = 34
+	}
+	
+	
+	# NATO
+	SpriteType = {
+		name = "GFX_tom_inf_infantry_subunit_slot_icon_nato"
+		texturefile = "gfx/interface/counters_battalion/icons_nato/STRIP_subunit_slot_icon_nato.dds"
+		noOfFrames = 34
+	}
+}

@@ -1,0 +1,18 @@
+defined_text = {
+	name = tom_inf_supplies_deficit_loc
+	text = {
+		trigger = {
+			has_idea = tom_inf_motorization_level_1
+		}
+		localization_key = "Will be removed when Horse Stockpile is positive."
+	}
+	text = {
+		trigger = {
+			has_idea = tom_inf_motorization_level_5
+		}
+		localization_key = "Will be removed when Truck Stockpile is positive."
+	}
+	text = {
+		localization_key = "Will be removed when Horse and Truck Stockpiles are positive."
+	}
+}

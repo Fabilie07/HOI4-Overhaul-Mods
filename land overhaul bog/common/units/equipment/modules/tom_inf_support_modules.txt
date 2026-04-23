@@ -1,0 +1,217 @@
+equipment_modules = {
+	## MGs
+	
+	mg_standard_barrel = {
+		category = mg_barrel
+		
+		add_stats = {
+			breakthrough = 2
+		}
+		xp_cost = 1
+	}
+	mg_watercooled_barrel = {
+		category = mg_barrel
+		
+		add_stats = {
+			defense = 2
+		}
+		xp_cost = 1
+	}
+	mg_aircooled_barrel = {
+		category = mg_barrel
+		
+		add_stats = {
+			reliability = 0.1
+		}
+		xp_cost = 1
+	}
+	
+	mg_foregrip = {
+		category = mg_grip
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.05
+		}
+		xp_cost = 1
+	}
+	mg_bipod = {
+		category = mg_grip
+		
+		add_stats = {
+			breakthrough = 1
+			defense = 1
+			build_cost_ic = 0.05
+		}
+		xp_cost = 1
+	}
+	mg_tripod = {
+		category = mg_grip
+		
+		add_stats = {
+			defense = 2
+			build_cost_ic = 0.05
+		}
+		xp_cost = 1
+	}
+	
+	mg_belt_fed = {
+		category = mg_beltfed
+		gui_category = mg_magazine
+		
+		add_stats = {
+			soft_attack = 0.5
+		}
+		multiply_stats = {
+			breakthrough = -0.2
+		}
+		xp_cost = 1
+	}
+	mg_magazine_020 = {
+		category = mg_magazine
+		
+		add_stats = {
+			defense = -4
+		}
+		multiply_stats = {
+			build_cost_ic = -0.2
+		}
+		xp_cost = 1
+	}
+	mg_magazine_030 = {
+		category = mg_magazine
+		
+		add_stats = {
+			defense = -2
+		}
+		multiply_stats = {
+			build_cost_ic = -0.1
+		}
+		xp_cost = 1
+	}
+	mg_magazine_040 = {
+		category = mg_magazine
+		
+		add_stats = {
+			defense = 1
+		}
+		xp_cost = 1
+	}
+	mg_magazine_050 = {
+		category = mg_magazine
+		
+		add_stats = {
+			defense = 2
+			build_cost_ic = 0.05
+		}
+		xp_cost = 1
+	}
+	mg_magazine_100 = {
+		category = mg_magazine
+		
+		add_stats = {
+			defense = 4
+			build_cost_ic = 0.15
+		}
+		xp_cost = 1
+	}
+	
+	mg_rpm_0400 = {
+		category = mg_rpm
+		
+		add_stats = {
+			defense = 4
+		}
+		xp_cost = 1
+	}
+	mg_rpm_0600 = {
+		category = mg_rpm
+		
+		add_stats = {
+			defense = 2
+			soft_attack = 0.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.05
+		}
+		xp_cost = 1
+	}
+	mg_rpm_0800 = {
+		category = mg_rpm
+		
+		add_stats = {
+			soft_attack = 1
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = 0.1
+		}
+		xp_cost = 1
+	}
+	mg_rpm_1000 = {
+		category = mg_rpm
+		
+		add_stats = {
+			soft_attack = 1.5
+			reliability = -0.1
+		}
+		multiply_stats = {
+			build_cost_ic = 0.15
+		}
+		xp_cost = 1
+	}
+	mg_rpm_1200 = {
+		category = mg_rpm
+		
+		add_stats = {
+			soft_attack = 2
+			reliability = -0.15
+		}
+		multiply_stats = {
+			build_cost_ic = 0.2
+		}
+		xp_cost = 1
+	}
+	mg_rpm_1400 = {
+		category = mg_rpm
+		
+		add_stats = {
+			soft_attack = 2.5
+			reliability = -0.2
+		}
+		multiply_stats = {
+			build_cost_ic = 0.3
+		}
+		xp_cost = 1
+	}
+	
+	mg_exchangeable_barrel = {
+		category = mg_special_module
+		
+		add_stats = {
+			reliability = 0.1
+			build_cost_ic = 0.05
+		}
+		xp_cost = 1
+	}
+	mg_rifle_cartridge = {
+		category = mg_special_module
+		
+		add_stats = {
+			reliability = -0.05
+		}
+		multiply_stats = {
+			build_cost_ic = -0.15
+		}
+		xp_cost = 1
+	}
+	mg_anti_armor_ammunition = {
+		category = mg_special_module
+		
+		add_stats = {
+			hard_attack = 1.5
+			build_cost_ic = 0.05
+		}
+		xp_cost = 1
+	}
+}

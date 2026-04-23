@@ -1,0 +1,11 @@
+# Duplicate Infantry Archetypes
+
+duplicate_archetypes = {
+
+	# light_tank
+
+	sniper_chassis = {
+		archetype = infantry_equipment
+		type = { armor anti_tank }
+	}
+}

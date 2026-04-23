@@ -1,0 +1,173 @@
+
+tom_inf_bat_startup_effect_company_arrays = {
+	add_to_array = { tom_inf_bat_array = 1 }
+	add_to_array = { tom_inf_bat_array = 4 }
+	if = {
+		limit = { has_tech = motorised_infantry }
+		add_to_array = { tom_inf_bat_array = 2 }
+	}
+	if = {
+		limit = { has_tech = tech_mountaineers }
+		add_to_array = { tom_inf_bat_array = 10 }
+	}
+	if = {
+		limit = { has_tech = paratroopers }
+		add_to_array = { tom_inf_bat_array = 11 }
+	}
+	if = {
+		limit = { has_tech = marines }
+		add_to_array = { tom_inf_bat_array = 12 }
+		add_to_array = { tom_inf_bat_array = 13 }
+	}
+	if = {
+		limit = { has_tech = rangers_tech }
+		add_to_array = { tom_inf_bat_array = 14 }
+	}
+	
+	set_variable = { tom_inf_bat_array_pointer = 0 }
+	
+	
+	# Set Company Arrays. This is used to show which Platoons can be added in each Row.
+	add_to_array = { tom_inf_bat_10_platoons_array = 1000 }
+	add_to_array = { tom_inf_bat_10_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_10_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_10_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_10_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_10_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_10_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_11_platoons_array = 1100 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1101 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1102 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1110 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1111 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1112 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1120 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1121 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1122 }
+	add_to_array = { tom_inf_bat_11_platoons_array = 1130 }
+	
+	add_to_array = { tom_inf_bat_12_platoons_array = 1200 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1201 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1210 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1211 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1212 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1220 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1221 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1222 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1223 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1230 }
+	add_to_array = { tom_inf_bat_12_platoons_array = 1240 }
+	
+	add_to_array = { tom_inf_bat_13_platoons_array = 1300 }
+	add_to_array = { tom_inf_bat_13_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_13_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_13_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_13_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_13_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_13_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_14_platoons_array = 1400 }
+	add_to_array = { tom_inf_bat_14_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_14_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_14_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_14_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_14_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_14_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_15_platoons_array = 1500 }
+	
+	add_to_array = { tom_inf_bat_20_platoons_array = 2000 }
+	add_to_array = { tom_inf_bat_20_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_20_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_20_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_20_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_20_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_20_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_21_platoons_array = 2100 }
+	add_to_array = { tom_inf_bat_21_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_21_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_21_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_21_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_21_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_21_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_22_platoons_array = 2200 }
+	add_to_array = { tom_inf_bat_22_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_22_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_22_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_22_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_22_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_22_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_23_platoons_array = 2300 }
+	add_to_array = { tom_inf_bat_23_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_23_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_23_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_23_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_23_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_23_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_24_platoons_array = 2400 }
+	add_to_array = { tom_inf_bat_24_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_24_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_24_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_24_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_24_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_24_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_30_platoons_array = 3000 }
+	add_to_array = { tom_inf_bat_30_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_30_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_30_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_30_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_30_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_30_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_32_platoons_array = 3200 }
+	add_to_array = { tom_inf_bat_32_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_32_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_32_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_32_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_32_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_32_platoons_array = 1021 }
+	
+	add_to_array = { tom_inf_bat_34_platoons_array = 3400 }
+	add_to_array = { tom_inf_bat_34_platoons_array = 1001 }
+	add_to_array = { tom_inf_bat_34_platoons_array = 1002 }
+	add_to_array = { tom_inf_bat_34_platoons_array = 1003 }
+	add_to_array = { tom_inf_bat_34_platoons_array = 1010 }
+	add_to_array = { tom_inf_bat_34_platoons_array = 1020 }
+	add_to_array = { tom_inf_bat_34_platoons_array = 1021 }
+}
+
+tom_inf_bat_startup_effect_stat_arrays = {
+	# Wether the stat is displayed as a Percentage (0) or a Whole Number (1)
+	add_to_array = { tom_inf_battalion_base_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 1 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 1 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 1 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 1 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_base_stats_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 0 }
+	add_to_array = { tom_inf_battalion_combat_stats_array = 1 }
+	
+	add_to_array = { tom_inf_battalion_equipment_stats_array_1 = 0 }
+	add_to_array = { tom_inf_battalion_equipment_stats_array_1 = 0 }
+}

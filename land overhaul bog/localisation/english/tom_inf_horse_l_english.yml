@@ -1,0 +1,26 @@
+﻿l_english:
+ 
+ tom_inf_horse_decisions:0 "Horse Population & Supply Motorization"
+ tom_inf_horse_decisions_desc:0 "Horses are vital to the war effort. They are not only present in cavalry, but also carry supplies and artillery pieces. Increased Mechanization has started to replace the horse in many places, but machines are expensive, less reliable and need oil. Only nations with vast resources and wealth can completely replace the horse.\n\n$tom_inf_horse_stats_tt$"
+ tom_inf_horse_stats_tt:0 "Current Civilian Horse Count: [?tom_inf_civilian_horse|*] \nArmy Horse Count: [?num_equipment_in_armies@tom_inf_horse|*] \nMonthly Horse Population Growth: [?tom_inf_horse_add|*=+] \nMonthly Horse Population Growth Factor: [?tom_inf_horse_mult|%=+] \n\nSupply Horses Needed: [?tom_horse_supply_needed|*] \nSupply Horses per Hub: [?tom_horse_supply_mult|*] \n\nSupply Trucks Needed: [?tom_truck_supply_needed|*] \nSupply Trucks per Hub: [?tom_truck_supply_mult|*] \nSupply Fuel Needed: [?tom_truck_supply_daily_fuel|*+]"
+
+ tom_inf_horse_mult:0 "Monthly Horse Population Growth Factor: $RIGHT|=+%$"
+ 
+ tom_inf_show_motorization:0 "Show Motorization Effects (Hover over)"
+ tom_inf_show_motorization_tt:0 "§CCurrent Motorization Effects:§!"
+ 
+ tom_inf_breeding_programs:0 "Horse Breeding Programs"
+ tom_inf_buy_horses:0 "Buy Foreign Horses"
+ 
+ tom_inf_increase_motorization_to_2:0 "Increase Motorization"
+ tom_inf_increase_motorization_to_3:0 "Increase Motorization"
+ tom_inf_increase_motorization_to_4:0 "Increase Motorization"
+ tom_inf_increase_motorization_to_5:0 "Increase Motorization"
+ 
+ tom_inf_decrease_motorization_to_1:0 "Decrease Motorization"
+ tom_inf_decrease_motorization_to_2:0 "Decrease Motorization"
+ tom_inf_decrease_motorization_to_3:0 "Decrease Motorization"
+ tom_inf_decrease_motorization_to_4:0 "Decrease Motorization"
+ 
+ tom_inf_horse_per_hub_tt:0 "Horses Needed per Supply Hub: $RIGHT$"
+ tom_inf_truck_per_hub_tt:0 "Truck Needed per Supply Hub: $RIGHT$"

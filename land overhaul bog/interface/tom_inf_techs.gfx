@@ -1,0 +1,118 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_horse_0_medium"
+		texturefile = "gfx/interface/technologies/generic_horse_0.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_lmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_lmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/generic_lmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_lmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/generic_lmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_lmg_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/generic_lmg_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_mmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_mmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/generic_mmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_mmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/generic_mmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_mmg_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/generic_mmg_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_hmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_hmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/generic_hmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_hmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/generic_hmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_hmg_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/generic_hmg_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mortar_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_mortar_0.dds"
+	}
+	spriteType = {
+		name = "GFX_mortar_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/generic_mortar_1.dds"
+	}
+	spriteType = {
+		name = "GFX_mortar_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/generic_mortar_2.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_at_rifle_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_at_rifle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_at_rocket_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_at_rocket.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sniper_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_sniper_0.dds"
+	}
+	spriteType = {
+		name = "GFX_sniper_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/generic_sniper_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_flamethrower_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/generic_flamethrower_0.dds"
+	}
+	spriteType = {
+		name = "GFX_flamethrower_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/generic_flamethrower_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_radio_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/radio_0.dds"
+	}
+	spriteType = {
+		name = "GFX_radio_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/radio_1.dds"
+	}
+	spriteType = {
+		name = "GFX_radio_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/radio_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tent_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/generic_tent.dds"
+	}
+}

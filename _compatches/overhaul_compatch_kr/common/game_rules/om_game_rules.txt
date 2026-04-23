@@ -1,0 +1,16 @@
+extra_research_slot_rule = {
+	name = "RULE_EXTRA_RESEARCH"
+	group = "RULE_GROUP_OM"
+
+	default = {
+		name = ENABLED
+		text = "RULE_RESEARCH_ENABLED"
+		desc = "RULE_RESEARCH_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DISABLED
+		text = "RULE_RESEARCH_DISABLED"
+		desc = "RULE_RESEARCH_DISABLED_DESC"
+	}
+}

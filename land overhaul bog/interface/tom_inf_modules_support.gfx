@@ -1,0 +1,134 @@
+spriteTypes = {
+	### CATEGORIES
+	spriteType = {
+		name = "GFX_EMI_mg_special_module"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rifle_cartridge.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### BARREL
+	spriteType = {
+		name = "GFX_EMI_mg_standard_barrel"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/barrel_standard.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_aircooled_barrel"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/barrel_air.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_watercooled_barrel"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/barrel_water.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### MOUNT
+	spriteType = {
+		name = "GFX_EMI_mg_foregrip"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/grip_foregrip.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_bipod"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/grip_bipod.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_tripod"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/grip_tripod.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### MAGAZINES
+	spriteType = {
+		name = "GFX_EMI_mg_belt_fed"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/magazine_belt_fed.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_magazine_020"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/magazine_20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_magazine_030"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/magazine_30.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_magazine_040"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/magazine_40.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_magazine_050"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/magazine_50.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_magazine_100"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/magazine_100.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### FIRE RATE
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_0400"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_400.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_0600"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_600.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_0800"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_800.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_1000"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_1000.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_1200"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_1200.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_1400"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_1400.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	### SPECIAL MODULES
+	spriteType = {
+		name = "GFX_EMI_mg_exchangeable_barrel"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/exchangeable_barrel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rifle_cartridge"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rifle_cartridge.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_anti_armor_ammunition"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/anti_armor_ammunition.dds"
+		legacy_lazy_load = no
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {		
+				tom_inf_bat_startup_effect_infantry = yes
+				tom_inf_bat_startup_effect_motorized = yes
+				tom_inf_bat_startup_effect_mechanized = yes
+				tom_inf_bat_startup_effect_cavalry = yes
+				tom_inf_bat_startup_effect_mountaineer = yes
+				tom_inf_bat_startup_effect_paratrooper = yes
+				tom_inf_bat_startup_effect_marine = yes
+				tom_inf_bat_startup_effect_marine_commando = yes
+				tom_inf_bat_startup_effect_ranger = yes
+				tom_inf_bat_startup_effect_mountaineers_mechanized = yes
+				tom_inf_bat_startup_effect_amphibious_mechanized = yes
+				tom_inf_bat_startup_effect_rangers_mechanized = yes
+				
+				tom_inf_bat_startup_effect_company_arrays = yes
+				
+				tom_inf_bat_add_battalion_flag_effect = yes
+				
+				tom_inf_bat_startup_effect_stat_arrays = yes
+				
+				set_technology = { tom_inf_trickleback_tech = 1 popup = no }
+				add_dynamic_modifier = { modifier = tom_inf_support_composition }
+			}
+			
+			every_country = {
+				limit = {
+					has_tech = infantry_weapons1
+				}
+				set_technology = { support_weapons = 1 popup = no }
+			}
+		}
+		
+		effect = {
+			every_country = {
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					mark_older_equipment_obsolete = yes
+					modules = {
+						support_equipment_1_slot = inf_grenade_frag
+						cartridge_slot = inf_cartridge_rifle_80
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_1
+					mark_older_equipment_obsolete = yes
+					modules = {
+						support_equipment_1_slot = inf_grenade_frag
+						cartridge_slot = inf_cartridge_rifle_80
+					}
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_2
+					mark_older_equipment_obsolete = yes
+					modules = {
+						support_equipment_1_slot = inf_grenade_frag
+						cartridge_slot = inf_cartridge_rifle_80
+					}
+				}
+				
+				create_equipment_variant = {
+					type = lmg_chassis_0
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = lmg_chassis_1
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = lmg_chassis_2
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = lmg_chassis_3
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				
+				create_equipment_variant = {
+					type = mmg_chassis_0
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = mmg_chassis_1
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = mmg_chassis_2
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = mmg_chassis_3
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				
+				create_equipment_variant = {
+					type = hmg_chassis_0
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = hmg_chassis_1
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = hmg_chassis_2
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+				create_equipment_variant = {
+					type = hmg_chassis_3
+					mark_older_equipment_obsolete = yes
+					modules = {
+						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+			}
+		}
+	}
+}

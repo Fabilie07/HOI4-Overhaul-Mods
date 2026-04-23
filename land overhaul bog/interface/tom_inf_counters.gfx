@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = { name = "GFX_unit_mountaineers_mechanized_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_mountaineers_mechanized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rangerss_mechanized_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_rangers_mechanized_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_armored_military_police_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_armored_military_police_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_mechanized_engineer_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_engineer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_vehicle_maintenance_company_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_vehicle_maintenance_company_icon.dds" noOfFrames = 2 } 
+	spriteType = { name = "GFX_unit_mot_logistics_company_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_mot_logistics_company_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_logistics_company_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_logistics_company_icon.dds" noOfFrames = 2 } 
+	spriteType = { name = "GFX_unit_mot_field_hospital_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_mot_field_hospital_icon.dds" noOfFrames = 2 } 
+	spriteType = { name = "GFX_unit_light_armored_signal_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_light_armor_signal_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_medium_armored_signal_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_medium_armor_signal_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_heavy_armored_signal_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_signal_icon.dds" noOfFrames = 2 }
+}
+
+
+
+
+
+

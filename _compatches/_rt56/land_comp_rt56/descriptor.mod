@@ -1,0 +1,12 @@
+version="1.01"
+tags={
+	"Fixes"
+}
+dependencies={
+	"NSB Tank Overhaul"
+	"NSB Tank Overhaul - In-Depth Designer Addon"
+	"The Road to 56"
+}
+name="[TOM] Rt56 Compatch"
+supported_version="1.18.*"
+remote_file_id="3407935714"

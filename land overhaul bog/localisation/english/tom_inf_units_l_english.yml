@@ -1,0 +1,32 @@
+﻿l_english:
+
+ mountaineers_mechanized:0 "Mechanized Mountaineers"
+ mountaineers_mechanized_desc:0 "Special Forces trained to use APCs in the harsh environment of mountains."
+ 
+ rangers_mechanized:0 "Mechanized Rangers"
+ rangers_mechanized_desc:0 "These units use the high mobility of APCs to fight in the thick forest."
+
+ 
+ mechanized_engineer:0 "Mechanized Engineer Company"
+ mechanized_engineer_desc:0 "Halftracks are more versatile and mobile than their heavier Counterparts."
+ 
+ armored_military_police:0 "Armored Military Police"
+ armored_military_police_desc:0 "Armored Cars offer protection against most weapons a Resistance Force can muster."
+ 
+ vehicle_maintenance_company:0 "Vehicle Maintenance Company"
+ vehicle_maintenance_company_desc:0 "This unit is specialized in towing disabled vehicles and repairing them."
+ 
+ mot_field_hospital:0 "Motorized Field Hospital"
+ mot_field_hospital_desc:0 "Using trucks, the field hospital can not only be moved together with fast units, but wounded troops can be carried faster, improving their chances of survival."
+ 
+ mot_logistics_company:0 "Motorized Logistics Company"
+ mot_logistics_company_desc:0 "Trucks can carry more supplies further, but they need fuel to run."
+ heavy_logistics_company:0 "Heavy Logistics Company"
+ heavy_logistics_company_desc:0 "Armored Halftracks can supply Support Elements without exposing the crew to surprise attacks."
+ 
+ light_armored_signal:0 "Light Command Vehicle Platoon"
+ light_armored_signal_desc:0 "Command Tanks carry more powerful Radio units, making them capable of communicating with other forces from the frontline."
+ medium_armored_signal:0 "Medium Command Vehicle Platoon"
+ medium_armored_signal_desc:0 "Command Tanks carry more powerful Radio units, making them capable of communicating with other forces from the frontline."
+ heavy_armored_signal:0 "Heavy Command Vehicle Platoon"
+ heavy_armored_signal_desc:0 "Command Tanks carry more powerful Radio units, making them capable of communicating with other forces from the frontline."

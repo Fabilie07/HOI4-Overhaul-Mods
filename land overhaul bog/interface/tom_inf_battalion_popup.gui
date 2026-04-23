@@ -1,0 +1,993 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_window"
+		position = { x=0 y=0 }
+		moveable = yes
+		size = { width=1092 height=553 }
+		orientation = CENTER
+		origo = center
+		
+		background = {
+			name = "Background"
+			spriteType ="GFX_tom_inf_battalion_designer_popup_bg"
+		}
+		
+		instantTextboxType = {
+			name = "designer_title"
+			position = { x = 335 y = 5 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "BATTALION DESIGNER"
+			maxWidth = 400
+			maxHeight = 20
+			format = centre
+		}
+		
+		buttonType = {
+			name = "close_button"
+			position = { x = -44 y = 6 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		
+		
+		iconType = {
+			name ="battalion_icon_bg"
+			spriteType = "GFX_tom_inf_new_battalion_slot"	
+			position = { x=41 y=62 }
+		}
+		
+		iconType = {
+			name ="battalion_icon"
+			spriteType = "GFX_unit_infantry_icon_medium"
+			position = { x=41 y=73 }
+		}
+		
+		containerWindowType = {
+			name = "battalion_name_bg"
+			position = { x=124 y=78 }
+			size = { width=220 height=30 }
+
+			background = {
+				name = "name_bg"
+				quadTextureSprite = "GFX_generic_background"
+				position = { x = 15 y = 0 }
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "name"
+				position = { x = 25 y = 5 }
+				font = "hoi_18mbs"
+				text = [tom_inf_bat_designer_battalion_name]
+				maxWidth = 164
+				maxHeight = 20
+				fixedsize = yes
+				format = left
+			}
+		}
+		
+		ButtonType = {
+			name = "reset_button"
+			position = { x=20 y=502 }
+			quadTextureSprite ="GFX_button_reset_123x34"
+			buttonText = "DESIGNER_RESET"
+			pdx_tooltip = "DESIGNER_RESET_DESC"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_default
+		}
+		
+		ButtonType = {
+			name = "debug_button"
+			position = { x=140 y=502 }
+			quadTextureSprite ="GFX_button_reset_123x34"
+			buttonText = "Debug Info"
+			pdx_tooltip = "Show internal variables"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_default
+		}
+
+		ButtonType = {
+			name = "save_button"
+			position = { x=392 y=502 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Save"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_default
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_companies"
+		position = { x=14 y=145 }	
+		size = { width=100% height=100%% }
+		
+		gridboxType = {
+			name = "company_grid"
+			position = { x=0 y=4 }
+			size = { width=432 height=400 }
+			slotsize = { width=82 height=400 }
+			max_slots_horizontal = 6
+			max_slots_vertical = 1
+			format = "UPPER_LEFT"
+		}
+		
+		gridboxType = {
+			name = "platoon_grid"
+			position = { x=0 y=64 }
+			size = { width=82 height=400 }
+			slotsize = { width=82 height=53 }
+			max_slots_horizontal = 6
+			max_slots_vertical = 5
+			format = "UPPER_LEFT"
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_add"
+		position = { x=2 y=40 }
+		size = { width=538 height=464 }
+		margin = { top = 14 bottom = 14 left = -5 right = 20 }
+		verticalScrollbar = "right_vertical_slider"
+		scroll_wheel_factor = 40
+		smooth_scrolling = yes
+
+		background = {
+			name = "background"
+			spriteType = "GFX_tiled_window_1b_border"
+		}
+		
+		iconType = {
+			name = "icn_module_slot_frame"
+			position = { x=17 y=4 }
+			spriteType = "GFX_equipment_module_bg"
+		}
+		
+		iconType = {
+			name = "icon_module_slot"
+			position = { x=56 y=28 }
+			#size = { width=76 height=47 }
+			spriteType = "GFX_locked_icon"
+			centerPosition = yes
+		}
+		
+		instantTextboxType = {
+			name = "slot_name"
+			position = { x=98 y=9 }
+			maxWidth = 350
+			maxHeight = 22
+			font = "hoi_18mbs"
+			text = "TOM_INF_BAT_DESIGNER_ADD_NAME"
+		}
+		
+		buttonType = {
+			name = "btn_back"
+			position = { x=390 y=9 }
+			spriteType = "GFX_button_123x34"
+			buttonText = "REGIMENTS_SELECTION_CANCEL"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_close
+		}
+
+		gridBoxType = {
+			name = "gb_modules"
+			position = { x=17 y=56 }
+			size = { width=510 height=10 }
+			slotsize = { width = 247 height = 69 } 
+			max_slots_horizontal = 2
+			format = UPPER_LEFT
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "tom_inf_bat_save_confirmation_popup"
+		position = { x = -225 y = -160 }
+		size = { width = 500 height = 260 }
+		orientation= center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		containerWindowType = {
+			name = "paper_background"
+			position = { x = 13 y = 75 }
+			size = { width = 474 height = 123 }
+
+			background = {
+				name = "Background"
+				#spriteType ="GFX_tiled_paper_bg"
+				spriteType = "GFX_agency_popup_bg"
+			}
+		}
+
+		iconType = {
+			name ="diplo_popup_header_bg"
+			spriteType = "GFX_diplo_popup_header_bg"
+			position = { x= 1 y = 8 }
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 72 y = 29 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Save Equipment"
+			format = center
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
+			truncate = yes
+		}
+		
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 72 y = 119 }
+			borderSize = {x = 0 y = 0}
+			text = "You are about to increase the amount of equipment in the Battalion. This cannot be undone. Are you sure?"
+			format = center
+			maxWidth = 350
+		}
+		
+		iconType = {
+			name ="diplo_popup_bottom"
+			spriteType = "GFX_diplo_popup_bottom"
+			position = { x= 3 y = 189 }
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=40 y = 203}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Cancel"
+			buttonFont = "hoi_18mbs"
+			shortcut = "ESCAPE"
+		}
+
+		buttonType = {
+			name = "send_button"
+			position = { x=340 y =203}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Save"
+			buttonFont = "hoi_18mbs"
+			shortcut = "RETURN"
+			clicksound = click_ok
+		}
+		
+	}
+	
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_stats"
+		position = { x=539 y=13}	
+		size = { width=100% height=100%% }
+		
+		instantTextboxType = {
+			name = "base_stats_label"
+			position = { x = 14 y = 34 }
+			font = "hoi4_typewriter22"
+			text = "DESIGNER_BASE_STATS_LABEL"
+			maxWidth = 165
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "combat_stats_label"
+			position = { x = 187 y = 34 }
+			font = "hoi4_typewriter22"
+			text = "DESIGNER_COMBAT_STATS_LABEL"
+			maxWidth = 165
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "equipment_stats_label"
+			position = { x = 362 y = 34 }
+			font = "hoi4_typewriter22"
+			text = "DESIGNER_EQUIPMENT_STATS_LABEL"
+			maxWidth = 165
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+		
+		gridboxType = {
+			name = "base_stats_grid"
+			position = { x=12 y=61 }
+			size = { width=173 height=220 }
+			slotsize = { width=173 height=20 }
+			max_slots_horizontal = 1
+			max_slots_vertical = 11
+			format = "UPPER_LEFT"
+		}
+		gridboxType = {
+			name = "combat_stats_grid"
+			position = { x=185 y=61 }
+			size = { width=173 height=220 }
+			slotsize = { width=173 height=20 }
+			max_slots_horizontal = 1
+			max_slots_vertical = 11
+			format = "UPPER_LEFT"
+		}
+		gridboxType = {
+			name = "equipment_stats_grid"
+			position = { x=364 y=61 }
+			size = { width=173 height=220 }
+			slotsize = { width=173 height=20 }
+			max_slots_horizontal = 1
+			max_slots_vertical = 2
+			format = "UPPER_LEFT"
+		}
+		gridboxType = {
+			name = "variable_equipment_stats_grid"
+			position = { x=360 y=101 }
+			size = { width=173 height=220 }
+			slotsize = { width=173 height=20 }
+			max_slots_horizontal = 1
+			max_slots_vertical = 11
+			format = "UPPER_LEFT"
+		}
+		gridboxType = {
+			name = "variable_equipment_stats_needed_grid"
+			position = { x=360 y=101 }
+			size = { width=173 height=220 }
+			slotsize = { width=173 height=20 }
+			max_slots_horizontal = 1
+			max_slots_vertical = 11
+			format = "UPPER_LEFT"
+		}
+		
+		containerWindowType = {
+			name = "battalion_equipment_bg"
+			position = { x=360 y=294 }
+			size = { width=160 height=32 }
+
+			background = {
+				name = "equipment_bg"
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+				alwaystransparent = yes
+			}
+		
+			instantTextboxType = {
+				name = "division_equipment"
+				position = { x = 11 y = 8 }
+				Text = "Equipment Information"
+				Font = "hoi_16mbs"
+				pdx_tooltip = TOM_INF_BATTALION_EQUIPMENT_TT
+				maxWidth = 148
+				maxHeight = 20
+			}
+		}
+		
+		
+		instantTextboxType = {
+			name = "base_maximum_speed"
+			position = { x = 12 y = 61 }
+			font = "hoi4_typewriter16"
+			text = "Max Speed:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_hp"
+			position = { x = 12 y = 81 }
+			font = "hoi4_typewriter16"
+			text = "HP:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_organization"
+			position = { x = 12 y = 101 }
+			font = "hoi4_typewriter16"
+			text = "Organization:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_recovery"
+			position = { x = 12 y = 121 }
+			font = "hoi4_typewriter16"
+			text = "Recovery Rate:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_recon"
+			position = { x = 12 y = 141 }
+			font = "hoi4_typewriter16"
+			text = "Reconnaissance:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_suppression"
+			position = { x = 12 y = 161 }
+			font = "hoi4_typewriter16"
+			text = "Suppression:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_weight"
+			position = { x = 12 y = 181 }
+			font = "hoi4_typewriter16"
+			text = "Weight:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_supply_use"
+			position = { x = 12 y = 201 }
+			font = "hoi4_typewriter16"
+			text = "Supply Use:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_reliability"
+			position = { x = 12 y = 221 }
+			font = "hoi4_typewriter16"
+			text = "Reliability Bonus:"
+			maxWidth = 124
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_hospital"
+			position = { x = 12 y = 241 }
+			font = "hoi4_typewriter16"
+			text = "Trickleback:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "base_exp_loss"
+			position = { x = 12 y = 261 }
+			font = "hoi4_typewriter16"
+			text = "Exp Loss:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		
+		
+		instantTextboxType = {
+			name = "combat_soft_attack"
+			position = { x = 185 y = 61 }
+			font = "hoi4_typewriter16"
+			text = "Soft Attack:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_hard_attack"
+			position = { x = 185 y = 81 }
+			font = "hoi4_typewriter16"
+			text = "Hard Attack:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_air_attack"
+			position = { x = 185 y = 101 }
+			font = "hoi4_typewriter16"
+			text = "Air Attack:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_defense"
+			position = { x = 185 y = 121 }
+			font = "hoi4_typewriter16"
+			text = "Defense:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_breakthrough"
+			position = { x = 185 y = 141 }
+			font = "hoi4_typewriter16"
+			text = "Breakthrough:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_armor_value"
+			position = { x = 185 y = 161 }
+			font = "hoi4_typewriter16"
+			text = "Armor:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_ap_attack"
+			position = { x = 185 y = 181 }
+			font = "hoi4_typewriter16"
+			text = "Piercing:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_initiative"
+			position = { x = 185 y = 201 }
+			font = "hoi4_typewriter16"
+			text = "Initiative:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_entrenchment"
+			position = { x = 185 y = 221 }
+			font = "hoi4_typewriter16"
+			text = "Entrenchment:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_eq_capture_ratio"
+			position = { x = 185 y = 241 }
+			font = "hoi4_typewriter16"
+			text = "Capture Ratio:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "combat_width"
+			position = { x = 185 y = 261 }
+			font = "hoi4_typewriter16"
+			text = "Combat Width:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		
+		instantTextboxType = {
+			name = "equipment_fuel_capacity"
+			position = { x = 360 y = 61 }
+			font = "hoi4_typewriter16"
+			text = "Fuel Capacity:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "equipment_fuel_usage"
+			position = { x = 360 y = 81 }
+			font = "hoi4_typewriter16"
+			text = "Fuel Usage:"
+			maxWidth = 112
+			maxHeight = 20
+		}
+		
+		# Rest of Equipment Stats input via Code
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_bat_terrain_window"
+		position = { x=539 y=296 }
+		size = { width=520 height=132 }
+		
+		gridboxType = {
+			name = "terrain_stats_grid"
+			position = { x=12 y=61 }
+			size = { width=173 height=220 }
+			slotsize = { width=103 height=62 }
+			max_slots_horizontal = 5
+			format = "UPPER_LEFT"
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_base_stats_entry"
+		
+		instantTextboxType = {
+			name = "stats_entry"
+			font = "hoi4_typewriter16"
+			format = right
+			maxWidth = 160
+			maxHeight = 20
+			text = TOM_INF_STAT_FORMAT_BASE
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_combat_stats_entry"
+		
+		instantTextboxType = {
+			name = "stats_entry"
+			font = "hoi4_typewriter16"
+			format = right
+			maxWidth = 160
+			maxHeight = 20
+			text = TOM_INF_STAT_FORMAT_COMBAT
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_equipment_1_stats_entry"
+		
+		instantTextboxType = {
+			name = "stats_entry"
+			font = "hoi4_typewriter16"
+			format = right
+			maxWidth = 160
+			maxHeight = 20
+			text = TOM_INF_STAT_FORMAT_EQUIPMENT_1
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_equipment_2_stats_entry"
+		
+		instantTextboxType = {
+			name = "name_entry"
+			font = "hoi4_typewriter16"
+			format = left
+			fixedsize = yes
+			maxWidth = 110
+			maxHeight = 10
+			text = TOM_INF_STAT_FORMAT_EQUIPMENT_2
+		}
+		
+		instantTextboxType = {
+			name = "stats_entry"
+			font = "hoi4_typewriter16"
+			format = right
+			maxWidth = 136
+			maxHeight = 20
+			text = [?tom_inf_bat_popup_equipment_stats_array_2_count^i]
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_equipment_needed_stats_entry"
+		
+		instantTextboxType = {
+			name = "stats_entry"
+			font = "hoi4_typewriter16"
+			format = right
+			maxWidth = 166
+			maxHeight = 20
+			text = "/[?v]"
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "tom_inf_bat_terrain_entry"
+		
+		iconType = {
+			name = "terrain_icon"
+			position = { x=19 y=12 }
+			spriteType = "GFX_adjuster_hills_bg"
+		}
+		iconType = {
+			name = "terrain_frame"
+			position = { x=7 y=5 }
+			spriteType = "GFX_terrain_mod_frame"
+			pdx_tooltip = TOM_INF_TERRAIN_TT
+		}
+		
+		iconType = {
+			name = "terrain_movement"
+			position = { x=11 y=42 }
+			spriteType = "GFX_terrain_mod_movement_strip"
+			pdx_tooltip = TOM_INF_TERRAIN_MOVEMENT_TT
+			frame = 3
+		}
+		iconType = {
+			name = "terrain_attack"
+			position = { x=34 y=42 }
+			spriteType = "GFX_terrain_mod_attack_strip"
+			pdx_tooltip = TOM_INF_TERRAIN_ATTACK_TT
+			frame = 3
+		}
+		iconType = {
+			name = "terrain_defense"
+			position = { x=56 y=42 }
+			spriteType = "GFX_terrain_mod_defense_strip"
+			pdx_tooltip = TOM_INF_TERRAIN_DEFENSE_TT
+			frame = 3
+		}
+	}
+	
+	
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_company_entry"
+		
+		iconType = {
+			name = "company_bg"
+			position = { x=9 y=0 }
+			spriteType = GFX_tom_inf_new_company_slot
+		}
+		
+		containerWindowType = {
+			name = "tom_inf_company_platoon_bg"
+			position = { x = 6 y = 54 }
+			size = { width = 84 height= 280 }
+			
+			background = {
+				spriteType = "GFX_tiled_decisions_bg_small"
+			}
+		}
+		
+		buttonType = {
+			name = "company_button"
+			position = { x=9 y=11 }
+			quadTextureSprite = "GFX_tom_inf_infantry_subunit_slot_icon"
+			frame = 1
+		}
+		
+		instantTextboxType = {
+			name = "debug_value_text_company"
+			position = { x=9 y=11 }
+			text = "[?company_value]"
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_platoon_entry"
+		
+		iconType = {
+			name = "platoon_bg"
+			position = { x=9 y=0 }
+			spriteType = GFX_tom_inf_new_platoon_slot
+		}
+		
+		buttonType = {
+			name = "platoon_button"
+			position = { x=9 y=11 }
+			quadTextureSprite = "GFX_tom_inf_infantry_subunit_slot_icon"
+			frame = 1
+		}
+		
+		instantTextboxType = {
+			name = "debug_value_text_platoon"
+			position = { x=9 y=11 }
+			text = "[?platoon_value]"
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_add_entry"
+		size = { width=244 height=66 }
+
+		background = {
+			name = "background"
+			spriteType ="GFX_mini_tooltip"
+		}
+		
+		buttonType = {
+			name = "platoon_add_button"
+			spriteType = "GFX_tom_inf_add_platoon_button"
+			position = { x=8 y=8 }
+			pdx_tooltip = TOM_INF_BAT_DESIGNER_ADD_PLATOON_DESC
+		}
+
+		iconType = {
+			name ="equipment_icon"
+			spriteType = "GFX_tom_inf_infantry_subunit_slot_icon"
+			position = { x=6 y=12 }
+			frame = 1
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x=85 y=10 }
+			font = "hoi_18mbs"
+			text = TOM_INF_BAT_DESIGNER_ADD_PLATOON_NAME
+			maxWidth = 155
+			maxHeight = 22
+			multiline = yes
+			format = left
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "validity_icon"
+			spriteType = "GFX_module_requirements"
+			position = { x=5 y=5 }
+			alwaystransparent = yes
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "tom_inf_bat_debug_popup"
+		position = { x = -225 y = -160 }
+		size = { width = 1280 height = 720 }
+		orientation = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 72 y = 29 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "DEBUG"
+			format = center
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
+			truncate = yes
+		}
+		
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 32 y = 70 }
+			borderSize = {x = 0 y = 0}
+			text = debug_counts_infantry_tt
+			format = left
+			maxWidth = 350
+		}
+		
+		instantTextBoxType = {
+			name = "current_text"
+			position = { x = 302 y = 70 }
+			borderSize = {x = 0 y = 0}
+			text = debug_current_tt
+			format = left
+			maxWidth = 350
+		}
+		
+		instantTextBoxType = {
+			name = "support_1001_flag"
+			position = { x = 302 y = 130 }
+			borderSize = {x = 0 y = 0}
+			text = "tom_inf_bat_support_1001:"
+			format = left
+			maxWidth = 350
+		}
+		instantTextBoxType = {
+			name = "support_1002_flag"
+			position = { x = 302 y = 170 }
+			borderSize = {x = 0 y = 0}
+			text = "tom_inf_bat_support_1002:"
+			format = left
+			maxWidth = 350
+		}
+		instantTextBoxType = {
+			name = "support_1003_flag"
+			position = { x = 302 y = 210 }
+			borderSize = {x = 0 y = 0}
+			text = "tom_inf_bat_support_1003:"
+			format = left
+			maxWidth = 350
+		}
+		instantTextBoxType = {
+			name = "support_1010_flag"
+			position = { x = 302 y = 250 }
+			borderSize = {x = 0 y = 0}
+			text = "tom_inf_bat_support_1010:"
+			format = left
+			maxWidth = 350
+		}
+		instantTextBoxType = {
+			name = "support_1020_flag"
+			position = { x = 302 y = 290 }
+			borderSize = {x = 0 y = 0}
+			text = "tom_inf_bat_support_1020:"
+			format = left
+			maxWidth = 350
+		}
+		instantTextBoxType = {
+			name = "support_1021_flag"
+			position = { x = 302 y = 330 }
+			borderSize = {x = 0 y = 0}
+			text = "tom_inf_bat_support_1021:"
+			format = left
+			maxWidth = 350
+		}
+		
+		iconType = {
+			name = "suport_bg_1001_icon"
+			position = { x = 512 y = 124 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 1
+		}
+		iconType = {
+			name = "suport_bg_1002_icon"
+			position = { x = 512 y = 164 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 1
+		}
+		iconType = {
+			name = "suport_bg_1003_icon"
+			position = { x = 512 y = 204 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 1
+		}
+		iconType = {
+			name = "suport_bg_1010_icon"
+			position = { x = 512 y = 244 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 1
+		}
+		iconType = {
+			name = "suport_bg_1020_icon"
+			position = { x = 512 y = 284 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 1
+		}
+		iconType = {
+			name = "suport_bg_1021_icon"
+			position = { x = 512 y = 324 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 1
+		}
+		
+		iconType = {
+			name = "support_1001_icon"
+			position = { x = 512 y = 124 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 2
+		}
+		iconType = {
+			name = "support_1002_icon"
+			position = { x = 512 y = 164 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 2
+		}
+		iconType = {
+			name = "support_1003_icon"
+			position = { x = 512 y = 204 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 2
+		}
+		iconType = {
+			name = "support_1010_icon"
+			position = { x = 512 y = 244 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 2
+		}
+		iconType = {
+			name = "support_1020_icon"
+			position = { x = 512 y = 284 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 2
+		}
+		iconType = {
+			name = "support_1021_icon"
+			position = { x = 512 y = 324 }
+			spriteType = "GFX_generic_checkbox"
+			frame = 2
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=40 y = 663}
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Close Debug"
+			buttonFont = "hoi_18mbs"
+			shortcut = "ESCAPE"
+		}
+	}
+}

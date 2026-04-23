@@ -1,0 +1,13 @@
+version="0.11"
+tags={
+	"Fixes"
+}
+dependencies={
+	"The Road to 56"
+	"Vanilla Navy Rework"
+	"BBA Aircraft Overhaul"
+	"NSB Tank Overhaul"
+}
+name="[Rt56] (VNR / TOM / AOM) Compatch"
+supported_version="1.18.*"
+remote_file_id="3320652261"

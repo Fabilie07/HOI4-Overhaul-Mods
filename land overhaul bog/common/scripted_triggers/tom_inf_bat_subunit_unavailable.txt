@@ -1,0 +1,295 @@
+tom_inf_subunit_unavailable_trigger = {
+	NOT = { check_variable = { v = -1 } }
+	OR = {
+		AND = {
+			check_variable = { v = 10 }
+			check_variable = { tom_inf_bat_popup_10_count = tom_inf_bat_popup_10_max }
+		}
+		
+		AND = {
+			check_variable = { v = 11 }
+			check_variable = { tom_inf_bat_popup_11_count = tom_inf_bat_popup_11_max }
+		}
+		
+		AND = {
+			check_variable = { v = 12 }
+			check_variable = { tom_inf_bat_popup_12_count = tom_inf_bat_popup_12_max }
+		}
+		
+		AND = {
+			check_variable = { v = 20 }
+			check_variable = { tom_inf_bat_popup_20_count = tom_inf_bat_popup_20_max }
+		}
+		
+		AND = {
+			check_variable = { v = 21 }
+			check_variable = { tom_inf_bat_popup_21_count = tom_inf_bat_popup_21_max }
+		}
+		
+		AND = {
+			check_variable = { v = 22 }
+			check_variable = { tom_inf_bat_popup_22_count = tom_inf_bat_popup_22_max }
+		}
+		
+		AND = {
+			check_variable = { v = 23 }
+			check_variable = { tom_inf_bat_popup_23_count = tom_inf_bat_popup_23_max }
+		}
+		
+		AND = {
+			check_variable = { v = 24 }
+			check_variable = { tom_inf_bat_popup_24_count = tom_inf_bat_popup_24_max }
+		}
+	
+		AND = {
+			check_variable = { v = 1000 }
+			check_variable = { tom_inf_bat_popup_1000_count = tom_inf_bat_popup_1000_max }
+		}
+		AND = {
+			check_variable = { v = 1001 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1001_count = tom_inf_bat_popup_1001_max }
+				has_country_flag = tom_inf_bat_support_1001
+			}
+		}
+		AND = {
+			check_variable = { v = 1002 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1002_count = tom_inf_bat_popup_1002_max }
+				NOT = { has_tech = support_weapons }
+				has_country_flag = tom_inf_bat_support_1002
+			}
+		}
+		AND = {
+			check_variable = { v = 1003 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1003_count = tom_inf_bat_popup_1003_max }
+				NOT = { has_tech = support_weapons }
+				has_country_flag = tom_inf_bat_support_1003
+			}
+		}
+		AND = {
+			check_variable = { v = 1010 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1010_count = tom_inf_bat_popup_1010_max }
+				NOT = { has_tech = support_weapons }
+				has_country_flag = tom_inf_bat_support_1010
+			}
+		}
+		AND = {
+			check_variable = { v = 1020 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1020_count = tom_inf_bat_popup_1020_max }
+				NOT = { has_tech = support_weapons2 }
+				has_country_flag = tom_inf_bat_support_1020
+			}
+		}
+		AND = {
+			check_variable = { v = 1021 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1021_count = tom_inf_bat_popup_1021_max }
+				NOT = { has_tech = infantry_at2 }
+				has_country_flag = tom_inf_bat_support_1021
+			}
+		}
+		
+		AND = {
+			check_variable = { v = 1100 }
+			check_variable = { tom_inf_bat_popup_1001_count > 0 }
+		}
+		AND = {
+			check_variable = { v = 1101 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1002_count > 0 }
+				NOT = { has_tech = support_weapons }
+			}
+		}
+		AND = {
+			check_variable = { v = 1102 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1003_count > 0 }
+				NOT = { has_tech = support_weapons }
+			}
+		}
+		AND = {
+			check_variable = { v = 1110 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1010_count > 0 }
+				NOT = { has_tech = support_weapons }
+			}
+		}
+		AND = {
+			check_variable = { v = 1111 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1111_count > 0 }
+				check_variable = { tom_inf_bat_popup_1112_count > 0 }
+				NOT = { has_tech = gw_artillery }
+			}
+		}
+		AND = {
+			check_variable = { v = 1112 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1111_count > 0 }
+				check_variable = { tom_inf_bat_popup_1112_count > 0 }
+				NOT = { is_special_project_completed = sp:sp_land_super_heavy_howitzer }
+			}
+		}
+		AND = {
+			check_variable = { v = 1120 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1020_count > 0 }
+				NOT = { has_tech = support_weapons2 }
+			}
+		}
+		AND = {
+			check_variable = { v = 1121 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1121_count > 0 }
+				NOT = { has_tech = interwar_antitank }
+			}
+		}
+		AND = {
+			check_variable = { v = 1122 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1021_count > 0 }
+				NOT = { has_tech = infantry_at2 }
+			}
+		}
+		AND = {
+			check_variable = { v = 1130 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1130_count > 0 }
+				NOT = { has_tech = interwar_antiair }
+			}
+		}
+		
+		AND = {
+			check_variable = { v = 1200 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1200_count > 0 }
+				check_variable = { tom_inf_bat_popup_1201_count > 0 }
+				NOT = { has_tech = tech_trucks }
+				has_country_flag = tom_inf_bat_current_motorized
+				has_country_flag = tom_inf_bat_current_mechanized
+				has_country_flag = tom_inf_bat_current_cavalry
+				has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+				has_country_flag = tom_inf_bat_current_amphibious_mechanized
+				has_country_flag = tom_inf_bat_current_rangers_mechanized
+			}
+		}
+		AND = {
+			check_variable = { v = 1201 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1200_count > 0 }
+				check_variable = { tom_inf_bat_popup_1201_count > 0 }
+				NOT = { has_tech = mechanised_infantry }
+				has_country_flag = tom_inf_bat_current_motorized
+				has_country_flag = tom_inf_bat_current_mechanized
+				has_country_flag = tom_inf_bat_current_cavalry
+				has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+				has_country_flag = tom_inf_bat_current_amphibious_mechanized
+				has_country_flag = tom_inf_bat_current_rangers_mechanized
+			}
+		}
+		AND = {
+			check_variable = { v = 1210 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1210_count > 0 }
+				check_variable = { tom_inf_bat_popup_1211_count > 0 }
+				NOT = { has_tech = tech_engineers }
+			}
+		}
+		AND = {
+			check_variable = { v = 1211 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1210_count > 0 }
+				check_variable = { tom_inf_bat_popup_1211_count > 0 }
+				NOT = { has_tech = tech_engineers }
+			}
+		}
+		AND = {
+			check_variable = { v = 1212 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1212_count > 0 }
+				NOT = { has_tech = tech_engineers }
+			}
+		}
+		AND = {
+			check_variable = { v = 1220 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1220_count > 0 }
+				check_variable = { tom_inf_bat_popup_1221_count > 0 }
+				check_variable = { tom_inf_bat_popup_1222_count > 0 }
+				NOT = { has_tech = tech_recon }
+			}
+		}
+		AND = {
+			check_variable = { v = 1221 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1220_count > 0 }
+				check_variable = { tom_inf_bat_popup_1221_count > 0 }
+				check_variable = { tom_inf_bat_popup_1222_count > 0 }
+				NOT = { has_tech = tech_recon }
+				NOT = { has_tech = tech_trucks }
+			}
+		}
+		AND = {
+			check_variable = { v = 1222 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1220_count > 0 }
+				check_variable = { tom_inf_bat_popup_1221_count > 0 }
+				check_variable = { tom_inf_bat_popup_1222_count > 0 }
+				NOT = { has_tech = tech_recon }
+				NOT = { has_tech = armored_car1 }
+			}
+		}
+		AND = {
+			check_variable = { v = 1223 }
+			check_variable = { tom_inf_bat_popup_1223_count > 0 }
+		}
+		AND = {
+			check_variable = { v = 1230 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1230_count > 0 }
+				NOT = { has_tech = tech_field_hospital }
+			}
+		}
+		AND = {
+			check_variable = { v = 1240 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1240_count > 0 }
+				NOT = { has_tech = tech_signal_company }
+			}
+		}
+		
+		AND = {
+			check_variable = { v = 1300 }
+			check_variable = { tom_inf_bat_popup_1300_count = tom_inf_bat_popup_1300_max }
+		}
+		
+		AND = {
+			check_variable = { v = 2000 }
+			check_variable = { tom_inf_bat_popup_2000_count = tom_inf_bat_popup_2000_max }
+		}
+		
+		AND = {
+			check_variable = { v = 2100 }
+			check_variable = { tom_inf_bat_popup_2100_count = tom_inf_bat_popup_2100_max }
+		}
+		
+		AND = {
+			check_variable = { v = 2200 }
+			check_variable = { tom_inf_bat_popup_2200_count = tom_inf_bat_popup_2200_max }
+		}
+		
+		AND = {
+			check_variable = { v = 2300 }
+			check_variable = { tom_inf_bat_popup_2300_count = tom_inf_bat_popup_2300_max }
+		}
+		
+		AND = {
+			check_variable = { v = 2400 }
+			check_variable = { tom_inf_bat_popup_2400_count = tom_inf_bat_popup_2400_max }
+		}
+	}
+}

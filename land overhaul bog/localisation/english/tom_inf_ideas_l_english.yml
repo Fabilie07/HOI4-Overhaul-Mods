@@ -1,0 +1,10 @@
+﻿l_english:
+
+ tom_inf_motorization_level_1:0 "No Supply Motorisation"
+ tom_inf_motorization_level_2:0 "Selective Supply Motorisation"
+ tom_inf_motorization_level_3:0 "Basic Supply Motorisation"
+ tom_inf_motorization_level_4:0 "Widespread Supply Motorisation"
+ tom_inf_motorization_level_5:0 "Complete Supply Motorisation"
+ 
+ tom_inf_supply_deficit:0 "Supply Chains Overburdened"
+ tom_inf_supply_deficit_desc:0 "The nation's supply chains do not have enough transport to deliver vital supplies to the frontline. This bottleneck is causing serious issues. \n\n[tom_inf_supplies_deficit_loc]"
