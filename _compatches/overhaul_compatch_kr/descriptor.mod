@@ -8,6 +8,6 @@ dependencies={
 	"MTG Navy Overhaul"
 	"Kaiserreich"
 }
-name="[Kaiserreich] Overhaul Mod Compatch"
+name="*DEV* [Kaiserreich] Overhaul Mod Compatch"
 supported_version="1.18.*"
 remote_file_id="3660100840"

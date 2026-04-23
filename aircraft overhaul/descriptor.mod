@@ -10,6 +10,6 @@ dependencies={
 	"Extended Tech Tree 1960"
 	"Kaiserreich"
 }
-name="BBA Aircraft Overhaul"
+name="*DEV* BBA Aircraft Overhaul"
 supported_version="1.17.*"
 remote_file_id="3253382601"

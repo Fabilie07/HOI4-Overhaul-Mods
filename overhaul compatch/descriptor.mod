@@ -7,6 +7,6 @@ dependencies={
 	"NSB Tank Overhaul"
 	"MTG Navy Overhaul"
 }
-name="Overhaul Mod Compatch"
+name="*DEV* Overhaul Mod Compatch"
 supported_version="1.17.*"
 remote_file_id="3347531905"

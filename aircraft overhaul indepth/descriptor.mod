@@ -5,6 +5,6 @@ tags={
 dependencies={
 	"BBA Aircraft Overhaul"
 }
-name="BBA Aircraft Overhaul - In-Depth Designer Addon"
+name="*DEV* BBA Aircraft Overhaul - In-Depth Designer Addon"
 supported_version="1.17.*"
 remote_file_id="3698672848"

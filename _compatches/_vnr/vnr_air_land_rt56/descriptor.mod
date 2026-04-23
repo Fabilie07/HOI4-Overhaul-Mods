@@ -8,6 +8,6 @@ dependencies={
 	"BBA Aircraft Overhaul"
 	"NSB Tank Overhaul"
 }
-name="[Rt56] (VNR / TOM / AOM) Compatch"
+name="*DEV* [Rt56] (VNR / TOM / AOM) Compatch"
 supported_version="1.18.*"
 remote_file_id="3320652261"

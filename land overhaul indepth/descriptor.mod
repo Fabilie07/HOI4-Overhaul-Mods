@@ -7,6 +7,6 @@ tags={
 dependencies={
 	"NSB Tank Overhaul"
 }
-name="NSB Tank Overhaul - In-Depth Designer Addon"
+name="*DEV* NSB Tank Overhaul - In-Depth Designer Addon"
 supported_version="1.17.*"
 remote_file_id="3361759799"

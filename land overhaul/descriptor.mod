@@ -11,6 +11,6 @@ dependencies={
 	"Ryifer's Combat System - 1.15"
 	"Kaiserreich"
 }
-name="NSB Tank Overhaul"
+name="*DEV* NSB Tank Overhaul"
 supported_version="1.18.*"
 remote_file_id="3279528602"

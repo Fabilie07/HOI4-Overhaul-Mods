@@ -10,6 +10,6 @@ dependencies={
 	"Equestria at War"
 	"Kaiserreich"
 }
-name="MTG Navy Overhaul"
+name="*DEV* MTG Navy Overhaul"
 supported_version="1.17.*"
 remote_file_id="3345879306"

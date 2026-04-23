@@ -9,6 +9,6 @@ dependencies={
 	"NSB Tank Overhaul - In-Depth Designer Addon"
 	"MTG Navy Overhaul"
 }
-name="[Rt56] Overhaul Mod Compatch"
+name="*DEV* [Rt56] Overhaul Mod Compatch"
 supported_version="1.18.*"
 remote_file_id="3347707807"

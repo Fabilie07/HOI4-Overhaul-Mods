@@ -5,6 +5,6 @@ tags={
 dependencies={
 	"MTG Navy Overhaul"
 }
-name="MTG Navy Overhaul - Changing Dockyard Limits"
+name="*DEV* MTG Navy Overhaul - Changing Dockyard Limits"
 supported_version="1.17.*"
 remote_file_id="3692857653"
