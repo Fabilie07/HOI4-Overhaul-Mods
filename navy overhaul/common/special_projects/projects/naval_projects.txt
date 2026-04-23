@@ -56,7 +56,7 @@ sp_naval_cruiser_submarine = {
 			limit = {
 				has_dlc = "Man the Guns"
 			}
-			ship_hull_cruiser_submarine
+			ship_hull_cruiser_submarine_3
 		}
 		enable_equipments = {	
 			limit = {
@@ -77,7 +77,7 @@ sp_naval_cruiser_submarine = {
 					name = sp_naval_cruiser_submarine_free_design
 					uses = 1
 					cost_factor = 1
-					equipment = ship_hull_cruiser_submarine
+					equipment = ship_hull_cruiser_submarine_3
 				}
 			}
 		}

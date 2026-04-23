@@ -13,7 +13,6 @@ equipments = {
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
 				allowed_module_categories = {
-					carrier_ship_engine
 					heavy_ship_engine
 				}
 			}
@@ -22,22 +21,12 @@ equipments = {
 
 			fixed_ship_armor_slot = {
 				allowed_module_categories = {
-					ship_cruiser_armor
+					ship_super_heavy_armor
 					ship_heavy_armor
 				}
 			}
-			fixed_ship_deck_slot = {
-				allowed_module_categories = {
-					ship_medium_deck_armor
-					ship_heavy_deck_armor
-				}
-			}
-			fixed_ship_citadel_slot = {
-				allowed_module_categories = {
-					ship_medium_citadel
-					ship_heavy_citadel
-				}
-			}
+			fixed_ship_deck_slot = inherit
+			fixed_ship_hangar_slot = inherit
 			fixed_ship_damage_control_slot = inherit
 			fixed_ship_torpedo_protection_slot = inherit
 			fixed_ship_ammo_1_slot = inherit
@@ -53,42 +42,10 @@ equipments = {
 					ship_carrier_rear
 				}
 			}
-			mid_1_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-					ship_secondaries
-					ship_dp_secondaries
-					ship_anti_air
-				}
-			}
-			mid_2_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-					ship_secondaries
-					ship_dp_secondaries
-					ship_anti_air
-				}
-			}
-			mid_3_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-					ship_secondaries
-					ship_dp_secondaries
-					ship_anti_air
-				}
-			}
-			mid_4_custom_slot = {
-				required = no
-				allowed_module_categories = {
-					ship_deck_space
-					ship_secondaries
-					ship_dp_secondaries
-					ship_anti_air
-				}
-			}
+			deck_1_custom_slot = inherit
+			deck_2_custom_slot = inherit
+			deck_3_custom_slot = inherit
+			deck_4_custom_slot = inherit
 			front_1_custom_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -120,24 +77,24 @@ equipments = {
 		}
 
 		surface_visibility = 35
-		carrier_size = 8
+		carrier_size = 14
 
 		default_modules = {
 			fixed_ship_engine_slot = heavy_ship_engine_1
 		}
-		naval_range = 5000
-		reliability = 0.75
+		naval_range = 5500
+		reliability = 0.8
 		max_strength = 500
 		naval_speed = 24
-		naval_dominance_factor = 500
+		naval_dominance_factor = 450
 
 
-		build_cost_ic = 5000
+		build_cost_ic = 6000
 		resources = {
-			steel = 4
+			steel = 3
 			chromium = 1
 		}
-		manpower = 10000
+		manpower = 2500
 	}
 	
 	
@@ -198,6 +155,10 @@ equipments = {
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
 		}
+		
+		default_modules = {
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+		}
 
 		carrier_size = 0
 		naval_range = 2000
@@ -222,7 +183,7 @@ equipments = {
 		year = 1930
 		visual_level = 0
 		archetype = ship_hull_carrier
-		can_convert_from = { ship_hull_early_heavy_cruiser_3 ship_hull_heavy_cruiser_1 ship_hull_heavy_cruiser_2 }
+		can_convert_from = { ship_hull_early_heavy_cruiser_3 ship_hull_heavy_cruiser_1 ship_hull_heavy_cruiser_2 ship_hull_cruiser_panzerschiff }
 		module_slots = {
 			fixed_ship_radio_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
@@ -271,6 +232,10 @@ equipments = {
 			left_2_custom_slot = right_1_custom_slot
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
+		}
+		
+		default_modules = {
+			fixed_ship_engine_slot = cruiser_ship_engine_1
 		}
 
 		carrier_size = 0
@@ -365,7 +330,7 @@ equipments = {
 		}
 		naval_range = 2000
 		reliability = 0.7
-		max_strength = 80
+		max_strength = 150
 		naval_speed = 16
 		naval_dominance_factor = 100
 
@@ -390,13 +355,13 @@ equipments = {
 		
 		naval_range = 2250
 		
-		max_strength = 100
+		max_strength = 200
 		naval_speed = 18
 		reliability = 0.75
 		build_cost_ic = 2500
 
 		manpower = 900
-		naval_dominance_factor = 100
+		naval_dominance_factor = 150
 	}
 
 	ship_hull_carrier_conversion_bb_2 = {
@@ -412,13 +377,13 @@ equipments = {
 		naval_range = 3300
 		
 		carrier_size = 6
-		max_strength = 140
+		max_strength = 250
 		naval_speed = 20
 		reliability = 0.8
 		build_cost_ic = 3200
 
-		manpower = 1600
-		naval_dominance_factor = 100
+		manpower = 1200
+		naval_dominance_factor = 200
 	}
 	
 	ship_hull_carrier_conversion_bb_3 = {
@@ -434,13 +399,13 @@ equipments = {
 		carrier_size = 8
 		naval_range = 5000
 		reliability = 0.85
-		max_strength = 180
+		max_strength = 300
 		naval_speed = 26
-		naval_dominance_factor = 400
+		naval_dominance_factor = 250
 
 
 		build_cost_ic = 3500
-		manpower = 5000
+		manpower = 1500
 	}
 	
 	### Battlecruiser
@@ -529,6 +494,19 @@ equipments = {
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_conversion_bc_0
 		can_convert_from = { ship_hull_battlecruiser_3 }
+		module_slots = inherit
+		
+		carrier_size = 4
+		
+		naval_range = 4000
+		
+		max_strength = 100
+		naval_speed = 27
+		reliability = 0.75
+		build_cost_ic = 2700
+
+		manpower = 1200
+		naval_dominance_factor = 150
 	}
 	
 	ship_hull_carrier_conversion_bc_2 = {
@@ -538,6 +516,19 @@ equipments = {
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_conversion_bc_1
 		can_convert_from = { ship_hull_battlecruiser_4 }
+		module_slots = inherit
+		
+		carrier_size = 10
+		
+		naval_range = 4500
+		
+		max_strength = 130
+		naval_speed = 28
+		reliability = 0.75
+		build_cost_ic = 3300
+
+		manpower = 1300
+		naval_dominance_factor = 200
 	}
 	
 	ship_hull_carrier_conversion_bc_3 = {
@@ -547,6 +538,20 @@ equipments = {
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_conversion_bc_2
 		can_convert_from = { ship_hull_modern_battlecruiser }
+		
+		module_slots = inherit
+		
+		carrier_size = 10
+		
+		naval_range = 6800
+		
+		max_strength = 250
+		naval_speed = 28
+		reliability = 0.9
+		build_cost_ic = 2800
+
+		manpower = 1300
+		naval_dominance_factor = 200
 	}
 
 	ship_hull_carrier_hybrid_bb = {
@@ -554,9 +559,8 @@ equipments = {
 		year = 1922
 		visual_level = 0
 		archetype = ship_hull_carrier
-		parent = ship_hull_carrier_conversion_bb
 		priority = 1100
-		can_convert_from = { ship_hull_heavy_1 ship_hull_heavy_2 ship_hull_heavy_3 ship_hull_heavy_4 ship_hull_carrier_conversion_bb }
+		can_convert_from = { ship_hull_heavy_1 ship_hull_heavy_2 ship_hull_heavy_3 ship_hull_heavy_4 }
 		module_slots = {
 			fixed_ship_radio_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
@@ -710,9 +714,8 @@ equipments = {
 		year = 1922
 		visual_level = 0
 		archetype = ship_hull_carrier
-		parent = ship_hull_carrier_conversion_ca
 		priority = 1200
-		can_convert_from = { ship_hull_cruiser_1 ship_hull_cruiser_2 ship_hull_cruiser_3 ship_hull_cruiser_4 ship_hull_cruiser_panzerschiff ship_hull_carrier_conversion_ca }
+		can_convert_from = { ship_hull_cruiser_1 ship_hull_cruiser_2 ship_hull_cruiser_3 ship_hull_cruiser_4 ship_hull_cruiser_panzerschiff }
 		module_slots = {
 			fixed_ship_radio_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit

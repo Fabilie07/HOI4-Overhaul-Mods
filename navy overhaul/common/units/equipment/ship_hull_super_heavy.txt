@@ -1,12 +1,38 @@
 equipments = {
-	ship_hull_super_heavy_1 = {
-		abbreviation = "hcg"
-		year = 1940
+	ship_hull_super_heavy = {
+		year = 1900
 
-		archetype = ship_hull_heavy
+		can_be_produced = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
+			}
+		}
+
+		is_archetype = yes
+		is_buildable = no
+		type = capital_ship
 		model = super_heavy_battleship
 		visual_level = 1
 		priority = 1400
+		interface_category = interface_category_capital_ships
+
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+		
 		module_slots = {
 			fixed_ship_radio_slot = {
 				required = no
@@ -197,21 +223,27 @@ equipments = {
 		naval_range = 4500
 		naval_speed = 24
 		max_strength = 700
-		fuel_consumption = 75
+		fuel_consumption = 45
 		reliability = 0.80
-		build_cost_ic = 4000
+		build_cost_ic = 6000
 		naval_dominance_factor = 450
 		resources = {
 			steel = 3
 			chromium = 1
 		}
-		manpower = 9000
+		manpower = 2500
+	}
+	
+	ship_hull_super_heavy_1 = {
+		archetype = ship_hull_super_heavy
+		year = 1936
+		module_slots = inherit
 	}
 
 	SH_battleship_1 = {
 		year = 1936
 		visual_level = 0
-		archetype = ship_hull_heavy
+		archetype = ship_hull_super_heavy
 		model = super_heavy_battleship
 		priority = 1400
 		module_slots = {

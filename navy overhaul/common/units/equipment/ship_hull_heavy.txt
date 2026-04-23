@@ -537,7 +537,7 @@ equipments = {
 		
 		max_strength = 500
 		naval_speed = 27
-		fuel_consumption = 75
+		fuel_consumption = 35
 		reliability = 0.95
 		build_cost_ic = 3300
 		resources = {
