@@ -3,7 +3,7 @@ tags={
 	"Balance"
 }
 dependencies={
-	"MTG Navy Overhaul"
+	"*DEV* MTG Navy Overhaul"
 }
 name="*DEV* MTG Navy Overhaul - Changing Dockyard Limits"
 supported_version="1.17.*"

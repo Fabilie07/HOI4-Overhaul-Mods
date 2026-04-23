@@ -3,9 +3,9 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"BBA Aircraft Overhaul"
-	"NSB Tank Overhaul"
-	"MTG Navy Overhaul"
+	"*DEV* BBA Aircraft Overhaul"
+	"*DEV* NSB Tank Overhaul"
+	"*DEV* MTG Navy Overhaul"
 	"Kaiserreich"
 }
 name="*DEV* [Kaiserreich] Overhaul Mod Compatch"

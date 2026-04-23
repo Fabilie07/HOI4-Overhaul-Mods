@@ -35,4 +35,14 @@
  basic_shells_desc:0 "Shells with better flight characteristics retain a lot of penetrating power even at long ranges."
  improved_shells:0 "Advanced Shells"
  improved_shells_desc:0 "Caps can increase the penetration at higher angles, increasing the penetrating power especially against the lightly armored decks of enemy ships."
+ 
+ 
+ early_submarine_hull_4:0 "$ship_hull_early_submarine_4$"
+ early_submarine_hull_4_desc:0 "$ship_hull_early_submarine_4_desc$"
+ early_submarine_hull_5:0 "Inter War Submarine"
+ early_submarine_hull_5_desc:0 "Submarines in the Interwar years split up into Cruiser and Coastal Submarines, with few nations building the Intermediate Designs that would eventually dominate WW2. This was, in no small part, due to the limits set by the Washington Naval Treaty."
 
+ early_destroyer_hull_4:0 "$ship_hull_early_destroyer_4$"
+ early_destroyer_hull_4_desc:0 "$ship_hull_early_destroyer_4_desc$"
+ basic_ship_hull_light:0 "Basic Destroyer"
+ basic_ship_hull_light_desc:0 "Dual-Purpose Armaments and more advanced Anti-Submarine Technologies allow Destroyers to cover more roles in a fleet."

@@ -3,7 +3,7 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"Overhaul Mod Compatch"
+	"*DEV* Overhaul Mod Compatch"
 	"[Vanilla] Industrial Expansion - Extra Building Slots and Resources!"
 }
 name="*DEV* [Building Slots and Resources] Compatch"

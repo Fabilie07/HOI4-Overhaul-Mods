@@ -286,7 +286,7 @@ ideas = {
 					naval_range = -0.2
 					sub_visibility = -0.1
 				}
-				ship_hull_destroyer = {
+				ship_hull_light = {
 					naval_range = -0.2
 					surface_visibility = -0.1
 					lg_attack = -0.1

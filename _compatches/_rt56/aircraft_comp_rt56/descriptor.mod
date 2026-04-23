@@ -3,7 +3,7 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"BBA Aircraft Overhaul"
+	"*DEV* BBA Aircraft Overhaul"
 	"The Road to 56"
 }
 name="*DEV* [AOM] Rt56 Compatch"

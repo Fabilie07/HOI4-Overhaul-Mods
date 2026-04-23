@@ -3,9 +3,9 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"BBA Aircraft Overhaul"
-	"NSB Tank Overhaul"
-	"MTG Navy Overhaul"
+	"*DEV* BBA Aircraft Overhaul"
+	"*DEV* NSB Tank Overhaul"
+	"*DEV* MTG Navy Overhaul"
 	"Extended Tech Tree 1960"
 }
 name="*DEV* [ETT60] Overhaul Mod Compatch"

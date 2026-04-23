@@ -4,8 +4,8 @@ tags={
 }
 dependencies={
 	"Vanilla Navy Rework"
-	"BBA Aircraft Overhaul"
-	"NSB Tank Overhaul"
+	"*DEV* BBA Aircraft Overhaul"
+	"*DEV* NSB Tank Overhaul"
 }
 name="*DEV* (VNR / TOM / AOM) Compatch"
 supported_version="1.17.*"

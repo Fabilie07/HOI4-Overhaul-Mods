@@ -6,7 +6,7 @@ tags={
 	"Gameplay"
 }
 dependencies={
-	"NSB Tank Overhaul"
+	"*DEV* NSB Tank Overhaul"
 	"The Road to 56"
 }
 name="*DEV* NSB Tank Overhaul - Boots on Ground Addon"

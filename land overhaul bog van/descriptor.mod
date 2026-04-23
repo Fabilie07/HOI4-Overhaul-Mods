@@ -3,7 +3,7 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"NSB Tank Overhaul - Boots on Ground Compatch"
+	"*DEV* NSB Tank Overhaul - Boots on Ground Compatch"
 }
 name="*DEV* Vanilla - Boots on Ground Addon"
 supported_version="1.17.*"

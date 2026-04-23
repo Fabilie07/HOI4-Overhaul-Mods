@@ -5,7 +5,7 @@ tags={
 	"Gameplay"
 }
 dependencies={
-	"NSB Tank Overhaul"
+	"*DEV* NSB Tank Overhaul"
 }
 name="*DEV* NSB Tank Overhaul - In-Depth Designer Addon"
 supported_version="1.17.*"

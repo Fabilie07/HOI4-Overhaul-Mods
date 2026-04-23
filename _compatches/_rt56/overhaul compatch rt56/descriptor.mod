@@ -4,10 +4,10 @@ tags={
 }
 dependencies={
 	"The Road to 56"
-	"BBA Aircraft Overhaul"
-	"NSB Tank Overhaul"
-	"NSB Tank Overhaul - In-Depth Designer Addon"
-	"MTG Navy Overhaul"
+	"*DEV* BBA Aircraft Overhaul"
+	"*DEV* NSB Tank Overhaul"
+	"*DEV* NSB Tank Overhaul - In-Depth Designer Addon"
+	"*DEV* MTG Navy Overhaul"
 }
 name="*DEV* [Rt56] Overhaul Mod Compatch"
 supported_version="1.18.*"

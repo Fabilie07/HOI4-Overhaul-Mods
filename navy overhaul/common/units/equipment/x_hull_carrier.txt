@@ -568,7 +568,6 @@ equipments = {
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
 				allowed_module_categories = {
-					carrier_ship_engine
 					heavy_ship_engine
 				}
 			}
@@ -577,19 +576,16 @@ equipments = {
 
 			fixed_ship_armor_slot = {
 				allowed_module_categories = {
-					ship_cruiser_armor
 					ship_heavy_armor
 				}
 			}
 			fixed_ship_deck_slot = {
 				allowed_module_categories = {
-					ship_medium_deck_armor
 					ship_heavy_deck_armor
 				}
 			}
 			fixed_ship_citadel_slot = {
 				allowed_module_categories = {
-					ship_medium_citadel
 					ship_heavy_citadel
 				}
 			}
@@ -723,16 +719,28 @@ equipments = {
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
 				allowed_module_categories = {
-					carrier_ship_engine
 					cruiser_ship_engine
 				}
 			}
 			fixed_ship_funnel_slot = inherit
 			fixed_ship_tanks_slot = inherit
 
-			fixed_ship_armor_slot = inherit
-			fixed_ship_deck_slot = inherit
-			fixed_ship_citadel_slot = inherit
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_cruiser_armor
+				}
+			}
+			fixed_ship_deck_slot = {
+				required = no
+				allowed_module_categories = { ship_medium_deck_armor }
+			}
+			fixed_ship_citadel_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_medium_citadel
+				}
+			}
 			fixed_ship_damage_control_slot = inherit
 			fixed_ship_torpedo_protection_slot = inherit
 			fixed_ship_ammo_1_slot = inherit

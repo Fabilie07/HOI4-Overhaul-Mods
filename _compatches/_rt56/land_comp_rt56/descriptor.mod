@@ -3,8 +3,8 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"NSB Tank Overhaul"
-	"NSB Tank Overhaul - In-Depth Designer Addon"
+	"*DEV* NSB Tank Overhaul"
+	"*DEV* NSB Tank Overhaul - In-Depth Designer Addon"
 	"The Road to 56"
 }
 name="*DEV* [TOM] Rt56 Compatch"

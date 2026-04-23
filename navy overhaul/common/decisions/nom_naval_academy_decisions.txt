@@ -9,8 +9,8 @@ nom_naval_academy_decisions = {
 			set_country_flag = nom_naval_academy_1
 			add_ideas = nom_academy_1
 			
-			cusnom_effect_tooltip = generic_skip_one_line_tt
-			cusnom_effect_tooltip = nom_naval_academy_unlock_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = nom_naval_academy_unlock_tt
 		}
 
 		ai_will_do = {

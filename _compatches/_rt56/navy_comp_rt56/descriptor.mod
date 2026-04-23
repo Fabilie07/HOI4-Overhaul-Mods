@@ -3,7 +3,7 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"MTG Navy Overhaul"
+	"*DEV* MTG Navy Overhaul"
 	"The Road to 56"
 }
 name="*DEV* [NOM] Rt56 Compatch"

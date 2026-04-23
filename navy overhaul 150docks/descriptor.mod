@@ -3,7 +3,7 @@ tags={
 	"Gameplay"
 }
 dependencies={
-	"MTG Navy Overhaul"
+	"*DEV* MTG Navy Overhaul"
 }
 name="*DEV* MTG Navy Overhaul - 150 Dockyard Addon"
 supported_version="1.17.*"

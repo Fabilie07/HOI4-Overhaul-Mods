@@ -3,9 +3,9 @@ tags={
 	"Fixes"
 }
 dependencies={
-	"BBA Aircraft Overhaul"
-	"NSB Tank Overhaul"
-	"MTG Navy Overhaul"
+	"*DEV* BBA Aircraft Overhaul"
+	"*DEV* NSB Tank Overhaul"
+	"*DEV* MTG Navy Overhaul"
 }
 name="*DEV* Overhaul Mod Compatch"
 supported_version="1.17.*"
