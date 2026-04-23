@@ -1,0 +1,17 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = extra_research_slot_rule
+						option = ENABLED
+					}
+				}
+				every_country = {
+					add_research_slot = 1
+				}
+			}
+		}
+	}
+}

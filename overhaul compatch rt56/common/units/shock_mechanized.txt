@@ -1,0 +1,94 @@
+sub_units = {
+	mech_shocktroop = {
+		sprite = mechanized
+		map_icon_category = infantry
+		special_forces = yes
+		#shocktroop = yes #what is this even supposed to do? -waffle
+
+		priority = 610
+		ai_priority = 200
+		active = no
+
+		type = {
+			mechanized
+		}
+		
+		group = mobile
+		
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_special_forces
+			category_shocktroops
+			category_mechanical
+			category_vehicle_infantry #You're already OP enough, - given back for now
+			category_mobile_and_mobile_combat_sup
+		}
+
+		combat_width = 2
+
+		#Offensive Abilities
+		soft_attack = 0.1
+		hard_attack = 4.0
+		breakthrough = 0.30
+		
+		#Size Definitions
+		max_strength = 30
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 150
+		suppression = 2
+		weight = 1
+		initiative = 0
+		
+		supply_consumption = 0.15 # - Increased from 0.14 then to 0.15 to make them a bit more expensive than normal Mech. - Norrman
+		
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			mechanized_chassis
+		}
+
+		# this is what moves us and sets speed
+		transport = mechanized_chassis
+
+		need = {
+			mechanized_chassis = 50
+			infantry_equipment = 150
+			#support_equipment = 5 # - Disabled for now
+		}
+
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.05
+		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = -0.1
+		}
+		urban = {
+			attack = 0.15
+			defence = 0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+		fort = {
+			attack = 0.05
+		}
+
+		#hardness = 0.2 moving these buffs to unit stats
+	}	
+}
