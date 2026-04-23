@@ -1,10 +1,10 @@
-version="1.21"
+version="1.22"
 tags={
 	"Technologies"
 }
 dependencies={
-	"BBA Aircraft Overhaul"
+	"*DEV* BBA Aircraft Overhaul"
 }
 name="*DEV* BBA Aircraft Overhaul - In-Depth Designer Addon"
-supported_version="1.17.*"
+supported_version="1.18.*"
 remote_file_id="3698672848"

@@ -79,8 +79,6 @@ on_actions = {
 				set_technology = { deck_conversion1 = 1 popup = no}
 				USA_get_starting_navy_designs = yes
 				load_oob = "00_nom_USA_1936_naval"
-				
-				convert_test_effect = yes
 			}
 		}
 	}
