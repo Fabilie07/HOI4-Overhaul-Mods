@@ -1,5 +1,8 @@
 ﻿l_english:
 
+ NAVAL_TITLE_AUXILIARY:0 "AUXILIARY" 
+ auxiliary_desc:0 "Auxiliary ships fulfill numerous supplementary roles. When used correctly, they can be a significant Force Multiplier."
+
  basic_cruiser_armor_scheme:0 "Basic Light Armor"
  basic_cruiser_armor_scheme_desc:0 "All modern ships are constructed with Metal Hulls, but additional protection can improve the survivability of even the lightest ships."
  improved_cruiser_armor_scheme:0 "Improved Light Armor"

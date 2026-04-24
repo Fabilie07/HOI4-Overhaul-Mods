@@ -5,18 +5,31 @@ equipment_modules = {
 	
 	### Role
 
-	auxiliary_role_mine_layer = {
+	auxiliary_role_mine_ship = {
 		abbreviation = "am1"
 		category = ship_auxiliary_role
 		allowed_module_categories = {
-			rear_1_custom_slot = { ship_mine_layer }
-			left_1_custom_slot = { ship_mine_layer }
-			right_1_custom_slot = { ship_mine_layer }
+			rear_1_custom_slot = { ship_mine_layer ship_mine_warfare }
+			left_1_custom_slot = { ship_mine_layer ship_mine_warfare }
+			right_1_custom_slot = { ship_mine_layer ship_mine_warfare }
 		}
 		
 		add_stats = {
 			build_cost_ic = 100
 		}
-		xp_cost = 1
+		xp_cost = 0
+	}
+	
+	auxiliary_role_seaplane_tender = {
+		abbreviation = "am1"
+		category = ship_auxiliary_role
+		add_equipment_type = carrier
+		add_stats = {
+			build_cost_ic = 250
+			carrier_size = 4
+			carrier_surface_detection = 10
+			carrier_sub_detection = 5
+		}
+		xp_cost = 0
 	}
 }

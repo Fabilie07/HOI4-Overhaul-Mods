@@ -26,11 +26,64 @@ equipments = {
 		priority = 2000
 
 		module_slots = {
-			fixed_role_slot = {
+			fixed_ship_role_slot = {
 				required = yes
 				allowed_module_categories = {
 					ship_auxiliary_role
 				}
+			}
+			fixed_ship_radio_slot = {
+				required = no
+				allowed_module_categories = { ship_radio }
+			}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_ship_engine }
+			}
+			fixed_ship_funnel_slot = {
+				required = yes
+				allowed_module_categories = { ship_funnel }
+			}
+			fixed_ship_tanks_slot = {
+				required = no
+				allowed_module_categories = { ship_tanks }
+			}
+
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_light_armor }
+			}
+			fixed_ship_deck_slot = {
+				required = no
+				allowed_module_categories = { ship_light_deck_armor }
+			}
+			fixed_ship_citadel_slot = {
+				required = no
+				allowed_module_categories = { }
+			}
+			fixed_ship_damage_control_slot = {
+				required = no
+				allowed_module_categories = { ship_damage_control }
+			}
+			fixed_ship_torpedo_protection_slot = {
+				required = no
+				allowed_module_categories = { }
+			}
+			fixed_ship_ammo_1_slot = {
+				required = no
+				allowed_module_categories = { ammo_cannon }
+			}
+			fixed_ship_ammo_2_slot = {
+				required = no
+				allowed_module_categories = { ammo_torpedo }
 			}
 			
 			rear_1_custom_slot = {
@@ -74,7 +127,7 @@ equipments = {
 				}
 			}
 			front_1_custom_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					ship_light_battery
 					dp_light_battery
@@ -138,6 +191,22 @@ equipments = {
 		}
 		
 		default_modules = {
+			fixed_ship_role_slot = auxiliary_role_mine_ship
+			fixed_ship_radio_slot = empty
+			fixed_ship_sonar_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_tanks_slot = empty
+
+			fixed_ship_armor_slot = empty
+			fixed_ship_deck_slot = empty
+			fixed_ship_citadel_slot = empty
+			fixed_ship_damage_control_slot = empty
+			fixed_ship_torpedo_protection_slot = empty
+			fixed_ship_ammo_1_slot = empty
+			fixed_ship_ammo_2_slot = empty
+			
 			rear_1_custom_slot = empty
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
