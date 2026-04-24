@@ -1,5 +1,19 @@
 ﻿l_english:
 
+ basic_cruiser_armor_scheme:0 "Basic Light Armor"
+ basic_cruiser_armor_scheme_desc:0 "All modern ships are constructed with Metal Hulls, but additional protection can improve the survivability of even the lightest ships."
+ improved_cruiser_armor_scheme:0 "Improved Light Armor"
+ improved_cruiser_armor_scheme_desc:0 "New protection schemes are developed to combat modern threats."
+ advanced_cruiser_armor_scheme:0 "Advanced Light Armor"
+ advanced_cruiser_armor_scheme_desc:0 "Thicker Armor offers better protection, increasing the chance of ships returning afloat."
+ 
+ basic_heavy_armor_scheme:0 "Basic Heavy Armor"
+ basic_heavy_armor_scheme_desc:0 "Large Capital Ships need to be appropriatly armored to withstand hits at long ranges."
+ improved_heavy_armor_scheme:0 "Improved Heavy Armor"
+ improved_heavy_armor_scheme_desc:0 "The All-or-Nothing Armor Scheme protects the most important internals and nothing more."
+ advanced_heavy_armor_scheme:0 "Advanced Heavy Armor"
+ advanced_heavy_armor_scheme_desc:0 "With Aircraft becoming a larger threat, Deck Armor has to be improved drastically."
+
  advanced_sonar:0 "Improved Sonar"
  advanced_sonar_desc:0 "Fine-tuning and filtering of sonar noise enhances the technologies accuracy and sensitivity."
  modern_sonar:0 "Modern Sonar"
@@ -14,16 +28,9 @@
  early_ship_hull_cruiser_desc:0 "$ship_hull_cruiser_1_desc$"
  early_ship_hull_heavy:0 "$ship_hull_heavy_1$"
  early_ship_hull_heavy_desc:0 "$ship_hull_heavy_1_desc$"
- ship_hull_escort_carrier:0 "Escort Carrier Hull"
- ship_hull_carrier_conversion_super_heavy:0 "Converted Super Heavy Battleship"
- ship_hull_carrier_conversion_bb_2: "Converted Fast Battleship"
- ship_hull_carrier_hybrid_bb:0 "Hybrid Battleship"
- ship_hull_carrier_hybrid_ca:0 "Hybrid Cruiser"
-
- deck_conversion1:0 "Carrier Conversion"
- deck_conversion1_desc:0 "Repurposing ships as aircraft carriers can bolster a countries naval airforce."
- deck_conversion2:0 "Carrier Conversion II"
- deck_conversion2_desc:0 "Larger and more complex conversions open up new possibilities in carrier combat."
+ basic_ship_hull_carrier:0 "$ship_hull_carrier_1$"
+ basic_ship_hull_carrier_desc:0 "$ship_hull_carrier_1_desc$"
+ 
  
  naval_engineering:0 "Naval Engineering I"
  naval_engineering_desc:0 "Improved welding techniques and the usage of large cranes speed up the Production and Modification of ships."
