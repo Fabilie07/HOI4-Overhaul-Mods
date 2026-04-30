@@ -1,5 +1,16 @@
 technologies = {
 
+@1900 = 0
+@1910 = 2
+@1920 = 4
+@1930 = 6
+@1935 = 8
+@1939 = 10
+@1942 = 12
+@1945 = 14
+@1950 = 16
+@1960 = 18
+
 @navy_exp_boost = 5
 
 	 ##  ###  #   #  ##  #   # ### #  # ###  ##
@@ -13,7 +24,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1922
+		start_year = 1900
 
 		on_research_complete = {
 			custom_effect_tooltip = light_battery_advice_tt
@@ -30,16 +41,11 @@ technologies = {
 			leads_to_tech = basic_heavy_battery
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = basic_shells
-			research_cost_coeff = 1
-		}
 
 		enable_equipment_modules = {
 			ship_light_battery_1
 			ship_medium_battery_1_2x
 			ship_light_medium_battery_1
-			ship_light_medium_battery_1_2x
 			ship_heavy_battery_1_2x
 			ship_heavy_battery_1_3x
 			ship_heavy_battery_2_2x
@@ -53,7 +59,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = @1900 }
 		}
 
 		ai_will_do = {
@@ -83,94 +89,14 @@ technologies = {
 		special_project_specialization = { specialization_naval }
 	}
 
-	basic_shells = {
-		
-		research_cost = 0.5
-
-		start_year = 1936
-
-		path = {
-			leads_to_tech = improved_shells
-			research_cost_coeff = 1
-		}
-
-		naval_critical_score_chance_factor = 0.15
-
-		enable_equipment_modules = {
-			cannon_armor_piercing
-		}
-
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 6 y = 7 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war = yes
-				factor = 10
-			}
-		}
-
-		categories = {
-			naval_equipment
-			ship_modules_tech
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-			mio_cat_tech_all_destroyer_and_modules
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
-	improved_shells = {
-
-		research_cost = 0.5
-
-		start_year = 1940
-
-		naval_critical_score_chance_factor = 0.1
-
-		enable_equipment_modules = {
-			cannon_semi_armor_piercing
-		}
-
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 6 y = 13 }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war = yes
-				factor = 10
-			}
-		}
-
-		categories = {
-			naval_equipment
-			ship_modules_tech
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-			mio_cat_tech_all_destroyer_and_modules
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
 	basic_light_battery = {
 
 		research_cost = 1
 
-		start_year = 1930
+		start_year = 1910
 
 		path = {
 			leads_to_tech = improved_light_battery
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = basic_dp_light_battery
 			research_cost_coeff = 1
 		}
 
@@ -180,6 +106,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_light_battery_2
+			ship_light_medium_battery_1_2x
 			ship_light_medium_battery_2
 			ship_light_medium_battery_2_2x
 			ship_secondaries_1_1x
@@ -189,7 +116,157 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = -3 y = 5 }
+			position = { x = 0 y = @1910 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_tech = early_ship_hull_light
+				factor = 20
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_ship_light_battery
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+
+	improved_light_battery = {
+
+		research_cost = 1
+
+		start_year = 1920
+
+		path = {
+			leads_to_tech = advanced_light_battery
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		enable_equipment_modules = {
+			ship_light_battery_2_2x
+			ship_light_battery_3
+			ship_light_battery_3_2x
+			ship_light_medium_battery_1_3x
+			ship_light_medium_battery_2_3x
+			ship_light_medium_battery_3_2x
+			ship_light_medium_battery_3_3x
+			ship_secondaries_1_2x
+			ship_secondaries_2_2x
+			ship_secondaries_2_3x
+		}
+
+		naval_critical_score_chance_factor = 0.1
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 0 y = @1920 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_tech = early_ship_hull_light
+				factor = 20
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_ship_light_battery
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+
+	advanced_light_battery = {
+
+		research_cost = 1
+
+		start_year = 1935
+
+		enable_equipment_modules = {
+			ship_light_battery_4
+			ship_light_battery_4_2x
+			ship_light_medium_battery_4_2x
+			ship_light_medium_battery_4_3x
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = advanced_dp_light_battery
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = modern_light_battery
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 0 y = @1935 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_tech = early_ship_hull_light
+				factor = 20
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			cat_ship_light_battery
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_light_battery = {
+
+		research_cost = 1
+
+		start_year = 1939
+
+		enable_equipment_modules = {
+			ship_light_battery_5
+			ship_light_battery_5_2x
+			ship_light_medium_battery_5_2x
+			ship_light_medium_battery_5_3x
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		sub_technologies = {
+			modern_dp_light_battery
+		}
+
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = 0 y = @1939 }
 		}
 
 		ai_will_do = {
@@ -210,84 +287,93 @@ technologies = {
 		}
 		special_project_specialization = { specialization_naval }
 	}
-
-	improved_light_battery = {
+	
+	advanced_dp_light_battery = {
 
 		research_cost = 1
 
-		start_year = 1938
+		start_year = 1935
 
-		path = {
-			leads_to_tech = advanced_light_battery
-			research_cost_coeff = 1
+		enable_equipment_modules = {
+			dp_light_battery_4
+			dp_light_battery_4_2x
+			dp_ship_secondaries_1
+			dp_ship_secondaries_1_2x
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = light_battery_advice_tt
+			custom_effect_tooltip = secondary_battery_advice_tt
 		}
-
-		enable_equipment_modules = {
-			ship_light_battery_2_2x
-			ship_light_medium_battery_1_3x
-			ship_light_medium_battery_2_3x
-			ship_secondaries_1_2x
-			ship_secondaries_2_2x
-			ship_secondaries_2_3x
-		}
-
-
-
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = -3 y = 10 }
+		
+		path = {
+			leads_to_tech = modern_dp_light_battery
+			research_cost_coeff = 1
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			modifier = {
-				has_tech = improved_ship_hull_light
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
 				factor = 20
 			}
+		}
+		
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = -2 y = @1935 }
 		}
 
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			cat_ship_light_battery
+			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_carrier_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
 		special_project_specialization = { specialization_naval }
 	}
 
-	advanced_light_battery = {
+	modern_dp_light_battery = {
 
 		research_cost = 1
 
-		start_year = 1942
+		start_year = 1939
 
 		enable_equipment_modules = {
-			ship_light_battery_3
-			ship_light_battery_3_2x
-			ship_light_medium_battery_3_2x
-			ship_light_medium_battery_3_3x
+			dp_light_battery_5
+			dp_light_battery_5_2x
+			dp_ship_secondaries_2_1x
+			dp_ship_secondaries_2_2x
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = light_battery_advice_tt
+			custom_effect_tooltip = secondary_battery_advice_tt
 		}
-
-
+		
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = -3 y = 16 }
+			position = { x = -2 y = @1939 }
+		}
+		
+		path = {
+			leads_to_tech = latewar_dp_light_battery
+			research_cost_coeff = 1
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			modifier = {
-				has_tech = advanced_ship_hull_light
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
 				factor = 20
 			}
 		}
@@ -295,8 +381,53 @@ technologies = {
 		categories = {
 			naval_equipment
 			ship_modules_tech
-			cat_ship_light_battery
+			mio_cat_tech_all_capital_ship_and_modules
 			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_carrier_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	latewar_dp_light_battery = {
+
+		research_cost = 1
+
+		start_year = 1945
+
+		enable_equipment_modules = {
+			dp_ship_medium_1
+			dp_ship_secondaries_3
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
+		
+		folder = {
+			name = mtgnavalsupportfolder
+			position = { x = -2 y = @1945 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 20
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ship_modules_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_carrier_and_modules
 			mio_cat_tech_all_cruiser_and_modules
 			mio_cat_tech_all_destroyer_and_modules
 		}
@@ -307,7 +438,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1930
+		start_year = 1910
 
 		path = {
 			leads_to_tech = improved_heavy_battery
@@ -316,9 +447,10 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_medium_battery_2_2x
-			ship_heavy_battery_1_4x
-			ship_heavy_battery_2_3x
+			ship_heavy_battery_2_2x
 			ship_super_heavy_battery_1
+			
+			cannon_armor_piercing
 		}
 
 		on_research_complete = {
@@ -327,13 +459,13 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 3 y = 5 }
+			position = { x = 2 y = @1910 }
 		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_tech = basic_ship_hull_heavy
+				has_tech = early_ship_hull_heavy
 				factor = 20
 			}
 			modifier = {
@@ -358,7 +490,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1938
+		start_year = 1920
 
 		path = {
 			leads_to_tech = advanced_heavy_battery
@@ -366,11 +498,15 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			ship_medium_battery_1_3x
-			ship_medium_battery_2_3x
-			ship_heavy_battery_2_4x
+			ship_medium_battery_3_2x
+			ship_heavy_battery_2_3x
 			ship_heavy_battery_3_2x
+			ship_heavy_battery_3_3x
+			
+			cannon_semi_armor_piercing
 		}
+
+		naval_critical_score_chance_factor = 0.15
 
 		on_research_complete = {
 			custom_effect_tooltip = heavy_battery_advice_tt
@@ -378,7 +514,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 3 y = 10 }
+			position = { x = 2 y = @1920 }
 		}
 
 		ai_will_do = {
@@ -409,22 +545,32 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1942
+		start_year = 1935
 
 		enable_equipment_modules = {
-			ship_medium_battery_3_2x
+			ship_medium_battery_1_3x
+			ship_medium_battery_2_3x
 			ship_medium_battery_3_3x
-			ship_heavy_battery_3_3x
+			ship_medium_battery_4_2x
+			ship_medium_battery_4_3x
 			ship_heavy_battery_3_4x
+			ship_heavy_battery_4_2x
+			ship_heavy_battery_4_3x
+			ship_heavy_battery_4_4x
 		}
 
 		on_research_complete = {
 			custom_effect_tooltip = heavy_battery_advice_tt
 		}
+		
+		path = {
+			leads_to_tech = modern_heavy_battery
+			research_cost_coeff = 1
+		}
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 3 y = 16 }
+			position = { x = 2 y = @1935 }
 		}
 
 		ai_will_do = {
@@ -450,149 +596,50 @@ technologies = {
 		}
 		special_project_specialization = { specialization_naval }
 	}
-
-	basic_dp_light_battery = {
+	
+	modern_heavy_battery = {
 
 		research_cost = 1
 
-		start_year = 1938
+		start_year = 1939
 
 		enable_equipment_modules = {
-			dp_light_battery_2
-			dp_ship_secondaries_1
-			dp_ship_secondaries_1_2x
-		}
-
-		path = {
-			leads_to_tech = improved_dp_light_battery
-			research_cost_coeff = 1
+			ship_medium_battery_5_2x
+			ship_medium_battery_5_3x
+			ship_heavy_battery_5_2x
+			ship_heavy_battery_5_3x
+			ship_heavy_battery_5_4x
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = secondary_battery_advice_tt
+			custom_effect_tooltip = heavy_battery_advice_tt
 		}
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 0 y = 10 }
+			position = { x = 2 y = @1939 }
 		}
 
 		ai_will_do = {
-			factor = 2
+			factor = 1
+			modifier = {
+				has_tech = advanced_ship_hull_heavy
+				factor = 20
+			}
 			modifier = {
 				OR = {
-					tag = ENG
-					tag = USA
+					tag = GER
 					tag = JAP
 				}
-				factor = 20
+				factor = 2
 			}
 		}
 
 		categories = {
 			naval_equipment
 			ship_modules_tech
+			cat_ship_heavy_battery
 			mio_cat_tech_all_capital_ship_and_modules
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_carrier_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-			mio_cat_tech_all_destroyer_and_modules
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
-	improved_dp_light_battery = {
-
-		research_cost = 1
-
-		start_year = 1940
-
-		enable_equipment_modules = {
-			dp_light_battery_2_2x
-			dp_ship_secondaries_2_1x
-			dp_ship_secondaries_2_2x
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = secondary_battery_advice_tt
-		}
-
-		path = {
-			leads_to_tech = advanced_dp_light_battery
-			research_cost_coeff = 1
-		}
-
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 0 y = 13 }
-		}
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 20
-			}
-		}
-
-		categories = {
-			naval_equipment
-			ship_modules_tech
-			mio_cat_tech_all_capital_ship_and_modules
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_carrier_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-			mio_cat_tech_all_destroyer_and_modules
-		}
-		special_project_specialization = { specialization_naval }
-	}
-
-	advanced_dp_light_battery = {
-
-		research_cost = 1
-
-		start_year = 1944
-
-		enable_equipment_modules = {
-			dp_light_battery_3
-			dp_light_battery_3_2x
-			dp_ship_medium_1
-			dp_ship_secondaries_3
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = secondary_battery_advice_tt
-		}
-
-		folder = {
-			name = mtgnavalsupportfolder
-			position = { x = 0 y = 19 }
-		}
-
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				OR = {
-					tag = ENG
-					tag = USA
-					tag = JAP
-				}
-				factor = 20
-			}
-		}
-
-		categories = {
-			naval_equipment
-			ship_modules_tech
-			mio_cat_tech_all_capital_ship_and_modules
-			mio_cat_tech_all_screen_ship_and_modules
-			mio_cat_tech_all_carrier_and_modules
-			mio_cat_tech_all_cruiser_and_modules
-			mio_cat_tech_all_destroyer_and_modules
 		}
 		special_project_specialization = { specialization_naval }
 	}

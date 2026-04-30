@@ -8,7 +8,7 @@ sub_units = {
 		need = { ship_hull_auxiliary = 1 }
 		need_equipment_modules = {
 			any = {
-				auxiliary_role_mine_layer = 1
+				auxiliary_role_mine_ship = 1
 			}
 		}
 		

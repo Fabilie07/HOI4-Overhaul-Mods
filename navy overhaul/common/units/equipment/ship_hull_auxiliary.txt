@@ -270,4 +270,24 @@ equipments = {
 		
 		module_slots = inherit
 	}
+	
+	ship_hull_auxiliary_2 = {
+		abbreviation = "hdb"
+		year = 1920
+
+		archetype = ship_hull_auxiliary
+		parent = ship_hull_auxiliary_1
+		
+		module_slots = inherit
+	}
+	
+	ship_hull_auxiliary_3 = {
+		abbreviation = "hdb"
+		year = 1935
+
+		archetype = ship_hull_auxiliary
+		parent = ship_hull_auxiliary_2
+		
+		module_slots = inherit
+	}
 }
