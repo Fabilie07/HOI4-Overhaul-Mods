@@ -293,7 +293,6 @@ equipments = {
 		}
 		
 		manpower = 50
-		naval_dominance_factor = 10
 		naval_weather_penalty_factor = 1
 	}
 	
@@ -303,6 +302,7 @@ equipments = {
 		
 		archetype = ship_hull_light
 		priority = 2000
+		naval_dominance_factor = 10
 		module_slots = inherit
 	}
 	

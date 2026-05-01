@@ -226,7 +226,6 @@ equipments = {
 		fuel_consumption = 45
 		reliability = 1
 		build_cost_ic = 6000
-		naval_dominance_factor = 450
 		resources = {
 			steel = 3
 			chromium = 1
@@ -237,6 +236,7 @@ equipments = {
 	ship_hull_super_heavy_1 = {
 		archetype = ship_hull_super_heavy
 		year = 1936
+		naval_dominance_factor = 450
 		module_slots = inherit
 	}
 
