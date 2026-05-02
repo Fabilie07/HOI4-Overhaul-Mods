@@ -1,10 +1,5 @@
 on_actions = {
 	on_startup = {
-		effect = {
-			every_country = {
-				generic_navy_designs_clean = yes
-			}
-		}
 		effect = {	## Ship Designs
 			DEN = {
 				DEN_get_starting_navy_designs = yes
@@ -23,16 +18,6 @@ on_actions = {
 				set_technology = { deck_conversion1 = 1 popup = no}
 				FRA_get_starting_navy_designs = yes
 				load_oob = "00_nom_FRA_1936_naval"
-			}
-			GER = {
-				complete_special_project = {
-					project = sp:sp_naval_pocket_battleship
-					iteration_output = {
-						sp_naval_pocket_battleship_unique_reward_a = sp_naval_pocket_battleship_preference_b
-					}
-				}
-				GER_get_starting_navy_designs = yes
-				load_oob = "00_nom_GER_1936_naval"
 			}
 			GRE = {
 				GRE_get_starting_navy_designs = yes

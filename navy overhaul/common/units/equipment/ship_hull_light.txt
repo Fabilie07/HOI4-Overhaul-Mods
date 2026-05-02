@@ -31,7 +31,6 @@ equipments = {
 		type = screen_ship
 		interface_category = interface_category_screen_ships
 		alias = destroyer
-		priority = 2000
 
 		module_slots = {
 			fixed_ship_radio_slot = {
@@ -309,6 +308,7 @@ equipments = {
 	ship_hull_early_destroyer_1 = {
 		abbreviation = "hda"
 		year = 1910
+		priority = 2000
 		
 		archetype = ship_hull_light
 		parent = ship_hull_torpedoboat_destroyer
@@ -325,6 +325,7 @@ equipments = {
 	ship_hull_early_destroyer_2 = {
 		abbreviation = "hda"
 		year = 1915
+		priority = 2000
 		
 		archetype = ship_hull_light
 		parent = ship_hull_early_destroyer_1
@@ -342,6 +343,7 @@ equipments = {
 	ship_hull_early_destroyer_3 = {
 		abbreviation = "hda"
 		year = 1925
+		priority = 2000
 		
 		archetype = ship_hull_light
 		parent = ship_hull_early_destroyer_2
@@ -359,6 +361,7 @@ equipments = {
 	ship_hull_early_destroyer_4 = {
 		abbreviation = "hda"
 		year = 1930
+		priority = 2000
 		
 		archetype = ship_hull_light
 		parent = ship_hull_early_destroyer_3
@@ -376,6 +379,7 @@ equipments = {
 	ship_hull_light_1 = {
 		abbreviation = "hdb"
 		year = 1935
+		priority = 2000
 
 		archetype = ship_hull_light
 		parent = ship_hull_early_destroyer_4
@@ -394,6 +398,7 @@ equipments = {
 	ship_hull_light_2 = {
 		abbreviation = "hdc"
 		year = 1939
+		priority = 2000
 
 		archetype = ship_hull_light
 		parent = ship_hull_light_1
@@ -412,6 +417,7 @@ equipments = {
 	ship_hull_light_3 = {
 		abbreviation = "hdd"
 		year = 1942
+		priority = 2000
 
 		archetype = ship_hull_light
 		parent = ship_hull_light_2
@@ -430,6 +436,7 @@ equipments = {
 	ship_hull_light_4 = {
 		abbreviation = "hdd"
 		year = 1945
+		priority = 2000
 
 		archetype = ship_hull_light
 		parent = ship_hull_light_3
@@ -473,6 +480,7 @@ equipments = {
 	ship_hull_destroyer_leader_2 = {
 		abbreviation = "hda"
 		year = 1930
+		priority = 1999
 		
 		archetype = ship_hull_light
 		parent = ship_hull_destroyer_leader_1
@@ -494,6 +502,7 @@ equipments = {
 	ship_hull_destroyer_leader_3 = {
 		abbreviation = "hda"
 		year = 1939
+		priority = 1999
 		
 		archetype = ship_hull_light
 		parent = ship_hull_destroyer_leader_2

@@ -23,8 +23,7 @@ equipments = {
 		is_buildable = no
 		type = support_ship
 		interface_category = interface_category_screen_ships
-		priority = 2000
-
+		
 		module_slots = {
 			fixed_ship_role_slot = {
 				required = yes
@@ -274,6 +273,7 @@ equipments = {
 	ship_hull_auxiliary_2 = {
 		abbreviation = "hdb"
 		year = 1920
+		priority = 2000
 
 		archetype = ship_hull_auxiliary
 		parent = ship_hull_auxiliary_1
@@ -284,6 +284,7 @@ equipments = {
 	ship_hull_auxiliary_3 = {
 		abbreviation = "hdb"
 		year = 1935
+		priority = 2000
 
 		archetype = ship_hull_auxiliary
 		parent = ship_hull_auxiliary_2

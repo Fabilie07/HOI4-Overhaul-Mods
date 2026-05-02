@@ -1008,6 +1008,7 @@ technologies = {
 			ship_torpedo_1_2x
 			ship_torpedo_1_3x
 			ship_torpedo_1_4x
+			ship_torpedo_sub_1
 			torpedo_ammo
 		}
 
@@ -1238,6 +1239,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_torpedo_2_3x
+			ship_torpedo_sub_2
 			torpedo_ammo_1
 		}
 
@@ -1283,6 +1285,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_torpedo_2_4x
+			ship_torpedo_sub_3
 		}
 
 
@@ -1319,6 +1322,7 @@ technologies = {
 		enable_equipment_modules = {
 			ship_torpedo_2_5x
 			ship_torpedo_2_6x
+			ship_torpedo_sub_4
 			sub_advanced_reload
 		}
 

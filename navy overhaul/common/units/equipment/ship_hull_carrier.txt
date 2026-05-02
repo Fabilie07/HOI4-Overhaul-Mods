@@ -24,7 +24,6 @@ equipments = {
 		type = carrier
 		sprite = carrier
 		group_by = archetype
-		priority = 1000
 
 		interface_category = interface_category_capital_ships
 
@@ -280,6 +279,7 @@ equipments = {
 		abbreviation = "haa"
 		year = 1920
 		archetype = ship_hull_carrier
+		priority = 1000
 
 		module_slots = inherit
 		
@@ -301,6 +301,7 @@ equipments = {
 		year = 1925
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_light_0
+		priority = 1000
 
 		module_slots = inherit
 		
@@ -319,6 +320,7 @@ equipments = {
 		year = 1935
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_light_1
+		priority = 1000
 
 		module_slots = inherit
 		
@@ -359,6 +361,7 @@ equipments = {
 	ship_hull_carrier_1 = { #IJN Shokaku
 		abbreviation = "hab"
 		year = 1939
+		priority = 1000
 		visual_level = 1
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_0
@@ -383,6 +386,7 @@ equipments = {
 	ship_hull_carrier_2 = { # USS Essex
 		abbreviation = "hab"
 		year = 1942
+		priority = 1000
 		visual_level = 1
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_1
@@ -406,6 +410,7 @@ equipments = {
 	ship_hull_carrier_3 = { # USS Midway
 		abbreviation = "hac"
 		year = 1945
+		priority = 1000
 		visual_level = 1
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_2

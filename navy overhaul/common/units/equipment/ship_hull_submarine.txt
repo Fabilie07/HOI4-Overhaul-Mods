@@ -23,7 +23,6 @@ equipments = {
 		is_buildable = no
 		type = submarine
 		group_by = archetype
-		priority = 2500
 		
 		upgrades = {
 			ship_reliability_upgrade
@@ -263,6 +262,7 @@ equipments = {
 	ship_hull_early_submarine_2 = {
 		abbreviation = "heb"
 		year = 1905
+		priority = 2500
 		archetype = ship_hull_submarine
 		parent = ship_hull_early_submarine_1
 		
@@ -283,6 +283,7 @@ equipments = {
 	ship_hull_early_submarine_3 = {
 		abbreviation = "heb"
 		year = 1910
+		priority = 2500
 		archetype = ship_hull_submarine
 		parent = ship_hull_early_submarine_2
 		
@@ -303,6 +304,7 @@ equipments = {
 	ship_hull_early_submarine_4 = {
 		abbreviation = "heb"
 		year = 1915
+		priority = 2500
 		archetype = ship_hull_submarine
 		parent = ship_hull_early_submarine_3
 		
@@ -323,6 +325,7 @@ equipments = {
 	ship_hull_submarine_1 = {
 		abbreviation = "heb"
 		year = 1935
+		priority = 2500
 		archetype = ship_hull_submarine
 		parent = ship_hull_early_submarine_4
 		module_slots = inherit
@@ -343,6 +346,7 @@ equipments = {
 	ship_hull_submarine_2 = {
 		abbreviation = "hec"
 		year = 1939
+		priority = 2500
 
 		archetype = ship_hull_submarine
 		parent = ship_hull_submarine_1
@@ -367,6 +371,7 @@ equipments = {
 	ship_hull_submarine_3 = {
 		abbreviation = "hed"
 		year = 1942
+		priority = 2500
 
 		archetype = ship_hull_submarine
 		parent = ship_hull_submarine_2
@@ -436,6 +441,7 @@ equipments = {
 	ship_hull_coastal_submarine_2 = {
 		abbreviation = "heb"
 		year = 1935
+		priority = 2550
 		archetype = ship_hull_submarine
 		parent = ship_hull_coastal_submarine_1
 		
@@ -456,6 +462,7 @@ equipments = {
 	ship_hull_coastal_submarine_3 = {
 		abbreviation = "heb"
 		year = 1945
+		priority = 2550
 		archetype = ship_hull_submarine
 		parent = ship_hull_coastal_submarine_1
 		
@@ -496,6 +503,7 @@ equipments = {
 	ship_hull_cruiser_submarine_2 = {
 		abbreviation = "heb"
 		year = 1925
+		priority = 2600
 		archetype = ship_hull_submarine
 		parent = ship_hull_cruiser_submarine_1
 		
@@ -516,6 +524,7 @@ equipments = {
 	ship_hull_cruiser_submarine_3 = {
 		abbreviation = "hef"
 		year = 1940
+		priority = 2600
 
 		archetype = ship_hull_submarine
 		parent = ship_hull_cruiser_submarine_2
@@ -792,7 +801,7 @@ equipments = {
 		year = 1940
 
 		archetype = ship_hull_submarine
-		priority = 1500
+		priority = 2520
 		module_slots = {
 			fixed_ship_radio_slot = {
 				required = no

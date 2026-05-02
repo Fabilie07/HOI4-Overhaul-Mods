@@ -24,7 +24,6 @@ equipments = {
 		type = screen_ship
 		interface_category = interface_category_screen_ships
 		alias = light_cruiser
-		priority = 1900
 
 		module_slots = {
 			fixed_ship_radio_slot = {
@@ -320,6 +319,7 @@ equipments = {
 		year = 1910
 		archetype = ship_hull_cruiser
 		parent = ship_hull_early_cruiser_1
+		priority = 1900
 		
 		module_slots = inherit
 		
@@ -337,6 +337,7 @@ equipments = {
 		year = 1915
 		archetype = ship_hull_cruiser
 		parent = ship_hull_early_cruiser_2
+		priority = 1900
 		
 		module_slots = inherit
 		
@@ -354,6 +355,7 @@ equipments = {
 		year = 1920
 		archetype = ship_hull_cruiser
 		parent = ship_hull_early_cruiser_3
+		priority = 1900
 		
 		module_slots = inherit
 		
@@ -371,6 +373,7 @@ equipments = {
 		year = 1930
 		archetype = ship_hull_cruiser
 		parent = ship_hull_early_cruiser_4
+		priority = 1900
 		
 		module_slots = inherit
 		
@@ -393,6 +396,7 @@ equipments = {
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		parent = ship_hull_early_cruiser_5
+		priority = 1900
 		
 		module_slots = inherit
 		
@@ -411,6 +415,8 @@ equipments = {
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		parent = ship_hull_cruiser_1
+		priority = 1900
+		
 		manpower = 800
 		naval_speed = 29
 		reliability = 1
@@ -427,6 +433,8 @@ equipments = {
 		year = 1942
 		archetype = ship_hull_cruiser
 		parent = ship_hull_cruiser_2
+		priority = 1900
+		
 		manpower = 1000
 		naval_speed = 31
 		reliability = 1
@@ -444,6 +452,8 @@ equipments = {
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		parent = ship_hull_cruiser_3
+		priority = 1900
+		
 		manpower = 1200
 		naval_speed = 31
 		reliability = 1.1

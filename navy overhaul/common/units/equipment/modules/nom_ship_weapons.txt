@@ -1362,7 +1362,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 4
-			reliability = -0.03
+			reliability = -0.02
 			build_cost_ic = 30
 		}
 		critical_parts = { damaged_torpedoes }
@@ -1375,7 +1375,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 7
-			reliability = -0.05
+			reliability = -0.04
 			build_cost_ic = 45
 		}
 		critical_parts = { damaged_torpedoes }
@@ -1388,7 +1388,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 10
-			reliability = -0.08
+			reliability = -0.06
 			build_cost_ic = 60
 		}
 		critical_parts = { damaged_torpedoes }
@@ -1401,7 +1401,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 13
-			reliability = -0.1
+			reliability = -0.08
 			build_cost_ic = 75
 		}
 		critical_parts = { damaged_torpedoes }
@@ -1415,7 +1415,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 14
-			reliability = -0.12
+			reliability = -0.09
 			build_cost_ic = 60
 		}
 		critical_parts = { damaged_torpedoes }
@@ -1428,7 +1428,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 18
-			reliability = -0.16
+			reliability = -0.12
 			build_cost_ic = 75
 		}
 		critical_parts = { damaged_torpedoes }
@@ -1441,7 +1441,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 22
-			reliability = -0.2
+			reliability = -0.15
 			build_cost_ic = 90
 		}
 		critical_parts = { damaged_torpedoes }
@@ -1454,7 +1454,7 @@ equipment_modules = {
 
 		add_stats = {
 			torpedo_attack = 26
-			reliability = -0.24
+			reliability = -0.18
 			build_cost_ic = 105
 		}
 		critical_parts = { damaged_torpedoes }

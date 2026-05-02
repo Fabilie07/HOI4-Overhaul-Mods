@@ -23,7 +23,6 @@ equipments = {
 		is_buildable = no
 		type = capital_ship
 		interface_category = interface_category_capital_ships
-		priority = 1500
 
 		upgrades = {
 			ship_reliability_upgrade
@@ -329,6 +328,7 @@ equipments = {
 		year = 1905
 		parent = ship_hull_pre_dreadnought
 		archetype = ship_hull_heavy
+		priority = 1500
 		module_slots = inherit
 		naval_range = 2250
 		
@@ -350,6 +350,7 @@ equipments = {
 		year = 1910
 		parent = ship_hull_dreadnought_1
 		archetype = ship_hull_heavy
+		priority = 1500
 		module_slots = inherit
 		naval_range = 2500
 		
@@ -371,6 +372,7 @@ equipments = {
 		year = 1915
 		parent = ship_hull_dreadnought_2
 		archetype = ship_hull_heavy
+		priority = 1500
 		module_slots = inherit
 		naval_range = 2700
 		
@@ -392,6 +394,7 @@ equipments = {
 		year = 1920
 		parent = ship_hull_super_dreadnought_1
 		archetype = ship_hull_heavy
+		priority = 1500
 		module_slots = inherit
 		naval_range = 3000
 		
@@ -413,6 +416,7 @@ equipments = {
 		year = 1925
 		parent = ship_hull_super_dreadnought_2
 		archetype = ship_hull_heavy
+		priority = 1500
 		module_slots = inherit
 		naval_range = 3300
 		
