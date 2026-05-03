@@ -324,7 +324,7 @@ ENG_fighter = {
 				custom_airframe_wheels_slot = rubber_wheels
 				fixed_engine_type_slot = engine_type_vee
 				fixed_engine_injection_slot = prop_carburetor
-				fixed_canopy_slot = canopy
+				fixed_canopy_slot = { module = bubble_canopy module = canopy }
 				fixed_fuel_tank_slot = fuel_tank_concentrated
 				fixed_flaps_slot = flaps_2
 				fixed_controls_slot = controls_assisted
@@ -374,7 +374,7 @@ ENG_fighter = {
 				custom_airframe_wheels_slot = rubber_wheels
 				fixed_engine_type_slot = engine_type_vee
 				fixed_engine_injection_slot = prop_carburetor
-				fixed_canopy_slot = canopy
+				fixed_canopy_slot = { module = bubble_canopy module = canopy }
 				fixed_fuel_tank_slot = fuel_tank_self_sealing
 				fixed_flaps_slot = flaps_2
 				fixed_controls_slot = controls_assisted
@@ -424,13 +424,13 @@ ENG_fighter = {
 				custom_airframe_wheels_slot = rubber_wheels
 				fixed_engine_type_slot = engine_type_vee
 				fixed_engine_injection_slot = prop_injection
-				fixed_canopy_slot = canopy
+				fixed_canopy_slot = { module = bubble_canopy module = canopy }
 				fixed_fuel_tank_slot = fuel_tank_self_sealing
 				fixed_flaps_slot = flaps_2
 				fixed_controls_slot = controls_assisted
 				fixed_radio_slot = plane_radio_2
 				fixed_main_weapon_slot = light_mg_8_4x
-				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				fixed_auxiliary_weapon_slot_1 = { module = improved_cannon_20_2x module = cannon_20_2x }
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
 				fixed_auxiliary_weapon_slot_4 = empty
@@ -473,13 +473,13 @@ ENG_fighter = {
 				custom_airframe_wheels_slot = rubber_wheels
 				fixed_engine_type_slot = engine_type_vee
 				fixed_engine_injection_slot = prop_injection
-				fixed_canopy_slot = canopy
+				fixed_canopy_slot = { module = bubble_canopy module = canopy }
 				fixed_fuel_tank_slot = fuel_tank_self_sealing
 				fixed_flaps_slot = flaps_2
 				fixed_controls_slot = controls_assisted
 				fixed_radio_slot = plane_radio_3
-				fixed_main_weapon_slot = heavy_mg_12_2x
-				fixed_auxiliary_weapon_slot_1 = cannon_20_2x
+				fixed_main_weapon_slot = { module = improved_heavy_12_2x module = heavy_12_2x }
+				fixed_auxiliary_weapon_slot_1 = { module = improved_cannon_20_2x module = cannon_20_2x }
 				fixed_auxiliary_weapon_slot_2 = empty
 				fixed_auxiliary_weapon_slot_3 = empty
 				fixed_auxiliary_weapon_slot_4 = empty
