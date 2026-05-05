@@ -44,6 +44,35 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_predreadnought_ship_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_dreadnought_ship_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_dreadnought_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_dreadnought_ship_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_dreadnought_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_dreadnought_ship_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_dreadnought_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_super_dreadnought_ship_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_super_dreadnought_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_super_dreadnought_ship_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_super_dreadnought_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_super_dreadnought_ship_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_super_dreadnought_3.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_sp_naval_pocket_battleship"
 		texturefile = "gfx/interface/special_project/project_icons/sp_pocket_battleship.dds"
 	}
