@@ -20,15 +20,9 @@ technologies = {
 		enable_equipment_modules = {
 			light_ship_armor_2
 			medium_ship_armor_2
-			ship_armor_bc_2
-			ship_armor_bb_2
 
 			light_ship_deck_1
 			medium_ship_deck_1
-			heavy_ship_deck_1
-
-			torpedo_protection_1
-			torpedo_protection_2
 		}
 
 		path = {
@@ -37,15 +31,15 @@ technologies = {
 		}
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
-		start_year = 1905
+		start_year = 1900
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = {  x = 0 y = @1905 }
+			position = {  x = 0 y = @1900 }
 		}
 
 		ai_will_do = {
@@ -76,19 +70,15 @@ technologies = {
 	improved_cruiser_armor_scheme = {
 
 		enable_equipment_modules = {
-			light_ship_armor_2
-			medium_ship_armor_2
-			ship_armor_bc_2
-			ship_armor_bb_2
+			light_ship_armor_3
+			light_ship_armor_4
+			medium_ship_armor_3
+			medium_ship_armor_4
 
-			light_ship_deck_1
-			medium_ship_deck_1
-			heavy_ship_deck_1
+			light_ship_deck_2
+			medium_ship_deck_2
 
 			ship_citadel_3
-
-			torpedo_protection_1
-			torpedo_protection_2
 		}
 
 		path = {
@@ -97,7 +87,7 @@ technologies = {
 		}
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -140,16 +130,13 @@ technologies = {
 			light_ship_armor_6
 			medium_ship_armor_5
 			medium_ship_armor_6
-
+			
 			light_ship_deck_3
 			medium_ship_deck_3
-
-			torpedo_protection_1
-			torpedo_protection_2
 		}
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -188,20 +175,17 @@ technologies = {
 	basic_heavy_armor_scheme = {
 
 		enable_equipment_modules = {
-			light_ship_armor_3
-			medium_ship_armor_3
-			ship_armor_bc_3
-			ship_armor_bb_3
+			ship_armor_bc_2
+			ship_armor_bb_2
 			
 			ship_citadel_4
 			ship_citadel_5
 			ship_citadel_6
 
-			light_ship_deck_2
-			medium_ship_deck_2
-			heavy_ship_deck_2
+			heavy_ship_deck_1
 
-			torpedo_protection_3
+			torpedo_protection_1
+			torpedo_protection_2
 		}
 
 		path = {
@@ -211,15 +195,15 @@ technologies = {
 
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
-		start_year = 1905
+		start_year = 1900
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = {  x = 0 y = @1905 }
+			position = {  x = 0 y = @1900 }
 		}
 
 		ai_will_do = {
@@ -248,16 +232,19 @@ technologies = {
 	improved_heavy_armor_scheme = {
 
 		enable_equipment_modules = {
-			light_ship_armor_4
-			medium_ship_armor_4
+			ship_armor_bc_3
+			ship_armor_bc_4
+			ship_armor_bb_3
 			ship_armor_bb_4
+			
+			heavy_ship_deck_2
 
-			torpedo_protection_4
+			torpedo_protection_3
 		}
 
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 		
@@ -302,16 +289,19 @@ technologies = {
 	advanced_heavy_armor_scheme = {
 
 		enable_equipment_modules = {
-			light_ship_armor_4
-			medium_ship_armor_4
-			ship_armor_bb_4
+			ship_armor_bc_5
+			ship_armor_bc_6
+			ship_armor_bb_5
+			ship_armor_bb_6
+			
+			heavy_ship_deck_3
 
 			torpedo_protection_4
 		}
 
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 		
@@ -1378,7 +1368,7 @@ technologies = {
 		}
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -1426,7 +1416,7 @@ technologies = {
 		}
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -1473,7 +1463,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -1517,7 +1507,7 @@ technologies = {
 		}
 
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -1564,7 +1554,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -1608,7 +1598,7 @@ technologies = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -1657,7 +1647,7 @@ technologies = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -1706,7 +1696,7 @@ technologies = {
 			custom_effect_tooltip = sonar_advice_tt
 		}
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_module
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1
 		research_cost = 1
 
@@ -2779,7 +2769,7 @@ technologies = {
 		force_use_small_tech_layout = yes
 		is_special_project_tech = yes	
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_cost
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1.75
 		research_cost = 2.0
 		start_year = 1939
@@ -2815,7 +2805,7 @@ technologies = {
 		force_use_small_tech_layout = yes
 		is_special_project_tech = yes		
 		xp_research_type = navy
-		xp_boost_cost = @xp_boost_cost
+		xp_boost_cost = @navy_exp_boost
 		xp_research_bonus = 1.5
 		research_cost = 2.5
 		start_year = 1942

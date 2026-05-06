@@ -226,7 +226,7 @@ equipments = {
 		armor_value = 0
 
 		
-		surface_detection = 5
+		surface_detection = 1
 		sub_detection = 0
 		surface_visibility = 5
 		sub_visibility = 50

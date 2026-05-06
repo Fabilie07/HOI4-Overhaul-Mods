@@ -68,9 +68,12 @@ if = {
 		basic_depth_charges = 1
 		sonar = 1
 		improved_sonar = 1
+		damage_control_1 = 1
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
 		mtg_transport = 1
+		
+		basic_fire_control_system = 1
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
 }

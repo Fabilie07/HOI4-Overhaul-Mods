@@ -16,7 +16,7 @@ ideas = {
 			
 			modifier = {
 				production_cost_max_ship_hull_cruiser = 5500
-				production_cost_max_ship_hull_heavy = 11000
+				production_cost_max_ship_hull_heavy = 12000
 				production_cost_max_ship_hull_carrier = 10000
 			}
 		}
@@ -36,7 +36,7 @@ ideas = {
 			
 			modifier = {
 				production_cost_max_ship_hull_cruiser = 6000
-				production_cost_max_ship_hull_heavy = 12000
+				production_cost_max_ship_hull_heavy = 13500
 				production_cost_max_ship_hull_carrier = 10500
 			}
 		}
@@ -56,7 +56,7 @@ ideas = {
 			
 			modifier = {
 				production_cost_max_ship_hull_cruiser = 6000
-				production_cost_max_ship_hull_heavy = 12000
+				production_cost_max_ship_hull_heavy = 13500
 				production_cost_max_ship_hull_carrier = 11000
 			}
 		}
@@ -76,7 +76,7 @@ ideas = {
 			
 			modifier = {
 				production_cost_max_ship_hull_cruiser = 6500
-				production_cost_max_ship_hull_heavy = 13000
+				production_cost_max_ship_hull_heavy = 15000
 				production_cost_max_ship_hull_carrier = 11500
 			}
 		}

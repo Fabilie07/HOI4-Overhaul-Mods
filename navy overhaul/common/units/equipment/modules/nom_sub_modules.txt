@@ -609,7 +609,9 @@ equipment_modules = {
 		multiply_stats = {
 			sub_visibility = -0.1
 			naval_speed = -0.05
-			build_cost_ic = 0.1
+		}
+		add_stats = {
+			build_cost_ic = 65
 		}
 		xp_cost = 3
 	}
@@ -630,7 +632,9 @@ equipment_modules = {
 		multiply_stats = {
 			torpedo_attack = 0.15
 			mines_planting = 0.5
-			build_cost_ic = 0.12
+		}
+		add_stats = {
+			build_cost_ic = 80
 		}
 		xp_cost = 3
 	}

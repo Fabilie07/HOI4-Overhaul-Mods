@@ -20,14 +20,12 @@ equipment_modules = {
 		category = ship_light_armor
 		gfx = ship_armor_thin_2
 		
-		dismantle_cost_ic = 25
-		
 		multiply_stats = {
 			naval_speed = -0.02
 		}
 		add_stats = {
 			armor_value = 4
-			build_cost_ic = 50
+			build_cost_ic = 30
 		}
 		xp_cost = 1
 	}
@@ -36,15 +34,13 @@ equipment_modules = {
 		category = ship_light_armor
 		gfx = ship_armor_thin_3
 		
-		dismantle_cost_ic = 35
-		
 		multiply_stats = {
-			naval_speed = -0.06
+			naval_speed = -0.04
 			max_strength = 0.02
 		}
 		add_stats = {
 			armor_value = 5
-			build_cost_ic = 70
+			build_cost_ic = 60
 		}
 		xp_cost = 1
 	}
@@ -53,15 +49,43 @@ equipment_modules = {
 		category = ship_light_armor
 		gfx = ship_armor_thin_4
 		
-		dismantle_cost_ic = 45
-		
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.06
 			max_strength = 0.05
 		}
 		add_stats = {
 			armor_value = 6
 			build_cost_ic = 90
+		}
+		xp_cost = 1
+	}
+	light_ship_armor_5 = {
+		abbreviation = "lsa4"
+		category = ship_light_armor
+		gfx = ship_armor_thin_5
+		
+		multiply_stats = {
+			naval_speed = -0.08
+			max_strength = 0.08
+		}
+		add_stats = {
+			armor_value = 7
+			build_cost_ic = 120
+		}
+		xp_cost = 1
+	}
+	light_ship_armor_6 = {
+		abbreviation = "lsa4"
+		category = ship_light_armor
+		gfx = ship_armor_thin_6
+		
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.1
+		}
+		add_stats = {
+			armor_value = 8
+			build_cost_ic = 150
 		}
 		xp_cost = 1
 	}
@@ -82,14 +106,13 @@ equipment_modules = {
 		gfx = ship_armor_thin_2
 		
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.02
 			max_strength = 0.02
 		}
 		add_stats = {
 			armor_value = 13
-			build_cost_ic = 100
+			build_cost_ic = 60
 		}
-		dismantle_cost_ic = 50
 		xp_cost = 1
 	}
 	medium_ship_armor_3 = {
@@ -98,14 +121,13 @@ equipment_modules = {
 		gfx = ship_armor_thin_3
 		
 		multiply_stats = {
-			naval_speed = -0.015
+			naval_speed = -0.04
 			max_strength = 0.05
 		}
 		add_stats = {
 			armor_value = 18
-			build_cost_ic = 150
+			build_cost_ic = 120
 		}
-		dismantle_cost_ic = 75
 		xp_cost = 1
 	}
 	medium_ship_armor_4 = {
@@ -114,62 +136,129 @@ equipment_modules = {
 		gfx = ship_armor_thin_4
 		
 		multiply_stats = {
-			naval_speed = -0.02
-			max_strength = 0.1
+			naval_speed = -0.06
+			max_strength = 0.08
 		}
 		add_stats = {
 			armor_value = 22
-			build_cost_ic = 200
+			build_cost_ic = 180
 		}
-		dismantle_cost_ic = 100
+		xp_cost = 1
+	}
+	medium_ship_armor_5 = {
+		abbreviation = "msa4"
+		category = ship_cruiser_armor
+		gfx = ship_armor_thin_5
+		
+		multiply_stats = {
+			naval_speed = -0.08
+			max_strength = 0.1
+		}
+		add_stats = {
+			armor_value = 26
+			build_cost_ic = 240
+		}
+		xp_cost = 1
+	}
+	medium_ship_armor_6 = {
+		abbreviation = "msa4"
+		category = ship_cruiser_armor
+		gfx = ship_armor_thin_5
+		
+		multiply_stats = {
+			naval_speed = -0.1
+			max_strength = 0.15
+		}
+		add_stats = {
+			armor_value = 30
+			build_cost_ic = 300
+		}
 		xp_cost = 1
 	}
 
 	ship_armor_bc_1 = {
 		abbreviation = "msa3"
-		category = ship_heavy_armor
+		category = ship_battlecruiser_armor
 		gfx = ship_armor_thick_1
 		
 		add_stats = {
-			naval_speed = 2
 			armor_value = 14
-			build_cost_ic = 100
 		}
-		dismantle_cost_ic = 75
 		xp_cost = 1
 	}
 	ship_armor_bc_2 = {
 		abbreviation = "msa4"
-		category = ship_heavy_armor
+		category = ship_battlecruiser_armor
 		gfx = ship_armor_thick_2
 		
 		multiply_stats = {
-			naval_speed = -0.01
+			naval_speed = -0.03
 			max_strength = 0.05
 		}
 		add_stats = {
-			naval_speed = 2
 			armor_value = 19
-			build_cost_ic = 200
+			build_cost_ic = 120
 		}
-		dismantle_cost_ic = 100
 		xp_cost = 1
 	}
 	ship_armor_bc_3 = {
 		abbreviation = "msa4"
-		category = ship_heavy_armor
+		category = ship_battlecruiser_armor
 		gfx = ship_armor_thick_3
 		
 		multiply_stats = {
-			naval_speed = -0.02
+			naval_speed = -0.06
 			max_strength = 0.1
 		}
 		add_stats = {
-			naval_speed = 2
 			armor_value = 24
-			build_cost_ic = 300
+			build_cost_ic = 240
 		}
-		dismantle_cost_ic = 125
+		xp_cost = 1
+	}
+	ship_armor_bc_4 = {
+		abbreviation = "msa4"
+		category = ship_battlecruiser_armor
+		gfx = ship_armor_thick_4
+		
+		multiply_stats = {
+			naval_speed = -0.09
+			max_strength = 0.15
+		}
+		add_stats = {
+			armor_value = 29
+			build_cost_ic = 360
+		}
+		xp_cost = 1
+	}
+	ship_armor_bc_5 = {
+		abbreviation = "msa4"
+		category = ship_battlecruiser_armor
+		gfx = ship_armor_thick_5
+		
+		multiply_stats = {
+			naval_speed = -0.12
+			max_strength = 0.2
+		}
+		add_stats = {
+			armor_value = 34
+			build_cost_ic = 480
+		}
+		xp_cost = 1
+	}
+	ship_armor_bc_6 = {
+		abbreviation = "msa4"
+		category = ship_battlecruiser_armor
+		gfx = ship_armor_thick_6
+		
+		multiply_stats = {
+			naval_speed = -0.15
+			max_strength = 0.25
+		}
+		add_stats = {
+			armor_value = 39
+			build_cost_ic = 600
+		}
 		xp_cost = 1
 	}
 
@@ -178,15 +267,8 @@ equipment_modules = {
 		category = ship_heavy_armor
 		gfx = ship_armor_thick_1
 		
-		multiply_stats = {
-			naval_speed = -0.01
-		}
 		add_stats = {
-			reliability = 0.1
 			armor_value = 25
-		}
-		build_cost_resources = {
-			steel = 1
 		}
 		xp_cost = 1
 	}
@@ -196,19 +278,14 @@ equipment_modules = {
 		gfx = ship_armor_thick_2
 		
 		multiply_stats = {
-			naval_speed = -0.015
-			max_strength = 0.05
-		}
-		build_cost_resources = {
-			steel = 1
+			naval_speed = -0.04
+			max_strength = 0.06
 		}
 		add_stats = {
-			reliability = 0.1
 			armor_value = 30
-			build_cost_ic = 500
+			build_cost_ic = 150
 		}
 		xp_cost = 1
-		dismantle_cost_ic = 250
 	}
 	ship_armor_bb_3 = {
 		abbreviation = "hsa3"
@@ -216,19 +293,14 @@ equipment_modules = {
 		gfx = ship_armor_thick_3
 		
 		multiply_stats = {
-			naval_speed = -0.03
-			max_strength = 0.1
-		}
-		build_cost_resources = {
-			steel = 1
+			naval_speed = -0.08
+			max_strength = 0.12
 		}
 		add_stats = {
-			reliability = 0.1
 			armor_value = 35
-			build_cost_ic = 750
+			build_cost_ic = 300
 		}
 		xp_cost = 1
-		dismantle_cost_ic = 375
 	}
 	ship_armor_bb_4 = {
 		abbreviation = "hsa4"
@@ -236,19 +308,53 @@ equipment_modules = {
 		gfx = ship_armor_thick_4
 		
 		multiply_stats = {
-			naval_speed = -0.05
-			max_strength = 0.15
+			naval_speed = -0.12
+			max_strength = 0.18
 		}
 		build_cost_resources = {
 			steel = 1
 		}
 		add_stats = {
-			reliability = 0.1
 			armor_value = 40
-			build_cost_ic = 1000
+			build_cost_ic = 450
 		}
 		xp_cost = 1
-		dismantle_cost_ic = 500
+	}
+	ship_armor_bb_5 = {
+		abbreviation = "hsa5"
+		category = ship_heavy_armor
+		gfx = ship_armor_thick_5
+		
+		multiply_stats = {
+			naval_speed = -0.16
+			max_strength = 0.24
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		add_stats = {
+			armor_value = 45
+			build_cost_ic = 600
+		}
+		xp_cost = 1
+	}
+	ship_armor_bb_6 = {
+		abbreviation = "hsa6"
+		category = ship_heavy_armor
+		gfx = ship_armor_thick_6
+		
+		multiply_stats = {
+			naval_speed = -0.2
+			max_strength = 0.3
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		add_stats = {
+			armor_value = 50
+			build_cost_ic = 750
+		}
+		xp_cost = 1
 	}
 
 	super_heavy_ship_armor = {
