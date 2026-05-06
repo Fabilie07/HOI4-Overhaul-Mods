@@ -2,16 +2,16 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ship_hull_carrier_conversion_super_heavy_medium"
-		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/super_heavy_carrier.dds"
+		texturefile = "gfx/interface/technologies/super_heavy_carrier.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ship_hull_carrier_hybrid_bb_medium"
-		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/hybrid_bb.dds"
+		texturefile = "gfx/interface/technologies/hybrid_bb.dds"
 	}
 	spriteType = {
 		name = "GFX_ship_hull_carrier_hybrid_ca_medium"
-		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/hybrid_ca.dds"
+		texturefile = "gfx/interface/technologies/hybrid_ca.dds"
 	}
 
 ################# JAPAN

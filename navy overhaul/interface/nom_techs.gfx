@@ -31,11 +31,11 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_deck_conversion2_medium"
-		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/converted_bb_2.dds"
+		texturefile = "gfx/interface/technologies/converted_bb_2.dds"
 	}
 	SpriteType = {	
 		name = "GFX_deck_conversion1_medium"
-		texturefile = "gfx/interface/equipmentdesigner/naval/ship_icons/ship_hull_carrier_conversion_ca.dds"
+		texturefile = "gfx/interface/technologies/ship_hull_carrier_conversion_ca.dds"
 	}
 	
 	SpriteType = {
