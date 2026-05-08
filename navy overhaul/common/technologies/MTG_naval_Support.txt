@@ -572,7 +572,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1942
 
 		enable_equipment_modules = {
 			ship_light_battery_5
@@ -591,7 +591,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 0 y = @1939 }
+			position = { x = 0 y = @1942 }
 		}
 
 		ai_will_do = {
@@ -928,7 +928,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1939
+		start_year = 1942
 
 		enable_equipment_modules = {
 			ship_medium_battery_5_2x
@@ -936,6 +936,8 @@ technologies = {
 			ship_heavy_battery_5_2x
 			ship_heavy_battery_5_3x
 			ship_heavy_battery_5_4x
+			
+			ship_super_heavy_battery_2_2x
 		}
 
 		on_research_complete = {
@@ -944,7 +946,7 @@ technologies = {
 
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 2 y = @1939 }
+			position = { x = 2 y = @1942 }
 		}
 
 		ai_will_do = {

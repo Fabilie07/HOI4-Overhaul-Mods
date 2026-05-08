@@ -163,7 +163,7 @@ equipment_modules = {
 	medium_ship_armor_6 = {
 		abbreviation = "msa4"
 		category = ship_cruiser_armor
-		gfx = ship_armor_thin_5
+		gfx = ship_armor_thin_6
 		
 		multiply_stats = {
 			naval_speed = -0.1
@@ -360,7 +360,7 @@ equipment_modules = {
 	super_heavy_ship_armor = {
 		abbreviation = "shsa"
 		category = ship_super_heavy_armor
-		gfx = ship_armor_thick_3
+		gfx = ship_armor_thick
 		
 		multiply_stats = {
 			naval_speed = -0.1

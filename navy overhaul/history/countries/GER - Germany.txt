@@ -1268,10 +1268,10 @@ if = {
 			fixed_ship_ammo_1_slot = cannon_armor_piercing
 			fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-			mid_1_custom_slot = ship_heavy_battery_3_3x
+			mid_1_custom_slot = ship_heavy_battery_2_3x
 			mid_2_custom_slot = ship_airplane_launcher_1
 			mid_4_custom_slot = ship_anti_air_1
-			front_1_custom_slot = ship_heavy_battery_3_3x
+			front_1_custom_slot = ship_heavy_battery_2_3x
 
 			right_1_custom_slot = ship_torpedo_2_4x
 			right_2_custom_slot = ship_secondaries_1_1x
@@ -1304,11 +1304,11 @@ if = {
 			fixed_ship_ammo_1_slot = cannon_armor_piercing
 			fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-			mid_1_custom_slot = ship_heavy_battery_3_3x
+			mid_1_custom_slot = ship_heavy_battery_2_3x
 			mid_2_custom_slot = ship_airplane_launcher_1
 			mid_3_custom_slot = ship_anti_air_1
 			mid_4_custom_slot = ship_anti_air_2
-			front_1_custom_slot = ship_heavy_battery_3_3x
+			front_1_custom_slot = ship_heavy_battery_2_3x
 
 			right_1_custom_slot = ship_torpedo_2_4x
 			right_2_custom_slot = ship_secondaries_1_1x
@@ -1722,12 +1722,12 @@ if = {
 			fixed_ship_ammo_1_slot = cannon_armor_piercing
 			fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-			rear_1_custom_slot = ship_heavy_battery_4_3x
+			rear_1_custom_slot = ship_heavy_battery_3_3x
 			mid_1_custom_slot = ship_anti_air_2
 			mid_2_custom_slot = ship_airplane_launcher_1
 			mid_3_custom_slot = ship_anti_air_2
-			mid_4_custom_slot = ship_heavy_battery_4_3x
-			front_1_custom_slot = ship_heavy_battery_4_3x
+			mid_4_custom_slot = ship_heavy_battery_3_3x
+			front_1_custom_slot = ship_heavy_battery_3_3x
 
 			right_1_custom_slot = ship_secondaries_2_2x
 			right_2_custom_slot = ship_torpedo_2_3x

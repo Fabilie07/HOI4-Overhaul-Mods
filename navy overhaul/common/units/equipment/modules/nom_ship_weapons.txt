@@ -1073,7 +1073,7 @@ equipment_modules = {
 		add_stats = {
 			hg_attack = 15
 			build_cost_ic = 600
-			reliability = -0.12
+			reliability = -0.1
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -1097,7 +1097,7 @@ equipment_modules = {
 		add_stats = {
 			hg_attack = 21
 			build_cost_ic = 900
-			reliability = -0.18
+			reliability = -0.15
 		}
 		multiply_stats = {
 			naval_speed = -0.09
@@ -1120,7 +1120,7 @@ equipment_modules = {
 		add_stats = {
 			hg_attack = 27
 			build_cost_ic = 1200
-			reliability = -0.24
+			reliability = -0.20
 		}
 		multiply_stats = {
 			naval_speed = -0.12
@@ -1218,7 +1218,7 @@ equipment_modules = {
 		add_stats = {
 			hg_attack = 18
 			build_cost_ic = 700
-			reliability = -0.12
+			reliability = -0.14
 		}
 		multiply_stats = {
 			naval_speed = -0.06
@@ -1242,7 +1242,7 @@ equipment_modules = {
 		add_stats = {
 			hg_attack = 25.5
 			build_cost_ic = 1050
-			reliability = -0.18
+			reliability = -0.21
 		}
 		multiply_stats = {
 			naval_speed = -0.09
@@ -1266,7 +1266,7 @@ equipment_modules = {
 		add_stats = {
 			hg_attack = 33
 			build_cost_ic = 1400
-			reliability = -0.24
+			reliability = -0.3
 		}
 		multiply_stats = {
 			naval_speed = -0.12
