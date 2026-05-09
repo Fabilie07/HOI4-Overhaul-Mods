@@ -158,6 +158,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			fixed_engine_injection_slot = { plane_injection }
+			fixed_main_weapon_slot = { plane_cannon_engine }
 			engine_power_slot = { plane_kilowatt }
 			supercharger_type_slot = { supercharger }
 			propeller_slot = { propeller }
@@ -193,6 +194,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			fixed_engine_injection_slot = { plane_injection }
+			fixed_main_weapon_slot = { plane_cannon_engine }
 			engine_power_slot = { plane_kilowatt }
 			supercharger_type_slot = { supercharger }
 			propeller_slot = { propeller }
@@ -218,6 +220,7 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			fixed_engine_injection_slot = { plane_injection }
+			fixed_main_weapon_slot = { plane_cannon_engine }
 			engine_power_slot = { plane_kilowatt }
 			supercharger_type_slot = { supercharger }
 			propeller_slot = { propeller }

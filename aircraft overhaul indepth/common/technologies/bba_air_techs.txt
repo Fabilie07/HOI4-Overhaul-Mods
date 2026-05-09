@@ -3572,6 +3572,13 @@ technologies = {
 			cannon_24_1x
 			cannon_25_1x
 			
+			cannon_20_engine
+			cannon_21_engine
+			cannon_22_engine
+			cannon_23_engine
+			cannon_24_engine
+			cannon_25_engine
+			
 			plane_ammo_he
 			plane_ammo_minengeschoss
 			
@@ -3768,6 +3775,10 @@ technologies = {
 			cannon_27_1x
 			cannon_28_1x
 			cannon_29_1x
+			cannon_26_engine
+			cannon_27_engine
+			cannon_28_engine
+			cannon_29_engine
 			cannon_26_2x
 			cannon_27_2x
 			cannon_28_2x

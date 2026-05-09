@@ -1774,6 +1774,318 @@ equipment_modules = {
 	}
 	
 	
+	cannon_20_engine = {
+		abbreviation = "c20"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 12
+			build_cost_ic = 1
+			weight = 3
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_21_engine = {
+		abbreviation = "c21"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 12.5
+			build_cost_ic = 1.1
+			weight = 3
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_22_engine = {
+		abbreviation = "c22"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 13
+			build_cost_ic = 1.2
+			weight = 3
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_23_engine = {
+		abbreviation = "c20"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 13.5
+			build_cost_ic = 1.3
+			weight = 3
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_24_engine = {
+		abbreviation = "c24"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 14
+			build_cost_ic = 1.4
+			weight = 3
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_25_engine = {
+		abbreviation = "c25"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 14.5
+			build_cost_ic = 1.5
+			weight = 3.5
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_26_engine = {
+		abbreviation = "c26"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 15
+			build_cost_ic = 1.6
+			weight = 3.5
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_27_engine = {
+		abbreviation = "c27"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 15.5
+			build_cost_ic = 1.7
+			weight = 3.5
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_28_engine = {
+		abbreviation = "c28"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 16
+			build_cost_ic = 1.8
+			weight = 3.5
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_29_engine = {
+		abbreviation = "c29"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 16.5
+			build_cost_ic = 1.9
+			weight = 3.5
+		}
+		mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	
+	
 	### Improved Cannons
 	
 	improved_cannon_20_1x = {
