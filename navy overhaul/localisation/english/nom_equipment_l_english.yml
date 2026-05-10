@@ -111,3 +111,15 @@
  ship_hull_carrier_conversion_bb_2: "Converted Fast Battleship"
  ship_hull_carrier_hybrid_bb:0 "Hybrid Battleship"
  ship_hull_carrier_hybrid_ca:0 "Hybrid Cruiser"
+ 
+ 
+ ship_hull_auxiliary:0 "Auxiliary Ship"
+ ship_hull_auxiliary_1:0 "Early Auxiliary Ship"
+ ship_hull_auxiliary_1_desc:0 "An auxiliary ship is not expected to engage the enemy directly, though most do carry weapons. Early examples were mostly Minelayers and Minesweepers."
+ ship_hull_auxiliary_2:0 "Basic Auxiliary Ship"
+ ship_hull_auxiliary_2_desc:0 "With combat ships becoming more expensive, auxiliary ships occupy more roles such as tending to Seaplanes."
+ ship_hull_auxiliary_3:0 "Improved Auxiliary Ship"
+ ship_hull_auxiliary_3_desc:0 "No Fleet can operate outside of its own waters without proper support. Different types of Auxiliary Ships provide a multitude of services in order to achieve naval victory."
+ 
+ repair_ship_3:0 "Advanced Repair Ship"
+ support_ship_3:0 "Advanced Support Ship"

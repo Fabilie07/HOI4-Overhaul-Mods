@@ -56,3 +56,10 @@
  early_destroyer_hull_4_desc:0 "$ship_hull_early_destroyer_4_desc$"
  basic_ship_hull_light:0 "Basic Destroyer"
  basic_ship_hull_light_desc:0 "Dual-Purpose Armaments and more advanced Anti-Submarine Technologies allow Destroyers to cover more roles in a fleet."
+ 
+ auxiliary_hull_2:0 "Basic Auxiliary Ship"
+ auxiliary_hull_2_desc:0 "With combat ships becoming more expensive, auxiliary ships occupy more roles such as tending to Seaplanes."
+ auxiliary_hull_3:0 "Improved Auxiliary Ship"
+ auxiliary_hull_3_desc:0 "No Fleet can operate outside of its own waters without proper support. Different types of Auxiliary Ships provide a multitude of services in order to achieve naval victory."
+ auxiliary_hull_4:0 "Advanced Auxiliary Ship"
+ auxiliary_hull_4_desc:0 "Modern Repair and Support Ships ensure that our fleets are always combat-ready, no matter where they are operating."

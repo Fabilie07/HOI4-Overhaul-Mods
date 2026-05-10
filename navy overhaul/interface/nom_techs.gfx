@@ -73,6 +73,23 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_auxiliary_hull_1_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_auxiliary_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_auxiliary_hull_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_auxiliary_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_auxiliary_hull_3_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_auxiliary_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_auxiliary_hull_4_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_auxiliary_4.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_sp_naval_pocket_battleship"
 		texturefile = "gfx/interface/special_project/project_icons/sp_pocket_battleship.dds"
 	}

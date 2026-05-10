@@ -2541,6 +2541,8 @@ technologies = {
 			ship_light_battery_sub
 		}
 		
+		show_equipment_icon = yes
+		
 		path = {
 			leads_to_tech = early_submarine_hull_5
 			research_cost_coeff = 1
@@ -2571,6 +2573,8 @@ technologies = {
 			ship_hull_coastal_submarine_1
 			ship_hull_cruiser_submarine_2
 		}
+		
+		show_equipment_icon = yes
 		
 		path = {
 			leads_to_tech = early_ship_hull_submarine
@@ -2607,6 +2611,8 @@ technologies = {
 			sub_periscope_2
 			sub_ship_engine_2
 		}
+		
+		show_equipment_icon = yes
 
 		path = {
 			leads_to_tech = basic_ship_hull_submarine
@@ -2758,6 +2764,8 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = snorkel_advice_tt
 		}
+		
+		show_equipment_icon = yes
 
 		xp_research_type = navy
 		xp_boost_cost = @xp_boost_ship
@@ -2847,6 +2855,8 @@ technologies = {
 			repair_ship_1
 		}
 		
+		show_equipment_icon = yes
+		
 		path = {
 			leads_to_tech = auxiliary_hull_3
 			research_cost_coeff = 1
@@ -2882,6 +2892,8 @@ technologies = {
 			repair_ship_2
 		}
 		
+		show_equipment_icon = yes
+		
 		path = {
 			leads_to_tech = auxiliary_hull_4
 			research_cost_coeff = 1
@@ -2915,6 +2927,8 @@ technologies = {
 			support_ship_3
 			repair_ship_3
 		}
+		
+		show_equipment_icon = yes
 		
 		research_cost = 1
 		start_year = 1942
