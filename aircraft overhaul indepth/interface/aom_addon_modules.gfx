@@ -96,6 +96,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_plane_cannon_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_cannon_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_plane_improved_hmg"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/EMI_improved_hmg.dds"
 		legacy_lazy_load = no
@@ -1448,6 +1453,82 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_cannon_75_1x"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_75_1x.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_cannon_20_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_20_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_21_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_21_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_22_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_22_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_23_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_23_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_24_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_24_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_25_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_25_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_26_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_26_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_27_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_27_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_28_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_28_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_29_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_29_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_30_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_30_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_35_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_35_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_40_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_40_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_45_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_45_engine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_cannon_50_engine"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/weapons/cannon_50_engine.dds"
 		legacy_lazy_load = no
 	}
 	

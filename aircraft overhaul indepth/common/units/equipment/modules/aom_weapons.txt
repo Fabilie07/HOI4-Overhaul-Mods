@@ -3134,6 +3134,259 @@ equipment_modules = {
 	}
 	
 	
+	
+	cannon_30_engine = {
+		abbreviation = "c30e"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 17
+			maximum_speed = -2
+			reliability = -0.02
+			build_cost_ic = 2
+			weight = 4
+		}
+		multiply_stats = {
+			air_range = -0.01
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 2
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 2
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+			cas
+			attack_logistics
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_35_engine = {
+		abbreviation = "c35"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter }
+		}
+		
+		add_stats = {
+			air_attack = 18
+			maximum_speed = -2
+			reliability = -0.02
+			build_cost_ic = 2.5
+			weight = 4.5
+		}
+		multiply_stats = {
+			air_range = -0.02
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 3
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 3
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+			cas
+			attack_logistics
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	
+	# 40mm (Workaround to allow improved compatibility)
+	cannon_40_engine = {
+		abbreviation = "c40"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter role_cas }
+		}
+		
+		add_stats = {
+			air_attack = 19
+			maximum_speed = -3
+			reliability = -0.03
+			build_cost_ic = 3
+			weight = 5
+		}
+		multiply_stats = {
+			air_range = -0.02
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 4
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 4
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+			cas
+			attack_logistics
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_45_engine = {
+		abbreviation = "c45"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter role_cas }
+		}
+		
+		add_stats = {
+			air_attack = 20
+			maximum_speed = -3
+			reliability = -0.03
+			build_cost_ic = 3.5
+			weight = 5.5
+		}
+		multiply_stats = {
+			air_range = -0.03
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 5
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 5
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+			cas
+			attack_logistics
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	cannon_50_engine = {
+		abbreviation = "c50"
+		category = plane_cannon_engine
+		sfx = sfx_ui_sd_module_turret
+		allowed_module_categories = {
+			role_slot = { role_fighter role_cas }
+		}
+		
+		add_stats = {
+			air_attack = 21
+			maximum_speed = -3
+			reliability = -0.04
+			build_cost_ic = 4
+			weight = 6
+		}
+		multiply_stats = {
+			air_range = -0.03
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			add_stats = {
+				air_attack = 5
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 6
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				port_strike
+				naval_bomber
+			}
+			add_stats = {
+				naval_strike_attack = 1
+			}
+			add_average_stats = {
+				naval_strike_targetting = 6
+			}
+		}
+		xp_cost = 1
+		allow_mission_type = {
+			air_superiority
+			interception
+			cas
+			attack_logistics
+			naval_bomber
+			port_strike
+		}
+		allowed_module_categories = {
+			hud_slot = { hud_fighter }
+			fixed_ammunition_slot = { plane_ammunition }
+		}
+	}
+	
 	### Rotary Cannons
 	
 	rotary_gun_05 = {

@@ -3709,6 +3709,11 @@ technologies = {
 			cannon_65_1x
 			cannon_70_1x
 			tank_buster_2
+			cannon_30_engine
+			cannon_35_engine
+			cannon_40_engine
+			cannon_45_engine
+			cannon_50_engine
 			
 			plane_ammo_hvap
 			
