@@ -73,6 +73,18 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_carrier_conversion_cl_1_medium"
+		texturefile = "gfx/interface/technologies/converted_cl_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_ca_0_medium"
+		texturefile = "gfx/interface/technologies/converted_ca_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_ca_1_medium"
+		texturefile = "gfx/interface/technologies/converted_ca_0.dds"
+	}
+	SpriteType = {
 		name = "GFX_carrier_conversion_bb_0_medium"
 		texturefile = "gfx/interface/technologies/converted_bb_0.dds"
 	}
@@ -83,6 +95,30 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_carrier_conversion_bb_2_medium"
 		texturefile = "gfx/interface/technologies/converted_bb_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bb_3_medium"
+		texturefile = "gfx/interface/technologies/converted_bb_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bb_4_medium"
+		texturefile = "gfx/interface/technologies/converted_bb_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bc_0_medium"
+		texturefile = "gfx/interface/technologies/converted_bc_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bc_1_medium"
+		texturefile = "gfx/interface/technologies/converted_bc_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bc_2_medium"
+		texturefile = "gfx/interface/technologies/converted_bc_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bc_3_medium"
+		texturefile = "gfx/interface/technologies/converted_bc_3.dds"
 	}
 	
 	SpriteType = {

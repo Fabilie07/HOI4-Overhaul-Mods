@@ -403,9 +403,33 @@ equipments = {
 		naval_speed = 26
 		naval_dominance_factor = 250
 
-
 		build_cost_ic = 3500
 		manpower = 1500
+	}
+	
+	ship_hull_carrier_conversion_bb_4 = {
+		abbreviation = "had"
+		year = 1942
+		visual_level = 0
+		archetype = ship_hull_carrier
+		priority = 1100
+		can_convert_from = { ship_hull_heavy_3 ship_hull_heavy_4 }
+		parent = ship_hull_carrier_conversion_bb_3
+		module_slots = inherit
+
+		carrier_size = 10
+		naval_range = 6000
+		reliability = 0.9
+		max_strength = 350
+		naval_speed = 27
+		naval_dominance_factor = 300
+
+		build_cost_ic = 4000
+		manpower = 1800
+		resources = {
+			steel = 3
+			chromium = 1
+		}
 	}
 	
 	### Battlecruiser
