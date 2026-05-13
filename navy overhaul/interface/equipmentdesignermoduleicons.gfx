@@ -1007,6 +1007,14 @@ spriteTypes = {
 		name = "GFX_SMI_ship_carrier_front"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_carrier_catapult.dds"
 	}
+	spriteType = {
+		name = "GFX_SMI_ship_elevator_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_elevator.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_tower"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SMI_ship_deck_space"
@@ -1021,6 +1029,36 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SMI_ship_catapult"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_carrier_catapult.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_plane_elevator_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_elevator.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_plane_elevator_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_elevator.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_plane_elevator_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_elevator.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_superstructure_0"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower_0.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_superstructure_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_superstructure_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_superstructure_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower_3.dds"
 	}
 	
 	

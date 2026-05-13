@@ -2148,6 +2148,7 @@ technologies = {
 			ship_carrier_hangar_small
 			ship_carrier_hangar_medium
 			ship_carrier_hangar_large
+			ship_carrier_superstructure_0
 			
 			# Upon researching any ship
 			ship_signals
@@ -2245,6 +2246,10 @@ technologies = {
 			ship_hull_carrier_0
 		}
 		
+		enable_equipment_modules = {
+			ship_carrier_superstructure_2
+		}
+		
 		path = {
 			leads_to_tech = basic_ship_hull_carrier
 			research_cost_coeff = 1
@@ -2294,6 +2299,8 @@ technologies = {
 			leads_to_tech = improved_ship_hull_carrier
 			research_cost_coeff = 1
 		}
+		
+		show_equipment_icon = yes
 
 		xp_research_type = navy
 		xp_boost_cost = @xp_boost_ship
@@ -2336,6 +2343,7 @@ technologies = {
 		enable_equipment_modules = {
 			carrier_ship_engine_3
 			plane_ammo
+			ship_carrier_superstructure_3
 		}
 		path = {
 			leads_to_tech = advanced_ship_hull_carrier

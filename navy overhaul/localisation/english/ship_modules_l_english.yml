@@ -61,6 +61,7 @@
  EQ_MOD_CAT_ship_carrier_hangar_1_TITLE:0 "Medium Storage"
  EQ_MOD_CAT_ship_carrier_hangar_2_TITLE:0 "Large Storage"
  EQ_MOD_CAT_ship_carrier_hangar_3_TITLE:0 "Very Large Storage"
+ EQ_MOD_CAT_ship_carrier_tower_TITLE:0 "Control Tower"
  EQ_MOD_CAT_ship_extra_fuel_tank_TITLE:0 "Fuel Tank"
  EQ_MOD_CAT_ship_mine_layer_TITLE:1 "Minelaying Gear"
  EQ_MOD_CAT_dp_light_battery_TITLE:0 "Dual-Purpose Battery"

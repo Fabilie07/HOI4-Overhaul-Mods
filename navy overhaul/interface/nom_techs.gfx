@@ -73,6 +73,32 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_carrier_conversion_bb_0_medium"
+		texturefile = "gfx/interface/technologies/converted_bb_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bb_1_medium"
+		texturefile = "gfx/interface/technologies/converted_bb_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_carrier_conversion_bb_2_medium"
+		texturefile = "gfx/interface/technologies/converted_bb_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_early_ship_hull_carrier_light_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_carrier_light_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_ship_hull_carrier_light_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_carrier_light_1.dds"
+	}
+	SpriteType = {	
+		name = "GFX_ship_hull_carrier_light_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_carrier_light_2.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_auxiliary_hull_1_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_auxiliary_1.dds"
 	}
