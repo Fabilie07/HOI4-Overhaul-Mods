@@ -73,6 +73,27 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_early_battlecruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_battlecruiser_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_battlecruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_battlecruiser_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_battlecruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_battlecruiser_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_battlecruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_battlecruiser_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_battlecruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_battlecruiser_5.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_carrier_conversion_cl_1_medium"
 		texturefile = "gfx/interface/technologies/converted_cl_0.dds"
 	}
