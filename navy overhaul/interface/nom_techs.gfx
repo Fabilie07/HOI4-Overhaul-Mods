@@ -44,6 +44,43 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_armored_cruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_armored_cruiser_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_armored_cruiser_hull_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_armored_cruiser_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_heavy_cruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_heavy_cruiser_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_heavy_cruiser_hull_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_heavy_cruiser_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_heavy_cruiser_hull_3_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_heavy_cruiser_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_ship_hull_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/early_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_ship_hull_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/basic_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_ship_hull_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/improved_heavy_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_ship_hull_heavy_cruiser_medium"
+		texturefile = "gfx/interface/technologies/advanced_heavy_cruiser.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_predreadnought_ship_hull_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
 	}
