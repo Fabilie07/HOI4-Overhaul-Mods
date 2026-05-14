@@ -334,6 +334,7 @@ equipment_modules = {
 			soft_attack = -0.5
 			defense = -0.5
 			breakthrough = -0.5
+			supply_consumption = -1
 		}
 		add_stats = {
 			build_cost_ic = 0.15
