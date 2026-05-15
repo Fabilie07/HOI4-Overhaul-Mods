@@ -201,6 +201,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		show_equipment_icon = yes
+		
 		research_cost = 1
 		start_year = 1930
 		folder = {
@@ -287,6 +289,8 @@ technologies = {
 			leads_to_tech = improved_ship_hull_light
 			research_cost_coeff = 1
 		}
+		
+		show_equipment_icon = yes
 
 		xp_research_type = navy
 		xp_boost_cost = @xp_boost_ship
@@ -608,6 +612,8 @@ technologies = {
 			leads_to_tech = basic_ship_hull_cruiser
 			research_cost_coeff = 1
 		}
+		
+		show_equipment_icon = yes
 
 		allow_branch = {
 			has_dlc = "Man the Guns"

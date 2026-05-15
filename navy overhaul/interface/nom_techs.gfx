@@ -44,6 +44,40 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_torpedoboat_destroyer_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_torpedoboat_destroyer.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_destroyer_hull_1_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_destroyer_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_destroyer_hull_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_destroyer_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_destroyer_hull_3_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_destroyer_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_destroyer_hull_4_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_destroyer_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_destroyer_leader_hull_1_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_destroyer_leader_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ship_hull_destroyer_leader_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_destroyer_leader_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ship_hull_destroyer_leader_3_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_destroyer_leader_3.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_early_light_cruiser_hull_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_early_cruiser_1.dds"
 	}
