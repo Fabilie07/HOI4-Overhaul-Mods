@@ -44,6 +44,27 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_early_light_cruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_cruiser_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_scout_cruiser_hull_1_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_cruiser_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_scout_cruiser_hull_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_cruiser_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_scout_cruiser_hull_3_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_cruiser_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_scout_cruiser_hull_4_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_cruiser_5.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_armored_cruiser_hull_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_armored_cruiser_1.dds"
 	}
