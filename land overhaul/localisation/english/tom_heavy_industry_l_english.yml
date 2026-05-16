@@ -1,5 +1,11 @@
 ﻿l_english:
 
+ RULE_HEAVY_INDUSTRY_ENABLING:0 "Heavy Industry"
+ RULE_HI_ENABLED:0 "Enabled"
+ RULE_HI_ENABLED_DESC:0 "Enables §YHeavy Industry§!, meaning nations must specialize their industry for the types of Equipment they produce."
+ RULE_HI_DISABLED:0 "Disabled"
+ RULE_HI_DISABLED_DESC:0 "Disables §YHeavy Industry§!."
+
  TOM_HI_TANK_IDEA_TT:0 "[tom_hi_tanks_tt]"
  TOM_HI_INDUSTRY_IDEA_TT:0 "[tom_hi_industry_tt]"
  TOM_HI_MP_IDEA_TT:0 "[tom_hi_mp_tt]"

@@ -1,3 +1,45 @@
+tom_heavy_industry_enabled_rule = {
+	name = "RULE_HEAVY_INDUSTRY_ENABLING"
+	group = "RULE_GROUP_TOM"
+	
+	default = {
+		name = ENABLED
+		text = "RULE_HI_ENABLED"
+		desc = "RULE_HI_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DISABLED
+		text = "RULE_HI_DISABLED"
+		desc = "RULE_HI_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
+tom_rare_metals_spawns = {
+	name = "RULE_RARE_METALS_SPAWN"
+	group = "RULE_GROUP_TOM"
+	
+	default = {
+		name = HISTORICAL
+		text = "RULE_RARE_METALS_HIST"
+		desc = "RULE_RARE_METALS_HIST_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BALANCED
+		text = "RULE_RARE_METALS_BALANCED"
+		desc = "RULE_RARE_METALS_BALANCED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_RARE_METALS_RANDOM"
+		desc = "RULE_RARE_METALS_RANDOM_DESC"
+		allow_achievements = yes
+	}
+}
+
 tom_ai_boosted_tank_production = {
 	name = "RULE_AI_TANK_PRODUCTION"
 	group = "RULE_GROUP_TOM"
@@ -36,30 +78,6 @@ tom_ai_boosted_tank_production = {
 		name = ENABLED_5
 		text = "RULE_AI_TANK_PRODUCTION_5"
 		desc = "RULE_AI_TANK_PRODUCTION_5_DESC"
-		allow_achievements = yes
-	}
-}
-
-tom_rare_metals_spawns = {
-	name = "RULE_RARE_METALS_SPAWN"
-	group = "RULE_GROUP_TOM"
-	
-	default = {
-		name = HISTORICAL
-		text = "RULE_RARE_METALS_HIST"
-		desc = "RULE_RARE_METALS_HIST_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = BALANCED
-		text = "RULE_RARE_METALS_BALANCED"
-		desc = "RULE_RARE_METALS_BALANCED_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = RANDOM
-		text = "RULE_RARE_METALS_RANDOM"
-		desc = "RULE_RARE_METALS_RANDOM_DESC"
 		allow_achievements = yes
 	}
 }

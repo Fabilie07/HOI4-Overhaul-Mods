@@ -5,6 +5,8 @@ tags={
 	"Technologies"
 }
 dependencies={
+	"*DEV* BBA Aircraft Overhaul"
+	"*DEV* MTG Navy Overhaul"
 	"Equestria at War"
 	"The Road to 56"
 	"Extended Tech Tree 1960"

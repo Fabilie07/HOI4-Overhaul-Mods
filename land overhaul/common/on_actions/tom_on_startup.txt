@@ -180,61 +180,78 @@ on_actions = {
 		
 		# Heavy Industry
 		effect = {
-			set_global_flag = has_heavy_industry_flag
-		
-			every_country = {
-				set_variable = { tom_hi_tank_target_pointer = 9 }	# Used to resize array
-				set_variable = { tom_hi_tank_target = 50 }			# Used to calculate exact percentage value
-				resize_array = { tom_hi_tank_target_array = 10 }	# Used to visually depict scrollbar
-				
-				set_variable = { tom_hi_industry_target_pointer = 9 }
-				set_variable = { tom_hi_industry_target = 50 }
-				resize_array = { tom_hi_industry_target_array = 10 }
-				
-				set_variable = { tom_hi_mp_target_pointer = 9 }
-				set_variable = { tom_hi_mp_target = 50 }	
-				resize_array = { tom_hi_mp_target_array = 10 }
-				
-				set_variable = { tom_hi_specialisation_target_pointer = 9 }
-				set_variable = { tom_hi_specialisation_target = 50 }	
-				resize_array = { tom_hi_specialisation_target_array = 10 }
-				
-				set_variable = { tom_hi_exp_target_pointer = 9 }
-				set_variable = { tom_hi_exp_target = 50 }
-				resize_array = { tom_hi_exp_target_array = 10 }
-				
-				
-				set_variable = { tom_hi_tank_current = 50 }
-				resize_array = { tom_hi_tank_current_array = 10 }
-				
-				set_variable = { tom_hi_industry_current = 50 }
-				resize_array = { tom_hi_industry_current_array = 10 }
-				
-				set_variable = { tom_hi_mp_current = 50 }
-				resize_array = { tom_hi_mp_current_array = 10 }
-				
-				set_variable = { tom_hi_specialisation_current = 50 }
-				resize_array = { tom_hi_specialisation_current_array = 10 }
-				
-				set_variable = { tom_hi_exp_current = 50 }
-				resize_array = { tom_hi_exp_current_array = 10 }
-				
-				set_variable = { tom_hi_speed_reduction = 1 }
-				set_variable = { tom_hi_tanks_reduction = 0 }
-				set_variable = { tom_hi_industry_reduction = 0 }
-				set_variable = { tom_hi_mp_reduction = 0 }
-				set_variable = { tom_hi_specialisation_reduction = 0 }
-				set_variable = { tom_hi_exp_reduction = 0 }
-				
-				tom_hi_check_monthly_change_update = yes
-				
-				add_ideas = {
-					tom_hi_tanks_3
-					tom_hi_industry_3
-					tom_hi_mp_3
-					tom_hi_specialisation_3
-					tom_hi_exp_3
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_heavy_industry_enabled_rule
+						option = ENABLED
+					}
 				}
+				set_global_flag = has_heavy_industry_flag
+			
+				every_country = {
+					set_variable = { tom_hi_tank_target_pointer = 9 }	# Used to resize array
+					set_variable = { tom_hi_tank_target = 50 }			# Used to calculate exact percentage value
+					resize_array = { tom_hi_tank_target_array = 10 }	# Used to visually depict scrollbar
+					
+					set_variable = { tom_hi_industry_target_pointer = 9 }
+					set_variable = { tom_hi_industry_target = 50 }
+					resize_array = { tom_hi_industry_target_array = 10 }
+					
+					set_variable = { tom_hi_mp_target_pointer = 9 }
+					set_variable = { tom_hi_mp_target = 50 }	
+					resize_array = { tom_hi_mp_target_array = 10 }
+					
+					set_variable = { tom_hi_specialisation_target_pointer = 9 }
+					set_variable = { tom_hi_specialisation_target = 50 }	
+					resize_array = { tom_hi_specialisation_target_array = 10 }
+					
+					set_variable = { tom_hi_exp_target_pointer = 9 }
+					set_variable = { tom_hi_exp_target = 50 }
+					resize_array = { tom_hi_exp_target_array = 10 }
+					
+					
+					set_variable = { tom_hi_tank_current = 50 }
+					resize_array = { tom_hi_tank_current_array = 10 }
+					
+					set_variable = { tom_hi_industry_current = 50 }
+					resize_array = { tom_hi_industry_current_array = 10 }
+					
+					set_variable = { tom_hi_mp_current = 50 }
+					resize_array = { tom_hi_mp_current_array = 10 }
+					
+					set_variable = { tom_hi_specialisation_current = 50 }
+					resize_array = { tom_hi_specialisation_current_array = 10 }
+					
+					set_variable = { tom_hi_exp_current = 50 }
+					resize_array = { tom_hi_exp_current_array = 10 }
+					
+					set_variable = { tom_hi_speed_reduction = 1 }
+					set_variable = { tom_hi_tanks_reduction = 0 }
+					set_variable = { tom_hi_industry_reduction = 0 }
+					set_variable = { tom_hi_mp_reduction = 0 }
+					set_variable = { tom_hi_specialisation_reduction = 0 }
+					set_variable = { tom_hi_exp_reduction = 0 }
+					
+					tom_hi_check_monthly_change_update = yes
+					
+					add_ideas = {
+						tom_hi_tanks_3
+						tom_hi_industry_3
+						tom_hi_mp_3
+						tom_hi_specialisation_3
+						tom_hi_exp_3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = tom_heavy_industry_enabled_rule
+						option = DISABLED
+					}
+				}
+				set_global_flag = tom_heavy_industry_disabled_flag
 			}
 		}
 	}
