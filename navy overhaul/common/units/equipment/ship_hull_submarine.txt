@@ -521,7 +521,7 @@ equipments = {
 		manpower = 60
 	}
 
-	ship_hull_cruiser_submarine_3 = {
+	ship_hull_cruiser_submarine = {
 		abbreviation = "hef"
 		year = 1940
 		priority = 2600

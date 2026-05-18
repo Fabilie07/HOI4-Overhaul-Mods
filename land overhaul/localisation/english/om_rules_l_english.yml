@@ -1,0 +1,9 @@
+﻿l_english:
+
+ RULE_GROUP_OVERHAUL:0 "Overhaul Mods"
+
+ RULE_HEAVY_INDUSTRY_ENABLING:0 "Heavy Industry"
+ RULE_HI_ENABLED:0 "Enabled"
+ RULE_HI_ENABLED_DESC:0 "Enables §YHeavy Industry§!, meaning nations must specialize their industry for the types of Equipment they produce."
+ RULE_HI_DISABLED:0 "Disabled"
+ RULE_HI_DISABLED_DESC:0 "Disables §YHeavy Industry§!."

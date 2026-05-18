@@ -44,6 +44,32 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_early_submarine_hull_1_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_submarine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_submarine_hull_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_submarine_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_submarine_hull_3_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_submarine_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_early_submarine_hull_4_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_early_submarine_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_ship_hull_cruiser_submarine_1_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ship_hull_cruiser_submarine_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine_2.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_torpedoboat_destroyer_hull_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_torpedoboat_destroyer.dds"
 	}
