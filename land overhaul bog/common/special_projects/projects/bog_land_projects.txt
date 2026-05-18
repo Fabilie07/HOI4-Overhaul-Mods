@@ -1,0 +1,67 @@
+sp_land_advanced_gas_operated_reloading = {
+	specialization = specialization_land
+
+	project_tags = sp_tag_artillery
+
+	ai_will_do = {
+		base = 1
+	}
+	
+	available = {
+		FROM = {
+			has_tech = improved_infantry_weapons
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	resource_cost = {
+		resources = {
+			steel = 12
+			tungsten = 6
+		}
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.medium
+	
+	project_output = {
+		equipment_bonus = {
+			infantry_equipment = {
+				reliability = 0.12
+				build_cost_ic = -0.1
+			}
+			lmg_chassis = {
+				reliability = 0.06
+				build_cost_ic = -0.1
+			}
+			mmg_chassis = {
+				reliability = 0.06
+				build_cost_ic = -0.1
+			}
+			hmg_chassis = {
+				reliability = 0.06
+				build_cost_ic = -0.1
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}

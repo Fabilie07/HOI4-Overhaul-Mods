@@ -1,6 +1,14 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			USA = {
+				complete_special_project = {
+					project = sp:sp_land_advanced_gas_operated_reloading
+				}
+			}
+		}
+	
+		effect = {
 			every_country = {		
 				tom_inf_bat_startup_effect_infantry = yes
 				tom_inf_bat_startup_effect_motorized = yes

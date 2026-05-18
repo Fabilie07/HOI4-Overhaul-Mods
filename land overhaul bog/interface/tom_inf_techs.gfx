@@ -1,5 +1,15 @@
 spriteTypes = {
 
+	### Special Projects
+	
+	SpriteType = {
+		name = "GFX_sp_land_advanced_gas_operated_reloading"
+		texturefile = "gfx/interface/special_project/project_icons/sp_land_advanced_gas_operated_reloading.dds"
+	}
+	
+	
+	### Equipment
+
 	spriteType = {
 		name = "GFX_horse_0_medium"
 		texturefile = "gfx/interface/technologies/generic_horse_0.dds"
