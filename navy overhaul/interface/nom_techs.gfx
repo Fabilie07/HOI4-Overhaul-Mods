@@ -61,6 +61,19 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_early_submarine_hull_5_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_coastal_submarine_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ship_hull_coastal_submarine_2_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_coastal_submarine_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ship_hull_coastal_submarine_3_medium"
+		texturefile = "gfx/interface/technologies/ship_hull_coastal_submarine_3.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_ship_hull_cruiser_submarine_1_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine_1.dds"
 	}
