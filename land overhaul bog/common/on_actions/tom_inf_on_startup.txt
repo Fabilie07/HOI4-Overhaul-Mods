@@ -51,12 +51,17 @@ on_actions = {
 						cartridge_slot = inf_cartridge_rifle_80
 					}
 				}
-				create_equipment_variant = {
-					type = infantry_equipment_1
-					mark_older_equipment_obsolete = yes
-					modules = {
-						support_equipment_1_slot = inf_grenade_frag
-						cartridge_slot = inf_cartridge_rifle_80
+				if = {
+					limit = {
+						NOT = { TAG = { USA }  }
+					}
+					create_equipment_variant = {
+						type = infantry_equipment_1
+						mark_older_equipment_obsolete = yes
+						modules = {
+							support_equipment_1_slot = inf_grenade_frag
+							cartridge_slot = inf_cartridge_rifle_80
+						}
 					}
 				}
 				create_equipment_variant = {
@@ -152,6 +157,20 @@ on_actions = {
 					mark_older_equipment_obsolete = yes
 					modules = {
 						mg_rpm_slot = mg_rpm_0800
+					}
+				}
+			}
+			USA = {
+				create_equipment_variant = {
+					type = infantry_equipment_1
+					mark_older_equipment_obsolete = yes
+					modules = {
+						firing_mode_slot = inf_semi_auto
+						magazine_type_slot = inf_clip_10
+						sights_slot = inf_sights_2
+						support_equipment_1_slot = inf_grenade_frag
+						support_equipment_2_slot = inf_cleaning_kit
+						cartridge_slot = inf_cartridge_rifle_75
 					}
 				}
 			}
