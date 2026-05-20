@@ -137,7 +137,6 @@ equipment_modules = {
 	ship_light_battery_2_2x = {
 		abbreviation = "sab"
 		category = ship_light_battery
-		parent = ship_light_battery_1
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -165,7 +164,7 @@ equipment_modules = {
 	ship_light_battery_3_2x = {
 		abbreviation = "sac"
 		category = ship_light_battery
-		parent = ship_light_battery_2
+		parent = ship_light_battery_2_2x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -191,7 +190,7 @@ equipment_modules = {
 	ship_light_battery_4_2x = {
 		abbreviation = "sac"
 		category = ship_light_battery
-		parent = ship_light_battery_2
+		parent = ship_light_battery_3_2x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -217,7 +216,7 @@ equipment_modules = {
 	ship_light_battery_5_2x = {
 		abbreviation = "sac"
 		category = ship_light_battery
-		parent = ship_light_battery_2
+		parent = ship_light_battery_4_2x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -243,7 +242,6 @@ equipment_modules = {
 	dp_light_battery_4 = {
 		abbreviation = "saf"
 		category = dp_light_battery
-		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
@@ -270,7 +268,6 @@ equipment_modules = {
 		abbreviation = "saf"
 		category = dp_light_battery
 		parent = dp_light_battery_4
-		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
@@ -297,7 +294,6 @@ equipment_modules = {
 	dp_light_battery_4_2x = {
 		abbreviation = "saf"
 		category = dp_light_battery
-		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {
@@ -325,7 +321,6 @@ equipment_modules = {
 		abbreviation = "saf"
 		category = dp_light_battery
 		parent = dp_light_battery_4_2x
-		gui_category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
 	
 		add_stats = {

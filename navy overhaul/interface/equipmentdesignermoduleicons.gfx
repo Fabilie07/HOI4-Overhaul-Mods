@@ -1497,6 +1497,14 @@ spriteTypes = {
 		name = "GFX_SMI_dp_light_battery_3"
 		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/dp_light_battery_icn_3.dds"
 	}
+	SpriteType = {
+		name = "GFX_SMI_dp_light_battery_4"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/dp_light_battery_icn_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SMI_dp_light_battery_5"
+		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/dp_light_battery_icn_5.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SMI_dp_light_battery_2_2x"
@@ -1505,6 +1513,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SMI_dp_light_battery_3_2x"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_dp_light_battery_3_2x.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_dp_light_battery_4_2x"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_dp_light_battery_4_2x.dds"
+	}	
+	spriteType = {
+		name = "GFX_SMI_dp_light_battery_5_2x"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_dp_light_battery_5_2x.dds"
 	}	
 	
 }
