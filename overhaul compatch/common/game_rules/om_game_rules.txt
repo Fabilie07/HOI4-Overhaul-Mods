@@ -14,3 +14,39 @@ extra_research_slot_rule = {
 		desc = "RULE_RESEARCH_DISABLED_DESC"
 	}
 }
+
+om_heavy_industry_enabled_rule = {
+	name = "RULE_HEAVY_INDUSTRY"
+	group = "RULE_GROUP_OM"
+	
+	default = {
+		name = ENABLED
+		text = "RULE_HI_ENABLED"
+		desc = "RULE_HI_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DISABLED
+		text = "RULE_HI_DISABLED"
+		desc = "RULE_HI_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
+om_academy_enabled_rule = {
+	name = "RULE_ACADEMY"
+	group = "RULE_GROUP_OM"
+	
+	default = {
+		name = ENABLED
+		text = "RULE_ACADEMY_ENABLED"
+		desc = "RULE_ACADEMY_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DISABLED
+		text = "RULE_ACADEMY_DISABLED"
+		desc = "RULE_ACADEMY_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}

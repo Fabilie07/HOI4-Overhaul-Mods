@@ -2,8 +2,9 @@
 TOM_heavy_industry_decisions = {
 	visible_when_empty = yes
 	visible = {
-		NOT = {
-			has_global_flag = tom_heavy_industry_disabled_flag
+		has_game_rule = {
+			rule = om_heavy_industry_enabled_rule
+			option = ENABLED
 		}
 	}
 	scripted_gui = tom_heavy_industry_gui
