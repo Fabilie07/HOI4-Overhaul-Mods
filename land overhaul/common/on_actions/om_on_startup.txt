@@ -12,6 +12,20 @@ on_actions = {
 					add_research_slot = 1
 				}
 			}
+			
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = om_academy_enabled_rule
+						option = ENABLED
+					}
+				}
+				every_country = {
+					set_variable = { om_academy_cost_1 = 25 }
+					set_variable = { om_academy_cost_2 = 50 }
+					set_variable = { om_academy_cost_3 = 75 }
+				}
+			}
 		}
 	}
 }

@@ -1,6 +1,6 @@
 aom_free_designs_rule = {
 	name = "RULE_FREE_AIR_DESIGNS"
-	group = "RULE_FREE_DESIGNS"
+	group = "RULE_GROUP_AOM"
 
 	default = {
 		name = DISABLED

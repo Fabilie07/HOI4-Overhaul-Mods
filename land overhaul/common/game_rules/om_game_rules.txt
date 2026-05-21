@@ -12,6 +12,7 @@ extra_research_slot_rule = {
 		name = DISABLED
 		text = "RULE_RESEARCH_DISABLED"
 		desc = "RULE_RESEARCH_DISABLED_DESC"
+		allow_achievements = yes
 	}
 }
 
@@ -41,6 +42,12 @@ om_academy_enabled_rule = {
 		name = ENABLED
 		text = "RULE_ACADEMY_ENABLED"
 		desc = "RULE_ACADEMY_ENABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FREE
+		text = "RULE_ACADEMY_FREE"
+		desc = "RULE_ACADEMY_FREE_DESC"
 		allow_achievements = yes
 	}
 	option = {

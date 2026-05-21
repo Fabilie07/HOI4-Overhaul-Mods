@@ -1,9 +1,15 @@
 TOM_tank_academy_decisions = {
 	visible_when_empty = yes
 	visible = {
-		has_game_rule = {
-			rule = om_academy_enabled_rule
-			option = ENABLED
+		OR = {
+			has_game_rule = {
+				rule = om_academy_enabled_rule
+				option = ENABLED
+			}
+			has_game_rule = {
+				rule = om_academy_enabled_rule
+				option = FREE
+			}
 		}
 	}
 	scripted_gui = tom_academy_gui

@@ -1,6 +1,6 @@
 ideas = {
 	hidden_ideas = {
-		nom_academy_1 = { # Base
+		NOM_academy_1 = { # Base
 			picture = generic_navy_bonus
 			research_bonus = {
 				naval_equipment = 0.1
@@ -12,13 +12,13 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_self = {
+		NOM_academy_2_self = {
 			modifier = {
 				navy_intel_to_others = -0.1
 				naval_mastery_gain_factor = 0.1
 			}
 		}
-		nom_academy_3_self = {
+		NOM_academy_3_self = {
 			modifier = {
 				experience_gain_navy_factor = 0.1
 				naval_speed_factor = 0.05
@@ -32,7 +32,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_self = {
+		NOM_academy_4_self = {
 			modifier = {
 				positioning = 0.05
 				strike_force_movement_org_loss = -0.1
@@ -44,7 +44,7 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_ENG = {
+		NOM_academy_2_ENG = {
 			research_bonus = {
 				asw_tech = 0.1
 			}
@@ -58,7 +58,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_3_ENG = {
+		NOM_academy_3_ENG = {
 			modifier = {
 				convoy_escort_efficiency = 0.1
 				convoy_retreat_speed = 0.15
@@ -76,7 +76,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_ENG = {
+		NOM_academy_4_ENG = {
 			modifier = {
 				navy_org_factor = 0.1
 				positioning = 0.1
@@ -97,7 +97,7 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_FRA = {
+		NOM_academy_2_FRA = {
 			modifier = {
 				critical_receive_chance = -0.1
 				naval_speed_factor = 0.1
@@ -108,7 +108,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_3_FRA = {
+		NOM_academy_3_FRA = {
 			modifier = {
 				naval_defense_factor = 0.1
 			}
@@ -127,7 +127,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_FRA = {
+		NOM_academy_4_FRA = {
 			modifier = {
 				naval_morale_factor = 0.15
 				repair_speed_factor = 0.2
@@ -139,7 +139,7 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_GER = {
+		NOM_academy_2_GER = {
 			equipment_bonus = {
 				ship_hull_cruiser_panzerschiff = {
 					naval_range = 0.15
@@ -154,7 +154,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_3_GER = {
+		NOM_academy_3_GER = {
 			modifier = {
 				convoy_raiding_efficiency_factor = 0.1
 				screening_without_screens = 0.15
@@ -173,7 +173,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_GER = {
+		NOM_academy_4_GER = {
 			modifier = {
 				convoy_raiding_efficiency_factor = 0.15
 				sub_retreat_speed = 0.1
@@ -188,7 +188,7 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_ITA = {
+		NOM_academy_2_ITA = {
 			modifier = {
 				navy_capital_ship_attack_factor = 0.05
 				navy_capital_ship_defence_factor = 0.1
@@ -200,7 +200,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_3_ITA = {
+		NOM_academy_3_ITA = {
 			modifier = {
 				navy_weather_penalty = -0.2
 				navy_visibility = -0.1
@@ -216,7 +216,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_ITA = {
+		NOM_academy_4_ITA = {
 			modifier = {
 				naval_retreat_speed = 0.2
 				naval_mines_damage_factor = 0.25
@@ -230,7 +230,7 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_JAP = {
+		NOM_academy_2_JAP = {
 			modifier = {
 				navy_max_range_factor = 0.1
 				naval_torpedo_hit_chance_factor = 0.15
@@ -248,7 +248,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_3_JAP = {
+		NOM_academy_3_JAP = {
 			modifier = {
 				navy_max_range_factor = 0.15
 				naval_invasion_plan_cap = 5
@@ -262,7 +262,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_JAP = {
+		NOM_academy_4_JAP = {
 			modifier = {
 				naval_night_attack = 0.15
 				trait_air_controller_xp_gain_factor = 0.5
@@ -275,7 +275,7 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_SOV = {
+		NOM_academy_2_SOV = {
 			modifier = {
 				ships_at_battle_start = 0.2
 				navy_weather_penalty = -0.2
@@ -294,7 +294,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_3_SOV = {
+		NOM_academy_3_SOV = {
 			modifier = {
 				naval_enemy_fleet_size_ratio_penalty_factor = 0.25
 				production_speed_bunker_factor = 0.15
@@ -308,7 +308,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_SOV = {
+		NOM_academy_4_SOV = {
 			modifier = {
 				convoy_raiding_efficiency_factor = 0.2
 			}
@@ -320,7 +320,7 @@ ideas = {
 			}
 		}
 		
-		nom_academy_2_USA = {
+		NOM_academy_2_USA = {
 			modifier = {
 				production_speed_dockyard_factor = 0.1
 				navy_max_range_factor = 0.2
@@ -335,7 +335,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_3_USA = {
+		NOM_academy_3_USA = {
 			modifier = {
 				naval_critical_effect_factor = -0.1
 				critical_receive_chance = -0.15
@@ -351,7 +351,7 @@ ideas = {
 				}
 			}
 		}
-		nom_academy_4_USA = {
+		NOM_academy_4_USA = {
 			modifier = {
 				screening_efficiency = 0.15
 				industrial_capacity_dockyard = 0.1

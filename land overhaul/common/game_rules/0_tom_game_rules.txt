@@ -1,3 +1,21 @@
+tom_free_designs_rule = {
+	name = "RULE_FREE_TANK_DESIGNS"
+	group = "RULE_GROUP_TOM"
+
+	default = {
+		name = DISABLED
+		text = "RULE_TANK_DESIGNS_DISABLED"
+		desc = "RULE_TANK_DESIGNS_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_TANK_DESIGNS_ENABLED"
+		desc = "RULE_TANK_DESIGNS_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
 tom_rare_metals_spawns = {
 	name = "RULE_RARE_METALS_SPAWN"
 	group = "RULE_GROUP_TOM"
@@ -60,24 +78,6 @@ tom_ai_boosted_tank_production = {
 		name = ENABLED_5
 		text = "RULE_AI_TANK_PRODUCTION_5"
 		desc = "RULE_AI_TANK_PRODUCTION_5_DESC"
-		allow_achievements = yes
-	}
-}
-
-tom_free_designs_rule = {
-	name = "RULE_FREE_TANK_DESIGNS"
-	group = "RULE_GROUP_OVERHAUL"
-
-	default = {
-		name = DISABLED
-		text = "RULE_TANK_DESIGNS_DISABLED"
-		desc = "RULE_TANK_DESIGNS_DISABLED_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = ENABLED
-		text = "RULE_TANK_DESIGNS_ENABLED"
-		desc = "RULE_TANK_DESIGNS_ENABLED_DESC"
 		allow_achievements = yes
 	}
 }

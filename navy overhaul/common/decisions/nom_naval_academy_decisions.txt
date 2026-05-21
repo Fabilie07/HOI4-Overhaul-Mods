@@ -2,12 +2,12 @@ nom_naval_academy_decisions = {
 	nom_found_naval_academy = {
 		icon = generic_naval
 
-		cost = 75
+		cost = om_academy_cost_3
 		fire_only_once = yes
 
 		complete_effect = {
 			set_country_flag = nom_naval_academy_1
-			add_ideas = nom_academy_1
+			add_ideas = NOM_academy_1
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = nom_naval_academy_unlock_tt
@@ -28,7 +28,7 @@ nom_naval_academy_decisions = {
 		}
 		icon = generic_naval
 		
-		cost = 25
+		cost = om_academy_cost_1
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -39,46 +39,46 @@ nom_naval_academy_decisions = {
 				limit = {
 					tag = ENG
 				}
-				add_ideas = nom_academy_2_ENG
+				add_ideas = NOM_academy_2_ENG
 			}
 			else_if = {
 				limit = {
 					tag = FRA
 				}
-				add_ideas = nom_academy_2_FRA
+				add_ideas = NOM_academy_2_FRA
 			}
 			else_if = {
 				limit = {
 					tag = GER
 				}
-				add_ideas = nom_academy_2_GER
+				add_ideas = NOM_academy_2_GER
 			}
 			else_if = {
 				limit = {
 					tag = ITA
 				}
-				add_ideas = nom_academy_2_ITA
+				add_ideas = NOM_academy_2_ITA
 			}
 			else_if = {
 				limit = {
 					tag = JAP
 				}
-				add_ideas = nom_academy_2_JAP
+				add_ideas = NOM_academy_2_JAP
 			}
 			else_if = {
 				limit = {
 					tag = SOV
 				}
-				add_ideas = nom_academy_2_SOV
+				add_ideas = NOM_academy_2_SOV
 			}
 			else_if = {
 				limit = {
 					tag = USA
 				}
-				add_ideas = nom_academy_2_USA
+				add_ideas = NOM_academy_2_USA
 			}
 			else = {
-				add_ideas = nom_academy_2_self
+				add_ideas = NOM_academy_2_self
 			}
 		}
 		
@@ -123,13 +123,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_2
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_2_ENG
+			add_ideas = NOM_academy_2_ENG
 		}
 		
 		ai_will_do = {
@@ -160,13 +160,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 25
+		cost = om_academy_cost_1
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_2
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_2_FRA
+			add_ideas = NOM_academy_2_FRA
 		}
 		
 		ai_will_do = {
@@ -197,13 +197,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_2
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_2_GER
+			add_ideas = NOM_academy_2_GER
 		}
 		
 		ai_will_do = {
@@ -234,13 +234,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_2
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_2_ITA
+			add_ideas = NOM_academy_2_ITA
 			hidden_effect = {
 				set_technology = {
 					nom_academy_2_ITA_tech = 1
@@ -277,13 +277,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_2
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_2_JAP
+			add_ideas = NOM_academy_2_JAP
 		}
 		
 		ai_will_do = {
@@ -314,13 +314,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_2
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_2_SOV
+			add_ideas = NOM_academy_2_SOV
 		}
 		
 		ai_will_do = {
@@ -351,13 +351,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_2
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_2_USA
+			add_ideas = NOM_academy_2_USA
 		}
 		
 		ai_will_do = {
@@ -377,7 +377,7 @@ nom_naval_academy_decisions = {
 		}
 		icon = generic_naval
 		
-		cost = 25
+		cost = om_academy_cost_1
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -388,46 +388,46 @@ nom_naval_academy_decisions = {
 				limit = {
 					tag = ENG
 				}
-				add_ideas = nom_academy_3_ENG
+				add_ideas = NOM_academy_3_ENG
 			}
 			else_if = {
 				limit = {
 					tag = FRA
 				}
-				add_ideas = nom_academy_3_FRA
+				add_ideas = NOM_academy_3_FRA
 			}
 			else_if = {
 				limit = {
 					tag = GER
 				}
-				add_ideas = nom_academy_3_GER
+				add_ideas = NOM_academy_3_GER
 			}
 			else_if = {
 				limit = {
 					tag = ITA
 				}
-				add_ideas = nom_academy_3_ITA
+				add_ideas = NOM_academy_3_ITA
 			}
 			else_if = {
 				limit = {
 					tag = JAP
 				}
-				add_ideas = nom_academy_3_JAP
+				add_ideas = NOM_academy_3_JAP
 			}
 			else_if = {
 				limit = {
 					tag = SOV
 				}
-				add_ideas = nom_academy_3_SOV
+				add_ideas = NOM_academy_3_SOV
 			}
 			else_if = {
 				limit = {
 					tag = USA
 				}
-				add_ideas = nom_academy_3_USA
+				add_ideas = NOM_academy_3_USA
 			}
 			else = {
-				add_ideas = nom_academy_3_self
+				add_ideas = NOM_academy_3_self
 			}
 		}
 		
@@ -473,13 +473,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_3
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_3_ENG
+			add_ideas = NOM_academy_3_ENG
 		}
 		
 		ai_will_do = {
@@ -511,13 +511,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_3
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_3_FRA
+			add_ideas = NOM_academy_3_FRA
 		}
 		
 		ai_will_do = {
@@ -549,13 +549,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_3
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_3_GER
+			add_ideas = NOM_academy_3_GER
 		}
 		
 		ai_will_do = {
@@ -587,13 +587,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_3
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_3_ITA
+			add_ideas = NOM_academy_3_ITA
 		}
 		
 		ai_will_do = {
@@ -625,13 +625,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_3
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_3_JAP
+			add_ideas = NOM_academy_3_JAP
 		}
 		
 		ai_will_do = {
@@ -663,13 +663,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_3
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_3_SOV
+			add_ideas = NOM_academy_3_SOV
 		}
 		
 		ai_will_do = {
@@ -701,13 +701,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_3
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_3_USA
+			add_ideas = NOM_academy_3_USA
 		}
 		
 		ai_will_do = {
@@ -726,7 +726,7 @@ nom_naval_academy_decisions = {
 		}
 		icon = generic_naval
 		
-		cost = 25
+		cost = om_academy_cost_1
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -737,46 +737,46 @@ nom_naval_academy_decisions = {
 				limit = {
 					tag = ENG
 				}
-				add_ideas = nom_academy_4_ENG
+				add_ideas = NOM_academy_4_ENG
 			}
 			else_if = {
 				limit = {
 					tag = FRA
 				}
-				add_ideas = nom_academy_4_FRA
+				add_ideas = NOM_academy_4_FRA
 			}
 			else_if = {
 				limit = {
 					tag = GER
 				}
-				add_ideas = nom_academy_4_GER
+				add_ideas = NOM_academy_4_GER
 			}
 			else_if = {
 				limit = {
 					tag = ITA
 				}
-				add_ideas = nom_academy_4_ITA
+				add_ideas = NOM_academy_4_ITA
 			}
 			else_if = {
 				limit = {
 					tag = JAP
 				}
-				add_ideas = nom_academy_4_JAP
+				add_ideas = NOM_academy_4_JAP
 			}
 			else_if = {
 				limit = {
 					tag = SOV
 				}
-				add_ideas = nom_academy_4_SOV
+				add_ideas = NOM_academy_4_SOV
 			}
 			else_if = {
 				limit = {
 					tag = USA
 				}
-				add_ideas = nom_academy_4_USA
+				add_ideas = NOM_academy_4_USA
 			}
 			else = {
-				add_ideas = nom_academy_3_self
+				add_ideas = NOM_academy_3_self
 			}
 		}
 		
@@ -821,13 +821,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_4
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_4_ENG
+			add_ideas = NOM_academy_4_ENG
 		}
 		
 		ai_will_do = {
@@ -858,13 +858,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_4
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_4_FRA
+			add_ideas = NOM_academy_4_FRA
 		}
 		
 		ai_will_do = {
@@ -895,13 +895,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_4
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_4_GER
+			add_ideas = NOM_academy_4_GER
 		}
 		
 		ai_will_do = {
@@ -932,13 +932,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_4
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_4_ITA
+			add_ideas = NOM_academy_4_ITA
 		}
 		
 		ai_will_do = {
@@ -969,13 +969,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_4
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_4_JAP
+			add_ideas = NOM_academy_4_JAP
 		}
 		
 		ai_will_do = {
@@ -1006,13 +1006,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_4
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_4_SOV
+			add_ideas = NOM_academy_4_SOV
 		}
 		
 		ai_will_do = {
@@ -1043,13 +1043,13 @@ nom_naval_academy_decisions = {
 			}
 		}
 		
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
 			set_country_flag = nom_naval_academy_4
 			add_to_variable = { nom_academy_update = 1 }
-			add_ideas = nom_academy_4_USA
+			add_ideas = NOM_academy_4_USA
 		}
 		
 		ai_will_do = {

@@ -19,7 +19,7 @@
  RULE_TANK_DESIGNS_ENABLED: "Enabled"
  RULE_TANK_DESIGNS_ENABLED_DESC: "All Tank Designs will be free."
 
- RULE_GROUP_TOM:0 "Tank Overhaul Mod"
+ RULE_GROUP_TOM:0 "NSB Tank Overhaul"
  RULE_AI_TANK_PRODUCTION: "Boost AI Tank Production"
  RULE_AI_TANK_PRODUCTION_DISABLED_DESC: "AI nations will not gain reduced cost for armoured vehicles."
  RULE_AI_TANK_PRODUCTION_1: "10%"

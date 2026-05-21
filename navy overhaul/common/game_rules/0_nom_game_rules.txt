@@ -1,6 +1,6 @@
 nom_free_designs_rule = {
 	name = "RULE_FREE_NAVY_DESIGNS"
-	group = "RULE_FREE_DESIGNS"
+	group = "RULE_GROUP_NOM"
 
 	default = {
 		name = DISABLED

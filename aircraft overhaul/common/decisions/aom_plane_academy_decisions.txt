@@ -2,7 +2,7 @@ AOM_plane_academy_decisions = {
 	aom_found_plane_academy = {
 		icon = generic_air
 
-		cost = 75
+		cost = om_academy_cost_3
 		fire_only_once = yes
 
 		complete_effect = {
@@ -28,7 +28,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 25
+		cost = om_academy_cost_1
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -123,7 +123,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -160,7 +160,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -197,7 +197,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -234,7 +234,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -271,7 +271,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -308,7 +308,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -345,7 +345,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -371,7 +371,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 25
+		cost = om_academy_cost_1
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -467,7 +467,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -505,7 +505,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -543,7 +543,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -581,7 +581,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -619,7 +619,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -657,7 +657,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -695,7 +695,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -720,7 +720,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 25
+		cost = om_academy_cost_1
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -815,7 +815,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -852,7 +852,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -889,7 +889,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -926,7 +926,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -963,7 +963,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -1000,7 +1000,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -1037,7 +1037,7 @@ AOM_plane_academy_decisions = {
 		}
 		
 		icon = generic_air
-		cost = 50
+		cost = om_academy_cost_2
 		fire_only_once = yes
 		
 		complete_effect = {

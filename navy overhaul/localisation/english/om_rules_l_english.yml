@@ -17,5 +17,7 @@
  RULE_ACADEMY:0 "Academies"
  RULE_ACADEMY_ENABLED:0 "Enabled"
  RULE_ACADEMY_ENABLED_DESC:0 "Enables §YAcademy Decisions§!, allowing nations to specialize their Armed Branches according to historical Doctrines."
+ RULE_ACADEMY_FREE:0 "Free"
+ RULE_ACADEMY_FREE_DESC:0 "Enables §YAcademy Decisions§! and removes their Political Power cost."
  RULE_ACADEMY_DISABLED:0 "Disabled"
  RULE_ACADEMY_DISABLED_DESC:0 "Disables §YAcademy Decisions§!."
