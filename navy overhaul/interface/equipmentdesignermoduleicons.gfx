@@ -846,6 +846,14 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_SMI_ship_torpedo_2_1x"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_torpedo_launcher_2_1x.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_torpedo_2_2x"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_torpedo_launcher_2_2x.dds"
+	}
+	spriteType = {
 		name = "GFX_SMI_ship_torpedo_2_3x"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_torpedo_launcher_2_3x.dds"
 	}
@@ -1046,7 +1054,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_SMI_ship_carrier_superstructure_0"
-		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower_0.dds"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower.dds"
 	}
 	spriteType = {
 		name = "GFX_SMI_ship_carrier_superstructure_1"

@@ -16,7 +16,6 @@ if = {
 		scout_cruiser_hull_2 = 1
 		scout_cruiser_hull_3 = 1
 		scout_cruiser_hull_4 = 1
-		early_ship_hull_cruiser = 1
 		
 		armored_cruiser_hull = 1
 		armored_cruiser_hull_2 = 1
@@ -70,6 +69,7 @@ if = {
 		improved_sonar = 1
 		damage_control_1 = 1
 		basic_naval_mines = 1
+		improved_naval_mines = 1
 		submarine_mine_laying = 1
 		mtg_transport = 1
 		

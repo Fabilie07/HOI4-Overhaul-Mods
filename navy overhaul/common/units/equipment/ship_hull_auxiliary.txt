@@ -250,7 +250,7 @@ equipments = {
 
 		fuel_consumption = 0
 		
-		build_cost_ic = 350
+		build_cost_ic = 250
 		resources = {
 			steel = 1
 		}

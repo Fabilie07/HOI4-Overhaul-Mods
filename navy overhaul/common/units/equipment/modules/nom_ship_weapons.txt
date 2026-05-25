@@ -1024,6 +1024,9 @@ equipment_modules = {
 			build_cost_ic = 550
 			reliability = -0.08
 		}
+		multiply_stats = {
+			naval_speed = -0.03
+		}
 		add_average_stats = {
 			hg_armor_piercing = 40
 		}
@@ -1071,7 +1074,7 @@ equipment_modules = {
 			reliability = -0.1
 		}
 		multiply_stats = {
-			naval_speed = -0.06
+			naval_speed = -0.04
 		}
 		add_average_stats = {
 			hg_armor_piercing = 45
@@ -1095,7 +1098,7 @@ equipment_modules = {
 			reliability = -0.15
 		}
 		multiply_stats = {
-			naval_speed = -0.09
+			naval_speed = -0.06
 		}
 		add_average_stats = {
 			hg_armor_piercing = 45
@@ -1118,7 +1121,7 @@ equipment_modules = {
 			reliability = -0.20
 		}
 		multiply_stats = {
-			naval_speed = -0.12
+			naval_speed = -0.08
 		}
 		add_average_stats = {
 			hg_armor_piercing = 45
@@ -1403,6 +1406,32 @@ equipment_modules = {
 		xp_cost = 2
 	}
 
+	ship_torpedo_2_1x = {
+		abbreviation = "sch"
+		category = ship_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 6
+			reliability = -0.03
+			build_cost_ic = 30
+		}
+		critical_parts = { damaged_torpedoes }
+		xp_cost = 2
+	}
+	ship_torpedo_2_2x = {
+		abbreviation = "sch"
+		category = ship_torpedo
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			torpedo_attack = 10
+			reliability = -0.06
+			build_cost_ic = 45
+		}
+		critical_parts = { damaged_torpedoes }
+		xp_cost = 2
+	}
 	ship_torpedo_2_3x = {
 		abbreviation = "sch"
 		category = ship_torpedo

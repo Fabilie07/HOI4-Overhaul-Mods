@@ -67,7 +67,7 @@ equipments = {
 			}
 			fixed_ship_deck_slot = {
 				required = no
-				allowed_module_categories = { ship_battlecruiser_deck_armor }
+				allowed_module_categories = { ship_heavy_deck_armor }
 			}
 			fixed_ship_citadel_slot = {
 				required = no
@@ -289,7 +289,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 25
+		naval_speed = 29
 		reliability = 0.8
 		
 		naval_range = 2500
@@ -332,7 +332,7 @@ equipments = {
 		naval_range = 3000
 		
 		max_strength = 240
-		naval_speed = 25
+		naval_speed = 29
 		reliability = 0.9
 		build_cost_ic = 2600
 		resources = {
@@ -354,7 +354,7 @@ equipments = {
 		naval_range = 4000
 		
 		max_strength = 280
-		naval_speed = 27
+		naval_speed = 30
 		reliability = 0.95
 		build_cost_ic = 2900
 		resources = {
@@ -376,7 +376,7 @@ equipments = {
 		naval_range = 4500
 		
 		max_strength = 320
-		naval_speed = 28
+		naval_speed = 31
 		reliability = 0.95
 		build_cost_ic = 3500
 		resources = {
@@ -398,7 +398,7 @@ equipments = {
 		naval_range = 6800
 		
 		max_strength = 350
-		naval_speed = 28
+		naval_speed = 32
 		reliability = 1
 		build_cost_ic = 3000
 		resources = {

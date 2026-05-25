@@ -242,7 +242,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_carrier_conversion_bb_1_medium"
-		texturefile = "gfx/interface/technologies/converted_bb_0.dds"
+		texturefile = "gfx/interface/technologies/converted_bb_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_carrier_conversion_bb_2_medium"

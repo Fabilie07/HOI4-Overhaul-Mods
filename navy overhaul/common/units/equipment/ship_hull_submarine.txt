@@ -200,18 +200,6 @@ equipments = {
 			count < 1
 		}
 		
-		default_modules = {
-			fixed_ship_torpedo_slot = empty
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-			right_1_custom_slot = ship_locked
-			right_2_custom_slot = ship_locked
-			right_3_custom_slot = ship_locked
-			right_4_custom_slot = ship_locked
-			left_1_custom_slot = ship_locked
-			left_4_custom_slot = ship_locked
-		}
-		
 		lg_armor_piercing = 0
 		lg_attack = 0
 		
@@ -257,6 +245,18 @@ equipments = {
 		priority = 2500
 		naval_dominance_factor = 2
 		module_slots = inherit
+		
+		default_modules = {
+			fixed_ship_torpedo_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+			right_1_custom_slot = ship_locked
+			right_2_custom_slot = ship_locked
+			right_3_custom_slot = ship_locked
+			right_4_custom_slot = ship_locked
+			left_1_custom_slot = ship_locked
+			left_4_custom_slot = ship_locked
+		}
 	}
 	
 	ship_hull_early_submarine_2 = {
@@ -425,6 +425,18 @@ equipments = {
 		
 		module_slots = inherit
 		
+		default_modules = {
+			fixed_ship_torpedo_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+			right_1_custom_slot = ship_locked
+			right_2_custom_slot = ship_locked
+			right_3_custom_slot = ship_locked
+			right_4_custom_slot = ship_locked
+			left_1_custom_slot = ship_locked
+			left_4_custom_slot = ship_locked
+		}
+		
 		sub_visibility = 28
 		surface_visibility = 1
 		naval_speed = 10
@@ -487,6 +499,18 @@ equipments = {
 		priority = 2600
 		
 		module_slots = inherit
+		
+		default_modules = {
+			fixed_ship_torpedo_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+			right_1_custom_slot = ship_locked
+			right_2_custom_slot = ship_locked
+			right_3_custom_slot = ship_locked
+			right_4_custom_slot = ship_locked
+			left_1_custom_slot = ship_locked
+			left_4_custom_slot = ship_locked
+		}
 		
 		sub_visibility = 40
 		surface_visibility = 4
@@ -553,6 +577,18 @@ equipments = {
 		priority = 2600
 		module_slots = inherit
 		
+		default_modules = {
+			fixed_ship_torpedo_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+			right_1_custom_slot = ship_locked
+			right_2_custom_slot = ship_locked
+			right_3_custom_slot = ship_locked
+			right_4_custom_slot = ship_locked
+			left_1_custom_slot = ship_locked
+			left_4_custom_slot = ship_locked
+		}
+		
 		sub_visibility = 28
 		naval_speed = 18
 		reliability = 0.75
@@ -609,6 +645,18 @@ equipments = {
 					ship_airplane_launcher_sub
 				}
 			}			
+		}
+		
+		default_modules = {
+			fixed_ship_torpedo_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+			right_1_custom_slot = ship_locked
+			right_2_custom_slot = ship_locked
+			right_3_custom_slot = ship_locked
+			right_4_custom_slot = ship_locked
+			left_1_custom_slot = ship_locked
+			left_4_custom_slot = ship_locked
 		}
 
 		sub_visibility = 20
@@ -777,7 +825,15 @@ equipments = {
 		}
 
 		default_modules = {
+			fixed_ship_torpedo_slot = empty
 			fixed_ship_engine_slot = sub_ship_nuclear_engine_1
+			rear_1_custom_slot = empty
+			right_1_custom_slot = ship_locked
+			right_2_custom_slot = ship_locked
+			right_3_custom_slot = ship_locked
+			right_4_custom_slot = ship_locked
+			left_1_custom_slot = ship_locked
+			left_4_custom_slot = ship_locked
 		}
 		
 		sub_visibility = 26
@@ -889,10 +945,15 @@ equipments = {
 		}
 		
 		default_modules = {
+			fixed_ship_torpedo_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_locked
-			mid_1_custom_slot = ship_locked
-			mid_4_custom_slot = ship_locked
+			rear_1_custom_slot = empty
+			right_1_custom_slot = ship_locked
+			right_2_custom_slot = ship_locked
+			right_3_custom_slot = ship_locked
+			right_4_custom_slot = ship_locked
+			left_1_custom_slot = ship_locked
+			left_4_custom_slot = ship_locked
 		}
 		
 		sub_visibility = 25

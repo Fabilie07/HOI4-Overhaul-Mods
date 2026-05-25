@@ -342,7 +342,7 @@ equipments = {
 		module_slots = inherit
 		
 		reliability = 0.9
-		naval_speed = 23
+		naval_speed = 25
 		naval_range = 3800
 		max_strength = 70
 		build_cost_ic = 800

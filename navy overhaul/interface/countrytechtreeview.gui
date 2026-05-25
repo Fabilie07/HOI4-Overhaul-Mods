@@ -2547,6 +2547,18 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 				
+				containerWindowType = {
+					name = "tiled_research_bg"
+					position = { x=88 y=562 }
+					size = { width = 2808 height = 550 }
+					clipping = no
+
+					background = {
+						name = "Background"
+						quadTextureSprite ="GFX_tiled_research_bg"
+					}
+				}
+				
 				instantTextBoxType = {
 					name = "naval_subtitle_armor"
 					position = { x = 144 y = 0 }

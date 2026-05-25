@@ -64,6 +64,7 @@ equipments = {
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
+					ship_carrier_tower
 				}
 			}
 			right_2_custom_slot = right_1_custom_slot
@@ -139,11 +140,12 @@ equipments = {
 			front_1_custom_slot = inherit
 
 			right_1_custom_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
+					ship_carrier_tower
 				}
 			}
 			right_2_custom_slot = right_1_custom_slot
@@ -217,11 +219,12 @@ equipments = {
 			front_1_custom_slot = inherit
 
 			right_1_custom_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
+					ship_carrier_tower
 				}
 			}
 			right_2_custom_slot = right_1_custom_slot
@@ -271,6 +274,7 @@ equipments = {
 		year = 1925
 		visual_level = 0
 		archetype = ship_hull_carrier
+		priority = 1100
 		can_convert_from = { ship_hull_pre_dreadnought }
 		module_slots = {
 			fixed_ship_radio_slot = inherit
@@ -305,12 +309,13 @@ equipments = {
 			front_1_custom_slot = inherit
 
 			right_1_custom_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
+					ship_carrier_tower
 				}
 			}
 			right_2_custom_slot = right_1_custom_slot
@@ -439,6 +444,7 @@ equipments = {
 		year = 1925
 		visual_level = 0
 		archetype = ship_hull_carrier
+		priority = 1100
 		can_convert_from = { ship_hull_battlecruiser_1 ship_hull_battlecruiser_2 }
 		module_slots = {
 			fixed_ship_radio_slot = inherit
@@ -473,12 +479,13 @@ equipments = {
 			front_1_custom_slot = inherit
 
 			right_1_custom_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
+					ship_carrier_tower
 				}
 			}
 			right_2_custom_slot = right_1_custom_slot
@@ -519,6 +526,7 @@ equipments = {
 		parent = ship_hull_carrier_conversion_bc_0
 		can_convert_from = { ship_hull_battlecruiser_3 }
 		module_slots = inherit
+		priority = 1100
 		
 		carrier_size = 4
 		
@@ -541,6 +549,7 @@ equipments = {
 		parent = ship_hull_carrier_conversion_bc_1
 		can_convert_from = { ship_hull_battlecruiser_4 }
 		module_slots = inherit
+		priority = 1100
 		
 		carrier_size = 10
 		
@@ -564,6 +573,7 @@ equipments = {
 		can_convert_from = { ship_hull_modern_battlecruiser }
 		
 		module_slots = inherit
+		priority = 1100
 		
 		carrier_size = 10
 		
@@ -687,7 +697,7 @@ equipments = {
 			}
 
 			right_1_custom_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					ship_heavy_secondaries
 					ship_secondaries

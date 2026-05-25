@@ -1,70 +1,65 @@
 on_actions = {
 	on_startup = {
 		effect = {	## Ship Designs
-			DEN = {
-				DEN_get_starting_navy_designs = yes
-				load_oob = "00_nom_DEN_1936_naval"
-			}
-			ENG = {
-				set_technology = { deck_conversion1 = 1 popup = no}
-				ENG_get_starting_navy_designs = yes
-				load_oob = "00_nom_ENG_1936_naval"
-			}
-			FIN = {
-				FIN_get_starting_navy_designs = yes
-				load_oob = "00_nom_FIN_1936_naval"
-			}
-			FRA = {
-				set_technology = { deck_conversion1 = 1 popup = no}
-				FRA_get_starting_navy_designs = yes
-				load_oob = "00_nom_FRA_1936_naval"
-			}
-			GRE = {
-				GRE_get_starting_navy_designs = yes
-				load_oob = "00_nom_GRE_1936_naval"
-			}
-			HOL = {
-				HOL_get_starting_navy_designs = yes
-				load_oob = "00_nom_HOL_1936_naval"
-			}
-			ITA = {
-				ITA_get_starting_navy_designs = yes
-				load_oob = "00_nom_ITA_1936_naval"
-			}
-			JAP = {
-				set_technology = { deck_conversion1 = 1 popup = no}
-				JAP_get_starting_navy_designs = yes
-				load_oob = "00_nom_JAP_1936_naval"
-			}
-			NOR = {
-				NOR_get_starting_navy_designs = yes
-				load_oob = "00_nom_NOR_1936_naval"
-			}
-			POR = {
-				POR_get_starting_navy_designs = yes
-				load_oob = "00_nom_POR_1936_naval"
-			}
-			SOV = {
-				SOV_get_starting_navy_designs = yes
-				load_oob = "00_nom_SOV_1936_naval"
-			}
-			SPR = {
-				SPR_get_starting_navy_designs = yes
-				load_oob = "00_nom_SPR_1936_naval"
-			}
-			SWE = {
-				SWE_get_starting_navy_designs = yes
-				load_oob = "00_nom_SWE_1936_naval"
-			}
-			TUR = {
-				TUR_get_starting_navy_designs = yes
-				load_oob = "00_nom_TUR_1936_naval"
-			}
-			USA = {
-				set_technology = { deck_conversion1 = 1 popup = no}
-				USA_get_starting_navy_designs = yes
-				load_oob = "00_nom_USA_1936_naval"
-			}
+			# DEN = {
+				# DEN_get_starting_navy_designs = yes
+				# load_oob = "00_nom_DEN_1936_naval"
+			# }
+			# FIN = {
+				# FIN_get_starting_navy_designs = yes
+				# load_oob = "00_nom_FIN_1936_naval"
+			# }
+			# FRA = {
+				# set_technology = { deck_conversion1 = 1 popup = no}
+				# FRA_get_starting_navy_designs = yes
+				# load_oob = "00_nom_FRA_1936_naval"
+			# }
+			# GRE = {
+				# GRE_get_starting_navy_designs = yes
+				# load_oob = "00_nom_GRE_1936_naval"
+			# }
+			# HOL = {
+				# HOL_get_starting_navy_designs = yes
+				# load_oob = "00_nom_HOL_1936_naval"
+			# }
+			# ITA = {
+				# ITA_get_starting_navy_designs = yes
+				# load_oob = "00_nom_ITA_1936_naval"
+			# }
+			# JAP = {
+				# set_technology = { deck_conversion1 = 1 popup = no}
+				# JAP_get_starting_navy_designs = yes
+				# load_oob = "00_nom_JAP_1936_naval"
+			# }
+			# NOR = {
+				# NOR_get_starting_navy_designs = yes
+				# load_oob = "00_nom_NOR_1936_naval"
+			# }
+			# POR = {
+				# POR_get_starting_navy_designs = yes
+				# load_oob = "00_nom_POR_1936_naval"
+			# }
+			# SOV = {
+				# SOV_get_starting_navy_designs = yes
+				# load_oob = "00_nom_SOV_1936_naval"
+			# }
+			# SPR = {
+				# SPR_get_starting_navy_designs = yes
+				# load_oob = "00_nom_SPR_1936_naval"
+			# }
+			# SWE = {
+				# SWE_get_starting_navy_designs = yes
+				# load_oob = "00_nom_SWE_1936_naval"
+			# }
+			# TUR = {
+				# TUR_get_starting_navy_designs = yes
+				# load_oob = "00_nom_TUR_1936_naval"
+			# }
+			# USA = {
+				# set_technology = { deck_conversion1 = 1 popup = no}
+				# USA_get_starting_navy_designs = yes
+				# load_oob = "00_nom_USA_1936_naval"
+			# }
 		}
 	}
 }
