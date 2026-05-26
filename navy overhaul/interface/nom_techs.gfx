@@ -187,10 +187,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ship_hull_dreadnought_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_basic_dreadnought_ship_hull_medium"
-		texturefile = "gfx/interface/technologies/ship_hull_dreadnought_1.dds"
-	}
-	SpriteType = {
 		name = "GFX_basic_super_dreadnought_ship_hull_medium"
 		texturefile = "gfx/interface/technologies/ship_hull_super_dreadnought_1.dds"
 	}
