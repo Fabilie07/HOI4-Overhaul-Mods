@@ -143,7 +143,6 @@ equipment_modules = {
 	ship_light_battery_sub = {
 		abbreviation = "smg"
 		category = ship_light_battery_sub
-		parent = ship_very_light_battery_sub
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -163,7 +162,6 @@ equipment_modules = {
 	ship_medium_battery_sub = {
 		abbreviation = "smg"
 		category = ship_light_battery_sub
-		parent = ship_light_battery_sub
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
