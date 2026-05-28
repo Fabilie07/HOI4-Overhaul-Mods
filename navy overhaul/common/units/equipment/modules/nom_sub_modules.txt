@@ -134,6 +134,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			sub_visibility = 0.02
+			naval_speed = -0.02
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -142,6 +143,7 @@ equipment_modules = {
 	ship_light_battery_sub = {
 		abbreviation = "smg"
 		category = ship_light_battery_sub
+		parent = ship_very_light_battery_sub
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -152,6 +154,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			sub_visibility = 0.05
+			naval_speed = -0.04
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -160,6 +163,7 @@ equipment_modules = {
 	ship_medium_battery_sub = {
 		abbreviation = "smg"
 		category = ship_light_battery_sub
+		parent = ship_light_battery_sub
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -170,6 +174,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			sub_visibility = 0.05
+			naval_speed = -0.05
 		}
 
 		critical_parts = { damaged_light_guns }
@@ -367,6 +372,7 @@ equipment_modules = {
 		category = sub_ship_engine
 		sfx = sfx_ui_sd_module_engine
 		gfx = sub_ship_aip_engine_2
+		parent = ship_engine_sub_aip_1
 		add_stats = {
 			fuel_consumption = 30
 		}
@@ -392,6 +398,7 @@ equipment_modules = {
 		category = sub_ship_engine
 		sfx = sfx_ui_sd_module_engine
 		gfx = sub_ship_aip_engine_3
+		parent = ship_engine_sub_aip_2
 		add_stats = {
 			fuel_consumption = 20
 		}
@@ -455,6 +462,7 @@ equipment_modules = {
 		abbreviation = "sba"
 		category = ship_sub_sonar
 		gfx = ship_sonar_2
+		parent = ship_sub_sonar_1
 
 		add_stats = {
 			surface_detection = 12
@@ -467,6 +475,7 @@ equipment_modules = {
 		abbreviation = "sba"
 		category = ship_sub_sonar
 		gfx = ship_sonar_3
+		parent = ship_sub_sonar_2
 
 		add_stats = {
 			surface_detection = 16
@@ -479,6 +488,7 @@ equipment_modules = {
 		abbreviation = "sba"
 		category = ship_sub_sonar
 		gfx = ship_sonar_4
+		parent = ship_sub_sonar_3
 
 		add_stats = {
 			surface_detection = 20
@@ -506,6 +516,7 @@ equipment_modules = {
 		abbreviation = "sba"
 		category = ship_sub_radar
 		gfx = ship_radar_2
+		parent = ship_sub_radar_1
 
 		add_stats = {
 			build_cost_ic = 40
@@ -531,6 +542,7 @@ equipment_modules = {
 	sub_periscope_2 = {
 		abbreviation = "sba"
 		category = ship_sub_periscope
+		parent = sub_periscope_1
 
 		add_stats = {
 			sub_visibility = -1
@@ -553,6 +565,7 @@ equipment_modules = {
 	sub_torpedo_computer_2 = {
 		abbreviation = "sba"
 		category = ship_torpedo_computer
+		parent = sub_torpedo_computer_1
 
 		add_stats = {
 			naval_torpedo_hit_chance_factor = 0.06
@@ -563,6 +576,7 @@ equipment_modules = {
 	sub_torpedo_computer_3 = {
 		abbreviation = "sba"
 		category = ship_torpedo_computer
+		parent = sub_torpedo_computer_2
 
 		add_stats = {
 			naval_torpedo_hit_chance_factor = 0.08
@@ -583,6 +597,7 @@ equipment_modules = {
 	sub_batteries_2 = {
 		abbreviation = "sba"
 		category = ship_sub_batteries
+		parent = sub_batteries_1
 
 		add_stats = {
 			sub_visibility = -1.5
@@ -593,6 +608,7 @@ equipment_modules = {
 	sub_batteries_3 = {
 		abbreviation = "sba"
 		category = ship_sub_batteries
+		parent = sub_batteries_2
 
 		add_stats = {
 			sub_visibility = -2

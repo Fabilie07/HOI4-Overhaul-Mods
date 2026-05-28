@@ -19,6 +19,7 @@ equipment_modules = {
 		abbreviation = "lsa2"
 		category = ship_light_armor
 		gfx = ship_armor_thin_2
+		parent = light_ship_armor_1
 		
 		multiply_stats = {
 			naval_speed = -0.02
@@ -33,6 +34,7 @@ equipment_modules = {
 		abbreviation = "lsa3"
 		category = ship_light_armor
 		gfx = ship_armor_thin_3
+		parent = light_ship_armor_2
 		
 		multiply_stats = {
 			naval_speed = -0.04
@@ -48,6 +50,7 @@ equipment_modules = {
 		abbreviation = "lsa4"
 		category = ship_light_armor
 		gfx = ship_armor_thin_4
+		parent = light_ship_armor_3
 		
 		multiply_stats = {
 			naval_speed = -0.06
@@ -63,6 +66,7 @@ equipment_modules = {
 		abbreviation = "lsa4"
 		category = ship_light_armor
 		gfx = ship_armor_thin_5
+		parent = light_ship_armor_4
 		
 		multiply_stats = {
 			naval_speed = -0.08
@@ -78,6 +82,7 @@ equipment_modules = {
 		abbreviation = "lsa4"
 		category = ship_light_armor
 		gfx = ship_armor_thin_6
+		parent = light_ship_armor_5
 		
 		multiply_stats = {
 			naval_speed = -0.1
@@ -400,6 +405,7 @@ equipment_modules = {
 		abbreviation = "lsd2"
 		category = ship_light_deck_armor
 		gfx = ship_deck_armor_2
+		parent = light_ship_deck_1
 		
 		multiply_stats = {
 			naval_speed = -0.02
@@ -416,6 +422,7 @@ equipment_modules = {
 		abbreviation = "lsd2"
 		category = ship_light_deck_armor
 		gfx = ship_deck_armor_3
+		parent = light_ship_deck_2
 		
 		multiply_stats = {
 			naval_speed = -0.03

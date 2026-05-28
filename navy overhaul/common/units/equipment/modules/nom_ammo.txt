@@ -81,6 +81,7 @@ equipment_modules = {
 		abbreviation = "at2"
 		category = ammo_torpedo
 		sfx = sfx_ui_sd_module_turret
+		parent = torpedo_ammo
 
 		multiply_stats = {
 			torpedo_attack = 0.1
@@ -92,6 +93,7 @@ equipment_modules = {
 		abbreviation = "at3"
 		category = ammo_torpedo
 		sfx = sfx_ui_sd_module_turret
+		parent = torpedo_ammo_2
 
 		multiply_stats = {
 			torpedo_attack = 0.1
@@ -106,6 +108,7 @@ equipment_modules = {
 		abbreviation = "ato"
 		category = ammo_torpedo
 		sfx = sfx_ui_sd_module_turret
+		parent = torpedo_ammo_3
 
 		multiply_stats = {
 			torpedo_attack = 0.2

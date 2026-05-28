@@ -138,6 +138,7 @@ equipment_modules = {
 		abbreviation = "sab"
 		category = ship_light_battery
 		sfx = sfx_ui_sd_module_turret
+		parent = ship_light_battery_5
 		
 		add_stats = {
 			lg_attack = 2
@@ -295,6 +296,7 @@ equipment_modules = {
 		abbreviation = "saf"
 		category = dp_light_battery
 		sfx = sfx_ui_sd_module_turret
+		parent = dp_light_battery_5
 	
 		add_stats = {
 			lg_attack = 3
@@ -396,6 +398,7 @@ equipment_modules = {
 	ship_light_medium_battery_2_2x = {
 		abbreviation = "sas"
 		category = ship_light_medium_battery
+		parent = ship_light_medium_battery_2
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
@@ -420,6 +423,7 @@ equipment_modules = {
 	ship_light_medium_battery_2_3x = {
 		abbreviation = "sas"
 		category = ship_light_medium_battery
+		parent = ship_light_medium_battery_5_2x
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
@@ -547,7 +551,7 @@ equipment_modules = {
 	ship_light_medium_battery_5_2x = {
 		abbreviation = "sas"
 		category = ship_light_medium_battery
-		parent = ship_light_medium_battery_3_2x
+		parent = ship_light_medium_battery_4_2x
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
@@ -572,7 +576,7 @@ equipment_modules = {
 	ship_light_medium_battery_5_3x = {
 		abbreviation = "sas"
 		category = ship_light_medium_battery
-		parent = ship_light_medium_battery_3_3x
+		parent = ship_light_medium_battery_4_3x
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {	
@@ -598,14 +602,13 @@ equipment_modules = {
 	dp_ship_medium_1 = {
 		abbreviation = "sdq"
 		category = ship_light_medium_battery
-		gui_category = ship_medium_battery
 		sfx = sfx_ui_sd_module_turret
-		parent = ship_light_medium_battery_3_3x
+		parent = ship_light_medium_battery_5_3x
 		add_stats = {
 			lg_attack = 10
 			anti_air_attack = 10
 			build_cost_ic = 450
-			reliability = -0.09
+			reliability = -0.12
 		}
 
 		multiply_stats = {
@@ -614,7 +617,6 @@ equipment_modules = {
 		
 		add_average_stats = {
 			lg_armor_piercing = 12
-			max_strength = 20
 		}
 
 		forbid_module_categories = {
@@ -992,6 +994,7 @@ equipment_modules = {
 	ship_heavy_battery_1_3x = {
 		abbreviation = "sai"
 		category = ship_heavy_battery
+		parent = ship_heavy_battery_1_3x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1015,7 +1018,7 @@ equipment_modules = {
 	
 	ship_heavy_battery_2_2x = {
 		abbreviation = "sai"
-		parent = ship_heavy_battery_1_2x
+		parent = ship_heavy_battery_1_3x
 		category = ship_heavy_battery
 		sfx = sfx_ui_sd_module_turret
 		
@@ -1039,7 +1042,7 @@ equipment_modules = {
 	}
 	ship_heavy_battery_2_3x = {
 		abbreviation = "sai"
-		parent = ship_heavy_battery_1_3x
+		parent = ship_heavy_battery_2_2x
 		category = ship_heavy_battery
 		sfx = sfx_ui_sd_module_turret
 		
@@ -1065,7 +1068,7 @@ equipment_modules = {
 	ship_heavy_battery_3_2x = {
 		abbreviation = "saj"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_2_2x
+		parent = ship_heavy_battery_2_3x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1089,7 +1092,7 @@ equipment_modules = {
 	ship_heavy_battery_3_3x = {
 		abbreviation = "saj"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_2_3x
+		parent = ship_heavy_battery_3_2x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1113,6 +1116,7 @@ equipment_modules = {
 	ship_heavy_battery_3_4x = {
 		abbreviation = "saj"
 		category = ship_heavy_battery
+		parent = ship_heavy_battery_3_3x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1137,7 +1141,7 @@ equipment_modules = {
 	ship_heavy_battery_4_2x = {
 		abbreviation = "saj"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_3_2x
+		parent = ship_heavy_battery_3_4x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1161,7 +1165,7 @@ equipment_modules = {
 	ship_heavy_battery_4_3x = {
 		abbreviation = "saj"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_3_3x
+		parent = ship_heavy_battery_4_2x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1185,7 +1189,7 @@ equipment_modules = {
 	ship_heavy_battery_4_4x = {
 		abbreviation = "saj"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_3_4x
+		parent = ship_heavy_battery_4_3x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1210,7 +1214,7 @@ equipment_modules = {
 	ship_heavy_battery_5_2x = {
 		abbreviation = "sak"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_4_2x
+		parent = ship_heavy_battery_4_4x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1234,7 +1238,7 @@ equipment_modules = {
 	ship_heavy_battery_5_3x = {
 		abbreviation = "sak"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_4_3x
+		parent = ship_heavy_battery_5_2x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1258,7 +1262,7 @@ equipment_modules = {
 	ship_heavy_battery_5_4x = {
 		abbreviation = "sak"
 		category = ship_heavy_battery
-		parent = ship_heavy_battery_4_3x
+		parent = ship_heavy_battery_5_3x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1507,6 +1511,7 @@ equipment_modules = {
 	ship_casemate_2 = {
 		abbreviation = "saa"
 		category = ship_secondaries
+		parent = ship_casemate_1
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1525,6 +1530,7 @@ equipment_modules = {
 	ship_secondaries_1_1x = {
 		abbreviation = "saa"
 		category = ship_secondaries
+		parent = ship_casemate_2
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1542,6 +1548,7 @@ equipment_modules = {
 	ship_secondaries_1_2x = {
 		abbreviation = "saa"
 		category = ship_secondaries
+		parent = ship_secondaries_1_1x
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {
@@ -1561,7 +1568,6 @@ equipment_modules = {
 		abbreviation = "saw"
 		category = ship_heavy_secondaries
 		gui_category = ship_secondaries
-		parent = ship_secondaries_1_1x
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1584,7 +1590,7 @@ equipment_modules = {
 		abbreviation = "saw"
 		category = ship_heavy_secondaries
 		gui_category = ship_secondaries
-		parent = ship_secondaries_1_2x
+		parent = ship_secondaries_2_1x
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -1629,6 +1635,7 @@ equipment_modules = {
 	dp_ship_secondaries_1 = {
 		abbreviation = "sax"
 		category = ship_secondaries
+		parent = ship_secondaries_2_2x
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 1.2
@@ -1651,6 +1658,7 @@ equipment_modules = {
 	dp_ship_secondaries_1_2x = {
 		abbreviation = "sax"
 		category = ship_secondaries
+		parent = dp_ship_secondaries_1
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 2
@@ -1674,6 +1682,7 @@ equipment_modules = {
 	dp_ship_secondaries_2_1x = {
 		abbreviation = "say"
 		category = ship_secondaries
+		parent = dp_ship_secondaries_1_2x
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 1.8
@@ -1696,6 +1705,7 @@ equipment_modules = {
 	dp_ship_secondaries_2_2x = {
 		abbreviation = "say"
 		category = ship_secondaries
+		parent = dp_ship_secondaries_2
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 3
@@ -1781,7 +1791,7 @@ equipment_modules = {
 	ship_anti_air_4 = {
 		abbreviation = "sbe"
 		category = ship_anti_air
-		parent = ship_anti_air_2
+		parent = ship_anti_air_3
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {

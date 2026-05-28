@@ -73,6 +73,8 @@ technologies = {
 		enable_equipment_modules = {
 			light_ship_engine_1
 			light_ship_armor_1
+			
+			ship_smoke_generator
 		}
 		
 		path = {
@@ -134,6 +136,9 @@ technologies = {
 		enable_equipments = {
 			ship_hull_destroyer_leader_1
 		}
+		enable_equipment_modules = {
+			ship_seaplane_tender_1
+		}
 		
 		path = {
 			leads_to_tech = early_destroyer_hull_3
@@ -163,6 +168,9 @@ technologies = {
 	early_destroyer_hull_3 = {
 		enable_equipments = {
 			ship_hull_early_destroyer_3
+		}
+		enable_equipment_modules = {
+			light_ship_engine_2
 		}
 		
 		path = {
@@ -227,12 +235,6 @@ technologies = {
 
 		enable_equipments = {
 			ship_hull_light_1
-		}
-		enable_equipment_modules = {
-			light_ship_engine_2
-			ship_seaplane_tender_1
-			
-			ship_smoke_generator
 		}
 		naval_retreat_speed = 0.2
 		
@@ -507,6 +509,9 @@ technologies = {
 		enable_equipments = {
 			ship_hull_early_cruiser_3
 		}
+		enable_equipment_modules = {
+			ship_airplane_launcher_1
+		}
 		
 		path = {
 			leads_to_tech = scout_cruiser_hull_3
@@ -540,6 +545,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_extra_fuel_tank_2
+			cruiser_ship_engine_2
 		}
 		
 		path = {
@@ -606,7 +612,7 @@ technologies = {
 			ship_hull_cruiser_1
 		}
 		enable_equipment_modules = {
-			ship_airplane_launcher_1
+			ship_airplane_launcher_2
 		}
 		path = {
 			leads_to_tech = basic_ship_hull_cruiser
@@ -658,10 +664,6 @@ technologies = {
 
 		enable_equipments = {
 			ship_hull_cruiser_2
-		}
-		enable_equipment_modules = {
-			cruiser_ship_engine_2
-			ship_airplane_launcher_2
 		}
 
 		path = {
@@ -2186,6 +2188,7 @@ technologies = {
 			ship_carrier_hangar_small
 			ship_carrier_hangar_medium
 			ship_carrier_hangar_large
+			ship_arresting_cable
 			ship_carrier_superstructure_0
 			
 			# Upon researching any ship
@@ -2286,6 +2289,7 @@ technologies = {
 		
 		enable_equipment_modules = {
 			ship_carrier_superstructure_2
+			plane_ammo
 		}
 		
 		path = {
@@ -2331,7 +2335,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			carrier_ship_engine_2
-			ship_arresting_cable
+			ship_catapult
 		}
 		path = {
 			leads_to_tech = improved_ship_hull_carrier
@@ -2380,7 +2384,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			carrier_ship_engine_3
-			plane_ammo
 			ship_carrier_superstructure_3
 		}
 		path = {
@@ -2432,7 +2435,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			carrier_ship_engine_4
-			ship_catapult
 		}
 		
 		xp_research_type = navy

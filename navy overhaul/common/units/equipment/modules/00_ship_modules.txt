@@ -242,6 +242,7 @@ equipment_modules = {
 	ship_seaplane_tender_2 = {
 		abbreviation = "sfb"
 		category = ship_seaplane_tender
+		parent = ship_seaplane_tender_1
 
 		add_stats = {
 			surface_detection = 3

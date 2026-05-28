@@ -24,6 +24,7 @@ equipment_modules = {
 	ship_radio_1 = {
 		abbreviation = "sig1"
 		category = ship_radio
+		parent = ship_signals
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
@@ -38,6 +39,7 @@ equipment_modules = {
 	ship_radio_2 = {
 		abbreviation = "sig2"
 		category = ship_radio
+		parent = ship_radio_1
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
@@ -50,6 +52,7 @@ equipment_modules = {
 	ship_radio_3 = {
 		abbreviation = "sig3"
 		category = ship_radio
+		parent = ship_radio_2
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
@@ -145,6 +148,7 @@ equipment_modules = {
 	ship_extra_fuel_tank_2 = {
 		abbreviation = "sdb"
 		category = ship_tanks
+		parent = ship_extra_fuel_tank
 		
 		multiply_stats = {
 			naval_range = 0.5
@@ -172,6 +176,7 @@ equipment_modules = {
 		abbreviation = "dc2"
 		category = ship_damage_control
 		sfx = sfx_ui_sd_module_turret
+		parent = water_pump
 
 		add_stats = {
 			reliability = 0.2
@@ -184,6 +189,7 @@ equipment_modules = {
 		abbreviation = "dc3"
 		category = ship_damage_control
 		sfx = sfx_ui_sd_module_turret
+		parent = dc_lockers
 
 		add_stats = {
 			reliability = 0.3
@@ -196,6 +202,7 @@ equipment_modules = {
 		abbreviation = "dc4"
 		category = ship_damage_control
 		sfx = sfx_ui_sd_module_turret
+		parent = dc_control_room
 
 		add_stats = {
 			reliability = 0.4
