@@ -807,7 +807,7 @@ naval_capital_battleship = {
 				fixed_ship_engine_slot = heavy_ship_engine
 				fixed_ship_funnel_slot = ship_funnel
 
-				fixed_ship_armor_slot = ship_heavy_armor
+				fixed_ship_armor_slot = ship_armor_bb_1
 				fixed_ship_deck_slot = ship_heavy_deck_armor
 				fixed_ship_citadel_slot = ship_heavy_citadel
 				fixed_ship_torpedo_protection_slot = ship_torpedo_protection
@@ -857,7 +857,7 @@ naval_capital_battleship = {
 				fixed_ship_engine_slot = heavy_ship_engine
 				fixed_ship_funnel_slot = ship_funnel
 
-				fixed_ship_armor_slot = ship_heavy_armor
+				fixed_ship_armor_slot = ship_armor_bb_2
 				fixed_ship_deck_slot = ship_heavy_deck_armor
 				fixed_ship_citadel_slot = ship_heavy_citadel
 				fixed_ship_torpedo_protection_slot = ship_torpedo_protection
@@ -907,7 +907,7 @@ naval_capital_battleship = {
 				fixed_ship_engine_slot = heavy_ship_engine
 				fixed_ship_funnel_slot = ship_funnel
 
-				fixed_ship_armor_slot = ship_heavy_armor
+				fixed_ship_armor_slot = ship_armor_bb_3
 				fixed_ship_deck_slot = ship_heavy_deck_armor
 				fixed_ship_citadel_slot = ship_heavy_citadel
 				fixed_ship_torpedo_protection_slot = ship_torpedo_protection
@@ -953,7 +953,7 @@ naval_capital_battleship = {
 				fixed_ship_engine_slot = heavy_ship_engine
 				fixed_ship_funnel_slot = ship_funnel
 
-				fixed_ship_armor_slot = ship_heavy_armor
+				fixed_ship_armor_slot = ship_armor_bb_4
 				fixed_ship_deck_slot = ship_heavy_deck_armor
 				fixed_ship_citadel_slot = ship_heavy_citadel
 				fixed_ship_torpedo_protection_slot = ship_torpedo_protection

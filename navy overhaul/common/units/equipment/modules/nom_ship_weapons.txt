@@ -26,7 +26,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_light_battery_2 = {
@@ -53,7 +53,7 @@ equipment_modules = {
 			convert_cost_ic = 38
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_light_battery_3 = {
@@ -79,7 +79,7 @@ equipment_modules = {
 			convert_cost_ic = 40
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_light_battery_4 = {
@@ -105,7 +105,7 @@ equipment_modules = {
 			convert_cost_ic = 43
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_light_battery_5 = {
@@ -131,7 +131,7 @@ equipment_modules = {
 			convert_cost_ic = 45
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_light_battery_2_2x = {
@@ -159,7 +159,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_light_battery_3_2x = {
@@ -185,7 +185,7 @@ equipment_modules = {
 			convert_cost_ic = 80
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_light_battery_4_2x = {
@@ -211,7 +211,7 @@ equipment_modules = {
 			convert_cost_ic = 85
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_light_battery_5_2x = {
@@ -237,7 +237,7 @@ equipment_modules = {
 			convert_cost_ic = 90
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	dp_light_battery_4 = {
@@ -263,7 +263,7 @@ equipment_modules = {
 			convert_cost_ic = 48
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	dp_light_battery_5 = {
 		abbreviation = "saf"
@@ -289,7 +289,7 @@ equipment_modules = {
 			convert_cost_ic = 50
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 
 	dp_light_battery_4_2x = {
@@ -316,7 +316,7 @@ equipment_modules = {
 			convert_cost_ic = 95
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	
 	dp_light_battery_5_2x = {
@@ -343,7 +343,7 @@ equipment_modules = {
 			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 
 	### Medium
@@ -368,7 +368,7 @@ equipment_modules = {
 			convert_cost_ic = 50
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_light_medium_battery_2 = {
 		abbreviation = "sas"
@@ -393,7 +393,7 @@ equipment_modules = {
 			convert_cost_ic = 55
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_light_medium_battery_2_2x = {
 		abbreviation = "sas"
@@ -418,7 +418,7 @@ equipment_modules = {
 			convert_cost_ic = 110
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_light_medium_battery_2_3x = {
 		abbreviation = "sas"
@@ -443,7 +443,7 @@ equipment_modules = {
 			convert_cost_ic = 165
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_light_medium_battery_3_2x = {
@@ -469,7 +469,7 @@ equipment_modules = {
 			convert_cost_ic = 120
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_light_medium_battery_3_3x = {
 		abbreviation = "sas"
@@ -494,7 +494,7 @@ equipment_modules = {
 			convert_cost_ic = 180
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_light_medium_battery_4_2x = {
@@ -520,7 +520,7 @@ equipment_modules = {
 			convert_cost_ic = 130
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_light_medium_battery_4_3x = {
 		abbreviation = "sas"
@@ -545,7 +545,7 @@ equipment_modules = {
 			convert_cost_ic = 195
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_light_medium_battery_5_2x = {
@@ -571,7 +571,7 @@ equipment_modules = {
 			convert_cost_ic = 140
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_light_medium_battery_5_3x = {
 		abbreviation = "sas"
@@ -596,7 +596,7 @@ equipment_modules = {
 			convert_cost_ic = 210
 		}
 		critical_parts = { damaged_light_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	dp_ship_medium_1 = {
@@ -652,7 +652,7 @@ equipment_modules = {
 			convert_cost_ic = 75
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_1_2x = {
 		abbreviation = "san"
@@ -680,7 +680,7 @@ equipment_modules = {
 			convert_cost_ic = 150
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_1_3x = {
 		abbreviation = "san"
@@ -708,7 +708,7 @@ equipment_modules = {
 			convert_cost_ic = 225
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_medium_battery_2 = {
@@ -733,7 +733,7 @@ equipment_modules = {
 			convert_cost_ic = 83
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_2_2x = {
 		abbreviation = "sao"
@@ -758,7 +758,7 @@ equipment_modules = {
 			convert_cost_ic = 165
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_2_3x = {
 		abbreviation = "sao"
@@ -783,7 +783,7 @@ equipment_modules = {
 			convert_cost_ic = 248
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_medium_battery_3 = {
@@ -808,7 +808,7 @@ equipment_modules = {
 			convert_cost_ic = 90
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_3_2x = {
 		abbreviation = "sao"
@@ -833,7 +833,7 @@ equipment_modules = {
 			convert_cost_ic = 180
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_3_3x = {
 		abbreviation = "sao"
@@ -861,7 +861,7 @@ equipment_modules = {
 			convert_cost_ic = 270
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_medium_battery_4_2x = {
@@ -887,7 +887,7 @@ equipment_modules = {
 			convert_cost_ic = 195
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_4_3x = {
 		abbreviation = "sao"
@@ -915,7 +915,7 @@ equipment_modules = {
 			convert_cost_ic = 243
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	ship_medium_battery_5_2x = {
@@ -941,7 +941,7 @@ equipment_modules = {
 			convert_cost_ic = 210
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 	ship_medium_battery_5_3x = {
 		abbreviation = "sao"
@@ -969,7 +969,7 @@ equipment_modules = {
 			convert_cost_ic = 315
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	### Heavy
@@ -992,7 +992,7 @@ equipment_modules = {
 			convert_cost_ic = 250
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_1_3x = {
 		abbreviation = "sai"
@@ -1016,7 +1016,7 @@ equipment_modules = {
 			convert_cost_ic = 375
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	
 	ship_heavy_battery_2_2x = {
@@ -1041,7 +1041,7 @@ equipment_modules = {
 			convert_cost_ic = 275
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_2_3x = {
 		abbreviation = "sai"
@@ -1065,7 +1065,7 @@ equipment_modules = {
 			convert_cost_ic = 413
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 
 	ship_heavy_battery_3_2x = {
@@ -1090,7 +1090,7 @@ equipment_modules = {
 			convert_cost_ic = 300
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_3_3x = {
 		abbreviation = "saj"
@@ -1114,7 +1114,7 @@ equipment_modules = {
 			convert_cost_ic = 450
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_3_4x = {
 		abbreviation = "saj"
@@ -1138,7 +1138,7 @@ equipment_modules = {
 			convert_cost_ic = 600
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	
 	ship_heavy_battery_4_2x = {
@@ -1163,7 +1163,7 @@ equipment_modules = {
 			convert_cost_ic = 325
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_4_3x = {
 		abbreviation = "saj"
@@ -1187,7 +1187,7 @@ equipment_modules = {
 			convert_cost_ic = 483
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_4_4x = {
 		abbreviation = "saj"
@@ -1211,7 +1211,7 @@ equipment_modules = {
 			convert_cost_ic = 650
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 
 	ship_heavy_battery_5_2x = {
@@ -1236,7 +1236,7 @@ equipment_modules = {
 			convert_cost_ic = 350
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_5_3x = {
 		abbreviation = "sak"
@@ -1260,7 +1260,7 @@ equipment_modules = {
 			convert_cost_ic = 525
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_heavy_battery_5_4x = {
 		abbreviation = "sak"
@@ -1284,7 +1284,7 @@ equipment_modules = {
 			convert_cost_ic = 700
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 4
+		xp_cost = 1
 	}
 
 	ship_super_heavy_battery_1_2x = {
@@ -1308,7 +1308,7 @@ equipment_modules = {
 			convert_cost_ic = 500
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 5
+		xp_cost = 1
 	}
 	ship_super_heavy_battery_1_3x = {
 		abbreviation = "sam"
@@ -1331,7 +1331,7 @@ equipment_modules = {
 			convert_cost_ic = 750
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 5
+		xp_cost = 1
 	}
 	
 	ship_super_heavy_battery_2_2x = {
@@ -1355,7 +1355,7 @@ equipment_modules = {
 			convert_cost_ic = 600
 		}
 		critical_parts = { damaged_heavy_guns }
-		xp_cost = 5
+		xp_cost = 1
 	}
 
 	### Torpedo
@@ -1371,7 +1371,7 @@ equipment_modules = {
 			build_cost_ic = 30
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_torpedo_1_2x = {
 		abbreviation = "sch"
@@ -1384,7 +1384,7 @@ equipment_modules = {
 			build_cost_ic = 45
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_torpedo_1_3x = {
 		abbreviation = "sch"
@@ -1397,7 +1397,7 @@ equipment_modules = {
 			build_cost_ic = 60
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_torpedo_1_4x = {
 		abbreviation = "sch"
@@ -1410,7 +1410,7 @@ equipment_modules = {
 			build_cost_ic = 75
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 2
+		xp_cost = 1
 	}
 
 	ship_torpedo_2_1x = {
@@ -1424,7 +1424,7 @@ equipment_modules = {
 			build_cost_ic = 30
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_torpedo_2_2x = {
 		abbreviation = "sch"
@@ -1437,7 +1437,7 @@ equipment_modules = {
 			build_cost_ic = 45
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_torpedo_2_3x = {
 		abbreviation = "sch"
@@ -1450,7 +1450,7 @@ equipment_modules = {
 			build_cost_ic = 60
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_torpedo_2_4x = {
 		abbreviation = "sch"
@@ -1463,7 +1463,7 @@ equipment_modules = {
 			build_cost_ic = 75
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_torpedo_2_5x = {
 		abbreviation = "sch"
@@ -1476,7 +1476,7 @@ equipment_modules = {
 			build_cost_ic = 90
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 4
+		xp_cost = 1
 	}
 	ship_torpedo_2_6x = {
 		abbreviation = "sch"
@@ -1489,7 +1489,7 @@ equipment_modules = {
 			build_cost_ic = 105
 		}
 		critical_parts = { damaged_torpedoes }
-		xp_cost = 4
+		xp_cost = 1
 	}
 
 	### Secondaries
@@ -1509,7 +1509,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_casemate_2 = {
 		abbreviation = "saa"
@@ -1527,7 +1527,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 
 	ship_secondaries_1_1x = {
@@ -1546,7 +1546,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_secondaries_1_2x = {
 		abbreviation = "saa"
@@ -1564,7 +1564,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 
 	ship_secondaries_2_1x = {
@@ -1587,7 +1587,7 @@ equipment_modules = {
 			convert_cost_ic = 60
 		}
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_secondaries_2_2x = {
 		abbreviation = "saw"
@@ -1610,7 +1610,7 @@ equipment_modules = {
 			convert_cost_ic = 80
 		}
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	ship_secondaries_2_3x = {
 		abbreviation = "saw"
@@ -1632,7 +1632,7 @@ equipment_modules = {
 			convert_cost_ic = 120
 		}
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 
 	dp_ship_secondaries_1 = {
@@ -1656,7 +1656,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	dp_ship_secondaries_1_2x = {
 		abbreviation = "sax"
@@ -1679,7 +1679,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 
 	dp_ship_secondaries_2_1x = {
@@ -1703,7 +1703,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 	dp_ship_secondaries_2_2x = {
 		abbreviation = "say"
@@ -1726,7 +1726,7 @@ equipment_modules = {
 		}
 
 		critical_parts = { damaged_secondaries }
-		xp_cost = 2
+		xp_cost = 1
 	}
 
 	### Anti-Air / AA

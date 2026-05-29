@@ -627,7 +627,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 65
 		}
-		xp_cost = 3
+		xp_cost = 1
 	}
 	sub_watertight_compartment = {
 		abbreviation = "sba"
@@ -650,7 +650,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 80
 		}
-		xp_cost = 3
+		xp_cost = 1
 	}
 
 	ship_sub_snorkel_1 = {

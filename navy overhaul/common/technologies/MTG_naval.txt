@@ -1832,12 +1832,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = USA
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -1862,12 +1857,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = GER
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -1891,12 +1881,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = GER
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -1921,12 +1906,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -1950,12 +1930,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -1979,12 +1954,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -2008,12 +1978,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -2037,12 +2002,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -2067,12 +2027,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -2096,12 +2051,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -2125,12 +2075,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
@@ -2154,12 +2099,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 4
-				tag = JAP
-			}
+			factor = 0
 		}
 
 		categories = {
