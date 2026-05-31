@@ -250,8 +250,12 @@ on_actions = {
 						equipment = ship_hull_light
 						equipment = ship_hull_submarine
 						equipment = ship_hull_cruiser
+						equipment = ship_hull_heavy_cruiser
 						equipment = ship_hull_heavy
+						equipment = ship_hull_super_heavy
+						equipment = ship_hull_battlecruiser
 						equipment = ship_hull_carrier
+						equipment = ship_hull_auxiliary
 					}
 				}
 			}

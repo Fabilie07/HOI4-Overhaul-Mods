@@ -243,7 +243,7 @@ ideas = {
 		
 		TOM_academy_2_SOV = {
 			modifier = {
-				recruitable_population = 0.1
+				conscription_factor = 0.1
 			}
 			equipment_bonus = {
 				light_tank_chassis = {

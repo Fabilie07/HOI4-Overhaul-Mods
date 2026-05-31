@@ -377,6 +377,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 10
+				num_of_naval_factories > 10
+			}
 		}
 		
 		categories = {
@@ -410,6 +415,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 10
+				num_of_naval_factories > 10
+			}
 		}
 		
 		categories = {
