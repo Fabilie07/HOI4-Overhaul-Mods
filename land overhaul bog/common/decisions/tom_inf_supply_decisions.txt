@@ -118,6 +118,20 @@ tom_inf_horse_decisions = {
 			
 			set_country_flag = tom_inf_motorization_used
 		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio < 0.55
+			}
+			
+			modifier = {
+				factor = 0
+				has_war = no
+			}
+		}
 	}
 	tom_inf_increase_motorization_to_3 = {
 		visible = { has_idea = tom_inf_motorization_level_2 }
@@ -140,6 +154,20 @@ tom_inf_horse_decisions = {
 			}
 			
 			set_country_flag = tom_inf_motorization_used
+		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio < 0.65
+			}
+			
+			modifier = {
+				factor = 0
+				has_war = no
+			}
 		}
 	}
 	tom_inf_increase_motorization_to_4 = {
@@ -164,6 +192,20 @@ tom_inf_horse_decisions = {
 			
 			set_country_flag = tom_inf_motorization_used
 		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio < 0.75
+			}
+			
+			modifier = {
+				factor = 0
+				has_war = no
+			}
+		}
 	}
 	tom_inf_increase_motorization_to_5 = {
 		visible = { has_idea = tom_inf_motorization_level_4 }
@@ -186,6 +228,20 @@ tom_inf_horse_decisions = {
 			}
 			
 			set_country_flag = tom_inf_motorization_used
+		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio < 0.85
+			}
+			
+			modifier = {
+				factor = 0
+				has_war = no
+			}
 		}
 	}
 	
@@ -211,6 +267,15 @@ tom_inf_horse_decisions = {
 			
 			clr_country_flag = tom_inf_motorization_used
 		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio > 0.5
+			}
+		}
 	}
 	tom_inf_decrease_motorization_to_2 = {
 		visible = { has_idea = tom_inf_motorization_level_3 }
@@ -233,6 +298,15 @@ tom_inf_horse_decisions = {
 			}
 			
 			clr_country_flag = tom_inf_motorization_used
+		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio > 0.6
+			}
 		}
 	}
 	tom_inf_decrease_motorization_to_3 = {
@@ -257,6 +331,15 @@ tom_inf_horse_decisions = {
 			
 			clr_country_flag = tom_inf_motorization_used
 		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio > 0.7
+			}
+		}
 	}
 	tom_inf_decrease_motorization_to_4 = {
 		visible = { has_idea = tom_inf_motorization_level_5 }
@@ -279,6 +362,15 @@ tom_inf_horse_decisions = {
 			}
 			
 			clr_country_flag = tom_inf_motorization_used
+		}
+		
+		ai_will_do = {
+			base = 10
+			
+			modifier = {
+				factor = 0
+				fuel_ratio > 0.8
+			}
 		}
 	}
 }
