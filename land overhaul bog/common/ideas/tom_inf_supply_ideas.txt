@@ -5,8 +5,8 @@ ideas = {
 			
 			modifier = {
 				army_fuel_consumption_factor = 0.2
-				supply_consumption_factor = 0.4
-				supply_node_range = -0.2
+				supply_consumption_factor = 0.15
+				supply_node_range = -0.1
 			}
 		}
 		
@@ -15,8 +15,8 @@ ideas = {
 			
 			modifier = {
 				army_fuel_consumption_factor = 0.1
-				supply_consumption_factor = 0.2
-				supply_node_range = -0.1
+				supply_consumption_factor = 0.1
+				supply_node_range = -0.05
 			}
 		}
 		
@@ -25,7 +25,6 @@ ideas = {
 			
 			modifier = {
 				supply_consumption_factor = 0.05
-				supply_node_range = -0.05
 			}
 		}
 		
@@ -34,7 +33,7 @@ ideas = {
 			
 			modifier = {
 				supply_consumption_factor = -0.05
-				supply_node_range = 0.05
+				supply_node_range = 0.1
 			}
 		}
 		
@@ -43,7 +42,7 @@ ideas = {
 			
 			modifier = {
 				supply_consumption_factor = -0.15
-				supply_node_range = 0.15
+				supply_node_range = 0.2
 			}
 		}
 	}
