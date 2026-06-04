@@ -1,0 +1,14 @@
+UNITS = {
+    fleet = {
+        name = "flotá de acasá"
+        naval_base = 657 #constana
+        task_force = {
+            name = "Escadrilla de Distrugátoare"
+            naval_base = 657 #constana
+            ship = { name = "NMS Márásesti" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_early_destroyer_2 = { amount = 1 owner = ROM version_name = "Márásesti" } } }
+            ship = { name = "NMS Márásti" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_early_destroyer_2 = { amount = 1 owner = ROM version_name = "Márásesti" } } } 
+            ship = { name = "NMS Regele Ferdinand" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = ROM version_name = "Ferdinand" } } }
+            ship = { name = "NMS Regina Maria" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = ROM version_name = "Ferdinand" } } } 
+        }
+    }
+}
