@@ -452,6 +452,65 @@ equipments = {
 		naval_dominance_factor = 32
 	}
 	
+	# Post-War
+	
+	ship_hull_light_5 = {
+		abbreviation = "hdd"
+		year = 1950
+		priority = 2000
+
+		archetype = ship_hull_light
+		parent = ship_hull_light_4
+		
+		module_slots = inherit
+
+		naval_range = 3400
+		naval_speed = 36
+		max_strength = 55
+		build_cost_ic = 400
+		reliability = 1
+		manpower = 220
+		naval_dominance_factor = 34
+	}
+	
+	ship_hull_light_6 = {
+		abbreviation = "hdd"
+		year = 1955
+		priority = 2000
+
+		archetype = ship_hull_light
+		parent = ship_hull_light_5
+		
+		module_slots = inherit
+
+		naval_range = 3800
+		naval_speed = 36
+		max_strength = 60
+		build_cost_ic = 420
+		reliability = 1.1
+		manpower = 240
+		naval_dominance_factor = 36
+	}
+	
+	ship_hull_light_7 = {
+		abbreviation = "hdd"
+		year = 1960
+		priority = 2000
+
+		archetype = ship_hull_light
+		parent = ship_hull_light_6
+		
+		module_slots = inherit
+
+		naval_range = 4200
+		naval_speed = 36
+		max_strength = 65
+		build_cost_ic = 440
+		reliability = 1.1
+		manpower = 260
+		naval_dominance_factor = 38
+	}
+	
 	
 	## Leaders
 	

@@ -384,6 +384,11 @@ technologies = {
 		enable_equipments = {
 			ship_hull_light_4
 		}
+		
+		path = {
+			leads_to_tech = modern_ship_hull_light
+			research_cost_coeff = 1
+		}
 
 		xp_research_type = navy
 		xp_boost_cost = @xp_boost_ship
@@ -395,6 +400,136 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = { x=0 y=@1945 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_ship_hull_light = {
+
+		enable_equipments = {
+			ship_hull_light_5
+		}
+		
+		path = {
+			leads_to_tech = modern_ship_hull_light2
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = @xp_boost_ship
+		xp_research_bonus = 1
+		research_cost = 2
+
+		start_year = 1950
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x=0 y=@1950 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_ship_hull_light2 = {
+
+		enable_equipments = {
+			ship_hull_light_6
+		}
+		
+		path = {
+			leads_to_tech = modern_ship_hull_light3
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = @xp_boost_ship
+		xp_research_bonus = 1
+		research_cost = 2
+
+		start_year = 1955
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x=0 y=@1955 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_destroyer_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_ship_hull_light3 = {
+
+		enable_equipments = {
+			ship_hull_light_7
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = @xp_boost_ship
+		xp_research_bonus = 1
+		research_cost = 2
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x=0 y=@1960 }
 		}
 
 		ai_will_do = {
@@ -768,6 +903,12 @@ technologies = {
 		enable_equipment_modules = {
 			cruiser_ship_engine_4
 		}
+		
+		path = {
+			leads_to_tech = modern_ship_hull_cruiser
+			research_cost_coeff = 1
+		}
+		
 		xp_research_type = navy
 		xp_boost_cost = @xp_boost_ship
 		xp_research_bonus = 1
@@ -778,6 +919,90 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y =@1945 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_ship_hull_cruiser = {
+
+		enable_equipments = {
+			ship_hull_cruiser_5
+		}
+		
+		path = {
+			leads_to_tech = modern_ship_hull_cruiser2
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = @xp_boost_ship
+		xp_research_bonus = 1
+		research_cost = 2
+
+		start_year = 1950
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y =@1950 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			mio_cat_tech_all_capital_ship_and_modules
+			mio_cat_tech_all_screen_ship_and_modules
+			mio_cat_tech_all_cruiser_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_ship_hull_cruiser2 = {
+
+		enable_equipments = {
+			ship_hull_cruiser_6
+		}
+		xp_research_type = navy
+		xp_boost_cost = @xp_boost_ship
+		xp_research_bonus = 1
+		research_cost = 2
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y =@1960 }
 		}
 
 		ai_will_do = {
@@ -2377,6 +2602,11 @@ technologies = {
 			carrier_ship_engine_4
 		}
 		
+		path = {
+			leads_to_tech = modern_ship_hull_carrier
+			research_cost_coeff = 1
+		}
+		
 		xp_research_type = navy
 		xp_boost_cost = @xp_boost_ship
 		xp_research_bonus = 1
@@ -2387,6 +2617,89 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = @1945 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cv_tech
+			mio_cat_tech_all_carrier_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_ship_hull_carrier = {
+
+		enable_equipments = {
+			ship_hull_carrier_modern
+		}
+		
+		path = {
+			leads_to_tech = modern_ship_hull_carrier2
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = @xp_boost_ship
+		xp_research_bonus = 1
+		research_cost = 2
+
+		start_year = 1955
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = @1955 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cv_tech
+			mio_cat_tech_all_carrier_and_modules
+		}
+		special_project_specialization = { specialization_naval }
+	}
+	
+	modern_ship_hull_carrier2 = {
+
+		enable_equipments = {
+			ship_hull_carrier_modern_2
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = @xp_boost_ship
+		xp_research_bonus = 1
+		research_cost = 2
+
+		start_year = 1960
+
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = @1960 }
 		}
 
 		ai_will_do = {

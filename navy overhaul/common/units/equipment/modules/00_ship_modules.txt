@@ -138,7 +138,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module = ship_radar_1
-			convert_cost_ic = 30
+			convert_cost_ic = 20
 		}
 		xp_cost = 1
 	}
@@ -159,11 +159,11 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module = ship_radar_2
-			convert_cost_ic = 50
+			convert_cost_ic = 20
 		}
 		can_convert_from = {
 			module_category = ship_radar
-			convert_cost_ic = 80
+			convert_cost_ic = 45
 		}
 		xp_cost = 1
 	}
@@ -184,11 +184,36 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module = ship_radar_3
-			convert_cost_ic = 50
+			convert_cost_ic = 20
 		}
 		can_convert_from = {
 			module_category = ship_radar
-			convert_cost_ic = 110
+			convert_cost_ic = 55
+		}
+		xp_cost = 1
+	}
+	ship_radar_5 = {
+		abbreviation = "sbm"
+		category = ship_radar
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_radar_4
+		multiply_stats = {
+			anti_air_attack = 0.15
+		}
+		add_stats = {
+			naval_light_gun_hit_chance_factor = 0.125
+			naval_heavy_gun_hit_chance_factor = 0.125
+			build_cost_ic = 130
+			surface_detection = 26
+			sub_detection = 13
+		}
+		can_convert_from = {
+			module = ship_radar_4
+			convert_cost_ic = 20
+		}
+		can_convert_from = {
+			module_category = ship_radar
+			convert_cost_ic = 65
 		}
 		xp_cost = 1
 	}
@@ -201,7 +226,6 @@ equipment_modules = {
 	ship_airplane_launcher_1 = {
 		abbreviation = "scy"
 		category = ship_airplane_launcher
-		gfx = ship_airplane_launcher_1
 		
 		add_stats = {
 			surface_detection = 7
@@ -213,12 +237,26 @@ equipment_modules = {
 	ship_airplane_launcher_2 = {
 		abbreviation = "scz"
 		category = ship_airplane_launcher
-		gfx = ship_airplane_launcher_2
 		parent = ship_airplane_launcher_1
 		add_stats = {
 			surface_detection = 10
 			sub_detection = 3
 			build_cost_ic = 80
+		}
+		can_convert_from = {
+			module_category = ship_airplane_launcher
+			convert_cost_ic = 40
+		}
+		xp_cost = 1
+	}
+	ship_helipad = {
+		abbreviation = "scz"
+		category = ship_airplane_launcher
+		parent = ship_airplane_launcher_2
+		add_stats = {
+			surface_detection = 14
+			sub_detection = 7
+			build_cost_ic = 100
 		}
 		can_convert_from = {
 			module_category = ship_airplane_launcher
@@ -312,7 +350,7 @@ equipment_modules = {
 		category = ship_sonar
 		gfx = ship_sonar_4
 		sfx = sfx_ui_sd_module_sonar
-		parent = ship_sonar_2
+		parent = ship_sonar_3
 		add_stats = {
 			sub_detection = 20
 			build_cost_ic = 80
@@ -320,6 +358,21 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = ship_sonar
 			convert_cost_ic = 35
+		}
+		xp_cost = 1
+	}
+	ship_sonar_5 = {
+		abbreviation = "sdd"
+		category = ship_sonar
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_4
+		add_stats = {
+			sub_detection = 24
+			build_cost_ic = 90
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 45
 		}
 		xp_cost = 1
 	}

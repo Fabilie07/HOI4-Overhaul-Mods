@@ -432,7 +432,7 @@ equipments = {
 	
 	ship_hull_carrier_modern = { # USS Forrestal
 		abbreviation = "hac"
-		year = 1945
+		year = 1955
 		visual_level = 1
 		archetype = ship_hull_carrier
 		priority = 1000
@@ -442,7 +442,7 @@ equipments = {
 		carrier_size = 22
 
 		naval_range = 10000
-		reliability = 1
+		reliability = 1.1
 		max_strength = 500
 		naval_dominance_factor = 500
 
@@ -452,6 +452,30 @@ equipments = {
 			chromium = 1
 		}
 		manpower = 2500
+	}
+	
+	ship_hull_carrier_modern_2 = { # USS Enterprise
+		abbreviation = "hac"
+		year = 1960
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = ship_hull_carrier_modern
+		module_slots = inherit
+
+		carrier_size = 22
+
+		naval_range = 11000
+		reliability = 1.1
+		max_strength = 550
+		naval_dominance_factor = 540
+
+		build_cost_ic = 6000
+		resources = {
+			steel = 3
+			chromium = 1
+		}
+		manpower = 2700
 	}
 	
 	ship_hull_mega_carrier = {

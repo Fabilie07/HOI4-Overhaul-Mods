@@ -464,4 +464,44 @@ equipments = {
 		module_slots = inherit
 		naval_dominance_factor = 150
 	}
+	
+	# Post-War
+	
+	ship_hull_cruiser_5 = {
+		abbreviation = "hbd"
+		year = 1950
+		visual_level = 1
+		archetype = ship_hull_cruiser
+		parent = ship_hull_cruiser_4
+		priority = 1900
+		
+		manpower = 1300
+		naval_speed = 33
+		reliability = 1.1
+		build_cost_ic = 1650
+		naval_range = 8500
+		max_strength = 140
+		
+		module_slots = inherit
+		naval_dominance_factor = 160
+	}
+	
+	ship_hull_cruiser_6 = {
+		abbreviation = "hbd"
+		year = 1960
+		visual_level = 1
+		archetype = ship_hull_cruiser
+		parent = ship_hull_cruiser_5
+		priority = 1900
+		
+		manpower = 1500
+		naval_speed = 33
+		reliability = 1.1
+		build_cost_ic = 1900
+		naval_range = 9500
+		max_strength = 160
+		
+		module_slots = inherit
+		naval_dominance_factor = 180
+	}
 }

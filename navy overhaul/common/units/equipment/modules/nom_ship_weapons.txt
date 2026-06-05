@@ -291,12 +291,38 @@ equipment_modules = {
 		critical_parts = { damaged_light_guns }
 		xp_cost = 1
 	}
+	dp_light_battery_6 = {
+		abbreviation = "saf"
+		category = dp_light_battery
+		parent = dp_light_battery_5
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 2.3
+			anti_air_attack = 3.3
+			reliability = -0.05
+			build_cost_ic = 105
+		}
+		multiply_stats = {
+			naval_speed = -0.01
+		}
+		add_average_stats = {
+			lg_armor_piercing = 7
+		}
+		
+		can_convert_from = {
+			module_category = dp_light_battery
+			convert_cost_ic = 53
+		}
+		critical_parts = { damaged_light_guns }
+		xp_cost = 1
+	}
 
 	dp_light_battery_4_2x = {
 		abbreviation = "saf"
 		category = dp_light_battery
 		sfx = sfx_ui_sd_module_turret
-		parent = dp_light_battery_5
+		parent = dp_light_battery_6
 	
 		add_stats = {
 			lg_attack = 3
@@ -341,6 +367,33 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = dp_light_battery
 			convert_cost_ic = 100
+		}
+		critical_parts = { damaged_light_guns }
+		xp_cost = 1
+	}
+	
+	dp_light_battery_6_2x = {
+		abbreviation = "saf"
+		category = dp_light_battery
+		parent = dp_light_battery_5_2x
+		sfx = sfx_ui_sd_module_turret
+	
+		add_stats = {
+			lg_attack = 4.2
+			anti_air_attack = 6.6
+			reliability = -0.1
+			build_cost_ic = 210
+		}
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		add_average_stats = {
+			lg_armor_piercing = 7
+		}
+		
+		can_convert_from = {
+			module_category = dp_light_battery
+			convert_cost_ic = 105
 		}
 		critical_parts = { damaged_light_guns }
 		xp_cost = 1
@@ -1694,7 +1747,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 8
+			lg_armor_piercing = 5
 		}
 		
 		can_convert_from = {
@@ -1717,12 +1770,36 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 8
+			lg_armor_piercing = 5
 		}
 		
 		can_convert_from = {
 			module_category = ship_secondaries
 			convert_cost_ic = 150
+		}
+
+		critical_parts = { damaged_secondaries }
+		xp_cost = 1
+	}
+	
+	dp_ship_secondaries_3 = {
+		abbreviation = "sax"
+		category = ship_secondaries
+		parent = ship_secondaries_1_2x
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			lg_attack = 4
+			anti_air_attack = 8
+			build_cost_ic = 240
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 6
+		}
+		
+		can_convert_from = {
+			module_category = ship_secondaries
+			convert_cost_ic = 30
 		}
 
 		critical_parts = { damaged_secondaries }
@@ -1918,6 +1995,105 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = -0.02
+		}
+		xp_cost = 1
+	}
+	
+	
+	
+	### MISSILES
+	
+	ship_to_ship_missile_1 = {
+		abbreviation = "saa"
+		category = ship_to_ship_missile
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			lg_attack = 10
+			reliability = -0.1
+			build_cost_ic = 650	
+		}
+		add_average_stats = {
+			lg_armor_piercing = 50
+		}
+		xp_cost = 1
+	}
+	# ship_to_ship_missile_2 = {
+		# abbreviation = "saa"
+		# category = ship_to_ship_missile
+		# parent = ship_to_ship_missile_1
+		# sfx = sfx_ui_sd_module_turret
+		
+		# add_stats = {
+			# lg_attack = 12
+			# reliability = -0.1
+			# build_cost_ic = 750	
+		# }
+		# add_average_stats = {
+			# lg_armor_piercing = 70
+		# }
+		# xp_cost = 1
+	# }
+	
+	ship_sam_1 = {
+		abbreviation = "sbe"
+		category = ship_anti_air
+		parent = ship_anti_air_4
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			anti_air_attack = 12
+			build_cost_ic = 400
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 200
+		}
+
+		can_convert_from = {
+			module = ship_anti_air_4
+			convert_cost_ic = 140
+		}
+		xp_cost = 1
+	}
+	
+	ship_sam_2 = {
+		abbreviation = "sbe"
+		category = ship_anti_air
+		parent = ship_sam_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			anti_air_attack = 14
+			build_cost_ic = 480
+		}
+
+		can_convert_from = {
+			module_category = ship_anti_air
+			convert_cost_ic = 240
+		}
+
+		can_convert_from = {
+			module = ship_sam_1
+			convert_cost_ic = 40
+		}
+		xp_cost = 1
+	}
+	
+	ship_asw_missile = {
+		abbreviation = "scv"
+		category = ship_to_sub_missile
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			sub_attack = 32
+			build_cost_ic = 400
+		}
+
+		can_convert_from = {
+			module_category = ship_depth_charge
+			convert_cost_ic = 50
 		}
 		xp_cost = 1
 	}
