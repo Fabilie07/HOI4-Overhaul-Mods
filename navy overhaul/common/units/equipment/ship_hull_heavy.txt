@@ -325,7 +325,51 @@ equipments = {
 		priority = 1500
 		visual_level = 0
 		naval_dominance_factor = 200
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_radio_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_sonar_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_funnel_slot = inherit
+			fixed_ship_tanks_slot = inherit
+
+			fixed_ship_armor_slot = inherit
+			fixed_ship_deck_slot = inherit
+			fixed_ship_citadel_slot = inherit
+			fixed_ship_damage_control_slot = inherit
+			fixed_ship_torpedo_protection_slot = inherit
+			fixed_ship_ammo_1_slot = inherit
+			fixed_ship_ammo_2_slot = inherit
+
+			rear_1_custom_slot = inherit
+			mid_1_custom_slot = inherit
+			mid_2_custom_slot = inherit
+			mid_3_custom_slot = inherit
+			mid_4_custom_slot = inherit
+			front_1_custom_slot = inherit
+
+			right_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					# ship_heavy_battery
+					ship_medium_battery
+					ship_light_medium_battery
+					ship_heavy_secondaries
+					ship_secondaries
+					ship_anti_air
+					ship_to_ship_missile
+				}
+			}
+			right_2_custom_slot = right_1_custom_slot
+			right_3_custom_slot = right_1_custom_slot
+			right_4_custom_slot = right_1_custom_slot
+			left_1_custom_slot = right_1_custom_slot
+			left_2_custom_slot = right_1_custom_slot
+			left_3_custom_slot = right_1_custom_slot
+			left_4_custom_slot = right_1_custom_slot
+		}
 	}
 	
 	ship_hull_dreadnought_1 = {
@@ -334,7 +378,51 @@ equipments = {
 		parent = ship_hull_pre_dreadnought
 		archetype = ship_hull_heavy
 		priority = 1500
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_radio_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_sonar_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_funnel_slot = inherit
+			fixed_ship_tanks_slot = inherit
+
+			fixed_ship_armor_slot = inherit
+			fixed_ship_deck_slot = inherit
+			fixed_ship_citadel_slot = inherit
+			fixed_ship_damage_control_slot = inherit
+			fixed_ship_torpedo_protection_slot = inherit
+			fixed_ship_ammo_1_slot = inherit
+			fixed_ship_ammo_2_slot = inherit
+
+			rear_1_custom_slot = inherit
+			mid_1_custom_slot = inherit
+			mid_2_custom_slot = inherit
+			mid_3_custom_slot = inherit
+			mid_4_custom_slot = inherit
+			front_1_custom_slot = inherit
+
+			right_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_heavy_battery
+					ship_medium_battery
+					ship_light_medium_battery
+					ship_heavy_secondaries
+					ship_secondaries
+					ship_anti_air
+					ship_to_ship_missile
+				}
+			}
+			right_2_custom_slot = right_1_custom_slot
+			right_3_custom_slot = right_1_custom_slot
+			right_4_custom_slot = right_1_custom_slot
+			left_1_custom_slot = right_1_custom_slot
+			left_2_custom_slot = right_1_custom_slot
+			left_3_custom_slot = right_1_custom_slot
+			left_4_custom_slot = right_1_custom_slot
+		}
 		naval_range = 2250
 		
 		max_strength = 280
@@ -378,7 +466,51 @@ equipments = {
 		parent = ship_hull_dreadnought_2
 		archetype = ship_hull_heavy
 		priority = 1500
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_radio_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_sonar_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_funnel_slot = inherit
+			fixed_ship_tanks_slot = inherit
+
+			fixed_ship_armor_slot = inherit
+			fixed_ship_deck_slot = inherit
+			fixed_ship_citadel_slot = inherit
+			fixed_ship_damage_control_slot = inherit
+			fixed_ship_torpedo_protection_slot = inherit
+			fixed_ship_ammo_1_slot = inherit
+			fixed_ship_ammo_2_slot = inherit
+
+			rear_1_custom_slot = inherit
+			mid_1_custom_slot = inherit
+			mid_2_custom_slot = inherit
+			mid_3_custom_slot = inherit
+			mid_4_custom_slot = inherit
+			front_1_custom_slot = inherit
+
+			right_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					# ship_heavy_battery
+					# ship_medium_battery
+					# ship_light_medium_battery
+					ship_heavy_secondaries
+					ship_secondaries
+					ship_anti_air
+					ship_to_ship_missile
+				}
+			}
+			right_2_custom_slot = right_1_custom_slot
+			right_3_custom_slot = right_1_custom_slot
+			right_4_custom_slot = right_1_custom_slot
+			left_1_custom_slot = right_1_custom_slot
+			left_2_custom_slot = right_1_custom_slot
+			left_3_custom_slot = right_1_custom_slot
+			left_4_custom_slot = right_1_custom_slot
+		}
 		naval_range = 2700
 		
 		max_strength = 330
