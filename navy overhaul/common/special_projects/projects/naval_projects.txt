@@ -32,7 +32,7 @@ sp_naval_cruiser_submarine = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}  
-				has_tech = early_ship_hull_submarine
+				has_tech = early_submarine_hull_5
 			}
 			else = {
 				has_tech = early_submarine
@@ -56,7 +56,7 @@ sp_naval_cruiser_submarine = {
 			limit = {
 				has_dlc = "Man the Guns"
 			}
-			ship_hull_cruiser_submarine_3
+			ship_hull_cruiser_submarine
 		}
 		enable_equipments = {	
 			limit = {
@@ -74,7 +74,7 @@ sp_naval_cruiser_submarine = {
 					name = sp_naval_cruiser_submarine_free_design
 					uses = 1
 					cost_factor = 1
-					equipment = ship_hull_cruiser_submarine_3
+					equipment = ship_hull_cruiser_submarine
 				}
 			}
 		}
@@ -128,6 +128,16 @@ sp_naval_cruiser_submarine = {
 								}
 							}
 						}
+						else = {
+							add_equipment_bonus = {
+								name = sp_cruiser_submarine_eq_bonus_range
+								bonus = {
+									ship_hull_cruiser_submarine = {
+										naval_range = 0.2
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -136,11 +146,30 @@ sp_naval_cruiser_submarine = {
 				token = sp_naval_cruiser_submarine_preference_b
 				
 				iteration_output = {		
-					enable_equipment_modules = {
-						limit = {
-							has_dlc = "Man the Guns"
+					country_effects = { 
+						if = {
+							limit = {
+								NOT = {has_dlc = "Man the Guns"}
+							}
+							add_equipment_bonus = {
+								name = sp_cruiser_submarine_eq_bonus_range
+								bonus = {
+									cruiser_submarine = {
+										convoy_raiding_coordination = 0.1
+									}
+								}
+							}
 						}
-						ship_medium_battery_sub
+						else = {
+							add_equipment_bonus = {
+								name = sp_cruiser_submarine_eq_bonus_range
+								bonus = {
+									ship_hull_cruiser_submarine = {
+										convoy_raiding_coordination = 0.1
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -168,7 +197,7 @@ sp_naval_fleet_submarine = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}  
-				has_tech = basic_ship_hull_submarine
+				has_tech = early_ship_hull_submarine
 			}
 			else = {
 				has_tech = basic_submarine 
@@ -268,7 +297,6 @@ sp_naval_fleet_submarine = {
 								name = sp_fleet_submarine_eq_bonus_attack
 								bonus = {
 									ship_hull_fleet_submarine = {
-										naval_speed = 0.05
 										torpedo_attack = 0.05
 										sub_visibility = -0.03										
 									}
@@ -280,7 +308,6 @@ sp_naval_fleet_submarine = {
 								name = sp_fleet_submarine_eq_bonus_attack
 								bonus = {
 									fleet_submarine = {
-										naval_speed = 0.05
 										torpedo_attack = 0.05
 										sub_visibility = -0.03										
 									}
@@ -304,6 +331,7 @@ sp_naval_fleet_submarine = {
 									ship_hull_fleet_submarine = {
 										reliability = 0.05
 										max_strength = 0.05
+										naval_speed = 0.1
 										naval_weather_penalty_factor = -0.1									
 									}
 								}
@@ -316,6 +344,7 @@ sp_naval_fleet_submarine = {
 									fleet_submarine = {
 										reliability = 0.05
 										max_strength = 0.05
+										naval_speed = 0.1
 										naval_weather_penalty_factor = -0.1									
 									}
 								}
@@ -358,8 +387,8 @@ sp_naval_submarine_carrier = {
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-			has_tech = basic_ship_hull_carrier
-			has_tech = improved_ship_hull_submarine				
+				has_tech = early_ship_hull_carrier_light
+				has_tech = basic_ship_hull_submarine
 			}
 			else = {
 				has_tech = basic_carrier
@@ -500,7 +529,7 @@ sp_naval_nuclear_submarine = {
 	}
 
 	special_project_parent = {
-		sp_naval_fleet_submarine
+		sp_naval_cruiser_submarine
 		sp_nuclear_engines
 	}
 
@@ -690,7 +719,7 @@ sp_naval_rocket_launching_submarine = {
 	}
 
 	special_project_parent = {
-		sp_naval_fleet_submarine
+		sp_naval_cruiser_submarine
 		sp_rockets_ballistic_missile
 	}
 
@@ -1182,7 +1211,7 @@ sp_naval_midget_submarine = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}  
-				has_tech = early_ship_hull_submarine
+				has_tech = early_submarine_hull_5
 			}
 			else = {
 				has_tech = early_submarine
@@ -1453,7 +1482,7 @@ sp_naval_aip_engine = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}  
-				has_tech = basic_ship_hull_submarine
+				has_tech = early_ship_hull_submarine
 			}
 			else = {
 				has_tech = basic_submarine 
@@ -1616,7 +1645,7 @@ sp_naval_anechoic_tiles = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}  
-				has_tech = basic_ship_hull_submarine
+				has_tech = early_ship_hull_submarine
 			}
 			else = {
 				has_tech = basic_submarine 
@@ -1819,6 +1848,14 @@ sp_naval_torpedo_cruiser = {
 					cost_factor = 1
 					equipment = ship_hull_torpedo_cruiser
 				}
+				add_equipment_bonus = {
+					bonus = {
+						ship_hull_torpedo_cruiser = {
+							naval_torpedo_hit_chance_factor = 0.2
+							torpedo_attack = 0.1								
+						}
+					}
+				}
 			}
 			
 			add_equipment_bonus = {
@@ -1981,7 +2018,7 @@ sp_naval_pocket_battleship = {
 	}
 	available = {
 		FROM = {
-			has_tech = early_ship_hull_cruiser
+			has_tech = early_heavy_cruiser_hull_2
 		}
 			
 	}
@@ -2114,7 +2151,7 @@ sp_naval_super_heavy_battleship = {
 				limit = { 
 					has_dlc = "Man the Guns"
 					}
-			has_tech = early_ship_hull_heavy
+			has_tech = advanced_super_dreadnought_ship_hull
 				
 			}
 			else = {
@@ -2445,680 +2482,680 @@ sp_naval_super_heavy_battleship = {
 }
 
 #Advanced Modern Super Battleship
-sp_naval_modern_battleship = {
-	specialization = specialization_naval 
+# sp_naval_modern_battleship = {
+	# specialization = specialization_naval 
 
 
-	project_tags = sp_tag_surface_ship
+	# project_tags = sp_tag_surface_ship
 
-	ai_will_do = {
-		base = 1
-	}
+	# ai_will_do = {
+		# base = 1
+	# }
 
-	allowed = {
-	has_dlc = "Gotterdammerung"
-	}
+	# allowed = {
+	# has_dlc = "Gotterdammerung"
+	# }
 	
-	available = {
-		FROM = {
-			if = {
-				limit = { 
-					has_dlc = "Man the Guns"
-					}
-			has_tech = advanced_ship_hull_heavy
+	# available = {
+		# FROM = {
+			# if = {
+				# limit = { 
+					# has_dlc = "Man the Guns"
+					# }
+			# has_tech = advanced_ship_hull_heavy
 				
-			}
-			else = {
-				has_tech = advanced_battleship
-			}
-		}
-	}
+			# }
+			# else = {
+				# has_tech = advanced_battleship
+			# }
+		# }
+	# }
 	
-	complexity = sp_complexity.large
-	prototype_time = sp_time.prototype.long
+	# complexity = sp_complexity.large
+	# prototype_time = sp_time.prototype.long
 	
 	
-	resource_cost = {
-		resources = { 
-			steel = 24
-			chromium = 18
-			tungsten = 12
-		 }
-	}
+	# resource_cost = {
+		# resources = { 
+			# steel = 24
+			# chromium = 18
+			# tungsten = 12
+		 # }
+	# }
 
-	breakthrough_cost = {
-		specialization_naval = 2
-	}
+	# breakthrough_cost = {
+		# specialization_naval = 2
+	# }
 
-	project_output = {
-		country_effects = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_design_template_bonus = {
-					name = sp_naval_modern_battleship_free_design
-					uses = 1
-					cost_factor = 1
-					equipment = ship_hull_heavy_modern
-				}
-			}
-		}
+	# project_output = {
+		# country_effects = {
+			# if = {
+				# limit = {
+					# has_dlc = "Man the Guns"
+				# }
+				# add_design_template_bonus = {
+					# name = sp_naval_modern_battleship_free_design
+					# uses = 1
+					# cost_factor = 1
+					# equipment = ship_hull_heavy_modern
+				# }
+			# }
+		# }
 
-		enable_equipments = {	
-			limit = {
-				has_dlc = "Man the Guns"
-			}
-				ship_hull_heavy_modern
-		}
-		enable_equipments = {	
-			limit = {
-				not = {has_dlc = "Man the Guns"}
-			}
-				modern_battleship
-		}
-		enable_equipment_modules = {
+		# enable_equipments = {	
+			# limit = {
+				# has_dlc = "Man the Guns"
+			# }
+				# ship_hull_heavy_modern
+		# }
+		# enable_equipments = {	
+			# limit = {
+				# not = {has_dlc = "Man the Guns"}
+			# }
+				# modern_battleship
+		# }
+		# enable_equipment_modules = {
 			 
-		}
+		# }
 
-		enable_subunits = { 
+		# enable_subunits = { 
 			
-		}
+		# }
 
 		
-	}
+	# }
 
-	generic_prototype_rewards = {
-		sp_naval_generic_reward_scientist_xp_1
-		sp_naval_generic_reward_scientist_xp_2
-		sp_naval_generic_reward_scientist_xp_3
-		sp_naval_generic_reward_navy_xp_1
-		sp_naval_generic_reward_navy_xp_2
-		sp_naval_generic_reward_navy_xp_3
-		sp_naval_generic_reward_major_progress_1
-		sp_naval_generic_reward_major_progress_2
-		sp_naval_generic_reward_major_progress_3
-		sp_naval_generic_reward_test_failure_1
-		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3
-		sp_naval_generic_reward_armor_tech_1
-		sp_naval_generic_reward_armor_tech_2
-		sp_naval_generic_reward_armor_tech_3
-		sp_naval_generic_reward_artillery_tech_1
-		sp_naval_generic_reward_artillery_tech_2
-		sp_naval_generic_reward_artillery_tech_3							
-	}
+	# generic_prototype_rewards = {
+		# sp_naval_generic_reward_scientist_xp_1
+		# sp_naval_generic_reward_scientist_xp_2
+		# sp_naval_generic_reward_scientist_xp_3
+		# sp_naval_generic_reward_navy_xp_1
+		# sp_naval_generic_reward_navy_xp_2
+		# sp_naval_generic_reward_navy_xp_3
+		# sp_naval_generic_reward_major_progress_1
+		# sp_naval_generic_reward_major_progress_2
+		# sp_naval_generic_reward_major_progress_3
+		# sp_naval_generic_reward_test_failure_1
+		# sp_naval_generic_reward_test_failure_2
+		# sp_naval_generic_reward_test_failure_3
+		# sp_naval_generic_reward_armor_tech_1
+		# sp_naval_generic_reward_armor_tech_2
+		# sp_naval_generic_reward_armor_tech_3
+		# sp_naval_generic_reward_artillery_tech_1
+		# sp_naval_generic_reward_artillery_tech_2
+		# sp_naval_generic_reward_artillery_tech_3							
+	# }
 
-	unique_prototype_rewards = {
-		sp_naval_modern_battleship_unique_reward_a = {
-			fire_only_once = yes
+	# unique_prototype_rewards = {
+		# sp_naval_modern_battleship_unique_reward_a = {
+			# fire_only_once = yes
 
-			threshold = { 
-				min = 10
-				max = 50
-			}
+			# threshold = { 
+				# min = 10
+				# max = 50
+			# }
 
-			weight = {
-				base = 100
-			}
+			# weight = {
+				# base = 100
+			# }
 
-			option = {
-				token = sp_naval_modern_battleship_preference_a_a
+			# option = {
+				# token = sp_naval_modern_battleship_preference_a_a
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_heavy_attack
-								bonus = {
-									ship_hull_heavy_modern = {
-										naval_heavy_gun_hit_chance_factor = 0.2
-										hg_attack = 0.15
-										hg_armor_piercing = 0.15									
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_heavy_attack
-								bonus = {
-									modern_battleship = {
-										naval_heavy_gun_hit_chance_factor = 0.2
-										hg_attack = 0.15
-										hg_armor_piercing = 0.15									
-									}
-								}
-							}						
-						}
-					}
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_heavy_attack
+								# bonus = {
+									# ship_hull_heavy_modern = {
+										# naval_heavy_gun_hit_chance_factor = 0.2
+										# hg_attack = 0.15
+										# hg_armor_piercing = 0.15									
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_heavy_attack
+								# bonus = {
+									# modern_battleship = {
+										# naval_heavy_gun_hit_chance_factor = 0.2
+										# hg_attack = 0.15
+										# hg_armor_piercing = 0.15									
+									# }
+								# }
+							# }						
+						# }
+					# }
 
-				}
-			}
+				# }
+			# }
 
-			option = {
-				token = sp_naval_modern_battleship_preference_b_a
-				default = yes
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+			# option = {
+				# token = sp_naval_modern_battleship_preference_b_a
+				# default = yes
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_speed
-								bonus = {
-									ship_hull_heavy_modern = {
-										naval_speed = 0.1
-										surface_detection = 0.15
-										surface_visibility = -0.07									
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_speed
-								bonus = {
-									modern_battleship = {
-										naval_speed = 0.1
-										surface_detection = 0.15
-										surface_visibility = -0.07									
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_speed
+								# bonus = {
+									# ship_hull_heavy_modern = {
+										# naval_speed = 0.1
+										# surface_detection = 0.15
+										# surface_visibility = -0.07									
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_speed
+								# bonus = {
+									# modern_battleship = {
+										# naval_speed = 0.1
+										# surface_detection = 0.15
+										# surface_visibility = -0.07									
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 			
-			option = {
-				token = sp_naval_modern_battleship_preference_c_a
+			# option = {
+				# token = sp_naval_modern_battleship_preference_c_a
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_light_attack
-								bonus = {
-									ship_hull_heavy_modern = {
-										naval_light_gun_hit_chance_factor = 0.1
-										lg_attack = 0.1
-										lg_armor_piercing = 0.15									
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_light_attack
-								bonus = {
-									modern_battleship = {
-										naval_light_gun_hit_chance_factor = 0.1
-										lg_attack = 0.1
-										lg_armor_piercing = 0.15									
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_light_attack
+								# bonus = {
+									# ship_hull_heavy_modern = {
+										# naval_light_gun_hit_chance_factor = 0.1
+										# lg_attack = 0.1
+										# lg_armor_piercing = 0.15									
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_light_attack
+								# bonus = {
+									# modern_battleship = {
+										# naval_light_gun_hit_chance_factor = 0.1
+										# lg_attack = 0.1
+										# lg_armor_piercing = 0.15									
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 
-		}
+		# }
 
-		sp_naval_modern_battleship_unique_reward_b = {
-			fire_only_once = yes
+		# sp_naval_modern_battleship_unique_reward_b = {
+			# fire_only_once = yes
 
-			threshold = { 
-				min = 55
-				max = 95
-			}
+			# threshold = { 
+				# min = 55
+				# max = 95
+			# }
 
-			weight = {
-				base = 100
-			}
+			# weight = {
+				# base = 100
+			# }
 
-			option = {
-				token = sp_naval_modern_battleship_preference_a_b
+			# option = {
+				# token = sp_naval_modern_battleship_preference_a_b
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_armor
-								bonus = {
-									ship_hull_heavy_modern = {
-										armor_value = 0.15
-										max_strength = 0.1 									
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_armor
-								bonus = {
-									modern_battleship = {
-										armor_value = 0.15
-										max_strength = 0.1 									
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_armor
+								# bonus = {
+									# ship_hull_heavy_modern = {
+										# armor_value = 0.15
+										# max_strength = 0.1 									
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_armor
+								# bonus = {
+									# modern_battleship = {
+										# armor_value = 0.15
+										# max_strength = 0.1 									
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 
-			option = {
-				token = sp_naval_modern_battleship_preference_b_b
+			# option = {
+				# token = sp_naval_modern_battleship_preference_b_b
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_anti_air
-								bonus = {
-									ship_hull_heavy_modern = {
-										anti_air_attack = 0.25
-										reliability = 0.07									
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_anti_air
-								bonus = {
-									modern_battleship = {
-										anti_air_attack = 0.25
-										reliability = 0.07									
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_anti_air
+								# bonus = {
+									# ship_hull_heavy_modern = {
+										# anti_air_attack = 0.25
+										# reliability = 0.07									
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_anti_air
+								# bonus = {
+									# modern_battleship = {
+										# anti_air_attack = 0.25
+										# reliability = 0.07									
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 			
-			option = {
-				token = sp_naval_modern_battleship_preference_c_b
+			# option = {
+				# token = sp_naval_modern_battleship_preference_c_b
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_anti_torpedo
-								bonus = {
-									ship_hull_heavy_modern = {
-										naval_torpedo_enemy_critical_chance_factor = 0.15
-										naval_torpedo_damage_reduction_factor = 0.2									
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_battleship_eq_bonus_anti_torpedo
-								bonus = {
-									modern_battleship = {
-										naval_torpedo_enemy_critical_chance_factor = 0.15
-										naval_torpedo_damage_reduction_factor = 0.2									
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_anti_torpedo
+								# bonus = {
+									# ship_hull_heavy_modern = {
+										# naval_torpedo_enemy_critical_chance_factor = 0.15
+										# naval_torpedo_damage_reduction_factor = 0.2									
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_battleship_eq_bonus_anti_torpedo
+								# bonus = {
+									# modern_battleship = {
+										# naval_torpedo_enemy_critical_chance_factor = 0.15
+										# naval_torpedo_damage_reduction_factor = 0.2									
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 
-		}
+		# }
 
-	}
-}
+	# }
+# }
 
-#Super Naval Carrier
-sp_naval_modern_carrier = {
-	specialization = specialization_naval
+# #Super Naval Carrier
+# sp_naval_modern_carrier = {
+	# specialization = specialization_naval
 
 
-	project_tags = sp_tag_surface_ship
+	# project_tags = sp_tag_surface_ship
 
-	ai_will_do = {
-		base = 1
-	}
+	# ai_will_do = {
+		# base = 1
+	# }
 
-	allowed = {
-		has_dlc = "Gotterdammerung"
-	}
+	# allowed = {
+		# has_dlc = "Gotterdammerung"
+	# }
 	
-	available = {
-		FROM = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}  
-				has_tech = advanced_ship_hull_carrier
-			}
-			else = {
-				has_tech = advanced_carrier
-			}
+	# available = {
+		# FROM = {
+			# if = {
+				# limit = {
+					# has_dlc = "Man the Guns"
+				# }  
+				# has_tech = advanced_ship_hull_carrier
+			# }
+			# else = {
+				# has_tech = advanced_carrier
+			# }
 
-		}
+		# }
 
-	}
+	# }
 	
-	breakthrough_cost = {
-		specialization_naval = 2
-	}
+	# breakthrough_cost = {
+		# specialization_naval = 2
+	# }
 	
 
-	resource_cost = {
-		resources = { 
-			steel = 24
-			chromium = 16
-		}
-	}
+	# resource_cost = {
+		# resources = { 
+			# steel = 24
+			# chromium = 16
+		# }
+	# }
 
-	complexity = sp_complexity.large
-	prototype_time = sp_time.prototype.long	
+	# complexity = sp_complexity.large
+	# prototype_time = sp_time.prototype.long	
 	
-	project_output = {
-		country_effects = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_design_template_bonus = {
-					name = sp_naval_modern_carrier_free_design
-					uses = 1
-					cost_factor = 1
-					equipment = ship_hull_carrier_modern
-				}
-			}
-		}
+	# project_output = {
+		# country_effects = {
+			# if = {
+				# limit = {
+					# has_dlc = "Man the Guns"
+				# }
+				# add_design_template_bonus = {
+					# name = sp_naval_modern_carrier_free_design
+					# uses = 1
+					# cost_factor = 1
+					# equipment = ship_hull_carrier_modern
+				# }
+			# }
+		# }
 
-		enable_equipments = {
-			limit = {
-				has_dlc = "Man the Guns"
-			}
-			ship_hull_carrier_modern
-		}
+		# enable_equipments = {
+			# limit = {
+				# has_dlc = "Man the Guns"
+			# }
+			# ship_hull_carrier_modern
+		# }
 
-		enable_equipments = {
-			limit = {
-				not = {has_dlc = "Man the Guns"}
-			}
-			modern_carrier
-		}
+		# enable_equipments = {
+			# limit = {
+				# not = {has_dlc = "Man the Guns"}
+			# }
+			# modern_carrier
+		# }
 
-		enable_equipment_modules = {
+		# enable_equipment_modules = {
 			 
-		}
+		# }
 
-		enable_subunits = { 
+		# enable_subunits = { 
 			
-		}
-	}
+		# }
+	# }
 
-	generic_prototype_rewards = {
-		sp_naval_generic_reward_scientist_xp_1
-		sp_naval_generic_reward_scientist_xp_2
-		sp_naval_generic_reward_scientist_xp_3
-		sp_naval_generic_reward_navy_xp_1
-		sp_naval_generic_reward_navy_xp_2
-		sp_naval_generic_reward_navy_xp_3
-		sp_naval_generic_reward_major_progress_1
-		sp_naval_generic_reward_major_progress_2
-		sp_naval_generic_reward_major_progress_3
-		sp_naval_generic_reward_test_failure_1
-		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3
-		sp_naval_generic_reward_armor_tech_1
-		sp_naval_generic_reward_armor_tech_2
-		sp_naval_generic_reward_armor_tech_3					
-	}
+	# generic_prototype_rewards = {
+		# sp_naval_generic_reward_scientist_xp_1
+		# sp_naval_generic_reward_scientist_xp_2
+		# sp_naval_generic_reward_scientist_xp_3
+		# sp_naval_generic_reward_navy_xp_1
+		# sp_naval_generic_reward_navy_xp_2
+		# sp_naval_generic_reward_navy_xp_3
+		# sp_naval_generic_reward_major_progress_1
+		# sp_naval_generic_reward_major_progress_2
+		# sp_naval_generic_reward_major_progress_3
+		# sp_naval_generic_reward_test_failure_1
+		# sp_naval_generic_reward_test_failure_2
+		# sp_naval_generic_reward_test_failure_3
+		# sp_naval_generic_reward_armor_tech_1
+		# sp_naval_generic_reward_armor_tech_2
+		# sp_naval_generic_reward_armor_tech_3					
+	# }
 
-unique_prototype_rewards = {
-		sp_naval_modern_carrier_unique_reward_a = {
-			fire_only_once = yes
+# unique_prototype_rewards = {
+		# sp_naval_modern_carrier_unique_reward_a = {
+			# fire_only_once = yes
 
-			threshold = { 
-				min = 10
-				max = 50
-			}
+			# threshold = { 
+				# min = 10
+				# max = 50
+			# }
 
-			weight = {
-				base = 100
-			}
+			# weight = {
+				# base = 100
+			# }
 
-			option = {
-				token = sp_naval_modern_carrier_preference_a_a
+			# option = {
+				# token = sp_naval_modern_carrier_preference_a_a
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_detection
-								bonus = {
-									ship_hull_carrier_modern = {
-										surface_detection = 0.2
-										sub_detection = 0.2
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_detection
-								bonus = {
-									modern_carrier = {
-										surface_detection = 0.2
-										sub_detection = 0.2						 
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_detection
+								# bonus = {
+									# ship_hull_carrier_modern = {
+										# surface_detection = 0.2
+										# sub_detection = 0.2
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_detection
+								# bonus = {
+									# modern_carrier = {
+										# surface_detection = 0.2
+										# sub_detection = 0.2						 
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 
-			option = {
-				token = sp_naval_modern_carrier_preference_b_a
-				default = yes
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+			# option = {
+				# token = sp_naval_modern_carrier_preference_b_a
+				# default = yes
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_speed
-								bonus = {
-									ship_hull_carrier_modern = {
-										naval_speed = 0.1
-										naval_weather_penalty_factor = -0.25
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_speed
-								bonus = {
-									modern_carrier = {
-										naval_speed = 0.1
-										naval_weather_penalty_factor = -0.25					 
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_speed
+								# bonus = {
+									# ship_hull_carrier_modern = {
+										# naval_speed = 0.1
+										# naval_weather_penalty_factor = -0.25
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_speed
+								# bonus = {
+									# modern_carrier = {
+										# naval_speed = 0.1
+										# naval_weather_penalty_factor = -0.25					 
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 			
-			option = {
-				token = sp_naval_modern_carrier_preference_c_a
+			# option = {
+				# token = sp_naval_modern_carrier_preference_c_a
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_light_attack
-								bonus = {
-									ship_hull_carrier_modern = {
-										naval_light_gun_hit_chance_factor = 0.1
-										lg_attack = 0.15
-										lg_armor_piercing = 0.15
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_light_attack
-								bonus = {
-									modern_carrier = {
-										naval_light_gun_hit_chance_factor = 0.1
-										lg_attack = 0.15
-										lg_armor_piercing = 0.15					 
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_light_attack
+								# bonus = {
+									# ship_hull_carrier_modern = {
+										# naval_light_gun_hit_chance_factor = 0.1
+										# lg_attack = 0.15
+										# lg_armor_piercing = 0.15
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_light_attack
+								# bonus = {
+									# modern_carrier = {
+										# naval_light_gun_hit_chance_factor = 0.1
+										# lg_attack = 0.15
+										# lg_armor_piercing = 0.15					 
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 
-		}
+		# }
 
-		sp_naval_modern_carrier_unique_reward_b = {
-			fire_only_once = yes
+		# sp_naval_modern_carrier_unique_reward_b = {
+			# fire_only_once = yes
 
-			threshold = { 
-				min = 55
-				max = 95
-			}
+			# threshold = { 
+				# min = 55
+				# max = 95
+			# }
 
-			weight = {
-				base = 100
-			}
+			# weight = {
+				# base = 100
+			# }
 
-			option = {
-				token = sp_naval_modern_carrier_preference_a_b
+			# option = {
+				# token = sp_naval_modern_carrier_preference_a_b
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_armor
-								bonus = {
-									ship_hull_carrier_modern = {
-										armor_value = 0.15
-										max_strength = 0.1 
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_armor
-								bonus = {
-									modern_carrier = {
-										armor_value = 0.15
-										max_strength = 0.1 					 
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_armor
+								# bonus = {
+									# ship_hull_carrier_modern = {
+										# armor_value = 0.15
+										# max_strength = 0.1 
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_armor
+								# bonus = {
+									# modern_carrier = {
+										# armor_value = 0.15
+										# max_strength = 0.1 					 
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 
-			option = {
-				token = sp_naval_modern_carrier_preference_b_b
+			# option = {
+				# token = sp_naval_modern_carrier_preference_b_b
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_anti_air
-								bonus = {
-									ship_hull_carrier_modern = {
-										anti_air_attack = 0.25
-										reliability = 0.07
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_anti_air
-								bonus = {
-									modern_carrier = {
-										anti_air_attack = 0.25
-										reliability = 0.07					 
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_anti_air
+								# bonus = {
+									# ship_hull_carrier_modern = {
+										# anti_air_attack = 0.25
+										# reliability = 0.07
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_anti_air
+								# bonus = {
+									# modern_carrier = {
+										# anti_air_attack = 0.25
+										# reliability = 0.07					 
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 			
-			option = {
-				token = sp_naval_modern_carrier_preference_c_b
+			# option = {
+				# token = sp_naval_modern_carrier_preference_c_b
 				
-				iteration_output = {
-					country_effects = {
-						if = {
-							limit = { has_dlc = "Man the Guns"}							
+				# iteration_output = {
+					# country_effects = {
+						# if = {
+							# limit = { has_dlc = "Man the Guns"}							
 						
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_anti_torpedo
-								bonus = {
-									ship_hull_carrier_modern = {
-										naval_torpedo_enemy_critical_chance_factor = 0.15
-										naval_torpedo_damage_reduction_factor = 0.2
-									}
-								}
-							}
-						}
-						else = {
-							add_equipment_bonus = {
-								name = sp_modern_carrier_eq_bonus_anti_torpedo
-								bonus = {
-									modern_carrier = {
-										naval_torpedo_enemy_critical_chance_factor = 0.15
-										naval_torpedo_damage_reduction_factor = 0.2					 
-									}
-								}
-							}						
-						}
-					}
-				}
-			}
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_anti_torpedo
+								# bonus = {
+									# ship_hull_carrier_modern = {
+										# naval_torpedo_enemy_critical_chance_factor = 0.15
+										# naval_torpedo_damage_reduction_factor = 0.2
+									# }
+								# }
+							# }
+						# }
+						# else = {
+							# add_equipment_bonus = {
+								# name = sp_modern_carrier_eq_bonus_anti_torpedo
+								# bonus = {
+									# modern_carrier = {
+										# naval_torpedo_enemy_critical_chance_factor = 0.15
+										# naval_torpedo_damage_reduction_factor = 0.2					 
+									# }
+								# }
+							# }						
+						# }
+					# }
+				# }
+			# }
 
-		}
+		# }
 
-	}
-}
+	# }
+# }
 
 
 #ICE CARRIER
@@ -3142,7 +3179,7 @@ sp_naval_ice_carrier = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}  
-				has_tech = improved_ship_hull_carrier
+				has_tech = basic_ship_hull_carrier
 			}
 			else = {
 				has_tech = improved_carrier
@@ -3187,15 +3224,16 @@ sp_naval_ice_carrier = {
 						fixed_ship_engine_slot = carrier_ship_engine_2
 						fixed_ship_funnel_slot = funnel_4x
 						fixed_ship_deck_slot = ship_armor_ice_carrier_deck_1
-						fixed_ship_citadel_slot = ship_citadel_3
+						fixed_ship_hangar_slot = ship_carrier_hangar_small
 						fixed_ship_damage_control_slot = water_pump
 						fixed_ship_torpedo_protection_slot = torpedo_protection_2
 						fixed_ship_ammo_1_slot = cannon_high_explosive
 
 						rear_1_custom_slot = ship_arresting_cable
-						mid_1_custom_slot = ship_deck_space
-						mid_2_custom_slot = ship_deck_space
+						deck_3_custom_slot = ship_plane_elevator_1
 						front_1_custom_slot = ship_anti_air_2
+						
+						right_3_custom_slot = ship_carrier_superstructure_1
 					}
 				}
 				custom_effect_tooltip = {
@@ -3358,7 +3396,8 @@ sp_naval_hybrid_carrier = {
 	
 	available = {
 		FROM = {
-			has_tech = deck_conversion1
+			has_tech = carrier_conversion_ca_0
+			has_tech = carrier_conversion_bb_0
 		}
 	}
 
@@ -3469,7 +3508,7 @@ sp_naval_hybrid_carrier = {
 							name = sp_hybrid_carrier_plane_bonus
 							bonus = {
 								ship_hull_carrier_hybrid_bb = {
-									carrier_size = 2
+									carrier_size = 4
 									build_cost_ic = 0.15
 									instant = yes
 								}
@@ -3479,7 +3518,7 @@ sp_naval_hybrid_carrier = {
 							name = sp_hybrid_carrier_plane_bonus
 							bonus = {
 								ship_hull_carrier_hybrid_ca = {
-									carrier_size = 2
+									carrier_size = 4
 									build_cost_ic = 0.15
 									instant = yes
 								}
@@ -3509,7 +3548,7 @@ sp_naval_super_heavy_carrier = {
 	
 	available = {
 		FROM = {
-			has_tech = deck_conversion1
+			has_tech = carrier_conversion_bb_0
 		}
 	}
 	
@@ -3707,7 +3746,7 @@ sp_naval_super_heavy_carrier = {
 							name = sp_super_heavy_carrier_deck_bonus
 							bonus = {
 								ship_hull_carrier_conversion_super_heavy = {
-									carrier_size = 2
+									carrier_size = 4
 									build_cost_ic = 0.17
 									instant = yes
 								}
@@ -3976,204 +4015,204 @@ sp_naval_proximity_fuze = {
 
 }
 
-sp_naval_support_ships = {
-	specialization = specialization_naval
+# sp_naval_support_ships = {
+	# specialization = specialization_naval
 
-	project_tags = sp_tag_surface_ship
+	# project_tags = sp_tag_surface_ship
 
-	ai_will_do = {
-		base = 1
-	}
+	# ai_will_do = {
+		# base = 1
+	# }
 
-	allowed = {
-		has_dlc = "No Compromise, No Surrender"
-	}
+	# allowed = {
+		# has_dlc = "No Compromise, No Surrender"
+	# }
 
-	available = {
-		FROM = {
-			if = {
-				limit = { 
-					has_dlc = "Man the Guns"
-				}
-			has_tech = mtg_transport				
-			}
-			else = {
-				has_tech = transport
-			}
-		}
-	}
+	# available = {
+		# FROM = {
+			# if = {
+				# limit = { 
+					# has_dlc = "Man the Guns"
+				# }
+			# has_tech = mtg_transport				
+			# }
+			# else = {
+				# has_tech = transport
+			# }
+		# }
+	# }
 
-	resource_cost = {
-		resources = { 
-			steel = 6
-		}
-	}
+	# resource_cost = {
+		# resources = { 
+			# steel = 6
+		# }
+	# }
 
-	breakthrough_cost = {
-		specialization_naval = 1
-	}
+	# breakthrough_cost = {
+		# specialization_naval = 1
+	# }
 	
-	complexity = sp_complexity.medium
-	prototype_time = sp_time.prototype.medium 
-	project_output = {
-		country_effects = {
-		}
+	# complexity = sp_complexity.medium
+	# prototype_time = sp_time.prototype.medium 
+	# project_output = {
+		# country_effects = {
+		# }
 
-		enable_equipments = {
-			support_ship_1
-			repair_ship_1
-		}
+		# enable_equipments = {
+			# support_ship_1
+			# repair_ship_1
+		# }
 
-		enable_equipment_modules = {
+		# enable_equipment_modules = {
 			 
-		}
+		# }
 
-		enable_subunits = { 
+		# enable_subunits = { 
 			
-		}
-	}
-	generic_prototype_rewards = {
-		sp_naval_generic_reward_scientist_xp_1
-		sp_naval_generic_reward_scientist_xp_2
-		sp_naval_generic_reward_scientist_xp_3
-		sp_naval_generic_reward_navy_xp_1
-		sp_naval_generic_reward_navy_xp_2
-		sp_naval_generic_reward_navy_xp_3
-		sp_naval_generic_reward_major_progress_1
-		sp_naval_generic_reward_major_progress_2
-		sp_naval_generic_reward_major_progress_3
-		sp_naval_generic_reward_test_failure_1
-		sp_naval_generic_reward_test_failure_2
-		sp_naval_generic_reward_test_failure_3			
-	}
+		# }
+	# }
+	# generic_prototype_rewards = {
+		# sp_naval_generic_reward_scientist_xp_1
+		# sp_naval_generic_reward_scientist_xp_2
+		# sp_naval_generic_reward_scientist_xp_3
+		# sp_naval_generic_reward_navy_xp_1
+		# sp_naval_generic_reward_navy_xp_2
+		# sp_naval_generic_reward_navy_xp_3
+		# sp_naval_generic_reward_major_progress_1
+		# sp_naval_generic_reward_major_progress_2
+		# sp_naval_generic_reward_major_progress_3
+		# sp_naval_generic_reward_test_failure_1
+		# sp_naval_generic_reward_test_failure_2
+		# sp_naval_generic_reward_test_failure_3			
+	# }
 
-	unique_prototype_rewards = {
-		sp_naval_support_ships_unique_reward_a = {
-			fire_only_once = yes
+	# unique_prototype_rewards = {
+		# sp_naval_support_ships_unique_reward_a = {
+			# fire_only_once = yes
 
-			threshold = { 
-				min = 10
-				max = 50
-			}
+			# threshold = { 
+				# min = 10
+				# max = 50
+			# }
 
-			weight = {
-				base = 100
-			}
+			# weight = {
+				# base = 100
+			# }
 
-			option = {
-				token = sp_naval_support_ships_preference_a_a
+			# option = {
+				# token = sp_naval_support_ships_preference_a_a
 				
-				iteration_output = {
-					country_effects = {
-						custom_effect_tooltip = tech_effect|sp_naval_support_ships_pick_a
-						hidden_effect = {
-							set_technology = {
-								sp_naval_support_ships_pick_a = 1
-								popup = no
-							}
-						}
-					}
-				}
-			}
+				# iteration_output = {
+					# country_effects = {
+						# custom_effect_tooltip = tech_effect|sp_naval_support_ships_pick_a
+						# hidden_effect = {
+							# set_technology = {
+								# sp_naval_support_ships_pick_a = 1
+								# popup = no
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			option = {
-				token = sp_naval_support_ships_preference_b_a
-				default = yes
-				iteration_output = {
-					country_effects = {
-						custom_effect_tooltip = tech_effect|sp_naval_support_ships_pick_b
-						hidden_effect = {
-							set_technology = {
-								sp_naval_support_ships_pick_b = 1
-								popup = no
-							}
-						}
-					}
-				}
-			}
+			# option = {
+				# token = sp_naval_support_ships_preference_b_a
+				# default = yes
+				# iteration_output = {
+					# country_effects = {
+						# custom_effect_tooltip = tech_effect|sp_naval_support_ships_pick_b
+						# hidden_effect = {
+							# set_technology = {
+								# sp_naval_support_ships_pick_b = 1
+								# popup = no
+							# }
+						# }
+					# }
+				# }
+			# }
 			
-			option = {
-				token = sp_naval_support_ships_preference_c_a
+			# option = {
+				# token = sp_naval_support_ships_preference_c_a
 				
-				iteration_output = {
-					country_effects = {
-						custom_effect_tooltip = tech_effect|sp_naval_support_ships_pick_c
-						hidden_effect = {
-							set_technology = {
-								sp_naval_support_ships_pick_c = 1
-								popup = no
-							}
-						}
-					}
-				}
-			}
+				# iteration_output = {
+					# country_effects = {
+						# custom_effect_tooltip = tech_effect|sp_naval_support_ships_pick_c
+						# hidden_effect = {
+							# set_technology = {
+								# sp_naval_support_ships_pick_c = 1
+								# popup = no
+							# }
+						# }
+					# }
+				# }
+			# }
 
-		}
+		# }
 
-		sp_naval_support_ships_unique_reward_b = {
-			fire_only_once = yes
+		# sp_naval_support_ships_unique_reward_b = {
+			# fire_only_once = yes
 
-			threshold = { 
-				min = 55
-				max = 95
-			}
+			# threshold = { 
+				# min = 55
+				# max = 95
+			# }
 
-			weight = {
-				base = 100
-			}
+			# weight = {
+				# base = 100
+			# }
 
-			option = {
-				token = sp_naval_support_ships_preference_a_b
+			# option = {
+				# token = sp_naval_support_ships_preference_a_b
 				
-				iteration_output = {
-					country_effects = {
-						custom_effect_tooltip = tech_effect|sp_naval_repair_ships_pick_a
-						hidden_effect = {
-							set_technology = {
-								sp_naval_repair_ships_pick_a = 1
-								popup = no
-							}
-						}
-					}
-				}
-			}
+				# iteration_output = {
+					# country_effects = {
+						# custom_effect_tooltip = tech_effect|sp_naval_repair_ships_pick_a
+						# hidden_effect = {
+							# set_technology = {
+								# sp_naval_repair_ships_pick_a = 1
+								# popup = no
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			option = {
-				token = sp_naval_support_ships_preference_b_b
-				default = yes
-				iteration_output = {
-					country_effects = {
-						custom_effect_tooltip = tech_effect|sp_naval_repair_ships_pick_b
-						hidden_effect = {
-							set_technology = {
-								sp_naval_repair_ships_pick_b = 1
-								popup = no
-							}
-						}
-					}
-				}
-			}
+			# option = {
+				# token = sp_naval_support_ships_preference_b_b
+				# default = yes
+				# iteration_output = {
+					# country_effects = {
+						# custom_effect_tooltip = tech_effect|sp_naval_repair_ships_pick_b
+						# hidden_effect = {
+							# set_technology = {
+								# sp_naval_repair_ships_pick_b = 1
+								# popup = no
+							# }
+						# }
+					# }
+				# }
+			# }
 			
-			option = {
-				token = sp_naval_support_ships_preference_c_b
+			# option = {
+				# token = sp_naval_support_ships_preference_c_b
 				
-				iteration_output = {
-					country_effects = {
-						custom_effect_tooltip = tech_effect|sp_naval_repair_ships_pick_c
-						hidden_effect = {
-							set_technology = {
-								sp_naval_repair_ships_pick_c = 1
-								popup = no
-							}
-						}
-					}
-				}
-			}
+				# iteration_output = {
+					# country_effects = {
+						# custom_effect_tooltip = tech_effect|sp_naval_repair_ships_pick_c
+						# hidden_effect = {
+							# set_technology = {
+								# sp_naval_repair_ships_pick_c = 1
+								# popup = no
+							# }
+						# }
+					# }
+				# }
+			# }
 
-		}
+		# }
 
-	}	
-}
+	# }	
+# }
 
 
 sp_naval_escort_carrier = {
@@ -4195,7 +4234,7 @@ specialization = specialization_naval
 				limit = { 
 					has_dlc = "Man the Guns"
 				}
-			has_tech = basic_ship_hull_carrier				
+			has_tech = early_ship_hull_carrier				
 			}
 			else = {
 				has_tech = basic_carrier
@@ -4344,6 +4383,7 @@ specialization = specialization_naval
 							bonus = {
 								ship_hull_escort_carrier = {
 									sub_detection = 0.125
+									carrier_sub_detection = 0.125
 								}
 							}
 						}
@@ -4361,6 +4401,8 @@ specialization = specialization_naval
 								ship_hull_escort_carrier = {
 									sub_detection = 0.05
 									surface_detection = 0.05
+									carrier_sub_detection = 0.05
+									carrier_surface_detection = 0.05
 								}
 							}
 						}
@@ -4376,6 +4418,7 @@ specialization = specialization_naval
 							bonus = {
 								ship_hull_escort_carrier = {
 									surface_detection = 0.125
+									carrier_surface_detection = 0.125
 								}
 							}
 						}

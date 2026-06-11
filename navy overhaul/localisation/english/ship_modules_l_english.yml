@@ -44,6 +44,8 @@
  EQ_MOD_CAT_ship_light_battery_sub_TITLE:0 "Surface Armament"
  EQ_MOD_CAT_ship_airplane_launcher_sub_TITLE:0 "Plane Hangar"
  EQ_MOD_CAT_ship_seaplane_tender_TITLE:0 "Seaplane Tender"
+ EQ_MOD_CAT_ship_to_ship_missile_TITLE:0 "Ship to Ship Missiles"
+ EQ_MOD_CAT_ship_to_sub_missile_TITLE:0 "Anti Submarine Missiles"
 
  EQ_MOD_CAT_ship_heavy_armor_TITLE:0 "Heavy Belt Armor"
  EQ_MOD_CAT_ship_super_heavy_armor_TITLE:0 "Super Heavy Belt Armor"
@@ -158,18 +160,24 @@
  ship_light_battery_5_2x_short:0 "Twin Light Battery V"
  ship_light_battery_5_2x_desc:0 "Two small guns with gunshields to protect the crew from flying splinters and harsh weather."
 
- dp_light_battery_4:1 "127mm Dual-Purpose Battery"
+ dp_light_battery_4:1 "5'' Dual-Purpose Cannon"
  dp_light_battery_4_short:0 "Dual-Purpose Main Battery IV"
  dp_light_battery_4_desc:1 "A small gun high angle enclosed turret, allowing it to engage airplanes as well as surface targets."
- dp_light_battery_4_2x:1 "Twin 127mm Dual-Purpose Battery"
+ dp_light_battery_4_2x:1 "Twin 5'' Dual-Purpose Cannon"
  dp_light_battery_4_2x_short:0 "Twin Dual-Purpose Main Battery IV"
  dp_light_battery_4_2x_desc:1 "A small gun high angle enclosed turret, allowing it to engage airplanes as well as surface targets."
- dp_light_battery_5:1 "127mm DP Auto-Loading Battery"
+ dp_light_battery_5:1 "5'' DP Auto-Loading Cannon"
  dp_light_battery_5_short:0 "Dual-Purpose Main Battery V"
  dp_light_battery_5_desc:1 "A small gun high angle enclosed turret, allowing it to engage airplanes as well as surface targets."
- dp_light_battery_5_2x:1 "Twin 127mm DP Auto-Loading Battery"
+ dp_light_battery_5_2x:1 "Twin 5'' DP Auto-Loading Cannon"
  dp_light_battery_5_2x_short:0 "Twin Dual-Purpose Main Battery V"
  dp_light_battery_5_2x_desc:1 "A small gun high angle enclosed turret, allowing it to engage airplanes as well as surface targets."
+ dp_light_battery_6:0 "5'' Long DP Auto-Loading Cannon"
+ dp_light_battery_6_short:0 "Dual-Purpose Light Battery VI"
+ dp_light_battery_6_desc:0 "A small gun with gunshields to protect the crew from flying splinters and harsh weather."
+ dp_light_battery_6_2x:0 "Twin $dp_light_battery_5$"
+ dp_light_battery_6_2x_short:0 "Twin Dual-Purpose Light Battery VI"
+ dp_light_battery_6_2x_desc:0 "Two small guns with gunshields to protect the crew from flying splinters and harsh weather."
 
  #Heavy
  ship_heavy_battery_1_2x:0 "2x 12'' Cannon"
@@ -265,8 +273,11 @@
  ship_light_medium_battery_5_3x_short:0 "Triple CL Battery V"
  ship_light_medium_battery_5_3x_desc:0 "Adding automated loading mechanisms increases the rate of fire."
 
- dp_ship_medium_1:0 "152mm RF. Dual-Purpose Battery"
- dp_ship_medium_1_short:0 "Light Cruiser Battery IV"
+ dp_ship_medium_1_2x:0 "2x 6'' RF. Dual-Purpose Battery"
+ dp_ship_medium_1_2x_short:0 "Twin CL Battery DP"
+ dp_ship_medium_1_2x_desc:0 "Designed from the ground up for a high angle of fire, this mount was created to allow light cruisers to engage even bigger Ships and Aircraft."
+ dp_ship_medium_1:0 "3x 6'' RF. Dual-Purpose Battery"
+ dp_ship_medium_1_short:0 "Triple CL Battery DP"
  dp_ship_medium_1_desc:0 "Designed from the ground up for a high angle of fire, this mount was created to allow light cruisers to engage even bigger Ships and Aircraft."
 
  ship_medium_battery_1_2x:0 "2x 7'' Cannon"
@@ -336,6 +347,21 @@
  dp_ship_secondaries_2_2x:1 "2x 12.7cm Dual-Purpose Battery"
  dp_ship_secondaries_2_2x_short:1 "Twin Dual-Purpose Battery II"
  dp_ship_secondaries_2_2x_desc:1 "Housing dual purpose secondary guns in a turret greatly increases the crew protection."
+ 
+ 
+ ship_to_ship_missile_1:0 "Rail-Launched Anti Ship Missile"
+ ship_to_ship_missile_1_short:0 "Anti Ship Missile"
+ ship_to_ship_missile_1_desc:0 "With missile technology evolving, they make for a powerful tool for striking enemies at long distances."
+ 
+ ship_sam_1:0 "Basic Surface to Air Missile"
+ ship_sam_1_short:0 "SAM I"
+ ship_sam_1_desc:0 "These Anti-Air Missiles are fired from a Rail, ranging beyond conventional AA guns."
+ ship_sam_2:0 "Improved Surface to Air Missile"
+ ship_sam_2_short:0 "SAM II"
+ ship_sam_2_desc:0 "Better maneuverability, speed and range allow this Missile to hit Aircraft further from the ship."
+ 
+ ship_asw_missile:0 "Anti Submarine Rocket"
+ ship_asw_missile_desc:0 "Using Sonar and above-water Thrusters, this middleground between a Rocket and Torpedo can accurately home in on and sink Submarines."
 
  #Special
  ship_signals:0 "Flag and Light Signal Communication"
@@ -465,9 +491,9 @@
  ship_airplane_launcher_2:0 "Improved Floatplane Catapult"
  ship_airplane_launcher_2_desc:0 "An improved launch mechanism that allows the ship to launch a larger plane with greater range and speed."
  
- ship_seaplane_tender_1:0 "Seaplane Tender"
+ ship_seaplane_tender_1:0 "Seaplane Crane"
  ship_seaplane_tender_1_desc:0 "Equipment for refueling and recovering seaplanes, keeping them operational with less reliance on shore-based resupply."
- ship_seaplane_tender_2:0 "Improved Seaplane Tender"
+ ship_seaplane_tender_2:0 "Improved Seaplane Crane"
  ship_seaplane_tender_2_desc:0 "While the earliest seaplane tenders were converted merchant ships, newer types are purpose-built and have greatly improved seaplane support capabilities."
 
  ship_plane_elevator_1:0 "Single Aircraft Elevator"
@@ -508,6 +534,8 @@
  ship_sonar_3_desc:0 "Capable of tracking submarines at greater ranges."
  ship_sonar_4:0 "Advanced Sonar"
  ship_sonar_4_desc:0 "Covering more angles and filtering unwanted noise makes this sonar very capable of spotting and tracking submarines."
+ ship_sonar_5:0 "Modern Sonar"
+ ship_sonar_5_desc:0 "A dome-mounted set of sonar sensors can track anything submerged at almost any angle or range."
 
  ship_radar_1:0 "Decimetric Naval Search Radar"
  ship_radar_1_short:0 "Radar I"
@@ -521,6 +549,9 @@
  ship_radar_4:0 "Integrated Fire Control Radar"
  ship_radar_4_short:0 "Radar IV"
  ship_radar_4_desc:0 "Working in the centimeter wavelength range, this radar set is fully integrated into the ships gunnery control and allows highly accurate gunfire control in all weather conditions."
+ ship_radar_5:0 "Modern Tracking Radar"
+ ship_radar_5_short:0 "Radar V"
+ ship_radar_5_desc:0 "A long-range Radar capable of tracking surface and air targets beyond the horizon and allowing for very accurate fire."
 
  ship_smoke_generator:0 "Smoke Mixture Injection"
  ship_smoke_generator_short:0 "Smoke Generator"
@@ -863,6 +894,14 @@
  plane_ammo:0 "Safe Ordenance Stowage"
  plane_ammo_short:0 "Plane Ammo"
  plane_ammo_desc:0 "Bombs, Rockets and Torpedos for use on aircraft are highly flammable and explosive, posing a major risk for the carrier they are stored on. Somewhat mitigating that risk is crucial for surviving enemy attacks."
+ 
+ 
+ ### Auxiliary
+ EQ_MOD_CAT_ship_auxiliary_role_TITLE:0 "Auxiliary Role"
+ auxiliary_role_mine_ship:0 "Mine Warfare Vessel"
+ auxiliary_role_mine_ship_desc:0 "Auxiliary Mine Layers or Sweepers support fleets by ensuring selective passage of contested waters."
+ auxiliary_role_seaplane_tender:0 "Seaplane Tender"
+ auxiliary_role_seaplane_tender_desc:0 "Seaplane Tenders can ensure Seaplanes operating far beyond the shore."
 
 
  SHIP_DESIGNER_MODULE_SELECTION:1 "§HModule Slot:§! $NAME$\nSelect a Module:"

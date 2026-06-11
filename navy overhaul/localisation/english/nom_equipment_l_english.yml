@@ -8,6 +8,12 @@
  ship_hull_early_submarine_3_desc:0 "Submarines in the first World War used their diving capabilities as a means of avoiding blockades, rather than attacking undetected. Often times, their attacks were carried out from the Surface."
  ship_hull_early_submarine_4:0 "Great War Submarine II"
  ship_hull_early_submarine_4_desc:0 "Larger Surface Armaments and more Torpedo Tubes were mounted on Submarines with longer ranges and significantly increased dive depths."
+ ship_hull_submarine_5:0 "Early Cold War Submarine I"
+ ship_hull_submarine_5_desc:0 "With the experiences gained from the World War, Diesel Electric Submarines were designed with longer ranges underwater cruising in mind."
+ ship_hull_submarine_6:0 "Early Cold War Submarine II"
+ ship_hull_submarine_6_desc:0 "Larger Hulls and modern Protection Systems allow these Submarines to operate longer and more independently."
+ ship_hull_submarine_7:0 "Early Cold War Submarine III"
+ ship_hull_submarine_7_desc:0 "Though these ships still use a conventional diesel-electric propulsion system, they incorporate modern weapon systems and missiles."
  
  ship_hull_coastal_submarine_1:0 "Basic Coastal Submarine"
  ship_hull_coastal_submarine_1_desc:0 "The idea of smaller Submarines with less range to defend coastal waters was born out of the Washington Navy Treaty. Submarines beneath 600 tons of surface displacement were not counted towards the total allowed tonnage, allowing a legal loophole."
@@ -34,6 +40,12 @@
  ship_hull_early_destroyer_3_desc:0 "In the Interwar Period, Destroyers started to increase in size and torpedo capacity. They also begun getting faster, to still be comfortably able to outrun ships larger than them."
  ship_hull_early_destroyer_4:0 "Inter War Destroyer II"
  ship_hull_early_destroyer_4_desc:0 "With the resurfacing threat of Submarines, Destroyers started to be equipped with Sonar and Depth Charges. New designs favored operational longevity and Anti Air over larger armaments."
+ ship_hull_light_5:0 "Early Cold War Destroyer I"
+ ship_hull_light_5_desc:0 "In the early days of the Cold War, destroyer design remained largely unchanged from World War II, however they started to get more compact and carry more powerful sensors."
+ ship_hull_light_6:0 "Early Cold War Destroyer II"
+ ship_hull_light_6_desc:0 "New Superstructures and Detection Systems, as well as ship-based missiles start to influence destroyers."
+ ship_hull_light_7:0 "Early Cold War Destroyer III"
+ ship_hull_light_7_desc:0 "With destroyers becoming the main screening ship of any navy, they start to focus more on multi-tasking abilities and missile launchers."
  
  ship_hull_destroyer_leader_1:0 "Early Destroyer Leader"
  ship_hull_destroyer_leader_1_desc:0 "Slightly larger Destroyers that were more heavily armed were used to lead Squadrons of Destroyers into battle, since Cruisers could no longer keep up with newer Destroyers. Their superior firepower deterred enemy Destroyers from challenging the squadron."
@@ -53,6 +65,10 @@
  ship_hull_early_cruiser_4_desc:0 "A last size increase solidifies the Light Cruiser's role as a defense against Destroyers. At the same time, their increased range allows them to project power globally."
  ship_hull_early_cruiser_5:0 "Interwar Light Cruiser II"
  ship_hull_early_cruiser_5_desc:0 "With the introduction of twin- and triple-barreled turrets, Light Cruiser design becomes more compact and space-efficient. Their survivability and Anti Air capabilities also increased drastically."
+ ship_hull_cruiser_5:0 "Early Cold War Cruiser I"
+ ship_hull_cruiser_5_desc:0 "Light Cruisers are designed with escort duties and the leadership of Destroyer flotillas in mind, but they are starting to get phased out in favor of cheaper ships."
+ ship_hull_cruiser_6:0 "Early Cold War Cruiser II"
+ ship_hull_cruiser_6_desc:0 "The introduction of missiles gives Cruisers a new role as picket ships and launch platforms."
  
  
  ship_hull_armored_cruiser_1:0 "Armored Cruiser I"
@@ -105,6 +121,9 @@
  ship_hull_carrier_light_1_desc:0 "Despite them being a very new development, the Washington Naval Treaty imposed strict restrictions on the construction of Carriers. As a result, some nations opted to construct smaller Carriers before moving on to more sophisticated designs."
  ship_hull_carrier_light_2:0 "Improved Light Carrier"
  ship_hull_carrier_light_2_desc:0 "With the lines of Seaplane Tender and Light Aircraft Carrier being blurry, a loophole in the Naval Treaties was exploited to construct smaller Carriers that could operate together with a Fleet."
+ 
+ ship_hull_carrier_modern_2:0 "Modern Carrier II"
+ ship_hull_carrier_modern_2_desc:0 "Angled flight decks, larger hangars and better avionics make Carriers into mobile Jet bases that entire Fleets are built around."
  
  ship_hull_escort_carrier:0 "Escort Carrier Hull"
  

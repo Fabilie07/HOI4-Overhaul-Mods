@@ -651,12 +651,44 @@ equipment_modules = {
 		critical_parts = { damaged_light_guns }
 		xp_cost = 1
 	}
+	
+	dp_ship_medium_1_2x = {
+		abbreviation = "sdq"
+		category = ship_light_medium_battery
+		sfx = sfx_ui_sd_module_turret
+		parent = ship_light_medium_battery_5_3x
+		add_stats = {
+			lg_attack = 7
+			anti_air_attack = 7
+			build_cost_ic = 300
+			reliability = -0.08
+		}
+
+		multiply_stats = {
+			naval_speed = -0.02
+		}
+		
+		add_average_stats = {
+			lg_armor_piercing = 12
+		}
+
+		forbid_module_categories = {
+		     ship_medium_battery
+		}
+		
+		can_convert_from = {
+			module_category = ship_light_medium_battery
+			convert_cost_ic = 150
+		}
+		critical_parts = { damaged_light_guns }
+
+	}
 
 	dp_ship_medium_1 = {
 		abbreviation = "sdq"
 		category = ship_light_medium_battery
 		sfx = sfx_ui_sd_module_turret
-		parent = ship_light_medium_battery_5_3x
+		parent = dp_ship_medium_1_2x
 		add_stats = {
 			lg_attack = 10
 			anti_air_attack = 10
@@ -1782,29 +1814,29 @@ equipment_modules = {
 		xp_cost = 1
 	}
 	
-	dp_ship_secondaries_3 = {
-		abbreviation = "sax"
-		category = ship_secondaries
-		parent = ship_secondaries_1_2x
-		sfx = sfx_ui_sd_module_turret
-		add_stats = {
-			lg_attack = 4
-			anti_air_attack = 8
-			build_cost_ic = 240
-		}
+	# dp_ship_secondaries_3 = {
+		# abbreviation = "sax"
+		# category = ship_secondaries
+		# parent = ship_secondaries_1_2x
+		# sfx = sfx_ui_sd_module_turret
+		# add_stats = {
+			# lg_attack = 4
+			# anti_air_attack = 8
+			# build_cost_ic = 240
+		# }
 		
-		add_average_stats = {
-			lg_armor_piercing = 6
-		}
+		# add_average_stats = {
+			# lg_armor_piercing = 6
+		# }
 		
-		can_convert_from = {
-			module_category = ship_secondaries
-			convert_cost_ic = 30
-		}
+		# can_convert_from = {
+			# module_category = ship_secondaries
+			# convert_cost_ic = 30
+		# }
 
-		critical_parts = { damaged_secondaries }
-		xp_cost = 1
-	}
+		# critical_parts = { damaged_secondaries }
+		# xp_cost = 1
+	# }
 
 	### Anti-Air / AA
 
@@ -2084,6 +2116,7 @@ equipment_modules = {
 	ship_asw_missile = {
 		abbreviation = "scv"
 		category = ship_to_sub_missile
+		gui_category = ship_to_ship_missile
 		sfx = sfx_ui_sd_module_turret
 		
 		add_stats = {

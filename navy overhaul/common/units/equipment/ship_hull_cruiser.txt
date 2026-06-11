@@ -95,6 +95,7 @@ equipments = {
 					ship_mine_layer
 					ship_depth_charge
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_1_custom_slot = {
@@ -106,6 +107,7 @@ equipments = {
 					ship_torpedo
 					ship_anti_air
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_2_custom_slot = {
@@ -117,6 +119,7 @@ equipments = {
 					ship_torpedo
 					ship_anti_air
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_3_custom_slot = {
@@ -129,6 +132,7 @@ equipments = {
 					ship_anti_air
 					ship_seaplane_tender
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_4_custom_slot = {
@@ -140,6 +144,7 @@ equipments = {
 					ship_torpedo
 					ship_anti_air
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			front_1_custom_slot = {
@@ -148,6 +153,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_to_ship_missile
 				}
 			}
 
@@ -160,6 +166,8 @@ equipments = {
 					ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
+					ship_to_ship_missile
+					ship_to_sub_missile
 				}
 			}
 			right_2_custom_slot = {
@@ -170,6 +178,8 @@ equipments = {
 					ship_dp_secondaries
 					ship_depth_charge
 					ship_anti_air
+					ship_to_ship_missile
+					ship_to_sub_missile
 				}
 			}
 			right_3_custom_slot = right_2_custom_slot
@@ -184,6 +194,8 @@ equipments = {
 					ship_mine_layer
 					ship_depth_charge
 					ship_anti_air
+					ship_to_ship_missile
+					ship_to_sub_missile
 				}
 			}
 			left_2_custom_slot = {
@@ -194,6 +206,8 @@ equipments = {
 					ship_dp_secondaries
 					ship_depth_charge
 					ship_anti_air
+					ship_to_ship_missile
+					ship_to_sub_missile
 				}
 			}
 			left_3_custom_slot = left_2_custom_slot
@@ -206,12 +220,8 @@ equipments = {
 		}
 		
 		module_count_limit = {
-			category = ship_radar
-			count < 2
-		}
-		module_count_limit = {
-			category = ship_sonar
-			count < 2
+			category = ship_to_ship_missile
+			count < 7
 		}
 
 		module_count_limit = {

@@ -622,6 +622,14 @@ technologies = {
 		enable_equipment_modules = {
 			ship_to_ship_missile_1
 		}
+		
+		is_special_project_tech = yes
+		dependencies = { sp_rockets_improved_guidance = 1 }
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_rockets_ballistic_missile
+			}
+		}
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -756,10 +764,11 @@ technologies = {
 		start_year = 1945
 
 		enable_equipment_modules = {
+			dp_ship_medium_1_2x
 			dp_ship_medium_1
 			dp_light_battery_6
 			dp_light_battery_6_2x
-			dp_ship_secondaries_3
+			# dp_ship_secondaries_3
 		}
 
 		on_research_complete = {
@@ -810,6 +819,13 @@ technologies = {
 			ship_sam_1
 		}
 		
+		is_special_project_tech = yes
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_rockets_ground_to_air_missile
+			}
+		}
+		
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = -2 y = @1950 }
@@ -852,6 +868,13 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_sam_2
+		}
+		
+		is_special_project_tech = yes
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_rockets_ground_to_air_missile
+			}
 		}
 		
 		folder = {
@@ -955,6 +978,7 @@ technologies = {
 			ship_heavy_battery_3_3x
 			
 			cannon_semi_armor_piercing
+			ship_medium_battery_sub
 		}
 
 		naval_critical_score_chance_factor = 0.15
@@ -1688,6 +1712,14 @@ technologies = {
 		research_cost = 1.5
 
 		start_year = 1960
+		
+		is_special_project_tech = yes
+		dependencies = { homing_torpedo = 1 }
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_rockets_ballistic_missile
+			}
+		}
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -1965,6 +1997,9 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1960
+
+		dependencies = { monopulse_radar = 1 }
+		is_special_project_tech = yes
 
 		folder = {
 			name = mtgnavalsupportfolder
@@ -3089,7 +3124,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 2 y = @1939 }
+			position = { x = 4 y = @1939 }
 		}
 
 		folder = {
@@ -3125,7 +3160,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 2 y = @1942 }
+			position = { x = 4 y = @1942 }
 		}
 
 		folder = {
@@ -3168,7 +3203,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = mtgnavalsupportfolder
-			position = {  x = 0 y = @1939 }
+			position = {  x = 2 y = @1939 }
 		}
 		categories = {
 			naval_equipment
@@ -3197,7 +3232,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = mtgnavalsupportfolder
-			position = {  x = 0 y = @1945 }
+			position = {  x = 2 y = @1945 }
 		}
 		categories = {
 			naval_equipment
@@ -3235,7 +3270,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 0 y = @1942 }
+			position = { x = 2 y = @1942 }
 		}
 
 		categories = {
@@ -3265,7 +3300,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = mtgnavalsupportfolder
-			position = { x = 0 y = @1945 }
+			position = { x = 2 y = @1945 }
 		}
 
 		categories = {

@@ -1,0 +1,22 @@
+-- 1 --
+ENG
+FRA
+GER
+ITA
+JAP
+SOV
+USA
+
+-- 2 --
+DEN
+FIN
+GRE
+HOL
+NOR
+POR
+SPR
+SWE
+TUR
+
+-- 3 --
+All the others

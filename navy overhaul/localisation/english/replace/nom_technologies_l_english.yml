@@ -46,6 +46,32 @@
  improved_shells:0 "Advanced Shells"
  improved_shells_desc:0 "Caps can increase the penetration at higher angles, increasing the penetrating power especially against the lightly armored decks of enemy ships."
  
+ modern_dp_light_battery:0 "Modern Dual-Purpose Battery"
+ modern_dp_light_battery_desc:0 "A high angle allows these guns to engage aircraft coming on from straight above."
+ latewar_dp_light_battery:0 "Late-War Dual-Purpose Battery"
+ latewar_dp_light_battery_desc:0 "Guns designed with larger caliber, higher velocity and proximity fuzed shells in mind are potent against both surface and air threats."
+ modern_light_battery:0 "Modern Light Battery"
+ modern_light_battery_desc:0 "Higher Velocity and Auto-Loaders improve the lethality of these guns against enemy screens and transports."
+ modern_heavy_battery:0 "Modern Heavy Battery"
+ modern_heavy_battery_desc:0 "Powerful guns using modern reloading systems and super-heavy shells can easily take out enemy capital ships."
+ 
+ ship_based_sam:0 "Basic Ship-Based SAMs"
+ ship_based_sam_desc:0 "Surface-to-Air Missiles are designed to destroy enemy aircraft before they enter the regular AA battery's range."
+ ship_based_sam2:0 "Improved Ship-Based SAMs"
+ ship_based_sam2_desc:0 "Independent Tracking and improved thrusters increase the range and lethality of Surface-to-Air Missiles."
+ ship_based_missile:0 "Basic Anti-Ship Missile"
+ ship_based_missile_desc:0 "The development of Ship-to-Ship Missiles was controversial due to their lesser range when compared to aircraft, but first combat usage quickly dispelled all doubts and ensured that Missiles were the future of Surface Warfare."
+ 
+ anti_submarine_missile:0 "Anti-Submarine Missiles"
+ anti_submarine_missile_desc:0 "Guided Rockets and Torpedos are used to accurately destroy submarines from above."
+ modern_sonar2:0 "Cold-War Sonar"
+ modern_sonar2_desc:0 "Active Sonar is becoming much more precise and versatile, making it impossible to hide under water."
+ modern_ship_radar:0 "Cold-War Radar"
+ modern_ship_radar_desc:0 "Accurate Tracking Radar coupled with digital Fire Control makes both tracking and engaging targets as easy as pressing a button."
+ 
+ 
+ mtg_amphibious_assault_craft:0 "Amphibious Assault Craft"
+ mtg_amphibious_assault_craft_desc:0 "Larger and better protected Assault Transports ensure that Armor and Special Forces can quickly secure a Beachhead without many casualties."
  
  early_submarine_hull_4:0 "$ship_hull_early_submarine_4$"
  early_submarine_hull_4_desc:0 "$ship_hull_early_submarine_4_desc$"

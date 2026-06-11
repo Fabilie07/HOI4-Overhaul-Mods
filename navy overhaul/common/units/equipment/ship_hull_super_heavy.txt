@@ -101,6 +101,7 @@ equipments = {
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_1_custom_slot = {
@@ -114,6 +115,7 @@ equipments = {
 					ship_secondaries
 					ship_anti_air
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_2_custom_slot = {
@@ -127,6 +129,7 @@ equipments = {
 					ship_secondaries
 					ship_anti_air
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_3_custom_slot = {
@@ -140,6 +143,7 @@ equipments = {
 					ship_secondaries
 					ship_anti_air
 					ship_airplane_launcher
+					ship_to_ship_missile
 				}
 			}
 			mid_4_custom_slot = {
@@ -152,6 +156,7 @@ equipments = {
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_anti_air
+					ship_to_ship_missile
 				}
 			}
 			front_1_custom_slot = {
@@ -163,6 +168,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_heavy_secondaries
 					ship_secondaries
+					ship_to_ship_missile
 				}
 			}
 
@@ -174,6 +180,7 @@ equipments = {
 					ship_secondaries
 					ship_mine_layer
 					ship_anti_air
+					ship_to_ship_missile
 				}
 			}
 			right_2_custom_slot = {
@@ -183,6 +190,7 @@ equipments = {
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_anti_air
+					ship_to_ship_missile
 				}
 			}
 			right_3_custom_slot = right_2_custom_slot
@@ -196,6 +204,7 @@ equipments = {
 					ship_secondaries
 					ship_mine_layer
 					ship_anti_air
+					ship_to_ship_missile
 				}
 			}
 			left_2_custom_slot = {
@@ -205,6 +214,7 @@ equipments = {
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_anti_air
+					ship_to_ship_missile
 				}
 			}
 			left_3_custom_slot = left_2_custom_slot
@@ -220,10 +230,10 @@ equipments = {
 		surface_visibility = 30
 
 		naval_range = 4500
-		naval_speed = 24
-		max_strength = 700
+		naval_speed = 26
+		max_strength = 750
 		fuel_consumption = 45
-		reliability = 1
+		reliability = 1.1
 		build_cost_ic = 6000
 		resources = {
 			steel = 3

@@ -2,7 +2,7 @@ sub_units = {
 	auxiliary_mine_layer = {
 		sprite = support_ship
 		map_icon_category = ship
-		priority = 6
+		priority = 0
 		active = yes
 		type = support_ship
 		need = { ship_hull_auxiliary = 1 }
@@ -25,7 +25,7 @@ sub_units = {
 	auxiliary_seaplane_tender = {
 		sprite = support_ship
 		map_icon_category = ship
-		priority = 6
+		priority = 0
 		active = yes
 		type = { support_ship carrier }
 		need = { ship_hull_auxiliary = 1 }

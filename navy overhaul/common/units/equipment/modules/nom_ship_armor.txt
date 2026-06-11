@@ -380,21 +380,20 @@ equipment_modules = {
 	super_heavy_ship_armor = {
 		abbreviation = "shsa"
 		category = ship_super_heavy_armor
-		gfx = ship_armor_thick
+		gfx = ship_armor_thick_6
 		
 		multiply_stats = {
-			naval_speed = -0.1
-			max_strength = 0.2
+			naval_speed = -0.25
+			max_strength = 0.4
 		}
 		build_cost_resources = {
 			steel = 2
 		}
 		add_stats = {
 			reliability = 0.1
-			armor_value = 50
+			armor_value = 60
 			build_cost_ic = 1500
 		}
-		dismantle_cost_ic = 750
 		xp_cost = 1
 	}
 

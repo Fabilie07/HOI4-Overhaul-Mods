@@ -2,7 +2,7 @@ sub_units = {
 	super_heavy_battleship = {
 		sprite = battleship
 		map_icon_category = ship
-		priority = 9
+		priority = 10
 		active = yes
 		type = { capital_ship }
 		need_equipment = { ship_hull_super_heavy = 1 }
