@@ -8,5 +8,5 @@ dependencies={
 	"*DEV* NSB Tank Overhaul"
 }
 name="*DEV* NSB Tank Overhaul - In-Depth Designer Addon"
-supported_version="1.17.*"
+supported_version="1.19.*"
 remote_file_id="3361759799"
