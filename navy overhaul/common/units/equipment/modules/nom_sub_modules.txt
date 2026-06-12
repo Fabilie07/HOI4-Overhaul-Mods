@@ -19,7 +19,7 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 0
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 	}
 
 	ship_torpedo_sub_2 = {
@@ -41,7 +41,7 @@ equipment_modules = {
 			module_category = ship_torpedo_sub
 			convert_cost_ic = 60
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 	}
 
 	ship_torpedo_sub_3 = {
@@ -63,7 +63,7 @@ equipment_modules = {
 			module_category = ship_torpedo_sub
 			convert_cost_ic = 60
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 	}
 
 	ship_torpedo_sub_4 = {
@@ -85,7 +85,7 @@ equipment_modules = {
 			module_category = ship_torpedo_sub
 			convert_cost_ic = 60
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 	}
 	
 	ship_torpedo_sub_nuclear = {
@@ -106,7 +106,7 @@ equipment_modules = {
 			module_category = ship_torpedo_sub
 			convert_cost_ic = 200
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 	}
 
 	ship_mine_layer_sub = {
@@ -251,6 +251,8 @@ equipment_modules = {
 			module_category = sub_ship_engine
 			convert_cost_ic = 250
 		}
+		
+		critical_parts = { broken_diesel }
 	}
 	sub_ship_engine_2 = {
 		abbreviation = "sbs"
@@ -280,6 +282,8 @@ equipment_modules = {
 			module = sub_ship_engine_1
 			convert_cost_ic = 230
 		}
+		
+		critical_parts = { broken_diesel }
 	}
 	sub_ship_engine_3 = {
 		abbreviation = "sbt"
@@ -309,6 +313,8 @@ equipment_modules = {
 			module = sub_ship_engine_2
 			convert_cost_ic = 230
 		}
+		
+		critical_parts = { broken_diesel }
 	}
 	sub_ship_engine_4 = {
 		abbreviation = "sbu"
@@ -338,6 +344,8 @@ equipment_modules = {
 			module = sub_ship_engine_3
 			convert_cost_ic = 230
 		}
+		
+		critical_parts = { broken_diesel }
 	}
 	
 	ship_engine_sub_aip_1 = {
@@ -364,6 +372,8 @@ equipment_modules = {
 			module = sub_ship_engine_2
 			convert_cost_ic = 270
 		}
+		
+		critical_parts = { broken_diesel }
 	}
 	ship_engine_sub_aip_2 = {
 		abbreviation = "sne"
@@ -390,6 +400,8 @@ equipment_modules = {
 			module = ship_engine_sub_aip_1
 			convert_cost_ic = 270
 		}
+		
+		critical_parts = { broken_diesel }
 	}	
 	ship_engine_sub_aip_3 = {
 		abbreviation = "sne"
@@ -416,6 +428,8 @@ equipment_modules = {
 			module = ship_engine_sub_aip_2
 			convert_cost_ic = 270
 		}
+		
+		critical_parts = { broken_diesel }
 	}	
 	
 	sub_ship_nuclear_engine_1 = {
@@ -429,6 +443,8 @@ equipment_modules = {
 			build_cost_ic = 0.45
 			fuel_consumption = -1
 		}
+		
+		critical_parts = { coolant_loss }
 	}
 	
 	ship_anechoic_tile = {
@@ -665,6 +681,8 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 50
 		}
+		
+		critical_parts = { leaking_snorkel_1 }
 	}
 	ship_sub_snorkel_2 = {
 		abbreviation = "scx"
@@ -683,6 +701,8 @@ equipment_modules = {
 			module_category = ship_sub_snorkel
 			convert_cost_ic = 30
 		}
+		
+		critical_parts = { leaking_snorkel_2 }
 	}
 
 }

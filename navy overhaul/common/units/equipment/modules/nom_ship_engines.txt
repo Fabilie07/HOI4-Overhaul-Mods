@@ -519,6 +519,8 @@ equipment_modules = {
 			build_cost_ic = 0.45
 			fuel_consumption = -1
 		}
+		
+		critical_parts = { coolant_loss }
 	}
 	
 	carrier_ship_nuclear_engine_1 = {
@@ -532,5 +534,7 @@ equipment_modules = {
 			build_cost_ic = 0.4
 			fuel_consumption = -1
 		}
+		
+		critical_parts = { coolant_loss }
 	}
 }

@@ -1455,7 +1455,7 @@ equipment_modules = {
 			reliability = -0.02
 			build_cost_ic = 30
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_1_2x = {
@@ -1468,7 +1468,7 @@ equipment_modules = {
 			reliability = -0.04
 			build_cost_ic = 45
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_1_3x = {
@@ -1481,7 +1481,7 @@ equipment_modules = {
 			reliability = -0.06
 			build_cost_ic = 60
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_1_4x = {
@@ -1494,7 +1494,7 @@ equipment_modules = {
 			reliability = -0.08
 			build_cost_ic = 75
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 
@@ -1508,7 +1508,7 @@ equipment_modules = {
 			reliability = -0.03
 			build_cost_ic = 30
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_2_2x = {
@@ -1521,7 +1521,7 @@ equipment_modules = {
 			reliability = -0.06
 			build_cost_ic = 45
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_2_3x = {
@@ -1534,7 +1534,7 @@ equipment_modules = {
 			reliability = -0.09
 			build_cost_ic = 60
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_2_4x = {
@@ -1547,7 +1547,7 @@ equipment_modules = {
 			reliability = -0.12
 			build_cost_ic = 75
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_2_5x = {
@@ -1560,7 +1560,7 @@ equipment_modules = {
 			reliability = -0.15
 			build_cost_ic = 90
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 	ship_torpedo_2_6x = {
@@ -1573,7 +1573,7 @@ equipment_modules = {
 			reliability = -0.18
 			build_cost_ic = 105
 		}
-		critical_parts = { damaged_torpedoes }
+		critical_parts = { damaged_torpedoes jammed_torpedo }
 		xp_cost = 1
 	}
 

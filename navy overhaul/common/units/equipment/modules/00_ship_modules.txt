@@ -24,6 +24,8 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		xp_cost = 1
+		
+		critical_parts = { fire_direction_breakdown }
 	}
 
 	ship_fire_control_system_1 = {
@@ -47,6 +49,8 @@ equipment_modules = {
 			convert_cost_ic = 85
 		}
 		xp_cost = 1
+		
+		critical_parts = { fire_direction_breakdown }
 	}
 	ship_fire_control_system_2 = {
 		abbreviation = "sbh"
@@ -72,6 +76,8 @@ equipment_modules = {
 			convert_cost_ic = 145
 		}
 		xp_cost = 1
+		
+		critical_parts = { fire_direction_breakdown }
 	}
 	ship_fire_control_system_3 = {
 		abbreviation = "sbi"
@@ -97,6 +103,8 @@ equipment_modules = {
 			convert_cost_ic = 145
 		}
 		xp_cost = 1
+		
+		critical_parts = { fire_direction_breakdown }
 	}
 
 
@@ -119,6 +127,8 @@ equipment_modules = {
 			sub_detection = 3
 		}
 		xp_cost = 1
+		
+		critical_parts = { shortcircuited_radar_1 }
 	}
 	ship_radar_2 = {
 		abbreviation = "sbk"
@@ -141,6 +151,8 @@ equipment_modules = {
 			convert_cost_ic = 20
 		}
 		xp_cost = 1
+		
+		critical_parts = { shortcircuited_radar_2 }
 	}
 	ship_radar_3 = {
 		abbreviation = "sbl"
@@ -166,6 +178,8 @@ equipment_modules = {
 			convert_cost_ic = 45
 		}
 		xp_cost = 1
+		
+		critical_parts = { shortcircuited_radar_3 }
 	}
 	ship_radar_4 = {
 		abbreviation = "sbm"
@@ -191,6 +205,8 @@ equipment_modules = {
 			convert_cost_ic = 55
 		}
 		xp_cost = 1
+		
+		critical_parts = { shortcircuited_radar_4 }
 	}
 	ship_radar_5 = {
 		abbreviation = "sbm"
@@ -216,6 +232,8 @@ equipment_modules = {
 			convert_cost_ic = 65
 		}
 		xp_cost = 1
+		
+		critical_parts = { shortcircuited_radar_4 }
 	}
 
  ##  ### ###   ##  ###   ##  ### ###     #    ##  #  # #  #  ##  #  # ### ###  
