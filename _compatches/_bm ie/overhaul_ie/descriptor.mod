@@ -7,5 +7,5 @@ dependencies={
 	"[Vanilla] Industrial Expansion - Extra Building Slots and Resources!"
 }
 name="*DEV* [Building Slots and Resources] Compatch"
-supported_version="1.17.*"
+supported_version="1.19.*"
 remote_file_id="3420865672"

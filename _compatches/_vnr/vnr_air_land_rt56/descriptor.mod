@@ -9,5 +9,5 @@ dependencies={
 	"*DEV* NSB Tank Overhaul"
 }
 name="*DEV* [Rt56] (VNR / TOM / AOM) Compatch"
-supported_version="1.18.*"
+supported_version="1.19.*"
 remote_file_id="3320652261"

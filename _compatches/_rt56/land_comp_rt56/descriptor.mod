@@ -8,5 +8,5 @@ dependencies={
 	"The Road to 56"
 }
 name="*DEV* [TOM] Rt56 Compatch"
-supported_version="1.18.*"
+supported_version="1.19.*"
 remote_file_id="3407935714"

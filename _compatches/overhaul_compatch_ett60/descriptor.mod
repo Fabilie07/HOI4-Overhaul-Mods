@@ -9,5 +9,5 @@ dependencies={
 	"Extended Tech Tree 1960"
 }
 name="*DEV* [ETT60] Overhaul Mod Compatch"
-supported_version="1.18.*"
+supported_version="1.19.*"
 remote_file_id="3418360032"
