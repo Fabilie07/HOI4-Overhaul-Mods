@@ -138,6 +138,21 @@ equipment_modules = {
 			max_strength = -0.5
 		}
 	}
+	
+	ship_armored_flight_deck = {
+		abbreviation = "hno"
+		category = ship_carrier_deck_armor
+		
+		add_stats = {
+			build_cost_ic = 200
+			reliability = 0.1
+			carrier_size = -4
+		}
+		multiply_stats = {
+			max_strength = 0.45
+			anti_air_attack = 0.18
+		}
+	}
 
 	ship_arresting_cable = {
 		abbreviation = "sda"
@@ -270,6 +285,39 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 4000
-	}		
+	}
+	
+	
+	### Hybrids
+	
+	ship_partial_flight_deck = {
+		abbreviation = "pfd"
+		category = ship_hybrid_deck
+		gfx = ship_deck_space
+		
+		add_stats = {
+			carrier_size = 2
+			build_cost_ic = 200
+		}
+		multiply_stats = {
+			max_strength = -0.05
+		}
+	}
+	
+	ship_hybrid_elevator_1 = {
+		abbreviation = "pfd"
+		category = ship_hybrid_elevator
+		gui_category = ship_hybrid_deck
+		gfx = ship_plane_elevator_1
+		
+		allowed_module_categories = {
+			fixed_ship_hangar_slot = { ship_carrier_hangar_1 }
+		}
+
+		add_stats = {
+			build_cost_ic = 100
+			reliability = -0.1
+		}
+	}
 
 }

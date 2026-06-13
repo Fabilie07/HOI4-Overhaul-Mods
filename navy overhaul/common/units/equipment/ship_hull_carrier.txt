@@ -279,7 +279,7 @@ equipments = {
 		abbreviation = "haa"
 		year = 1920
 		archetype = ship_hull_carrier
-		priority = 1000
+		priority = 1001
 
 		module_slots = inherit
 		
@@ -301,14 +301,14 @@ equipments = {
 		year = 1925
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_light_0
-		priority = 1000
+		priority = 1001
 
 		module_slots = inherit
 		
-		carrier_size = 2
+		carrier_size = 4
 		reliability = 0.85
 		naval_range = 3000
-		naval_speed = 21
+		naval_speed = 23
 		max_strength = 60
 		build_cost_ic = 2200
 		manpower = 650
@@ -320,7 +320,7 @@ equipments = {
 		year = 1935
 		archetype = ship_hull_carrier
 		parent = ship_hull_carrier_light_1
-		priority = 1000
+		priority = 1001
 
 		module_slots = inherit
 		
