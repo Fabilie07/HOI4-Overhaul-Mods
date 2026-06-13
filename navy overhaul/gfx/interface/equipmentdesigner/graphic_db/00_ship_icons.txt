@@ -146,7 +146,6 @@ default = {
 		models_weight = 0.1
 		
 			icons = {
-			GFX_early_destroyer_medium #Generic
 			GFX_basic_destroyer_medium #Generic
 			}
 			models = {
@@ -159,8 +158,6 @@ default = {
 		models_weight = 0.1
 		
 			icons = {
-			GFX_early_destroyer_medium #Generic
-			GFX_basic_destroyer_medium #Generic
 			GFX_improved_destroyer_medium #Generic
 			}
 			models = {
@@ -173,13 +170,45 @@ default = {
 		models_weight = 0.1
 		
 			icons = {
-			GFX_early_destroyer_medium #Generic
-			GFX_basic_destroyer_medium #Generic
-			GFX_improved_destroyer_medium #Generic
 			GFX_advanced_destroyer_medium #Generic
 			}
 			models = {
-				destroyer_entity #Generic
+			}
+		}
+	}
+	ship_hull_light_5 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+		
+			icons = {
+			GFX_modern_ship_hull_light_medium
+			}
+			models = {
+			}
+		}
+	}
+	ship_hull_light_6 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+		
+			icons = {
+			GFX_modern_ship_hull_light2_medium
+			}
+			models = {
+			}
+		}
+	}
+	ship_hull_light_7 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+		
+			icons = {
+			GFX_modern_ship_hull_light3_medium
+			}
+			models = {
 			}
 		}
 	}
@@ -298,7 +327,6 @@ default = {
 		models_weight = 0.1
 
 			icons = {
-				GFX_early_ship_hull_cruiser_medium #Generic
 				GFX_basic_ship_hull_cruiser_medium #Generic
 			}
 			models = {
@@ -311,8 +339,6 @@ default = {
 		models_weight = 0.1
 
 			icons = {
-				GFX_early_ship_hull_cruiser_medium #Generic
-				GFX_basic_ship_hull_cruiser_medium #Generic
 				GFX_improved_ship_hull_cruiser_medium #Generic
 			}
 			models = {
@@ -325,10 +351,31 @@ default = {
 		models_weight = 0.1
 
 			icons = {
-				GFX_early_ship_hull_cruiser_medium #Generic
-				GFX_basic_ship_hull_cruiser_medium #Generic
-				GFX_improved_ship_hull_cruiser_medium #Generic
 				GFX_advanced_ship_hull_cruiser_medium #Generic
+			}
+			models = {
+			}
+		}
+	}
+	ship_hull_cruiser_5 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_modern_ship_hull_cruiser_medium #Generic
+			}
+			models = {
+			}
+		}
+	}
+	ship_hull_cruiser_6 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_modern_ship_hull_cruiser2_medium #Generic
 			}
 			models = {
 			}
@@ -599,6 +646,18 @@ default = {
 			}
 		}
 	}
+# Modern Battleship
+	ship_hull_heavy_modern = {
+		pool = {
+		weight = 5500
+			icons = {
+				GFX_modern_ship_hull_heavy_medium
+			}
+			models = {
+				ship_hull_modern_super_battleship_entity
+			}
+		}
+	}
 
 #Battlecruisers
 	ship_hull_battlecruiser = {
@@ -768,6 +827,29 @@ default = {
 			}
 		}
 	}
+# Modern Carrier
+	ship_hull_carrier_modern = {
+		pool = {
+		weight = 5500
+			icons = {
+				GFX_modern_ship_hull_carrier_medium
+			}
+			models = {
+				ship_hull_super_carrier_entity
+			}
+		}
+	}
+	ship_hull_carrier_modern_2 = {
+		pool = {
+		weight = 5500
+			icons = {
+				GFX_modern_ship_hull_carrier2_medium
+			}
+			models = {
+				ship_hull_super_carrier_entity
+			}
+		}
+	}
 
  ## #  # ###  #   #  ##  ###  ### #  # ### 
 #   #  # #  # ## ## #  # #  #  #  ## # #   
@@ -879,6 +961,42 @@ default = {
 
 			icons = {
 				GFX_advanced_submarine_medium #Generic
+			}
+			models = {
+			}
+		}
+	}
+	ship_hull_submarine_5 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_modern_ship_hull_submarine_medium #Generic
+			}
+			models = {
+			}
+		}
+	}
+	ship_hull_submarine_6 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_modern_ship_hull_submarine2_medium #Generic
+			}
+			models = {
+			}
+		}
+	}
+	ship_hull_submarine_7 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_modern_ship_hull_submarine3_medium #Generic
 			}
 			models = {
 			}
@@ -1041,19 +1159,6 @@ default = {
 		}
 	}
 
-# Modern Carrier
-	ship_hull_carrier_modern = {
-		pool = {
-		weight = 5500
-			icons = {
-				GFX_ship_hull_carrier_modern_medium
-			}
-			models = {
-				ship_hull_super_carrier_entity
-			}
-		}
-	}
-
 # Super Heavy Battleship
 	ship_hull_super_heavy_1 = {
 		pool = {
@@ -1063,19 +1168,6 @@ default = {
 			}
 			models = {
 				super_heavy_battleship_entity
-			}
-		}
-	}
-
-# Modern Battleship
-	ship_hull_heavy_modern = {
-		pool = {
-		weight = 5500
-			icons = {
-				GFX_ship_hull_heavy_modern_medium
-			}
-			models = {
-				ship_hull_modern_super_battleship_entity
 			}
 		}
 	}

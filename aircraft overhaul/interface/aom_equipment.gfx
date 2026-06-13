@@ -22,4 +22,17 @@ SpriteTypes = {
 		name = "GFX_USA_cv_cas_6"
 		texturefile = "gfx/interface/equipment/USA_cv_cas_6.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_helicopter_equipment_2_medium"
+		texturefile = "gfx/interface/equipment/generic_helicopter_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_helicopter_equipment_3_medium"
+		texturefile = "gfx/interface/equipment/generic_helicopter_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_helicopter_equipment_4_medium"
+		texturefile = "gfx/interface/equipment/generic_helicopter_4.dds"
+	}
 }
