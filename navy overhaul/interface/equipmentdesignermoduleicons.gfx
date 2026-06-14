@@ -279,6 +279,10 @@ spriteTypes = {
 	
 	
 	spriteType = {
+		name = "GFX_SMI_ship_medium_battery_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_battery_1.dds"
+	}
+	spriteType = {
 		name = "GFX_SMI_ship_medium_battery_1_2x"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_battery_1_2x.dds"
 	}
@@ -288,6 +292,10 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SMI_ship_medium_battery_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_battery_2.dds"
+	}
+	spriteType = {
 		name = "GFX_SMI_ship_medium_battery_2_2x"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_battery_2_2x.dds"
 	}
@@ -296,6 +304,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_battery_2_3x.dds"
 	}
 
+	spriteType = {
+		name = "GFX_SMI_ship_medium_battery_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_battery_3.dds"
+	}
 	spriteType = {
 		name = "GFX_SMI_ship_medium_battery_3_2x"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_medium_battery_3_2x.dds"
@@ -1032,6 +1044,10 @@ spriteTypes = {
 		name = "GFX_SMI_ship_carrier_tower"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_tower.dds"
 	}
+	spriteType = {
+		name = "GFX_SMI_ship_hybrid_deck"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/deck_space_icn.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SMI_ship_deck_space"
@@ -1490,6 +1506,10 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_SMI_ammo_plane"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/cat_torpedo_ammo.dds"
+	}
+	spriteType = {
 		name = "GFX_SMI_plane_ammo"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/torpedo_ammo_1.dds"
 	}
@@ -1577,6 +1597,17 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_SMI_ship_asw_missile"
 		texturefile = "gfx/interface/equipmentdesigner/naval/modules/icons/missile_asw.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_SMI_auxiliary_role_mine_ship"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/auxiliary_role_mine.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_auxiliary_role_seaplane_tender"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/auxiliary_role_seaplane.dds"
 	}
 }
 

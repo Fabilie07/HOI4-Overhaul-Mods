@@ -336,7 +336,7 @@ equipments = {
 		naval_range = 2000
 		reliability = 0.7
 		max_strength = 150
-		naval_speed = 16
+		naval_speed = 20
 		naval_dominance_factor = 100
 
 
@@ -361,7 +361,7 @@ equipments = {
 		naval_range = 2250
 		
 		max_strength = 200
-		naval_speed = 18
+		naval_speed = 22
 		reliability = 0.75
 		build_cost_ic = 2500
 
@@ -383,7 +383,7 @@ equipments = {
 		
 		carrier_size = 6
 		max_strength = 250
-		naval_speed = 20
+		naval_speed = 24
 		reliability = 0.8
 		build_cost_ic = 3200
 
@@ -405,7 +405,7 @@ equipments = {
 		naval_range = 5000
 		reliability = 0.85
 		max_strength = 300
-		naval_speed = 26
+		naval_speed = 30
 		naval_dominance_factor = 250
 
 		build_cost_ic = 3500
@@ -426,7 +426,7 @@ equipments = {
 		naval_range = 6000
 		reliability = 0.9
 		max_strength = 350
-		naval_speed = 27
+		naval_speed = 31
 		naval_dominance_factor = 300
 
 		build_cost_ic = 4000
@@ -594,7 +594,15 @@ equipments = {
 		visual_level = 0
 		archetype = ship_hull_carrier
 		priority = 1200
-		can_convert_from = { ship_hull_heavy_1 ship_hull_heavy_2 ship_hull_heavy_3 ship_hull_heavy_4 }
+		can_convert_from = {
+			ship_hull_super_dreadnought_1
+			ship_hull_super_dreadnought_2
+			ship_hull_super_dreadnought_3
+			ship_hull_heavy_1
+			ship_hull_heavy_2
+			ship_hull_heavy_3
+			ship_hull_heavy_4
+		}
 		module_slots = {
 			fixed_ship_radio_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
@@ -639,6 +647,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
@@ -649,6 +658,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
@@ -659,6 +669,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_heavy_battery
 					ship_heavy_secondaries
 					ship_secondaries
@@ -670,6 +681,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_heavy_battery
 					ship_secondaries
 					ship_heavy_secondaries
@@ -681,6 +693,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_heavy_battery
 					ship_heavy_secondaries
 					ship_secondaries
@@ -692,6 +705,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_heavy_battery
 					ship_heavy_secondaries
 					ship_secondaries
@@ -723,6 +737,10 @@ equipments = {
 		module_count_limit = {
 			category = ship_hybrid_deck
 			count < 5
+		}
+		module_count_limit = {
+			category = ship_hybrid_elevator
+			count < 2
 		}
 
 		carrier_size = 0
@@ -800,6 +818,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
@@ -809,6 +828,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
@@ -818,6 +838,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
@@ -829,6 +850,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
@@ -840,6 +862,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
@@ -851,6 +874,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					ship_hybrid_deck
+					ship_hybrid_elevator
 					ship_medium_battery
 					ship_light_medium_battery
 					ship_secondaries
@@ -881,6 +905,10 @@ equipments = {
 		module_count_limit = {
 			category = ship_hybrid_deck
 			count < 3
+		}
+		module_count_limit = {
+			category = ship_hybrid_elevator
+			count < 2
 		}
 
 		carrier_size = 0

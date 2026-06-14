@@ -159,7 +159,7 @@ equipment_modules = {
 		category = ship_carrier_rear
 
 		add_stats = {
-			max_organisation = 10
+			max_organisation = 0.1
 			build_cost_ic = 25
 		}
 	}
@@ -168,7 +168,7 @@ equipment_modules = {
 		category = ship_carrier_front
 
 		add_stats = {
-			max_organisation = 20
+			max_organisation = 0.2
 			build_cost_ic = 120
 		}
 	}

@@ -88,48 +88,72 @@ equipments = {
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_medium_battery
 					ship_light_battery
 					dp_light_battery
+					ship_secondaries
+					ship_dp_secondaries
+					ship_airplane_launcher
 					ship_anti_air
+					ship_depth_charge
 				}
 			}
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_medium_battery
 					ship_light_battery
 					dp_light_battery
+					ship_secondaries
+					ship_dp_secondaries
+					ship_airplane_launcher
 					ship_anti_air
 				}
 			}
 			mid_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_medium_battery
 					ship_light_battery
 					dp_light_battery
+					ship_secondaries
+					ship_dp_secondaries
+					ship_airplane_launcher
 					ship_anti_air
 				}
 			}
 			mid_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_medium_battery
 					ship_light_battery
 					dp_light_battery
+					ship_secondaries
+					ship_dp_secondaries
+					ship_airplane_launcher
 					ship_anti_air
 				}
 			}
 			mid_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_medium_battery
 					ship_light_battery
 					dp_light_battery
+					ship_secondaries
+					ship_dp_secondaries
+					ship_airplane_launcher
 					ship_anti_air
 				}
 			}
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_medium_battery
 					ship_light_battery
 					dp_light_battery
+					ship_secondaries
+					ship_dp_secondaries
 					ship_anti_air
 				}
 			}
@@ -188,9 +212,13 @@ equipments = {
 			category = ship_torpedo
 			count < 5
 		}
+		module_count_limit = {
+			category = ship_airplane_launcher
+			count < 2
+		}
 		
 		default_modules = {
-			fixed_ship_role_slot = auxiliary_role_mine_ship
+			fixed_ship_role_slot = empty
 			fixed_ship_radio_slot = empty
 			fixed_ship_sonar_slot = empty
 			fixed_ship_radar_slot = empty

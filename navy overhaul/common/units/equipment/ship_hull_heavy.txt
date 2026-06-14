@@ -514,7 +514,7 @@ equipments = {
 		naval_range = 2700
 		
 		max_strength = 330
-		naval_speed = 22
+		naval_speed = 24
 		reliability = 0.95
 		build_cost_ic = 2800
 		resources = {
@@ -536,7 +536,7 @@ equipments = {
 		naval_range = 3000
 		
 		max_strength = 350
-		naval_speed = 22
+		naval_speed = 24
 		reliability = 0.95
 		build_cost_ic = 3000
 		resources = {
@@ -558,7 +558,7 @@ equipments = {
 		naval_range = 3300
 		
 		max_strength = 380
-		naval_speed = 22
+		naval_speed = 24
 		reliability = 1
 		build_cost_ic = 3200
 		resources = {
@@ -580,7 +580,7 @@ equipments = {
 		naval_range = 5000
 		
 		max_strength = 350
-		naval_speed = 28
+		naval_speed = 30
 		reliability = 1
 		build_cost_ic = 3700
 		resources = {
@@ -604,7 +604,7 @@ equipments = {
 		
 		max_strength = 390
 		reliability = 1.05
-		naval_speed = 28
+		naval_speed = 30
 		build_cost_ic = 4000
 		resources = {
 			steel = 3
@@ -624,7 +624,7 @@ equipments = {
 		parent = ship_hull_heavy_2
 		module_slots = inherit
 		naval_range = 6000
-		naval_speed = 29
+		naval_speed = 31
 		max_strength = 420
 		reliability = 1.1
 		
@@ -649,7 +649,7 @@ equipments = {
 		naval_range = 6500
 		
 		max_strength = 450
-		naval_speed = 29
+		naval_speed = 31
 		reliability = 1.15
 		build_cost_ic = 4500
 		resources = {
@@ -672,7 +672,7 @@ equipments = {
 		naval_range = 5000
 		
 		max_strength = 500
-		naval_speed = 29
+		naval_speed = 31
 		reliability = 1.15
 		build_cost_ic = 4800
 		resources = {

@@ -83,7 +83,8 @@
  basic_ship_hull_light:0 "Basic Destroyer"
  basic_ship_hull_light_desc:0 "Dual-Purpose Armaments and more advanced Anti-Submarine Technologies allow Destroyers to cover more roles in a fleet."
  
- early_ship_hull_carrier:0 "$ship_hull_carrier_0$"
+ early_ship_hull_carrier:0 "Early Carrier"
+ early_ship_hull_carrier_short:0 "Early Carrier"
  early_ship_hull_carrier_desc:0 "Fleet Carriers are fast enough to get into and out of striking distance quickly, while carrying a large complement of aircraft."
  
  auxiliary_hull_2:0 "Basic Auxiliary Ship"

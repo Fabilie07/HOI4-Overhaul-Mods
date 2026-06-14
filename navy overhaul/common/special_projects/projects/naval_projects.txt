@@ -3391,7 +3391,7 @@ sp_naval_hybrid_carrier = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		has_dlc = "Man the Guns"
 	}
 	
 	available = {
@@ -3432,11 +3432,13 @@ sp_naval_hybrid_carrier = {
 		}
 		
 		enable_equipments = {
-			limit = {
-				has_dlc = "Man the Guns"
-			}
 			ship_hull_carrier_hybrid_bb
 			ship_hull_carrier_hybrid_ca
+		}
+		
+		enable_equipment_modules = {
+			ship_partial_flight_deck
+			ship_hybrid_elevator_1
 		}
 	}
 

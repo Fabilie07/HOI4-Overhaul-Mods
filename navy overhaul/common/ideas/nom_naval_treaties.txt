@@ -37,9 +37,11 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_cruiser = 6000
-				production_cost_max_ship_hull_heavy = 13500
-				production_cost_max_ship_hull_carrier = 10500
+				production_cost_max_ship_hull_cruiser = 4500
+				production_cost_max_ship_hull_heavy_cruiser = 6500
+				production_cost_max_ship_hull_battlecruiser = 10500
+				production_cost_max_ship_hull_heavy = 14000
+				production_cost_max_ship_hull_carrier = 12000
 			}
 		}
 		MTG_naval_treaty_cheating = {
@@ -57,9 +59,11 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				production_cost_max_ship_hull_cruiser = 6000
-				production_cost_max_ship_hull_heavy = 13500
-				production_cost_max_ship_hull_carrier = 11000
+				production_cost_max_ship_hull_cruiser = 4500
+				production_cost_max_ship_hull_heavy_cruiser = 6500
+				production_cost_max_ship_hull_battlecruiser = 10500
+				production_cost_max_ship_hull_heavy = 14000
+				production_cost_max_ship_hull_carrier = 12000
 			}
 		}
 		MTG_naval_treaty_cheating_reduced = {
@@ -77,9 +81,11 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_cruiser = 6500
-				production_cost_max_ship_hull_heavy = 15000
-				production_cost_max_ship_hull_carrier = 11500
+				production_cost_max_ship_hull_cruiser = 5000
+				production_cost_max_ship_hull_heavy_cruiser = 7500
+				production_cost_max_ship_hull_battlecruiser = 12000
+				production_cost_max_ship_hull_heavy = 16000
+				production_cost_max_ship_hull_carrier = 14000
 			}
 		}
 	}

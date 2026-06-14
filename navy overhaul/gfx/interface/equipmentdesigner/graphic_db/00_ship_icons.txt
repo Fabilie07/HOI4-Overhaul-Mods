@@ -850,6 +850,152 @@ default = {
 			}
 		}
 	}
+	
+# Converts
+	ship_hull_carrier_conversion_cl_1 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_cl_1_medium #Generic
+			}
+		}
+	}
+	
+	ship_hull_carrier_conversion_ca_0 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_ca_0_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_ca_1 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_ca_1_medium #Generic
+			}
+		}
+	}
+	
+	ship_hull_carrier_conversion_bb_0 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bb_0_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_bb_1 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bb_1_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_bb_2 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bb_2_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_bb_3 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bb_3_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_bb_4 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bb_4_medium #Generic
+			}
+		}
+	}
+	
+	ship_hull_carrier_conversion_bc_0 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bc_0_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_bc_1 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bc_1_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_bc_2 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bc_2_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_conversion_bc_3 = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_carrier_conversion_bc_3_medium #Generic
+			}
+		}
+	}
+	
+	ship_hull_carrier_hybrid_bb = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_ship_hull_carrier_hybrid_bb_medium #Generic
+			}
+		}
+	}
+	ship_hull_carrier_hybrid_ca = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_ship_hull_carrier_hybrid_ca_medium #Generic
+			}
+		}
+	}
 
  ## #  # ###  #   #  ##  ###  ### #  # ### 
 #   #  # #  # ## ## #  # #  #  #  ## # #   
