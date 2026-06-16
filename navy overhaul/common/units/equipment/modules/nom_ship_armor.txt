@@ -294,7 +294,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_2
 		
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.03
 			max_strength = 0.06
 		}
 		add_stats = {
@@ -310,7 +310,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_3
 		
 		multiply_stats = {
-			naval_speed = -0.08
+			naval_speed = -0.06
 			max_strength = 0.12
 		}
 		add_stats = {
@@ -326,7 +326,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_4
 		
 		multiply_stats = {
-			naval_speed = -0.12
+			naval_speed = -0.09
 			max_strength = 0.18
 		}
 		build_cost_resources = {
@@ -345,7 +345,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_5
 		
 		multiply_stats = {
-			naval_speed = -0.16
+			naval_speed = -0.12
 			max_strength = 0.24
 		}
 		build_cost_resources = {
@@ -364,7 +364,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_6
 		
 		multiply_stats = {
-			naval_speed = -0.2
+			naval_speed = -0.15
 			max_strength = 0.3
 		}
 		build_cost_resources = {
@@ -383,7 +383,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_6
 		
 		multiply_stats = {
-			naval_speed = -0.25
+			naval_speed = -0.2
 			max_strength = 0.4
 		}
 		build_cost_resources = {

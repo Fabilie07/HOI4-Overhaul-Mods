@@ -138,6 +138,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_seaplane_tender_1
+			light_ship_engine_2
 		}
 		
 		path = {
@@ -168,9 +169,6 @@ technologies = {
 	early_destroyer_hull_3 = {
 		enable_equipments = {
 			ship_hull_early_destroyer_3
-		}
-		enable_equipment_modules = {
-			light_ship_engine_2
 		}
 		
 		path = {
@@ -236,6 +234,9 @@ technologies = {
 		enable_equipments = {
 			ship_hull_light_1
 		}
+		enable_equipment_modules = {
+			light_ship_engine_3
+		}
 		naval_retreat_speed = 0.2
 		
 		path = {
@@ -284,7 +285,6 @@ technologies = {
 			ship_hull_destroyer_leader_3
 		}
 		enable_equipment_modules = {
-			light_ship_engine_3
 			ship_seaplane_tender_2
 		}
 		path = {
@@ -748,6 +748,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_airplane_launcher_2
+			cruiser_ship_engine_3
 		}
 		path = {
 			leads_to_tech = basic_ship_hull_cruiser
@@ -848,7 +849,7 @@ technologies = {
 			ship_hull_cruiser_3
 		}
 		enable_equipment_modules = {
-			cruiser_ship_engine_3
+			cruiser_ship_engine_4
 		}
 		
 		sub_technologies = {
@@ -899,9 +900,6 @@ technologies = {
 
 		enable_equipments = {
 			ship_hull_cruiser_4
-		}
-		enable_equipment_modules = {
-			cruiser_ship_engine_4
 		}
 		
 		path = {
@@ -1081,6 +1079,9 @@ technologies = {
 		enable_equipments = {
 			ship_hull_armored_cruiser_2
 		}
+		enable_equipment_modules = {
+			cruiser_ship_engine_1
+		}
 		
 		path = {
 			leads_to_tech = early_heavy_cruiser_hull
@@ -1152,6 +1153,9 @@ technologies = {
 	early_heavy_cruiser_hull_2 = {
 		enable_equipments = {
 			ship_hull_early_heavy_cruiser_2
+		}
+		enable_equipment_modules = {
+			cruiser_ship_engine_2
 		}
 		
 		path = {
@@ -1228,6 +1232,9 @@ technologies = {
 	early_ship_hull_heavy_cruiser = {
 		enable_equipments = {
 			ship_hull_heavy_cruiser_1
+		}
+		enable_equipment_modules = {
+			cruiser_ship_engine_3
 		}
 		
 		path = {
@@ -1310,6 +1317,9 @@ technologies = {
 	improved_ship_hull_heavy_cruiser = {
 		enable_equipments = {
 			ship_hull_heavy_cruiser_3
+		}
+		enable_equipment_modules = {
+			cruiser_ship_engine_4
 		}
 		
 		sub_technologies = {
@@ -1574,6 +1584,9 @@ technologies = {
 		enable_equipments = {
 			ship_hull_super_dreadnought_2
 		}
+		enable_equipment_modules = {
+			heavy_ship_engine_2
+		}
 		
 		path = {
 			leads_to_tech = advanced_super_dreadnought_ship_hull
@@ -1647,7 +1660,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			heavy_ship_engine_2
+			heavy_ship_engine_3
 		}
 		
 		sub_technologies = {
@@ -1760,7 +1773,7 @@ technologies = {
 			ship_hull_heavy_3
 		}
 		enable_equipment_modules = {
-			heavy_ship_engine_3
+			heavy_ship_engine_4
 		}
 		sub_technologies = {
 			carrier_conversion_bb_4
@@ -1808,9 +1821,6 @@ technologies = {
 
 		enable_equipments = {
 			ship_hull_heavy_4
-		}
-		enable_equipment_modules = {
-			heavy_ship_engine_4
 		}
 		
 		path = {
@@ -1975,6 +1985,9 @@ technologies = {
 		enable_equipments = {
 			ship_hull_battlecruiser_3
 		}
+		enable_equipment_modules = {
+			heavy_ship_engine_2
+		}
 		
 		sub_technologies = {
 			carrier_conversion_bc_1
@@ -2014,6 +2027,9 @@ technologies = {
 		enable_equipments = {
 			ship_hull_battlecruiser_4
 		}
+		enable_equipment_modules = {
+			heavy_ship_engine_3
+		}
 		
 		sub_technologies = {
 			carrier_conversion_bc_2
@@ -2052,6 +2068,9 @@ technologies = {
 	modern_battlecruiser_hull = {
 		enable_equipments = {
 			ship_hull_modern_battlecruiser
+		}
+		enable_equipment_modules = {
+			heavy_ship_engine_4
 		}
 		
 		sub_technologies = {
@@ -2501,6 +2520,7 @@ technologies = {
 		
 		enable_equipment_modules = {
 			ship_carrier_superstructure_2
+			carrier_ship_engine_2
 			plane_ammo
 		}
 		
@@ -2547,7 +2567,7 @@ technologies = {
 			ship_hull_carrier_1
 		}
 		enable_equipment_modules = {
-			carrier_ship_engine_2
+			carrier_ship_engine_3
 			ship_catapult
 		}
 		path = {
@@ -2594,7 +2614,7 @@ technologies = {
 			ship_hull_carrier_2
 		}
 		enable_equipment_modules = {
-			carrier_ship_engine_3
+			carrier_ship_engine_4
 			ship_carrier_superstructure_3
 		}
 		path = {
@@ -2643,9 +2663,6 @@ technologies = {
 
 		enable_equipments = {
 			ship_hull_carrier_3
-		}
-		enable_equipment_modules = {
-			carrier_ship_engine_4
 		}
 		
 		path = {
@@ -2920,6 +2937,9 @@ technologies = {
 			ship_hull_coastal_submarine_1
 			ship_hull_cruiser_submarine_2
 		}
+		enable_equipment_modules = {
+			sub_ship_engine_2
+		}
 		
 		show_equipment_icon = yes
 		
@@ -2956,7 +2976,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			sub_periscope_2
-			sub_ship_engine_2
+			sub_ship_engine_3
 		}
 		
 		show_equipment_icon = yes
@@ -3051,7 +3071,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_torpedo_sub_3
-			sub_ship_engine_3
+			sub_ship_engine_4
 			
 			ship_sub_snorkel_1
 		}
@@ -3103,8 +3123,6 @@ technologies = {
 			ship_hull_coastal_submarine_3
 		}
 		enable_equipment_modules = {
-			sub_ship_engine_4
-			
 			ship_sub_snorkel_2
 		}
 		on_research_complete = {
@@ -3285,6 +3303,8 @@ technologies = {
 		enable_equipment_modules = {
 			auxiliary_role_mine_ship
 			auxiliary_role_seaplane_tender
+			
+			light_ship_engine_0
 			
 			# Upon researching any ship
 			ship_signals
