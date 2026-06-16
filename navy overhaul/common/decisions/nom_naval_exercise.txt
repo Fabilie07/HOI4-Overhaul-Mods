@@ -18,7 +18,7 @@ nom_naval_exercise = {
 		days_remove = 20
 
 		modifier = {
-			experience_gain_navy_factor = 0.4
+			naval_mastery_gain_factor = 0.5
 			experience_gain_navy_unit_factor = 0.15
 		}
 		complete_effect = {
@@ -65,7 +65,7 @@ nom_naval_exercise = {
 		days_remove = 20
 
 		modifier = {
-			experience_gain_navy_factor = 0.4
+			naval_mastery_gain_factor = 0.5
 			experience_gain_navy_unit_factor = 0.15
 		}
 		complete_effect = {
