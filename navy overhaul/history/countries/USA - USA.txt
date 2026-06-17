@@ -1387,7 +1387,7 @@ if = {
 		modules = {
 			fixed_ship_role_slot = auxiliary_role_mine_ship
 			fixed_ship_radio_slot = ship_signals
-			fixed_ship_engine_slot = cruiser_ship_engine_0
+			fixed_ship_engine_slot = light_ship_engine_0
 			fixed_ship_funnel_slot = funnel_2x
 			fixed_ship_ammo_1_slot = cannon_high_explosive
 
@@ -1896,7 +1896,7 @@ if = {
 
 			right_1_custom_slot = ship_anti_air_1
 			right_2_custom_slot = ship_anti_air_1
-			right_3_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_carrier_superstructure_0
 			right_4_custom_slot = dp_ship_secondaries_1
 
 			left_1_custom_slot = ship_anti_air_1
@@ -1929,7 +1929,7 @@ if = {
 
 			right_1_custom_slot = ship_secondaries_2_2x
 			right_2_custom_slot = ship_secondaries_2_2x
-			right_3_custom_slot = ship_secondaries_2_2x
+			right_3_custom_slot = ship_carrier_superstructure_0
 			right_4_custom_slot = ship_secondaries_2_2x
 
 			left_1_custom_slot = dp_ship_secondaries_1
@@ -1965,7 +1965,7 @@ if = {
 
 			right_1_custom_slot = dp_ship_secondaries_1
 			right_2_custom_slot = ship_anti_air_1
-			right_3_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_carrier_superstructure_1
 			right_4_custom_slot = dp_ship_secondaries_1
 
 			left_1_custom_slot = dp_ship_secondaries_1

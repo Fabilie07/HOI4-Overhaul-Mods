@@ -2949,7 +2949,7 @@ scripted_gui = {
 			}
 		}
 		
-		ai_enabled = { always = no }
+		ai_enabled = { always = yes }
 		
 		ai_weights = {
 			open_button_click = { ai_will_do = { base = 10 } weight = 1 }

@@ -2402,38 +2402,37 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Hermes"
-			type = ship_hull_escort_carrier
+			type = ship_hull_carrier_light_0
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = carrier_ship_engine_1
 				fixed_ship_funnel_slot = funnel_1x
-				fixed_ship_deck_slot = medium_ship_deck_1
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_hangar_slot = ship_carrier_hangar_small
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_tanks_slot = ship_extra_fuel_tank
 
 				rear_1_custom_slot = ship_arresting_cable
-				mid_2_custom_slot = dp_ship_secondaries_1
-				mid_3_custom_slot = dp_ship_secondaries_1
-				mid_4_custom_slot = dp_ship_secondaries_1
+				deck_1_custom_slot = ship_plane_elevator_2
+				deck_4_custom_slot = ship_plane_elevator_1
 				front_1_custom_slot = ship_anti_air_1
 
 				right_1_custom_slot = ship_casemate_1
 				right_2_custom_slot = ship_casemate_1
-				right_3_custom_slot = ship_casemate_1
+				right_3_custom_slot = ship_carrier_superstructure_0
+				right_4_custom_slot = ship_casemate_1
 
 				left_1_custom_slot = ship_casemate_1
 				left_2_custom_slot = ship_casemate_1
-				left_3_custom_slot = ship_casemate_1
+				left_4_custom_slot = ship_casemate_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_escort_carrier
+				type = ship_hull_carrier_light_0
 				version_name = "[Commission] Hermes"
 			}
 			requested_factories = 1
@@ -2459,42 +2458,42 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Queen Elizabeth"
-			type = ship_hull_heavy_1
+			type = ship_hull_super_dreadnought_1
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = heavy_ship_engine_1
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = ship_armor_bb_1
-				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_deck_slot = heavy_ship_deck_2
 				fixed_ship_citadel_slot = ship_citadel_4
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
 
-				rear_1_custom_slot = ship_heavy_battery_1_2x
-				mid_1_custom_slot = ship_heavy_battery_1_2x
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_heavy_battery_2_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
-				mid_3_custom_slot = ship_anti_air_1
-				mid_4_custom_slot = ship_heavy_battery_1_2x
-				front_1_custom_slot = ship_heavy_battery_1_2x
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
 
 				right_1_custom_slot = ship_casemate_2
 				right_2_custom_slot = ship_casemate_2
-				right_3_custom_slot = ship_casemate_2
+				right_3_custom_slot = dp_ship_secondaries_1_2x
 				right_4_custom_slot = ship_casemate_2
 
 				left_1_custom_slot = ship_casemate_2
 				left_2_custom_slot = ship_casemate_2
-				left_3_custom_slot = ship_casemate_2
+				left_3_custom_slot = dp_ship_secondaries_1_2x
 				left_4_custom_slot = ship_casemate_2
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_1
+				type = ship_hull_super_dreadnought_1
 				version_name = "[Commission] Queen Elizabeth"
 			}
 			requested_factories = 1
@@ -2519,7 +2518,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] King George V"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -2535,12 +2534,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = cannon_armor_piercing
 
-				rear_1_custom_slot = ship_heavy_battery_2_4x
+				rear_1_custom_slot = ship_heavy_battery_4_4x
 				mid_1_custom_slot = ship_anti_air_2
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_heavy_battery_2_2x
-				front_1_custom_slot = ship_heavy_battery_2_4x
+				mid_4_custom_slot = ship_heavy_battery_4_2x
+				front_1_custom_slot = ship_heavy_battery_4_4x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -2556,7 +2555,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_heavy_1
 				version_name = "[Commission] King George V"
 			}
 			requested_factories = 1
@@ -2581,7 +2580,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] King George V (1943 Refit)"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -2598,12 +2597,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = cannon_armor_piercing
 
-				rear_1_custom_slot = ship_heavy_battery_2_4x
+				rear_1_custom_slot = ship_heavy_battery_4_4x
 				mid_1_custom_slot = ship_anti_air_4
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_4
-				mid_4_custom_slot = ship_heavy_battery_2_2x
-				front_1_custom_slot = ship_heavy_battery_2_4x
+				mid_4_custom_slot = ship_heavy_battery_4_2x
+				front_1_custom_slot = ship_heavy_battery_4_4x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -2619,7 +2618,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_heavy_1
 				version_name = "[Commission] King George V (1943 Refit)"
 			}
 			requested_factories = 1
@@ -2645,42 +2644,43 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Renown"
-			type = ship_hull_heavy_1
+			type = ship_hull_battlecruiser_3
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = heavy_ship_engine_1
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = ship_armor_bc_2
+				fixed_ship_armor_slot = ship_armor_bc_3
 				fixed_ship_deck_slot = heavy_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_4
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
-				rear_1_custom_slot = ship_heavy_battery_1_2x
-				mid_1_custom_slot = ship_anti_air_1
-				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_heavy_battery_1_2x
-				front_1_custom_slot = ship_heavy_battery_1_2x
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
 
-				right_1_custom_slot = dp_ship_secondaries_1_2x
-				right_2_custom_slot = dp_ship_secondaries_1_2x
-				right_3_custom_slot = dp_ship_secondaries_1
-				right_4_custom_slot = dp_ship_secondaries_1
+				right_1_custom_slot = ship_secondaries_1_2x
+				right_2_custom_slot = ship_torpedo_1_1x
+				right_3_custom_slot = ship_secondaries_1_2x
+				right_4_custom_slot = ship_secondaries_1_2x
 
-				left_1_custom_slot = dp_ship_secondaries_1_2x
-				left_2_custom_slot = dp_ship_secondaries_1_2x
-				left_3_custom_slot = dp_ship_secondaries_1
-				left_4_custom_slot = dp_ship_secondaries_1
+				left_1_custom_slot = ship_secondaries_1_2x
+				left_2_custom_slot = ship_torpedo_1_1x
+				left_3_custom_slot = ship_secondaries_1_2x
+				left_4_custom_slot = ship_secondaries_1_2x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_1
+				type = ship_hull_battlecruiser_3
 				version_name = "[Commission] Renown"
 			}
 			requested_factories = 1
@@ -2706,40 +2706,43 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] County (Norfolk)"
-			type = ship_hull_cruiser_1
+			type = ship_hull_early_heavy_cruiser_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_3x
-				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_armor_slot = medium_ship_armor_4
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_medium_battery_2_2x
-				mid_1_custom_slot = ship_medium_battery_2_2x
+				rear_1_custom_slot = ship_medium_battery_3_2x
+				mid_1_custom_slot = ship_medium_battery_3_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_medium_battery_2_2x
-				front_1_custom_slot = ship_medium_battery_2_2x
+				mid_4_custom_slot = ship_medium_battery_3_2x
+				front_1_custom_slot = ship_medium_battery_3_2x
 
-				right_2_custom_slot = dp_ship_secondaries_1_2x
-				right_3_custom_slot = dp_ship_secondaries_1_2x
-				right_4_custom_slot = ship_anti_air_1
+				right_1_custom_slot = ship_anti_air_2
+				right_2_custom_slot = ship_torpedo_2_4x
+				right_3_custom_slot = ship_secondaries_1_1x
+				right_4_custom_slot = ship_secondaries_1_1x
 
-				left_2_custom_slot = dp_ship_secondaries_1_2x
-				left_3_custom_slot = dp_ship_secondaries_1_2x
-				left_4_custom_slot = ship_anti_air_1
+				left_1_custom_slot = ship_anti_air_2
+				left_2_custom_slot = ship_torpedo_2_4x
+				left_3_custom_slot = ship_secondaries_1_1x
+				left_4_custom_slot = ship_secondaries_1_1x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_1
+				type = ship_hull_early_heavy_cruiser_2
 				version_name = "[Commission] County (Norfolk)"
 			}
 			requested_factories = 1
@@ -2764,15 +2767,15 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] County (1941 Refit)"
-			type = ship_hull_cruiser_1
+			type = ship_hull_early_heavy_cruiser_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_radar_slot = ship_radar_2
-				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_armor_slot = medium_ship_armor_4
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = dc_control_room
@@ -2780,12 +2783,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
 				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				rear_1_custom_slot = ship_medium_battery_2_2x
-				mid_1_custom_slot = ship_medium_battery_2_2x
+				rear_1_custom_slot = ship_medium_battery_3_2x
+				mid_1_custom_slot = ship_medium_battery_3_2x
 				mid_2_custom_slot = ship_airplane_launcher_2
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_medium_battery_2_2x
-				front_1_custom_slot = ship_medium_battery_2_2x
+				mid_4_custom_slot = ship_medium_battery_3_2x
+				front_1_custom_slot = ship_medium_battery_3_2x
 
 				right_1_custom_slot = ship_anti_air_2
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -2801,7 +2804,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_1
+				type = ship_hull_early_heavy_cruiser_2
 				version_name = "[Commission] County (1941 Refit)"
 			}
 			requested_factories = 1
@@ -2826,40 +2829,43 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Town"
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
-				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_medium_battery_2_3x
-				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				rear_1_custom_slot = ship_light_medium_battery_4_3x
+				mid_1_custom_slot = ship_light_medium_battery_4_3x
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_airplane_launcher_1
-				mid_4_custom_slot = ship_light_medium_battery_2_3x
-				front_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_4_custom_slot = ship_light_medium_battery_4_3x
+				front_1_custom_slot = ship_light_medium_battery_4_3x
 
-				right_1_custom_slot = dp_ship_secondaries_1_2x
-				right_2_custom_slot = ship_torpedo_1_3x
-				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_1_custom_slot = ship_secondaries_1_2x
+				right_2_custom_slot = ship_torpedo_2_3x
+				right_3_custom_slot = ship_secondaries_1_2x
 				right_4_custom_slot = ship_anti_air_1
 
-				left_1_custom_slot = dp_ship_secondaries_1_2x
-				left_2_custom_slot = ship_torpedo_1_3x
-				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_1_custom_slot = ship_secondaries_1_2x
+				left_2_custom_slot = ship_torpedo_2_3x
+				left_3_custom_slot = ship_secondaries_1_2x
 				left_4_custom_slot = ship_anti_air_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_cruiser_1
 				version_name = "[Commission] Town"
 			}
 			requested_factories = 1
@@ -2884,7 +2890,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Town (Edinburgh)"
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -2892,7 +2898,7 @@ country_event = {
 				fixed_ship_sonar_slot = ship_sonar_1
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_armor_slot = medium_ship_armor_2
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = dc_lockers
@@ -2900,12 +2906,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_medium_battery_2_3x
-				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				rear_1_custom_slot = ship_light_medium_battery_4_3x
+				mid_1_custom_slot = ship_light_medium_battery_4_3x
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_airplane_launcher_2
-				mid_4_custom_slot = ship_light_medium_battery_2_3x
-				front_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_4_custom_slot = ship_light_medium_battery_4_3x
+				front_1_custom_slot = ship_light_medium_battery_4_3x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = ship_torpedo_1_3x
@@ -2921,7 +2927,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_cruiser_1
 				version_name = "[Commission] Town (Edinburgh)"
 			}
 			requested_factories = 1
@@ -2946,7 +2952,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Crown Colony"
-			type = ship_hull_cruiser_3
+			type = ship_hull_cruiser_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -2963,12 +2969,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_medium_battery_2_3x
-				mid_1_custom_slot = ship_light_medium_battery_2_3x
+				rear_1_custom_slot = ship_light_medium_battery_4_3x
+				mid_1_custom_slot = ship_light_medium_battery_4_3x
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_airplane_launcher_2
-				mid_4_custom_slot = ship_light_medium_battery_2_3x
-				front_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_4_custom_slot = ship_light_medium_battery_4_3x
+				front_1_custom_slot = ship_light_medium_battery_4_3x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = ship_torpedo_1_3x
@@ -2982,7 +2988,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_3
+				type = ship_hull_cruiser_2
 				version_name = "[Commission] Crown Colony"
 			}
 			requested_factories = 1
@@ -3007,39 +3013,37 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] E/F Class"
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_sonar_slot = ship_sonar_1
-				fixed_ship_radar_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_sonar_slot = ship_sonar_2
 				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = light_ship_armor_2
-				fixed_ship_deck_slot = light_ship_deck_1
-				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_armor_slot = light_ship_armor_1
+				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = dp_light_battery_2
-				mid_1_custom_slot = dp_light_battery_2
-				mid_2_custom_slot = ship_torpedo_1_4x
-				mid_3_custom_slot = ship_torpedo_1_4x
-				mid_4_custom_slot = dp_light_battery_2
-				front_1_custom_slot = dp_light_battery_2
+				rear_1_custom_slot = ship_light_battery_4
+				mid_1_custom_slot = ship_light_battery_4
+				mid_2_custom_slot = ship_torpedo_2_4x
+				mid_3_custom_slot = ship_torpedo_2_4x
+				mid_4_custom_slot = ship_light_battery_4
+				front_1_custom_slot = ship_light_battery_4
 
-				right_1_custom_slot = ship_depth_charge_1
+				right_1_custom_slot = ship_mine_sweeper_1
 				right_2_custom_slot = ship_anti_air_1
 
-				left_1_custom_slot = ship_depth_charge_1
+				left_1_custom_slot = ship_depth_charge_2
 				left_2_custom_slot = ship_anti_air_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_2
+				type = ship_hull_light_1
 				version_name = "[Commission] E/F Class"
 			}
 			requested_factories = 1
@@ -3064,27 +3068,26 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] L/M Class"
-			type = ship_hull_light_3
+			type = ship_hull_light_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_sonar_slot = ship_sonar_2
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
-				fixed_ship_armor_slot = light_ship_armor_2
-				fixed_ship_deck_slot = light_ship_deck_1
+				fixed_ship_armor_slot = light_ship_armor_1
 				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = dp_light_battery_2_2x
+				rear_1_custom_slot = dp_light_battery_4_2x
 				mid_1_custom_slot = ship_anti_air_2
 				mid_2_custom_slot = ship_torpedo_2_4x
 				mid_3_custom_slot = ship_torpedo_2_4x
-				mid_4_custom_slot = dp_light_battery_2_2x
-				front_1_custom_slot = dp_light_battery_2_2x
+				mid_4_custom_slot = dp_light_battery_4_2x
+				front_1_custom_slot = dp_light_battery_4_2x
 
 				right_1_custom_slot = ship_depth_charge_2
 				right_2_custom_slot = ship_anti_air_1
@@ -3096,7 +3099,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_3
+				type = ship_hull_light_2
 				version_name = "[Commission] L/M Class"
 			}
 			requested_factories = 1
@@ -3120,36 +3123,37 @@ country_event = {
 	option = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
-			name = "[Commission] R Class"
-			type = ship_hull_submarine_1
+			name = "[Commission] Rainbow Class"
+			type = ship_hull_early_submarine_4
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_engine_slot = sub_ship_engine_1
-				fixed_ship_periscope_slot = sub_periscope_1
-				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
+				fixed_ship_sonar_slot = ship_sub_sonar_1
+				fixed_ship_engine_slot = sub_ship_engine_2
 				fixed_ship_batteries_slot = sub_batteries_1
-				fixed_ship_ammo_2_slot = torpedo_ammo
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_periscope_slot = sub_periscope_2
+				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = torpedo_ammo
 
 				rear_1_custom_slot = ship_torpedo_sub_1
+				
+				mid_1_custom_slot = sub_watertight_compartment
+				mid_2_custom_slot = sub_ballast_tank
 				mid_3_custom_slot = sub_ballast_tank
+				mid_4_custom_slot = sub_watertight_compartment
+				
 				front_1_custom_slot = ship_torpedo_sub_3
 				
-				right_1_custom_slot = ship_locked
-				right_2_custom_slot = ship_locked
-				right_3_custom_slot = ship_locked
-				right_4_custom_slot = ship_locked
-				
-				left_1_custom_slot = ship_locked
-				top_3_custom_slot = ship_anti_air_2
-				left_4_custom_slot = ship_locked
+				top_3_custom_slot = ship_light_battery_sub
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_submarine_1
-				version_name = "[Commission] R Class"
+				type = ship_hull_early_submarine_4
+				version_name = "[Commission] Rainbow Class"
 			}
 			requested_factories = 1
 			progress = 0.99
@@ -3174,35 +3178,38 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Béarn"
-			type = ship_hull_escort_carrier
+			type = ship_hull_carrier_conversion_bb_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_engine_slot = heavy_ship_engine_1
 				fixed_ship_funnel_slot = funnel_1x
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_hangar_slot = ship_carrier_hangar_small
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_arresting_cable
+				deck_1_custom_slot = ship_plane_elevator_1
+				deck_2_custom_slot = ship_plane_elevator_2
+				deck_4_custom_slot = ship_plane_elevator_3
 				front_1_custom_slot = ship_anti_air_1
 
 				right_1_custom_slot = ship_casemate_2
 				right_2_custom_slot = ship_casemate_2
-				right_3_custom_slot = ship_anti_air_1
+				right_3_custom_slot = ship_carrier_superstructure_0
 				right_4_custom_slot = ship_casemate_2
 
 				left_1_custom_slot = ship_casemate_2
 				left_2_custom_slot = ship_casemate_2
-				left_3_custom_slot = ship_anti_air_1
+				left_3_custom_slot = ship_anti_air_2
 				left_4_custom_slot = ship_casemate_2
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_escort_carrier
+				type = ship_hull_carrier_conversion_bb_2
 				version_name = "[Commission] Béarn"
 			}
 			requested_factories = 1
@@ -3227,7 +3234,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Dunkerque"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -3240,13 +3247,14 @@ country_event = {
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_airplane_launcher_1
 				mid_1_custom_slot = dp_ship_secondaries_2_2x
-				mid_2_custom_slot = dp_ship_secondaries_2_2x
-				mid_3_custom_slot = ship_anti_air_1
-				mid_4_custom_slot = ship_heavy_battery_1_4x
-				front_1_custom_slot = ship_heavy_battery_1_4x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_3_4x
+				front_1_custom_slot = ship_heavy_battery_3_4x
 
 				right_1_custom_slot = dp_ship_secondaries_2_2x
 				right_2_custom_slot = dp_ship_secondaries_2_2x
@@ -3262,7 +3270,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_heavy_1
 				version_name = "[Commission] Dunkerque"
 			}
 			requested_factories = 1
@@ -3287,35 +3295,35 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Richelieu"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = heavy_ship_engine_3
 				fixed_ship_funnel_slot = funnel_1x
-				fixed_ship_armor_slot = ship_armor_bb_3
+				fixed_ship_armor_slot = ship_armor_bb_2
 				fixed_ship_deck_slot = heavy_ship_deck_2
 				fixed_ship_citadel_slot = ship_citadel_6
-				fixed_ship_damage_control_slot = water_pump
-				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_torpedo_protection_slot = torpedo_protection_3
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
 				fixed_ship_ammo_2_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_airplane_launcher_1
-				mid_1_custom_slot = ship_secondaries_2_3x
-				mid_2_custom_slot = ship_anti_air_3
-				mid_3_custom_slot = ship_anti_air_3
-				mid_4_custom_slot = ship_heavy_battery_2_4x
-				front_1_custom_slot = ship_heavy_battery_2_4x
+				mid_1_custom_slot = ship_secondaries_2_2x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_4_4x
+				front_1_custom_slot = ship_heavy_battery_4_4x
 
 				right_1_custom_slot = ship_anti_air_3
-				right_2_custom_slot = ship_secondaries_2_3x
+				right_2_custom_slot = ship_secondaries_2_2x
 				right_3_custom_slot = dp_ship_secondaries_1_2x
 				right_4_custom_slot = dp_ship_secondaries_1_2x
 
 				left_1_custom_slot = ship_anti_air_3
-				left_2_custom_slot = ship_secondaries_2_3x
+				left_2_custom_slot = ship_secondaries_2_2x
 				left_3_custom_slot = dp_ship_secondaries_1_2x
 				left_4_custom_slot = dp_ship_secondaries_1_2x
 			}
@@ -3323,7 +3331,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_heavy_1
 				version_name = "[Commission] Richelieu"
 			}
 			requested_factories = 1
@@ -3348,12 +3356,12 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Algérie"
-			type = ship_hull_cruiser_1
+			type = ship_hull_early_heavy_cruiser_3
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = medium_ship_armor_3
 				fixed_ship_deck_slot = medium_ship_deck_1
@@ -3361,29 +3369,30 @@ country_event = {
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_medium_battery_1_2x
-				mid_1_custom_slot = ship_medium_battery_1_2x
-				mid_2_custom_slot = ship_airplane_launcher_2
+				rear_1_custom_slot = ship_medium_battery_3_2x
+				mid_1_custom_slot = ship_medium_battery_3_2x
+				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_medium_battery_1_2x
-				front_1_custom_slot = ship_medium_battery_1_2x
+				mid_4_custom_slot = ship_medium_battery_3_2x
+				front_1_custom_slot = ship_medium_battery_3_2x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
-				right_3_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = ship_torpedo_2_3x
 				right_4_custom_slot = dp_ship_secondaries_1_2x
 
 				left_1_custom_slot = dp_ship_secondaries_1_2x
 				left_2_custom_slot = dp_ship_secondaries_1_2x
-				left_3_custom_slot = ship_torpedo_1_3x
+				left_3_custom_slot = ship_torpedo_2_3x
 				left_4_custom_slot = dp_ship_secondaries_1_2x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_1
+				type = ship_hull_early_heavy_cruiser_3
 				version_name = "[Commission] Algérie"
 			}
 			requested_factories = 1
@@ -3412,29 +3421,29 @@ country_event = {
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_funnel_slot = funnel_2x
 				fixed_ship_armor_slot = medium_ship_armor_3
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
-				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_medium_battery_2_3x
+				rear_1_custom_slot = ship_light_medium_battery_4_3x
 				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = ship_anti_air_3
-				mid_3_custom_slot = ship_anti_air_3
-				mid_4_custom_slot = ship_light_medium_battery_2_3x
-				front_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_2_custom_slot = ship_anti_air_2
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_light_medium_battery_4_3x
+				front_1_custom_slot = ship_light_medium_battery_4_3x
 
 				right_1_custom_slot = dp_ship_secondaries_2_2x
-				right_2_custom_slot = ship_torpedo_1_2x
+				right_2_custom_slot = ship_torpedo_2_2x
 				right_3_custom_slot = dp_ship_secondaries_2_2x
 
 				left_1_custom_slot = dp_ship_secondaries_2_2x
-				left_2_custom_slot = ship_torpedo_1_2x
+				left_2_custom_slot = ship_torpedo_2_2x
 				left_3_custom_slot = dp_ship_secondaries_2_2x
 			}
 		}
@@ -3466,36 +3475,38 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Le Fantasque"
-			type = ship_hull_light_1
+			type = ship_hull_early_destroyer_4
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = light_ship_engine_4
+				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = light_ship_armor_2
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_battery_2
-				mid_1_custom_slot = ship_light_battery_2
-				mid_2_custom_slot = ship_light_battery_2
-				mid_3_custom_slot = ship_torpedo_1_3x
-				mid_4_custom_slot = ship_light_battery_2
-				front_1_custom_slot = ship_light_battery_2
+				rear_1_custom_slot = ship_mine_layer_1
+				mid_1_custom_slot = ship_light_battery_4_2x
+				mid_2_custom_slot = ship_light_battery_4
+				mid_3_custom_slot = ship_torpedo_2_3x
+				mid_4_custom_slot = ship_light_battery_4
+				front_1_custom_slot = ship_light_battery_4
 
 				right_1_custom_slot = ship_depth_charge_1
 				right_2_custom_slot = ship_anti_air_1
-				right_3_custom_slot = ship_torpedo_1_3x
+				right_3_custom_slot = ship_torpedo_3_3x
 
 				left_1_custom_slot = ship_depth_charge_1
-				left_2_custom_slot = ship_anti_air_1
-				left_3_custom_slot = ship_torpedo_1_3x
+				left_2_custom_slot = ship_anti_air_2
+				left_3_custom_slot = ship_torpedo_3_3x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_1
+				type = ship_hull_early_destroyer_4
 				version_name = "[Commission] Le Fantasque"
 			}
 			requested_factories = 1
@@ -3520,36 +3531,40 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Mogador"
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = light_ship_engine_4
+				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_armor_slot = light_ship_armor_2
+				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_battery_2_2x
-				mid_1_custom_slot = ship_light_battery_2_2x
-				mid_2_custom_slot = ship_anti_air_1
-				mid_3_custom_slot = ship_anti_air_1
-				mid_4_custom_slot = ship_light_battery_2_2x
-				front_1_custom_slot = ship_light_battery_2_2x
+				rear_1_custom_slot = ship_mine_layer_1
+				mid_1_custom_slot = ship_light_battery_4_2x
+				mid_2_custom_slot = ship_light_battery_4_2x
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_light_battery_4_2x
+				front_1_custom_slot = ship_light_battery_4_2x
 
 				right_1_custom_slot = ship_depth_charge_1
-				right_2_custom_slot = ship_torpedo_1_2x
-				right_3_custom_slot = ship_torpedo_1_3x
+				right_2_custom_slot = ship_torpedo_2_2x
+				right_3_custom_slot = ship_torpedo_2_3x
+				right_4_custom_slot = ship_anti_air_1
 
 				left_1_custom_slot = ship_depth_charge_1
-				left_2_custom_slot = ship_torpedo_1_2x
-				left_3_custom_slot = ship_torpedo_1_3x
+				left_2_custom_slot = ship_torpedo_2_2x
+				left_3_custom_slot = ship_torpedo_2_3x
+				left_4_custom_slot = ship_anti_air_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_2
+				type = ship_hull_light_1
 				version_name = "[Commission] Mogador"
 			}
 			requested_factories = 1
@@ -3574,33 +3589,36 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Surcouf"
-			type = ship_hull_cruiser_submarine
+			type = ship_hull_cruiser_submarine_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
+				# fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
+				# fixed_ship_sonar_slot = ship_sub_sonar_2
 				fixed_ship_engine_slot = sub_ship_engine_1
+				fixed_ship_batteries_slot = sub_batteries_1
+				fixed_ship_tanks_slot = ship_extra_fuel_tank_2
 				fixed_ship_periscope_slot = sub_periscope_1
 				fixed_ship_damage_control_slot = water_pump
-
-				rear_1_custom_slot = ship_torpedo_sub_1
-				mid_2_custom_slot = sub_watertight_compartment
-				mid_3_custom_slot = sub_ballast_tank
+				fixed_ship_ammo_1_slot = torpedo_ammo
+				
+				rear_1_custom_slot = ship_torpedo_sub_2
+				
+				mid_1_custom_slot = sub_watertight_compartment
+				mid_2_custom_slot = sub_ballast_tank
+				mid_3_custom_slot = sub_watertight_compartment
+				mid_4_custom_slot = sub_watertight_compartment
+				
+				front_1_custom_slot = ship_torpedo_sub_3
+				
+				top_2_custom_slot = ship_anti_air_2
 				top_3_custom_slot = ship_medium_battery_sub
-				front_1_custom_slot = ship_torpedo_sub_2
-				
-				right_1_custom_slot = ship_locked
-				right_2_custom_slot = ship_locked
-				right_3_custom_slot = ship_locked
-				right_4_custom_slot = ship_locked
-				
-				left_1_custom_slot = ship_locked
-				left_4_custom_slot = ship_locked
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_submarine
+				type = ship_hull_cruiser_submarine_2
 				version_name = "[Commission] Surcouf"
 			}
 			requested_factories = 1
@@ -3627,7 +3645,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Graf Zeppelin"
-			type = ship_hull_carrier_1
+			type = ship_hull_carrier_0
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -3635,34 +3653,30 @@ country_event = {
 				fixed_ship_engine_slot = carrier_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = medium_ship_armor_2
-				fixed_ship_deck_slot = medium_ship_deck_1
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_hangar_slot = ship_carrier_hangar_small
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 
 				rear_1_custom_slot = dp_ship_secondaries_1_2x
-				mid_1_custom_slot = dp_ship_secondaries_1_2x
-				mid_2_custom_slot = dp_ship_secondaries_1_2x
-				mid_3_custom_slot = dp_ship_secondaries_1_2x
-				mid_4_custom_slot = dp_ship_secondaries_1_2x
+				deck_3_custom_slot = ship_plane_elevator_1
 				front_1_custom_slot = dp_ship_secondaries_1_2x
 
 				right_1_custom_slot = ship_casemate_2
-				right_2_custom_slot = ship_casemate_2
-				right_3_custom_slot = ship_casemate_2
+				right_2_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_carrier_superstructure_1
 				right_4_custom_slot = ship_casemate_2
 
 				left_1_custom_slot = ship_casemate_2
-				left_2_custom_slot = ship_casemate_2
-				left_3_custom_slot = ship_casemate_2
+				left_2_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = dp_ship_secondaries_1_2x
 				left_4_custom_slot = ship_casemate_2
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_carrier_1
+				type = ship_hull_carrier_0
 				version_name = "[Commission] Graf Zeppelin"
 			}
 			requested_factories = 1
@@ -3687,11 +3701,11 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Scharnhorst"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = heavy_ship_engine_3
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = ship_armor_bb_2
@@ -3700,13 +3714,14 @@ country_event = {
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				rear_1_custom_slot = ship_heavy_battery_1_3x
-				mid_1_custom_slot = ship_anti_air_3
+				rear_1_custom_slot = ship_heavy_battery_3_3x
+				mid_1_custom_slot = ship_anti_air_2
 				mid_2_custom_slot = ship_airplane_launcher_1
-				mid_3_custom_slot = ship_anti_air_3
-				mid_4_custom_slot = ship_heavy_battery_1_3x
-				front_1_custom_slot = ship_heavy_battery_1_3x
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_heavy_battery_3_3x
+				front_1_custom_slot = ship_heavy_battery_3_3x
 
 				right_1_custom_slot = ship_secondaries_2_2x
 				right_2_custom_slot = ship_torpedo_2_3x
@@ -3722,7 +3737,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_heavy_1
 				version_name = "[Commission] Scharnhorst"
 			}
 			requested_factories = 1
@@ -3747,7 +3762,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Bismarck"
-			type = ship_hull_heavy_3
+			type = ship_hull_heavy_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -3761,13 +3776,14 @@ country_event = {
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
-				rear_1_custom_slot = ship_heavy_battery_2_2x
-				mid_1_custom_slot = ship_heavy_battery_2_2x
+				rear_1_custom_slot = ship_heavy_battery_4_2x
+				mid_1_custom_slot = ship_heavy_battery_4_2x
 				mid_2_custom_slot = ship_airplane_launcher_2
 				mid_3_custom_slot = ship_anti_air_3
-				mid_4_custom_slot = ship_heavy_battery_2_2x
-				front_1_custom_slot = ship_heavy_battery_2_2x
+				mid_4_custom_slot = ship_heavy_battery_4_2x
+				front_1_custom_slot = ship_heavy_battery_4_2x
 
 				right_1_custom_slot = ship_secondaries_2_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -3783,7 +3799,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_3
+				type = ship_hull_heavy_2
 				version_name = "[Commission] Bismarck"
 			}
 			requested_factories = 1
@@ -3815,16 +3831,19 @@ country_event = {
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_funnel_slot = funnel_1x
-				fixed_ship_armor_slot = medium_ship_armor_3
+				fixed_ship_armor_slot = medium_ship_armor_5
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_2
-				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				mid_1_custom_slot = ship_heavy_battery_1_3x
+				mid_1_custom_slot = ship_heavy_battery_2_3x
 				mid_2_custom_slot = ship_airplane_launcher_1
-				front_1_custom_slot = ship_heavy_battery_1_3x
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_anti_air_2
+				front_1_custom_slot = ship_heavy_battery_2_3x
 
 				right_1_custom_slot = ship_torpedo_2_4x
 				right_2_custom_slot = ship_secondaries_1_1x
@@ -3865,28 +3884,28 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Admiral Hipper"
-			type = ship_hull_cruiser_2
+			type = ship_hull_heavy_cruiser_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_sonar_slot = ship_sonar_1
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
-				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_armor_slot = medium_ship_armor_5
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_2
-				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
-				fixed_ship_ammo_2_slot = torpedo_ammo
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				rear_1_custom_slot = ship_medium_battery_2_2x
-				mid_1_custom_slot = ship_medium_battery_2_2x
+				rear_1_custom_slot = ship_medium_battery_4_2x
+				mid_1_custom_slot = ship_medium_battery_4_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
-				mid_3_custom_slot = ship_anti_air_3
-				mid_4_custom_slot = ship_medium_battery_2_2x
-				front_1_custom_slot = ship_medium_battery_2_2x
+				mid_3_custom_slot = ship_anti_air_2
+				mid_4_custom_slot = ship_medium_battery_4_2x
+				front_1_custom_slot = ship_medium_battery_4_2x
 
 				right_1_custom_slot = ship_torpedo_2_3x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -3902,7 +3921,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_heavy_cruiser_1
 				version_name = "[Commission] Admiral Hipper"
 			}
 			requested_factories = 1
@@ -3927,7 +3946,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Königsberg"
-			type = ship_hull_cruiser_2
+			type = ship_hull_early_cruiser_5
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
@@ -3938,25 +3957,28 @@ country_event = {
 				fixed_ship_citadel_slot = ship_citadel_2
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				rear_1_custom_slot = ship_mine_layer_1
-				mid_1_custom_slot = ship_light_medium_battery_2_3x
-				mid_2_custom_slot = ship_light_medium_battery_2_3x
-				mid_3_custom_slot = ship_anti_air_1
-				mid_4_custom_slot = ship_anti_air_1
-				front_1_custom_slot = ship_light_medium_battery_2_3x
+				rear_1_custom_slot = ship_light_medium_battery_3_3x
+				mid_1_custom_slot = ship_light_medium_battery_3_3x
+				mid_2_custom_slot = ship_anti_air_1
+				mid_3_custom_slot = ship_airplane_launcher_1
+				mid_4_custom_slot = ship_anti_air_2
+				front_1_custom_slot = ship_light_medium_battery_3_3x
 
-				right_2_custom_slot = ship_torpedo_1_3x
-				right_3_custom_slot = ship_torpedo_1_3x
+				right_1_custom_slot = ship_mine_layer_1
+				right_2_custom_slot = ship_torpedo_2_3x
+				right_3_custom_slot = ship_torpedo_2_3x
 
-				left_2_custom_slot = ship_torpedo_1_3x
-				left_3_custom_slot = ship_torpedo_1_3x
+				left_1_custom_slot = ship_mine_layer_1
+				left_2_custom_slot = ship_torpedo_2_3x
+				left_3_custom_slot = ship_torpedo_2_3x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_early_cruiser_5
 				version_name = "[Commission] Königsberg"
 			}
 			requested_factories = 1
@@ -3981,24 +4003,25 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Typ 1934"
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_sonar_slot = ship_sonar_1
 				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = light_ship_armor_1
+				fixed_ship_armor_slot = light_ship_armor_3
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
-				fixed_ship_ammo_2_slot = torpedo_ammo
+				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				rear_1_custom_slot = ship_light_battery_2_2x
-				mid_1_custom_slot = ship_light_battery_2
+				rear_1_custom_slot = ship_light_battery_4_2x
+				mid_1_custom_slot = ship_light_battery_4
 				mid_2_custom_slot = ship_torpedo_2_4x
 				mid_3_custom_slot = ship_torpedo_2_4x
-				mid_4_custom_slot = ship_light_battery_2
-				front_1_custom_slot = ship_light_battery_2
+				mid_4_custom_slot = ship_light_battery_4
+				front_1_custom_slot = ship_light_battery_4
 
 				right_1_custom_slot = ship_depth_charge_1
 				right_2_custom_slot = ship_anti_air_2
@@ -4010,7 +4033,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_2
+				type = ship_hull_light_1
 				version_name = "[Commission] Typ 1934"
 			}
 			requested_factories = 1
@@ -4035,40 +4058,36 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Typ VII"
-			type = ship_hull_submarine_2
+			type = ship_hull_submarine_1
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_engine_slot = sub_ship_engine_2
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
 				fixed_ship_sonar_slot = ship_sub_sonar_2
-				fixed_ship_tanks_slot = ship_extra_fuel_tank
+				fixed_ship_engine_slot = sub_ship_engine_2
 				fixed_ship_batteries_slot = sub_batteries_1
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
 				fixed_ship_periscope_slot = sub_periscope_2
 				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = torpedo_ammo_3
 
 				rear_1_custom_slot = ship_torpedo_sub_1
+				
 				mid_1_custom_slot = sub_watertight_compartment
 				mid_2_custom_slot = sub_ballast_tank
 				mid_3_custom_slot = sub_ballast_tank
 				mid_4_custom_slot = sub_watertight_compartment
+				
 				front_1_custom_slot = ship_torpedo_sub_3
 				
-				right_1_custom_slot = ship_locked
-				right_2_custom_slot = ship_locked
-				right_3_custom_slot = ship_locked
-				right_4_custom_slot = ship_locked
-				
-				left_1_custom_slot = ship_locked
-				top_2_custom_slot = ship_anti_air_2
+				top_2_custom_slot = ship_anti_air_1
 				top_3_custom_slot = ship_very_light_battery_sub
-				left_4_custom_slot = ship_locked
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_submarine_2
+				type = ship_hull_submarine_1
 				version_name = "[Commission] Typ VII"
 			}
 			requested_factories = 1
@@ -4093,7 +4112,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Typ VII C/41"
-			type = ship_hull_submarine_2
+			type = ship_hull_submarine_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -4106,6 +4125,7 @@ country_event = {
 				fixed_ship_periscope_slot = sub_periscope_2
 				fixed_ship_snorkel_slot = ship_sub_snorkel_1
 				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = torpedo_ammo_3
 
 				rear_1_custom_slot = ship_torpedo_sub_1
 				mid_1_custom_slot = sub_watertight_compartment
@@ -4128,7 +4148,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_submarine_2
+				type = ship_hull_submarine_1
 				version_name = "[Commission] Typ VII C/41"
 			}
 			requested_factories = 1
@@ -4165,6 +4185,7 @@ country_event = {
 				fixed_ship_periscope_slot = sub_periscope_2
 				fixed_ship_snorkel_slot = ship_sub_snorkel_1
 				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = torpedo_ammo_3
 
 				rear_1_custom_slot = ship_torpedo_sub_2
 				mid_1_custom_slot = sub_watertight_compartment
@@ -4214,26 +4235,27 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Conte di Cavour"
-			type = ship_hull_heavy_1
+			type = ship_hull_dreadnought_2
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
 				fixed_ship_armor_slot = ship_armor_bb_1
 				fixed_ship_deck_slot = heavy_ship_deck_2
 				fixed_ship_citadel_slot = ship_citadel_4
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
-				rear_1_custom_slot = ship_heavy_battery_1_3x
-				mid_1_custom_slot = ship_heavy_battery_1_2x
+				rear_1_custom_slot = ship_heavy_battery_2_3x
+				mid_1_custom_slot = ship_heavy_battery_2_2x
 				mid_2_custom_slot = dp_ship_secondaries_1_2x
 				mid_3_custom_slot = dp_ship_secondaries_1_2x
-				mid_4_custom_slot = ship_heavy_battery_1_2x
-				front_1_custom_slot = ship_heavy_battery_1_3x
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_3x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = ship_secondaries_1_2x
@@ -4249,7 +4271,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_1
+				type = ship_hull_dreadnought_2
 				version_name = "[Commission] Conte di Cavour"
 			}
 			requested_factories = 1
@@ -4274,26 +4296,27 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Littorio"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
 				fixed_ship_armor_slot = ship_armor_bb_3
 				fixed_ship_deck_slot = heavy_ship_deck_2
 				fixed_ship_citadel_slot = ship_citadel_6
 				fixed_ship_damage_control_slot = dc_lockers
-				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_torpedo_protection_slot = torpedo_protection_4
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_semi_armor_piercing
 
 				rear_1_custom_slot = ship_airplane_launcher_1
-				mid_1_custom_slot = ship_heavy_battery_2_3x
+				mid_1_custom_slot = ship_heavy_battery_4_3x
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_heavy_battery_2_3x
-				front_1_custom_slot = ship_heavy_battery_2_3x
+				mid_4_custom_slot = ship_heavy_battery_4_3x
+				front_1_custom_slot = ship_heavy_battery_4_3x
 
 				right_1_custom_slot = ship_secondaries_2_3x
 				right_2_custom_slot = dp_ship_secondaries_2_2x
@@ -4309,7 +4332,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_heavy_1
 				version_name = "[Commission] Littorio"
 			}
 			requested_factories = 1
@@ -4334,7 +4357,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Trento"
-			type = ship_hull_cruiser_1
+			type = ship_hull_early_heavy_cruiser_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
@@ -4345,21 +4368,22 @@ country_event = {
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = water_pump
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_medium_battery_2_2x
-				mid_1_custom_slot = ship_medium_battery_2_2x
+				rear_1_custom_slot = ship_medium_battery_3_2x
+				mid_1_custom_slot = ship_medium_battery_3_2x
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_airplane_launcher_1
-				mid_4_custom_slot = ship_medium_battery_2_2x
-				front_1_custom_slot = ship_medium_battery_2_2x
+				mid_4_custom_slot = ship_medium_battery_3_2x
+				front_1_custom_slot = ship_medium_battery_3_2x
 
-				right_1_custom_slot = ship_torpedo_1_4x
+				right_1_custom_slot = ship_torpedo_2_4x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
 				right_3_custom_slot = dp_ship_secondaries_1_2x
 				right_4_custom_slot = dp_ship_secondaries_1_2x
 
-				left_1_custom_slot = ship_torpedo_1_4x
+				left_1_custom_slot = ship_torpedo_2_4x
 				left_2_custom_slot = dp_ship_secondaries_1_2x
 				left_3_custom_slot = dp_ship_secondaries_1_2x
 				left_4_custom_slot = dp_ship_secondaries_1_2x
@@ -4368,7 +4392,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_1
+				type = ship_hull_early_heavy_cruiser_2
 				version_name = "[Commission] Trento"
 			}
 			requested_factories = 1
@@ -4393,7 +4417,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Bolzano"
-			type = ship_hull_cruiser_2
+			type = ship_hull_early_heavy_cruiser_3
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -4405,21 +4429,22 @@ country_event = {
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_medium_battery_3_2x
-				mid_1_custom_slot = ship_medium_battery_3_2x
+				rear_1_custom_slot = ship_medium_battery_4_2x
+				mid_1_custom_slot = ship_medium_battery_4_2x
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_airplane_launcher_1
-				mid_4_custom_slot = ship_medium_battery_3_2x
-				front_1_custom_slot = ship_medium_battery_3_2x
+				mid_4_custom_slot = ship_medium_battery_4_2x
+				front_1_custom_slot = ship_medium_battery_4_2x
 
-				right_1_custom_slot = ship_torpedo_1_4x
+				right_1_custom_slot = ship_torpedo_2_4x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
 				right_3_custom_slot = dp_ship_secondaries_1_2x
 				right_4_custom_slot = dp_ship_secondaries_1_2x
 
-				left_1_custom_slot = ship_torpedo_1_4x
+				left_1_custom_slot = ship_torpedo_2_4x
 				left_2_custom_slot = dp_ship_secondaries_1_2x
 				left_3_custom_slot = dp_ship_secondaries_1_2x
 				left_4_custom_slot = dp_ship_secondaries_1_2x
@@ -4428,7 +4453,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_early_heavy_cruiser_3
 				version_name = "[Commission] Bolzano"
 			}
 			requested_factories = 1
@@ -4453,36 +4478,38 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Montecuccoli"
-			type = ship_hull_cruiser_2
+			type = ship_hull_early_cruiser_5
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_medium_battery_2_2x
-				mid_1_custom_slot = ship_light_medium_battery_2_2x
+				rear_1_custom_slot = ship_light_medium_battery_3_2x
+				mid_1_custom_slot = ship_light_medium_battery_3_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = dp_ship_secondaries_1_2x
-				mid_4_custom_slot = ship_light_medium_battery_2_2x
-				front_1_custom_slot = ship_light_medium_battery_2_2x
+				mid_4_custom_slot = ship_light_medium_battery_3_2x
+				front_1_custom_slot = ship_light_medium_battery_3_2x
 
-				right_2_custom_slot = ship_torpedo_1_2x
+				right_2_custom_slot = ship_torpedo_2_2x
 				right_3_custom_slot = dp_ship_secondaries_1_2x
 
-				left_2_custom_slot = ship_torpedo_1_2x
+				left_2_custom_slot = ship_torpedo_2_2x
 				left_3_custom_slot = dp_ship_secondaries_1_2x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_early_cruiser_5
 				version_name = "[Commission] Montecuccoli"
 			}
 			requested_factories = 1
@@ -4507,39 +4534,40 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Duca degli Abruzzi"
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = medium_ship_armor_2
+				fixed_ship_armor_slot = medium_ship_armor_3
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_medium_battery_2_3x
-				mid_1_custom_slot = ship_light_medium_battery_2_2x
+				rear_1_custom_slot = ship_light_medium_battery_4_3x
+				mid_1_custom_slot = ship_light_medium_battery_4_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_light_medium_battery_2_2x
-				front_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_4_custom_slot = ship_light_medium_battery_4_2x
+				front_1_custom_slot = ship_light_medium_battery_4_3x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
-				right_2_custom_slot = ship_torpedo_1_2x
+				right_2_custom_slot = ship_torpedo_2_2x
 				right_3_custom_slot = dp_ship_secondaries_1_2x
 
 				left_1_custom_slot = dp_ship_secondaries_1_2x
-				left_2_custom_slot = ship_torpedo_1_2x
+				left_2_custom_slot = ship_torpedo_2_2x
 				left_3_custom_slot = dp_ship_secondaries_1_2x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_cruiser_1
 				version_name = "[Commission] Duca degli Abruzzi"
 			}
 			requested_factories = 1
@@ -4564,11 +4592,11 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Capitani Romani"
-			type = ship_hull_cruiser_3
+			type = ship_hull_cruiser_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_2
 				fixed_ship_radar_slot = ship_radar_1
 				fixed_ship_engine_slot = cruiser_ship_engine_4
 				fixed_ship_funnel_slot = funnel_2x
@@ -4579,12 +4607,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				rear_1_custom_slot = dp_ship_medium_1
-				mid_1_custom_slot = dp_ship_medium_1
+				rear_1_custom_slot = dp_ship_medium_1_2x
+				mid_1_custom_slot = dp_ship_medium_1_2x
 				mid_2_custom_slot = ship_torpedo_2_4x
 				mid_3_custom_slot = ship_torpedo_2_4x
-				mid_4_custom_slot = dp_ship_medium_1
-				front_1_custom_slot = dp_ship_medium_1
+				mid_4_custom_slot = dp_ship_medium_1_2x
+				front_1_custom_slot = dp_ship_medium_1_2x
 
 				right_1_custom_slot = ship_mine_layer_1
 				right_3_custom_slot = ship_anti_air_2
@@ -4596,7 +4624,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_3
+				type = ship_hull_cruiser_2
 				version_name = "[Commission] Capitani Romani"
 			}
 			requested_factories = 1
@@ -4621,32 +4649,36 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Maestrale"
-			type = ship_hull_light_1
+			type = ship_hull_early_destroyer_4
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
+				fixed_ship_armor_slot = light_ship_armor_1
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
 				rear_1_custom_slot = ship_mine_layer_1
-				mid_1_custom_slot = ship_light_battery_2_2x
-				mid_2_custom_slot = ship_torpedo_1_3x
-				mid_3_custom_slot = ship_torpedo_1_3x
+				mid_1_custom_slot = ship_light_battery_4_2x
+				mid_2_custom_slot = ship_torpedo_2_3x
+				mid_3_custom_slot = ship_torpedo_2_3x
 				mid_4_custom_slot = ship_anti_air_1
-				front_1_custom_slot = ship_light_battery_2_2x
-
+				front_1_custom_slot = ship_light_battery_4_2x
+				
 				right_1_custom_slot = ship_depth_charge_1
-
+				right_3_custom_slot = ship_anti_air_1
+				
 				left_1_custom_slot = ship_depth_charge_1
+				left_3_custom_slot = ship_anti_air_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_1
+				type = ship_hull_early_destroyer_4
 				version_name = "[Commission] Maestrale"
 			}
 			requested_factories = 1
@@ -4671,24 +4703,33 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Calvi"
-			type = ship_hull_submarine_2
+			type = ship_hull_cruiser_submarine_2
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
 				fixed_ship_engine_slot = sub_ship_engine_2
+				fixed_ship_batteries_slot = sub_batteries_1
+				fixed_ship_tanks_slot = ship_extra_fuel_tank
 				fixed_ship_periscope_slot = sub_periscope_2
 				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = torpedo_ammo
 
 				rear_1_custom_slot = ship_torpedo_sub_2
-				mid_2_custom_slot = sub_watertight_compartment
+				
+				mid_2_custom_slot = sub_ballast_tank
 				mid_3_custom_slot = sub_ballast_tank
+				
 				front_1_custom_slot = ship_torpedo_sub_2
+				
+				top_2_custom_slot = ship_anti_air_1
+				top_3_custom_slot = ship_light_battery_sub
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_submarine_2
+				type = ship_hull_cruiser_submarine_2
 				version_name = "[Commission] Calvi"
 			}
 			requested_factories = 1
@@ -4760,21 +4801,24 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Akagi"
-			type = ship_hull_carrier_conversion_bb
+			type = ship_hull_carrier_conversion_bc_2
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
-				fixed_ship_armor_slot = medium_ship_armor_3
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_armor_slot = ship_armor_bc_1
+				fixed_ship_hangar_slot = ship_carrier_hangar_large
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = plane_ammo
 
 				rear_1_custom_slot = ship_arresting_cable
-				mid_1_custom_slot = ship_deck_space
+				deck_1_custom_slot = ship_plane_elevator_1
+				deck_3_custom_slot = ship_plane_elevator_2
+				deck_4_custom_slot = ship_plane_elevator_3
 				front_1_custom_slot = ship_anti_air_2
 
 				right_1_custom_slot = ship_casemate_2
@@ -4784,14 +4828,14 @@ country_event = {
 
 				left_1_custom_slot = ship_anti_air_2
 				left_2_custom_slot = dp_ship_secondaries_1_2x
-				left_3_custom_slot = dp_ship_secondaries_1_2x
+				left_3_custom_slot = ship_carrier_superstructure_1
 				left_4_custom_slot = ship_anti_air_2
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_carrier_conversion_bb
+				type = ship_hull_carrier_conversion_bc_2
 				version_name = "[Commission] Akagi"
 			}
 			requested_factories = 1
@@ -4819,32 +4863,32 @@ country_event = {
 			type = ship_hull_carrier_hybrid_ca
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = carrier_ship_engine_3
+				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = medium_ship_armor_3
 				fixed_ship_deck_slot = medium_ship_deck_1
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_hangar_slot = ship_citadel_3
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_damage_control_slot = dc_lockers
-				fixed_ship_ammo_1_slot = cannon_high_explosive
-				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = plane_ammo
 
-				rear_1_custom_slot = ship_anti_air_2
+				rear_1_custom_slot = ship_partial_flight_deck
 				mid_1_custom_slot = ship_anti_air_2
-				mid_2_custom_slot = ship_medium_battery_2_2x
-				mid_3_custom_slot = ship_medium_battery_2_2x
-				mid_4_custom_slot = ship_medium_battery_2_2x
-				front_1_custom_slot = ship_medium_battery_2_2x
+				mid_2_custom_slot = ship_medium_battery_4_2x
+				mid_3_custom_slot = ship_medium_battery_4_2x
+				mid_4_custom_slot = ship_medium_battery_4_2x
+				front_1_custom_slot = ship_medium_battery_4_2x
 
-				right_1_custom_slot = ship_torpedo_1_3x
-				right_2_custom_slot = ship_torpedo_1_3x
+				right_1_custom_slot = ship_torpedo_2_3x
+				right_2_custom_slot = ship_torpedo_2_3x
 				right_3_custom_slot = dp_ship_secondaries_1_2x
 				right_4_custom_slot = dp_ship_secondaries_1_2x
 
-				left_1_custom_slot = ship_torpedo_1_3x
-				left_2_custom_slot = ship_torpedo_1_3x
+				left_1_custom_slot = ship_torpedo_2_3x
+				left_2_custom_slot = ship_torpedo_2_3x
 				left_3_custom_slot = dp_ship_secondaries_1_2x
 				left_4_custom_slot = dp_ship_secondaries_1_2x
 			}
@@ -4880,22 +4924,20 @@ country_event = {
 			type = ship_hull_carrier_2
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radio_slot = ship_radio_2
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_radar_slot = ship_radar_2
 				fixed_ship_engine_slot = carrier_ship_engine_3
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = medium_ship_armor_3
-				fixed_ship_deck_slot = medium_ship_deck_2
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_deck_slot = ship_armored_flight_deck
+				fixed_ship_hangar_slot = ship_carrier_hangar_medium
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_arresting_cable
-				mid_1_custom_slot = ship_deck_space
-				mid_2_custom_slot = ship_deck_space
-				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_anti_air_2
+				deck_1_custom_slot = ship_plane_elevator_1
+				deck_4_custom_slot = ship_plane_elevator_2
 				front_1_custom_slot = ship_anti_air_2
 
 				right_1_custom_slot = dp_ship_secondaries_2_2x
@@ -4937,27 +4979,27 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Nagato"
-			type = ship_hull_heavy_2
+			type = ship_hull_super_dreadnought_2
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
 				fixed_ship_armor_slot = ship_armor_bb_2
 				fixed_ship_deck_slot = heavy_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_6
-				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_torpedo_protection_slot = torpedo_protection_3
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
 				fixed_ship_ammo_2_slot = cannon_beehive
 
-				rear_1_custom_slot = ship_heavy_battery_2_2x
-				mid_1_custom_slot = ship_heavy_battery_2_2x
+				rear_1_custom_slot = ship_heavy_battery_3_2x
+				mid_1_custom_slot = ship_heavy_battery_3_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_heavy_battery_2_2x
-				front_1_custom_slot = ship_heavy_battery_2_2x
+				mid_4_custom_slot = ship_heavy_battery_3_2x
+				front_1_custom_slot = ship_heavy_battery_3_2x
 
 				right_1_custom_slot = ship_casemate_1
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -4973,7 +5015,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_super_dreadnought_2
 				version_name = "[Commission] Nagato"
 			}
 			requested_factories = 1
@@ -5121,27 +5163,27 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Kongo"
-			type = ship_hull_heavy_1
+			type = ship_hull_battlecruiser_2
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = heavy_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = ship_armor_bc_1
+				fixed_ship_armor_slot = ship_armor_bc_3
 				fixed_ship_deck_slot = heavy_ship_deck_1
-				fixed_ship_citadel_slot = ship_citadel_4
-				fixed_ship_torpedo_protection_slot = torpedo_protection_2
+				fixed_ship_citadel_slot = ship_citadel_6
+				fixed_ship_torpedo_protection_slot = torpedo_protection_3
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
 				fixed_ship_ammo_2_slot = cannon_beehive
 
-				rear_1_custom_slot = ship_heavy_battery_1_2x
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = ship_heavy_battery_1_2x
+				rear_1_custom_slot = ship_heavy_battery_2_2x
+				mid_1_custom_slot = ship_airplane_launcher_2
+				mid_2_custom_slot = ship_heavy_battery_2_2x
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_heavy_battery_1_2x
-				front_1_custom_slot = ship_heavy_battery_1_2x
+				mid_4_custom_slot = ship_heavy_battery_2_2x
+				front_1_custom_slot = ship_heavy_battery_2_2x
 
 				right_1_custom_slot = ship_secondaries_1_1x
 				right_2_custom_slot = ship_secondaries_1_1x
@@ -5157,7 +5199,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_1
+				type = ship_hull_battlecruiser_2
 				version_name = "[Commission] Kongo"
 			}
 			requested_factories = 1
@@ -5182,7 +5224,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Amagi"
-			type = ship_hull_heavy_3
+			type = ship_hull_battlecruiser_4
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -5197,12 +5239,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
 				fixed_ship_ammo_2_slot = cannon_beehive
 
-				rear_1_custom_slot = ship_heavy_battery_2_2x
-				mid_1_custom_slot = ship_heavy_battery_2_2x
-				mid_2_custom_slot = ship_heavy_battery_2_2x
+				rear_1_custom_slot = ship_heavy_battery_3_2x
+				mid_1_custom_slot = ship_heavy_battery_3_2x
+				mid_2_custom_slot = ship_heavy_battery_3_2x
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_heavy_battery_2_2x
-				front_1_custom_slot = ship_heavy_battery_2_2x
+				mid_4_custom_slot = ship_heavy_battery_3_2x
+				front_1_custom_slot = ship_heavy_battery_3_2x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -5218,7 +5260,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_3
+				type = ship_hull_battlecruiser_4
 				version_name = "[Commission] Amagi"
 			}
 			requested_factories = 1
@@ -5243,7 +5285,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Takao"
-			type = ship_hull_cruiser_2
+			type = ship_hull_early_heavy_cruiser_3
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
@@ -5254,24 +5296,24 @@ country_event = {
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
 				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
 
-				rear_1_custom_slot = ship_medium_battery_1_2x
-				mid_1_custom_slot = ship_medium_battery_1_2x
+				rear_1_custom_slot = ship_medium_battery_4_2x
+				mid_1_custom_slot = ship_medium_battery_4_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
-				mid_3_custom_slot = ship_medium_battery_1_2x
-				mid_4_custom_slot = ship_medium_battery_1_2x
-				front_1_custom_slot = ship_medium_battery_1_2x
+				mid_3_custom_slot = ship_medium_battery_4_2x
+				mid_4_custom_slot = ship_medium_battery_4_2x
+				front_1_custom_slot = ship_medium_battery_4_2x
 
-				right_1_custom_slot = ship_torpedo_2_4x
-				right_2_custom_slot = ship_torpedo_2_4x
+				right_1_custom_slot = ship_torpedo_2_2x
+				right_2_custom_slot = ship_torpedo_2_2x
 				right_3_custom_slot = dp_ship_secondaries_1_2x
 				right_4_custom_slot = dp_ship_secondaries_1_2x
 
-				left_1_custom_slot = ship_torpedo_2_4x
-				left_2_custom_slot = ship_torpedo_2_4x
+				left_1_custom_slot = ship_torpedo_2_2x
+				left_2_custom_slot = ship_torpedo_2_2x
 				left_3_custom_slot = dp_ship_secondaries_1_2x
 				left_4_custom_slot = dp_ship_secondaries_1_2x
 			}
@@ -5279,7 +5321,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_early_heavy_cruiser_3
 				version_name = "[Commission] Takao"
 			}
 			requested_factories = 1
@@ -5304,34 +5346,34 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Fubuki"
-			type = ship_hull_light_1
+			type = ship_hull_early_destroyer_3
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_armor_slot = light_ship_armor_1
 				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
 
-				rear_1_custom_slot = ship_light_battery_2_2x
-				mid_1_custom_slot = ship_light_battery_2_2x
-				mid_2_custom_slot = ship_torpedo_1_3x
-				mid_3_custom_slot = ship_torpedo_1_3x
-				mid_4_custom_slot = ship_torpedo_1_3x
-				front_1_custom_slot = ship_light_battery_2_2x
+				rear_1_custom_slot = ship_light_battery_3_2x
+				mid_1_custom_slot = ship_light_battery_3_2x
+				mid_2_custom_slot = ship_torpedo_2_3x
+				mid_3_custom_slot = ship_torpedo_2_3x
+				mid_4_custom_slot = ship_torpedo_2_3x
+				front_1_custom_slot = ship_light_battery_3_2x
 
-				right_2_custom_slot = ship_anti_air_1
+				right_1_custom_slot = ship_depth_charge_1
 
+				left_1_custom_slot = ship_depth_charge_1
 				left_2_custom_slot = ship_anti_air_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_1
+				type = ship_hull_early_destroyer_3
 				version_name = "[Commission] Fubuki"
 			}
 			requested_factories = 1
@@ -5356,7 +5398,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Kagero"
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
@@ -5368,12 +5410,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = oxygen_torpedo_ammo
 
-				rear_1_custom_slot = ship_light_battery_2_2x
-				mid_1_custom_slot = ship_light_battery_2_2x
+				rear_1_custom_slot = ship_light_battery_3_2x
+				mid_1_custom_slot = ship_light_battery_3_2x
 				mid_2_custom_slot = ship_torpedo_2_4x
 				mid_3_custom_slot = ship_torpedo_2_4x
 				mid_4_custom_slot = ship_anti_air_2
-				front_1_custom_slot = ship_light_battery_2_2x
+				front_1_custom_slot = ship_light_battery_3_2x
 
 				right_1_custom_slot = ship_depth_charge_1
 
@@ -5383,7 +5425,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_2
+				type = ship_hull_light_1
 				version_name = "[Commission] Kagero"
 			}
 			requested_factories = 1
@@ -5408,7 +5450,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] I-400"
-			type = ship_hull_cruiser_submarine
+			type = ship_hull_carrier_submarine
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -5419,6 +5461,7 @@ country_event = {
 				fixed_ship_batteries_slot = sub_batteries_2
 				fixed_ship_periscope_slot = sub_periscope_2
 				fixed_ship_damage_control_slot = dc_lockers
+				fixed_ship_ammo_1_slot = oxygen_torpedo_ammo
 
 				mid_1_custom_slot = sub_watertight_compartment
 				mid_2_custom_slot = sub_ballast_tank
@@ -5440,7 +5483,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_submarine
+				type = ship_hull_carrier_submarine
 				version_name = "[Commission] I-400"
 			}
 			requested_factories = 1
@@ -5467,26 +5510,26 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Gangut"
-			type = ship_hull_heavy_1
+			type = ship_hull_dreadnought_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_engine_slot = heavy_ship_engine_1
 				fixed_ship_funnel_slot = funnel_2x
+				fixed_ship_armor_slot = ship_armor_bb_1
 				fixed_ship_citadel_slot = ship_citadel_4
 				fixed_ship_damage_control_slot = water_pump
-				fixed_ship_armor_slot = ship_armor_bb_1
-				fixed_ship_torpedo_protection_slot = torpedo_protection_1
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_heavy_battery_1_3x
-				mid_1_custom_slot = ship_anti_air_1
-				mid_2_custom_slot = ship_heavy_battery_1_3x
-				mid_3_custom_slot = ship_heavy_battery_1_3x
-				mid_4_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = ship_heavy_battery_1_3x
+				mid_2_custom_slot = ship_anti_air_1
+				mid_3_custom_slot = ship_anti_air_1
+				mid_4_custom_slot = ship_heavy_battery_1_3x
 				front_1_custom_slot = ship_heavy_battery_1_3x
-				
+
 				right_1_custom_slot = ship_casemate_2
 				right_2_custom_slot = ship_casemate_2
 				right_3_custom_slot = ship_casemate_2
@@ -5501,7 +5544,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_1
+				type = ship_hull_dreadnought_2
 				version_name = "[Commission] Gangut"
 			}
 			requested_factories = 1
@@ -5526,7 +5569,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Sovetsky Soyuz"
-			type = ship_hull_heavy_3
+			type = ship_hull_heavy_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -5540,6 +5583,7 @@ country_event = {
 				fixed_ship_deck_slot = heavy_ship_deck_1
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_airplane_launcher_2
 				mid_1_custom_slot = ship_heavy_battery_3_3x
@@ -5562,7 +5606,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_3
+				type = ship_hull_heavy_2
 				version_name = "[Commission] Sovetsky Soyuz"
 			}
 			requested_factories = 1
@@ -5587,7 +5631,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Kronshtadt"
-			type = ship_hull_heavy_3
+			type = ship_hull_battlecruiser_modern
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -5601,6 +5645,7 @@ country_event = {
 				fixed_ship_deck_slot = heavy_ship_deck_1
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_heavy_battery_2_2x
 				mid_1_custom_slot = ship_anti_air_3
@@ -5623,7 +5668,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_3
+				type = ship_hull_battlecruiser_modern
 				version_name = "[Commission] Kronshtadt"
 			}
 			requested_factories = 1
@@ -5648,7 +5693,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Kirov"
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
@@ -5659,20 +5704,21 @@ country_event = {
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_medium_battery_1_3x
+				rear_1_custom_slot = ship_light_medium_battery_3_3x
 				mid_1_custom_slot = ship_airplane_launcher_1
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_medium_battery_1_3x
-				front_1_custom_slot = ship_medium_battery_1_3x
+				mid_4_custom_slot = ship_light_medium_battery_3_3x
+				front_1_custom_slot = ship_light_medium_battery_3_3x
 
-				right_1_custom_slot = ship_torpedo_1_3x
+				right_1_custom_slot = ship_torpedo_2_3x
 				right_2_custom_slot = dp_ship_secondaries_1
 				right_3_custom_slot = dp_ship_secondaries_1
 				right_4_custom_slot = dp_ship_secondaries_1
 
-				left_1_custom_slot = ship_torpedo_1_3x
+				left_1_custom_slot = ship_torpedo_2_3x
 				left_2_custom_slot = dp_ship_secondaries_1
 				left_3_custom_slot = dp_ship_secondaries_1
 				left_4_custom_slot = dp_ship_secondaries_1
@@ -5681,7 +5727,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_cruiser_1
 				version_name = "[Commission] Kirov"
 			}
 			requested_factories = 1
@@ -5706,32 +5752,35 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Leningrad"
-			type = ship_hull_light_2
+			type = ship_hull_early_destroyer_4
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_battery_2
-				mid_1_custom_slot = ship_light_battery_2
-				mid_2_custom_slot = ship_light_battery_2
-				mid_3_custom_slot = ship_anti_air_1
-				mid_4_custom_slot = ship_light_battery_2
-				front_1_custom_slot = ship_light_battery_2
+				rear_1_custom_slot = ship_light_battery_4
+				mid_1_custom_slot = ship_light_battery_4
+				mid_2_custom_slot = ship_torpedo_2_4x
+				mid_3_custom_slot = ship_torpedo_2_4x
+				mid_4_custom_slot = ship_light_battery_4
+				front_1_custom_slot = ship_light_battery_4_2x
 
-				right_1_custom_slot = ship_torpedo_1_4x
+				right_1_custom_slot = ship_mine_layer_1
+				right_3_custom_slot = ship_anti_air_1
 
-				left_1_custom_slot = ship_torpedo_1_4x
+				left_1_custom_slot = ship_depth_charge_1
+				left_3_custom_slot = ship_anti_air_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_2
+				type = ship_hull_early_destroyer_4
 				version_name = "[Commission] Leningrad"
 			}
 			requested_factories = 1
@@ -5756,7 +5805,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Storozhevoy"
-			type = ship_hull_light_2
+			type = ship_hull_light_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
@@ -5767,12 +5816,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_battery_2
-				mid_1_custom_slot = ship_light_battery_2
+				rear_1_custom_slot = ship_light_battery_4
+				mid_1_custom_slot = ship_light_battery_4
 				mid_2_custom_slot = ship_torpedo_2_3x
 				mid_3_custom_slot = ship_torpedo_2_3x
-				mid_4_custom_slot = ship_light_battery_2
-				front_1_custom_slot = ship_light_battery_2
+				mid_4_custom_slot = ship_light_battery_4
+				front_1_custom_slot = ship_light_battery_4
 
 				right_1_custom_slot = ship_mine_layer_1
 				right_3_custom_slot = ship_anti_air_2
@@ -5784,7 +5833,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_2
+				type = ship_hull_light_1
 				version_name = "[Commission] Storozhevoy"
 			}
 			requested_factories = 1
@@ -5809,7 +5858,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Ognevoy"
-			type = ship_hull_light_3
+			type = ship_hull_light_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
@@ -5822,12 +5871,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo_2
 
-				rear_1_custom_slot = ship_light_battery_2_2x
+				rear_1_custom_slot = ship_light_battery_4_2x
 				mid_1_custom_slot = ship_anti_air_2
 				mid_2_custom_slot = ship_torpedo_2_3x
 				mid_3_custom_slot = ship_torpedo_2_3x
 				mid_4_custom_slot = ship_anti_air_2
-				front_1_custom_slot = ship_light_battery_2_2x
+				front_1_custom_slot = ship_light_battery_4_2x
 
 				right_1_custom_slot = ship_mine_layer_1
 				right_3_custom_slot = ship_anti_air_2
@@ -5839,7 +5888,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_3
+				type = ship_hull_light_2
 				version_name = "[Commission] Ognevoy"
 			}
 			requested_factories = 1
@@ -5866,27 +5915,29 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Yorktown"
-			type = ship_hull_carrier_1
+			type = ship_hull_carrier_0
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = carrier_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = medium_ship_armor_2
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_hangar_slot = ship_carrier_hangar_medium
 				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_ammo_2_slot = plane_ammo
 
 				rear_1_custom_slot = ship_arresting_cable
-				mid_1_custom_slot = ship_deck_space
-				mid_2_custom_slot = ship_deck_space
+				deck_1_custom_slot = ship_plane_elevator_1
+				deck_3_custom_slot = ship_plane_elevator_2
+				deck_4_custom_slot = ship_plane_elevator_3
 				front_1_custom_slot = ship_anti_air_1
 
 				right_1_custom_slot = dp_ship_secondaries_1
 				right_2_custom_slot = ship_anti_air_1
-				right_3_custom_slot = ship_anti_air_1
+				right_3_custom_slot = ship_carrier_superstructure_1
 				right_4_custom_slot = dp_ship_secondaries_1
 
 				left_1_custom_slot = dp_ship_secondaries_1
@@ -5898,7 +5949,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_carrier_1
+				type = ship_hull_carrier_0
 				version_name = "[Commission] Yorktown"
 			}
 			requested_factories = 1
@@ -5923,7 +5974,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Yorktown (1943 Refit)"
-			type = ship_hull_carrier_1
+			type = ship_hull_carrier_0
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -5932,22 +5983,21 @@ country_event = {
 				fixed_ship_engine_slot = carrier_ship_engine_2
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = medium_ship_armor_2
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_hangar_slot = ship_carrier_hangar_medium
 				fixed_ship_damage_control_slot = dc_control_room
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = plane_ammo
 
 				rear_1_custom_slot = ship_arresting_cable
-				mid_1_custom_slot = ship_deck_space
-				mid_2_custom_slot = ship_deck_space
-				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_anti_air_2
+				deck_1_custom_slot = ship_plane_elevator_1
+				deck_3_custom_slot = ship_plane_elevator_2
+				deck_4_custom_slot = ship_plane_elevator_3
 				front_1_custom_slot = ship_anti_air_2
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
-				right_3_custom_slot = dp_ship_secondaries_1_2x
+				right_3_custom_slot = ship_carrier_superstructure_1
 				right_4_custom_slot = dp_ship_secondaries_1_2x
 
 				left_1_custom_slot = ship_anti_air_3
@@ -5959,7 +6009,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_carrier_1
+				type = ship_hull_carrier_0
 				version_name = "[Commission] Yorktown (1943 Refit)"
 			}
 			requested_factories = 1
@@ -5984,7 +6034,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Essex"
-			type = ship_hull_carrier_2
+			type = ship_hull_carrier_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -5993,18 +6043,17 @@ country_event = {
 				fixed_ship_engine_slot = carrier_ship_engine_3
 				fixed_ship_funnel_slot = funnel_1x
 				fixed_ship_armor_slot = medium_ship_armor_2
-				fixed_ship_citadel_slot = ship_citadel_3
+				fixed_ship_hangar_slot = ship_carrier_hangar_small
 				fixed_ship_damage_control_slot = dc_control_room
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_variable_time
 				fixed_ship_ammo_2_slot = plane_ammo
 
 				rear_1_custom_slot = ship_arresting_cable
-				mid_1_custom_slot = ship_deck_space
-				mid_2_custom_slot = ship_deck_space
-				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_anti_air_2
-				front_1_custom_slot = ship_anti_air_3
+				deck_1_custom_slot = ship_plane_elevator_1
+				deck_3_custom_slot = ship_plane_elevator_2
+				deck_4_custom_slot = ship_plane_elevator_3
+				front_1_custom_slot = ship_anti_air_2
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -6020,7 +6069,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_carrier_2
+				type = ship_hull_carrier_1
 				version_name = "[Commission] Essex"
 			}
 			requested_factories = 1
@@ -6045,42 +6094,43 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Colorado"
-			type = ship_hull_heavy_1
+			type = ship_hull_super_dreadnought_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_engine_slot = heavy_ship_engine_0
 				fixed_ship_funnel_slot = funnel_2x
 				fixed_ship_armor_slot = ship_armor_bb_3
-				fixed_ship_deck_slot = heavy_ship_deck_1
+				fixed_ship_deck_slot = heavy_ship_deck_2
 				fixed_ship_citadel_slot = ship_citadel_6
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				fixed_ship_ammo_2_slot = cannon_high_explosive
 
-				rear_1_custom_slot = ship_heavy_battery_2_2x
-				mid_1_custom_slot = ship_heavy_battery_2_2x
+				rear_1_custom_slot = ship_heavy_battery_3_2x
+				mid_1_custom_slot = ship_heavy_battery_3_2x
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_1
-				mid_4_custom_slot = ship_heavy_battery_2_2x
-				front_1_custom_slot = ship_heavy_battery_2_2x
+				mid_4_custom_slot = ship_heavy_battery_3_2x
+				front_1_custom_slot = ship_heavy_battery_3_2x
 
 				right_1_custom_slot = ship_secondaries_1_1x
-				right_2_custom_slot = ship_secondaries_1_1x
-				right_3_custom_slot = ship_secondaries_1_1x
+				right_2_custom_slot = dp_ship_secondaries_1
+				right_3_custom_slot = dp_ship_secondaries_1
 				right_4_custom_slot = ship_secondaries_1_1x
 
 				left_1_custom_slot = ship_secondaries_1_1x
-				left_2_custom_slot = ship_secondaries_1_1x
-				left_3_custom_slot = ship_secondaries_1_1x
+				left_2_custom_slot = dp_ship_secondaries_1
+				left_3_custom_slot = dp_ship_secondaries_1
 				left_4_custom_slot = ship_secondaries_1_1x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_1
+				type = ship_hull_super_dreadnought_2
 				version_name = "[Commission] Colorado"
 			}
 			requested_factories = 1
@@ -6105,7 +6155,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] North Carolina"
-			type = ship_hull_heavy_2
+			type = ship_hull_heavy_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -6120,13 +6170,14 @@ country_event = {
 				fixed_ship_damage_control_slot = dc_lockers
 				fixed_ship_torpedo_protection_slot = torpedo_protection_2
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
+				ixed_ship_ammo_2_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_airplane_launcher_1
-				mid_1_custom_slot = ship_heavy_battery_2_3x
+				mid_1_custom_slot = ship_heavy_battery_3_3x
 				mid_2_custom_slot = ship_anti_air_2
 				mid_3_custom_slot = ship_anti_air_2
-				mid_4_custom_slot = ship_heavy_battery_2_3x
-				front_1_custom_slot = ship_heavy_battery_2_3x
+				mid_4_custom_slot = ship_heavy_battery_3_3x
+				front_1_custom_slot = ship_heavy_battery_3_3x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -6142,7 +6193,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_2
+				type = ship_hull_heavy_1
 				version_name = "[Commission] North Carolina"
 			}
 			requested_factories = 1
@@ -6167,7 +6218,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Iowa"
-			type = ship_hull_heavy_3
+			type = ship_hull_heavy_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -6185,11 +6236,11 @@ country_event = {
 				fixed_ship_ammo_2_slot = cannon_variable_time
 
 				rear_1_custom_slot = ship_airplane_launcher_2
-				mid_1_custom_slot = ship_heavy_battery_3_3x
+				mid_1_custom_slot = ship_heavy_battery_4_3x
 				mid_2_custom_slot = ship_anti_air_3
 				mid_3_custom_slot = ship_anti_air_3
-				mid_4_custom_slot = ship_heavy_battery_3_3x
-				front_1_custom_slot = ship_heavy_battery_3_3x
+				mid_4_custom_slot = ship_heavy_battery_4_3x
+				front_1_custom_slot = ship_heavy_battery_4_3x
 
 				right_1_custom_slot = dp_ship_secondaries_1_2x
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -6205,7 +6256,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_heavy_3
+				type = ship_hull_heavy_2
 				version_name = "[Commission] Iowa"
 			}
 			requested_factories = 1
@@ -6230,43 +6281,42 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] New Orleans"
-			type = ship_hull_cruiser_2
+			type = ship_hull_early_heavy_cruiser_3
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radio_slot = ship_radio_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_funnel_slot = funnel_2x
-				fixed_ship_tanks_slot = ship_extra_fuel_tank
-				fixed_ship_armor_slot = medium_ship_armor_1
+				fixed_ship_armor_slot = medium_ship_armor_2
 				fixed_ship_deck_slot = medium_ship_deck_1
 				fixed_ship_citadel_slot = ship_citadel_3
 				fixed_ship_damage_control_slot = dc_lockers
-				fixed_ship_torpedo_protection_slot = torpedo_protection_2
-				fixed_ship_ammo_1_slot = cannon_high_explosive
+				fixed_ship_torpedo_protection_slot = torpedo_protection_3
+				fixed_ship_ammo_1_slot = cannon_armor_piercing
 
 				rear_1_custom_slot = ship_anti_air_1
-				mid_1_custom_slot = ship_medium_battery_1_3x
+				mid_1_custom_slot = ship_medium_battery_3_3x
 				mid_2_custom_slot = ship_airplane_launcher_1
 				mid_3_custom_slot = ship_anti_air_1
-				mid_4_custom_slot = ship_medium_battery_1_3x
-				front_1_custom_slot = ship_medium_battery_1_3x
+				mid_4_custom_slot = ship_medium_battery_3_3x
+				front_1_custom_slot = ship_medium_battery_3_3x
 
-				right_1_custom_slot = empty
+				right_1_custom_slot = dp_ship_secondaries_1
 				right_2_custom_slot = dp_ship_secondaries_1
 				right_3_custom_slot = dp_ship_secondaries_1
-				right_4_custom_slot = empty
+				right_4_custom_slot = dp_ship_secondaries_1
 
-				left_1_custom_slot = empty
+				left_1_custom_slot = dp_ship_secondaries_1
 				left_2_custom_slot = dp_ship_secondaries_1
 				left_3_custom_slot = dp_ship_secondaries_1
-				left_4_custom_slot = empty
+				left_4_custom_slot = dp_ship_secondaries_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_early_heavy_cruiser_3
 				version_name = "[Commission] New Orleans"
 			}
 			requested_factories = 1
@@ -6291,7 +6341,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Baltimore"
-			type = ship_hull_cruiser_3
+			type = ship_hull_heavy_cruiser_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -6308,11 +6358,11 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_armor_piercing
 
 				rear_1_custom_slot = ship_airplane_launcher_1
-				mid_1_custom_slot = ship_medium_battery_2_3x
+				mid_1_custom_slot = ship_medium_battery_4_3x
 				mid_2_custom_slot = dp_ship_secondaries_1_2x
 				mid_3_custom_slot = dp_ship_secondaries_1_2x
-				mid_4_custom_slot = ship_medium_battery_2_3x
-				front_1_custom_slot = ship_medium_battery_2_3x
+				mid_4_custom_slot = ship_medium_battery_4_3x
+				front_1_custom_slot = ship_medium_battery_4_3x
 
 				right_1_custom_slot = ship_anti_air_2
 				right_2_custom_slot = dp_ship_secondaries_1_2x
@@ -6328,7 +6378,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_3
+				type = ship_hull_heavy_cruiser_2
 				version_name = "[Commission] Baltimore"
 			}
 			requested_factories = 1
@@ -6353,11 +6403,11 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Brooklyn"
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_funnel_slot = funnel_2x
 				fixed_ship_armor_slot = medium_ship_armor_1
@@ -6367,27 +6417,27 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 
 				rear_1_custom_slot = ship_airplane_launcher_1
-				mid_1_custom_slot = ship_light_medium_battery_2_3x
-				mid_2_custom_slot = ship_light_medium_battery_2_3x
-				mid_3_custom_slot = ship_light_medium_battery_2_3x
-				mid_4_custom_slot = ship_light_medium_battery_2_3x
-				front_1_custom_slot = ship_light_medium_battery_2_3x
+				mid_1_custom_slot = ship_light_medium_battery_4_3x
+				mid_2_custom_slot = ship_light_medium_battery_4_3x
+				mid_3_custom_slot = ship_light_medium_battery_4_3x
+				mid_4_custom_slot = ship_light_medium_battery_4_3x
+				front_1_custom_slot = ship_light_medium_battery_4_3x
 
-				right_1_custom_slot = ship_anti_air_1
-				right_2_custom_slot = dp_ship_secondaries_1
-				right_3_custom_slot = dp_ship_secondaries_1
+				right_1_custom_slot = empty
+				right_2_custom_slot = ship_anti_air_1
+				right_3_custom_slot = ship_anti_air_1
 				right_4_custom_slot = ship_anti_air_1
 
-				left_1_custom_slot = ship_anti_air_1
-				left_2_custom_slot = dp_ship_secondaries_1
-				left_3_custom_slot = dp_ship_secondaries_1
+				left_1_custom_slot = empty
+				left_2_custom_slot = ship_anti_air_1
+				left_3_custom_slot = ship_anti_air_1
 				left_4_custom_slot = ship_anti_air_1
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_2
+				type = ship_hull_cruiser_1
 				version_name = "[Commission] Brooklyn"
 			}
 			requested_factories = 1
@@ -6412,7 +6462,7 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Atlanta"
-			type = ship_hull_cruiser_3
+			type = ship_hull_cruiser_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_radio_2
@@ -6449,7 +6499,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_cruiser_3
+				type = ship_hull_cruiser_2
 				version_name = "[Commission] Atlanta"
 			}
 			requested_factories = 1
@@ -6474,35 +6524,35 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Wickes"
-			type = ship_hull_light_1
+			type = ship_hull_early_destroyer_2
 			allow_without_tech = yes
 			modules = {
 				fixed_ship_radio_slot = ship_signals
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_engine_slot = light_ship_engine_0
+				fixed_ship_engine_slot = light_ship_engine_1
 				fixed_ship_funnel_slot = funnel_4x
 				fixed_ship_damage_control_slot = water_pump
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = ship_light_battery_1
-				mid_1_custom_slot = empty
-				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_depth_charge_1
+				mid_1_custom_slot = ship_light_battery_1
+				mid_2_custom_slot = ship_light_battery_1
 				mid_3_custom_slot = ship_light_battery_1
-				mid_4_custom_slot = ship_light_battery_1
+				mid_4_custom_slot = ship_anti_air_1
 				front_1_custom_slot = ship_light_battery_1
 
-				right_2_custom_slot = ship_torpedo_1_3x
-				right_3_custom_slot = ship_torpedo_1_3x
+				right_2_custom_slot = ship_torpedo_2_3x
+				right_4_custom_slot = ship_torpedo_2_3x
 
-				left_2_custom_slot = ship_torpedo_1_3x
-				left_3_custom_slot = ship_torpedo_1_3x
+				left_1_custom_slot = ship_torpedo_2_3x
+				left_3_custom_slot = ship_torpedo_2_3x
 			}
 		}
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_light_1
+				type = ship_hull_early_destroyer_2
 				version_name = "[Commission] Wickes"
 			}
 			requested_factories = 1
@@ -6540,12 +6590,12 @@ country_event = {
 				fixed_ship_ammo_1_slot = cannon_high_explosive
 				fixed_ship_ammo_2_slot = torpedo_ammo
 
-				rear_1_custom_slot = dp_light_battery_2
-				mid_1_custom_slot = dp_light_battery_2_2x
+				rear_1_custom_slot = dp_light_battery_4
+				mid_1_custom_slot = dp_light_battery_4_2x
 				mid_2_custom_slot = ship_torpedo_2_4x
 				mid_3_custom_slot = ship_torpedo_2_4x
-				mid_4_custom_slot = dp_light_battery_2
-				front_1_custom_slot = dp_light_battery_2
+				mid_4_custom_slot = dp_light_battery_4
+				front_1_custom_slot = dp_light_battery_4
 				
 				right_1_custom_slot = ship_depth_charge_2
 				right_2_custom_slot = ship_anti_air_1
@@ -6584,18 +6634,22 @@ country_event = {
 		name = NOM_trade.ENG.1.a
 		create_equipment_variant = {
 			name = "[Commission] Porpoise"
-			type = ship_hull_submarine_2
+			type = ship_hull_submarine_1
 			allow_without_tech = yes
 			modules = {
-				fixed_ship_radio_slot = ship_signals
+				fixed_ship_radio_slot = ship_radio_1
 				fixed_ship_engine_slot = sub_ship_engine_2
 				fixed_ship_batteries_slot = sub_batteries_1
-				fixed_ship_periscope_slot = sub_periscope_1
+				fixed_ship_tanks_slot = ship_extra_fuel_tanks
+				fixed_ship_periscope_slot = sub_periscope_2
 				fixed_ship_damage_control_slot = water_pump
+				fixed_ship_ammo_1_slot = torpedo_ammo_2
 
 				rear_1_custom_slot = ship_torpedo_sub_1
-				mid_2_custom_slot = sub_watertight_compartment
+				mid_1_custom_slot = sub_watertight_compartment
+				mid_2_custom_slot = sub_ballast_tank
 				mid_3_custom_slot = sub_ballast_tank
+				mid_4_custom_slot = sub_watertight_compartment
 				front_1_custom_slot = ship_torpedo_sub_2
 				
 				top_2_custom_slot = ship_anti_air_1
@@ -6605,7 +6659,7 @@ country_event = {
 		
 		add_equipment_production = {
 			equipment = {
-				type = ship_hull_submarine_2
+				type = ship_hull_submarine_1
 				version_name = "[Commission] Porpoise"
 			}
 			requested_factories = 1

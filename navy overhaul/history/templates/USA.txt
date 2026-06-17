@@ -722,11 +722,11 @@ if = {
 			fixed_ship_ammo_2_slot = cannon_high_explosive
 
 			rear_1_custom_slot = ship_airplane_launcher_2
-			mid_1_custom_slot = ship_medium_battery_1_3x
+			mid_1_custom_slot = ship_medium_battery_3_3x
 			mid_2_custom_slot = dp_ship_secondaries_1
 			mid_3_custom_slot = dp_ship_secondaries_1
-			mid_4_custom_slot = ship_medium_battery_1_3x
-			front_1_custom_slot = ship_medium_battery_1_3x
+			mid_4_custom_slot = ship_medium_battery_3_3x
+			front_1_custom_slot = ship_medium_battery_3_3x
 
 			right_1_custom_slot = ship_anti_air_2
 			right_2_custom_slot = dp_ship_secondaries_1
@@ -1054,7 +1054,7 @@ if = {
 
 			right_1_custom_slot = ship_anti_air_1
 			right_2_custom_slot = ship_anti_air_1
-			right_3_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_carrier_superstructure_0
 			right_4_custom_slot = dp_ship_secondaries_1
 
 			left_1_custom_slot = ship_anti_air_1
@@ -1087,7 +1087,7 @@ if = {
 
 			right_1_custom_slot = ship_secondaries_2_2x
 			right_2_custom_slot = ship_secondaries_2_2x
-			right_3_custom_slot = ship_secondaries_2_2x
+			right_3_custom_slot = ship_carrier_superstructure_0
 			right_4_custom_slot = ship_secondaries_2_2x
 
 			left_1_custom_slot = dp_ship_secondaries_1
@@ -1123,7 +1123,7 @@ if = {
 
 			right_1_custom_slot = dp_ship_secondaries_1
 			right_2_custom_slot = ship_anti_air_1
-			right_3_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_carrier_superstructure_1
 			right_4_custom_slot = dp_ship_secondaries_1
 
 			left_1_custom_slot = dp_ship_secondaries_1

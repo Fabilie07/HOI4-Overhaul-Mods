@@ -25,21 +25,26 @@ nom_allies_reduced_desire_to_invade = {
 }
 
 nom_major_dockyard_construction = {
-	allowed = {
-		OR = {
-			original_tag = ENG
-			original_tag = FRA
-			original_tag = GER
-			original_tag = ITA
-			original_tag = JAP
-			original_tag = SOV
-			original_tag = USA
-		}
+	enable = {
+		is_major = yes
 	}
 	
 	ai_strategy = {
 		type = building_target
 		id = dockyard
-		value = 40
+		value = 10
+	}
+}
+
+nom_major_dockyard_construction = {
+	enable = {
+		is_major = yes
+		date > 1939.01.01
+	}
+	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 20
 	}
 }
