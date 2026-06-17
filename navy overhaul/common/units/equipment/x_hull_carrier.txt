@@ -12,6 +12,7 @@ equipments = {
 			fixed_ship_sonar_slot = inherit
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
+				required = yes
 				allowed_module_categories = {
 					heavy_ship_engine
 				}

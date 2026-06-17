@@ -934,6 +934,16 @@ default = {
 			}
 		}
 	}
+	ship_hull_carrier_conversion_super_heavy = {
+		pool = {
+		icons_weight = 5001.2
+		models_weight = 0.1
+
+			icons = {
+				GFX_ship_hull_carrier_conversion_super_heavy_medium #Generic
+			}
+		}
+	}
 	
 	ship_hull_carrier_conversion_bc_0 = {
 		pool = {

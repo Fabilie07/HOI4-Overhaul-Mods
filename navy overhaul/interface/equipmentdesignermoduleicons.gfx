@@ -1050,8 +1050,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_SMI_ship_deck_space"
+		name = "GFX_SMI_ship_carrier_deck"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/deck_space_icn.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_hangar"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_storage_1.dds"
 	}
 	###
 
@@ -1075,6 +1079,32 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SMI_ship_plane_elevator_3"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_elevator.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_hangar_none"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_storage_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_hangar_double_deck"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_storage_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_hangar_triple_deck"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_storage_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_hangar_small"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_storage_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_hangar_medium"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_storage_2.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_carrier_hangar_large"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/carrier_storage_3.dds"
 	}
 	
 	spriteType = {

@@ -2160,10 +2160,8 @@ if = {
 		modules = {
 			fixed_ship_role_slot = auxiliary_role_mine_ship
 			fixed_ship_radio_slot = ship_signals
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_engine_slot = light_ship_engine_0
 			fixed_ship_funnel_slot = funnel_2x
-			fixed_ship_citadel_slot = ship_citadel_3
 			fixed_ship_damage_control_slot = water_pump
 			fixed_ship_ammo_1_slot = cannon_high_explosive
 

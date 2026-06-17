@@ -2568,6 +2568,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			carrier_ship_engine_3
+			ship_armored_flight_deck
 			ship_catapult
 		}
 		path = {

@@ -142,6 +142,7 @@ equipment_modules = {
 	ship_armored_flight_deck = {
 		abbreviation = "hno"
 		category = ship_carrier_deck_armor
+		gfx = ship_deck_armor_1
 		
 		add_stats = {
 			build_cost_ic = 200

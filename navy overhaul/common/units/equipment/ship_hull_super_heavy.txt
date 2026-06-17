@@ -220,6 +220,33 @@ equipments = {
 			left_3_custom_slot = left_2_custom_slot
 			left_4_custom_slot = left_2_custom_slot
 		}
+		
+		module_count_limit = {
+			category = ship_airplane_launcher
+			count < 3
+		}
+		
+		module_count_limit = {
+			module = cannon_high_explosive
+			count < 2
+		}
+		module_count_limit = {
+			module = cannon_armor_piercing
+			count < 2
+		}
+		module_count_limit = {
+			module = cannon_semi_armor_piercing
+			count < 2
+		}
+		module_count_limit = {
+			module = cannon_beehive
+			count < 2
+		}
+		module_count_limit = {
+			module = cannon_variable_time
+			count < 2
+		}
+		
 		default_modules = {
 			fixed_ship_armor_slot = ship_armor_shbb
 			fixed_ship_battery_slot = empty

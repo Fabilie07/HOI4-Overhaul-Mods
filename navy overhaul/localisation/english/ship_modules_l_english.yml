@@ -56,6 +56,7 @@
  EQ_MOD_CAT_ship_light_deck_armor_TITLE:0 "Light Deck Armor"
  EQ_MOD_CAT_ship_medium_deck_armor_TITLE:0 "Medium Deck Armor"
  EQ_MOD_CAT_ship_heavy_deck_armor_TITLE:0 "Heavy Deck Armor"
+ EQ_MOD_CAT_ship_carrier_deck_armor_TITLE:0 "Armored Flight Deck"
  EQ_MOD_CAT_ship_medium_citadel_TITLE:0 "Cruiser Armor Scheme"
  EQ_MOD_CAT_ship_heavy_citadel_TITLE:0 "Armor Scheme"
  EQ_MOD_CAT_ship_citadel_TITLE:0 "Armor Scheme"
@@ -529,6 +530,9 @@
  ship_carrier_hangar_medium_desc:0 "More Aircraft are stored, either by increasing the Hangar Size or adding another underneath it."
  ship_carrier_hangar_large:0 "Large Hangar"
  ship_carrier_hangar_large_desc:0 "Two or three Hangars are placed ontop of each other. A large amount of aircraft can be carried, but operations are complex and dangerous."
+ 
+ ship_armored_flight_deck:0 "Armored Flight Deck"
+ ship_armored_flight_deck_desc:0 "Carriers are mostly attacked by enemy aircraft. Armoring their Flight Decks increases their survivability significantly, but it reduces Hangar Space so less Aircraft can be carried."
  
  ship_carrier_superstructure_0:0 "Early Tower"
  ship_carrier_superstructure_0_desc:0 "Early Carriers had very little space for Superstructures. Most only had a small tower to direct aircraft."
