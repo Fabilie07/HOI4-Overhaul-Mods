@@ -1,0 +1,1135 @@
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		torpedoboat_destroyer_hull = 1
+		early_destroyer_hull_1 = 1
+		early_destroyer_hull_2 = 1
+		destroyer_leader_hull_1 = 1
+		early_destroyer_hull_3 = 1
+		early_destroyer_hull_4 = 1
+		early_ship_hull_light = 1
+		
+		early_light_cruiser_hull = 1
+		scout_cruiser_hull_1 = 1
+		scout_cruiser_hull_2 = 1
+		scout_cruiser_hull_3 = 1
+		scout_cruiser_hull_4 = 1
+		early_ship_hull_cruiser = 1
+		
+		armored_cruiser_hull = 1
+		armored_cruiser_hull_2 = 1
+		early_heavy_cruiser_hull = 1
+		early_heavy_cruiser_hull_2 = 1
+		early_heavy_cruiser_hull_3 = 1
+		early_ship_hull_heavy_cruiser = 1
+		
+		predreadnought_ship_hull = 1
+		basic_dreadnought_ship_hull = 1
+		improved_dreadnought_ship_hull = 1
+		basic_super_dreadnought_ship_hull = 1
+		improved_super_dreadnought_ship_hull = 1
+		advanced_super_dreadnought_ship_hull = 1
+		
+		early_battlecruiser_hull = 1
+		basic_battlecruiser_hull = 1
+		improved_battlecruiser_hull = 1
+		advanced_battlecruiser_hull = 1
+		
+		carrier_conversion_bb_0 = 1
+		carrier_conversion_bb_1 = 1
+		carrier_conversion_bb_2 = 1
+		carrier_conversion_bc_0 = 1
+		carrier_conversion_bc_1 = 1
+		carrier_conversion_bc_2 = 1
+		
+		early_ship_hull_carrier_light = 1
+		basic_ship_hull_carrier_light = 1
+		early_ship_hull_carrier = 1
+		
+		early_submarine_hull_1 = 1
+		early_submarine_hull_2 = 1
+		early_submarine_hull_3 = 1
+		early_submarine_hull_4 = 1
+		early_submarine_hull_5 = 1
+		early_ship_hull_submarine = 1
+		
+		auxiliary_hull_1 = 1
+		auxiliary_hull_2 = 1
+		auxiliary_hull_3 = 1
+		
+		basic_cruiser_armor_scheme = 1
+		improved_cruiser_armor_scheme = 1
+		advanced_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
+		advanced_heavy_armor_scheme = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		improved_light_battery = 1
+		advanced_light_battery = 1
+		advanced_dp_light_battery = 1
+		basic_heavy_battery = 1
+		improved_heavy_battery = 1
+		advanced_heavy_battery = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		advanced_ship_torpedo_launcher = 1
+		magnetic_detonator = 1
+		basic_depth_charges = 1
+		improved_depth_charges = 1
+		sonar = 1
+		improved_sonar = 1
+		damage_control_1 = 1
+		basic_naval_mines = 1
+		improved_naval_mines = 1
+		submarine_mine_laying = 1
+		mtg_transport = 1
+		
+		basic_fire_control_system = 1
+	}
+}
+
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "O Class"
+		type = ship_hull_early_submarine_3
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			mid_3_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_1
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "R Class"
+		type = ship_hull_early_submarine_4
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			mid_3_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_early_submarine_4
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			mid_3_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Barracuda"
+		type = ship_hull_cruiser_submarine_1
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			mid_2_custom_slot = sub_watertight_compartment
+			mid_3_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Narwhal"
+		type = ship_hull_cruiser_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_tanks_slot = ship_extra_fuel_tanks
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			mid_2_custom_slot = sub_watertight_compartment
+			mid_3_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_medium_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Dolphin"
+		type = ship_hull_cruiser_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_batteries_slot = sub_batteries_1
+			fixed_ship_tanks_slot = ship_extra_fuel_tanks
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			mid_2_custom_slot = sub_watertight_compartment
+			mid_3_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cachalot"
+		type = ship_hull_cruiser_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_batteries_slot = sub_batteries_1
+			fixed_ship_tanks_slot = ship_extra_fuel_tanks
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			mid_1_custom_slot = sub_watertight_compartment
+			mid_2_custom_slot = sub_ballast_tank
+			mid_3_custom_slot = sub_ballast_tank
+			mid_4_custom_slot = sub_watertight_compartment
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Porpoise"				# represents Porpoise, Shark, and Perches
+		type = ship_hull_submarine_1
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_batteries_slot = sub_batteries_1
+			fixed_ship_tanks_slot = ship_extra_fuel_tanks
+			fixed_ship_periscope_slot = sub_periscope_2
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo_2
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			mid_1_custom_slot = sub_watertight_compartment
+			mid_2_custom_slot = sub_ballast_tank
+			mid_3_custom_slot = sub_ballast_tank
+			mid_4_custom_slot = sub_watertight_compartment
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Argonaut"
+		type = ship_hull_cruiser_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_tanks_slot = ship_extra_fuel_tanks
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_mine_layer_sub
+			mid_2_custom_slot = sub_watertight_compartment
+			mid_3_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_medium_battery_sub
+		}
+		obsolete = yes
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Sampson"
+		type = ship_hull_early_destroyer_2
+		name_group = USA_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_0
+			fixed_ship_funnel_slot = funnel_4x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_light_battery_1
+			mid_3_custom_slot = ship_light_battery_1
+			mid_4_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_light_battery_1
+
+			right_2_custom_slot = ship_torpedo_2_3x
+			right_4_custom_slot = ship_torpedo_2_3x
+
+			left_1_custom_slot = ship_torpedo_2_3x
+			left_3_custom_slot = ship_torpedo_2_3x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Wickes"
+		type = ship_hull_early_destroyer_2
+		name_group = USA_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_4x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_light_battery_1
+			mid_3_custom_slot = ship_light_battery_1
+			mid_4_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_light_battery_1
+
+			right_2_custom_slot = ship_torpedo_2_3x
+			right_4_custom_slot = ship_torpedo_2_3x
+
+			left_1_custom_slot = ship_torpedo_2_3x
+			left_3_custom_slot = ship_torpedo_2_3x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Clemson"
+		type = ship_hull_early_destroyer_2
+		name_group = USA_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_4x
+			fixed_ship_tanks_slot = ship_extra_fuel_tanks
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_light_battery_1
+			mid_3_custom_slot = ship_light_battery_1
+			mid_4_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_light_battery_1
+
+			right_2_custom_slot = ship_torpedo_2_3x
+			right_4_custom_slot = ship_torpedo_2_3x
+
+			left_1_custom_slot = ship_torpedo_2_3x
+			left_3_custom_slot = ship_torpedo_2_3x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Farragut"
+		type = ship_hull_early_destroyer_4
+		name_group = USA_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = dc_lockers
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo_2
+
+			rear_1_custom_slot = dp_light_battery_4_2x
+			mid_1_custom_slot = dp_light_battery_4
+			mid_2_custom_slot = ship_torpedo_2_4x
+			mid_3_custom_slot = ship_torpedo_2_4x
+			mid_4_custom_slot = dp_light_battery_4
+			front_1_custom_slot = dp_light_battery_4
+
+			right_3_custom_slot = ship_anti_air_1
+
+			left_3_custom_slot = ship_anti_air_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Porter"
+		type = ship_hull_early_destroyer_4
+		name_group = USA_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = dc_lockers
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo_2
+
+			rear_1_custom_slot = ship_light_battery_4_2x
+			mid_1_custom_slot = ship_light_battery_4_2x
+			mid_2_custom_slot = ship_torpedo_2_4x
+			mid_3_custom_slot = ship_torpedo_2_4x
+			mid_4_custom_slot = ship_light_battery_4_2x
+			front_1_custom_slot = ship_light_battery_4_2x
+
+			right_1_custom_slot = ship_depth_charge_1
+			right_3_custom_slot = ship_anti_air_1
+
+			left_1_custom_slot = ship_depth_charge_1
+			left_3_custom_slot = ship_anti_air_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Mahan"
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = dc_lockers
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo_2
+
+			rear_1_custom_slot = dp_light_battery_4
+			mid_1_custom_slot = dp_light_battery_4
+			mid_2_custom_slot = dp_light_battery_4
+			mid_3_custom_slot = ship_torpedo_2_4x
+			mid_4_custom_slot = dp_light_battery_4
+			front_1_custom_slot = dp_light_battery_4
+
+			right_1_custom_slot = ship_depth_charge_1
+			right_2_custom_slot = ship_torpedo_2_4x
+			right_3_custom_slot = ship_anti_air_1
+
+			left_1_custom_slot = ship_depth_charge_1
+			left_2_custom_slot = ship_torpedo_2_4x
+			left_3_custom_slot = ship_anti_air_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Omaha"
+		type = ship_hull_early_cruiser_4
+		name_group = USA_CL_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_funnel_slot = funnel_4x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_light_medium_battery_3_2x
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = empty
+			mid_4_custom_slot = empty
+			front_1_custom_slot = ship_light_medium_battery_3_2x
+
+			right_1_custom_slot = ship_casemate_2
+			right_2_custom_slot = ship_casemate_2
+			right_3_custom_slot = ship_casemate_2
+			right_4_custom_slot = ship_casemate_2
+
+			left_1_custom_slot = ship_casemate_2
+			left_2_custom_slot = ship_casemate_2
+			left_3_custom_slot = ship_casemate_2
+			left_4_custom_slot = ship_casemate_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Brooklyn"
+		type = ship_hull_cruiser_1
+		name_group = USA_CL_HISTORICAL
+		parent_version = 1
+		
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_deck_slot = medium_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = dc_lockers
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_airplane_launcher_1
+			mid_1_custom_slot = ship_light_medium_battery_4_3x
+			mid_2_custom_slot = ship_light_medium_battery_4_3x
+			mid_3_custom_slot = ship_light_medium_battery_4_3x
+			mid_4_custom_slot = ship_light_medium_battery_4_3x
+			front_1_custom_slot = ship_light_medium_battery_4_3x
+
+			right_1_custom_slot = empty
+			right_2_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_anti_air_1
+			right_4_custom_slot = ship_anti_air_1
+
+			left_1_custom_slot = empty
+			left_2_custom_slot = ship_anti_air_1
+			left_3_custom_slot = ship_anti_air_1
+			left_4_custom_slot = ship_anti_air_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Oglala"				#cruiser minelayers
+		type = ship_hull_auxiliary_2
+		name_group = USA_MINELAYERS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_role_slot = auxiliary_role_mine_ship
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = cruiser_ship_engine_0
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_mine_layer_1
+			front_1_custom_slot = dp_ship_secondaries_1
+
+			right_1_custom_slot = ship_mine_layer_1
+
+			left_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Pensacola"
+		type = ship_hull_early_heavy_cruiser_2
+		name_group = USA_CA_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_deck_slot = medium_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = water_pumps
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+			rear_1_custom_slot = ship_medium_battery_3_2x
+			mid_1_custom_slot = ship_medium_battery_3_3x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_airplane_launcher_1
+			mid_4_custom_slot = ship_medium_battery_3_3x
+			front_1_custom_slot = ship_medium_battery_3_2x
+
+			right_1_custom_slot = dp_ship_secondaries_1
+			right_2_custom_slot = empty
+			right_3_custom_slot = dp_ship_secondaries_1
+			right_4_custom_slot = empty
+
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = empty
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Northampton"
+		type = ship_hull_early_heavy_cruiser_2
+		name_group = USA_CA_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_deck_slot = medium_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = water_pumps
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+			rear_1_custom_slot = empty
+			mid_1_custom_slot = ship_medium_battery_3_3x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_airplane_launcher_1
+			mid_4_custom_slot = ship_medium_battery_3_3x
+			front_1_custom_slot = ship_medium_battery_3_3x
+
+			right_1_custom_slot = dp_ship_secondaries_1
+			right_2_custom_slot = empty
+			right_3_custom_slot = dp_ship_secondaries_1
+			right_4_custom_slot = empty
+
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = empty
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Portland"
+		type = ship_hull_early_heavy_cruiser_3
+		name_group = USA_CA_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_2
+			fixed_ship_deck_slot = medium_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = water_pumps
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+			rear_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_medium_battery_3_3x
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_medium_battery_3_3x
+			front_1_custom_slot = ship_medium_battery_3_3x
+
+			right_1_custom_slot = dp_ship_secondaries_1
+			right_2_custom_slot = dp_ship_secondaries_1
+			right_3_custom_slot = dp_ship_secondaries_1
+			right_4_custom_slot = dp_ship_secondaries_1
+
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = dp_ship_secondaries_1
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "New Orleans"
+		type = ship_hull_early_heavy_cruiser_3
+		name_group = USA_CA_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_2
+			fixed_ship_deck_slot = medium_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = dc_lockers
+			fixed_ship_torpedo_protection_slot = torpedo_protection_3
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+			rear_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_medium_battery_3_3x
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_medium_battery_3_3x
+			front_1_custom_slot = ship_medium_battery_3_3x
+
+			right_1_custom_slot = dp_ship_secondaries_1
+			right_2_custom_slot = dp_ship_secondaries_1
+			right_3_custom_slot = dp_ship_secondaries_1
+			right_4_custom_slot = dp_ship_secondaries_1
+
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = dp_ship_secondaries_1
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Wichita"
+		type = ship_hull_heavy_cruiser_1
+		name_group = USA_CA_HISTORICAL
+		parent_version = 1
+		
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_2
+			fixed_ship_deck_slot = medium_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = dc_lockers
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_airplane_launcher_2
+			mid_1_custom_slot = ship_medium_battery_1_3x
+			mid_2_custom_slot = dp_ship_secondaries_1
+			mid_3_custom_slot = dp_ship_secondaries_1
+			mid_4_custom_slot = ship_medium_battery_1_3x
+			front_1_custom_slot = ship_medium_battery_1_3x
+
+			right_1_custom_slot = ship_anti_air_2
+			right_2_custom_slot = dp_ship_secondaries_1
+			right_3_custom_slot = dp_ship_secondaries_1
+			right_4_custom_slot = dp_ship_secondaries_1
+
+			left_1_custom_slot = ship_anti_air_2
+			left_2_custom_slot = dp_ship_secondaries_1
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Wyoming"
+		type = ship_hull_dreadnought_2
+		name_group = USA_BB_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_deck_slot = heavy_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_4
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_1_2x
+			mid_1_custom_slot = ship_heavy_battery_1_2x
+			mid_2_custom_slot = ship_heavy_battery_1_2x
+			mid_3_custom_slot = ship_heavy_battery_1_2x
+			mid_4_custom_slot = ship_heavy_battery_1_2x
+			front_1_custom_slot = ship_heavy_battery_1_2x
+
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = ship_casemate_1
+			right_3_custom_slot = ship_casemate_1
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = ship_casemate_1
+			left_3_custom_slot = ship_casemate_1
+			left_4_custom_slot = ship_casemate_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "New York"
+		type = ship_hull_super_dreadnought_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_deck_slot = heavy_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_4
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_2_2x
+			mid_1_custom_slot = ship_heavy_battery_2_2x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_heavy_battery_2_2x
+			mid_4_custom_slot = ship_heavy_battery_2_2x
+			front_1_custom_slot = ship_heavy_battery_2_2x
+
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = ship_casemate_1
+			right_3_custom_slot = ship_casemate_1
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = ship_casemate_1
+			left_3_custom_slot = ship_casemate_1
+			left_4_custom_slot = ship_casemate_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Nevada"
+		type = ship_hull_super_dreadnought_1
+		name_group = USA_BB_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_deck_slot = heavy_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_6
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_2_3x
+			mid_1_custom_slot = ship_heavy_battery_2_2x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = dp_ship_secondaries_1
+			mid_4_custom_slot = ship_heavy_battery_2_2x
+			front_1_custom_slot = ship_heavy_battery_2_3x
+
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = ship_casemate_1
+			right_3_custom_slot = ship_casemate_1
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = ship_casemate_1
+			left_3_custom_slot = ship_casemate_1
+			left_4_custom_slot = ship_casemate_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Pennsylvania"
+		type = ship_hull_super_dreadnought_2
+		name_group = USA_BB_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_deck_slot = heavy_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_6
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_2_3x
+			mid_1_custom_slot = ship_heavy_battery_2_3x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_heavy_battery_2_3x
+			front_1_custom_slot = ship_heavy_battery_2_3x
+
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = ship_casemate_1
+			right_3_custom_slot = ship_casemate_1
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = ship_casemate_1
+			left_3_custom_slot = ship_casemate_1
+			left_4_custom_slot = ship_casemate_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "New Mexico"
+		type = ship_hull_super_dreadnought_2
+		name_group = USA_BB_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_deck_slot = heavy_ship_deck_2
+			fixed_ship_citadel_slot = ship_citadel_6
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_2_3x
+			mid_1_custom_slot = ship_heavy_battery_2_3x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = dp_ship_secondaries_1
+			mid_4_custom_slot = ship_heavy_battery_2_3x
+			front_1_custom_slot = ship_heavy_battery_2_3x
+
+			right_1_custom_slot = ship_secondaries_1_2x
+			right_2_custom_slot = ship_casemate_1
+			right_3_custom_slot = ship_casemate_1
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_secondaries_1_2x
+			left_2_custom_slot = ship_casemate_1
+			left_3_custom_slot = ship_casemate_1
+			left_4_custom_slot = ship_casemate_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Tennessee"
+		type = ship_hull_super_dreadnought_2
+		name_group = USA_BB_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_deck_slot = heavy_ship_deck_2
+			fixed_ship_citadel_slot = ship_citadel_6
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_2_3x
+			mid_1_custom_slot = ship_heavy_battery_2_3x
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_heavy_battery_2_3x
+			front_1_custom_slot = ship_heavy_battery_2_3x
+
+			right_1_custom_slot = dp_ship_secondaries_1
+			right_2_custom_slot = dp_ship_secondaries_1
+			right_3_custom_slot = dp_ship_secondaries_1
+			right_4_custom_slot = dp_ship_secondaries_1
+
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = dp_ship_secondaries_1
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Colorado"				
+		type = ship_hull_super_dreadnought_2
+		name_group = USA_BB_HISTORICAL
+		parent_version = 1
+		
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = ship_armor_bb_3
+			fixed_ship_deck_slot = heavy_ship_deck_2
+			fixed_ship_citadel_slot = ship_citadel_6
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_3_2x
+			mid_1_custom_slot = ship_heavy_battery_3_2x
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_heavy_battery_3_2x
+			front_1_custom_slot = ship_heavy_battery_3_2x
+
+			right_1_custom_slot = ship_secondaries_1_1x
+			right_2_custom_slot = dp_ship_secondaries_1
+			right_3_custom_slot = dp_ship_secondaries_1
+			right_4_custom_slot = ship_secondaries_1_1x
+
+			left_1_custom_slot = ship_secondaries_1_1x
+			left_2_custom_slot = dp_ship_secondaries_1
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = ship_secondaries_1_1x
+		}
+	}
+	# Carriers #
+	create_equipment_variant = {
+		name = "Langley"
+		type = ship_hull_carrier_conversion_bb_0
+		name_group = USA_CV_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_hangar_slot = ship_carrier_hangar_small
+			fixed_ship_damage_control_slot = water_pumps
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_arresting_cable
+			deck_2_custom_slot = ship_plane_elevator_1
+			front_1_custom_slot = ship_anti_air_1
+
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = empty
+			right_3_custom_slot = empty
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = empty
+			left_3_custom_slot = empty
+			left_4_custom_slot = ship_casemate_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ranger"
+		type = ship_hull_carrier_light_1
+		name_group = USA_CV_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_funnel_slot = funnel_4x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_hangar_slot = ship_carrier_hangar_large
+			fixed_ship_damage_control_slot = water_pumps
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = plane_ammo
+
+			rear_1_custom_slot = ship_arresting_cable
+			deck_2_custom_slot = ship_plane_elevator_1
+			deck_3_custom_slot = ship_plane_elevator_2
+			deck_4_custom_slot = ship_plane_elevator_3
+			front_1_custom_slot = ship_anti_air_1
+
+			right_1_custom_slot = ship_anti_air_1
+			right_2_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_anti_air_1
+			right_4_custom_slot = dp_ship_secondaries_1
+
+			left_1_custom_slot = ship_anti_air_1
+			left_2_custom_slot = ship_anti_air_1
+			left_3_custom_slot = ship_anti_air_1
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Lexington"
+		type = ship_hull_carrier_conversion_bc_2
+		name_group = USA_CV_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = ship_armor_bc_1
+			fixed_ship_hangar_slot = ship_carrier_hangar_medium
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_arresting_cable
+			deck_1_custom_slot = ship_plane_elevator_1
+			deck_3_custom_slot = ship_plane_elevator_2
+			front_1_custom_slot = dp_ship_secondaries_1
+
+			right_1_custom_slot = ship_secondaries_2_2x
+			right_2_custom_slot = ship_secondaries_2_2x
+			right_3_custom_slot = ship_secondaries_2_2x
+			right_4_custom_slot = ship_secondaries_2_2x
+
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = dp_ship_secondaries_1
+			left_3_custom_slot = dp_ship_secondaries_1
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Yorktown"
+		type = ship_hull_carrier_0
+		name_group = USA_CV_HISTORICAL
+		parent_version = 1
+		
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = medium_ship_armor_2
+			fixed_ship_hangar_slot = ship_carrier_hangar_medium
+			fixed_ship_damage_control_slot = dc_lockers
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = plane_ammo
+
+			rear_1_custom_slot = ship_arresting_cable
+			deck_1_custom_slot = ship_plane_elevator_1
+			deck_3_custom_slot = ship_plane_elevator_2
+			deck_4_custom_slot = ship_plane_elevator_3
+			front_1_custom_slot = ship_anti_air_1
+
+			right_1_custom_slot = dp_ship_secondaries_1
+			right_2_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_anti_air_1
+			right_4_custom_slot = dp_ship_secondaries_1
+
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = ship_anti_air_1
+			left_3_custom_slot = ship_anti_air_1
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+	}
+}

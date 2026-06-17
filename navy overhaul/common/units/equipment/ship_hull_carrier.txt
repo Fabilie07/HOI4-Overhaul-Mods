@@ -63,36 +63,7 @@ equipments = {
 				required = no
 				allowed_module_categories = { ship_tanks }
 			}
-
-			fixed_ship_armor_slot = {
-				required = no
-				allowed_module_categories = { ship_cruiser_armor }
-			}
-			fixed_ship_deck_slot = {
-				required = no
-				allowed_module_categories = { ship_carrier_deck_armor }
-			}
-			fixed_ship_hangar_slot = {
-				required = yes
-				allowed_module_categories = { ship_carrier_hangar_0 }
-			}
-			fixed_ship_damage_control_slot = {
-				required = no
-				allowed_module_categories = { ship_damage_control }
-			}
-			fixed_ship_torpedo_protection_slot = {
-				required = no
-				allowed_module_categories = { ship_torpedo_protection }
-			}
-			fixed_ship_ammo_1_slot = {
-				required = no
-				allowed_module_categories = { ammo_cannon }
-			}
-			fixed_ship_ammo_2_slot = {
-				required = no
-				allowed_module_categories = { ammo_plane }
-			}
-
+			
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -134,6 +105,35 @@ equipments = {
 					ship_anti_air
 					ship_carrier_front
 				}
+			}
+
+			fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_cruiser_armor }
+			}
+			fixed_ship_deck_slot = {
+				required = no
+				allowed_module_categories = { ship_carrier_deck_armor }
+			}
+			fixed_ship_hangar_slot = {
+				required = yes
+				allowed_module_categories = { ship_carrier_hangar_0 }
+			}
+			fixed_ship_damage_control_slot = {
+				required = no
+				allowed_module_categories = { ship_damage_control }
+			}
+			fixed_ship_torpedo_protection_slot = {
+				required = no
+				allowed_module_categories = { ship_torpedo_protection }
+			}
+			fixed_ship_ammo_1_slot = {
+				required = no
+				allowed_module_categories = { ammo_cannon }
+			}
+			fixed_ship_ammo_2_slot = {
+				required = no
+				allowed_module_categories = { ammo_plane }
 			}
 
 			right_1_custom_slot = {
@@ -492,18 +492,7 @@ equipments = {
 			fixed_ship_engine_slot = inherit
 			fixed_ship_funnel_slot = inherit
 			fixed_ship_tanks_slot = inherit
-
-			fixed_ship_armor_slot = inherit
-			fixed_ship_deck_slot = {
-				required = no
-				allowed_module_categories = { ship_ice_carrier_armor }
-			}
-			fixed_ship_hangar_slot = inherit
-			fixed_ship_damage_control_slot = inherit
-			fixed_ship_torpedo_protection_slot = inherit
-			fixed_ship_ammo_1_slot = inherit
-			fixed_ship_ammo_2_slot = inherit
-
+			
 			rear_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -526,6 +515,17 @@ equipments = {
 					ship_carrier_front
 				}
 			}
+
+			fixed_ship_armor_slot = inherit
+			fixed_ship_deck_slot = {
+				required = no
+				allowed_module_categories = { ship_ice_carrier_armor }
+			}
+			fixed_ship_hangar_slot = inherit
+			fixed_ship_damage_control_slot = inherit
+			fixed_ship_torpedo_protection_slot = inherit
+			fixed_ship_ammo_1_slot = inherit
+			fixed_ship_ammo_2_slot = inherit
 
 			right_1_custom_slot = inherit
 			right_2_custom_slot = inherit
