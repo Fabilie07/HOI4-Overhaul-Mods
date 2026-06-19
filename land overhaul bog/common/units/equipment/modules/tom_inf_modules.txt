@@ -323,12 +323,8 @@ equipment_modules = {
 	
 	inf_sights_sniper = {
 		category = inf_sights
-		add_equipment_type = anti_tank
 		allow_equipment_type = anti_tank
-		
-		forbid_equipment_type_exact_match_for_category = {
-			inf_sights = armor
-		}
+		forbid_equipment_type_exact_match = armor
 		
 		multiply_stats = {
 			soft_attack = -0.5
@@ -343,7 +339,7 @@ equipment_modules = {
 			module_category = inf_sights
 			convert_cost_ic = 0.05
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	inf_sights_night = {
 		category = inf_sights

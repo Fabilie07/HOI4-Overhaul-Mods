@@ -11,6 +11,9 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_light_armored_signal_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_light_armor_signal_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_medium_armored_signal_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_medium_armor_signal_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_heavy_armored_signal_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_signal_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_sniper_support_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/unit_sniper_support_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_snipers_regimental_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_sniper_support_icon.dds" noOfFrames = 2 }
 }
 
 

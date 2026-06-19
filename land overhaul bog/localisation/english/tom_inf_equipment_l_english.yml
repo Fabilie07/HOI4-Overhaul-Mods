@@ -54,3 +54,14 @@
  
  tent_equipment:0 "Tent Equipment"
  tent_equipment_0:0 "Military Tent"
+ 
+ 
+ mechanized_utility_equipment:0 "Ammo Carrier"
+ mechanized_utility_equipment_1:0 "Basic Ammunition Carrier"
+ mechanized_utility_equipment_2:0 "Improved Ammunition Carrier"
+ mechanized_utility_equipment_3:0 "Advanced Ammunition Carrier"
+ 
+ mechanized_engineer_equipment:0 "Mechanized Engineer"
+ mechanized_engineer_equipment_1:0 "Basic Mechanized Engineering Vehicle"
+ mechanized_engineer_equipment_2:0 "Improved Mechanized Engineering Vehicle"
+ mechanized_engineer_equipment_3:0 "Advanced Mechanized Engineering Vehicle"

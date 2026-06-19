@@ -25,6 +25,7 @@ sub_units = {
 			soft_attack = 0.1
 		}
 	
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -85,6 +86,7 @@ sub_units = {
 			soft_attack = 0.1
 		}
 
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -156,6 +158,7 @@ sub_units = {
 			armor = 0.1
 		}
 
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions
@@ -222,6 +225,7 @@ sub_units = {
 			armor = 0.15
 		}
 
+		regimental = no
 		combat_width = 0
 	
 		#Size Definitions

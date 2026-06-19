@@ -669,7 +669,7 @@ technologies = {
 		cavalry = {
 			defense = 0.1
 			need = {
-				sniper_chassis = 20
+				sniper_chassis = 4
 			}
 			
 			forest = {

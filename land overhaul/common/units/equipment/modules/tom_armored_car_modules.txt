@@ -194,7 +194,6 @@ equipment_modules = {
 		gui_category = tank_small_main_armament
 		gfx = tank_heavy_machine_gun_2x
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = anti_air
 		allow_equipment_type = anti_air
 
 		add_stats = {
@@ -214,7 +213,6 @@ equipment_modules = {
 		gui_category = tank_medium_main_armament
 		gfx = tank_heavy_machine_gun_4x
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = anti_air
 		allow_equipment_type = anti_air
 
 		add_stats = {
@@ -330,7 +328,6 @@ equipment_modules = {
 		gui_category = tank_medium_main_armament
 		gfx = tank_small_high_velocity_cannon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = anti_tank
 		allow_equipment_type = anti_tank
 
 		add_stats = {
@@ -393,7 +390,6 @@ equipment_modules = {
 		gui_category = tank_medium_main_armament
 		gfx = tank_medium_cannon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = anti_tank
 		allow_equipment_type = anti_tank
 
 		add_stats = {

@@ -13,8 +13,9 @@ sub_units = {
 		active = no
 		
 		type = {
-			motorized
+			armor
 			support
+			anti_air
 		}
 		
 		group = support
@@ -69,8 +70,9 @@ sub_units = {
 		active = no
 		
 		type = {
-			mechanized
+			armor
 			support
+			anti_air
 		}
 		
 		group = support

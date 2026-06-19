@@ -148,11 +148,11 @@ sub_units = {
 		defense = -0.5
 
 		essential = {
-			mechanized_engineer_equipment
+			mechanized_equipment
 		}
 
 		need = {
-			mechanized_engineer_equipment = 12
+			mechanized_equipment = 12
 		}
 
 		can_be_parachuted = yes

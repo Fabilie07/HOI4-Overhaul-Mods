@@ -30,3 +30,8 @@
  medium_armored_signal_desc:0 "Command Tanks carry more powerful Radio units, making them capable of communicating with other forces from the frontline."
  heavy_armored_signal:0 "Heavy Command Vehicle Platoon"
  heavy_armored_signal_desc:0 "Command Tanks carry more powerful Radio units, making them capable of communicating with other forces from the frontline."
+ 
+ sniper_support:0 "Sniper Platoon"
+ sniper_support_desc:0 "Sharpshooters on the Divisional Level that operate as a single unit to strike fast and deadly where needed."
+ snipers_regimental:0 "Support Snipers"
+ snipers_regimental_desc:0 "A Squad of Snipers that operate independently, taking out targets of opportunity."

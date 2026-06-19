@@ -1077,38 +1077,16 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-
-			battalion_mult = {
-				category = category_all_armor
-				equipment_capture_factor = 0.01
-				add = yes
-				display_as_percentage = yes
-			}
-
 		}
 		
 		vehicle_maintenance_company = {
 			reliability_factor = 0.05
 			recovery = 0.02
-			
-			battalion_mult = {
-				category = category_mechanical
-				max_organisation = 5
-				add = yes
-			}
 		}
 
 		armored_maintenance = {
 			reliability_factor = 0.02
 			recovery = 0.03
-
-			battalion_mult = {
-				category = category_all_armor
-				equipment_capture_factor = 0.02
-				add = yes
-				display_as_percentage = yes
-			}
-
 		}
 
 		path = {
@@ -1569,8 +1547,8 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-			mech_ammo_compartment
 			inf_canteen_3
+			mech_ammo_compartment
 		}
 
 		logistics_company = {

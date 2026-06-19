@@ -2,27 +2,11 @@ technologies = {
 	armored_car1 = {
 
 		enable_subunits = {
-			armored_car_equipment
+			armored_car
 		}
 
 		enable_equipments = {
 			gw_armored_car_equipment
-		}
-
-		enable_equipment_modules = {
-			ac_one_man_turret
-			ac_two_man_turret
-			ac_open_top_turret
-			ac_four_wheeled_suspension
-			ac_six_wheeled_suspension
-			ac_riveted_armor
-			ac_welded_armor
-			
-			ac_machine_gun
-			ac_machine_gun_2x
-			ac_heavy_machine_gun
-			ac_auto_cannon
-			ac_small_cannon
 		}
 		
 		allow_branch = {
@@ -76,20 +60,6 @@ technologies = {
 		enable_equipments = {
 			armored_car_equipment_1
 		}
-
-		enable_equipment_modules = {
-			ac_eight_wheeled_suspension
-			
-			ac_gun_shield_turret
-			ac_auto_cannon_2
-			ac_small_cannon_2
-			ac_heavy_machine_gun_2x
-			ac_heavy_machine_gun_4x
-		}
-		
-		enable_subunits = {
-			armored_car_aa
-		}
 		
 		path = {
 			leads_to_tech = armored_car3
@@ -138,16 +108,6 @@ technologies = {
 
 		enable_equipments = {
 			armored_car_equipment_2
-		}
-
-		enable_equipment_modules = {
-			ac_high_velocity_cannon
-			ac_close_support_gun
-			ac_medium_cannon
-		}
-		
-		enable_subunits = {
-			armored_car_destroyer
 		}
 
 		research_cost = 2

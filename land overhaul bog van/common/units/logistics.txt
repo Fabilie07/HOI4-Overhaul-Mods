@@ -151,11 +151,11 @@ sub_units = {
 		soft_attack = -0.5
 		
 		essential = {
-			mechanized_utility_equipment
+			mechanized_equipment
 		}
 
 		need = {
-			mechanized_utility_equipment = 12
+			mechanized_equipment = 12
 		}
 		same_support_type = logistics_company
 	}

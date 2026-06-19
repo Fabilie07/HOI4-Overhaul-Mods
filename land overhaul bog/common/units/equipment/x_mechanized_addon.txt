@@ -1,19 +1,17 @@
 duplicate_archetypes = {
 
-	mechanized_utility_chassis = {
+	mechanized_utility_equipment = {
 		archetype = mechanized_equipment
 		type = { armor artillery }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
 			hardness = { set = 0.5 }
 		}
 	}
 	
-	mechanized_engineer_chassis = {
+	mechanized_engineer_equipment = {
 		archetype = mechanized_equipment
 		type = { armor flame }
 		for_each = {
-			variant_name = { find_and_replace = { "chassis" "equipment" } }
 			hardness = { set = 0.5 }
 		}
 	}

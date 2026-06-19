@@ -132,7 +132,7 @@
  tom_inf_platoon_1220_desc:0 "-- Horse Reconnaisance finding and engaging Enemies --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_1221$, $tom_inf_platoon_1222$§!\nUnlocked by: §Y$tech_recon$§!\n\n[tom_inf_platoon_stats_loc]Horse: §Y20§!\nInfantry Equipment: §Y8§!"
  tom_inf_platoon_1221_desc:0 "-- Truck Reconnaisance finding and engaging Enemies --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_1220$, $tom_inf_platoon_1222$§!\nUnlocked by: §Y$tech_recon$ & Early Trucks§!\n\n[tom_inf_platoon_stats_loc]Motorized Equipment: §Y4§!\nInfantry Equipment: §Y8§!"
  tom_inf_platoon_1222_desc:0 "-- Armored Car Reconnaisance finding and engaging Enemies --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_1220$, $tom_inf_platoon_1221$§!\nUnlocked by: §Y$tech_recon$ & $armored_car1$§!\n\n[tom_inf_platoon_stats_loc]Armored Car Equipment: §Y4§!\nInfantry Equipment: §Y8§!"
- tom_inf_platoon_1223_desc:0 "-- Sharpshooters engaging enemies at long range --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Sniper Equipment: §Y20§!"
+ tom_inf_platoon_1223_desc:0 "-- Sharpshooters engaging enemies at long range --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Sniper Equipment: §Y4§!"
  tom_inf_platoon_1230_desc:0 "-- Field Medics offering first-aid treatment --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$tech_field_hospital$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y8§!"
  tom_inf_platoon_1240_desc:0 "-- Signal Section coordinating internally and externally --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$tech_signal_company$§!\n\n[tom_inf_platoon_stats_loc]Radio Equipment: §Y6§!\nSupport Equipment: §Y6§!"
  

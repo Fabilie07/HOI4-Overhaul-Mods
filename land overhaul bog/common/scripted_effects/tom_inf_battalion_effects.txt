@@ -1469,13 +1469,13 @@ tom_inf_battalion_platoon_add_effect = {
 				index = equipment_index
 				if = {
 					limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:sniper_chassis } }
-					add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = 20 }
+					add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = 4 }
 				}
 			}
 		}
 		else = {
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:sniper_chassis }
-			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 20 }
+			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 4 }
 		}
 		
 		set_temp_variable = { temp_terrain_id = 1 }
@@ -2706,7 +2706,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			index = equipment_index
 			if = {
 				limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:sniper_chassis } }
-				add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = -20 }
+				add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = -4 }
 			}
 		}
 		tom_inf_bat_remove_empty_equipment_effect = yes
