@@ -1,0 +1,47 @@
+## CONVERTING FROM SAVED DESIGN TO AI/STARTING DESIGN ##
+Saved Designs can be found in Documents/Paradox Interactive/Hearts of Iron IV/session_persistence/equipment_designs/equipment_designs.txt
+In order to convert them to a usable design for AI or Starting Navies, you will have to copy the type="<design_equipment>" and modules = { "<module_slots>" } Code Blocks and remove all colons, e.g. "front_1_custom_slot"="ship_torpedo_sub_2" -> front_1_custom_slot = ship_torpedo_sub_2
+
+
+## STARTING NAVY ##
+To add a Ship to a nation's Starting Navy, two steps are needed:
+1. The Ship's Design must be added to the Nation at Game Start
+2. The Ship must be spawned in together with the rest of the Navy
+
+To add a Ship's Designs, we are using the History Files. Refer to any .txt file in history/templates for examples
+- Open history/countries/<YOUR_COUNTRY_TAG>.txt, copying it from Vanilla if not already present
+- Add the Technology for the ship's respective Hull in the	set_technology = {
+																limit = {
+																	has_dlc = "Man the Guns"
+																}
+																<your_technology> = 1
+															}
+															Code Block
+- Create the Design using a create_equipment_variant Code Block by specifying its Hull and Modules
+- Add both the Technology and Ship Design to a corresponding history/templates/<YOUR_COUNTRY_TAG>.txt file so they can be easily copied on updates or for compatches
+
+In order to spawn the ship in on game start, add it to their Naval OOB file. Refer to any history/units/<TAG>_naval_mtg.txt file for examples
+- Open history/units/<YOUR_COUNTRY_TAG>_1936_naval_mtg.txt file. (Some Nations use different naming conventions, use what the Vanilla history file uses)
+- Add the ship to a Task Force (or create your own). Important are definition = <ship_unit> and equipment = { <ship_hull> = { amount = 1 owner = <YOUR_COUNTRY_TAG> version_name = "<your_design_name>" } }
+- For ships in Production, add an add_equipment_production Block in instant_effect
+
+
+
+## AI Design ##
+To make the AI able to design a ship, its Design must be in any common/ai_equipment/<name>.txt file.
+- Open any .txt file in common/ai_equipment
+- Each type of ship has their own code block with several successive designs. The priority governs when the AI will spend XP to design a new ship, and the role governs how many of them are built/for what purpose they are used.
+- Add your design and make sure it has enough Priority to be designed by the AI when needed
+- AI designs can use more general specifications for their Modules, such as <slot_name> = <module_category>, which will always use the most modern Module of the specified Category, or 	<slot_name> = {
+																																																module = <module_name>
+																																																module = <module_name>
+																																																module = empty #Optional
+																																															}
+																																															which prioritizes them in the order they are defined
+																																														or	<slot_name> = {
+																																																any_of = {
+																																																	<module_name>
+																																																	<module_name>
+																																																}
+																																															}
+																																															which chooses one of the above
