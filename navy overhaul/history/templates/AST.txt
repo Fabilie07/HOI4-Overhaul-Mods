@@ -1,0 +1,277 @@
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	### Variants ###
+	create_equipment_variant = {
+		name = "V-Class Leader"
+		type = ship_hull_destroyer_leader_1
+		name_group = AST_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = light_ship_armor_1
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_light_battery_2
+			mid_2_custom_slot = ship_torpedo_2_2x
+			mid_3_custom_slot = ship_torpedo_2_2x
+			mid_4_custom_slot = ship_light_battery_2
+			front_1_custom_slot = ship_light_battery_2
+
+			right_1_custom_slot = ship_anti_air_1
+			left_1_custom_slot = ship_anti_air_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "V-Class"
+		type = ship_hull_early_destroyer_2
+		name_group = AST_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = light_ship_armor_1
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_light_battery_2
+			mid_2_custom_slot = ship_torpedo_2_2x
+			mid_3_custom_slot = ship_torpedo_2_2x
+			mid_4_custom_slot = ship_light_battery_2
+			front_1_custom_slot = ship_light_battery_2
+
+			right_1_custom_slot = ship_anti_air_1
+			left_1_custom_slot = ship_anti_air_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "W-Class"
+		type = ship_hull_early_destroyer_2
+		name_group = AST_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = light_ship_armor_1
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_light_battery_2
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_torpedo_2_3x
+			mid_4_custom_slot = ship_light_battery_2
+			front_1_custom_slot = ship_light_battery_2
+
+			right_1_custom_slot = ship_anti_air_1
+			left_1_custom_slot = ship_anti_air_1
+
+	create_equipment_variant = {
+		name = "Scott"
+		type = ship_hull_destroyer_leader_1
+		name_group = AST_DD_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_tanks_slot = ship_extra_fuel_tank
+			fixed_ship_armor_slot = light_ship_armor_1
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_3_2x
+			mid_1_custom_slot = ship_light_battery_3
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_torpedo_2_3x
+			mid_4_custom_slot = ship_light_battery_3
+			front_1_custom_slot = ship_light_battery_3
+
+			right_1_custom_slot = ship_anti_air_1
+		}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "Town"
+		type = ship_hull_early_cruiser_1
+		name_group = AST_CL_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_4x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_light_medium_battery_2_2x
+			mid_2_custom_slot = ship_light_medium_battery_2_2x
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_light_medium_battery_2_2x
+			front_1_custom_slot = ship_light_medium_battery_2_2x
+
+			right_1_custom_slot = ship_depth_charge_1
+			right_2_custom_Slot = ship_anti_air_1
+			right_3_custom_slot = ship_torpedo_2
+
+			left_1_custom_slot = ship_depth_charge_1
+			left_2_custom_Slot = ship_anti_air_1
+			left_3_custom_slot = ship_torpedo_2_2x
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Modified Leander"
+		type = ship_hull_early_cruiser_5
+		name_group = AST_CL_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_medium_battery_4_2x
+			mid_1_custom_slot = ship_light_medium_battery_4_2x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_airplane_launcher_1
+			mid_4_custom_slot = ship_light_medium_battery_4_2x
+			front_1_custom_slot = ship_light_medium_battery_4_2x
+
+			right_2_custom_slot = ship_torpedo_2_4x
+			right_3_custom_slot = ship_secondaries_1_1x
+			right_4_custom_slot = ship_secondaries_1_1x
+
+			left_2_custom_slot = ship_torpedo_2_4x
+			left_3_custom_slot = ship_secondaries_1_1x
+			left_4_custom_slot = ship_secondaries_1_1x
+		}
+		obsolete = yes
+	}
+		create_equipment_variant = {
+		name = "Albatross"						# cruiser minelayer
+		type = ship_hull_auxiliary_2
+		name_group = AUS_CRUISERS_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_role_slot = auxiliary_role_seaplane_tender
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_hull_light_1
+			mid_1_custom_slot = dp_light_battery_4
+			mid_2_custom_slot = dp_light_battery_4
+			mid_3_custom_slot = ship_anti_air_2
+			mid_4_custom_slot = dp_light_battery_4
+			front_1_custom_slot = dp_light_battery_4
+
+
+			right_2_custom_slot = ship_anti_air_1
+			right_3_custom_slot = ship_anti_air_1
+			right_4_custom_slot = ship_anti_air_1
+
+
+			left_2_custom_slot = ship_anti_air_1
+			left_3_custom_slot = ship_anti_air_1
+			left_4_custom_slot = ship_anti_air_1
+
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Austrlia"
+		type = ship_hull_early_heavy_cruiser_2
+		name_group = AST_CA_HISTORICAL
+		parent_version = 1
+		
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_funnel_slot = funnel_3x
+			fixed_ship_armor_slot = medium_ship_armor_4
+			fixed_ship_deck_slot = medium_ship_deck_1
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_2
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+
+			rear_1_custom_slot = ship_medium_battery_3_2x
+			mid_1_custom_slot = ship_medium_battery_3_2x
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_3_custom_slot = ship_anti_air_2
+			mid_4_custom_slot = ship_medium_battery_3_2x
+			front_1_custom_slot = ship_medium_battery_3_2x
+
+			right_1_custom_slot = ship_secondaries_1_1x
+			right_3_custom_slot = ship_secondaries_1_1x
+			right_4_custom_slot = ship_anti_air_1
+
+			left_1_custom_slot = ship_secondaries_1_1x
+			left_3_custom_slot = ship_secondaries_1_1x
+			left_4_custom_slot = ship_anti_air_1
+		}
+		obsolete = yes
+	}
+
+	# Battlecruisers #
+	create_equipment_variant = {
+		name = "Invinvible"
+		type = ship_hull_battlecruiser_1
+		name_group = AST_BC_HISTORICAL
+		parent_version = 1
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_funnel_slot = funnel_3x
+			fixed_ship_armor_slot = ship_armor_bc_1
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_1
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_1_2x
+			mid_2_custom_slot = ship_secondaries_1_2x
+			mid_4_custom_slot = ship_heavy_battery_1_2x
+			front_1_custom_slot = ship_heavy_battery_1_2x
+
+			right_1_custom_slot = ship_secondaries_1_2x
+			right_2_custom_slot = ship_torpedo_1_1x
+			right_3_custom_slot = ship_secondaries_1_2x
+			right_4_custom_slot = ship_secondaries_1_2x
+
+			left_1_custom_slot = ship_secondaries_1_2x
+			left_2_custom_slot = ship_torpedo_1_1x
+			left_3_custom_slot = ship_secondaries_1_2x
+			left_4_custom_slot = ship_secondaries_1_2x
+		}
+		obsolete = yes
+	}
+	
