@@ -743,7 +743,6 @@ technologies = {
 	early_ship_hull_cruiser = {
 
 		enable_equipments = {
-			ship_hull_cruiser_coastal_defense_ship
 			ship_hull_cruiser_1
 		}
 		enable_equipment_modules = {
@@ -754,8 +753,6 @@ technologies = {
 			leads_to_tech = basic_ship_hull_cruiser
 			research_cost_coeff = 1
 		}
-		
-		show_equipment_icon = yes
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -1029,6 +1026,7 @@ technologies = {
 	armored_cruiser_hull = {
 		enable_equipments = {
 			ship_hull_armored_cruiser_1
+			ship_hull_cruiser_coastal_defense_ship
 		}
 		
 		enable_equipment_modules = {
@@ -1043,6 +1041,8 @@ technologies = {
 			funnel_4x
 			water_pump
 		}
+		
+		show_equipment_icon = yes
 		
 		path = {
 			leads_to_tech = armored_cruiser_hull_2

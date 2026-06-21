@@ -1,10 +1,95 @@
 ﻿units = {
 
-}
+	##### NAVAL UNITS #####
+	### ROYAL NAVY ###
+	fleet = {
+		name = "Koninklijke Marine"			
+		naval_base = 3314  # Amsterdam
+		task_force = {				
+			name = "Koninklijke Vloot"			
+			location = 3314  # Amsterdam
+			ship = { name = "HrMs Hertog Hendrik" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Hertog Hendrik" } } }		
+			ship = { name = "HrMs Jacob van Heemskerck" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Jacob van Heemskerck" } } }		
+			ship = { name = "HrMs Van Galen" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Tweede Groep" } } }		
+		}				
+		task_force = {				
+			name = "Koninklijke Onderzeeboot Smaldeel"			
+			location = 3314  # Amsterdam
+			ship = { name = "HrMs O-8" definition = submarine equipment = { ship_hull_early_submarine_3 = { amount = 1 owner = HOL version_name = "O 8" } } }
+			ship = { ordered_name = 9 definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = HOL version_name = "O 9" } } }
+			ship = { ordered_name = 10 definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = HOL version_name = "O 9" } } }
+			ship = { ordered_name = 11 definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = HOL version_name = "O 9" } } }
+			ship = { ordered_name = 12 definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = HOL version_name = "O 12" } } }
+			ship = { ordered_name = 13 definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = HOL version_name = "O 12" } } }
+			ship = { ordered_name = 14 definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = HOL version_name = "O 12" } } }
+			ship = { ordered_name = 15 definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = HOL version_name = "O 12" } } }
+		}				
+	}
 
+	### EAST INDIES SQUADRON ###
+	fleet = {
+		name = "Nederlands-Indië Marine"			
+		naval_base = 7381  # Batavia	
+		task_force = {				
+			name = "Nederlands-Indië Eskader"			
+			location = 7381  # Batavia	
+			ship = { name = "HrMs Soerabaja" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "De Zeven Provinciën" } }	}		
+			ship = { name = "HrMs Java" definition = light_cruiser equipment = { ship_hull_early_cruiser_3 = { amount = 1 owner = HOL version_name = "Java" } } }
+			ship = { name = "HrMs Sumatra" definition = light_cruiser equipment = { ship_hull_early_cruiser_3 = { amount = 1 owner = HOL version_name = "Java" } } }
+			ship = { name = "HrMs De Ruyter" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "De Ruyter" } } }
+			# Torpedobootjager Divisie
+			ship = { name = "HrMs Van Ghent" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Eerste Groep" } } }		
+			ship = { name = "HrMs Evertsen" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Eerste Groep" } } }		
+			ship = { name = "HrMs Kortenaer" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Eerste Groep" } } }		
+			ship = { name = "HrMs Piet Hein" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Eerste Groep" } } }		
+			ship = { name = "HrMs Witte de With" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Tweede Groep" } } }	
+			ship = { name = "HrMs Banckert" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Tweede Groep" } } }	
+			ship = { name = "HrMs Van Nes" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = HOL version_name = "Admiralen Tweede Groep" } } }	
+		}				
+		task_force = {				
+			name = "Nederlands-Indië Onderzeeboot Smaldeel"			
+			location = 13403  # Soerbaja
+			ship = { ordered_name = 2 definition = submarine equipment = { ship_hull_early_submarine_3 = { amount = 1 owner = HOL version_name = "K-II" } } }
+			ship = { ordered_name = 4 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-III" } } }
+			ship = { ordered_name = 5 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-V" } } }
+			ship = { ordered_name = 6 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-V" } } }
+			ship = { ordered_name = 7 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-V" } } }
+			ship = { ordered_name = 8 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-VIII" } } }
+			ship = { ordered_name = 10 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-VIII" } } }
+			# I Onderzeeboot Divisie
+			ship = { ordered_name = 17 definition = submarine equipment = { ship_hull_coastal_submarine_2 = { amount = 1 owner = HOL version_name = "K-XIV" } } }
+			ship = { ordered_name = 18 definition = submarine equipment = { ship_hull_coastal_submarine_2 = { amount = 1 owner = HOL version_name = "K-XIV" } } }
+			# II Onderzeeboot Divisie
+			ship = { ordered_name = 9 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-VIII" } } }
+			ship = { ordered_name = 11 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-XI" } } }
+			ship = { ordered_name = 12 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-XI" } } }
+			ship = { ordered_name = 13 definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = HOL version_name = "K-XI" } } }
+			# III Onderzeeboot Divisie
+			ship = { ordered_name = 14 definition = submarine equipment = { ship_hull_coastal_submarine_2 = { amount = 1 owner = HOL version_name = "K-XIV" } } }
+			ship = { ordered_name = 15 definition = submarine equipment = { ship_hull_coastal_submarine_2 = { amount = 1 owner = HOL version_name = "K-XIV" } } }
+			ship = { ordered_name = 16 definition = submarine equipment = { ship_hull_coastal_submarine_2 = { amount = 1 owner = HOL version_name = "K-XIV" } } }
+		}				
+	}
+}
 
 #########################
 ## STARTING PRODUCTION ##
 #########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_1
+			creator = "HOL" 
+			version_name = "O 16"
+		}
+		name = "O-16"
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+		industrial_manufacturer = mio:HOL_nsm_amsterdam_organization
+	}
+}
 
 #####################
