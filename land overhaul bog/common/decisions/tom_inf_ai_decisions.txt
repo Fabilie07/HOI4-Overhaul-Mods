@@ -1,0 +1,44 @@
+tom_inf_battalion_ai_decisions = {
+	tom_inf_ai_infantry_enlargen_1 = {
+		available = {
+			check_variable = { tom_inf_ai_infantry_lmg_ratio > 6 }
+			check_variable = { tom_inf_ai_infantry_mmg_ratio > 4.5 }
+			check_variable = { tom_inf_ai_infantry_hmg_ratio > 3 }
+			check_variable = { tom_inf_ai_infantry_mortar_ratio > 4.5 }
+		}
+	
+		complete_effect = {
+			tom_inf_bat_AI_battalions_infantry_1 = yes
+			set_country_flag = tom_inf_ai_infantry_enlargen_1_done
+			
+			custom_effect_tooltip = tom_inf_show_ai_ratios
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+	tom_inf_ai_infantry_enlargen_2 = {
+		available = {
+			has_country_flag = tom_inf_ai_infantry_enlargen_1_done
+			check_variable = { tom_inf_ai_infantry_lmg_ratio > 12 }
+			check_variable = { tom_inf_ai_infantry_mmg_ratio > 9 }
+			check_variable = { tom_inf_ai_infantry_hmg_ratio > 6 }
+			check_variable = { tom_inf_ai_infantry_mortar_ratio > 9 }
+		}
+	
+		complete_effect = {
+			tom_inf_bat_AI_battalions_infantry_2 = yes
+			set_country_flag = tom_inf_ai_infantry_enlargen_2_done
+			
+			custom_effect_tooltip = tom_inf_show_ai_ratios
+		}
+		fire_only_once = yes
+		
+		ai_will_do = {
+			base = 10
+		}
+	}
+}

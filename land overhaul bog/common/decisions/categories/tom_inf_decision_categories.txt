@@ -13,3 +13,9 @@ tom_inf_horse_decisions = {
 	visible_when_empty = yes
 	priority = 900
 }
+
+tom_inf_battalion_ai_decisions = {
+	visible = {
+		# is_ai = yes
+	}
+}

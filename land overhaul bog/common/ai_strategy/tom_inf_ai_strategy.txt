@@ -51,11 +51,6 @@ tom_inf_support_equipment_production_increased = {
 		id = hmg_chassis
 		value = 1
 	}
-	ai_strategy = {
-		type = equipment_production_min_factories_archetype
-		id = mortar_chassis
-		value = 1
-	}
 }
 
 tom_inf_infantry_equipment = {
