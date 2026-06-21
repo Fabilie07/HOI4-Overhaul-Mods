@@ -1,4 +1,64 @@
 if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		torpedoboat_destroyer_hull = 1
+		early_destroyer_hull_1 = 1
+		early_destroyer_hull_2 = 1
+		destroyer_leader_hull_1 = 1
+		early_destroyer_hull_3 = 1
+		early_destroyer_hull_4 = 1
+		
+		early_light_cruiser_hull = 1
+		scout_cruiser_hull_1 = 1
+		scout_cruiser_hull_2 = 1
+		scout_cruiser_hull_3 = 1
+		scout_cruiser_hull_4 = 1
+		
+		armored_cruiser_hull = 1
+		armored_cruiser_hull_2 = 1
+		early_heavy_cruiser_hull = 1
+		early_heavy_cruiser_hull_2 = 1
+		
+		predreadnought_ship_hull = 1
+		basic_dreadnought_ship_hull = 1
+		improved_dreadnought_ship_hull = 1
+		
+		early_battlecruiser_hull = 1
+		basic_battlecruiser_hull = 1
+		
+		early_submarine_hull_1 = 1
+		early_submarine_hull_2 = 1
+		early_submarine_hull_3 = 1
+		early_submarine_hull_4 = 1
+		
+		auxiliary_hull_1 = 1
+		auxiliary_hull_2 = 1
+		
+		basic_cruiser_armor_scheme = 1
+		improved_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		improved_light_battery = 1
+		advanced_light_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		advanced_ship_torpedo_launcher = 1
+		magnetic_detonator = 1
+		basic_depth_charges = 1
+		sonar = 1
+		basic_naval_mines = 1
+		improved_naval_mines = 1
+		mtg_transport = 1
+		
+		basic_fire_control_system = 1
+	}
+}
+
+if = {
 	limit = { has_dlc = "Man the Guns" }
 	### Variants ###
 	create_equipment_variant = {
@@ -76,6 +136,8 @@ if = {
 
 			right_1_custom_slot = ship_anti_air_1
 			left_1_custom_slot = ship_anti_air_1
+		}
+	}
 
 	create_equipment_variant = {
 		name = "Scott"
@@ -101,6 +163,8 @@ if = {
 
 			right_1_custom_slot = ship_anti_air_1
 		}
+	}
+	
 	# Light Cruisers #
 	create_equipment_variant = {
 		name = "Town"
@@ -167,9 +231,8 @@ if = {
 			left_3_custom_slot = ship_secondaries_1_1x
 			left_4_custom_slot = ship_secondaries_1_1x
 		}
-		obsolete = yes
 	}
-		create_equipment_variant = {
+	create_equipment_variant = {
 		name = "Albatross"						# cruiser minelayer
 		type = ship_hull_auxiliary_2
 		name_group = AUS_CRUISERS_HISTORICAL
@@ -204,7 +267,7 @@ if = {
 	}
 
 	create_equipment_variant = {
-		name = "Austrlia"
+		name = "Australia"
 		type = ship_hull_early_heavy_cruiser_2
 		name_group = AST_CA_HISTORICAL
 		parent_version = 1
@@ -236,7 +299,6 @@ if = {
 			left_3_custom_slot = ship_secondaries_1_1x
 			left_4_custom_slot = ship_anti_air_1
 		}
-		obsolete = yes
 	}
 
 	# Battlecruisers #
@@ -274,4 +336,4 @@ if = {
 		}
 		obsolete = yes
 	}
-	
+}
