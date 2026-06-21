@@ -1753,7 +1753,6 @@ if = {
 			mid_1_custom_slot = dp_light_battery_4
 			mid_2_custom_slot = dp_light_battery_4
 			mid_3_custom_slot = ship_anti_air_2
-			mid_4_custom_slot = ship_anti_air_2
 			front_1_custom_slot = dp_light_battery_4
 
 			right_1_custom_slot = ship_mine_layer_1
