@@ -14,6 +14,7 @@ sub_units = {
 		active = no
 
 		type = {
+			infantry
 			armor
 		}
 		

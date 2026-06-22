@@ -1736,23 +1736,28 @@ technologies = {
 ###------> X <><> <><> <><> <><> <><>
 
 	support_weapons = {
+		
+		enable_subunits = {
+			fire_support
+			mot_fire_support
+		}
 
-		category_infantry_and_bicycle = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		category_cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		category_special_forces_leg_infantry = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		category_vehicle_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+		# category_infantry_and_bicycle = {
+			# defense = 0.05
+			# breakthrough = 0.05
+		# }
+		# category_cavalry = {
+			# defense = 0.02
+			# breakthrough = 0.02
+		# }		
+		# category_special_forces_leg_infantry = {
+			# defense = 0.03
+			# breakthrough = 0.03
+		# }
+		# category_vehicle_infantry = {
+			# defense = 0.05
+			# breakthrough = 0.05
+		# }
 		
 		path = {
 			leads_to_tech = support_weapons2

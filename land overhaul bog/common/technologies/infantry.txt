@@ -673,6 +673,11 @@ technologies = {
 	
 	support_weapons = {
 	
+		enable_subunits = {
+			fire_support
+			mot_fire_support
+		}
+	
 		enable_equipments = {
 			mortar_chassis_0
 			mmg_chassis_0
@@ -706,18 +711,18 @@ technologies = {
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
+		# category_light_infantry = {
+			# defense = 0.04
+			# breakthrough = 0.04
+		# }
+		# category_cavalry = {
+			# defense = 0.04
+			# breakthrough = 0.04
+		# }
+		# category_vehicle_infantry = {
+			# defense = 0.04
+			# breakthrough = 0.04
+		# }
 		
 		path = {
 			leads_to_tech = support_weapons2
