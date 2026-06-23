@@ -29,22 +29,31 @@ sp_land_advanced_gas_operated_reloading = {
 	complexity = sp_complexity.medium
 	
 	project_output = {
-		equipment_bonus = {
-			infantry_equipment = {
-				reliability = 0.12
-				build_cost_ic = -0.1
-			}
-			lmg_chassis = {
-				reliability = 0.06
-				build_cost_ic = -0.1
-			}
-			mmg_chassis = {
-				reliability = 0.06
-				build_cost_ic = -0.1
-			}
-			hmg_chassis = {
-				reliability = 0.06
-				build_cost_ic = -0.1
+		country_effects = {
+			add_equipment_bonus = {
+				project = FROM
+				bonus = {
+					infantry_equipment = {
+						reliability = 0.12
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					lmg_chassis = {
+						reliability = 0.06
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					mmg_chassis = {
+						reliability = 0.06
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					hmg_chassis = {
+						reliability = 0.06
+						build_cost_ic = -0.1
+						instant = yes
+					}
+				}
 			}
 		}
 	}

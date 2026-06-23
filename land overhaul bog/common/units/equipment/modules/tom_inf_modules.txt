@@ -9,6 +9,7 @@ equipment_modules = {
 			reliability = 0.05
 			build_cost_ic = 0.05
 		}
+		xp_cost = 2
 	}
 	
 	inf_lever_action = {
@@ -19,6 +20,7 @@ equipment_modules = {
 			breakthrough = 1
 			build_cost_ic = 0.05
 		}
+		xp_cost = 2
 	}
 	
 	inf_semi_auto = {
@@ -34,6 +36,7 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 1
 		}
+		xp_cost = 2
 	}
 	
 	inf_full_auto = {
@@ -49,6 +52,7 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 1
 		}
+		xp_cost = 2
 	}
 	
 	
@@ -64,7 +68,7 @@ equipment_modules = {
 			soft_attack = 0.02
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_tube_08 = {
 		category = inf_magazine
@@ -77,7 +81,7 @@ equipment_modules = {
 			soft_attack = 0.03
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_tube_10 = {
 		category = inf_magazine
@@ -90,7 +94,7 @@ equipment_modules = {
 			soft_attack = 0.04
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	
 	inf_clip_05 = {
@@ -101,7 +105,7 @@ equipment_modules = {
 			soft_attack = 0.02
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_clip_10 = {
 		category = inf_magazine
@@ -114,7 +118,7 @@ equipment_modules = {
 			soft_attack = 0.04
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	
 	inf_magazine_05 = {
@@ -128,7 +132,7 @@ equipment_modules = {
 			soft_attack = 0.02
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_magazine_10 = {
 		category = inf_magazine
@@ -141,7 +145,7 @@ equipment_modules = {
 			soft_attack = 0.04
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_magazine_15 = {
 		category = inf_magazine
@@ -155,7 +159,7 @@ equipment_modules = {
 			soft_attack = 0.06
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_magazine_20 = {
 		category = inf_magazine
@@ -169,7 +173,7 @@ equipment_modules = {
 			soft_attack = 0.08
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_magazine_25 = {
 		category = inf_magazine
@@ -183,7 +187,7 @@ equipment_modules = {
 			soft_attack = 0.1
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	inf_magazine_30 = {
 		category = inf_magazine
@@ -197,7 +201,7 @@ equipment_modules = {
 			soft_attack = 0.12
 		}
 		
-		xp_cost = 2
+		xp_cost = 1
 	}
 	
 	
@@ -209,7 +213,7 @@ equipment_modules = {
 			supply_consumption = 0.1
 			maximum_speed = 0.4
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	
 	inf_backpack_2 = {
@@ -219,7 +223,7 @@ equipment_modules = {
 			supply_consumption = 0.06
 			build_cost_ic = 0.03
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	
 	inf_backpack_3 = {
@@ -230,7 +234,7 @@ equipment_modules = {
 			supply_consumption = 0.04
 			build_cost_ic = 0.06
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	
 	
@@ -241,7 +245,7 @@ equipment_modules = {
 		add_stats = {
 			default_morale = 0.1
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	inf_canteen_2 = {
 		category = inf_water
@@ -250,7 +254,7 @@ equipment_modules = {
 			default_morale = 0.15
 			build_cost_ic = 0.02
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	inf_canteen_3 = {
 		category = inf_water
@@ -259,7 +263,7 @@ equipment_modules = {
 			default_morale = 0.2
 			build_cost_ic = 0.04
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	
 	
@@ -271,7 +275,7 @@ equipment_modules = {
 			max_strength = 0.1
 			build_cost_ic = 0.05
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	inf_first_aid_2 = {
 		category = inf_first_aid
@@ -280,7 +284,7 @@ equipment_modules = {
 			max_strength = 0.15
 			build_cost_ic = 0.1
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	inf_first_aid_3 = {
 		category = inf_first_aid
@@ -289,7 +293,7 @@ equipment_modules = {
 			max_strength = 0.2
 			build_cost_ic = 0.15
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	
 	
@@ -300,7 +304,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 0.5
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	inf_sights_2 = {
 		category = inf_sights
@@ -309,7 +313,7 @@ equipment_modules = {
 			soft_attack = 0.8
 			build_cost_ic = 0.01
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	inf_sights_3 = {
 		category = inf_sights
@@ -318,7 +322,7 @@ equipment_modules = {
 			soft_attack = 1
 			build_cost_ic = 0.02
 		}
-		xp_cost = 2
+		xp_cost = 0
 	}
 	
 	inf_sights_sniper = {
@@ -364,7 +368,7 @@ equipment_modules = {
 		multiply_stats = {
 			hard_attack = -1
 		}
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	inf_barrel_carbine = {
@@ -373,7 +377,7 @@ equipment_modules = {
 		add_stats = {
 			breakthrough = 1
 		}
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	inf_barrel_rifle = {
@@ -386,7 +390,7 @@ equipment_modules = {
 		multiply_stats = {
 			soft_attack = 0.02
 		}
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	inf_barrel_extended = {
@@ -403,7 +407,7 @@ equipment_modules = {
 		build_cost_resources = {
 			steel = 1
 		}
-		xp_cost = 3
+		xp_cost = 1
 	}
 	
 	
@@ -415,7 +419,7 @@ equipment_modules = {
 			defense = 2
 			breakthrough = 1
 		}
-		xp_cost = 2
+		xp_cost = 1
 	}
 	
 	inf_sidearm_revolver = {
@@ -424,7 +428,7 @@ equipment_modules = {
 		add_stats = {
 			defense = 3
 		}
-		xp_cost = 2
+		xp_cost = 1
 	}
 	
 	# Primary Sidearm
@@ -666,7 +670,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.2
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_small_60 = {
 		category = inf_cartridge
@@ -680,7 +684,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.19
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_small_65 = {
 		category = inf_cartridge
@@ -694,7 +698,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.18
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_small_70 = {
 		category = inf_cartridge
@@ -708,7 +712,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.17
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_small_75 = {
 		category = inf_cartridge
@@ -722,7 +726,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.16
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_small_80 = {
 		category = inf_cartridge
@@ -736,7 +740,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.15
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_small_85 = {
 		category = inf_cartridge
@@ -750,7 +754,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.13
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_small_90 = {
 		category = inf_cartridge
@@ -764,7 +768,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.1
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	
 	
@@ -779,7 +783,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.02
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_intermediate_60 = {
 		category = inf_cartridge
@@ -792,7 +796,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.01
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_intermediate_65 = {
 		category = inf_cartridge
@@ -801,7 +805,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 0.65
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_intermediate_70 = {
 		category = inf_cartridge
@@ -814,7 +818,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.01
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_intermediate_75 = {
 		category = inf_cartridge
@@ -827,7 +831,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.02
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_intermediate_80 = {
 		category = inf_cartridge
@@ -840,7 +844,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.03
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_intermediate_85 = {
 		category = inf_cartridge
@@ -853,7 +857,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.045
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_intermediate_90 = {
 		category = inf_cartridge
@@ -866,7 +870,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.06
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	
 	inf_cartridge_rifle_55 = {
@@ -882,7 +886,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.03
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_rifle_60 = {
 		category = inf_cartridge
@@ -897,7 +901,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.04
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_rifle_65 = {
 		category = inf_cartridge
@@ -912,7 +916,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.05
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_rifle_70 = {
 		category = inf_cartridge
@@ -927,7 +931,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.06
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_rifle_75 = {
 		category = inf_cartridge
@@ -942,7 +946,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.07
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_rifle_80 = {
 		category = inf_cartridge
@@ -957,7 +961,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.08
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_rifle_85 = {
 		category = inf_cartridge
@@ -972,7 +976,7 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.1
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 	inf_cartridge_rifle_90 = {
 		category = inf_cartridge
@@ -987,6 +991,6 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = 0.12
 		}
-		xp_cost = 4
+		xp_cost = 1
 	}
 }

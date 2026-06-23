@@ -1,7 +1,10 @@
 tom_inf_support_equipment_production = {
 	allowed = { always = yes }
 	enable = {
-		arms_factory > 19
+		OR = {
+			arms_factory > 19
+			is_major = yes
+		}
 		has_tech = support_weapons
 	}
 	abort_when_not_enabled = yes
@@ -53,7 +56,7 @@ tom_inf_support_equipment_production_increased = {
 	}
 }
 
-tom_inf_support_equipment_production_increased = {
+tom_inf_support_equipment_production_advanced = {
 	allowed = { always = yes }
 	enable = {
 		arms_factory > 59
@@ -81,5 +84,107 @@ tom_inf_infantry_equipment = {
 		type = equipment_variant_production_factor
 		id = infantry_equipment
 		value = 15
+	}
+}
+
+
+
+tom_inf_support_equipment_production_scaleback_mortar = {
+	allowed = { always = yes }
+	enable = {
+		has_equipment = { mortar_chassis > 25000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = mortar_chassis
+		value = -1
+	}
+}
+
+tom_inf_support_equipment_production_scaleback_lmg_1 = {
+	allowed = { always = yes }
+	enable = {
+		has_equipment = { lmg_chassis > 25000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = lmg_chassis
+		value = -1
+	}
+}
+
+tom_inf_support_equipment_production_scaleback_lmg_2 = {
+	allowed = { always = yes }
+	enable = {
+		has_equipment = { lmg_chassis > 20000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = lmg_chassis
+		value = -1
+	}
+}
+
+
+tom_inf_support_equipment_production_scaleback_mmg_1 = {
+	allowed = { always = yes }
+	enable = {
+		has_equipment = { mmg_chassis > 20000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = mmg_chassis
+		value = -1
+	}
+}
+
+tom_inf_support_equipment_production_scaleback_mmg_2 = {
+	allowed = { always = yes }
+	enable = {
+		has_equipment = { mmg_chassis > 16000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = mmg_chassis
+		value = -1
+	}
+}
+
+
+tom_inf_support_equipment_production_scaleback_hmg_1 = {
+	allowed = { always = yes }
+	enable = {
+		has_equipment = { lmg_chassis > 16000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = hmg_chassis
+		value = -1
+	}
+}
+
+tom_inf_support_equipment_production_scaleback_hmg_2 = {
+	allowed = { always = yes }
+	enable = {
+		has_equipment = { lmg_chassis > 13000 }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = hmg_chassis
+		value = -1
 	}
 }
