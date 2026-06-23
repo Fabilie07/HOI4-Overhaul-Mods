@@ -16,6 +16,6 @@ tom_inf_horse_decisions = {
 
 tom_inf_battalion_ai_decisions = {
 	visible = {
-		# is_ai = yes
+		is_ai = yes
 	}
 }

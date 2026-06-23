@@ -1,0 +1,158 @@
+generic_infantry_equipment = {
+	category = land
+	roles = { infantry }
+	
+	available_for = {}
+
+	priority = {
+		factor = 100
+	}
+	
+	generic_infantry_equipment_0 = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = infantry_weapons1
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = infantry_equipment_0
+			modules = {
+				firing_mode_slot = inf_bolt_action
+				magazine_type_slot = {
+					any_of = {
+						inf_clip_10
+						inf_clip_05
+					}
+				}
+				
+				backpack_type_slot = inf_backpack_2
+				water_type_slot = empty
+				first_aid_type_slot = empty
+				
+				sights_slot = inf_sights_1
+				support_equipment_1_slot = inf_grenade_frag
+				support_equipment_2_slot = inf_bayonet
+				support_equipment_3_slot = empty
+				support_equipment_4_slot = empty
+				barrel_slot = inf_barrel_rifle
+				cartridge_slot = inf_cartridge_rifle_80
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
+	}
+	generic_infantry_equipment_1 = {
+		priority = {
+			factor = 150
+			modifier = { 
+				has_tech = improved_infantry_weapons
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = infantry_equipment_1
+			modules = {
+				firing_mode_slot = inf_bolt_action
+				magazine_type_slot = {
+					any_of = {
+						inf_clip_10
+						inf_clip_05
+					}
+				}
+				
+				backpack_type_slot = inf_backpack_3
+				water_type_slot = inf_canteen_1
+				first_aid_type_slot = empty
+				
+				sights_slot = inf_sights_2
+				support_equipment_1_slot = inf_grenade_frag
+				support_equipment_2_slot = inf_bayonet
+				support_equipment_3_slot = inf_pocket_knife
+				support_equipment_4_slot = empty
+				barrel_slot = inf_barrel_rifle
+				cartridge_slot = inf_cartridge_rifle_80
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
+	}
+	generic_infantry_equipment_2 = {
+		priority = {
+			factor = 200
+			modifier = { 
+				has_tech = advanced_infantry_weapons
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = infantry_equipment_2
+			modules = {
+				firing_mode_slot = {
+					any_of = {
+						inf_semi_auto
+						inf_bolt_action
+					}
+				}
+				magazine_type_slot = inf_magazine_20
+				
+				backpack_type_slot = inf_backpack_3
+				water_type_slot = inf_canteen_1
+				first_aid_type_slot = empty
+				
+				sights_slot = inf_sights_3
+				support_equipment_1_slot = inf_grenade_frag
+				support_equipment_2_slot = inf_grenade_frag
+				support_equipment_3_slot = inf_pocket_knife
+				support_equipment_4_slot = inf_cleaning_kit
+				barrel_slot = inf_barrel_rifle
+				cartridge_slot = inf_cartridge_intermediate_80
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
+	}
+	generic_infantry_equipment_3 = {
+		priority = {
+			factor = 250
+			# modifier = { 
+				# has_tech = improved_infantry_weapons
+				# factor = 0 #let's not waste XP here
+			# }
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = infantry_equipment_3
+			modules = {
+				firing_mode_slot = {
+					any_of = {
+						inf_full_auto
+						inf_semi_auto
+					}
+				}
+				magazine_type_slot = inf_magazine_20
+				
+				backpack_type_slot = inf_backpack_3
+				water_type_slot = inf_canteen_1
+				first_aid_type_slot = empty
+				
+				sights_slot = inf_sights_3
+				support_equipment_1_slot = inf_grenade_frag
+				support_equipment_2_slot = inf_grenade_frag
+				support_equipment_3_slot = {
+					module = inf_rifle_grenade
+					module = inf_pocket_knife
+				}
+				support_equipment_4_slot = inf_cleaning_kit
+				barrel_slot = inf_barrel_rifle
+				cartridge_slot = inf_cartridge_intermediate_80
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
+	}
+}

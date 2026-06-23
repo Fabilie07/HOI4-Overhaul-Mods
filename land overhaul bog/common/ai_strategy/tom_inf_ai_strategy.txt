@@ -53,6 +53,21 @@ tom_inf_support_equipment_production_increased = {
 	}
 }
 
+tom_inf_support_equipment_production_increased = {
+	allowed = { always = yes }
+	enable = {
+		arms_factory > 59
+		has_tech = tech_support
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = equipment_production_min_factories_archetype
+		id = support_equipment
+		value = 5
+	}
+}
+
 tom_inf_infantry_equipment = {
 	allowed = { always = yes }
 	enable = {

@@ -20,10 +20,10 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 
-		build_cost_ic = 4
+		build_cost_ic = 3
 		resources = {
 			aluminium = 1
-			steel = 2
+			steel = 1
 		}
 	}
 
@@ -42,6 +42,11 @@ equipments = {
 		
 		max_organisation = 0.1
 		max_strength = 0.04
+		
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
 	}
 	
 	support_equipment_3 = {
@@ -52,6 +57,11 @@ equipments = {
 		
 		max_organisation = 0.15
 		max_strength = 0.08
+		
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
 	}
 	
 	support_equipment_4 = {
@@ -62,5 +72,10 @@ equipments = {
 		
 		max_organisation = 0.2
 		max_strength = 0.12
+		
+		resources = {
+			aluminium = 2
+			steel = 2
+		}
 	}
 }

@@ -3,18 +3,20 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					# is_ai = yes
+					is_ai = yes
 				}
 				# Infantry
 				set_variable = { tom_inf_ai_infantry_lmg_ratio = num_equipment@lmg_chassis }
 				set_variable = { tom_inf_ai_infantry_mmg_ratio = num_equipment@mmg_chassis }
 				set_variable = { tom_inf_ai_infantry_hmg_ratio = num_equipment@hmg_chassis }
 				set_variable = { tom_inf_ai_infantry_mortar_ratio = num_equipment@mortar_chassis }
+				set_variable = { tom_inf_ai_infantry_support_ratio = num_equipment@support_equipment }
 				
 				divide_variable = { tom_inf_ai_infantry_lmg_ratio = num_battalions_with_type@infantry }
 				divide_variable = { tom_inf_ai_infantry_mmg_ratio = num_battalions_with_type@infantry }
 				divide_variable = { tom_inf_ai_infantry_hmg_ratio = num_battalions_with_type@infantry }
 				divide_variable = { tom_inf_ai_infantry_mortar_ratio = num_battalions_with_type@infantry }
+				divide_variable = { tom_inf_ai_infantry_support_ratio = num_battalions_with_type@infantry }
 			}
 		}
 	}
