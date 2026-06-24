@@ -2971,10 +2971,6 @@ technologies = {
 	
 	shocktroops2 = {
 
-		enable_subunits = {
-			mech_shocktroop
-		}
-
 		shocktroop = {
 			max_organisation = 5
 			soft_attack = 0.05
@@ -3004,16 +3000,15 @@ technologies = {
 	}
 	
 	shocktroops3 = {
+		enable_subunits = {
+			mech_shocktroop
+		}
 
 		shocktroop = {
 			max_organisation = 5
 		}
 
 		mot_shocktroop = {
-			max_organisation = 2
-		}
-		
-		mech_shocktroop = {
 			max_organisation = 2
 		}
 		

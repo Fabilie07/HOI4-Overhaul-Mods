@@ -2,7 +2,7 @@ technologies = {
 	armored_car1 = {
 
 		enable_subunits = {
-			armored_car_equipment
+			armored_car
 		}
 
 		enable_equipments = {
