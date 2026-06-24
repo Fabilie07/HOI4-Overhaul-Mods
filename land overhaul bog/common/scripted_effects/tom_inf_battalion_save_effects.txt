@@ -221,6 +221,10 @@ tom_inf_compute_temp_equipment_has = {
 		set_temp_variable = { temp_equipment_has = num_equipment@mechanized_equipment }
 	}
 	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:tom_inf_horse } }
+		set_temp_variable = { temp_equipment_has = num_equipment@tom_inf_horse }
+	}
+	else_if = {
 		limit = { check_variable = { temp_equipment_archetype = token:amphibious_mechanized_equipment } }
 		set_temp_variable = { temp_equipment_has = num_equipment@amphibious_mechanized_equipment }
 	}
