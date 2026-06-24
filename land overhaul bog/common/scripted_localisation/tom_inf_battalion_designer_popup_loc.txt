@@ -1,3 +1,18 @@
+### Equipment Coloring
+defined_text = {
+	name = tom_inf_bat_equipment_needed_colored
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_needed_equipment_has_array^i < tom_inf_bat_needed_equipment_count_array^i }
+		}
+		localization_key = TOM_INF_EQUIPMENT_MISSING_TT
+	}
+	text = {
+		localization_key = TOM_INF_EQUIPMENT_ENOUGH_TT
+	}
+}
+
+
 defined_text = {
 	name = tom_inf_bat_subunit_icon
 	text = {

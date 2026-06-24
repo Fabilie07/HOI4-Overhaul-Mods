@@ -24,6 +24,15 @@
  TOM_INF_STAT_FORMAT_EQUIPMENT_1:0 "[tom_inf_bat_stat_visual_depiction_equipment_1]"
  TOM_INF_STAT_FORMAT_EQUIPMENT_2:0 "[?v.GetTokenLocalizedKey]:"
  
+ TOM_INF_SAVE_TT:0 "You are about to increase the amount of equipment in the Battalion. §RThis cannot be undone.§! Are you sure?"
+ TOM_INF_SAVE_EQUIPMENT_TT:0 "§YEquipment§!"
+ TOM_INF_SAVE_HAS_REQUIRED_TT:0 "§YIn Stockpile/Required§!"
+ TOM_INF_SAVE_HAS_REQUIRED_DESC_TT:0 "§R!!Caution!!§! This does not take Divisions in Training into account, but they also instantly require the listed Equipment"
+ 
+ TOM_INF_STAT_FORMAT_EQUIPMENT_NEEDED:0 "[tom_inf_bat_equipment_needed_colored]"
+ TOM_INF_EQUIPMENT_ENOUGH_TT:0 "§G[?tom_inf_bat_needed_equipment_has_array^i]/[?tom_inf_bat_needed_equipment_count_array^i]§!"
+ TOM_INF_EQUIPMENT_MISSING_TT:0 "§R[?tom_inf_bat_needed_equipment_has_array^i]/[?tom_inf_bat_needed_equipment_count_array^i]§!"
+ 
  TOM_INF_TERRAIN_TT:0 "§Y[tom_inf_terrain_type]§!"
  TOM_INF_TERRAIN_MOVEMENT_TT:0 "Movement: [?tom_inf_bat_popup_terrain_movement_array^i|%%+=0]"
  TOM_INF_TERRAIN_ATTACK_TT:0 "Attack: [?tom_inf_bat_popup_terrain_attack_array^i|%%+=0]"

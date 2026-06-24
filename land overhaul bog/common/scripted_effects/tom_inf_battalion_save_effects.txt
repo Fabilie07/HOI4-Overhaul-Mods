@@ -122,3 +122,142 @@ tom_inf_update_doctrine_variables_effect = {
 	divide_variable = { tom_inf_doctrine_mastery_support = 100 }
 	divide_variable = { tom_inf_doctrine_mastery_all = 100 }
 }
+
+
+
+tom_inf_compute_equipment_cost_effect = {
+	clear_array = tom_inf_bat_needed_equipment_type_array
+	clear_array = tom_inf_bat_needed_equipment_count_array
+	clear_array = tom_inf_bat_needed_equipment_has_array
+	
+	for_each_loop = {
+		array = tom_inf_bat_popup_equipment_stats_array_2_type
+		value = temp_equipment_archetype
+		index = temp_equipment_index
+		
+		set_temp_variable = { temp_equipment_after = tom_inf_bat_popup_equipment_stats_array_2_count^temp_equipment_index }
+		set_temp_variable = { temp_equipment_before = tom_inf_bat_popup_equipment_stats_array_2_needed^temp_equipment_index }
+		
+		if = {
+			limit = {
+				check_variable = { temp_equipment_after > temp_equipment_before }
+			}
+			
+			subtract_from_temp_variable = { temp_equipment_after = temp_equipment_before }
+			if = {
+				limit = { has_country_flag = tom_inf_bat_current_infantry }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@infantry }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_motorized }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@motorized }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_mechanized }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@mechanized }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_cavalry }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@cavalry }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_mountaineer }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@mountaineers }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_paratrooper }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@paratrooper }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_marine }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@marine }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_marine_commando }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@marine_commando }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_ranger }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@ranger_battalion }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_mountaineers_mechanized }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@mountaineers_mechanized }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_amphibious_mechanized }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@amphibious_mechanized }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_rangers_mechanized }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@rangers_mechanized }
+			}
+			
+			tom_inf_compute_temp_equipment_before = yes
+			add_to_array = { tom_inf_bat_needed_equipment_type_array = temp_equipment_archetype }
+			add_to_array = { tom_inf_bat_needed_equipment_count_array = temp_equipment_after }
+			
+			tom_inf_compute_temp_equipment_has = yes
+			add_to_array = { tom_inf_bat_needed_equipment_has_array = temp_equipment_has }
+		}
+	}
+}
+
+tom_inf_compute_temp_equipment_has = {
+	if = {
+		limit = { check_variable = { temp_equipment_archetype = token:infantry_equipment } }
+		set_temp_variable = { temp_equipment_has = num_equipment@infantry_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:support_equipment } }
+		set_temp_variable = { temp_equipment_has = num_equipment@support_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:motorized_equipment } }
+		set_temp_variable = { temp_equipment_has = num_equipment@motorized_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:mechanized_equipment } }
+		set_temp_variable = { temp_equipment_has = num_equipment@mechanized_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:amphibious_mechanized_equipment } }
+		set_temp_variable = { temp_equipment_has = num_equipment@amphibious_mechanized_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:armored_car_equipment } }
+		set_temp_variable = { temp_equipment_has = num_equipment@armored_car_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:lmg_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@lmg_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:mmg_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@mmg_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:hmg_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@hmg_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:mortar_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@mortar_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:at_rifle_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@at_rifle_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:at_rocket_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@at_rocket_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:flamethrower_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@flamethrower_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:radio_equipment } }
+		set_temp_variable = { temp_equipment_has = num_equipment@radio_equipment }
+	}
+}

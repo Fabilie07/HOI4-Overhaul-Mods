@@ -206,12 +206,51 @@ guiTypes = {
 		containerWindowType = {
 			name = "paper_background"
 			position = { x = 13 y = 75 }
+			verticalScrollbar = "right_vertical_slider"
 			size = { width = 474 height = 123 }
 
 			background = {
 				name = "Background"
 				#spriteType ="GFX_tiled_paper_bg"
 				spriteType = "GFX_agency_popup_bg"
+			}
+			
+			instantTextBoxType = {
+				name = "desc"
+				position = { x = 43 y = 8 }
+				borderSize = {x = 0 y = 0}
+				text = TOM_INF_SAVE_TT
+				format = center
+				maxWidth = 382
+			}
+			
+			instantTextBoxType = {
+				name = "header_equipment"
+				position = { x = 59 y = 58 }
+				borderSize = {x = 0 y = 0}
+				text = TOM_INF_SAVE_EQUIPMENT_TT
+				format = left
+				maxWidth = 350
+			}
+			
+			instantTextBoxType = {
+				name = "header_stockpile"
+				position = { x = 59 y = 58 }
+				borderSize = {x = 0 y = 0}
+				text = TOM_INF_SAVE_HAS_REQUIRED_TT
+				pdx_tooltip = TOM_INF_SAVE_HAS_REQUIRED_DESC_TT
+				format = right
+				maxWidth = 350
+				maxHeight = 30
+			}
+			
+			gridboxType = {
+				name = "equipment_needed_grid"
+				position = { x=59 y=78 }
+				size = { width=350 height=200 }
+				slotsize = { width=350 height=20 }
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
 			}
 		}
 
@@ -234,15 +273,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes
 			truncate = yes
-		}
-		
-		instantTextBoxType = {
-			name = "desc"
-			position = { x = 72 y = 119 }
-			borderSize = {x = 0 y = 0}
-			text = "You are about to increase the amount of equipment in the Battalion. This cannot be undone. Are you sure?"
-			format = center
-			maxWidth = 350
 		}
 		
 		iconType = {
@@ -806,6 +836,27 @@ guiTypes = {
 			spriteType = "GFX_module_requirements"
 			position = { x=5 y=5 }
 			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "tom_inf_battalion_designer_save_equipment_needed_entry"
+		
+		instantTextboxType = {
+			name = "name_entry"
+			format = left
+			fixedsize = yes
+			maxWidth = 300
+			maxHeight = 10
+			text = TOM_INF_STAT_FORMAT_EQUIPMENT_2
+		}
+		
+		instantTextboxType = {
+			name = "stats_entry"
+			format = right
+			maxWidth = 340
+			maxHeight = 20
+			text = TOM_INF_STAT_FORMAT_EQUIPMENT_NEEDED
 		}
 	}
 	
