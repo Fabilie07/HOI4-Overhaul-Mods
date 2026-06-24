@@ -56,7 +56,40 @@ tom_inf_bat_startup_effect_infantry = {
 	add_to_array = { tom_inf_battalion_infantry_platoon_array = 0 }
 	
 	set_variable = { tom_inf_bat_infantry_10_count = 3 }
+	set_variable = { tom_inf_bat_infantry_11_count = 0 }
+	set_variable = { tom_inf_bat_infantry_12_count = 0 }
+	
 	set_variable = { tom_inf_bat_infantry_1000_count = 9 }
+	set_variable = { tom_inf_bat_infantry_1001_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1002_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1003_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1010_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1020_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1021_count = 0 }
+	
+	set_variable = { tom_inf_bat_infantry_1100_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1101_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1102_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1110_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1111_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1112_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1120_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1121_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1122_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1130_count = 0 }
+	
+	set_variable = { tom_inf_bat_infantry_1200_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1201_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1210_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1211_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1212_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1220_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1221_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1222_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1223_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1230_count = 0 }
+	set_variable = { tom_inf_bat_infantry_1240_count = 0 }
+	
 	
 	set_variable = { tom_inf_bat_infantry_10_max = 4 }
 	set_variable = { tom_inf_bat_infantry_11_max = 1 }
