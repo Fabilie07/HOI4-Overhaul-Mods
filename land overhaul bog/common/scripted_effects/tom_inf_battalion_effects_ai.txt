@@ -136,7 +136,7 @@ tom_inf_bat_AI_battalions_infantry_2 = {
 	add_to_array = { tom_inf_bat_infantry_equipment_stats_array_2_count = 9 }
 	
 	# Stats (GUI only)
-	add_to_variable = { tom_inf_bat_infantry_combat_stats_array^1 = 10 }
+	add_to_variable = { tom_inf_bat_infantry_combat_stats_array^0 = 10 }
 	add_to_variable = { tom_inf_bat_infantry_combat_stats_array^3 = 12 }
 	add_to_variable = { tom_inf_bat_infantry_combat_stats_array^4 = 12 }
 	
@@ -277,4 +277,542 @@ tom_inf_bat_AI_battalions_infantry_3 = {
 	
 	set_technology = { tom_inf_bat_infantry_1210_tech_1 = 1 }
 	set_technology = { tom_inf_bat_infantry_1230_tech_1 = 1 }
+}
+
+
+
+tom_inf_bat_AI_battalions_motorized = {
+	# Infantry
+	clear_array = tom_inf_battalion_motorized_company_array
+	clear_array = tom_inf_battalion_motorized_platoon_array
+
+	add_to_array = { tom_inf_battalion_motorized_company_array = 13 }
+	add_to_array = { tom_inf_battalion_motorized_company_array = 13 }
+	add_to_array = { tom_inf_battalion_motorized_company_array = 13 }
+	add_to_array = { tom_inf_battalion_motorized_company_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_company_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_company_array = 11 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1100 }
+	
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1101 }
+	
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1300 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1102 }
+	
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 1110 }
+	
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_motorized_platoon_array = 0 }
+	
+	# Equipment (GUI only)
+	clear_array = tom_inf_bat_motorized_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_motorized_equipment_stats_array_2_count
+	
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:lmg_chassis }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:mmg_chassis }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:hmg_chassis }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:mortar_chassis }
+	
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 12 }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 9 }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 6 }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 9 }
+	
+	# Stats (GUI only)
+	add_to_variable = { tom_inf_bat_motorized_combat_stats_array^0 = 10 }
+	add_to_variable = { tom_inf_bat_motorized_combat_stats_array^3 = 12 }
+	add_to_variable = { tom_inf_bat_motorized_combat_stats_array^4 = 12 }
+	
+	set_variable = { tom_inf_bat_motorized_13_count = 3 }
+	set_variable = { tom_inf_bat_motorized_11_count = 1 }
+	set_variable = { tom_inf_bat_motorized_1300_count = 9 }
+	set_variable = { tom_inf_bat_motorized_1001_count = 3 }
+	set_variable = { tom_inf_bat_motorized_1002_count = 3 }
+	set_variable = { tom_inf_bat_motorized_1003_count = 3 }
+	set_variable = { tom_inf_bat_motorized_1010_count = 3 }
+	
+	set_technology = { tom_inf_bat_motorized_1001_tech_1 = 1 }
+	set_technology = { tom_inf_bat_motorized_1002_tech_1 = 1 }
+	set_technology = { tom_inf_bat_motorized_1003_tech_1 = 1 }
+	set_technology = { tom_inf_bat_motorized_1010_tech_1 = 1 }
+	set_technology = { tom_inf_bat_motorized_1001_tech_2 = 1 }
+	set_technology = { tom_inf_bat_motorized_1002_tech_2 = 1 }
+	set_technology = { tom_inf_bat_motorized_1003_tech_2 = 1 }
+	set_technology = { tom_inf_bat_motorized_1010_tech_2 = 1 }
+	set_technology = { tom_inf_bat_motorized_1001_tech_3 = 1 }
+	set_technology = { tom_inf_bat_motorized_1002_tech_3 = 1 }
+	set_technology = { tom_inf_bat_motorized_1003_tech_3 = 1 }
+	set_technology = { tom_inf_bat_motorized_1010_tech_3 = 1 }
+}
+
+tom_inf_bat_AI_battalions_mechanized = {
+	# Infantry
+	clear_array = tom_inf_battalion_mechanized_company_array
+	clear_array = tom_inf_battalion_mechanized_platoon_array
+
+	add_to_array = { tom_inf_battalion_mechanized_company_array = 14 }
+	add_to_array = { tom_inf_battalion_mechanized_company_array = 14 }
+	add_to_array = { tom_inf_battalion_mechanized_company_array = 14 }
+	add_to_array = { tom_inf_battalion_mechanized_company_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_company_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_company_array = 11 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1100 }
+	
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1101 }
+	
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1400 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1102 }
+	
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 1110 }
+	
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mechanized_platoon_array = 0 }
+	
+	# Equipment (GUI only)
+	clear_array = tom_inf_bat_mechanized_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_mechanized_equipment_stats_array_2_count
+	
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_type = token:lmg_chassis }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_type = token:mmg_chassis }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_type = token:hmg_chassis }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_type = token:mortar_chassis }
+	
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_count = 12 }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_count = 9 }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_count = 6 }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_count = 9 }
+	
+	# Stats (GUI only)
+	add_to_variable = { tom_inf_bat_mechanized_combat_stats_array^0 = 10 }
+	add_to_variable = { tom_inf_bat_mechanized_combat_stats_array^3 = 12 }
+	add_to_variable = { tom_inf_bat_mechanized_combat_stats_array^4 = 12 }
+	
+	set_variable = { tom_inf_bat_mechanized_14_count = 3 }
+	set_variable = { tom_inf_bat_mechanized_11_count = 1 }
+	set_variable = { tom_inf_bat_mechanized_1400_count = 9 }
+	set_variable = { tom_inf_bat_mechanized_1001_count = 3 }
+	set_variable = { tom_inf_bat_mechanized_1002_count = 3 }
+	set_variable = { tom_inf_bat_mechanized_1003_count = 3 }
+	set_variable = { tom_inf_bat_mechanized_1010_count = 3 }
+	
+	set_technology = { tom_inf_bat_mechanized_1001_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1002_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1003_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1010_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1001_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1002_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1003_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1010_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1001_tech_3 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1002_tech_3 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1003_tech_3 = 1 }
+	set_technology = { tom_inf_bat_mechanized_1010_tech_3 = 1 }
+}
+
+
+
+tom_inf_bat_AI_battalions_mountaineer = {
+	# Infantry
+	clear_array = tom_inf_battalion_mountaineer_company_array
+	clear_array = tom_inf_battalion_mountaineer_platoon_array
+
+	add_to_array = { tom_inf_battalion_mountaineer_company_array = 20 }
+	add_to_array = { tom_inf_battalion_mountaineer_company_array = 20 }
+	add_to_array = { tom_inf_battalion_mountaineer_company_array = 20 }
+	add_to_array = { tom_inf_battalion_mountaineer_company_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_company_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_company_array = 11 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 1100 }
+	
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 1101 }
+	
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 2000 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 1102 }
+	
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 1110 }
+	
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_mountaineer_platoon_array = 0 }
+	
+	# Equipment (GUI only)
+	clear_array = tom_inf_bat_mountaineer_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_mountaineer_equipment_stats_array_2_count
+	
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_type = token:lmg_chassis }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_type = token:mmg_chassis }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_type = token:hmg_chassis }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_type = token:mortar_chassis }
+	
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_count = 12 }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_count = 9 }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_count = 6 }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_count = 9 }
+	
+	# Stats (GUI only)
+	add_to_variable = { tom_inf_bat_mountaineer_combat_stats_array^0 = 10 }
+	add_to_variable = { tom_inf_bat_mountaineer_combat_stats_array^3 = 12 }
+	add_to_variable = { tom_inf_bat_mountaineer_combat_stats_array^4 = 12 }
+	
+	set_variable = { tom_inf_bat_mountaineer_20_count = 3 }
+	set_variable = { tom_inf_bat_mountaineer_11_count = 1 }
+	set_variable = { tom_inf_bat_mountaineer_2000_count = 9 }
+	set_variable = { tom_inf_bat_mountaineer_1001_count = 3 }
+	set_variable = { tom_inf_bat_mountaineer_1002_count = 3 }
+	set_variable = { tom_inf_bat_mountaineer_1003_count = 3 }
+	set_variable = { tom_inf_bat_mountaineer_1010_count = 3 }
+	
+	set_technology = { tom_inf_bat_mountaineer_1001_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1002_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1003_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1010_tech_1 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1001_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1002_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1003_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1010_tech_2 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1001_tech_3 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1002_tech_3 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1003_tech_3 = 1 }
+	set_technology = { tom_inf_bat_mountaineer_1010_tech_3 = 1 }
+}
+
+tom_inf_bat_AI_battalions_paratrooper = {
+	# Infantry
+	clear_array = tom_inf_battalion_paratrooper_company_array
+	clear_array = tom_inf_battalion_paratrooper_platoon_array
+
+	add_to_array = { tom_inf_battalion_paratrooper_company_array = 21 }
+	add_to_array = { tom_inf_battalion_paratrooper_company_array = 21 }
+	add_to_array = { tom_inf_battalion_paratrooper_company_array = 21 }
+	add_to_array = { tom_inf_battalion_paratrooper_company_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_company_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_company_array = 11 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 1100 }
+	
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 1101 }
+	
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 2100 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 1102 }
+	
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 1110 }
+	
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_paratrooper_platoon_array = 0 }
+	
+	# Equipment (GUI only)
+	clear_array = tom_inf_bat_paratrooper_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_paratrooper_equipment_stats_array_2_count
+	
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_type = token:lmg_chassis }
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_type = token:mmg_chassis }
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_type = token:hmg_chassis }
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_type = token:mortar_chassis }
+	
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_count = 12 }
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_count = 9 }
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_count = 6 }
+	add_to_array = { tom_inf_bat_paratrooper_equipment_stats_array_2_count = 9 }
+	
+	# Stats (GUI only)
+	add_to_variable = { tom_inf_bat_paratrooper_combat_stats_array^0 = 10 }
+	add_to_variable = { tom_inf_bat_paratrooper_combat_stats_array^3 = 12 }
+	add_to_variable = { tom_inf_bat_paratrooper_combat_stats_array^4 = 12 }
+	
+	set_variable = { tom_inf_bat_paratrooper_21_count = 3 }
+	set_variable = { tom_inf_bat_paratrooper_11_count = 1 }
+	set_variable = { tom_inf_bat_paratrooper_2100_count = 9 }
+	set_variable = { tom_inf_bat_paratrooper_1001_count = 3 }
+	set_variable = { tom_inf_bat_paratrooper_1002_count = 3 }
+	set_variable = { tom_inf_bat_paratrooper_1003_count = 3 }
+	set_variable = { tom_inf_bat_paratrooper_1010_count = 3 }
+	
+	set_technology = { tom_inf_bat_paratrooper_1001_tech_1 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1002_tech_1 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1003_tech_1 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1010_tech_1 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1001_tech_2 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1002_tech_2 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1003_tech_2 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1010_tech_2 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1001_tech_3 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1002_tech_3 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1003_tech_3 = 1 }
+	set_technology = { tom_inf_bat_paratrooper_1010_tech_3 = 1 }
+}
+
+tom_inf_bat_AI_battalions_marine = {
+	# Infantry
+	clear_array = tom_inf_battalion_marine_company_array
+	clear_array = tom_inf_battalion_marine_platoon_array
+
+	add_to_array = { tom_inf_battalion_marine_company_array = 22 }
+	add_to_array = { tom_inf_battalion_marine_company_array = 22 }
+	add_to_array = { tom_inf_battalion_marine_company_array = 22 }
+	add_to_array = { tom_inf_battalion_marine_company_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_company_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_company_array = 11 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 1100 }
+	
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 1101 }
+	
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 2200 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 1102 }
+	
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 1110 }
+	
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_marine_platoon_array = 0 }
+	
+	# Equipment (GUI only)
+	clear_array = tom_inf_bat_marine_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_marine_equipment_stats_array_2_count
+	
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_type = token:lmg_chassis }
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_type = token:mmg_chassis }
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_type = token:hmg_chassis }
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_type = token:mortar_chassis }
+	
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_count = 12 }
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_count = 9 }
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_count = 6 }
+	add_to_array = { tom_inf_bat_marine_equipment_stats_array_2_count = 9 }
+	
+	# Stats (GUI only)
+	add_to_variable = { tom_inf_bat_marine_combat_stats_array^0 = 10 }
+	add_to_variable = { tom_inf_bat_marine_combat_stats_array^3 = 12 }
+	add_to_variable = { tom_inf_bat_marine_combat_stats_array^4 = 12 }
+	
+	set_variable = { tom_inf_bat_marine_22_count = 3 }
+	set_variable = { tom_inf_bat_marine_11_count = 1 }
+	set_variable = { tom_inf_bat_marine_2200_count = 9 }
+	set_variable = { tom_inf_bat_marine_1001_count = 3 }
+	set_variable = { tom_inf_bat_marine_1002_count = 3 }
+	set_variable = { tom_inf_bat_marine_1003_count = 3 }
+	set_variable = { tom_inf_bat_marine_1010_count = 3 }
+	
+	set_technology = { tom_inf_bat_marine_1001_tech_1 = 1 }
+	set_technology = { tom_inf_bat_marine_1002_tech_1 = 1 }
+	set_technology = { tom_inf_bat_marine_1003_tech_1 = 1 }
+	set_technology = { tom_inf_bat_marine_1010_tech_1 = 1 }
+	set_technology = { tom_inf_bat_marine_1001_tech_2 = 1 }
+	set_technology = { tom_inf_bat_marine_1002_tech_2 = 1 }
+	set_technology = { tom_inf_bat_marine_1003_tech_2 = 1 }
+	set_technology = { tom_inf_bat_marine_1010_tech_2 = 1 }
+	set_technology = { tom_inf_bat_marine_1001_tech_3 = 1 }
+	set_technology = { tom_inf_bat_marine_1002_tech_3 = 1 }
+	set_technology = { tom_inf_bat_marine_1003_tech_3 = 1 }
+	set_technology = { tom_inf_bat_marine_1010_tech_3 = 1 }
+}
+
+tom_inf_bat_AI_battalions_ranger = {
+	# Infantry
+	clear_array = tom_inf_battalion_ranger_company_array
+	clear_array = tom_inf_battalion_ranger_platoon_array
+
+	add_to_array = { tom_inf_battalion_ranger_company_array = 24 }
+	add_to_array = { tom_inf_battalion_ranger_company_array = 24 }
+	add_to_array = { tom_inf_battalion_ranger_company_array = 24 }
+	add_to_array = { tom_inf_battalion_ranger_company_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_company_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_company_array = 11 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 1100 }
+	
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 1101 }
+	
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 2400 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 1102 }
+	
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 1110 }
+	
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_ranger_platoon_array = 0 }
+	
+	# Equipment (GUI only)
+	clear_array = tom_inf_bat_ranger_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_ranger_equipment_stats_array_2_count
+	
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_type = token:lmg_chassis }
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_type = token:mmg_chassis }
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_type = token:hmg_chassis }
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_type = token:mortar_chassis }
+	
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_count = 12 }
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_count = 9 }
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_count = 6 }
+	add_to_array = { tom_inf_bat_ranger_equipment_stats_array_2_count = 9 }
+	
+	# Stats (GUI only)
+	add_to_variable = { tom_inf_bat_ranger_combat_stats_array^0 = 10 }
+	add_to_variable = { tom_inf_bat_ranger_combat_stats_array^3 = 12 }
+	add_to_variable = { tom_inf_bat_ranger_combat_stats_array^4 = 12 }
+	
+	set_variable = { tom_inf_bat_ranger_24_count = 3 }
+	set_variable = { tom_inf_bat_ranger_11_count = 1 }
+	set_variable = { tom_inf_bat_ranger_2400_count = 9 }
+	set_variable = { tom_inf_bat_ranger_1001_count = 3 }
+	set_variable = { tom_inf_bat_ranger_1002_count = 3 }
+	set_variable = { tom_inf_bat_ranger_1003_count = 3 }
+	set_variable = { tom_inf_bat_ranger_1010_count = 3 }
+	
+	set_technology = { tom_inf_bat_ranger_1001_tech_1 = 1 }
+	set_technology = { tom_inf_bat_ranger_1002_tech_1 = 1 }
+	set_technology = { tom_inf_bat_ranger_1003_tech_1 = 1 }
+	set_technology = { tom_inf_bat_ranger_1010_tech_1 = 1 }
+	set_technology = { tom_inf_bat_ranger_1001_tech_2 = 1 }
+	set_technology = { tom_inf_bat_ranger_1002_tech_2 = 1 }
+	set_technology = { tom_inf_bat_ranger_1003_tech_2 = 1 }
+	set_technology = { tom_inf_bat_ranger_1010_tech_2 = 1 }
+	set_technology = { tom_inf_bat_ranger_1001_tech_3 = 1 }
+	set_technology = { tom_inf_bat_ranger_1002_tech_3 = 1 }
+	set_technology = { tom_inf_bat_ranger_1003_tech_3 = 1 }
+	set_technology = { tom_inf_bat_ranger_1010_tech_3 = 1 }
 }

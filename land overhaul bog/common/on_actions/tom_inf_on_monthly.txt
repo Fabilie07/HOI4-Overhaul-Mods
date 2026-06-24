@@ -17,6 +17,72 @@ on_actions = {
 				divide_variable = { tom_inf_ai_infantry_hmg_ratio = num_battalions_with_type@infantry }
 				divide_variable = { tom_inf_ai_infantry_mortar_ratio = num_battalions_with_type@infantry }
 				divide_variable = { tom_inf_ai_infantry_support_ratio = num_battalions_with_type@infantry }
+				
+				# Motorized
+				set_variable = { tom_inf_ai_motorized_lmg_ratio = num_equipment@lmg_chassis }
+				set_variable = { tom_inf_ai_motorized_mmg_ratio = num_equipment@mmg_chassis }
+				set_variable = { tom_inf_ai_motorized_hmg_ratio = num_equipment@hmg_chassis }
+				set_variable = { tom_inf_ai_motorized_mortar_ratio = num_equipment@mortar_chassis }
+				
+				divide_variable = { tom_inf_ai_motorized_lmg_ratio = num_battalions_with_type@motorized }
+				divide_variable = { tom_inf_ai_motorized_mmg_ratio = num_battalions_with_type@motorized }
+				divide_variable = { tom_inf_ai_motorized_hmg_ratio = num_battalions_with_type@motorized }
+				divide_variable = { tom_inf_ai_motorized_mortar_ratio = num_battalions_with_type@motorized }
+				
+				# Mechanized
+				set_variable = { tom_inf_ai_mechanized_lmg_ratio = num_equipment@lmg_chassis }
+				set_variable = { tom_inf_ai_mechanized_mmg_ratio = num_equipment@mmg_chassis }
+				set_variable = { tom_inf_ai_mechanized_hmg_ratio = num_equipment@hmg_chassis }
+				set_variable = { tom_inf_ai_mechanized_mortar_ratio = num_equipment@mortar_chassis }
+				
+				divide_variable = { tom_inf_ai_mechanized_lmg_ratio = num_battalions_with_type@mechanized }
+				divide_variable = { tom_inf_ai_mechanized_mmg_ratio = num_battalions_with_type@mechanized }
+				divide_variable = { tom_inf_ai_mechanized_hmg_ratio = num_battalions_with_type@mechanized }
+				divide_variable = { tom_inf_ai_mechanized_mortar_ratio = num_battalions_with_type@mechanized }
+				
+				# Mountaineer
+				set_variable = { tom_inf_ai_mountaineer_lmg_ratio = num_equipment@lmg_chassis }
+				set_variable = { tom_inf_ai_mountaineer_mmg_ratio = num_equipment@mmg_chassis }
+				set_variable = { tom_inf_ai_mountaineer_hmg_ratio = num_equipment@hmg_chassis }
+				set_variable = { tom_inf_ai_mountaineer_mortar_ratio = num_equipment@mortar_chassis }
+				
+				divide_variable = { tom_inf_ai_mountaineer_lmg_ratio = num_battalions_with_type@mountaineers }
+				divide_variable = { tom_inf_ai_mountaineer_mmg_ratio = num_battalions_with_type@mountaineers }
+				divide_variable = { tom_inf_ai_mountaineer_hmg_ratio = num_battalions_with_type@mountaineers }
+				divide_variable = { tom_inf_ai_mountaineer_mortar_ratio = num_battalions_with_type@mountaineers }
+				
+				# Paratrooper
+				set_variable = { tom_inf_ai_paratrooper_lmg_ratio = num_equipment@lmg_chassis }
+				set_variable = { tom_inf_ai_paratrooper_mmg_ratio = num_equipment@mmg_chassis }
+				set_variable = { tom_inf_ai_paratrooper_hmg_ratio = num_equipment@hmg_chassis }
+				set_variable = { tom_inf_ai_paratrooper_mortar_ratio = num_equipment@mortar_chassis }
+				
+				divide_variable = { tom_inf_ai_paratrooper_lmg_ratio = num_battalions_with_type@paratrooper }
+				divide_variable = { tom_inf_ai_paratrooper_mmg_ratio = num_battalions_with_type@paratrooper }
+				divide_variable = { tom_inf_ai_paratrooper_hmg_ratio = num_battalions_with_type@paratrooper }
+				divide_variable = { tom_inf_ai_paratrooper_mortar_ratio = num_battalions_with_type@paratrooper }
+				
+				# Marine
+				set_variable = { tom_inf_ai_marine_lmg_ratio = num_equipment@lmg_chassis }
+				set_variable = { tom_inf_ai_marine_mmg_ratio = num_equipment@mmg_chassis }
+				set_variable = { tom_inf_ai_marine_hmg_ratio = num_equipment@hmg_chassis }
+				set_variable = { tom_inf_ai_marine_mortar_ratio = num_equipment@mortar_chassis }
+				
+				divide_variable = { tom_inf_ai_marine_lmg_ratio = num_battalions_with_type@marine }
+				divide_variable = { tom_inf_ai_marine_mmg_ratio = num_battalions_with_type@marine }
+				divide_variable = { tom_inf_ai_marine_hmg_ratio = num_battalions_with_type@marine }
+				divide_variable = { tom_inf_ai_marine_mortar_ratio = num_battalions_with_type@marine }
+				
+				# Ranger
+				set_variable = { tom_inf_ai_ranger_lmg_ratio = num_equipment@lmg_chassis }
+				set_variable = { tom_inf_ai_ranger_mmg_ratio = num_equipment@mmg_chassis }
+				set_variable = { tom_inf_ai_ranger_hmg_ratio = num_equipment@hmg_chassis }
+				set_variable = { tom_inf_ai_ranger_mortar_ratio = num_equipment@mortar_chassis }
+				
+				divide_variable = { tom_inf_ai_ranger_lmg_ratio = num_battalions_with_type@ranger_battalion }
+				divide_variable = { tom_inf_ai_ranger_mmg_ratio = num_battalions_with_type@ranger_battalion }
+				divide_variable = { tom_inf_ai_ranger_hmg_ratio = num_battalions_with_type@ranger_battalion }
+				divide_variable = { tom_inf_ai_ranger_mortar_ratio = num_battalions_with_type@ranger_battalion }
 			}
 		}
 	}
