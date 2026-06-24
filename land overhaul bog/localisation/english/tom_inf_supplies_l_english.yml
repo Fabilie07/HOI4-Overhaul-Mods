@@ -13,3 +13,9 @@
  
  raid_target_name_naval_supply_hub:0 "Naval Supply Hub"
  raid_target_name_tom_inf_supply_depot:0 "Supply Depot"
+ 
+ raid_category_coastal_marine_raids:0 "Coastal Raids"
+ raid_category_land_special_forces_raids:0 "Special Forces Raids"
+ 
+ tooltip_raid_category_coastal_marine_raids:0 "§YCoastal Raids§! \nAttacking from the Sea to target enemy Infrastructure, our Amphibious Forces will pave the way for the army to advance."
+ tooltip_raid_category_land_special_forces_raids:0 "§YSpecial Forces Raids§! \nElite Units can penetrate enemy lines, attacking strategic targets far from the frontline."
