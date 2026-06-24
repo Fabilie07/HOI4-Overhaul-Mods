@@ -47,6 +47,10 @@ scripted_gui = {
 				}
 			}
 			
+			reset_button_click_enabled = {
+				tom_inf_reset_button_trigger = yes
+			}
+			
 			debug_button_visible = {
 				is_debug = yes
 			}
@@ -66,6 +70,10 @@ scripted_gui = {
 					tom_inf_compute_equipment_cost_effect = yes
 					set_country_flag = tom_inf_bat_save_confirmation
 				}
+			}
+			
+			reset_button_click = {
+				tom_inf_bat_reset_designer_effect = yes
 			}
 			
 			debug_button_click = {

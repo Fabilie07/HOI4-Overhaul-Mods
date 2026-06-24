@@ -88,6 +88,132 @@ tom_inf_bat_open_designer_effect = {
 	}
 }
 
+tom_inf_bat_reset_designer_effect = {
+	clear_array = tom_inf_battalion_company_array
+	clear_array = tom_inf_battalion_platoon_array
+	
+	clear_array = tom_inf_bat_popup_base_stats_array
+	clear_array = tom_inf_bat_popup_combat_stats_array
+	clear_array = tom_inf_bat_popup_equipment_stats_array_1
+	clear_array = tom_inf_bat_popup_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_popup_equipment_stats_array_2_count
+	clear_array = tom_inf_bat_popup_equipment_stats_array_2_needed
+	
+	clear_array = tom_inf_bat_popup_terrain_bonus_array
+	clear_array = tom_inf_bat_popup_terrain_movement_array
+	clear_array = tom_inf_bat_popup_terrain_attack_array
+	clear_array = tom_inf_bat_popup_terrain_defense_array
+
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_infantry
+		}
+		
+		set_variable = { tom_inf_bat_popup_10_count = 3 }
+		set_variable = { tom_inf_bat_popup_1000_count = 9 }
+		tom_inf_bat_reset_designer_infantry_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized
+		}
+		
+		set_variable = { tom_inf_bat_popup_13_count = 3 }
+		set_variable = { tom_inf_bat_popup_1300_count = 9 }
+		tom_inf_bat_reset_designer_motorized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mechanized
+		}
+		
+		set_variable = { tom_inf_bat_popup_14_count = 3 }
+		set_variable = { tom_inf_bat_popup_1400_count = 9 }
+		tom_inf_bat_reset_designer_mechanized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_cavalry
+		}
+		
+		set_variable = { tom_inf_bat_popup_15_count = 3 }
+		set_variable = { tom_inf_bat_popup_1500_count = 9 }
+		tom_inf_bat_reset_designer_cavalry_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+		}
+		
+		set_variable = { tom_inf_bat_popup_20_count = 3 }
+		set_variable = { tom_inf_bat_popup_2000_count = 9 }
+		tom_inf_bat_reset_designer_mountaineer_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+		}
+		
+		set_variable = { tom_inf_bat_popup_21_count = 3 }
+		set_variable = { tom_inf_bat_popup_2100_count = 9 }
+		tom_inf_bat_reset_designer_paratrooper_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine
+		}
+		
+		set_variable = { tom_inf_bat_popup_22_count = 3 }
+		set_variable = { tom_inf_bat_popup_2200_count = 9 }
+		tom_inf_bat_reset_designer_marine_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+		}
+		
+		set_variable = { tom_inf_bat_popup_23_count = 3 }
+		set_variable = { tom_inf_bat_popup_2300_count = 9 }
+		tom_inf_bat_reset_designer_marine_commando_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_ranger
+		}
+		
+		set_variable = { tom_inf_bat_popup_24_count = 3 }
+		set_variable = { tom_inf_bat_popup_2400_count = 9 }
+		tom_inf_bat_reset_designer_ranger_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+		}
+		
+		set_variable = { tom_inf_bat_popup_30_count = 3 }
+		set_variable = { tom_inf_bat_popup_3000_count = 9 }
+		tom_inf_bat_reset_designer_mountaineers_mechanized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+		}
+		
+		set_variable = { tom_inf_bat_popup_32_count = 3 }
+		set_variable = { tom_inf_bat_popup_3200_count = 9 }
+		tom_inf_bat_reset_designer_amphibious_mechanized_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+		}
+		
+		set_variable = { tom_inf_bat_popup_34_count = 3 }
+		set_variable = { tom_inf_bat_popup_3400_count = 9 }
+		tom_inf_bat_reset_designer_rangers_mechanized_effect = yes
+	}
+}
+
 tom_inf_bat_close_designer_effect = {
 	clr_country_flag = tom_inf_battalion_designer_open
 	clr_country_flag = tom_inf_battalion_designer_add_open

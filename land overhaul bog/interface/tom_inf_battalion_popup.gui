@@ -74,10 +74,10 @@ guiTypes = {
 		}
 		
 		ButtonType = {
-			name = "reset_button"
+			name = "revert_button"
 			position = { x=20 y=502 }
 			quadTextureSprite ="GFX_button_reset_123x34"
-			buttonText = "DESIGNER_RESET"
+			buttonText = "Revert"
 			pdx_tooltip = "DESIGNER_RESET_DESC"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
@@ -100,6 +100,24 @@ guiTypes = {
 			buttonText = "Save"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
+		}
+		
+		ButtonType = {
+			name = "reset_button"
+			position = { x=-256 y=502 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "Reset"
+			buttonFont = "hoi_18mbs"
+			orientation = UPPER_RIGHT
+			clicksound = click_default
+		}
+		
+		instantTextBoxType = {
+			name = "resets_left"
+			position = { x=-130 y=510 }
+			text = TOM_INF_RESETS_LEFT
+			font = "hoi_18mbs"
+			orientation = UPPER_RIGHT
 		}
 	}
 	
