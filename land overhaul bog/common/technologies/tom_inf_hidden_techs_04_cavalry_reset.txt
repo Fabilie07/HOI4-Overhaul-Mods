@@ -292,7 +292,7 @@ technologies = {
 		}
 		cavalry = {
 			soft_attack = 0.25
-			combat_width = -0.5
+			# combat_width = -0.5
 			need = {
 				artillery_equipment = -4
 			}
@@ -308,7 +308,7 @@ technologies = {
 		}
 		cavalry = {
 			soft_attack = 0.25
-			combat_width = -0.5
+			# combat_width = -0.5
 			need = {
 				super_heavy_artillery_equipment = -1
 			}
@@ -700,8 +700,8 @@ technologies = {
 		cavalry = {
 			max_strength = -0.1
 			default_morale = -0.1
-			# casualty_trickleback = 0.02
-			# experience_loss_factor = -0.02
+			casualty_trickleback = 0.02
+			experience_loss_factor = -0.02
 			need = {
 				support_equipment = -8
 			}

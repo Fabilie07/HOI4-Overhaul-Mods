@@ -285,7 +285,7 @@ technologies = {
 		}
 		infantry = {
 			soft_attack = 0.25
-			combat_width = -0.5
+			# combat_width = -0.5
 			need = {
 				artillery_equipment = -4
 			}
@@ -301,7 +301,7 @@ technologies = {
 		}
 		infantry = {
 			soft_attack = 0.25
-			combat_width = -0.5
+			# combat_width = -0.5
 			need = {
 				super_heavy_artillery_equipment = -1
 			}
