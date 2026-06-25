@@ -223,7 +223,7 @@ technologies = {
 			defense = 0.10
 		}
 		mountaineers = {
-			combat_width = -0.2
+			# combat_width = -0.2
 		}
 		
 		path = {
