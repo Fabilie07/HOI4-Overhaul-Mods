@@ -280,8 +280,8 @@ tom_inf_bat_reset_designer_cavalry_effect = {
 			set_technology = { tom_inf_bat_cavalry_1500_tech_reset_12 = 1 popup = no }
 		}
 		if = {
-			limit = { has_tech = tom_inf_bat_cavalry_1500_tech_15 }
-			set_technology = { tom_inf_bat_cavalry_1500_tech_reset_15 = 1 popup = no }
+			limit = { has_tech = tom_inf_bat_cavalry_1500_tech_13 }
+			set_technology = { tom_inf_bat_cavalry_1500_tech_reset_13 = 1 popup = no }
 		}
 		if = {
 			limit = { has_tech = tom_inf_bat_cavalry_1500_tech_14 }
@@ -870,17 +870,17 @@ tom_inf_bat_add_effect_cavalry = {
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1500_count > 12 }
-			NOT = { has_tech = tom_inf_bat_cavalry_1500_tech_15 }
+			NOT = { has_tech = tom_inf_bat_cavalry_1500_tech_13 }
 		}
-		set_technology = { tom_inf_bat_cavalry_1500_tech_15 = 1 popup = no }
+		set_technology = { tom_inf_bat_cavalry_1500_tech_13 = 1 popup = no }
 	}
 	else_if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1500_count > 12 }
-			has_tech = tom_inf_bat_cavalry_1500_tech_reset_15
-			NOT = { has_tech = tom_inf_bat_cavalry_1500_tech2_15 }
+			has_tech = tom_inf_bat_cavalry_1500_tech_reset_13
+			NOT = { has_tech = tom_inf_bat_cavalry_1500_tech2_13 }
 		}
-		set_technology = { tom_inf_bat_cavalry_1500_tech2_15 = 1 popup = no }
+		set_technology = { tom_inf_bat_cavalry_1500_tech2_13 = 1 popup = no }
 	}
 	if = {
 		limit = {

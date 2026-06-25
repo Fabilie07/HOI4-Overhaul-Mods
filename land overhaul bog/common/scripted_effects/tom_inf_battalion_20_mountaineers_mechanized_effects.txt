@@ -1,3 +1,4 @@
+
 tom_inf_bat_startup_effect_mountaineers_mechanized = {
 	# Set mountaineers_mechanized Battalion Arrays to Start Values
 	resize_array = { tom_inf_bat_mountaineers_mechanized_base_stats_array = 11 }
@@ -57,7 +58,38 @@ tom_inf_bat_startup_effect_mountaineers_mechanized = {
 	add_to_array = { tom_inf_battalion_mountaineers_mechanized_platoon_array = 0 }
 	
 	set_variable = { tom_inf_bat_mountaineers_mechanized_30_count = 3 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_11_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_12_count = 0 }
+	
 	set_variable = { tom_inf_bat_mountaineers_mechanized_3000_count = 9 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1001_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1002_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1003_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1010_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1020_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1021_count = 0 }
+	
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1100_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1101_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1102_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1110_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1111_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1112_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1120_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1121_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1122_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1130_count = 0 }
+	
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1210_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1211_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1212_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1220_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1221_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1222_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1223_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1230_count = 0 }
+	set_variable = { tom_inf_bat_mountaineers_mechanized_1240_count = 0 }
+	
 	
 	set_variable = { tom_inf_bat_mountaineers_mechanized_30_max = 4 }
 	set_variable = { tom_inf_bat_mountaineers_mechanized_11_max = 1 }
@@ -71,24 +103,8 @@ tom_inf_bat_startup_effect_mountaineers_mechanized = {
 	set_variable = { tom_inf_bat_mountaineers_mechanized_1020_max = 4 }
 	set_variable = { tom_inf_bat_mountaineers_mechanized_1021_max = 4 }
 	
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1111_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1112_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1121_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1130_max = 1 }
-	
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1200_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1210_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1211_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1212_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1220_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1221_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1222_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1223_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1230_max = 1 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_1240_max = 1 }
 	
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 1 }
-	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 2 }
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 3 }
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 5 }
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 6 }
@@ -96,27 +112,41 @@ tom_inf_bat_startup_effect_mountaineers_mechanized = {
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 11 }
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 12 }
 	
-	resize_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 8 }
-	resize_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = 8 }
-	resize_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 8 }
+	resize_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 7 }
+	resize_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = 7 }
+	resize_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 7 }
 	
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array^1 = 10 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array^2 = 10 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array^7 = -20 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 1 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 2 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 3 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 5 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 6 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 7 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 11 }
+	add_to_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_bonus_array = 12 }
 	
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^0 = -20 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^1 = 20 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^2 = 30 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^3 = -20 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^4 = -30 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^5 = -10 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^6 = -40 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array^7 = -20 }
+	resize_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_movement_array = 8 }
+	resize_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array = 8 }
+	resize_array = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_defense_array = 8 }
 	
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array^1 = 5 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array^2 = 5 }
-	set_variable = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array^3 = -5 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_movement_array^1 = 10 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_movement_array^2 = 10 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_movement_array^7 = -20 }
+	
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^0 = -20 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^1 = 20 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^2 = 30 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^3 = -20 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^4 = -30 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^5 = -10 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^6 = -40 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_attack_array^7 = -20 }
+	
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_defense_array^1 = 5 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_defense_array^2 = 5 }
+	set_variable = { tom_inf_bat_mountaineers_mountaineers_mechanized_terrain_defense_array^3 = -5 }
 }
+
 
 tom_inf_bat_open_designer_mountaineers_mechanized_effect = {
 	for_each_loop = {
@@ -210,6 +240,8 @@ tom_inf_bat_open_subunit_counts_mountaineers_mechanized_effect = {
 	set_variable = { tom_inf_bat_popup_1122_count = tom_inf_bat_mountaineers_mechanized_1122_count }
 	set_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_mountaineers_mechanized_1130_count }
 	
+	set_variable = { tom_inf_bat_popup_1200_count = tom_inf_bat_mountaineers_mechanized_1200_count }
+	set_variable = { tom_inf_bat_popup_1201_count = tom_inf_bat_mountaineers_mechanized_1201_count }
 	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_mountaineers_mechanized_1210_count }
 	set_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_mountaineers_mechanized_1211_count }
 	set_variable = { tom_inf_bat_popup_1212_count = tom_inf_bat_mountaineers_mechanized_1212_count }
@@ -232,27 +264,210 @@ tom_inf_bat_open_subunit_counts_mountaineers_mechanized_effect = {
 	set_variable = { tom_inf_bat_popup_1010_max = tom_inf_bat_mountaineers_mechanized_1010_max }
 	set_variable = { tom_inf_bat_popup_1020_max = tom_inf_bat_mountaineers_mechanized_1020_max }
 	set_variable = { tom_inf_bat_popup_1021_max = tom_inf_bat_mountaineers_mechanized_1021_max }
+}
+
+tom_inf_bat_reset_designer_mountaineers_mechanized_effect = {
+	clear_array = tom_inf_bat_mountaineers_mechanized_base_stats_array
+	clear_array = tom_inf_bat_mountaineers_mechanized_combat_stats_array
+	clear_array = tom_inf_bat_mountaineers_mechanized_equipment_stats_array_1
+	clear_array = tom_inf_bat_mountaineers_mechanized_equipment_stats_array_2_type
+	clear_array = tom_inf_bat_mountaineers_mechanized_equipment_stats_array_2_count
 	
-	set_variable = { tom_inf_bat_popup_1100_max = tom_inf_bat_mountaineers_mechanized_1100_max }
-	set_variable = { tom_inf_bat_popup_1101_max = tom_inf_bat_mountaineers_mechanized_1101_max }
-	set_variable = { tom_inf_bat_popup_1102_max = tom_inf_bat_mountaineers_mechanized_1102_max }
-	set_variable = { tom_inf_bat_popup_1110_max = tom_inf_bat_mountaineers_mechanized_1110_max }
-	set_variable = { tom_inf_bat_popup_1111_max = tom_inf_bat_mountaineers_mechanized_1111_max }
-	set_variable = { tom_inf_bat_popup_1112_max = tom_inf_bat_mountaineers_mechanized_1112_max }
-	set_variable = { tom_inf_bat_popup_1120_max = tom_inf_bat_mountaineers_mechanized_1120_max }
-	set_variable = { tom_inf_bat_popup_1121_max = tom_inf_bat_mountaineers_mechanized_1121_max }
-	set_variable = { tom_inf_bat_popup_1122_max = tom_inf_bat_mountaineers_mechanized_1122_max }
-	set_variable = { tom_inf_bat_popup_1130_max = tom_inf_bat_mountaineers_mechanized_1130_max }
+	clear_array = tom_inf_bat_mountaineers_mechanized_terrain_bonus_array
+	clear_array = tom_inf_bat_mountaineers_mechanized_terrain_movement_array
+	clear_array = tom_inf_bat_mountaineers_mechanized_terrain_attack_array
+	clear_array = tom_inf_bat_mountaineers_mechanized_terrain_defense_array
 	
-	set_variable = { tom_inf_bat_popup_1210_max = tom_inf_bat_mountaineers_mechanized_1210_max }
-	set_variable = { tom_inf_bat_popup_1211_max = tom_inf_bat_mountaineers_mechanized_1211_max }
-	set_variable = { tom_inf_bat_popup_1212_max = tom_inf_bat_mountaineers_mechanized_1212_max }
-	set_variable = { tom_inf_bat_popup_1220_max = tom_inf_bat_mountaineers_mechanized_1220_max }
-	set_variable = { tom_inf_bat_popup_1221_max = tom_inf_bat_mountaineers_mechanized_1221_max }
-	set_variable = { tom_inf_bat_popup_1222_max = tom_inf_bat_mountaineers_mechanized_1222_max }
-	set_variable = { tom_inf_bat_popup_1223_max = tom_inf_bat_mountaineers_mechanized_1223_max }
-	set_variable = { tom_inf_bat_popup_1230_max = tom_inf_bat_mountaineers_mechanized_1230_max }
-	set_variable = { tom_inf_bat_popup_1240_max = tom_inf_bat_mountaineers_mechanized_1240_max }
+	clear_array = tom_inf_bat_mountaineers_mechanized_companies_array
+	clear_array = tom_inf_battalion_mountaineers_mechanized_company_array
+	clear_array = tom_inf_battalion_mountaineers_mechanized_platoon_array
+	
+	tom_inf_bat_startup_effect_mountaineers_mechanized = yes
+	tom_inf_bat_open_designer_mountaineers_mechanized_effect = yes
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_resets_left_mountaineers_mechanized = 1 }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_10 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_reset_10 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_11 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_reset_11 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_12 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_reset_12 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_13 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_reset_13 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_14 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_reset_14 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_15 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_reset_15 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_16 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_reset_16 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_2 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_reset_2 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_3 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_reset_3 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_4 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_reset_4 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_2 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_reset_2 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_3 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_reset_3 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_4 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_reset_4 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_2 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_reset_2 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_3 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_reset_3 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_4 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_reset_4 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_2 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_reset_2 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_3 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_reset_3 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_4 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_reset_4 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1111_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1111_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1112_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1112_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_2 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_reset_2 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_3 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_reset_3 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_4 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_reset_4 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1121_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1121_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_2 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_reset_2 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_3 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_reset_3 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_4 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_reset_4 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1130_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1130_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1210_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1210_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1211_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1211_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1212_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1212_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1220_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1220_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1221_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1221_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1222_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1222_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1223_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1223_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1230_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1230_tech_reset_1 = 1 popup = no }
+		}
+		if = {
+			limit = { has_tech = tom_inf_bat_mountaineers_mechanized_1240_tech_1 }
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1240_tech_reset_1 = 1 popup = no }
+		}
+	}
+	
+	add_to_variable = { tom_inf_bat_resets_left_mountaineers_mechanized = -1 }
 }
 
 tom_inf_bat_save_designer_mountaineers_mechanized_effect = {
@@ -532,7 +747,7 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 	### COMPANIES
 	if = {
 		limit = {
-			check_variable = { tom_inf_bat_popup_30_count > 3 }
+			check_variable = { tom_inf_bat_popup_10_count > 3 }
 		}
 		# Enlarge Support Column for the 4th Rifle Company
 		if = {
@@ -542,12 +757,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			}
 			set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_4 = 1 popup = no }
 		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1001
+				has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_reset_4
+				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech2_4 }
+			}
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech2_4 = 1 popup = no }
+		}
 		if = {
 			limit = {
 				has_country_flag = tom_inf_bat_support_1002
 				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_4 }
 			}
 			set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1002
+				has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_reset_4
+				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech2_4 }
+			}
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech2_4 = 1 popup = no }
 		}
 		if = {
 			limit = {
@@ -556,12 +787,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			}
 			set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_4 = 1 popup = no }
 		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1003
+				has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_reset_4
+				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech2_4 }
+			}
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech2_4 = 1 popup = no }
+		}
 		if = {
 			limit = {
 				has_country_flag = tom_inf_bat_support_1010
 				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_4 }
 			}
 			set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1010
+				has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_reset_4
+				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech2_4 }
+			}
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech2_4 = 1 popup = no }
 		}
 		if = {
 			limit = {
@@ -570,12 +817,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			}
 			set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_4 = 1 popup = no }
 		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1020
+				has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_reset_4
+				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech2_4 }
+			}
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech2_4 = 1 popup = no }
+		}
 		if = {
 			limit = {
 				has_country_flag = tom_inf_bat_support_1021
 				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_4 }
 			}
 			set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1021
+				has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_reset_4
+				NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech2_4 }
+			}
+			set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech2_4 = 1 popup = no }
 		}
 	}
 	
@@ -588,12 +851,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_10 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3000_count > 9 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_reset_10
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech2_10 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech2_10 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_3000_count > 10 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_11 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_11 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3000_count > 10 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_reset_11
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech2_11 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech2_11 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -602,12 +881,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_12 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3000_count > 11 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_reset_12
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech2_12 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech2_12 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_3000_count > 12 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_13 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_13 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3000_count > 12 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_reset_13
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech2_13 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech2_13 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -616,6 +911,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_14 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3000_count > 13 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_reset_14
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech2_14 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech2_14 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_3000_count > 14 }
@@ -623,12 +926,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_15 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3000_count > 14 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_reset_15
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech2_15 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech2_15 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_3000_count > 15 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_16 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech_16 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_3000_count > 15 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech_reset_16
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_3000_tech2_16 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_3000_tech2_16 = 1 popup = no }
 	}
 	
 	# LMG
@@ -639,12 +958,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech2_1 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1001_count > 1 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_2 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 1 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_reset_2
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech2_2 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech2_2 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -653,12 +988,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 2 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_reset_3
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech2_3 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech2_3 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1001_count > 3 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_4 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 3 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech_reset_4
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1001_tech2_4 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1001_tech2_4 = 1 popup = no }
 	}
 	
 	# MMG
@@ -669,12 +1020,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech2_1 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1002_count > 1 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_2 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 1 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_reset_2
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech2_2 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech2_2 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -683,12 +1050,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 2 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_reset_3
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech2_3 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech2_3 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1002_count > 3 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_4 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 3 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech_reset_4
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1002_tech2_4 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1002_tech2_4 = 1 popup = no }
 	}
 	
 	# HMG
@@ -699,12 +1082,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech2_1 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1003_count > 1 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_2 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 1 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_reset_2
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech2_2 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech2_2 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -713,12 +1112,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 2 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_reset_3
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech2_3 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech2_3 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1003_count > 3 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_4 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 3 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech_reset_4
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1003_tech2_4 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1003_tech2_4 = 1 popup = no }
 	}
 	
 	# Mortar
@@ -729,12 +1144,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech2_1 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1010_count > 1 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_2 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 1 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_reset_2
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech2_2 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech2_2 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -743,12 +1174,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 2 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_reset_3
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech2_3 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech2_3 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1010_count > 3 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_4 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 3 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech_reset_4
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1010_tech2_4 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1010_tech2_4 = 1 popup = no }
 	}
 	
 	# Artillery
@@ -759,6 +1206,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1111_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1111_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1111_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1111_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1111_tech2_1 = 1 popup = no }
+	}
 	
 	# Super Heavy Artillery
 	if = {
@@ -767,6 +1222,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1112_tech_1 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1112_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1112_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1112_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1112_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1112_tech2_1 = 1 popup = no }
 	}
 	
 	# AT Rifle
@@ -777,12 +1240,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech2_1 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1020_count > 1 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_2 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 1 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_reset_2
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech2_2 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech2_2 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -791,12 +1270,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 2 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_reset_3
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech2_3 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech2_3 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1020_count > 3 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_4 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 3 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech_reset_4
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1020_tech2_4 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1020_tech2_4 = 1 popup = no }
 	}
 	
 	# AT Gun
@@ -807,6 +1302,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1121_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1121_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1121_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1121_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1121_tech2_1 = 1 popup = no }
+	}
 	
 	# AT Rocket
 	if = {
@@ -816,12 +1319,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech2_1 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1021_count > 1 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_2 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 1 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_reset_2
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech2_2 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech2_2 = 1 popup = no }
 	}
 	if = {
 		limit = {
@@ -830,12 +1349,28 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 2 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_reset_3
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech2_3 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech2_3 = 1 popup = no }
+	}
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1021_count > 3 }
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_4 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 3 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech_reset_4
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1021_tech2_4 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1021_tech2_4 = 1 popup = no }
 	}
 	
 	# AA Gun
@@ -846,6 +1381,48 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1130_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1030_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1030_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1030_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1030_tech2_1 = 1 popup = no }
+	}
+	
+	# Truck
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count > 0 }
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1200_tech_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1200_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1200_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1200_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1200_tech2_1 = 1 popup = no }
+	}
+	
+	# mountaineers_mechanized
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count > 0 }
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1201_tech_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1201_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1201_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1201_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1201_tech2_1 = 1 popup = no }
+	}
 	
 	# Engineer
 	if = {
@@ -854,6 +1431,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1210_tech_1 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1210_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1210_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1210_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1210_tech2_1 = 1 popup = no }
 	}
 	
 	# Assault Engineer
@@ -864,6 +1449,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1211_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1211_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1211_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1211_tech2_1 = 1 popup = no }
+	}
 	
 	# Flamethrower
 	if = {
@@ -872,6 +1465,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1212_tech_1 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1212_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1212_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1212_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1212_tech2_1 = 1 popup = no }
 	}
 	
 	# Cav Recon
@@ -882,6 +1483,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1220_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1220_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1220_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1220_tech2_1 = 1 popup = no }
+	}
 	
 	# Mot Recon
 	if = {
@@ -890,6 +1499,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1221_tech_1 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1221_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1221_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1221_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1221_tech2_1 = 1 popup = no }
 	}
 	
 	# Armored Car Recon
@@ -900,6 +1517,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1222_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1222_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1222_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1222_tech2_1 = 1 popup = no }
+	}
 	
 	# Sniper
 	if = {
@@ -908,6 +1533,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1223_tech_1 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1223_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1223_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1223_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1223_tech2_1 = 1 popup = no }
 	}
 	
 	# Field Hospital
@@ -918,6 +1551,14 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1230_tech_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1230_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1230_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1230_tech2_1 = 1 popup = no }
+	}
 	
 	# Signal
 	if = {
@@ -926,5 +1567,13 @@ tom_inf_bat_add_effect_mountaineers_mechanized = {
 			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1240_tech_1 }
 		}
 		set_technology = { tom_inf_bat_mountaineers_mechanized_1240_tech_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count > 0 }
+			has_tech = tom_inf_bat_mountaineers_mechanized_1240_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_mountaineers_mechanized_1240_tech2_1 }
+		}
+		set_technology = { tom_inf_bat_mountaineers_mechanized_1240_tech2_1 = 1 popup = no }
 	}
 }

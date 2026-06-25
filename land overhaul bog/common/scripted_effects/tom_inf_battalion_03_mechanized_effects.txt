@@ -284,8 +284,8 @@ tom_inf_bat_reset_designer_mechanized_effect = {
 			set_technology = { tom_inf_bat_mechanized_1400_tech_reset_12 = 1 popup = no }
 		}
 		if = {
-			limit = { has_tech = tom_inf_bat_mechanized_1400_tech_14 }
-			set_technology = { tom_inf_bat_mechanized_1400_tech_reset_14 = 1 popup = no }
+			limit = { has_tech = tom_inf_bat_mechanized_1400_tech_13 }
+			set_technology = { tom_inf_bat_mechanized_1400_tech_reset_13 = 1 popup = no }
 		}
 		if = {
 			limit = { has_tech = tom_inf_bat_mechanized_1400_tech_14 }
@@ -874,17 +874,17 @@ tom_inf_bat_add_effect_mechanized = {
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1400_count > 12 }
-			NOT = { has_tech = tom_inf_bat_mechanized_1400_tech_14 }
+			NOT = { has_tech = tom_inf_bat_mechanized_1400_tech_13 }
 		}
-		set_technology = { tom_inf_bat_mechanized_1400_tech_14 = 1 popup = no }
+		set_technology = { tom_inf_bat_mechanized_1400_tech_13 = 1 popup = no }
 	}
 	else_if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1400_count > 12 }
-			has_tech = tom_inf_bat_mechanized_1400_tech_reset_14
-			NOT = { has_tech = tom_inf_bat_mechanized_1400_tech2_14 }
+			has_tech = tom_inf_bat_mechanized_1400_tech_reset_13
+			NOT = { has_tech = tom_inf_bat_mechanized_1400_tech2_13 }
 		}
-		set_technology = { tom_inf_bat_mechanized_1400_tech2_14 = 1 popup = no }
+		set_technology = { tom_inf_bat_mechanized_1400_tech2_13 = 1 popup = no }
 	}
 	if = {
 		limit = {
