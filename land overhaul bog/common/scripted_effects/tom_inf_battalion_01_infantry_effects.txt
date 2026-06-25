@@ -102,22 +102,6 @@ tom_inf_bat_startup_effect_infantry = {
 	set_variable = { tom_inf_bat_infantry_1010_max = 4 }
 	set_variable = { tom_inf_bat_infantry_1020_max = 4 }
 	set_variable = { tom_inf_bat_infantry_1021_max = 4 }
-	
-	set_variable = { tom_inf_bat_infantry_1111_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1112_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1121_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1130_max = 1 }
-	
-	set_variable = { tom_inf_bat_infantry_1200_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1210_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1211_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1212_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1220_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1221_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1222_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1223_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1230_max = 1 }
-	set_variable = { tom_inf_bat_infantry_1240_max = 1 }
 }
 
 
@@ -237,29 +221,6 @@ tom_inf_bat_open_subunit_counts_infantry_effect = {
 	set_variable = { tom_inf_bat_popup_1010_max = tom_inf_bat_infantry_1010_max }
 	set_variable = { tom_inf_bat_popup_1020_max = tom_inf_bat_infantry_1020_max }
 	set_variable = { tom_inf_bat_popup_1021_max = tom_inf_bat_infantry_1021_max }
-	
-	set_variable = { tom_inf_bat_popup_1100_max = tom_inf_bat_infantry_1100_max }
-	set_variable = { tom_inf_bat_popup_1101_max = tom_inf_bat_infantry_1101_max }
-	set_variable = { tom_inf_bat_popup_1102_max = tom_inf_bat_infantry_1102_max }
-	set_variable = { tom_inf_bat_popup_1110_max = tom_inf_bat_infantry_1110_max }
-	set_variable = { tom_inf_bat_popup_1111_max = tom_inf_bat_infantry_1111_max }
-	set_variable = { tom_inf_bat_popup_1112_max = tom_inf_bat_infantry_1112_max }
-	set_variable = { tom_inf_bat_popup_1120_max = tom_inf_bat_infantry_1120_max }
-	set_variable = { tom_inf_bat_popup_1121_max = tom_inf_bat_infantry_1121_max }
-	set_variable = { tom_inf_bat_popup_1122_max = tom_inf_bat_infantry_1122_max }
-	set_variable = { tom_inf_bat_popup_1130_max = tom_inf_bat_infantry_1130_max }
-	
-	set_variable = { tom_inf_bat_popup_1200_max = tom_inf_bat_infantry_1200_max }
-	set_variable = { tom_inf_bat_popup_1201_max = tom_inf_bat_infantry_1201_max }
-	set_variable = { tom_inf_bat_popup_1210_max = tom_inf_bat_infantry_1210_max }
-	set_variable = { tom_inf_bat_popup_1211_max = tom_inf_bat_infantry_1211_max }
-	set_variable = { tom_inf_bat_popup_1212_max = tom_inf_bat_infantry_1212_max }
-	set_variable = { tom_inf_bat_popup_1220_max = tom_inf_bat_infantry_1220_max }
-	set_variable = { tom_inf_bat_popup_1221_max = tom_inf_bat_infantry_1221_max }
-	set_variable = { tom_inf_bat_popup_1222_max = tom_inf_bat_infantry_1222_max }
-	set_variable = { tom_inf_bat_popup_1223_max = tom_inf_bat_infantry_1223_max }
-	set_variable = { tom_inf_bat_popup_1230_max = tom_inf_bat_infantry_1230_max }
-	set_variable = { tom_inf_bat_popup_1240_max = tom_inf_bat_infantry_1240_max }
 }
 
 tom_inf_bat_reset_designer_infantry_effect = {
