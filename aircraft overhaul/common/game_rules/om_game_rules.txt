@@ -27,6 +27,12 @@ om_heavy_industry_enabled_rule = {
 		allow_achievements = yes
 	}
 	option = {
+		name = FREE
+		text = "RULE_HI_FREE"
+		desc = "RULE_HI_FREE_DESC"
+		allow_achievements = yes
+	}
+	option = {
 		name = DISABLED
 		text = "RULE_HI_DISABLED"
 		desc = "RULE_HI_DISABLED_DESC"

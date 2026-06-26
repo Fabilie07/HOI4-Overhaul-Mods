@@ -15,7 +15,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_generic_merge_plant_ship
 		
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 360
 		days_remove = 365
 		
@@ -48,7 +48,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_generic_merge_plant_tank
 		
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 180
 		days_remove = 180
 		
@@ -79,7 +79,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_generic_construction
 		
-		cost = 15
+		cost = om_industry_cost_1
 		days_re_enable = 180
 		days_remove = 180
 		
@@ -113,7 +113,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_SOV_place_hq
 		
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 180
 		days_remove = 180
 		
@@ -149,7 +149,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_eng_trade_unions_demand
 		
-		cost = 15
+		cost = om_industry_cost_1
 		days_re_enable = 270
 		days_remove = 90
 		
@@ -181,7 +181,7 @@ TOM_heavy_industry_decisions = {
 	tom_hi_tank_development_decision = {
 		icon = generic_tank
 
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 360
 
 		complete_effect = {
@@ -215,7 +215,7 @@ TOM_heavy_industry_decisions = {
 	tom_hi_tank_advancement_decision = {
 		icon = generic_tank
 
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 360
 
 		complete_effect = {

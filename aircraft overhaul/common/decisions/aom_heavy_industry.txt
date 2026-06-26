@@ -7,7 +7,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = generic_air
 		
-		cost = 15
+		cost = om_industry_cost_1
 		days_re_enable = 270
 		days_remove = 90
 		
@@ -63,7 +63,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_generic_construction
 		
-		cost = 15
+		cost = om_industry_cost_1
 		days_re_enable = 290
 		days_remove = 70
 		
@@ -97,7 +97,7 @@ TOM_heavy_industry_decisions = {
 	plane_development_decision = {
 		icon = generic_air
 
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 360
 
 		complete_effect = {
@@ -136,7 +136,7 @@ TOM_heavy_industry_decisions = {
 	plane_advancement_decision = {
 		icon = generic_air
 
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 360
 
 		complete_effect = {
