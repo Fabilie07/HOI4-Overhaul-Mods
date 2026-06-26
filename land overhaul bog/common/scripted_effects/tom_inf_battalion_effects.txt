@@ -1008,7 +1008,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1111 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1111_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = -15 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = -25 }
 		add_to_variable = { tom_inf_bat_popup_combat_stats_array^10 = 0.5 }
 		if = {
 			limit = {
@@ -1034,7 +1034,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1112 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1112_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = -15 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = -25 }
 		add_to_variable = { tom_inf_bat_popup_combat_stats_array^10 = 0.5 }
 		if = {
 			limit = {
@@ -2390,7 +2390,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1111 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1111_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = 15 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = 25 }
 		add_to_variable = { tom_inf_bat_popup_combat_stats_array^10 = -0.5 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -2408,7 +2408,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1112 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1112_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = 15 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = 25 }
 		add_to_variable = { tom_inf_bat_popup_combat_stats_array^10 = -0.5 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
