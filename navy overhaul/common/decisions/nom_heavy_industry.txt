@@ -7,7 +7,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_generic_wreckers
 		
-		cost = 15
+		cost = om_industry_cost_1
 		days_re_enable = 180
 		days_remove = 180
 		
@@ -45,7 +45,7 @@ TOM_heavy_industry_decisions = {
 		
 		icon = GFX_decision_generic_merge_plant_ship
 		
-		cost = 15
+		cost = om_industry_cost_1
 		days_re_enable = 90
 		days_remove = 270
 		
@@ -79,7 +79,7 @@ TOM_heavy_industry_decisions = {
 	ship_development_decision = {
 		icon = generic_naval
 
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 360
 
 		complete_effect = {
@@ -118,7 +118,7 @@ TOM_heavy_industry_decisions = {
 	ship_advancement_decision = {
 		icon = generic_naval
 
-		cost = 30
+		cost = om_industry_cost_2
 		days_re_enable = 360
 
 		complete_effect = {
