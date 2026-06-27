@@ -73,7 +73,7 @@ scripted_gui = {
 			}
 			
 			reset_button_click = {
-				tom_inf_bat_reset_designer_effect = yes
+				set_country_flag = tom_inf_bat_reset_confirmation
 			}
 			
 			debug_button_click = {
@@ -112,6 +112,25 @@ scripted_gui = {
 			equipment_needed_grid = {
 				array = tom_inf_bat_needed_equipment_type_array
 				entry_container = "tom_inf_battalion_designer_save_equipment_needed_entry"
+			}
+		}
+	}
+	
+	tom_inf_battalion_reset_confirmation_popup = {
+		context_type = player_context
+		window_name = "tom_inf_bat_reset_confirmation_popup"
+		
+		visible = {
+			has_country_flag = tom_inf_bat_reset_confirmation
+		}
+		
+		effects = {
+			cancel_button_click = {
+				clr_country_flag = tom_inf_bat_reset_confirmation
+			}
+			send_button_click = {
+				clr_country_flag = tom_inf_bat_reset_confirmation
+				tom_inf_bat_reset_designer_effect = yes
 			}
 		}
 	}

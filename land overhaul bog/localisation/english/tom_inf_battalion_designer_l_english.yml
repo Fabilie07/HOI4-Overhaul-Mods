@@ -38,6 +38,7 @@
  TOM_INF_TERRAIN_ATTACK_TT:0 "Attack: [?tom_inf_bat_popup_terrain_attack_array^i|%%+=0]"
  TOM_INF_TERRAIN_DEFENSE_TT:0 "Defense & Breakthrough: [?tom_inf_bat_popup_terrain_defense_array^i|%%+=0]"
  
+ TOM_INF_RESET_TT:0 "This will set the Battalion back to the size it was at the start of the game. §RThis can only be done a limited number of times.§! Are you sure?"
  TOM_INF_RESETS_LEFT:0 "Resets left: [tom_inf_bat_resets_left]"
  
  tom_inf_company_10:0 "Rifle Company"
