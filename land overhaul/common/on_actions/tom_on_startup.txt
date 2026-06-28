@@ -182,9 +182,11 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = om_heavy_industry_enabled_rule
-						option = ENABLED
+					NOT = {
+						has_game_rule = {
+							rule = om_heavy_industry_enabled_rule
+							option = DISABLED
+						}
 					}
 				}
 				set_global_flag = has_heavy_industry_flag
