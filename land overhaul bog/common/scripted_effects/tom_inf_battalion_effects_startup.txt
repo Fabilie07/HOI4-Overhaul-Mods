@@ -173,7 +173,7 @@ tom_inf_bat_startup_effect_stat_arrays = {
 }
 
 tom_inf_bat_startup_resets = {
-	set_variable = { tom_inf_bat_resets_left_infantry = 1 }
+	set_variable = { tom_inf_bat_resets_left_infantry = 3 }
 	set_variable = { tom_inf_bat_resets_left_motorized = 1 }
 	set_variable = { tom_inf_bat_resets_left_mechanized = 1 }
 	set_variable = { tom_inf_bat_resets_left_cavalry = 1 }
