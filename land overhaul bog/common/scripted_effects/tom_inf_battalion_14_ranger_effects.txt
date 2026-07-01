@@ -1366,11 +1366,11 @@ tom_inf_bat_add_effect_ranger = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { tom_inf_bat_popup_1030_count > 0 }
-			has_tech = tom_inf_bat_ranger_1030_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_ranger_1030_tech2_1 }
+			check_variable = { tom_inf_bat_popup_1130_count > 0 }
+			has_tech = tom_inf_bat_ranger_1130_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_ranger_1130_tech2_1 }
 		}
-		set_technology = { tom_inf_bat_ranger_1030_tech2_1 = 1 popup = no }
+		set_technology = { tom_inf_bat_ranger_1130_tech2_1 = 1 popup = no }
 	}
 	
 	# Truck

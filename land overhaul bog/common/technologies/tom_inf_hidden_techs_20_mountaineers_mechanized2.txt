@@ -1,7 +1,7 @@
 technologies = {
 	# Rifle
 	
-	tom_inf_bat_mountaineers_mechanized_3000_tech_10 = {
+	tom_inf_bat_mountaineers_mechanized_3000_tech2_10 = {
 		allow = {
 			always = no
 		}
@@ -14,7 +14,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_3000_tech_11 = {
+	tom_inf_bat_mountaineers_mechanized_3000_tech2_11 = {
 		allow = {
 			always = no
 		}
@@ -27,7 +27,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_3000_tech_12 = {
+	tom_inf_bat_mountaineers_mechanized_3000_tech2_12 = {
 		allow = {
 			always = no
 		}
@@ -40,7 +40,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_3000_tech_13 = {
+	tom_inf_bat_mountaineers_mechanized_3000_tech2_13 = {
 		allow = {
 			always = no
 		}
@@ -53,7 +53,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_3000_tech_14 = {
+	tom_inf_bat_mountaineers_mechanized_3000_tech2_14 = {
 		allow = {
 			always = no
 		}
@@ -66,7 +66,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_3000_tech_15 = {
+	tom_inf_bat_mountaineers_mechanized_3000_tech2_15 = {
 		allow = {
 			always = no
 		}
@@ -79,7 +79,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_3000_tech_16 = {
+	tom_inf_bat_mountaineers_mechanized_3000_tech2_16 = {
 		allow = {
 			always = no
 		}
@@ -95,7 +95,7 @@ technologies = {
 	
 	# LMG
 	
-	tom_inf_bat_mountaineers_mechanized_1001_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1001_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -105,18 +105,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1001_tech_2 = {
-		allow = {
-			always = no
-		}
-		mountaineers_mechanized = {
-			breakthrough = 0.04
-			need = {
-				lmg_chassis = 4
-			}
-		}
-	}
-	tom_inf_bat_mountaineers_mechanized_1001_tech_3 = {
+	tom_inf_bat_mountaineers_mechanized_1001_tech2_2 = {
 		allow = {
 			always = no
 		}
@@ -127,7 +116,18 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1001_tech_4 = {
+	tom_inf_bat_mountaineers_mechanized_1001_tech2_3 = {
+		allow = {
+			always = no
+		}
+		mountaineers_mechanized = {
+			breakthrough = 0.04
+			need = {
+				lmg_chassis = 4
+			}
+		}
+	}
+	tom_inf_bat_mountaineers_mechanized_1001_tech2_4 = {
 		allow = {
 			always = no
 		}
@@ -142,7 +142,7 @@ technologies = {
 	
 	# MMG
 	
-	tom_inf_bat_mountaineers_mechanized_1002_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1002_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -152,19 +152,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1002_tech_2 = {
-		allow = {
-			always = no
-		}
-		mountaineers_mechanized = {
-			breakthrough = 0.02
-			defense = 0.02
-			need = {
-				mmg_chassis = 3
-			}
-		}
-	}
-	tom_inf_bat_mountaineers_mechanized_1002_tech_3 = {
+	tom_inf_bat_mountaineers_mechanized_1002_tech2_2 = {
 		allow = {
 			always = no
 		}
@@ -176,7 +164,19 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1002_tech_4 = {
+	tom_inf_bat_mountaineers_mechanized_1002_tech2_3 = {
+		allow = {
+			always = no
+		}
+		mountaineers_mechanized = {
+			breakthrough = 0.02
+			defense = 0.02
+			need = {
+				mmg_chassis = 3
+			}
+		}
+	}
+	tom_inf_bat_mountaineers_mechanized_1002_tech2_4 = {
 		allow = {
 			always = no
 		}
@@ -192,7 +192,7 @@ technologies = {
 	
 	# HMG
 	
-	tom_inf_bat_mountaineers_mechanized_1003_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1003_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -202,18 +202,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1003_tech_2 = {
-		allow = {
-			always = no
-		}
-		mountaineers_mechanized = {
-			defense = 0.04
-			need = {
-				hmg_chassis = 2
-			}
-		}
-	}
-	tom_inf_bat_mountaineers_mechanized_1003_tech_3 = {
+	tom_inf_bat_mountaineers_mechanized_1003_tech2_2 = {
 		allow = {
 			always = no
 		}
@@ -224,7 +213,18 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1003_tech_4 = {
+	tom_inf_bat_mountaineers_mechanized_1003_tech2_3 = {
+		allow = {
+			always = no
+		}
+		mountaineers_mechanized = {
+			defense = 0.04
+			need = {
+				hmg_chassis = 2
+			}
+		}
+	}
+	tom_inf_bat_mountaineers_mechanized_1003_tech2_4 = {
 		allow = {
 			always = no
 		}
@@ -239,7 +239,7 @@ technologies = {
 	
 	# Mortar
 	
-	tom_inf_bat_mountaineers_mechanized_1010_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1010_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -249,18 +249,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1010_tech_2 = {
-		allow = {
-			always = no
-		}
-		mountaineers_mechanized = {
-			soft_attack = 0.05
-			need = {
-				mortar_chassis = 3
-			}
-		}
-	}
-	tom_inf_bat_mountaineers_mechanized_1010_tech_3 = {
+	tom_inf_bat_mountaineers_mechanized_1010_tech2_2 = {
 		allow = {
 			always = no
 		}
@@ -271,7 +260,18 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1010_tech_4 = {
+	tom_inf_bat_mountaineers_mechanized_1010_tech2_3 = {
+		allow = {
+			always = no
+		}
+		mountaineers_mechanized = {
+			soft_attack = 0.05
+			need = {
+				mortar_chassis = 3
+			}
+		}
+	}
+	tom_inf_bat_mountaineers_mechanized_1010_tech2_4 = {
 		allow = {
 			always = no
 		}
@@ -286,7 +286,7 @@ technologies = {
 	
 	# Artillery
 	
-	tom_inf_bat_mountaineers_mechanized_1111_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1111_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -302,7 +302,7 @@ technologies = {
 	
 	# Super Heavy Artillery
 	
-	tom_inf_bat_mountaineers_mechanized_1112_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1112_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -318,7 +318,7 @@ technologies = {
 	
 	# AT Rifle
 	
-	tom_inf_bat_mountaineers_mechanized_1020_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1020_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -328,18 +328,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1020_tech_2 = {
-		allow = {
-			always = no
-		}
-		mountaineers_mechanized = {
-			hard_attack = 0.05
-			need = {
-				at_rifle_chassis = 2
-			}
-		}
-	}
-	tom_inf_bat_mountaineers_mechanized_1020_tech_3 = {
+	tom_inf_bat_mountaineers_mechanized_1020_tech2_2 = {
 		allow = {
 			always = no
 		}
@@ -350,7 +339,18 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1020_tech_4 = {
+	tom_inf_bat_mountaineers_mechanized_1020_tech2_3 = {
+		allow = {
+			always = no
+		}
+		mountaineers_mechanized = {
+			hard_attack = 0.05
+			need = {
+				at_rifle_chassis = 2
+			}
+		}
+	}
+	tom_inf_bat_mountaineers_mechanized_1020_tech2_4 = {
 		allow = {
 			always = no
 		}
@@ -365,7 +365,7 @@ technologies = {
 	
 	# AT Gun
 	
-	tom_inf_bat_mountaineers_mechanized_1121_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1121_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -380,7 +380,7 @@ technologies = {
 	
 	# AT Rocket
 	
-	tom_inf_bat_mountaineers_mechanized_1021_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1021_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -390,18 +390,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1021_tech_2 = {
-		allow = {
-			always = no
-		}
-		mountaineers_mechanized = {
-			hard_attack = 0.1
-			need = {
-				at_rocket_chassis = 2
-			}
-		}
-	}
-	tom_inf_bat_mountaineers_mechanized_1021_tech_3 = {
+	tom_inf_bat_mountaineers_mechanized_1021_tech2_2 = {
 		allow = {
 			always = no
 		}
@@ -412,7 +401,18 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_mountaineers_mechanized_1021_tech_4 = {
+	tom_inf_bat_mountaineers_mechanized_1021_tech2_3 = {
+		allow = {
+			always = no
+		}
+		mountaineers_mechanized = {
+			hard_attack = 0.1
+			need = {
+				at_rocket_chassis = 2
+			}
+		}
+	}
+	tom_inf_bat_mountaineers_mechanized_1021_tech2_4 = {
 		allow = {
 			always = no
 		}
@@ -427,7 +427,7 @@ technologies = {
 	
 	# AA Gun
 	
-	tom_inf_bat_mountaineers_mechanized_1130_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1130_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -444,7 +444,7 @@ technologies = {
 	
 	# Engineer
 	
-	tom_inf_bat_mountaineers_mechanized_1210_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1210_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -487,7 +487,7 @@ technologies = {
 	
 	# Assault Engineer
 	
-	tom_inf_bat_mountaineers_mechanized_1211_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1211_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -534,7 +534,7 @@ technologies = {
 	
 	# Flamethrower
 	
-	tom_inf_bat_mountaineers_mechanized_1212_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1212_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -580,7 +580,7 @@ technologies = {
 	
 	# Cav Recon
 	
-	tom_inf_bat_mountaineers_mechanized_1220_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1220_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -607,7 +607,7 @@ technologies = {
 	
 	# Mot Recon
 	
-	tom_inf_bat_mountaineers_mechanized_1221_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1221_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -638,7 +638,7 @@ technologies = {
 	
 	# Armored Car Recon
 	
-	tom_inf_bat_mountaineers_mechanized_1222_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1222_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -662,7 +662,7 @@ technologies = {
 	
 	# Sniper
 	
-	tom_inf_bat_mountaineers_mechanized_1223_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1223_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -693,7 +693,7 @@ technologies = {
 	
 	# Field Hospital
 	
-	tom_inf_bat_mountaineers_mechanized_1230_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1230_tech2_1 = {
 		allow = {
 			always = no
 		}
@@ -711,7 +711,7 @@ technologies = {
 	
 	# Signal
 	
-	tom_inf_bat_mountaineers_mechanized_1240_tech_1 = {
+	tom_inf_bat_mountaineers_mechanized_1240_tech2_1 = {
 		allow = {
 			always = no
 		}

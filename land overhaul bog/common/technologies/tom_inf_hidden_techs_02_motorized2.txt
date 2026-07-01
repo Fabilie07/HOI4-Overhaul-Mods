@@ -1,4 +1,4 @@
-tech2nologies = {
+technologies = {
 	# Rifle
 	
 	tom_inf_bat_motorized_1300_tech2_10 = {

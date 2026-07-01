@@ -1366,45 +1366,11 @@ tom_inf_bat_add_effect_motorized = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { tom_inf_bat_popup_1030_count > 0 }
-			has_tech = tom_inf_bat_motorized_1030_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_motorized_1030_tech2_1 }
+			check_variable = { tom_inf_bat_popup_1130_count > 0 }
+			has_tech = tom_inf_bat_motorized_1130_tech_reset_1
+			NOT = { has_tech = tom_inf_bat_motorized_1130_tech2_1 }
 		}
-		set_technology = { tom_inf_bat_motorized_1030_tech2_1 = 1 popup = no }
-	}
-	
-	# Truck
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count > 0 }
-			NOT = { has_tech = tom_inf_bat_motorized_1200_tech_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1200_tech_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count > 0 }
-			has_tech = tom_inf_bat_motorized_1200_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_motorized_1200_tech2_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1200_tech2_1 = 1 popup = no }
-	}
-	
-	# Mechanized
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count > 0 }
-			NOT = { has_tech = tom_inf_bat_motorized_1201_tech_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1201_tech_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count > 0 }
-			has_tech = tom_inf_bat_motorized_1201_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_motorized_1201_tech2_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1201_tech2_1 = 1 popup = no }
+		set_technology = { tom_inf_bat_motorized_1130_tech2_1 = 1 popup = no }
 	}
 	
 	# Engineer

@@ -339,14 +339,6 @@ tom_inf_bat_reset_designer_paratrooper_effect = {
 			set_technology = { tom_inf_bat_paratrooper_1010_tech_reset_4 = 1 popup = no }
 		}
 		if = {
-			limit = { has_tech = tom_inf_bat_paratrooper_1111_tech_1 }
-			set_technology = { tom_inf_bat_paratrooper_1111_tech_reset_1 = 1 popup = no }
-		}
-		if = {
-			limit = { has_tech = tom_inf_bat_paratrooper_1112_tech_1 }
-			set_technology = { tom_inf_bat_paratrooper_1112_tech_reset_1 = 1 popup = no }
-		}
-		if = {
 			limit = { has_tech = tom_inf_bat_paratrooper_1020_tech_1 }
 			set_technology = { tom_inf_bat_paratrooper_1020_tech_reset_1 = 1 popup = no }
 		}
@@ -363,10 +355,6 @@ tom_inf_bat_reset_designer_paratrooper_effect = {
 			set_technology = { tom_inf_bat_paratrooper_1020_tech_reset_4 = 1 popup = no }
 		}
 		if = {
-			limit = { has_tech = tom_inf_bat_paratrooper_1121_tech_1 }
-			set_technology = { tom_inf_bat_paratrooper_1121_tech_reset_1 = 1 popup = no }
-		}
-		if = {
 			limit = { has_tech = tom_inf_bat_paratrooper_1021_tech_1 }
 			set_technology = { tom_inf_bat_paratrooper_1021_tech_reset_1 = 1 popup = no }
 		}
@@ -381,10 +369,6 @@ tom_inf_bat_reset_designer_paratrooper_effect = {
 		if = {
 			limit = { has_tech = tom_inf_bat_paratrooper_1021_tech_4 }
 			set_technology = { tom_inf_bat_paratrooper_1021_tech_reset_4 = 1 popup = no }
-		}
-		if = {
-			limit = { has_tech = tom_inf_bat_paratrooper_1130_tech_1 }
-			set_technology = { tom_inf_bat_paratrooper_1130_tech_reset_1 = 1 popup = no }
 		}
 		if = {
 			limit = { has_tech = tom_inf_bat_paratrooper_1200_tech_1 }
@@ -1165,40 +1149,6 @@ tom_inf_bat_add_effect_paratrooper = {
 		set_technology = { tom_inf_bat_paratrooper_1010_tech2_4 = 1 popup = no }
 	}
 	
-	# Artillery
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1111_count > 0 }
-			NOT = { has_tech = tom_inf_bat_paratrooper_1111_tech_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1111_tech_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1111_count > 0 }
-			has_tech = tom_inf_bat_paratrooper_1111_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_paratrooper_1111_tech2_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1111_tech2_1 = 1 popup = no }
-	}
-	
-	# Super Heavy Artillery
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1112_count > 0 }
-			NOT = { has_tech = tom_inf_bat_paratrooper_1112_tech_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1112_tech_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1112_count > 0 }
-			has_tech = tom_inf_bat_paratrooper_1112_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_paratrooper_1112_tech2_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1112_tech2_1 = 1 popup = no }
-	}
-	
 	# AT Rifle
 	if = {
 		limit = {
@@ -1261,23 +1211,6 @@ tom_inf_bat_add_effect_paratrooper = {
 		set_technology = { tom_inf_bat_paratrooper_1020_tech2_4 = 1 popup = no }
 	}
 	
-	# AT Gun
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1121_count > 0 }
-			NOT = { has_tech = tom_inf_bat_paratrooper_1121_tech_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1121_tech_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1121_count > 0 }
-			has_tech = tom_inf_bat_paratrooper_1121_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_paratrooper_1121_tech2_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1121_tech2_1 = 1 popup = no }
-	}
-	
 	# AT Rocket
 	if = {
 		limit = {
@@ -1338,23 +1271,6 @@ tom_inf_bat_add_effect_paratrooper = {
 			NOT = { has_tech = tom_inf_bat_paratrooper_1021_tech2_4 }
 		}
 		set_technology = { tom_inf_bat_paratrooper_1021_tech2_4 = 1 popup = no }
-	}
-	
-	# AA Gun
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1130_count > 0 }
-			NOT = { has_tech = tom_inf_bat_paratrooper_1130_tech_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1130_tech_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1030_count > 0 }
-			has_tech = tom_inf_bat_paratrooper_1030_tech_reset_1
-			NOT = { has_tech = tom_inf_bat_paratrooper_1030_tech2_1 }
-		}
-		set_technology = { tom_inf_bat_paratrooper_1030_tech2_1 = 1 popup = no }
 	}
 	
 	# Truck

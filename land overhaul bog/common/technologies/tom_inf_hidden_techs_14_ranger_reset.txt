@@ -1,7 +1,7 @@
 technologies = {
 	# ranger Rifle
 	
-	tom_inf_bat_ranger_2000_tech_reset_10 = {
+	tom_inf_bat_ranger_2400_tech_reset_10 = {
 		allow = {
 			always = no
 		}
@@ -13,7 +13,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_ranger_2000_tech_reset_11 = {
+	tom_inf_bat_ranger_2400_tech_reset_11 = {
 		allow = {
 			always = no
 		}
@@ -25,7 +25,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_ranger_2000_tech_reset_12 = {
+	tom_inf_bat_ranger_2400_tech_reset_12 = {
 		allow = {
 			always = no
 		}
@@ -37,7 +37,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_ranger_2000_tech_reset_13 = {
+	tom_inf_bat_ranger_2400_tech_reset_13 = {
 		allow = {
 			always = no
 		}
@@ -49,7 +49,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_ranger_2000_tech_reset_14 = {
+	tom_inf_bat_ranger_2400_tech_reset_14 = {
 		allow = {
 			always = no
 		}
@@ -61,7 +61,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_ranger_2000_tech_reset_15 = {
+	tom_inf_bat_ranger_2400_tech_reset_15 = {
 		allow = {
 			always = no
 		}
@@ -73,7 +73,7 @@ technologies = {
 			}
 		}
 	}
-	tom_inf_bat_ranger_2000_tech_reset_16 = {
+	tom_inf_bat_ranger_2400_tech_reset_16 = {
 		allow = {
 			always = no
 		}
