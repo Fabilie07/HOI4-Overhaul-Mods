@@ -254,7 +254,7 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 	tom_inf_bat_startup_effect_marine_commando = yes
 	tom_inf_bat_open_designer_marine_commando_effect = yes
 	
-		if = {
+	if = {
 		limit = {
 			has_tech = tom_inf_bat_marine_commando_2300_tech_10
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech_reset_10 }
@@ -274,6 +274,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech3_reset_10 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech3_reset_10 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_10
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_10 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech4_reset_10 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_10
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_10 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_reset_10 = 1 popup = no }
 	}
 	
 	if = {
@@ -297,6 +311,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech3_reset_11 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_11
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_11 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech4_reset_11 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_11
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_11 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_reset_11 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -318,6 +346,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech3_reset_12 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech3_reset_12 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_12
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_12 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech4_reset_12 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_12
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_12 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_reset_12 = 1 popup = no }
 	}
 	
 	if = {
@@ -341,6 +383,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech3_reset_13 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_13
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_13 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech4_reset_13 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_13
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_13 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_reset_13 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -362,6 +418,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech3_reset_14 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech3_reset_14 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_14
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_14 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech4_reset_14 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_14
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_14 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_reset_14 = 1 popup = no }
 	}
 	
 	if = {
@@ -385,6 +455,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech3_reset_15 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_15
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_15 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech4_reset_15 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_15
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_15 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_reset_15 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -406,6 +490,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech3_reset_16 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech3_reset_16 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_16
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_16 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech4_reset_16 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_16
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_16 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_reset_16 = 1 popup = no }
 	}
 	
 	if = {
@@ -429,6 +527,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -450,6 +562,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech3_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech4_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_reset_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -473,6 +599,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech3_reset_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech4_reset_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_reset_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -494,6 +634,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech3_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech4_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_reset_4 = 1 popup = no }
 	}
 	
 	if = {
@@ -517,6 +671,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -538,6 +706,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech3_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech4_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_reset_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -561,6 +743,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech3_reset_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech4_reset_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_reset_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -582,6 +778,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech3_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech4_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_reset_4 = 1 popup = no }
 	}
 	
 	if = {
@@ -605,6 +815,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -626,6 +850,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech3_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech4_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_reset_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -649,6 +887,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech3_reset_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech4_reset_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_reset_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -670,6 +922,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech3_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech4_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_reset_4 = 1 popup = no }
 	}
 	
 	if = {
@@ -693,6 +959,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -714,6 +994,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech3_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech4_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_reset_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -737,6 +1031,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech3_reset_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech4_reset_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_reset_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -758,6 +1066,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech3_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech4_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_reset_4 = 1 popup = no }
 	}
 	
 	if = {
@@ -781,6 +1103,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -802,6 +1138,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech3_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech4_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_reset_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -825,6 +1175,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech3_reset_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech4_reset_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_reset_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -846,6 +1210,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech3_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech4_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_reset_4 = 1 popup = no }
 	}
 	
 	if = {
@@ -869,6 +1247,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -890,6 +1282,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech3_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech4_reset_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_reset_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -913,6 +1319,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech3_reset_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech4_reset_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_reset_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -934,6 +1354,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech3_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech4_reset_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_reset_4 = 1 popup = no }
 	}
 	
 	if = {
@@ -957,6 +1391,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1200_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1200_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1200_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1200_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1200_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1200_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1200_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -978,6 +1426,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1201_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1201_tech3_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1201_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1201_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1201_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1201_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1201_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1201_tech5_reset_1 = 1 popup = no }
 	}
 	
 	if = {
@@ -1001,6 +1463,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1210_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1210_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1210_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1210_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1210_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1210_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1210_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1022,6 +1498,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1211_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1211_tech3_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1211_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1211_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1211_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1211_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1211_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1211_tech5_reset_1 = 1 popup = no }
 	}
 	
 	if = {
@@ -1045,6 +1535,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1212_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1212_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1212_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1212_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1212_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1212_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1212_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1066,6 +1570,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1220_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1220_tech3_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1220_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1220_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1220_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1220_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1220_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1220_tech5_reset_1 = 1 popup = no }
 	}
 	
 	if = {
@@ -1089,6 +1607,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1221_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1221_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1221_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1221_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1221_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1221_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1221_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1110,6 +1642,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1222_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1222_tech3_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1222_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1222_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1222_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1222_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1222_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1222_tech5_reset_1 = 1 popup = no }
 	}
 	
 	if = {
@@ -1133,6 +1679,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1223_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1223_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1223_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1223_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1223_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1223_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1223_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1155,6 +1715,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1230_tech3_reset_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1230_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1230_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1230_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1230_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1230_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1230_tech5_reset_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1176,6 +1750,20 @@ tom_inf_bat_reset_designer_marine_commando_effect = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1240_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1240_tech3_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1240_tech4_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1240_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1240_tech4_reset_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			has_tech = tom_inf_bat_marine_commando_1240_tech5_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1240_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1240_tech5_reset_1 = 1 popup = no }
 	}
 	
 	add_to_variable = { tom_inf_bat_resets_left_marine_commando = -1 }
@@ -1494,6 +2082,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			}
 			set_technology = { tom_inf_bat_marine_commando_1001_tech4_4 = 1 popup = no }
 		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1001
+				has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1001_tech5_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1001
+				has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech6_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1001_tech6_4 = 1 popup = no }
+		}
 		
 		if = {
 			limit = {
@@ -1525,6 +2129,22 @@ tom_inf_bat_add_effect_marine_commando = {
 				NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech4_4 }
 			}
 			set_technology = { tom_inf_bat_marine_commando_1002_tech4_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1002
+				has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1002_tech5_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1002
+				has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech6_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1002_tech6_4 = 1 popup = no }
 		}
 		
 		if = {
@@ -1558,6 +2178,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			}
 			set_technology = { tom_inf_bat_marine_commando_1003_tech4_4 = 1 popup = no }
 		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1003
+				has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1003_tech5_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1003
+				has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech6_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1003_tech6_4 = 1 popup = no }
+		}
 		
 		if = {
 			limit = {
@@ -1589,6 +2225,22 @@ tom_inf_bat_add_effect_marine_commando = {
 				NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech4_4 }
 			}
 			set_technology = { tom_inf_bat_marine_commando_1010_tech4_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1010
+				has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1010_tech5_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1010
+				has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech6_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1010_tech6_4 = 1 popup = no }
 		}
 		
 		if = {
@@ -1622,6 +2274,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			}
 			set_technology = { tom_inf_bat_marine_commando_1020_tech4_4 = 1 popup = no }
 		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1020
+				has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1020_tech5_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1020
+				has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech6_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1020_tech6_4 = 1 popup = no }
+		}
 		
 		if = {
 			limit = {
@@ -1653,6 +2321,22 @@ tom_inf_bat_add_effect_marine_commando = {
 				NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech4_4 }
 			}
 			set_technology = { tom_inf_bat_marine_commando_1021_tech4_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1021
+				has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1021_tech5_4 = 1 popup = no }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = tom_inf_bat_support_1021
+				has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_4
+				NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech6_4 }
+			}
+			set_technology = { tom_inf_bat_marine_commando_1021_tech6_4 = 1 popup = no }
 		}
 	}
 	
@@ -1689,6 +2373,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech4_10 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 9 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_10
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_10 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_10 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 9 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_10
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech6_10 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech6_10 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1720,6 +2420,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_11 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech4_11 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 10 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_11
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_11 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_11 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 10 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_11
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech6_11 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech6_11 = 1 popup = no }
 	}
 	
 	if = {
@@ -1753,6 +2469,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech4_12 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 11 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_12
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_12 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_12 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 11 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_12
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech6_12 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech6_12 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1784,6 +2516,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_13 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech4_13 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 12 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_13
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_13 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_13 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 12 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_13
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech6_13 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech6_13 = 1 popup = no }
 	}
 	
 	if = {
@@ -1817,6 +2565,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech4_14 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 13 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_14
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_14 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_14 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 13 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_14
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech6_14 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech6_14 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1849,6 +2613,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech4_15 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 14 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_15
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_15 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_15 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 14 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_15
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech6_15 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech6_15 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1880,6 +2660,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech4_16 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_2300_tech4_16 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 15 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech4_reset_16
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech5_16 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech5_16 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_2300_count > 15 }
+			has_tech = tom_inf_bat_marine_commando_2300_tech5_reset_16
+			NOT = { has_tech = tom_inf_bat_marine_commando_2300_tech6_16 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_2300_tech6_16 = 1 popup = no }
 	}
 	
 	# LMG
@@ -1914,6 +2710,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech6_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -1945,6 +2757,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech4_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech4_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech6_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech6_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -1978,6 +2806,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech4_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech6_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech6_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2009,6 +2853,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech4_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1001_tech4_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech4_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech5_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech5_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1001_tech5_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1001_tech6_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1001_tech6_4 = 1 popup = no }
 	}
 	
 	# MMG
@@ -2043,6 +2903,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech6_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2074,6 +2950,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech4_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech4_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech6_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech6_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -2107,6 +2999,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech4_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech6_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech6_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2138,6 +3046,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech4_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1002_tech4_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech4_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech5_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech5_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1002_tech5_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1002_tech6_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1002_tech6_4 = 1 popup = no }
 	}
 	
 	# HMG
@@ -2172,6 +3096,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech6_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2203,6 +3143,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech4_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech4_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech6_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech6_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -2236,6 +3192,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech4_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech6_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech6_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2267,6 +3239,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech4_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1003_tech4_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech4_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech5_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech5_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1003_tech5_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1003_tech6_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1003_tech6_4 = 1 popup = no }
 	}
 	
 	# Mortar
@@ -2301,6 +3289,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech6_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2332,6 +3336,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech4_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech4_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech6_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech6_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -2365,6 +3385,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech4_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech6_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech6_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2396,6 +3432,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech4_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1010_tech4_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech4_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech5_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech5_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1010_tech5_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1010_tech6_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1010_tech6_4 = 1 popup = no }
 	}
 	
 	# AT Rifle
@@ -2430,6 +3482,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech6_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2461,6 +3529,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech4_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech4_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech6_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech6_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -2494,6 +3578,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech4_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech6_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech6_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2525,6 +3625,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech4_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1020_tech4_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech4_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech5_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech5_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1020_tech5_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1020_tech6_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1020_tech6_4 = 1 popup = no }
 	}
 	
 	# AT Rocket
@@ -2559,6 +3675,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech6_1 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2590,6 +3722,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech4_2 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech4_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_2 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 1 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_2
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech6_2 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech6_2 = 1 popup = no }
 	}
 	
 	if = {
@@ -2623,6 +3771,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech4_3 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_3 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 2 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_3
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech6_3 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech6_3 = 1 popup = no }
+	}
 	
 	if = {
 		limit = {
@@ -2654,6 +3818,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech4_4 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1021_tech4_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech4_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech5_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech5_4 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count > 3 }
+			has_tech = tom_inf_bat_marine_commando_1021_tech5_reset_4
+			NOT = { has_tech = tom_inf_bat_marine_commando_1021_tech6_4 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1021_tech6_4 = 1 popup = no }
 	}
 	
 	# Truck
@@ -2688,6 +3868,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1200_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1200_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1200_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1200_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1200_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1200_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1200_tech6_1 = 1 popup = no }
+	}
 	
 	# Mechanized
 	if = {
@@ -2720,6 +3916,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1201_tech4_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1201_tech4_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1201_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1201_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1201_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1201_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1201_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1201_tech6_1 = 1 popup = no }
 	}
 	
 	# Engineer
@@ -2754,6 +3966,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1210_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1210_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1210_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1210_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1210_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1210_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1210_tech6_1 = 1 popup = no }
+	}
 	
 	# Assault Engineer
 	if = {
@@ -2786,6 +4014,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1211_tech4_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1211_tech4_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1211_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1211_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1211_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1211_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1211_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1211_tech6_1 = 1 popup = no }
 	}
 	
 	# Flamethrower
@@ -2820,6 +4064,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1212_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1212_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1212_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1212_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1212_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1212_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1212_tech6_1 = 1 popup = no }
+	}
 	
 	# Cav Recon
 	if = {
@@ -2852,6 +4112,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1220_tech4_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1220_tech4_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1220_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1220_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1220_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1220_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1220_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1220_tech6_1 = 1 popup = no }
 	}
 	
 	# Mot Recon
@@ -2886,6 +4162,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1221_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1221_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1221_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1221_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1221_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1221_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1221_tech6_1 = 1 popup = no }
+	}
 	
 	# Armored Car Recon
 	if = {
@@ -2918,6 +4210,22 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1222_tech4_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1222_tech4_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1222_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1222_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1222_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1222_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1222_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1222_tech6_1 = 1 popup = no }
 	}
 	
 	# Sniper
@@ -2952,6 +4260,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1223_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1223_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1223_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1223_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1223_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1223_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1223_tech6_1 = 1 popup = no }
+	}
 	
 	# Field Hospital
 	if = {
@@ -2985,6 +4309,22 @@ tom_inf_bat_add_effect_marine_commando = {
 		}
 		set_technology = { tom_inf_bat_marine_commando_1230_tech4_1 = 1 popup = no }
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1230_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1230_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1230_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1230_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1230_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1230_tech6_1 = 1 popup = no }
+	}
 	
 	# Signal
 	if = {
@@ -3017,5 +4357,21 @@ tom_inf_bat_add_effect_marine_commando = {
 			NOT = { has_tech = tom_inf_bat_marine_commando_1240_tech4_1 }
 		}
 		set_technology = { tom_inf_bat_marine_commando_1240_tech4_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1240_tech4_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1240_tech5_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1240_tech5_1 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count > 0 }
+			has_tech = tom_inf_bat_marine_commando_1240_tech5_reset_1
+			NOT = { has_tech = tom_inf_bat_marine_commando_1240_tech6_1 }
+		}
+		set_technology = { tom_inf_bat_marine_commando_1240_tech6_1 = 1 popup = no }
 	}
 }
