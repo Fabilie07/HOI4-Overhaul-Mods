@@ -569,7 +569,7 @@ scripted_gui = {
 		
 		dynamic_lists = {
 			entry_bg_grid = {
-				array = tom_hi_tank_target_array
+				array = tom_hi_bg_count_array
 				entry_container = "entry_bg_container"
 			}
 			

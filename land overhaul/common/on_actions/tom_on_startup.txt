@@ -192,6 +192,8 @@ on_actions = {
 				set_global_flag = has_heavy_industry_flag
 			
 				every_country = {
+					resize_array = { tom_hi_bg_count_array = 5 }
+					
 					set_variable = { tom_hi_tank_target_pointer = 9 }	# Used to resize array
 					set_variable = { tom_hi_tank_target = 50 }			# Used to calculate exact percentage value
 					resize_array = { tom_hi_tank_target_array = 10 }	# Used to visually depict scrollbar
