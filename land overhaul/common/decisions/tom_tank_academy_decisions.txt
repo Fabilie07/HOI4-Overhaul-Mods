@@ -759,7 +759,7 @@ TOM_tank_academy_decisions = {
 				add_ideas = TOM_academy_4_USA
 			}
 			else = {
-				add_ideas = TOM_academy_3_self
+				add_ideas = TOM_academy_4_self
 			}
 		}
 		

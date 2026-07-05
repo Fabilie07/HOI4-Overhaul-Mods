@@ -372,7 +372,7 @@ nom_naval_academy_decisions = {
 		visible = {
 			has_country_flag = nom_naval_academy_1
 			NOT = { has_country_flag = nom_naval_academy_3 }
-			date > 1939.01.01
+			# date > 1939.01.01
 			date < 1942.01.01
 		}
 		icon = generic_naval
@@ -722,7 +722,7 @@ nom_naval_academy_decisions = {
 		visible = {
 			has_country_flag = nom_naval_academy_1
 			NOT = { has_country_flag = nom_naval_academy_4 }
-			date > 1942.01.01
+			# date > 1942.01.01
 		}
 		icon = generic_naval
 		
@@ -776,7 +776,7 @@ nom_naval_academy_decisions = {
 				add_ideas = NOM_academy_4_USA
 			}
 			else = {
-				add_ideas = NOM_academy_3_self
+				add_ideas = NOM_academy_4_self
 			}
 		}
 		
