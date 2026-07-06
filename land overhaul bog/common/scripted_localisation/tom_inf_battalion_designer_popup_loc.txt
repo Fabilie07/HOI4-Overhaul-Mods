@@ -103,6 +103,82 @@ defined_text = {
 }
 
 defined_text = {
+	name = tom_inf_bat_resets_left
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_infantry
+		}
+		localization_key = "[?tom_inf_bat_resets_left_infantry]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_motorized
+		}
+		localization_key = "[?tom_inf_bat_resets_left_motorized]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_mechanized
+		}
+		localization_key = "[?tom_inf_bat_resets_left_mechanized]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_cavalry
+		}
+		localization_key = "[?tom_inf_bat_resets_left_cavalry]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+		}
+		localization_key = "[?tom_inf_bat_resets_left_mountaineer]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+		}
+		localization_key = "[?tom_inf_bat_resets_left_paratrooper]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_marine
+		}
+		localization_key = "[?tom_inf_bat_resets_left_marine]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+		}
+		localization_key = "[?tom_inf_bat_resets_left_marine_commando]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_ranger
+		}
+		localization_key = "[?tom_inf_bat_resets_left_ranger]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+		}
+		localization_key = "[?tom_inf_bat_resets_left_mountaineers_mechanized]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+		}
+		localization_key = "[?tom_inf_bat_resets_left_amphibious_mechanized]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+		}
+		localization_key = "[?tom_inf_bat_resets_left_rangers_mechanized]"
+	}
+}
+
+defined_text = {
 	name = tom_inf_bat_designer_add_name
 	text = {
 		trigger = {

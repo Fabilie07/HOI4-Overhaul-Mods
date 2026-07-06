@@ -193,7 +193,6 @@ tom_inf_compute_equipment_cost_effect = {
 				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@rangers_mechanized }
 			}
 			
-			tom_inf_compute_temp_equipment_before = yes
 			add_to_array = { tom_inf_bat_needed_equipment_type_array = temp_equipment_archetype }
 			add_to_array = { tom_inf_bat_needed_equipment_count_array = temp_equipment_after }
 			

@@ -29,6 +29,8 @@ on_actions = {
 				
 				tom_inf_bat_startup_effect_stat_arrays = yes
 				
+				tom_inf_bat_startup_resets = yes
+				
 				set_technology = { tom_inf_trickleback_tech = 1 popup = no }
 				add_dynamic_modifier = { modifier = tom_inf_support_composition }
 			}

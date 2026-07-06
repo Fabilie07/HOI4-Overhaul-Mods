@@ -171,3 +171,18 @@ tom_inf_bat_startup_effect_stat_arrays = {
 	add_to_array = { tom_inf_battalion_equipment_stats_array_1 = 0 }
 	add_to_array = { tom_inf_battalion_equipment_stats_array_1 = 0 }
 }
+
+tom_inf_bat_startup_resets = {
+	set_variable = { tom_inf_bat_resets_left_infantry = 5 }
+	set_variable = { tom_inf_bat_resets_left_motorized = 5 }
+	set_variable = { tom_inf_bat_resets_left_mechanized = 5 }
+	set_variable = { tom_inf_bat_resets_left_cavalry = 5 }
+	set_variable = { tom_inf_bat_resets_left_mountaineer = 5 }
+	set_variable = { tom_inf_bat_resets_left_paratrooper = 5 }
+	set_variable = { tom_inf_bat_resets_left_marine = 5 }
+	set_variable = { tom_inf_bat_resets_left_marine_commando = 5 }
+	set_variable = { tom_inf_bat_resets_left_ranger = 5 }
+	set_variable = { tom_inf_bat_resets_left_mountaineers_mechanized = 5 }
+	set_variable = { tom_inf_bat_resets_left_amphibious_mechanized = 5 }
+	set_variable = { tom_inf_bat_resets_left_rangers_mechanized = 5 }
+}
