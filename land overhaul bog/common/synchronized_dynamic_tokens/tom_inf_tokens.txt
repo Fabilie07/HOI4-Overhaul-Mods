@@ -5,6 +5,7 @@ tom_inf_horse
 motorized_equipment
 mechanized_equipment
 amphibious_mechanized_equipment
+super_heavy_artillery_equipment
 lmg_chassis
 mmg_chassis
 hmg_chassis
