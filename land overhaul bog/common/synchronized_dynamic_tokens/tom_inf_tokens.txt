@@ -1,4 +1,5 @@
 infantry_equipment
+sniper_chassis
 support_equipment
 tom_inf_horse
 motorized_equipment
