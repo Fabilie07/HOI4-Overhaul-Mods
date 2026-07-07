@@ -80,73 +80,73 @@ tom_inf_battalion_minimum_size_trigger = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_infantry
 		}
-		check_variable = { tom_inf_bat_popup_1000_count > 4 }
+		check_variable = { tom_inf_bat_popup_1000_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_motorized
 		}
-		check_variable = { tom_inf_bat_popup_1300_count > 4 }
+		check_variable = { tom_inf_bat_popup_1300_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_mechanized
 		}
-		check_variable = { tom_inf_bat_popup_1400_count > 4 }
+		check_variable = { tom_inf_bat_popup_1400_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_cavalry
 		}
-		check_variable = { tom_inf_bat_popup_1500_count > 4 }
+		check_variable = { tom_inf_bat_popup_1500_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_mountaineer
 		}
-		check_variable = { tom_inf_bat_popup_2000_count > 4 }
+		check_variable = { tom_inf_bat_popup_2000_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_paratrooper
 		}
-		check_variable = { tom_inf_bat_popup_2100_count > 4 }
+		check_variable = { tom_inf_bat_popup_2100_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_marine
 		}
-		check_variable = { tom_inf_bat_popup_2200_count > 4 }
+		check_variable = { tom_inf_bat_popup_2200_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_marine_commando
 		}
-		check_variable = { tom_inf_bat_popup_2300_count > 4 }
+		check_variable = { tom_inf_bat_popup_2300_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_ranger
 		}
-		check_variable = { tom_inf_bat_popup_2400_count > 4 }
+		check_variable = { tom_inf_bat_popup_2400_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
 		}
-		check_variable = { tom_inf_bat_popup_3000_count > 4 }
+		check_variable = { tom_inf_bat_popup_3000_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_amphibious_mechanized
 		}
-		check_variable = { tom_inf_bat_popup_3200_count > 4 }
+		check_variable = { tom_inf_bat_popup_3200_count > 3 }
 	}
 	else_if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_rangers_mechanized
 		}
-		check_variable = { tom_inf_bat_popup_3400_count > 4 }
+		check_variable = { tom_inf_bat_popup_3400_count > 3 }
 	}
 }
 

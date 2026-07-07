@@ -13,6 +13,21 @@ defined_text = {
 }
 
 
+### Save Button Tooltip
+defined_text = {
+	name = tom_inf_bat_save_button_tt
+	text = {
+		trigger = {
+			tom_inf_battalion_minimum_size_trigger = yes
+		}
+		localization_key = TOM_INF_SAVE_BUTTON_TT
+	}
+	text = {
+		localization_key = TOM_INF_SAVE_BUTTON_TT_UNAVAILABLE
+	}
+}
+
+
 defined_text = {
 	name = tom_inf_bat_subunit_icon
 	text = {

@@ -24,6 +24,10 @@
  TOM_INF_STAT_FORMAT_EQUIPMENT_1:0 "[tom_inf_bat_stat_visual_depiction_equipment_1]"
  TOM_INF_STAT_FORMAT_EQUIPMENT_2:0 "[?v.GetTokenLocalizedKey]:"
  
+ TOM_INF_SAVE_BUTTON:0 "[tom_inf_bat_save_button_tt]"
+ TOM_INF_SAVE_BUTTON_TT:0 "Saves the Battalion you are currently editing, immediately applying all new effects and equipment requirements."
+ TOM_INF_SAVE_BUTTON_TT_UNAVAILABLE:0 "$TOM_INF_SAVE_BUTTON_TT$ \n\n§RAt least 4 Rifle Platoons are needed§!"
+ 
  TOM_INF_SAVE_TT:0 "You are about to increase the amount of equipment in the Battalion. §RThis cannot be undone.§! Are you sure?"
  TOM_INF_SAVE_EQUIPMENT_TT:0 "§YEquipment§!"
  TOM_INF_SAVE_HAS_REQUIRED_TT:0 "§YIn Stockpile/Required§!"
