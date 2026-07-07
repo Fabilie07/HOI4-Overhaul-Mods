@@ -3241,7 +3241,6 @@ tom_inf_bat_remove_effect_infantry = {
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1000_count < 5 }
-			has_tech = tom_inf_bat_infantry_1000_tech_5
 			NOT = { has_tech = tom_inf_bat_infantry_1000_tech_reset_5 }
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech_reset_5 = 1 popup = no }
@@ -3287,7 +3286,6 @@ tom_inf_bat_remove_effect_infantry = {
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1000_count < 6 }
-			has_tech = tom_inf_bat_infantry_1000_tech_6
 			NOT = { has_tech = tom_inf_bat_infantry_1000_tech_reset_6 }
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech_reset_6 = 1 popup = no }
@@ -3333,7 +3331,6 @@ tom_inf_bat_remove_effect_infantry = {
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1000_count < 7 }
-			has_tech = tom_inf_bat_infantry_1000_tech_7
 			NOT = { has_tech = tom_inf_bat_infantry_1000_tech_reset_7 }
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech_reset_7 = 1 popup = no }
@@ -3379,7 +3376,6 @@ tom_inf_bat_remove_effect_infantry = {
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1000_count < 8 }
-			has_tech = tom_inf_bat_infantry_1000_tech_8
 			NOT = { has_tech = tom_inf_bat_infantry_1000_tech_reset_8 }
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech_reset_8 = 1 popup = no }
@@ -3425,7 +3421,6 @@ tom_inf_bat_remove_effect_infantry = {
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1000_count < 9 }
-			has_tech = tom_inf_bat_infantry_1000_tech_9
 			NOT = { has_tech = tom_inf_bat_infantry_1000_tech_reset_9 }
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech_reset_9 = 1 popup = no }
