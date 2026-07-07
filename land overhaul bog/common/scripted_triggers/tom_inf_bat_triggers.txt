@@ -75,6 +75,81 @@ tom_inf_save_button_instant_click_trigger = {
 	}
 }
 
+tom_inf_battalion_minimum_size_trigger = {
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_infantry
+		}
+		check_variable = { tom_inf_bat_popup_1000_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized
+		}
+		check_variable = { tom_inf_bat_popup_1300_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mechanized
+		}
+		check_variable = { tom_inf_bat_popup_1400_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_cavalry
+		}
+		check_variable = { tom_inf_bat_popup_1500_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+		}
+		check_variable = { tom_inf_bat_popup_2000_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+		}
+		check_variable = { tom_inf_bat_popup_2100_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine
+		}
+		check_variable = { tom_inf_bat_popup_2200_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+		}
+		check_variable = { tom_inf_bat_popup_2300_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_ranger
+		}
+		check_variable = { tom_inf_bat_popup_2400_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+		}
+		check_variable = { tom_inf_bat_popup_3000_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+		}
+		check_variable = { tom_inf_bat_popup_3200_count > 4 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+		}
+		check_variable = { tom_inf_bat_popup_3400_count > 4 }
+	}
+}
+
 tom_inf_save_button_increase_trigger = {
 	# Check upon saving if any new Platoons/Companies have been added
 	if = {
@@ -148,6 +223,82 @@ tom_inf_save_button_increase_trigger = {
 			has_country_flag = tom_inf_bat_current_rangers_mechanized
 		}
 		tom_inf_save_button_increase_rangers_mechanized_trigger = yes
+	}
+}
+
+tom_inf_save_button_decrease_trigger = {
+	# Check upon saving if any new Platoons/Companies have been added
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_infantry
+		}
+		tom_inf_save_button_decrease_infantry_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized
+		}
+		tom_inf_save_button_decrease_motorized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mechanized
+		}
+		tom_inf_save_button_decrease_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_cavalry
+		}
+		tom_inf_save_button_decrease_cavalry_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineer
+		}
+		tom_inf_save_button_decrease_mountaineer_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_paratrooper
+		}
+		tom_inf_save_button_decrease_paratrooper_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine
+		}
+		tom_inf_save_button_decrease_marine_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_marine_commando
+		}
+		tom_inf_save_button_decrease_marine_commando_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_ranger
+		}
+		tom_inf_save_button_decrease_ranger_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
+		}
+		tom_inf_save_button_decrease_mountaineers_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_amphibious_mechanized
+		}
+		tom_inf_save_button_decrease_amphibious_mechanized_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rangers_mechanized
+		}
+		tom_inf_save_button_decrease_rangers_mechanized_trigger = yes
 	}
 }
 

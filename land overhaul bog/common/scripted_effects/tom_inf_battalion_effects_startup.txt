@@ -173,16 +173,269 @@ tom_inf_bat_startup_effect_stat_arrays = {
 }
 
 tom_inf_bat_startup_resets = {
-	set_variable = { tom_inf_bat_resets_left_infantry = 5 }
-	set_variable = { tom_inf_bat_resets_left_motorized = 5 }
-	set_variable = { tom_inf_bat_resets_left_mechanized = 5 }
-	set_variable = { tom_inf_bat_resets_left_cavalry = 5 }
-	set_variable = { tom_inf_bat_resets_left_mountaineer = 5 }
-	set_variable = { tom_inf_bat_resets_left_paratrooper = 5 }
-	set_variable = { tom_inf_bat_resets_left_marine = 5 }
-	set_variable = { tom_inf_bat_resets_left_marine_commando = 5 }
-	set_variable = { tom_inf_bat_resets_left_ranger = 5 }
-	set_variable = { tom_inf_bat_resets_left_mountaineers_mechanized = 5 }
-	set_variable = { tom_inf_bat_resets_left_amphibious_mechanized = 5 }
-	set_variable = { tom_inf_bat_resets_left_rangers_mechanized = 5 }
+	resize_array = { array = tom_inf_bat_resets_left_1000 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_1300 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_1400 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_1500 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_2000 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_2100 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_2200 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_2300 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_2400 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_3000 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_3200 value = 5 size = 16 }
+	resize_array = { array = tom_inf_bat_resets_left_3400 value = 5 size = 16 }
+	
+	resize_array = { array = tom_inf_bat_resets_left_10_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_13_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_14_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_15_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_20_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_21_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_22_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_23_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_24_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_30_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_32_1001 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_34_1001 value = 5 size = 4 }
+	
+	resize_array = { array = tom_inf_bat_resets_left_10_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_13_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_14_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_15_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_20_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_21_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_22_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_23_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_24_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_30_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_32_1002 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_34_1002 value = 5 size = 4 }
+	
+	resize_array = { array = tom_inf_bat_resets_left_10_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_13_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_14_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_15_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_20_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_21_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_22_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_23_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_24_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_30_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_32_1003 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_34_1003 value = 5 size = 4 }
+	
+	resize_array = { array = tom_inf_bat_resets_left_10_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_13_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_14_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_15_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_20_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_21_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_22_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_23_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_24_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_30_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_32_1010 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_34_1010 value = 5 size = 4 }
+	
+	resize_array = { array = tom_inf_bat_resets_left_10_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_13_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_14_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_15_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_20_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_21_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_22_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_23_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_24_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_30_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_32_1020 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_34_1020 value = 5 size = 4 }
+	
+	resize_array = { array = tom_inf_bat_resets_left_10_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_13_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_14_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_15_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_20_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_21_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_22_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_23_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_24_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_30_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_32_1021 value = 5 size = 4 }
+	resize_array = { array = tom_inf_bat_resets_left_34_1021 value = 5 size = 4 }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1111 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1111 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1112 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1112 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1121 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1121 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1130 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1130 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1200 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1200 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1200 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1200 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1200 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1200 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1201 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1201 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1201 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1201 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1201 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1201 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1210 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1210 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1211 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1211 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1212 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1212 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1220 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1220 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1221 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1221 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1222 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1222 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1223 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1223 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1230 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1230 = 5  }
+	
+	set_variable = { tom_inf_bat_resets_left_10_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_13_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_14_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_15_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_20_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_21_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_22_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_23_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_24_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_30_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_32_1240 = 5  }
+	set_variable = { tom_inf_bat_resets_left_34_1240 = 5  }
 }
