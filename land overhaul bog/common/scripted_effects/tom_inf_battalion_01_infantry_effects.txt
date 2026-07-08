@@ -424,6 +424,13 @@ tom_inf_bat_save_designer_infantry_effect = {
 	set_variable = { tom_inf_bat_infantry_1230_count = tom_inf_bat_popup_1230_count }
 	set_variable = { tom_inf_bat_infantry_1240_count = tom_inf_bat_popup_1240_count }
 	
+	set_variable = { tom_inf_bat_infantry_1100_min = tom_inf_bat_popup_1100_min }
+	set_variable = { tom_inf_bat_infantry_1101_min = tom_inf_bat_popup_1101_min }
+	set_variable = { tom_inf_bat_infantry_1102_min = tom_inf_bat_popup_1102_min }
+	set_variable = { tom_inf_bat_infantry_1110_min = tom_inf_bat_popup_1110_min }
+	set_variable = { tom_inf_bat_infantry_1120_min = tom_inf_bat_popup_1120_min }
+	set_variable = { tom_inf_bat_infantry_1122_min = tom_inf_bat_popup_1122_min }
+	
 	tom_inf_bat_set_doctrine_variables_infantry_effect = yes
 }
 
@@ -3611,6 +3618,11 @@ tom_inf_bat_remove_effect_infantry = {
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech5_reset_10 = 1 popup = no }
 		add_to_variable = { tom_inf_bat_resets_left_1000^9 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1000_min < 10 } }
+			set_variable = { tom_inf_bat_infantry_1000_min = 10 }
+		}
 	}
 	
 	if = {
@@ -3657,6 +3669,11 @@ tom_inf_bat_remove_effect_infantry = {
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech5_reset_11 = 1 popup = no }
 		add_to_variable = { tom_inf_bat_resets_left_1000^10 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1000_min < 11 } }
+			set_variable = { tom_inf_bat_infantry_1000_min = 11 }
+		}
 	}
 	
 	if = {
@@ -3703,6 +3720,11 @@ tom_inf_bat_remove_effect_infantry = {
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech5_reset_12 = 1 popup = no }
 		add_to_variable = { tom_inf_bat_resets_left_1000^11 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1000_min < 12 } }
+			set_variable = { tom_inf_bat_infantry_1000_min = 12 }
+		}
 	}
 	
 	if = {
@@ -3749,6 +3771,11 @@ tom_inf_bat_remove_effect_infantry = {
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech5_reset_13 = 1 popup = no }
 		add_to_variable = { tom_inf_bat_resets_left_1000^12 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1000_min < 13 } }
+			set_variable = { tom_inf_bat_infantry_1000_min = 13 }
+		}
 	}
 	
 	if = {
@@ -3795,6 +3822,11 @@ tom_inf_bat_remove_effect_infantry = {
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech5_reset_14 = 1 popup = no }
 		add_to_variable = { tom_inf_bat_resets_left_1000^13 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1000_min < 14 } }
+			set_variable = { tom_inf_bat_infantry_1000_min = 14 }
+		}
 	}
 	
 	if = {
@@ -3841,6 +3873,11 @@ tom_inf_bat_remove_effect_infantry = {
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech5_reset_15 = 1 popup = no }
 		add_to_variable = { tom_inf_bat_resets_left_1000^14 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1000_min < 15 } }
+			set_variable = { tom_inf_bat_infantry_1000_min = 15 }
+		}
 	}
 	
 	if = {
@@ -3887,6 +3924,11 @@ tom_inf_bat_remove_effect_infantry = {
 		}
 		set_technology = { tom_inf_bat_infantry_1000_tech5_reset_16 = 1 popup = no }
 		add_to_variable = { tom_inf_bat_resets_left_1000^15 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1000_min < 16 } }
+			set_variable = { tom_inf_bat_infantry_1000_min = 16 }
+		}
 	}
 	
 	if = {
@@ -3896,6 +3938,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3904,6 +3947,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3912,6 +3956,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3920,6 +3965,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3928,6 +3974,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1001_min < 1 } }
+			set_variable = { tom_inf_bat_infantry_1001_min = 1 }
+		}
 	}
 	
 	if = {
@@ -3937,6 +3989,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3945,6 +3998,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech2_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3953,6 +4007,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3961,6 +4016,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech4_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3969,6 +4025,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech5_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1001_min < 2 } }
+			set_variable = { tom_inf_bat_infantry_1001_min = 2 }
+		}
 	}
 	
 	if = {
@@ -3978,6 +4040,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3986,6 +4049,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech2_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -3994,6 +4058,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech3_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4002,6 +4067,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech4_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4010,6 +4076,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech5_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1001_min < 3 } }
+			set_variable = { tom_inf_bat_infantry_1001_min = 3 }
+		}
 	}
 	
 	if = {
@@ -4019,6 +4091,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4027,6 +4100,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech2_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4035,6 +4109,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4043,6 +4118,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech4_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4051,6 +4127,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1001_tech5_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1001_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1001^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1001_min < 4 } }
+			set_variable = { tom_inf_bat_infantry_1001_min = 4 }
+		}
 	}
 	
 	if = {
@@ -4060,6 +4142,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4068,6 +4151,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4076,6 +4160,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4084,6 +4169,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4092,6 +4178,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1002_min < 1 } }
+			set_variable = { tom_inf_bat_infantry_1002_min = 1 }
+		}
 	}
 	
 	if = {
@@ -4101,6 +4193,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4109,6 +4202,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech2_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4117,6 +4211,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4125,6 +4220,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech4_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4133,6 +4229,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech5_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1002_min < 2 } }
+			set_variable = { tom_inf_bat_infantry_1002_min = 2 }
+		}
 	}
 	
 	if = {
@@ -4142,6 +4244,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4150,6 +4253,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech2_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4158,6 +4262,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech3_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4166,6 +4271,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech4_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4174,6 +4280,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech5_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1002_min < 3 } }
+			set_variable = { tom_inf_bat_infantry_1002_min = 3 }
+		}
 	}
 	
 	if = {
@@ -4183,6 +4295,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4191,6 +4304,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech2_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4199,6 +4313,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4207,6 +4322,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech4_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4215,6 +4331,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1002_tech5_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1002_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1002^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1002_min < 4 } }
+			set_variable = { tom_inf_bat_infantry_1002_min = 4 }
+		}
 	}
 	
 	if = {
@@ -4224,6 +4346,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4232,6 +4355,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4240,6 +4364,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4248,6 +4373,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4256,6 +4382,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1003_min < 1 } }
+			set_variable = { tom_inf_bat_infantry_1003_min = 1 }
+		}
 	}
 	
 	if = {
@@ -4265,6 +4397,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4273,6 +4406,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech2_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4281,6 +4415,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4289,6 +4424,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech4_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4297,6 +4433,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech5_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1003_min < 2 } }
+			set_variable = { tom_inf_bat_infantry_1003_min = 2 }
+		}
 	}
 	
 	if = {
@@ -4306,6 +4448,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4314,6 +4457,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech2_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4322,6 +4466,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech3_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4330,6 +4475,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech4_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4338,6 +4484,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech5_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1003_min < 3 } }
+			set_variable = { tom_inf_bat_infantry_1003_min = 3 }
+		}
 	}
 	
 	if = {
@@ -4347,6 +4499,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4355,6 +4508,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech2_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4363,6 +4517,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4371,6 +4526,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech4_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4379,6 +4535,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1003_tech5_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1003_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1003^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1003_min < 4 } }
+			set_variable = { tom_inf_bat_infantry_1003_min = 4 }
+		}
 	}
 	
 	if = {
@@ -4388,6 +4550,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4396,6 +4559,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4404,6 +4568,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4412,6 +4577,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4420,6 +4586,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1010_min < 1 } }
+			set_variable = { tom_inf_bat_infantry_1010_min = 1 }
+		}
 	}
 	
 	if = {
@@ -4429,6 +4601,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4437,6 +4610,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech2_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4445,6 +4619,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4453,6 +4628,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech4_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4461,6 +4637,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech5_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1010_min < 2 } }
+			set_variable = { tom_inf_bat_infantry_1010_min = 2 }
+		}
 	}
 	
 	if = {
@@ -4470,6 +4652,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4478,6 +4661,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech2_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4486,6 +4670,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech3_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4494,6 +4679,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech4_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4502,6 +4688,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech5_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1010_min < 3 } }
+			set_variable = { tom_inf_bat_infantry_1010_min = 3 }
+		}
 	}
 	
 	if = {
@@ -4511,6 +4703,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4519,6 +4712,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech2_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4527,6 +4721,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4535,6 +4730,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech4_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4543,6 +4739,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1010_tech5_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1010_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1010^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1010_min < 4 } }
+			set_variable = { tom_inf_bat_infantry_1010_min = 4 }
+		}
 	}
 	
 	if = {
@@ -4552,6 +4754,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1111_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1111_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1111 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4560,6 +4763,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1111_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1111_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1111 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4568,6 +4772,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1111_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1111_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1111 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4576,6 +4781,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1111_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1111_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1111 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4584,6 +4790,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1111_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1111_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1111 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1111_min = 1 }
 	}
 	
 	if = {
@@ -4593,6 +4802,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1112_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1112_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1112 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4601,6 +4811,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1112_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1112_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1112 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4609,6 +4820,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1112_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1112_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1112 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4617,6 +4829,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1112_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1112_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1112 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4625,6 +4838,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1112_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1112_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1112 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1112_min = 1 }
 	}
 	
 	if = {
@@ -4634,6 +4850,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4642,6 +4859,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4650,6 +4868,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4658,6 +4877,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4666,6 +4886,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1020_min < 1 } }
+			set_variable = { tom_inf_bat_infantry_1020_min = 1 }
+		}
 	}
 	
 	if = {
@@ -4675,6 +4901,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4683,6 +4910,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech2_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4691,6 +4919,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4699,6 +4928,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech4_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4707,6 +4937,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech5_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1020_min < 2 } }
+			set_variable = { tom_inf_bat_infantry_1020_min = 2 }
+		}
 	}
 	
 	if = {
@@ -4716,6 +4952,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4724,6 +4961,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech2_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4732,6 +4970,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech3_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4740,6 +4979,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech4_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4748,6 +4988,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech5_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1020_min < 3 } }
+			set_variable = { tom_inf_bat_infantry_1020_min = 3 }
+		}
 	}
 	
 	if = {
@@ -4757,6 +5003,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4765,6 +5012,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech2_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4773,6 +5021,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4781,6 +5030,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech4_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4789,6 +5039,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1020_tech5_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1020_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1020^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1020_min < 4 } }
+			set_variable = { tom_inf_bat_infantry_1020_min = 4 }
+		}
 	}
 	
 	if = {
@@ -4798,6 +5054,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1121_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1121_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1121 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4806,6 +5063,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1121_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1121_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1121 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4814,6 +5072,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1121_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1121_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1121 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4822,6 +5081,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1121_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1121_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1121 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4830,6 +5090,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1121_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1121_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1121 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1121_min = 1 }
 	}
 	
 	if = {
@@ -4839,6 +5102,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4847,6 +5111,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4855,6 +5120,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4863,6 +5129,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^0 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4871,6 +5138,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1021_min < 1 } }
+			set_variable = { tom_inf_bat_infantry_1021_min = 1 }
+		}
 	}
 	
 	if = {
@@ -4880,6 +5153,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4888,6 +5162,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech2_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4896,6 +5171,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech3_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4904,6 +5180,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech4_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^1 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4912,6 +5189,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech5_reset_2 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1021_min < 2 } }
+			set_variable = { tom_inf_bat_infantry_1021_min = 2 }
+		}
 	}
 	
 	if = {
@@ -4921,6 +5204,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4929,6 +5213,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech2_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4937,6 +5222,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech3_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4945,6 +5231,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech4_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^2 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4953,6 +5240,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech5_reset_3 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1021_min < 3 } }
+			set_variable = { tom_inf_bat_infantry_1021_min = 3 }
+		}
 	}
 	
 	if = {
@@ -4962,6 +5255,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4970,6 +5264,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech2_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4978,6 +5273,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech3_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4986,6 +5282,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech4_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^3 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -4994,6 +5291,12 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1021_tech5_reset_4 }
 		}
 		set_technology = { tom_inf_bat_infantry_1021_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1021^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_infantry_1021_min < 4 } }
+			set_variable = { tom_inf_bat_infantry_1021_min = 4 }
+		}
 	}
 	
 	if = {
@@ -5003,6 +5306,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1130_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1130_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1130 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5011,6 +5315,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1130_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1130_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1130 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5019,6 +5324,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1130_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1130_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1130 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5027,6 +5333,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1130_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1130_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1130 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5035,6 +5342,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1130_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1130_tech5_reset_1 = 1 popup = no }
+		
+		set_variable = { tom_inf_bat_infantry_1130_min = 1 }
+		add_to_variable = { tom_inf_bat_resets_left_10_1130 = -1 }
 	}
 	
 	if = {
@@ -5044,6 +5354,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1200_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1200_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1200 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5052,6 +5363,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1200_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1200_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1200 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5060,6 +5372,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1200_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1200_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1200 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5068,6 +5381,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1200_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1200_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1200 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5076,6 +5390,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1200_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1200_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1200 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1200_min = 1 }
 	}
 	
 	if = {
@@ -5085,6 +5402,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1201_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1201_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1201 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5093,6 +5411,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1201_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1201_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1201 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5101,6 +5420,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1201_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1201_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1201 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5109,6 +5429,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1201_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1201_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1201 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5117,6 +5438,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1201_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1201_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1201 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1201_min = 1 }
 	}
 	
 	if = {
@@ -5126,6 +5450,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1210_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1210_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1210 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5134,6 +5459,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1210_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1210_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1210 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5142,6 +5468,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1210_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1210_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1210 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5150,6 +5477,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1210_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1210_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1210 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5158,6 +5486,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1210_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1210_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1210 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1210_min = 1 }
 	}
 	
 	if = {
@@ -5167,6 +5498,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1211_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1211_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1211 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5175,6 +5507,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1211_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1211_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1211 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5183,6 +5516,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1211_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1211_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1211 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5191,6 +5525,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1211_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1211_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1211 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5199,6 +5534,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1211_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1211_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1211 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1211_min = 1 }
 	}
 	
 	if = {
@@ -5208,6 +5546,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1212_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1212_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1212 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5216,6 +5555,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1212_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1212_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1212 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5224,6 +5564,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1212_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1212_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1212 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5232,6 +5573,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1212_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1212_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1212 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5240,6 +5582,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1212_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1212_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1212 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1212_min = 1 }
 	}
 	
 	if = {
@@ -5249,6 +5594,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1220_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1220_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1220 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5257,6 +5603,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1220_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1220_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1220 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5265,6 +5612,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1220_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1220_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1220 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5273,6 +5621,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1220_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1220_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1220 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5281,6 +5630,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1220_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1220_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1220 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1220_min = 1 }
 	}
 	
 	if = {
@@ -5290,6 +5642,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1221_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1221_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1221 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5298,6 +5651,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1221_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1221_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1221 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5306,6 +5660,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1221_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1221_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1221 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5314,6 +5669,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1221_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1221_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1221 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5322,6 +5678,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1221_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1221_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1221 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1221_min = 1 }
 	}
 	
 	if = {
@@ -5331,6 +5690,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1222_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1222_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1222 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5339,6 +5699,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1222_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1222_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1222 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5347,6 +5708,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1222_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1222_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1222 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5355,6 +5717,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1222_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1222_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1222 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5363,6 +5726,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1222_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1222_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1222 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1222_min = 1 }
 	}
 	
 	if = {
@@ -5372,6 +5738,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1223_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1223_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1223 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5380,6 +5747,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1223_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1223_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1223 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5388,6 +5756,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1223_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1223_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1223 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5396,6 +5765,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1223_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1223_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1223 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5404,6 +5774,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1223_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1223_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1223 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1223_min = 1 }
 	}
 	
 	if = {
@@ -5413,6 +5786,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1230_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1230_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1230 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5421,6 +5795,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1230_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1230_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1230 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5429,6 +5804,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1230_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1230_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1230 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5437,6 +5813,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1230_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1230_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1230 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5445,6 +5822,9 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1230_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1230_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1230 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1230_min = 1 }
 	}
 	
 	if = {
@@ -5454,6 +5834,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1240_tech_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1240_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1240 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5462,6 +5843,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1240_tech2_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1240_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1240 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5470,6 +5852,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1240_tech3_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1240_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1240 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5478,6 +5861,7 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1240_tech4_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1240_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1240 = -1 }
 	}
 	else_if = {
 		limit = {
@@ -5486,5 +5870,8 @@ tom_inf_bat_remove_effect_infantry = {
 			NOT = { has_tech = tom_inf_bat_infantry_1240_tech5_reset_1 }
 		}
 		set_technology = { tom_inf_bat_infantry_1240_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_10_1240 = -1 }
+		
+		set_variable = { tom_inf_bat_infantry_1240_min = 1 }
 	}
 }

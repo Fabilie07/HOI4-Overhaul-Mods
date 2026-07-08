@@ -146,6 +146,31 @@ tom_inf_compute_support_resets_effect = {
 			set_variable = { tom_inf_bat_resets_left_1122 = temp_v }
 		}
 	}
+	
+	if = {
+		limit = { check_variable = { tom_inf_bat_popup_1001_min > 0 } }
+		set_variable = { tom_inf_bat_popup_1100_min = 1 }
+	}
+	if = {
+		limit = { check_variable = { tom_inf_bat_popup_1002_min > 0 } }
+		set_variable = { tom_inf_bat_popup_1101_min = 1 }
+	}
+	if = {
+		limit = { check_variable = { tom_inf_bat_popup_1003_min > 0 } }
+		set_variable = { tom_inf_bat_popup_1102_min = 1 }
+	}
+	if = {
+		limit = { check_variable = { tom_inf_bat_popup_1010_min > 0 } }
+		set_variable = { tom_inf_bat_popup_1110_min = 1 }
+	}
+	if = {
+		limit = { check_variable = { tom_inf_bat_popup_1020_min > 0 } }
+		set_variable = { tom_inf_bat_popup_1120_min = 1 }
+	}
+	if = {
+		limit = { check_variable = { tom_inf_bat_popup_1021_min > 0 } }
+		set_variable = { tom_inf_bat_popup_1122_min = 1 }
+	}
 }
 
 tom_inf_bat_reset_designer_effect = {
