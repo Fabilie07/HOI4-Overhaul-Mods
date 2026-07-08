@@ -836,6 +836,13 @@ defined_text = {
 	name = tom_inf_platoon_desc_loc
 	text = {
 		trigger = {
+			check_variable = { v = -1 }
+			tom_inf_remove_unavailable_trigger = yes
+		}
+		localization_key = TOM_INF_REMOVE_BUTTON_TT_UNAVAILABLE
+	}
+	text = {
+		trigger = {
 			check_variable = { v = 10 }
 		}
 		localization_key = tom_inf_company_10_desc
@@ -1151,6 +1158,101 @@ defined_text = {
 			check_variable = { v = 3400 }
 		}
 		localization_key = tom_inf_platoon_3400_desc
+	}
+}
+
+defined_text = {
+	name = tom_inf_bat_current_resets
+	text = {
+		trigger = {
+			check_variable = { v = 1000 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1000_count }
+			if = {
+				limit = {
+					check_variable = { tom_inf_bat_current_value = 1000 }
+				}
+				add_to_temp_variable = { num_index = -1 }
+			}
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1000^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1001 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1001_count }
+			if = {
+				limit = {
+					check_variable = { tom_inf_bat_current_value = 1001 }
+				}
+				add_to_temp_variable = { num_index = -1 }
+			}
+		}
+		localization_key = "[tom_inf_bat_resets_left_1001^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1002 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1002_count }
+			if = {
+				limit = {
+					check_variable = { tom_inf_bat_current_value = 1002 }
+				}
+				add_to_temp_variable = { num_index = -1 }
+			}
+		}
+		localization_key = "[tom_inf_bat_resets_left_1002^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1003 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1003_count }
+			if = {
+				limit = {
+					check_variable = { tom_inf_bat_current_value = 1003 }
+				}
+				add_to_temp_variable = { num_index = -1 }
+			}
+		}
+		localization_key = "[tom_inf_bat_resets_left_1003^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1010 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1010_count }
+			if = {
+				limit = {
+					check_variable = { tom_inf_bat_current_value = 1010 }
+				}
+				add_to_temp_variable = { num_index = -1 }
+			}
+		}
+		localization_key = "[tom_inf_bat_resets_left_1010^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1020 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1020_count }
+			if = {
+				limit = {
+					check_variable = { tom_inf_bat_current_value = 1020 }
+				}
+				add_to_temp_variable = { num_index = -1 }
+			}
+		}
+		localization_key = "[tom_inf_bat_resets_left_1020^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1021 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1021_count }
+			if = {
+				limit = {
+					check_variable = { tom_inf_bat_current_value = 1021 }
+				}
+				add_to_temp_variable = { num_index = -1 }
+			}
+		}
+		localization_key = "[tom_inf_bat_resets_left_1021^num_index]"
 	}
 }
 

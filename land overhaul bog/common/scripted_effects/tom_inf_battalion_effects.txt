@@ -86,6 +86,66 @@ tom_inf_bat_open_designer_effect = {
 		
 		tom_inf_bat_open_designer_rangers_mechanized_effect = yes
 	}
+	
+	tom_inf_compute_support_resets_effect = yes
+}
+
+tom_inf_compute_support_resets_effect = {
+	set_variable = { tom_inf_bat_resets_left_1100 = 5 }
+	set_variable = { tom_inf_bat_resets_left_1101 = 5 }
+	set_variable = { tom_inf_bat_resets_left_1102 = 5 }
+	set_variable = { tom_inf_bat_resets_left_1110 = 5 }
+	set_variable = { tom_inf_bat_resets_left_1120 = 5 }
+	set_variable = { tom_inf_bat_resets_left_1122 = 5 }
+	
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_1001
+		value = temp_v
+		if = {
+			limit = { check_variable = { temp_v < tom_inf_bat_resets_left_1100 } }
+			set_variable = { tom_inf_bat_resets_left_1100 = temp_v }
+		}
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_1002
+		value = temp_v
+		if = {
+			limit = { check_variable = { temp_v < tom_inf_bat_resets_left_1101 } }
+			set_variable = { tom_inf_bat_resets_left_1101 = temp_v }
+		}
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_1003
+		value = temp_v
+		if = {
+			limit = { check_variable = { temp_v < tom_inf_bat_resets_left_1102 } }
+			set_variable = { tom_inf_bat_resets_left_1102 = temp_v }
+		}
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_1010
+		value = temp_v
+		if = {
+			limit = { check_variable = { temp_v < tom_inf_bat_resets_left_1110 } }
+			set_variable = { tom_inf_bat_resets_left_1110 = temp_v }
+		}
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_1020
+		value = temp_v
+		if = {
+			limit = { check_variable = { temp_v < tom_inf_bat_resets_left_1120 } }
+			set_variable = { tom_inf_bat_resets_left_1120 = temp_v }
+		}
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_1021
+		value = temp_v
+		if = {
+			limit = { check_variable = { temp_v < tom_inf_bat_resets_left_1122 } }
+			set_variable = { tom_inf_bat_resets_left_1122 = temp_v }
+		}
+	}
 }
 
 tom_inf_bat_reset_designer_effect = {
