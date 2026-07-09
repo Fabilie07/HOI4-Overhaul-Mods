@@ -4,8 +4,10 @@ tom_inf_bat_startup_effect_rangers_mechanized = {
 	resize_array = { tom_inf_bat_rangers_mechanized_base_stats_array = 11 }
 	resize_array = { tom_inf_bat_rangers_mechanized_combat_stats_array = 11 }
 	resize_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_1 = 2 }
-	add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_type = token:rangers_mechanized_equipment }
-	add_to_array = { tom_inf_bat_rangers_mechanized_equipment_stats_array_2_count = 90 }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_type = token:infantry_equipment }
+	add_to_array = { tom_inf_bat_mechanized_equipment_stats_array_2_count = 90 }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:mechanized_equipment }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 45 }
 	
 	add_to_array = { tom_inf_bat_rangers_mechanized_companies_array = 10 }
 	add_to_array = { tom_inf_bat_rangers_mechanized_companies_array = 11 }
@@ -5237,102 +5239,6 @@ tom_inf_bat_remove_effect_rangers_mechanized = {
 		
 		set_variable = { tom_inf_bat_rangers_mechanized_1130_min = 1 }
 		add_to_variable = { tom_inf_bat_resets_left_34_1130 = -1 }
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1200_tech_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1200_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1200_tech_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1200 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1200_tech2_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1200_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1200_tech2_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1200 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1200_tech3_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1200_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1200_tech3_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1200 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1200_tech4_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1200_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1200_tech4_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1200 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1200_tech5_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1200_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1200_tech5_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1200 = -1 }
-		
-		set_variable = { tom_inf_bat_rangers_mechanized_1200_min = 1 }
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1201_tech_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1201_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1201_tech_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1201 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1201_tech2_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1201_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1201_tech2_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1201 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1201_tech3_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1201_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1201_tech3_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1201 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1201_tech4_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1201_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1201_tech4_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1201 = -1 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count < 1 }
-			has_tech = tom_inf_bat_rangers_mechanized_1201_tech5_1
-			NOT = { has_tech = tom_inf_bat_rangers_mechanized_1201_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_rangers_mechanized_1201_tech5_reset_1 = 1 popup = no }
-		add_to_variable = { tom_inf_bat_resets_left_34_1201 = -1 }
-		
-		set_variable = { tom_inf_bat_rangers_mechanized_1201_min = 1 }
 	}
 	
 	if = {

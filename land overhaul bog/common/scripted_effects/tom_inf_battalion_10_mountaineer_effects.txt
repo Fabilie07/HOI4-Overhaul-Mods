@@ -4,8 +4,8 @@ tom_inf_bat_startup_effect_mountaineer = {
 	resize_array = { tom_inf_bat_mountaineer_base_stats_array = 11 }
 	resize_array = { tom_inf_bat_mountaineer_combat_stats_array = 11 }
 	resize_array = { tom_inf_bat_mountaineer_equipment_stats_array_1 = 2 }
-	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_type = token:mountaineer_equipment }
-	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_count = 90 }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_type = token:infantry_equipment }
+	add_to_array = { tom_inf_bat_mountaineer_equipment_stats_array_2_count = 135 }
 	
 	add_to_array = { tom_inf_bat_mountaineer_companies_array = 20 }
 	add_to_array = { tom_inf_bat_mountaineer_companies_array = 11 }
