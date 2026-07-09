@@ -2,6 +2,66 @@ technologies = {
 	### NO 1
 	# Mountaineer Rifle
 	
+	tom_inf_bat_mountaineer_2000_tech_reset_5 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech_reset_6 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech_reset_7 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech_reset_8 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech_reset_9 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
 	tom_inf_bat_mountaineer_2000_tech_reset_10 = {
 		allow = {
 			always = no
@@ -758,6 +818,66 @@ technologies = {
 	### NO 2
 	# Mountaineer Rifle
 	
+	tom_inf_bat_mountaineer_2000_tech2_reset_5 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech2_reset_6 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech2_reset_7 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech2_reset_8 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech2_reset_9 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
 	tom_inf_bat_mountaineer_2000_tech2_reset_10 = {
 		allow = {
 			always = no
@@ -1514,6 +1634,66 @@ technologies = {
 	### NO 3
 	# Mountaineer Rifle
 	
+	tom_inf_bat_mountaineer_2000_tech3_reset_5 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech3_reset_6 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech3_reset_7 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech3_reset_8 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech3_reset_9 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
 	tom_inf_bat_mountaineer_2000_tech3_reset_10 = {
 		allow = {
 			always = no
@@ -2270,6 +2450,66 @@ technologies = {
 	### NO 4
 	# Mountaineer Rifle
 	
+	tom_inf_bat_mountaineer_2000_tech4_reset_5 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech4_reset_6 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech4_reset_7 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech4_reset_8 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech4_reset_9 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
 	tom_inf_bat_mountaineer_2000_tech4_reset_10 = {
 		allow = {
 			always = no
@@ -3026,6 +3266,66 @@ technologies = {
 	### NO 5
 	# Mountaineer Rifle
 	
+	tom_inf_bat_mountaineer_2000_tech5_reset_5 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech5_reset_6 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech5_reset_7 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech5_reset_8 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
+	tom_inf_bat_mountaineer_2000_tech5_reset_9 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -15
+			}
+		}
+	}
 	tom_inf_bat_mountaineer_2000_tech5_reset_10 = {
 		allow = {
 			always = no

@@ -2,6 +2,71 @@ technologies = {
 	### NO 1
 	# Rifle
 	
+	tom_inf_bat_rangers_mechanized_3400_tech_reset_5 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech_reset_6 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech_reset_7 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech_reset_8 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech_reset_9 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
 	tom_inf_bat_rangers_mechanized_3400_tech_reset_10 = {
 		allow = {
 			always = no
@@ -732,6 +797,71 @@ technologies = {
 	### NO 2
 	# Rifle
 	
+	tom_inf_bat_rangers_mechanized_3400_tech2_reset_5 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech2_reset_6 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech2_reset_7 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech2_reset_8 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech2_reset_9 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
 	tom_inf_bat_rangers_mechanized_3400_tech2_reset_10 = {
 		allow = {
 			always = no
@@ -1462,6 +1592,71 @@ technologies = {
 	### NO 3
 	# Rifle
 	
+	tom_inf_bat_rangers_mechanized_3400_tech3_reset_5 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech3_reset_6 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech3_reset_7 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech3_reset_8 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech3_reset_9 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
 	tom_inf_bat_rangers_mechanized_3400_tech3_reset_10 = {
 		allow = {
 			always = no
@@ -2192,6 +2387,71 @@ technologies = {
 	### NO 4
 	# Rifle
 	
+	tom_inf_bat_rangers_mechanized_3400_tech4_reset_5 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech4_reset_6 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech4_reset_7 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech4_reset_8 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech4_reset_9 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
 	tom_inf_bat_rangers_mechanized_3400_tech4_reset_10 = {
 		allow = {
 			always = no
@@ -2922,6 +3182,71 @@ technologies = {
 	### NO 5
 	# Rifle
 	
+	tom_inf_bat_rangers_mechanized_3400_tech5_reset_5 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech5_reset_6 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech5_reset_7 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech5_reset_8 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
+	tom_inf_bat_rangers_mechanized_3400_tech5_reset_9 = {
+		allow = {
+			always = no
+		}
+		rangers_mechanized = {
+			max_organisation = -3
+			max_strength = -0.12
+			need = {
+				infantry_equipment = -10
+				mechanized_equipment = -5
+			}
+		}
+	}
 	tom_inf_bat_rangers_mechanized_3400_tech5_reset_10 = {
 		allow = {
 			always = no

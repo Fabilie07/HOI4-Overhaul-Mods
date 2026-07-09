@@ -733,6 +733,71 @@ technologies = {
 	### NO 2
 	# Rifle
 	
+	tom_inf_bat_amphibious_mechanized_3200_tech2_5 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech2_6 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech2_7 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech2_8 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech2_9 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
 	tom_inf_bat_amphibious_mechanized_3200_tech2_10 = {
 		allow = {
 			always = no
@@ -1464,6 +1529,71 @@ technologies = {
 	### NO 3
 	# Rifle
 	
+	tom_inf_bat_amphibious_mechanized_3200_tech3_5 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech3_6 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech3_7 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech3_8 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech3_9 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
 	tom_inf_bat_amphibious_mechanized_3200_tech3_10 = {
 		allow = {
 			always = no
@@ -2195,6 +2325,71 @@ technologies = {
 	### NO 4
 	# Rifle
 	
+	tom_inf_bat_amphibious_mechanized_3200_tech4_5 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech4_6 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech4_7 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech4_8 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech4_9 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
 	tom_inf_bat_amphibious_mechanized_3200_tech4_10 = {
 		allow = {
 			always = no
@@ -2926,6 +3121,71 @@ technologies = {
 	### NO 5
 	# Rifle
 	
+	tom_inf_bat_amphibious_mechanized_3200_tech5_5 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech5_6 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech5_7 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech5_8 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech5_9 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
 	tom_inf_bat_amphibious_mechanized_3200_tech5_10 = {
 		allow = {
 			always = no
@@ -3657,6 +3917,71 @@ technologies = {
 	### NO 6
 	# Rifle
 	
+	tom_inf_bat_amphibious_mechanized_3200_tech6_5 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech6_6 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech6_7 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech6_8 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
+	tom_inf_bat_amphibious_mechanized_3200_tech6_9 = {
+		allow = {
+			always = no
+		}
+		amphibious_mechanized = {
+			max_organisation = 3
+			max_strength = 0.12
+			need = {
+				infantry_equipment = 10
+				amphibious_mechanized_equipment = 5
+			}
+		}
+	}
 	tom_inf_bat_amphibious_mechanized_3200_tech6_10 = {
 		allow = {
 			always = no
