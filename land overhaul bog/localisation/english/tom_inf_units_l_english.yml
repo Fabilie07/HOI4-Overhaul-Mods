@@ -31,7 +31,18 @@
  heavy_armored_signal:0 "Heavy Command Vehicle Platoon"
  heavy_armored_signal_desc:0 "Command Tanks carry more powerful Radio units, making them capable of communicating with other forces from the frontline."
  
+ assault_infantry_support:0 "Assault Infantry"
+ assault_infantry_support_desc:0 "Small groups of highly trained Infantrymen that assault enemy positions and fortifications."
  sniper_support:0 "Sniper Platoon"
  sniper_support_desc:0 "Sharpshooters on the Divisional Level that operate as a single unit to strike fast and deadly where needed."
  snipers_regimental:0 "Support Snipers"
  snipers_regimental_desc:0 "A Squad of Snipers that operate independently, taking out targets of opportunity."
+ 
+ light_fire_support:0 "Light Weapons Company"
+ light_fire_support_desc:0 "Light Machine Guns provide Fire Support for Units, moving up together with them."
+ medium_fire_support:0 "Medium Weapons Company"
+ medium_fire_support_desc:0 "Medium Machine Guns provide Fire Support for Units, moving up together with them."
+ mot_light_fire_support:0 "Motorized Light Weapons Company"
+ mot_light_fire_support_desc:0 "Truck-Mounted Light Machine Guns provide Fire Support for Units, moving up together with them."
+ mot_medium_fire_support:0 "Motorized Medium Weapons Company"
+ mot_medium_fire_support_desc:0 "Truck-Mounted Medium Machine Guns provide Fire Support for Units, moving up together with them."

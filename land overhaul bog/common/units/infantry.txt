@@ -14,8 +14,8 @@ sub_units = {
 		active = no
 
 		type = {
-			# infantry
-			armor
+			infantry
+			# armor
 		}
 		
 		#can_exfiltrate_from_coast = yes #Can this subunit board convoys from a non-port location. 

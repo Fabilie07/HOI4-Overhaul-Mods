@@ -94,6 +94,8 @@ technologies = {
 		
 		enable_subunits = {
 			infantry
+			light_fire_support
+			mot_light_fire_support
 		}
 		
 		show_equipment_icon = yes
@@ -674,7 +676,9 @@ technologies = {
 	support_weapons = {
 	
 		enable_subunits = {
+			medium_fire_support
 			fire_support
+			mot_medium_fire_support
 			mot_fire_support
 		}
 	
