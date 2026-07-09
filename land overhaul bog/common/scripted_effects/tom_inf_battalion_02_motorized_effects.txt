@@ -4,12 +4,10 @@ tom_inf_bat_startup_effect_motorized = {
 	resize_array = { tom_inf_bat_motorized_base_stats_array = 11 }
 	resize_array = { tom_inf_bat_motorized_combat_stats_array = 11 }
 	resize_array = { tom_inf_bat_motorized_equipment_stats_array_1 = 2 }
-	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:infantry_equipment }
-	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 90 }
 	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:motorized_equipment }
-	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 36 }
+	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 90 }
 	
-	add_to_array = { tom_inf_bat_motorized_companies_array = 13 }
+	add_to_array = { tom_inf_bat_motorized_companies_array = 10 }
 	add_to_array = { tom_inf_bat_motorized_companies_array = 11 }
 	add_to_array = { tom_inf_bat_motorized_companies_array = 12 }
 	
@@ -103,31 +101,7 @@ tom_inf_bat_startup_effect_motorized = {
 	set_variable = { tom_inf_bat_motorized_1020_max = 4 }
 	set_variable = { tom_inf_bat_motorized_1021_max = 4 }
 	
-	
-	add_to_array = { tom_inf_bat_motorized_terrain_bonus_array = 1 }
-	add_to_array = { tom_inf_bat_motorized_terrain_bonus_array = 3 }
-	add_to_array = { tom_inf_bat_motorized_terrain_bonus_array = 5 }
-	add_to_array = { tom_inf_bat_motorized_terrain_bonus_array = 6 }
-	add_to_array = { tom_inf_bat_motorized_terrain_bonus_array = 7 }
-	add_to_array = { tom_inf_bat_motorized_terrain_bonus_array = 11 }
-	add_to_array = { tom_inf_bat_motorized_terrain_bonus_array = 12 }
-	
-	resize_array = { tom_inf_bat_motorized_terrain_movement_array = 7 }
-	resize_array = { tom_inf_bat_motorized_terrain_attack_array = 7 }
-	resize_array = { tom_inf_bat_motorized_terrain_defense_array = 7 }
-	
-	set_variable = { tom_inf_bat_motorized_terrain_movement_array^0 = -50 }
-	set_variable = { tom_inf_bat_motorized_terrain_movement_array^3 = -50 }
-	set_variable = { tom_inf_bat_motorized_terrain_movement_array^4 = -30 }
-	set_variable = { tom_inf_bat_motorized_terrain_movement_array^5 = -10 }
-	
-	set_variable = { tom_inf_bat_motorized_terrain_attack_array^0 = -10 }
-	set_variable = { tom_inf_bat_motorized_terrain_attack_array^1 = -5 }
-	set_variable = { tom_inf_bat_motorized_terrain_attack_array^2 = -10 }
-	set_variable = { tom_inf_bat_motorized_terrain_attack_array^3 = -10 }
-	set_variable = { tom_inf_bat_motorized_terrain_attack_array^4 = -10 }
-	set_variable = { tom_inf_bat_motorized_terrain_attack_array^5 = -10 }
-	set_variable = { tom_inf_bat_motorized_terrain_attack_array^6 = -20 }
+	set_variable = { tom_inf_bat_motorized_1300_min = 4 }
 }
 
 
@@ -223,8 +197,6 @@ tom_inf_bat_open_subunit_counts_motorized_effect = {
 	set_variable = { tom_inf_bat_popup_1122_count = tom_inf_bat_motorized_1122_count }
 	set_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_motorized_1130_count }
 	
-	set_variable = { tom_inf_bat_popup_1200_count = tom_inf_bat_motorized_1200_count }
-	set_variable = { tom_inf_bat_popup_1201_count = tom_inf_bat_motorized_1201_count }
 	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_motorized_1210_count }
 	set_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_motorized_1211_count }
 	set_variable = { tom_inf_bat_popup_1212_count = tom_inf_bat_motorized_1212_count }
@@ -247,1620 +219,92 @@ tom_inf_bat_open_subunit_counts_motorized_effect = {
 	set_variable = { tom_inf_bat_popup_1010_max = tom_inf_bat_motorized_1010_max }
 	set_variable = { tom_inf_bat_popup_1020_max = tom_inf_bat_motorized_1020_max }
 	set_variable = { tom_inf_bat_popup_1021_max = tom_inf_bat_motorized_1021_max }
+	
+	set_variable = { tom_inf_bat_popup_1300_min = tom_inf_bat_motorized_1300_min }
+	set_variable = { tom_inf_bat_popup_1001_min = tom_inf_bat_motorized_1001_min }
+	set_variable = { tom_inf_bat_popup_1002_min = tom_inf_bat_motorized_1002_min }
+	set_variable = { tom_inf_bat_popup_1003_min = tom_inf_bat_motorized_1003_min }
+	set_variable = { tom_inf_bat_popup_1010_min = tom_inf_bat_motorized_1010_min }
+	set_variable = { tom_inf_bat_popup_1020_min = tom_inf_bat_motorized_1020_min }
+	set_variable = { tom_inf_bat_popup_1021_min = tom_inf_bat_motorized_1021_min }
+	
+	set_variable = { tom_inf_bat_popup_1100_min = tom_inf_bat_motorized_1100_min }
+	set_variable = { tom_inf_bat_popup_1101_min = tom_inf_bat_motorized_1101_min }
+	set_variable = { tom_inf_bat_popup_1102_min = tom_inf_bat_motorized_1102_min }
+	set_variable = { tom_inf_bat_popup_1110_min = tom_inf_bat_motorized_1110_min }
+	set_variable = { tom_inf_bat_popup_1111_min = tom_inf_bat_motorized_1111_min }
+	set_variable = { tom_inf_bat_popup_1112_min = tom_inf_bat_motorized_1112_min }
+	set_variable = { tom_inf_bat_popup_1120_min = tom_inf_bat_motorized_1120_min }
+	set_variable = { tom_inf_bat_popup_1121_min = tom_inf_bat_motorized_1121_min }
+	set_variable = { tom_inf_bat_popup_1122_min = tom_inf_bat_motorized_1122_min }
+	set_variable = { tom_inf_bat_popup_1130_min = tom_inf_bat_motorized_1130_min }
+	set_variable = { tom_inf_bat_popup_1210_min = tom_inf_bat_motorized_1210_min }
+	set_variable = { tom_inf_bat_popup_1211_min = tom_inf_bat_motorized_1211_min }
+	set_variable = { tom_inf_bat_popup_1212_min = tom_inf_bat_motorized_1212_min }
+	set_variable = { tom_inf_bat_popup_1220_min = tom_inf_bat_motorized_1220_min }
+	set_variable = { tom_inf_bat_popup_1221_min = tom_inf_bat_motorized_1221_min }
+	set_variable = { tom_inf_bat_popup_1222_min = tom_inf_bat_motorized_1222_min }
+	set_variable = { tom_inf_bat_popup_1223_min = tom_inf_bat_motorized_1223_min }
+	set_variable = { tom_inf_bat_popup_1230_min = tom_inf_bat_motorized_1230_min }
+	set_variable = { tom_inf_bat_popup_1240_min = tom_inf_bat_motorized_1240_min }
+	
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_13_1001
+		value = temp_v
+		add_to_array = { tom_inf_bat_resets_left_1001 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_13_1002
+		value = temp_v
+		add_to_array = { tom_inf_bat_resets_left_1002 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_13_1003
+		value = temp_v
+		add_to_array = { tom_inf_bat_resets_left_1003 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_13_1010
+		value = temp_v
+		add_to_array = { tom_inf_bat_resets_left_1010 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_13_1020
+		value = temp_v
+		add_to_array = { tom_inf_bat_resets_left_1020 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_resets_left_13_1021
+		value = temp_v
+		add_to_array = { tom_inf_bat_resets_left_1021 = temp_v }
+	}
+	
+	set_variable = { tom_inf_bat_resets_left_1111 = tom_inf_bat_resets_left_13_1111 }
+	set_variable = { tom_inf_bat_resets_left_1112 = tom_inf_bat_resets_left_13_1112 }
+	set_variable = { tom_inf_bat_resets_left_1121 = tom_inf_bat_resets_left_13_1121 }
+	set_variable = { tom_inf_bat_resets_left_1130 = tom_inf_bat_resets_left_13_1130 }
+	set_variable = { tom_inf_bat_resets_left_1210 = tom_inf_bat_resets_left_13_1210 }
+	set_variable = { tom_inf_bat_resets_left_1211 = tom_inf_bat_resets_left_13_1211 }
+	set_variable = { tom_inf_bat_resets_left_1212 = tom_inf_bat_resets_left_13_1212 }
+	set_variable = { tom_inf_bat_resets_left_1220 = tom_inf_bat_resets_left_13_1220 }
+	set_variable = { tom_inf_bat_resets_left_1221 = tom_inf_bat_resets_left_13_1221 }
+	set_variable = { tom_inf_bat_resets_left_1222 = tom_inf_bat_resets_left_13_1222 }
+	set_variable = { tom_inf_bat_resets_left_1223 = tom_inf_bat_resets_left_13_1223 }
+	set_variable = { tom_inf_bat_resets_left_1230 = tom_inf_bat_resets_left_13_1230 }
+	set_variable = { tom_inf_bat_resets_left_1240 = tom_inf_bat_resets_left_13_1240 }
 }
 
-tom_inf_bat_reset_designer_motorized_effect = {
-	clear_array = tom_inf_bat_motorized_base_stats_array
-	clear_array = tom_inf_bat_motorized_combat_stats_array
-	clear_array = tom_inf_bat_motorized_equipment_stats_array_1
-	clear_array = tom_inf_bat_motorized_equipment_stats_array_2_type
-	clear_array = tom_inf_bat_motorized_equipment_stats_array_2_count
-	
-	clear_array = tom_inf_bat_motorized_terrain_bonus_array
-	clear_array = tom_inf_bat_motorized_terrain_movement_array
-	clear_array = tom_inf_bat_motorized_terrain_attack_array
-	clear_array = tom_inf_bat_motorized_terrain_defense_array
-	
-	clear_array = tom_inf_bat_motorized_companies_array
-	clear_array = tom_inf_battalion_motorized_company_array
-	clear_array = tom_inf_battalion_motorized_platoon_array
-	
-	tom_inf_bat_startup_effect_motorized = yes
-	tom_inf_bat_open_designer_motorized_effect = yes
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech_10
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_10 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech_reset_10 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech2_10
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_10 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_10 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech3_10
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_10 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_10 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech4_10
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_10 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_10 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech5_10
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_10 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_10 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech_11
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_11 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech_reset_11 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech2_11
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_11 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_11 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech3_11
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_11 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_11 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech4_11
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_11 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_11 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech5_11
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_11 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_11 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech_12
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_12 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech_reset_12 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech2_12
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_12 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_12 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech3_12
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_12 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_12 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech4_12
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_12 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_12 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech5_12
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_12 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_12 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech_13
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_13 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech_reset_13 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech2_13
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_13 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_13 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech3_13
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_13 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_13 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech4_13
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_13 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_13 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech5_13
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_13 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_13 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech_14
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_14 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech_reset_14 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech2_14
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_14 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_14 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech3_14
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_14 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_14 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech4_14
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_14 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_14 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech5_14
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_14 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_14 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech_15
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_15 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech_reset_15 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech2_15
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_15 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_15 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech3_15
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_15 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_15 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech4_15
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_15 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_15 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech5_15
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_15 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_15 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech_16
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_16 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech_reset_16 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech2_16
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_16 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_16 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech3_16
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_16 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_16 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech4_16
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_16 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_16 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1300_tech5_16
-			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_16 }
-		}
-		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_16 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech_2
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech2_2
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech3_2
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech4_2
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech5_2
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_2 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech_3
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech2_3
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech3_3
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech4_3
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech5_3
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_3 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech_4
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech2_4
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech3_4
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech4_4
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1001_tech5_4
-			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_4 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech_2
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech2_2
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech3_2
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech4_2
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech5_2
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_2 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech_3
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech2_3
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech3_3
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech4_3
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech5_3
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_3 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech_4
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech2_4
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech3_4
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech4_4
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1002_tech5_4
-			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_4 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech_2
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech2_2
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech3_2
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech4_2
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech5_2
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_2 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech_3
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech2_3
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech3_3
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech4_3
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech5_3
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_3 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech_4
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech2_4
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech3_4
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech4_4
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1003_tech5_4
-			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_4 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech_2
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech2_2
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech3_2
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech4_2
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech5_2
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_2 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech_3
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech2_3
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech3_3
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech4_3
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech5_3
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_3 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech_4
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech2_4
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech3_4
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech4_4
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1010_tech5_4
-			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_4 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1111_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1111_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1111_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1111_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1111_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1111_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1111_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1111_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1111_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1111_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1111_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1111_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1111_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1111_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1111_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1112_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1112_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1112_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1112_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1112_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1112_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1112_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1112_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1112_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1112_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1112_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1112_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1112_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1112_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1112_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech_2
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech2_2
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech3_2
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech4_2
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech5_2
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_2 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech_3
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech2_3
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech3_3
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech4_3
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech5_3
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_3 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech_4
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech2_4
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech3_4
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech4_4
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1020_tech5_4
-			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_4 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1121_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1121_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1121_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1121_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1121_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1121_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1121_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1121_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1121_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1121_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1121_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1121_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1121_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1121_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1121_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech_2
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech2_2
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech3_2
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech4_2
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_2 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech5_2
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_2 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_2 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech_3
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech2_3
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech3_3
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech4_3
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_3 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech5_3
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_3 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_3 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech_4
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech2_4
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech3_4
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech4_4
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_4 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1021_tech5_4
-			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_4 }
-		}
-		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_4 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1130_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1130_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1130_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1130_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1130_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1130_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1130_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1130_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1130_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1130_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1130_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1130_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1130_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1130_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1130_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1210_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1210_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1210_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1210_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1210_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1210_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1210_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1210_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1210_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1210_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1210_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1210_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1210_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1210_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1210_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1211_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1211_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1211_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1211_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1211_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1211_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1211_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1211_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1211_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1211_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1211_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1211_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1211_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1211_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1211_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1212_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1212_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1212_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1212_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1212_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1212_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1212_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1212_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1212_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1212_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1212_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1212_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1212_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1212_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1212_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1220_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1220_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1220_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1220_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1220_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1220_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1220_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1220_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1220_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1220_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1220_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1220_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1220_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1220_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1220_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1221_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1221_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1221_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1221_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1221_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1221_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1221_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1221_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1221_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1221_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1221_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1221_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1221_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1221_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1221_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1222_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1222_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1222_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1222_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1222_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1222_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1222_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1222_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1222_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1222_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1222_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1222_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1222_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1222_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1222_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1223_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1223_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1223_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1223_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1223_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1223_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1223_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1223_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1223_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1223_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1223_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1223_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1223_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1223_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1223_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1230_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1230_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1230_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1230_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1230_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1230_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1230_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1230_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1230_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1230_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1230_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1230_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1230_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1230_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1230_tech5_reset_1 = 1 popup = no }
-	}
-	
-	if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1240_tech_1
-			NOT = { has_tech = tom_inf_bat_motorized_1240_tech_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1240_tech_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1240_tech2_1
-			NOT = { has_tech = tom_inf_bat_motorized_1240_tech2_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1240_tech2_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1240_tech3_1
-			NOT = { has_tech = tom_inf_bat_motorized_1240_tech3_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1240_tech3_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1240_tech4_1
-			NOT = { has_tech = tom_inf_bat_motorized_1240_tech4_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1240_tech4_reset_1 = 1 popup = no }
-	}
-	else_if = {
-		limit = {
-			has_tech = tom_inf_bat_motorized_1240_tech5_1
-			NOT = { has_tech = tom_inf_bat_motorized_1240_tech5_reset_1 }
-		}
-		set_technology = { tom_inf_bat_motorized_1240_tech5_reset_1 = 1 popup = no }
-	}
-	
-	add_to_variable = { tom_inf_bat_resets_left_motorized = -1 }
-}
 
 tom_inf_bat_save_designer_motorized_effect = {
 	if = {
 		limit = {
-			tom_inf_save_button_increase_motorized_trigger = yes
+			OR = {
+				tom_inf_save_button_increase_motorized_trigger = yes
+				tom_inf_save_button_decrease_motorized_trigger = yes
+			}
 		}
 		tom_inf_bat_add_effect_motorized = yes
+		tom_inf_bat_remove_effect_motorized = yes
 		
 		clear_array = tom_inf_bat_motorized_base_stats_array
 		clear_array = tom_inf_bat_motorized_combat_stats_array
@@ -1969,6 +413,13 @@ tom_inf_bat_save_designer_motorized_effect = {
 	set_variable = { tom_inf_bat_motorized_1223_count = tom_inf_bat_popup_1223_count }
 	set_variable = { tom_inf_bat_motorized_1230_count = tom_inf_bat_popup_1230_count }
 	set_variable = { tom_inf_bat_motorized_1240_count = tom_inf_bat_popup_1240_count }
+	
+	set_variable = { tom_inf_bat_motorized_1100_min = tom_inf_bat_popup_1100_min }
+	set_variable = { tom_inf_bat_motorized_1101_min = tom_inf_bat_popup_1101_min }
+	set_variable = { tom_inf_bat_motorized_1102_min = tom_inf_bat_popup_1102_min }
+	set_variable = { tom_inf_bat_motorized_1110_min = tom_inf_bat_popup_1110_min }
+	set_variable = { tom_inf_bat_motorized_1120_min = tom_inf_bat_popup_1120_min }
+	set_variable = { tom_inf_bat_motorized_1122_min = tom_inf_bat_popup_1122_min }
 	
 	tom_inf_bat_set_doctrine_variables_motorized_effect = yes
 }
@@ -2132,7 +583,7 @@ tom_inf_bat_add_effect_motorized = {
 	### COMPANIES
 	if = {
 		limit = {
-			check_variable = { tom_inf_bat_popup_10_count > 3 }
+			check_variable = { tom_inf_bat_popup_13_count > 3 }
 		}
 		# Enlarge Support Column for the 4th Rifle Company
 		if = {
@@ -2426,6 +877,211 @@ tom_inf_bat_add_effect_motorized = {
 	
 	### PLATOONS
 	# Rifle
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 4 }
+			has_tech = tom_inf_bat_motorized_1300_tech_reset_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_5 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 4 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_reset_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_5 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 4 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_reset_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_5 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 4 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_reset_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_5 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 4 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_reset_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech6_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech6_5 = 1 popup = no }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech_reset_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_6 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_reset_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_6 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_reset_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_6 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_reset_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_6 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_reset_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech6_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech6_6 = 1 popup = no }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech_reset_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_7 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_reset_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_7 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_reset_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_7 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_reset_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_7 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_reset_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech6_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech6_7 = 1 popup = no }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech_reset_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_8 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_reset_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_8 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_reset_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_8 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_reset_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_8 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_reset_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech6_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech6_8 = 1 popup = no }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech_reset_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_9 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_reset_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_9 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_reset_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_9 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_reset_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_9 = 1 popup = no }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count > 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_reset_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech6_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech6_9 = 1 popup = no }
+	}
+	
 	if = {
 		limit = {
 			check_variable = { tom_inf_bat_popup_1300_count > 9 }
@@ -4555,5 +3211,2559 @@ tom_inf_bat_add_effect_motorized = {
 			NOT = { has_tech = tom_inf_bat_motorized_1240_tech6_1 }
 		}
 		set_technology = { tom_inf_bat_motorized_1240_tech6_1 = 1 popup = no }
+	}
+}
+
+
+tom_inf_bat_remove_effect_motorized = {
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 5 }
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_5 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^4 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_5 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^4 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_5 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^4 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_5 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^4 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 5 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_5
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_5 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_5 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^4 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 5 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 5 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 6 }
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_6 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^5 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_6 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^5 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_6 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^5 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_6 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^5 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 6 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_6
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_6 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_6 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^5 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 6 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 6 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 7 }
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_7 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^6 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_7 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^6 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_7 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^6 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_7 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^6 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 7 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_7
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_7 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_7 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^6 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 7 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 7 }
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 8 }
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_8 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^7 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_8 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^7 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_8 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^7 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_8 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^7 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 8 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_8
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_8 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_8 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^7 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 8 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 8 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 9 }
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_9 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^8 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 9 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_9 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^8 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 9 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_9 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^8 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 9 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_9 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^8 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 9 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_9
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_9 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_9 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^8 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 9 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 9 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 10 }
+			has_tech = tom_inf_bat_motorized_1300_tech_10
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_10 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_10 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^9 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 10 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_10
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_10 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_10 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^9 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 10 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_10
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_10 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_10 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^9 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 10 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_10
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_10 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_10 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^9 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 10 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_10
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_10 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_10 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^9 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 10 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 10 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 11 }
+			has_tech = tom_inf_bat_motorized_1300_tech_11
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_11 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_11 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^10 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 11 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_11
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_11 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_11 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^10 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 11 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_11
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_11 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_11 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^10 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 11 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_11
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_11 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_11 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^10 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 11 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_11
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_11 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_11 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^10 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 11 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 11 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 12 }
+			has_tech = tom_inf_bat_motorized_1300_tech_12
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_12 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_12 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^11 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 12 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_12
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_12 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_12 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^11 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 12 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_12
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_12 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_12 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^11 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 12 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_12
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_12 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_12 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^11 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 12 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_12
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_12 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_12 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^11 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 12 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 12 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 13 }
+			has_tech = tom_inf_bat_motorized_1300_tech_13
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_13 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_13 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^12 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 13 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_13
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_13 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_13 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^12 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 13 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_13
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_13 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_13 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^12 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 13 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_13
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_13 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_13 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^12 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 13 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_13
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_13 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_13 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^12 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 13 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 13 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 14 }
+			has_tech = tom_inf_bat_motorized_1300_tech_14
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_14 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_14 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^13 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 14 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_14
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_14 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_14 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^13 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 14 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_14
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_14 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_14 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^13 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 14 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_14
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_14 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_14 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^13 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 14 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_14
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_14 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_14 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^13 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 14 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 14 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 15 }
+			has_tech = tom_inf_bat_motorized_1300_tech_15
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_15 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_15 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^14 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 15 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_15
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_15 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_15 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^14 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 15 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_15
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_15 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_15 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^14 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 15 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_15
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_15 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_15 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^14 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 15 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_15
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_15 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_15 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^14 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 15 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 15 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 16 }
+			has_tech = tom_inf_bat_motorized_1300_tech_16
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech_reset_16 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech_reset_16 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^15 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 16 }
+			has_tech = tom_inf_bat_motorized_1300_tech2_16
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech2_reset_16 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech2_reset_16 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^15 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 16 }
+			has_tech = tom_inf_bat_motorized_1300_tech3_16
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech3_reset_16 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech3_reset_16 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^15 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 16 }
+			has_tech = tom_inf_bat_motorized_1300_tech4_16
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech4_reset_16 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech4_reset_16 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^15 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1300_count < 16 }
+			has_tech = tom_inf_bat_motorized_1300_tech5_16
+			NOT = { has_tech = tom_inf_bat_motorized_1300_tech5_reset_16 }
+		}
+		set_technology = { tom_inf_bat_motorized_1300_tech5_reset_16 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_1000^15 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1300_min < 16 } }
+			set_variable = { tom_inf_bat_motorized_1300_min = 16 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 1 }
+			has_tech = tom_inf_bat_motorized_1001_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 1 }
+			has_tech = tom_inf_bat_motorized_1001_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 1 }
+			has_tech = tom_inf_bat_motorized_1001_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 1 }
+			has_tech = tom_inf_bat_motorized_1001_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 1 }
+			has_tech = tom_inf_bat_motorized_1001_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1001_min < 1 } }
+			set_variable = { tom_inf_bat_motorized_1001_min = 1 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 2 }
+			has_tech = tom_inf_bat_motorized_1001_tech_2
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 2 }
+			has_tech = tom_inf_bat_motorized_1001_tech2_2
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 2 }
+			has_tech = tom_inf_bat_motorized_1001_tech3_2
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 2 }
+			has_tech = tom_inf_bat_motorized_1001_tech4_2
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 2 }
+			has_tech = tom_inf_bat_motorized_1001_tech5_2
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1001_min < 2 } }
+			set_variable = { tom_inf_bat_motorized_1001_min = 2 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 3 }
+			has_tech = tom_inf_bat_motorized_1001_tech_3
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 3 }
+			has_tech = tom_inf_bat_motorized_1001_tech2_3
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 3 }
+			has_tech = tom_inf_bat_motorized_1001_tech3_3
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 3 }
+			has_tech = tom_inf_bat_motorized_1001_tech4_3
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 3 }
+			has_tech = tom_inf_bat_motorized_1001_tech5_3
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1001_min < 3 } }
+			set_variable = { tom_inf_bat_motorized_1001_min = 3 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 4 }
+			has_tech = tom_inf_bat_motorized_1001_tech_4
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 4 }
+			has_tech = tom_inf_bat_motorized_1001_tech2_4
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech2_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 4 }
+			has_tech = tom_inf_bat_motorized_1001_tech3_4
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech3_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 4 }
+			has_tech = tom_inf_bat_motorized_1001_tech4_4
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1001_count < 4 }
+			has_tech = tom_inf_bat_motorized_1001_tech5_4
+			NOT = { has_tech = tom_inf_bat_motorized_1001_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1001_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1001^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1001_min < 4 } }
+			set_variable = { tom_inf_bat_motorized_1001_min = 4 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 1 }
+			has_tech = tom_inf_bat_motorized_1002_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 1 }
+			has_tech = tom_inf_bat_motorized_1002_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 1 }
+			has_tech = tom_inf_bat_motorized_1002_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 1 }
+			has_tech = tom_inf_bat_motorized_1002_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 1 }
+			has_tech = tom_inf_bat_motorized_1002_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1002_min < 1 } }
+			set_variable = { tom_inf_bat_motorized_1002_min = 1 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 2 }
+			has_tech = tom_inf_bat_motorized_1002_tech_2
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 2 }
+			has_tech = tom_inf_bat_motorized_1002_tech2_2
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 2 }
+			has_tech = tom_inf_bat_motorized_1002_tech3_2
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 2 }
+			has_tech = tom_inf_bat_motorized_1002_tech4_2
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 2 }
+			has_tech = tom_inf_bat_motorized_1002_tech5_2
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1002_min < 2 } }
+			set_variable = { tom_inf_bat_motorized_1002_min = 2 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 3 }
+			has_tech = tom_inf_bat_motorized_1002_tech_3
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 3 }
+			has_tech = tom_inf_bat_motorized_1002_tech2_3
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 3 }
+			has_tech = tom_inf_bat_motorized_1002_tech3_3
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 3 }
+			has_tech = tom_inf_bat_motorized_1002_tech4_3
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 3 }
+			has_tech = tom_inf_bat_motorized_1002_tech5_3
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1002_min < 3 } }
+			set_variable = { tom_inf_bat_motorized_1002_min = 3 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 4 }
+			has_tech = tom_inf_bat_motorized_1002_tech_4
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 4 }
+			has_tech = tom_inf_bat_motorized_1002_tech2_4
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech2_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 4 }
+			has_tech = tom_inf_bat_motorized_1002_tech3_4
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech3_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 4 }
+			has_tech = tom_inf_bat_motorized_1002_tech4_4
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1002_count < 4 }
+			has_tech = tom_inf_bat_motorized_1002_tech5_4
+			NOT = { has_tech = tom_inf_bat_motorized_1002_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1002_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1002^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1002_min < 4 } }
+			set_variable = { tom_inf_bat_motorized_1002_min = 4 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 1 }
+			has_tech = tom_inf_bat_motorized_1003_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 1 }
+			has_tech = tom_inf_bat_motorized_1003_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 1 }
+			has_tech = tom_inf_bat_motorized_1003_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 1 }
+			has_tech = tom_inf_bat_motorized_1003_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 1 }
+			has_tech = tom_inf_bat_motorized_1003_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1003_min < 1 } }
+			set_variable = { tom_inf_bat_motorized_1003_min = 1 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 2 }
+			has_tech = tom_inf_bat_motorized_1003_tech_2
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 2 }
+			has_tech = tom_inf_bat_motorized_1003_tech2_2
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 2 }
+			has_tech = tom_inf_bat_motorized_1003_tech3_2
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 2 }
+			has_tech = tom_inf_bat_motorized_1003_tech4_2
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 2 }
+			has_tech = tom_inf_bat_motorized_1003_tech5_2
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1003_min < 2 } }
+			set_variable = { tom_inf_bat_motorized_1003_min = 2 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 3 }
+			has_tech = tom_inf_bat_motorized_1003_tech_3
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 3 }
+			has_tech = tom_inf_bat_motorized_1003_tech2_3
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 3 }
+			has_tech = tom_inf_bat_motorized_1003_tech3_3
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 3 }
+			has_tech = tom_inf_bat_motorized_1003_tech4_3
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 3 }
+			has_tech = tom_inf_bat_motorized_1003_tech5_3
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1003_min < 3 } }
+			set_variable = { tom_inf_bat_motorized_1003_min = 3 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 4 }
+			has_tech = tom_inf_bat_motorized_1003_tech_4
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 4 }
+			has_tech = tom_inf_bat_motorized_1003_tech2_4
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech2_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 4 }
+			has_tech = tom_inf_bat_motorized_1003_tech3_4
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech3_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 4 }
+			has_tech = tom_inf_bat_motorized_1003_tech4_4
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1003_count < 4 }
+			has_tech = tom_inf_bat_motorized_1003_tech5_4
+			NOT = { has_tech = tom_inf_bat_motorized_1003_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1003_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1003^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1003_min < 4 } }
+			set_variable = { tom_inf_bat_motorized_1003_min = 4 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 1 }
+			has_tech = tom_inf_bat_motorized_1010_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 1 }
+			has_tech = tom_inf_bat_motorized_1010_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 1 }
+			has_tech = tom_inf_bat_motorized_1010_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 1 }
+			has_tech = tom_inf_bat_motorized_1010_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 1 }
+			has_tech = tom_inf_bat_motorized_1010_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1010_min < 1 } }
+			set_variable = { tom_inf_bat_motorized_1010_min = 1 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 2 }
+			has_tech = tom_inf_bat_motorized_1010_tech_2
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 2 }
+			has_tech = tom_inf_bat_motorized_1010_tech2_2
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 2 }
+			has_tech = tom_inf_bat_motorized_1010_tech3_2
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 2 }
+			has_tech = tom_inf_bat_motorized_1010_tech4_2
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 2 }
+			has_tech = tom_inf_bat_motorized_1010_tech5_2
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1010_min < 2 } }
+			set_variable = { tom_inf_bat_motorized_1010_min = 2 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 3 }
+			has_tech = tom_inf_bat_motorized_1010_tech_3
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 3 }
+			has_tech = tom_inf_bat_motorized_1010_tech2_3
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 3 }
+			has_tech = tom_inf_bat_motorized_1010_tech3_3
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 3 }
+			has_tech = tom_inf_bat_motorized_1010_tech4_3
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 3 }
+			has_tech = tom_inf_bat_motorized_1010_tech5_3
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1010_min < 3 } }
+			set_variable = { tom_inf_bat_motorized_1010_min = 3 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 4 }
+			has_tech = tom_inf_bat_motorized_1010_tech_4
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 4 }
+			has_tech = tom_inf_bat_motorized_1010_tech2_4
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech2_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 4 }
+			has_tech = tom_inf_bat_motorized_1010_tech3_4
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech3_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 4 }
+			has_tech = tom_inf_bat_motorized_1010_tech4_4
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1010_count < 4 }
+			has_tech = tom_inf_bat_motorized_1010_tech5_4
+			NOT = { has_tech = tom_inf_bat_motorized_1010_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1010_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1010^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1010_min < 4 } }
+			set_variable = { tom_inf_bat_motorized_1010_min = 4 }
+		}
+	}
+	
+	if = {
+		limit = {
+			has_tech = tom_inf_bat_motorized_1111_tech_1
+			check_variable = { tom_inf_bat_popup_1111_count < 1 }
+			NOT = { has_tech = tom_inf_bat_motorized_1111_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1111_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1111 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1111_count < 1 }
+			has_tech = tom_inf_bat_motorized_1111_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1111_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1111_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1111 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1111_count < 1 }
+			has_tech = tom_inf_bat_motorized_1111_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1111_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1111_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1111 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1111_count < 1 }
+			has_tech = tom_inf_bat_motorized_1111_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1111_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1111_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1111 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1111_count < 1 }
+			has_tech = tom_inf_bat_motorized_1111_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1111_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1111_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1111 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1111_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1112_count < 1 }
+			has_tech = tom_inf_bat_motorized_1112_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1112_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1112_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1112 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1112_count < 1 }
+			has_tech = tom_inf_bat_motorized_1112_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1112_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1112_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1112 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1112_count < 1 }
+			has_tech = tom_inf_bat_motorized_1112_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1112_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1112_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1112 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1112_count < 1 }
+			has_tech = tom_inf_bat_motorized_1112_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1112_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1112_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1112 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1112_count < 1 }
+			has_tech = tom_inf_bat_motorized_1112_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1112_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1112_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1112 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1112_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 1 }
+			has_tech = tom_inf_bat_motorized_1020_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 1 }
+			has_tech = tom_inf_bat_motorized_1020_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 1 }
+			has_tech = tom_inf_bat_motorized_1020_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 1 }
+			has_tech = tom_inf_bat_motorized_1020_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 1 }
+			has_tech = tom_inf_bat_motorized_1020_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1020_min < 1 } }
+			set_variable = { tom_inf_bat_motorized_1020_min = 1 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 2 }
+			has_tech = tom_inf_bat_motorized_1020_tech_2
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 2 }
+			has_tech = tom_inf_bat_motorized_1020_tech2_2
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 2 }
+			has_tech = tom_inf_bat_motorized_1020_tech3_2
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 2 }
+			has_tech = tom_inf_bat_motorized_1020_tech4_2
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 2 }
+			has_tech = tom_inf_bat_motorized_1020_tech5_2
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1020_min < 2 } }
+			set_variable = { tom_inf_bat_motorized_1020_min = 2 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 3 }
+			has_tech = tom_inf_bat_motorized_1020_tech_3
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 3 }
+			has_tech = tom_inf_bat_motorized_1020_tech2_3
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 3 }
+			has_tech = tom_inf_bat_motorized_1020_tech3_3
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 3 }
+			has_tech = tom_inf_bat_motorized_1020_tech4_3
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 3 }
+			has_tech = tom_inf_bat_motorized_1020_tech5_3
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1020_min < 3 } }
+			set_variable = { tom_inf_bat_motorized_1020_min = 3 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 4 }
+			has_tech = tom_inf_bat_motorized_1020_tech_4
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 4 }
+			has_tech = tom_inf_bat_motorized_1020_tech2_4
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech2_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 4 }
+			has_tech = tom_inf_bat_motorized_1020_tech3_4
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech3_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 4 }
+			has_tech = tom_inf_bat_motorized_1020_tech4_4
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1020_count < 4 }
+			has_tech = tom_inf_bat_motorized_1020_tech5_4
+			NOT = { has_tech = tom_inf_bat_motorized_1020_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1020_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1020^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1020_min < 4 } }
+			set_variable = { tom_inf_bat_motorized_1020_min = 4 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1121_count < 1 }
+			has_tech = tom_inf_bat_motorized_1121_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1121_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1121_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1121 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1121_count < 1 }
+			has_tech = tom_inf_bat_motorized_1121_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1121_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1121_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1121 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1121_count < 1 }
+			has_tech = tom_inf_bat_motorized_1121_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1121_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1121_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1121 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1121_count < 1 }
+			has_tech = tom_inf_bat_motorized_1121_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1121_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1121_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1121 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1121_count < 1 }
+			has_tech = tom_inf_bat_motorized_1121_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1121_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1121_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1121 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1121_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 1 }
+			has_tech = tom_inf_bat_motorized_1021_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 1 }
+			has_tech = tom_inf_bat_motorized_1021_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 1 }
+			has_tech = tom_inf_bat_motorized_1021_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 1 }
+			has_tech = tom_inf_bat_motorized_1021_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^0 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 1 }
+			has_tech = tom_inf_bat_motorized_1021_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^0 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1021_min < 1 } }
+			set_variable = { tom_inf_bat_motorized_1021_min = 1 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 2 }
+			has_tech = tom_inf_bat_motorized_1021_tech_2
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 2 }
+			has_tech = tom_inf_bat_motorized_1021_tech2_2
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 2 }
+			has_tech = tom_inf_bat_motorized_1021_tech3_2
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 2 }
+			has_tech = tom_inf_bat_motorized_1021_tech4_2
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^1 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 2 }
+			has_tech = tom_inf_bat_motorized_1021_tech5_2
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_2 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_2 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^1 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1021_min < 2 } }
+			set_variable = { tom_inf_bat_motorized_1021_min = 2 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 3 }
+			has_tech = tom_inf_bat_motorized_1021_tech_3
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 3 }
+			has_tech = tom_inf_bat_motorized_1021_tech2_3
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 3 }
+			has_tech = tom_inf_bat_motorized_1021_tech3_3
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 3 }
+			has_tech = tom_inf_bat_motorized_1021_tech4_3
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^2 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 3 }
+			has_tech = tom_inf_bat_motorized_1021_tech5_3
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_3 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_3 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^2 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1021_min < 3 } }
+			set_variable = { tom_inf_bat_motorized_1021_min = 3 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 4 }
+			has_tech = tom_inf_bat_motorized_1021_tech_4
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 4 }
+			has_tech = tom_inf_bat_motorized_1021_tech2_4
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech2_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech2_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 4 }
+			has_tech = tom_inf_bat_motorized_1021_tech3_4
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech3_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech3_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 4 }
+			has_tech = tom_inf_bat_motorized_1021_tech4_4
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech4_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech4_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^3 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1021_count < 4 }
+			has_tech = tom_inf_bat_motorized_1021_tech5_4
+			NOT = { has_tech = tom_inf_bat_motorized_1021_tech5_reset_4 }
+		}
+		set_technology = { tom_inf_bat_motorized_1021_tech5_reset_4 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1021^3 = -1 }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_motorized_1021_min < 4 } }
+			set_variable = { tom_inf_bat_motorized_1021_min = 4 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1130_count < 1 }
+			has_tech = tom_inf_bat_motorized_1130_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1130_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1130_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1130 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1130_count < 1 }
+			has_tech = tom_inf_bat_motorized_1130_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1130_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1130_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1130 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1130_count < 1 }
+			has_tech = tom_inf_bat_motorized_1130_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1130_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1130_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1130 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1130_count < 1 }
+			has_tech = tom_inf_bat_motorized_1130_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1130_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1130_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1130 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1130_count < 1 }
+			has_tech = tom_inf_bat_motorized_1130_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1130_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1130_tech5_reset_1 = 1 popup = no }
+		
+		set_variable = { tom_inf_bat_motorized_1130_min = 1 }
+		add_to_variable = { tom_inf_bat_resets_left_13_1130 = -1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count < 1 }
+			has_tech = tom_inf_bat_motorized_1200_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1200_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1200_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1200 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count < 1 }
+			has_tech = tom_inf_bat_motorized_1200_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1200_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1200_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1200 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count < 1 }
+			has_tech = tom_inf_bat_motorized_1200_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1200_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1200_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1200 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count < 1 }
+			has_tech = tom_inf_bat_motorized_1200_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1200_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1200_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1200 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1200_count < 1 }
+			has_tech = tom_inf_bat_motorized_1200_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1200_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1200_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1200 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1200_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count < 1 }
+			has_tech = tom_inf_bat_motorized_1201_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1201_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1201_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1201 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count < 1 }
+			has_tech = tom_inf_bat_motorized_1201_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1201_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1201_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1201 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count < 1 }
+			has_tech = tom_inf_bat_motorized_1201_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1201_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1201_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1201 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count < 1 }
+			has_tech = tom_inf_bat_motorized_1201_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1201_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1201_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1201 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1201_count < 1 }
+			has_tech = tom_inf_bat_motorized_1201_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1201_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1201_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1201 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1201_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count < 1 }
+			has_tech = tom_inf_bat_motorized_1210_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1210_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1210_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1210 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count < 1 }
+			has_tech = tom_inf_bat_motorized_1210_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1210_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1210_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1210 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count < 1 }
+			has_tech = tom_inf_bat_motorized_1210_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1210_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1210_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1210 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count < 1 }
+			has_tech = tom_inf_bat_motorized_1210_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1210_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1210_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1210 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1210_count < 1 }
+			has_tech = tom_inf_bat_motorized_1210_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1210_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1210_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1210 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1210_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count < 1 }
+			has_tech = tom_inf_bat_motorized_1211_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1211_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1211_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1211 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count < 1 }
+			has_tech = tom_inf_bat_motorized_1211_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1211_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1211_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1211 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count < 1 }
+			has_tech = tom_inf_bat_motorized_1211_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1211_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1211_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1211 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count < 1 }
+			has_tech = tom_inf_bat_motorized_1211_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1211_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1211_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1211 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1211_count < 1 }
+			has_tech = tom_inf_bat_motorized_1211_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1211_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1211_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1211 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1211_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count < 1 }
+			has_tech = tom_inf_bat_motorized_1212_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1212_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1212_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1212 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count < 1 }
+			has_tech = tom_inf_bat_motorized_1212_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1212_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1212_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1212 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count < 1 }
+			has_tech = tom_inf_bat_motorized_1212_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1212_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1212_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1212 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count < 1 }
+			has_tech = tom_inf_bat_motorized_1212_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1212_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1212_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1212 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1212_count < 1 }
+			has_tech = tom_inf_bat_motorized_1212_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1212_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1212_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1212 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1212_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count < 1 }
+			has_tech = tom_inf_bat_motorized_1220_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1220_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1220_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1220 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count < 1 }
+			has_tech = tom_inf_bat_motorized_1220_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1220_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1220_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1220 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count < 1 }
+			has_tech = tom_inf_bat_motorized_1220_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1220_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1220_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1220 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count < 1 }
+			has_tech = tom_inf_bat_motorized_1220_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1220_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1220_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1220 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1220_count < 1 }
+			has_tech = tom_inf_bat_motorized_1220_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1220_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1220_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1220 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1220_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count < 1 }
+			has_tech = tom_inf_bat_motorized_1221_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1221_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1221_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1221 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count < 1 }
+			has_tech = tom_inf_bat_motorized_1221_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1221_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1221_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1221 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count < 1 }
+			has_tech = tom_inf_bat_motorized_1221_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1221_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1221_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1221 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count < 1 }
+			has_tech = tom_inf_bat_motorized_1221_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1221_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1221_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1221 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1221_count < 1 }
+			has_tech = tom_inf_bat_motorized_1221_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1221_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1221_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1221 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1221_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count < 1 }
+			has_tech = tom_inf_bat_motorized_1222_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1222_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1222_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1222 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count < 1 }
+			has_tech = tom_inf_bat_motorized_1222_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1222_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1222_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1222 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count < 1 }
+			has_tech = tom_inf_bat_motorized_1222_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1222_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1222_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1222 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count < 1 }
+			has_tech = tom_inf_bat_motorized_1222_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1222_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1222_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1222 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1222_count < 1 }
+			has_tech = tom_inf_bat_motorized_1222_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1222_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1222_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1222 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1222_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count < 1 }
+			has_tech = tom_inf_bat_motorized_1223_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1223_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1223_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1223 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count < 1 }
+			has_tech = tom_inf_bat_motorized_1223_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1223_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1223_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1223 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count < 1 }
+			has_tech = tom_inf_bat_motorized_1223_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1223_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1223_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1223 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count < 1 }
+			has_tech = tom_inf_bat_motorized_1223_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1223_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1223_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1223 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1223_count < 1 }
+			has_tech = tom_inf_bat_motorized_1223_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1223_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1223_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1223 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1223_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count < 1 }
+			has_tech = tom_inf_bat_motorized_1230_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1230_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1230_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1230 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count < 1 }
+			has_tech = tom_inf_bat_motorized_1230_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1230_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1230_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1230 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count < 1 }
+			has_tech = tom_inf_bat_motorized_1230_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1230_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1230_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1230 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count < 1 }
+			has_tech = tom_inf_bat_motorized_1230_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1230_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1230_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1230 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1230_count < 1 }
+			has_tech = tom_inf_bat_motorized_1230_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1230_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1230_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1230 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1230_min = 1 }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count < 1 }
+			has_tech = tom_inf_bat_motorized_1240_tech_1
+			NOT = { has_tech = tom_inf_bat_motorized_1240_tech_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1240_tech_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1240 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count < 1 }
+			has_tech = tom_inf_bat_motorized_1240_tech2_1
+			NOT = { has_tech = tom_inf_bat_motorized_1240_tech2_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1240_tech2_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1240 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count < 1 }
+			has_tech = tom_inf_bat_motorized_1240_tech3_1
+			NOT = { has_tech = tom_inf_bat_motorized_1240_tech3_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1240_tech3_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1240 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count < 1 }
+			has_tech = tom_inf_bat_motorized_1240_tech4_1
+			NOT = { has_tech = tom_inf_bat_motorized_1240_tech4_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1240_tech4_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1240 = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_1240_count < 1 }
+			has_tech = tom_inf_bat_motorized_1240_tech5_1
+			NOT = { has_tech = tom_inf_bat_motorized_1240_tech5_reset_1 }
+		}
+		set_technology = { tom_inf_bat_motorized_1240_tech5_reset_1 = 1 popup = no }
+		add_to_variable = { tom_inf_bat_resets_left_13_1240 = -1 }
+		
+		set_variable = { tom_inf_bat_motorized_1240_min = 1 }
 	}
 }

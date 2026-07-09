@@ -61,3 +61,36 @@ tom_inf_save_button_increase_mountaineer_trigger = {
 		check_variable = { tom_inf_bat_popup_1240_count > tom_inf_bat_mountaineer_1240_count }
 	}
 }
+
+tom_inf_save_button_decrease_mountaineer_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_20_count < tom_inf_bat_mountaineer_20_count }
+		check_variable = { tom_inf_bat_popup_11_count < tom_inf_bat_mountaineer_11_count }
+		check_variable = { tom_inf_bat_popup_12_count < tom_inf_bat_mountaineer_12_count }
+		
+		check_variable = { tom_inf_bat_popup_2000_count < tom_inf_bat_mountaineer_2000_count }
+		check_variable = { tom_inf_bat_popup_1001_count < tom_inf_bat_mountaineer_1001_count }
+		check_variable = { tom_inf_bat_popup_1002_count < tom_inf_bat_mountaineer_1002_count }
+		check_variable = { tom_inf_bat_popup_1003_count < tom_inf_bat_mountaineer_1003_count }
+		check_variable = { tom_inf_bat_popup_1010_count < tom_inf_bat_mountaineer_1010_count }
+		check_variable = { tom_inf_bat_popup_1020_count < tom_inf_bat_mountaineer_1020_count }
+		check_variable = { tom_inf_bat_popup_1021_count < tom_inf_bat_mountaineer_1021_count }
+		
+		check_variable = { tom_inf_bat_popup_1111_count < tom_inf_bat_mountaineer_1111_count }
+		check_variable = { tom_inf_bat_popup_1112_count < tom_inf_bat_mountaineer_1112_count }
+		check_variable = { tom_inf_bat_popup_1121_count < tom_inf_bat_mountaineer_1121_count }
+		check_variable = { tom_inf_bat_popup_1130_count < tom_inf_bat_mountaineer_1130_count }
+		
+		check_variable = { tom_inf_bat_popup_1200_count < tom_inf_bat_mountaineer_1200_count }
+		check_variable = { tom_inf_bat_popup_1201_count < tom_inf_bat_mountaineer_1201_count }
+		check_variable = { tom_inf_bat_popup_1210_count < tom_inf_bat_mountaineer_1210_count }
+		check_variable = { tom_inf_bat_popup_1211_count < tom_inf_bat_mountaineer_1211_count }
+		check_variable = { tom_inf_bat_popup_1212_count < tom_inf_bat_mountaineer_1212_count }
+		check_variable = { tom_inf_bat_popup_1220_count < tom_inf_bat_mountaineer_1220_count }
+		check_variable = { tom_inf_bat_popup_1221_count < tom_inf_bat_mountaineer_1221_count }
+		check_variable = { tom_inf_bat_popup_1222_count < tom_inf_bat_mountaineer_1222_count }
+		check_variable = { tom_inf_bat_popup_1223_count < tom_inf_bat_mountaineer_1223_count }
+		check_variable = { tom_inf_bat_popup_1230_count < tom_inf_bat_mountaineer_1230_count }
+		check_variable = { tom_inf_bat_popup_1240_count < tom_inf_bat_mountaineer_1240_count }
+	}
+}

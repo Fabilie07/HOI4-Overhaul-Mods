@@ -437,4 +437,48 @@ tom_inf_remove_unavailable_trigger = {
 		check_variable = { tom_inf_bat_current_value = 1240 }
 		check_variable = { tom_inf_bat_popup_1240_min > 0 }
 	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 1300 }
+		check_variable = { tom_inf_bat_popup_1300_count = tom_inf_bat_popup_1300_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 1400 }
+		check_variable = { tom_inf_bat_popup_1400_count = tom_inf_bat_popup_1400_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 1500 }
+		check_variable = { tom_inf_bat_popup_1500_count = tom_inf_bat_popup_1500_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 2000 }
+		check_variable = { tom_inf_bat_popup_2000_count = tom_inf_bat_popup_2000_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 2100 }
+		check_variable = { tom_inf_bat_popup_2100_count = tom_inf_bat_popup_2100_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 2200 }
+		check_variable = { tom_inf_bat_popup_2200_count = tom_inf_bat_popup_2200_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 2300 }
+		check_variable = { tom_inf_bat_popup_2300_count = tom_inf_bat_popup_2300_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 2400 }
+		check_variable = { tom_inf_bat_popup_2400_count = tom_inf_bat_popup_2400_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 3000 }
+		check_variable = { tom_inf_bat_popup_3000_count = tom_inf_bat_popup_3000_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 3200 }
+		check_variable = { tom_inf_bat_popup_3200_count = tom_inf_bat_popup_3200_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 3400 }
+		check_variable = { tom_inf_bat_popup_3400_count = tom_inf_bat_popup_3400_min }
+	}
 }

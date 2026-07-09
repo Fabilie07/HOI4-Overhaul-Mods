@@ -11,11 +11,6 @@ tom_inf_save_button_instant_click_paratrooper_trigger = {
 	check_variable = { tom_inf_bat_popup_1020_count = tom_inf_bat_paratrooper_1020_count }
 	check_variable = { tom_inf_bat_popup_1021_count = tom_inf_bat_paratrooper_1021_count }
 	
-	check_variable = { tom_inf_bat_popup_1111_count = tom_inf_bat_paratrooper_1111_count }
-	check_variable = { tom_inf_bat_popup_1112_count = tom_inf_bat_paratrooper_1112_count }
-	check_variable = { tom_inf_bat_popup_1121_count = tom_inf_bat_paratrooper_1121_count }
-	check_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_paratrooper_1130_count }
-	
 	check_variable = { tom_inf_bat_popup_1200_count = tom_inf_bat_paratrooper_1200_count }
 	check_variable = { tom_inf_bat_popup_1201_count = tom_inf_bat_paratrooper_1201_count }
 	check_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_paratrooper_1210_count }
@@ -43,11 +38,6 @@ tom_inf_save_button_increase_paratrooper_trigger = {
 		check_variable = { tom_inf_bat_popup_1020_count > tom_inf_bat_paratrooper_1020_count }
 		check_variable = { tom_inf_bat_popup_1021_count > tom_inf_bat_paratrooper_1021_count }
 		
-		check_variable = { tom_inf_bat_popup_1111_count > tom_inf_bat_paratrooper_1111_count }
-		check_variable = { tom_inf_bat_popup_1112_count > tom_inf_bat_paratrooper_1112_count }
-		check_variable = { tom_inf_bat_popup_1121_count > tom_inf_bat_paratrooper_1121_count }
-		check_variable = { tom_inf_bat_popup_1130_count > tom_inf_bat_paratrooper_1130_count }
-		
 		check_variable = { tom_inf_bat_popup_1200_count > tom_inf_bat_paratrooper_1200_count }
 		check_variable = { tom_inf_bat_popup_1201_count > tom_inf_bat_paratrooper_1201_count }
 		check_variable = { tom_inf_bat_popup_1210_count > tom_inf_bat_paratrooper_1210_count }
@@ -59,5 +49,33 @@ tom_inf_save_button_increase_paratrooper_trigger = {
 		check_variable = { tom_inf_bat_popup_1223_count > tom_inf_bat_paratrooper_1223_count }
 		check_variable = { tom_inf_bat_popup_1230_count > tom_inf_bat_paratrooper_1230_count }
 		check_variable = { tom_inf_bat_popup_1240_count > tom_inf_bat_paratrooper_1240_count }
+	}
+}
+
+tom_inf_save_button_decrease_paratrooper_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_21_count < tom_inf_bat_paratrooper_21_count }
+		check_variable = { tom_inf_bat_popup_11_count < tom_inf_bat_paratrooper_11_count }
+		check_variable = { tom_inf_bat_popup_12_count < tom_inf_bat_paratrooper_12_count }
+		
+		check_variable = { tom_inf_bat_popup_2100_count < tom_inf_bat_paratrooper_2100_count }
+		check_variable = { tom_inf_bat_popup_1001_count < tom_inf_bat_paratrooper_1001_count }
+		check_variable = { tom_inf_bat_popup_1002_count < tom_inf_bat_paratrooper_1002_count }
+		check_variable = { tom_inf_bat_popup_1003_count < tom_inf_bat_paratrooper_1003_count }
+		check_variable = { tom_inf_bat_popup_1010_count < tom_inf_bat_paratrooper_1010_count }
+		check_variable = { tom_inf_bat_popup_1020_count < tom_inf_bat_paratrooper_1020_count }
+		check_variable = { tom_inf_bat_popup_1021_count < tom_inf_bat_paratrooper_1021_count }
+		
+		check_variable = { tom_inf_bat_popup_1200_count < tom_inf_bat_paratrooper_1200_count }
+		check_variable = { tom_inf_bat_popup_1201_count < tom_inf_bat_paratrooper_1201_count }
+		check_variable = { tom_inf_bat_popup_1210_count < tom_inf_bat_paratrooper_1210_count }
+		check_variable = { tom_inf_bat_popup_1211_count < tom_inf_bat_paratrooper_1211_count }
+		check_variable = { tom_inf_bat_popup_1212_count < tom_inf_bat_paratrooper_1212_count }
+		check_variable = { tom_inf_bat_popup_1220_count < tom_inf_bat_paratrooper_1220_count }
+		check_variable = { tom_inf_bat_popup_1221_count < tom_inf_bat_paratrooper_1221_count }
+		check_variable = { tom_inf_bat_popup_1222_count < tom_inf_bat_paratrooper_1222_count }
+		check_variable = { tom_inf_bat_popup_1223_count < tom_inf_bat_paratrooper_1223_count }
+		check_variable = { tom_inf_bat_popup_1230_count < tom_inf_bat_paratrooper_1230_count }
+		check_variable = { tom_inf_bat_popup_1240_count < tom_inf_bat_paratrooper_1240_count }
 	}
 }
