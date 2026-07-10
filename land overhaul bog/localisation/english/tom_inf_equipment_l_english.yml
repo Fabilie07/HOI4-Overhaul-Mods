@@ -6,62 +6,71 @@
 
 
  tom_inf_horse:0 "Horse"
+ tom_inf_horse_desc:0 "Horses carry Soldiers and Supplies and tow Artillery Pieces of all kinds."
  horse_0:0 "Military Horse"
  
  mortar_chassis:0 "Mortar Equipment"
+ mortar_chassis_desc:0 "Tubes firing shells in a high arc, the smallest form of indirect fire."
  mortar_chassis_0:0 "Early Mortar"
  mortar_chassis_1:0 "Basic Mortar"
  mortar_chassis_2:0 "Improved Mortar"
  
  lmg_chassis:0 "LMG Equipment"
+ lmg_chassis_desc:0 "Machine Guns that can be moved easily and fired while moving."
  lmg_chassis_0:0 "Early LMG"
  lmg_chassis_1:0 "Basic LMG"
  lmg_chassis_2:0 "Improved LMG"
  lmg_chassis_3:0 "Advanced LMG"
  
  mmg_chassis:0 "MMG Equipment"
+ mmg_chassis_desc:0 "General-Purpose Machine Guns that offer improved offensive and defensive firepower."
  mmg_chassis_0:0 "Early MMG"
  mmg_chassis_1:0 "Basic MMG"
  mmg_chassis_2:0 "Improved MMG"
  mmg_chassis_3:0 "Advanced MMG"
  
  hmg_chassis:0 "HMG Equipment"
+ hmg_chassis_desc:0 "Stationary Machine Guns that provide powerful fire support."
  hmg_chassis_0:0 "Early HMG"
  hmg_chassis_1:0 "Basic HMG"
  hmg_chassis_2:0 "Improved HMG"
  hmg_chassis_3:0 "Advanced HMG"
  
  at_rifle_chassis:0 "AT Rifle Equipment"
+ at_rifle_chassis_desc:0 "Large-Caliber Rifles, perfect for taking out lightly armored vehicles."
  at_rifle_chassis_0:0 "Basic AT Rifle"
  
  at_rocket_chassis:0 "AT Rocket Equipment"
+ at_rocket_chassis_desc:0 "Crew AT weapons that utilize shaped charges to penetrate the heaviest of tanks."
  at_rocket_chassis_0:0 "Squad AT Rocket"
  
  sniper_chassis:0 "Sniper Equipment"
+ sniper_chassis_desc:0 "Accurate Rifles with scopes, allowing precise fire from beyond enemy engagement distances."
  sniper_chassis_0:0 "Early Sniper Equipment"
  sniper_chassis_1:0 "Basic Sniper Equipment"
  sniper_chassis_2:0 "Improved Sniper Equipment"
  sniper_chassis_3:0 "Advanced Sniper Equipment"
  
  flamethrower_chassis:0 "Flamethrower Equipment"
+ flamethrower_chassis_desc:0 "Devices dispensing burning gasoline, used to clear out bunkers and other enclosed spaces."
  flamethrower_chassis_0:0 "Basic Flamethrower"
  flamethrower_chassis_1:0 "Improved Flamethrower"
  
  radio_equipment:0 "Radio Equipment"
+ radio_equipment_desc:0 "Portable and stationary radio equipment for all forms of internal and external communication."
  radio_equipment_0:0 "Basic Radio"
  radio_equipment_1:0 "Improved Radio"
  radio_equipment_2:0 "Advanced Radio"
  
- tent_equipment:0 "Tent Equipment"
- tent_equipment_0:0 "Military Tent"
- 
  
  mechanized_utility_equipment:0 "Ammo Carrier"
+ mechanized_utility_equipment_desc:0 "Armored vehicles carrying Artillery Shells, well-protected against enemy sharpshooters and counter-battery fire."
  mechanized_utility_equipment_1:0 "Basic Ammunition Carrier"
  mechanized_utility_equipment_2:0 "Improved Ammunition Carrier"
  mechanized_utility_equipment_3:0 "Advanced Ammunition Carrier"
  
  mechanized_engineer_equipment:0 "Mechanized Engineer"
+ mechanized_engineer_equipment_desc:0 "Lightly armored Engineering vehicles, for clearing mines, digging trenches and other applications."
  mechanized_engineer_equipment_1:0 "Basic Mechanized Engineering Vehicle"
  mechanized_engineer_equipment_2:0 "Improved Mechanized Engineering Vehicle"
  mechanized_engineer_equipment_3:0 "Advanced Mechanized Engineering Vehicle"
