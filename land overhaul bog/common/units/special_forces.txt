@@ -23,6 +23,7 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_marines
+			category_marines_and_amphibious
 			category_special_forces_leg_infantry
 		}
 		
@@ -89,6 +90,7 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_marines
+			category_marines_and_amphibious
 			category_special_forces_leg_infantry
 		}
 		
