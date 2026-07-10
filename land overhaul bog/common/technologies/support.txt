@@ -12,9 +12,9 @@ technologies = {
 	@1945 = 18
 	@1946 = 20
 
-	@field_hospital_x = 9 #it is actually Y :D
-	@logistic_x = 11 #it is actually Y :D
-	@signal_x = 14 #it is actually Y :D
+	@field_hospital_x = 10 #it is actually Y :D
+	@logistic_x = 12 #it is actually Y :D
+	@signal_x = 15 #it is actually Y :D
 
 
 	tech_support = {
@@ -24,6 +24,11 @@ technologies = {
 		}
 
 
+		path = {
+			leads_to_tech = tech_support2
+			research_cost_coeff = 1
+		}
+		
 		path = {
 			leads_to_tech = tech_engineers
 			research_cost_coeff = 1
@@ -84,6 +89,97 @@ technologies = {
 			}
 		}
 	}
+	
+	tech_support2 = {
+
+		enable_equipments = {
+			support_equipment_2
+		}
+
+
+		path = {
+			leads_to_tech = tech_support3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 1940
+		folder = {
+			name = support_folder
+			position = { x = -1 y = @1940 }
+		}
+
+		categories = {
+			support_tech
+		}
+
+		ai_will_do = {
+			base = 1
+
+			modifier = {
+				factor = 4
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 4
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 4
+				date > "1943.1.1"
+			}
+		}
+	}
+	
+	tech_support3 = {
+
+		enable_equipments = {
+			support_equipment_3
+		}
+
+
+		path = {
+			leads_to_tech = tech_support4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.2
+		start_year = 1943
+		folder = {
+			name = support_folder
+			position = { x = -1 y = @1943 }
+		}
+
+		categories = {
+			support_tech
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+	tech_support4 = {
+
+		enable_equipments = {
+			support_equipment_4
+		}
+
+		research_cost = 1.2
+		start_year = 1946
+		folder = {
+			name = support_folder
+			position = { x = -1 y = @1946 }
+		}
+
+		categories = {
+			support_tech
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
 
 
 	tech_engineers = {
@@ -115,7 +211,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 1 y = @1936 }
 		}
 
 		categories = {
@@ -242,7 +338,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 1 y = @1939 }
 		}
 
 		categories = {
@@ -369,7 +465,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1942 }
+			position = { x = 1 y = @1942 }
 		}
 
 		categories = {
@@ -479,7 +575,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 0 y = @1945 }
+			position = { x = 1 y = @1945 }
 		}
 
 		categories = {
@@ -537,7 +633,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1936 }
+			position = { x = 3 y = @1936 }
 		}
 
 		categories = {
@@ -595,7 +691,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1939 }
+			position = { x = 3 y = @1939 }
 		}
 
 		categories = {
@@ -648,7 +744,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1942 }
+			position = { x = 3 y = @1942 }
 		}
 
 		categories = {
@@ -691,7 +787,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 2 y = @1945 }
+			position = { x = 3 y = @1945 }
 		}
 
 		categories = {
@@ -741,7 +837,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1936 }
+			position = { x = 5 y = @1936 }
 		}
 
 		categories = {
@@ -811,7 +907,7 @@ technologies = {
 	tech_military_police2 = {
 	
 		required_garrison_factor = -0.05
-		compliance_gain = 0.001
+		compliance_growth = 0.02
 
 		military_police = {
 			suppression_factor = 0.1
@@ -838,7 +934,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1939 }
+			position = { x = 5 y = @1939 }
 		}
 
 		categories = {
@@ -859,7 +955,7 @@ technologies = {
 	tech_military_police3 = {
 	
 		required_garrison_factor = -0.05
-		compliance_gain = 0.001
+		compliance_growth = 0.02
 
 		military_police = {
 			suppression_factor = 0.1
@@ -886,7 +982,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1942 }
+			position = { x = 5 y = @1942 }
 		}
 
 		categories = {
@@ -906,7 +1002,7 @@ technologies = {
 	tech_military_police4 = {
 	
 		required_garrison_factor = -0.05
-		compliance_gain = 0.001
+		compliance_growth = 0.02
 
 		military_police = {
 			suppression_factor = 0.1
@@ -928,7 +1024,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 4 y = @1945 }
+			position = { x = 5 y = @1945 }
 		}
 
 		categories = {
@@ -982,7 +1078,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1936 }
+			position = { x = 7 y = @1936 }
 		}
 
 		categories = {
@@ -1043,7 +1139,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1939 }
+			position = { x = 7 y = @1939 }
 		}
 
 		categories = {
@@ -1098,7 +1194,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1942 }
+			position = { x = 7 y = @1942 }
 		}
 
 		categories = {
@@ -1149,7 +1245,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = support_folder
-			position = { x = 6 y = @1945 }
+			position = { x = 7 y = @1945 }
 		}
 
 		categories = {
@@ -2222,7 +2318,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 1 y = @1938 }
+			position = { x = 0 y = @1938 }
 		}
 
 		categories = {
@@ -2276,7 +2372,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 7 y = @1938 }
+			position = { x = 6 y = @1938 }
 		}
 
 		categories = {
@@ -2330,7 +2426,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 15 y = @1938 }
+			position = { x = 14 y = @1938 }
 		}
 
 		categories = {
@@ -2395,7 +2491,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 12 y = @1938 }
+			position = { x = 11 y = @1938 }
 		}
 
 		categories = {
@@ -2444,7 +2540,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 3 y = @1938 }
+			position = { x = 2 y = @1938 }
 		}
 
 		categories = {
@@ -2490,7 +2586,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 10 y = @1938 }
+			position = { x = 9 y = @1938 }
 		}
 
 		categories = {
@@ -2548,7 +2644,7 @@ technologies = {
 		start_year = 1938
 		folder = {
 			name = support_folder
-			position = { x = 5 y = @1938 }
+			position = { x = 4 y = @1938 }
 		}
 
 		categories = {

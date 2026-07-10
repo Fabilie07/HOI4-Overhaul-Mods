@@ -122,7 +122,15 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_tent_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/generic_tent.dds"
+		name = "GFX_tech_support2_medium"
+		texturefile = "gfx/interface/technologies/support_equipment_2.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_support3_medium"
+		texturefile = "gfx/interface/technologies/support_equipment_3.dds"
+	}
+	spriteType = {
+		name = "GFX_tech_support4_medium"
+		texturefile = "gfx/interface/technologies/support_equipment_4.dds"
 	}
 }

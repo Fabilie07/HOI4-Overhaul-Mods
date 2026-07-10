@@ -63,6 +63,11 @@
  radio_equipment_2:0 "Advanced Radio"
  
  
+ support_equipment_2:0 "Improved Support Equipment"
+ support_equipment_3:0 "Advanced Support Equipment"
+ support_equipment_4:0 "Modern Support Equipment"
+ 
+ 
  mechanized_utility_equipment:0 "Ammo Carrier"
  mechanized_utility_equipment_desc:0 "Armored vehicles carrying Artillery Shells, well-protected against enemy sharpshooters and counter-battery fire."
  mechanized_utility_equipment_1:0 "Basic Ammunition Carrier"
