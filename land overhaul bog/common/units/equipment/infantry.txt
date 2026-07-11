@@ -240,4 +240,54 @@ equipments = {
 		reliability = 0.95
 		build_cost_ic = 0.2
 	}
+	
+	# Early Cold War weapons  ~1948
+	infantry_equipment_4 = {
+		year = 1948
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_3
+		priority = 10
+		visual_level = 4
+		
+		module_slots = inherit
+		
+		#Defensive Abilities
+		defense = 28
+		breakthrough = 0
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0.5
+		ap_attack = 10
+		air_attack = 0
+		
+		reliability = 1
+		build_cost_ic = 0.2
+	}
+	
+	# Basic Cold War weapons  ~1958
+	infantry_equipment_5 = {
+		year = 1958
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_4
+		priority = 10
+		visual_level = 5
+		
+		module_slots = inherit
+		
+		#Defensive Abilities
+		defense = 32
+		breakthrough = 0
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0.5
+		ap_attack = 12
+		air_attack = 0
+		
+		reliability = 1.1
+		build_cost_ic = 0.2
+	}
 }

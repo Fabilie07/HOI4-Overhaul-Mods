@@ -3,6 +3,20 @@
  infantry_weapons1:0 "Basic Infantry Weapons"
  improved_infantry_weapons:0 "Improved Infantry Weapons"
  advanced_infantry_weapons:0 "Advanced Infantry Weapons"
+ modern_infantry_weapons:0 "Early Cold War Infantry Weapons"
+ modern_infantry_weapons2:0 "Basic Cold War Infantry Weapons"
+ modern_lmg_tech:0 "Improved Infantry Equipment IV"
+ modern_lmg_tech_desc:0 "Lightweight gear, equipment made from newly developed plastics and general ergonomic improvements prepare our infantry for a new form of war."
+ 
+ infantry_at3:0 "Infantry Anti-Tank III"
+ infantry_at3_desc:0 "Improved Shaped Charges make our small Anti-Tank Rockets deadly for even the most armored vehicles."
+ infantry_at4:0 "Infantry Anti-Tank IV"
+ infantry_at4_desc:0 "Squad AT Rockets with larger warheads and longer ranges increase their killing potential against enemy tanks. They are also becoming easier to produce and use."
+ infantry_at5:0 "Infantry Anti-Tank V"
+ infantry_at5_desc:0 "Faster Rockets increase both range and accuracy, while reloading of Portable AT Launcher becomes simpler."
+ 
+ night_vision3:0 "Night Vision III"
+ night_vision3_desc:0 "These new scopes no longer rely on Infrared Lamps to illuminate the dark, instead enhancing the surrounding light using phosphorescence."
 
 
  tom_inf_horse:0 "Horse"

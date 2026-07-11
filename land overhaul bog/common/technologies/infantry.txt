@@ -12,6 +12,12 @@ technologies = {
 	@1944 = 16
 	@1945 = 18
 	@1946 = 20
+	@1948 = 22
+	@1950 = 24
+	@1953 = 26
+	@1955 = 28
+	@1958 = 30
+	@1960 = 32
 
 	infantry_weapons = {
 
@@ -299,17 +305,6 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 0.5
 			}
-			#modifier = {
-			#	factor = 0
-			#	tag = SOV
-			#	OR = {
-			#		date < "1944.1.1" # stock up on lots of rifles, we got the manpower
-			#		AND = {
-			#			date > "1943.1.1"
-			#			surrender_progress < 0.1 # if we arent losing badly its ok
-			#		}
-			#	}
-			#}
 		}
 	}
 	improved_infantry_weapons_2 = {
@@ -369,103 +364,6 @@ technologies = {
 		}
 	}
 	
-	infantry_at = {
-	
-		enable_equipment_modules = {
-			inf_portable_at_rocket
-		}
-
-		category_all_infantry = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-		}
-
-		category_cavalry = {
-			hard_attack = 0.1
-			ap_attack = 0.2
-		}
-		
-		path = {
-			leads_to_tech = infantry_at2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1942
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1942 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-		}
-	}
-	
-	infantry_at2 = {
-
-		enable_equipments = {
-			at_rocket_chassis_0
-		}
-		
-		show_equipment_icon = yes
-		force_use_small_tech_layout = yes
-
-		category_cavalry = {
-			hard_attack = 0.1
-			ap_attack = 0.4
-		}
-		
-		research_cost = 1.5
-		start_year = 1943
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1943 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
-		}
-	}
-	
 	advanced_infantry_weapons = {
 
 		enable_equipments = {
@@ -477,17 +375,6 @@ technologies = {
 			inf_full_auto
 			inf_magazine_25
 			inf_magazine_30
-		}
-		
-		on_research_complete = {
-			create_equipment_variant = {
-				type = infantry_equipment_3
-				mark_older_equipment_obsolete = yes
-				modules = {
-					support_equipment_1_slot = inf_grenade_frag
-					cartridge_slot = inf_cartridge_rifle_80
-				}
-			}
 		}
 		
 		path = {
@@ -557,6 +444,11 @@ technologies = {
 		category_vehicle_infantry = {
 			soft_attack = 0.08
 		}	
+		
+		path = {
+			leads_to_tech = modern_infantry_weapons
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1944
@@ -586,6 +478,338 @@ technologies = {
 				factor = 2
 				date > "1946.1.1"
 			}
+		}
+	}
+	
+	modern_infantry_weapons = {
+
+		enable_equipments = {
+			infantry_equipment_4
+			sniper_chassis_4
+		}
+		
+		path = {
+			leads_to_tech = modern_lmg_tech
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1948
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1948 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			base = 1
+			
+			
+			modifier = {
+				tag = GER
+				factor = 2.5
+			}
+
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	
+	modern_lmg_tech = {
+
+		enable_equipments = {
+			lmg_chassis_4
+		}
+		
+		show_equipment_icon = yes
+		force_use_small_tech_layout = yes
+		
+		category_light_infantry = {
+			soft_attack = 0.04
+		}
+		
+		category_cavalry = {
+			soft_attack = 0.04
+		}
+		
+		category_vehicle_infantry = {
+			soft_attack = 0.08
+		}	
+		
+		path = {
+			leads_to_tech = modern_infantry_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1953 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	modern_infantry_weapons2 = {
+
+		enable_equipments = {
+			infantry_equipment_5
+			sniper_chassis_5
+		}
+
+		research_cost = 2
+		start_year = 1958
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1958 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			base = 1
+			
+			
+			modifier = {
+				tag = GER
+				factor = 2.5
+			}
+
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	
+	infantry_at = {
+	
+		enable_equipment_modules = {
+			inf_portable_at_rocket
+		}
+
+		category_all_infantry = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+
+		category_cavalry = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		
+		path = {
+			leads_to_tech = infantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1942 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	infantry_at2 = {
+
+		enable_equipments = {
+			at_rocket_chassis_0
+		}
+		
+		show_equipment_icon = yes
+		force_use_small_tech_layout = yes
+		
+		path = {
+			leads_to_tech = infantry_at3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	infantry_at3 = {
+
+		category_all_infantry = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+
+		category_cavalry = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = infantry_at4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1945
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1945 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_at4 = {
+
+		enable_equipments = {
+			at_rocket_chassis_1
+		}
+		
+		show_equipment_icon = yes
+		force_use_small_tech_layout = yes
+		
+		path = {
+			leads_to_tech = infantry_at5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1950 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_at5 = {
+	
+		enable_equipment_modules = {
+			inf_portable_at_rocket_2
+		}
+
+		category_all_infantry = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+
+		category_cavalry = {
+			hard_attack = 0.05
+			ap_attack = 0.1
+		}
+
+		research_cost = 1.5
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1960 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -638,6 +862,11 @@ technologies = {
 	night_vision2 = {
 
 		land_night_attack = 0.15	
+		
+		path = {
+			leads_to_tech = night_vision3
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1946
@@ -667,6 +896,26 @@ technologies = {
 				factor = 5
 				date > "1946.1.6"
 			}
+		}
+	}
+	
+	night_vision3 = {
+
+		land_night_attack = 0.15	
+
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = @1960 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
 		}
 	}
 	
@@ -965,10 +1214,10 @@ technologies = {
 			breakthrough = 0.04
 		}
 		
-		# path = {
-			# leads_to_tech = support_weapons5
-			# research_cost_coeff = 1
-		# }
+		path = {
+			leads_to_tech = support_weapons5
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1.5
 		start_year = 1942

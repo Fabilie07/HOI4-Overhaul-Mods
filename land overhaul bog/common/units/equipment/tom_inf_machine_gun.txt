@@ -144,6 +144,20 @@ equipments = {
 		build_cost_ic = 0.5
 	}
 	
+	lmg_chassis_4 = {
+		year = 1953
+		parent = lmg_chassis_3
+	
+		archetype = lmg_chassis
+		
+		module_slots = inherit
+		
+		soft_attack = 2.5
+		defense = 8
+		breakthrough = 8
+		build_cost_ic = 0.55
+	}
+	
 	
 	mmg_chassis = {
 		year = 1936

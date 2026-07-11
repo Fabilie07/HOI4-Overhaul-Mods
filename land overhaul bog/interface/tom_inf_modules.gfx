@@ -289,6 +289,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_inf_portable_at_rocket_2"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/portable_at_rocket_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_inf_shovel"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/shovel.dds"
 		legacy_lazy_load = no

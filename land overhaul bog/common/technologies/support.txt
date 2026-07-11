@@ -2445,15 +2445,6 @@ technologies = {
 			lc_command_center #Module for Land Cruiser
 		}
 
-		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				SP_create_variant_based_on_country_armored_signal = yes
-			}
-		}
-
 		ai_will_do = {
 			base = 2
 
