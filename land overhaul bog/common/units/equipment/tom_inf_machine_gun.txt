@@ -301,6 +301,34 @@ equipments = {
 		build_cost_ic = 0.62
 	}
 	
+	mmg_chassis_4 = {
+		year = 1950
+		parent = mmg_chassis_3
+	
+		archetype = mmg_chassis
+		
+		module_slots = inherit
+		
+		soft_attack = 3
+		defense = 12
+		breakthrough = 3
+		build_cost_ic = 0.7
+	}
+	
+	mmg_chassis_5 = {
+		year = 1958
+		parent = mmg_chassis_3
+	
+		archetype = mmg_chassis
+		
+		module_slots = inherit
+		
+		soft_attack = 3.5
+		defense = 15
+		breakthrough = 6
+		build_cost_ic = 0.78
+	}
+	
 	
 	hmg_chassis = {
 		year = 1936
@@ -442,5 +470,18 @@ equipments = {
 		soft_attack = 3
 		defense = 14
 		build_cost_ic = 0.9
+	}
+	
+	hmg_chassis_4 = {
+		year = 1958
+		parent = hmg_chassis_3
+	
+		archetype = hmg_chassis
+		
+		module_slots = inherit
+		
+		soft_attack = 4
+		defense = 20
+		build_cost_ic = 1.0
 	}
 }

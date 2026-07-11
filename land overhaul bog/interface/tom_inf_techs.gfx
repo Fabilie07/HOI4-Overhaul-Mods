@@ -31,6 +31,23 @@ spriteTypes = {
 		name = "GFX_night_vision3_medium"
 		texturefile = "gfx/interface/technologies/night_vision3.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/infantry_support5.dds"
+	}
+	spriteType = {
+		name = "GFX_support_weapons6_medium"
+		texturefile = "gfx/interface/technologies/infantry_support6.dds"
+	}
+	spriteType = {
+		name = "GFX_support_weapons7_medium"
+		texturefile = "gfx/interface/technologies/infantry_support7.dds"
+	}
+	spriteType = {
+		name = "GFX_support_weapons8_medium"
+		texturefile = "gfx/interface/technologies/infantry_support8.dds"
+	}
 
 	### Special Projects
 	
@@ -84,6 +101,14 @@ spriteTypes = {
 		name = "GFX_mmg_chassis_3_medium"
 		texturefile = "gfx/interface/technologies/generic_mmg_3.dds"
 	}
+	spriteType = {
+		name = "GFX_mmg_chassis_4_medium"
+		texturefile = "gfx/interface/technologies/generic_mmg_4.dds"
+	}
+	spriteType = {
+		name = "GFX_mmg_chassis_5_medium"
+		texturefile = "gfx/interface/technologies/generic_mmg_5.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_hmg_chassis_0_medium"
@@ -113,6 +138,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_mortar_chassis_2_medium"
 		texturefile = "gfx/interface/technologies/generic_mortar_2.dds"
+	}
+	spriteType = {
+		name = "GFX_mortar_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/generic_mortar_3.dds"
 	}
 	
 	

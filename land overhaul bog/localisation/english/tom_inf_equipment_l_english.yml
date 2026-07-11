@@ -17,6 +17,15 @@
  
  night_vision3:0 "Night Vision III"
  night_vision3_desc:0 "These new scopes no longer rely on Infrared Lamps to illuminate the dark, instead enhancing the surrounding light using phosphorescence."
+ 
+ support_weapons5:0 "Support Weapons V"
+ support_weapons5_desc:0 "With advancing technology, support fire weapons are becoming more flexible and easier to produce."
+ support_weapons6:0 "Support Weapons VI"
+ support_weapons6_desc:0 "New designs are drafted for a general-purpose machine gun, combining the capabilities of light, medium and heavy machine guns."
+ support_weapons7:0 "Support Weapons VII"
+ support_weapons7_desc:0 "Advancements in metallurgy and plastics allow mortars to be lighter and more precise."
+ support_weapons8:0 "Support Weapons VIII"
+ support_weapons8_desc:0 "Specially treated barrels allow for higher rates of fire, while retaining a shoulder-firing capability."
 
 
  tom_inf_horse:0 "Horse"

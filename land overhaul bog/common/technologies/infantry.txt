@@ -1283,6 +1283,11 @@ technologies = {
 			breakthrough = 0.04
 		}
 		
+		path = {
+			leads_to_tech = support_weapons6
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1.5
 		start_year = 1945
 		folder = {
@@ -1316,6 +1321,146 @@ technologies = {
 				factor = 2
 				date > "1945.1.1"
 			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	support_weapons6 = {
+
+		enable_equipments = {
+			mmg_chassis_4
+		}
+		
+		show_equipment_icon = yes
+		force_use_small_tech_layout = yes
+
+		category_light_infantry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		category_cavalry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		category_vehicle_infantry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		
+		path = {
+			leads_to_tech = support_weapons7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1950 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	support_weapons7 = {
+
+		enable_equipments = {
+			mortar_chassis_3
+		}
+		
+		show_equipment_icon = yes
+		force_use_small_tech_layout = yes
+
+		category_light_infantry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		category_cavalry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		category_vehicle_infantry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		
+		path = {
+			leads_to_tech = support_weapons8
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1953 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	support_weapons8 = {
+
+		enable_equipments = {
+			mmg_chassis_5
+			# hmg_chassis_4
+		}
+		
+		show_equipment_icon = yes
+		force_use_small_tech_layout = yes
+
+		category_light_infantry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		category_cavalry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		category_vehicle_infantry = {
+			defense = 0.04
+			breakthrough = 0.04
+		}
+		
+		research_cost = 1.5
+		start_year = 1958
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1958 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
 			modifier = {
 				has_war = yes
 				factor = 2

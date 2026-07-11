@@ -73,4 +73,17 @@ equipments = {
 		breakthrough = 3
 		build_cost_ic = 0.35
 	}
+	
+	mortar_chassis_3 = {
+		year = 1953
+		archetype = mortar_chassis
+		parent = mortar_chassis_2
+		
+		module_slots = inherit
+		
+		soft_attack = 8
+		defense = 8
+		breakthrough = 4
+		build_cost_ic = 0.4
+	}
 }
