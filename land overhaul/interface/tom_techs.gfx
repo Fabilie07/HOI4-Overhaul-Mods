@@ -218,6 +218,15 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_armored_car4_medium"
+		texturefile = "gfx/interface/technologies/armored_car_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_armored_car5_medium"
+		texturefile = "gfx/interface/technologies/armored_car_5.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_mechanised_chassis3_medium"
 		texturefile = "gfx/interface/technologies/mechanized_equipment_3.dds"
 	}	

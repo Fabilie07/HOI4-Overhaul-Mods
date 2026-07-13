@@ -149,6 +149,11 @@ technologies = {
 		enable_subunits = {
 			armored_car_destroyer
 		}
+		
+		path = {
+			leads_to_tech = armored_car4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1942
@@ -181,6 +186,69 @@ technologies = {
 				factor = 2
 				date > "1944.1.1"
 			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+	
+	armored_car4 = {
+
+		enable_equipments = {
+			armored_car_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = armored_car5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 24 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+	
+	armored_car5 = {
+
+		enable_equipments = {
+			armored_car_equipment_4
+		}
+
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 32 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
 			modifier = {
 				is_major = no
 				factor = 0.5

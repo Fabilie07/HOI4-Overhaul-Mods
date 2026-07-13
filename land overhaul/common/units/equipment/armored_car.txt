@@ -238,4 +238,46 @@ equipments = {
 			rubber = 1
 		}
 	}
+	
+	armored_car_equipment_3 = {
+		abbreviation = "ac3"
+		visual_level = 0
+		year = 1950
+		archetype = armored_car_equipment
+		parent = armored_car_equipment_2
+		priority = 0
+		module_slots = inherit
+
+		maximum_speed = 13
+		build_cost_ic = 4.8
+		reliability = 1.1
+		armor_value = 24
+		hardness = 0.8
+		
+		resources = {
+			steel = 3
+			rubber = 1
+		}
+	}
+	
+	armored_car_equipment_4 = {
+		abbreviation = "ac4"
+		visual_level = 0
+		year = 1960
+		archetype = armored_car_equipment
+		parent = armored_car_equipment_3
+		priority = 0
+		module_slots = inherit
+
+		maximum_speed = 15
+		build_cost_ic = 5.6
+		reliability = 1.1
+		armor_value = 30
+		hardness = 0.8
+		
+		resources = {
+			steel = 3
+			rubber = 1
+		}
+	}
 }
