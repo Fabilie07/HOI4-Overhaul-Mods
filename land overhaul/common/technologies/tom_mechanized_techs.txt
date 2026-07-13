@@ -4,6 +4,7 @@ technologies = {
 
 		enable_subunits = {
 			mechanized
+			amphibious_mechanized
 		}
 
 		enable_equipments = {
@@ -24,6 +25,7 @@ technologies = {
 			mech_gun_port
 			mech_larger_tank
 			mech_shovel_equipment
+			mech_amphibious_drive
 
 			tank_half_track_suspension
 		}
@@ -53,16 +55,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry
-			research_cost_coeff = 1
-		}
+		# path = {
+			# leads_to_tech = amphibious_mechanized_infantry
+			# research_cost_coeff = 1
+		# }
 
 		research_cost = 2
 		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 8 }
+			position = { x = 2 y = 8 }
 		}
 		
 		categories = {
@@ -79,77 +81,6 @@ technologies = {
 				tag = USA
 				factor = 2
 			}
-		}
-	}
-
-	amphibious_mechanized_infantry = {
-
-		enable_equipments = {
-			amphibious_mechanized_equipment_1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		enable_subunits = {
-			amphibious_mechanized
-		}
-
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry_2
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1941
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = 10 }
-		}
-		
-		categories = {
-			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
-			infantry_tech
-			cat_mechanized_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_land }
-		
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				tag = USA
-				factor = 2
-			}
-		}
-	}
-
-	amphibious_mechanized_infantry_2 = {
-
-		enable_equipments = {
-			amphibious_mechanized_equipment_2
-		}
-
-		research_cost = 2
-		start_year = 1943
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = 14 }
-		}
-		
-		categories = {
-			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
-			infantry_tech
-			cat_mechanized_equipment
-			tp_tech
-		}
-		special_project_specialization = { specialization_land }
-		
-		ai_will_do = {
-			factor = 2
 		}
 	}
 	
@@ -183,7 +114,7 @@ technologies = {
 		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 12 }
+			position = { x = 2 y = 12 }
 		}
 		
 		categories = {
@@ -216,12 +147,105 @@ technologies = {
 		enable_subunits = {
 			mechanized_destroyer
 		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry4
+			research_cost_coeff = 1
+		}
 
-		research_cost = 3
+		research_cost = 2
 		start_year = 1944
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = 17 }
+			position = { x = 2 y = 16 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mechanised_infantry4 = {
+
+		enable_equipments = {
+			mechanized_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mechanised_infantry5 = {
+
+		enable_equipments = {
+			mechanized_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 26 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mechanised_infantry6 = {
+
+		enable_equipments = {
+			mechanized_equipment_6
+		}
+
+		research_cost = 2.5
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 32 }
 		}
 		
 		categories = {
@@ -237,4 +261,75 @@ technologies = {
 		}
 	}
 
+
+	amphibious_mechanized_infantry = {
+
+		enable_equipments = {
+			amphibious_mechanized_equipment_1
+		}
+
+		# allow_branch = {
+			# has_dlc = "Man the Guns"
+		# }
+		
+		allow = {
+			always = no
+		}
+
+		# path = {
+			# leads_to_tech = amphibious_mechanized_infantry_2
+			# research_cost_coeff = 1
+		# }
+
+		research_cost = 2
+		start_year = 1941
+		# folder = {
+			# name = infantry_folder
+			# position = { x = 2 y = 10 }
+		# }
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				tag = USA
+				factor = 2
+			}
+		}
+	}
+
+	amphibious_mechanized_infantry_2 = {
+
+		enable_equipments = {
+			amphibious_mechanized_equipment_2
+		}
+
+		research_cost = 2
+		start_year = 1943
+		# folder = {
+			# name = infantry_folder
+			# position = { x = 2 y = 14 }
+		# }
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
 }

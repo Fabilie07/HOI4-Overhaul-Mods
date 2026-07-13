@@ -188,6 +188,36 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_light_truck_tech_medium"
+		texturefile = "gfx/interface/technologies/motorized_light.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/motorized_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/motorized_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_motorised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/motorized_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_mechanised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/mechanized_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mechanised_infantry5_medium"
+		texturefile = "gfx/interface/technologies/mechanized_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_mechanised_infantry6_medium"
+		texturefile = "gfx/interface/technologies/mechanized_6.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_mechanised_chassis3_medium"
 		texturefile = "gfx/interface/technologies/mechanized_equipment_3.dds"
 	}	

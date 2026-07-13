@@ -12,4 +12,9 @@ duplicate_archetypes = {
 		archetype = mechanized_equipment
 		type = { armor anti_tank }
 	}
+	
+	amphibious_mechanized_equipment = {
+		archetype = mechanized_equipment
+		type = { armor amphibious }
+	}
 }

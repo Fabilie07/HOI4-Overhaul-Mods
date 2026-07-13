@@ -97,6 +97,16 @@
  mechanized_destroyer_equipment_desc:0 "A mechanized chassis fitted with a powerful anti-tank gun creates a cheap, mobile anti-armor unit."
  armored_car_aa_equipment_desc:0 "Armored Cars with high-elevating machine guns or auto cannons can be used to defend ground units from air attacks."
  
+ motorized_equipment_light:0 "Light Truck"
+ motorized_equipment_light_desc:0 "With advancements in engine and suspension technologies, smaller vehicles can fulfill the roles of larger ones while being easier to produce and maintain. The only drawback is that they cannot carry as many people."
+ 
+ motorized_equipment_2:0 "Improved Truck"
+ motorized_equipment_2_desc:0 "Capable of carrying more load through rough terrain, as well as many other small improvements, modern trucks are vital on the modern battlefield."
+ motorized_equipment_3:0 "Advanced Truck"
+ motorized_equipment_3_desc:0 "More powerful engines developed in the war give birth to a new class of Trucks with better mobility and terrain traversability."
+ motorized_equipment_4:0 "Modern Truck"
+ motorized_equipment_4_desc:0 "A focus on modularity and speed to support a modern Tank war are the defining features of modern Trucks."
+ 
  mechanized_equipment_desc: "Armored Troop Carriers, often times mounted with MGs or other weapons, offer protection against enemy attacks. Their main use is to push through enemy lines, with troops dismounting afterwards and attacking from the rear."
  
  

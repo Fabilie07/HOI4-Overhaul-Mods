@@ -98,6 +98,7 @@ tom_startup_amphibious_mechanized_designs_effect = {
 			armor_type_slot = ac_welded_armor
 			engine_type_slot = tank_gasoline_engine
 			radio_type_slot = tank_flags
+			special_type_slot_1 = mech_amphibious_drive
 		}
 	}
 
@@ -112,6 +113,22 @@ tom_startup_amphibious_mechanized_designs_effect = {
 			armor_type_slot = ac_welded_armor
 			engine_type_slot = tank_gasoline_engine
 			radio_type_slot = tank_flags
+			special_type_slot_1 = mech_amphibious_drive
+		}
+	}
+	
+	create_equipment_variant = {
+		type = amphibious_mechanized_equipment_3
+		parent_version = 1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mech_main_armament_slot = mech_machine_gun_2x
+			turret_type_slot = mech_machine_gun_mount
+			suspension_type_slot = mech_half_tracked_suspension
+			armor_type_slot = ac_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			radio_type_slot = tank_flags
+			special_type_slot_1 = mech_amphibious_drive
 		}
 	}
 }

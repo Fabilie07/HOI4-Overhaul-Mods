@@ -1,0 +1,161 @@
+technologies = {
+
+	@1918 = 0
+	@1924 = 1
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	@1948 = 22
+	@1950 = 24
+	@1953 = 26
+	@1955 = 28
+	@1958 = 30
+	@1960 = 32
+	
+	motorised_infantry2 = {
+
+		enable_equipments = {
+			motorized_equipment_2
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1943 }
+		}
+		
+		# sub_technologies = {
+			# motorized_rocket_unit2
+		# }
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+	
+	motorised_infantry3 = {
+
+		enable_equipments = {
+			motorized_equipment_3
+		}
+
+		# path = {
+			# leads_to_tech = motorised_infantry4
+			# research_cost_coeff = 1
+		# }
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1950 }
+		}
+		
+		# sub_technologies = {
+			# motorized_rocket_unit2
+		# }
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+	
+	# motorised_infantry4 = {
+
+		# enable_equipments = {
+			# motorized_equipment_4
+		# }
+
+		# research_cost = 2
+		# start_year = 1960
+		# folder = {
+			# name = infantry_folder
+			# position = { x = 0 y = @1960 }
+		# }
+		
+		# # sub_technologies = {
+			# # motorized_rocket_unit2
+		# # }
+		
+		# categories = {
+			# motorized_equipment
+			# mio_cat_tech_all_motorized_mechanized
+			# infantry_tech
+		# }
+		# special_project_specialization = { specialization_land }
+		
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# is_major = no
+				# factor = 0.5
+			# }
+		# }
+	# }
+	
+	
+	
+	light_truck_tech = {
+
+		enable_equipments = {
+			motorized_equipment_light
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = @1940 }
+		}
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+}

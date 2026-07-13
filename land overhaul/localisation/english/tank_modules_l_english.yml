@@ -179,6 +179,8 @@
  mech_multi_fuel_engine_desc:0 "The engine can use gasoline, diesel and other forms of petrol to run."
  mech_shovel_equipment:0 "Shovel Equipment"
  mech_shovel_equipment_desc:0 "Additional trench digging equipment helps the infantry with digging the APC and themselves in."
+ mech_amphibious_drive:0 "Amphibious Drive"
+ mech_amphibious_drive_desc:0 "Propellers and floatation gear allow these APCs to cross rivers and shoreline waters under their own power."
 
  tank_gasoline_engine:0 "Basic Gasoline Engine"
  tank_gasoline_engine_desc:0 "An Engine running on gasoline will be faster for a given Engine Size, but the fuel will be much more prone to catching fire."
@@ -486,6 +488,9 @@
  mechanized_equipment_1:0 "Basic Mechanized Chassis"
  mechanized_equipment_2:0 "Improved Mechanized Chassis"
  mechanized_equipment_3:0 "Advanced Mechanized Chassis"
+ mechanized_equipment_4:0 "Early Cold War Mechanized Chassis"
+ mechanized_equipment_5:0 "Basic Cold War Mechanized Chassis"
+ mechanized_equipment_6:0 "Improved Cold War Mechanized Chassis"
  mechanized_aa_equipment:0 "Mechanized AA"
  mechanized_aa_equipment_1:0 "Basic Mechanized AA Chassis"
  mechanized_aa_equipment_2:0 "Improved Mechanized AA Chassis"
@@ -497,6 +502,7 @@
 
  amphibious_mechanized_equipment_1:0 "Basic AMTRAC Chassis"
  amphibious_mechanized_equipment_2:0 "Improved AMTRAC Chassis"
+ amphibious_mechanized_equipment_3:0 "Advanced AMTRAC Chassis"
 
  light_tank_chassis:0 "Light Tank"
  medium_tank_chassis:0 "Medium Tank"
