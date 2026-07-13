@@ -99,6 +99,8 @@
  
  motorized_equipment_light:0 "Light Truck"
  motorized_equipment_light_desc:0 "With advancements in engine and suspension technologies, smaller vehicles can fulfill the roles of larger ones while being easier to produce and maintain. The only drawback is that they cannot carry as many people."
+ motorized_equipment_light_2:0 "Improved Light Truck"
+ motorized_equipment_light_3:0 "Advanced Light Truck"
  
  motorized_equipment_2:0 "Improved Truck"
  motorized_equipment_2_desc:0 "Capable of carrying more load through rough terrain, as well as many other small improvements, modern trucks are vital on the modern battlefield."

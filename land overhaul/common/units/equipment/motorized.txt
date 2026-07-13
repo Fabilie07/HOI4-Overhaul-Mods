@@ -103,6 +103,36 @@ equipments = {
 		fuel_consumption = 0.9
 		build_cost_ic = 1.8
 	}
+	
+	motorized_equipment_light_2 = {
+		year = 1946
+
+		archetype = motorized_equipment
+		parent = motorized_equipment_light
+		priority = 30
+		
+		maximum_speed = 18
+		breakthrough = 4
+		reliability = 0.85
+		hardness = 0.05
+		fuel_consumption = 0.9
+		build_cost_ic = 2.0
+	}
+	
+	motorized_equipment_light_3 = {
+		year = 1960
+
+		archetype = motorized_equipment
+		parent = motorized_equipment_light
+		priority = 30
+		
+		maximum_speed = 20
+		breakthrough = 8
+		reliability = 0.9
+		hardness = 0.05
+		fuel_consumption = 0.9
+		build_cost_ic = 2.2
+	}
 
 
 	motorbike_equipment = {
