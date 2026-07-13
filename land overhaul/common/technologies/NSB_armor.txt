@@ -1530,12 +1530,6 @@ technologies = {
 			medium_tank_amphibious_chassis_3
 			heavy_tank_amphibious_chassis_3
 		}
-		
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_amphibious_tank
-			}
-		}
 
 		research_cost = 2
 		start_year = 1939
