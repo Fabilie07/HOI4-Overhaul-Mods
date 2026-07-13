@@ -110,6 +110,7 @@
  motorized_equipment_4_desc:0 "A focus on modularity and speed to support a modern Tank war are the defining features of modern Trucks."
  
  mechanized_equipment_desc: "Armored Troop Carriers, often times mounted with MGs or other weapons, offer protection against enemy attacks. Their main use is to push through enemy lines, with troops dismounting afterwards and attacking from the rear."
+ mechanised_infantry_desc:0 "APCs equipped with floatation devices can cross rivers on their own and are very useful for amphibious operations."
  
  
  armor_modules: "Tank Modules"
