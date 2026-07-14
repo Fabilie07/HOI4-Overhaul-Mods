@@ -1,6 +1,6 @@
 spriteTypes = {
 	spriteType = { name = "GFX_unit_mountaineers_mechanized_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_mountaineers_mechanized_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_rangerss_mechanized_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_rangers_mechanized_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_rangers_mechanized_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_rangers_mechanized_icon.dds" noOfFrames = 2 }
 
 	spriteType = { name = "GFX_unit_armored_military_police_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_armored_military_police_icon.dds" noOfFrames = 2 }
     spriteType = { name = "GFX_unit_mechanized_engineer_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_engineer_icon.dds" noOfFrames = 2 }

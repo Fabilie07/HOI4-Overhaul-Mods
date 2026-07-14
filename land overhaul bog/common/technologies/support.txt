@@ -189,6 +189,10 @@ technologies = {
 		enable_subunits = {
 			engineer
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_engineer
+		}
 		
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
@@ -618,6 +622,11 @@ technologies = {
 			armored_car_recon
 			light_tank_recon
 		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_recon
+		}
 
 		path = {
 			leads_to_tech = tech_recon2
@@ -821,6 +830,11 @@ technologies = {
 
 		enable_subunits = {
 			military_police
+		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_military_police
 		}
 
 		path = {
@@ -1063,6 +1077,11 @@ technologies = {
 		enable_subunits = {
 			maintenance_company
 		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_maintenance
+		}
 
 		path = {
 			leads_to_tech = tech_maintenance_company2
@@ -1280,6 +1299,11 @@ technologies = {
 		enable_subunits = {
 			field_hospital
 			mot_field_hospital
+		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_field_hospital
 		}
 		
 		enable_equipment_modules = {
@@ -1578,6 +1602,11 @@ technologies = {
 			mot_logistics_company
 		}
 		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_logistics
+		}
+		
 		enable_equipment_modules = {
 			inf_canteen_2
 		}
@@ -1839,6 +1868,11 @@ technologies = {
 
 		enable_subunits = {
 			signal_company
+		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_signal
 		}
 
 		path = {
