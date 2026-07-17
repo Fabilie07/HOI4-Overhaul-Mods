@@ -69,11 +69,69 @@ generic_armored_car = {
 	armored_car_1942 = {
 		priority = {
 			factor = 100
+			modifier = { 
+				has_tech = armored_car4
+				factor = 0 #let's not waste XP here
+			}
 		}
 		
 		target_variant = {
 			match_value = 1000
 			type = armored_car_equipment_2
+			modules = {
+				ac_main_armament_slot = ac_small_cannon
+				turret_type_slot = ac_two_man_turret
+				suspension_type_slot = ac_four_wheeled_suspension
+				armor_type_slot = ac_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				ammunition_slot = empty
+				radio_type_slot = tank_radio_3
+			}
+		}
+	}
+	
+	armored_car_1950 = {
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = armored_car5
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = armored_car_equipment_3
+			modules = {
+				ac_main_armament_slot = ac_small_cannon
+				turret_type_slot = ac_two_man_turret
+				suspension_type_slot = ac_four_wheeled_suspension
+				armor_type_slot = ac_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				ammunition_slot = empty
+				radio_type_slot = tank_radio_3
+			}
+		}
+	}
+	
+	armored_car_1960 = {
+		priority = {
+			factor = 100
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = armored_car_equipment_4
 			modules = {
 				ac_main_armament_slot = ac_small_cannon
 				turret_type_slot = ac_two_man_turret

@@ -11,7 +11,7 @@ sub_units = {
 
 		type = {
 			armor
-			support
+			# support
 		}
 		
 		group = support
@@ -59,7 +59,7 @@ sub_units = {
 
 		type = {
 			armor
-			support
+			# support
 		}
 		
 		group = support
@@ -106,7 +106,8 @@ sub_units = {
 
 		type = {
 			armor
-			support
+			amphibious
+			# support
 		}
 		
 		group = support

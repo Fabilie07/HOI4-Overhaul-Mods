@@ -2,15 +2,6 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_country = {
-				tom_startup_armored_car_designs_effect = yes
-				tom_startup_mechanized_designs_effect = yes
-				tom_startup_amphibious_mechanized_designs_effect = yes
-			}
-		}
-	
-	
-		effect = {
-			every_country = {
 				limit = { has_tech = gw_artillery }
 
 				set_technology = { small_cannon_tech = 1 popup = no }

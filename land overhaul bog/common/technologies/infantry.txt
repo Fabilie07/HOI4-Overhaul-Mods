@@ -23,7 +23,6 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_0
-			sniper_chassis_0
 			lmg_chassis_0
 		}
 
@@ -131,7 +130,6 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_1
-			sniper_chassis_1
 		}
 		
 		enable_equipment_modules = {
@@ -258,7 +256,6 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_2
-			sniper_chassis_2
 		}
 		
 		enable_equipment_modules = {
@@ -368,7 +365,6 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_3
-			sniper_chassis_3
 		}	
 		
 		enable_equipment_modules = {
@@ -485,7 +481,6 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_4
-			sniper_chassis_4
 		}
 		
 		path = {
@@ -586,7 +581,6 @@ technologies = {
 
 		enable_equipments = {
 			infantry_equipment_5
-			sniper_chassis_5
 		}
 
 		research_cost = 2
