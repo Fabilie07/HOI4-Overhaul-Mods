@@ -9,7 +9,7 @@ tom_inf_bat_startup_effect_mountaineers_mechanized = {
 	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:mechanized_equipment }
 	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 45 }
 	
-	add_to_array = { tom_inf_bat_mountaineers_mechanized_companies_array = 10 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_companies_array = 30 }
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_companies_array = 11 }
 	add_to_array = { tom_inf_bat_mountaineers_mechanized_companies_array = 12 }
 	

@@ -9,7 +9,7 @@ tom_inf_bat_startup_effect_motorized = {
 	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:motorized_equipment }
 	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 36 }
 	
-	add_to_array = { tom_inf_bat_motorized_companies_array = 10 }
+	add_to_array = { tom_inf_bat_motorized_companies_array = 13 }
 	add_to_array = { tom_inf_bat_motorized_companies_array = 11 }
 	add_to_array = { tom_inf_bat_motorized_companies_array = 12 }
 	

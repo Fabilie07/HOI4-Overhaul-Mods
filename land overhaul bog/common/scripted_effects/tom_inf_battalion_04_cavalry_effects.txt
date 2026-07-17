@@ -9,7 +9,7 @@ tom_inf_bat_startup_effect_cavalry = {
 	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_type = token:tom_inf_horse }
 	add_to_array = { tom_inf_bat_motorized_equipment_stats_array_2_count = 360 }
 	
-	add_to_array = { tom_inf_bat_cavalry_companies_array = 10 }
+	add_to_array = { tom_inf_bat_cavalry_companies_array = 15 }
 	add_to_array = { tom_inf_bat_cavalry_companies_array = 11 }
 	add_to_array = { tom_inf_bat_cavalry_companies_array = 12 }
 	
