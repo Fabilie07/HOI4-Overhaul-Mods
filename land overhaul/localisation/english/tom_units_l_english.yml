@@ -14,6 +14,10 @@
  mechanized_aa:0 "Mechanized SPAA (Support)"
  mechanized_destroyer:0 "Mechanized TD (Support)"
  
+ motorized_transport:0 "Motorized Transport Section"
+ mechanized_transport:0 "Mechanized Transport Section"
+ amphibious_mechanized_transport:0 "Amtrak Transport Section"
+ 
  category_light_armor:0 "Light Armor"
  category_medium_armor:0 "Medium Armor"
  category_heavy_armor:0 "Heavy Armor"
