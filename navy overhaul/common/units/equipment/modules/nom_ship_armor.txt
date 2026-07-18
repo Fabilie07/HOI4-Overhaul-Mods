@@ -660,8 +660,8 @@ equipment_modules = {
 		category = ship_torpedo_protection
 
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.35
-			naval_torpedo_damage_reduction_factor = 0.3
+			naval_torpedo_enemy_critical_chance_factor = -0.15
+			naval_torpedo_damage_reduction_factor = 0.1
 		}
 		multiply_stats = {
 			build_cost_ic = 0.02
@@ -674,8 +674,8 @@ equipment_modules = {
 		parent = torpedo_protection_1
 
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.5
-			naval_torpedo_damage_reduction_factor = 0.4
+			naval_torpedo_enemy_critical_chance_factor = -0.2
+			naval_torpedo_damage_reduction_factor = 0.2
 		}
 		multiply_stats = {
 			max_strength = 0.1
@@ -689,8 +689,8 @@ equipment_modules = {
 		parent = torpedo_protection_2
 
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.65
-			naval_torpedo_damage_reduction_factor = 0.5
+			naval_torpedo_enemy_critical_chance_factor = -0.25
+			naval_torpedo_damage_reduction_factor = 0.25
 		}
 		multiply_stats = {
 			max_strength = 0.15
@@ -704,8 +704,8 @@ equipment_modules = {
 		parent = torpedo_protection_3
 
 		add_stats = {
-			naval_torpedo_enemy_critical_chance_factor = -0.8
-			naval_torpedo_damage_reduction_factor = 0.6
+			naval_torpedo_enemy_critical_chance_factor = -0.35
+			naval_torpedo_damage_reduction_factor = 0.35
 		}
 		multiply_stats = {
 			max_strength = 0.2
