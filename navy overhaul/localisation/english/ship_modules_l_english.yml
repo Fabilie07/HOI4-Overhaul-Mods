@@ -1053,7 +1053,7 @@
  FIN_ship_torpedo_sub_3:0 "6x 533mm w/L.Pistons"
  FIN_ship_torpedo_sub_4:0 "6x 533mm w/P.Loading"
  FIN_ship_anti_air_1:0 "20mm/60 RK Madsen M31"
- FIN_ship_anti_air_2:0 "25mm AA"
+ FIN_ship_anti_air_2:0 "40mm Vickers Pom-Pom"
  FIN_sub_ship_engine_1:0 "Atlas 1,160 Shp Engine"
  FIN_ship_armor_cruiser_1:0 "55mm Belt/20mm Deck"
 

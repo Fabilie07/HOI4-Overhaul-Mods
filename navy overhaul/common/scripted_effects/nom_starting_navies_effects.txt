@@ -337,66 +337,6 @@ DEN_get_starting_navy_designs = {
 	}
 }
 
-FIN_get_starting_navy_designs = {
-	# Submarines #
-	create_equipment_variant = {
-		name = "[NOM] Vetehinen Class"								
-		type = ship_hull_submarine_1
-		name_group = FIN_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_radio_slot = ship_signals
-			fixed_ship_engine_slot = sub_ship_engine_1
-			fixed_ship_periscope_slot = sub_periscope_1
-
-			rear_1_custom_slot = ship_torpedo_sub_1
-			front_1_custom_slot = ship_torpedo_sub_1
-		}
-		design_team = mio:FIN_crichton_vulcan_organization
-	}
-	create_equipment_variant = {
-		name = "[NOM] Vesikko Class"								
-		type = ship_hull_submarine_1
-		name_group = FIN_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_radio_slot = ship_signals
-			fixed_ship_engine_slot = sub_ship_engine_1
-			fixed_ship_periscope_slot = sub_periscope_1
-
-			front_1_custom_slot = ship_torpedo_sub_2
-		}
-		design_team = mio:FIN_crichton_vulcan_organization
-	}
-	# Heavy Cruisers #
-	create_equipment_variant = {
-		name = "[NOM] Väinämöinen Class"				
-		type = ship_hull_cruiser_coastal_defense_ship
-		name_group = FIN_CA_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_radio_slot = ship_signals
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_funnel_slot = funnel_1x
-			fixed_ship_citadel_slot = ship_citadel_1
-			fixed_ship_damage_control_slot = water_pump
-			fixed_ship_ammo_1_slot = cannon_high_explosive
-
-			rear_1_custom_slot = ship_heavy_battery_1_2x
-			mid_4_custom_slot = ship_anti_air_1
-			front_1_custom_slot = ship_heavy_battery_1_2x
-			
-			right_2_custom_slot = ship_secondaries_1_2x
-			right_3_custom_slot = ship_secondaries_1_2x
-			
-			left_2_custom_slot = ship_secondaries_1_2x
-			left_3_custom_slot = ship_secondaries_1_2x
-		}
-		design_team = mio:FIN_crichton_vulcan_organization
-	}
-}
-
 NOR_get_starting_navy_designs = {
 	# Submarines #
 	create_equipment_variant = {

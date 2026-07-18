@@ -151,6 +151,7 @@ equipments = {
 		reliability = 0.80
 		surface_visibility = 20
 		naval_range = 1500
+		max_strength = 90
 		naval_dominance_factor = 150
 		module_slots = {
 			fixed_ship_radio_slot = inherit
