@@ -12,6 +12,14 @@ technologies = {
 	@1943 = 18
 	@1944 = 20
 	@1945 = 22
+	@1946 = 24
+	@1948 = 26
+	@1950 = 28
+	@1952 = 30
+	@1954 = 32
+	@1956 = 34
+	@1958 = 36
+	@1960 = 38
 
 	@light_tank_x = -3
 	@medium_tank_x = 3
@@ -421,6 +429,11 @@ technologies = {
 
 		research_cost = 2.5
 		start_year = 1944
+		
+		path = {
+			leads_to_tech = modern_light_tank_chassis_2
+			research_cost_coeff = 1
+		}
 
 		folder = {
 			name = nsb_armour_folder
@@ -447,6 +460,37 @@ technologies = {
 			modifier = {
 				factor = 1.1
 				date > "1943.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	modern_light_tank_chassis_2 = { #Walker Bulldog
+
+		enable_equipments = {
+			light_tank_chassis_5
+		}
+
+		research_cost = 2.5
+		start_year = 1950
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @light_tank_x y = @1950 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2  # Minors prefer light tanks
 			}
 		}
 
@@ -897,7 +941,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = main_battle_tank_chassis
+			leads_to_tech = modern_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -1041,7 +1085,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	main_battle_tank_chassis = { #Panther II
+	modern_medium_tank_chassis = { #Panther II
 
 		enable_equipments = {
 			medium_tank_chassis_4
@@ -1052,6 +1096,11 @@ technologies = {
 
 		research_cost = 2.5
 		start_year = 1944
+		
+		path = {
+			leads_to_tech = main_battle_tank_chassis
+			research_cost_coeff = 1
+		}
 
 		folder = {
 			name = nsb_armour_folder
@@ -1075,6 +1124,151 @@ technologies = {
 				factor = 1.2
 				date > "1946.1.1"
 			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	main_battle_tank_chassis = { #E-50
+
+		enable_equipments = {
+			modern_tank_chassis_1
+		}
+		enable_subunits = {
+			modern_armor
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		
+		path = {
+			leads_to_tech = main_battle_tank_chassis_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @medium_tank_x y = @1946 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > 1946.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1947.1.1
+			}
+
+			modifier = {
+				factor = 2
+				date > 1948.1.1
+			}
+
+			modifier = {
+				factor = 6
+				# Centurion was designed and entered production in 1945-1946
+				tag = ENG
+				date > 1944.9.1
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	main_battle_tank_chassis_2 = {
+		enable_equipments = {
+			modern_tank_chassis_2
+		}
+
+		research_cost = 2.5
+		start_year = 1950
+		
+		path = {
+			leads_to_tech = main_battle_tank_chassis_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @medium_tank_x y = @1950 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	main_battle_tank_chassis_3 = {
+		enable_equipments = {
+			modern_tank_chassis_3
+		}
+
+		research_cost = 2.5
+		start_year = 1954
+		
+		path = {
+			leads_to_tech = main_battle_tank_chassis_4
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @medium_tank_x y = @1954 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_medium_armor
+			mio_cat_tech_medium_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	main_battle_tank_chassis_4 = {
+		enable_equipments = {
+			modern_tank_chassis_4
+		}
+
+		research_cost = 2.5
+		start_year = 1958
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @medium_tank_x y = @1958 }
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 
 		categories = {
@@ -1339,6 +1533,11 @@ technologies = {
 
 		research_cost = 2.5
 		start_year = 1944
+		
+		path = {
+			leads_to_tech = modern_heavy_tank_chassis_2
+			research_cost_coeff = 1
+		}
 
 		folder = {
 			name = nsb_armour_folder
@@ -1362,6 +1561,129 @@ technologies = {
 				factor = 1.2
 				date > "1946.1.1"
 			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	modern_heavy_tank_chassis_2 = { #IS-4
+
+		enable_equipments = {
+			heavy_tank_chassis_5
+		}
+
+		research_cost = 2.5
+		start_year = 1946
+		
+		path = {
+			leads_to_tech = modern_heavy_tank_chassis_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = @1946 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	modern_heavy_tank_chassis_3 = { #T-34 (big one)
+
+		enable_equipments = {
+			heavy_tank_chassis_6
+		}
+
+		research_cost = 2.5
+		start_year = 1950
+		
+		path = {
+			leads_to_tech = modern_heavy_tank_chassis_4
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = @1950 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	modern_heavy_tank_chassis_4 = { #T-10
+
+		enable_equipments = {
+			heavy_tank_chassis_7
+		}
+
+		research_cost = 2.5
+		start_year = 1954
+		
+		path = {
+			leads_to_tech = modern_heavy_tank_chassis_5
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = @1954 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+	
+	modern_heavy_tank_chassis_5 = { #M103
+
+		enable_equipments = {
+			heavy_tank_chassis_8
+		}
+
+		research_cost = 2.5
+		start_year = 1958
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 7 y = @1958 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
 		}
 
 		categories = {
