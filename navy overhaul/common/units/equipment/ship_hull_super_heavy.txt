@@ -258,7 +258,7 @@ equipments = {
 
 		naval_range = 4500
 		naval_speed = 26
-		max_strength = 750
+		max_strength = 350
 		fuel_consumption = 45
 		reliability = 1.1
 		build_cost_ic = 6000

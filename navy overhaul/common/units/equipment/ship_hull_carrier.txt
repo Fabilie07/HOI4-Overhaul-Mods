@@ -309,7 +309,7 @@ equipments = {
 		reliability = 0.85
 		naval_range = 3000
 		naval_speed = 23
-		max_strength = 60
+		max_strength = 50
 		build_cost_ic = 2200
 		manpower = 650
 		naval_dominance_factor = 150
@@ -328,7 +328,7 @@ equipments = {
 		reliability = 0.9
 		naval_range = 4000
 		naval_speed = 29
-		max_strength = 80
+		max_strength = 60
 		build_cost_ic = 2400
 		manpower = 800
 		naval_dominance_factor = 200
@@ -347,7 +347,7 @@ equipments = {
 		reliability = 0.9
 		naval_speed = 27
 		naval_range = 6000
-		max_strength = 250
+		max_strength = 150
 		naval_dominance_factor = 350
 		build_cost_ic = 3900
 		resources = {
@@ -372,7 +372,7 @@ equipments = {
 		reliability = 0.9
 		naval_speed = 29
 		naval_range = 7000
-		max_strength = 350
+		max_strength = 175
 		naval_dominance_factor = 380
 		build_cost_ic = 4200
 		resources = {
@@ -396,7 +396,7 @@ equipments = {
 
 		naval_range = 8000
 		reliability = 0.9
-		max_strength = 400
+		max_strength = 200
 		naval_dominance_factor = 420
 
 		build_cost_ic = 4600
@@ -420,7 +420,7 @@ equipments = {
 
 		naval_range = 9000
 		reliability = 0.95
-		max_strength = 450
+		max_strength = 220
 		naval_dominance_factor = 460
 		build_cost_ic = 5000
 		resources = {
@@ -443,7 +443,7 @@ equipments = {
 
 		naval_range = 10000
 		reliability = 1.1
-		max_strength = 500
+		max_strength = 240
 		naval_dominance_factor = 500
 
 		build_cost_ic = 5600
@@ -467,7 +467,7 @@ equipments = {
 
 		naval_range = 11000
 		reliability = 1.1
-		max_strength = 550
+		max_strength = 250
 		naval_dominance_factor = 540
 
 		build_cost_ic = 6000
@@ -542,7 +542,7 @@ equipments = {
 
 		naval_range = 7000
 		reliability = 0.8
-		max_strength = 300
+		max_strength = 220
 		naval_dominance_factor = 500
 
 		build_cost_ic = 6000

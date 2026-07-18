@@ -299,7 +299,7 @@ equipments = {
 		
 		naval_range = 2000
 		
-		max_strength = 250
+		max_strength = 150
 
 		fuel_consumption = 35
 		
@@ -425,7 +425,7 @@ equipments = {
 		}
 		naval_range = 2250
 		
-		max_strength = 280
+		max_strength = 180
 		naval_speed = 20
 		reliability = 0.95
 		build_cost_ic = 2500
@@ -447,7 +447,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 2500
 		
-		max_strength = 300
+		max_strength = 200
 		naval_speed = 21
 		reliability = 0.95
 		build_cost_ic = 2600
@@ -513,7 +513,7 @@ equipments = {
 		}
 		naval_range = 2700
 		
-		max_strength = 330
+		max_strength = 230
 		naval_speed = 24
 		reliability = 0.95
 		build_cost_ic = 2800
@@ -535,7 +535,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 3000
 		
-		max_strength = 350
+		max_strength = 250
 		naval_speed = 24
 		reliability = 0.95
 		build_cost_ic = 3000
@@ -557,7 +557,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 3300
 		
-		max_strength = 380
+		max_strength = 280
 		naval_speed = 24
 		reliability = 1
 		build_cost_ic = 3200
@@ -579,7 +579,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 5000
 		
-		max_strength = 350
+		max_strength = 250
 		naval_speed = 30
 		reliability = 1
 		build_cost_ic = 3700
@@ -602,7 +602,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 5500
 		
-		max_strength = 390
+		max_strength = 270
 		reliability = 1.05
 		naval_speed = 30
 		build_cost_ic = 4000
@@ -625,7 +625,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 6000
 		naval_speed = 31
-		max_strength = 420
+		max_strength = 285
 		reliability = 1.1
 		
 		build_cost_ic = 4200
@@ -648,7 +648,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 6500
 		
-		max_strength = 450
+		max_strength = 300
 		naval_speed = 31
 		reliability = 1.15
 		build_cost_ic = 4500
@@ -671,7 +671,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 5000
 		
-		max_strength = 500
+		max_strength = 310
 		naval_speed = 31
 		reliability = 1.15
 		build_cost_ic = 4800

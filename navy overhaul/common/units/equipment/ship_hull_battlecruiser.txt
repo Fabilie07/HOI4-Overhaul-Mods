@@ -299,7 +299,7 @@ equipments = {
 		
 		naval_range = 2500
 		
-		max_strength = 200
+		max_strength = 75
 
 		fuel_consumption = 30
 		
@@ -336,7 +336,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 3000
 		
-		max_strength = 240
+		max_strength = 100
 		naval_speed = 29
 		reliability = 0.9
 		build_cost_ic = 2600
@@ -358,7 +358,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 4000
 		
-		max_strength = 280
+		max_strength = 130
 		naval_speed = 30
 		reliability = 0.95
 		build_cost_ic = 2900
@@ -380,7 +380,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 4500
 		
-		max_strength = 320
+		max_strength = 160
 		naval_speed = 31
 		reliability = 0.95
 		build_cost_ic = 3500
@@ -402,7 +402,7 @@ equipments = {
 		module_slots = inherit
 		naval_range = 6800
 		
-		max_strength = 350
+		max_strength = 200
 		naval_speed = 32
 		reliability = 1
 		build_cost_ic = 3000
