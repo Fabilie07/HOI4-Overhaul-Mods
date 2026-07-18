@@ -1,0 +1,18 @@
+add_namespace = NOM_exercise
+
+country_event = {
+	id = NOM_exercise.1
+	title = NOM_exercise.1.t
+	desc = NOM_exercise.1.d
+	picture = GFX_news_event_ast_navy
+	minor_flavor = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOM_exercise.1.a
+	}
+}
+
+
+

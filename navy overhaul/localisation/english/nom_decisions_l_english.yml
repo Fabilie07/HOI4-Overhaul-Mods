@@ -8,12 +8,16 @@
 
  nom_naval_exercise:0 "Navy Overhaul: Exercises"
  nom_naval_exercise_desc:0 "Exercises are one of the only ways to gain real-world Knowledge on Naval Warfare without going to war.\n"
+ study_obsolete_designs:0 "Study Great War Designs"
+ study_obsolete_designs_tt:0 "Unlocks all §YShip Hulls and Modules§! up to §Y1915§!."
  coastal_gunnery_exercise:0 "Coastal Gunnery Exercise"
  coastal_maneuver_exercise:0 "Coastal Maneuver Exercise"
- joint_maneuver_exercise:0 "Joint Maneuver Exercise"
+ international_navy_exercise:0 "Faction-Wide Naval Exercise"
+ international_navy_exercise_mission:0 "Naval Exercise Underway"
  
- nom_allies_get_event_1_tt:0 "\nAll Allied Nations are invited to the Joint Maneuver Exercise."
- nom_in_35_days_tt:0 "\n§YEffects in 35 days:§!"
+ NOM_exercise.1.t: "Naval Exercise Started"
+ NOM_exercise.1.d: "[FROM.GetNameDefCap] has invited the Naval Forces of the [ROOT.GetFactionName] for a Joint Naval Maneuver, lasting several weeks and testing each nation's training, doctrine and skill. The goal of this operation is to ensure readiness for war, and to find and correct any problems that may still exist in any country's Navy."
+ NOM_exercise.1.a: "All hands, to deck!"
 
  decision_cost_CP_15:0 "£command_power  §Y15§!"
  decision_cost_CP_15_blocked:0 "£command_power  §R15§!"
@@ -21,6 +25,9 @@
  decision_cost_CP_20:0 "£command_power  §Y20§!"
  decision_cost_CP_20_blocked:0 "£command_power  §R20§!"
  decision_cost_CP_20_tooltip:0 "It costs £command_power §Y20§! to take the decision"
+ decision_cost_CP_30:0 "£command_power  §Y30§!"
+ decision_cost_CP_30_blocked:0 "£command_power  §R30§!"
+ decision_cost_CP_30_tooltip:0 "It costs £command_power §Y30§! to take the decision"
  
  nom_naval_academy_decisions: "Naval Academy"
  
