@@ -161,6 +161,8 @@ equipments = {
 			right_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_mine_warfare
 					ship_mine_layer
@@ -172,6 +174,8 @@ equipments = {
 			right_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_anti_air
 					ship_to_sub_missile
@@ -180,6 +184,8 @@ equipments = {
 			right_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_anti_air
 					ship_to_sub_missile
@@ -188,6 +194,8 @@ equipments = {
 			right_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_anti_air
 					ship_to_sub_missile
@@ -197,6 +205,8 @@ equipments = {
 			left_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_mine_warfare
 					ship_mine_layer
@@ -208,6 +218,8 @@ equipments = {
 			left_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_anti_air
 					ship_to_sub_missile
@@ -216,6 +228,8 @@ equipments = {
 			left_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_anti_air
 					ship_to_sub_missile
@@ -224,6 +238,8 @@ equipments = {
 			left_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
+					ship_light_battery
+					dp_light_battery
 					ship_torpedo
 					ship_anti_air
 					ship_to_sub_missile
@@ -366,7 +382,57 @@ equipments = {
 		
 		archetype = ship_hull_light
 		parent = ship_hull_early_destroyer_2
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_radio_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_sonar_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_funnel_slot = inherit
+			fixed_ship_tanks_slot = inherit
+
+			fixed_ship_armor_slot = inherit
+			fixed_ship_deck_slot = inherit
+			fixed_ship_citadel_slot = inherit
+			fixed_ship_damage_control_slot = inherit
+			fixed_ship_torpedo_protection_slot = inherit
+			fixed_ship_ammo_1_slot = inherit
+			fixed_ship_ammo_2_slot = inherit
+
+			rear_1_custom_slot = inherit
+			mid_1_custom_slot = inherit
+			mid_2_custom_slot = inherit
+			mid_3_custom_slot = inherit
+			mid_4_custom_slot = inherit
+			front_1_custom_slot = inherit
+			
+			right_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_mine_warfare
+					ship_mine_layer
+					ship_depth_charge
+					ship_anti_air
+					ship_to_sub_missile
+				}
+			}
+			right_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_to_sub_missile
+				}
+			}
+			right_3_custom_slot = right_2_custom_slot
+			right_4_custom_slot = right_2_custom_slot
+			
+			left_1_custom_slot = right_1_custom_slot
+			left_2_custom_slot = right_2_custom_slot
+			left_3_custom_slot = right_2_custom_slot
+			left_4_custom_slot = right_2_custom_slot
+		}
 		
 		reliability = 0.9
 		naval_range = 1800
@@ -562,7 +628,57 @@ equipments = {
 		
 		archetype = ship_hull_light
 		parent = ship_hull_destroyer_leader_1
-		module_slots = inherit
+		module_slots = {
+			fixed_ship_radio_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_sonar_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_funnel_slot = inherit
+			fixed_ship_tanks_slot = inherit
+
+			fixed_ship_armor_slot = inherit
+			fixed_ship_deck_slot = inherit
+			fixed_ship_citadel_slot = inherit
+			fixed_ship_damage_control_slot = inherit
+			fixed_ship_torpedo_protection_slot = inherit
+			fixed_ship_ammo_1_slot = inherit
+			fixed_ship_ammo_2_slot = inherit
+
+			rear_1_custom_slot = inherit
+			mid_1_custom_slot = inherit
+			mid_2_custom_slot = inherit
+			mid_3_custom_slot = inherit
+			mid_4_custom_slot = inherit
+			front_1_custom_slot = inherit
+			
+			right_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_mine_warfare
+					ship_mine_layer
+					ship_depth_charge
+					ship_anti_air
+					ship_to_sub_missile
+				}
+			}
+			right_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_torpedo
+					ship_anti_air
+					ship_to_sub_missile
+				}
+			}
+			right_3_custom_slot = right_2_custom_slot
+			right_4_custom_slot = right_2_custom_slot
+			
+			left_1_custom_slot = right_1_custom_slot
+			left_2_custom_slot = right_2_custom_slot
+			left_3_custom_slot = right_2_custom_slot
+			left_4_custom_slot = right_2_custom_slot
+		}
 		
 		reliability = 0.95
 		naval_range = 2500

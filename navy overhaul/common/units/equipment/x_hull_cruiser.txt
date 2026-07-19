@@ -176,6 +176,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_medium_battery
 					ship_heavy_battery
+					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_mine_layer
@@ -189,6 +190,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_medium_battery
 					ship_heavy_battery
+					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
@@ -201,6 +203,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_medium_battery
 					ship_heavy_battery
+					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
@@ -213,6 +216,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_medium_battery
 					ship_heavy_battery
+					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
@@ -225,6 +229,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_medium_battery
 					ship_heavy_battery
+					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_anti_air
@@ -237,6 +242,7 @@ equipments = {
 					ship_light_medium_battery
 					ship_medium_battery
 					ship_heavy_battery
+					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 				}
@@ -247,6 +253,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_medium_battery
 					ship_light_medium_battery
+					ship_heavy_secondaries
 					ship_secondaries
 					ship_dp_secondaries
 					ship_torpedo

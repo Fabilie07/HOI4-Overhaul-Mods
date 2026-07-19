@@ -162,24 +162,32 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			right_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			right_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			right_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 
@@ -187,24 +195,32 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			left_2_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			left_3_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 			left_4_custom_slot = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
 				}
 			}
 		}

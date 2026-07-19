@@ -1151,16 +1151,18 @@ if = {
 
 			rear_1_custom_slot = ship_depth_charge_1
 			mid_1_custom_slot = ship_light_battery_1
-			mid_2_custom_slot = ship_light_battery_1
-			mid_3_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = empty
+			mid_3_custom_slot = empty
 			mid_4_custom_slot = ship_anti_air_1
 			front_1_custom_slot = ship_light_battery_1
 
 			right_2_custom_slot = ship_torpedo_2_3x
-			right_4_custom_slot = ship_torpedo_2_3x
+			right_3_custom_slot = ship_torpedo_2_3x
+			right_4_custom_slot = ship_light_battery_1
 
 			left_1_custom_slot = ship_torpedo_2_3x
 			left_3_custom_slot = ship_torpedo_2_3x
+			left_4_custom_slot = ship_light_battery_1
 		}
 		obsolete = yes
 	}
@@ -1180,16 +1182,18 @@ if = {
 
 			rear_1_custom_slot = ship_depth_charge_1
 			mid_1_custom_slot = ship_light_battery_1
-			mid_2_custom_slot = ship_light_battery_1
-			mid_3_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = empty
+			mid_3_custom_slot = empty
 			mid_4_custom_slot = ship_anti_air_1
 			front_1_custom_slot = ship_light_battery_1
 
 			right_2_custom_slot = ship_torpedo_2_3x
-			right_4_custom_slot = ship_torpedo_2_3x
+			right_3_custom_slot = ship_torpedo_2_3x
+			right_4_custom_slot = ship_light_battery_1
 
 			left_1_custom_slot = ship_torpedo_2_3x
 			left_3_custom_slot = ship_torpedo_2_3x
+			left_4_custom_slot = ship_light_battery_1
 		}
 		obsolete = yes
 	}
@@ -1210,16 +1214,18 @@ if = {
 
 			rear_1_custom_slot = ship_depth_charge_1
 			mid_1_custom_slot = ship_light_battery_1
-			mid_2_custom_slot = ship_light_battery_1
-			mid_3_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = empty
+			mid_3_custom_slot = empty
 			mid_4_custom_slot = ship_anti_air_1
 			front_1_custom_slot = ship_light_battery_1
 
 			right_2_custom_slot = ship_torpedo_2_3x
-			right_4_custom_slot = ship_torpedo_2_3x
+			right_3_custom_slot = ship_torpedo_2_3x
+			right_4_custom_slot = ship_light_battery_1
 
 			left_1_custom_slot = ship_torpedo_2_3x
 			left_3_custom_slot = ship_torpedo_2_3x
+			left_4_custom_slot = ship_light_battery_1
 		}
 		obsolete = yes
 	}

@@ -1,17 +1,17 @@
 -- 1 --
-ENG
-FRA
-GER
-ITA
-JAP
-SOV
-USA
+# ENG
+# FRA
+# GER
+# ITA
+# JAP
+# SOV
+# USA
 
 -- 2 --
 DEN
-FIN
+# FIN
 GRE
-HOL
+# HOL
 NOR
 POR
 SPR
