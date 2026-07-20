@@ -6,19 +6,16 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
-			version_name = "[AOM] Interwar Fighter"
 		}
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
-			version_name = "[AOM] Interwar Fighter"
 		}
 		# Groupement de Bombardment 6
 		# Groupement de Bombardment 9
 		large_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 60
-			version_name = "[AOM] Interwar Bomber"
 		}
 	}
 
@@ -28,7 +25,6 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
-			version_name = "[AOM] Interwar Fighter"
 		}
 	}
 
@@ -38,7 +34,6 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
-			version_name = "[AOM] Interwar Fighter"
 		}
 		# Groupement de Bombardment 1
 		# Groupement de Bombardment 6
@@ -46,13 +41,11 @@ air_wings = {
 		medium_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 90
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 		# Groupement de Bombardment d'Assault 19
 		large_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 24
-			version_name = "[AOM] Interwar Bomber"
 		}
 	}
 
@@ -62,13 +55,11 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 48
-			version_name = "[AOM] Interwar Fighter"
 		}
 		# Groupement de Bombardment du Nord-Africain
 		medium_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 30
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 	}
 
@@ -78,13 +69,12 @@ air_wings = {
 		small_plane_naval_bomber_airframe_0 = {
 			owner = "FRA" 
 			amount = 24
-			version_name = "[AOM] Interwar Naval Bomber"
 		}
 	}
 	"Béarn" = {
-		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 version_name = "[AOM] Interwar CV Fighter"}
-		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 version_name = "[AOM] Interwar CV Fighter"}
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "FRA" amount = 10 version_name = "[AOM] Interwar CV Naval Bomber"}
-		cv_small_plane_naval_bomber_airframe_0 =  { owner = "FRA" amount = 10 version_name = "[AOM] Interwar CV Naval Bomber"}			
+		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 }
+		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "FRA" amount = 10 }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "FRA" amount = 10 }			
 	}
 }

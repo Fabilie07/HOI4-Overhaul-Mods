@@ -4,7 +4,6 @@ aom_starting_aircraft_designs_effect = {
 			has_tech = iw_small_airframe
 		}
 		create_equipment_variant = {
-			name = "[AOM] Interwar Bomber"
 			type = large_plane_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -24,7 +23,6 @@ aom_starting_aircraft_designs_effect = {
 		}
 		
 		create_equipment_variant = {
-			name = "[AOM] Interwar Medium Bomber"
 			type = medium_plane_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -43,7 +41,6 @@ aom_starting_aircraft_designs_effect = {
 		}
 		
 		create_equipment_variant = {
-			name = "[AOM] Interwar CV Naval Bomber"
 			type = cv_small_plane_naval_bomber_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -59,7 +56,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Interwar CV CAS"
 			type = cv_small_plane_cas_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -75,7 +71,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Interwar CV Fighter"
 			type = cv_small_plane_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -92,7 +87,6 @@ aom_starting_aircraft_designs_effect = {
 		}
 		
 		create_equipment_variant = {
-			name = "[AOM] Interwar Naval Bomber"
 			type = small_plane_naval_bomber_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -108,7 +102,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Interwar CAS"
 			type = small_plane_cas_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -124,7 +117,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Interwar Fighter"
 			type = small_plane_airframe_0
 			mark_older_equipment_obsolete = yes
 			
@@ -146,7 +138,6 @@ aom_starting_aircraft_designs_effect = {
 			has_tech = basic_large_airframe
 		}
 		create_equipment_variant = {
-			name = "[AOM] Basic Bomber"
 			type = large_plane_airframe_1
 			mark_older_equipment_obsolete = yes
 			
@@ -172,7 +163,6 @@ aom_starting_aircraft_designs_effect = {
 			has_tech = basic_medium_airframe
 		}
 		create_equipment_variant = {
-			name = "[AOM] Basic Medium Bomber"
 			type = medium_plane_airframe_1
 			mark_older_equipment_obsolete = yes
 			
@@ -197,7 +187,6 @@ aom_starting_aircraft_designs_effect = {
 			has_tech = basic_small_airframe
 		}
 		create_equipment_variant = {
-			name = "[AOM] Basic CV Naval Bomber"
 			type = cv_small_plane_naval_bomber_airframe_1
 			mark_older_equipment_obsolete = yes
 			
@@ -214,7 +203,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Basic CV CAS"
 			type = cv_small_plane_cas_airframe_1
 			mark_older_equipment_obsolete = yes
 			
@@ -231,7 +219,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Basic CV Fighter"
 			type = cv_small_plane_airframe_1
 			mark_older_equipment_obsolete = yes
 			
@@ -250,7 +237,6 @@ aom_starting_aircraft_designs_effect = {
 		}
 		
 		create_equipment_variant = {
-			name = "[AOM] Basic Naval Bomber"
 			type = small_plane_naval_bomber_airframe_1
 			mark_older_equipment_obsolete = yes
 			
@@ -267,7 +253,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Basic CAS"
 			type = small_plane_cas_airframe_1
 			mark_older_equipment_obsolete = yes
 			
@@ -284,7 +269,6 @@ aom_starting_aircraft_designs_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "[AOM] Basic Fighter"
 			type = small_plane_airframe_1
 			mark_older_equipment_obsolete = yes
 			

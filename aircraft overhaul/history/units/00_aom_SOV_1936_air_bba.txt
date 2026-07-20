@@ -8,13 +8,11 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
-			version_name = "[AOM] Interwar Fighter"
 		}
 		# 18ya Bombardirovochnye Aviabrigada
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 	}
 
@@ -24,14 +22,12 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
-			version_name = "[AOM] Interwar Fighter"
 		}
 		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
 		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
 		large_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 48
-			version_name = "[AOM] Interwar Bomber"
 		}
 		# TODO -- 46ya Transporta Aviabrigada -- transport planes
 	}
@@ -42,19 +38,16 @@ air_wings = {
 		small_plane_airframe_1 = {
 			owner = "SOV" 
 			amount = 94
-			version_name = "[AOM] Basic Fighter"
 		}
 		# 14ya Istrebitel'nye Aviabrigada
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
-			version_name = "[AOM] Interwar Fighter"
 		}
 		# 16ya Bombardirovochnye Aviabrigada
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 	}
 
@@ -64,19 +57,16 @@ air_wings = {
 		small_plane_airframe_1 = {
 			owner = "SOV" 
 			amount = 94
-			version_name = "[AOM] Basic Fighter"
 		}
 		# 1ya Bombardirovochnye Aviabrigada
 		# 10ya Bombardirovochnye Aviabrigada
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 	}
 
@@ -87,18 +77,15 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
-			version_name = "[AOM] Interwar Fighter"
 		}
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
-			version_name = "[AOM] Interwar Fighter"
 		}
 		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
 		large_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 24
-			version_name = "[AOM] Interwar Bomber"
 		}
 	}
 
@@ -108,7 +95,6 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 54
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 	}
 	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
@@ -117,7 +103,6 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 54
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 	}
 }
@@ -133,7 +118,6 @@ instant_effect = {
 		equipment = {
 			type = small_plane_airframe_1
 			creator = "SOV" 
-			version_name = "[AOM] Basic Fighter"
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -145,7 +129,6 @@ instant_effect = {
 		equipment = {
 			type = medium_plane_airframe_1
 			creator = "SOV" 
-			version_name = "[AOM] Basic Medium Bomber"
 		}
 		requested_factories = 1
 		progress = 0.2
@@ -157,7 +140,6 @@ instant_effect = {
 		equipment = {
 			type = large_plane_airframe_0
 			creator = "SOV"
-			version_name = "[AOM] Interwar Bomber"
 		}
 		requested_factories = 1
 		progress = 0.1

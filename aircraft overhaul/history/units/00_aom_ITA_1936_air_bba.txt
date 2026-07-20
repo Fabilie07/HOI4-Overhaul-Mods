@@ -11,19 +11,16 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 80 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Fighter"
 		} 
 		# 4a Divisione Aerea 'Drago'
 		# 6a Divisione Aerea 'Falco'
 		medium_plane_airframe_0 = { 
 			amount = 64 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Medium Bomber"
 		} 
 		medium_plane_airframe_0 = { 
 			amount = 64 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 	} 
 
@@ -33,13 +30,11 @@ air_wings = {
 		medium_plane_airframe_0 = { 
 			amount = 64 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 		# 8a Brigata Aerea 'Astore'
 		small_plane_airframe_0 = { 
 			amount = 80 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Fighter"
 		} 
 	} 
 
@@ -49,13 +44,11 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 80 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Fighter"
 		} 
 		# 3a Divisione Aerea 'Centauro'
 		medium_plane_airframe_0 = { 
 			amount = 32 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Medium Bomber"
 		} 
 	} 
 
@@ -65,7 +58,6 @@ air_wings = {
 		medium_plane_airframe_1 = { 
 			amount = 48 
 			owner = "ITA" 
-			version_name = "[AOM] Basic Medium Bomber"
 		} 
 	} 
 
@@ -75,7 +67,6 @@ air_wings = {
 		medium_plane_airframe_1 = { 
 			amount = 24 
 			owner = "ITA" 
-			version_name = "[AOM] Basic Medium Bomber"
 		} 
 	} 
 
@@ -86,13 +77,11 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 20 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Fighter"
 		} 
 		# 13a Divisione Aerea 'Pegaso'
 		medium_plane_airframe_0 = { 
 			amount = 32 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Medium Bomber"
 		} 
 	} 
 
@@ -101,17 +90,14 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 40 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Fighter"
 		}
 		medium_plane_airframe_1 = { 
 			amount = 32 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar Medium Bomber"
 		}
 		small_plane_cas_airframe_0 = { 
 			amount = 48 
 			owner = "ITA" 
-			version_name = "[AOM] Interwar CAS"
 		}
 	} 
 } 
@@ -126,7 +112,6 @@ instant_effect = {
 			equipment = { 
 				type = small_plane_cas_airframe_1 
 				creator = "ITA" 
-				version_name = "[AOM] Basic CAS"
 			} 
 
 			requested_factories = 1 
@@ -139,7 +124,6 @@ instant_effect = {
 			equipment = { 
 				type = small_plane_cas_airframe_0 
 				creator = "ITA" 
-				version_name = "[AOM] Interwar Fighter"
 			} 
 
 			requested_factories = 1 
