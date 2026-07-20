@@ -2,7 +2,7 @@ scripted_gui = {
 	nom_production_gui = {
 		context_type = player_context
 		window_name = "nom_production_container"
-		parent_window_name = "production_lines"
+		parent_window_name = production_lines
 		
 		triggers = {
 			nom_production_blocker_1_visible = { check_variable = { nom_dockyard_limit < 1 } }

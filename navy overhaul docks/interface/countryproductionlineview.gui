@@ -1471,6 +1471,456 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "production_equipment_window_military"
+		position = { x=-356 y=78}
+		show_position = { x=539 y =78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=495 height=100%% }
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+
+		containerWindowType = {
+			name = "equipments"
+			position = { x=0 y=85 }
+			size = { width=100%% height=100%% }
+			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 41
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+			margin = { top = 13 bottom = 12}
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+			}
+
+			gridboxtype = {
+				name = "equipments_grid"
+				position = { x = 9 y = 0 }
+				size = { width = 120%% height = 100%% }
+				slotsize = { width = 335 height = 80 }
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+			}
+		}
+
+		containerWindowType = {
+			name = "production_MIOs"
+			position = { x= 20 y = 12}
+			clipping = no
+			size = { width=80 height=35 }
+			Orientation = UPPER_LEFT
+
+				background = {
+					name = "MIO_bg"
+					quadTextureSprite ="GFX_mini_bg"
+				}
+		
+			iconType = {
+				name ="MIO_icon"
+				spriteType = "GFX_industrial_manufacturer_icon"
+				position = { x= 8 y = 8 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+			instantTextBoxType = {
+				name ="available_MIOs"
+				position = { x= 30 y = 8 }
+				font = "hoi_18mbs"
+				text = "999"
+				format = center
+				maxWidth = 30
+				maxHeight = 24
+				fixedsize = yes
+			}
+		}	
+
+		buttonType = {
+			name = "checkbox"
+			position = { x = -355 y = 14 }
+			quadTextureSprite ="GFX_generic_checkbox"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_checkbox
+		}
+
+		iconType = {
+			name = "generic_text_bg_203"
+			position = { x=-319 y = 15 }
+			spriteType = "GFX_generic_text_bg_203"
+			Orientation = "UPPER_RIGHT"
+		}
+
+		instantTextboxType = {
+			name = "outdated_units"
+			position = { x = -315 y = 19 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "OUTDATED_EQ"
+			maxWidth = 200
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+			Orientation = "UPPER_RIGHT"
+		}
+
+		containerWindowType = {
+			name = "resources"
+			position = { x = 10 y = 50 }
+			size = { width = 100% height = 100% }
+
+			background = {
+				name = "Background"
+				position = { x = -2 y = -2 }
+				quadTextureSprite ="GFX_generic_bg2"
+			}
+
+			iconType = {
+				name = "oil_icon"
+				position = { x=0 y=2 }
+				spriteType = "GFX_resources_strip"
+				frame = 1
+				#pdx_tooltip = "PRODUCTION_MATERIALS_OIL"
+			}
+
+			buttonType = {
+				name = "oil_checkbox"
+				position = { x = 22 y = 1 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_checkbox
+			}
+
+			iconType = {
+				name = "rubber_icon"
+				position = { x=58 y=2 }
+				spriteType = "GFX_resources_strip"
+				frame = 3
+				#pdx_tooltip = "PRODUCTION_MATERIALS_RUBBER"
+			}
+
+			buttonType = {
+				name = "rubber_checkbox"
+				position = { x = 80 y = 1 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_checkbox
+			}
+
+			iconType = {
+				name = "steel_icon"
+				position = { x=113 y=2 }
+				spriteType = "GFX_resources_strip"
+				frame = 5
+				#pdx_tooltip = "PRODUCTION_MATERIALS_STEEL"
+			}
+
+			buttonType = {
+				name = "steel_checkbox"
+				position = { x = 138 y = 1 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_checkbox
+			}
+
+			iconType = {
+				name = "aluminium_icon"
+				position = { x=173 y=1 }
+				spriteType = "GFX_resources_strip"
+				frame = 2
+				#pdx_tooltip = "PRODUCTION_MATERIALS_ALUMINIUM"
+			}
+
+			buttonType = {
+				name = "aluminium_checkbox"
+				position = { x = 195 y = 1 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_checkbox
+			}
+
+			iconType = {
+				name = "tungsten_icon"
+				position = { x=229 y=2 }
+				spriteType = "GFX_resources_strip"
+				frame = 4
+				#pdx_tooltip = "PRODUCTION_MATERIALS_TUNGSTEN"
+			}
+
+			buttonType = {
+				name = "tungsten_checkbox"
+				position = { x = 253 y = 1 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_checkbox
+			}
+
+			iconType = {
+				name = "chromium_icon"
+				position = { x=287 y=2 }
+				spriteType = "GFX_resources_strip"
+				frame = 6
+				#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
+			}
+
+			buttonType = {
+				name = "chromium_checkbox"
+				position = { x = 311 y = 1 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_checkbox
+			}
+			iconType = {
+				name = "coal_icon"
+				position = { x=346 y=2 }
+				spriteType = "GFX_resources_strip"
+				frame = 7
+				#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
+			}
+
+			buttonType = {
+				name = "coal_checkbox"
+				position = { x = 359 y = 1 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_LEFT"
+				clicksound = click_checkbox
+			}
+		}
+
+		buttonType = {
+			name = "close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
+		name = "production_equipment_window"
+		position = { x=-356 y=78}
+		show_position = { x=539 y =78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=495 height=100%% }
+		click_to_front = yes
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+
+		containerWindowType = {
+			name = "equipments"
+			position = { x=0 y=144 }
+			size = { width=100%% height=100%% }
+			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 41
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+			margin = { top = 14 bottom = 14}
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+			}
+
+			gridboxtype = {
+				name = "equipments_grid"
+				position = { x = 2 y = 0 }
+				size = { width = 120%% height = 100%% }
+				slotsize = { width = 335 height = 80 }
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+				padding = { bottom = 10 }
+			}
+		}
+
+		containerWindowType = {
+			name = "production_MIOs"
+			position = { x= 20 y = 12}
+			clipping = no
+			size = { width=80 height=35 }
+			Orientation = UPPER_LEFT
+
+				background = {
+					name = "MIO_bg"
+					quadTextureSprite ="GFX_mini_bg"
+				}
+		
+			iconType = {
+				name ="MIO_icon"
+				spriteType = "GFX_industrial_manufacturer_icon"
+				position = { x= 8 y = 8 }
+				Orientation = "UPPER_LEFT"
+			}
+		
+			instantTextBoxType = {
+				name ="available_MIOs"
+				position = { x= 30 y = 8 }
+				font = "hoi_18mbs"
+				text = "999"
+				format = center
+				maxWidth = 30
+				maxHeight = 24
+				fixedsize = yes
+			}
+		}	
+
+		buttonType = {
+			name = "checkbox"
+			position = { x = -355 y = 14 }
+			quadTextureSprite ="GFX_generic_checkbox"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_checkbox
+		}
+
+		iconType = {
+			name = "generic_text_bg_203"
+			position = { x=-319 y = 15 }
+			spriteType = "GFX_generic_text_bg_203"
+			Orientation = "UPPER_RIGHT"
+		}
+
+		instantTextboxType = {
+			name = "outdated_units"
+			position = { x = -315 y = 19 }
+			textureFile = ""
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "OUTDATED_EQ"
+			maxWidth = 200
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+			Orientation = "UPPER_RIGHT"
+		}
+
+		containerWindowType = {
+			name = "ship_filters"
+			position = { x = 12 y = 50 }
+			size = { width = 460 height = 96 }
+			margin = { top = 4 left = 4 bottom = 4 right = 4 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_mini_bg"
+			}
+
+			iconType = {
+				name = "role_icon_bg"
+				spriteType = "GFX_role_icon_bg"
+				position = { x = 396 y = 1 }
+			}
+
+			buttonType = {
+				name = "btn_role"
+				position = { x=404 y=8 }
+				spriteType = "GFX_naval_equipment_role_icons"
+			}
+
+			gridBoxType = {
+				name = "ship_type_grid"
+				position = { x=0 y=0 }
+				size = { width=353 height=57 }
+				slotsize = { width=88 height=27 }
+				max_slots_horizontal = 4
+				format = "UPPER_LEFT"
+			}
+
+		}
+
+		buttonType = {
+			name = "close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
+		name = "production_deployment_window"
+		position = { x=-356 y=78}
+		show_position = { x=540 y =78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=375 height=70%% }
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+
+		iconType = {
+			name ="header_bg"
+			spriteType = "GFX_ship_name_title_bg"
+			position = { x = 5 y = 7 }
+
+		}
+
+		instantTextboxType = {
+			name = "title"
+			position = { x = 35 y = 4 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "PRODUCTION_NAVAL_DEPLOY_LIST"
+			maxWidth = 340
+			maxHeight = 20
+		}
+
+		containerWindowType = {
+			name = "deployments"
+			position = { x=0 y=43 }
+			size = { width=100%% height=100%% }
+			verticalScrollbar = "right_vertical_slider"
+			smooth_scrolling = yes
+			margin = { top = 14 bottom = 12 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+			}
+
+			gridboxtype = {
+				name = "deployments_grid"
+				position = { x = 12 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 335 height = 36 }
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+			}
+		}
+
+		buttonType = {
+			name = "close"
+			position = { x = -43 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
 		name = "production_military_line_entry"
 		position = { x=0 y=0 }
 		size = { width=500 height=111 }
@@ -4269,365 +4719,6 @@ guiTypes = {
 			maxWidth = 310
 			maxHeight = 20
 			format = left
-		}
-	}
-
-	containerWindowType = {
-		name = "production_consumergoods_line_entry"
-		position = { x=0 y=0 }
-		size = { width = 500 height = 75 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_window"
-		}
-
-			iconType = {
-			name = "picture"
-			position = { x = 165 y = 5 }
-			spriteType = "GFX_consumer_goods"
-		}
-
-		instantTextboxType = {
-			name = "goods"
-			position = { x = 210 y = 20 }
-			textureFile = ""
-			font = "hoi_18b"
-			text = "consumer goods"
-			maxWidth = 120
-			maxHeight = 20
-			format = center
-		}
-
-		instantTextboxType = {
-			name = "factories"
-			position = { x = 310 y = 20 }
-			textureFile = ""
-			font = "hoi_18b"
-			text = "-"
-			maxWidth = 120
-			maxHeight = 20
-			format = center
-		}
-	}
-
-	containerWindowType = {
-		name = "military_equipment_info_entry"
-		position = { x=0 y=0 }
-		size = { width=342 height= 80 }
-		clipping = no
-
-		buttonType = {
-			name = "equipment_button"
-			position = { x=5 y=4 }
-			quadTextureSprite = "GFX_equipment_item_large_02"
-			clicksound = click_default
-			frame = 1
-		}
-		
-		iconType = {
-			name ="outdated_equipment_overlay"
-			spriteType = "GFX_outdated_naval_equipment_overlay"
-			position = { x=9 y=5 }
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name = "prod_line_glow"
-			position = { x = 9 y = 7 }
-			spriteType = "GFX_new_equipment_glow_large"
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name ="equipment_icon"
-			spriteType = "GFX_technology_medium"
-			position = { x=205 y=51 }
-			centerposition = yes
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name = "creator_flag"
-			quadTextureSprite ="GFX_flag_small"
-			position = { x = 342 y = 25 }
-		}
-		
-		iconType = {
-			name = "role_icon"
-			spriteType = "GFX_wing_types_map"
-			position = { x = 334 y = 10 }
-			alwaystransparent = yes
-		}
-		
-		containerWindowType = {
-			name = "missions"
-			position = { x = 67 y = 60 }
-			size = { width = 150 height = 20 }
-			Orientation = upper_left
-
-			gridboxtype = {
-				name = "mission_grid"
-				size = { width = 150 height = 20 }
-				slotsize = { width = 25 height = 20 }
-				max_slots = { x = 6 y = 2 }
-				format = "LOWER_LEFT"
-			}
-		}
-		
-		iconType = {
-			name ="equipment_designer"
-			spriteType = "GFX_tech_idea_bg"
-			position = { x = 15 y = 34 }
-			scale = 0.5
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name ="equipment_designer_can_upgrade"
-			spriteType = "GFX_refitting"
-			position = { x = 42 y = 42 }
-			scale = 1
-			pdx_tooltip = "INDUSTRIAL_ORG_TOOLTIP_UPGRADE_ALREADY_ASSIGNED_MIO_DELAYED"
-		}
-
-		iconType = {
-			name ="sub_tech"
-			spriteType = "GFX_land_equipment_role_icons"
-			position = { x=300 y=40 }
-			frame = 1
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name = "carrier_fighter_icon"
-			position = { x = 310 y = 55 }
-			spriteType = "GFX_airwing_carrier_icon"
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "name"
-			position = { x = 20 y = 6 }
-			font = "hoi_18mbs"
-			text = "Maus"
-			maxWidth = 308
-			maxHeight = 19
-			multiline = no
-			format = left
-			alwaystransparent = yes
-		}
-
-		instantTextboxType = {
-			name = "general_name"
-			position = { x = 20 y = 22 }
-			font = "hoi_16mbs"
-			text = "Perkele-tankki"
-			maxWidth = 308
-			maxHeight = 17
-			multiline = no
-			format = left
-			alwaystransparent = yes
-		}
-
-		gridBoxType = {
-			name = "resources_grid"
-			position = { x = 370 y = 10 }
-			size = { width = 48 height = 150 }
-			slotsize = { width = 35 height = 23 }
-			max_slots_vertical = 6
-			max_slots_horizontal = 1
-			format = "UPPER_LEFT"
-		}
-
-		buttonType = {
-			name = "variant"
-			position = { x=417 y=37 }
-			spriteType = "GFX_create_variants_button"
-			clicksound = click_default
-			frame = 1
-		}
-
-		buttonType = {
-			name = "obsolete"
-			position = { x=426 y=15 }
-			spriteType = "GFX_toggle_obsolete_button"
-			clicksound = click_default
-		}
-
-		instantTextboxType = {
-			name = "production_cost"
-			position = { x = 15 y = 61 }
-			font = "hoi_18mbs"
-			text = "cost 9001"
-			maxWidth = 160
-			maxHeight = 30
-			format = left
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name ="design_invalid"
-			spriteType = "GFX_design_not_valid"
-			position = { x = 341 y = 52 }
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name ="blueprint_icon"
-			spriteType = "GFX_blueprint"
-			position = { x = 341 y = 52 }
-			alwaystransparent = yes
-		}
-
-	}
-
-	containerWindowType = {
-		name = "production_naval_new_line_entry"
-		position = { x=0 y=0 }
-		size = { width=513 height= 108 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_production_item"
-		}
-
-
-		iconType = {
-			name ="production_line_selected"
-			spriteType = "GFX_production_line_selected"
-			position = { x= 0 y = 0 }
-		}
-
-		iconType = {
-			name = "equipment_button"
-			position = { x=1 y=27 }
-			spriteType = "GFX_prod_naval_equipment_item_large"
-		}
-
-		iconType = {
-			name ="equipment_icon"
-			spriteType = "GFX_technology_medium"
-			position = { x=140 y=68 }
-			scale=0.8
-			centerposition = yes
-			alwaystransparent = yes
-		}
-
-		buttonType = {
-			name = "increase_amount"
-			position = { x=282 y=26 }
-			quadTextureSprite = "GFX_naval_increase_amount"
-			pdx_tooltip = "NAVAL_SERIES_INCREASE_DESC"
-			clicksound = click_default
-		}
-
-		buttonType = {
-			name = "decrease_amount"
-			position = { x=282 y=74 }
-			quadTextureSprite = "GFX_naval_decrease_amount"
-			pdx_tooltip = "NAVAL_SERIES_DECREASE_DESC"
-			clicksound = click_default
-		}
-
-		instantTextboxType = {
-			name = "amount"
-			position = { x = 283 y = 56 }
-			font = "hoi_18b"
-			text = "INFINITY"
-			maxWidth = 30
-			maxHeight = 30
-			format = centre
-			pdx_tooltip = "NAVAL_SERIES_AMOUNT_DESC"
-		}
-
-		#iconType = {
-		#	name ="progressbar"
-		#	spriteType = "GFX_prod_progress_bar2"
-		#	position = { x= 158 y = 31 }
-		#}
-#
-		#instantTextboxType = {
-		#	name = "speed"
-		#	position = { x = 157 y = 32 }
-		#	textureFile = ""
-		#	font = "hoi_18mbs"
-		#	text = "--"
-		#	maxWidth = 120
-		#	maxHeight = 20
-		#	format = center
-		#}
-
-		#iconType = {
-		#	name = "increase_priority"
-		#	position = { x=488 y=41 }
-		#	spriteType = "GFX_arrow_up_small"
-		#}
-		#
-		#iconType = {
-		#	name = "decrease_priority"
-		#	position = { x=488 y=70	 }
-		#	spriteType = "GFX_arrow_down_small"
-		#}
-
-		#buttonType = {
-		#	name = "deploy_location"
-		#	position = { x=200 y=-1	 }
-		#	quadTextureSprite = "GFX_naval_deploy_button"
-		#	buttonFont = "hoi_16mbs"
-		#	clicksound = click_default
-		#}
-
-		instantTextboxType = {
-			name = "name"
-			position = { x = 14 y = 3 }
-			font = "hoi_18mbs"
-			borderSize = {x = 0 y = 0}
-			maxWidth = 310
-			maxHeight = 20
-			format = left
-		}
-	}
-
-	containerWindowType = {
-		name = "production_consumergoods_line_entry"
-		position = { x=0 y=0 }
-		size = { width = 500 height = 75 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_window"
-		}
-
-			iconType = {
-			name = "picture"
-			position = { x = 165 y = 5 }
-			spriteType = "GFX_consumer_goods"
-		}
-
-		instantTextboxType = {
-			name = "goods"
-			position = { x = 210 y = 20 }
-			textureFile = ""
-			font = "hoi_18b"
-			text = "consumer goods"
-			maxWidth = 120
-			maxHeight = 20
-			format = center
-		}
-
-		instantTextboxType = {
-			name = "factories"
-			position = { x = 310 y = 20 }
-			textureFile = ""
-			font = "hoi_18b"
-			text = "-"
-			maxWidth = 120
-			maxHeight = 20
-			format = center
 		}
 	}
 
