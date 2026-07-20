@@ -8124,24 +8124,14 @@ guiTypes = {
 		name = "technology_unit_statlist_item_equipment"
 		position = { x=0 y=0 }
 		clipping = no
-		
+
 		iconType = {
 			name = "design_team_icon"
 			position = { x = 462 y = 55 }
 			spriteType = "GFX_add_pol_idea_button"
 			centerposition = yes
 		}
-		
-		# gridboxtype = {
-			# name = "research_groups_grid"
-			# position = { x = 422 y = 25 }
-			# size = { width = 120 height = 60 }
-			# slotsize = { width = 60 height = 60 }
-			# max_slots_horizontal = 2
-			# max_slots_vertical = 1
-			# format = "UPPER_LEFT"
-		# }
-		
+
 		iconType = {
 			name = "unit_icon"
 			position = { x = 240 y = 40 }
@@ -8159,20 +8149,20 @@ guiTypes = {
 			pdx_tooltip = "PRODUCTION_RESOURCE_DESC"
 			format = left
 		}
-		
+
 		iconType = {
 			name = "equipment_icon"
 			position = { x = 140 y = 27 }
 			spriteType = "GFX_land_equipment_role_icons"
 			frame = 1
 		}
-		
+
 		iconType = {
 			name = "carrier_fighter_icon"
 			position = { x = 157 y = 6 }
 			spriteType = "GFX_airwing_carrier_icon"
 		}
-		
+
 		gridboxtype = {
 			name = "stats_grid"
 			position = { x = 25 y = 95 }
@@ -8181,7 +8171,7 @@ guiTypes = {
 			max_slots_horizontal = 2
 			format = "UPPER_LEFT"
 		}
-		
+
 		gridboxtype = {
 			name = "air_missions_grid"
 			position = { x = 15 y = 40 }
@@ -8190,7 +8180,7 @@ guiTypes = {
 			max_slots_horizontal = 10
 			format = "UPPER_LEFT"
 		}
-		
+
 		instantTextboxType = {
 			name = "leader_bonuses_header"
 			font = "hoi4_typewriter16"
@@ -8237,20 +8227,20 @@ guiTypes = {
 			max_slots_horizontal = 5
 			format = "UPPER_LEFT"
 		}
-		
+
 		containerWindowType = {
 			name = "3d_container"
 			position = { x=0 y=0 }
 			clipping = no
-			
+
 			containerWindowType = {
 				name = "border_container"
 				position = { x=0 y=5 }
 				size = { width = 487 height = 276 }
-				
+
 				background = {
 					name ="bg_tech_button"
-					spriteType = "GFX_division_3d_bg"	
+					spriteType = "GFX_division_3d_bg"
 					position = { x=0 y=0 }
 					size = { x=100%% y=100%%}
 				}
@@ -8262,21 +8252,21 @@ guiTypes = {
 				position = { x= 5 y = 10 }
 				##size = { width=300 height=80 }
 			}
-			
+
 			buttonType = {
 				name = "prev_model"
 				position = { x=367 y=12 }
 				quadTextureSprite = "GFX_arrow_up_small"
 				clicksound = click_default
 			}
-			
+
 			buttonType = {
 				name = "next_model"
 				position = { x=367 y=38	 }
 				quadTextureSprite = "GFX_arrow_down_small"
 				clicksound = click_default
 			}
-			
+
 			iconType = {
 				name ="3d_switch"
 				quadTextureSprite = "GFX_2d_3d_switch"
@@ -8289,8 +8279,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "technology_unit_statlist_item_module"
 		position = { x=0 y=0 }
-		clipping = no		
-		
+		clipping = no
+
 		instantTextboxType = {
 			name = "production_resources"
 			position = { x= 5 y= 12 }
@@ -8300,7 +8290,7 @@ guiTypes = {
 			pdx_tooltip = "PRODUCTION_RESOURCE_DESC"
 			format = left
 		}
-		
+
 		iconType = {
 			name = "equipment_icon"
 			position = { x = 240 y = 40 }
@@ -8308,13 +8298,51 @@ guiTypes = {
 			centerposition = yes
 			frame = 1
 		}
-		
+
 		gridboxtype = {
 			name = "stats_grid"
 			position = { x = 25 y = 95 }
 			size = { width = 400 height = 400 }
 			slotsize = { width = 224 height = 30 }
 			max_slots_horizontal = 2
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
 
@@ -8327,12 +8355,12 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_unlocks_statlist_item_building"
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		clipping = no
-		
+
 		instantTextboxType = {
 			name = "label"
 			position = { x = 10 y = 5 }
@@ -8342,23 +8370,23 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-		
+
 		iconType = {
 			name = "icon"
 			position = { x = 220 y = 20 }
 			spriteType = "GFX_tiled_window_transparent_transparent"
-			centerposition = yes			
+			centerposition = yes
 		}
-		
+
 		gridboxtype = {
 			name = "stats_grid"
-			position = { x = 15 y = 50 } 
+			position = { x = 15 y = 50 }
 			size = { width = 400 height = 200 }
 			slotsize = { width = 200 height = 30 }
-			max_slots_horizontal = 1 
+			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
-		
+
 		gridboxtype = {
 			name = "subunit_stats_grid"
 			position = { x = 25 y = 65 }
@@ -8367,7 +8395,45 @@ guiTypes = {
 			max_slots_horizontal = 2
 			format = "UPPER_LEFT"
 		}
-		
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
 			position = { x = 35 y = 65 } # Y set in code
@@ -8380,9 +8446,9 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "technology_unlocks_statlist_item_tactic"
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		clipping = no
-		
+
 		instantTextboxType = {
 			name = "label"
 			position = { x = 10 y = 5 }
@@ -8392,23 +8458,23 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-		
+
 		iconType = {
 			name = "icon"
 			position = { x = 220 y = 20 }
 			spriteType = "GFX_tiled_window_transparent_transparent"
-			centerposition = yes			
+			centerposition = yes
 		}
-		
+
 		gridboxtype = {
 			name = "stats_grid"
-			position = { x = 15 y = 50 } 
+			position = { x = 15 y = 50 }
 			size = { width = 400 height = 200 }
 			slotsize = { width = 200 height = 30 }
-			max_slots_horizontal = 1 
+			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
-		
+
 		gridboxtype = {
 			name = "subunit_stats_grid"
 			position = { x = 35 y = 65 }
@@ -8417,7 +8483,45 @@ guiTypes = {
 			max_slots_horizontal = 2
 			format = "UPPER_LEFT"
 		}
-		
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
 			position = { x = 35 y = 65 } # Y set in code
@@ -8430,9 +8534,9 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "technology_unlocks_statlist_item_subunit"
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		clipping = no
-		
+
 		instantTextboxType = {
 			name = "label"
 			position = { x = 10 y = 5 }
@@ -8442,14 +8546,14 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-		
+
 		iconType = {
 			name = "icon"
 			position = { x = 220 y = 20 }
 			spriteType = "GFX_tiled_window_transparent_transparent"
-			centerposition = yes			
+			centerposition = yes
 		}
-		
+
 		instantTextboxType = {
 			name = "subunit_name"
 			position = { x = 160 y = 25 }
@@ -8458,22 +8562,22 @@ guiTypes = {
 			maxWidth = 300
 			maxHeight = 20
 		}
-		
+
 		iconType = {
 			name = "subunit_icon"
 			position = { x = 80 y = 12 }
 			spriteType = "GFX_buildings_strip"
 		}
-		
+
 		gridboxtype = {
 			name = "stats_grid"
-			position = { x = 15 y = 50 } 
+			position = { x = 15 y = 50 }
 			size = { width = 400 height = 200 }
 			slotsize = { width = 200 height = 30 }
-			max_slots_horizontal = 1 
+			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
-		
+
 		gridboxtype = {
 			name = "subunit_stats_grid"
 			position = { x = 25 y = 65 }
@@ -8482,7 +8586,45 @@ guiTypes = {
 			max_slots_horizontal = 2
 			format = "UPPER_LEFT"
 		}
-		
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
 			position = { x = 35 y = 65 } # Y set in code
@@ -8492,12 +8634,12 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_unit_statlist_item_upgrade"
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		clipping = no
-		
+
 		instantTextboxType = {
 			name = "label"
 			position = { x = 55 y = 25 }
@@ -8508,7 +8650,7 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
-		
+
 		gridboxtype = {
 			name = "subunit_stats_grid"
 			position = { x = 0 y =  15 }
@@ -8517,13 +8659,13 @@ guiTypes = {
 			max_slots_horizontal = 7
 			format = "UPPER_LEFT"
 		}
-		
+
 		iconType = {
 			name = "unit_icon"
 			position = { x = 0 y = 15 }
 			spriteType = "GFX_tiled_window_transparent_transparent"
 		}
-		
+
 		gridboxtype = {
 			name = "stats_grid"
 			position = { x = 90 y = 50 }
@@ -8532,7 +8674,46 @@ guiTypes = {
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
-		
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+
 		gridboxtype = {
 			name = "terrain_modifiers_grid"
 			position = { x = 35 y = 65 } # Y set in code
@@ -8542,12 +8723,12 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_unit_statlist_item_modifier"
-		position = { x=0 y=0 }	
+		position = { x=0 y=0 }
 		clipping = no
-		
+
 		instantTextboxType = {
 			name = "label"
 			position = { x = 120 y = -20 }
@@ -8557,13 +8738,13 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-		
+
 		iconType = {
 			name = "unit_icon"
 			position = { x = 100 y = 25 }
 			spriteType = "GFX_tiled_window_transparent_transparent"
 		}
-		
+
 		gridboxtype = {
 			name = "stats_grid"
 			position = { x = 90 y = 25 }
@@ -8572,11 +8753,49 @@ guiTypes = {
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
 		}
+
+		instantTextboxType = {
+			name = "leader_bonuses_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "leader_bonuses_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "support_category_multipliers_header"
+			font = "hoi4_typewriter16"
+			position = { x = 35 y = 65 } # Y set in code
+			maxWidth = 500
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+		}
+
+		gridboxtype = {
+			name = "support_category_multipliers_grid"
+			position = { x = 90 y = 70 } # Y set in code
+			size = { width = 400 height = 400 }
+			slotsize = { width = 224 height = 30 }
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_unit_stat_item"
-		position = { x=0 y=2 }	
+		position = { x=0 y=2 }
 		size = { width=224 height=25 }
 		clipping = no
 
@@ -8584,7 +8803,7 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_stats_entry_bg"
 		}
-		
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = -5 y = 12 }
@@ -8595,7 +8814,7 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
-		
+
 		instantTextboxType = {
 			name = "amount"
 			position = { x = 110 y = 12 }
@@ -8605,7 +8824,7 @@ guiTypes = {
 			maxHeight = 20
 			format = right
 		}
-		
+
 		instantTextboxType = {
 			name = "diff"
 			position = { x = 195 y = 0 }
@@ -8616,10 +8835,10 @@ guiTypes = {
 			format = right
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_unlocks_item"
-		position = { x=10 y=2 }	
+		position = { x=10 y=2 }
 		size = { width=402 height=40 }
 		clipping = no
 
@@ -8627,7 +8846,7 @@ guiTypes = {
 		#	name = "Background"
 		#	spriteType ="GFX_stats_entry_bg"
 		#}
-		
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = 100 y = 10 }
@@ -8637,17 +8856,17 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 		}
-		
+
 		iconType = {
 			name = "icon"
 			position = { x = 50 y = 0 }
 			spriteType = "GFX_buildings_strip"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_tactics_item"
-		position = { x=10 y=2 }	
+		position = { x=10 y=2 }
 		size = { width=201 height=30 }
 		clipping = no
 
@@ -8655,7 +8874,7 @@ guiTypes = {
 		#	name = "Background"
 		#	spriteType ="GFX_stats_entry_bg"
 		#}
-		
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = 120 y = 10 }
@@ -8665,7 +8884,7 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 		}
-		
+
 		iconType = {
 			name = "icon"
 			position = { x = 20 y = -5 }
@@ -8675,16 +8894,16 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "technology_unit_upgrade_stat_item"
-		position = { x=10 y=2 }	
+		position = { x=10 y=2 }
 		size = { width=201 height=25 }
 		clipping = no
 
 		background = {
 			name = "Background"
 			spriteType ="GFX_stats_entry_long_bg"
-			position = { x = -30 y = 0 }			
+			position = { x = -30 y = 0 }
 		}
-		
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = -30 y = 2 }
@@ -8695,7 +8914,7 @@ guiTypes = {
 			format = left
 			multiline = no
 		}
-		
+
 		instantTextboxType = {
 			name = "amount"
 			position = { x = 220 y = 2 }
@@ -8705,7 +8924,7 @@ guiTypes = {
 			maxHeight = 20
 			format = right
 		}
-		
+
 		#instantTextboxType = {
 		#	name = "diff"
 		#	position = { x = 195 y = 0 }
@@ -8716,10 +8935,10 @@ guiTypes = {
 		#	format = right
 		#}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_subunit_unlock_stat_item"
-		position = { x=0 y=2 }	
+		position = { x=0 y=2 }
 		size = { width=224 height=25 }
 		clipping = no
 
@@ -8727,7 +8946,7 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_stats_entry_bg"
 		}
-		
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = -5 y = 12 }
@@ -8738,7 +8957,7 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
-		
+
 		instantTextboxType = {
 			name = "amount"
 			position = { x = 110 y = 12 }
@@ -8748,7 +8967,7 @@ guiTypes = {
 			maxHeight = 20
 			format = right
 		}
-		
+
 		instantTextboxType = {
 			name = "diff"
 			position = { x = 195 y = 0 }
@@ -8759,9 +8978,9 @@ guiTypes = {
 			format = right
 		}
 	}
-	
+
 	containerWindowType = {
-		name = "technology_subunit_adjuster_entry"	
+		name = "technology_subunit_adjuster_entry"
 		size = { width = 70 height = 62 }
 		clipping = no
 
@@ -8784,7 +9003,7 @@ guiTypes = {
 			position = { x=34 y=42 }
 			frame = 1
 		}
-		
+
 		iconType = {
 			name ="terrain_mod_movement_strip"
 			spriteType = "GFX_terrain_mod_movement_strip"
@@ -8799,19 +9018,19 @@ guiTypes = {
 			frame = 1
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_tech_stat_item"
-		position = { x=10 y=2 }	
+		position = { x=10 y=2 }
 		size = { width=201 height=25 }
 		clipping = no
 
 		background = {
 			name = "Background"
 			spriteType ="GFX_stats_entry_long_bg"
-			position = { x = -30 y = 0 }				
+			position = { x = -30 y = 0 }
 		}
-		
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = -30 y = 2 }
@@ -8821,7 +9040,7 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 		}
-		
+
 		instantTextboxType = {
 			name = "amount"
 			position = { x = 220 y = 2 }
@@ -8832,14 +9051,14 @@ guiTypes = {
 			format = right
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "technology_info_category_header"
-		position = { x=110 y=0 }	
+		position = { x=110 y=0 }
 		size = { width=201 height=30 }
 		clipping = no
 
-		
+
 		instantTextboxType = {
 			name = "header"
 			position = { x = 130 y = 18 }
@@ -8850,11 +9069,11 @@ guiTypes = {
 			format = center
 		}
 	}
-	
-	
+
+
 	containerWindowType = {
 		name = "padding_window"
 		position = { x=0 y=0 }
 		size = { width=1 height=1 }
-	}	
+	}
 }
