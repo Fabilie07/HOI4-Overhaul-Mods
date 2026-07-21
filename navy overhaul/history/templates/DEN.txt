@@ -1,0 +1,156 @@
+if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		torpedoboat_destroyer_hull = 1
+		early_destroyer_hull_1 = 1
+		
+		early_light_cruiser_hull = 1
+		scout_cruiser_hull_1 = 1
+		scout_cruiser_hull_2 = 1
+		scout_cruiser_hull_3 = 1
+		
+		armored_cruiser_hull = 1
+		armored_cruiser_hull_2 = 1
+		
+		predreadnought_ship_hull = 1
+		
+		early_submarine_hull_1 = 1
+		early_submarine_hull_2 = 1
+		early_submarine_hull_3 = 1
+		early_submarine_hull_4 = 1
+		early_submarine_hull_5 = 1
+		
+		auxiliary_hull_1 = 1
+		
+		basic_cruiser_armor_scheme = 1
+		improved_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		advanced_ship_torpedo_launcher = 1
+		basic_depth_charges = 1
+		basic_naval_mines = 1
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Aegir"
+		type = ship_hull_coastal_submarine_1
+		name_group = DEN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_anti_air_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Rota"
+		type = ship_hull_early_submarine_4
+		name_group = DEN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_anti_air_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Daphne"
+		type = ship_hull_early_submarine_4
+		name_group = DEN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+
+			rear_1_custom_slot = ship_torpedo_sub_2
+			front_1_custom_slot = ship_torpedo_sub_3
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Herluf Trolle"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = DEN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = medium_ship_armor_3
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = ship_medium_battery_1
+			
+			right_2_custom_slot = ship_secondaries_1_1x
+			right_3_custom_slot = ship_secondaries_1_1x
+			right_4_custom_slot = ship_torpedo_1_1x
+			
+			left_2_custom_slot = ship_secondaries_1_1x
+			left_3_custom_slot = ship_secondaries_1_1x
+			left_4_custom_slot = ship_torpedo_1_1x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Niels Iuel"				
+		type = ship_hull_early_cruiser_3
+		name_group = DEN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_engine_slot = cruiser_ship_engine_0
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_armor_slot = medium_ship_armor_3
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_light_medium_battery_2_2x
+			
+			right_1_custom_slot = ship_secondaries_1_1x
+			right_2_custom_slot = ship_secondaries_1_1x
+			right_3_custom_slot = ship_secondaries_1_1x
+			right_4_custom_slot = ship_torpedo_1_1x
+			
+			left_1_custom_slot = ship_secondaries_1_1x
+			left_2_custom_slot = ship_secondaries_1_1x
+			left_3_custom_slot = ship_secondaries_1_1x
+			left_4_custom_slot = ship_torpedo_1_1x
+		}
+	}
+}

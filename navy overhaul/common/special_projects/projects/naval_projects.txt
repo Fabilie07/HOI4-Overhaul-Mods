@@ -3779,7 +3779,7 @@ sp_naval_underway_replenishment = {
 	
 	available = {
 		FROM = {
-			has_tech = oil_tankers
+			has_tech = auxiliary_hull_3
 		}
 	}
 
@@ -3801,7 +3801,7 @@ sp_naval_underway_replenishment = {
 			custom_effect_tooltip = {
 				localization_key = SP_UNLOCK_TECH
 				TECH = sp_multi_product_supply_ships
-				}			
+			}			
 			set_rule = {
 				can_use_underway_replenishment = yes
 			}

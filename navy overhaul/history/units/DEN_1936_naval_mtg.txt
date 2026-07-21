@@ -1,0 +1,22 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Den Danske Flåde"			
+		naval_base = 6287  # Copenhagen
+		task_force = {
+			name = "Den Danske Flåde"
+			location = 6287  # Copenhagen			
+			ship = { name = "HDMS Peder Skram" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = DEN version_name = "Herluf Trolle" } } }
+			ship = { name = "HDMS Niels Iuel" definition = light_cruiser equipment = { ship_hull_early_cruiser_3 = { amount = 1 owner = DEN version_name = "Niels Iuel" } } }
+			ship = { name = "HDMS Rota" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = DEN version_name = "Rota" } } }			
+			ship = { name = "HDMS Bellona" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = DEN version_name = "Rota" } } }		
+			ship = { name = "HDMS Flora" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = DEN version_name = "Rota" } } }
+			ship = { name = "HDMS Daphne" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = DEN version_name = "Daphne" } } }
+			ship = { name = "HDMS Dryaden" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = DEN version_name = "Daphne" } } }
+			ship = { name = "HDMS Ran" definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = DEN version_name = "Aegir" } } }
+			ship = { name = "HDMS Triton" definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = DEN version_name = "Aegir" } } }
+			ship = { name = "HDMS Galathea" definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = DEN version_name = "Aegir" } } }
+		}				
+	}
+}

@@ -8,14 +8,14 @@
 # USA
 
 -- 2 --
-DEN
+# DEN
 # FIN
 GRE
 # HOL
 NOR
 POR
 SPR
-SWE
+# SWE
 TUR
 
 -- 3 --
