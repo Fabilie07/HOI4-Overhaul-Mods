@@ -1,0 +1,323 @@
+if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		torpedoboat_destroyer_hull = 1
+		early_destroyer_hull_1 = 1
+		early_destroyer_hull_2 = 1
+		destroyer_leader_hull_1 = 1
+		early_destroyer_hull_3 = 1
+		
+		early_light_cruiser_hull = 1
+		scout_cruiser_hull_1 = 1
+		scout_cruiser_hull_2 = 1
+		scout_cruiser_hull_3 = 1
+		scout_cruiser_hull_4 = 1
+		early_ship_hull_cruiser = 1
+		
+		armored_cruiser_hull = 1
+		armored_cruiser_hull_2 = 1
+		early_heavy_cruiser_hull = 1
+		early_heavy_cruiser_hull_2 = 1
+		early_heavy_cruiser_hull_3 = 1
+		
+		predreadnought_ship_hull = 1
+		basic_dreadnought_ship_hull = 1
+		improved_dreadnought_ship_hull = 1
+		
+		early_submarine_hull_1 = 1
+		early_submarine_hull_2 = 1
+		early_submarine_hull_3 = 1
+		early_submarine_hull_4 = 1
+		early_submarine_hull_5 = 1
+		
+		auxiliary_hull_1 = 1
+		auxiliary_hull_2 = 1
+		auxiliary_hull_3 = 1
+		
+		basic_cruiser_armor_scheme = 1
+		improved_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		improved_light_battery = 1
+		advanced_light_battery = 1
+		basic_heavy_battery = 1
+		improved_heavy_battery = 1
+		advanced_heavy_battery = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		advanced_ship_torpedo_launcher = 1
+		basic_depth_charges = 1
+		basic_depth_charges = 2
+		basic_naval_mines = 1
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "B Class"
+		type = ship_hull_early_submarine_4
+		parent_version = 0
+		name_group = SPR_SS_HISTORICAL
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "C Class"				
+		type = ship_hull_early_submarine_4
+		name_group = SPR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_batteries_slot = sub_batteries_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_ammo_1_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_torpedo_sub_1
+			mid_2_custom_slot = sub_ballast_tank
+			front_1_custom_slot = ship_torpedo_sub_3
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Alsedo"				
+		type = ship_hull_early_destroyer_2
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_4x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_torpedo_2_2x
+			mid_2_custom_slot = ship_torpedo_2_2x
+			mid_3_custom_slot = ship_light_battery_2
+			mid_4_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_light_battery_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Churucca"	
+		type = ship_hull_early_destroyer_3
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_light_battery_3_2x
+			mid_1_custom_slot = ship_torpedo_2_3x
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_light_battery_3
+			mid_4_custom_slot = ship_light_battery_3
+			front_1_custom_slot = ship_light_battery_3
+			
+			right_1_custom_slot = ship_depth_charge_1
+			
+			left_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Júpiter"					# minelayers
+		type = ship_hull_auxiliary_3
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_mine_layer_1
+			mid_1_custom_slot = ship_light_battery_2
+			mid_2_custom_slot = ship_light_battery_2
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_light_battery_2
+			front_1_custom_slot = ship_light_battery_2
+			
+			right_1_custom_slot = ship_mine_layer_1
+			
+			left_1_custom_slot = ship_mine_layer_1
+		}
+	}
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "República"
+		type = ship_hull_early_cruiser_3
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_light_medium_battery_2_2x
+			mid_1_custom_slot = ship_light_medium_battery_2
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_light_medium_battery_2_2x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Méndez Núñes"
+		type = ship_hull_early_cruiser_4
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_medium_battery_2_2x
+			mid_1_custom_slot = ship_light_medium_battery_2
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_light_medium_battery_2_2x
+			
+			right_2_custom_slot = ship_torpedo_2_3x
+			right_3_custom_slot = ship_torpedo_2_3x
+			
+			left_2_custom_slot = ship_torpedo_2_3x
+			left_3_custom_slot = ship_torpedo_2_3x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Almirante Cervera"
+		type = ship_hull_early_cruiser_4
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_light_medium_battery_2_2x
+			mid_2_custom_slot = ship_light_medium_battery_2_2x
+			mid_3_custom_slot = ship_anti_air_2
+			mid_4_custom_slot = ship_light_medium_battery_2_2x
+			front_1_custom_slot = ship_light_medium_battery_2
+			
+			right_1_custom_slot = dp_ship_secondaries_1
+			right_2_custom_slot = ship_torpedo_2_3x
+			right_3_custom_slot = ship_torpedo_2_3x
+			right_4_custom_slot = dp_ship_secondaries_1
+			
+			left_1_custom_slot = dp_ship_secondaries_1
+			left_2_custom_slot = ship_torpedo_2_3x
+			left_3_custom_slot = ship_torpedo_2_3x
+			left_4_custom_slot = dp_ship_secondaries_1
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Canarias"				
+		type = ship_hull_early_heavy_cruiser_3
+		name_group = SPR_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_medium_battery_3_2x
+			mid_1_custom_slot = ship_medium_battery_3_2x
+			mid_2_custom_slot = ship_anti_air_2
+			mid_3_custom_slot = ship_anti_air_2
+			mid_4_custom_slot = ship_medium_battery_3_2x
+			front_1_custom_slot = ship_medium_battery_3_2x
+			
+			right_2_custom_slot = ship_torpedo_2_3x
+			right_3_custom_slot = ship_torpedo_2_3x
+			
+			left_2_custom_slot = ship_torpedo_2_3x
+			left_3_custom_slot = ship_torpedo_2_3x
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "España Class"	
+		type = ship_hull_dreadnought_2
+		name_group = SPR_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_0
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_2_2x
+			mid_1_custom_slot = ship_casemate_1
+			mid_2_custom_slot = ship_casemate_1
+			mid_3_custom_slot = ship_heavy_battery_2_2x
+			mid_4_custom_slot = ship_heavy_battery_2_2x
+			front_1_custom_slot = ship_heavy_battery_2_2x
+			
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = ship_casemate_1
+			right_3_custom_slot = ship_casemate_1
+			right_4_custom_slot = ship_casemate_1
+			
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = ship_casemate_1
+			left_3_custom_slot = ship_casemate_1
+			left_4_custom_slot = ship_casemate_1
+		}
+	}
+}
