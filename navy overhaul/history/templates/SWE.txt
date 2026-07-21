@@ -1,0 +1,448 @@
+if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		torpedoboat_destroyer_hull = 1
+		early_destroyer_hull_1 = 1
+		early_destroyer_hull_2 = 1
+		destroyer_leader_hull_1 = 1
+		early_destroyer_hull_3 = 1
+		early_destroyer_hull_4 = 1
+		early_ship_hull_light = 1
+		
+		early_light_cruiser_hull = 1
+		scout_cruiser_hull_1 = 1
+		scout_cruiser_hull_2 = 1
+		scout_cruiser_hull_3 = 1
+		scout_cruiser_hull_4 = 1
+		
+		armored_cruiser_hull = 1
+		armored_cruiser_hull_2 = 1
+		early_heavy_cruiser_hull = 1
+		early_heavy_cruiser_hull_2 = 1
+		
+		predreadnought_ship_hull = 1
+		
+		early_submarine_hull_1 = 1
+		early_submarine_hull_2 = 1
+		early_submarine_hull_3 = 1
+		early_submarine_hull_4 = 1
+		early_submarine_hull_5 = 1
+		early_ship_hull_submarine = 1
+		
+		auxiliary_hull_1 = 1
+		
+		basic_cruiser_armor_scheme = 1
+		improved_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		improved_light_battery = 1
+		advanced_light_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		advanced_ship_torpedo_launcher = 1
+		basic_depth_charges = 1
+		basic_naval_mines = 1
+		mtg_transport = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Hajen"
+		type = ship_hull_early_submarine_4
+		name_group = SWE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Bävern"	
+		type = ship_hull_early_submarine_4
+		name_group = SWE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+
+			mid_3_custom_slot = sub_watertight_compartment
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Valen"				
+		type = ship_hull_early_submarine_4
+		name_group = SWE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_periscope_slot = sub_periscope_1
+
+			rear_1_custom_slot = ship_mine_layer_sub
+			mid_3_custom_slot = sub_watertight_compartment
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Draken"				
+		type = ship_hull_submarine_1
+		name_group = SWE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_periscope_slot = sub_periscope_1
+
+			mid_2_custom_slot = sub_ballast_tank
+			mid_3_custom_slot = sub_watertight_compartment
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_light_battery_sub
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Wrangel"
+		type = ship_hull_early_destroyer_1
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_3x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_torpedo_1_2x
+			mid_2_custom_slot = ship_torpedo_1_2x
+			mid_3_custom_slot = empty
+			mid_4_custom_slot = empty
+			front_1_custom_slot = ship_light_battery_1
+			
+			right_2_custom_slot = ship_light_battery_1
+			right_3_custom_slot = ship_torpedo_1_1x
+			
+			left_2_custom_slot = ship_light_battery_1
+			left_3_custom_slot = ship_torpedo_1_1x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ehrensköld"
+		type = ship_hull_early_destroyer_3
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_torpedo_2_3x
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_light_battery_2
+			mid_4_custom_slot = ship_anti_air_2
+			front_1_custom_slot = ship_light_battery_2
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Klas Horn"
+		type = ship_hull_early_destroyer_4
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_torpedo_2_3x
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_light_battery_2
+			mid_4_custom_slot = ship_anti_air_2
+			front_1_custom_slot = ship_light_battery_2
+			
+			right_1_custom_slot = ship_depth_charge_2
+			
+			left_1_custom_slot = ship_mine_layer_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Göteborg"	
+		type = ship_hull_light_1
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_light_battery_2
+			mid_1_custom_slot = ship_torpedo_2_3x
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_light_battery_2
+			mid_4_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_light_battery_2
+			
+			right_1_custom_slot = ship_depth_charge_2
+			right_3_custom_slot = ship_anti_air_1
+			
+			left_1_custom_slot = ship_mine_layer_1
+			left_3_custom_slot = ship_anti_air_1
+		}
+	}
+	# Minelayers #
+	create_equipment_variant = {
+		name = "Clas Fleming"				
+		type = ship_hull_auxiliary_1
+		name_group = FIN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_role_slot = auxiliary_role_mine_ship
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_0
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_mine_layer_1
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_light_battery_2
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_light_battery_2
+			front_1_custom_slot = ship_light_battery_2
+			
+			right_1_custom_slot = ship_mine_layer_1
+			right_3_custom_slot = ship_casemate_1
+			
+			left_1_custom_slot = ship_mine_layer_1
+			left_3_custom_slot = ship_casemate_1
+		}
+	}
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Örnen"					# torpedo boats		
+		type = ship_hull_early_cruiser_1
+		name_group = SWE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_0
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_casemate_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			mid_3_custom_slot = empty
+			mid_4_custom_slot = ship_torpedo_1_1x
+			front_1_custom_slot = ship_casemate_1
+			
+			right_2_custom_slot = ship_secondaries_1_1x
+			right_3_custom_slot = ship_secondaries_1_1x
+			
+			left_2_custom_slot = ship_secondaries_1_1x
+			left_3_custom_slot = ship_secondaries_1_1x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Fylgia"				
+		type = ship_hull_early_cruiser_1
+		name_group = SWE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_3x
+			fixed_ship_armor_slot = medium_ship_armor_3
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_light_medium_battery_2_2x
+			mid_1_custom_slot = ship_light_medium_battery_2_2x
+			mid_2_custom_slot = ship_secondaries_1_2x
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_light_medium_battery_2_2x
+			front_1_custom_slot = ship_light_medium_battery_2_2x
+			
+			right_1_custom_slot = ship_secondaries_1_1x
+			right_2_custom_slot = ship_secondaries_1_1x
+			right_3_custom_slot = ship_secondaries_1_2x
+			right_4_custom_slot = ship_secondaries_1_1x
+			
+			left_1_custom_slot = ship_secondaries_1_1x
+			left_2_custom_slot = ship_secondaries_1_1x
+			left_3_custom_slot = ship_secondaries_1_2x
+			left_4_custom_slot = ship_secondaries_1_1x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Äran"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = SWE_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_4
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_medium_battery_1
+			front_1_custom_slot = ship_medium_battery_1
+			
+			right_1_custom_slot = ship_torpedo_1_1x
+			right_2_custom_slot = ship_secondaries_2_1x
+			right_3_custom_slot = ship_secondaries_2_1x
+			right_4_custom_slot = ship_secondaries_2_1x
+			
+			left_1_custom_slot = ship_torpedo_1_1x
+			left_2_custom_slot = ship_secondaries_2_1x
+			left_3_custom_slot = ship_secondaries_2_1x
+			left_4_custom_slot = ship_secondaries_2_1x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Oscar II"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = SWE_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_3
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_medium_battery_1
+			mid_4_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_medium_battery_1
+			
+			right_2_custom_slot = ship_secondaries_2_2x
+			right_3_custom_slot = ship_secondaries_2_2x
+			right_4_custom_slot = ship_torpedo_1_1x
+			
+			left_2_custom_slot = ship_secondaries_2_2x
+			left_3_custom_slot = ship_secondaries_2_2x
+			left_4_custom_slot = ship_torpedo_1_1x
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Sverige"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = SWE_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = medium_ship_armor_4
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_1_2x
+			mid_1_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_secondaries_2_2x
+			front_1_custom_slot = ship_heavy_battery_1_2x
+			
+			right_1_custom_slot = ship_secondaries_2_1x
+			right_2_custom_slot = ship_secondaries_2_1x
+			right_3_custom_slot = ship_secondaries_2_1x
+			right_4_custom_slot = ship_torpedo_1_1x
+			
+			left_1_custom_slot = ship_secondaries_2_1x
+			left_2_custom_slot = ship_secondaries_2_1x
+			left_3_custom_slot = ship_secondaries_2_1x
+			left_4_custom_slot = ship_torpedo_1_1x
+		}
+	}
+	create_equipment_variant = {
+		name = "Gotland"
+		type = ship_hull_early_cruiser_5
+		name_group = SWE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_radio_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_airplane_launcher_2
+			mid_1_custom_slot = ship_light_medium_battery_3_2x
+			mid_2_custom_slot = ship_anti_air_1
+			mid_3_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_light_medium_battery_3_2x
+			front_1_custom_slot = ship_light_medium_battery_3_2x
+			
+			right_1_custom_slot = ship_mine_layer_1
+			right_2_custom_slot = ship_torpedo_2_3x
+			right_3_custom_slot = ship_anti_air_1
+			
+			left_1_custom_slot = ship_mine_layer_1
+			left_2_custom_slot = ship_torpedo_2_3x
+			left_3_custom_slot = ship_anti_air_1
+		}
+	}
+}

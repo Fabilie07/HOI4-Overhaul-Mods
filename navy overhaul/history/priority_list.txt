@@ -12,7 +12,7 @@
 # FIN
 GRE
 # HOL
-NOR
+# NOR
 POR
 SPR
 # SWE
