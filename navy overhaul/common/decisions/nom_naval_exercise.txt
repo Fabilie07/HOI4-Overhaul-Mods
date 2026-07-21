@@ -57,8 +57,8 @@ nom_naval_exercise = {
 				set_technology = { basic_dreadnought_ship_hull = 1 popup = no }
 				set_technology = { improved_dreadnought_ship_hull = 1 popup = no }
 				set_technology = { basic_super_dreadnought_ship_hull = 1 popup = no }
-				set_technology = { early_battlecruiser_ship_hull = 1 popup = no }
-				set_technology = { basic_battlecruiser_ship_hull = 1 popup = no }
+				set_technology = { early_battlecruiser_hull = 1 popup = no }
+				set_technology = { basic_battlecruiser_hull = 1 popup = no }
 				set_technology = { early_submarine_hull_1 = 1 popup = no }
 				set_technology = { early_submarine_hull_2 = 1 popup = no }
 				set_technology = { early_submarine_hull_3 = 1 popup = no }
