@@ -14,7 +14,7 @@ GRE
 # HOL
 # NOR
 POR
-SPR
+# SPR
 # SWE
 TUR
 
