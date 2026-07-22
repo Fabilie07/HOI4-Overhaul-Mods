@@ -23,6 +23,9 @@ technologies = {
 
 			light_ship_deck_1
 			medium_ship_deck_1
+			
+			ship_citadel_1
+			ship_citadel_2
 		}
 
 		path = {

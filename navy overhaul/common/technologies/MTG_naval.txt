@@ -2799,7 +2799,7 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-			sub_periscope_1
+			# sub_periscope_1
 			sub_ballast_tank
 			sub_ship_engine_1
 		}
