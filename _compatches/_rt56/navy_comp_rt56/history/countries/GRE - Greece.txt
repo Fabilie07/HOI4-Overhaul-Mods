@@ -1,0 +1,453 @@
+﻿# r56_portrait_GRE_
+capital = 47
+
+oob = "GRE_1936"
+set_naval_oob = "GRE_1936_naval_mtg"
+
+set_research_slots = 4
+
+add_ideas = {
+	limited_conscription
+}
+
+add_ideas = {
+	GRE_depression_1
+	GRE_shadow_of_1921
+	GRE_government_crisis
+	GRE_divided_nation
+	GRE_naval_industry_rivalary
+	r56_YUG_balkan_pact
+}
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_cosmetic_tag = GRE_neutrality
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	interwar_antiair = 1
+	etax_doctrine = 1
+	camo = 1
+	steel_production_1 = 1
+		
+	gw_artillery = 1
+	fuel_silos = 1
+	tech_military_police = 1
+
+	# Naval Technologies
+	torpedoboat_destroyer_hull = 1
+	early_destroyer_hull_1 = 1
+	early_destroyer_hull_2 = 1
+	destroyer_leader_hull_1 = 1
+	early_destroyer_hull_3 = 1
+	early_destroyer_hull_4 = 1
+	
+	early_light_cruiser_hull = 1
+	scout_cruiser_hull_1 = 1
+	scout_cruiser_hull_2 = 1
+	
+	armored_cruiser_hull = 1
+	armored_cruiser_hull_2 = 1
+	
+	predreadnought_ship_hull = 1
+	basic_dreadnought_ship_hull = 1
+	
+	early_submarine_hull_1 = 1
+	early_submarine_hull_2 = 1
+	early_submarine_hull_3 = 1
+	early_submarine_hull_4 = 1
+	early_submarine_hull_5 = 1
+	
+	auxiliary_hull_1 = 1
+	
+	basic_cruiser_armor_scheme = 1
+	improved_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	improved_heavy_armor_scheme = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	improved_light_battery = 1
+	basic_heavy_battery = 1
+	improved_heavy_battery = 1
+	basic_torpedo = 1
+	improved_ship_torpedo_launcher = 1
+	advanced_ship_torpedo_launcher = 1
+	basic_depth_charges = 1
+	basic_naval_mines = 1
+	mtg_transport = 1
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_air_oob = "GRE_1936_air_bba"
+	set_technology = {
+		iw_small_airframe = 1
+		engines_1 = 1
+		aa_lmg = 1
+		early_bombs = 1
+	}
+	else = {
+		set_air_oob = "GRE_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			CAS1 = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+		GRE = { is_ai = no }
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
+set_convoys = 85
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.3"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 55
+	fascism = 5
+	communism = 17
+	neutrality = 23
+}
+
+set_stability = 0.40
+#was DLC-exclusive
+recruit_character = GRE_konstantinos_demertzis			#uses r56 portrait and trait
+recruit_character = GRE_konstantinos_demertzis_r56
+recruit_character = GRE_king_george_ii						#starting leader for non-DLC, so put up here
+recruit_character = GRE_georgios_tsolakoglou			#commander, uses r56 portrait
+recruit_character = GRE_nikos_zachariadis				#reverted mismatching trait and ideology in r56, ported communist demigogue role
+recruit_character = GRE_george_mercouris				#ported r56 traits, idea role, portrait and ideology
+recruit_character = GRE_dimitrios_oikonomou				#dlc hc got DLC check, ported r56 admiral role
+#shared and moved out of the if/else, revert if changed order causes issues (only applies to leaders)
+recruit_character = GRE_ioannis_metaxas					#needs to be adjusted in on_actions it seems
+recruit_character = GRE_ioannis_metaxas_r56				#r56 advisor
+recruit_character = GRE_markos_vafiadis_r56				#infantry hc split character
+recruit_character = GRE_georgios_kosmidis				#unused in r56/generated			-used and generated...
+recruit_character = GRE_markos_drakos					#fixed broken non-DLC portraits and matched DLC/free commander traits as in r56
+recruit_character = GRE_nikos_beloyannis				#merged instances, needs to be split
+recruit_character = GRE_alexandros_sakellariou			#kept vanilla's GFX-determining instances and made availability checks conditional
+recruit_character = GRE_panagiotis_gazis				#merged instances, uses r56 image, ported r56 tree exclusive theorist role
+recruit_character = GRE_petros_voulgaris				#merged instances, ported ft check
+recruit_character = GRE_petros_voulgaris_r56			#ported, switched to freely available DLC image
+recruit_character = GRE_vasilios_tsarpalis				#merged instances that split generic/DLC image, GFX available in main game folder
+recruit_character = GRE_aris_velouchiotis				#merged instances, added ft check
+recruit_character = GRE_aris_velouchiotis_r56			#army chief, commie-exclusive
+
+#r56 new
+recruit_character = GRE_ioannis_rallis					#political, fascist demigogue
+recruit_character = GRE_themistoklis_sofoulis			#political, democratic demigogue
+recruit_character = GRE_kostas_kotzias					#political, silent workhorse
+recruit_character = GRE_georgios_grivas					#political, paramilitarist
+recruit_character = GRE_andreas_tzimas					#political, revolutionary figure
+recruit_character = GRE_charilaos_florakis				#political, crusader
+recruit_character = GRE_alexandros_svolos				#political, union boss
+recruit_character = GRE_nikos_belogiannis				#political, anti-fascist
+recruit_character = GRE_konstantinos_maniadakis_r56		#political, opposition terror prince
+recruit_character = GRE_theologos_nicoloudis			#political, propagandist
+recruit_character = GRE_prodomos_bodosakis_athanasiadis	#political, war industrialist
+recruit_character = GRE_kyriakos_varvaresos				#political, cpt of industry
+recruit_character = GRE_panagiotis_demestichas_r56		#commander, created in the DLC tree
+recruit_character = GRE_emmanouil_tsouderos_r56			#political, smooth talker
+recruit_character = GRE_charalambos_katsimitros_r56		#ported commander, previously named Haralbos
+recruit_character = GRE_neokosmos_grigoriadis			#army theorist
+recruit_character = GRE_ioannis_toumbas					#navy theorist
+recruit_character = GRE_alexandros_papagos_r56			#commander and army chief
+recruit_character = GRE_napoleon_batas					#General and Army Chief
+#recruit_character = GRE_andreas_antoniou				#Is this guy even real?
+recruit_character = GRE_christodoulos_tsigantes			#hc, commando
+recruit_character = GRE_dimitrios_oikonomou_r56			#hc, naval half-screen half-strike
+recruit_character = GRE_georgios_stanotas				#hc, cavalry
+recruit_character = GRE_thrasyvolos_tsakalotos			#hc, infantry
+recruit_character = GRE_marinos_mitralexis_r56			#hc, air interception
+recruit_character = GRE_stefanos_sarafis				#army chief, commie-exclusive, added missing ft check
+recruit_character = GRE_manolis_mantakas				#army chief, commie-exclusive
+recruit_character = GRE_tsalakoglou						#army chief, anti-commie
+recruit_character = GRE_ioannis_pitsikas				#commander
+recruit_character = GRE_ioannis_kotoulas				#commander
+recruit_character = GRE_konstantinos_bakopoulos			#commander
+recruit_character = GRE_Konstantinos_davakis			#commander
+recruit_character = GRE_emmanuel_kelaidis			    #Air Training High Command
+recruit_character = GRE_ioannis_kellas			        #Air Superiority High Command
+recruit_character = GRE_konstaninos_logothetopulos
+recruit_character = GRE_ektor_tsironikos
+recruit_character = GRE_georgois_ventiris
+recruit_character = GRE_ioannis_bernitsas
+recruit_character = GRE_damaskinos_papandreou
+recruit_character = GRE_dimitrios_maximos
+recruit_character = GRE_evangelos_sekeris
+recruit_character = GRE_charalambos_simopoulos
+recruit_character = GRE_kostas_theos
+recruit_character = GRE_konstantinos_rentis
+recruit_character = GRE_kimon_pantazis
+recruit_character = GRE_alexandros_markati
+recruit_character = GRE_konstaninos_droulias
+#non-DLC only
+recruit_character = GRE_damaskinos						#both trees, added anti-commie check and ported r56 alternate trait
+### SCIENTISTS ###
+recruit_character = GRE_paul_santorini
+recruit_character = GRE_theodoros_kougiouzelis
+recruit_character = GRE_ioannis_faviatos_kokkolis
+if = { 
+	limit = { has_dlc = "Battle for the Bosporus" }
+	recruit_character = GRE_alexandros_papagos			#put ft checks and a removed non-theorist trait under the theorist role
+	recruit_character = GRE_charalambos_katsimitros		#split seperate for different ID, Uses r56 portrait since its superior
+	recruit_character = GRE_spyridon_avgeris			#ft check, reverted changed idea name seemingly for no reason, otherwise unchanged
+	recruit_character = GRE_epameinondas_kavvadias		#ft check otherwise unchanged
+	recruit_character = GRE_marinos_mitralexis			#ft check otherwise unchanged
+	recruit_character = GRE_georgios_kosmas				#ft check otherwise unchanged
+	recruit_character = GRE_aristeidis_dimitratos		#ft check otherwise unchanged
+	recruit_character = GRE_xenophon_giosmas			#ft check otherwise unchanged
+	recruit_character = GRE_sophoklis_venizelos			#ft check otherwise unchanged
+	recruit_character = GRE_dimitris_glinos				#ft check otherwise unchanged
+	recruit_character = GRE_aristotle_onassis			#ft check otherwise unchanged
+	recruit_character = GRE_dimitrios_holevas			#ft check otherwise unchanged
+	recruit_character = GRE_emmanouil_tsouderos			#ft check otherwise unchanged
+	recruit_character = GRE_konstantinos_maniadakis		#split, DLC version got ft check
+	recruit_character = GRE_markos_vafiadis				#was shared, but DLC-only for r56, reduced to DLC-exclusive instance and added ft check
+	recruit_character = GRE_konstantinos_tsaldaris		#was shared, but DLC-only for r56, reduced to DLC-exclusive instance and added ft check
+	recruit_character = GRE_konstantinos_ventiris		#was shared, but DLC-only for r56, reduced to DLC-exclusive instance and added ft check
+	recruit_character = GRE_napoleon_zervas				#was shared, but DLC-only for r56, reduced to DLC-exclusive instance and added ft check
+	recruit_character = GRE_nikolaos_plastiras			#was shared, but DLC-only for r56, reduced to DLC-exclusive instance and added ft check
+	recruit_character = GRE_georgios_papandreou			#was shared, but DLC-only for r56, reduced to DLC-exclusive instance and added ft check
+	recruit_character = GRE_eleftherios_venizelos		#was shared, but DLC-only for r56
+	recruit_character = GRE_theodoros_pangalos # Empty character -> Can become unit leader later
+	recruit_character = GRE_dimitrios_psarros # Empty character -> Can become unit leader later
+	recruit_character = GRE_panagiotis_demestichas # Empty character -> Can become unit leader later
+}
+#if = {
+#	limit = {
+#		AND = {
+#			has_dlc = "La Resistance"
+#			has_dlc = "Battle for the Bosporus"
+#		}
+#	}
+#	create_operative_leader = {
+#		name = "Patrick Leigh Fermor"
+#		GFX = GFX_portrait_eng_patrick_fermor
+#		traits = { operative_tough operative_commando }
+#		bypass_recruitment = no
+#		available_to_spy_master = yes
+#		female = no
+#		nationalities = { ENG GRE }
+#	}
+#}
+
+
+### VARIANTS ###
+# Submarines #
+	create_equipment_variant = {
+		name = "Katsonis"				
+		type = ship_hull_coastal_submarine_1
+		name_group = GRE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			# fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
+			# fixed_ship_sonar_slot = ship_sub_sonar_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_batteries_slot = sub_batteries_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+			
+			rear_1_custom_slot = ship_torpedo_sub_1
+			
+			mid_2_custom_slot = sub_ballast_tank
+			mid_3_custom_slot = sub_watertight_compartment
+			
+			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_very_light_battery_sub
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Protefs"				
+		type = ship_hull_early_submarine_4
+		name_group = GRE_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			# fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
+			# fixed_ship_sonar_slot = ship_sub_sonar_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_batteries_slot = sub_batteries_1
+			fixed_ship_periscope_slot = sub_periscope_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+			
+			rear_1_custom_slot = ship_torpedo_sub_1
+			
+			mid_2_custom_slot = sub_ballast_tank
+			mid_3_custom_slot = sub_watertight_compartment
+			
+			front_1_custom_slot = ship_torpedo_sub_3
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_light_battery_sub
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Aetos"					
+		type = ship_hull_early_destroyer_1
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_1
+			mid_1_custom_slot = ship_torpedo_2_3x
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_light_battery_1
+			mid_4_custom_slot = ship_light_battery_1
+			front_1_custom_slot = ship_light_battery_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Hydra"	
+		type = ship_hull_early_destroyer_4
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_funnel_slot = funnel_1x
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
+
+			rear_1_custom_slot = ship_light_battery_3
+			mid_1_custom_slot = ship_light_battery_3
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_torpedo_2_3x
+			mid_4_custom_slot = ship_light_battery_3
+			front_1_custom_slot = ship_light_battery_3
+			
+			left_2_custom_slot = ship_anti_air_1
+			
+			right_2_custom_slot = ship_anti_air_1
+		}
+	}
+	# Cruisers #
+	create_equipment_variant = {
+		name = "Averof"				
+		type = ship_hull_armored_cruiser_2
+		name_group = GRE_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_0
+			fixed_ship_funnel_slot = funnel_3x
+			fixed_ship_armor_slot = medium_ship_armor_1
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_torpedo_protection_slot = torpedo_protection_1
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_medium_battery_1_2x
+			front_1_custom_slot = ship_medium_battery_1_2x
+
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = ship_light_medium_battery_1_2x
+			right_3_custom_slot = ship_light_medium_battery_1_2x
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = ship_light_medium_battery_1_2x
+			left_3_custom_slot = ship_light_medium_battery_1_2x
+			left_4_custom_slot = ship_casemate_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Elli"				
+		type = ship_hull_early_cruiser_2
+		name_group = GRE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_citadel_slot = ship_citadel_3
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_light_medium_battery_2
+			
+			left_1_custom_slot = ship_mine_layer_1
+			left_3_custom_slot = ship_torpedo_1_1x
+			
+			right_1_custom_slot = ship_mine_layer_1
+			right_3_custom_slot = ship_torpedo_1_1x
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Kilkis"	
+		type = ship_hull_pre_dreadnought
+		name_group = GRE_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_radio_slot = ship_signals
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = ship_armor_bb_1
+			fixed_ship_citadel_slot = ship_citadel_1
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
+
+			rear_1_custom_slot = ship_heavy_battery_1_2x
+			mid_1_custom_slot = ship_anti_air_1
+			mid_4_custom_slot = ship_anti_air_1
+			front_1_custom_slot = ship_heavy_battery_1_2x
+			
+			left_1_custom_slot = ship_secondaries_2_2x
+			left_2_custom_slot = ship_casemate_2
+			left_3_custom_slot = ship_casemate_2
+			left_4_custom_slot = ship_secondaries_2_2x
+			
+			right_1_custom_slot = ship_secondaries_2_2x
+			right_2_custom_slot = ship_casemate_2
+			right_3_custom_slot = ship_casemate_2
+			right_4_custom_slot = ship_secondaries_2_2x
+		}
+		obsolete = yes
+	}
