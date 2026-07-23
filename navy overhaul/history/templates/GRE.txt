@@ -1,39 +1,111 @@
+if = {
+	limit = {
+		 has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		torpedoboat_destroyer_hull = 1
+		early_destroyer_hull_1 = 1
+		early_destroyer_hull_2 = 1
+		destroyer_leader_hull_1 = 1
+		early_destroyer_hull_3 = 1
+		early_destroyer_hull_4 = 1
+		
+		early_light_cruiser_hull = 1
+		scout_cruiser_hull_1 = 1
+		scout_cruiser_hull_2 = 1
+		
+		armored_cruiser_hull = 1
+		armored_cruiser_hull_2 = 1
+		
+		predreadnought_ship_hull = 1
+		basic_dreadnought_ship_hull = 1
+		
+		early_submarine_hull_1 = 1
+		early_submarine_hull_2 = 1
+		early_submarine_hull_3 = 1
+		early_submarine_hull_4 = 1
+		early_submarine_hull_5 = 1
+		
+		auxiliary_hull_1 = 1
+		
+		basic_cruiser_armor_scheme = 1
+		improved_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		improved_light_battery = 1
+		basic_heavy_battery = 1
+		improved_heavy_battery = 1
+		basic_torpedo = 1
+		improved_ship_torpedo_launcher = 1
+		advanced_ship_torpedo_launcher = 1
+		basic_depth_charges = 1
+		basic_naval_mines = 1
+		mtg_transport = 1
+	}
+}
 
-GRE_get_starting_navy_designs = {
+if = {
+	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "[NOM] Katsonis Class"				
-		type = ship_hull_submarine_1
+		name = "Katsonis"				
+		type = ship_hull_coastal_submarine_1
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_radio_slot = ship_signals
+			# fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
+			# fixed_ship_sonar_slot = ship_sub_sonar_2
 			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_batteries_slot = sub_batteries_1
 			fixed_ship_periscope_slot = sub_periscope_1
-
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+			
 			rear_1_custom_slot = ship_torpedo_sub_1
+			
+			mid_2_custom_slot = sub_ballast_tank
+			mid_3_custom_slot = sub_watertight_compartment
+			
 			front_1_custom_slot = ship_torpedo_sub_2
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_very_light_battery_sub
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "[NOM] Glafkos Class"				
-		type = ship_hull_submarine_2
+		name = "Protefs"				
+		type = ship_hull_early_submarine_4
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_radio_slot = ship_signals
+			# fixed_ship_fire_control_system_slot = sub_torpedo_computer_1
+			# fixed_ship_sonar_slot = ship_sub_sonar_2
 			fixed_ship_engine_slot = sub_ship_engine_1
+			fixed_ship_batteries_slot = sub_batteries_1
 			fixed_ship_periscope_slot = sub_periscope_1
-
+			fixed_ship_damage_control_slot = water_pump
+			fixed_ship_ammo_1_slot = torpedo_ammo
+			
 			rear_1_custom_slot = ship_torpedo_sub_1
+			
+			mid_2_custom_slot = sub_ballast_tank
+			mid_3_custom_slot = sub_watertight_compartment
+			
 			front_1_custom_slot = ship_torpedo_sub_3
+			
+			top_2_custom_slot = ship_anti_air_1
+			top_3_custom_slot = ship_light_battery_sub
 		}
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "[NOM] Aetos Class"					
-		type = ship_hull_light_1
+		name = "Aetos"					
+		type = ship_hull_early_destroyer_1
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -43,10 +115,11 @@ GRE_get_starting_navy_designs = {
 			fixed_ship_funnel_slot = funnel_2x
 			fixed_ship_damage_control_slot = water_pump
 			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
 
 			rear_1_custom_slot = ship_light_battery_1
-			mid_1_custom_slot = ship_torpedo_1_3x
-			mid_2_custom_slot = ship_torpedo_1_3x
+			mid_1_custom_slot = ship_torpedo_2_3x
+			mid_2_custom_slot = ship_torpedo_2_3x
 			mid_3_custom_slot = ship_light_battery_1
 			mid_4_custom_slot = ship_light_battery_1
 			front_1_custom_slot = ship_light_battery_1
@@ -54,8 +127,8 @@ GRE_get_starting_navy_designs = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "[NOM] Hydra Class"	
-		type = ship_hull_light_1
+		name = "Hydra"	
+		type = ship_hull_early_destroyer_4
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -65,13 +138,14 @@ GRE_get_starting_navy_designs = {
 			fixed_ship_funnel_slot = funnel_1x
 			fixed_ship_damage_control_slot = water_pump
 			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_2_slot = torpedo_ammo
 
-			rear_1_custom_slot = ship_light_battery_1
-			mid_1_custom_slot = ship_torpedo_1_3x
-			mid_2_custom_slot = ship_torpedo_1_3x
-			mid_3_custom_slot = ship_light_battery_1
-			mid_4_custom_slot = ship_light_battery_1
-			front_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_light_battery_3
+			mid_1_custom_slot = ship_light_battery_3
+			mid_2_custom_slot = ship_torpedo_2_3x
+			mid_3_custom_slot = ship_torpedo_2_3x
+			mid_4_custom_slot = ship_light_battery_3
+			front_1_custom_slot = ship_light_battery_3
 			
 			left_2_custom_slot = ship_anti_air_1
 			
@@ -80,35 +154,40 @@ GRE_get_starting_navy_designs = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "[NOM] Averof Class"				
-		type = ship_hull_cruiser_coastal_defense_ship
+		name = "Averof"				
+		type = ship_hull_armored_cruiser_2
 		name_group = GRE_CA_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_radio_slot = ship_signals
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_engine_slot = cruiser_ship_engine_0
 			fixed_ship_funnel_slot = funnel_3x
+			fixed_ship_armor_slot = medium_ship_armor_1
 			fixed_ship_citadel_slot = ship_citadel_1
 			fixed_ship_damage_control_slot = water_pump
-			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_torpedo_protection_slot = torpedo_protection_1
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
 
 			rear_1_custom_slot = ship_medium_battery_1_2x
-			mid_1_custom_slot = ship_anti_air_1
-			mid_4_custom_slot = ship_anti_air_1
 			front_1_custom_slot = ship_medium_battery_1_2x
-			
-			left_2_custom_slot = ship_casemate_2
-			left_3_custom_slot = ship_casemate_2
-			
-			right_2_custom_slot = ship_casemate_2
-			right_3_custom_slot = ship_casemate_2
+
+			right_1_custom_slot = ship_casemate_1
+			right_2_custom_slot = ship_light_medium_battery_1_2x
+			right_3_custom_slot = ship_light_medium_battery_1_2x
+			right_4_custom_slot = ship_casemate_1
+
+			left_1_custom_slot = ship_casemate_1
+			left_2_custom_slot = ship_light_medium_battery_1_2x
+			left_3_custom_slot = ship_light_medium_battery_1_2x
+			left_4_custom_slot = ship_casemate_1
 		}
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "[NOM] Elli Class"				
-		type = ship_hull_cruiser_1
+		name = "Elli"				
+		type = ship_hull_early_cruiser_2
 		name_group = GRE_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -120,10 +199,10 @@ GRE_get_starting_navy_designs = {
 			fixed_ship_damage_control_slot = water_pump
 			fixed_ship_ammo_1_slot = cannon_high_explosive
 
-			rear_1_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = ship_light_medium_battery_2
 			mid_1_custom_slot = ship_anti_air_1
-			mid_2_custom_slot = ship_light_medium_battery_1
-			front_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_light_medium_battery_2
+			front_1_custom_slot = ship_light_medium_battery_2
 			
 			left_1_custom_slot = ship_mine_layer_1
 			left_3_custom_slot = ship_torpedo_1_1x
@@ -134,7 +213,7 @@ GRE_get_starting_navy_designs = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "[NOM] Kilkis Class"	
+		name = "Kilkis"	
 		type = ship_hull_pre_dreadnought
 		name_group = GRE_BB_HISTORICAL
 		parent_version = 0
@@ -143,9 +222,11 @@ GRE_get_starting_navy_designs = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_funnel_slot = funnel_2x
+			fixed_ship_armor_slot = ship_armor_bb_1
 			fixed_ship_citadel_slot = ship_citadel_1
 			fixed_ship_damage_control_slot = water_pump
-			fixed_ship_ammo_1_slot = cannon_high_explosive
+			fixed_ship_ammo_1_slot = cannon_armor_piercing
+			fixed_ship_ammo_2_slot = cannon_high_explosive
 
 			rear_1_custom_slot = ship_heavy_battery_1_2x
 			mid_1_custom_slot = ship_anti_air_1
