@@ -13,10 +13,10 @@
 GRE
 # HOL
 # NOR
-POR
+# POR
 # SPR
 # SWE
-TUR
+# TUR
 
 -- 3 --
 All the others

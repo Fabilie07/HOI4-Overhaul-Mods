@@ -1,0 +1,33 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### Türk Donanmasi ###
+	fleet = {
+		name = "Türk Donanmasi"			
+		naval_base = 4112 # Izmir
+		task_force = {				
+			name = "Türk Donanmasi"			
+			location = 4112 # Izmir
+			ship = { name = "TCG Yavuz" pride_of_the_fleet = yes definition = battle_cruiser equipment = { ship_hull_battlecruiser_1 = { amount = 1 owner = TUR version_name = "Yavuz" } } }			
+			ship = { name = "TCG Mecidiye" definition = light_cruiser equipment = { ship_hull_early_cruiser_2 = { amount = 1 owner = TUR version_name = "Mecidiye" } } }
+			ship = { name = "TCG Hamidiye" definition = light_cruiser equipment = { ship_hull_early_cruiser_2 = { amount = 1 owner = TUR version_name = "Hamidyie" } } }
+			ship = { name = "TCG Peyk" definition = light_cruiser equipment = { ship_hull_early_cruiser_1 = { amount = 1 owner = TUR version_name = "Peyk" } } }
+			ship = { name = "TCG Berk" definition = light_cruiser equipment = { ship_hull_early_cruiser_1 = { amount = 1 owner = TUR version_name = "Peyk" } } }
+			ship = { name = "TCG Kocatepe" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = TUR version_name = "Kocatepe" } } }
+			ship = { name = "TCG Adatepe" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = TUR version_name = "Kocatepe" } } }
+			ship = { name = "TCG Zafer" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = TUR version_name = "Tinaztepe" } } }
+			ship = { name = "TCG Tinaztepe" definition = destroyer equipment = { ship_hull_early_destroyer_3 = { amount = 1 owner = TUR version_name = "Tinaztepe" } } }
+		}				
+		task_force = {				
+			name = "Filotilla Denizalti Kücük"			
+			location = 11881 # Samsun
+			ship = { name = "TCG Birinci Inönü" definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = TUR version_name = "Birinci Inönü" } } }		
+			ship = { name = "TCG Ikinci Inönü" definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = TUR version_name = "Birinci Inönü" } } }		
+			ship = { name = "TCG Dumlupinar" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = TUR version_name = "Dumlupinar" } } }
+			ship = { name = "TCG Sakarya" definition = submarine equipment = { ship_hull_coastal_submarine_1 = { amount = 1 owner = TUR version_name = "Sakarya" } } }
+			ship = { name = "TCG Gür" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = TUR version_name = "Gür" } } }
+		}				
+	}
+} 
+
