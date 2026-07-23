@@ -11,8 +11,8 @@ sub_units = {
 		is_artillery_brigade = no
 
 		type = {
-			armor
-			# support
+			infantry
+			support
 		}
 		
 		group = support

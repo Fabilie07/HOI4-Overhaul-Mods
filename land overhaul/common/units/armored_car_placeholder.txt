@@ -1,0 +1,90 @@
+sub_units = {
+	armored_car_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			armored_car_equipment = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
+	armored_car_aa_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+			anti_air
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			armored_car_aa_equipment = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
+	armored_car_at_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+			anti_tank
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			armored_car_destroyer_equipment = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+}

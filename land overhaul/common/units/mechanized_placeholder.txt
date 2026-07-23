@@ -1,0 +1,120 @@
+sub_units = {
+	mechanized_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			mechanized_equipment = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
+	mechanized_aa_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+			anti_air
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			mechanized_aa_equipment = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
+	mechanized_at_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+			anti_tank
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			mechanized_destroyer_equipment = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
+	amphibious_mechanized_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+			amphibious
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			amphibious_mechanized_equipment = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+}

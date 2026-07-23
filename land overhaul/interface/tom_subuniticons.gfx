@@ -18,4 +18,16 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_motorized_transport_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_motorized_transport_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_mechanized_transport_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_transport_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_amphibious_mechanized_transport_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_amphibious_mechanized_transport_icon.dds" noOfFrames = 2 }
+	
+	
+	### Placeholder
+	spriteType = { name = "GFX_group_placeholder_icon"											textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_armored_car_placeholder_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_armored_car_aa_placeholder_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_armored_car_at_placeholder_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mechanized_placeholder_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mechanized_aa_placeholder_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mechanized_at_placeholder_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_amphibious_mechanized_placeholder_icon_medium"				textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
 }

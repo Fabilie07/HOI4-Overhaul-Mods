@@ -186,9 +186,9 @@ sub_units = {
 		active = no
 
 		type = {
-			# infantry
+			infantry
 			armor
-			# support
+			support
 		}
 		
 		group = support
