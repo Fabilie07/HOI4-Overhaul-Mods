@@ -1,32 +1,32 @@
 sub_units = {
-	# infantry_placeholder = {
-		# abbreviation = "FSC"
-		# sprite = infantry
-		# map_icon_category = infantry
-		# priority = 0
-		# ai_priority = 0
-		# active = yes
+	infantry_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
 
-		# type = {
-			# armor
-		# }
+		type = {
+			armor
+		}
 		
-		# group = placeholder
+		group = placeholder
 
-		# combat_width = 99
+		combat_width = 99
 
-		# need = {
-			# infantry_equipment = 999
-		# }
+		need = {
+			infantry_equipment = 999
+		}
 		
-		# manpower = 9999
+		manpower = 9999
 		
-		# training_time = 0
-		# max_organisation = 0
-		# default_morale = 0
-		# max_strength = 0
-		# weight = 0
-	# }
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
 	
 	sniper_placeholder = {
 		abbreviation = "FSC"

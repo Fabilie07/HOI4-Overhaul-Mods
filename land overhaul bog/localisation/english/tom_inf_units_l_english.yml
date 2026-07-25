@@ -46,3 +46,10 @@
  mot_light_fire_support_desc:0 "Truck-Mounted Light Machine Guns provide Fire Support for Units, moving up together with them."
  mot_medium_fire_support:0 "Motorized Medium Weapons Company"
  mot_medium_fire_support_desc:0 "Truck-Mounted Medium Machine Guns provide Fire Support for Units, moving up together with them."
+ 
+ 
+ #Placeholders
+ infantry_placeholder:0 "Infantry Placeholder"
+ sniper_placeholder:0 "Sniper Placeholder"
+ mechanized_artillery_placeholder:0 "Mech Supply Placeholder"
+ mechanized_engineer_placeholder:0 "Mech Engineer Placeholder"

@@ -73,7 +73,7 @@ on_actions = {
 					mark_older_equipment_obsolete = yes
 					modules = {
 						support_equipment_1_slot = inf_grenade_frag
-						cartridge_slot = inf_cartridge_rifle_80
+						sights_slot = inf_sights_1
 					}
 				}
 				if = {
@@ -86,7 +86,7 @@ on_actions = {
 						mark_older_equipment_obsolete = yes
 						modules = {
 							support_equipment_1_slot = inf_grenade_frag
-							cartridge_slot = inf_cartridge_rifle_80
+							sights_slot = inf_sights_2
 						}
 					}
 				}

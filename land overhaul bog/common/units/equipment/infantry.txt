@@ -116,9 +116,9 @@ equipments = {
 			firing_mode_slot = inf_bolt_action
 			magazine_type_slot = inf_clip_05
 			backpack_type_slot = inf_backpack_2
-			sights_slot = inf_sights_1
 			
 			barrel_slot = inf_barrel_rifle
+			cartridge_slot = inf_cartridge_rifle_80
 			sidearm_weapon_slot = inf_sidearm_pistol
 		}
 		
@@ -153,7 +153,7 @@ equipments = {
 	
 		archetype = infantry_equipment
 		active = yes
-		priority = 05
+		priority = 20
 		visual_level = 0
 		
 		module_slots = inherit
@@ -172,7 +172,7 @@ equipments = {
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_0
-		priority = 10
+		priority = 20
 		visual_level = 1
 		
 		module_slots = inherit
@@ -197,7 +197,7 @@ equipments = {
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
-		priority = 10
+		priority = 20
 		visual_level = 2
 		
 		module_slots = inherit
@@ -222,7 +222,7 @@ equipments = {
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_2
-		priority = 10
+		priority = 20
 		visual_level = 3
 		
 		module_slots = inherit
@@ -247,7 +247,7 @@ equipments = {
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_3
-		priority = 10
+		priority = 20
 		visual_level = 4
 		
 		module_slots = inherit
@@ -272,7 +272,7 @@ equipments = {
 	
 		archetype = infantry_equipment
 		parent = infantry_equipment_4
-		priority = 10
+		priority = 20
 		visual_level = 5
 		
 		module_slots = inherit
