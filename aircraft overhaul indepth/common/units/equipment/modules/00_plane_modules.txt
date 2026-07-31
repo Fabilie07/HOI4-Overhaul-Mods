@@ -701,12 +701,17 @@ equipment_modules = {
 				port_strike
 				strategic_bomber
 				naval_patrol
+				cas
+				attack_logistics
 			}
 			add_stats = {
 				air_bombing = 4
 				night_penalty = -0.3
 				surface_detection = 10
 				sub_detection = 5
+			}
+			multiply_stats = {
+				air_ground_attack = 0.1
 			}
 		}
 		xp_cost = 1
@@ -729,12 +734,17 @@ equipment_modules = {
 				port_strike
 				strategic_bomber
 				naval_patrol
+				cas
+				attack_logistics
 			}
 			add_stats = {
 				air_bombing = 6
 				night_penalty = -0.4
 				surface_detection = 20
 				sub_detection = 10
+			}
+			multiply_stats = {
+				air_ground_attack = 0.2
 			}
 		}
 		xp_cost = 1
@@ -789,6 +799,7 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				interception
+				air_superiority
 			}
 			add_stats = {
 				night_penalty = -0.2
@@ -811,6 +822,7 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				interception
+				air_superiority
 			}
 			add_stats = {
 				night_penalty = -0.4
