@@ -1584,6 +1584,7 @@ equipments = {
 					cas_weapon
 					nav_bomber_weapon
 					strat_weapon
+					tac_fighter_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_1 = { 
@@ -1601,6 +1602,7 @@ equipments = {
 					cas_weapon
 					nav_bomber_weapon
 					strat_weapon
+					tac_fighter_weapon
 				}
 			}
 
