@@ -378,7 +378,7 @@ equipment_modules = {
 
 	r56_tank_optical_rangefinder = {
 		abbreviation = "oprf"
-		category = r56_tank_rangefinder_category
+		category = tank_rangefinder
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -395,7 +395,7 @@ equipment_modules = {
 
 	r56_tank_advanced_rangefinder = {
 		abbreviation = "adrf"
-		category = r56_tank_rangefinder_category
+		category = tank_rangefinder
 		parent = r56_tank_optical_rangefinder
 		sfx = sfx_ui_sd_module_turret
 
