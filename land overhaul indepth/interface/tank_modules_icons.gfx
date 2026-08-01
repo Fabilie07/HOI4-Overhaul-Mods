@@ -1302,6 +1302,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_EMI_tank_rangefinder"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/sw_rangefinder.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_sw_rangefinder"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/sw_rangefinder.dds"
 		legacy_lazy_load = no

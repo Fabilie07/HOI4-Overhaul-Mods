@@ -649,7 +649,7 @@ equipment_modules = {
 
 	sw_rangefinder = {
 		abbreviation = "lfuel"
-		category = tank_special_module
+		category = tank_rangefinder
 		sfx = sfx_ui_sd_module_turret
 
 		multiply_stats = {
