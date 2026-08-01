@@ -79,6 +79,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -87,6 +88,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -95,6 +97,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -103,6 +106,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -111,6 +115,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -152,7 +157,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_secondary_turret
+			category = tank_rangefinder
 			count < 2
 		}
 		module_count_limit = {
@@ -404,6 +409,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -413,6 +419,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -421,6 +428,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -429,6 +437,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -437,6 +446,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -469,8 +479,8 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_secondary_turret
-			count < 3 #two secondary turrets only
+			category = tank_rangefinder
+			count < 2
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -708,6 +718,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -717,6 +728,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -726,6 +738,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -734,6 +747,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -742,6 +756,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -771,6 +786,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rangefinder
 			count < 2
 		}
 
@@ -1096,6 +1115,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1104,6 +1124,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1112,6 +1133,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1120,6 +1142,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1149,6 +1172,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rangefinder
 			count < 2
 		}
 		module_count_limit = {
@@ -1377,6 +1404,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1386,6 +1414,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1395,6 +1424,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1404,6 +1434,7 @@ equipments = {
 					tank_special_module
 					tank_secondary_turret
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1412,6 +1443,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1441,6 +1473,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rangefinder
 			count < 2
 		}
 		module_count_limit = {
@@ -1598,6 +1634,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1606,6 +1643,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1614,6 +1652,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1622,6 +1661,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1630,6 +1670,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_stabilizer
+					tank_rangefinder
 				}
 			}
 
@@ -1668,6 +1709,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_rangefinder
 			count < 2
 		}
 
