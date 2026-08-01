@@ -755,6 +755,7 @@ modern_radio = {
 		enable_equipment_modules = { 
 			ship_radar_2
 			radio_navigation_2
+			air_air_radar_1
 		}
 		folder = {
 			name = electronics_folder
@@ -862,6 +863,9 @@ modern_radio = {
 		is_special_project_tech = yes
 		coordination_bonus = 0.02 #CHANGE  radio_detection_sp_1_tt and radio_detection_sp_2_tt if changing these 2!
 		static_anti_air_hit_chance_factor = 0.2
+		enable_equipment_modules = { 
+			air_ground_radar_1
+		}
 		
 		path = {
 			leads_to_tech = phased_array 
