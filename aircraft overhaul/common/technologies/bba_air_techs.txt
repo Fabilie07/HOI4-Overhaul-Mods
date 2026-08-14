@@ -5519,6 +5519,10 @@ technologies = {
 			attack_helicopter_equipment_1
 		}
 		
+		enable_subunits = {
+			attack_helicopter_brigade
+		}
+		
 		enable_equipment_modules = {
 			ah_minigun
 			ah_rocket_pod
