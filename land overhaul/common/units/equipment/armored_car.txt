@@ -105,15 +105,15 @@ equipments = {
 		}
 
 		module_count_limit = {
-			module = sloped_armor
-			count < 2
-		}	
-		module_count_limit = {
-			category = tank_radio_module
+			category = tank_stabilizer
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_secondary_turret
+			category = tank_rangefinder
+			count < 2
+		}
+		module_count_limit = {
+			module = sloped_armor
 			count < 2
 		}
 		module_count_limit = {
@@ -155,9 +155,14 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			module = stabilizer
+			module = sw_night_vision
 			count < 2
 		}
+		module_count_limit = {
+			module = sw_double_tracks
+			count < 1
+		}
+		
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = ac_one_man_turret

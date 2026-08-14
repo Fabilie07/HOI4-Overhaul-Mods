@@ -589,7 +589,6 @@ equipment_modules = {
 		abbreviation = "dozer"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = flame
 
 		add_stats = {
 			entrenchment = 1

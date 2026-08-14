@@ -210,6 +210,15 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			module = sw_night_vision
+			count < 2
+		}
+		module_count_limit = {
+			module = sw_double_tracks
+			count < 2
+		}
+		
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -531,6 +540,15 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			module = sw_night_vision
+			count < 2
+		}
+		module_count_limit = {
+			module = sw_double_tracks
+			count < 2
+		}
+		
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_medium_one_man_tank_turret
@@ -840,6 +858,14 @@ equipments = {
 		}
 		module_count_limit = {
 			module = stabilizer
+			count < 2
+		}
+		module_count_limit = {
+			module = sw_night_vision
+			count < 2
+		}
+		module_count_limit = {
+			module = sw_double_tracks
 			count < 2
 		}
 		default_modules = {
@@ -1224,9 +1250,12 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-
 		module_count_limit = {
-			module = stabilizer
+			module = sw_night_vision
+			count < 2
+		}
+		module_count_limit = {
+			module = sw_double_tracks
 			count < 2
 		}
 
@@ -1512,7 +1541,7 @@ equipments = {
 
 		module_count_limit = {
 			module = dozer_blade
-			count < 1
+			count < 2
 		}
 
 		module_count_limit = {
@@ -1524,7 +1553,11 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			module = stabilizer
+			module = sw_night_vision
+			count < 2
+		}
+		module_count_limit = {
+			module = sw_double_tracks
 			count < 2
 		}
 		default_modules = {
