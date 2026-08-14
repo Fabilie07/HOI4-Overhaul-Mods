@@ -18,6 +18,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_light_armor
+			category_self_propelled_anti_air
 			category_mechanical
 			category_army
 		}
@@ -88,6 +89,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_medium_armor
+			category_self_propelled_anti_air
 			category_mechanical
 			category_army
 		}
@@ -162,6 +164,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_heavy_armor
+			category_self_propelled_anti_air
 			category_mechanical
 			category_army
 		}
@@ -234,6 +237,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_medium_armor
+			category_self_propelled_anti_air
 			category_mechanical
 			category_army
 		}
@@ -300,6 +304,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_heavy_armor
+			category_self_propelled_anti_air
 			category_mechanical
 			category_army
 		}

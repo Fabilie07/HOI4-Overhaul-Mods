@@ -20,6 +20,7 @@ sub_units = {
 			category_light_armor
 			category_artillery
 			category_line_artillery
+			category_self_propelled_artillery
 			category_mechanical
 			category_army
 		}		
@@ -91,6 +92,7 @@ sub_units = {
 			category_medium_armor
 			category_artillery
 			category_line_artillery
+			category_self_propelled_artillery
 			category_mechanical
 			category_army
 		}		
@@ -165,6 +167,7 @@ sub_units = {
 			category_heavy_armor
 			category_artillery
 			category_line_artillery
+			category_self_propelled_artillery
 			category_mechanical
 			category_army
 		}
@@ -238,6 +241,7 @@ sub_units = {
 			category_medium_armor
 			category_artillery
 			category_line_artillery
+			category_self_propelled_artillery
 			category_mechanical
 			category_army
 		}
