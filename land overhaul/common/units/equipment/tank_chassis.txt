@@ -122,12 +122,14 @@ equipments = {
 			additional_weapon_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_additional_weapon_module
 				}
 			}
 
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_ammo
 				}
 			}
 
@@ -462,12 +464,14 @@ equipments = {
 			additional_weapon_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_additional_weapon_module
 				}
 			}
 
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_ammo
 				}
 			}
 
@@ -781,12 +785,14 @@ equipments = {
 			additional_weapon_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_additional_weapon_module
 				}
 			}
 
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_ammo
 				}
 			}
 
@@ -1175,12 +1181,14 @@ equipments = {
 			additional_weapon_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_additional_weapon_module
 				}
 			}
 
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_ammo
 				}
 			}
 
@@ -1479,12 +1487,14 @@ equipments = {
 			additional_weapon_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_additional_weapon_module
 				}
 			}
 
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_ammo
 				}
 			}
 
@@ -1710,12 +1720,14 @@ equipments = {
 			additional_weapon_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_additional_weapon_module
 				}
 			}
 
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_ammo
 				}
 			}
 
@@ -1945,7 +1957,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_super_heavy_tank_ammo
+					tank_ammo
 				}
 			}
 

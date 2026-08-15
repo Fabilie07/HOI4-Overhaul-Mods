@@ -77,7 +77,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_spg_ammo1_medium"
-		texturefile = "gfx/interface/technologies/tom_ammo_heat.dds"
+		texturefile = "gfx/interface/technologies/tom_ammo_smoke.dds"
 	}
 	SpriteType = {
 		name = "GFX_spg_ammo3_medium"

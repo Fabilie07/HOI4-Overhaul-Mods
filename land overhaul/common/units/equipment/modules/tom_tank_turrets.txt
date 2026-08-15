@@ -85,6 +85,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
+			}
 		}
 
 		xp_cost = 2
@@ -155,6 +158,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
+			}
 			armor_type_slot = {
 				tank_turret_armor_type
 			}
@@ -183,6 +189,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
+			}
 			armor_type_slot = {
 				tank_turret_armor_type
 			}
@@ -206,6 +215,9 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
+			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
 			}
 			armor_type_slot = {
 				tank_turret_armor_type
@@ -234,6 +246,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
 			}
 		}
 
@@ -265,6 +280,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
 			}
 			armor_type_slot = {
 				tank_turret_armor_type
@@ -305,6 +323,9 @@ equipment_modules = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
 			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
+			}
 			armor_type_slot = {
 				tank_turret_armor_type
 			}
@@ -333,6 +354,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
 			}
 			armor_type_slot = {
 				tank_turret_armor_type
@@ -365,6 +389,9 @@ equipment_modules = {
 				tank_heavy_main_armament
 				tank_super_heavy_main_armament
 			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
+			}
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 2
@@ -395,6 +422,9 @@ equipment_modules = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
 				tank_super_heavy_main_armament
+			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
 			}
 			armor_type_slot = {
 				tank_turret_armor_type
@@ -428,6 +458,9 @@ equipment_modules = {
 				tank_heavy_main_armament
 				tank_super_heavy_main_armament
 			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
+			}
 			armor_type_slot = {
 				tank_turret_armor_type
 			}
@@ -458,6 +491,9 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+			}
+			additional_weapon_slot = {
+				tank_additional_medium_weapon_module
 			}
 			armor_type_slot = {
 				tank_turret_armor_type

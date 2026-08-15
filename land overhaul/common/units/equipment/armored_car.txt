@@ -86,12 +86,14 @@ equipments = {
 			additional_weapon_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_additional_weapon_module
 				}
 			}
 			
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
+					tank_ammo
 				}
 			}
 

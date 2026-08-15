@@ -528,7 +528,7 @@ technologies = {
 		xp_boost_cost = 25
 		xp_research_bonus = 5
 
-		start_year = 1938
+		start_year = 1939
 
 		path = {
 			leads_to_tech = advanced_light_tank_chassis
@@ -537,7 +537,7 @@ technologies = {
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = @1938 }
+			position = { x = -1 y = @1939 }
 		}
 
 		XOR = { light_interdiction_tech }
@@ -581,7 +581,7 @@ technologies = {
 		xp_boost_cost = 25
 		xp_research_bonus = 5
 
-		start_year = 1938
+		start_year = 1939
 
 		path = {
 			leads_to_tech = advanced_light_tank_chassis
@@ -589,7 +589,7 @@ technologies = {
 		}
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -5 y = @1938 }
+			position = { x = -5 y = @1939 }
 		}
 
 		XOR = { light_recon_tech }
@@ -1522,7 +1522,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1938
 	}
 	
 	amphibious_drive = { #SchwimmPanzer II
@@ -1574,11 +1574,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1939
+		start_year = 1938
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = @light_medium_x y = @1939 }
+			position = { x = @light_medium_x y = @1938 }
 		}
 		
 		path = {

@@ -186,12 +186,6 @@ equipment_modules = {
 			reliability = -0.1
 		}
 
-		allowed_module_categories = {
-			ammunition_slot = {
-				tank_light_spg_ammo
-			}
-		}
-
 		build_cost_resources = {
 			steel = 1
 		}
@@ -212,15 +206,6 @@ equipment_modules = {
 			reliability = -0.1
 		}
 
-		allowed_module_categories = {
-			ammunition_slot = {
-				tank_light_tank_ammo
-			}
-			additional_weapon_slot = {
-				tank_additional_weapon_module
-			}
-		}
-
 		xp_cost = 1
 	}
 
@@ -238,15 +223,6 @@ equipment_modules = {
 			build_cost_ic = 5
 			maximum_speed = -0.2
 			reliability = -0.15
-		}
-
-		allowed_module_categories = {
-			ammunition_slot = {
-				tank_medium_tank_ammo
-			}
-			additional_weapon_slot = {
-				tank_additional_weapon_module
-			}
 		}
 
 		build_cost_resources = {
