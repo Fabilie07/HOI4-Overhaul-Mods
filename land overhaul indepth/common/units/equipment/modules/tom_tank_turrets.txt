@@ -96,6 +96,9 @@ equipment_modules = {
 			armor_type_slot = {
 				tank_turret_armor_type
 			}
+			fixed_turret_crew_slot = {
+				tank_heavy_turret_crew
+			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
 			tank_main_armament_size_medium = armor
@@ -206,6 +209,9 @@ equipment_modules = {
 				tank_barrel_length_medium
 				tank_barrel_length_long
 			}
+			fixed_turret_crew_slot = {
+				tank_heavy_turret_crew
+			}
 		}
 
 		xp_cost = 2
@@ -306,6 +312,9 @@ equipment_modules = {
 			armor_type_slot = {
 				tank_turret_armor_type
 			}
+			fixed_turret_crew_slot = {
+				tank_heavy_turret_crew
+			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
 			tank_main_armament_size_heavy = armor
@@ -395,6 +404,9 @@ equipment_modules = {
 			}
 			fixed_coax_weapon_slot = {
 				tank_coax_medium
+			}
+			fixed_turret_crew_slot = {
+				tank_heavy_turret_crew
 			}
 		}
 
