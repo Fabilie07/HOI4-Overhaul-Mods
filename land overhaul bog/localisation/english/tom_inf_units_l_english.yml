@@ -46,6 +46,8 @@
  mot_light_fire_support_desc:0 "Truck-Mounted Light Machine Guns provide Fire Support for Units, moving up together with them."
  mot_medium_fire_support:0 "Motorized Medium Weapons Company"
  mot_medium_fire_support_desc:0 "Truck-Mounted Medium Machine Guns provide Fire Support for Units, moving up together with them."
+ mortar_support:0 "Mortar Company"
+ mortar_support_desc:0 "Mortar Tubes provide indirect Fire Support to Infantry on the frontline."
  
  
  #Placeholders

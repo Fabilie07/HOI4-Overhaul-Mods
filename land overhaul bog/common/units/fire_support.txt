@@ -386,6 +386,51 @@ sub_units = {
 
 		can_be_parachuted = no
 	}
+	
+	mortar_support = {
+		abbreviation = "MOG"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		is_artillery_brigade = yes
+
+		type = {
+			infantry
+			support
+		}
+		
+		group = support
+		allowed_battalion_groups = {infantry mobile combat_support }
+		categories = {
+			category_support_battalions
+			category_regimental_support_battalions
+			category_army
+			category_regimental_support_artillery
+		}
+
+		divisional = no
+		combat_width = 0
+
+		need = {
+			mortar_chassis = 30
+		}
+		manpower = 210
+		training_time = 120
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.1
+		weight = 0.02
+		
+		supply_consumption = 0.04
+
+		# Support buffs (equipment balanced around Battalion Size)
+		soft_attack = 1.2
+
+		can_be_parachuted = yes
+	}
 
 	field_guns = {
 		abbreviation = "IFG"
