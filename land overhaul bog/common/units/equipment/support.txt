@@ -41,7 +41,6 @@ equipments = {
 		priority = 20
 		
 		max_organisation = 0.1
-		max_strength = 0.04
 		
 		resources = {
 			aluminium = 1
@@ -55,8 +54,7 @@ equipments = {
 		archetype = support_equipment
 		priority = 20
 		
-		max_organisation = 0.15
-		max_strength = 0.08
+		max_organisation = 0.2
 		
 		resources = {
 			aluminium = 1
@@ -70,8 +68,7 @@ equipments = {
 		archetype = support_equipment
 		priority = 20
 		
-		max_organisation = 0.2
-		max_strength = 0.12
+		max_organisation = 0.4
 		
 		resources = {
 			aluminium = 2

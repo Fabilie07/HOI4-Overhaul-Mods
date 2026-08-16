@@ -842,7 +842,6 @@ equipment_modules = {
 			tungsten = 1
 			chromium = 1
 			steel = 3
-			rare_metals = 1
 		}
 	}
 	
@@ -872,7 +871,7 @@ equipment_modules = {
 		}
 
 		build_cost_resources = {
-			tungsten = 2
+			tungsten = 1
 			chromium = 1
 			steel = 3
 			rare_metals = 1
