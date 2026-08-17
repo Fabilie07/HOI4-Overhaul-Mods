@@ -266,7 +266,7 @@ equipments = {
 		sub_detection = 10
 		surface_visibility = 18
 		manpower = 800
-		carrier_size = 2
+		carrier_size = 1
 		build_cost_ic = 2400
 		naval_dominance_factor = 125
 		
@@ -305,7 +305,7 @@ equipments = {
 
 		module_slots = inherit
 		
-		carrier_size = 4
+		carrier_size = 2
 		reliability = 0.85
 		naval_range = 3000
 		naval_speed = 23
@@ -324,7 +324,7 @@ equipments = {
 
 		module_slots = inherit
 		
-		carrier_size = 8
+		carrier_size = 4
 		reliability = 0.9
 		naval_range = 4000
 		naval_speed = 29
@@ -342,7 +342,7 @@ equipments = {
 
 		module_slots = inherit
 
-		carrier_size = 12
+		carrier_size = 6
 
 		reliability = 0.9
 		naval_speed = 27
@@ -367,7 +367,7 @@ equipments = {
 		parent = ship_hull_carrier_0
 		module_slots = inherit
 
-		carrier_size = 13
+		carrier_size = 6
 
 		reliability = 0.9
 		naval_speed = 29
@@ -392,7 +392,7 @@ equipments = {
 		parent = ship_hull_carrier_1
 		module_slots = inherit
 
-		carrier_size = 14
+		carrier_size = 7
 
 		naval_range = 8000
 		reliability = 0.9
@@ -416,7 +416,7 @@ equipments = {
 		parent = ship_hull_carrier_2
 		module_slots = inherit
 
-		carrier_size = 16
+		carrier_size = 8
 
 		naval_range = 9000
 		reliability = 0.95
@@ -439,7 +439,7 @@ equipments = {
 		parent = ship_hull_carrier_3
 		module_slots = inherit
 
-		carrier_size = 22
+		carrier_size = 11
 
 		naval_range = 10000
 		reliability = 1.1
@@ -463,7 +463,7 @@ equipments = {
 		parent = ship_hull_carrier_modern
 		module_slots = inherit
 
-		carrier_size = 22
+		carrier_size = 11
 
 		naval_range = 11000
 		reliability = 1.1
@@ -538,7 +538,7 @@ equipments = {
 			left_4_custom_slot = inherit
 		}
 
-		carrier_size = 40
+		carrier_size = 20
 
 		naval_range = 7000
 		reliability = 0.8

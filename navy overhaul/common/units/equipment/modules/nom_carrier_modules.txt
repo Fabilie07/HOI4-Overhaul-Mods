@@ -62,9 +62,6 @@ equipment_modules = {
 		add_stats = {
 			carrier_size = 1
 		}
-		multiply_stats = {
-			build_cost_ic = -0.05
-		}
 	}
 	
 	ship_carrier_hangar_double_deck = {
@@ -73,9 +70,9 @@ equipment_modules = {
 		gui_category = ship_carrier_deck
 		
 		add_stats = {
-			carrier_size = 3
+			carrier_size = 2
 			build_cost_ic = 600
-			reliability = -0.1
+			reliability = -0.15
 		}
 		multiply_stats = {
 			max_strength = -0.05
@@ -88,9 +85,9 @@ equipment_modules = {
 		gui_category = ship_carrier_deck
 		
 		add_stats = {
-			carrier_size = 5
+			carrier_size = 3
 			build_cost_ic = 800
-			reliability = -0.2
+			reliability = -0.3
 		}
 		multiply_stats = {
 			max_strength = -0.15
@@ -103,7 +100,7 @@ equipment_modules = {
 		gui_category = ship_carrier_hangar
 		
 		add_stats = {
-			carrier_size = 4
+			carrier_size = 2
 			build_cost_ic = 600
 		}
 		multiply_stats = {
@@ -117,11 +114,11 @@ equipment_modules = {
 		gui_category = ship_carrier_hangar
 		
 		add_stats = {
-			carrier_size = 6
+			carrier_size = 3
 			build_cost_ic = 800
 		}
 		multiply_stats = {
-			max_strength = -0.3
+			max_strength = -0.25
 		}
 	}
 	
@@ -131,11 +128,11 @@ equipment_modules = {
 		gui_category = ship_carrier_hangar
 		
 		add_stats = {
-			carrier_size = 8
+			carrier_size = 4
 			build_cost_ic = 1000
 		}
 		multiply_stats = {
-			max_strength = -0.5
+			max_strength = -0.4
 		}
 	}
 	
@@ -147,7 +144,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 200
 			reliability = 0.1
-			carrier_size = -4
+			carrier_size = -2
 		}
 		multiply_stats = {
 			max_strength = 0.45
@@ -297,7 +294,7 @@ equipment_modules = {
 		gfx = ship_deck_space
 		
 		add_stats = {
-			carrier_size = 2
+			carrier_size = 1
 			build_cost_ic = 200
 		}
 		multiply_stats = {
