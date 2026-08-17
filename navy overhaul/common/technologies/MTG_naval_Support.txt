@@ -2038,7 +2038,7 @@ technologies = {
 
 	damage_control_1 = {
 
-		research_cost = 2.5
+		research_cost = 2
 		path = {
 			leads_to_tech = damage_control_2
 			research_cost_coeff = 1
@@ -2050,7 +2050,7 @@ technologies = {
 		naval_critical_effect_factor = -0.1
 		xp_research_type = navy
 		xp_boost_cost = @navy_exp_boost
-		xp_research_bonus = 1.50
+		xp_research_bonus = 1.0
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = @1910 }
@@ -2093,7 +2093,7 @@ technologies = {
 
 	damage_control_2 = {
 
-		research_cost = 2.5
+		research_cost = 2
 		path = {
 			leads_to_tech = damage_control_3
 			research_cost_coeff = 1
@@ -2105,7 +2105,7 @@ technologies = {
 		naval_critical_effect_factor = -0.1
 		xp_research_type = navy
 		xp_boost_cost = @navy_exp_boost
-		xp_research_bonus = 1.50
+		xp_research_bonus = 1.0
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = @1920 }
@@ -2143,7 +2143,7 @@ technologies = {
 
 	damage_control_3 = {
 
-		research_cost = 2.5
+		research_cost = 2
 		enable_equipment_modules = {
 			dc_advanced_automatic
 		}
@@ -2151,7 +2151,7 @@ technologies = {
 		naval_critical_effect_factor = -0.1
 		xp_research_type = navy
 		xp_boost_cost = @navy_exp_boost
-		xp_research_bonus = 1.50
+		xp_research_bonus = 1.0
 		
 		# path = {
 			# leads_to_tech = sp_improved_repair_ship
@@ -2203,7 +2203,7 @@ technologies = {
 
 	fire_control_methods_1 = {
 
-		research_cost = 2.5
+		research_cost = 2
 		path = {
 			leads_to_tech = fire_control_methods_2
 			research_cost_coeff = 1
@@ -2218,7 +2218,7 @@ technologies = {
 		}
 		xp_research_type = navy
 		xp_boost_cost = @navy_exp_boost
-		xp_research_bonus = 1.50
+		xp_research_bonus = 1.0
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = @1910 }
@@ -2254,8 +2254,8 @@ technologies = {
 	fire_control_methods_2 = {
 		xp_research_type = navy
 		xp_boost_cost = @navy_exp_boost
-		xp_research_bonus = 1.50
-		research_cost = 2.5
+		xp_research_bonus = 1.0
+		research_cost = 2
 		path = {
 			leads_to_tech = fire_control_methods_3
 			research_cost_coeff = 1
@@ -2303,7 +2303,7 @@ technologies = {
 
 	fire_control_methods_3 = {
 
-		research_cost = 2.5
+		research_cost = 2
 		battleship = {
 			lg_attack = 0.15
 			hg_attack = 0.15
@@ -2326,7 +2326,7 @@ technologies = {
 		}
 		xp_research_type = navy
 		xp_boost_cost = @navy_exp_boost
-		xp_research_bonus = 1.50
+		xp_research_bonus = 1.0
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = @1930 }
