@@ -248,16 +248,16 @@ equipments = {
 		}
 		
 		default_modules = {
-			fixed_ship_armor_slot = ship_armor_shbb
+			fixed_ship_armor_slot = super_heavy_ship_armor
 			fixed_ship_battery_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_engine_slot = super_heavy_ship_engine
 			front_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
 		surface_visibility = 30
 
 		naval_range = 4500
-		naval_speed = 26
+		naval_speed = 28.5
 		max_strength = 350
 		fuel_consumption = 45
 		reliability = 1.1

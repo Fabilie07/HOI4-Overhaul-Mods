@@ -701,6 +701,10 @@
  heavy_ship_nuclear_engine_1: "Nuclear Heavy Ship Reactor"
  heavy_ship_nuclear_engine_1_short: "Heavy Ship Reactor"
  heavy_ship_nuclear_engine_1_desc: "A powerful nuclear reactor, capable of powering the heaviest of ships without need for refuelling."
+ 
+ super_heavy_ship_engine:0 "150,000 Shp Engine"
+ super_heavy_ship_engine_short:0 "Super Heavy Engine"
+ super_heavy_ship_engine_desc:0 "Using more boilers to achieve a higher Steam Pressure increases the size and displacement of an engine, but it can move even the heaviest ships at competitive speeds."
 
  carrier_ship_engine_0:0 "9,000 Shp Engine"
  carrier_ship_engine_0_short:0 "Carrier Engine 0"

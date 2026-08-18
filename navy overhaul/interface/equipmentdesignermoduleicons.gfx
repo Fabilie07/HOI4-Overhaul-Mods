@@ -739,6 +739,11 @@ spriteTypes = {
 		name = "GFX_SMI_heavy_ship_engine_4"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_4.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_SMI_super_heavy_ship_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/engine_icn_sh.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SMI_sub_ship_engine"

@@ -2213,6 +2213,7 @@ sp_naval_super_heavy_battleship = {
 		enable_equipment_modules = {	
 			limit = { has_dlc = "Man the Guns" } 		
 			super_heavy_ship_armor
+			super_heavy_ship_engine
 		}
 
 		enable_subunits = { 

@@ -82,12 +82,12 @@ equipments = {
 		carrier_size = 7
 
 		default_modules = {
-			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_engine_slot = super_heavy_ship_engine
 		}
 		naval_range = 5500
 		reliability = 0.8
 		max_strength = 500
-		naval_speed = 24
+		naval_speed = 23
 		naval_dominance_factor = 450
 
 
