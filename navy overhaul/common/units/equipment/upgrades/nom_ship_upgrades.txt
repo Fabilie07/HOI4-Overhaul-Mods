@@ -10,16 +10,17 @@ upgrades = {
 			cost_by_level_for_licensed_equipment = 5
 		}
 
-		level_requirements = {
-			5 = {
-				has_tech = engine_tech_1
-			}
-			9 = {
-				has_tech = engine_tech_2
-			}
-		}
-		reliability = 0.02
+		# level_requirements = {
+			# 5 = {
+				# has_tech = engine_tech_1
+			# }
+			# 9 = {
+				# has_tech = engine_tech_2
+			# }
+		# }
+		
 		add_stats = {
+			reliability = 0.02
 			max_organisation = 0.02
 		}
 		multiply_stats = {
