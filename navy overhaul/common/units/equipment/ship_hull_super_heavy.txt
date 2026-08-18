@@ -24,13 +24,6 @@ equipments = {
 		model = super_heavy_battleship
 		visual_level = 1
 		interface_category = interface_category_capital_ships
-
-		upgrades = {
-			ship_reliability_upgrade
-			ship_engine_upgrade
-			ship_armor_upgrade
-			ship_gun_upgrade
-		}
 		
 		module_slots = {
 			fixed_ship_radio_slot = {
@@ -275,6 +268,10 @@ equipments = {
 		priority = 1400
 		naval_dominance_factor = 450
 		module_slots = inherit
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
 	}
 
 	SH_battleship_1 = {
@@ -488,6 +485,14 @@ equipments = {
 			left_3_custom_slot = ship_casemate_2
 			left_4_custom_slot = ship_casemate_2
 		}
+		
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+		
 		hg_armor_piercing = 0
 		hg_attack = 0
 

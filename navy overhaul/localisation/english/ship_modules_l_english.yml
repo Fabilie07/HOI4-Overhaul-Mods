@@ -130,6 +130,9 @@
  EQ_MOD_SLOT_top_2_custom_slot_TITLE:0 "Top Custom"
  EQ_MOD_SLOT_top_3_custom_slot_TITLE:0 "Top Custom"
  EQ_MOD_SLOT_top_4_custom_slot_TITLE:0 "Top Custom"
+ 
+ 
+ ship_mtg_superstructure_upgrade:0 "Superstructure Size"
 
 
  ### EQUIPMENT MODULES ###

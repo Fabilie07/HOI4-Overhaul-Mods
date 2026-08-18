@@ -308,6 +308,60 @@ guiTypes = {
 				name = "pos_custom_module_slot_window_13"
 				position = { x=330 y=102 }
 			}
+			
+			
+			
+			######################################################################
+			# Equipment upgrades
+			######################################################################
+
+			containerWindowType = {
+				name = "equipment_upgrade_0"
+				position = { x = 34 y = 235 }
+				size = { width = 182 height = 100 } 
+				
+				background = {
+					name = "background"
+					spriteType = "GFX_tiled_bg"
+				}
+			
+				buttonType = {
+					name = "btn_dec"
+					quadTextureSprite ="GFX_naval_decrease_amount"
+					position = { x = 45 y = 29 }
+					clicksound = "ui_tank_designer_decrease"
+				}
+
+				buttonType = {
+					name = "btn_inc"
+					quadTextureSprite ="GFX_naval_increase_amount"
+					position = { x = 105 y = 29 }
+					clicksound = "ui_tank_designer_increase"
+				}
+				
+
+				instantTextboxType = {
+					name = "name"
+					position = { x = 1 y = 15 }
+					font = "hoi_18mbs"
+					maxWidth = 180
+					maxHeight = 20
+					format = center
+					text = "_engine_"
+				}
+
+				instantTextboxType = {
+					name = "level"
+					position = { x = 77 y = 30 }
+					font = "hoi_18mbs"
+					maxWidth = 28
+					maxHeight = 30
+					format = center
+					vertical_alignment = center
+					text = "99"
+				}
+
+			}
 		}
 		
 		iconType = {
