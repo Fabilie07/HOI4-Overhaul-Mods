@@ -403,13 +403,8 @@ technologies = {
 			tank_medium_cannon_2
 		}
 
-#		path = {
-#			leads_to_tech = modern_cannon_tech
-#			research_cost_coeff = 1
-#		}
-
 		path = {
-			leads_to_tech = high_velocity_cannon_tech2
+			leads_to_tech = modern_cannon_tech
 			research_cost_coeff = 1
 		}
 
@@ -576,16 +571,16 @@ technologies = {
 			tank_heavy_cannon_3
 		}
 
-#		path = {
-#			leads_to_tech = modern_cannon_tech
-#			research_cost_coeff = 1
-#		}
+		path = {
+			leads_to_tech = heavy_cannon_tech4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 0.3
 		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 23 y = @1944 }
+			position = { x = 22 y = @1944 }
 		}
 		
 		special_project_specialization = { specialization_land }
@@ -596,6 +591,33 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1945.1.1"
+			}
+		}
+	}
+	
+	heavy_cannon_tech4 = {
+
+		show_equipment_icon = yes
+
+		enable_equipment_modules = {
+			tank_heavy_cannon_4
+		}
+
+		research_cost = 0.3
+		start_year = 1946
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 22 y = @1946 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1947.1.1"
 			}
 		}
 	}
@@ -617,7 +639,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1944 }
+			position = { x = 24 y = @1944 }
 		}
 		
 		special_project_specialization = { specialization_land }
@@ -644,7 +666,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1948 }
+			position = { x = 24 y = @1948 }
 		}
 		
 		special_project_specialization = { specialization_land }
@@ -672,7 +694,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 24 y = @1943 }
+			position = { x = 25 y = @1943 }
 		}
 		
 		special_project_specialization = { specialization_land }
@@ -692,12 +714,17 @@ technologies = {
 		enable_equipment_modules = {
 			tank_modern_cannon
 		}
+		
+		path = {
+			leads_to_tech = modern_cannon_tech2
+			research_cost_coeff = 1
+		}
 
 		research_cost = 0.3
-		start_year = 1945
+		start_year = 1946
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1945 }
+			position = { x = 20 y = @1946 }
 		}
 		
 		special_project_specialization = { specialization_land }
@@ -707,8 +734,28 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1946.1.1"
+				date > "1947.1.1"
 			}
+		}
+	}
+	
+	modern_cannon_tech2 = {
+
+		enable_equipment_modules = {
+			tank_modern_cannon_2
+		}
+
+		research_cost = 0.3
+		start_year = 1958
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 20 y = @1958 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
