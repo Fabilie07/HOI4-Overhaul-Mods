@@ -12,6 +12,14 @@ technologies = {
 	@1943 = 18
 	@1944 = 20
 	@1945 = 22
+	@1946 = 24
+	@1948 = 26
+	@1950 = 28
+	@1952 = 30
+	@1954 = 32
+	@1956 = 34
+	@1958 = 36
+	@1960 = 38
 
 	############################################## Howitzer
 
@@ -599,12 +607,44 @@ technologies = {
 		enable_equipment_modules = {
 			tank_super_heavy_cannon
 		}
+		
+		path = {
+			leads_to_tech = super_heavy_cannon_tech2
+			research_cost_coeff = 1
+		}
 
 		research_cost = 0.3
 		start_year = 1944
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 21 y = @1944 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	super_heavy_cannon_tech2 = {
+
+		show_equipment_icon = yes
+
+		enable_equipment_modules = {
+			tank_super_heavy_cannon_2
+		}
+
+		research_cost = 0.3
+		start_year = 1948
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 21 y = @1948 }
 		}
 		
 		special_project_specialization = { specialization_land }

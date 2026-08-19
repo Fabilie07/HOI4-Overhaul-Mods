@@ -155,11 +155,19 @@ air_subdoctrine_cas_multi_role_fighters = {
 		}
 		mission_based_configuration = {
 			category_fighter = {
-				air_ground_attack = 0.05
+				air_ground_attack = 0.1
 				naval_strike_attack = 0.1
 			}
 		}
     }
+	
+	mastery = {
+		multiplier = 50.0
+		equipment = {
+			fighter
+			cas
+		}
+	}
 }
 
 air_subdoctrine_cas_ground_air_communication = {

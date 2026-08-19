@@ -178,8 +178,8 @@ technologies = {
 	
 	aom_doctrine_cas_multi_role_fighters = {
 		category_fighter = {
-			air_ground_attack = 0.3
-			naval_strike_attack = 0.3
+			air_ground_attack = 0.35
+			naval_strike_attack = 0.35
 		}
 		category_cas = {
 			air_attack = 0.2
