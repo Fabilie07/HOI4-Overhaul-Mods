@@ -6,3 +6,17 @@
  
  GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE:0 "Special Branch Dominance"
  GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE_DESC:0 "The Special Forces Branches claim that they alone can win any war by themselves. They use this reason as an excuse to divert funds and equipment away from the regular army."
+
+
+ tom_inf_special_forces_decisions:0 "Branch Specialism Bonuses"
+ tom_inf_special_forces_decisions_desc:0 "You can use your Branch Specialism to boost one of the Special Forces Branches. This can only be done once."
+ tom_inf_special_forces_upgrade_marines:0 "Focus on the Marines"
+ tom_inf_special_forces_upgrade_paratroopers:0 "Focus on the Paratroopers"
+ tom_inf_special_forces_upgrade_mountaineers:0 "Focus on the Mountaineers"
+ tom_inf_special_forces_upgrade_rangers:0 "Focus on the Rangers"
+ 
+ tom_inf_spf_upgrade_marines:0 "Specialized Marines"
+ tom_inf_spf_upgrade_paratroopers:0 "Specialized Paratroopers"
+ tom_inf_spf_upgrade_mountaineers:0 "Specialized Mountaineers"
+ tom_inf_spf_upgrade_rangers:0 "Specialized Rangers"
+ 

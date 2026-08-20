@@ -106,4 +106,87 @@ technologies = {
 			experience_loss_factor = 1
 		}
 	}
+	
+	
+	
+	### SPECIAL FORCES ####
+	tom_inf_spf_upgrade_marines = {
+		allow = {
+			always = no
+		}
+		
+		special_forces_min = 6
+		special_forces_cap = 0.04
+		category_marines_and_amphibious = {
+			breakthrough = 0.1
+		}
+		pioneer_support = {
+			river = {
+				movement = 0.1
+				attack = 0.1
+			}
+		}
+	}
+	
+	tom_inf_spf_upgrade_paratroopers = {
+		allow = {
+			always = no
+		}
+		
+		special_forces_min = 6
+		special_forces_cap = 0.04
+		category_paratroopers = {
+			default_morale = 0.1
+			max_organisation = 5
+		}
+		airborne_light_armor = {
+			breakthrough = 0.2
+		}
+	}
+	
+	tom_inf_spf_upgrade_mountaineers = {
+		allow = {
+			always = no
+		}
+		
+		special_forces_min = 6
+		special_forces_cap = 0.04
+		category_mountaineers = {
+			supply_consumption = -0.04
+			max_strength = 0.1
+		}
+		rangers_support = {
+			mountain = {
+				movement = 0.1
+				attack = 0.1
+			}
+			hills = {
+				movement = 0.1
+				attack = 0.05
+			}
+		}
+	}
+	
+	tom_inf_spf_upgrade_rangers = {
+		allow = {
+			always = no
+		}
+		
+		special_forces_min = 6
+		special_forces_cap = 0.04
+		category_rangers = {
+			soft_attack = 0.05
+			defense = 0.1
+		}
+		rangers_support = {
+			forest = {
+				movement = 0.1
+				attack = 0.1
+			}
+			jungle = {
+				movement = 0.1
+				attack = 0.1
+			}
+		}
+	}
 }

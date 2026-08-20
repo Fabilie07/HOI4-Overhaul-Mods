@@ -1,0 +1,104 @@
+tom_inf_special_forces_decisions = {
+
+	tom_inf_special_forces_upgrade_marines = {
+		visible = {
+			has_subdoctrine_in_track = special_forces_marines
+		}
+		
+		available = {
+			has_completed_track = special_forces_marines
+		}
+		
+		icon = GFX_decision_SWE_set_navy_budget
+
+		complete_effect = {
+			set_technology = { tom_inf_spf_upgrade_marines = 1 }
+			custom_effect_tooltip = tech_effect|tom_inf_spf_upgrade_marines
+			
+			add_to_variable = { sf_trees = -1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+			}
+		}
+	}
+	
+	tom_inf_special_forces_upgrade_paratroopers = {
+		visible = {
+			has_subdoctrine_in_track = special_forces_paratroopers
+		}
+		
+		available = {
+			has_completed_track = special_forces_paratroopers
+		}
+		
+		icon = GFX_decision_SWE_set_air_budget
+
+		complete_effect = {
+			set_technology = { tom_inf_spf_upgrade_paratroopers = 1 }
+			custom_effect_tooltip = tech_effect|tom_inf_spf_upgrade_paratroopers
+			
+			add_to_variable = { sf_trees = -1 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	tom_inf_special_forces_upgrade_mountaineers = {
+		visible = {
+			has_subdoctrine_in_track = special_forces_mountaineers
+		}
+		
+		available = {
+			has_completed_track = special_forces_mountaineers
+		}
+		
+		icon = GFX_decision_CHL_carabineros
+
+		complete_effect = {
+			set_technology = { tom_inf_spf_upgrade_mountaineers = 1 }
+			custom_effect_tooltip = tech_effect|tom_inf_spf_upgrade_mountaineers
+			
+			add_to_variable = { sf_trees = -1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tom_inf_special_forces_upgrade_rangers = {
+		visible = {
+			has_subdoctrine_in_track = special_forces_rangers
+		}
+		
+		available = {
+			has_completed_track = special_forces_rangers
+		}
+		
+		icon = GFX_decision_generic_forestry
+
+		complete_effect = {
+			set_technology = { tom_inf_spf_upgrade_rangers = 1 }
+			custom_effect_tooltip = tech_effect|tom_inf_spf_upgrade_rangers
+			
+			add_to_variable = { sf_trees = -1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+}

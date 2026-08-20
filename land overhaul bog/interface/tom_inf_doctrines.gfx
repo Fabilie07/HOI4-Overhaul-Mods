@@ -4,4 +4,12 @@ spriteTypes = {
 		name = "GFX_doctrine_special_forces_3_medium"
 		texturefile = "gfx/interface/doctrines/icons/doctrine_special_forces_dominance.dds"
 	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_doctrine_special_forces_upgrade_button"
+		texturefile = "gfx/interface/doctrines/icons/special_forces_upgrade_button.dds"
+		noOfFrames = 2
+	}
 }

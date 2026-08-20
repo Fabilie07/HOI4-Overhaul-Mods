@@ -255,9 +255,9 @@ special_forces_dominance = {
 
 	category_special_forces = {
 		default_morale = 0.2
+		maximum_speed = 0.1
 	}
 	experience_loss_factor = -0.15
-	special_forces_speed_factor = 0.2
     special_forces_min = 120
 	special_forces_cap = -0.85
 	weekly_casualties_war_support = -0.2
