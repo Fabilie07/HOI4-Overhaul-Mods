@@ -165,6 +165,8 @@ air_subdoctrine_cas_multi_role_fighters = {
 		multiplier = 50.0
 		equipment = {
 			fighter
+			interceptor
+			heavy_fighter
 			cas
 		}
 	}

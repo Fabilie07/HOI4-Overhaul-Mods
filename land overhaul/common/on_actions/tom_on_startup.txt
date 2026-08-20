@@ -12,7 +12,6 @@ on_actions = {
 				limit = { has_tech = interwar_antitank }
 
 				set_technology = { small_cannon_tech2 = 1 popup = no }
-				set_technology = { tank_ammo1 = 1 popup = no }
 			}
 
 			every_country = {

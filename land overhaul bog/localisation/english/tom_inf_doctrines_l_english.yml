@@ -1,0 +1,8 @@
+﻿l_english:
+ DOCTRINE_TRACK_MARINES:0 "Marines"
+ DOCTRINE_TRACK_PARATROOPERS:0 "Paratroopers"
+ DOCTRINE_TRACK_MOUNTAINEERS:0 "Mountaineers"
+ DOCTRINE_TRACK_RANGERS:0 "Rangers"
+ 
+ GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE:0 "Special Branch Dominance"
+ GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE_DESC:0 "The Special Forces Branches claim that they alone can win any war by themselves. They use this reason as an excuse to divert funds and equipment away from the regular army."

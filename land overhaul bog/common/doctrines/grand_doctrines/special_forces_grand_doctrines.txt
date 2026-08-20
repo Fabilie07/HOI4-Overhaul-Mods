@@ -1,0 +1,352 @@
+special_forces_quantity = {
+    folder = special_forces
+
+    name = GRAND_DOCTRINE_SPECIAL_FORCES_QUANTITY
+    description = GRAND_DOCTRINE_SPECIAL_FORCES_QUANTITY_DESC
+    icon = GFX_doctrine_special_forces_1_medium
+    available = {
+        OR = {
+            has_tech = tech_mountaineers
+            has_tech = marines
+            has_tech = paratroopers
+            has_tech = rangers_tech
+        }
+    }
+
+    xp_cost = 50
+    xp_type = army
+
+    ai_will_do = {
+        base = 1
+    }
+
+    tracks = {
+    	special_forces_marines
+    	special_forces_paratroopers
+		special_forces_mountaineers
+		special_forces_rangers
+    }
+
+    # EFFECTS
+
+    special_forces_cap = 0.04
+    special_forces_training_time_factor = -0.2
+
+    milestones = {
+        {
+        	special_forces_cap = 0.04
+            marines_special_forces_contribution_factor = -0.3
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+        {
+        	special_forces_cap = 0.04
+            paratroopers_special_forces_contribution_factor = -0.3
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }                      
+        }
+		{
+        	special_forces_cap = 0.04
+            mountaineers_special_forces_contribution_factor = -0.3
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+		{
+        	special_forces_cap = 0.04
+            rangers_special_forces_contribution_factor = -0.3
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+    }
+}
+
+special_forces_quality = {
+    folder = special_forces
+
+    name = GRAND_DOCTRINE_SPECIAL_FORCES_QUALITY
+    description = GRAND_DOCTRINE_SPECIAL_FORCES_QUALITY_DESC
+    icon = GFX_doctrine_special_forces_2_medium
+    available = {
+        OR = {
+            has_tech = tech_mountaineers
+            has_tech = marines
+            has_tech = paratroopers
+            has_tech = rangers_tech
+        }
+    }
+
+    xp_cost = 50
+    xp_type = army
+
+    ai_will_do = {
+        base = 1
+    }
+
+    tracks = {
+        special_forces_marines
+    	special_forces_paratroopers
+		special_forces_mountaineers
+		special_forces_rangers
+    }
+
+    # EFFECTS
+
+    category_special_forces = {
+        max_organisation = 10
+		soft_attack = 0.05
+    }
+    special_forces_no_supply_grace = 24
+
+    milestones = {
+        {
+            amphibious_invasion = 0.15
+			category_special_forces = {
+				soft_attack = 0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+        {
+			air_superiority_bonus_in_combat = 0.1
+            category_special_forces = {
+				soft_attack = 0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+		{
+			out_of_supply_factor = -0.15
+            category_special_forces = {
+				soft_attack = 0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+		{
+			initiative_factor = 0.2
+            category_special_forces = {
+				soft_attack = 0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+    }
+}
+
+
+special_forces_dominance = {
+    folder = special_forces
+
+    name = GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE
+    description = GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE_DESC
+    icon = GFX_doctrine_special_forces_3_medium
+    available = {
+        OR = {
+            has_tech = tech_mountaineers
+            has_tech = marines
+            has_tech = paratroopers
+            has_tech = rangers_tech
+        }
+    }
+
+    xp_cost = 50
+    xp_type = army
+
+    ai_will_do = {
+        base = 1
+    }
+
+    tracks = {
+        special_forces_marines
+    	special_forces_paratroopers
+		special_forces_mountaineers
+		special_forces_rangers
+    }
+
+    # EFFECTS
+
+	category_special_forces = {
+		default_morale = 0.2
+	}
+	experience_loss_factor = -0.15
+	special_forces_speed_factor = 0.2
+    special_forces_min = 120
+	special_forces_cap = -0.85
+	weekly_casualties_war_support = -0.2
+
+    milestones = {
+        {
+			marine_commando = {
+				soft_attack = 0.1
+				breakthrough = 0.12
+			}
+			category_special_forces = {
+				supply_consumption = -0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+        {
+			paradrop_organization_factor = 0.2
+			category_special_forces = {
+				supply_consumption = -0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+		{
+			category_mountaineers = {
+				soft_attack = 0.05
+				maximum_speed = 0.1
+			}
+			category_special_forces = {
+				supply_consumption = -0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+		{
+			category_rangers = {
+				soft_attack = 0.05
+				defense = 0.16
+			}
+			category_special_forces = {
+				supply_consumption = -0.05
+			}
+            effect = {
+                if = {
+                    limit = {
+                        NOT = {
+                            has_variable = special_forces_milestone_var
+                        }
+                    }
+                    set_variable = { special_forces_milestone_var = 1 }
+                }
+                else = {
+                    add_to_variable = { special_forces_milestone_var = 1 }
+                }
+            }            
+        }
+    }
+}
