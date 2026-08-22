@@ -38,6 +38,7 @@ equipments = {
 		year = 1939
 
 		archetype = support_equipment
+		parent = support_equipment_1
 		priority = 20
 		
 		max_organisation = 0.1
@@ -52,6 +53,7 @@ equipments = {
 		year = 1942
 
 		archetype = support_equipment
+		parent = support_equipment_2
 		priority = 20
 		
 		max_organisation = 0.2
@@ -66,6 +68,7 @@ equipments = {
 		year = 1945
 
 		archetype = support_equipment
+		parent = support_equipment_3
 		priority = 20
 		
 		max_organisation = 0.4
