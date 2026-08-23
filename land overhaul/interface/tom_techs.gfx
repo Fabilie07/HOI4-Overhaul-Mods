@@ -146,8 +146,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tom_heavy_cannon_3.dds"
 	}
 	SpriteType = {
+		name = "GFX_heavy_cannon_tech4_medium"
+		texturefile = "gfx/interface/technologies/tom_heavy_cannon_4.dds"
+	}
+	SpriteType = {
 		name = "GFX_super_heavy_cannon_tech_medium"
 		texturefile = "gfx/interface/technologies/tom_super_heavy_cannon.dds"
+	}
+	SpriteType = {
+		name = "GFX_super_heavy_cannon_tech2_medium"
+		texturefile = "gfx/interface/technologies/tom_super_heavy_cannon2.dds"
 	}
 	SpriteType = {
 		name = "GFX_high_velocity_cannon_tech_medium"
@@ -164,6 +172,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_modern_cannon_tech_medium"
 		texturefile = "gfx/interface/technologies/tom_modern_cannon.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_cannon_tech2_medium"
+		texturefile = "gfx/interface/technologies/tom_modern_cannon2.dds"
 	}
 	SpriteType = {
 		name = "GFX_auto_cannon_tech_medium"

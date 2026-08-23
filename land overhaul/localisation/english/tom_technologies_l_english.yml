@@ -43,12 +43,18 @@
  heavy_cannon_tech2_desc:0 "New breech designs allow for easier loading and less risk to the crew when firing the cannon."
  heavy_cannon_tech3:0 "Heavy Cannon III"
  heavy_cannon_tech3_desc:0 "Modern manufacturing enables more durable turret rings and gun fittings, reducing the structural strain from mounting such large cannons."
+ heavy_cannon_tech4:0 "Heavy Cannon IV"
+ heavy_cannon_tech4_desc:0 "Larger and more complex tanks can comfortably carry guns of sizes that were only able to be used by specialized vehicles before."
  
  super_heavy_cannon_tech:0 "Super Heavy Cannon"
  super_heavy_cannon_tech_desc:0 "These Cannons are often converted from Naval Guns, offering enormous firepower but putting a lot of strain on the chassis carrying them."
+ super_heavy_cannon_tech2:0 "Super Heavy Cannon II"
+ super_heavy_cannon_tech2_desc:0 "In order to get through the armor of modern Heavy Tanks, a gun of truly monstrous size is necessary."
 
  modern_cannon_tech:0 "Modern Cannon"
  modern_cannon_tech_desc:0 "New Ammunition requires reworked cannons to be fired to its greatest effect."
+ modern_cannon_tech2:0 "Modern Cannon II"
+ modern_cannon_tech2_desc:0 "Combining accuracy, firepower and fire rate, the newest cannons promise swift destruction of all manner of targets."
 
  auto_cannon_tech:0 "Rapid-Fire Weaponry"
  auto_cannon_tech_desc:0 "Fast-firing weapons are believed to be quite capable at dealing with most threats faced while providing infantry support."
@@ -92,6 +98,15 @@
  medium_flexible_line_tech_desc:0 "Medium Tanks are designed to be fast, both to respond quickly to threats and cut off enemy troops."
  heavy_breakthrough_tech:0 "Heavy Breakthrough Tanks"
  heavy_breakthrough_tech_desc:0 "Stalemates occur all the time on the battlefield. Heavy Tanks are designed with the sole purpose of breaking them."
+ 
+ armor_tech_5:0 "Early Cold-War Armor Protection"
+ armor_tech_5_desc:0 "In the 1950s, armor design revolved around extremely well-protected Heavy Tanks and fast, light Tank Destroyers to counter them. To stay survivable, new layouts using spaced armor need to be used."
+ armor_tech_6:0 "Basic Cold-War Armor Protection"
+ armor_tech_6_desc:0 "With Shaped Charges nullifying conventional steel armor, new alternatives must be used. Composite Armor Plates using layers of Plastic and Ceramic can provide sufficient protection against them."
+ engine_tech_5:0 "Early Cold-War Engine"
+ engine_tech_5_desc:0 "Engine Technology has reached a new height during the war. Suddenly, dozen-ton behemoths can move as fast as 50km/h. New developments must focus on reliability at such scales."
+ engine_tech_6:0 "Basic Cold-War Engine"
+ engine_tech_6_desc:0 "In order for Tanks to operate in any terrain for extended periods of time, more powerful and efficient engines are needed. With them, the Main Battle Tank will become the defining weapon of the latter half of the 20th century."
 
  mechanized_aa_equipment_desc:0 "Anti-Air Guns mounted to an APC makes a cheaper alternative form of Self-Propelled AA. However fitting infantry inside as well is problematic."
  mechanized_destroyer_equipment_desc:0 "A mechanized chassis fitted with a powerful anti-tank gun creates a cheap, mobile anti-armor unit."

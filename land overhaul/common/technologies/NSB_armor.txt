@@ -2812,7 +2812,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-			custom_effect_tooltip = armor_tech_5_tt
+			custom_effect_tooltip = armor_tech_6_tt
 		}
 		show_effect_as_desc = yes
 		
