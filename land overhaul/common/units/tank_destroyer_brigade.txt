@@ -243,6 +243,7 @@ sub_units = {
 			category_front_line
 			category_all_armor
 			category_medium_armor
+			category_modern_armor
 			category_tank_destroyers
 			category_mechanical
 			category_army
@@ -546,6 +547,7 @@ sub_units = {
 		categories = {
 			category_front_line
 			category_all_armor
+			category_modern_armor
 			category_army
 			category_tank_destroyers
 			category_support_battalions

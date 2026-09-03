@@ -21,6 +21,7 @@
  category_light_armor:0 "Light Armor"
  category_medium_armor:0 "Medium Armor"
  category_heavy_armor:0 "Heavy Armor"
+ category_modern_armor:0 "Modern Armor"
  category_mechanical:0 "Mechanical Vehicles"
  
  

@@ -16,4 +16,9 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+	spriteType = {
+		name = "GFX_unit_category_modern_armor"
+		texturefile = "gfx/interface/unit_categories/category_modern_armor.dds"
+		legacy_lazy_load = no
+	}
 }

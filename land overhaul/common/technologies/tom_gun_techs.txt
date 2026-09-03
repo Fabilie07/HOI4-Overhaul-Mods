@@ -195,6 +195,11 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_howitzer_2
 		}
+		
+		path = {
+			leads_to_tech = recoilless_rifle_tech1
+			research_cost_coeff = 1
+		}
 
 		research_cost = 0.3
 		start_year = 1944
@@ -212,6 +217,55 @@ technologies = {
 				factor = 2
 				date > "1945.1.1"
 			}
+		}
+	}
+	
+	recoilless_rifle_tech1 = {
+
+		show_equipment_icon = yes
+
+		enable_equipment_modules = {
+			tank_recoilless_rifle_1
+		}
+		
+		path = {
+			leads_to_tech = recoilless_rifle_tech2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.3
+		start_year = 1946
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 20 y = @1946 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	recoilless_rifle_tech2 = {
+
+		show_equipment_icon = yes
+
+		enable_equipment_modules = {
+			tank_recoilless_rifle_2
+		}
+
+		research_cost = 0.3
+		start_year = 1954
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 20 y = @1954 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -840,6 +894,11 @@ technologies = {
 			
 			sw_rangefinder
 		}
+		
+		path = {
+			leads_to_tech = auto_cannon_tech4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 0.3
 		start_year = 1942
@@ -857,6 +916,81 @@ technologies = {
 				factor = 2
 				date > "1943.1.1"
 			}
+		}
+	}
+	
+	auto_cannon_tech4 = {
+
+		show_equipment_icon = yes
+
+		enable_equipment_modules = {
+			tank_auto_cannon_3
+		}
+		
+		path = {
+			leads_to_tech = atgm_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = auto_cannon_tech5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.3
+		start_year = 1954
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 20 y = @1954 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	auto_cannon_tech5 = {
+
+		show_equipment_icon = yes
+
+		enable_equipment_modules = {
+			tank_auto_cannon_4
+		}
+
+		research_cost = 0.3
+		start_year = 1960
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 20 y = @1960 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	atgm_tech = {
+
+		show_equipment_icon = yes
+
+		enable_equipment_modules = {
+			tank_atgm_1
+		}
+
+		research_cost = 0.3
+		start_year = 1958
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 18 y = @1958 }
+		}
+		
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

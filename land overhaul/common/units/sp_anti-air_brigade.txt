@@ -237,6 +237,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_medium_armor
+			category_modern_armor
 			category_self_propelled_anti_air
 			category_mechanical
 			category_army
@@ -533,6 +534,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_army
+			category_modern_armor
 			category_self_propelled_anti_air
 			category_support_battalions
 			category_regimental_support_battalions

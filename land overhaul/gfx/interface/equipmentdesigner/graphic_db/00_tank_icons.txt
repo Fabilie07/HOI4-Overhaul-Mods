@@ -184,9 +184,17 @@ default = {
 		pool = {
 			weight = 3
 			icons = { 
-				GFX_modern_light_tank_3
 				GFX_modern_light_tank_2
 				GFX_modern_light_tank_1
+			}
+		}
+	}
+	light_tank_chassis_5 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_improved_modern_light_tank_2
+				GFX_improved_modern_light_tank_1
 			}
 		}
 	}

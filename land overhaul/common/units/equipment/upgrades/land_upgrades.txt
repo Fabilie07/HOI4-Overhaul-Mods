@@ -2,7 +2,7 @@ upgrades = {
 
 	tank_nsb_engine_upgrade = {
 		abbreviation = "eng"
-		max_level = 20 #each level represents ~50HP
+		max_level = 30 #each level represents ~50HP
 		cost = land
 
 		linear_cost = {
@@ -23,6 +23,12 @@ upgrades = {
 			18 = { 
 				has_tech = engine_tech_4
 			}
+			21 = { 
+				has_tech = engine_tech_5
+			}
+			26 = { 
+				has_tech = engine_tech_6
+			}
 		}
 
 		reliability = -0.01
@@ -35,7 +41,7 @@ upgrades = {
 
 	tank_nsb_armor_upgrade = {
 		abbreviation = "arm"
-		max_level = 20 #each level represents ~10mm of armor 
+		max_level = 30 #each level represents ~10mm of armor 
 		cost = land
 
 		linear_cost = {
@@ -56,10 +62,19 @@ upgrades = {
 			18 = {
 				has_tech = armor_tech_4
 			}
+			21 = {
+				has_tech = armor_tech_5
+			}
+			26 = {
+				has_tech = armor_tech_6
+			}
 		}
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
-			10 = {
+			11 = {
+				steel = 1
+			}
+			21 = {
 				steel = 1
 			}
 		}

@@ -14,6 +14,11 @@
  heavy_howitzer_tech_desc:0 "Large-Caliber Projectiles can be devastating at all ranges."
  spg_ammo3:0 "Large Shaped Charges"
  spg_ammo3_desc:0 "Heavy Shaped Charges can punch through a lot of armor even at long ranges."
+ 
+ recoilless_rifle_tech1:0 "Recoilless Rifle I"
+ recoilless_rifle_tech1_desc:0 "Using fully-combusting cartridges, combined with an exhaust port at the end of the barrel, projectiles can be fired with significantly reduced recoil. It does impact the velocity and create a backblast though."
+ recoilless_rifle_tech2:0 "Recoilless Rifle II"
+ recoilless_rifle_tech2_desc:0 "Larger calibers, fin stabilization and higher muzzle velocities allow recoilless rifles to be much more potent."
 
  small_cannon_tech:0 "Small Cannon"
  small_cannon_tech_desc:0 "Mounting cannons on tanks greatly increases their firepower."
@@ -62,6 +67,13 @@
  auto_cannon_tech2_desc:0 "Self-propelled Anti-Air Vehicles seem to be an answer to the ever-growing threat of aircraft."
  auto_cannon_tech3:0 "Rapid-Fire Weaponry III"
  auto_cannon_tech3_desc:0 "Heavier Tank-mounted AA and AAA guns can destroy planes even at higher altitudes."
+ auto_cannon_tech4:0 "Rapid-Fire Weaponry IV"
+ auto_cannon_tech4_desc:0 "Belt-Fed Autocannons are mounted to lighter vehicles to provide sufficient firepower against infantry."
+ auto_cannon_tech5:0 "Rapid-Fire Weaponry V"
+ auto_cannon_tech5_desc:0 "Larger-Caliber Autocannons can be used against various armored targets, as well as using more specialized ammunition."
+ atgm_tech:0 "Anti-Tank Guided Missile"
+ atgm_tech_short:0 "ATGM"
+ atgm_tech_desc:0 "Wire-Guided missiles can accurately deliver deadly payloads of explosives over great distances. They neutralize most conventionally armored vehicles."
 
  quick_conversion_tech:0 "Quick Conversion Kits"
  quick_conversion_tech_desc:0 "Tanks carry snorkel equipment and waterproofing rubber caps to quickly traverse rivers and other shallow waters."

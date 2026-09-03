@@ -239,6 +239,7 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_medium_armor
+			category_modern_armor
 			category_artillery
 			category_line_artillery
 			category_self_propelled_artillery
