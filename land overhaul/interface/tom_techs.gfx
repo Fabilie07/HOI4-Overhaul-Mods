@@ -262,6 +262,19 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_main_battle_tank_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/mbt_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_main_battle_tank_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/mbt_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_main_battle_tank_chassis_4_medium"
+		texturefile = "gfx/interface/technologies/mbt_chassis_4.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_light_truck_tech_medium"
 		texturefile = "gfx/interface/technologies/motorized_light.dds"
 	}
