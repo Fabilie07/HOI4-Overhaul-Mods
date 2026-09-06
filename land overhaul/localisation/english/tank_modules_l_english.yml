@@ -439,8 +439,8 @@
  tank_he:0 "High Explosive"
  tank_he_short:0 "HE"
  tank_he_desc:0 "A thin-walled shell filled with explosives that detonate on impact."
-
  tank_smoke:0 "Smoke Canister"
+ tank_smoke_short:0 "Smoke"
  tank_smoke_desc:0 "Shells filled with Phosphorus and other flammable Chemicals release a thick, heavy cloud of smoke on impact, concealing advances."
 
  armor_tech_1_tt:0 "Enables Armor Upgrade values of 5 and above."

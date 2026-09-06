@@ -213,7 +213,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_smoke_ammo
+					tank_ammo
 				}
 			}
 			
@@ -478,6 +478,23 @@ equipments = {
 			steel = 2
 		}
 	}
+	
+	light_tank_chassis_5 = {
+		abbreviation = "lt5"
+		visual_level = 2
+		year = 1950
+		archetype = light_tank_chassis
+		parent = light_tank_chassis_4
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 2.2
+		maximum_speed = 9
+		breakthrough = 14
+		reliability = 1.3
+		resources = {
+			steel = 2
+		}
+	}
 
 	
 
@@ -696,7 +713,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_smoke_ammo
+					tank_ammo
 				}
 			}
 			
@@ -1171,7 +1188,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_smoke_ammo
+					tank_ammo
 				}
 			}
 			
@@ -1472,7 +1489,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_smoke_ammo
+					tank_ammo
 				}
 			}
 			
@@ -1758,6 +1775,78 @@ equipments = {
 			chromium = 1
 		}
 	}
+	
+	heavy_tank_chassis_5 = {
+		abbreviation = "hv5"
+		visual_level = 2
+		year = 1946
+		archetype = heavy_tank_chassis
+		parent = heavy_tank_chassis_4
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 9
+		maximum_speed = 6.5
+		reliability = 1.2
+		breakthrough = 24
+		resources = {
+			steel = 3
+			chromium = 1
+		}
+	}
+	
+	heavy_tank_chassis_6 = {
+		abbreviation = "hv6"
+		visual_level = 2
+		year = 1950
+		archetype = heavy_tank_chassis
+		parent = heavy_tank_chassis_5
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 10
+		maximum_speed = 7.5
+		reliability = 1.3
+		breakthrough = 28
+		resources = {
+			steel = 3
+			chromium = 1
+		}
+	}
+	
+	heavy_tank_chassis_7 = {
+		abbreviation = "hv7"
+		visual_level = 2
+		year = 1954
+		archetype = heavy_tank_chassis
+		parent = heavy_tank_chassis_6
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 11.2
+		maximum_speed = 8.5
+		reliability = 1.3
+		breakthrough = 32
+		resources = {
+			steel = 3
+			chromium = 1
+		}
+	}
+	
+	heavy_tank_chassis_8 = {
+		abbreviation = "hv8"
+		visual_level = 2
+		year = 1958
+		archetype = heavy_tank_chassis
+		parent = heavy_tank_chassis_7
+		priority = 2000
+		module_slots = inherit
+		build_cost_ic = 12.5
+		maximum_speed = 8.5
+		reliability = 1.3
+		breakthrough = 36
+		resources = {
+			steel = 3
+			chromium = 1
+		}
+	}
 
 	modern_tank_chassis = {
 		year = 1948
@@ -1982,7 +2071,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_smoke_ammo
+					tank_ammo
 				}
 			}
 			
@@ -2157,7 +2246,7 @@ equipments = {
 	}
 
 	modern_tank_chassis_1 = {
-		abbreviation = "mbt0"
+		abbreviation = "mbt1"
 		derived_variant_name = modern_tank_equipment_1
 		visual_level = 0
 		year = 1948
@@ -2171,6 +2260,51 @@ equipments = {
 			tank_nsb_crew_quality_upgrade
 			tank_nsb_track_width_upgrade
 		}
+	}
+	
+	modern_tank_chassis_2 = {
+		abbreviation = "mbt2"
+		visual_level = 0
+		year = 1950
+		archetype = modern_tank_chassis
+		parent = modern_tank_chassis_1
+		priority = 2000
+		module_slots = inherit
+
+		maximum_speed = 8.5
+		build_cost_ic = 4.2
+		reliability = 1.2
+		breakthrough = 20
+	}
+	
+	modern_tank_chassis_3 = {
+		abbreviation = "mbt3"
+		visual_level = 0
+		year = 1954
+		archetype = modern_tank_chassis
+		parent = modern_tank_chassis_2
+		priority = 2000
+		module_slots = inherit
+
+		maximum_speed = 9.5
+		build_cost_ic = 4.4
+		reliability = 1.2
+		breakthrough = 24
+	}
+	
+	modern_tank_chassis_4 = {
+		abbreviation = "mbt4"
+		visual_level = 0
+		year = 1958
+		archetype = modern_tank_chassis
+		parent = modern_tank_chassis_3
+		priority = 2000
+		module_slots = inherit
+
+		maximum_speed = 10.5
+		build_cost_ic = 4.6
+		reliability = 1.2
+		breakthrough = 28
 	}
 
 	super_heavy_tank_chassis = {
@@ -2398,7 +2532,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_smoke_ammo
+					tank_ammo
 				}
 			}
 			
@@ -2791,7 +2925,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_smoke_ammo
+					tank_ammo
 				}
 			}
 			
@@ -3156,7 +3290,7 @@ equipments = {
 			ammunition_slot = {
 				required = no
 				allowed_module_categories = {
-					tank_super_heavy_tank_ammo
+					tank_ammo
 				}
 			}
 			

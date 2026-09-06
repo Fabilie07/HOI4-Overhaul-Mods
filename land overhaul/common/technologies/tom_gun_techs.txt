@@ -727,11 +727,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
 		}
 	}
 

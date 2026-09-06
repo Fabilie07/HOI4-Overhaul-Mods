@@ -1374,109 +1374,35 @@ spriteTypes = {
 
 
 	spriteType = {
-		name = "GFX_EMI_tank_light_ap"
+		name = "GFX_EMI_tank_ap"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_ap.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_aphe"
+		name = "GFX_EMI_tank_aphe"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aphe.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_apcr"
+		name = "GFX_EMI_tank_apcr"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apcr.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_apds"
+		name = "GFX_EMI_tank_apds"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apds.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_heat"
+		name = "GFX_EMI_tank_heat"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heat.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_he"
+		name = "GFX_EMI_tank_he"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_he.dds"
 		legacy_lazy_load = no
 	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_medium_ap"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_ap.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_medium_aphe"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aphe.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_medium_apcr"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apcr.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_medium_apds"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apds.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_medium_heat"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heat.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_medium_he"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_he.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_ap"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_ap.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_aphe"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aphe.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_apcr"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apcr.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_heat"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heat.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_heavy_he"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_he.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_EMI_tank_super_heavy_ap"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_ap.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_super_heavy_aphe"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aphe.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_super_heavy_he"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_he.dds"
-		legacy_lazy_load = no
-	}
-
 	spriteType = {
 		name = "GFX_EMI_tank_smoke"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_smoke.dds"
