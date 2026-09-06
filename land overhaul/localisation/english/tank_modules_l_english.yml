@@ -205,6 +205,8 @@
  tank_lq_welded_armor_desc:0 "These Armor Plates are joined by welding with regular steel. This bypasses the need for rare metals, but the resulting armor is more brittle and the weld seams may break or crack."
  tank_modern_welded_armor:0 "Modern Welded Armor"
  tank_modern_welded_armor_desc:0 "Improvements in manufacture processes make a more durable, sturdy set of Armor."
+ tank_composite_armor:0 "Composite Armor"
+ tank_composite_armor_desc:0 "Layers of different metals, plastics and ceramics. Especially effective against shaped charges."
  NOR_tank_rikstanken_armor: "Makeshift Armor"
  NOR_tank_rikstanken_armor_desc: "Made out of sheets of iron instead of steel to save money. Better than no armor... Probably."
 
@@ -331,6 +333,10 @@
  tank_modern_cannon_desc:0 "A long, high-caliber weapon that can fire modern ammunition over great distances to devastating effect."
  tank_modern_cannon_2:0 "Improved Modern Cannon"
  tank_modern_cannon_2_desc:0 "A long, high-caliber weapon that can fire modern ammunition over great distances to devastating effect."
+ tank_recoilless_rifle_1:0 "Basic Recoilless Rifle"
+ tank_recoilless_rifle_1_desc:0 "A weapon that trades velocity for significantly reduced recoil."
+ tank_recoilless_rifle_2:0 "Improved Recoilless Rifle"
+ tank_recoilless_rifle_2_desc:0 "A weapon that trades velocity for significantly reduced recoil."
 
  tank_medium_velocity_cannon_hull:0 "Hull-Mounted Medium Velocity Cannon"
  tank_medium_velocity_cannon_hull_desc:0 "A hull-mounted Gun with limited arc of fire."

@@ -47,6 +47,19 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_mbt_primacy_medium"
+		texturefile = "gfx/interface/technologies/primacy_mbt.dds"
+	}
+	SpriteType = {
+		name = "GFX_balanced_primacy_medium"
+		texturefile = "gfx/interface/technologies/primacy_balanced.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavy_primacy_medium"
+		texturefile = "gfx/interface/technologies/primacy_heavy.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_intake_filter_tech_medium"
 		texturefile = "gfx/interface/technologies/tom_intake_filters.dds"
 	}

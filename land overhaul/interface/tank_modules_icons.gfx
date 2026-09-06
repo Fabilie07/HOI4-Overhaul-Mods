@@ -479,6 +479,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_modern_armor.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_tank_composite_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_composite_armor.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_cast_turret_armor"

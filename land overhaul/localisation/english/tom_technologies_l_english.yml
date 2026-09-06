@@ -111,6 +111,13 @@
  heavy_breakthrough_tech:0 "Heavy Breakthrough Tanks"
  heavy_breakthrough_tech_desc:0 "Stalemates occur all the time on the battlefield. Heavy Tanks are designed with the sole purpose of breaking them."
  
+ mbt_primacy:0 "MBT Primacy"
+ mbt_primacy_desc:0 "It is in the name, but the Main Battle Tank shall truly become the major armored element of our armed forces."
+ balanced_primacy:0 "Balanced Approach"
+ balanced_primacy_desc:0 "Both MBTs and Heavy Tanks can fulfill their respective roles. Success on the Battlefield will come from using them exactly where their strengths will shine."
+ heavy_primacy:0 "Heavy Tank Primacy"
+ heavy_primacy_desc:0 "Many claim that the Heavy Tank is obsolete due to advances in Shaped Charge Tachnology. However, there are counters to them as well. The King of the Battlefield shall reign supreme still."
+ 
  armor_tech_5:0 "Early Cold-War Armor Protection"
  armor_tech_5_desc:0 "In the 1950s, armor design revolved around extremely well-protected Heavy Tanks and fast, light Tank Destroyers to counter them. To stay survivable, new layouts using spaced armor need to be used."
  armor_tech_6:0 "Basic Cold-War Armor Protection"
