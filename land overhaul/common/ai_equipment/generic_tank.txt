@@ -169,9 +169,9 @@ generic_light_tanks = {
 				additional_weapon_slot = empty
 				ammunition_slot = {
 					any_of = {
-						tank_light_ap
-						tank_light_aphe
-						tank_light_he
+						tank_ap
+						tank_aphe
+						tank_he
 					}
 				}
 				radio_type_slot = tank_radio_1
@@ -235,9 +235,9 @@ generic_light_tanks = {
 				additional_weapon_slot = additional_heavy_machine_guns
 				ammunition_slot = {
 					any_of = {
-						tank_light_ap
-						tank_light_aphe
-						tank_light_he
+						tank_ap
+						tank_aphe
+						tank_he
 					}
 				}
 				radio_type_slot = tank_radio_2
@@ -315,7 +315,7 @@ generic_light_tank_destroyers = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_medium_ap
+				ammunition_slot = tank_ap
 				radio_type_slot = empty
 			}
 			upgrades = {
@@ -371,7 +371,7 @@ generic_light_tank_destroyers = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = additional_machine_guns
-				ammunition_slot = tank_medium_ap
+				ammunition_slot = tank_ap
 				radio_type_slot = tank_radio_1
 			}
 			upgrades = {
@@ -441,7 +441,7 @@ generic_light_tank_artillery = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_light_he
+				ammunition_slot = tank_he
 				radio_type_slot = empty
 			}
 			upgrades = {
@@ -488,7 +488,7 @@ generic_light_tank_artillery = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_medium_he
+				ammunition_slot = tank_he
 				radio_type_slot = tank_radio_1
 			}
 			upgrades = {
@@ -536,7 +536,7 @@ generic_light_tank_artillery = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_medium_he
+				ammunition_slot = tank_he
 				radio_type_slot = tank_radio_1
 			}
 			upgrades = {
@@ -782,9 +782,9 @@ generic_medium_tanks = {
 				additional_weapon_slot = empty
 				ammunition_slot = {
 					any_of = {
-						tank_light_aphe
-						tank_light_ap
-						tank_light_he
+						tank_aphe
+						tank_ap
+						tank_he
 					}
 				}
 				radio_type_slot = tank_radio_1
@@ -860,7 +860,7 @@ generic_medium_tanks = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = additional_machine_guns
-				ammunition_slot = tank_medium_aphe
+				ammunition_slot = tank_aphe
 				radio_type_slot = tank_radio_module
 			}
 			upgrades = {
@@ -919,7 +919,7 @@ generic_medium_tanks = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = additional_machine_guns
-				ammunition_slot = tank_medium_aphe
+				ammunition_slot = tank_aphe
 				radio_type_slot = tank_radio_module
 			}
 			upgrades = {
@@ -1013,7 +1013,7 @@ generic_medium_tank_destroyer = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_medium_aphe
+				ammunition_slot = tank_aphe
 				radio_type_slot = tank_radio_module
 			}
 			upgrades = {
@@ -1072,7 +1072,7 @@ generic_medium_tank_destroyer = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_medium_aphe
+				ammunition_slot = tank_aphe
 				radio_type_slot = tank_radio_module
 			}
 			upgrades = {
@@ -1136,7 +1136,7 @@ generic_medium_tank_destroyer = {
 				special_type_slot_4 = extra_ammo_storage
 				special_type_slot_5 = empty
 				additional_weapon_slot = additional_machine_guns
-				ammunition_slot = tank_heavy_aphe
+				ammunition_slot = tank_aphe
 				radio_type_slot = tank_radio_module
 			}
 			upgrades = {
@@ -1208,7 +1208,7 @@ generic_medium_tank_artillery = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_medium_he
+				ammunition_slot = tank_he
 				radio_type_slot = empty
 			}
 			upgrades = {
@@ -1255,7 +1255,7 @@ generic_medium_tank_artillery = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_medium_he
+				ammunition_slot = tank_he
 				radio_type_slot = empty
 			}
 			upgrades = {
@@ -1303,7 +1303,7 @@ generic_medium_tank_artillery = {
 				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = tank_heavy_he
+				ammunition_slot = tank_he
 				radio_type_slot = empty
 			}
 			upgrades = {
