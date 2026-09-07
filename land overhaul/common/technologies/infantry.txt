@@ -1823,7 +1823,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_wheeled_suspension
+			# tank_wheeled_suspension
 		}
 
 		

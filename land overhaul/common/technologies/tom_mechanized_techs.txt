@@ -25,7 +25,7 @@ technologies = {
 			mech_larger_tank
 			mech_shovel_equipment
 
-			tank_half_track_suspension
+			# tank_half_track_suspension
 		}
 		
 		motorized = {
