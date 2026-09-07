@@ -1883,4 +1883,26 @@ equipment_modules = {
 			chromium = 1
 		}
 	}
+	
+	tank_composite_armor = {
+		abbreviation = "comp"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+
+		add_stats = {
+			defense = 6
+			breakthrough = 6
+			build_cost_ic = 2
+		}
+		dismantle_cost_ic = 2
+		xp_cost = 8
+		multiply_stats = {
+			armor_value = 0.5
+		}
+
+		build_cost_resources = {
+			chromium = 1
+			rare_metals = 1
+		}
+	}
 }

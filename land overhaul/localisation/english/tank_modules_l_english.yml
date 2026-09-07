@@ -273,6 +273,8 @@
  tank_auto_cannon_desc:0 "Adapted from a fast-firing anti-air gun, this automatic cannon can lay down a hail of fire that is devastating to soft targets. The small caliber does limit its anti-armor performance."
  tank_auto_cannon_2:0 "Improved Automatic Cannon"
  tank_auto_cannon_2_desc:0 "Adapted from a fast-firing anti-air gun, this automatic cannon can lay down a hail of fire that is devastating to soft targets. The small caliber does limit its anti-armor performance."
+ tank_atgm_1:0 "Basic ATGM"
+ tank_atgm_1_desc:0 "A wire-guided missile carrying a shaped charge can deliver accurate, deadly firepower against even the thickest armor."
  tank_machine_gun_2x:0 "2x Machine Gun"
  tank_machine_gun_2x_desc:0 "A set of machine guns that is potent against soft targets."
  tank_heavy_machine_gun_2x:0 "2x Heavy Machine Gun"
