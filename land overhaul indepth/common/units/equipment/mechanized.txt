@@ -187,9 +187,9 @@ equipments = {
 				}
 			}
 			ammunition_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					tank_module_locked
+					tank_ammo
 				}
 			}
 
@@ -308,7 +308,7 @@ equipments = {
 			
 			suspension_type_slot = mech_half_tracked_suspension
 			armor_type_slot = ac_riveted_armor
-			ammunition_slot = tank_locked
+			# ammunition_slot = tank_locked
 		}
 	}
 
@@ -328,7 +328,7 @@ equipments = {
 	}
 
 	mechanized_equipment_2 = {
-		year = 1940
+		year = 1942
 
 		abbreviation = "mc2"
 		archetype = mechanized_equipment
@@ -352,7 +352,7 @@ equipments = {
 	}
 
 	mechanized_equipment_3 = {
-		year = 1940
+		year = 1944
 
 		abbreviation = "mc3"
 		archetype = mechanized_equipment
@@ -369,7 +369,79 @@ equipments = {
 		breakthrough = 8
 		hardness = 0.75
 
-		build_cost_ic = 5
+		build_cost_ic = 4.8
+		resources = {
+			steel = 3
+		}
+	}
+	
+	mechanized_equipment_4 = {
+		year = 1946
+
+		abbreviation = "mc4"
+		archetype = mechanized_equipment
+		parent = mechanized_equipment_3
+		priority = 40
+		visual_level = 0
+		module_slots = inherit
+
+		maximum_speed = 13
+		reliability = 1.05
+
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 10
+		hardness = 0.75
+
+		build_cost_ic = 5.4
+		resources = {
+			steel = 3
+		}
+	}
+	
+	mechanized_equipment_5 = {
+		year = 1953
+
+		abbreviation = "mc5"
+		archetype = mechanized_equipment
+		parent = mechanized_equipment_4
+		priority = 40
+		visual_level = 0
+		module_slots = inherit
+
+		maximum_speed = 14
+		reliability = 1.1
+
+		#Defensive Abilities
+		defense = 33
+		breakthrough = 12
+		hardness = 0.75
+
+		build_cost_ic = 6.0
+		resources = {
+			steel = 3
+		}
+	}
+	
+	mechanized_equipment_6 = {
+		year = 1960
+
+		abbreviation = "mc6"
+		archetype = mechanized_equipment
+		parent = mechanized_equipment_5
+		priority = 40
+		visual_level = 0
+		module_slots = inherit
+
+		maximum_speed = 16
+		reliability = 1.1
+
+		#Defensive Abilities
+		defense = 36
+		breakthrough = 14
+		hardness = 0.75
+
+		build_cost_ic = 6.5
 		resources = {
 			steel = 3
 		}
