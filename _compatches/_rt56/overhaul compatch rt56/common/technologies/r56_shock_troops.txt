@@ -1,0 +1,220 @@
+#####-----------------------------------------------------------> Mod by Sig "Greatexperiment" Altre
+
+	@1918 = 0
+	@1924 = 1
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	@1948 = 22
+	@1950 = 24
+	@1953 = 26
+	@1955 = 28
+	@1958 = 30
+	@1960 = 32
+
+technologies = {
+	shocktroops = {
+
+		enable_subunits = {
+			shocktroop
+		}
+
+		enable_subunits = {
+			mot_shocktroop
+		}
+		
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = shocktroop
+			}
+		}
+		on_research_complete = {	
+			hidden_effect = {
+				load_oob = "unlock_shocktroop"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = shocktroops2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		
+		start_year = 1936
+		
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1936 }
+		}
+		
+		categories = {
+			infantry_tech
+			r56_shock_infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	shocktroops2 = {
+
+		shocktroop = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+
+		mot_shocktroop = {
+			max_organisation = 2
+			soft_attack = 0.02
+		}
+
+		path = {
+			leads_to_tech = shocktroops3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1939 }
+		}
+		
+		categories = {
+			infantry_tech
+			r56_shock_infantry_tech
+		}
+	}
+	
+	shocktroops3 = {
+		enable_subunits = {
+			mech_shocktroop
+		}
+
+		shocktroop = {
+			max_organisation = 5
+		}
+
+		mot_shocktroop = {
+			max_organisation = 2
+		}
+		
+		path = {
+			leads_to_tech = shocktroops4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			r56_shock_infantry_tech
+		}
+	}
+	
+	shocktroops4 = {
+
+		shocktroop = {
+			max_organisation = 5
+		}
+
+		mot_shocktroop = {
+			max_organisation = 2
+		}
+		
+		mech_shocktroop = {
+			max_organisation = 2
+		}
+		
+		path = {
+			leads_to_tech = shocktroops5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1946 }
+		}
+		
+		categories = {
+			infantry_tech
+			r56_shock_infantry_tech
+		}
+	}
+	
+	shocktroops5 = {
+
+		shocktroop = {
+			max_organisation = 5
+		}
+		
+		mot_shocktroop = {
+			max_organisation = 2
+		}
+		
+		mech_shocktroop = {
+			max_organisation = 2
+		}
+		
+		path = {
+			leads_to_tech = shocktroops6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1953 }
+		}
+		
+		categories = {
+			infantry_tech
+		}
+	}
+	
+	shocktroops6 = {
+
+		shocktroop = {
+			max_organisation = 5
+		}
+
+		mot_shocktroop = {
+			max_organisation = 2
+		}
+		
+		mech_shocktroop = {
+			max_organisation = 2
+		}		
+
+		research_cost = 2.0
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 14 y = @1960 }
+		}
+		
+		categories = {
+			r56_shock_infantry_tech
+		}
+	}
+	
+}
+#####-----------------------------------------------------------> End
