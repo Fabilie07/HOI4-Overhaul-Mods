@@ -300,6 +300,7 @@ equipment_modules = {
 	tank_radio_1 = {
 		abbreviation = "rad1"
 		category = tank_radio_module
+		parent = tank_flags
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {

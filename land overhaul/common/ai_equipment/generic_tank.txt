@@ -2380,17 +2380,22 @@ generic_modern_tanks = {
 		}
 	}
 
-	basic_modern_tank_default = {
+	early_modern_tank_default = {
 		priority = {
 			factor = 10
+			modifier = {
+				has_tech = main_battle_tank_chassis_2
+				factor = 0
+			}
 		}
 
 		target_variant = {
 			match_value = 1000
-			type = modern_tank_chassis
+			type = modern_tank_chassis_1
 			modules = {
 				main_armament_slot = { 
 					any_of = { 
+						tank_modern_cannon
 						tank_heavy_cannon_3 
 						tank_high_velocity_cannon_3 
 						tank_heavy_cannon_2 
@@ -2401,20 +2406,20 @@ generic_modern_tanks = {
 				turret_type_slot = tank_modern_tank_turret
 				suspension_type_slot = tank_torsion_bar_suspension
 				armor_type_slot = tank_cast_armor
-				engine_type_slot = tank_diesel_engine
-				special_type_slot_1 = hull_machine_gun
-				special_type_slot_2 = smoke_launchers
+				engine_type_slot = tank_gasoline_engine_3
+				special_type_slot_1 = sloped_armor
+				special_type_slot_2 = armor_skirts
 				special_type_slot_3 = easy_maintenance
-				special_type_slot_4 = sloped_armor
+				special_type_slot_4 = empty
 				special_type_slot_5 = empty
 				additional_weapon_slot = empty
-				ammunition_slot = empty
+				ammunition_slot = tank_aphe
 				radio_type_slot = tank_radio_module
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 12
 				tank_nsb_armor_upgrade = {
-					base = 4
+					base = 12
 					modifier = {
 						add = 3
 						has_war = yes
@@ -2446,6 +2451,157 @@ generic_modern_tanks = {
 			tank_radio_3
 			tank_radio_2
 			tank_radio_1
+		}
+	}
+	
+	basic_modern_tank_default = {
+		priority = {
+			factor = 10
+			modifier = {
+				has_tech = main_battle_tank_chassis_3
+				factor = 0
+			}
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = modern_tank_chassis_2
+			modules = {
+				main_armament_slot = { 
+					any_of = { 
+						tank_modern_cannon_2
+						tank_modern_cannon
+						tank_heavy_cannon_3 
+						tank_high_velocity_cannon_3
+					} 
+				}
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_modern_welded_armor
+				engine_type_slot = tank_modern_gasoline_engine
+				special_type_slot_1 = sloped_armor
+				special_type_slot_2 = armor_skirts
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				additional_weapon_slot = empty
+				ammunition_slot = tank_aphe
+				radio_type_slot = tank_radio_module
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 12
+				tank_nsb_armor_upgrade = {
+					base = 12
+					modifier = {
+						add = 3
+						has_war = yes
+					}
+					modifier = {
+						any_enemy_country = {
+							is_major = yes
+						}
+						add = 2
+					}
+				}
+			}
+		}
+	}
+	
+	improved_modern_tank_default = {
+		priority = {
+			factor = 10
+			modifier = {
+				has_tech = main_battle_tank_chassis_4
+				factor = 0
+			}
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = modern_tank_chassis_3
+			modules = {
+				main_armament_slot = { 
+					any_of = { 
+						tank_modern_cannon_2
+						tank_modern_cannon
+					} 
+				}
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_modern_welded_armor
+				engine_type_slot = tank_modern_gasoline_engine
+				special_type_slot_1 = sloped_armor
+				special_type_slot_2 = armor_skirts
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+				additional_weapon_slot = empty
+				ammunition_slot = tank_aphe
+				radio_type_slot = tank_radio_module
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 12
+				tank_nsb_armor_upgrade = {
+					base = 12
+					modifier = {
+						add = 3
+						has_war = yes
+					}
+					modifier = {
+						any_enemy_country = {
+							is_major = yes
+						}
+						add = 2
+					}
+				}
+			}
+		}
+	}
+	
+	advanced_modern_tank_default = {
+		priority = {
+			factor = 10
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = modern_tank_chassis_4
+			modules = {
+				main_armament_slot = { 
+					any_of = { 
+						tank_modern_cannon_2
+						tank_modern_cannon
+					} 
+				}
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_modern_welded_armor
+				engine_type_slot = tank_modern_gasoline_engine
+				special_type_slot_1 = sloped_armor
+				special_type_slot_2 = armor_skirts
+				special_type_slot_3 = easy_maintenance
+				special_type_slot_4 = tank_rangefinder
+				special_type_slot_5 = tank_stabilizer
+				additional_weapon_slot = empty
+				ammunition_slot = tank_aphe
+				radio_type_slot = tank_radio_module
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 12
+				tank_nsb_armor_upgrade = {
+					base = 12
+					modifier = {
+						add = 3
+						has_war = yes
+					}
+					modifier = {
+						any_enemy_country = {
+							is_major = yes
+						}
+						add = 2
+					}
+				}
+			}
 		}
 	}
 }
