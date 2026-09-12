@@ -578,6 +578,8 @@
  tank_barrel_standard_desc:0 "A clean end to the barrel provides excellent accuracy."
  tank_barrel_flash_suppressor:0 "Flash Suppressor"
  tank_barrel_flash_suppressor_desc:0 "Fins are attached to the end of the barrel that obscure the flash of firing the cannon."
+ tank_barrel_bore_evacuator:0 "Bore Evacuator"
+ tank_barrel_bore_evacuator_desc:0 "This chamber sucks in the toxic gases while firing, preventing them from flowing back into the crew compartment. Instead, they are discharged through the barrel after the shell has exited it."
  
  tank_armor_front_10:0 "10mm"
  tank_armor_front_10_desc:0 "The armor's thickness."
@@ -896,6 +898,8 @@
  twin_transmission_desc:0 "Instead of having one set of gears, each track can be operated seperately. This makes maneuvering much smoother."
  advanced_optics:0 "Advanced Optics"
  advanced_optics_desc:0 "Improved Sights for the Gunner and Commander allow them to notice threats earlier and engage them more efficiently."
+ smoothbore_cannon:0 "Smoothbore Cannon"
+ smoothbore_cannon_desc:0 "The cannon's rifling is omitted, meaning that the barrel is exactly as large as the ammunition, which increases the efficiency of the propellant."
 
  tank_rocket_launcher:0 "Rocket Launcher"
  tank_rocket_launcher_desc:0 "A multi-barrelled launcher for unguided, high-explosive rockets. The high volume of fire gives it excellent performance against soft targets, but even direct hits do little against armored targets."

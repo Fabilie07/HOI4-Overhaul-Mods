@@ -2068,12 +2068,6 @@ technologies = {
 			heavy_tank_amphibious_chassis_3
 		}
 		
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_amphibious_tank
-			}
-		}
-		
 		on_research_complete = {
 			add_design_template_bonus = {
 				name = light_tank_amphibious_chassis

@@ -785,6 +785,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/cannon/flash_suppressor.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_tank_barrel_bore_evacuator"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/cannon/bore_evacuator.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_heavy_cannon"
@@ -1298,6 +1303,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_squeezebore_adaptor"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_squeezebore_adaptor.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_smoothbore_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/smoothbore_barrel.dds"
 		legacy_lazy_load = no
 	}
 
