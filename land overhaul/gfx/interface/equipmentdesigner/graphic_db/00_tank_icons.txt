@@ -421,6 +421,38 @@ default = {
 			}
 		}
 	}
+	heavy_tank_chassis_5 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_modern_heavy_tank_ii
+			}
+		}
+	}
+	heavy_tank_chassis_6 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_modern_heavy_tank_iii
+			}
+		}
+	}
+	heavy_tank_chassis_7 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_modern_heavy_tank_iv
+			}
+		}
+	}
+	heavy_tank_chassis_8 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_modern_heavy_tank_v
+			}
+		}
+	}
 	
 	heavy_tank_flame_chassis = {
 		pool = {
@@ -458,14 +490,51 @@ default = {
 		}
 	}
 
+	modern_tank_chassis = {
+		pool = {
+			weight = 0.1
+			models = {
+				medium_armor_entity
+			}
+		}
+	}
 	modern_tank_chassis_1 = {
 		pool = {
-			weight = 0.1 
+			weight = 3
 			icons = { 
 				GFX_generic_modern_tank_medium
 			}
-			models = {
-				medium_armor_entity
+		}
+	}
+	modern_tank_chassis_2 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_generic_modern_tank_2_medium
+			}
+		}
+	}
+	modern_tank_chassis_3 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_generic_modern_tank_3_medium
+			}
+		}
+	}
+	modern_tank_chassis_4 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_generic_modern_tank_4_medium
+			}
+		}
+	}
+	modern_tank_chassis_5 = {
+		pool = {
+			weight = 3
+			icons = { 
+				GFX_generic_modern_tank_5_medium
 			}
 		}
 	}

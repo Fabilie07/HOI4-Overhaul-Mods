@@ -3432,7 +3432,7 @@ equipments = {
 			fixed_turret_crew_slot = lc_turret_crew_04
 			fixed_hull_crew_slot = lc_hull_crew_06
 			fixed_turret_type_slot = tank_locked
-			fixed_cannon_size_slot = lc_heavy_naval_guns
+			# fixed_cannon_size_slot = lc_heavy_naval_guns
 			fixed_cannon_length_slot = tank_locked
 			fixed_cannon_end_slot = tank_locked
 			

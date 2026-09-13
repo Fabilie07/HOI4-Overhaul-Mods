@@ -405,4 +405,38 @@ spriteTypes = {
 		name = "GFX_modern_heavy_tank_3"
 		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/modern_heavy_tank_3.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_modern_heavy_tank_ii"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/modern_heavy_tank_ii_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_heavy_tank_iii"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/modern_heavy_tank_iii_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_heavy_tank_iv"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/modern_heavy_tank_iv_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_modern_heavy_tank_v"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/modern_heavy_tank_v_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_generic_modern_tank_2_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/main_battle_tank_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_modern_tank_3_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/main_battle_tank_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_modern_tank_4_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/main_battle_tank_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_generic_modern_tank_5_medium"
+		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/main_battle_tank_5.dds"
+	}
 }
