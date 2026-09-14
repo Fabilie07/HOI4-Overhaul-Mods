@@ -1,0 +1,32 @@
+technologies = {
+	tom_inf_indepth_module_package_tech = { # Adds all Modules of the mod at game start
+		allow = {
+			always = no
+		}
+		
+		enable_equipment_modules = {
+			inf_rifled_barrel
+			inf_smooth_barrel
+			
+			inf_casing_brass_rimmed
+			inf_casing_brass_rimless
+			inf_casing_steel_rimmed
+			inf_casing_steel_rimless
+			
+			inf_receiver_metal
+			inf_receiver_plastic
+			
+			inf_stock_wood
+			inf_stock_metal_highlights
+			inf_stock_metal
+			
+			inf_backplate_metal
+			inf_backplate_rimmed
+			inf_backplate_rubber
+			
+			inf_bipod
+			inf_foregrip_standard
+			inf_foregrip_mag
+		}
+	}
+}

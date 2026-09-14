@@ -1,0 +1,14 @@
+guiTypes = {
+	containerWindowType = {
+		name = "equipment_designer_infantry_equipment"
+		# NOTE: to keep aligned with the window "equipment_modules" in tank_designer_view.gui
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_IE_infantry_equipment_blueprint"
+			position = { x=0 y=0 }
+		}
+	}
+}

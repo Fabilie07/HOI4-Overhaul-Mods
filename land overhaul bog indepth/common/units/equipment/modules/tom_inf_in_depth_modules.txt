@@ -1,0 +1,181 @@
+equipment_modules = {
+	# RIFLING
+	inf_rifled_barrel = {
+		category = inf_rifling
+		
+		add_stats = {
+			soft_attack = 0.5
+		}
+		xp_cost = 1
+	}
+	
+	inf_smooth_barrel = {
+		category = inf_rifling
+		
+		multiply_stats = {
+			build_cost_ic = -0.05
+		}
+		xp_cost = 1
+	}
+	
+	# CASING
+	inf_casing_brass_rimmed = {
+		category = inf_casing
+		
+		add_stats = {
+			defense = 1
+			reliability = -0.05
+		}
+		xp_cost = 1
+	}
+	inf_casing_brass_rimless = {
+		category = inf_casing
+		
+		add_stats = {
+			defense = 1
+			reliability = 0.05
+			build_cost_ic = 0.01
+		}
+		xp_cost = 1
+	}
+	inf_casing_steel_rimmed = {
+		category = inf_casing
+		
+		add_stats = {
+			soft_attack = 0.5
+			hard_attack = 1
+			ap_attack = 4
+			reliability = -0.1
+		}
+		xp_cost = 1
+	}
+	inf_casing_steel_rimless = {
+		category = inf_casing
+		
+		add_stats = {
+			soft_attack = 0.5
+			hard_attack = 1
+			ap_attack = 4
+			build_cost_ic = 0.01
+		}
+		xp_cost = 1
+	}
+	
+	# RECEIVER
+	inf_receiver_metal = {
+		category = inf_material_receiver
+		
+		add_stats = {
+			reliability = 0.1
+		}
+		xp_cost = 1
+	}
+	inf_receiver_plastic = {
+		category = inf_material_receiver
+		
+		add_stats = {
+			reliability = 0.1
+		}
+		
+		build_cost_resources = {
+			steel = -1
+		}
+		dismantle_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 1
+	}
+	
+	# STOCK
+	inf_stock_wood = {
+		category = inf_material_stock
+		
+		multiply_stats = {
+			build_cost_ic = -0.05
+		}
+		xp_cost = 1
+	}
+	inf_stock_metal_highlights = {
+		category = inf_material_stock
+		
+		add_stats = {
+			reliability = 0.05
+		}
+		xp_cost = 1
+	}
+	inf_stock_metal = {
+		category = inf_material_stock
+		
+		add_stats = {
+			reliability = 0.1
+			defense = 2
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		xp_cost = 1
+	}
+	
+	# BUTT PAD
+	inf_backplate_metal = {
+		category = inf_backplate
+		
+		add_stats = {
+			defense = 1
+			build_cost_ic = 0.01
+		}
+		xp_cost = 1
+	}
+	inf_backplate_rimmed = {
+		category = inf_backplate
+		
+		add_stats = {
+			breakthrough = 1
+			defense = 2
+			build_cost_ic = 0.02
+		}
+		xp_cost = 1
+	}
+	inf_backplate_rubber = {
+		category = inf_backplate
+		
+		add_stats = {
+			breakthrough = 2
+			defense = 4
+			reliability = 0.05
+			build_cost_ic = 0.05
+		}
+		build_cost_resources = {
+			rubber = 1
+		}
+		xp_cost = 1
+	}
+	
+	# FOREGRIP
+	inf_bipod = {
+		category = inf_foregrip
+		gfx = mg_bipod
+		
+		add_stats = {
+			defense = 2
+		}
+		xp_cost = 1
+	}
+	inf_foregrip_standard = {
+		category = inf_foregrip
+		
+		add_stats = {
+			breakthrough = 2
+			build_cost_ic = 0.02
+		}
+		xp_cost = 1
+	}
+	inf_foregrip_mag = {
+		category = inf_foregrip
+		
+		add_stats = {
+			breakthrough = 1
+		}
+		xp_cost = 1
+	}
+}

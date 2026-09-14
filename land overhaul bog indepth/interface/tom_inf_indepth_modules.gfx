@@ -1,0 +1,99 @@
+spriteTypes = {
+	### RIFLING
+	spriteType = {
+		name = "GFX_EMI_inf_rifled_barrel"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_rifled.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_smooth_barrel"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_smooth.dds"
+		legacy_lazy_load = no
+	}
+	
+	### CASINGS
+	spriteType = {
+		name = "GFX_EMI_inf_casing_brass_rimmed"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_brass_rimmed.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_casing_brass_rimless"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_brass_rimless.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_casing_steel_rimmed"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_steel_rimmed.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_casing_steel_rimless"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cartridge_steel_rimless.dds"
+		legacy_lazy_load = no
+	}
+	
+	### RECEIVER
+	spriteType = {
+		name = "GFX_EMI_inf_receiver_metal"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/receiver_metal.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_receiver_plastic"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/receiver_plastic.dds"
+		legacy_lazy_load = no
+	}
+	
+	### STOCK
+	spriteType = {
+		name = "GFX_EMI_inf_stock_wood"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/stock_wood.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_stock_metal_highlights"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/stock_metal_highlights.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_stock_metal"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/stock_metal.dds"
+		legacy_lazy_load = no
+	}
+	
+	### BUTTPLATE
+	spriteType = {
+		name = "GFX_EMI_inf_backplate_metal"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/buttplate_metal.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_backplate_rimmed"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/buttplate_rimmed.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_backplate_rubber"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/buttplate_rubber.dds"
+		legacy_lazy_load = no
+	}
+	
+	### FOREGRIP
+	spriteType = {
+		name = "GFX_EMI_inf_foregrip_standard"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/foregrip_standard.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_foregrip_mag"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/foregrip_mag.dds"
+		legacy_lazy_load = no
+	}
+}
+
+
+
+
+
+

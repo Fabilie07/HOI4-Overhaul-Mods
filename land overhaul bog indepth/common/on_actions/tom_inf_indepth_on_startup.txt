@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {		
+				set_technology = { tom_inf_indepth_module_package_tech = 1 popup = no }
+			}
+		}
+	}
+}
