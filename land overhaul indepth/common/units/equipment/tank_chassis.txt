@@ -297,6 +297,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = smoothbore_cannon
+			count < 2
+		}
+		module_count_limit = {
 			module = auto_loader
 			count < 2
 		}
@@ -802,6 +806,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = electric_turret_drive
+			count < 2
+		}
+		module_count_limit = {
+			module = smoothbore_cannon
 			count < 2
 		}
 		module_count_limit = {
@@ -1589,6 +1597,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = smoothbore_cannon
+			count < 2
+		}
+		module_count_limit = {
 			module = auto_loader
 			count < 2
 		}
@@ -2166,7 +2178,18 @@ equipments = {
 			module = dozer_blade
 			count < 2
 		}
-
+		module_count_limit = {
+			module = twin_transmission
+			count < 2
+		}
+		module_count_limit = {
+			module = electric_turret_drive
+			count < 2
+		}
+		module_count_limit = {
+			module = smoothbore_cannon
+			count < 2
+		}
 		module_count_limit = {
 			module = wet_ammo_storage
 			count < 2
