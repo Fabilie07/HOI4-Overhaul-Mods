@@ -2,7 +2,7 @@ buildings = {
 	nom_commercial_port = {
 		base_cost = 18500
 		per_controlled_building_extra_cost = 1500
-		icon_frame = 38
+		icon_frame = 39
 		
 		only_costal = yes
 		infrastructure_construction_effect = yes

@@ -29,8 +29,8 @@ buildings = {
 
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
-			group_by = extractors
+			state_max = 64
+			# group_by = extractors
 		}
 	}
 	
@@ -46,8 +46,25 @@ buildings = {
 
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
-			group_by = extractors
+			state_max = 64
+			# group_by = extractors
+		}
+	}
+
+	resource_expansion_coal = {
+		base_cost = 4000
+		icon_frame = 38
+		value = 1
+		infrastructure_construction_effect = yes
+		refinery = yes
+		show_modifier = yes
+		
+		local_resources_coal = 4
+
+		level_cap = {
+			shares_slots = yes
+			state_max = 64
+			# group_by = extractors
 		}
 	}
 }

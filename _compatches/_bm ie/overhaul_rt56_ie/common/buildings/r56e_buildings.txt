@@ -4,7 +4,7 @@ buildings = {
 	
 	steel_mill = {
 		show_on_map = 1
-		base_cost = 4000
+		base_cost = 6500
 		icon_frame = 32
 		local_resources_steel = 4
 		refinery = yes
@@ -12,13 +12,13 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 64
 		}
 	}
 
 	aluminum_mill = {
 		show_on_map = 1
-		base_cost = 5000
+		base_cost = 7500
 		icon_frame = 33
 		local_resources_aluminium = 4
 		refinery = yes
@@ -26,7 +26,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 64
 		}
 	}
 	
@@ -40,7 +40,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 3
+			state_max = 64
 		}
 	}
 	

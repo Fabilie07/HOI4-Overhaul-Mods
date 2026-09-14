@@ -1,0 +1,197 @@
+spriteTypes = {
+# 工业拓展科技图标	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_1_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_2_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_3_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_4_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_5_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_6_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_7_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_8_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_industrial_expansion_tech_9_medium"
+		texturefile = "gfx/interface/technologies/industrial_expansion_tech_9.dds"
+	}
+# 资源拓展科技图标（已弃用）	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_1_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_2_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_3_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_4_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_5_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_6_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_7_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_8_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_resource_expansion_tech_9_medium"
+		texturefile = "gfx/interface/technologies/resource_expansion_tech_9.dds"
+	}
+# 钢厂	
+	spriteType = {
+		name = "GFX_steel_production_5_medium"
+		texturefile = "gfx/interface/technologies/steel_production_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_steel_production_6_medium"
+		texturefile = "gfx/interface/technologies/steel_production_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_steel_production_7_medium"
+		texturefile = "gfx/interface/technologies/steel_production_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_steel_production_8_medium"
+		texturefile = "gfx/interface/technologies/steel_production_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_steel_production_9_medium"
+		texturefile = "gfx/interface/technologies/steel_production_9.dds"
+	}
+# 铝厂	
+	spriteType = {
+		name = "GFX_aluminum_production_5_medium"
+		texturefile = "gfx/interface/technologies/aluminum_production_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_aluminum_production_6_medium"
+		texturefile = "gfx/interface/technologies/aluminum_production_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_aluminum_production_7_medium"
+		texturefile = "gfx/interface/technologies/aluminum_production_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_aluminum_production_8_medium"
+		texturefile = "gfx/interface/technologies/aluminum_production_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_aluminum_production_9_medium"
+		texturefile = "gfx/interface/technologies/aluminum_production_9.dds"
+	}
+
+# 煤厂
+	spriteType = {
+		name = "GFX_coal_production_1_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_coal_production_01.dds"
+	}
+	spriteType = {
+		name = "GFX_coal_production_2_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_coal_production_02.dds"
+	}
+	spriteType = {
+		name = "GFX_coal_production_3_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_coal_production_03.dds"
+	}
+	spriteType = {
+		name = "GFX_coal_production_4_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_coal_production_04.dds"
+	}
+
+# 铬厂
+	spriteType = {
+		name = "GFX_chromium_production_1_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_chromium_production_01.dds"
+	}
+	spriteType = {
+		name = "GFX_chromium_production_2_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_chromium_production_02.dds"
+	}
+	spriteType = {
+		name = "GFX_chromium_production_3_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_chromium_production_03.dds"
+	}
+	spriteType = {
+		name = "GFX_chromium_production_4_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_chromium_production_04.dds"
+	}
+
+# 钨厂
+	spriteType = {
+		name = "GFX_tungsten_production_1_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_tungsten_production_01.dds"
+	}
+	spriteType = {
+		name = "GFX_tungsten_production_2_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_tungsten_production_02.dds"
+	}
+	spriteType = {
+		name = "GFX_tungsten_production_3_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_tungsten_production_03.dds"
+	}
+	spriteType = {
+		name = "GFX_tungsten_production_4_medium"
+		texturefile = "gfx/interface/technologies/r56_tech_tungsten_production_04.dds"
+	}
+
+}
