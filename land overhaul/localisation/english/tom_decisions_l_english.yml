@@ -32,6 +32,10 @@
  tom_academy_4_SOV:0 "[SOV.GetFlag] Study [SOV.GetAdjectiveCap] Warfare"
  tom_academy_4_USA:0 "[USA.GetFlag] Study [USA.GetAdjectiveCap] Warfare"
  
+ TOM_ACADEMY_1_TT:0 "[tom_academy_slot_1_tt]"
+ TOM_ACADEMY_2_TT:0 "[tom_academy_slot_2_tt]"
+ TOM_ACADEMY_3_TT:0 "[tom_academy_slot_3_tt]"
+ 
  
  TOM_heavy_industry_decisions: "Heavy Industry"
  

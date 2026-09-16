@@ -16,6 +16,7 @@ guiTypes = {
 		iconType = {
 			name ="academy_poster_left"
 			position = { x=10 y=0 }
+			pdx_tooltip = TOM_ACADEMY_1_TT
 		}
 		instantTextBoxType = {
 			name = "academy_poster_left_title"
@@ -24,12 +25,14 @@ guiTypes = {
 			text = "Early"
 			format = center
 			maxWidth = 160
+			maxHeight = 22
 		}
 
 		#POSTER CENTER
 		iconType = {
 			name ="academy_poster_center"
 			position = { x=170 y=0 }
+			pdx_tooltip = TOM_ACADEMY_2_TT
 		}
 		instantTextBoxType = {
 			name = "academy_poster_center_title"
@@ -38,12 +41,14 @@ guiTypes = {
 			text = "Intermediate"
 			format = center
 			maxWidth = 160
+			maxHeight = 22
 		}
 
 		#POSTER RIGHT
 		iconType = {
 			name ="academy_poster_right"
 			position = { x=330 y=0 }
+			pdx_tooltip = TOM_ACADEMY_3_TT
 		}
 		instantTextBoxType = {
 			name = "academy_poster_right_title"
@@ -52,6 +57,7 @@ guiTypes = {
 			text = "Advanced"
 			format = center
 			maxWidth = 160
+			maxHeight = 22
 		}
 	}
 }

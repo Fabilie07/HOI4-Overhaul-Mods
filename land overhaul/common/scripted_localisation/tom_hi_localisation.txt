@@ -347,3 +347,110 @@ defined_text = {
 		localization_key = "GFX_tom_heavy_industry_exp_speciality"
 	}
 }
+
+
+### Ideas
+defined_text = {
+	name = tom_hi_tanks_1_scripted
+	text = { localization_key = idea_desc|tom_hi_tanks_1 } 
+}
+defined_text = {
+	name = tom_hi_tanks_2_scripted
+	text = { localization_key = idea_desc|tom_hi_tanks_2 } 
+}
+defined_text = {
+	name = tom_hi_tanks_3_scripted
+	text = { localization_key = idea_desc|tom_hi_tanks_3 } 
+}
+defined_text = {
+	name = tom_hi_tanks_4_scripted
+	text = { localization_key = idea_desc|tom_hi_tanks_4 } 
+}
+defined_text = {
+	name = tom_hi_tanks_5_scripted
+	text = { localization_key = idea_desc|tom_hi_tanks_5 } 
+}
+
+defined_text = {
+	name = tom_hi_industry_1_scripted
+	text = { localization_key = idea_desc|tom_hi_industry_1 } 
+}
+defined_text = {
+	name = tom_hi_industry_2_scripted
+	text = { localization_key = idea_desc|tom_hi_industry_2 } 
+}
+defined_text = {
+	name = tom_hi_industry_3_scripted
+	text = { localization_key = idea_desc|tom_hi_industry_3 } 
+}
+defined_text = {
+	name = tom_hi_industry_4_scripted
+	text = { localization_key = idea_desc|tom_hi_industry_4 } 
+}
+defined_text = {
+	name = tom_hi_industry_5_scripted
+	text = { localization_key = idea_desc|tom_hi_industry_5 } 
+}
+
+defined_text = {
+	name = tom_hi_mp_1_scripted
+	text = { localization_key = idea_desc|tom_hi_mp_1 } 
+}
+defined_text = {
+	name = tom_hi_mp_2_scripted
+	text = { localization_key = idea_desc|tom_hi_mp_2 } 
+}
+defined_text = {
+	name = tom_hi_mp_3_scripted
+	text = { localization_key = idea_desc|tom_hi_mp_3 } 
+}
+defined_text = {
+	name = tom_hi_mp_4_scripted
+	text = { localization_key = idea_desc|tom_hi_mp_4 } 
+}
+defined_text = {
+	name = tom_hi_mp_5_scripted
+	text = { localization_key = idea_desc|tom_hi_mp_5 } 
+}
+
+defined_text = {
+	name = tom_hi_specialisation_1_scripted
+	text = { localization_key = idea_desc|tom_hi_specialisation_1 } 
+}
+defined_text = {
+	name = tom_hi_specialisation_2_scripted
+	text = { localization_key = idea_desc|tom_hi_specialisation_2 } 
+}
+defined_text = {
+	name = tom_hi_specialisation_3_scripted
+	text = { localization_key = idea_desc|tom_hi_specialisation_3 } 
+}
+defined_text = {
+	name = tom_hi_specialisation_4_scripted
+	text = { localization_key = idea_desc|tom_hi_specialisation_4 } 
+}
+defined_text = {
+	name = tom_hi_specialisation_5_scripted
+	text = { localization_key = idea_desc|tom_hi_specialisation_5 } 
+}
+
+defined_text = {
+	name = tom_hi_exp_1_scripted
+	text = { localization_key = idea_desc|tom_hi_exp_1 } 
+}
+defined_text = {
+	name = tom_hi_exp_2_scripted
+	text = { localization_key = idea_desc|tom_hi_exp_2 } 
+}
+defined_text = {
+	name = tom_hi_exp_3_scripted
+	text = { localization_key = idea_desc|tom_hi_exp_3 } 
+}
+defined_text = {
+	name = tom_hi_exp_4_scripted
+	text = { localization_key = idea_desc|tom_hi_exp_4 } 
+}
+defined_text = {
+	name = tom_hi_exp_5_scripted
+	text = { localization_key = idea_desc|tom_hi_exp_5 } 
+}

@@ -67,7 +67,7 @@ ideas = {
 		
 		tom_hi_industry_1 = {
 			modifier = {
-				research_speed_factor = -0.15
+				research_speed_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
 				production_speed_infrastructure_factor = 0.2
 				production_speed_industrial_complex_factor = 0.05
@@ -77,9 +77,9 @@ ideas = {
 		}
 		tom_hi_industry_2 = {
 			modifier = {
-				research_speed_factor = -0.08
+				research_speed_factor = -0.06
 				production_speed_arms_factory_factor = -0.05
-				production_speed_infrastructure_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
 				conversion_cost_civ_to_mil_factor = 0.2
 				consumer_goods_factor = -0.1
 			}
@@ -94,7 +94,7 @@ ideas = {
 		}
 		tom_hi_industry_4 = {
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.04
 				conversion_cost_civ_to_mil_factor = -0.2
 				military_industrial_organization_funds_gain = 0.15
 				industrial_capacity_factory = 0.02
@@ -114,30 +114,29 @@ ideas = {
 		
 		tom_hi_mp_1 = {
 			modifier = {
-				production_factory_max_efficiency_factor = -0.2
-				line_change_production_efficiency_factor = 0.25
-				production_factory_efficiency_gain_factor = 0.25
-				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = -0.15
+				line_change_production_efficiency_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.3
 			}
 		}
 		tom_hi_mp_2 = {
 			modifier = {
-				production_factory_max_efficiency_factor = -0.1
-				line_change_production_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 		tom_hi_mp_3 = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
-				line_change_production_efficiency_factor = -0.1
+				line_change_production_efficiency_factor = -0.05
 			}
 		}
 		tom_hi_mp_4 = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
 				line_change_production_efficiency_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.13
 			}
 		}
 		tom_hi_mp_5 = {
@@ -151,147 +150,82 @@ ideas = {
 		
 		tom_hi_specialisation_1 = {
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.08
 			}
 			equipment_bonus = {
-				amphibious_tank_chassis = { build_cost_ic = 0.3 }
-				light_tank_aa_chassis = { build_cost_ic = 0.3 }
-				light_tank_amphibious_chassis = { build_cost_ic = 0.3 }
-				light_tank_artillery_chassis = { build_cost_ic = 0.3 }
-				light_tank_destroyer_chassis = { build_cost_ic = 0.3 }
-				light_tank_flame_chassis = { build_cost_ic = 0.3 }
-				medium_tank_aa_chassis = { build_cost_ic = 0.3 }
-				medium_tank_amphibious_chassis = { build_cost_ic = 0.3 }
-				medium_tank_artillery_chassis = { build_cost_ic = 0.3 }
-				medium_tank_destroyer_chassis = { build_cost_ic = 0.3 }
-				medium_tank_flame_chassis = { build_cost_ic = 0.3 }
-				heavy_tank_aa_chassis = { build_cost_ic = 0.3 }
-				heavy_tank_amphibious_chassis = { build_cost_ic = 0.3 }
-				heavy_tank_artillery_chassis = { build_cost_ic = 0.3 }
-				heavy_tank_destroyer_chassis = { build_cost_ic = 0.3 }
-				heavy_tank_flame_chassis = { build_cost_ic = 0.3 }
-				super_heavy_tank_aa_chassis = { build_cost_ic = 0.3 }
-				super_heavy_tank_artillery_chassis = { build_cost_ic = 0.3 }
-				super_heavy_tank_destroyer_chassis = { build_cost_ic = 0.3 }
-				modern_tank_aa_chassis = { build_cost_ic = 0.3 }
-				modern_tank_artillery_chassis = { build_cost_ic = 0.3 }
-				modern_tank_destroyer_chassis = { build_cost_ic = 0.3 }
+				light_tank_aa_chassis = { build_cost_ic = 0.25 }
+				light_tank_artillery_chassis = { build_cost_ic = 0.25 }
+				light_tank_destroyer_chassis = { build_cost_ic = 0.25 }
+				medium_tank_aa_chassis = { build_cost_ic = 0.25 }
+				medium_tank_artillery_chassis = { build_cost_ic = 0.25 }
+				medium_tank_destroyer_chassis = { build_cost_ic = 0.25 }
+				heavy_tank_aa_chassis = { build_cost_ic = 0.25 }
+				heavy_tank_artillery_chassis = { build_cost_ic = 0.25 }
+				heavy_tank_destroyer_chassis = { build_cost_ic = 0.25 }
 			}
 		}
 		tom_hi_specialisation_2 = {
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
 			}
 			equipment_bonus = {
-				amphibious_tank_chassis = { build_cost_ic = 0.15 }
-				light_tank_aa_chassis = { build_cost_ic = 0.15 }
-				light_tank_amphibious_chassis = { build_cost_ic = 0.15 }
-				light_tank_artillery_chassis = { build_cost_ic = 0.15 }
-				light_tank_destroyer_chassis = { build_cost_ic = 0.15 }
-				light_tank_flame_chassis = { build_cost_ic = 0.15 }
-				medium_tank_aa_chassis = { build_cost_ic = 0.15 }
-				medium_tank_amphibious_chassis = { build_cost_ic = 0.15 }
-				medium_tank_artillery_chassis = { build_cost_ic = 0.15 }
-				medium_tank_destroyer_chassis = { build_cost_ic = 0.15 }
-				medium_tank_flame_chassis = { build_cost_ic = 0.15 }
-				heavy_tank_aa_chassis = { build_cost_ic = 0.15 }
-				heavy_tank_amphibious_chassis = { build_cost_ic = 0.15 }
-				heavy_tank_artillery_chassis = { build_cost_ic = 0.15 }
-				heavy_tank_destroyer_chassis = { build_cost_ic = 0.15 }
-				heavy_tank_flame_chassis = { build_cost_ic = 0.15 }
-				super_heavy_tank_aa_chassis = { build_cost_ic = 0.15 }
-				super_heavy_tank_artillery_chassis = { build_cost_ic = 0.15 }
-				super_heavy_tank_destroyer_chassis = { build_cost_ic = 0.15 }
-				modern_tank_aa_chassis = { build_cost_ic = 0.15 }
-				modern_tank_artillery_chassis = { build_cost_ic = 0.15 }
-				modern_tank_destroyer_chassis = { build_cost_ic = 0.15 }
+				light_tank_aa_chassis = { build_cost_ic = 0.1 }
+				light_tank_artillery_chassis = { build_cost_ic = 0.1 }
+				light_tank_destroyer_chassis = { build_cost_ic = 0.1 }
+				medium_tank_aa_chassis = { build_cost_ic = 0.1 }
+				medium_tank_artillery_chassis = { build_cost_ic = 0.1 }
+				medium_tank_destroyer_chassis = { build_cost_ic = 0.1 }
+				heavy_tank_aa_chassis = { build_cost_ic = 0.1 }
+				heavy_tank_artillery_chassis = { build_cost_ic = 0.1 }
+				heavy_tank_destroyer_chassis = { build_cost_ic = 0.1 }
 			}
 		}
 		tom_hi_specialisation_3 = {
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = 0.02
 			}
 			equipment_bonus = {
-				amphibious_tank_chassis = { build_cost_ic = -0.05 }
 				light_tank_aa_chassis = { build_cost_ic = -0.05 }
-				light_tank_amphibious_chassis = { build_cost_ic = -0.05 }
 				light_tank_artillery_chassis = { build_cost_ic = -0.05 }
 				light_tank_destroyer_chassis = { build_cost_ic = -0.05 }
-				light_tank_flame_chassis = { build_cost_ic = -0.05 }
 				medium_tank_aa_chassis = { build_cost_ic = -0.05 }
-				medium_tank_amphibious_chassis = { build_cost_ic = -0.05 }
 				medium_tank_artillery_chassis = { build_cost_ic = -0.05 }
 				medium_tank_destroyer_chassis = { build_cost_ic = -0.05 }
-				medium_tank_flame_chassis = { build_cost_ic = -0.05 }
 				heavy_tank_aa_chassis = { build_cost_ic = -0.05 }
-				heavy_tank_amphibious_chassis = { build_cost_ic = -0.05 }
 				heavy_tank_artillery_chassis = { build_cost_ic = -0.05 }
 				heavy_tank_destroyer_chassis = { build_cost_ic = -0.05 }
-				heavy_tank_flame_chassis = { build_cost_ic = -0.05 }
-				super_heavy_tank_aa_chassis = { build_cost_ic = -0.05 }
-				super_heavy_tank_artillery_chassis = { build_cost_ic = -0.05 }
-				super_heavy_tank_destroyer_chassis = { build_cost_ic = -0.05 }
-				modern_tank_aa_chassis = { build_cost_ic = -0.05 }
-				modern_tank_artillery_chassis = { build_cost_ic = -0.05 }
-				modern_tank_destroyer_chassis = { build_cost_ic = -0.05 }
 			}
 		}
 		tom_hi_specialisation_4 = {
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.02
 			}
 			equipment_bonus = {
-				amphibious_tank_chassis = { build_cost_ic = -0.1 }
-				light_tank_aa_chassis = { build_cost_ic = -0.1 }
-				light_tank_amphibious_chassis = { build_cost_ic = -0.1 }
-				light_tank_artillery_chassis = { build_cost_ic = -0.1 }
-				light_tank_destroyer_chassis = { build_cost_ic = -0.1 }
-				light_tank_flame_chassis = { build_cost_ic = -0.1 }
-				medium_tank_aa_chassis = { build_cost_ic = -0.1 }
-				medium_tank_amphibious_chassis = { build_cost_ic = -0.1 }
-				medium_tank_artillery_chassis = { build_cost_ic = -0.1 }
-				medium_tank_destroyer_chassis = { build_cost_ic = -0.1 }
-				medium_tank_flame_chassis = { build_cost_ic = -0.1 }
-				heavy_tank_aa_chassis = { build_cost_ic = -0.1 }
-				heavy_tank_amphibious_chassis = { build_cost_ic = -0.1 }
-				heavy_tank_artillery_chassis = { build_cost_ic = -0.1 }
-				heavy_tank_destroyer_chassis = { build_cost_ic = -0.1 }
-				heavy_tank_flame_chassis = { build_cost_ic = -0.1 }
-				super_heavy_tank_aa_chassis = { build_cost_ic = -0.1 }
-				super_heavy_tank_artillery_chassis = { build_cost_ic = -0.1 }
-				super_heavy_tank_destroyer_chassis = { build_cost_ic = -0.1 }
-				modern_tank_aa_chassis = { build_cost_ic = -0.1 }
-				modern_tank_artillery_chassis = { build_cost_ic = -0.1 }
-				modern_tank_destroyer_chassis = { build_cost_ic = -0.1 }
+				light_tank_aa_chassis = { build_cost_ic = -0.15 }
+				light_tank_artillery_chassis = { build_cost_ic = -0.15 }
+				light_tank_destroyer_chassis = { build_cost_ic = -0.15 }
+				medium_tank_aa_chassis = { build_cost_ic = -0.15 }
+				medium_tank_artillery_chassis = { build_cost_ic = -0.15 }
+				medium_tank_destroyer_chassis = { build_cost_ic = -0.15 }
+				heavy_tank_aa_chassis = { build_cost_ic = -0.15 }
+				heavy_tank_artillery_chassis = { build_cost_ic = -0.15 }
+				heavy_tank_destroyer_chassis = { build_cost_ic = -0.15 }
 			}
 		}
 		tom_hi_specialisation_5 = {
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
 			}
 			equipment_bonus = {
-				amphibious_tank_chassis = { build_cost_ic = -0.2 }
-				light_tank_aa_chassis = { build_cost_ic = -0.2 }
-				light_tank_amphibious_chassis = { build_cost_ic = -0.2 }
-				light_tank_artillery_chassis = { build_cost_ic = -0.2 }
-				light_tank_destroyer_chassis = { build_cost_ic = -0.2 }
-				light_tank_flame_chassis = { build_cost_ic = -0.2 }
-				medium_tank_aa_chassis = { build_cost_ic = -0.2 }
-				medium_tank_amphibious_chassis = { build_cost_ic = -0.2 }
-				medium_tank_artillery_chassis = { build_cost_ic = -0.2 }
-				medium_tank_destroyer_chassis = { build_cost_ic = -0.2 }
-				medium_tank_flame_chassis = { build_cost_ic = -0.2 }
-				heavy_tank_aa_chassis = { build_cost_ic = -0.2 }
-				heavy_tank_amphibious_chassis = { build_cost_ic = -0.2 }
-				heavy_tank_artillery_chassis = { build_cost_ic = -0.2 }
-				heavy_tank_destroyer_chassis = { build_cost_ic = -0.2 }
-				heavy_tank_flame_chassis = { build_cost_ic = -0.2 }
-				super_heavy_tank_aa_chassis = { build_cost_ic = -0.2 }
-				super_heavy_tank_artillery_chassis = { build_cost_ic = -0.2 }
-				super_heavy_tank_destroyer_chassis = { build_cost_ic = -0.2 }
-				modern_tank_aa_chassis = { build_cost_ic = -0.2 }
-				modern_tank_artillery_chassis = { build_cost_ic = -0.2 }
-				modern_tank_destroyer_chassis = { build_cost_ic = -0.2 }
+				light_tank_aa_chassis = { build_cost_ic = -0.25 }
+				light_tank_artillery_chassis = { build_cost_ic = -0.25 }
+				light_tank_destroyer_chassis = { build_cost_ic = -0.25 }
+				medium_tank_aa_chassis = { build_cost_ic = -0.25 }
+				medium_tank_artillery_chassis = { build_cost_ic = -0.25 }
+				medium_tank_destroyer_chassis = { build_cost_ic = -0.25 }
+				heavy_tank_aa_chassis = { build_cost_ic = -0.25 }
+				heavy_tank_artillery_chassis = { build_cost_ic = -0.25 }
+				heavy_tank_destroyer_chassis = { build_cost_ic = -0.25 }
 			}
 		}
 		
