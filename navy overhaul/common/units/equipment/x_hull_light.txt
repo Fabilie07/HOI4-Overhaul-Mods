@@ -6,6 +6,12 @@ equipments = {
 		archetype = ship_hull_light
 		priority = 2000
 		module_slots = inherit
+		upgrades = {
+			ship_torpedo_upgrade
+			destroyer_engine_upgrade
+			ship_ASW_upgrade
+			ship_anti_air_upgrade
+		}
 		default_modules = {
 			fixed_ship_radio_slot = ship_signals
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0

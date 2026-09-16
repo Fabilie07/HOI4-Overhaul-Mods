@@ -2,7 +2,7 @@ upgrades = {
 
 	ship_mtg_superstructure_upgrade = {
 		abbreviation = "sup"
-		max_level = 10 #each level represents ~50HP
+		max_level = 10
 		cost = land
 
 		linear_cost = {
@@ -24,7 +24,37 @@ upgrades = {
 			max_organisation = 0.02
 		}
 		multiply_stats = {
+			max_strength = 0.01
 			build_cost_ic = 0.01
+		}
+	}
+	
+	ship_mtg_hull_strength_sub = {
+		abbreviation = "sup"
+		max_level = 10 #each level represents ~10m crush depth
+		cost = land
+
+		linear_cost = {
+			cost_by_level = 1
+			cost_by_level_for_licensed_equipment = 5
+		}
+
+		# level_requirements = {
+			# 5 = {
+				# has_tech = engine_tech_1
+			# }
+			# 9 = {
+				# has_tech = engine_tech_2
+			# }
+		# }
+		
+		add_stats = {
+			max_organisation = 0.02
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+			max_strength = 0.01
+			sub_visibility = -0.01
 		}
 	}
 }

@@ -24,13 +24,6 @@ equipments = {
 		type = capital_ship
 		interface_category = interface_category_capital_ships
 
-		upgrades = {
-			ship_reliability_upgrade
-			ship_engine_upgrade
-			ship_armor_upgrade
-			ship_gun_upgrade
-		}
-
 		module_slots = {
 			fixed_ship_radio_slot = {
 				required = no
@@ -324,6 +317,11 @@ equipments = {
 		priority = 1501
 		archetype = ship_hull_battlecruiser
 		naval_dominance_factor = 170
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
+		
 		module_slots = {
 			fixed_ship_radio_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit

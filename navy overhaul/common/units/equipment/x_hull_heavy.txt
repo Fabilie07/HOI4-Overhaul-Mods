@@ -7,6 +7,12 @@ equipments = {
 		visual_level = 0
 
 		module_slots = inherit
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
 		default_modules = {
 			fixed_ship_radio_slot = ship_signals
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
@@ -273,6 +279,12 @@ equipments = {
 		archetype = ship_hull_heavy
 		priority = 1600
 		module_slots = inherit
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
 		default_modules = {
 			fixed_ship_radio_slot = ship_signals
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0

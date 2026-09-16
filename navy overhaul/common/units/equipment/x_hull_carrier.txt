@@ -77,6 +77,10 @@ equipments = {
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
 		}
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
 
 		surface_visibility = 35
 		carrier_size = 7
@@ -159,6 +163,10 @@ equipments = {
 			left_4_custom_slot = right_1_custom_slot
 		}
 		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
+		
 		default_modules = {
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 		}
@@ -236,6 +244,10 @@ equipments = {
 			left_2_custom_slot = right_1_custom_slot
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
+		}
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
 		}
 		
 		default_modules = {
@@ -327,6 +339,10 @@ equipments = {
 			left_2_custom_slot = right_1_custom_slot
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
+		}
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
 		}
 
 		carrier_size = 0
@@ -497,6 +513,10 @@ equipments = {
 			left_2_custom_slot = right_1_custom_slot
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
+		}
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
 		}
 
 		carrier_size = 0
@@ -735,6 +755,10 @@ equipments = {
 			left_4_custom_slot = right_1_custom_slot
 		}
 		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
+		
 		module_count_limit = {
 			category = ship_hybrid_deck
 			count < 5
@@ -903,6 +927,10 @@ equipments = {
 			left_4_custom_slot = right_1_custom_slot
 		}
 		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
+		
 		module_count_limit = {
 			category = ship_hybrid_deck
 			count < 3
@@ -984,6 +1012,12 @@ equipments = {
 					ship_anti_air
 				}
 			}
+		}
+		upgrades = {
+			ship_deckspace_upgrade
+			carrier_armor_upgrade
+			ship_engine_upgrade
+			ship_reliability_upgrade
 		}
 		default_modules = {
 			fixed_ship_deck_slot_1 = ship_deck_space

@@ -320,6 +320,10 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1900
 		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
+		
 		naval_dominance_factor = 50
 		module_slots = {
 			fixed_ship_radio_slot = inherit

@@ -133,6 +133,7 @@
  
  
  ship_mtg_superstructure_upgrade:0 "Superstructure Size"
+ ship_mtg_hull_strength_sub:0 "Hull Strength"
 
 
  ### EQUIPMENT MODULES ###

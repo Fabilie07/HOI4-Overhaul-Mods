@@ -371,6 +371,10 @@ equipments = {
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
 		}
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
 	}
 	
 	ship_hull_armored_cruiser_2 = { # USS Tennessee

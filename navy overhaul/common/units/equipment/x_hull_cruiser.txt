@@ -21,6 +21,10 @@ equipments = {
 			steel = 2
 		}
 		module_slots = inherit	
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
+		}
 	}
 	
 	ship_hull_cruiser_panzerschiff = {
@@ -131,6 +135,10 @@ equipments = {
 			left_2_custom_slot = inherit
 			left_3_custom_slot = inherit
 			left_4_custom_slot = inherit
+		}
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
 		}
 	}
 	ship_hull_cruiser_coastal_defense_ship = {
@@ -267,6 +275,10 @@ equipments = {
 			left_2_custom_slot = right_1_custom_slot
 			left_3_custom_slot = right_1_custom_slot
 			left_4_custom_slot = right_1_custom_slot
+		}
+		
+		upgrades = {
+			ship_mtg_superstructure_upgrade
 		}
 	}
 

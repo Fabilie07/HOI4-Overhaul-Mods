@@ -24,13 +24,6 @@ equipments = {
 		type = submarine
 		group_by = archetype
 		
-		upgrades = {
-			ship_reliability_upgrade
-			sub_engine_upgrade
-			sub_stealth_upgrade
-			sub_torpedo_upgrade
-		}
-		
 		interface_category = interface_category_other_ships
 
 		module_slots = {
@@ -245,6 +238,10 @@ equipments = {
 		priority = 2500
 		naval_dominance_factor = 2
 		module_slots = inherit
+		
+		upgrades = {
+			ship_mtg_hull_strength_sub
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = empty
@@ -493,6 +490,10 @@ equipments = {
 		
 		module_slots = inherit
 		
+		upgrades = {
+			ship_mtg_hull_strength_sub
+		}
+		
 		default_modules = {
 			fixed_ship_torpedo_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_1
@@ -567,6 +568,10 @@ equipments = {
 		priority = 2600
 		
 		module_slots = inherit
+		
+		upgrades = {
+			ship_mtg_hull_strength_sub
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = empty
@@ -1048,6 +1053,13 @@ equipments = {
 		priority = 2500
 		
 		module_slots = inherit
+		
+		upgrades = {
+			ship_reliability_upgrade
+			sub_engine_upgrade
+			sub_stealth_upgrade
+			sub_torpedo_upgrade
+		}
 		
 		default_modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
