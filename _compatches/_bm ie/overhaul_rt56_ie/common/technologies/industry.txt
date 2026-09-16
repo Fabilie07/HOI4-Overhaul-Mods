@@ -5,6 +5,17 @@ technologies = {
 	basic_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.1
+		
+		on_research_complete = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_allow_extra_dockyards_tt
+					AMOUNT = "1"
+				}
+				add_to_variable = { nom_dockyard_limit = 1 }
+			}
+		}
+		show_effect_as_desc = yes
 
 		
 		path = {
@@ -55,6 +66,17 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.1
 
 		equipment_conversion_speed = 0.15 #R56
+		
+		on_research_complete = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_allow_extra_dockyards_tt
+					AMOUNT = "1"
+				}
+				add_to_variable = { nom_dockyard_limit = 1 }
+			}
+		}
+		show_effect_as_desc = yes
 
 		path = {
 			leads_to_tech = advanced_machine_tools 
@@ -89,6 +111,17 @@ technologies = {
 		equipment_conversion_speed = 0.15 #R56
 	
 		production_factory_max_efficiency_factor = 0.1
+		
+		on_research_complete = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_allow_extra_dockyards_tt
+					AMOUNT = "1"
+				}
+				add_to_variable = { nom_dockyard_limit = 1 }
+			}
+		}
+		show_effect_as_desc = yes
 
 		path = {
 			leads_to_tech = assembly_line_production 
@@ -123,6 +156,17 @@ technologies = {
 		equipment_conversion_speed = 0.15 #R56
 	
 		production_factory_max_efficiency_factor = 0.1
+		
+		on_research_complete = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = nom_allow_extra_dockyards_tt
+					AMOUNT = "1"
+				}
+				add_to_variable = { nom_dockyard_limit = 1 }
+			}
+		}
+		show_effect_as_desc = yes
 		
 		path = {
 			leads_to_tech = flexible_line
