@@ -53,6 +53,58 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = aom_academy_slot_1_tt
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_self
+		}
+		localization_key = idea_desc|AOM_academy_2_self
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_ENG
+		}
+		localization_key = idea_desc|AOM_academy_2_ENG
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_FRA
+		}
+		localization_key = idea_desc|AOM_academy_2_FRA
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_GER
+		}
+		localization_key = idea_desc|AOM_academy_2_GER
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_ITA
+		}
+		localization_key = idea_desc|AOM_academy_2_ITA
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_JAP
+		}
+		localization_key = idea_desc|AOM_academy_2_JAP
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_SOV
+		}
+		localization_key = idea_desc|AOM_academy_2_SOV
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_2_USA
+		}
+		localization_key = idea_desc|AOM_academy_2_USA
+	}
+}
+
 
 defined_text = {
 	name = aom_academy_slot_2_icon
@@ -109,6 +161,58 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = aom_academy_slot_2_tt
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_self
+		}
+		localization_key = idea_desc|AOM_academy_3_self
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_ENG
+		}
+		localization_key = idea_desc|AOM_academy_3_ENG
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_FRA
+		}
+		localization_key = idea_desc|AOM_academy_3_FRA
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_GER
+		}
+		localization_key = idea_desc|AOM_academy_3_GER
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_ITA
+		}
+		localization_key = idea_desc|AOM_academy_3_ITA
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_JAP
+		}
+		localization_key = idea_desc|AOM_academy_3_JAP
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_SOV
+		}
+		localization_key = idea_desc|AOM_academy_3_SOV
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_3_USA
+		}
+		localization_key = idea_desc|AOM_academy_3_USA
+	}
+}
+
 
 defined_text = {
 	name = aom_academy_slot_3_icon
@@ -162,5 +266,57 @@ defined_text = {
 	}
 	text = {
 		localization_key = "GFX_aom_academy_empty"
+	}
+}
+
+defined_text = {
+	name = aom_academy_slot_3_tt
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_self
+		}
+		localization_key = idea_desc|AOM_academy_4_self
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_ENG
+		}
+		localization_key = idea_desc|AOM_academy_4_ENG
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_FRA
+		}
+		localization_key = idea_desc|AOM_academy_4_FRA
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_GER
+		}
+		localization_key = idea_desc|AOM_academy_4_GER
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_ITA
+		}
+		localization_key = idea_desc|AOM_academy_4_ITA
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_JAP
+		}
+		localization_key = idea_desc|AOM_academy_4_JAP
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_SOV
+		}
+		localization_key = idea_desc|AOM_academy_4_SOV
+	}
+	text = {
+		trigger = {
+			has_idea = AOM_academy_4_USA
+		}
+		localization_key = idea_desc|AOM_academy_4_USA
 	}
 }

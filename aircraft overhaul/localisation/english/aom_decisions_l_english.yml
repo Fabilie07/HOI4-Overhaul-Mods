@@ -41,6 +41,10 @@
  aom_academy_4_SOV:0 "[SOV.GetFlag] Study [SOV.GetAdjectiveCap] Air Combat"
  aom_academy_4_USA:0 "[USA.GetFlag] Study [USA.GetAdjectiveCap] Air Combat"
  
+ AOM_ACADEMY_1_TT:0 "[aom_academy_slot_1_tt]"
+ AOM_ACADEMY_2_TT:0 "[aom_academy_slot_2_tt]"
+ AOM_ACADEMY_3_TT:0 "[aom_academy_slot_3_tt]"
+ 
  
  aom_call_for_the_highest_service:0 "Call for the Highest Service"
  aom_call_for_the_highest_service_desc:0 "A government's first priority is to protect its citizens. Times are dire indeed when, in order to fulfil that obligation to the many, the few must be called forth to willingly give their lives as heroes."

@@ -13,9 +13,9 @@
  tom_hi_tanks_5_tt_large:0 "§YCurrent:§! \n[tom_hi_tanks_5_scripted] \n\nBelow §C80%§!: \n[tom_hi_tanks_4_scripted]"
  
  tom_hi_industry_1_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_1_scripted] \n\nAbove §C20%§!: \n[tom_hi_industry_2_scripted]"
- tom_hi_industry_2_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_2_scripted] \n\nBelow §C20%§!: \n[tom_hi_industry_1_scripted] \n\nAbove §C40%§!: \[tom_hi_industry_3_scripted]"
- tom_hi_industry_3_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_3_scripted] \n\nBelow §C40%§!: \n[tom_hi_industry_2_scripted] \n\nAbove §C60%§!: \[tom_hi_industry_4_scripted]"
- tom_hi_industry_4_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_4_scripted] \n\nBelow §C60%§!: \n[tom_hi_industry_3_scripted] \n\nAbove §C80%§!: \[tom_hi_industry_5_scripted]"
+ tom_hi_industry_2_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_2_scripted] \n\nBelow §C20%§!: \n[tom_hi_industry_1_scripted] \n\nAbove §C40%§!: \n[tom_hi_industry_3_scripted]"
+ tom_hi_industry_3_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_3_scripted] \n\nBelow §C40%§!: \n[tom_hi_industry_2_scripted] \n\nAbove §C60%§!: \n[tom_hi_industry_4_scripted]"
+ tom_hi_industry_4_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_4_scripted] \n\nBelow §C60%§!: \n[tom_hi_industry_3_scripted] \n\nAbove §C80%§!: \n[tom_hi_industry_5_scripted]"
  tom_hi_industry_5_tt_large:0 "§YCurrent:§! \n[tom_hi_industry_5_scripted] \n\nBelow §C80%§!: \n[tom_hi_industry_4_scripted]"
  
  tom_hi_mp_1_tt_large:0 "§YCurrent:§! \n[tom_hi_mp_1_scripted] \n\nAbove §C20%§!: \n[tom_hi_mp_2_scripted]"
