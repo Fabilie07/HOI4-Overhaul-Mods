@@ -61,6 +61,10 @@
  nom_academy_4_SOV:0 "[SOV.GetFlag] Study [SOV.GetAdjectiveCap] Naval Warfare"
  nom_academy_4_USA:0 "[USA.GetFlag] Study [USA.GetAdjectiveCap] Naval Warfare"
  
+ NOM_ACADEMY_1_TT:0 "[nom_academy_slot_1_tt]"
+ NOM_ACADEMY_2_TT:0 "[nom_academy_slot_2_tt]"
+ NOM_ACADEMY_3_TT:0 "[nom_academy_slot_3_tt]"
+ 
  
  nom_blockade_decisions:0 "Blockade Decisions"
  nom_blockade_decisions_desc:0 "When at war, we can blockade our opponents if we have enough naval presence in the region to shut down their overseas trade. This will have a noticeable impact on their economy, but they may still trade over land. If the blockade is not maintained, the enemy can break through it."
