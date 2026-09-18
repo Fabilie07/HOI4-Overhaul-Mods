@@ -1,9 +1,0 @@
-﻿l_english:
-
- RULE_GROUP_OM:0 "Overhaul Mod: Balancing"
- RULE_EXTRA_RESEARCH:0 "Extra Research Slot"
-
- RULE_RESEARCH_DISABLED:0 "Disabled"
- RULE_RESEARCH_DISABLED_DESC:0 "All nations have their standard amount of Research Slots"
- RULE_RESEARCH_ENABLED:0 "Enabled"
- RULE_RESEARCH_ENABLED_DESC:0 "All nations start with one extra Research Slot"
