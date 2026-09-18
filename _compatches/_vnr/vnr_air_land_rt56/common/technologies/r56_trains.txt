@@ -1,0 +1,546 @@
+#####-----------------------------------------------------------> Mod by Sig "Greatexperiment" Altre
+
+technologies = {
+	###------> X <><> <><> <><> <><> <><>
+	#Trains
+	basic_train = {
+		enable_equipments = {
+			train_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 1920
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 1 }
+		}
+
+		path = {
+			leads_to_tech = wartime_train
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = r56_gw_railway_gun
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = armored_train
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = r56_flexible_railnetwork 
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				num_of_factories > 15
+				factor = 100 #might wanna get on that
+			}
+			modifier = {
+				factor = 1
+				date > "1936.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 10
+				date > "1938.1.1"
+			}
+		}
+	}
+
+	railway_gun = {
+		enable_equipments = {
+			railway_gun_equipment_1
+		}
+
+		enable_equipment_modules = {
+			lc_hull_mounted_railway_gun #Module for Land Cruiser
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_land_super_heavy_railway_gun
+			}
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			train_tech
+			artillery
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = {
+			factor = 0
+
+			modifier = {
+				num_of_factories > 50
+				factor = 1 
+			}
+
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+
+			modifier = {
+				OR = {
+					TAG = GER
+					tag = SOV
+				}
+				factor = 1.5
+			}
+		}
+	}
+	###------> New R56 Railways Guns <><> <><> <><> <><> <><>
+	r56_gw_railway_gun = {
+
+		enable_equipments = {
+			r56_gw_railway_gun_equipment
+		}
+
+		allow_branch = {
+			has_dlc = "No Step Back"
+		}
+
+		path = {
+			leads_to_tech = railway_gun
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			r56_railway_mortar_subtech
+		}
+
+		research_cost = 1.5
+		start_year = 1917
+		folder = {
+			name = support_folder
+			position = { x = 4 y = 1 }
+		}
+		
+		categories = {
+			train_tech
+			artillery
+		}
+		special_project_specialization = { specialization_land }
+		
+		ai_will_do = { #never
+			factor = 0
+		}
+	}
+
+	r56_railway_mortar_subtech = {
+
+		enable_equipments = {
+			r56_railway_mortar_equipment 
+		}
+
+		research_cost = 1
+		start_year = 1930
+		sub_tech_index = 1
+		
+		categories = {
+			train_tech
+			artillery
+		}
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = { #never
+			factor = 0
+		}
+	}
+
+	###------> End Custom Railway Gun Tech <><> <><> <><> <><> <><>
+	wartime_train = {
+		enable_equipments = {
+			train_equipment_2
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+
+		path = {
+			leads_to_tech = r56_mid_wartime_train
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				has_war = yes
+				factor = 20
+			}
+
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 4
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				num_of_civilian_factories < 3
+				factor = 0
+			}
+		}
+	}
+
+	armored_train = {
+		enable_equipments = {
+			train_equipment_3
+		}
+
+		allow_branch = {
+			has_dlc = "No Step Back"
+		}
+
+		path = {
+			leads_to_tech = railway_gun
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				has_war = yes
+				factor = 25
+			}
+
+			modifier = {
+				tag = GER
+				factor = 5
+			}
+
+			modifier = {
+				tag = SOV
+				factor = 5
+			}
+
+			modifier = {
+				add = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				add = 3
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				add = 4
+				date > "1941.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				num_of_civilian_factories < 5
+			}
+		}
+	}
+
+	###------> New R56 Trains <><> <><> <><> <><> <><>
+	r56_mid_wartime_train = {
+		enable_equipments = {
+			train_equipment_4
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 12 }
+		}
+
+		path = {
+			leads_to_tech = r56_postwar_train
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = { #AI doesn't need to upgrade
+			factor = 0
+
+			modifier = {
+				factor = 0.1
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 1
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				is_major = no
+			}
+		}
+	}
+
+	r56_postwar_train = {
+
+		enable_equipments = {
+			train_equipment_5
+		}
+
+		research_cost = 2
+		start_year = 1948
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 0
+			
+			modifier = {
+				factor = 1
+				date > "1948.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1949.1.1"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				is_major = no
+			}
+		}
+	}
+	
+	###------> New railway stat techs <><> <><> <><> <><> <><>
+	r56_flexible_railnetwork = {
+		research_cost = 1.50
+		start_year = 1936
+		folder = {
+			name = support_folder
+			position = { x = -1 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = r56_military_railnetwork
+			research_cost_coeff = 1
+		}
+
+		production_speed_supply_node_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		repair_speed_rail_way_factor = 0.05
+
+		categories = {
+			train_tech
+			railway_construction_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 3
+				date > "1939.1.1"
+			}
+
+		}
+	}
+
+
+	r56_military_railnetwork = {
+		research_cost = 1.50
+		start_year = 1941
+		folder = {
+			name = support_folder
+			position = { x = -1 y = 10 }
+		}
+
+		path = {
+			leads_to_tech = r56_modern_military_railnetwork
+			research_cost_coeff = 1
+		}
+
+		production_speed_supply_node_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		repair_speed_rail_way_factor = 0.05
+
+		categories = {
+			train_tech
+			railway_construction_tech
+		}
+
+		ai_will_do = {
+			factor = 0
+		
+			modifier = {
+				factor = 1
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "1943.1.1"
+			}
+
+		}
+	}
+
+	r56_modern_military_railnetwork = {
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = support_folder
+			position = { x = -1 y = 16 }
+		}
+
+		path = {
+			leads_to_tech = r56_modern_military_railnetwork_2
+			research_cost_coeff = 1
+		}
+
+		production_speed_supply_node_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		repair_speed_rail_way_factor = 0.05
+
+		categories = {
+			train_tech
+			railway_construction_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		
+			modifier = {
+				factor = 1
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	r56_modern_military_railnetwork_2 = {
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = support_folder
+			position = { x = -1 y = 24 }
+		}
+
+		production_speed_supply_node_factor = 0.10
+		production_speed_rail_way_factor = 0.10
+		repair_speed_rail_way_factor = 0.05
+
+		categories = {
+			train_tech
+			railway_construction_tech
+		}
+
+		ai_will_do = {
+			factor = 1
+		
+			modifier = {
+				factor = 1
+				date > "1948.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 3
+				date > "1952.1.1"
+			}
+		}
+	}
+	
+}
+#####-----------------------------------------------------------> End

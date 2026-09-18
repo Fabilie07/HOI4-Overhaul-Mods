@@ -36,6 +36,7 @@ technologies = {
 
 		enable_equipment_modules = { 
 			ship_fire_control_system_0
+			sub_batteries_1
 		}
 		
 		research_cost = 1
@@ -107,6 +108,7 @@ technologies = {
 		enable_equipment_modules = { 
 			tank_radio_1
 			plane_radio_1
+			# ship_radio_1
 			radio_navigation_1
 			lc_radio_1 #Module for Land Cruiser
 		}
@@ -168,6 +170,7 @@ technologies = {
 		enable_equipment_modules = { 
 			tank_radio_2
 			plane_radio_2
+			# ship_radio_2
 			lc_radio_2 #Module for Land Cruiser
 		}
 
@@ -219,6 +222,7 @@ technologies = {
 		enable_equipment_modules = { 
 			tank_radio_3
 			plane_radio_3
+			# ship_radio_3
 			lc_radio_3 #Module for Land Cruiser
 		}
 		
@@ -863,8 +867,10 @@ modern_radio = {
 		is_special_project_tech = yes
 		coordination_bonus = 0.02 #CHANGE  radio_detection_sp_1_tt and radio_detection_sp_2_tt if changing these 2!
 		static_anti_air_hit_chance_factor = 0.2
+		
 		enable_equipment_modules = { 
-			air_ground_radar_1	
+			ship_sub_radar_1
+			air_ground_radar_1
 		}
 		
 		path = {
@@ -964,7 +970,7 @@ modern_radio = {
 		enable_equipment_modules = { 
 			ship_radar_4
 			air_ground_radar_2
-			
+			ship_sub_radar_2
 		}
 
 		path = {
@@ -1154,6 +1160,10 @@ modern_radio = {
 		# small boost to research speed
 		research_speed_factor = 0.05
 		
+		enable_equipment_modules = { 
+			sub_batteries_2
+		}
+		
 		path = {
 			leads_to_tech = improved_computing_machine 
 			research_cost_coeff = 1
@@ -1267,6 +1277,10 @@ modern_radio = {
 
 		# small boost to research speed
 		research_speed_factor = 0.08
+		
+		enable_equipment_modules = { 
+			sub_batteries_3
+		}
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -1999,6 +2013,7 @@ modern_radio = {
 
 		enable_equipment_modules = { 
 			ship_fire_control_system_1
+			sub_torpedo_computer_1
 		}
 		
 		research_cost = 1
@@ -2038,6 +2053,7 @@ modern_radio = {
 
 		enable_equipment_modules = { 
 			ship_fire_control_system_2
+			sub_torpedo_computer_2
 		}
 		
 		research_cost = 1
@@ -2079,6 +2095,7 @@ modern_radio = {
 
 		enable_equipment_modules = { 
 			ship_fire_control_system_3
+			sub_torpedo_computer_3
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"

@@ -465,10 +465,6 @@ technologies = {
 			name = artillery_folder
 			position = { x = 0 y = 14 }
 		}
-		
-		enable_equipment_modules = {
-			r56_tank_medium_cannon_3
-		}
 
 		categories = {
 			artillery
@@ -567,10 +563,6 @@ technologies = {
 		}
 		category_self_propelled_artillery = {
 			soft_attack = 0.05
-		}
-
-		enable_equipment_modules = {
-			r56_tank_medium_cannon_4
 		}
 		
 		path = {
@@ -1510,12 +1502,6 @@ technologies = {
 			anti_air_equipment_x
 		}
 
-		enable_equipment_modules = {
-			r56_tank_heavy_cannon_4
-			r56_tank_high_velocity_cannon_4
-			r56_tank_medium_cannon_4
-		}
-
 		static_anti_air_damage_factor = 0.1	
 
 		path = {
@@ -1556,10 +1542,6 @@ technologies = {
 		}
 		mot_anti_air_brigade = {
 			air_attack = 0.1
-		}
-
-		enable_equipment_modules = {
-			r56_tank_high_velocity_cannon_4
 		}	
 
 		tech_air_damage_factor = -0.01
@@ -2068,7 +2050,6 @@ technologies = {
 		}	
 		enable_equipment_modules = {
 			auto_loader
-			r56_tank_medium_cannon_3
 			lc_heavy_high_velocity_cannons #Module for Land Cruiser
 		}	
 
@@ -2305,12 +2286,6 @@ technologies = {
 			
 		enable_equipments = {
 			anti_tank_equipment_x
-		}
-
-		enable_equipment_modules = {
-			r56_tank_heavy_cannon_4
-			r56_tank_high_velocity_cannon_4
-			r56_tank_medium_cannon_4
 		}	
 
 		path = {
