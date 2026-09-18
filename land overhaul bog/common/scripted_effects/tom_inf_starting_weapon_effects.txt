@@ -1,0 +1,110 @@
+tom_inf_starting_weapons_generic = {
+	create_equipment_variant = {
+		type = infantry_equipment_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			support_equipment_1_slot = inf_grenade_frag
+			sights_slot = inf_sights_1
+		}
+	}
+	if = {
+		limit = {
+			has_tech = infantry_weapons1
+		}
+		create_equipment_variant = {
+			type = infantry_equipment_1
+			mark_older_equipment_obsolete = yes
+			modules = {
+				support_equipment_1_slot = inf_grenade_frag
+				sights_slot = inf_sights_2
+			}
+		}
+	}
+	
+	create_equipment_variant = {
+		type = lmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = lmg_chassis_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = lmg_chassis_2
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = lmg_chassis_3
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	
+	create_equipment_variant = {
+		type = mmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = mmg_chassis_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = mmg_chassis_2
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = mmg_chassis_3
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	
+	create_equipment_variant = {
+		type = hmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = hmg_chassis_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = hmg_chassis_2
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+	create_equipment_variant = {
+		type = hmg_chassis_3
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0800
+		}
+	}
+}

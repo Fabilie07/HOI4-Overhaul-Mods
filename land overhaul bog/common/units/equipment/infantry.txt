@@ -118,7 +118,7 @@ equipments = {
 			backpack_type_slot = inf_backpack_2
 			
 			barrel_slot = inf_barrel_rifle
-			cartridge_slot = inf_cartridge_rifle_80
+			cartridge_slot = inf_cartridge_rifle_75
 			sidearm_weapon_slot = inf_sidearm_pistol
 		}
 		

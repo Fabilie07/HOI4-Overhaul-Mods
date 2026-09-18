@@ -257,6 +257,11 @@ equipments = {
 			fixed_magazine_type_slot = inf_clip_05
 			fixed_casing_slot = inf_casing_brass_rimmed
 			
+			fixed_rifling_slot = inf_rifled_barrel
+			fixed_receiver_slot = inf_receiver_metal
+			fixed_stock_slot = inf_stock_wood
+			fixed_backplate_slot = inf_backplate_metal
+			
 			fixed_barrel_slot = inf_barrel_rifle
 			
 			backpack_type_slot = inf_backpack_2
