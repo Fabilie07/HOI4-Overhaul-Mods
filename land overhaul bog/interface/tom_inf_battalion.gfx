@@ -33,7 +33,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tom_inf_infantry_subunit_slot_icon"
 		texturefile = "gfx/interface/counters_battalion/icons/STRIP_subunit_slot_icon.dds"
-		noOfFrames = 34
+		noOfFrames = 35
 	}
 	
 	
@@ -41,6 +41,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tom_inf_infantry_subunit_slot_icon_nato"
 		texturefile = "gfx/interface/counters_battalion/icons_nato/STRIP_subunit_slot_icon_nato.dds"
-		noOfFrames = 34
+		noOfFrames = 35
 	}
 }

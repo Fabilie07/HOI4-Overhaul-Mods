@@ -13,6 +13,7 @@ tom_inf_save_button_instant_click_ranger_trigger = {
 	
 	check_variable = { tom_inf_bat_popup_1111_count = tom_inf_bat_ranger_1111_count }
 	check_variable = { tom_inf_bat_popup_1112_count = tom_inf_bat_ranger_1112_count }
+	check_variable = { tom_inf_bat_popup_1113_count = tom_inf_bat_ranger_1113_count }
 	check_variable = { tom_inf_bat_popup_1121_count = tom_inf_bat_ranger_1121_count }
 	check_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_ranger_1130_count }
 	
@@ -45,6 +46,7 @@ tom_inf_save_button_increase_ranger_trigger = {
 		
 		check_variable = { tom_inf_bat_popup_1111_count > tom_inf_bat_ranger_1111_count }
 		check_variable = { tom_inf_bat_popup_1112_count > tom_inf_bat_ranger_1112_count }
+		check_variable = { tom_inf_bat_popup_1113_count > tom_inf_bat_ranger_1113_count }
 		check_variable = { tom_inf_bat_popup_1121_count > tom_inf_bat_ranger_1121_count }
 		check_variable = { tom_inf_bat_popup_1130_count > tom_inf_bat_ranger_1130_count }
 		
@@ -78,6 +80,7 @@ tom_inf_save_button_decrease_ranger_trigger = {
 		
 		check_variable = { tom_inf_bat_popup_1111_count < tom_inf_bat_ranger_1111_count }
 		check_variable = { tom_inf_bat_popup_1112_count < tom_inf_bat_ranger_1112_count }
+		check_variable = { tom_inf_bat_popup_1113_count < tom_inf_bat_ranger_1113_count }
 		check_variable = { tom_inf_bat_popup_1121_count < tom_inf_bat_ranger_1121_count }
 		check_variable = { tom_inf_bat_popup_1130_count < tom_inf_bat_ranger_1130_count }
 		

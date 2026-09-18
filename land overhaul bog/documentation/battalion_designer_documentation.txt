@@ -135,6 +135,7 @@ All else: Empty Add
 1110: Mortar
 1111: Artillery
 1112: Super Heavy Artillery
+1113: Rocket Artillery
 
 1120: AT Rifle
 1121: AT Gun
@@ -242,6 +243,8 @@ PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 33: Locked
 
 34: Cavalry
+
+35: Rocket Artillery
 
 
 Terrain IDs: # Necessary for visual depicition of Terrain Boni

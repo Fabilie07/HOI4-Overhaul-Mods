@@ -13,6 +13,7 @@ tom_inf_save_button_instant_click_marine_trigger = {
 	
 	check_variable = { tom_inf_bat_popup_1111_count = tom_inf_bat_marine_1111_count }
 	check_variable = { tom_inf_bat_popup_1112_count = tom_inf_bat_marine_1112_count }
+	check_variable = { tom_inf_bat_popup_1113_count = tom_inf_bat_marine_1113_count }
 	check_variable = { tom_inf_bat_popup_1121_count = tom_inf_bat_marine_1121_count }
 	check_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_marine_1130_count }
 	
@@ -45,6 +46,7 @@ tom_inf_save_button_increase_marine_trigger = {
 		
 		check_variable = { tom_inf_bat_popup_1111_count > tom_inf_bat_marine_1111_count }
 		check_variable = { tom_inf_bat_popup_1112_count > tom_inf_bat_marine_1112_count }
+		check_variable = { tom_inf_bat_popup_1113_count > tom_inf_bat_marine_1113_count }
 		check_variable = { tom_inf_bat_popup_1121_count > tom_inf_bat_marine_1121_count }
 		check_variable = { tom_inf_bat_popup_1130_count > tom_inf_bat_marine_1130_count }
 		
@@ -78,6 +80,7 @@ tom_inf_save_button_decrease_marine_trigger = {
 		
 		check_variable = { tom_inf_bat_popup_1111_count < tom_inf_bat_marine_1111_count }
 		check_variable = { tom_inf_bat_popup_1112_count < tom_inf_bat_marine_1112_count }
+		check_variable = { tom_inf_bat_popup_1113_count < tom_inf_bat_marine_1113_count }
 		check_variable = { tom_inf_bat_popup_1121_count < tom_inf_bat_marine_1121_count }
 		check_variable = { tom_inf_bat_popup_1130_count < tom_inf_bat_marine_1130_count }
 		

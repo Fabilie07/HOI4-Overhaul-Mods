@@ -310,6 +310,22 @@ technologies = {
 	}
 	
 	
+	# Rocket Artillery
+	
+	tom_inf_bat_mountaineer_1113_tech_1 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			soft_attack = -0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = 4
+			}
+		}
+	}
+	
+	
 	# AT Rifle
 	
 	tom_inf_bat_mountaineer_1020_tech_1 = {
@@ -1126,6 +1142,22 @@ technologies = {
 	}
 	
 	
+	# Rocket Artillery
+	
+	tom_inf_bat_mountaineer_1113_tech2_1 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			soft_attack = -0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = 4
+			}
+		}
+	}
+	
+	
 	# AT Rifle
 	
 	tom_inf_bat_mountaineer_1020_tech2_1 = {
@@ -1936,6 +1968,22 @@ technologies = {
 			# combat_width = 0.5
 			need = {
 				super_heavy_artillery_equipment = 1
+			}
+		}
+	}
+	
+	
+	# Rocket Artillery
+	
+	tom_inf_bat_mountaineer_1113_tech3_1 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			soft_attack = -0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = 4
 			}
 		}
 	}
@@ -2757,6 +2805,22 @@ technologies = {
 	}
 	
 	
+	# Rocket Artillery
+	
+	tom_inf_bat_mountaineer_1113_tech4_1 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			soft_attack = -0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = 4
+			}
+		}
+	}
+	
+	
 	# AT Rifle
 	
 	tom_inf_bat_mountaineer_1020_tech4_1 = {
@@ -3573,6 +3637,22 @@ technologies = {
 	}
 	
 	
+	# Rocket Artillery
+	
+	tom_inf_bat_mountaineer_1113_tech5_1 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			soft_attack = -0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = 4
+			}
+		}
+	}
+	
+	
 	# AT Rifle
 	
 	tom_inf_bat_mountaineer_1020_tech5_1 = {
@@ -4384,6 +4464,22 @@ technologies = {
 			# combat_width = 0.5
 			need = {
 				super_heavy_artillery_equipment = 1
+			}
+		}
+	}
+	
+	
+	# Rocket Artillery
+	
+	tom_inf_bat_mountaineer_1113_tech6_1 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			soft_attack = -0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = 4
 			}
 		}
 	}

@@ -370,6 +370,22 @@ technologies = {
 	}
 	
 	
+	# Rocket Artillery
+	
+	tom_inf_bat_marine_1113_tech_reset_1 = {
+		allow = {
+			always = no
+		}
+		marine = {
+			soft_attack = 0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = -4
+			}
+		}
+	}
+	
+	
 	# AT Rifle
 	
 	tom_inf_bat_marine_1020_tech_reset_1 = {
@@ -1181,6 +1197,22 @@ technologies = {
 			# combat_width = 0.5
 			need = {
 				super_heavy_artillery_equipment = -1
+			}
+		}
+	}
+	
+	
+	# Rocket Artillery
+	
+	tom_inf_bat_marine_1113_tech2_reset_1 = {
+		allow = {
+			always = no
+		}
+		marine = {
+			soft_attack = 0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = -4
 			}
 		}
 	}
@@ -2002,6 +2034,22 @@ technologies = {
 	}
 	
 	
+	# Rocket Artillery
+	
+	tom_inf_bat_marine_1113_tech3_reset_1 = {
+		allow = {
+			always = no
+		}
+		marine = {
+			soft_attack = 0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = -4
+			}
+		}
+	}
+	
+	
 	# AT Rifle
 	
 	tom_inf_bat_marine_1020_tech3_reset_1 = {
@@ -2818,6 +2866,22 @@ technologies = {
 	}
 	
 	
+	# Rocket Artillery
+	
+	tom_inf_bat_marine_1113_tech4_reset_1 = {
+		allow = {
+			always = no
+		}
+		marine = {
+			soft_attack = 0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = -4
+			}
+		}
+	}
+	
+	
 	# AT Rifle
 	
 	tom_inf_bat_marine_1020_tech4_reset_1 = {
@@ -3629,6 +3693,22 @@ technologies = {
 			# combat_width = 0.5
 			need = {
 				super_heavy_artillery_equipment = -1
+			}
+		}
+	}
+	
+	
+	# Rocket Artillery
+	
+	tom_inf_bat_marine_1113_tech5_reset_1 = {
+		allow = {
+			always = no
+		}
+		marine = {
+			soft_attack = 0.25
+			# combat_width = 0.5
+			need = {
+				rocket_artillery_equipment = -4
 			}
 		}
 	}

@@ -127,6 +127,7 @@ tom_inf_subunit_unavailable_trigger = {
 			OR = {
 				check_variable = { tom_inf_bat_popup_1111_count > 0 }
 				check_variable = { tom_inf_bat_popup_1112_count > 0 }
+				check_variable = { tom_inf_bat_popup_1113_count > 0 }
 				NOT = { has_tech = gw_artillery }
 			}
 		}
@@ -135,7 +136,17 @@ tom_inf_subunit_unavailable_trigger = {
 			OR = {
 				check_variable = { tom_inf_bat_popup_1111_count > 0 }
 				check_variable = { tom_inf_bat_popup_1112_count > 0 }
+				check_variable = { tom_inf_bat_popup_1113_count > 0 }
 				NOT = { is_special_project_completed = sp:sp_land_super_heavy_howitzer }
+			}
+		}
+		AND = {
+			check_variable = { v = 1113 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1111_count > 0 }
+				check_variable = { tom_inf_bat_popup_1112_count > 0 }
+				check_variable = { tom_inf_bat_popup_1113_count > 0 }
+				NOT = { has_tech = rocket_artillery }
 			}
 		}
 		AND = {
@@ -376,6 +387,10 @@ tom_inf_remove_unavailable_trigger = {
 	AND = {
 		check_variable = { tom_inf_bat_current_value = 1112 }
 		check_variable = { tom_inf_bat_popup_1112_min > 0 }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 1113 }
+		check_variable = { tom_inf_bat_popup_1113_min > 0 }
 	}
 	AND = {
 		check_variable = { tom_inf_bat_current_value = 1120 }
