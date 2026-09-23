@@ -1143,6 +1143,9 @@ technologies = {
 		enable_subunits = {
 			modern_armor
 		}
+		enable_equipment_modules = {
+			tank_modern_cannon
+		}
 
 		research_cost = 2.5
 		start_year = 1946
@@ -1234,6 +1237,9 @@ technologies = {
 	main_battle_tank_chassis_3 = {
 		enable_equipments = {
 			modern_tank_chassis_3
+		}
+		enable_equipment_modules = {
+			tank_modern_cannon_2
 		}
 
 		research_cost = 2.5

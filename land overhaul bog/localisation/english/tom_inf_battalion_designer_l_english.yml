@@ -30,7 +30,7 @@
  TOM_INF_SAVE_BUTTON_TT:0 "Saves the Battalion you are currently editing, immediately applying all new effects and equipment requirements."
  TOM_INF_SAVE_BUTTON_TT_UNAVAILABLE:0 "$TOM_INF_SAVE_BUTTON_TT$ \n\n§RAt least 4 Rifle Platoons are needed§!"
  
- TOM_INF_SAVE_TT:0 "You are about to increase the amount of equipment in the Battalion. §RThis cannot be undone.§! Are you sure?"
+ TOM_INF_SAVE_TT:0 "You are about to change the amount of equipment in the Battalion. §RThis can only be reverted a limited number of times.§! Are you sure?"
  TOM_INF_SAVE_EQUIPMENT_TT:0 "§YEquipment§!"
  TOM_INF_SAVE_HAS_REQUIRED_TT:0 "§YIn Stockpile/Required§!"
  TOM_INF_SAVE_HAS_REQUIRED_DESC_TT:0 "§R!!Caution!!§! This does not take Divisions in Training into account, but they also instantly require the listed Equipment"

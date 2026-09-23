@@ -149,3 +149,5 @@
  
  armor_modules: "Tank Modules"
  armor_modules_speed: "Tank Modules Research Speed"
+ 
+ tom_modern_armor_tech_tt:0 "§YMain Battle Tanks§! are a seperate unit from §YMedium Tanks§!. Divisions containing only Medium Tank Battalions will not be reinforced by them."

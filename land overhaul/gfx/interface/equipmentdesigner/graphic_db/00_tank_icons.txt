@@ -302,7 +302,7 @@ default = {
 	
 	medium_tank_chassis_4 = {
 		pool = {
-			weight = 3
+			weight = 0.3
 			icons = { 
 				GFX_modern_medium_tank_3
 				GFX_modern_medium_tank_2
@@ -500,7 +500,7 @@ default = {
 	}
 	modern_tank_chassis_1 = {
 		pool = {
-			weight = 3
+			weight = 0.5
 			icons = { 
 				GFX_generic_modern_tank_medium
 			}
@@ -508,7 +508,7 @@ default = {
 	}
 	modern_tank_chassis_2 = {
 		pool = {
-			weight = 3
+			weight = 0.5
 			icons = { 
 				GFX_generic_modern_tank_2_medium
 			}
@@ -516,7 +516,7 @@ default = {
 	}
 	modern_tank_chassis_3 = {
 		pool = {
-			weight = 3
+			weight = 0.5
 			icons = { 
 				GFX_generic_modern_tank_3_medium
 			}
@@ -524,17 +524,9 @@ default = {
 	}
 	modern_tank_chassis_4 = {
 		pool = {
-			weight = 3
+			weight = 0.5
 			icons = { 
 				GFX_generic_modern_tank_4_medium
-			}
-		}
-	}
-	modern_tank_chassis_5 = {
-		pool = {
-			weight = 3
-			icons = { 
-				GFX_generic_modern_tank_5_medium
 			}
 		}
 	}
@@ -1724,8 +1716,43 @@ SOV = {
 	}
 	medium_tank_chassis_3 = {
 		pool = {
+			weight = 1.1
 			icons = { 
-				GFX_SOV_advanced_medium_tank_medium #T-44 (Advanced Medium Tank)
+				GFX_SOV_medium_tank_3_medium #T-34-85
+			}
+			models = {
+				SOV_medium_armor_entity #T-34 (Improved Medium Tank)
+			}
+		}
+		pool = {
+			weight = 0.5
+			icons = { 
+ 				GFX_SOV_medium_CCB_camo
+ 				GFX_SOV_medium_CCB
+ 				GFX_SOV_medium_CCA_camo
+ 				GFX_SOV_medium_CCA
+ 				GFX_SOV_medium_CBC_camo
+ 				GFX_SOV_medium_CBC
+ 				GFX_SOV_medium_CBB_camo
+ 				GFX_SOV_medium_CBB
+ 				GFX_SOV_medium_CBA_camo
+ 				GFX_SOV_medium_CBA
+ 				GFX_SOV_medium_CAC_camo
+ 				GFX_SOV_medium_CAC
+ 				GFX_SOV_medium_CAB_camo
+ 				GFX_SOV_medium_CAB
+ 				GFX_SOV_medium_CAA_camo
+ 				GFX_SOV_medium_CAA
+			}
+		}
+	}
+	medium_tank_chassis_4 = {
+		pool = {
+			icons = { 
+				GFX_SOV_medium_tank_4_medium #T-44
+			}
+			models = {
+				SOV_medium_armor_2_entity #T-44
 			}
 		}
 		pool = {
@@ -1980,11 +2007,42 @@ SOV = {
 
 	modern_tank_chassis = {
 		pool = {
-			icons = { 
-				GFX_SOV_main_battle_tank_medium #T-54 (Modern Tank)
-			}
+			weight = 0.5
 			models = {
 				SOV_modern_armor_entity #T-54 (Modern Tank)
+			}
+		}
+	}
+	
+	modern_tank_chassis_1 = {
+		pool = {
+			weight = 1950
+			icons = { 
+				GFX_SOV_modern_tank_medium #T-44-100
+			}
+			models = {
+				SOV_medium_armor_2_entity #T-44
+			}
+		}
+	}
+	modern_tank_chassis_2 = {
+		pool = {
+			icons = { 
+				GFX_SOV_modern_tank_2_medium #T-54
+			}
+		}
+	}
+	modern_tank_chassis_3 = {
+		pool = {
+			icons = { 
+				GFX_SOV_modern_tank_3_medium #T-54A
+			}
+		}
+	}
+	modern_tank_chassis_4 = {
+		pool = {
+			icons = { 
+				GFX_SOV_modern_tank_4_medium #T-55
 			}
 		}
 	}
