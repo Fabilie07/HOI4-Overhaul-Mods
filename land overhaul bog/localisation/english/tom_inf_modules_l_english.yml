@@ -124,6 +124,8 @@
  inf_rifle_grenade_desc:0 "This grenade can be mounted to the barrel of a rifle and fired with a blank round. It can fly much further than a thrown grenade."
  inf_portable_at_rocket:0 "Portable AT Rocket"
  inf_portable_at_rocket_desc:0 "A rocket launcher firing HEAT warheads, small enough to be carried and used by a single infantryman."
+ inf_portable_at_rocket_2:0 "Improved AT Rocket"
+ inf_portable_at_rocket_2_desc:0 "A higher muzzle velocity allows this weapon to be used more accurately and from greater ranges."
  inf_shovel:0 "Shovel"
  inf_shovel_desc:0 "An entrenchment tool, but its use cases exceed just digging trenches or foxholes. It can be used as a tool for many purposes or even as a weapon."
  inf_bayonet:0 "Bayonet"

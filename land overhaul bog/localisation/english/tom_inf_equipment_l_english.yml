@@ -27,6 +27,9 @@
  support_weapons8:0 "Support Weapons VIII"
  support_weapons8_desc:0 "Specially treated barrels allow for higher rates of fire, while retaining a shoulder-firing capability."
 
+ 
+ infantry_equipment_4:0 "Early Cold War Infantry Equipment"
+ infantry_equipment_5:0 "Basic Cold War Infantry Equipment"
 
  tom_inf_horse:0 "Horse"
  tom_inf_horse_desc:0 "Horses carry Soldiers and Supplies and tow Artillery Pieces of all kinds."
@@ -37,6 +40,7 @@
  mortar_chassis_0:0 "Early Mortar"
  mortar_chassis_1:0 "Basic Mortar"
  mortar_chassis_2:0 "Improved Mortar"
+ mortar_chassis_3:0 "Advanced Mortar"
  
  lmg_chassis:0 "LMG Equipment"
  lmg_chassis_desc:0 "Machine Guns that can be moved easily and fired while moving."
@@ -44,6 +48,7 @@
  lmg_chassis_1:0 "Basic LMG"
  lmg_chassis_2:0 "Improved LMG"
  lmg_chassis_3:0 "Advanced LMG"
+ lmg_chassis_4:0 "Cold War LMG"
  
  mmg_chassis:0 "MMG Equipment"
  mmg_chassis_desc:0 "General-Purpose Machine Guns that offer improved offensive and defensive firepower."
@@ -51,6 +56,8 @@
  mmg_chassis_1:0 "Basic MMG"
  mmg_chassis_2:0 "Improved MMG"
  mmg_chassis_3:0 "Advanced MMG"
+ mmg_chassis_4:0 "Early Cold War MMG"
+ mmg_chassis_5:0 "Basic Cold War MMG"
  
  hmg_chassis:0 "HMG Equipment"
  hmg_chassis_desc:0 "Stationary Machine Guns that provide powerful fire support."
@@ -65,7 +72,8 @@
  
  at_rocket_chassis:0 "AT Rocket Equipment"
  at_rocket_chassis_desc:0 "Crew AT weapons that utilize shaped charges to penetrate the heaviest of tanks."
- at_rocket_chassis_0:0 "Squad AT Rocket"
+ at_rocket_chassis_0:0 "Basic Squad AT Rocket"
+ at_rocket_chassis_1:0 "Improved Squad AT Rocket"
  
  sniper_chassis:0 "Sniper Equipment"
  sniper_chassis_desc:0 "Accurate Rifles with scopes, allowing precise fire from beyond enemy engagement distances."
