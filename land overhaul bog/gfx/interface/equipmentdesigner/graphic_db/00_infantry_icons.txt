@@ -40,6 +40,28 @@ default = {
 			}
 		}
 	}
+	infantry_equipment_4 = {
+		pool = {
+			weight = 0.1
+			icons = {
+				GFX_modern_infantry_weapons_medium
+			}
+			models = {
+				infantry_3_entity
+			}
+		}
+	}
+	infantry_equipment_5 = {
+		pool = {
+			weight = 0.1
+			icons = {
+				GFX_modern_infantry_weapons2_medium
+			}
+			models = {
+				infantry_3_entity
+			}
+		}
+	}
 	
 	sniper_chassis = {
 		pool = {

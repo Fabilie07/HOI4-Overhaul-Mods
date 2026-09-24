@@ -119,10 +119,10 @@ generic_infantry_equipment = {
 	generic_infantry_equipment_3 = {
 		priority = {
 			factor = 2500
-			# modifier = { 
-				# has_tech = improved_infantry_weapons
-				# factor = 0 #let's not waste XP here
-			# }
+			modifier = { 
+				has_tech = modern_infantry_weapons
+				factor = 0 #let's not waste XP here
+			}
 		}
 		
 		target_variant = {
@@ -148,6 +148,68 @@ generic_infantry_equipment = {
 					module = inf_rifle_grenade
 					module = inf_pocket_knife
 				}
+				support_equipment_4_slot = inf_cleaning_kit
+				barrel_slot = inf_barrel_rifle
+				cartridge_slot = inf_cartridge_intermediate_80
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
+	}
+	generic_infantry_equipment_4 = {
+		priority = {
+			factor = 2500
+			modifier = { 
+				has_tech = modern_infantry_weapons2
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = infantry_equipment_4
+			modules = {
+				firing_mode_slot = inf_full_auto
+				magazine_type_slot = inf_magazine_30
+				
+				backpack_type_slot = inf_backpack_3
+				water_type_slot = inf_canteen_1
+				first_aid_type_slot = empty
+				
+				sights_slot = inf_sights_3
+				support_equipment_1_slot = inf_grenade_frag
+				support_equipment_2_slot = inf_grenade_frag
+				support_equipment_3_slot = inf_rifle_grenade
+				support_equipment_4_slot = inf_cleaning_kit
+				barrel_slot = inf_barrel_rifle
+				cartridge_slot = inf_cartridge_intermediate_80
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
+	}
+	generic_infantry_equipment_5 = {
+		priority = {
+			factor = 2500
+			# modifier = { 
+				# has_tech = modern_infantry_weapons2
+				# factor = 0 #let's not waste XP here
+			# }
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = infantry_equipment_5
+			modules = {
+				firing_mode_slot = inf_full_auto
+				magazine_type_slot = inf_magazine_30
+				
+				backpack_type_slot = inf_backpack_3
+				water_type_slot = inf_canteen_1
+				first_aid_type_slot = empty
+				
+				sights_slot = inf_sights_3
+				support_equipment_1_slot = inf_grenade_frag
+				support_equipment_2_slot = inf_grenade_frag
+				support_equipment_3_slot = inf_rifle_grenade
 				support_equipment_4_slot = inf_cleaning_kit
 				barrel_slot = inf_barrel_rifle
 				cartridge_slot = inf_cartridge_intermediate_80
