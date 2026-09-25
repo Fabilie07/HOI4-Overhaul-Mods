@@ -391,4 +391,77 @@ USA = {
 			}
 		}
 	}
+	infantry_equipment_4 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_modern_infantry_weapons_medium
+			}
+			models = {
+				USA_infantry_3_entity
+			}
+		}
+	}
+	infantry_equipment_5 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_modern_infantry_weapons2_medium
+			}
+			models = {
+				USA_infantry_3_entity
+			}
+		}
+	}
+	
+	lmg_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_lmg_chassis_0_medium
+			}
+		}
+	}
+	lmg_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_lmg_chassis_1_medium
+			}
+		}
+	}
+	
+	mmg_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_mmg_chassis_1_medium
+			}
+		}
+	}
+	mmg_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_mmg_chassis_2_medium
+			}
+		}
+	}
+	
+	hmg_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_hmg_chassis_1_medium
+			}
+		}
+	}
+	hmg_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_USA_hmg_chassis_3_medium
+			}
+		}
+	}
 }

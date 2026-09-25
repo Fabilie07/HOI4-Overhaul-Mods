@@ -1,0 +1,22 @@
+﻿l_english:
+
+ USA_mortar_chassis_0:0 "M1 Mortar"
+ USA_mortar_chassis_1:0 "M2 Mortar"
+ USA_mortar_chassis_2:0 "M2 4.2'' Mortar"
+ USA_mortar_chassis_3:0 "M29 Mortar"
+ 
+ USA_lmg_chassis_0:0 "M1918 BAR"
+ USA_lmg_chassis_1:0 "M1918A2 BAR"
+ USA_lmg_chassis_2:0 "M1941 Johnson"
+ 
+ USA_mmg_chassis_0:0 "M1919 Browning Machine Gun"
+ USA_mmg_chassis_1:0 "M1919A4 Browning Machine Gun"
+ USA_mmg_chassis_2:0 "M1919A6 Browning Machine Gun"
+ USA_mmg_chassis_3:0 "T44"
+ USA_mmg_chassis_4:0 "T54"
+ USA_mmg_chassis_5:0 "M60"
+ 
+ USA_hmg_chassis_0:0 "M1917"
+ USA_hmg_chassis_1:0 "M2 BMG"
+ USA_hmg_chassis_2:0 "M2 BMG"
+ USA_hmg_chassis_3:0 "M2 BMG"

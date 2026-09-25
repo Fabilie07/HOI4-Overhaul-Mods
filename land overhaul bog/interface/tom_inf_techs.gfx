@@ -202,4 +202,39 @@ spriteTypes = {
 		name = "GFX_tech_support4_medium"
 		texturefile = "gfx/interface/technologies/support_equipment_4.dds"
 	}
+	
+	
+	### USA
+	spriteType = {
+		name = "GFX_USA_lmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/USA_lmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_lmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/USA_lmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/USA_mmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_mmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/USA_mmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_hmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/USA_hmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_hmg_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/USA_hmg_3.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA_infantry4.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_modern_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/USA_infantry5.dds"
+	}
 }
