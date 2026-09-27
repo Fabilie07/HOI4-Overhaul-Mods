@@ -756,13 +756,33 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_heatfs"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heatfs.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_he"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_he.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_hesh"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_hesh.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_hevt"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_hevt.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_apds"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apds.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_apfsds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apfsds.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
