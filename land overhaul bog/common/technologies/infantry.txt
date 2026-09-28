@@ -1537,6 +1537,9 @@ technologies = {
 			motorized_equipment_1
 		}
 
+		mot_fire_support = {
+			breakthrough = 0.1
+		}
 		#enable_equipment_modules = {
 		#	tank_wheeled_suspension
 		#}
@@ -1704,6 +1707,10 @@ technologies = {
 		enable_subunits = {
 			paratrooper
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_paratrooper
+		}
 		
 		path = {
 			leads_to_tech = paratroopers2
@@ -1862,6 +1869,10 @@ technologies = {
 		enable_subunits = {
 			marine
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_marine
+		}
 		
 		on_research_complete = {
 			hidden_effect = {
@@ -1985,6 +1996,10 @@ technologies = {
 		enable_subunits = {
 			mountaineers
 		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_mountaineer
+		}
 
 		on_research_complete = {
 			hidden_effect = {
@@ -2087,6 +2102,10 @@ technologies = {
 
 		enable_subunits = {
 			ranger_battalion
+		}
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_ranger
 		}
 		
 		on_research_complete = {

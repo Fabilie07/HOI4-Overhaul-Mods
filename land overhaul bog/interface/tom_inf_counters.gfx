@@ -23,6 +23,13 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_mortar_support_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/support_unit_mortar_icon.dds" noOfFrames = 2 }
 	
 	
+	### HQ
+	spriteType = { name = "GFX_unit_hq_heavy_infantry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_heavy_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_marine_icon_medium"											textureFile = "gfx/interface/counters/divisions_large/unit_marine_commando_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_mountaineer_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/unit_mountain_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_ranger_icon_medium"											textureFile = "gfx/interface/counters/divisions_large/unit_ranger_battalion_icon.dds" noOfFrames = 2 }
+	
+	
 	### Placeholder
 	spriteType = { name = "GFX_unit_infantry_placeholder_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_sniper_placeholder_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }

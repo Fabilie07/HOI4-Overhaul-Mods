@@ -50,6 +50,16 @@
  mortar_support_desc:0 "Mortar Tubes provide indirect Fire Support to Infantry on the frontline."
  
  
+ ## HQ
+ hq_heavy_infantry:0 "Heavy Infantry HQ Security"
+ hq_marine:0 "Marine HQ Security"
+ hq_mountaineer:0 "Mountaineer HQ Security"
+ hq_ranger:0 "Ranger HQ Security"
+ 
+ hq_forward_command:0 "Forward Command Unit"
+ hq_static_command:0 "Entrenched Command Unit"
+ 
+ 
  #Placeholders
  infantry_placeholder:0 "Infantry Placeholder"
  sniper_placeholder:0 "Sniper Placeholder"
