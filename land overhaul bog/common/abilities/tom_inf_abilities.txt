@@ -1,0 +1,92 @@
+ability = {
+	forward_supply_bases = {
+		name = ABILITY_FORWARD_SUPPLY_BASES
+		desc = ABILITY_FORWARD_SUPPLY_BASES_DESC
+		sound_effect = ability_front_overrun
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			supply_consumption_factor = -0.1
+			attrition = -0.2
+			str_damage_multiplier = 0.15
+		}
+		
+		cancelable = yes
+		cost = 0.05
+		duration = -1
+	}
+	
+	mad_dash = {
+		name = ABILITY_MAD_DASH
+		desc = ABILITY_MAD_DASH_DESC
+		sound_effect = command_power_ability_offensive
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			army_speed_factor = 0.2
+			str_damage_multiplier = 0.4
+			cannot_retreat_while_attacking = 1.0
+		}
+		
+		one_time_effect = {
+			supply_units = 168
+		}
+		
+		cancelable = yes
+		cost = 0.1
+		duration = 168
+	}
+	
+	breakout_attack = {
+		name = ABILITY_BREAKOUT_ATTACK
+		desc = ABILITY_BREAKOUT_ATTACK_DESC
+		sound_effect = command_power_ability_offensive
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			pocket_penalty = -0.2
+			breakthrough_factor = 0.1
+		}
+		
+		cancelable = yes
+		cost = 0.1
+		duration = 168
+	}
+	
+	beachhead_containment = {
+		name = ABILITY_BEACHHEAD_CONTAINMENT
+		desc = ABILITY_BEACHHEAD_CONTAINMENT_DESC
+		sound_effect = command_power_ability_offensive
+		type = army_leader
+		requires_deployed_hq = yes
+		
+		allowed = {
+			is_border_war = no
+		}
+		
+		unit_modifiers = {
+			army_speed_factor = 0.05
+			amphibious_invasion_defence = 0.4
+			combat_entrenchment = 0.25
+		}
+		
+		cancelable = yes
+		cost = 0.1
+		duration = 168
+	}
+}

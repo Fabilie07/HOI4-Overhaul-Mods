@@ -2177,6 +2177,11 @@ technologies = {
 		enable_subunits = {
 			armored_engineer
 		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates"}
+			hq_engineer
+		}
 
 		on_research_complete = {
 			if = {
@@ -2374,6 +2379,11 @@ technologies = {
 		enable_subunits = {
 			helicopter_recon
 		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates" }
+			hq_heli_recon
+		}
 
 		research_cost = 1.2
 		start_year = 1938
@@ -2436,6 +2446,11 @@ technologies = {
 
 		enable_subunits = {
 			helicopter_field_hospital
+		}
+		
+		enable_subunits = {
+			limit = { has_dlc = "Thunder at Our Gates" }
+			hq_heli_rescue
 		}
 
 		ai_will_do = {

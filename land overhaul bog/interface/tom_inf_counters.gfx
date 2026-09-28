@@ -25,9 +25,23 @@ spriteTypes = {
 	
 	### HQ
 	spriteType = { name = "GFX_unit_hq_heavy_infantry_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_heavy_infantry_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_mechanized_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/unit_mechanized_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_hq_marine_icon_medium"											textureFile = "gfx/interface/counters/divisions_large/unit_marine_commando_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_hq_mountaineer_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/unit_mountain_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_hq_ranger_icon_medium"											textureFile = "gfx/interface/counters/divisions_large/unit_ranger_battalion_icon.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_hq_engineering_vehicles_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_armored_engineer_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_heli_recon_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/unit_helicopter_recon_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_media_group_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_media_unit_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_weather_survey_team_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_weather_unit_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_heli_rescue_icon_medium"										textureFile = "gfx/interface/counters/divisions_large/unit_helicopter_field_hospital_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_organizational_staff_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_organization_unit_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_intelligence_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_intel_unit_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_forward_command_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_forward_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_static_command_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_static_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_combat_study_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_research_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_independent_command_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_independent_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hq_shore_defense_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/support_unit_hq_shore_icon.dds" noOfFrames = 2 }
 	
 	
 	### Placeholder

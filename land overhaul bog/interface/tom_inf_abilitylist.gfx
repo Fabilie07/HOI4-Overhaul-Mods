@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ability_mad_dash"
+		texturefile = "gfx/interface/abilitylist/ability_default.dds"
+	}
+}

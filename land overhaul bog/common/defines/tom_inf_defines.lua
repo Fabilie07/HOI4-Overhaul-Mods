@@ -8,5 +8,7 @@ NDefines.NMilitary.REGIMENTAL_SUPPORT_REQUIRED_BATTALIONS = { 3, 5 }	-- Vanilla:
 NDefines.NMilitary.MAX_HQ_SUPPORT_WIDTH = 2	-- Vanilla: 1
 NDefines.NMilitary.MAX_HQ_SUPPORT_HEIGHT = 4	-- Vanilla: 4
 
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5	-- Vanilla: 10
+
  -- AI
 NDefines.NAI.DESIRE_USE_XP_TO_UPGRADE_LAND_EQUIPMENT = 2.0	-- Vanilla: 1.0

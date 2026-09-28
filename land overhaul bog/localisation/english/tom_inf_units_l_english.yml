@@ -52,12 +52,23 @@
  
  ## HQ
  hq_heavy_infantry:0 "Heavy Infantry HQ Security"
+ hq_mechanized:0 "Mechanized HQ Security"
  hq_marine:0 "Marine HQ Security"
  hq_mountaineer:0 "Mountaineer HQ Security"
  hq_ranger:0 "Ranger HQ Security"
  
+ hq_engineering_vehicles:0 "Heavy Engineering Vehicle Unit"
+ hq_heli_recon:0 "Helicopter Reconnaissance Staff"
+ hq_media_group:0 "War Correspondent Staff"
+ hq_weather_survey_team:0 "Weather Survey Staff"
+ hq_heli_rescue:0 "Helicopter Rescue Unit"
+ hq_organizational_staff:0 "Order Relay Staff"
+ hq_intelligence:0 "Intelligence Staff"
  hq_forward_command:0 "Forward Command Unit"
  hq_static_command:0 "Entrenched Command Unit"
+ hq_combat_study:0 "Combat Study Staff"
+ hq_independent_command:0 "Independent Command Centre"
+ hq_shore_defense:0 "Shore Defense Staff"
  
  
  #Placeholders

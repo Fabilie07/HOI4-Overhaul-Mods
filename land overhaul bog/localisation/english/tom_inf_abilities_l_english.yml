@@ -1,0 +1,9 @@
+﻿l_english:
+ ABILITY_FORWARD_SUPPLY_BASES:0 "Forward Supply Bases"
+ ABILITY_FORWARD_SUPPLY_BASES_DESC:0 "Your armies will get a bonus in areas with low supply, at the cost of taking more casualties in battle. Is active until disabled."
+ ABILITY_MAD_DASH:0 "Mad Dash"
+ ABILITY_MAD_DASH_DESC:0 "Your armies will get a bonus to their speed and will remain supplied, but they will take more casualties."
+ ABILITY_BREAKOUT_ATTACK:0 "Breakout Attack"
+ ABILITY_BREAKOUT_ATTACK_DESC:0 "Your armies will get a bonus when encircled and will have an easier time breaking out of it."
+ ABILITY_BEACHHEAD_CONTAINMENT:0 "Beachhead Containment"
+ ABILITY_BEACHHEAD_CONTAINMENT_DESC:0 "Your armies will get a bonus while defending against naval invasions."
