@@ -26,6 +26,34 @@
  support_weapons7_desc:0 "Advancements in metallurgy and plastics allow mortars to be lighter and more precise."
  support_weapons8:0 "Support Weapons VIII"
  support_weapons8_desc:0 "Specially treated barrels allow for higher rates of fire, while retaining a shoulder-firing capability."
+ 
+ paratroopers4:0 "Paratroopers IV"
+ paratroopers4_desc:0 "New equipment and training focuses on paradropping into areas with large enemy presences, though these practices are still discouraged."
+ paratroopers5:0 "Paratroopers V"
+ paratroopers5_desc:0 "A focus on Urban Warfare allows airborne operations to quickly take out enemy airfields and command centres."
+ paratroopers6:0 "Paratroopers VI"
+ paratroopers6_desc:0 "New advancements in tactics make Paratroopers a fearsome, versatile force to be reckoned with."
+ 
+ marines4:0 "Marines IV"
+ marines4_desc:0 "Amphibious warfare encompasses not only crossing rivers or landing on beachheads, but any combat near bodies of water."
+ marines5:0 "Marines V"
+ marines5_desc:0 "Theater-specific training prepares our marine special forces for operations in tropical environments."
+ marines6:0 "Marines VI"
+ marines6_desc:0 "Operations along with the regular army allow marines to showcase their full potential."
+ 
+ tech_mountaineers4:0 "Mountain Infantry IV"
+ tech_mountaineers4_desc:0 "Specially made equipment can traverse mountains to keep our troops supplied and fighting."
+ tech_mountaineers5:0 "Mountain Infantry V"
+ tech_mountaineers5_desc:0 "There are few environments more hostile than a Mountain during winter. Expansive training regimens are needed to prepare our troops for such cases."
+ tech_mountaineers6:0 "Mountain Infantry VI"
+ tech_mountaineers6_desc:0 "Mountaineers take on a role as Shock Troops, leaving behind their mountainous battlefield for a more generalized role."
+ 
+ rangers_tech4:0 "Rangers IV"
+ rangers_tech4_desc:0 "Rangers specialize in moving undetected through thick undergrowth, using infiltration on a tactical scale."
+ rangers_tech5:0 "Rangers V"
+ rangers_tech5_desc:0 "The same tactics used in forests can be applied to other terrain types with limited cover and vegetation."
+ rangers_tech6:0 "Rangers VI"
+ rangers_tech6_desc:0 "Their specialized survival training makes Rangers a capable ground unit, capable of easily outperforming regular soldiers in most situations."
 
  
  # Support

@@ -826,6 +826,10 @@ technologies = {
 			max_organisation = 5
 		}
 		
+		path = {
+			leads_to_tech = paratroopers4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.0
 		start_year = 1943
@@ -856,6 +860,92 @@ technologies = {
 				factor = 2
 				tag = ENG
 			}
+		}
+	}
+	
+	paratroopers4 = {
+
+		paratrooper = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = paratroopers5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1946 }
+		}
+		
+		categories = {
+			para_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+	paratroopers5 = {
+
+		paratrooper = {
+			max_organisation = 5
+			
+			urban = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+		
+		path = {
+			leads_to_tech = paratroopers6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1953 }
+		}
+		
+		categories = {
+			para_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+	paratroopers6 = {
+
+		paratrooper = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+
+		research_cost = 2.0
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1960 }
+		}
+		
+		categories = {
+			para_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.5
 		}
 	}
 	
@@ -957,12 +1047,133 @@ technologies = {
 		marine = {
 			max_organisation = 5
 		}
+		
+		path = {
+			leads_to_tech = marines4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.0
 		start_year = 1943
 		folder = {
 			name = infantry_folder
 			position = { x = 3 y = @1943 }
+		}
+		
+		categories = {
+			marine_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}	
+	
+	marines4 = {
+
+		marine = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = marines5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1946 }
+		}
+		
+		categories = {
+			marine_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}	
+	
+	marines5 = {
+
+		marine = {
+			max_organisation = 5
+			
+			jungle = {
+				attack = 0.05
+				movement = 0.15
+			}
+		}
+		
+		path = {
+			leads_to_tech = marines6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.0
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1953 }
+		}
+		
+		categories = {
+			marine_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+		}
+	}
+
+	marines6 = {
+
+		marine = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+
+		research_cost = 2.0
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1960 }
 		}
 		
 		categories = {
@@ -1059,12 +1270,102 @@ technologies = {
 		mountaineers = {
 			max_organisation = 5
 		}
+		path = {
+			leads_to_tech = tech_mountaineers4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.0
 		start_year = 1943
 		folder = {
 			name = infantry_folder
 			position = { x = 5 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	tech_mountaineers4 = {
+
+		mountaineers = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = tech_mountaineers5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1946 }
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	tech_mountaineers5 = {
+
+		mountaineers = {
+			max_organisation = 5
+			
+			snow = {
+				movement = 0.2
+			}
+		}
+		path = {
+			leads_to_tech = tech_mountaineers6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1953 }
+		}
+		
+		categories = {
+			infantry_tech
+			mountaineers_tech
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	tech_mountaineers6 = {
+
+		mountaineers = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1960 }
 		}
 		
 		categories = {
@@ -1178,11 +1479,103 @@ technologies = {
 			max_organisation = 5
 		}
 		
+		path = {
+			leads_to_tech = rangers_tech4
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1.5
 		start_year = 1943
 		folder = {
 			name = infantry_folder
 			position = { x = 4 y = @1943 }
+		}
+		
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	rangers_tech4 = {
+
+		ranger_battalion = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = rangers_tech5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1946 }
+		}
+		
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	rangers_tech5 = {
+
+		ranger_battalion = {
+			max_organisation = 5
+			
+			hills = {
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+		path = {
+			leads_to_tech = rangers_tech6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1953
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1953 }
+		}
+		
+		categories = {
+			infantry_tech
+			rangers_tech_cat
+			cat_special_forces_generic
+		}
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	
+	rangers_tech6 = {
+
+		ranger_battalion = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1960
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1960 }
 		}
 		
 		categories = {
