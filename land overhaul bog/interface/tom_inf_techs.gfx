@@ -1,54 +1,5 @@
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_modern_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/infantry4.dds"
-	}
-	spriteType = {
-		name = "GFX_modern_infantry_weapons2_medium"
-		texturefile = "gfx/interface/technologies/infantry5.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_modern_lmg_tech_medium"
-		texturefile = "gfx/interface/technologies/infantry_weapons4.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_infantry_at3_medium"
-		texturefile = "gfx/interface/technologies/infantry_at3.dds"
-	}
-	spriteType = {
-		name = "GFX_infantry_at4_medium"
-		texturefile = "gfx/interface/technologies/infantry_at4.dds"
-	}
-	spriteType = {
-		name = "GFX_infantry_at5_medium"
-		texturefile = "gfx/interface/technologies/infantry_at5.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_night_vision3_medium"
-		texturefile = "gfx/interface/technologies/night_vision3.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_support_weapons5_medium"
-		texturefile = "gfx/interface/technologies/infantry_support5.dds"
-	}
-	spriteType = {
-		name = "GFX_support_weapons6_medium"
-		texturefile = "gfx/interface/technologies/infantry_support6.dds"
-	}
-	spriteType = {
-		name = "GFX_support_weapons7_medium"
-		texturefile = "gfx/interface/technologies/infantry_support7.dds"
-	}
-	spriteType = {
-		name = "GFX_support_weapons8_medium"
-		texturefile = "gfx/interface/technologies/infantry_support8.dds"
-	}
-
 	### Special Projects
 	
 	SpriteType = {
