@@ -1226,26 +1226,7 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 2
-				date > "1942.1.6"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1943.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1944.1.1"
-			}
-			
-			modifier = {
-				factor = 2
-				date > "1945.1.1"
-			}
+
 			modifier = {
 				has_war = yes
 				factor = 2
