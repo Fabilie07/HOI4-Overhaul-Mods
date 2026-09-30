@@ -96,6 +96,71 @@ spriteTypes = {
 	
 	### MG
 	spriteType = {
+		name = "GFX_IE_lmg_chassis_blueprint"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_barrel_standard"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_barrel_standard.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_barrel_air"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_barrel_air.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_barrel_water"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_barrel_water.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_foregrip"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_foregrip.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_bipod"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_bipod.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_tripod"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_tripod.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_mag_20"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_mag_20.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_mag_30"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_mag_30.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_mag_40"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_mag_40.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_mag_50"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_mag_50.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_lmg_chassis_mag_100"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/light_mg/lmg_mag_100.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
 		name = "GFX_IE_hmg_chassis_blueprint"
 		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_blueprint.dds"
 		legacy_lazy_load = no

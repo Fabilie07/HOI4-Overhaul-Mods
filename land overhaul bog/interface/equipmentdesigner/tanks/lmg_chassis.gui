@@ -7,7 +7,7 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_IE_hmg_chassis_blueprint"
+			spriteType = "GFX_IE_lmg_chassis_blueprint"
 			position = { x=0 y=0 }
 		}
 		
@@ -24,24 +24,98 @@ guiTypes = {
 				size = { width=100% height=100% }
 
 				containerWindowType = {
-					name = "mg_beltfed"
+					name = "mg_magazine_020"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_belt_fed"
+						spriteType = "GFX_IE_lmg_chassis_mag_20"
 						position = { x=0 y=0 }
 					}
 				}
 				containerWindowType = {
-					name = "mg_magazine"
+					name = "mg_magazine_030"
 					position = { x=0 y=0 }
 					size = { width=100% height=100% }
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_magazine"
+						spriteType = "GFX_IE_lmg_chassis_mag_30"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "mg_magazine_040"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_lmg_chassis_mag_40"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "mg_magazine_050"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_lmg_chassis_mag_50"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "mg_magazine_100"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_lmg_chassis_mag_100"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+			
+			### GRIP
+			containerWindowType = {
+				name = "mg_grip_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "mg_foregrip"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_lmg_chassis_foregrip"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "mg_bipod"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_lmg_chassis_bipod"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "mg_tripod"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_lmg_chassis_tripod"
 						position = { x=0 y=0 }
 					}
 				}
@@ -60,18 +134,7 @@ guiTypes = {
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_barrel_standard"
-						position = { x=0 y=0 }
-					}
-				}
-				containerWindowType = {
-					name = "mg_watercooled_barrel"
-					position = { x=0 y=0 }
-					size = { width=100% height=100% }
-					
-					iconType = {
-						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_barrel_water"
+						spriteType = "GFX_IE_lmg_chassis_barrel_standard"
 						position = { x=0 y=0 }
 					}
 				}
@@ -82,7 +145,18 @@ guiTypes = {
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_barrel_air"
+						spriteType = "GFX_IE_lmg_chassis_barrel_air"
+						position = { x=0 y=0 }
+					}
+				}
+				containerWindowType = {
+					name = "mg_watercooled_barrel"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_IE_lmg_chassis_barrel_water"
 						position = { x=0 y=0 }
 					}
 				}
