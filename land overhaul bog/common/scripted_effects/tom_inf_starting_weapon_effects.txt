@@ -25,14 +25,14 @@ tom_inf_starting_weapons_generic = {
 		type = lmg_chassis_0
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0500
 		}
 	}
 	create_equipment_variant = {
 		type = lmg_chassis_1
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0600
 		}
 	}
 	create_equipment_variant = {
@@ -46,7 +46,7 @@ tom_inf_starting_weapons_generic = {
 		type = lmg_chassis_3
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0900
 		}
 	}
 	
@@ -54,14 +54,14 @@ tom_inf_starting_weapons_generic = {
 		type = mmg_chassis_0
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0500
 		}
 	}
 	create_equipment_variant = {
 		type = mmg_chassis_1
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0600
 		}
 	}
 	create_equipment_variant = {
@@ -75,7 +75,7 @@ tom_inf_starting_weapons_generic = {
 		type = mmg_chassis_3
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_1000
 		}
 	}
 	
@@ -83,14 +83,14 @@ tom_inf_starting_weapons_generic = {
 		type = hmg_chassis_0
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0500
 		}
 	}
 	create_equipment_variant = {
 		type = hmg_chassis_1
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0600
 		}
 	}
 	create_equipment_variant = {
@@ -104,7 +104,7 @@ tom_inf_starting_weapons_generic = {
 		type = hmg_chassis_3
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0900
 		}
 	}
 }

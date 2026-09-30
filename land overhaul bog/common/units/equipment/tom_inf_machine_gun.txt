@@ -99,7 +99,7 @@ equipments = {
 		
 		default_modules = {
 			mg_feeding_slot = mg_magazine_030
-			mg_barrel_slot = mg_aircooled_barrel
+			mg_barrel_slot = mg_standard_barrel
 			mg_grip_slot = mg_foregrip
 		}
 	}
@@ -260,9 +260,9 @@ equipments = {
 		}
 		
 		default_modules = {
-			mg_feeding_slot = mg_belt_fed
-			mg_barrel_slot = mg_watercooled_barrel
-			mg_grip_slot = mg_tripod
+			mg_feeding_slot = mg_mag_050
+			mg_barrel_slot = mg_aircooled_barrel
+			mg_grip_slot = mg_bipod
 		}
 	}
 	

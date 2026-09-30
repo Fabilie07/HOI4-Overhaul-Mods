@@ -945,10 +945,15 @@ technologies = {
 			mg_magazine_050
 			mg_magazine_100
 			mg_rpm_0400
+			mg_rpm_0500
 			mg_rpm_0600
+			mg_rpm_0700
 			mg_rpm_0800
+			mg_rpm_0900
 			mg_rpm_1000
+			mg_rpm_1100
 			mg_rpm_1200
+			mg_rpm_1300
 			mg_rpm_1400
 			mg_exchangeable_barrel
 			mg_rifle_cartridge

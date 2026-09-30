@@ -83,8 +83,18 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_mg_rpm_0500"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_500.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_mg_rpm_0600"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_600.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_0700"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_700.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -93,13 +103,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_mg_rpm_0900"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_900.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_mg_rpm_1000"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_1000.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_mg_rpm_1100"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_1100.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_mg_rpm_1200"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_1200.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_rpm_1300"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/rpm_1300.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
