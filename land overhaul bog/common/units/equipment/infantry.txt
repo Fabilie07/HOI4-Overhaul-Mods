@@ -112,6 +112,23 @@ equipments = {
 			count < 3
 		}
 		
+		module_count_limit = {
+			module = inf_shovel
+			count < 2
+		}
+		module_count_limit = {
+			module = inf_bayonet
+			count < 2
+		}
+		module_count_limit = {
+			module = inf_pocket_knife
+			count < 2
+		}
+		module_count_limit = {
+			module = inf_cleaning_kit
+			count < 2
+		}
+		
 		default_modules = {
 			firing_mode_slot = inf_bolt_action
 			magazine_type_slot = inf_clip_05

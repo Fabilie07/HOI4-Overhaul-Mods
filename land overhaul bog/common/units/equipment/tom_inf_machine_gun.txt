@@ -84,10 +84,23 @@ equipments = {
 			}
 		}
 		
+		module_count_limit = {
+			module = mg_exchangeable_barrel
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_rifle_cartridge
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_anti_armor_ammunition
+			count < 2
+		}
+		
 		default_modules = {
-			mg_feeding_slot = mg_magazine_040
-			mg_barrel_slot = mg_watercooled_barrel
-			mg_grip_slot = mg_tripod
+			mg_feeding_slot = mg_magazine_030
+			mg_barrel_slot = mg_aircooled_barrel
+			mg_grip_slot = mg_foregrip
 		}
 	}
 	
