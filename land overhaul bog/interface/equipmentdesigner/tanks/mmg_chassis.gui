@@ -7,7 +7,7 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_IE_hmg_chassis_blueprint"
+			spriteType = "GFX_IE_mmg_chassis_blueprint"
 			position = { x=0 y=0 }
 		}
 		
@@ -30,7 +30,7 @@ guiTypes = {
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_belt_fed"
+						spriteType = "GFX_IE_mmg_chassis_belt_fed"
 						position = { x=0 y=0 }
 					}
 				}
@@ -41,7 +41,7 @@ guiTypes = {
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_magazine"
+						spriteType = "GFX_IE_mmg_chassis_magazine"
 						position = { x=0 y=0 }
 					}
 				}
@@ -60,7 +60,7 @@ guiTypes = {
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_barrel_standard"
+						spriteType = "GFX_IE_mmg_chassis_barrel_standard"
 						position = { x=0 y=0 }
 					}
 				}
@@ -71,7 +71,7 @@ guiTypes = {
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_barrel_water"
+						spriteType = "GFX_IE_mmg_chassis_barrel_water"
 						position = { x=0 y=0 }
 					}
 				}
@@ -82,7 +82,7 @@ guiTypes = {
 					
 					iconType = {
 						name = "image"
-						spriteType = "GFX_IE_hmg_chassis_barrel_air"
+						spriteType = "GFX_IE_mmg_chassis_barrel_air"
 						position = { x=0 y=0 }
 					}
 				}

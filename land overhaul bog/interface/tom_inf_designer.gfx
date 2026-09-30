@@ -161,6 +161,40 @@ spriteTypes = {
 	
 	
 	spriteType = {
+		name = "GFX_IE_mmg_chassis_blueprint"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/medium_mg/mmg_chassis_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_mmg_chassis_barrel_standard"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/medium_mg/mmg_chassis_barrel_standard.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_mmg_chassis_barrel_water"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/medium_mg/mmg_chassis_barrel_water.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_mmg_chassis_barrel_air"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/medium_mg/mmg_chassis_barrel_air.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_IE_mmg_chassis_belt_fed"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/medium_mg/mmg_chassis_beltfed.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_IE_mmg_chassis_magazine"
+		textureFile = "gfx/interface/equipmentdesigner/inf/generic/medium_mg/mmg_chassis_magazine.dds"
+		legacy_lazy_load = no
+	}
+	
+	
+	spriteType = {
 		name = "GFX_IE_hmg_chassis_blueprint"
 		textureFile = "gfx/interface/equipmentdesigner/inf/generic/heavy_mg/hmg_blueprint.dds"
 		legacy_lazy_load = no
