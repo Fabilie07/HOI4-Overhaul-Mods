@@ -260,7 +260,7 @@ equipments = {
 		}
 		
 		default_modules = {
-			mg_feeding_slot = mg_mag_050
+			mg_feeding_slot = mg_magazine_050
 			mg_barrel_slot = mg_aircooled_barrel
 			mg_grip_slot = mg_bipod
 		}
