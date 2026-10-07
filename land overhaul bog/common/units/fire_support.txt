@@ -6,7 +6,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = yes
+		active = no
 		affects_speed = no
 		is_artillery_brigade = no
 
@@ -27,7 +27,7 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_light_infantry
-			breakthrough = 0.15
+			breakthrough = 0.1
 		}
 
 		regimental = no

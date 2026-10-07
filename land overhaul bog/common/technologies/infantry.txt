@@ -258,6 +258,10 @@ technologies = {
 			infantry_equipment_2
 		}
 		
+		enable_subunits = {
+			assault_infantry_support
+		}
+		
 		enable_equipment_modules = {
 			inf_semi_auto
 			inf_magazine_20

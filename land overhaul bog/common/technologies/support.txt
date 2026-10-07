@@ -190,6 +190,7 @@ technologies = {
 	tech_engineers = {
 	
 		max_dig_in = 3
+		dig_in_speed = 1
 
 		enable_subunits = {
 			engineer
@@ -290,8 +291,7 @@ technologies = {
 
 	tech_engineers2 = {
 	
-		max_dig_in = 4
-		dig_in_speed = 2
+		max_dig_in = 3
 
 		engineer = {
 			entrenchment = 0.50
@@ -382,8 +382,8 @@ technologies = {
 
 	tech_engineers3 = {
 	
-		max_dig_in = 4
-		dig_in_speed = 2
+		max_dig_in = 3
+		dig_in_speed = 1
 		
 		enable_equipments = {
 			flamethrower_chassis_1
@@ -509,8 +509,7 @@ technologies = {
 
 	tech_engineers4 = {
 	
-		max_dig_in = 4
-		dig_in_speed = 1
+		max_dig_in = 3
 
 		engineer = {
 			entrenchment = 0.50
@@ -623,7 +622,7 @@ technologies = {
 	
 	tech_engineers5 = {
 	
-		max_dig_in = 3
+		max_dig_in = 2
 		dig_in_speed = 1
 
 		engineer = {
@@ -706,8 +705,7 @@ technologies = {
 	
 	tech_engineers6 = {
 	
-		max_dig_in = 3
-		dig_in_speed = 1
+		max_dig_in = 2
 
 		engineer = {
 			forest = {
@@ -810,7 +808,7 @@ technologies = {
 	
 	tech_engineers7 = {
 	
-		max_dig_in = 3
+		max_dig_in = 2
 		dig_in_speed = 1
 
 		engineer = {
@@ -932,8 +930,7 @@ technologies = {
 	
 	tech_engineers8 = {
 	
-		max_dig_in = 3
-		dig_in_speed = 1
+		max_dig_in = 1
 
 		engineer = {
 			entrenchment = 0.5
@@ -1057,7 +1054,7 @@ technologies = {
 	
 	tech_engineers9 = {
 	
-		max_dig_in = 3
+		max_dig_in = 1
 		dig_in_speed = 1
 
 		engineer = {
@@ -1577,7 +1574,7 @@ technologies = {
 
 	tech_military_police = {
 	
-		required_garrison_factor = -0.1
+		required_garrison_factor = -0.05
 
 		enable_subunits = {
 			military_police
@@ -1671,7 +1668,7 @@ technologies = {
 
 	tech_military_police2 = {
 	
-		required_garrison_factor = -0.08
+		required_garrison_factor = -0.05
 		compliance_growth = 0.03
 
 		military_police = {
@@ -1719,7 +1716,7 @@ technologies = {
 
 	tech_military_police3 = {
 	
-		required_garrison_factor = -0.06
+		required_garrison_factor = -0.05
 		compliance_growth = 0.03
 
 		military_police = {
@@ -1766,7 +1763,7 @@ technologies = {
 	}
 	tech_military_police4 = {
 	
-		required_garrison_factor = -0.05
+		required_garrison_factor = -0.04
 		compliance_growth = 0.02
 
 		military_police = {
@@ -1814,7 +1811,7 @@ technologies = {
 	
 	tech_military_police5 = {
 	
-		required_garrison_factor = -0.05
+		required_garrison_factor = -0.04
 		compliance_growth = 0.02
 
 		military_police = {
@@ -1857,7 +1854,7 @@ technologies = {
 	
 	tech_military_police6 = {
 	
-		required_garrison_factor = -0.04
+		required_garrison_factor = -0.03
 		compliance_growth = 0.02
 
 		military_police = {
@@ -1900,7 +1897,7 @@ technologies = {
 	
 	tech_military_police7 = {
 	
-		required_garrison_factor = -0.04
+		required_garrison_factor = -0.03
 		compliance_growth = 0.01
 
 		military_police = {
@@ -2454,7 +2451,7 @@ technologies = {
 
 	tech_field_hospital = {
 	
-		experience_loss_factor = -0.05
+		experience_loss_factor = -0.04
 
 		enable_subunits = {
 			field_hospital
@@ -2536,7 +2533,7 @@ technologies = {
 
 	tech_field_hospital2 = {
 	
-		experience_loss_factor = -0.05
+		experience_loss_factor = -0.04
 		
 		enable_equipment_modules = {
 			inf_first_aid_2
@@ -2603,7 +2600,7 @@ technologies = {
 
 	tech_field_hospital3 = {
 	
-		experience_loss_factor = -0.05
+		experience_loss_factor = -0.03
 		
 		enable_equipment_modules = {
 			inf_first_aid_3
@@ -2679,7 +2676,7 @@ technologies = {
 	}
 	tech_field_hospital4 = {
 	
-		experience_loss_factor = -0.05
+		experience_loss_factor = -0.03
 
 		field_hospital = {
 			casualty_trickleback = 0.1
@@ -2742,7 +2739,7 @@ technologies = {
 	
 	tech_field_hospital5 = {
 	
-		experience_loss_factor = -0.04
+		experience_loss_factor = -0.03
 
 		field_hospital = {
 			experience_loss_factor = -0.05
@@ -2782,7 +2779,7 @@ technologies = {
 	
 	tech_field_hospital6 = {
 	
-		experience_loss_factor = -0.04
+		experience_loss_factor = -0.02
 
 		field_hospital = {
 			casualty_trickleback = 0.1
@@ -2822,7 +2819,7 @@ technologies = {
 	
 	tech_field_hospital7 = {
 	
-		experience_loss_factor = -0.04
+		experience_loss_factor = -0.02
 
 		field_hospital = {
 			experience_loss_factor = -0.05
@@ -2862,7 +2859,7 @@ technologies = {
 	
 	tech_field_hospital8 = {
 	
-		experience_loss_factor = -0.04
+		experience_loss_factor = -0.02
 
 		field_hospital = {
 			casualty_trickleback = 0.1
@@ -2902,7 +2899,7 @@ technologies = {
 	
 	tech_field_hospital9 = {
 	
-		experience_loss_factor = -0.04
+		experience_loss_factor = -0.02
 
 		field_hospital = {
 			experience_loss_factor = -0.1
@@ -2959,7 +2956,7 @@ technologies = {
 
 	tech_logistics_company = {
 	
-		supply_node_range = 0.14
+		supply_node_range = 0.05
 
 		enable_subunits = {
 			logistics_company
@@ -3029,7 +3026,7 @@ technologies = {
 
 	tech_logistics_company2 = {
 	
-		supply_node_range = 0.13
+		supply_node_range = 0.05
 		
 		enable_subunits = {
 			heavy_logistics_company
@@ -3100,7 +3097,7 @@ technologies = {
 
 	tech_logistics_company3 = {
 	
-		supply_node_range = 0.12
+		supply_node_range = 0.05
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
@@ -3164,7 +3161,7 @@ technologies = {
 	}
 	tech_logistics_company4 = {
 	
-		supply_node_range = 0.11
+		supply_node_range = 0.05
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
@@ -3230,7 +3227,7 @@ technologies = {
 	
 	tech_logistics_company5 = {
 	
-		supply_node_range = 0.1
+		supply_node_range = 0.04
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
@@ -3276,7 +3273,7 @@ technologies = {
 	
 	tech_logistics_company6 = {
 	
-		supply_node_range = 0.1
+		supply_node_range = 0.04
 
 		logistics_company = {
 			supply_consumption_factor = -0.05
@@ -3324,7 +3321,7 @@ technologies = {
 	
 	tech_logistics_company7 = {
 	
-		supply_node_range = 0.1
+		supply_node_range = 0.04
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
@@ -3375,7 +3372,7 @@ technologies = {
 	
 	tech_logistics_company8 = {
 	
-		supply_node_range = 0.1
+		supply_node_range = 0.04
 
 		logistics_company = {
 			supply_consumption_factor = -0.05
@@ -3423,7 +3420,7 @@ technologies = {
 	
 	tech_logistics_company9 = {
 	
-		supply_node_range = 0.1
+		supply_node_range = 0.04
 
 		logistics_company = {
 			supply_consumption_factor = -0.1
@@ -3470,7 +3467,7 @@ technologies = {
 
 	tech_signal_company = {
 	
-		air_cas_present_factor = 0.07
+		air_cas_present_factor = 0.03
 		
 		enable_equipments = {
 			radio_equipment_0
@@ -3529,7 +3526,7 @@ technologies = {
 
 	tech_signal_company2 = {
 	
-		air_cas_present_factor = 0.06
+		air_cas_present_factor = 0.03
 
 		signal_company = {
 			initiative = 0.1
@@ -3599,7 +3596,7 @@ technologies = {
 
 	tech_signal_company3 = {
 	
-		air_cas_present_factor = 0.06
+		air_cas_present_factor = 0.03
 		
 		enable_equipments = {
 			radio_equipment_1
@@ -3675,7 +3672,7 @@ technologies = {
 	}
 	tech_signal_company4 = {
 	
-		air_cas_present_factor = 0.06
+		air_cas_present_factor = 0.03
 	
 		enable_equipments = {
 			radio_equipment_2
@@ -3754,7 +3751,7 @@ technologies = {
 	
 	tech_signal_company5 = {
 	
-		air_cas_present_factor = 0.05
+		air_cas_present_factor = 0.03
 
 		signal_company = {
 			initiative = 0.07
@@ -3811,7 +3808,7 @@ technologies = {
 	
 	tech_signal_company6 = {
 	
-		air_cas_present_factor = 0.05
+		air_cas_present_factor = 0.03
 
 		signal_company = {
 			initiative = 0.07
@@ -3868,7 +3865,7 @@ technologies = {
 	
 	tech_signal_company7 = {
 	
-		air_cas_present_factor = 0.05
+		air_cas_present_factor = 0.03
 
 		signal_company = {
 			initiative = 0.07
@@ -3925,7 +3922,7 @@ technologies = {
 	
 	tech_signal_company8 = {
 	
-		air_cas_present_factor = 0.05
+		air_cas_present_factor = 0.02
 
 		signal_company = {
 			initiative = 0.07
@@ -3982,7 +3979,7 @@ technologies = {
 	
 	tech_signal_company9 = {
 	
-		air_cas_present_factor = 0.05
+		air_cas_present_factor = 0.02
 
 		signal_company = {
 			initiative = 0.07
