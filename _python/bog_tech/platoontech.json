@@ -2,8 +2,9 @@
 			always = no
 		}
 		infantry = {
-			soft_attack = -0.25
+			hard_attack = -0.7
 			need = {
-				artillery_equipment = 4
+				anti_tank_equipment = 4
+				tom_inf_horse = 4
 			}
 		}

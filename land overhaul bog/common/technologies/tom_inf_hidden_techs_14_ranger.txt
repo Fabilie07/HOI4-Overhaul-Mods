@@ -285,10 +285,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -301,10 +301,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				super_heavy_artillery_equipment = 1
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -317,10 +317,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				rocket_artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -380,9 +380,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			ap_attack = -0.3
+			hard_attack = -0.7
 			need = {
 				anti_tank_equipment = 4
+				tom_inf_horse = 4
 			}
 		}
 	}
@@ -442,11 +443,12 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			air_attack = -0.5
+			air_attack = -0.8
 			hard_attack = -0.2
 			ap_attack = -0.2
 			need = {
 				anti_air_equipment = 6
+				tom_inf_horse = 6
 			}
 		}
 	}
@@ -1117,10 +1119,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -1133,10 +1135,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				super_heavy_artillery_equipment = 1
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -1149,10 +1151,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				rocket_artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -1212,9 +1214,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			ap_attack = -0.3
+			hard_attack = -0.7
 			need = {
 				anti_tank_equipment = 4
+				tom_inf_horse = 4
 			}
 		}
 	}
@@ -1274,11 +1277,12 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			air_attack = -0.5
+			air_attack = -0.8
 			hard_attack = -0.2
 			ap_attack = -0.2
 			need = {
 				anti_air_equipment = 6
+				tom_inf_horse = 6
 			}
 		}
 	}
@@ -1949,10 +1953,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -1965,10 +1969,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				super_heavy_artillery_equipment = 1
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -1981,10 +1985,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				rocket_artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -2044,9 +2048,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			ap_attack = -0.3
+			hard_attack = -0.7
 			need = {
 				anti_tank_equipment = 4
+				tom_inf_horse = 4
 			}
 		}
 	}
@@ -2106,11 +2111,12 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			air_attack = -0.5
+			air_attack = -0.8
 			hard_attack = -0.2
 			ap_attack = -0.2
 			need = {
 				anti_air_equipment = 6
+				tom_inf_horse = 6
 			}
 		}
 	}
@@ -2781,10 +2787,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -2797,10 +2803,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				super_heavy_artillery_equipment = 1
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -2813,10 +2819,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				rocket_artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -2876,9 +2882,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			ap_attack = -0.3
+			hard_attack = -0.7
 			need = {
 				anti_tank_equipment = 4
+				tom_inf_horse = 4
 			}
 		}
 	}
@@ -2938,11 +2945,12 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			air_attack = -0.5
+			air_attack = -0.8
 			hard_attack = -0.2
 			ap_attack = -0.2
 			need = {
 				anti_air_equipment = 6
+				tom_inf_horse = 6
 			}
 		}
 	}
@@ -3613,10 +3621,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -3629,10 +3637,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				super_heavy_artillery_equipment = 1
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -3645,10 +3653,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				rocket_artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -3708,9 +3716,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			ap_attack = -0.3
+			hard_attack = -0.7
 			need = {
 				anti_tank_equipment = 4
+				tom_inf_horse = 4
 			}
 		}
 	}
@@ -3770,11 +3779,12 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			air_attack = -0.5
+			air_attack = -0.8
 			hard_attack = -0.2
 			ap_attack = -0.2
 			need = {
 				anti_air_equipment = 6
+				tom_inf_horse = 6
 			}
 		}
 	}
@@ -4445,10 +4455,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -4461,10 +4471,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				super_heavy_artillery_equipment = 1
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -4477,10 +4487,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			soft_attack = -0.25
-			# combat_width = 0.5
+			soft_attack = -0.6
 			need = {
 				rocket_artillery_equipment = 4
+				tom_inf_horse = 8
 			}
 		}
 	}
@@ -4540,9 +4550,10 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			ap_attack = -0.3
+			hard_attack = -0.7
 			need = {
 				anti_tank_equipment = 4
+				tom_inf_horse = 4
 			}
 		}
 	}
@@ -4602,11 +4613,12 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			air_attack = -0.5
+			air_attack = -0.8
 			hard_attack = -0.2
 			ap_attack = -0.2
 			need = {
 				anti_air_equipment = 6
+				tom_inf_horse = 6
 			}
 		}
 	}

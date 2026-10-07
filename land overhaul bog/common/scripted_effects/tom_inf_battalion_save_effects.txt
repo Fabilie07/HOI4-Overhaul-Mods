@@ -1,5 +1,7 @@
 
 tom_inf_save_button_click_effect = {
+	tom_inf_bat_clear_equipment_effect = yes
+	
 	if = {
 		limit = {
 			has_country_flag = tom_inf_bat_current_infantry
