@@ -1,0 +1,9 @@
+		allow = {
+			always = no
+		}
+		infantry = {
+			soft_attack = -0.25
+			need = {
+				artillery_equipment = 4
+			}
+		}
