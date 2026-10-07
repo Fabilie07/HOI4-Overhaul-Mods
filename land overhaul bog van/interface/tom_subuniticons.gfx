@@ -1,0 +1,4 @@
+spriteTypes = {	
+	### Placeholder
+	spriteType = { name = "GFX_group_placeholder_icon"											textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+}

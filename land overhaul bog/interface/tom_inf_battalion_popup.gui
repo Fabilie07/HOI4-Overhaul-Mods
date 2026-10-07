@@ -400,7 +400,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "division_equipment"
 				position = { x = 11 y = 8 }
-				Text = "Equipment Information"
+				Text = "Additional Information"
 				Font = "hoi_16mbs"
 				pdx_tooltip = TOM_INF_BATTALION_EQUIPMENT_TT
 				maxWidth = 148
