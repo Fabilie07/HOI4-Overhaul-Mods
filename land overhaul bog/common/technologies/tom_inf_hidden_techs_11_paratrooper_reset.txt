@@ -472,14 +472,13 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			entrenchment = -0.2
+			entrenchment = -0.05
 			need = {
 				support_equipment = -8
 			}
 			
 			forest = {
 				defence = -0.2
-				movement = -0.1
 			}
 
 			hills = {
@@ -491,18 +490,17 @@ technologies = {
 			}
 
 			marsh = {
-				defence = -0.2
-				movement = -0.1
+				defence = -0.1
 			}
 
 			fort = {
 				attack = -0.1
-				defence = -0.3
+				defence = -0.1
 			}
 
 			river = {
-				defence = -0.3
-				movement = -0.2
+				defence = -0.2
+				movement = -0.1
 			}
 		}
 	}
@@ -515,23 +513,14 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			breakthrough = -0.1
 			need = {
 				support_equipment = -10
-			}
-			
-			forest = {
-				defence = -0.1
 			}
 
 			hills = {
 				defence = -0.1
 			}
-
-			jungle = {
-				defence = -0.1
-			}
-
+			
 			marsh = {
 				defence = -0.1
 				attack = -0.1
@@ -562,26 +551,8 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			soft_attack = -0.05
 			need = {
 				flamethrower_chassis = -8
-			}
-			
-			forest = {
-				attack = -0.1
-			}
-
-			hills = {
-				attack = -0.1
-			}
-
-			jungle = {
-				attack = -0.1
-			}
-
-			marsh = {
-				defence = -0.1
-				attack = -0.15
 			}
 
 			fort = {
@@ -1224,14 +1195,13 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			entrenchment = -0.2
+			entrenchment = -0.05
 			need = {
 				support_equipment = -8
 			}
 			
 			forest = {
 				defence = -0.2
-				movement = -0.1
 			}
 
 			hills = {
@@ -1243,18 +1213,17 @@ technologies = {
 			}
 
 			marsh = {
-				defence = -0.2
-				movement = -0.1
+				defence = -0.1
 			}
 
 			fort = {
 				attack = -0.1
-				defence = -0.3
+				defence = -0.1
 			}
 
 			river = {
-				defence = -0.3
-				movement = -0.2
+				defence = -0.2
+				movement = -0.1
 			}
 		}
 	}
@@ -1267,23 +1236,14 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			breakthrough = -0.1
 			need = {
 				support_equipment = -10
-			}
-			
-			forest = {
-				defence = -0.1
 			}
 
 			hills = {
 				defence = -0.1
 			}
-
-			jungle = {
-				defence = -0.1
-			}
-
+			
 			marsh = {
 				defence = -0.1
 				attack = -0.1
@@ -1314,26 +1274,8 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			soft_attack = -0.05
 			need = {
 				flamethrower_chassis = -8
-			}
-			
-			forest = {
-				attack = -0.1
-			}
-
-			hills = {
-				attack = -0.1
-			}
-
-			jungle = {
-				attack = -0.1
-			}
-
-			marsh = {
-				defence = -0.1
-				attack = -0.15
 			}
 
 			fort = {
@@ -1976,14 +1918,13 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			entrenchment = -0.2
+			entrenchment = -0.05
 			need = {
 				support_equipment = -8
 			}
 			
 			forest = {
 				defence = -0.2
-				movement = -0.1
 			}
 
 			hills = {
@@ -1995,18 +1936,17 @@ technologies = {
 			}
 
 			marsh = {
-				defence = -0.2
-				movement = -0.1
+				defence = -0.1
 			}
 
 			fort = {
 				attack = -0.1
-				defence = -0.3
+				defence = -0.1
 			}
 
 			river = {
-				defence = -0.3
-				movement = -0.2
+				defence = -0.2
+				movement = -0.1
 			}
 		}
 	}
@@ -2019,23 +1959,14 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			breakthrough = -0.1
 			need = {
 				support_equipment = -10
-			}
-			
-			forest = {
-				defence = -0.1
 			}
 
 			hills = {
 				defence = -0.1
 			}
-
-			jungle = {
-				defence = -0.1
-			}
-
+			
 			marsh = {
 				defence = -0.1
 				attack = -0.1
@@ -2066,26 +1997,8 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			soft_attack = -0.05
 			need = {
 				flamethrower_chassis = -8
-			}
-			
-			forest = {
-				attack = -0.1
-			}
-
-			hills = {
-				attack = -0.1
-			}
-
-			jungle = {
-				attack = -0.1
-			}
-
-			marsh = {
-				defence = -0.1
-				attack = -0.15
 			}
 
 			fort = {
@@ -2728,14 +2641,13 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			entrenchment = -0.2
+			entrenchment = -0.05
 			need = {
 				support_equipment = -8
 			}
 			
 			forest = {
 				defence = -0.2
-				movement = -0.1
 			}
 
 			hills = {
@@ -2747,18 +2659,17 @@ technologies = {
 			}
 
 			marsh = {
-				defence = -0.2
-				movement = -0.1
+				defence = -0.1
 			}
 
 			fort = {
 				attack = -0.1
-				defence = -0.3
+				defence = -0.1
 			}
 
 			river = {
-				defence = -0.3
-				movement = -0.2
+				defence = -0.2
+				movement = -0.1
 			}
 		}
 	}
@@ -2771,23 +2682,14 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			breakthrough = -0.1
 			need = {
 				support_equipment = -10
-			}
-			
-			forest = {
-				defence = -0.1
 			}
 
 			hills = {
 				defence = -0.1
 			}
-
-			jungle = {
-				defence = -0.1
-			}
-
+			
 			marsh = {
 				defence = -0.1
 				attack = -0.1
@@ -2818,26 +2720,8 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			soft_attack = -0.05
 			need = {
 				flamethrower_chassis = -8
-			}
-			
-			forest = {
-				attack = -0.1
-			}
-
-			hills = {
-				attack = -0.1
-			}
-
-			jungle = {
-				attack = -0.1
-			}
-
-			marsh = {
-				defence = -0.1
-				attack = -0.15
 			}
 
 			fort = {
@@ -3480,14 +3364,13 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			entrenchment = -0.2
+			entrenchment = -0.05
 			need = {
 				support_equipment = -8
 			}
 			
 			forest = {
 				defence = -0.2
-				movement = -0.1
 			}
 
 			hills = {
@@ -3499,18 +3382,17 @@ technologies = {
 			}
 
 			marsh = {
-				defence = -0.2
-				movement = -0.1
+				defence = -0.1
 			}
 
 			fort = {
 				attack = -0.1
-				defence = -0.3
+				defence = -0.1
 			}
 
 			river = {
-				defence = -0.3
-				movement = -0.2
+				defence = -0.2
+				movement = -0.1
 			}
 		}
 	}
@@ -3523,23 +3405,14 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			breakthrough = -0.1
 			need = {
 				support_equipment = -10
-			}
-			
-			forest = {
-				defence = -0.1
 			}
 
 			hills = {
 				defence = -0.1
 			}
-
-			jungle = {
-				defence = -0.1
-			}
-
+			
 			marsh = {
 				defence = -0.1
 				attack = -0.1
@@ -3570,26 +3443,8 @@ technologies = {
 			always = no
 		}
 		paratrooper = {
-			soft_attack = -0.05
 			need = {
 				flamethrower_chassis = -8
-			}
-			
-			forest = {
-				attack = -0.1
-			}
-
-			hills = {
-				attack = -0.1
-			}
-
-			jungle = {
-				attack = -0.1
-			}
-
-			marsh = {
-				defence = -0.1
-				attack = -0.15
 			}
 
 			fort = {

@@ -1328,7 +1328,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1210 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1210_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^8 = 20 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^8 = 5 }
 		if = {
 			limit = {
 				is_in_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:support_equipment }
@@ -1349,7 +1349,6 @@ tom_inf_battalion_platoon_add_effect = {
 		}
 		
 		set_temp_variable = { temp_terrain_id = 1 }
-		set_temp_variable = { temp_terrain_movement = 10 }
 		set_temp_variable = { temp_terrain_defense = 20 }
 		tom_inf_bat_add_terrain_modifier_effect = yes
 		
@@ -1362,18 +1361,17 @@ tom_inf_battalion_platoon_add_effect = {
 		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 7 }
-		set_temp_variable = { temp_terrain_movement = 10 }
-		set_temp_variable = { temp_terrain_defense = 20 }
+		set_temp_variable = { temp_terrain_defense = 10 }
 		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 10 }
 		set_temp_variable = { temp_terrain_attack = 10 }
-		set_temp_variable = { temp_terrain_defense = 30 }
+		set_temp_variable = { temp_terrain_defense = 10 }
 		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 12 }
-		set_temp_variable = { temp_terrain_movement = 20 }
-		set_temp_variable = { temp_terrain_defense = 30 }
+		set_temp_variable = { temp_terrain_movement = 10 }
+		set_temp_variable = { temp_terrain_defense = 20 }
 		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
@@ -1381,7 +1379,6 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1211 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1211_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = 10 }
 		if = {
 			limit = {
 				is_in_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:support_equipment }
@@ -1401,15 +1398,7 @@ tom_inf_battalion_platoon_add_effect = {
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 10 }
 		}
 		
-		set_temp_variable = { temp_terrain_id = 1 }
-		set_temp_variable = { temp_terrain_defense = 10 }
-		tom_inf_bat_add_terrain_modifier_effect = yes
-		
 		set_temp_variable = { temp_terrain_id = 2 }
-		set_temp_variable = { temp_terrain_defense = 10 }
-		tom_inf_bat_add_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 6 }
 		set_temp_variable = { temp_terrain_defense = 10 }
 		tom_inf_bat_add_terrain_modifier_effect = yes
 		
@@ -1438,7 +1427,6 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1212 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1212_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = 5 }
 		if = {
 			limit = {
 				is_in_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:flamethrower_chassis }
@@ -1449,7 +1437,7 @@ tom_inf_battalion_platoon_add_effect = {
 				index = equipment_index
 				if = {
 					limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:flamethrower_chassis } }
-					add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = 12 }
+					add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = 8 }
 				}
 			}
 		}
@@ -1457,23 +1445,6 @@ tom_inf_battalion_platoon_add_effect = {
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:flamethrower_chassis }
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 8 }
 		}
-		
-		set_temp_variable = { temp_terrain_id = 1 }
-		set_temp_variable = { temp_terrain_attack = 10 }
-		tom_inf_bat_add_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 2 }
-		set_temp_variable = { temp_terrain_attack = 10 }
-		tom_inf_bat_add_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 6 }
-		set_temp_variable = { temp_terrain_attack = 10 }
-		tom_inf_bat_add_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 7 }
-		set_temp_variable = { temp_terrain_attack = 15 }
-		set_temp_variable = { temp_terrain_defense = 10 }
-		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 10 }
 		set_temp_variable = { temp_terrain_attack = 25 }
@@ -2740,7 +2711,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1210 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1210_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^8 = -20 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^8 = -5 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
 			value = unimportant
@@ -2754,7 +2725,6 @@ tom_inf_battalion_platoon_remove_effect = {
 		tom_inf_bat_remove_empty_equipment_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 1 }
-		set_temp_variable = { temp_terrain_movement = -10 }
 		set_temp_variable = { temp_terrain_defense = -20 }
 		tom_inf_bat_remove_terrain_modifier_effect = yes
 		
@@ -2767,18 +2737,17 @@ tom_inf_battalion_platoon_remove_effect = {
 		tom_inf_bat_remove_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 7 }
-		set_temp_variable = { temp_terrain_movement = -10 }
-		set_temp_variable = { temp_terrain_defense = -20 }
+		set_temp_variable = { temp_terrain_defense = -10 }
 		tom_inf_bat_remove_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 10 }
 		set_temp_variable = { temp_terrain_attack = -10 }
-		set_temp_variable = { temp_terrain_defense = -30 }
+		set_temp_variable = { temp_terrain_defense = -10 }
 		tom_inf_bat_remove_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 12 }
-		set_temp_variable = { temp_terrain_movement = -20 }
-		set_temp_variable = { temp_terrain_defense = -30 }
+		set_temp_variable = { temp_terrain_movement = -10 }
+		set_temp_variable = { temp_terrain_defense = -20 }
 		tom_inf_bat_remove_terrain_modifier_effect = yes
 	}
 	else_if = {
@@ -2786,7 +2755,6 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1211 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1211_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = -10 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
 			value = unimportant
@@ -2799,15 +2767,7 @@ tom_inf_battalion_platoon_remove_effect = {
 		}
 		tom_inf_bat_remove_empty_equipment_effect = yes
 		
-		set_temp_variable = { temp_terrain_id = 1 }
-		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
-		
 		set_temp_variable = { temp_terrain_id = 2 }
-		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 6 }
 		set_temp_variable = { temp_terrain_defense = -10 }
 		tom_inf_bat_remove_terrain_modifier_effect = yes
 		
@@ -2836,35 +2796,17 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1212 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1212_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = -5 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
 			value = unimportant
 			index = equipment_index
 			if = {
 				limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:flamethrower_chassis } }
-				add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = -12 }
+				add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = -8 }
 				set_temp_variable = { array_index = equipment_index }
 			}
 		}
 		tom_inf_bat_remove_empty_equipment_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 1 }
-		set_temp_variable = { temp_terrain_attack = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 2 }
-		set_temp_variable = { temp_terrain_attack = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 6 }
-		set_temp_variable = { temp_terrain_attack = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
-		
-		set_temp_variable = { temp_terrain_id = 7 }
-		set_temp_variable = { temp_terrain_attack = -15 }
-		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 10 }
 		set_temp_variable = { temp_terrain_attack = -25 }

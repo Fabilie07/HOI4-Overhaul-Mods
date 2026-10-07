@@ -2,9 +2,34 @@
 			always = no
 		}
 		infantry = {
-			hard_attack = -0.7
+			entrenchment = 0.05
 			need = {
-				anti_tank_equipment = 4
-				tom_inf_horse = 4
+				support_equipment = 8
+			}
+			
+			forest = {
+				defence = 0.2
+			}
+
+			hills = {
+				defence = 0.1
+			}
+
+			jungle = {
+				defence = 0.2
+			}
+
+			marsh = {
+				defence = 0.1
+			}
+
+			fort = {
+				attack = 0.1
+				defence = 0.1
+			}
+
+			river = {
+				defence = 0.2
+				movement = 0.1
 			}
 		}

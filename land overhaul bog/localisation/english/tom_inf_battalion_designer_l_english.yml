@@ -190,9 +190,9 @@
  
  tom_inf_platoon_1200_stats:0 "Max Speed: §G+20%§!\n\n"
  tom_inf_platoon_1201_stats:0 "Max Speed: §G+20%§!\nDefense: §R-20%§!\nBreakthrough: §R-20%§!\nArmor: §R-50%§!\nHardness: §R-100%§!\n\n"
- tom_inf_platoon_1210_stats:0 "Entrenchment: §G+20%§!\n§YRiver:§!\n  Defense & Breakthrough: §G+30%§!\n  Movement: §G+20%§!\n§YFort:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+30%§!\n§YForest, Marsh:§!\n  Defense & Breakthrough: §G+20%§!\n  Movement: §G+10%§!\n§YJungle:§!\n  Defense & Breakthrough: §G+20%§!\n§YHills:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
- tom_inf_platoon_1211_stats:0 "Breakthrough: §G+10%§!\n§YRiver:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+20%§!\n  Movement: §G+20%§!\n§YFort:§!\n  Attack: §G+20%§!\n  Defense & Breakthrough: §G+20%§!\n§YMarsh:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+10%§!\n§YForest, Hills, Jungle:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
- tom_inf_platoon_1212_stats:0 "Soft Attack: §G+5%§!\n§YFort:§!\n  Attack: §G+25%§!\n  Defense & Breakthrough: §G+10%§!\n§YRiver, Marsh:§!\n  Attack: §G+15%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+15%§!\n§YForest, Jungle, Hills:§!\n  Attack: §G+10%§!\n\n"
+ tom_inf_platoon_1210_stats:0 "Entrenchment: §G+5%§!\n§YRiver:§!\n  Defense & Breakthrough: §G+20%§!\n  Movement: §G+10%§!\n§YFort:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n§YForest, Jungle:§!\n  Defense & Breakthrough: §G+20%§!\n§YHills, Jungle:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
+ tom_inf_platoon_1211_stats:0 "§YRiver:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+20%§!\n  Movement: §G+20%§!\n§YFort:§!\n  Attack: §G+20%§!\n  Defense & Breakthrough: §G+20%§!\n§YMarsh:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+10%§!\n§YHills:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
+ tom_inf_platoon_1212_stats:0 "§YFort:§!\n  Attack: §G+25%§!\n  Defense & Breakthrough: §G+10%§!\n§YRiver:§!\n  Attack: §G+15%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+15%§!\n\n"
  tom_inf_platoon_1220_stats:0 "§YForest, Jungle, Mountain:§!\n  Movement: §G+10%§!\n\n"
  tom_inf_platoon_1221_stats:0 "§YPlains, Hills, Desert, Urban:§!\n  Movement: §G+10%§!\n\n"
  tom_inf_platoon_1222_stats:0 "§YPlains, Desert:§!\n  Movement: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n\n"
