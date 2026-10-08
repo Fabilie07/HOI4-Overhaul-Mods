@@ -962,6 +962,8 @@ technologies = {
 			mg_exchangeable_barrel
 			mg_rifle_cartridge
 			mg_anti_armor_ammunition
+			mg_dual_purpose
+			mg_large_cartridge
 		}
 		
 		show_equipment_icon = yes

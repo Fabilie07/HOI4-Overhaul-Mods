@@ -1,0 +1,470 @@
+generic_lmg = {
+	category = land
+	roles = { infantry }
+	
+	available_for = {}
+
+	priority = {
+		factor = 20
+	}
+	
+	generic_lmg_0 = {
+		priority = {
+			factor = 10
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = lmg_chassis_0
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+						mg_magazine_020
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_0800
+						mg_rpm_0700
+						mg_rpm_0600
+						mg_rpm_0500
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_foregrip
+				mg_barrel_slot = mg_standard_barrel
+			}
+		}
+	}
+	generic_lmg_1 = {
+		priority = {
+			factor = 15
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = lmg_chassis_1
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+						mg_magazine_020
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_0900
+						mg_rpm_0800
+						mg_rpm_0500
+						mg_rpm_0400
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_foregrip
+				mg_barrel_slot = mg_standard_barrel
+			}
+		}
+	}
+	generic_lmg_2 = {
+		priority = {
+			factor = 20
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = lmg_chassis_2
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+						mg_magazine_020
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1000
+						mg_rpm_0900
+						mg_rpm_0800
+						mg_rpm_0700
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_foregrip
+				mg_barrel_slot = mg_standard_barrel
+			}
+		}
+	}
+	generic_lmg_3 = {
+		priority = {
+			factor = 25
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = lmg_chassis_3
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+						mg_magazine_020
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1200
+						mg_rpm_1100
+						mg_rpm_1000
+						mg_rpm_0900
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_foregrip
+				mg_barrel_slot = mg_standard_barrel
+			}
+		}
+	}
+	generic_lmg_4 = {
+		priority = {
+			factor = 30
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = lmg_chassis_4
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+						mg_magazine_020
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1400
+						mg_rpm_1300
+						mg_rpm_1200
+						mg_rpm_1100
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_foregrip
+				mg_barrel_slot = mg_standard_barrel
+			}
+		}
+	}
+}
+
+generic_mmg = {
+	category = land
+	roles = { infantry }
+	
+	available_for = {}
+
+	priority = {
+		factor = 20
+	}
+	
+	generic_mmg_0 = {
+		priority = {
+			factor = 10
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mmg_chassis_0
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_100
+						mg_belt_fed
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_0800
+						mg_rpm_0700
+						mg_rpm_0600
+						mg_rpm_0500
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_bipod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_mmg_1 = {
+		priority = {
+			factor = 15
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mmg_chassis_1
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_100
+						mg_belt_fed
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_0900
+						mg_rpm_0800
+						mg_rpm_0500
+						mg_rpm_0400
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_bipod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_mmg_2 = {
+		priority = {
+			factor = 20
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mmg_chassis_2
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_100
+						mg_belt_fed
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1000
+						mg_rpm_0900
+						mg_rpm_0800
+						mg_rpm_0700
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_bipod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_mmg_3 = {
+		priority = {
+			factor = 25
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mmg_chassis_3
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_100
+						mg_belt_fed
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1200
+						mg_rpm_1100
+						mg_rpm_1000
+						mg_rpm_0900
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_bipod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_mmg_4 = {
+		priority = {
+			factor = 30
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mmg_chassis_4
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_100
+						mg_belt_fed
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1400
+						mg_rpm_1300
+						mg_rpm_1200
+						mg_rpm_1100
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_bipod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+}
+
+generic_hmg = {
+	category = land
+	roles = { infantry }
+	
+	available_for = {}
+
+	priority = {
+		factor = 20
+	}
+	
+	generic_hmg_0 = {
+		priority = {
+			factor = 10
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = hmg_chassis_0
+			modules = {
+				mg_feeding_slot = mg_belt_fed
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_0800
+						mg_rpm_0700
+						mg_rpm_0600
+						mg_rpm_0500
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_tripod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_hmg_1 = {
+		priority = {
+			factor = 15
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = hmg_chassis_1
+			modules = {
+				mg_feeding_slot = mg_belt_fed
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_0900
+						mg_rpm_0800
+						mg_rpm_0500
+						mg_rpm_0400
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_tripod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_hmg_2 = {
+		priority = {
+			factor = 20
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = hmg_chassis_2
+			modules = {
+				mg_feeding_slot = mg_belt_fed
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1000
+						mg_rpm_0900
+						mg_rpm_0800
+						mg_rpm_0700
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_tripod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_hmg_3 = {
+		priority = {
+			factor = 25
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = hmg_chassis_3
+			modules = {
+				mg_feeding_slot = mg_belt_fed
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1200
+						mg_rpm_1100
+						mg_rpm_1000
+						mg_rpm_0900
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_tripod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+	generic_hmg_4 = {
+		priority = {
+			factor = 30
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = hmg_chassis_4
+			modules = {
+				mg_feeding_slot = mg_belt_fed
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1400
+						mg_rpm_1300
+						mg_rpm_1200
+						mg_rpm_1100
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_tripod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
+}

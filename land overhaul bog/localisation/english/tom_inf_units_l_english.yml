@@ -74,5 +74,8 @@
  #Placeholders
  infantry_placeholder:0 "Infantry Placeholder"
  sniper_placeholder:0 "Sniper Placeholder"
+ lmg_placeholder:0 "LMG Placeholder"
+ mmg_placeholder:0 "MMG Placeholder"
+ hmg_placeholder:0 "HMG Placeholder"
  mechanized_artillery_placeholder:0 "Mech Supply Placeholder"
  mechanized_engineer_placeholder:0 "Mech Engineer Placeholder"

@@ -96,6 +96,10 @@ equipments = {
 			module = mg_anti_armor_ammunition
 			count < 2
 		}
+		module_count_limit = {
+			module = mg_dual_purpose
+			count < 2
+		}
 		
 		default_modules = {
 			mg_feeding_slot = mg_magazine_030
@@ -259,6 +263,23 @@ equipments = {
 			}
 		}
 		
+		module_count_limit = {
+			module = mg_exchangeable_barrel
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_rifle_cartridge
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_anti_armor_ammunition
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_dual_purpose
+			count < 2
+		}
+		
 		default_modules = {
 			mg_feeding_slot = mg_magazine_050
 			mg_barrel_slot = mg_aircooled_barrel
@@ -401,18 +422,21 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					mg_special_module
+					mg_special_module_large
 				}
 			}
 			support_equipment_2_slot = {
 				required = no
 				allowed_module_categories = {
 					mg_special_module
+					mg_special_module_large
 				}
 			}
 			support_equipment_3_slot = {
 				required = no
 				allowed_module_categories = {
 					mg_special_module
+					mg_special_module_large
 				}
 			}
 			
@@ -428,6 +452,27 @@ equipments = {
 					mg_grip
 				}
 			}
+		}
+		
+		module_count_limit = {
+			module = mg_exchangeable_barrel
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_rifle_cartridge
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_anti_armor_ammunition
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_dual_purpose
+			count < 2
+		}
+		module_count_limit = {
+			module = mg_large_cartridge
+			count < 2
 		}
 		
 		default_modules = {

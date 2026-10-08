@@ -68,21 +68,26 @@ on_actions = {
 		
 		effect = {
 			every_country = {
-				tom_inf_starting_weapons_generic = yes
-			}
-			USA = {
-				create_equipment_variant = {
-					type = infantry_equipment_1
-					mark_older_equipment_obsolete = yes
-					modules = {
-						firing_mode_slot = inf_semi_auto
-						magazine_type_slot = inf_clip_10
-						sights_slot = inf_sights_2
-						support_equipment_1_slot = inf_grenade_frag
-						support_equipment_2_slot = inf_cleaning_kit
-						cartridge_slot = inf_cartridge_rifle_75
+				limit = {
+					NOT = {
+						OR = {
+							tag = ENG
+							tag = FRA
+							tag = GER
+							tag = ITA
+							tag = JAP
+							tag = SOV
+							tag = USA
+						}
 					}
 				}
+				tom_inf_starting_weapons_generic = yes
+			}
+			GER = {
+				tom_inf_starting_weapons_GER = yes
+			}
+			USA = {
+				tom_inf_starting_weapons_USA = yes
 			}
 		}
 	}

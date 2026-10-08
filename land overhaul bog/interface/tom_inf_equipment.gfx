@@ -155,6 +155,40 @@ spriteTypes = {
 	}
 	
 	
+	### GER
+	spriteType = {
+		name = "GFX_GER_lmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/GER_lmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_lmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/GER_lmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_lmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/GER_lmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_mmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/GER_mmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_mmg_chassis_4_medium"
+		texturefile = "gfx/interface/technologies/GER_mmg_4.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_mmg_chassis_5_medium"
+		texturefile = "gfx/interface/technologies/GER_mmg_5.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_modern_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/GER_infantry_5.dds"
+	}
+	
 	### USA
 	spriteType = {
 		name = "GFX_USA_lmg_chassis_0_medium"

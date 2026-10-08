@@ -58,6 +58,93 @@ sub_units = {
 		weight = 0
 	}
 	
+	lmg_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			lmg_chassis = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
+	mmg_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			mmg_chassis = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
+	hmg_placeholder = {
+		abbreviation = "FSC"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+
+		type = {
+			armor
+		}
+		
+		group = placeholder
+
+		combat_width = 99
+
+		need = {
+			hmg_chassis = 999
+		}
+		
+		manpower = 9999
+		
+		training_time = 0
+		max_organisation = 0
+		default_morale = 0
+		max_strength = 0
+		weight = 0
+	}
+	
 	mechanized_artillery_placeholder = {
 		abbreviation = "FSC"
 		sprite = infantry

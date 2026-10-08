@@ -150,6 +150,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/anti_armor_ammunition.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_mg_dual_purpose"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/dual_purpose.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_mg_large_cartridge"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/mg/large_cartridge.dds"
+		legacy_lazy_load = no
+	}
 }
 
 

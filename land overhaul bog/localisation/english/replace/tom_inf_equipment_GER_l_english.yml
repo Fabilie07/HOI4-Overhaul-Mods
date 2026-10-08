@@ -1,0 +1,34 @@
+﻿l_english:
+
+ GER_infantry_equipment_0:0 "Gewehr 98"
+ GER_infantry_equipment_0_short:0 "Gewehr 98"
+ GER_infantry_equipment_1:0 "Kar 98k"
+ GER_infantry_equipment_1_short:0 "Kar 98k"
+ GER_infantry_equipment_2:0 "G41"
+ GER_infantry_equipment_2_short:0 "G41"
+ GER_infantry_equipment_3:0 "Stg 44"
+ GER_infantry_equipment_3_short:0 "Stg 44"
+ GER_infantry_equipment_4:0 "G1"
+ GER_infantry_equipment_4_short:0 "G1"
+ GER_infantry_equipment_5:0 "G3"
+ GER_infantry_equipment_5_short:0 "G3"
+
+ GER_mortar_chassis_0:0 "8cm GrW 34"
+ GER_mortar_chassis_1:0 "Kz 8cm GrW 40"
+ GER_mortar_chassis_2:0 "12cm GrW 42"
+ 
+ GER_lmg_chassis_0:0 "MG 08/18"
+ GER_lmg_chassis_1:0 "MG 30"
+ GER_lmg_chassis_2:0 "FG 42"
+ 
+ GER_mmg_chassis_0:0 "MG 08/15"
+ GER_mmg_chassis_1:0 "MG 34"
+ GER_mmg_chassis_2:0 "MG 42"
+ GER_mmg_chassis_3:0 "MG 45"
+ GER_mmg_chassis_4:0 "MG 1"
+ GER_mmg_chassis_5:0 "MG 3"
+ 
+ # No HMGs? Ô_o
+ GER_hmg_chassis_0:0 "MG 08"
+ 
+ GER_at_rocket_chassis_0:0 "Panzerschreck"

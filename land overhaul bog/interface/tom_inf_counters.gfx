@@ -47,6 +47,9 @@ spriteTypes = {
 	### Placeholder
 	spriteType = { name = "GFX_unit_infantry_placeholder_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_sniper_placeholder_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_lmg_placeholder_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_mmg_placeholder_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hmg_placeholder_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_mechanized_artillery_placeholder_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_mechanized_engineer_placeholder_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/category_placeholder_unit.dds" noOfFrames = 2 }
 }

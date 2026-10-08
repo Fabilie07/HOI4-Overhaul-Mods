@@ -68,3 +68,7 @@
  mg_rifle_cartridge_desc:0 "Chambering a Machine Gun to fire the same Rounds as the Standard Service Rifle reduces Ammunition Cost and allows for limited Part Interchangeability. The drawback is that full-length rifle rounds are often too powerful for conventional MGs."
  mg_anti_armor_ammunition:0 "Anti-Armor Rounds"
  mg_anti_armor_ammunition_desc:0 "Rounds using Sabots or Heavy Cores are used, allowing the Machine Gun to penetrate lightly armored Vehicles."
+ mg_dual_purpose:0 "Dual Purpose"
+ mg_dual_purpose_desc:0 "Many machine guns were designed to combat aircraft as well. Though the advances in plane technology quickly made this practice obsolete, a little bit of extra defense against aerial threats won't hurt."
+ mg_large_cartridge:0 "Large Cartridge"
+ mg_large_cartridge_desc:0 "Using a significantly larger round has both advantages and disadvantages. It increases the firepower against lightly armored targets, but also makes the gun significantly heavier."
