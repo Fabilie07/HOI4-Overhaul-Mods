@@ -188,4 +188,8 @@ spriteTypes = {
 		name = "GFX_USA_modern_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/USA_infantry5.dds"
 	}
+	spriteType = {
+		name = "GFX_USA_at_rocket_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/USA_at_rocket.dds"
+	}
 }

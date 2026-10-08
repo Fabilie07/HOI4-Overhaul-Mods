@@ -1,5 +1,18 @@
 ﻿l_english:
 
+ USA_infantry_equipment_0:0 "M1903 Springfield"
+ USA_infantry_equipment_0_short:0 "M1903 Springfield"
+ USA_infantry_equipment_1:0 "M1 Garand '36"
+ USA_infantry_equipment_1_short:0 "M1 Garand '36"
+ USA_infantry_equipment_2:0 "M1 Garand '40"
+ USA_infantry_equipment_2_short:0 "M1 Garand '40"
+ USA_infantry_equipment_3:0 "M1941 Johnson Rifle"
+ USA_infantry_equipment_3_short:0 "M1941 Johnson Rifle"
+ USA_infantry_equipment_4:0 "T44"
+ USA_infantry_equipment_4_short:0 "T44"
+ USA_infantry_equipment_5:0 "M14"
+ USA_infantry_equipment_5_short:0 "M14"
+
  USA_mortar_chassis_0:0 "M1 Mortar"
  USA_mortar_chassis_1:0 "M2 Mortar"
  USA_mortar_chassis_2:0 "M2 4.2'' Mortar"
@@ -7,7 +20,7 @@
  
  USA_lmg_chassis_0:0 "M1918 BAR"
  USA_lmg_chassis_1:0 "M1918A2 BAR"
- USA_lmg_chassis_2:0 "M1941 Johnson"
+ USA_lmg_chassis_2:0 "M1941 Johnson LMG"
  
  USA_mmg_chassis_0:0 "M1919 Browning Machine Gun"
  USA_mmg_chassis_1:0 "M1919A4 Browning Machine Gun"
