@@ -1,7 +1,19 @@
 spriteTypes = {
-
+	
+	spriteType = {
+		name = "GFX_ability_forward_supply_bases"
+		texturefile = "gfx/interface/abilitylist/ability_forward_supply_bases.dds"
+	}
 	spriteType = {
 		name = "GFX_ability_mad_dash"
-		texturefile = "gfx/interface/abilitylist/ability_default.dds"
+		texturefile = "gfx/interface/abilitylist/ability_mad_dash.dds"
+	}
+	spriteType = {
+		name = "GFX_ability_breakout_attack"
+		texturefile = "gfx/interface/abilitylist/ability_breakout_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_ability_beachhead_containment"
+		texturefile = "gfx/interface/abilitylist/ability_beachhead_containment.dds"
 	}
 }
