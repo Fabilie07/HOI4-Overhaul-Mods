@@ -1,0 +1,29 @@
+﻿l_english:
+
+ ENG_infantry_equipment_0:0 "Rifle No. 1 Mk III"
+ ENG_infantry_equipment_0_short:0 "Rifle No. 1 Mk III"
+ ENG_infantry_equipment_1:0 "Rifle No. 1 Mk V"
+ ENG_infantry_equipment_1_short:0 "Rifle No. 1 Mk V"
+ ENG_infantry_equipment_2:0 "Rifle No. 4 Mk I"
+ ENG_infantry_equipment_2_short:0 "Rifle No. 4 Mk I"
+ ENG_infantry_equipment_3:0 "SLEM-1"
+ ENG_infantry_equipment_3_short:0 "SLEM-1"
+ ENG_infantry_equipment_4:0 "EM-2"
+ ENG_infantry_equipment_4_short:0 "EM-2"
+ ENG_infantry_equipment_5:0 "L1A1 SLR"
+ ENG_infantry_equipment_5_short:0 "L1A1 SLR"
+
+ ENG_mortar_chassis_0:0 "Ordnance ML 3''"
+ ENG_mortar_chassis_1:0 "Ordnance ML 4.2''"
+ 
+ ENG_lmg_chassis_0:0 "Lewis Gun"
+ ENG_lmg_chassis_1:0 "Bren Mk I"
+ ENG_lmg_chassis_2:0 "Bren Mk II"
+ ENG_lmg_chassis_3:0 "Bren Mk III"
+ ENG_lmg_chassis_4:0 "L4"
+ 
+ ENG_mmg_chassis_0:0 "Vickers .303"
+ 
+ ENG_hmg_chassis_0:0 "Vickers .50"
+ 
+ ENG_at_rocket_chassis_0:0 "PIAT"

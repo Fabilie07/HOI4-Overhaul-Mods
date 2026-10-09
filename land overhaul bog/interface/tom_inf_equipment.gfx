@@ -155,6 +155,48 @@ spriteTypes = {
 	}
 	
 	
+	### ENG
+	spriteType = {
+		name = "GFX_ENG_lmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/ENG_lmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_lmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/ENG_lmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_lmg_chassis_3_medium"
+		texturefile = "gfx/interface/technologies/ENG_lmg_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_lmg_chassis_4_medium"
+		texturefile = "gfx/interface/technologies/ENG_lmg_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_mmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/ENG_mmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_hmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/ENG_hmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_modern_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_5.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_at_rifle_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/ENG_at_rifle.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_at_rocket_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/ENG_at_rocket.dds"
+	}
+	
 	### GER
 	spriteType = {
 		name = "GFX_GER_lmg_chassis_0_medium"

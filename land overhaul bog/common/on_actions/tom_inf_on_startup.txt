@@ -83,12 +83,9 @@ on_actions = {
 				}
 				tom_inf_starting_weapons_generic = yes
 			}
-			GER = {
-				tom_inf_starting_weapons_GER = yes
-			}
-			USA = {
-				tom_inf_starting_weapons_USA = yes
-			}
+			ENG = { tom_inf_starting_weapons_ENG = yes }
+			GER = { tom_inf_starting_weapons_GER = yes }
+			USA = { tom_inf_starting_weapons_USA = yes }
 		}
 	}
 }

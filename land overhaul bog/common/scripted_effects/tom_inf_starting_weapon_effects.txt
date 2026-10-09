@@ -80,6 +80,72 @@ tom_inf_starting_weapons_generic = {
 	}
 }
 
+tom_inf_starting_weapons_ENG = {
+	create_equipment_variant = { # Rifle No 1 Mk V
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			magazine_type_slot = inf_magazine_10
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_bayonet
+			sights_slot = inf_sights_2
+			cartridge_slot = inf_cartridge_rifle_75
+		}
+	}
+	create_equipment_variant = {
+		type = sniper_chassis_1
+		name = "Rifle No. 4 Mk I (T)"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			firing_mode_slot = inf_bolt_action
+			magazine_type_slot = inf_magazine_10
+			backpack_type_slot = inf_backpack_3
+			sights_slot = inf_sights_sniper
+			
+			barrel_slot = inf_barrel_rifle
+			cartridge_slot = inf_cartridge_rifle_75
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # Lewis
+		type = lmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_050
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_bipod
+			mg_barrel_slot = mg_watercooled_barrel
+		}
+	}
+	create_equipment_variant = { # Vickers MG
+		type = mmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
+		modules = {
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_tripod
+			mg_barrel_slot = mg_watercooled_barrel
+		}
+	}
+	create_equipment_variant = { # Vickers .50
+		type = hmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
+		modules = {
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_large_cartridge
+			mg_grip_slot = mg_tripod
+			mg_barrel_slot = mg_watercooled_barrel
+		}
+	}
+}
+
 tom_inf_starting_weapons_GER = {
 	create_equipment_variant = { # Kar 98k
 		type = infantry_equipment_1
