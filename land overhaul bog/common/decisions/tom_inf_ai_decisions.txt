@@ -1,3 +1,69 @@
+tom_inf_equipment_ai_decisions = {
+	tom_inf_ai_get_infantry_equipment = {
+		visible = {
+			NOT = {
+				has_design_based_on = infantry_equipment
+			}
+		}
+	
+		complete_effect = {
+			if = {
+				limit = {
+					has_tech = advanced_infantry_weapons
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_3
+					mark_older_equipment_obsolete = yes
+					modules = {
+						support_equipment_1_slot = inf_grenade_frag
+						sights_slot = inf_sights_3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = improved_infantry_weapons
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_2
+					mark_older_equipment_obsolete = yes
+					modules = {
+						support_equipment_1_slot = inf_grenade_frag
+						sights_slot = inf_sights_3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons1
+				}
+				create_equipment_variant = {
+					type = infantry_equipment_1
+					mark_older_equipment_obsolete = yes
+					modules = {
+						support_equipment_1_slot = inf_grenade_frag
+						sights_slot = inf_sights_2
+					}
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					type = infantry_equipment_0
+					mark_older_equipment_obsolete = yes
+					modules = {
+						support_equipment_1_slot = inf_grenade_frag
+						sights_slot = inf_sights_1
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 10
+		}
+	}
+}
+
 tom_inf_battalion_ai_decisions = {
 	tom_inf_ai_infantry_enlargen_1 = {
 		available = {

@@ -21,6 +21,12 @@ tom_inf_special_forces_decisions = {
 	priority = 700
 }
 
+tom_inf_equipment_ai_decisions = {
+	visible = {
+		# is_ai = yes
+	}
+}
+
 tom_inf_battalion_ai_decisions = {
 	visible = {
 		is_ai = yes

@@ -1,5 +1,9 @@
 ﻿l_english:
  
+ tom_inf_equipment_ai_decisions:0 "Generic Equipment Decisions"
+ tom_inf_equipment_ai_decisions_desc:0 "Infantry Equipment is vital for any nation. Due to the way the game works, on the creation of a new Tag, such as at the beginning of a Civil War, no valid Infantry Equipment Design is created. §YIf you're seeing this, you should be in this exact situation.§! In order to ensure a fair and enjoyable game experience, decisions can be used to give these nations an up-to-date, buildable design."
+ tom_inf_ai_get_infantry_equipment:0 "Get generic Infantry Equipment"
+ 
  tom_inf_show_ai_ratios:0 "LMG: [?tom_inf_ai_infantry_lmg_ratio]\nMMG: [?tom_inf_ai_infantry_mmg_ratio]\nHMG: [?tom_inf_ai_infantry_hmg_ratio]\nMortar: [?tom_inf_ai_infantry_mortar_ratio]\nSupport: [?tom_inf_ai_infantry_support_ratio]"
  tom_inf_show_ai_ratios_motorized:0 "LMG: [?tom_inf_ai_motorized_lmg_ratio]\nMMG: [?tom_inf_ai_motorized_mmg_ratio]\nHMG: [?tom_inf_ai_motorized_hmg_ratio]\nMortar: [?tom_inf_ai_motorized_mortar_ratio]"
  tom_inf_show_ai_ratios_mechanized:0 "LMG: [?tom_inf_ai_mechanized_lmg_ratio]\nMMG: [?tom_inf_ai_mechanized_mmg_ratio]\nHMG: [?tom_inf_ai_mechanized_hmg_ratio]\nMortar: [?tom_inf_ai_mechanized_mortar_ratio]"
