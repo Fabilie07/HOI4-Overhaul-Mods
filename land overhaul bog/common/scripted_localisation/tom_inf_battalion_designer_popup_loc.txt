@@ -118,82 +118,6 @@ defined_text = {
 }
 
 defined_text = {
-	name = tom_inf_bat_resets_left
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_infantry
-		}
-		localization_key = "[?tom_inf_bat_resets_left_infantry]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_motorized
-		}
-		localization_key = "[?tom_inf_bat_resets_left_motorized]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_mechanized
-		}
-		localization_key = "[?tom_inf_bat_resets_left_mechanized]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_cavalry
-		}
-		localization_key = "[?tom_inf_bat_resets_left_cavalry]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_mountaineer
-		}
-		localization_key = "[?tom_inf_bat_resets_left_mountaineer]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_paratrooper
-		}
-		localization_key = "[?tom_inf_bat_resets_left_paratrooper]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_marine
-		}
-		localization_key = "[?tom_inf_bat_resets_left_marine]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_marine_commando
-		}
-		localization_key = "[?tom_inf_bat_resets_left_marine_commando]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_ranger
-		}
-		localization_key = "[?tom_inf_bat_resets_left_ranger]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_mountaineers_mechanized
-		}
-		localization_key = "[?tom_inf_bat_resets_left_mountaineers_mechanized]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_amphibious_mechanized
-		}
-		localization_key = "[?tom_inf_bat_resets_left_amphibious_mechanized]"
-	}
-	text = {
-		trigger = {
-			has_country_flag = tom_inf_bat_current_rangers_mechanized
-		}
-		localization_key = "[?tom_inf_bat_resets_left_rangers_mechanized]"
-	}
-}
-
-defined_text = {
 	name = tom_inf_bat_designer_add_name
 	text = {
 		trigger = {
@@ -849,6 +773,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			check_variable = { v = -1 }
+		}
+		localization_key = TOM_INF_REMOVE_BUTTON_TT
+	}
+	text = {
+		trigger = {
 			check_variable = { v = 10 }
 		}
 		localization_key = tom_inf_company_10_desc
@@ -1174,97 +1104,295 @@ defined_text = {
 }
 
 defined_text = {
+	name = tom_inf_bat_current_remove
+	text = {
+		trigger = {
+			set_temp_variable = { v = tom_inf_bat_current_value }
+		}
+		localization_key = TOM_INF_BAT_DESIGNER_ADD_PLATOON_NAME
+	}
+}
+
+defined_text = {
 	name = tom_inf_bat_current_resets
 	text = {
 		trigger = {
-			check_variable = { v = 1000 }
+			check_variable = { tom_inf_bat_current_value = 1000 }
 			set_temp_variable = { num_index = tom_inf_bat_popup_1000_count }
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_current_value = 1000 }
-				}
-				add_to_temp_variable = { num_index = -1 }
-			}
+			add_to_temp_variable = { num_index = -1 }
 		}
 		localization_key = "[?tom_inf_bat_resets_left_1000^num_index]"
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 1001 }
+			check_variable = { tom_inf_bat_current_value = 1001 }
 			set_temp_variable = { num_index = tom_inf_bat_popup_1001_count }
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_current_value = 1001 }
-				}
-				add_to_temp_variable = { num_index = -1 }
-			}
+			add_to_temp_variable = { num_index = -1 }
 		}
-		localization_key = "[tom_inf_bat_resets_left_1001^num_index]"
+		localization_key = "[?tom_inf_bat_resets_left_1001^num_index]"
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 1002 }
+			check_variable = { tom_inf_bat_current_value = 1002 }
 			set_temp_variable = { num_index = tom_inf_bat_popup_1002_count }
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_current_value = 1002 }
-				}
-				add_to_temp_variable = { num_index = -1 }
-			}
+			add_to_temp_variable = { num_index = -1 }
 		}
-		localization_key = "[tom_inf_bat_resets_left_1002^num_index]"
+		localization_key = "[?tom_inf_bat_resets_left_1002^num_index]"
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 1003 }
+			check_variable = { tom_inf_bat_current_value = 1003 }
 			set_temp_variable = { num_index = tom_inf_bat_popup_1003_count }
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_current_value = 1003 }
-				}
-				add_to_temp_variable = { num_index = -1 }
-			}
+			add_to_temp_variable = { num_index = -1 }
 		}
-		localization_key = "[tom_inf_bat_resets_left_1003^num_index]"
+		localization_key = "[?tom_inf_bat_resets_left_1003^num_index]"
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 1010 }
+			check_variable = { tom_inf_bat_current_value = 1010 }
 			set_temp_variable = { num_index = tom_inf_bat_popup_1010_count }
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_current_value = 1010 }
-				}
-				add_to_temp_variable = { num_index = -1 }
-			}
+			add_to_temp_variable = { num_index = -1 }
 		}
-		localization_key = "[tom_inf_bat_resets_left_1010^num_index]"
+		localization_key = "[?tom_inf_bat_resets_left_1010^num_index]"
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 1020 }
+			check_variable = { tom_inf_bat_current_value = 1020 }
 			set_temp_variable = { num_index = tom_inf_bat_popup_1020_count }
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_current_value = 1020 }
-				}
-				add_to_temp_variable = { num_index = -1 }
-			}
+			add_to_temp_variable = { num_index = -1 }
 		}
-		localization_key = "[tom_inf_bat_resets_left_1020^num_index]"
+		localization_key = "[?tom_inf_bat_resets_left_1020^num_index]"
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 1021 }
+			check_variable = { tom_inf_bat_current_value = 1021 }
 			set_temp_variable = { num_index = tom_inf_bat_popup_1021_count }
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_current_value = 1021 }
-				}
-				add_to_temp_variable = { num_index = -1 }
-			}
+			add_to_temp_variable = { num_index = -1 }
 		}
-		localization_key = "[tom_inf_bat_resets_left_1021^num_index]"
+		localization_key = "[?tom_inf_bat_resets_left_1021^num_index]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1100 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1100]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1101 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1101]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1102 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1102]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1110 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1110]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1111 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1111]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1112 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1112]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1113 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1113]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1120 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1120]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1121 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1121]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1122 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1122]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1130 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1130]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1200 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1200]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1201 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1201]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1210 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1210]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1211 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1211]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1212 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1212]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1220 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1220]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1221 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1221]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1222 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1222]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1223 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1223]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1230 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1230]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1240 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1240]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1300 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1300_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1300^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1400 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1400_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1400^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 1500 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_1500_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_1500^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 2000 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_2000_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_2000^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 2100 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_2100_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_2100^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 2200 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_2200_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_2200^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 2300 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_2300_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_2300^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 2400 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_2400_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_2400^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 3000 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_3000_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_3000^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 3200 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_3200_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_3200^num_index]"
+	}
+	text = {
+		trigger = {
+			check_variable = { tom_inf_bat_current_value = 3400 }
+			set_temp_variable = { num_index = tom_inf_bat_popup_3400_count }
+			add_to_temp_variable = { num_index = -1 }
+		}
+		localization_key = "[?tom_inf_bat_resets_left_3400^num_index]"
 	}
 }
 
