@@ -533,7 +533,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
-			entrenchment = -0.05
+			entrenchment = -0.1
 			need = {
 				support_equipment = -8
 			}
@@ -574,6 +574,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
+			breakthrough = -0.05
 			need = {
 				support_equipment = -10
 			}
@@ -1317,7 +1318,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
-			entrenchment = -0.05
+			entrenchment = -0.1
 			need = {
 				support_equipment = -8
 			}
@@ -1358,6 +1359,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
+			breakthrough = -0.05
 			need = {
 				support_equipment = -10
 			}
@@ -2100,7 +2102,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
-			entrenchment = -0.05
+			entrenchment = -0.1
 			need = {
 				support_equipment = -8
 			}
@@ -2141,6 +2143,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
+			breakthrough = -0.05
 			need = {
 				support_equipment = -10
 			}
@@ -2884,7 +2887,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
-			entrenchment = -0.05
+			entrenchment = -0.1
 			need = {
 				support_equipment = -8
 			}
@@ -2925,6 +2928,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
+			breakthrough = -0.05
 			need = {
 				support_equipment = -10
 			}
@@ -3668,7 +3672,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
-			entrenchment = -0.05
+			entrenchment = -0.1
 			need = {
 				support_equipment = -8
 			}
@@ -3709,6 +3713,7 @@ technologies = {
 			always = no
 		}
 		cavalry = {
+			breakthrough = -0.05
 			need = {
 				support_equipment = -10
 			}

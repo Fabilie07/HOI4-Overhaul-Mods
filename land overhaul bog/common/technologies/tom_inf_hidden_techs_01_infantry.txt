@@ -494,7 +494,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -535,6 +535,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -1298,7 +1299,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -1339,6 +1340,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -2102,7 +2104,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -2143,6 +2145,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -2906,7 +2909,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -2947,6 +2950,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -3711,7 +3715,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -3752,6 +3756,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -4516,7 +4521,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -4557,6 +4562,7 @@ technologies = {
 			always = no
 		}
 		infantry = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}

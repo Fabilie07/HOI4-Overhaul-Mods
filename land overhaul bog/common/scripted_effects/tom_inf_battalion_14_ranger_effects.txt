@@ -105,6 +105,16 @@ tom_inf_bat_startup_effect_ranger = {
 	set_variable = { tom_inf_bat_ranger_1021_max = 4 }
 	
 	set_variable = { tom_inf_bat_ranger_2400_min = 4 }
+	
+	add_to_array = { tom_inf_bat_ranger_terrain_bonus_array = 1 }
+	add_to_array = { tom_inf_bat_ranger_terrain_movement_array = 15 }
+	add_to_array = { tom_inf_bat_ranger_terrain_attack_array = 10 }
+	add_to_array = { tom_inf_bat_ranger_terrain_defense_array = 10 }
+	
+	add_to_array = { tom_inf_bat_ranger_terrain_bonus_array = 6 }
+	add_to_array = { tom_inf_bat_ranger_terrain_movement_array = 15 }
+	add_to_array = { tom_inf_bat_ranger_terrain_attack_array = 20 }
+	add_to_array = { tom_inf_bat_ranger_terrain_defense_array = 10 }
 }
 
 

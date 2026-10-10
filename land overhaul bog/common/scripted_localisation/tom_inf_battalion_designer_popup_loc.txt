@@ -1321,6 +1321,19 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			OR = {
+				check_variable = { v = 1001 }
+				check_variable = { v = 1002 }
+				check_variable = { v = 1003 }
+				check_variable = { v = 1010 }
+				check_variable = { v = 1020 }
+				check_variable = { v = 1021 }
+			}
+		}
+		localization_key = tom_inf_platoon_line_stats
+	}
+	text = {
+		trigger = {
 			check_variable = { v = 1100 }
 		}
 		localization_key = tom_inf_platoon_1100_stats

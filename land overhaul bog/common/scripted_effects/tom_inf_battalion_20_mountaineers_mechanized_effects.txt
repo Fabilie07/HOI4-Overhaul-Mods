@@ -105,6 +105,46 @@ tom_inf_bat_startup_effect_mountaineers_mechanized = {
 	set_variable = { tom_inf_bat_mountaineers_mechanized_1021_max = 4 }
 	
 	set_variable = { tom_inf_bat_mountaineers_mechanized_3000_min = 4 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 1 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = -20 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 0 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 2 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 10 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = 20 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 5 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 3 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 10 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = 30 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 5 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 5 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = -20 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = -5 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 6 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = -30 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 0 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 7 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = -10 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 0 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 11 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = -40 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 0 }
+	
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_bonus_array = 12 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_movement_array = -20 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_attack_array = -20 }
+	add_to_array = { tom_inf_bat_mountaineers_mechanized_terrain_defense_array = 0 }
 }
 
 

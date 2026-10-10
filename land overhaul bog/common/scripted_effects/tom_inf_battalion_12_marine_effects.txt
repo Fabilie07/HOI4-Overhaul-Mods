@@ -105,6 +105,21 @@ tom_inf_bat_startup_effect_marine = {
 	set_variable = { tom_inf_bat_marine_1021_max = 4 }
 	
 	set_variable = { tom_inf_bat_marine_2200_min = 4 }
+	
+	add_to_array = { tom_inf_bat_marine_terrain_bonus_array = 7 }
+	add_to_array = { tom_inf_bat_marine_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_marine_terrain_attack_array = 30 }
+	add_to_array = { tom_inf_bat_marine_terrain_defense_array = 0 }
+	
+	add_to_array = { tom_inf_bat_marine_terrain_bonus_array = 11 }
+	add_to_array = { tom_inf_bat_marine_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_marine_terrain_attack_array = 50 }
+	add_to_array = { tom_inf_bat_marine_terrain_defense_array = 0 }
+	
+	add_to_array = { tom_inf_bat_marine_terrain_bonus_array = 12 }
+	add_to_array = { tom_inf_bat_marine_terrain_movement_array = 0 }
+	add_to_array = { tom_inf_bat_marine_terrain_attack_array = 30 }
+	add_to_array = { tom_inf_bat_marine_terrain_defense_array = 0 }
 }
 
 

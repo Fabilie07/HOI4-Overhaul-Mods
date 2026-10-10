@@ -3,6 +3,7 @@
  infantry_weapons1:0 "Basic Infantry Weapons"
  improved_infantry_weapons:0 "Improved Infantry Weapons"
  advanced_infantry_weapons:0 "Advanced Infantry Weapons"
+ infantry_weapons_desc:0 "The equipment of a common soldier, shaped from the experiences of the Great War."
 
  
  infantry_equipment_4:0 "Early Cold War Infantry Equipment"

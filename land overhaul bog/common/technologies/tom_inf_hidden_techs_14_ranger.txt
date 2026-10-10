@@ -494,7 +494,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -535,6 +535,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -1299,7 +1300,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -1340,6 +1341,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -2104,7 +2106,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -2145,6 +2147,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -2909,7 +2912,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -2950,6 +2953,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -3714,7 +3718,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -3755,6 +3759,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}
@@ -4519,7 +4524,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
-			entrenchment = 0.05
+			entrenchment = 0.1
 			need = {
 				support_equipment = 8
 			}
@@ -4560,6 +4565,7 @@ technologies = {
 			always = no
 		}
 		ranger_battalion = {
+			breakthrough = 0.05
 			need = {
 				support_equipment = 10
 			}

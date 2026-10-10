@@ -2,34 +2,32 @@
 			always = no
 		}
 		infantry = {
-			entrenchment = 0.05
+			breakthrough = 0.05
 			need = {
-				support_equipment = 8
-			}
-			
-			forest = {
-				defence = 0.2
+				support_equipment = 10
 			}
 
 			hills = {
 				defence = 0.1
 			}
-
-			jungle = {
-				defence = 0.2
-			}
-
+			
 			marsh = {
 				defence = 0.1
+				attack = 0.1
 			}
 
 			fort = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.2
+				defence = 0.2
 			}
 
 			river = {
 				defence = 0.2
-				movement = 0.1
+				attack = 0.1
+				movement = 0.2
+			}
+
+			amphibious = {
+				attack = 0.1
 			}
 		}
