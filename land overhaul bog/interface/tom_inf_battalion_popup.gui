@@ -77,7 +77,7 @@ guiTypes = {
 			name = "revert_button"
 			position = { x=20 y=502 }
 			quadTextureSprite ="GFX_button_reset_123x34"
-			buttonText = "Revert"
+			buttonText = "Reset"
 			pdx_tooltip = "DESIGNER_RESET_DESC"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default

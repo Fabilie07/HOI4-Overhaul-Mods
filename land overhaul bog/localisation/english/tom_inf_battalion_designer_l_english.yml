@@ -215,7 +215,7 @@
  tom_inf_platoon_3400_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
  
  tom_inf_platoon_line_stats:0 "Land Doctrine Mastery Gain: §G+1%§!\n\n"
- tom_inf_platoon_support_stats:0 "Artillery & Combat Support Doctrine Mastery Gain: §G+1%§!\n\n"
+ tom_inf_platoon_support_stats:0 "Artillery & Combat Support Doctrine Mastery Gain: §G+6%§!\n\n"
 
 
  debug_current_tt:0 "Current: [tom_inf_bat_current_loc]"

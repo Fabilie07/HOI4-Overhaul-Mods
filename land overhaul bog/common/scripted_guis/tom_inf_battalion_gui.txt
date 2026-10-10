@@ -72,6 +72,10 @@ scripted_gui = {
 					set_country_flag = tom_inf_bat_save_confirmation
 				}
 			}
+			revert_button_click = {
+				tom_inf_bat_close_designer_effect = yes
+				tom_inf_bat_open_designer_effect = yes
+			}
 			
 			debug_button_click = {
 				set_country_flag = tom_inf_bat_debug_open
