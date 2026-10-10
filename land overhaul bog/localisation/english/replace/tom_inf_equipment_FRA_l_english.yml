@@ -1,0 +1,19 @@
+﻿l_english:
+
+ FRA_infantry_equipment_2:0 "MAS-40"
+ FRA_infantry_equipment_2_short:0 "MAS-40"
+ FRA_infantry_equipment_3:0 "MAS-44"
+ FRA_infantry_equipment_3_short:0 "MAS-44"
+ FRA_infantry_equipment_4:0 "MAS-49"
+ FRA_infantry_equipment_4_short:0 "MAS-49"
+ FRA_infantry_equipment_5:0 "MAS-49-56"
+ FRA_infantry_equipment_5_short:0 "MAS-49-56"
+
+ FRA_mortar_chassis_0:0 "Brandt Mle 1935"
+ FRA_mortar_chassis_1:0 "Lance Grenades de 50mm Mle 37"
+ FRA_mortar_chassis_2:0 "Brandt Mle 1935 modifié 1944"
+ 
+ FRA_lmg_chassis_0:0 "Chauchat"
+ FRA_lmg_chassis_1:0 "FM 24/29"
+ 
+ FRA_hmg_chassis_0:0 "Mitrailleuse Mle 31"

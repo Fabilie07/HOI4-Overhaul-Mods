@@ -197,6 +197,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ENG_at_rocket.dds"
 	}
 	
+	### FRA
+	spriteType = {
+		name = "GFX_FRA_lmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/FRA_lmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_lmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/FRA_lmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_hmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/FRA_hmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRA_infantry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_modern_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/FRA_infantry_5.dds"
+	}
+	
 	### GER
 	spriteType = {
 		name = "GFX_GER_lmg_chassis_0_medium"
