@@ -1,0 +1,9 @@
+technologies = {
+	nom_nuclear_shell_tech = {
+		allow = {
+			always = no
+		}
+		
+		shore_bombardment_bonus = 0.1
+	}
+}

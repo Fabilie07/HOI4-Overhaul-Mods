@@ -1,0 +1,8 @@
+﻿l_english:
+
+ sp_naval_nuclear_shell:0 "Nuclear Shells"
+ sp_naval_nuclear_shell_desc:0 "Successfully shrinking atomic warheads to the point they can be fired from Battleship Cannons."
+ 
+ 
+ # USA
+ USA_sp_naval_nuclear_shell:0 "Mk23 Katie Nuclear Shell"

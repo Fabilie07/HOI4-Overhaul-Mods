@@ -908,6 +908,8 @@
  cannon_variable_time_desc:0 "Using a radar fuse allows shells to detonate when in close proximity to another object. On ships, this is used to fire at aircraft with extreme precision."
  cannon_beehive:0 "Beehive"
  cannon_beehive_desc:0 "Timed fragmentation shells fired from large-caliber guns detonate in front of incoming aircraft and shower them with small fragments."
+ cannon_nuclear:0 "Nuclear Tipped"
+ cannon_nuclear_desc:0 "Though significantly less powerful than full-yield fission bombs, this shell is very effective at providing shore support."
 
  torpedo_ammo:0 "Torpedos with Contact Fuses"
  torpedo_ammo_short:0 "Torpedo Ammo I"

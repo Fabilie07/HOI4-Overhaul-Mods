@@ -1516,6 +1516,10 @@ spriteTypes = {
 		name = "GFX_SMI_cannon_variable_time"
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/cannon_hevt.dds"
 	}
+	spriteType = {
+		name = "GFX_SMI_cannon_nuclear"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/cannon_nuclear.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SMI_ammo_torpedo"

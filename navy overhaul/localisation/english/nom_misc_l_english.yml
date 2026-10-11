@@ -3,15 +3,13 @@
  nom_commercial_port: "Major Trade Port"
  nom_commercial_port_desc: "This building is a gateway to mass overseas trade. It provides a significant boost to the industry of the region. Regions with this building are more prosperous and world-open."
 
- PRODUCTION_MATERIALS_TANKPLANT:0 "Heavy Manufacture"
- tankplant_desc:0 "The capacity of a nation to produce heavy vehicles seperate from the amount of production capacity."
-
- dockyard_desc:0 "This building provides the state with industry for building new ships and §Y+1§! £resources_strip|7"
-
  category_land_nav:0 "Land-Based Naval Bomber"
  category_cv_fighter:0 "Carrier Fighter"
  category_cv_cas:0 "Carrier Close Air Support"
  category_cv_nav:0 "Carrier Naval Bomber"
+ 
+ modifier_production_cost_max_ship_hull_heavy_cruiser:0 "Heavy Cruiser Max Cost"
+ modifier_production_cost_max_ship_hull_battlecruiser:0 "Battlecruiser Max Cost"
  
  
  RULE_FREE_DESIGNS: "Free Equipment Designs"
