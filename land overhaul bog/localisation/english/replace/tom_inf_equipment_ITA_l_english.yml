@@ -1,0 +1,22 @@
+﻿l_english:
+
+ ITA_infantry_equipment_0:0 "Carcano M1891/24"
+ ITA_infantry_equipment_0_short:0 "Carcano M1891/24"
+ ITA_infantry_equipment_1:0 "Carcano M1938"
+ ITA_infantry_equipment_1_short:0 "Carcano M1938"
+ ITA_infantry_equipment_2:0 "Fucile Semiautomatico mod.39"
+ ITA_infantry_equipment_2_short:0 "Fucile Semiautomatico mod.39"
+ ITA_infantry_equipment_3:0 "Carcano M1891/41"
+ ITA_infantry_equipment_3_short:0 "Carcano M1891/41"
+ ITA_infantry_equipment_4:0 "Beretta M1 Garand"
+ ITA_infantry_equipment_4_short:0 "Beretta M1 Garand"
+ ITA_infantry_equipment_5:0 "Beretta BM59"
+ ITA_infantry_equipment_5_short:0 "Beretta BM59"
+
+ ITA_mortar_chassis_0:0 "Brixia mod.35"
+ 
+ ITA_lmg_chassis_0:0 "SIA mod.18"
+ ITA_lmg_chassis_1:0 "Breda 30"
+ 
+ ITA_hmg_chassis_0:0 "Fiat mod.35"
+ ITA_hmg_chassis_1:0 "Breda M37"

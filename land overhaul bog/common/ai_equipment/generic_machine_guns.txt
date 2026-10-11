@@ -335,6 +335,38 @@ generic_mmg = {
 			}
 		}
 	}
+	generic_mmg_5 = {
+		priority = {
+			factor = 35
+		}
+		
+		target_variant = {
+			match_value = 1000
+			type = mmg_chassis_5
+			modules = {
+				mg_feeding_slot = {
+					any_of = {
+						mg_magazine_100
+						mg_belt_fed
+						mg_magazine_050
+						mg_magazine_040
+						mg_magazine_030
+					}
+				}
+				mg_rpm_slot = {
+					any_of = {
+						mg_rpm_1400
+						mg_rpm_1300
+						mg_rpm_1200
+						mg_rpm_1100
+					}
+				}
+				support_equipment_1_slot = mg_rifle_cartridge
+				mg_grip_slot = mg_bipod
+				mg_barrel_slot = mg_watercooled_barrel
+			}
+		}
+	}
 }
 
 generic_hmg = {

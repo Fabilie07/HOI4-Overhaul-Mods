@@ -218,16 +218,16 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "desc"
-				position = { x = 43 y = 8 }
+				position = { x = 43 y = 4 }
 				borderSize = {x = 0 y = 0}
 				text = TOM_INF_SAVE_TT
 				format = center
-				maxWidth = 382
+				maxWidth = 392
 			}
 			
 			instantTextBoxType = {
 				name = "header_equipment"
-				position = { x = 59 y = 58 }
+				position = { x = 59 y = 60 }
 				borderSize = {x = 0 y = 0}
 				text = TOM_INF_SAVE_EQUIPMENT_TT
 				format = left
@@ -236,7 +236,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "header_stockpile"
-				position = { x = 59 y = 58 }
+				position = { x = 59 y = 60 }
 				borderSize = {x = 0 y = 0}
 				text = TOM_INF_SAVE_HAS_REQUIRED_TT
 				pdx_tooltip = TOM_INF_SAVE_HAS_REQUIRED_DESC_TT
@@ -247,7 +247,7 @@ guiTypes = {
 			
 			gridboxType = {
 				name = "equipment_needed_grid"
-				position = { x=59 y=78 }
+				position = { x=59 y=80 }
 				size = { width=350 height=200 }
 				slotsize = { width=350 height=20 }
 				max_slots_horizontal = 1

@@ -625,7 +625,7 @@ equipment_modules = {
 		category = inf_support_equipment
 		
 		add_stats = {
-			entrenchment = 0.2
+			entrenchment = 0.1
 			
 			build_cost_ic = 0.02
 		}

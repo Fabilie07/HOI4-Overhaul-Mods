@@ -6,6 +6,7 @@ tom_inf_support_equipment_production = {
 			is_major = yes
 		}
 		has_tech = support_weapons
+		has_civil_war = no
 	}
 	abort_when_not_enabled = yes
 	
@@ -36,6 +37,7 @@ tom_inf_support_equipment_production_increased = {
 	enable = {
 		arms_factory > 39
 		has_tech = support_weapons
+		has_civil_war = no
 	}
 	abort_when_not_enabled = yes
 	
