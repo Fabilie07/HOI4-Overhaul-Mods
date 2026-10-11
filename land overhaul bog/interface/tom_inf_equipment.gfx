@@ -279,6 +279,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ITA_infantry_5.dds"
 	}
 	
+	### SOV
+	spriteType = {
+		name = "GFX_SOV_lmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/SOV_lmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_mmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_mmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_SOV_mmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/SOV_mmg_2.dds"
+	}
+	
 	### USA
 	spriteType = {
 		name = "GFX_USA_lmg_chassis_0_medium"

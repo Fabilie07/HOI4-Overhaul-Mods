@@ -86,6 +86,8 @@ on_actions = {
 			ENG = { tom_inf_starting_weapons_ENG = yes }
 			FRA = { tom_inf_starting_weapons_FRA = yes }
 			GER = { tom_inf_starting_weapons_GER = yes }
+			ITA = { tom_inf_starting_weapons_ITA = yes }
+			SOV = { tom_inf_starting_weapons_SOV = yes }
 			USA = { tom_inf_starting_weapons_USA = yes }
 		}
 	}

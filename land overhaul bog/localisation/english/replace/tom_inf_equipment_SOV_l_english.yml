@@ -1,0 +1,26 @@
+﻿l_english:
+
+ SOV_infantry_equipment_0:0 "Mosin M1891/30"
+ SOV_infantry_equipment_0_short:0 "Mosin M1891/30"
+ SOV_infantry_equipment_1:0 "Mosin M1938 Carbine"
+ SOV_infantry_equipment_1_short:0 "Mosin M1938 Carbine"
+ SOV_infantry_equipment_2:0 "SVT-40"
+ SOV_infantry_equipment_2_short:0 "SVT-40"
+ SOV_infantry_equipment_3:0 "AVT-40"
+ SOV_infantry_equipment_3_short:0 "AVT-40"
+ SOV_infantry_equipment_4:0 "AK-47"
+ SOV_infantry_equipment_4_short:0 "AK-47"
+ SOV_infantry_equipment_5:0 "AKM"
+ SOV_infantry_equipment_5_short:0 "AKM"
+
+ SOV_mortar_chassis_0:0 "82-BM-36"
+ SOV_mortar_chassis_1:0 "RM-41"
+ SOV_mortar_chassis_2:0 "120mm PM-43"
+ 
+ SOV_lmg_chassis_0:0 "DP-27"
+
+ SOV_mmg_chassis_1:0 "DS-39"
+ SOV_mmg_chassis_2:0 "SG-43"
+ 
+ SOV_hmg_chassis_0:0 "PM M1910"
+ SOV_hmg_chassis_1:0 "DShK 1938"
