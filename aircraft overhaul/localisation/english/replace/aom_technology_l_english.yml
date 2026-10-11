@@ -38,6 +38,8 @@
  NO_DOCTRINE_TT: "No Reduced Cost by specific Air Doctrine Boni"
  
  branch_exclusive_tt:0 "§RWARNING! The following doctrine branches are mutually exclusive. Only one of them can be researched, until the last doctrine in this tree has been researched.§!"
+ 
+ aom_advanced_radar_tt:0 "Air-to-Air Radar III and higher allow you to use Radar-Guided Missiles. They can only be mounted on airframes of the year 1953 or higher."
 
  1953_small_airframe:0 "Supersonic Small Airframe"
  1953_small_airframe_short:0 "Supersonic Fighter I"
