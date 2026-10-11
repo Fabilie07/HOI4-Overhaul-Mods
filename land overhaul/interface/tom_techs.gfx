@@ -435,7 +435,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/equipmentdesigner/tanks/designer/generic/main_battle_tank_4.dds"
 	}
 	
+	### GER
+	SpriteType = {
+		name = "GFX_GER_light_truck_tech_medium"
+		texturefile = "gfx/interface/technologies/GER_motorized_light.dds"
+	}
+	
 	### SOV
+	SpriteType = {
+		name = "GFX_SOV_light_truck_tech_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorized_light.dds"
+	}
+	
 	SpriteType = {
 		name = "GFX_SOV_modern_medium_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_04.dds"
