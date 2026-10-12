@@ -1,0 +1,21 @@
+﻿l_english:
+
+ JAP_infantry_equipment_2:0 "Type Hei"
+ JAP_infantry_equipment_2_short:0 "Type Hei"
+ JAP_infantry_equipment_3:0 "Type 4"
+ JAP_infantry_equipment_3_short:0 "Type 4"
+ JAP_infantry_equipment_4:0 "M14"
+ JAP_infantry_equipment_4_short:0 "M14"
+ JAP_infantry_equipment_5:0 "Type 64"
+ JAP_infantry_equipment_5_short:0 "Type 64"
+
+ JAP_mortar_chassis_0:0 "Type 89"
+ JAP_mortar_chassis_1:0 "Type 97"
+ JAP_mortar_chassis_2:0 "Type 2"
+ 
+ JAP_lmg_chassis_0:0 "Type 11"
+ JAP_lmg_chassis_1:0 "Type 96"
+ JAP_lmg_chassis_2:0 "Type 99"
+ 
+ JAP_hmg_chassis_0:0 "Type 92"
+ JAP_hmg_chassis_1:0 "Type 1"

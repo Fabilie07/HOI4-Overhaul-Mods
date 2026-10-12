@@ -279,6 +279,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ITA_infantry_5.dds"
 	}
 	
+	### JAP
+	spriteType = {
+		name = "GFX_JAP_lmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/JAP_lmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_lmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/JAP_lmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_lmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/JAP_lmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_hmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/JAP_hmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_hmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/JAP_hmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_modern_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/JAP_infantry4.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_modern_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/JAP_infantry5.dds"
+	}
+	
 	### SOV
 	spriteType = {
 		name = "GFX_SOV_lmg_chassis_0_medium"
