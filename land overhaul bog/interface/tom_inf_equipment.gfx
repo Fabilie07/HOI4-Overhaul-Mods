@@ -177,6 +177,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ENG_mmg_0.dds"
 	}
 	spriteType = {
+		name = "GFX_ENG_mmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/USA_mmg_1.dds"
+	}
+	spriteType = {
 		name = "GFX_ENG_hmg_chassis_0_medium"
 		texturefile = "gfx/interface/technologies/ENG_hmg_0.dds"
 	}
@@ -205,6 +209,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_FRA_lmg_chassis_1_medium"
 		texturefile = "gfx/interface/technologies/FRA_lmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_lmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/ENG_lmg_2.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_mmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/FRA_mmg_0.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_mmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/USA_mmg_1.dds"
 	}
 	spriteType = {
 		name = "GFX_FRA_hmg_chassis_0_medium"
@@ -245,6 +261,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_mmg_5.dds"
 	}
 	spriteType = {
+		name = "GFX_GER_hmg_chassis_1_medium"
+		texturefile = "gfx/interface/technologies/GER_hmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_hmg_chassis_2_medium"
+		texturefile = "gfx/interface/technologies/GER_hmg_2.dds"
+	}
+	spriteType = {
 		name = "GFX_GER_modern_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_4.dds"
 	}
@@ -261,6 +285,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ITA_lmg_chassis_1_medium"
 		texturefile = "gfx/interface/technologies/ITA_lmg_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_mmg_chassis_0_medium"
+		texturefile = "gfx/interface/technologies/ITA_mmg_0.dds"
 	}
 	spriteType = {
 		name = "GFX_ITA_hmg_chassis_0_medium"

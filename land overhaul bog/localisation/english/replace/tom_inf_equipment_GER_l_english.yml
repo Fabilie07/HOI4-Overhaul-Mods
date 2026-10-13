@@ -28,7 +28,8 @@
  GER_mmg_chassis_4:0 "MG 1"
  GER_mmg_chassis_5:0 "MG 3"
  
- # No HMGs? Ô_o
  GER_hmg_chassis_0:0 "MG 08"
+ GER_hmg_chassis_1:0 "MG 34 Lafette"
+ GER_hmg_chassis_2:0 "MG 42 Lafette"
  
  GER_at_rocket_chassis_0:0 "Panzerschreck"

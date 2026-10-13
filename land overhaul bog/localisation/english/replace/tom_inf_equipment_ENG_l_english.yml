@@ -1,11 +1,11 @@
 ﻿l_english:
 
- ENG_infantry_equipment_0:0 "Rifle No. 1 Mk III"
- ENG_infantry_equipment_0_short:0 "Rifle No. 1 Mk III"
- ENG_infantry_equipment_1:0 "Rifle No. 1 Mk V"
- ENG_infantry_equipment_1_short:0 "Rifle No. 1 Mk V"
- ENG_infantry_equipment_2:0 "Rifle No. 4 Mk I"
- ENG_infantry_equipment_2_short:0 "Rifle No. 4 Mk I"
+ ENG_infantry_equipment_0:0 "Rifle No. 1 Mk III*"
+ ENG_infantry_equipment_0_short:0 "Rifle No. 1 Mk III*"
+ ENG_infantry_equipment_1:0 "Rifle No. 4 Mk I"
+ ENG_infantry_equipment_1_short:0 "Rifle No. 4 Mk I"
+ ENG_infantry_equipment_2:0 "Rifle No. 4 Mk I*"
+ ENG_infantry_equipment_2_short:0 "Rifle No. 4 Mk I*"
  ENG_infantry_equipment_3:0 "SLEM-1"
  ENG_infantry_equipment_3_short:0 "SLEM-1"
  ENG_infantry_equipment_4:0 "EM-2"
@@ -23,7 +23,11 @@
  ENG_lmg_chassis_4:0 "L4"
  
  ENG_mmg_chassis_0:0 "Vickers .303"
+ ENG_mmg_chassis_2:0 "M1919"
  
  ENG_hmg_chassis_0:0 "Vickers .50"
+ ENG_hmg_chassis_2:0 "M2"
+ 
+ ENG_at_rifle_chassis_0:0 "Boys AT Rifle"
  
  ENG_at_rocket_chassis_0:0 "PIAT"

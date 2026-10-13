@@ -15,5 +15,10 @@
  
  FRA_lmg_chassis_0:0 "Chauchat"
  FRA_lmg_chassis_1:0 "FM 24/29"
+ FRA_lmg_chassis_2:0 "Bren"
+ 
+ FRA_mmg_chassis_0:0 "Hotchkiss Mle 1914"
+ FRA_mmg_chassis_2:0 "M1919"
  
  FRA_hmg_chassis_0:0 "Mitrailleuse Mle 31"
+ FRA_hmg_chassis_2:0 "M2"

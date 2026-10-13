@@ -13,10 +13,13 @@
  ITA_infantry_equipment_5:0 "Beretta BM59"
  ITA_infantry_equipment_5_short:0 "Beretta BM59"
 
- ITA_mortar_chassis_0:0 "Brixia mod.35"
+ ITA_mortar_chassis_0:0 "Mortaio da 45 mod.35"
+ ITA_mortar_chassis_1:0 "Mortaio da 81/14 mod.35"
  
  ITA_lmg_chassis_0:0 "SIA mod.18"
  ITA_lmg_chassis_1:0 "Breda 30"
  
- ITA_hmg_chassis_0:0 "Fiat mod.35"
+ ITA_mmg_chassis_0:0 "Fiat mod.35"
+ 
+ ITA_hmg_chassis_0:0 "Fiat mod.1914"
  ITA_hmg_chassis_1:0 "Breda M37"

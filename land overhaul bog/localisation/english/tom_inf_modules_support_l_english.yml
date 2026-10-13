@@ -15,6 +15,7 @@
  EQ_MOD_CAT_mg_magazine_TITLE: "Feeding System"
  EQ_MOD_CAT_mg_rpm_TITLE: "Rounds per Minute"
  EQ_MOD_CAT_mg_special_module_TITLE: "Special Module"
+ EQ_MOD_CAT_mg_special_module_large_TITLE: "Special Module (Heavy)"
  
  mg_standard_barrel:0 "Standard Barrel"
  mg_standard_barrel_desc:0 "This barrel relies on its natural exposure to the surrounding air to vent excess heat."
