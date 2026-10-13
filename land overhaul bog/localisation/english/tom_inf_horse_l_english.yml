@@ -1,8 +1,7 @@
 ﻿l_english:
  
  tom_inf_horse_decisions:0 "Horse Population & Supply Motorization"
- tom_inf_horse_decisions_desc:0 "Horses are vital to the war effort. They are not only present in cavalry, but also carry supplies and artillery pieces. Increased Mechanization has started to replace the horse in many places, but machines are expensive, less reliable and need oil. Only nations with vast resources and wealth can completely replace the horse.\n\n$tom_inf_horse_stats_tt$"
- tom_inf_horse_stats_tt:0 "Current Civilian Horse Count: [?tom_inf_civilian_horse|*] \nArmy Horse Count: [?num_equipment_in_armies@tom_inf_horse|*] \nMonthly Horse Population Growth: [?tom_inf_horse_add|*=+] \nMonthly Horse Population Growth Factor: [?tom_inf_horse_mult|%=+] \n\nSupply Horses Needed: [?tom_horse_supply_needed|*] \nSupply Horses per Hub: [?tom_horse_supply_mult|*] \n\nSupply Trucks Needed: [?tom_truck_supply_needed|*] \nSupply Trucks per Hub: [?tom_truck_supply_mult|*] \nSupply Fuel Needed: [?tom_truck_supply_daily_fuel|*+]"
+ tom_inf_horse_decisions_desc:0 "Horses are vital to the war effort. They are not only present in cavalry, but also carry supplies and artillery pieces. Increased Mechanization has started to replace the horse in many places, but machines are expensive, less reliable and need oil. Only nations with vast resources and wealth can completely replace the horse."
 
  tom_inf_horse_mult:0 "Monthly Horse Population Growth Factor: $RIGHT|=+%$"
  
@@ -21,6 +20,25 @@
  tom_inf_decrease_motorization_to_2:0 "Decrease Motorization"
  tom_inf_decrease_motorization_to_3:0 "Decrease Motorization"
  tom_inf_decrease_motorization_to_4:0 "Decrease Motorization"
+ 
+ tom_inf_horse_population:0 "[?tom_inf_civilian_horse|*]"
+ tom_inf_horse_population_desc:0 "§YCurrent Civilian Horse Count§!\n------------\nHow many horses are held in our country."
+ tom_inf_horse_army:0 "[?num_equipment_in_armies@tom_inf_horse|*]"
+ tom_inf_horse_army_desc:0 "§YCurrent Army Horse Count§!\n------------\nHow many horses are in our divisions. These will not be bred."
+ tom_inf_horse_growth_factor:0 "[?tom_inf_horse_mult|%=+]"
+ tom_inf_horse_growth_factor_desc:0 "§YMonthly Horse Population Growth Factor§!\n------------\nBy what percentage our Civilian Horse Population grows each month."
+ tom_inf_horse_growth:0 "[?tom_inf_horse_add|*=+]"
+ tom_inf_horse_growth_desc:0 "§YMonthly Horse Population Growth§!\n------------\nHow many Horses are added to our Civilian Horse Population each month."
+ tom_inf_supply_horse:0 "[?tom_horse_supply_needed|*]"
+ tom_inf_supply_horse_desc:0 "§YHorses needed for Logistics§!\n------------\nThe total amount of horses used to haul supplies. They are taken out of the Civilian Population automatically."
+ tom_inf_supply_truck:0 "[?tom_truck_supply_needed|*]"
+ tom_inf_supply_truck_desc:0 "§YTrucks needed for Logistics§!\n------------\nThe total amount of trucks used to haul supplies. They are taken out of the Stockpile automatically."
+ tom_inf_supply_fuel:0 "[?tom_truck_supply_daily_fuel|*+]"
+ tom_inf_supply_fuel_desc:0 "§YDaily Fuel Consumption needed for Supply§!\n------------\nThe amount of fuel used to haul supplies each day. Does not show up in the Fuel Tooltip."
+ tom_inf_hub_horse:0 "[?tom_horse_supply_mult|.0]"
+ tom_inf_hub_horse_desc:0 "§YHorses per Supply Hub§!\n------------\nThe amount of horses needed per Supply Hub in your controlled territory."
+ tom_inf_hub_truck:0 "[?tom_truck_supply_mult|.0]"
+ tom_inf_hub_truck_desc:0 "§YTrucks per Supply Hub§!\n------------\nThe amount of trucks needed per Supply Hub in your controlled territory."
  
  tom_inf_horse_per_hub_tt:0 "Horses Needed per Supply Hub: $RIGHT$"
  tom_inf_truck_per_hub_tt:0 "Truck Needed per Supply Hub: $RIGHT$"

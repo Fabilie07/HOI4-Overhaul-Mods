@@ -11,6 +11,7 @@ tom_inf_battalion_composition = {
 
 tom_inf_horse_decisions = {
 	visible_when_empty = yes
+	scripted_gui = tom_inf_supply_gui
 	priority = 900
 }
 

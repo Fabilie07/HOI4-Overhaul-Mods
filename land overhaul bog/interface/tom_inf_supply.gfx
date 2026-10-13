@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_modifier_bg_long"
+		texturefile = "gfx/interface/modifiers/MODIFIER_bg_long.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_bg_long2"
+		texturefile = "gfx/interface/modifiers/MODIFIER_bg_long2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifier_horse_population"
+		texturefile = "gfx/interface/modifiers/MODIFIER_HORSE_POPULATION.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_horse_army"
+		texturefile = "gfx/interface/modifiers/MODIFIER_HORSE_ARMY.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_horse_growth"
+		texturefile = "gfx/interface/modifiers/MODIFIER_HORSE_GROWTH.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_supply_horse"
+		texturefile = "gfx/interface/modifiers/MODIFIER_SUPPLY_HORSE.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_supply_truck"
+		texturefile = "gfx/interface/modifiers/MODIFIER_SUPPLY_TRUCK.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_supply_fuel"
+		texturefile = "gfx/interface/modifiers/MODIFIER_SUPPLY_FUEL.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_hub_horse"
+		texturefile = "gfx/interface/modifiers/MODIFIER_HUB_HORSE.dds"
+	}
+	spriteType = {
+		name = "GFX_modifier_hub_truck"
+		texturefile = "gfx/interface/modifiers/MODIFIER_HUB_TRUCK.dds"
+	}
+}

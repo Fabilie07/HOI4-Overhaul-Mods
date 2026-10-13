@@ -1,0 +1,271 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "tom_inf_supply_decision_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height=100 }
+		
+		
+		containerWindowType = {
+			name = "horse_civ_pop"
+			position = {x=4 y=3}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_horse_population"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_horse_population
+				pdx_tooltip = tom_inf_horse_population_desc
+				maxWidth = 69
+				maxHeight = 23
+				format = right
+			}
+		}
+		containerWindowType = {
+			name = "horse_army_pop"
+			position = {x=4 y=35}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_horse_army"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_horse_army
+				pdx_tooltip = tom_inf_horse_army_desc
+				maxWidth = 69
+				maxHeight = 23
+				format = right
+			}
+		}
+		containerWindowType = {
+			name = "horse_growth_monthly"
+			position = {x=4 y=67}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long2"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_horse_growth"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_horse_growth_factor
+				pdx_tooltip = tom_inf_horse_growth_factor_desc
+				maxWidth = 60
+				maxHeight = 23
+				format = right
+			}
+			
+			instantTextboxType = {
+				name = "modifier_value2" 
+				position = { x = 90 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_horse_growth
+				pdx_tooltip = tom_inf_horse_growth_desc
+				maxWidth = 66
+				maxHeight = 23
+				format = right
+			}
+		}
+		
+		containerWindowType = {
+			name = "horse_needed"
+			position = {x=276 y=3}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_supply_horse"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_supply_horse
+				pdx_tooltip = tom_inf_supply_horse_desc
+				maxWidth = 69
+				maxHeight = 23
+				format = right
+			}
+		}
+		containerWindowType = {
+			name = "horse_needed_hub"
+			position = {x=276 y=35}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_hub_horse"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_hub_horse
+				pdx_tooltip = tom_inf_hub_horse_desc
+				maxWidth = 69
+				maxHeight = 23
+				format = right
+			}
+		}
+		
+		containerWindowType = {
+			name = "truck_needed"
+			position = {x=382 y=3}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_supply_truck"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_supply_truck
+				pdx_tooltip = tom_inf_supply_truck_desc
+				maxWidth = 69
+				maxHeight = 23
+				format = right
+			}
+		}
+		containerWindowType = {
+			name = "truck_needed_hub"
+			position = {x=382 y=35}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_hub_truck"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				text = tom_inf_hub_truck
+				pdx_tooltip = tom_inf_hub_truck_desc
+				maxWidth = 69
+				maxHeight = 23
+				format = right
+			}
+		}
+		containerWindowType = {
+			name = "fuel_daily"
+			position = {x=382 y=67}
+			size = { width=113 height=40 }
+			Orientation = upper_left
+			clipping = no
+
+			iconType = {
+				name = "modifier_bg"
+				position = { x = 0 y = 1 }
+				spriteType = "GFX_modifier_bg_long"
+			}
+
+			iconType = {
+				name = "modifier_icon"
+				position = { x = 5 y = 5 }
+				spriteType = "GFX_modifier_supply_fuel"
+				scale = 1.0
+			}
+
+			instantTextboxType = {
+				name = "modifier_value" 
+				position = { x = 30 y = 9 }
+				font = "hoi_16mbs"
+				maxWidth = 69
+				text = tom_inf_supply_fuel
+				pdx_tooltip = tom_inf_supply_fuel_desc
+				maxHeight = 23
+				format = right
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+scripted_gui = {
+	# Decision Window
+	tom_inf_supply_gui = {
+		context_type = decision_category
+		window_name = "tom_inf_supply_decision_window"
+	}
+}
