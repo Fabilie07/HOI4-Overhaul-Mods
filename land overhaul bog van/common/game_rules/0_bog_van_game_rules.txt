@@ -1,0 +1,18 @@
+# Reused from Tank Overhaul Mod, but renamed to Free Infantry Equipment Design
+tom_free_designs_rule = {
+	name = "RULE_FREE_TANK_DESIGNS"
+	group = "RULE_GROUP_TOM"
+
+	default = {
+		name = DISABLED
+		text = "RULE_TANK_DESIGNS_DISABLED"
+		desc = "RULE_TANK_DESIGNS_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED
+		text = "RULE_TANK_DESIGNS_ENABLED"
+		desc = "RULE_TANK_DESIGNS_ENABLED_DESC"
+		allow_achievements = yes
+	}
+}

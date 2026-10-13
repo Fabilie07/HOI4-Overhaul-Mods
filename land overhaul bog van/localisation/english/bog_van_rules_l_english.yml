@@ -1,0 +1,9 @@
+﻿l_english:
+
+ RULE_GROUP_TOM: "Boots on Ground"
+ RULE_FREE_DESIGNS: "Free Equipment Designs"
+ RULE_FREE_TANK_DESIGNS: "Free Infantry Equipment Designs"
+ RULE_TANK_DESIGNS_DISABLED: "Disabled"
+ RULE_TANK_DESIGNS_DISABLED_DESC: "Infantry Equipment Designs will cost the normal amount of Army EXP."
+ RULE_TANK_DESIGNS_ENABLED: "Enabled"
+ RULE_TANK_DESIGNS_ENABLED_DESC: "All Infantry Equipment Designs will be free."
