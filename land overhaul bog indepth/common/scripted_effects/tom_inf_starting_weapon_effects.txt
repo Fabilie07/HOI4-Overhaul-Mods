@@ -1,12 +1,4 @@
 tom_inf_starting_weapons_generic = {
-	create_equipment_variant = {
-		type = infantry_equipment_0
-		mark_older_equipment_obsolete = yes
-		modules = {
-			support_equipment_1_slot = inf_grenade_frag
-			fixed_sights_slot = inf_sights_1
-		}
-	}
 	if = {
 		limit = {
 			has_tech = infantry_weapons1
@@ -19,92 +11,479 @@ tom_inf_starting_weapons_generic = {
 				fixed_sights_slot = inf_sights_2
 			}
 		}
+		create_equipment_variant = {
+			type = sniper_chassis_1
+			mark_older_equipment_obsolete = yes
+			modules = {
+				fixed_firing_mode_slot = inf_bolt_action
+				fixed_magazine_type_slot = inf_clip_05
+				backpack_type_slot = inf_backpack_3
+				fixed_sights_slot = inf_sights_sniper
+				
+				fixed_barrel_slot = inf_barrel_rifle
+				fixed_cartridge_slot = inf_cartridge_rifle_75
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
+	}
+	else = {
+		create_equipment_variant = {
+			type = infantry_equipment_0
+			mark_older_equipment_obsolete = yes
+			modules = {
+				support_equipment_1_slot = inf_grenade_frag
+				fixed_sights_slot = inf_sights_1
+			}
+		}
+		create_equipment_variant = {
+			type = sniper_chassis_0
+			mark_older_equipment_obsolete = yes
+			modules = {
+				fixed_firing_mode_slot = inf_bolt_action
+				fixed_magazine_type_slot = inf_clip_05
+				backpack_type_slot = inf_backpack_3
+				fixed_sights_slot = inf_sights_sniper
+				
+				fixed_barrel_slot = inf_barrel_rifle
+				fixed_cartridge_slot = inf_cartridge_rifle_75
+				sidearm_weapon_slot = inf_sidearm_pistol
+			}
+		}
 	}
 	
 	create_equipment_variant = {
 		type = lmg_chassis_0
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	create_equipment_variant = {
-		type = lmg_chassis_1
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	create_equipment_variant = {
-		type = lmg_chassis_2
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	create_equipment_variant = {
-		type = lmg_chassis_3
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_rpm_slot = mg_rpm_0500
 		}
 	}
 	
+	if = {
+		limit = {
+			has_tech = support_weapons
+		}
+		create_equipment_variant = {
+			type = mmg_chassis_0
+			mark_older_equipment_obsolete = yes
+			modules = {
+				mg_rpm_slot = mg_rpm_0500
+			}
+		}
+		create_equipment_variant = {
+			type = hmg_chassis_0
+			mark_older_equipment_obsolete = yes
+			modules = {
+				mg_rpm_slot = mg_rpm_0500
+			}
+		}
+	}
+}
+
+tom_inf_starting_weapons_ENG = {
+	create_equipment_variant = { # Rifle No 1 Mk V
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_magazine_type_slot = inf_magazine_10
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_bayonet
+			fixed_sights_slot = inf_sights_2
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+		}
+	}
 	create_equipment_variant = {
+		type = sniper_chassis_1
+		name = "Rifle No. 4 Mk I (T)"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_bolt_action
+			fixed_magazine_type_slot = inf_magazine_10
+			backpack_type_slot = inf_backpack_3
+			fixed_sights_slot = inf_sights_sniper
+			
+			fixed_barrel_slot = inf_barrel_rifle
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # Lewis
+		type = lmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_050
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_bipod
+			mg_fixed_barrel_slot = mg_watercooled_barrel
+		}
+	}
+	create_equipment_variant = { # Vickers MG
 		type = mmg_chassis_0
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_watercooled_barrel
 		}
 	}
-	create_equipment_variant = {
-		type = mmg_chassis_1
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	create_equipment_variant = {
-		type = mmg_chassis_2
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	create_equipment_variant = {
-		type = mmg_chassis_3
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	
-	create_equipment_variant = {
+	create_equipment_variant = { # Vickers .50
 		type = hmg_chassis_0
 		mark_older_equipment_obsolete = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_large_cartridge
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_watercooled_barrel
+		}
+	}
+}
+
+tom_inf_starting_weapons_FRA = {
+	create_equipment_variant = { # MAS 36
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_magazine_type_slot = inf_clip_05
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_bayonet
+			fixed_sights_slot = inf_sights_2
+			fixed_cartridge_slot = inf_cartridge_rifle_75
 		}
 	}
 	create_equipment_variant = {
+		type = sniper_chassis_1
+		name = "MAS 36 Fusil de précision"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_bolt_action
+			fixed_magazine_type_slot = inf_clip_05
+			backpack_type_slot = inf_backpack_3
+			fixed_sights_slot = inf_sights_sniper
+			
+			fixed_barrel_slot = inf_barrel_rifle
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # FM 24/29
+		type = lmg_chassis_1
+		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_030
+			mg_rpm_slot = mg_rpm_0400
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_bipod
+			mg_fixed_barrel_slot = mg_standard_barrel
+		}
+	}
+	create_equipment_variant = { # Hotchkiss mle 1914
+		type = mmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0500
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+	create_equipment_variant = { # Reibel
+		type = hmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_100
+			mg_rpm_slot = mg_rpm_0700
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_standard_barrel
+		}
+	}
+}
+
+tom_inf_starting_weapons_GER = {
+	create_equipment_variant = { # Kar 98k
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_bayonet
+			fixed_sights_slot = inf_sights_1
+			fixed_cartridge_slot = inf_cartridge_rifle_80
+		}
+	}
+	create_equipment_variant = { # Kar 98k Sniper
+		type = sniper_chassis_1
+		name = "Kar 98k ZF39"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_bolt_action
+			fixed_magazine_type_slot = inf_clip_05
+			backpack_type_slot = inf_backpack_3
+			fixed_sights_slot = inf_sights_sniper
+			
+			fixed_barrel_slot = inf_barrel_rifle
+			fixed_cartridge_slot = inf_cartridge_rifle_80
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # MG 30
+		type = lmg_chassis_1
+		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_030
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_bipod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+	create_equipment_variant = { # MG 34
+		type = mmg_chassis_1
+		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_050
+			mg_rpm_slot = mg_rpm_0800
+			support_equipment_1_slot = mg_rifle_cartridge
+			support_equipment_2_slot = mg_exchangeable_barrel
+			mg_grip_slot = mg_bipod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+	create_equipment_variant = { # MG 08
+		type = hmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_rpm_slot = mg_rpm_0600
+		}
+	}
+}
+
+tom_inf_starting_weapons_ITA = {
+	create_equipment_variant = { # M38
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_bayonet
+			fixed_sights_slot = inf_sights_1
+			fixed_barrel_slot = inf_barrel_carbine
+			fixed_cartridge_slot = inf_cartridge_rifle_65
+		}
+	}
+	create_equipment_variant = { # Carcano Sniper
+		type = sniper_chassis_1
+		name = "Carcano M1891 Scheibler"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_bolt_action
+			fixed_magazine_type_slot = inf_clip_05
+			backpack_type_slot = inf_backpack_3
+			fixed_sights_slot = inf_sights_sniper
+			
+			fixed_barrel_slot = inf_barrel_rifle
+			fixed_cartridge_slot = inf_cartridge_rifle_65
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # Breda 30
+		type = lmg_chassis_1
+		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_020
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_bipod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+	create_equipment_variant = { # Fiat mod.35
+		type = hmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0600
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+}
+
+tom_inf_starting_weapons_JAP = {
+	create_equipment_variant = { # Type 99
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_bayonet
+			fixed_sights_slot = inf_sights_2
+			fixed_barrel_slot = inf_barrel_carbine
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+		}
+	}
+	create_equipment_variant = { # Type 99 Sniper
+		type = sniper_chassis_1
+		name = "Type 99 Sogeki-Juu"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_bolt_action
+			fixed_magazine_type_slot = inf_clip_05
+			backpack_type_slot = inf_backpack_3
+			fixed_sights_slot = inf_sights_sniper
+			
+			fixed_barrel_slot = inf_barrel_rifle
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # Type 11
+		type = lmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_030
+			mg_rpm_slot = mg_rpm_0500
+			mg_grip_slot = mg_bipod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+	create_equipment_variant = { # Type 92
+		type = hmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_030
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+}
+
+tom_inf_starting_weapons_SOV = {
+	create_equipment_variant = { # M38 Carbine
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_bayonet
+			fixed_sights_slot = inf_sights_2
+			fixed_barrel_slot = inf_barrel_carbine
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+		}
+	}
+	create_equipment_variant = { # Carcano Sniper
+		type = sniper_chassis_1
+		name = "Mosin-Nagant 1891 PE"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_bolt_action
+			fixed_magazine_type_slot = inf_clip_05
+			backpack_type_slot = inf_backpack_3
+			fixed_sights_slot = inf_sights_sniper
+			
+			fixed_barrel_slot = inf_barrel_rifle
+			fixed_cartridge_slot = inf_cartridge_rifle_65
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # SP-27
+		type = lmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_050
+			mg_rpm_slot = mg_rpm_0500
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_bipod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+	create_equipment_variant = { # Fiat mod.35
+		type = hmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0600
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_watercooled_barrel
+		}
+	}
+}
+
+tom_inf_starting_weapons_USA = {
+	create_equipment_variant = { # M1 Garand
+		type = infantry_equipment_1
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_semi_auto
+			fixed_magazine_type_slot = inf_clip_10
+			fixed_sights_slot = inf_sights_2
+			support_equipment_1_slot = inf_grenade_frag
+			support_equipment_2_slot = inf_cleaning_kit
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+		}
+	}
+	create_equipment_variant = { # M1903 Sniper
+		type = sniper_chassis_1
+		name = "M1903A4"
+		mark_older_equipment_obsolete = yes
+		modules = {
+			fixed_firing_mode_slot = inf_bolt_action
+			fixed_magazine_type_slot = inf_clip_05
+			backpack_type_slot = inf_backpack_3
+			fixed_sights_slot = inf_sights_sniper
+			
+			fixed_barrel_slot = inf_barrel_rifle
+			fixed_cartridge_slot = inf_cartridge_rifle_75
+			sidearm_weapon_slot = inf_sidearm_pistol
+		}
+	}
+	
+	create_equipment_variant = { # BAR
+		type = lmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_magazine_020
+			mg_rpm_slot = mg_rpm_0600
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_foregrip
+			mg_fixed_barrel_slot = mg_standard_barrel
+		}
+	}
+	create_equipment_variant = { # .30cal
+		type = mmg_chassis_0
+		mark_older_equipment_obsolete = yes
+		modules = {
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0600
+			support_equipment_1_slot = mg_rifle_cartridge
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+		}
+	}
+	create_equipment_variant = { # .50cal
 		type = hmg_chassis_1
 		mark_older_equipment_obsolete = yes
+		allow_without_tech = yes
 		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	create_equipment_variant = {
-		type = hmg_chassis_2
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
-		}
-	}
-	create_equipment_variant = {
-		type = hmg_chassis_3
-		mark_older_equipment_obsolete = yes
-		modules = {
-			mg_rpm_slot = mg_rpm_0800
+			mg_feeding_slot = mg_belt_fed
+			mg_rpm_slot = mg_rpm_0500
+			mg_grip_slot = mg_tripod
+			mg_fixed_barrel_slot = mg_aircooled_barrel
+			support_equipment_1_slot = mg_large_cartridge
+			support_equipment_2_slot = mg_dual_purpose
 		}
 	}
 }
