@@ -96,9 +96,9 @@ sub_units = {
 		supply_consumption = 0.02
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 0.6
-		breakthrough = 1.2
-		defense = 0.4
+		soft_attack = 1.0
+		breakthrough = 3.0
+		defense = 3.0
 
 		can_be_parachuted = yes
 	}
@@ -143,9 +143,9 @@ sub_units = {
 		supply_consumption = 0.02
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 0.4
-		breakthrough = 0.8
-		defense = 0.2
+		soft_attack = 1.0
+		breakthrough = 3.0
+		defense = 3.0
 
 		can_be_parachuted = yes
 	}
@@ -190,9 +190,9 @@ sub_units = {
 		supply_consumption = 0.04
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 0.4
-		breakthrough = 0.5
-		defense = 0.5
+		soft_attack = 1.0
+		breakthrough = 3.0
+		defense = 3.0
 
 		can_be_parachuted = yes
 	}
@@ -237,8 +237,9 @@ sub_units = {
 		supply_consumption = 0.06
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 0.4
-		defense = 1
+		soft_attack = 1.0
+		breakthrough = 3.0
+		defense = 3.0
 
 		can_be_parachuted = yes
 	}
@@ -284,9 +285,9 @@ sub_units = {
 		supply_consumption = 0.02
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 0.4
-		breakthrough = 1.2	# Motorized Buff
-		defense = 0.2
+		soft_attack = 1.0
+		breakthrough = 1.5
+		defense = 3.0
 
 		can_be_parachuted = no
 	}
@@ -332,9 +333,9 @@ sub_units = {
 		supply_consumption = 0.04
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 0.4
-		breakthrough = 0.75	# Motorized Buff
-		defense = 0.5
+		soft_attack = 1.0
+		breakthrough = 1.5
+		defense = 3.0
 
 		can_be_parachuted = no
 	}
@@ -380,9 +381,9 @@ sub_units = {
 		supply_consumption = 0.06
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 0.4
-		breakthrough = 0.25	# Motorized Buff
-		defense = 1
+		soft_attack = 1.0
+		breakthrough = 1.5
+		defense = 3.0
 
 		can_be_parachuted = no
 	}
@@ -427,7 +428,7 @@ sub_units = {
 		supply_consumption = 0.04
 
 		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 1.2
+		soft_attack = 2.0
 
 		can_be_parachuted = yes
 	}
