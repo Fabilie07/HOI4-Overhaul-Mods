@@ -149,6 +149,7 @@
  
  EQUIPMENT_DESIGNER_PLANE_ROLE_REQUIRE_WEAPON:0 "Add role module to give role"
  
+ strat_bomber_equipment_0:0 "Inter-War Strategic Bomber"
 
  small_plane_airframe_4:0 "Small Jet Airframe"
  small_plane_cas_airframe_4:0 "Jet Close Air Support"
@@ -200,6 +201,8 @@
  ENG_medium_plane_airframe_6:0 "Buccaneer"
  ENG_large_plane_airframe_5:0 "Vulcan"
  ENG_large_plane_airframe_6:0 "TSR-2"
+ 
+ FRA_strat_bomber_equipment_0:0 "Farman F.222"
  
  GER_small_plane_airframe_6:0 "F-4F Phantom II"
  GER_cv_small_plane_airframe_4:0 "Me 262 T"

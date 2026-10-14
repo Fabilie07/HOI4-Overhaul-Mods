@@ -8,11 +8,13 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
+			version_name = "I-15"
 		}
 		# 18ya Bombardirovochnye Aviabrigada
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
+			version_name = "DB-3"
 		}
 	}
 
@@ -22,12 +24,14 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
+			version_name = "I-15"
 		}
 		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
 		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
 		large_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 48
+			version_name = "TB-3"
 		}
 		# TODO -- 46ya Transporta Aviabrigada -- transport planes
 	}
@@ -38,16 +42,19 @@ air_wings = {
 		small_plane_airframe_1 = {
 			owner = "SOV" 
 			amount = 94
+			version_name = "I-16"
 		}
 		# 14ya Istrebitel'nye Aviabrigada
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
+			version_name = "I-15"
 		}
 		# 16ya Bombardirovochnye Aviabrigada
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
+			version_name = "DB-3"
 		}
 	}
 
@@ -57,16 +64,19 @@ air_wings = {
 		small_plane_airframe_1 = {
 			owner = "SOV" 
 			amount = 94
+			version_name = "I-16"
 		}
 		# 1ya Bombardirovochnye Aviabrigada
 		# 10ya Bombardirovochnye Aviabrigada
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
+			version_name = "DB-3"
 		}
 		medium_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 60
+			version_name = "DB-3"
 		}
 	}
 
@@ -77,15 +87,18 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
+			version_name = "I-15"
 		}
 		small_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 94
+			version_name = "I-15"
 		}
 		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
 		large_plane_airframe_0 =  {
 			owner = "SOV" 
 			amount = 24
+			version_name = "TB-3"
 		}
 	}
 
@@ -95,6 +108,7 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 54
+			version_name = "DB-3"
 		}
 	}
 	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
@@ -103,6 +117,7 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "SOV" 
 			amount = 54
+			version_name = "DB-3"
 		}
 	}
 }

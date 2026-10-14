@@ -11,16 +11,19 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 80 
 			owner = "ITA" 
+			version_name = "CR.32"
 		} 
 		# 4a Divisione Aerea 'Drago'
 		# 6a Divisione Aerea 'Falco'
 		medium_plane_airframe_0 = { 
 			amount = 64 
 			owner = "ITA" 
+			version_name = "Ca.101"
 		} 
 		medium_plane_airframe_0 = { 
 			amount = 64 
 			owner = "ITA" 
+			version_name = "Ca.101"
 		}
 	} 
 
@@ -30,11 +33,13 @@ air_wings = {
 		medium_plane_airframe_0 = { 
 			amount = 64 
 			owner = "ITA" 
+			version_name = "Ca.101"
 		}
 		# 8a Brigata Aerea 'Astore'
 		small_plane_airframe_0 = { 
 			amount = 80 
 			owner = "ITA" 
+			version_name = "CR.32"
 		} 
 	} 
 
@@ -44,11 +49,13 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 80 
 			owner = "ITA" 
+			version_name = "CR.32"
 		} 
 		# 3a Divisione Aerea 'Centauro'
 		medium_plane_airframe_0 = { 
 			amount = 32 
 			owner = "ITA" 
+			version_name = "Ca.101"
 		} 
 	} 
 
@@ -57,7 +64,8 @@ air_wings = {
 		# 9a Divisione Aerea 'Leone'
 		medium_plane_airframe_1 = { 
 			amount = 48 
-			owner = "ITA" 
+			owner = "ITA"
+			version_name = "BR.20 Cicogna"
 		} 
 	} 
 
@@ -67,6 +75,7 @@ air_wings = {
 		medium_plane_airframe_1 = { 
 			amount = 24 
 			owner = "ITA" 
+			version_name = "BR.20 Cicogna"
 		} 
 	} 
 
@@ -77,11 +86,13 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 20 
 			owner = "ITA" 
+			version_name = "CR.32"
 		} 
 		# 13a Divisione Aerea 'Pegaso'
 		medium_plane_airframe_0 = { 
 			amount = 32 
 			owner = "ITA" 
+			version_name = "Ca.101"
 		} 
 	} 
 
@@ -90,10 +101,12 @@ air_wings = {
 		small_plane_airframe_0 = { 
 			amount = 40 
 			owner = "ITA" 
+			version_name = "CR.32"
 		}
 		medium_plane_airframe_1 = { 
 			amount = 32 
 			owner = "ITA" 
+			version_name = "BR.20 Cicogna"
 		}
 		small_plane_cas_airframe_0 = { 
 			amount = 48 

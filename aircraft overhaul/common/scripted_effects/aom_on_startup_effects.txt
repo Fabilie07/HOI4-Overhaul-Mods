@@ -51,7 +51,7 @@ aom_starting_aircraft_designs_effect = {
 				wings_type_slot = biplane
 				skin_type_slot = metal_skin
 				wheels_type_slot = fixed_wheels
-				special_type_slot_1 = dive_brakes_small
+				special_type_slot_1 = empty
 				special_type_slot_2 = empty
 			}
 		}
@@ -97,7 +97,7 @@ aom_starting_aircraft_designs_effect = {
 				wings_type_slot = biplane
 				skin_type_slot = metal_skin
 				wheels_type_slot = fixed_wheels
-				special_type_slot_1 = dive_brakes_small
+				special_type_slot_1 = empty
 				special_type_slot_2 = empty
 			}
 		}

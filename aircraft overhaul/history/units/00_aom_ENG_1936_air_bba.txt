@@ -8,14 +8,17 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 72
+			version_name = "Gladiator"
 		}
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 72
+			version_name = "Gladiator"
 		}
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 72
+			version_name = "Gladiator"
 		}
 	}
 	130 = { 
@@ -23,10 +26,12 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 77
+			version_name = "Gladiator"
 		}
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 77
+			version_name = "Gladiator"
 		}
 	}	
 	127 = { 
@@ -34,6 +39,7 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 96
+			version_name = "Gladiator"
 		}
 	}	
 	131 = { 
@@ -41,6 +47,7 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 72
+			version_name = "Gladiator"
 		}
 		
 	}
@@ -58,6 +65,7 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 48
+			version_name = "Whitley"
 		}
 	}
 	126 = { 
@@ -65,6 +73,7 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 64
+			version_name = "Whitley"
 		}
 	}
 	130 = { 
@@ -72,6 +81,7 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 80
+			version_name = "Whitley"
 		}
 	}
 	128 = { 
@@ -97,10 +107,12 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 72
+			version_name = "Gladiator"
 		}
 		medium_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 48
+			version_name = "Whitley"
 		}
 		small_plane_cas_airframe_0 = {
 			owner = "ENG" 
@@ -119,6 +131,7 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "ENG" 
 			amount = 24
+			version_name = "Gladiator"
 		}
 		small_plane_cas_airframe_0 = {
 			owner = "ENG" 
@@ -139,25 +152,25 @@ air_wings = {
 		}
 	}
 	"HMS Furious"  = {
-		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 9 }
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 9 version_name = "Nimrod" }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 2 }
 	}
 	"HMS Courageous"  = {
-		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 9 }
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 9 version_name = "Nimrod" }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 4 }
 	}
 	"HMS Glorious"  = {
-		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 6 } #historical 9
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 6 version_name = "Nimrod" } #historical 9
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 4 } #historical 36
 	}
 	"HMS Eagle"  = {
-		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 10 }
-		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 8 }
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Nimrod" }
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 8 version_name = "Nimrod" }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 8 }
 	}

@@ -5184,6 +5184,7 @@ equipments = {
 
 	large_plane_airframe_0 = { #Inter-War
 		abbreviation = "afl0"
+		derived_variant_name = strat_bomber_equipment_0
 		year = 1933
 
 		archetype = large_plane_airframe

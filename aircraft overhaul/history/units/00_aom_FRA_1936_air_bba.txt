@@ -6,16 +6,19 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
+			version_name = "NiD 62"
 		}
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
+			version_name = "NiD 62"
 		}
 		# Groupement de Bombardment 6
 		# Groupement de Bombardment 9
 		large_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 60
+			version_name = "Farman F.222"
 		}
 	}
 
@@ -25,6 +28,7 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
+			version_name = "NiD 62"
 		}
 	}
 
@@ -34,6 +38,7 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 96
+			version_name = "NiD 62"
 		}
 		# Groupement de Bombardment 1
 		# Groupement de Bombardment 6
@@ -41,11 +46,13 @@ air_wings = {
 		medium_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 90
+			version_name = "MB.200"
 		}
 		# Groupement de Bombardment d'Assault 19
 		large_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 24
+			version_name = "Farman F.222"
 		}
 	}
 
@@ -55,11 +62,13 @@ air_wings = {
 		small_plane_airframe_0 = {
 			owner = "FRA" 
 			amount = 48
+			version_name = "NiD 62"
 		}
 		# Groupement de Bombardment du Nord-Africain
 		medium_plane_airframe_0 =  {
 			owner = "FRA" 
 			amount = 30
+			version_name = "MB.200"
 		}
 	}
 
@@ -72,8 +81,8 @@ air_wings = {
 		}
 	}
 	"Béarn" = {
-		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 }
-		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 }
+		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 version_name = "D.376" }
+		cv_small_plane_airframe_0 =  { owner = "FRA" amount = 10 version_name = "D.376" }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "FRA" amount = 10 }
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "FRA" amount = 10 }			
 	}

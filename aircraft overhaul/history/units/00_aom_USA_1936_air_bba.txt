@@ -8,6 +8,7 @@ air_wings = {
 		medium_plane_airframe_0 = {
 			owner = "USA" 
 			amount = 60
+			version_name = "B-18 Bolo"
 		}
 		# 17th Attack Group 
 		small_plane_cas_airframe_0 = {
@@ -23,16 +24,19 @@ air_wings = {
 		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 72
+			version_name = "P-1 Hawk"
 		}
 		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 72
+			version_name = "P-1 Hawk"
 		}
 		# 2nd Bombardment Group 
 		# 9th Bombardment Group 
 		medium_plane_airframe_1 = {
 			owner = "USA" 
 			amount = 96
+			version_name = "B-23 Dragon"
 		}
 	}
 
@@ -42,6 +46,7 @@ air_wings = {
 		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 96
+			version_name = "P-1 Hawk"
 		}
 		# 3rd Attack Group 
 		small_plane_cas_airframe_0 = {
@@ -56,11 +61,13 @@ air_wings = {
 		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 48
+			version_name = "P-1 Hawk"
 		}
 		# 5th Composite Group 
 		medium_plane_airframe_0 = {
 			owner = "USA" 
 			amount = 36
+			version_name = "B-18 Bolo"
 		}
 	}
 
@@ -70,11 +77,13 @@ air_wings = {
 		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 96
+			version_name = "P-1 Hawk"
 		}
 		# 6th Composite Group 
 		medium_plane_airframe_1 = {
 			owner = "USA" 
 			amount = 12
+			version_name = "B-23 Dragon"
 		}
 	}
 
@@ -93,6 +102,7 @@ air_wings = {
 		medium_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 36
+			version_name = "B-18 Bolo"
 		}
 	}
 	### USN Pacific Naval Patrol Division -- San Diego
@@ -102,22 +112,23 @@ air_wings = {
 		medium_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 72
+			version_name = "B-18 Bolo"
 		}
 	}
 	"USS Ranger" = {
-		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 } # historical: 36
+		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "FF 'Fifi'" } # historical: 36
 		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 } # historical: 15
 		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 } # historical: 15
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 } # historical: 12			
 	}
 	"USS Lexington" = {
-		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 } # historical: 16
+		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "FF 'Fifi'" } # historical: 16
 		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 } # historical: 30
 		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 } # historical: 30
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 } # historical: 12
 	}
 	"USS Saratoga" = {
-		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 } # historical: 16
+		cv_small_plane_airframe_0 =  { owner = "USA" amount = 8 version_name = "FF 'Fifi'" } # historical: 16
 		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 10 } # historical: 30
 		cv_small_plane_cas_airframe_0 =  { owner = "USA" amount = 4 } # historical: 30
 		cv_small_plane_naval_bomber_airframe_0 =  { owner = "USA" amount = 8 } # historical: 12
