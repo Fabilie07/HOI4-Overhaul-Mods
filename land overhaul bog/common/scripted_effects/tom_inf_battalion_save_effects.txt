@@ -142,7 +142,10 @@ tom_inf_compute_equipment_cost_effect = {
 		
 		if = {
 			limit = {
-				check_variable = { temp_equipment_after > temp_equipment_before }
+				OR = {
+					check_variable = { temp_equipment_after > temp_equipment_before }
+					check_variable = { temp_equipment_before > temp_equipment_after }
+				}
 			}
 			
 			subtract_from_temp_variable = { temp_equipment_after = temp_equipment_before }
@@ -208,6 +211,10 @@ tom_inf_compute_temp_equipment_has = {
 	if = {
 		limit = { check_variable = { temp_equipment_archetype = token:infantry_equipment } }
 		set_temp_variable = { temp_equipment_has = num_equipment@infantry_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:sniper_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@sniper_chassis }
 	}
 	else_if = {
 		limit = { check_variable = { temp_equipment_archetype = token:support_equipment } }
