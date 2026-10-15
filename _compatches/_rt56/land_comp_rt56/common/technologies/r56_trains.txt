@@ -12,7 +12,7 @@ technologies = {
 		start_year = 1920
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 1 }
+			position = { x = 0 y = 0 }
 		}
 
 		path = {
@@ -83,7 +83,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 3 }
 		}
 		
 		categories = {
@@ -138,7 +138,7 @@ technologies = {
 		start_year = 1917
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 1 }
+			position = { x = 4 y = 0 }
 		}
 		
 		categories = {
@@ -189,7 +189,7 @@ technologies = {
 
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -244,7 +244,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 3 }
 		}
 		
 		categories = {
@@ -348,7 +348,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = support_folder
-			position = { x = 0 y = 20 }
+			position = { x = 0 y = 24 }
 		}
 		
 		categories = {
@@ -386,7 +386,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = support_folder
-			position = { x = -1 y = 6 }
+			position = { x = -1 y = 3 }
 		}
 
 		path = {
@@ -510,7 +510,7 @@ technologies = {
 		start_year = 1950
 		folder = {
 			name = support_folder
-			position = { x = -1 y = 24 }
+			position = { x = -1 y = 28 }
 		}
 
 		production_speed_supply_node_factor = 0.10
