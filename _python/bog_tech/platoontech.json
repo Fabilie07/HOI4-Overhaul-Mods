@@ -2,32 +2,11 @@
 			always = no
 		}
 		infantry = {
-			breakthrough = 0.05
+			max_strength = 0.1
+			default_morale = 0.1
+			casualty_trickleback = 0.02
+			experience_loss_factor = -0.02
 			need = {
-				support_equipment = 10
-			}
-
-			hills = {
-				defence = 0.1
-			}
-			
-			marsh = {
-				defence = 0.1
-				attack = 0.1
-			}
-
-			fort = {
-				attack = 0.2
-				defence = 0.2
-			}
-
-			river = {
-				defence = 0.2
-				attack = 0.1
-				movement = 0.2
-			}
-
-			amphibious = {
-				attack = 0.1
+				support_equipment = 8
 			}
 		}
