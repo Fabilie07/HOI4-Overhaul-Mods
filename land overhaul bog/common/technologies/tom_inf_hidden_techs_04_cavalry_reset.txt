@@ -702,6 +702,11 @@ technologies = {
 			need = {
 				armored_car_equipment = -4
 			}
+			soft_attack = 0.35
+			hard_attack = 0.3
+			breakthrough = 0.5
+			armor_value = 0.6
+			hardness = 1
 			
 			plains = {
 				movement = -0.1
@@ -1487,6 +1492,11 @@ technologies = {
 			need = {
 				armored_car_equipment = -4
 			}
+			soft_attack = 0.35
+			hard_attack = 0.3
+			breakthrough = 0.5
+			armor_value = 0.6
+			hardness = 1
 			
 			plains = {
 				movement = -0.1
@@ -2271,6 +2281,11 @@ technologies = {
 			need = {
 				armored_car_equipment = -4
 			}
+			soft_attack = 0.35
+			hard_attack = 0.3
+			breakthrough = 0.5
+			armor_value = 0.6
+			hardness = 1
 			
 			plains = {
 				movement = -0.1
@@ -3056,6 +3071,11 @@ technologies = {
 			need = {
 				armored_car_equipment = -4
 			}
+			soft_attack = 0.35
+			hard_attack = 0.3
+			breakthrough = 0.5
+			armor_value = 0.6
+			hardness = 1
 			
 			plains = {
 				movement = -0.1
@@ -3841,6 +3861,11 @@ technologies = {
 			need = {
 				armored_car_equipment = -4
 			}
+			soft_attack = 0.35
+			hard_attack = 0.3
+			breakthrough = 0.5
+			armor_value = 0.6
+			hardness = 1
 			
 			plains = {
 				movement = -0.1

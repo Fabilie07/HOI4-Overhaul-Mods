@@ -196,7 +196,7 @@
  tom_inf_platoon_1212_stats:0 "§YFort:§!\n  Attack: §G+25%§!\n  Defense & Breakthrough: §G+10%§!\n§YRiver:§!\n  Attack: §G+15%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+15%§!\n\n"
  tom_inf_platoon_1220_stats:0 "§YForest, Jungle, Mountain:§!\n  Movement: §G+10%§!\n\n"
  tom_inf_platoon_1221_stats:0 "§YPlains, Hills, Desert, Urban:§!\n  Movement: §G+10%§!\n\n"
- tom_inf_platoon_1222_stats:0 "§YPlains, Desert:§!\n  Movement: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n\n"
+ tom_inf_platoon_1222_stats:0 "Soft Attack: §R-35%§!\nHard Attack: §R-30%§!\nBreakthrough: §R-50%§!\nArmor: §R-60%§!\nHardness: §R-100%§!\n§YPlains, Desert:§!\n  Movement: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_1223_stats:0 "Defense: §G+10%§!\n§YForest, Hills, Jungle, Mountain:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_1230_stats:0 "HP: §G+10%§!\nRecovery Rate: §G+10%§!\nTrickleback & War Support Protection: §G+2%§!\nExp Loss: §G-2%§!\n\n"
  tom_inf_platoon_1240_stats:0 "Organization: §G+5§!\nInitiative: §G+2%§!\n\n"
