@@ -260,7 +260,7 @@ special_forces_dominance = {
 	experience_loss_factor = -0.15
     special_forces_min = 120
 	special_forces_cap = -0.85
-	weekly_casualties_war_support = -0.2
+	weekly_casualties_war_support = -0.05
 
     milestones = {
         {
