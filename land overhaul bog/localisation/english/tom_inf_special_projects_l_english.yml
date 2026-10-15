@@ -1,3 +1,5 @@
 ﻿l_english:
  sp_land_advanced_gas_operated_reloading:0 "Advanced Gas Operated Reloading"
  sp_land_advanced_gas_operated_reloading_desc:0 "Using gases produced from firing a bullet to load the next round is vital for repeating firearms. With extensive research, this system can be perfected."
+ sp_land_basic_body_armor:0 "Basic Body Armor"
+ sp_land_basic_body_armor_desc:0 "The Great War has proven the effectiveness of equipping shock troops with armor plates, but the increase in rifle power requires new innovation in the field."

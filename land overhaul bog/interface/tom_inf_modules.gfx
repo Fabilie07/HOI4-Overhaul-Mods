@@ -36,6 +36,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_inf_body_armor"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/body_armor_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_inf_support_equipment"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/shovel.dds"
 		legacy_lazy_load = no
@@ -311,6 +316,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_inf_cleaning_kit"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/cleaning_kit.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_inf_body_armor_1"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/body_armor_1.dds"
 		legacy_lazy_load = no
 	}
 	

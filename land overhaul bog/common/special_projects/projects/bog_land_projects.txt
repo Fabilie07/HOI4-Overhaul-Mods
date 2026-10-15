@@ -74,3 +74,56 @@ sp_land_advanced_gas_operated_reloading = {
 		sp_land_generic_reward_resource_scarcity
 	}
 }
+
+sp_land_basic_body_armor = {
+	specialization = specialization_land
+
+	project_tags = sp_tag_artillery
+
+	ai_will_do = {
+		base = 1
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	resource_cost = {
+		resources = {
+			steel = 6
+			chromium = 2
+		}
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.medium
+	
+	project_output = {
+		enable_equipment_modules = {
+			inf_body_armor_1
+		}
+		
+		sub_unit_bonus = {
+			category_special_forces = {
+				breakthrough = 0.05
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}

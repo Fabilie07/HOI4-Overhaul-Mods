@@ -108,7 +108,6 @@ technologies = {
 	}
 	
 	
-	
 	### SPECIAL FORCES ####
 	tom_inf_spf_upgrade_marines = {
 		allow = {

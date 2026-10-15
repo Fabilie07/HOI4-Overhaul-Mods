@@ -61,6 +61,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 					inf_support_weapon
 				}
 			}
@@ -69,6 +70,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 			support_equipment_3_slot = {
@@ -76,6 +78,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 			support_equipment_4_slot = {
@@ -83,6 +86,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 			
@@ -110,6 +114,10 @@ equipments = {
 		module_count_limit = {
 			category = inf_grenade
 			count < 3
+		}
+		module_count_limit = {
+			category = inf_body_armor
+			count < 2
 		}
 		
 		module_count_limit = {
