@@ -2,11 +2,16 @@
 			always = no
 		}
 		infantry = {
-			max_strength = 0.1
-			default_morale = 0.1
-			casualty_trickleback = 0.02
-			experience_loss_factor = -0.02
+			maximum_speed = 0.2
+			breakthrough = -0.4
+			defense = -0.6
+			armor_value = -0.6
+			hardness = -1
+			
+			river = {
+				movement = -0.2
+			}
 			need = {
-				support_equipment = 8
+				mechanized_equipment = 12
 			}
 		}

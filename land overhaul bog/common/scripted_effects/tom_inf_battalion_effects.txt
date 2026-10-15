@@ -1294,6 +1294,18 @@ tom_inf_battalion_platoon_add_effect = {
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:motorized_equipment }
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 12 }
 		}
+		
+		set_temp_variable = { temp_terrain_id = 1 }
+		set_temp_variable = { temp_terrain_movement = -30 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
+		
+		set_temp_variable = { temp_terrain_id = 6 }
+		set_temp_variable = { temp_terrain_movement = -30 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
+		
+		set_temp_variable = { temp_terrain_id = 12 }
+		set_temp_variable = { temp_terrain_movement = -10 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -1301,9 +1313,9 @@ tom_inf_battalion_platoon_add_effect = {
 		}
 		add_to_variable = { tom_inf_bat_popup_1201_count = 1 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^0 = 20 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^3 = -20 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = -20 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^5 = -50 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^3 = -60 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = -40 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^5 = -60 }
 		if = {
 			limit = {
 				is_in_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:mechanized_equipment }
@@ -1322,6 +1334,10 @@ tom_inf_battalion_platoon_add_effect = {
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:mechanized_equipment }
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 12 }
 		}
+		
+		set_temp_variable = { temp_terrain_id = 12 }
+		set_temp_variable = { temp_terrain_movement = -20 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2685,6 +2701,18 @@ tom_inf_battalion_platoon_remove_effect = {
 			}
 		}
 		tom_inf_bat_remove_empty_equipment_effect = yes
+		
+		set_temp_variable = { temp_terrain_id = 1 }
+		set_temp_variable = { temp_terrain_movement = 30 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
+		
+		set_temp_variable = { temp_terrain_id = 6 }
+		set_temp_variable = { temp_terrain_movement = 30 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
+		
+		set_temp_variable = { temp_terrain_id = 12 }
+		set_temp_variable = { temp_terrain_movement = 10 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2692,9 +2720,9 @@ tom_inf_battalion_platoon_remove_effect = {
 		}
 		add_to_variable = { tom_inf_bat_popup_1201_count = -1 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^0 = -20 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^3 = 20 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = 20 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^5 = 50 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^3 = 60 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = 40 }
+		add_to_variable = { tom_inf_bat_popup_combat_stats_array^5 = 60 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
 			value = unimportant
@@ -2706,6 +2734,10 @@ tom_inf_battalion_platoon_remove_effect = {
 			}
 		}
 		tom_inf_bat_remove_empty_equipment_effect = yes
+		
+		set_temp_variable = { temp_terrain_id = 12 }
+		set_temp_variable = { temp_terrain_movement = 20 }
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2727,29 +2759,29 @@ tom_inf_battalion_platoon_remove_effect = {
 		
 		set_temp_variable = { temp_terrain_id = 1 }
 		set_temp_variable = { temp_terrain_defense = -20 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 2 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 6 }
 		set_temp_variable = { temp_terrain_defense = -20 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 7 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 10 }
 		set_temp_variable = { temp_terrain_attack = -10 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 12 }
 		set_temp_variable = { temp_terrain_movement = -10 }
 		set_temp_variable = { temp_terrain_defense = -20 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2771,27 +2803,27 @@ tom_inf_battalion_platoon_remove_effect = {
 		
 		set_temp_variable = { temp_terrain_id = 2 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 7 }
 		set_temp_variable = { temp_terrain_defense = -10 }
 		set_temp_variable = { temp_terrain_attack = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 10 }
 		set_temp_variable = { temp_terrain_defense = -20 }
 		set_temp_variable = { temp_terrain_attack = -20 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 11 }
 		set_temp_variable = { temp_terrain_attack = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 12 }
 		set_temp_variable = { temp_terrain_movement = -20 }
 		set_temp_variable = { temp_terrain_defense = -20 }
 		set_temp_variable = { temp_terrain_attack = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2813,16 +2845,16 @@ tom_inf_battalion_platoon_remove_effect = {
 		set_temp_variable = { temp_terrain_id = 10 }
 		set_temp_variable = { temp_terrain_attack = -25 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 11 }
 		set_temp_variable = { temp_terrain_attack = -15 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 12 }
 		set_temp_variable = { temp_terrain_attack = -15 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2854,15 +2886,15 @@ tom_inf_battalion_platoon_remove_effect = {
 		
 		set_temp_variable = { temp_terrain_id = 1 }
 		set_temp_variable = { temp_terrain_movement = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 3 }
 		set_temp_variable = { temp_terrain_movement = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 6 }
 		set_temp_variable = { temp_terrain_movement = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2894,19 +2926,19 @@ tom_inf_battalion_platoon_remove_effect = {
 		
 		set_temp_variable = { temp_terrain_id = 2 }
 		set_temp_variable = { temp_terrain_movement = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 4 }
 		set_temp_variable = { temp_terrain_movement = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 5 }
 		set_temp_variable = { temp_terrain_movement = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 8 }
 		set_temp_variable = { temp_terrain_movement = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2939,12 +2971,12 @@ tom_inf_battalion_platoon_remove_effect = {
 		set_temp_variable = { temp_terrain_id = 4 }
 		set_temp_variable = { temp_terrain_movement = -10 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 8 }
 		set_temp_variable = { temp_terrain_movement = -10 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -2966,19 +2998,19 @@ tom_inf_battalion_platoon_remove_effect = {
 		
 		set_temp_variable = { temp_terrain_id = 1 }
 		set_temp_variable = { temp_terrain_defense = -20 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 2 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 3 }
 		set_temp_variable = { temp_terrain_defense = -10 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 		
 		set_temp_variable = { temp_terrain_id = 6 }
 		set_temp_variable = { temp_terrain_defense = -20 }
-		tom_inf_bat_remove_terrain_modifier_effect = yes
+		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	else_if = {
 		limit = {
@@ -3727,6 +3759,30 @@ tom_inf_bat_add_terrain_modifier_effect = {
 				add_to_variable = { tom_inf_bat_popup_terrain_movement_array^terrain_index = temp_terrain_movement }
 				add_to_variable = { tom_inf_bat_popup_terrain_attack_array^terrain_index = temp_terrain_attack }
 				add_to_variable = { tom_inf_bat_popup_terrain_defense_array^terrain_index = temp_terrain_defense }
+				
+				if = {
+					limit = {
+						check_variable = { tom_inf_bat_popup_terrain_movement_array^terrain_index = 0 }
+						check_variable = { tom_inf_bat_popup_terrain_attack_array^terrain_index = 0 }
+						check_variable = { tom_inf_bat_popup_terrain_defense_array^terrain_index = 0 }
+					}
+					remove_from_array = {
+						array = tom_inf_bat_popup_terrain_bonus_array
+						index = terrain_index
+					}
+					remove_from_array = {
+						array = tom_inf_bat_popup_terrain_movement_array
+						index = terrain_index
+					}
+					remove_from_array = {
+						array = tom_inf_bat_popup_terrain_attack_array
+						index = terrain_index
+					}
+					remove_from_array = {
+						array = tom_inf_bat_popup_terrain_defense_array
+						index = terrain_index
+					}
+				}
 			}
 		}
 	}
@@ -3735,50 +3791,6 @@ tom_inf_bat_add_terrain_modifier_effect = {
 		add_to_array = { tom_inf_bat_popup_terrain_movement_array = temp_terrain_movement }
 		add_to_array = { tom_inf_bat_popup_terrain_attack_array = temp_terrain_attack }
 		add_to_array = { tom_inf_bat_popup_terrain_defense_array = temp_terrain_defense }
-	}
-	
-	set_temp_variable = { temp_terrain_movement = 0 }
-	set_temp_variable = { temp_terrain_attack = 0 }
-	set_temp_variable = { temp_terrain_defense = 0 }
-}
-
-tom_inf_bat_remove_terrain_modifier_effect = {
-	for_each_loop = {
-		array = tom_inf_bat_popup_terrain_bonus_array
-		value = terrain_value
-		index = terrain_index
-		if = {
-			limit = {
-				check_variable = { terrain_value = temp_terrain_id }
-			}
-			add_to_variable = { tom_inf_bat_popup_terrain_movement_array^terrain_index = temp_terrain_movement }
-			add_to_variable = { tom_inf_bat_popup_terrain_attack_array^terrain_index = temp_terrain_attack }
-			add_to_variable = { tom_inf_bat_popup_terrain_defense_array^terrain_index = temp_terrain_defense }
-			
-			if = {
-				limit = {
-					check_variable = { tom_inf_bat_popup_terrain_movement_array^terrain_index = 0 }
-					check_variable = { tom_inf_bat_popup_terrain_attack_array^terrain_index = 0 }
-					check_variable = { tom_inf_bat_popup_terrain_defense_array^terrain_index = 0 }
-				}
-				remove_from_array = {
-					array = tom_inf_bat_popup_terrain_bonus_array
-					index = terrain_index
-				}
-				remove_from_array = {
-					array = tom_inf_bat_popup_terrain_movement_array
-					index = terrain_index
-				}
-				remove_from_array = {
-					array = tom_inf_bat_popup_terrain_attack_array
-					index = terrain_index
-				}
-				remove_from_array = {
-					array = tom_inf_bat_popup_terrain_defense_array
-					index = terrain_index
-				}
-			}
-		}
 	}
 	
 	set_temp_variable = { temp_terrain_movement = 0 }

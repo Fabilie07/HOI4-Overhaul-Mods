@@ -189,8 +189,8 @@
  tom_inf_platoon_1122_stats:0 "Hard Attack: §G+20-30%§!\n$tom_inf_platoon_support_stats$"
  tom_inf_platoon_1130_stats:0 "Hard Attack: §R-20%§!\nAir Attack: §R-80%§!\nPiercing: §R-20%§!\n\n"
  
- tom_inf_platoon_1200_stats:0 "Max Speed: §G+20%§!\n\n"
- tom_inf_platoon_1201_stats:0 "Max Speed: §G+20%§!\nDefense: §R-20%§!\nBreakthrough: §R-20%§!\nArmor: §R-50%§!\nHardness: §R-100%§!\n\n"
+ tom_inf_platoon_1200_stats:0 "Max Speed: §G+20%§!\n§YForest, Jungle:§!\n  Movement: §R-30%§!\n§YRiver:§!\n  Movement: §R-10%§!\n\n"
+ tom_inf_platoon_1201_stats:0 "Max Speed: §G+20%§!\nDefense: §R-60%§!\nBreakthrough: §R-40%§!\nArmor: §R-60%§!\nHardness: §R-100%§!\n§YRiver:§!\n  Movement: §R-20%§!\n\n"
  tom_inf_platoon_1210_stats:0 "Entrenchment: §G+10%§!\n§YRiver:§!\n  Defense & Breakthrough: §G+20%§!\n  Movement: §G+10%§!\n§YFort:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n§YForest, Jungle:§!\n  Defense & Breakthrough: §G+20%§!\n§YHills, Jungle:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_1211_stats:0 "Breakthrough: §G+5%§!\n§YRiver:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+20%§!\n  Movement: §G+20%§!\n§YFort:§!\n  Attack: §G+20%§!\n  Defense & Breakthrough: §G+20%§!\n§YMarsh:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+10%§!\n§YHills:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_1212_stats:0 "§YFort:§!\n  Attack: §G+25%§!\n  Defense & Breakthrough: §G+10%§!\n§YRiver:§!\n  Attack: §G+15%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+15%§!\n\n"

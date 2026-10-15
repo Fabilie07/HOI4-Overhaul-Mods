@@ -522,6 +522,16 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
+			
+			forest = {
+				movement = 0.3
+			}
+			jungle = {
+				movement = 0.3
+			}
+			river = {
+				movement = 0.1
+			}
 			need = {
 				motorized_equipment = -12
 			}
@@ -536,10 +546,14 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
-			breakthrough = 0.2
-			defense = 0.2
-			armor_value = 0.5
+			breakthrough = 0.4
+			defense = 0.6
+			armor_value = 0.6
 			hardness = 1
+			
+			river = {
+				movement = 0.2
+			}
 			need = {
 				mechanized_equipment = -12
 			}
@@ -1328,6 +1342,16 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
+			
+			forest = {
+				movement = 0.3
+			}
+			jungle = {
+				movement = 0.3
+			}
+			river = {
+				movement = 0.1
+			}
 			need = {
 				motorized_equipment = -12
 			}
@@ -1342,10 +1366,14 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
-			breakthrough = 0.2
-			defense = 0.2
-			armor_value = 0.5
+			breakthrough = 0.4
+			defense = 0.6
+			armor_value = 0.6
 			hardness = 1
+			
+			river = {
+				movement = 0.2
+			}
 			need = {
 				mechanized_equipment = -12
 			}
@@ -2134,6 +2162,16 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
+			
+			forest = {
+				movement = 0.3
+			}
+			jungle = {
+				movement = 0.3
+			}
+			river = {
+				movement = 0.1
+			}
 			need = {
 				motorized_equipment = -12
 			}
@@ -2148,10 +2186,14 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
-			breakthrough = 0.2
-			defense = 0.2
-			armor_value = 0.5
+			breakthrough = 0.4
+			defense = 0.6
+			armor_value = 0.6
 			hardness = 1
+			
+			river = {
+				movement = 0.2
+			}
 			need = {
 				mechanized_equipment = -12
 			}
@@ -2940,6 +2982,16 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
+			
+			forest = {
+				movement = 0.3
+			}
+			jungle = {
+				movement = 0.3
+			}
+			river = {
+				movement = 0.1
+			}
 			need = {
 				motorized_equipment = -12
 			}
@@ -2954,10 +3006,14 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
-			breakthrough = 0.2
-			defense = 0.2
-			armor_value = 0.5
+			breakthrough = 0.4
+			defense = 0.6
+			armor_value = 0.6
 			hardness = 1
+			
+			river = {
+				movement = 0.2
+			}
 			need = {
 				mechanized_equipment = -12
 			}
@@ -3746,6 +3802,16 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
+			
+			forest = {
+				movement = 0.3
+			}
+			jungle = {
+				movement = 0.3
+			}
+			river = {
+				movement = 0.1
+			}
 			need = {
 				motorized_equipment = -12
 			}
@@ -3760,10 +3826,14 @@ technologies = {
 		}
 		marine = {
 			maximum_speed = -0.2
-			breakthrough = 0.2
-			defense = 0.2
-			armor_value = 0.5
+			breakthrough = 0.4
+			defense = 0.6
+			armor_value = 0.6
 			hardness = 1
+			
+			river = {
+				movement = 0.2
+			}
 			need = {
 				mechanized_equipment = -12
 			}
