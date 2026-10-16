@@ -207,6 +207,7 @@ equipments = {
 					inf_support_equipment
 					inf_grenade
 					inf_support_weapon
+					inf_body_armor
 				}
 			}
 			support_equipment_2_slot = {
@@ -214,6 +215,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 			support_equipment_3_slot = {
@@ -221,6 +223,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 			support_equipment_4_slot = {
@@ -228,6 +231,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 			support_equipment_5_slot = {
@@ -235,6 +239,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 			support_equipment_6_slot = {
@@ -242,6 +247,7 @@ equipments = {
 				allowed_module_categories = {
 					inf_support_equipment
 					inf_grenade
+					inf_body_armor
 				}
 			}
 		}
@@ -249,6 +255,27 @@ equipments = {
 		module_count_limit = {
 			category = inf_grenade
 			count < 3
+		}
+		module_count_limit = {
+			category = inf_body_armor
+			count < 2
+		}
+		
+		module_count_limit = {
+			module = inf_shovel
+			count < 2
+		}
+		module_count_limit = {
+			module = inf_bayonet
+			count < 2
+		}
+		module_count_limit = {
+			module = inf_pocket_knife
+			count < 2
+		}
+		module_count_limit = {
+			module = inf_cleaning_kit
+			count < 2
 		}
 		
 		default_modules = {

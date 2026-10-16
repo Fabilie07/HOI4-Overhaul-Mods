@@ -112,6 +112,12 @@ equipments = {
 					mg_special_module
 				}
 			}
+			support_equipment_4_slot = {
+				required = no
+				allowed_module_categories = {
+					mg_special_module
+				}
+			}
 		}
 		
 		module_count_limit = {
@@ -322,6 +328,12 @@ equipments = {
 				}
 			}
 			support_equipment_3_slot = {
+				required = no
+				allowed_module_categories = {
+					mg_special_module
+				}
+			}
+			support_equipment_4_slot = {
 				required = no
 				allowed_module_categories = {
 					mg_special_module
@@ -552,6 +564,12 @@ equipments = {
 				allowed_module_categories = {
 					mg_special_module
 					mg_special_module_large
+				}
+			}
+			support_equipment_4_slot = {
+				required = no
+				allowed_module_categories = {
+					mg_special_module
 				}
 			}
 		}
