@@ -5,6 +5,5 @@ tags={
 dependencies={
 	"*DEV* NSB Tank Overhaul - Boots on Ground Compatch"
 }
-name="*DEV* Vanilla - Boots on Ground Addon"
+name="*DEV* [BoG] Vanilla Compatch"
 supported_version="1.19.*"
-remote_file_id="3647731053"
