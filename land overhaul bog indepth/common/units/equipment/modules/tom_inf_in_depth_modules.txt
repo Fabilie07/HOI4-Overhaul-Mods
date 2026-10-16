@@ -74,7 +74,7 @@ equipment_modules = {
 		category = inf_material_receiver
 		
 		add_stats = {
-			reliability = 0.1
+			reliability = -0.1
 		}
 		
 		build_cost_resources = {
