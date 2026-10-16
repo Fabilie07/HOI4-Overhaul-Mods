@@ -1402,7 +1402,9 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_tiny_main_armament
+					tank_light_turret_type
+					tank_medium_turret_type
+					tank_heavy_turret_type
 					tank_super_heavy_turret_type
 				}
 			}
@@ -1410,6 +1412,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
+					tank_tiny_main_armament
 					tank_small_main_armament
 				}
 			}
