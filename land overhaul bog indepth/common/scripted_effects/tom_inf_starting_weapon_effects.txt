@@ -274,6 +274,7 @@ tom_inf_starting_weapons_ITA = {
 		modules = {
 			support_equipment_1_slot = inf_grenade_frag
 			support_equipment_2_slot = inf_bayonet
+			fixed_rifling_slot = inf_rifled_barrel_progressive
 			fixed_sights_slot = inf_sights_1
 			fixed_barrel_slot = inf_barrel_carbine
 			fixed_cartridge_slot = inf_cartridge_rifle_65

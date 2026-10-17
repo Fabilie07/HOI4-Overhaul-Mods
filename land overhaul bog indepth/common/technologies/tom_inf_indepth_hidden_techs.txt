@@ -5,6 +5,8 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
+			inf_rifled_barrel_chrome
+			inf_rifled_barrel_progressive
 			inf_rifled_barrel
 			inf_smooth_barrel
 			

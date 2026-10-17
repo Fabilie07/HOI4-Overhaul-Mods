@@ -1,6 +1,16 @@
 spriteTypes = {
 	### RIFLING
 	spriteType = {
+		name = "GFX_EMI_inf_rifled_barrel_chrome"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_rifled_chrome.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_rifled_barrel_progressive"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_rifled_progressive.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_inf_rifled_barrel"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/barrel_rifled.dds"
 		legacy_lazy_load = no

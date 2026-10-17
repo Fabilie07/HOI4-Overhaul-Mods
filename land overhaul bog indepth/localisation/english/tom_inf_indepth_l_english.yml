@@ -34,6 +34,10 @@
  EQ_MOD_CAT_inf_backplate_TITLE: "Butt Plate"
  EQ_MOD_CAT_inf_foregrip_TITLE: "Foregrip"
  
+ inf_rifled_barrel_chrome:0 "Chrome-Lined Barrel"
+ inf_rifled_barrel_chrome_desc:0 "A thin lining of chrome to the barrel's rifling makes it more resistant against corrosion, meaning it is easier to maintain and doesn't need to be replaced as often."
+ inf_rifled_barrel_progressive:0 "Progressively Rifled Barrel"
+ inf_rifled_barrel_progressive_desc:0 "This rifling gradually increases its twist as the bullet travels down the barrel, instead of forcing it to spin at maximum speed from the start. This reduces the wear from firing."
  inf_rifled_barrel:0 "Rifled Barrel"
  inf_rifled_barrel_desc:0 "Small grooves are added to the inside of the barrel, which spin the round as it travels down it. This increases the in-flight stability of the round."
  inf_smooth_barrel:0 "Smooth Barrel"

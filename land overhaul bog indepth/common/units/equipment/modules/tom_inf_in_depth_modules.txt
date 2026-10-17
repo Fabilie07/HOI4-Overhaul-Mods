@@ -1,10 +1,34 @@
 equipment_modules = {
 	# RIFLING
+	inf_rifled_barrel_chrome = {
+		category = inf_rifling
+		
+		add_stats = {
+			soft_attack = 0.5
+		}
+		
+		build_cost_resources = {
+			chromium = 1
+		}
+		xp_cost = 1
+	}
+	
+	inf_rifled_barrel_progressive = {
+		category = inf_rifling
+		
+		add_stats = {
+			soft_attack = 0.5
+			build_cost_ic = 0.02
+		}
+		xp_cost = 1
+	}
+	
 	inf_rifled_barrel = {
 		category = inf_rifling
 		
 		add_stats = {
 			soft_attack = 0.5
+			reliability = -0.05
 		}
 		xp_cost = 1
 	}
@@ -13,6 +37,7 @@ equipment_modules = {
 		category = inf_rifling
 		
 		multiply_stats = {
+			soft_attack = -0.1
 			build_cost_ic = -0.05
 		}
 		xp_cost = 1
