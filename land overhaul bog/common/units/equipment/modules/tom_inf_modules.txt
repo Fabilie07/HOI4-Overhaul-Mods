@@ -43,7 +43,7 @@ equipment_modules = {
 		category = inf_fire_mode
 		
 		add_stats = {
-			soft_attack = 8
+			soft_attack = 6
 			breakthrough = 2
 			reliability = -0.2
 			build_cost_ic = 0.4
@@ -437,11 +437,11 @@ equipment_modules = {
 		category = inf_support_weapon
 		
 		add_stats = {
-			soft_attack = 3
+			soft_attack = 2
 			defense = 6
 			
 			reliability = -0.05
-			build_cost_ic = 0.3
+			build_cost_ic = 0.2
 		}
 		build_cost_resources = {
 			steel = 1
@@ -453,11 +453,11 @@ equipment_modules = {
 		category = inf_support_weapon
 		
 		add_stats = {
-			soft_attack = 4
+			soft_attack = 3
 			defense = 8
 			
 			reliability = -0.05
-			build_cost_ic = 0.35
+			build_cost_ic = 0.25
 		}
 		build_cost_resources = {
 			steel = 1
@@ -472,8 +472,7 @@ equipment_modules = {
 			soft_attack = 2
 			breakthrough = 4
 			
-			reliability = -0.05
-			build_cost_ic = 0.3
+			build_cost_ic = 0.2
 		}
 		build_cost_resources = {
 			steel = 1
@@ -485,12 +484,12 @@ equipment_modules = {
 		category = inf_support_weapon
 		
 		add_stats = {
-			soft_attack = 4
-			breakthrough = 8
+			soft_attack = 3
+			breakthrough = 4
 			defense = 2
 			
-			reliability = -0.15
-			build_cost_ic = 0.55
+			reliability = -0.1
+			build_cost_ic = 0.35
 		}
 		build_cost_resources = {
 			steel = 1
@@ -502,12 +501,12 @@ equipment_modules = {
 		category = inf_support_weapon
 		
 		add_stats = {
-			soft_attack = 6
-			breakthrough = 12
-			defense = 4
+			soft_attack = 4
+			breakthrough = 6
+			defense = 3
 			
 			reliability = -0.1
-			build_cost_ic = 0.6
+			build_cost_ic = 0.4
 		}
 		build_cost_resources = {
 			steel = 1
@@ -522,7 +521,7 @@ equipment_modules = {
 		
 		add_stats = {
 			breakthrough = 1
-			soft_attack = 2
+			soft_attack = 1
 			
 			build_cost_ic = 0.02
 		}
@@ -534,7 +533,7 @@ equipment_modules = {
 		category = inf_grenade
 		
 		add_stats = {
-			soft_attack = 2.5
+			soft_attack = 1.5
 			
 			build_cost_ic = 0.02
 		}
@@ -546,10 +545,10 @@ equipment_modules = {
 		category = inf_grenade
 		
 		add_stats = {
-			soft_attack = 1.5
-			hard_attack = 1.5
+			soft_attack = 1
+			hard_attack = 1
 			
-			build_cost_ic = 0.04
+			build_cost_ic = 0.02
 		}
 		
 		xp_cost = 1
@@ -559,8 +558,8 @@ equipment_modules = {
 		category = inf_grenade
 		
 		add_stats = {
-			defense = 4
-			hard_attack = 0.5
+			defense = 2
+			hard_attack = 1
 			
 			build_cost_ic = 0.02
 		}
@@ -572,8 +571,8 @@ equipment_modules = {
 		category = inf_grenade
 		
 		add_stats = {
-			breakthrough = 3
-			defense = 3
+			breakthrough = 2
+			defense = 2
 			
 			build_cost_ic = 0.02
 		}
@@ -585,7 +584,8 @@ equipment_modules = {
 		category = inf_grenade
 		
 		add_stats = {
-			breakthrough = 6
+			breakthrough = 2
+			soft_attack = 1
 			
 			build_cost_ic = 0.02
 		}
@@ -600,9 +600,12 @@ equipment_modules = {
 		
 		add_stats = {
 			hard_attack = 4
-			ap_attack = 10
 			
 			build_cost_ic = 0.05
+		}
+		
+		add_average_stats = {
+			ap_attack = 10
 		}
 		
 		xp_cost = 1
@@ -612,10 +615,13 @@ equipment_modules = {
 		category = inf_support_equipment
 		
 		add_stats = {
-			hard_attack = 8
-			ap_attack = 18
+			hard_attack = 6
 			
 			build_cost_ic = 0.07
+		}
+		
+		add_average_stats = {
+			ap_attack = 18
 		}
 		
 		xp_cost = 1
