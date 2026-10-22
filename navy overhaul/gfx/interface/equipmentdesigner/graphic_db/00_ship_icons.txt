@@ -59,6 +59,19 @@
 #default carrier needs all levels to specifiy that early generic carrier comes at the bottom of the later teirs.
 default = {
 
+	ship_hull_auxiliary = {
+		pool = {
+		icons_weight = 5001.1
+		models_weight = 0.1
+
+			icons = {
+			}
+			models = {
+				support_ship_entity #Generic
+			}
+		}
+	}
+
 #   ###  ##  #  # ###      ## #  # ### ###  
 #    #  #    #  #  #      #   #  #  #  #  # 
 #    #  # ## ####  #       #  ####  #  ###  
