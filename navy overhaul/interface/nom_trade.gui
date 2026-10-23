@@ -788,7 +788,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_cv_1"
 			position = { x = 52 y = 8 }
-			spriteType = "GFX_early_ship_hull_carrier_medium"
+			spriteType = "GFX_early_ship_hull_carrier_light_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements_no_date
 				PARTNER = "ENG"
@@ -808,7 +808,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_bb_1"
 			position = { x = 52 y = 248 }
-			spriteType = "GFX_early_ship_hull_heavy_medium"
+			spriteType = "GFX_basic_super_dreadnought_ship_hull_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements_no_date
 				PARTNER = "ENG"
@@ -869,7 +869,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_bc_1"
 			position = { x = 52 y = 328 }
-			spriteType = "GFX_early_ship_hull_heavy_medium"
+			spriteType = "GFX_improved_battlecruiser_hull_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements_no_date
 				PARTNER = "ENG"
@@ -889,7 +889,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_ca_1"
 			position = { x = 52 y = 408 }
-			spriteType = "GFX_ship_hull_cruiser_1_capital_medium"
+			spriteType = "GFX_early_heavy_cruiser_hull_2_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements_no_date
 				PARTNER = "ENG"
@@ -909,7 +909,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_ca_2"
 			position = { x = 52 y = 488 }
-			spriteType = "GFX_ship_hull_cruiser_1_capital_medium"
+			spriteType = "GFX_early_heavy_cruiser_hull_2_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements_capital
 				DATE = "1 March 1941"
@@ -930,7 +930,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_cl_1"
 			position = { x = 52 y = 568 }
-			spriteType = "GFX_ENG_basic_ship_hull_cruiser_medium"
+			spriteType = "GFX_early_ship_hull_cruiser_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements
 				DATE = "23 January 1936"
@@ -950,7 +950,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_cl_2"
 			position = { x = 52 y = 648 }
-			spriteType = "GFX_ENG_basic_ship_hull_cruiser_medium"
+			spriteType = "GFX_early_ship_hull_cruiser_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements
 				DATE = "17 March 1939"
@@ -970,7 +970,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_cl_3"
 			position = { x = 52 y = 728 }
-			spriteType = "GFX_ENG_improved_ship_hull_cruiser_medium"
+			spriteType = "GFX_basic_ship_hull_cruiser_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements
 				DATE = "31 May 1939"
@@ -990,7 +990,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_dd_1"
 			position = { x = 52 y = 808 }
-			spriteType = "GFX_basic_ship_hull_light_medium"
+			spriteType = "GFX_early_ship_hull_light_medium"
 		}
 		
 		iconType = {
@@ -1006,7 +1006,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_dd_2"
 			position = { x = 52 y = 888 }
-			spriteType = "GFX_improved_ship_hull_light_medium"
+			spriteType = "GFX_basic_ship_hull_light_medium"
 			bound_tooltip = {
 				localization_key = loc_nom_trade_requirements
 				DATE = "22 April 1940"
@@ -1026,7 +1026,7 @@ guiTypes = {
 		buttonType = {
 			name = "ENG_ss_1"
 			position = { x = 52 y = 968 }
-			spriteType = "GFX_early_ship_hull_submarine_medium"
+			spriteType = "GFX_early_submarine_hull_4_medium"
 		}
 	}
 	
