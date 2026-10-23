@@ -2967,7 +2967,18 @@ scripted_gui = {
 					base = 10
 					modifier = {
 						factor = 0
-						has_country_flag = nom_ai_deal_satisfaction
+						OR = {
+							has_country_flag = nom_ai_deal_satisfaction
+							AND = {
+								nom_ai_wants_cv = no
+								nom_ai_wants_bb = no
+								nom_ai_wants_bc = no
+								nom_ai_wants_ca = no
+								nom_ai_wants_cl = no
+								nom_ai_wants_dd = no
+								nom_ai_wants_ss = no
+							}
+						}
 					}
 				}
 				weight = 1
