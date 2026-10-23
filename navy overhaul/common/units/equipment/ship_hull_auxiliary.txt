@@ -23,7 +23,7 @@ equipments = {
 		is_buildable = no
 		type = support_ship
 		interface_category = interface_category_screen_ships
-		alias = auxiliary_mine_layer
+		alias = mine_layer
 		
 		module_slots = {
 			fixed_ship_role_slot = {
