@@ -22,7 +22,7 @@
 		task_force = {				
 			name = "Mine Layers"				
 			location =  11105 # Helsinki			
-			ship = { name = "Louhi" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = FIN version_name = "Louhi" } } }				
+			ship = { name = "Louhi" definition = mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = FIN version_name = "Louhi" } } }				
 		}			
 	}
 }

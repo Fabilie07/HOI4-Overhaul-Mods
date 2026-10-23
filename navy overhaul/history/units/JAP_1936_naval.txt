@@ -78,9 +78,9 @@ units = {
 			ship = { name = "Matsukaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_early_destroyer_2 = {amount = 1 owner = JAP version_name = "Kamikaze"} } }
 			ship = { name = "Hatakaze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_early_destroyer_2 = {amount = 1 owner = JAP version_name = "Kamikaze"} } }
 			#Minelayers
-			ship = { name = "Natsushima" definition = destroyer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Natsushima"} } }
-			ship = { name = "Nasami" definition = destroyer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Natsushima"} } }
-			ship = { name = "Sarushima" definition = destroyer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Natsushima"} } }
+			ship = { name = "Natsushima" definition = mine_layer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Natsushima"} } }
+			ship = { name = "Nasami" definition = mine_layer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Natsushima"} } }
+			ship = { name = "Sarushima" definition = mine_layer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Natsushima"} } }
 		}
 		task_force = {
 			name = "Yokosuka Yobikantai" # Patrol and reserve fleet, including ships under modernization
@@ -242,9 +242,9 @@ units = {
 			ship = { name = "Hinoki" definition = destroyer equipment = { ship_hull_early_destroyer_2 = {amount = 1 owner = JAP version_name = "Momo"} } }
 			ship = { name = "Yanagi" definition = destroyer equipment = { ship_hull_early_destroyer_2 = {amount = 1 owner = JAP version_name = "Momo"} } }
 			#Minelayers
-			ship = { name = "Yaeyama" definition = destroyer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Yaeyama"} } }
-			ship = { name = "Shirataka" definition = destroyer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Shirataka"} } }
-			ship = { name = "Itsukushima" definition = destroyer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Itsukushima"} } }
+			ship = { name = "Yaeyama" definition = mine_layer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Yaeyama"} } }
+			ship = { name = "Shirataka" definition = mine_layer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Shirataka"} } }
+			ship = { name = "Itsukushima" definition = mine_layer equipment = { ship_hull_auxiliary_2 = {amount = 1 owner = JAP version_name = "Itsukushima"} } }
 		}
 		task_force = {
 			name = "5 Suirai Sentai" #A part of "Dai 3 Kantai"

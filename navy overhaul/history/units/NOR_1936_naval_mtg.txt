@@ -9,8 +9,8 @@
 			location =  9296 # Kristiansand
 			ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge" } } }				
 			ship = { name = "HNoMS Tordenskjold" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = NOR version_name = "Norge" } } }				
-			ship = { name = "HNoMS Olaf Tryggvason" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_2 = { amount = 1 owner = NOR version_name = "Olaf Tryggvason" } } }
-			ship = { name = "HNoMS Frøya" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = NOR version_name = "Frøya" } } }
+			ship = { name = "HNoMS Olaf Tryggvason" definition = mine_layer equipment = { ship_hull_auxiliary_2 = { amount = 1 owner = NOR version_name = "Olaf Tryggvason" } } }
+			ship = { name = "HNoMS Frøya" definition = mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = NOR version_name = "Frøya" } } }
 			# 1st Submarine Detachment
 			ship = { name = "HNoMS A2" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = NOR version_name = "A Class" } } }
 			ship = { name = "HNoMS A3" definition = submarine equipment = { ship_hull_early_submarine_4 = { amount = 1 owner = NOR version_name = "A Class" } } }

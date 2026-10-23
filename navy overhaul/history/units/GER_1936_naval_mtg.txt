@@ -41,8 +41,8 @@ units= {
 		task_force = {
 			name = "Marineschule Kiel"
 			location = 6389 	# Kiel
-			ship = { name = "Brummer" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = GER version_name = "Bremse" } } }			
-			ship = { name = "Bremse" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = GER version_name = "Bremse" } } }
+			ship = { name = "Brummer" definition = mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = GER version_name = "Bremse" } } }			
+			ship = { name = "Bremse" definition = mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = GER version_name = "Bremse" } } }
 		}
 	}
 	fleet = {

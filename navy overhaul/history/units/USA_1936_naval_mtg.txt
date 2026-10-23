@@ -63,8 +63,8 @@ units= {
 			ship = { name = "USS Trenton" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_early_cruiser_4 = { amount = 1 owner = USA version_name = "Omaha" } } }				
 			ship = { name = "USS Concord" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_early_cruiser_4 = { amount = 1 owner = USA version_name = "Omaha" } } }				
 			# Minlayer Division #		
-			ship = { name = "USS Oglala" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_2 = { amount = 1 owner = USA version_name = "Oglala" } } }				
-			ship = { name = "USS Aroostook" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_2 = { amount = 1 owner = USA version_name = "Oglala" } } }				
+			ship = { name = "USS Oglala" definition = mine_layer equipment = { ship_hull_auxiliary_2 = { amount = 1 owner = USA version_name = "Oglala" } } }				
+			ship = { name = "USS Aroostook" definition = mine_layer equipment = { ship_hull_auxiliary_2 = { amount = 1 owner = USA version_name = "Oglala" } } }				
 		}					
 		### Destroyer Flotilla 1 ###				
 		task_force = {					

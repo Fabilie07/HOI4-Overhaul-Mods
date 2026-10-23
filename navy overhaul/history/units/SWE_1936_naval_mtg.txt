@@ -10,7 +10,7 @@
 			ship = { name = "HMS Dristigheten" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SWE version_name = "Äran" } } }				
 			ship = { name = "HMS Örnen" definition = light_cruiser equipment = { ship_hull_early_cruiser_1 = { amount = 1 owner = SWE version_name = "Örnen" } } }		
 			ship = { name = "HMS Jacob Bagge" definition = light_cruiser equipment = { ship_hull_early_cruiser_1 = { amount = 1 owner = SWE version_name = "Örnen" } } }		
-			ship = { name = "HMS Clas Fleming" definition = auxiliary_mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = SWE version_name = "Clas Fleming" } } }				
+			ship = { name = "HMS Clas Fleming" definition = mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = SWE version_name = "Clas Fleming" } } }				
 		}
 		task_force = { 
 			name = "1a Eskadern"

@@ -40,7 +40,7 @@ units= {
 			location = 3151 # Leningrad
 			ship = { name = "Marat" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_dreadnought_2 = { amount = 1 owner = SOV version_name = "Gangut" } } }
 			ship = { name = "Oktyabrskaya Revolutsiya" definition = battleship equipment = { ship_hull_dreadnought_2 = { amount = 1 owner = SOV version_name = "Gangut" } } }
-			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = SOV version_name = "Marti" } } }
+			ship = { name = "Marti" definition = mine_layer equipment = { ship_hull_auxiliary_1 = { amount = 1 owner = SOV version_name = "Marti" } } }
 			# 3ya Flotiliya Esmintsev
 			ship = { name = "Engels" definition = destroyer equipment = { ship_hull_early_destroyer_2 = { amount = 1 owner = SOV version_name = "Orfey" } } }
 			ship = { name = "Artyom" definition = destroyer equipment = { ship_hull_early_destroyer_2 = { amount = 1 owner = SOV version_name = "Orfey" } } }
