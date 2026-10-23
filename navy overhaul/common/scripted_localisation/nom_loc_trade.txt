@@ -637,7 +637,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = ENG_cv_1_flag
 		}
-		localization_key = "Hermes Class Light Carrier"
+		localization_key = "Hermes Class Escort Carrier"
 	}
 	text = {
 		trigger = {
