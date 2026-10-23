@@ -4971,7 +4971,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 37.5
+				air_bombing = 32.5
 				air_agility = -40
 				weight = 30
 			}
@@ -5091,7 +5091,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 45
+				air_bombing = 37
 				air_agility = -50
 				weight = 50
 			}
@@ -5406,7 +5406,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 37.5
+				air_bombing = 32.5
 				air_agility = -50
 				weight = 30
 			}

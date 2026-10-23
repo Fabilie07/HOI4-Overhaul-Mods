@@ -1,0 +1,13 @@
+aom_build_aa_when_bombed = {
+	enable = {
+		any_controlled_state = {
+			days_since_last_strategic_bombing < 15
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = anti_air_building
+		value = 2000
+	}
+}
