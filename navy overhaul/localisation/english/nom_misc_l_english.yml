@@ -23,6 +23,20 @@
  RULE_AI_NO_NAVY_EXERCISES: "No AI Exercises"
  RULE_NAVY_AI_EXERCISE_DISABLED_DESC: "AI countries will conduct naval exercises as usual."
  RULE_NAVY_AI_EXERCISE_ENABLED_DESC: "AI countries will not conduct naval exercises, preventing desync in multiplayer games."
+ 
+ RULE_AI_SHIP_PRODUCTION:0 "Boost AI Ship Production"
+ RULE_AI_SHIP_PRODUCTION_DISABLED: "Disabled"
+ RULE_AI_SHIP_PRODUCTION_DISABLED_DESC: "AI nations will not gain reduced cost for ships."
+ RULE_AI_SHIP_PRODUCTION_1: "10%"
+ RULE_AI_SHIP_PRODUCTION_2: "20%"
+ RULE_AI_SHIP_PRODUCTION_3: "30%"
+ RULE_AI_SHIP_PRODUCTION_4: "40%"
+ RULE_AI_SHIP_PRODUCTION_5: "50%"
+ RULE_AI_SHIP_PRODUCTION_1_DESC: "AI nations get a 10% IC discount to all ships."
+ RULE_AI_SHIP_PRODUCTION_2_DESC: "AI nations get a 20% IC discount to all ships."
+ RULE_AI_SHIP_PRODUCTION_3_DESC: "AI nations get a 30% IC discount to all ships."
+ RULE_AI_SHIP_PRODUCTION_4_DESC: "AI nations get a 40% IC discount to all ships."
+ RULE_AI_SHIP_PRODUCTION_5_DESC: "AI nations get a 50% IC discount to all ships."
 
  NOM_joint_maneuver_idea:0 "Joint Maneuver Exercise Underway"
 

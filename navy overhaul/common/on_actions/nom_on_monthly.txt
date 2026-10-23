@@ -1,0 +1,82 @@
+on_actions = {
+	on_monthly = {
+		# AI Boosts
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = nom_ai_boosted_ship_production
+						option = ENABLED_1
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { has_idea = NOM_ai_production_boost_1 }
+						is_ai = yes
+					}
+					add_ideas = { NOM_ai_production_boost_1 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = nom_ai_boosted_ship_production
+						option = ENABLED_2
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { has_idea = NOM_ai_production_boost_2 }
+						is_ai = yes
+					}
+					add_ideas = { NOM_ai_production_boost_2 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = nom_ai_boosted_ship_production
+						option = ENABLED_3
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { has_idea = NOM_ai_production_boost_3 }
+						is_ai = yes
+					}
+					add_ideas = { NOM_ai_production_boost_3 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = nom_ai_boosted_ship_production
+						option = ENABLED_4
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { has_idea = NOM_ai_production_boost_4 }
+						is_ai = yes
+					}
+					add_ideas = { NOM_ai_production_boost_4 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = nom_ai_boosted_ship_production
+						option = ENABLED_5
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { has_idea = NOM_ai_production_boost_5 }
+						is_ai = yes
+					}
+					add_ideas = { NOM_ai_production_boost_5 }
+				}
+			}
+		}
+	}
+}
