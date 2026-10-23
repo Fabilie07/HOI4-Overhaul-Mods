@@ -310,6 +310,7 @@ equipments = {
 
 		archetype = ship_hull_auxiliary
 		priority = 2000
+		can_convert_from = { repair_ship_1 support_ship_1 }
 		
 		upgrades = {
 			ship_mtg_superstructure_upgrade
@@ -323,6 +324,7 @@ equipments = {
 		abbreviation = "hdb"
 		year = 1920
 		priority = 2000
+		can_convert_from = { repair_ship_2 support_ship_2 }
 
 		archetype = ship_hull_auxiliary
 		parent = ship_hull_auxiliary_1
@@ -337,6 +339,7 @@ equipments = {
 		abbreviation = "hdb"
 		year = 1935
 		priority = 2000
+		can_convert_from = { repair_ship_3 support_ship_3 }
 
 		archetype = ship_hull_auxiliary
 		parent = ship_hull_auxiliary_2

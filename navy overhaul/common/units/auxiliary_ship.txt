@@ -23,7 +23,7 @@ sub_units = {
 	}
 	
 	seaplane_tender = {
-		sprite = carrier
+		sprite = seaplane_tender
 		map_icon_category = ship
 		priority = 0
 		active = yes

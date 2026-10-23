@@ -71,6 +71,8 @@ equipments = {
 		archetype = support_ship_hull
 		priority = 2000
 		model = support_ship
+		can_convert_from = { ship_hull_auxiliary_1 repair_ship_1 }
+		
 		modifier_stat = {
 			modifier = naval_general_support 
 			value = 100
@@ -89,6 +91,8 @@ equipments = {
 		archetype = support_ship_hull
 		priority = 2000
 		model = support_ship
+		can_convert_from = { ship_hull_auxiliary_2 repair_ship_2 }
+		
 		modifier_stat = {
 			modifier = naval_general_support 
 			value = 200
@@ -111,6 +115,8 @@ equipments = {
 		archetype = support_ship_hull
 		priority = 2000
 		model = support_ship
+		can_convert_from = { ship_hull_auxiliary_3 repair_ship_3 }
+		
 		modifier_stat = {
 			modifier = naval_general_support 
 			value = 250
