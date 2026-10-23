@@ -338,7 +338,7 @@ scripted_gui = {
 				ai_will_do = {
 					base = 10
 					modifier = {
-						factor = 0
+						factor = 0.1
 						has_opinion = { target = ENG value < -10 }
 					}
 					modifier = {
@@ -351,7 +351,7 @@ scripted_gui = {
 				ai_will_do = {
 					base = 10
 					modifier = {
-						factor = 0
+						factor = 0.1
 						has_opinion = { target = FRA value < -10 }
 					}
 					modifier = {
@@ -364,7 +364,7 @@ scripted_gui = {
 				ai_will_do = {
 					base = 10
 					modifier = {
-						factor = 0
+						factor = 0.1
 						has_opinion = { target = GER value < -10 }
 					}
 					modifier = {
@@ -377,7 +377,7 @@ scripted_gui = {
 				ai_will_do = {
 					base = 10
 					modifier = {
-						factor = 0
+						factor = 0.1
 						has_opinion = { target = ITA value < -10 }
 					}
 					modifier = {
@@ -390,7 +390,7 @@ scripted_gui = {
 				ai_will_do = {
 					base = 10
 					modifier = {
-						factor = 0
+						factor = 0.1
 						has_opinion = { target = JAP value < -10 }
 					}
 					modifier = {
@@ -403,7 +403,7 @@ scripted_gui = {
 				ai_will_do = {
 					base = 10
 					modifier = {
-						factor = 0
+						factor = 0.1
 						has_opinion = { target = SOV value < -10 }
 					}
 					modifier = {
@@ -416,7 +416,7 @@ scripted_gui = {
 				ai_will_do = {
 					base = 10
 					modifier = {
-						factor = 0
+						factor = 0.1
 						has_opinion = { target = USA value < -10 }
 					}
 					modifier = {
@@ -491,6 +491,16 @@ scripted_gui = {
 			filter_box_cl_click = { ai_will_do = { base = 0 } }
 			filter_box_dd_click = { ai_will_do = { base = 0 } }
 			filter_box_ss_click = { ai_will_do = { base = 0 } }
+			
+			close_button_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 100
+						has_country_flag = nom_ai_deal_satisfaction
+					}
+				}
+			}
 		}
 	}
 	
@@ -2952,7 +2962,16 @@ scripted_gui = {
 		ai_enabled = { always = yes }
 		
 		ai_weights = {
-			open_button_click = { ai_will_do = { base = 10 } weight = 1 }
+			open_button_click = {
+				ai_will_do = {
+					base = 10
+					modifier = {
+						factor = 0
+						has_country_flag = nom_ai_deal_satisfaction
+					}
+				}
+				weight = 1
+			}
 		}
 		ai_max_weight_taken_per_test = 1
 	}
