@@ -5,6 +5,15 @@ spriteTypes = {
 		texturefile = "gfx/interface/doctrines/icons/doctrine_special_forces_dominance.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_doctrine_mountaineers_mountain_rats_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_mountaineers_mountain_rats.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrine_mountaineers_light_assault_troops_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_mountaineers_light_assault_troops.dds"
+	}
+	
 	
 	
 	spriteType = {

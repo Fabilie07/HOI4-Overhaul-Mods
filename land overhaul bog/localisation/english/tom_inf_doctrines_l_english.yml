@@ -6,6 +6,22 @@
  
  GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE:0 "Special Branch Dominance"
  GRAND_DOCTRINE_SPECIAL_FORCES_DOMINANCE_DESC:0 "The Special Forces Branches claim that they alone can win any war by themselves. They use this reason as an excuse to divert funds and equipment away from the regular army."
+ 
+ SUBDOCTRINE_MOUNTAINEERS_3:0 "Mountain Rats"
+ SUBDOCTRINE_MOUNTAINEERS_3_DESC:0 "Survival is the only thing that matters. And when enemy forces take cities and burn fields, you best run to the hills."
+ mountaineers_3_reward_1:0 "Live off the Cliffs"
+ mountaineers_3_reward_2:0 "Hidden Paths"
+ mountaineers_3_reward_3:0 "Elevated Fortifications"
+ mountaineers_3_reward_4:0 "Mountaintop Holdouts"
+ mountaineers_3_reward_5:0 "Resist and Bite"
+ 
+ SUBDOCTRINE_MOUNTAINEERS_4:0 "Light Assault Troops"
+ SUBDOCTRINE_MOUNTAINEERS_4_DESC:0 "The harsh training mountaineers go through has proven effective at creating hardened troops in the Great War. Further pursuing this idea will create shocktroops of the highest caliber."
+ mountaineers_4_reward_1:0 "Desensitivation Training"
+ mountaineers_4_reward_2:0 "Mobile Support Units"
+ mountaineers_4_reward_3:0 "Urban Assaults"
+ mountaineers_4_reward_4:0 "Forward Offensive Formations"
+ mountaineers_4_reward_5:0 "Elite Shocktroops"
 
 
  tom_inf_special_forces_decisions:0 "Branch Specialism Bonuses"
