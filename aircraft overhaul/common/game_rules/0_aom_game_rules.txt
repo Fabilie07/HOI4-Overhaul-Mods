@@ -57,3 +57,45 @@ aom_doctrine_resets = {
 		allow_achievements = yes
 	}
 }
+
+aom_ai_boosted_plane_production = {
+	name = "RULE_AI_PLANE_PRODUCTION"
+	group = "RULE_GROUP_AOM"
+
+	default = {
+		name = DISABLED
+		text = "RULE_AI_PLANE_PRODUCTION_DISABLED"
+		desc = "RULE_AI_PLANE_PRODUCTION_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_1
+		text = "RULE_AI_PLANE_PRODUCTION_1"
+		desc = "RULE_AI_PLANE_PRODUCTION_1_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_2
+		text = "RULE_AI_PLANE_PRODUCTION_2"
+		desc = "RULE_AI_PLANE_PRODUCTION_2_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_3
+		text = "RULE_AI_PLANE_PRODUCTION_3"
+		desc = "RULE_AI_PLANE_PRODUCTION_3_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_4
+		text = "RULE_AI_PLANE_PRODUCTION_4"
+		desc = "RULE_AI_PLANE_PRODUCTION_4_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ENABLED_5
+		text = "RULE_AI_PLANE_PRODUCTION_5"
+		desc = "RULE_AI_PLANE_PRODUCTION_5_DESC"
+		allow_achievements = yes
+	}
+}
