@@ -16,17 +16,24 @@ TOM_heavy_industry_decisions = {
 		}
 		
 		remove_effect = {
-			create_equipment_variant = {
-				name = "Converted Civilian Plane"
-				type = medium_plane_airframe_0
-				modules = {
-					fixed_main_weapon_slot = medium_bomb_bay
-					engine_type_slot = engine_1_3x
-					role_slot = role_09_tactical_bomber
-					supercharger_type_slot = empty
-					wings_type_slot = monoplane
-					skin_type_slot = metal_skin
-					wheels_type_slot = rubber_wheels
+			IF = {
+				limit = {
+					NOT = { has_country_flag = aom_has_created_converted_plane_design }
+				}
+				set_country_flag = aom_has_created_converted_plane_design
+				create_equipment_variant = {
+					name = "Converted Civilian Plane"
+					type = medium_plane_airframe_0
+					modules = {
+						fixed_main_weapon_slot = medium_bomb_bay
+						engine_type_slot = engine_1_3x
+						role_slot = role_09_tactical_bomber
+						supercharger_type_slot = empty
+						wings_type_slot = monoplane
+						skin_type_slot = metal_skin
+						wheels_type_slot = rubber_wheels
+					}
+					obsolete = yes
 				}
 			}
 			add_equipment_to_stockpile = {
