@@ -1,0 +1,24 @@
+on_actions = {
+	on_units_paradropped_in_state = {
+		effect = {
+			if = {
+				limit = { 
+					FROM = { 
+						has_mastery_level = {
+							amount = 1
+							sub_doctrine = paratroopers_4
+						}
+					} 
+					NOT = { 
+						has_state_flag = {
+						    flag = para_drop_effect
+						    value = 0
+						}
+					}
+					CONTROLLER = { NOT = { tag = FROM } }
+				}
+				SF_PARA_fortress_effect = yes
+			}
+		}
+	}
+}

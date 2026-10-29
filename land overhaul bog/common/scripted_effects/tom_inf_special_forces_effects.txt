@@ -1,0 +1,15 @@
+### Paratroopers
+SF_PARA_fortress_effect = { #When changing this, update the research tooltip
+	damage_building = {
+		type = bunker
+		damage = 4
+	}
+	damage_building = {
+		type = coastal_bunker
+		damage = 4
+	}
+	set_state_flag = {
+		flag = para_drop_effect
+		days = 30
+	}
+}

@@ -14,6 +14,33 @@ spriteTypes = {
 		texturefile = "gfx/interface/doctrines/icons/doctrine_mountaineers_light_assault_troops.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_doctrine_marines_grand_amphibious_operation_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_marines_grand_amphibious_operation.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrine_marines_land_water_maneuvers_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_marines_land_water_maneuvers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_doctrine_paratroopers_field_divisions_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_paratroopers_field_divisions.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrine_paratroopers_stronghold_takeover_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_paratroopers_stronghold_takeover.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_doctrine_rangers_tundra_specialists_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_rangers_tundra_specialists.dds"
+	}
+	spriteType = {
+		name = "GFX_doctrine_rangers_masters_of_survival_medium"
+		texturefile = "gfx/interface/doctrines/icons/doctrine_rangers_masters_of_survival.dds"
+	}
+	
 	
 	
 	spriteType = {

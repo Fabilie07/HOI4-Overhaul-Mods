@@ -313,6 +313,7 @@ mountaineers_4 = {
 		}
 		reward_2 = {
 			mastery = 60
+			mountaineers_special_forces_contribution_factor = -0.25
 		    light_fire_support = {
 				breakthrough = 0.2
 			}
@@ -455,7 +456,7 @@ marines_2 = {
             factor = 25
             OR = {
             	original_tag = JAP
-            	original_tag = USA
+            	original_tag = ITA
             }
         }
     }
@@ -532,6 +533,190 @@ marines_2 = {
 		reward_5 = {
 			mastery = 60
 			special_forces_attack_factor = 0.10
+		}
+    }
+}
+
+marines_3 = {
+    track = { special_forces_marines }
+    name = SUBDOCTRINE_MARINES_3
+    description = SUBDOCTRINE_MARINES_3_DESC
+    icon = GFX_doctrine_marines_grand_amphibious_operation_medium
+
+    xp_cost = 50
+    xp_type = navy
+
+    visible = {
+    	has_dlc = "Arms Against Tyranny"
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+            	original_tag = USA
+            }
+        }
+    }
+
+    # EFFECTS
+	
+	effect = {
+		unlock_subunit = pioneer_support
+	}
+	marines_special_forces_contribution_factor = -0.25
+	unit_marine_design_cost_factor = -0.50
+	pioneer_support = {
+		amphibious = {
+			attack = 0.15
+			defence = 0.15
+			movement = 0.15
+		}
+	}
+	#
+	#
+   
+    rewards = {
+		reward_1 = {
+			mastery = 60
+			naval_invasion_division_cap = 6
+			naval_invasion_plan_cap = -2
+			extra_marine_supply_grace = 36
+		}
+		reward_2 = {
+			mastery = 60
+			marines_special_forces_contribution_factor = -0.25
+			category_light_infantry = {
+				breakthrough = 0.1
+			}
+			artillery = {
+				amphibious = {
+					attack = 0.1
+				}
+			}
+			shore_bombardment_bonus = 0.15
+		}
+		reward_3 = {
+			mastery = 60
+			
+			pioneer_support = {
+				amphibious = {
+					attack = 0.1
+					defence = 0.1
+					movement = 0.1
+				}
+			}
+			naval_invasion_division_cap = 4
+			naval_invasion_planning_bonus_speed = 0.15			
+		}
+		reward_4 = {
+			mastery = 60
+			naval_invasion_planning_bonus_speed = 0.2
+			shore_bombardment_bonus = 0.1
+			naval_invasion_penalty = -0.1
+		}
+		reward_5 = {
+			mastery = 60
+			special_forces_attack_factor = 0.10
+			extra_marine_supply_grace = 36	
+		}
+    }
+}
+
+marines_4 = {
+    track = { special_forces_marines }
+    name = SUBDOCTRINE_MARINES_4
+    description = SUBDOCTRINE_MARINES_4_DESC
+    icon = GFX_doctrine_marines_land_water_maneuvers_medium
+
+    xp_cost = 50
+    xp_type = navy
+
+    visible = {
+    	has_dlc = "Arms Against Tyranny"
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+            	original_tag = GER
+            	original_tag = SOV
+            }
+        }
+    }
+
+    # EFFECTS
+	
+	effect = {
+		unlock_subunit = pioneer_support
+	}
+	marines_special_forces_contribution_factor = -0.25
+	unit_marine_design_cost_factor = -0.50
+	pioneer_support = {
+		river = {
+			attack = 0.1
+			movement = 0.25
+		}
+	}
+	#
+	#
+   
+    rewards = {
+		reward_1 = {
+			mastery = 60
+			marine = {
+				river = {
+					attack = 0.1
+					movement = 0.2
+				}
+				marsh = {
+					movement = 0.2
+				}
+			}
+			amphibious_mechanized = {
+				river = {
+					attack = 0.1
+					movement = 0.2
+				}
+				marsh = {
+					movement = 0.2
+				}
+			}
+		}
+		reward_2 = {
+			mastery = 60
+			marines_special_forces_contribution_factor = -0.25
+			category_amphibious_tanks = {
+				max_organisation = 6
+			}
+		}
+		reward_3 = {
+			mastery = 60
+			
+			category_marines_and_amphibious = {
+				max_organisation = 12
+			}
+			
+			pioneer_support = {
+				marsh = {
+					attack = 0.1
+					movement = 0.25
+				}
+			}	
+		}
+		reward_4 = {
+			mastery = 60
+			category_amphibious_tanks = {
+				max_organisation = 4
+				breakthrough = 0.1
+			}
+		}
+		reward_5 = {
+			mastery = 60
+			special_forces_attack_factor = 0.10	
 		}
     }
 }
@@ -690,6 +875,150 @@ paratroopers_2 = {
 	    	mastery = 60
 	    	paratrooper_weight_factor = -0.5
 	    	paratrooper_aa_defense = 0.1
+		}
+	reward_5 = {
+			mastery = 60
+			special_forces_attack_factor = 0.10
+		}
+    }
+}
+
+paratroopers_3 = {
+    track = { special_forces_paratroopers }
+    name = SUBDOCTRINE_PARATROOPERS_3
+    description = SUBDOCTRINE_PARATROOPERS_3_DESC
+    icon = GFX_doctrine_paratroopers_field_divisions_medium
+
+    xp_cost = 50
+    xp_type = air
+
+    visible = {
+    	has_dlc = "Arms Against Tyranny"
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 15
+            original_tag = GER
+            date > 1942.01.01
+        }
+    }
+
+    # EFFECTS
+    effect = {
+		unlock_subunit = airborne_light_armor
+	}
+	paratroopers_special_forces_contribution_factor = -0.25
+	unit_paratrooper_design_cost_factor = -0.50
+	paratrooper = {
+		max_organisation = 5
+		max_strength = 0.1
+	}
+    
+    rewards = {
+		reward_1 = {
+	    	mastery = 60
+	    	paratroopers_special_forces_contribution_factor = -0.25	
+			special_forces_defence_factor = 0.05
+		}	
+		reward_2 = {
+			mastery = 60
+			paratrooper = {
+				max_organisation = 5
+				max_strength = 0.1
+			}
+			special_forces_training_time_factor = -0.1
+		}
+		reward_3 = {
+			mastery = 60
+			paratroopers_special_forces_contribution_factor = -0.25	
+			airborne_light_armor = {
+				battalion_mult = {
+					category = category_light_infantry
+					defense = 0.1
+				}
+			}
+		}
+		reward_4 = {
+	    	mastery = 60
+	    	special_forces_training_time_factor = -0.1
+		}
+		reward_5 = {
+			mastery = 60
+			special_forces_defence_factor = 0.10
+		}
+    }
+}
+
+paratroopers_4 = {
+    track = { special_forces_paratroopers }
+    name = SUBDOCTRINE_PARATROOPERS_4
+    description = SUBDOCTRINE_PARATROOPERS_4_DESC
+    icon = GFX_doctrine_paratroopers_stronghold_takeover_medium
+
+    xp_cost = 50
+    xp_type = air
+
+    visible = {
+    	has_dlc = "Arms Against Tyranny"
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 15
+            original_tag = GER
+			date < 1942.01.01
+        }
+    }
+
+    # EFFECTS
+    effect = {
+		unlock_subunit = airborne_light_armor
+	}
+	paratroopers_special_forces_contribution_factor = -0.25
+	unit_paratrooper_design_cost_factor = -0.50
+	airborne_light_armor = {
+		fort = {
+			attack = 0.2
+		}
+	}
+	paratrooper_aa_defense = 0.1
+    
+    rewards = {
+		reward_1 = {
+	    	mastery = 60
+	    	paratroopers_special_forces_contribution_factor = -0.25	
+			effect = {
+				# Display only — real effect fires in on_units_paradropped_in_state (00_on_actions.txt), gated on has_mastery_level of paratroopers_2
+				custom_effect_tooltip = SF_PARAS_fortress_effect_tt
+			}
+		}	
+		reward_2 = {
+			mastery = 60
+			engineer = {
+				battalion_mult = {
+					category = category_paratroopers
+					soft_attack = 0.05
+				}
+			}
+			paradrop_organization_factor = 0.3
+		}
+		reward_3 = {
+			mastery = 60
+			paratrooper = {
+				fort = {
+					attack = 0.1
+				}
+				urban = {
+					attack = 0.1
+				}
+			}
+		}
+		reward_4 = {
+	    	mastery = 60
+	    	paratrooper_aa_defense = 0.15
 		}
 	reward_5 = {
 			mastery = 60
@@ -878,6 +1207,161 @@ rangers_2 = {
 		reward_5 = {
 			mastery = 60
 			special_forces_attack_factor = 0.1
+		}
+    }
+}
+
+rangers_3 = {
+    track = { special_forces_rangers }
+    name = SUBDOCTRINE_RANGERS_3
+    description = SUBDOCTRINE_RANGERS_3_DESC
+    icon = GFX_doctrine_rangers_tundra_specialists_medium
+
+    xp_cost = 50
+    xp_type = army
+
+    visible = {
+    	has_dlc = "No Compromise, No Surrender"
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+            	original_tag = FIN
+            	original_tag = SOV
+            	original_tag = SWE 
+            }         
+        }
+    }
+
+    # EFFECTS   
+	effect = {
+		unlock_subunit = rangers_support
+	}
+	rangers_special_forces_contribution_factor = -0.25
+	unit_ranger_battalion_design_cost_factor = -0.50
+	ranger_battalion = {
+		acclimatization_cold_climate_gain_factor = 0.25
+		snow = {
+			attack = 0.1
+			defence = 0.1
+			movement = 0.05
+		}
+	}		
+
+    rewards = {
+		reward_1 = {
+			mastery = 60
+			rangers_support = {
+				snow = {
+					defence = 0.05
+					movement = 0.1
+				}
+			}
+		}
+		reward_2 = {
+		    mastery = 60
+		    category_rangers = {
+				soft_attack = 0.1
+				hard_attack = 0.1
+				max_organisation = 5
+			}
+		}
+		reward_3 = {
+			mastery = 60
+			ranger_battalion = {
+				supply_consumption = -0.03
+			}
+			special_forces_no_supply_grace = 36
+		}
+		reward_4 = {
+			mastery = 60
+			ranger_battalion = {
+				acclimatization_cold_climate_gain_factor = 0.25
+				forest = {
+					attack = 0.1
+					defence = 0.1
+				}
+			}
+			rangers_special_forces_contribution_factor = -0.25
+		}
+		reward_5 = {
+			mastery = 60
+			special_forces_defence_factor = 0.1
+		}
+    }
+}
+
+rangers_4 = {
+    track = { special_forces_rangers }
+    name = SUBDOCTRINE_RANGERS_4
+    description = SUBDOCTRINE_RANGERS_4_DESC
+    icon = GFX_doctrine_rangers_masters_of_survival_medium
+
+    xp_cost = 50
+    xp_type = army
+
+    visible = {
+    	has_dlc = "No Compromise, No Surrender"
+    }
+
+    ai_will_do = {
+        base = 1
+        modifier = {
+            factor = 25
+            OR = {
+            	original_tag = FIN
+            	original_tag = SOV
+            	original_tag = SWE 
+            }         
+        }
+    }
+
+    # EFFECTS   
+	effect = {
+		unlock_subunit = rangers_support
+	}
+	rangers_special_forces_contribution_factor = -0.25
+	unit_ranger_battalion_design_cost_factor = -0.50
+	rangers_support = {
+		battalion_mult = {
+			category = category_light_infantry
+			supply_consumption = -0.01
+			add = yes
+		}
+	}		
+
+    rewards = {
+		reward_1 = {
+			mastery = 60
+			rangers_support = {
+				casualty_trickleback = 0.12
+			}
+		}
+		reward_2 = {
+		    mastery = 60
+		    category_rangers = {
+				max_organisation = 10
+				max_strength = 0.2
+			}
+		}
+		reward_3 = {
+			mastery = 60
+			out_of_supply_factor = -0.1
+			special_forces_defence_factor = 0.05
+		}
+		reward_4 = {
+			mastery = 60
+			ranger_battalion = {
+				supply_consumption = -0.04
+			}
+			rangers_special_forces_contribution_factor = -0.25
+		}
+		reward_5 = {
+			mastery = 60
+			special_forces_defence_factor = 0.1
 		}
     }
 }
