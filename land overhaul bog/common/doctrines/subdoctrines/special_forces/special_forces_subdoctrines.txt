@@ -164,7 +164,7 @@ mountaineers_2 = {
 			mastery = 60
 			mountaineers_special_forces_contribution_factor = -0.25
 			category_mountaineers = {
-				supply_consumption = -0.02
+				supply_consumption = -0.01
 				max_organisation = 10
 			}
 		}
@@ -247,7 +247,6 @@ mountaineers_3 = {
 			mastery = 60
 			mountaineers_special_forces_contribution_factor = -0.25
 			category_mountaineers = {
-				supply_consumption = -0.02
 				fuel_consumption = -0.12
 			}
 		}
@@ -1195,7 +1194,7 @@ rangers_2 = {
 		reward_3 = {
 			mastery = 60
 			ranger_battalion = {
-				supply_consumption = -0.03
+				supply_consumption = -0.02
 			}
 			special_forces_no_supply_grace = 36
 		}
@@ -1272,7 +1271,7 @@ rangers_3 = {
 		reward_3 = {
 			mastery = 60
 			ranger_battalion = {
-				supply_consumption = -0.03
+				supply_consumption = -0.02
 			}
 			special_forces_no_supply_grace = 36
 		}
@@ -1355,7 +1354,7 @@ rangers_4 = {
 		reward_4 = {
 			mastery = 60
 			ranger_battalion = {
-				supply_consumption = -0.04
+				supply_consumption = -0.02
 			}
 			rangers_special_forces_contribution_factor = -0.25
 		}

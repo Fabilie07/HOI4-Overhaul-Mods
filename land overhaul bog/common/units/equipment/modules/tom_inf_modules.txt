@@ -210,7 +210,7 @@ equipment_modules = {
 		category = inf_bag
 		
 		add_stats = {
-			supply_consumption = 0.1
+			supply_consumption = 0.12
 			maximum_speed = 0.4
 		}
 		xp_cost = 0
@@ -220,8 +220,8 @@ equipment_modules = {
 		category = inf_bag
 		
 		add_stats = {
-			supply_consumption = 0.06
-			build_cost_ic = 0.03
+			supply_consumption = 0.1
+			build_cost_ic = 0.01
 		}
 		xp_cost = 0
 	}
@@ -231,8 +231,8 @@ equipment_modules = {
 		
 		add_stats = {
 			maximum_speed = -0.4
-			supply_consumption = 0.04
-			build_cost_ic = 0.06
+			supply_consumption = 0.08
+			build_cost_ic = 0.02
 		}
 		xp_cost = 0
 	}

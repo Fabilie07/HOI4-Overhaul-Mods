@@ -171,6 +171,9 @@ equipments = {
 			steel = 2
 		}
 		
+		scaled_by_reliability = {
+			supply_consumption = -0.04
+		}
 	}
 
 	infantry_equipment_0 = {
