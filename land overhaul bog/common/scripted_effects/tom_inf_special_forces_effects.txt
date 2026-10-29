@@ -2,7 +2,7 @@
 SF_PARA_fortress_effect = { #When changing this, update the research tooltip
 	damage_building = {
 		type = bunker
-		damage = 4
+		damage = 6
 	}
 	damage_building = {
 		type = coastal_bunker

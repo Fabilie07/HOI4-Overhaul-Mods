@@ -55,7 +55,7 @@
  paratroopers_4_reward_4:0 "High Altitude Late Release"
  paratroopers_4_reward_5:0 "Infiltration and Autonomous Retreat"
  
- SF_PARAS_fortress_effect_tt:0 "Enemy controlled states we §YParadrop§! into will receive damage to §YLand Forts§! and §YCoastal Forts§!.\n\nThis effect can occur once per state every §Y30§! days."
+ SF_PARAS_fortress_effect_tt:0 "Enemy controlled states we §YParadrop§! into will receive damage to §YLand Forts§! and §YCoastal Forts§! in a random Province.\n\nThis effect can occur once per state every §Y30§! days."
  
  SUBDOCTRINE_RANGERS_3:0 "Tundra Specialists"
  SUBDOCTRINE_RANGERS_3_DESC:0 "Snow and Permafrost turn an usual Forest Trek into a deadly march from which only specially trained troops return reliably."
