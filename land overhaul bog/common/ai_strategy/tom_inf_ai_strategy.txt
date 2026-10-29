@@ -2,7 +2,7 @@ tom_inf_support_equipment_production = {
 	allowed = { always = yes }
 	enable = {
 		OR = {
-			arms_factory > 19
+			arms_factory > 10
 			is_major = yes
 		}
 		has_tech = support_weapons
@@ -35,7 +35,7 @@ tom_inf_support_equipment_production = {
 tom_inf_support_equipment_production_increased = {
 	allowed = { always = yes }
 	enable = {
-		arms_factory > 39
+		arms_factory > 20
 		has_tech = support_weapons
 		has_civil_war = no
 	}
@@ -61,7 +61,7 @@ tom_inf_support_equipment_production_increased = {
 tom_inf_support_equipment_production_advanced = {
 	allowed = { always = yes }
 	enable = {
-		arms_factory > 59
+		arms_factory > 40
 		has_tech = tech_support
 	}
 	abort_when_not_enabled = yes
