@@ -40,7 +40,6 @@ sub_units = {
 		supply_consumption = 0.06
 		
 		# Is removed by Hidden Technology, needed for Battalion Designer to work correctly
-		casualty_trickleback = 1
 		experience_loss_factor = -1
 
 		#Offensive Abilities

@@ -46,7 +46,6 @@ sub_units = {
 		supply_consumption = 0.14
 		
 		# Is removed by Hidden Technology, needed for Battalion Designer to work correctly
-		casualty_trickleback = 1
 		experience_loss_factor = -1
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
