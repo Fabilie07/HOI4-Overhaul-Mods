@@ -322,11 +322,16 @@ mountaineers_4 = {
 		}
 		reward_3 = {
 			mastery = 60
-			category_mountaineers = {
+			mountaineers = {
 				urban = {
 					attack = 0.1
 				}
-			}	   
+			}
+			mountaineers_mechanized = {
+				urban = {
+					attack = 0.1
+				}
+			}			
 		}
 		reward_4 = {
 			mastery = 60
