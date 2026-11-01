@@ -452,6 +452,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			hard_attack = 0.7
 			need = {
 				anti_tank_equipment = -4
@@ -515,6 +516,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			air_attack = 0.8
 			hard_attack = 0.2
 			ap_attack = 0.2
@@ -1242,6 +1244,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			hard_attack = 0.7
 			need = {
 				anti_tank_equipment = -4
@@ -1305,6 +1308,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			air_attack = 0.8
 			hard_attack = 0.2
 			ap_attack = 0.2
@@ -2031,6 +2035,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			hard_attack = 0.7
 			need = {
 				anti_tank_equipment = -4
@@ -2094,6 +2099,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			air_attack = 0.8
 			hard_attack = 0.2
 			ap_attack = 0.2
@@ -2821,6 +2827,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			hard_attack = 0.7
 			need = {
 				anti_tank_equipment = -4
@@ -2884,6 +2891,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			air_attack = 0.8
 			hard_attack = 0.2
 			ap_attack = 0.2
@@ -3611,6 +3619,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			hard_attack = 0.7
 			need = {
 				anti_tank_equipment = -4
@@ -3674,6 +3683,7 @@ technologies = {
 			always = no
 		}
 		mechanized = {
+			supply_consumption = -0.02
 			air_attack = 0.8
 			hard_attack = 0.2
 			ap_attack = 0.2

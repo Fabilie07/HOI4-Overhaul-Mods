@@ -140,8 +140,8 @@ technologies = {
 		
 		special_forces_min = 6
 		special_forces_cap = 0.04
+		special_forces_out_of_supply_factor = -0.1
 		category_mountaineers = {
-			supply_consumption = -0.04
 			max_strength = 0.1
 		}
 		rangers_support = {

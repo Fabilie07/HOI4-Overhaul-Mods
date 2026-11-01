@@ -2,16 +2,12 @@
 			always = no
 		}
 		infantry = {
-			maximum_speed = 0.1
-			breakthrough = -0.4
-			defense = -0.6
-			armor_value = -0.6
-			hardness = -1
-			
-			river = {
-				movement = -0.2
-			}
+			supply_consumption = 0.02
+			air_attack = -0.8
+			hard_attack = -0.2
+			ap_attack = -0.2
 			need = {
-				mechanized_equipment = 12
+				anti_air_equipment = 6
+				tom_inf_horse = 6
 			}
 		}
