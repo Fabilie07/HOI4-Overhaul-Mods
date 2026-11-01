@@ -140,7 +140,7 @@ sub_units = {
 		max_strength = 0.4
 		weight = 0.1
 		
-		supply_consumption = 0.02
+		supply_consumption = 0.01
 
 		# Support buffs (equipment balanced around Battalion Size)
 		soft_attack = 1.0
@@ -187,7 +187,7 @@ sub_units = {
 		max_strength = 0.4
 		weight = 0.1
 		
-		supply_consumption = 0.04
+		supply_consumption = 0.02
 
 		# Support buffs (equipment balanced around Battalion Size)
 		soft_attack = 1.0
@@ -234,7 +234,7 @@ sub_units = {
 		max_strength = 0.4
 		weight = 0.1
 		
-		supply_consumption = 0.06
+		supply_consumption = 0.03
 
 		# Support buffs (equipment balanced around Battalion Size)
 		soft_attack = 1.0
@@ -282,7 +282,7 @@ sub_units = {
 		max_strength = 0.4
 		weight = 0.1
 		own_equipment_fuel_consumption_mult = 0.25
-		supply_consumption = 0.02
+		supply_consumption = 0.01
 
 		# Support buffs (equipment balanced around Battalion Size)
 		soft_attack = 1.0
@@ -330,7 +330,7 @@ sub_units = {
 		max_strength = 0.4
 		weight = 0.1
 		own_equipment_fuel_consumption_mult = 0.25
-		supply_consumption = 0.04
+		supply_consumption = 0.02
 
 		# Support buffs (equipment balanced around Battalion Size)
 		soft_attack = 1.0
@@ -378,7 +378,7 @@ sub_units = {
 		max_strength = 0.4
 		weight = 0.1
 		own_equipment_fuel_consumption_mult = 0.25
-		supply_consumption = 0.06
+		supply_consumption = 0.03
 
 		# Support buffs (equipment balanced around Battalion Size)
 		soft_attack = 1.0
@@ -425,7 +425,7 @@ sub_units = {
 		max_strength = 0.1
 		weight = 0.02
 		
-		supply_consumption = 0.04
+		supply_consumption = 0.02
 
 		# Support buffs (equipment balanced around Battalion Size)
 		soft_attack = 2.0

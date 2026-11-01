@@ -15,6 +15,7 @@ equipments = {
 		
 		#Misc Abilities
 		reliability = 0.9
+		supply_consumption = 0.02
 
 		#Defensive Abilities
 		defense = 0
@@ -65,6 +66,7 @@ equipments = {
 		
 		#Misc Abilities
 		reliability = 0.9
+		supply_consumption = 0.03
 
 		#Defensive Abilities
 		defense = 0
@@ -130,6 +132,7 @@ equipments = {
 		
 		#Misc Abilities
 		reliability = 0.9
+		supply_consumption = 0.02
 
 		#Defensive Abilities
 		defense = 0
