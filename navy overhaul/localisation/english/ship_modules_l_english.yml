@@ -826,7 +826,7 @@
  light_ship_deck_2_short:0 "Light Deck II"
  light_ship_deck_2_desc:0 "Though it may not stop direct hits, this deck armor does offer protection."
  light_ship_deck_3:0 "15mm Deck"
- light_ship_deck_3_short:0 "Light Deck II"
+ light_ship_deck_3_short:0 "Light Deck III"
  light_ship_deck_3_desc:0 "Though it may not stop direct hits, this deck armor does offer protection."
  medium_ship_deck_1:0 "30mm Deck"
  medium_ship_deck_1_short:0 "Medium Deck I"
@@ -844,7 +844,7 @@
  heavy_ship_deck_2_short:0 "Heavy Deck II"
  heavy_ship_deck_2_desc:0 "Thick armor to stop the shells of capital ships and large bombs."
  heavy_ship_deck_3:0 "150mm Deck"
- heavy_ship_deck_3_short:0 "Heavy Deck II"
+ heavy_ship_deck_3_short:0 "Heavy Deck III"
  heavy_ship_deck_3_desc:0 "Thick armor to stop the shells of capital ships and large bombs."
  
  ship_armor_ice_carrier_deck_1:0 "Pykrete Runway Reinforcements"
