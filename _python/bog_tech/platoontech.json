@@ -2,22 +2,16 @@
 			always = no
 		}
 		infantry = {
-			need = {
-				armored_car_equipment = 4
-			}
-			soft_attack = -0.35
-			hard_attack = -0.3
-			breakthrough = -0.5
+			maximum_speed = 0.1
+			breakthrough = -0.4
+			defense = -0.6
 			armor_value = -0.6
 			hardness = -1
 			
-			plains = {
-				movement = 0.1
-				defence = 0.1
+			river = {
+				movement = -0.2
 			}
-
-			desert = {
-				movement = 0.1
-				defence = 0.1
+			need = {
+				mechanized_equipment = 12
 			}
 		}

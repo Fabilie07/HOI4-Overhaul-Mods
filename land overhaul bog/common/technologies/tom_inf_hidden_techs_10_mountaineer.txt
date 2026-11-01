@@ -461,7 +461,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			
 			forest = {
 				movement = -0.3
@@ -485,7 +485,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			breakthrough = -0.4
 			defense = -0.6
 			armor_value = -0.6
@@ -1286,7 +1286,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			
 			forest = {
 				movement = -0.3
@@ -1310,7 +1310,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			breakthrough = -0.4
 			defense = -0.6
 			armor_value = -0.6
@@ -2110,7 +2110,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			
 			forest = {
 				movement = -0.3
@@ -2134,7 +2134,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			breakthrough = -0.4
 			defense = -0.6
 			armor_value = -0.6
@@ -2935,7 +2935,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			
 			forest = {
 				movement = -0.3
@@ -2959,7 +2959,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			breakthrough = -0.4
 			defense = -0.6
 			armor_value = -0.6
@@ -3760,7 +3760,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			
 			forest = {
 				movement = -0.3
@@ -3784,7 +3784,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			breakthrough = -0.4
 			defense = -0.6
 			armor_value = -0.6
@@ -4585,7 +4585,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			
 			forest = {
 				movement = -0.3
@@ -4609,7 +4609,7 @@ technologies = {
 			always = no
 		}
 		mountaineers = {
-			maximum_speed = 0.2
+			maximum_speed = 0.1
 			breakthrough = -0.4
 			defense = -0.6
 			armor_value = -0.6
