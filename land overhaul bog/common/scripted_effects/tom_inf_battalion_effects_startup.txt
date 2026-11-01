@@ -40,9 +40,9 @@ tom_inf_bat_startup_effect_company_arrays = {
 	add_to_array = { tom_inf_bat_11_platoons_array = 1101 }
 	add_to_array = { tom_inf_bat_11_platoons_array = 1102 }
 	add_to_array = { tom_inf_bat_11_platoons_array = 1110 }
-	add_to_array = { tom_inf_bat_11_platoons_array = 1111 }
-	add_to_array = { tom_inf_bat_11_platoons_array = 1112 }
-	add_to_array = { tom_inf_bat_11_platoons_array = 1113 }
+	# add_to_array = { tom_inf_bat_11_platoons_array = 1111 } Removed for Balance Reasons
+	# add_to_array = { tom_inf_bat_11_platoons_array = 1112 }
+	# add_to_array = { tom_inf_bat_11_platoons_array = 1113 }
 	add_to_array = { tom_inf_bat_11_platoons_array = 1120 }
 	add_to_array = { tom_inf_bat_11_platoons_array = 1121 }
 	add_to_array = { tom_inf_bat_11_platoons_array = 1122 }
