@@ -52,7 +52,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "battalion_name_bg"
 			position = { x=124 y=78 }
-			size = { width=220 height=30 }
+			size = { width=299 height=30 }
 
 			background = {
 				name = "name_bg"
@@ -70,6 +70,88 @@ guiTypes = {
 				maxHeight = 20
 				fixedsize = yes
 				format = left
+			}
+		}
+		
+		containerWindowType = {
+			name = "platoon_count"
+			size = { width = 80 height = 24 }
+			position = { x=138 y=114 }
+
+			background = {
+				name = "platoon_count_bg"
+				quadTextureSprite = "GFX_generic_background"
+				pdx_tooltip = TOM_INF_PLATOON_COUNT_TT
+			}
+			
+			iconType = {
+				position = { x = 7 y = 6 }
+				name = "stat_icon"
+				quadTextureSprite = "GFX_nato_unit_infantry_icon_small"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				position = { x = 45 y = 2 }
+				name = "stat_text"
+				text = TOM_INF_PLATOON_COUNT
+				font = "hoi_18mbs"
+				maxWidth = 30
+				alwaystransparent = yes
+			}
+		}
+		
+		containerWindowType = {
+			name = "platoon_org_debuff"
+			size = { width = 80 height = 24 }
+			position = { x=248 y=114 }
+
+			background = {
+				name = "org_stat_bg"
+				quadTextureSprite = "GFX_generic_background"
+			}
+			
+			iconType = {
+				position = { x = 8 y = 5 }
+				name = "stat_icon"
+				quadTextureSprite = "GFX_organization_texticon"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				position = { x = 35 y = 2 }
+				name = "stat_text"
+				text = TOM_INF_PLATOON_COUNT_ORG
+				font = "hoi_18mbs"
+				maxWidth = 70
+				alwaystransparent = yes
+			}
+		}
+		
+		containerWindowType = {
+			name = "strength_stat"
+			size = { width = 80 height = 24 }
+			position = { x=358 y=114 }
+
+			background = {
+				name = "strength_stat_bg"
+				quadTextureSprite = "GFX_generic_background"
+			}
+
+			iconType = {
+				position = { x = 8 y = 3 }
+				name = "stat_icon"
+				quadTextureSprite = "GFX_going_to_combat"
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				position = { x = 35 y = 2 }
+				name = "stat_text"
+				text = TOM_INF_PLATOON_COUNT_SOFT
+				font = "hoi_18mbs"
+				maxWidth = 40
+				alwaystransparent = yes
 			}
 		}
 		

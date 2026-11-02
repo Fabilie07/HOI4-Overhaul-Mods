@@ -4896,4 +4896,2492 @@ technologies = {
 			}
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	### Platoon Maluses
+	tom_inf_bat_mountaineer_101_tech_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech2_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech2_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech2_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech2_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech2_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech2_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech2_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech2_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech2_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech3_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech3_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech3_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech3_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech3_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech3_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech3_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech3_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech3_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech4_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech4_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech4_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech4_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech4_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech4_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech4_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech4_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech4_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech5_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech5_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech5_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech5_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech5_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech5_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech5_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech5_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech5_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech6_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech6_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech6_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech6_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech6_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech6_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech6_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech6_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech6_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech7_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech7_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech7_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech7_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech7_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech7_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech7_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech7_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech7_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech8_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech8_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech8_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech8_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech8_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech8_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech8_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech8_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech8_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech9_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech9_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech9_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech9_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech9_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech9_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech9_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech9_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech9_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech10_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech10_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech10_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech10_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech10_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech10_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech10_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech10_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech10_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech11_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech11_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech11_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech11_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech11_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech11_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech11_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech11_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech11_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech12_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech12_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech12_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech12_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech12_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech12_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech12_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech12_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech12_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech13_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech13_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech13_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech13_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech13_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech13_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech13_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech13_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech13_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech14_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech14_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech14_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech14_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech14_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech14_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech14_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech14_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech14_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech15_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech15_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech15_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech15_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech15_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech15_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech15_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech15_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech15_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	
+	tom_inf_bat_mountaineer_101_tech16_13 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech16_14 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech16_15 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_101_tech16_16 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -3
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech16_17 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech16_18 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech16_19 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_102_tech16_20 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -6
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_21 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_22 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_23 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_24 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_25 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_26 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_27 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_28 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_29 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
+	tom_inf_bat_mountaineer_103_tech16_30 = {
+		allow = {
+			always = no
+		}
+		mountaineers = {
+			max_organisation = -9
+			soft_attack = -0.1
+		}
+	}
 }

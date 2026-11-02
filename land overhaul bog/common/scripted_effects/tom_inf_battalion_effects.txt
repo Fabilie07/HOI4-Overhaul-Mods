@@ -88,6 +88,7 @@ tom_inf_bat_open_designer_effect = {
 	}
 	
 	tom_inf_compute_support_resets_effect = yes
+	tom_inf_bat_compute_platoon_count = yes
 }
 
 tom_inf_compute_support_resets_effect = {
@@ -582,6 +583,8 @@ tom_inf_subunit_add_effect = {
 			}
 		}
 	}
+	
+	tom_inf_bat_compute_platoon_stat_difference = yes
 }
 
 tom_inf_battalion_platoon_add_effect = {
@@ -3875,6 +3878,176 @@ tom_inf_bat_clear_equipment_effect = {
 			add_to_temp_variable = { array_index = 1 }
 		}
 	}
+}
+
+tom_inf_bat_compute_platoon_stat_difference = {
+	set_temp_variable = { tom_inf_bat_popup_platoon_count_org_old = tom_inf_bat_popup_platoon_count_org }
+	tom_inf_bat_compute_platoon_count = yes
+	
+	set_temp_variable = { temp_difference_org = 0 }
+	set_temp_variable = { temp_difference_soft = 0 }
+	
+	if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_platoon_count_org > tom_inf_bat_popup_platoon_count_org_old }
+		}
+		for_each_loop = {
+			array = tom_inf_battalion_overplatoon_malus_org
+			value = temp_malus
+			index = temp_malus_index
+			
+			if = {
+				limit = {
+					check_variable = { temp_malus_index > tom_inf_bat_popup_platoon_count_org_old }
+					check_variable = {
+						var = temp_malus_index
+						value = tom_inf_bat_popup_platoon_count_org
+						compare = less_than_or_equals
+					}
+				}
+				subtract_from_temp_variable = { temp_difference_org = temp_malus }
+				subtract_from_temp_variable = { temp_difference_soft = tom_inf_battalion_overplatoon_malus_soft^temp_malus_index }
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_popup_platoon_count_org < tom_inf_bat_popup_platoon_count_org_old }
+		}
+		for_each_loop = {
+			array = tom_inf_battalion_overplatoon_malus_org
+			value = temp_malus
+			index = temp_malus_index
+			
+			if = {
+				limit = {
+					check_variable = { temp_malus_index > tom_inf_bat_popup_platoon_count_org }
+					check_variable = {
+						var = temp_malus_index
+						value = tom_inf_bat_popup_platoon_count_org_old
+						compare = less_than_or_equals
+					}
+				}
+				add_to_temp_variable = { temp_difference_org = temp_malus }
+				add_to_temp_variable = { temp_difference_soft = tom_inf_battalion_overplatoon_malus_soft^temp_malus_index }
+			}
+		}
+	}
+	
+	add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = temp_difference_org }
+	add_to_variable = { tom_inf_bat_popup_combat_stats_array^0 = temp_difference_soft }
+}
+
+tom_inf_bat_compute_platoon_count_stats = {
+	clear_variable = tom_inf_bat_popup_platoon_count_malus_org
+	clear_variable = tom_inf_bat_popup_platoon_count_malus_soft
+	
+	for_each_loop = {
+		array = tom_inf_battalion_overplatoon_malus_org
+		value = temp_malus
+		index = temp_malus_index
+		
+		if = {
+			limit = {
+				check_variable = {
+					var = temp_malus_index
+					value = tom_inf_bat_popup_platoon_count_org
+					compare = less_than_or_equals
+				}
+			}
+			subtract_from_temp_variable = { temp_difference_org = temp_malus }
+			subtract_from_temp_variable = { temp_difference_soft = tom_inf_battalion_overplatoon_malus_soft^temp_malus_index }
+		}
+	}
+	
+	add_to_variable = { tom_inf_bat_popup_platoon_count_malus_org = temp_difference_org }
+	add_to_variable = { tom_inf_bat_popup_platoon_count_malus_soft = temp_difference_soft }
+}
+
+tom_inf_bat_compute_platoon_count = {
+	# Used for Org Reduction. Exceptions are defined here.
+	set_variable = { tom_inf_bat_popup_platoon_count_org = 0 }
+	clr_country_flag = tom_inf_bat_counted_platoon_1001
+	clr_country_flag = tom_inf_bat_counted_platoon_1002
+	clr_country_flag = tom_inf_bat_counted_platoon_1003
+	clr_country_flag = tom_inf_bat_counted_platoon_1010
+	clr_country_flag = tom_inf_bat_counted_platoon_1020
+	clr_country_flag = tom_inf_bat_counted_platoon_1021
+	
+	for_each_loop = {
+		array = tom_inf_battalion_platoon_array
+		value = temp_platoon_value
+		index = temp_platoon_index
+		if = {
+			limit = { check_variable = { temp_platoon_value > 0 } }
+			
+			if = {
+				limit = {
+					check_variable = { temp_platoon_value = 1001 }
+					NOT = { has_country_flag = tom_inf_bat_counted_platoon_1001 }
+				}
+				set_country_flag = tom_inf_bat_counted_platoon_1001
+				add_to_variable = { tom_inf_bat_popup_platoon_count_org = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { temp_platoon_value = 1002 }
+					NOT = { has_country_flag = tom_inf_bat_counted_platoon_1002 }
+				}
+				set_country_flag = tom_inf_bat_counted_platoon_1002
+				add_to_variable = { tom_inf_bat_popup_platoon_count_org = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { temp_platoon_value = 1003 }
+					NOT = { has_country_flag = tom_inf_bat_counted_platoon_1003 }
+				}
+				set_country_flag = tom_inf_bat_counted_platoon_1003
+				add_to_variable = { tom_inf_bat_popup_platoon_count_org = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { temp_platoon_value = 1010 }
+					NOT = { has_country_flag = tom_inf_bat_counted_platoon_1010 }
+				}
+				set_country_flag = tom_inf_bat_counted_platoon_1010
+				add_to_variable = { tom_inf_bat_popup_platoon_count_org = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { temp_platoon_value = 1020 }
+					NOT = { has_country_flag = tom_inf_bat_counted_platoon_1020 }
+				}
+				set_country_flag = tom_inf_bat_counted_platoon_1020
+				add_to_variable = { tom_inf_bat_popup_platoon_count_org = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { temp_platoon_value = 1021 }
+					NOT = { has_country_flag = tom_inf_bat_counted_platoon_1021 }
+				}
+				set_country_flag = tom_inf_bat_counted_platoon_1021
+				add_to_variable = { tom_inf_bat_popup_platoon_count_org = 1 }
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = { temp_platoon_value = 1001 }
+							check_variable = { temp_platoon_value = 1002 }
+							check_variable = { temp_platoon_value = 1003 }
+							check_variable = { temp_platoon_value = 1010 }
+							check_variable = { temp_platoon_value = 1020 }
+							check_variable = { temp_platoon_value = 1021 }
+						}
+					}
+				}
+				add_to_variable = { tom_inf_bat_popup_platoon_count_org = 1 }
+			}
+		}
+	}
+	
+	tom_inf_bat_compute_platoon_count_stats = yes
 }
 
 tom_inf_bat_cycle_right_effect = {

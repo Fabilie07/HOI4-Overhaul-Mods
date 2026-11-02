@@ -19,6 +19,12 @@
  TOM_INF_BAT_DESIGNER_ADD_PLATOON_NAME:0 "[tom_inf_platoon_name_loc]"
  TOM_INF_BAT_DESIGNER_ADD_PLATOON_DESC:0 "[tom_inf_platoon_desc_loc]"
  
+ TOM_INF_PLATOON_COUNT:0 "[?tom_inf_bat_popup_platoon_count_org]"
+ TOM_INF_PLATOON_COUNT_TT:0 "The number of Platoons in your Battalion. If too many Platoons are added, the Battalion's performance as a whole will drop, since the Battalion HQ will have a hard time coordinating all units. §9Platoons of the Rifle Company that are not Rifle Platoons are only counted once.§!\n------------\nMalus incurred by each additional Platoon above the specified Number:\n  §Y12§!: §R-3§! Organization\n  §Y16§!: §R-6§! Organization\n  §Y20§!: §R-9§! Organization, §R-10%§! Soft Attack"
+ TOM_INF_PLATOON_COUNT_ORG:0 "[?tom_inf_bat_popup_platoon_count_malus_org|=+1]"
+ TOM_INF_PLATOON_COUNT_SOFT:0 "[?tom_inf_bat_popup_platoon_count_malus_soft|=+0%%]"
+ 
+ 
  TOM_INF_STAT_FORMAT_BASE:0 "[tom_inf_bat_stat_visual_depiction_base]"
  TOM_INF_STAT_FORMAT_COMBAT:0 "[tom_inf_bat_stat_visual_depiction_combat]"
  TOM_INF_STAT_FORMAT_EQUIPMENT_1:0 "[tom_inf_bat_stat_visual_depiction_equipment_1]"

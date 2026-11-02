@@ -3954,4 +3954,2336 @@ technologies = {
 			}
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	### Platoon Maluses
+	tom_inf_bat_cavalry_101_tech_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech2_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech2_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech2_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech2_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech2_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech2_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech2_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech2_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech2_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech3_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech3_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech3_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech3_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech3_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech3_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech3_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech3_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech3_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech4_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech4_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech4_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech4_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech4_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech4_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech4_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech4_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech4_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech5_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech5_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech5_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech5_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech5_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech5_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech5_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech5_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech5_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech6_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech6_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech6_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech6_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech6_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech6_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech6_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech6_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech6_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech7_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech7_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech7_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech7_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech7_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech7_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech7_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech7_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech7_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech8_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech8_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech8_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech8_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech8_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech8_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech8_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech8_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech8_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech9_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech9_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech9_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech9_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech9_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech9_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech9_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech9_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech9_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech10_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech10_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech10_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech10_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech10_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech10_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech10_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech10_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech10_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech11_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech11_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech11_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech11_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech11_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech11_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech11_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech11_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech11_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech12_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech12_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech12_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech12_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech12_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech12_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech12_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech12_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech12_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech13_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech13_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech13_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech13_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech13_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech13_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech13_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech13_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech13_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech14_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech14_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech14_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech14_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech14_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech14_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech14_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech14_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech14_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	
+	tom_inf_bat_cavalry_101_tech15_reset_13 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech15_reset_14 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech15_reset_15 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_101_tech15_reset_16 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 3
+		}
+	}
+	tom_inf_bat_cavalry_102_tech15_reset_17 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech15_reset_18 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech15_reset_19 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_102_tech15_reset_20 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 6
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_21 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_22 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_23 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_24 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_25 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_26 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_27 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_28 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_29 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
+	tom_inf_bat_cavalry_103_tech15_reset_30 = {
+		allow = {
+			always = no
+		}
+		cavalry = {
+			max_organisation = 9
+			soft_attack = 0.1
+		}
+	}
 }

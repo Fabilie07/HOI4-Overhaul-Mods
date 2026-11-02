@@ -193,6 +193,10 @@ All else: Empty Add
 # Mechanized Rangers
 3400: Mechanized Mountaineer
 
+# Special - Used for Internal Features
+101: Platoon Debuff 1
+102: Platoon Debuff 2
+103: Platoon Debuff 3
 
 PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 1: Empty Add
