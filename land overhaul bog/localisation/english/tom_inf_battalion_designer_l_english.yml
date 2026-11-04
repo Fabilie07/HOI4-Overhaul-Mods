@@ -9,8 +9,11 @@
  bat_open:0 "Open Battalion Designer"
  bat_switch_right:0 "Next Battalion"
  bat_switch_left:0 "Previous Battalion"
+ bat_switch_type:0 "Switch Battalion Type\nNext: [tom_inf_bat_next_category]"
  
  tom_inf_support_composition:0 "Battalion Composition"
+ 
+ TOM_INF_CURRENT_BAT_CAT:0 "[tom_inf_bat_current_category]"
 
  TOM_INF_BATTALION_EQUIPMENT_TT:0 "The stats shown here are mostly multiplicative. The base stats are provided by the §YEquipment Types§! fielded in the Battalion. Once an Equipment is added to the Battalion, its stats are added to the Base Value, irregardless of how much of it is added. That value is then multiplied by the values on the right (and other modifiers from Technologies, Doctrines and National Spirits).\n§9This is the reason why some Platoons seemingly reduce the stats of the Battalion: In practice, it is usually the opposite.§!"
  

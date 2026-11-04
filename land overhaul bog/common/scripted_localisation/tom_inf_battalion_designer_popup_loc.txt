@@ -29,6 +29,100 @@ defined_text = {
 
 
 defined_text = {
+	name = tom_inf_bat_current_category
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_category_infantry
+		}
+		localization_key = group_infantry_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_category_mobile
+		}
+		localization_key = group_mobile_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_category_armor
+		}
+		localization_key = group_armor_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_category_combat_support
+		}
+		localization_key = group_combat_support_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_category_mobile_combat_support
+		}
+		localization_key = group_mobile_combat_support_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_category_armor_combat_support
+		}
+		localization_key = group_armor_combat_support_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_category_support
+		}
+		localization_key = group_support_title
+	}
+}
+
+
+defined_text = {
+	name = tom_inf_bat_next_category
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_next_category_infantry
+		}
+		localization_key = group_infantry_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_next_category_mobile
+		}
+		localization_key = group_mobile_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_next_category_armor
+		}
+		localization_key = group_armor_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_next_category_combat_support
+		}
+		localization_key = group_combat_support_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_next_category_mobile_combat_support
+		}
+		localization_key = group_mobile_combat_support_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_next_category_armor_combat_support
+		}
+		localization_key = group_armor_combat_support_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_next_category_support
+		}
+		localization_key = group_support_title
+	}
+}
+
+
+defined_text = {
 	name = tom_inf_bat_subunit_icon
 	text = {
 		trigger = {

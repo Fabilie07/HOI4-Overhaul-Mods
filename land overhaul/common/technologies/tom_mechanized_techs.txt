@@ -49,7 +49,7 @@ technologies = {
 		}
 		
 		on_research_complete = {
-			add_to_array = { tom_inf_bat_array = 3 }
+			add_to_array = { tom_inf_bat_mobile_array = 3 }
 		}
 
 		path = {
@@ -280,6 +280,10 @@ technologies = {
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
+		}
+		
+		on_research_complete = {
+			add_to_array = { tom_inf_bat_mobile_array = 22 }
 		}
 		
 		# allow = {

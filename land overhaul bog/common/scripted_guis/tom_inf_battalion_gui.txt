@@ -11,6 +11,8 @@ scripted_gui = {
 			switch_battalion_left_button_click = { tom_inf_bat_cycle_left_effect = yes }
 			switch_battalion_right_button_shift_click = { tom_inf_bat_cycle_right_shift_effect = yes }
 			switch_battalion_left_button_shift_click = { tom_inf_bat_cycle_left_shift_effect = yes }
+			
+			switch_battalion_type_button_click = { tom_inf_bat_next_category_effect = yes }
 		}
 		
 		properties = {
