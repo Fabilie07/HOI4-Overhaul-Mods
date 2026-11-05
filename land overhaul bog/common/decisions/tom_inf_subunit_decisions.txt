@@ -1,0 +1,182 @@
+political_actions = {
+	tom_inf_unlock_militia = {
+		visible = {
+			surrender_progress > 0.1
+		}
+		
+		icon = GFX_decision_SWE_set_army_budget
+		
+		fire_only_once = yes
+		days_remove = 14
+		
+		cost = 50
+		
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = { has_tech = militia_tech }
+				}
+				set_technology = { militia_tech = 1 }
+			}
+			
+			division_template = {
+				name = "Citizen's Militia"
+				regiments = {
+					militia = { x=0 y=0 }
+					militia = { x=0 y=1 }
+					militia = { x=1 y=0 }
+					militia = { x=1 y=1 }
+				}
+			}
+			
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Militia Organization\" division_template = \"Citizen's Militia\" start_experience_factor = 0.5"
+					owner = PREV
+					count = 3
+				}
+			}
+		}
+	}
+	
+	tom_inf_unlock_irregulars = {
+		visible = {
+			has_war_with_major = yes
+		}
+		
+		icon = GFX_decision_SWE_set_army_budget
+		
+		fire_only_once = yes
+		days_remove = 14
+		
+		cost = 50
+		
+		remove_effect = {
+			unlock_subunit = irregular_infantry
+			
+			division_template = {
+				name = "Irregulars"
+				regiments = {
+					irregular_infantry = { x=0 y=0 }
+					irregular_infantry = { x=0 y=1 }
+					irregular_infantry = { x=1 y=0 }
+					irregular_infantry = { x=1 y=1 }
+				}
+			}
+			
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Irregular Force\" division_template = \"Irregulars\" start_experience_factor = 0.5"
+					owner = PREV
+					count = 3
+				}
+			}
+		}
+	}
+	
+	tom_inf_unlock_penal_battalion = {
+		visible = {
+			has_defensive_war = yes
+		}
+		
+		icon = GFX_decision_SWE_set_army_budget
+		
+		fire_only_once = yes
+		days_remove = 14
+		
+		cost = 50
+		
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = { has_tech = penal_infantry }
+				}
+				set_technology = { penal_infantry = 1 }
+			}
+			
+			add_stability = -0.05
+			
+			division_template = {
+				name = "Conscripted Convicts"
+				regiments = {
+					penal_battalion = { x=0 y=0 }
+					penal_battalion = { x=0 y=1 }
+					penal_battalion = { x=1 y=0 }
+					penal_battalion = { x=1 y=1 }
+				}
+			}
+			
+			capital_scope = {
+				create_unit = {
+					division = "name = \"Penal Unit\" division_template = \"Conscripted Convicts\" start_experience_factor = 0.5"
+					owner = PREV
+					count = 3
+				}
+			}
+		}
+	}
+	
+	tom_inf_unlock_bicycles = {
+		visible = {
+			any_controlled_state = {
+				is_on_continent = europe
+			}
+			NOT = { has_tech = bicycle_infantry }
+		}
+		
+		icon = GFX_decision_SWE_set_army_budget
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		complete_effect = {
+			set_technology = { bicycle_infantry = 1 }
+		}
+	}
+	
+	tom_inf_unlock_camelry = {
+		visible = {
+			any_controlled_state = {
+				OR = {
+					is_on_continent = africa
+					is_on_continent = middle_east
+				}
+			}
+			NOT = { has_tech = camelry }
+		}
+		
+		icon = GFX_decision_SWE_set_army_budget
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		complete_effect = {
+			set_technology = { camelry = 1 }
+		}
+	}
+	
+	tom_inf_unlock_elephantry = {
+		visible = {
+			any_controlled_state = {
+				OR = {
+					is_on_continent = africa
+					is_on_continent = middle_east
+					is_on_continent = asia
+				}
+			}
+			NOT = { has_tech = elephantry }
+		}
+		
+		icon = GFX_decision_SWE_set_army_budget
+		
+		fire_only_once = yes
+		
+		cost = 25
+		
+		complete_effect = {
+			set_technology = { elephantry = 1 }
+		}
+	}
+}

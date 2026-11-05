@@ -1,0 +1,21 @@
+debug_decisions = {
+	tom_inf_start_unit_effect_benchmark_test_1000 = {
+		complete_effect = {
+			resize_temp_array = { benchmark_array = 1000 }
+			
+			for_each_loop = {
+				array = benchmark_array
+				add_unit_bonus = {
+					infantry = {
+						max_organisation = -10
+					}
+				}
+				add_unit_bonus = {
+					infantry = {
+						max_organisation = 10
+					}
+				}
+			}
+		}
+	}
+}
