@@ -33,49 +33,4 @@ equipments = {
 		archetype = support_equipment
 		priority = 20	
 	}
-	
-	support_equipment_2 = {
-		year = 1939
-
-		archetype = support_equipment
-		parent = support_equipment_1
-		priority = 20
-		
-		max_organisation = 0.1
-		
-		resources = {
-			aluminium = 1
-			steel = 2
-		}
-	}
-	
-	support_equipment_3 = {
-		year = 1942
-
-		archetype = support_equipment
-		parent = support_equipment_2
-		priority = 20
-		
-		max_organisation = 0.2
-		
-		resources = {
-			aluminium = 1
-			steel = 2
-		}
-	}
-	
-	support_equipment_4 = {
-		year = 1945
-
-		archetype = support_equipment
-		parent = support_equipment_3
-		priority = 20
-		
-		max_organisation = 0.4
-		
-		resources = {
-			aluminium = 2
-			steel = 2
-		}
-	}
 }

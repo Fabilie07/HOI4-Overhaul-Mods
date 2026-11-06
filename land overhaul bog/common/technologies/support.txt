@@ -97,8 +97,8 @@ technologies = {
 	
 	tech_support2 = {
 
-		enable_equipments = {
-			support_equipment_2
+		category_support_battalions = {
+			max_organisation = 4
 		}
 
 
@@ -139,8 +139,8 @@ technologies = {
 	
 	tech_support3 = {
 
-		enable_equipments = {
-			support_equipment_3
+		category_support_battalions = {
+			max_organisation = 3
 		}
 
 
@@ -166,8 +166,8 @@ technologies = {
 	
 	tech_support4 = {
 
-		enable_equipments = {
-			support_equipment_4
+		category_support_battalions = {
+			max_organisation = 3
 		}
 
 		research_cost = 1.2

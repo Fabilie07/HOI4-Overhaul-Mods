@@ -72,9 +72,12 @@
  radio_equipment_2:0 "Advanced Radio"
  
  
- support_equipment_2:0 "Improved Support Equipment"
- support_equipment_3:0 "Advanced Support Equipment"
- support_equipment_4:0 "Modern Support Equipment"
+ tech_support2:0 "Integrated Support"
+ tech_support2_desc:0 "Modern Warfare necessitates different Combat Elements to coordinate and effectively fight together, even if they are commanded by different headquarters."
+ tech_support3:0 "Dispersed Support"
+ tech_support3_desc:0 "Units providing Combat Support are spread out along the frontline according to a predefined battleplan, improving their response times significantly."
+ tech_support4:0 "Elevated Support"
+ tech_support4_desc:0 "Support Elements are trained to a rigorous standard, allowing them to easily adjust to unforseen circumstances."
  
  
  mechanized_utility_equipment:0 "Ammo Carrier"
