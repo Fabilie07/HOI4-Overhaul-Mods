@@ -1,6 +1,11 @@
 spriteTypes = {
 	### CATEGORIES
 	spriteType = {
+		name = "GFX_EMI_inf_tube"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/tube_magazine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_inf_clip"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/clip.dds"
 		legacy_lazy_load = no
@@ -72,8 +77,28 @@ spriteTypes = {
 	
 	### MAGAZINES
 	spriteType = {
+		name = "GFX_EMI_inf_tube_05"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/tube_magazine_5.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_tube_08"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/tube_magazine_8.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_tube_10"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/tube_magazine_10.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_inf_clip_05"
 		textureFile = "gfx/interface/equipmentdesigner/inf/modules/clip_05.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_inf_clip_08"
+		textureFile = "gfx/interface/equipmentdesigner/inf/modules/clip_08.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {

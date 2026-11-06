@@ -59,39 +59,44 @@ equipment_modules = {
 	# MAGAZINES
 	inf_tube_05 = {
 		category = inf_magazine
+		gui_category = inf_tube
 		
 		add_stats = {
-			defense = 4
-			build_cost_ic = 0.04
+			defense = 2
 		}
 		multiply_stats = {
 			soft_attack = 0.02
+			hard_attack = -0.2
 		}
 		
 		xp_cost = 1
 	}
 	inf_tube_08 = {
 		category = inf_magazine
+		gui_category = inf_tube
 		
 		add_stats = {
-			defense = 4
-			build_cost_ic = 0.05
+			defense = 2
+			build_cost_ic = 0.01
 		}
 		multiply_stats = {
 			soft_attack = 0.03
+			hard_attack = -0.2
 		}
 		
 		xp_cost = 1
 	}
 	inf_tube_10 = {
 		category = inf_magazine
+		gui_category = inf_tube
 		
 		add_stats = {
-			defense = 4
-			build_cost_ic = 0.06
+			defense = 2
+			build_cost_ic = 0.02
 		}
 		multiply_stats = {
 			soft_attack = 0.04
+			hard_attack = -0.2
 		}
 		
 		xp_cost = 1
@@ -103,6 +108,19 @@ equipment_modules = {
 		
 		multiply_stats = {
 			soft_attack = 0.02
+		}
+		
+		xp_cost = 1
+	}
+	inf_clip_08 = {
+		category = inf_magazine
+		gui_category = inf_clip
+		
+		add_stats = {
+			build_cost_ic = 0.01
+		}
+		multiply_stats = {
+			soft_attack = 0.03
 		}
 		
 		xp_cost = 1

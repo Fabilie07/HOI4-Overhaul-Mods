@@ -30,7 +30,11 @@ technologies = {
 			inf_bolt_action
 			inf_lever_action
 			
+			inf_tube_05
+			inf_tube_08
+			inf_tube_10
 			inf_clip_05
+			inf_clip_08
 			inf_clip_10
 			inf_magazine_05
 			inf_magazine_10
