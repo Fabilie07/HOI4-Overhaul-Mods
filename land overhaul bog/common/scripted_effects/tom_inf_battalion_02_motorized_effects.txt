@@ -295,52 +295,6 @@ tom_inf_bat_open_subunit_counts_motorized_effect = {
 	set_variable = { tom_inf_bat_popup_1223_min = tom_inf_bat_motorized_1223_min }
 	set_variable = { tom_inf_bat_popup_1230_min = tom_inf_bat_motorized_1230_min }
 	set_variable = { tom_inf_bat_popup_1240_min = tom_inf_bat_motorized_1240_min }
-	
-	for_each_loop = {
-		array = tom_inf_bat_resets_left_13_1001
-		value = temp_v
-		add_to_array = { tom_inf_bat_resets_left_1001 = temp_v }
-	}
-	for_each_loop = {
-		array = tom_inf_bat_resets_left_13_1002
-		value = temp_v
-		add_to_array = { tom_inf_bat_resets_left_1002 = temp_v }
-	}
-	for_each_loop = {
-		array = tom_inf_bat_resets_left_13_1003
-		value = temp_v
-		add_to_array = { tom_inf_bat_resets_left_1003 = temp_v }
-	}
-	for_each_loop = {
-		array = tom_inf_bat_resets_left_13_1010
-		value = temp_v
-		add_to_array = { tom_inf_bat_resets_left_1010 = temp_v }
-	}
-	for_each_loop = {
-		array = tom_inf_bat_resets_left_13_1020
-		value = temp_v
-		add_to_array = { tom_inf_bat_resets_left_1020 = temp_v }
-	}
-	for_each_loop = {
-		array = tom_inf_bat_resets_left_13_1021
-		value = temp_v
-		add_to_array = { tom_inf_bat_resets_left_1021 = temp_v }
-	}
-	
-	set_variable = { tom_inf_bat_resets_left_1111 = tom_inf_bat_resets_left_13_1111 }
-	set_variable = { tom_inf_bat_resets_left_1112 = tom_inf_bat_resets_left_13_1112 }
-	set_variable = { tom_inf_bat_resets_left_1113 = tom_inf_bat_resets_left_13_1113 }
-	set_variable = { tom_inf_bat_resets_left_1121 = tom_inf_bat_resets_left_13_1121 }
-	set_variable = { tom_inf_bat_resets_left_1130 = tom_inf_bat_resets_left_13_1130 }
-	set_variable = { tom_inf_bat_resets_left_1210 = tom_inf_bat_resets_left_13_1210 }
-	set_variable = { tom_inf_bat_resets_left_1211 = tom_inf_bat_resets_left_13_1211 }
-	set_variable = { tom_inf_bat_resets_left_1212 = tom_inf_bat_resets_left_13_1212 }
-	set_variable = { tom_inf_bat_resets_left_1220 = tom_inf_bat_resets_left_13_1220 }
-	set_variable = { tom_inf_bat_resets_left_1221 = tom_inf_bat_resets_left_13_1221 }
-	set_variable = { tom_inf_bat_resets_left_1222 = tom_inf_bat_resets_left_13_1222 }
-	set_variable = { tom_inf_bat_resets_left_1223 = tom_inf_bat_resets_left_13_1223 }
-	set_variable = { tom_inf_bat_resets_left_1230 = tom_inf_bat_resets_left_13_1230 }
-	set_variable = { tom_inf_bat_resets_left_1240 = tom_inf_bat_resets_left_13_1240 }
 }
 
 

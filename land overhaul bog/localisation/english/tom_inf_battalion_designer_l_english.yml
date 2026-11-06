@@ -33,8 +33,8 @@
  TOM_INF_STAT_FORMAT_EQUIPMENT_1:0 "[tom_inf_bat_stat_visual_depiction_equipment_1]"
  TOM_INF_STAT_FORMAT_EQUIPMENT_2:0 "[?v.GetTokenLocalizedKey]:"
  
- TOM_INF_REMOVE_BUTTON_TT_UNAVAILABLE:0 "§RNo more Resets left! \nTo move this Platoon elsewhere, add it to the desired Company first and only then remove it here.§!"
- TOM_INF_REMOVE_BUTTON_TT:0 "Remove §Y[tom_inf_bat_current_remove]§!?\nResets left for this Platoon: §Y[tom_inf_bat_current_resets]§!\nWhen these are used up, the Platoon can no longer be removed from this Battalion. Resets are only counted once the Battalion is saved."
+ TOM_INF_REMOVE_BUTTON_TT_UNAVAILABLE:0 "§RMinimum Number of Platoons reached! \nTo move this Platoon elsewhere, add it to the desired Company first and only then remove it here.§!"
+ TOM_INF_REMOVE_BUTTON_TT:0 "Remove §Y[tom_inf_bat_current_remove]§!"
  
  TOM_INF_SAVE_BUTTON:0 "[tom_inf_bat_save_button_tt]"
  TOM_INF_SAVE_BUTTON_TT:0 "Saves the Battalion you are currently editing, immediately applying all new effects and equipment requirements."
