@@ -32,6 +32,27 @@ tom_inf_save_button_click_effect = {
 	}
 	else_if = {
 		limit = {
+			has_country_flag = tom_inf_bat_current_militia
+		}
+		
+		tom_inf_bat_save_designer_militia_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_irregulars
+		}
+		
+		tom_inf_bat_save_designer_irregulars_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_penal
+		}
+		
+		tom_inf_bat_save_designer_penal_effect = yes
+	}
+	else_if = {
+		limit = {
 			has_country_flag = tom_inf_bat_current_mountaineer
 		}
 		
@@ -86,6 +107,20 @@ tom_inf_save_button_click_effect = {
 		
 		tom_inf_bat_save_designer_rangers_mechanized_effect = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_bicycle
+		}
+		
+		tom_inf_bat_save_designer_bicycle_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_camelry
+		}
+		
+		tom_inf_bat_save_designer_camelry_effect = yes
+	}
 	
 	tom_inf_update_doctrine_variables_effect = yes
 	tom_inf_bat_close_designer_effect = yes
@@ -104,6 +139,12 @@ tom_inf_update_doctrine_variables_effect = {
 	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_mechanized }
 	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_cavalry }
 	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_cavalry }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_militia }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_militia }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_irregulars }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_irregulars }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_penal }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_penal }
 	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_mountaineer }
 	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_mountaineer }
 	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_paratrooper }
@@ -120,6 +161,10 @@ tom_inf_update_doctrine_variables_effect = {
 	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_amphibious_mechanized }
 	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_rangers_mechanized }
 	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_rangers_mechanized }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_bicycle }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_bicycle }
+	add_to_variable = { tom_inf_doctrine_mastery_support = tom_inf_doctrine_mastery_support_camelry }
+	add_to_variable = { tom_inf_doctrine_mastery_all = tom_inf_doctrine_mastery_all_camelry }
 	
 	divide_variable = { tom_inf_doctrine_mastery_support = 100 }
 	divide_variable = { tom_inf_doctrine_mastery_all = 100 }
@@ -166,6 +211,18 @@ tom_inf_compute_equipment_cost_effect = {
 				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@cavalry }
 			}
 			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_militia }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@militia }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_irregulars }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@irregular_infantry }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_penal }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@penal_battalion }
+			}
+			else_if = {
 				limit = { has_country_flag = tom_inf_bat_current_mountaineer }
 				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@mountaineers }
 			}
@@ -196,6 +253,14 @@ tom_inf_compute_equipment_cost_effect = {
 			else_if = {
 				limit = { has_country_flag = tom_inf_bat_current_rangers_mechanized }
 				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@rangers_mechanized }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_bicycle }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@bicycle_battalion }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_camelry }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@camelry }
 			}
 			
 			add_to_array = { tom_inf_bat_needed_equipment_type_array = temp_equipment_archetype }

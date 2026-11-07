@@ -8,6 +8,9 @@ BATTALION IDs:
 2: Motorized
 3: Mechanized
 4: Cavalry
+5: Militia
+6: Irregulars
+7: Penal Battalion
 
 10: Mountaineer
 11: Paratrooper
@@ -18,6 +21,8 @@ BATTALION IDs:
 20: Mechanized Mountaineers
 22: Amphibious Mechanized
 24: Mechanized Rangers
+25: Bicycle Infantry
+26: Camelry
 
 
 COMPANIES ALLOWED:
@@ -42,6 +47,24 @@ Mechanized:
 Cavalry:
 	Empty
 	Mechanized Rifle
+	Support
+	Service
+
+Militia:
+	Empty
+	Rifle
+	Support
+	Service
+	
+Irregulars:
+	Empty
+	Rifle
+	Support
+	Service
+
+Penal Battalion:
+	Empty
+	Rifle
 	Support
 	Service
 
@@ -91,6 +114,17 @@ Mechanized Rangers:
 	Support
 	Service
 
+Bicycle Infantry:
+	Empty
+	Rifle
+	Support
+	Service
+
+Camelry:
+	Empty
+	Rifle
+	Support
+	Service
 
 COMPANY IDs:
 0: Empty
@@ -101,6 +135,9 @@ COMPANY IDs:
 13: Motorized Rifle
 14: Mechanized Rifle
 15: Cavalry
+16: Militia
+17: Irregulars
+18: Penal Battalion
 
 20: Mountaineer
 21: Paratrooper
@@ -111,6 +148,8 @@ COMPANY IDs:
 30: Mechanized Mountaineer
 32: Amtrak
 34: Mechanized Rangers
+35: Bicycle Infantry
+36: Camelry
 
 
 PLATOON IDs: #Platoon ID: Company ID + Identifier
@@ -169,6 +208,15 @@ All else: Empty Add
 # Cavalry
 1500: Mounted Rifle
 
+# Militia:
+1600: Citizen Rifle
+
+# Irregular:
+1700: Irregular Rifle
+
+# Penal Battalion:
+1800: Convict Rifle
+
 # Mountaineer
 2000: Mountaineer
 
@@ -193,10 +241,12 @@ All else: Empty Add
 # Mechanized Rangers
 3400: Mechanized Mountaineer
 
-# Special - Used for Internal Features
-101: Platoon Debuff 1
-102: Platoon Debuff 2
-103: Platoon Debuff 3
+# Bicycle:
+3500: Bicycle Rifle
+
+# Camelry:
+3600: Camelry Rifle
+
 
 PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 1: Empty Add
@@ -249,6 +299,14 @@ PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 34: Cavalry
 
 35: Rocket Artillery
+
+36: Militia
+37: Irregulars
+38: Penal Battalion
+
+39: Bicycle Infantry
+40: Camelry
+41: Elephantry
 
 
 Terrain IDs: # Necessary for visual depicition of Terrain Boni

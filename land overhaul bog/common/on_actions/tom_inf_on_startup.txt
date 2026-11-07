@@ -8,12 +8,15 @@ on_actions = {
 			}
 		}
 	
-		effect = {
+		effect = {			
 			every_country = {		
 				tom_inf_bat_startup_effect_infantry = yes
 				tom_inf_bat_startup_effect_motorized = yes
 				tom_inf_bat_startup_effect_mechanized = yes
 				tom_inf_bat_startup_effect_cavalry = yes
+				tom_inf_bat_startup_effect_militia = yes
+				tom_inf_bat_startup_effect_irregulars = yes
+				tom_inf_bat_startup_effect_penal = yes
 				tom_inf_bat_startup_effect_mountaineer = yes
 				tom_inf_bat_startup_effect_paratrooper = yes
 				tom_inf_bat_startup_effect_marine = yes
@@ -22,6 +25,8 @@ on_actions = {
 				tom_inf_bat_startup_effect_mountaineers_mechanized = yes
 				tom_inf_bat_startup_effect_amphibious_mechanized = yes
 				tom_inf_bat_startup_effect_rangers_mechanized = yes
+				tom_inf_bat_startup_effect_bicycle = yes
+				tom_inf_bat_startup_effect_camelry = yes
 				
 				tom_inf_bat_startup_effect_company_arrays = yes
 				
@@ -38,6 +43,16 @@ on_actions = {
 					has_tech = infantry_weapons1
 				}
 				set_technology = { support_weapons = 1 popup = no }
+			}
+			
+			every_country = {
+				limit = { has_template_containing_unit = militia }
+				set_technology = { militia_tech = 1 popup = no }
+			}
+			
+			every_country = {
+				limit = { has_template_containing_unit = irregular_infantry }
+				set_technology = { irregular_tech = 1 popup = no }
 			}
 		}
 		

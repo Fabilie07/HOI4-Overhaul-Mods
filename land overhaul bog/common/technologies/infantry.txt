@@ -3136,10 +3136,25 @@ technologies = {
 	}
 	
 	######### FROM JAPANESE FOCUS ##########
-	 militia_tech = {
+	militia_tech = {
  		allow = { always = no }
 		enable_subunits = {
 			militia
+		}
+		
+		on_research_complete = {
+			add_to_array = { tom_inf_bat_array = 5 }
+		}
+	}
+	
+	irregular_tech = {
+ 		allow = { always = no }
+		enable_subunits = {
+			irregular_infantry
+		}
+		
+		on_research_complete = {
+			add_to_array = { tom_inf_bat_array = 6 }
 		}
 	}
 	
@@ -3154,6 +3169,10 @@ technologies = {
 
 		enable_subunits = {
 			bicycle_battalion
+		}
+		
+		on_research_complete = {
+			add_to_array = { tom_inf_bat_mobile_array = 25 }
 		}
 	}
 	
@@ -3212,6 +3231,10 @@ technologies = {
 		enable_subunits = {
 			camelry
 		}
+		
+		on_research_complete = {
+			add_to_array = { tom_inf_bat_mobile_array = 26 }
+		}
 	}
 
 	######### FROM INDIAN FOCUS ##########
@@ -3241,6 +3264,10 @@ technologies = {
 
 		enable_subunits = {
 			penal_battalion
+		}
+		
+		on_research_complete = {
+			add_to_array = { tom_inf_bat_array = 7 }
 		}
 	}
 

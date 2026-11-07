@@ -1,0 +1,565 @@
+
+tom_inf_bat_startup_effect_penal = {
+	# Set Infantry Battalion Arrays to Start Values
+	resize_array = { tom_inf_bat_penal_base_stats_array = 11 }
+	resize_array = { tom_inf_bat_penal_combat_stats_array = 11 }
+	resize_array = { tom_inf_bat_penal_equipment_stats_array_1 = 2 }
+	add_to_array = { tom_inf_bat_penal_equipment_stats_array_2_type = token:infantry_equipment }
+	add_to_array = { tom_inf_bat_penal_equipment_stats_array_2_count = 81 }
+	
+	add_to_array = { tom_inf_bat_penal_companies_array = 18 }
+	add_to_array = { tom_inf_bat_penal_companies_array = 11 }
+	add_to_array = { tom_inf_bat_penal_companies_array = 12 }
+	
+	# Company IDs
+	add_to_array = { tom_inf_battalion_penal_company_array = 18 }
+	add_to_array = { tom_inf_battalion_penal_company_array = 18 }
+	add_to_array = { tom_inf_battalion_penal_company_array = 18 }
+	add_to_array = { tom_inf_battalion_penal_company_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_company_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_company_array = 0 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 1800 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_penal_platoon_array = 0 }
+	
+	set_variable = { tom_inf_bat_penal_18_count = 3 }
+	set_variable = { tom_inf_bat_penal_11_count = 0 }
+	set_variable = { tom_inf_bat_penal_12_count = 0 }
+	
+	set_variable = { tom_inf_bat_penal_1800_count = 9 }
+	set_variable = { tom_inf_bat_penal_1001_count = 0 }
+	set_variable = { tom_inf_bat_penal_1002_count = 0 }
+	set_variable = { tom_inf_bat_penal_1003_count = 0 }
+	set_variable = { tom_inf_bat_penal_1010_count = 0 }
+	set_variable = { tom_inf_bat_penal_1020_count = 0 }
+	set_variable = { tom_inf_bat_penal_1021_count = 0 }
+	
+	set_variable = { tom_inf_bat_penal_1100_count = 0 }
+	set_variable = { tom_inf_bat_penal_1101_count = 0 }
+	set_variable = { tom_inf_bat_penal_1102_count = 0 }
+	set_variable = { tom_inf_bat_penal_1110_count = 0 }
+	set_variable = { tom_inf_bat_penal_1111_count = 0 }
+	set_variable = { tom_inf_bat_penal_1112_count = 0 }
+	set_variable = { tom_inf_bat_penal_1113_count = 0 }
+	set_variable = { tom_inf_bat_penal_1120_count = 0 }
+	set_variable = { tom_inf_bat_penal_1121_count = 0 }
+	set_variable = { tom_inf_bat_penal_1122_count = 0 }
+	set_variable = { tom_inf_bat_penal_1130_count = 0 }
+	
+	set_variable = { tom_inf_bat_penal_1200_count = 0 }
+	set_variable = { tom_inf_bat_penal_1201_count = 0 }
+	set_variable = { tom_inf_bat_penal_1210_count = 0 }
+	set_variable = { tom_inf_bat_penal_1211_count = 0 }
+	set_variable = { tom_inf_bat_penal_1212_count = 0 }
+	set_variable = { tom_inf_bat_penal_1220_count = 0 }
+	set_variable = { tom_inf_bat_penal_1221_count = 0 }
+	set_variable = { tom_inf_bat_penal_1222_count = 0 }
+	set_variable = { tom_inf_bat_penal_1223_count = 0 }
+	set_variable = { tom_inf_bat_penal_1230_count = 0 }
+	set_variable = { tom_inf_bat_penal_1240_count = 0 }
+	
+	
+	set_variable = { tom_inf_bat_penal_18_max = 4 }
+	set_variable = { tom_inf_bat_penal_11_max = 1 }
+	set_variable = { tom_inf_bat_penal_12_max = 1 }
+	
+	set_variable = { tom_inf_bat_penal_1800_max = 16 }
+	set_variable = { tom_inf_bat_penal_1001_max = 4 }
+	set_variable = { tom_inf_bat_penal_1002_max = 4 }
+	set_variable = { tom_inf_bat_penal_1003_max = 4 }
+	set_variable = { tom_inf_bat_penal_1010_max = 4 }
+	set_variable = { tom_inf_bat_penal_1020_max = 4 }
+	set_variable = { tom_inf_bat_penal_1021_max = 4 }
+	
+	set_variable = { tom_inf_bat_penal_1800_min = 4 }
+	
+	set_variable = { tom_inf_bat_penal_platoon_count_org = 9 }
+	
+	set_country_flag = tom_inf_bat_penal_1800_5
+	set_country_flag = tom_inf_bat_penal_1800_6
+	set_country_flag = tom_inf_bat_penal_1800_7
+	set_country_flag = tom_inf_bat_penal_1800_8
+	set_country_flag = tom_inf_bat_penal_1800_9
+}
+
+
+tom_inf_bat_open_designer_penal_effect = {
+	for_each_loop = {
+		array = tom_inf_battalion_penal_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_penal_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_platoon_array = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_penal_base_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_base_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_combat_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_combat_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_equipment_stats_array_1
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_1 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_equipment_stats_array_2_type
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_needed = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_penal_terrain_bonus_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_bonus_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_terrain_movement_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_movement_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_terrain_attack_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_attack_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_penal_terrain_defense_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_defense_array = temp_v }
+	}
+	
+	tom_inf_bat_open_support_penal_effect = yes
+	tom_inf_bat_open_subunit_counts_penal_effect = yes	
+}
+
+tom_inf_bat_open_subunit_counts_penal_effect = {
+	set_variable = { tom_inf_bat_popup_18_count = tom_inf_bat_penal_18_count }
+	set_variable = { tom_inf_bat_popup_11_count = tom_inf_bat_penal_11_count }
+	set_variable = { tom_inf_bat_popup_12_count = tom_inf_bat_penal_12_count }
+	
+	set_variable = { tom_inf_bat_popup_1800_count = tom_inf_bat_penal_1800_count }
+	set_variable = { tom_inf_bat_popup_1001_count = tom_inf_bat_penal_1001_count }
+	set_variable = { tom_inf_bat_popup_1002_count = tom_inf_bat_penal_1002_count }
+	set_variable = { tom_inf_bat_popup_1003_count = tom_inf_bat_penal_1003_count }
+	set_variable = { tom_inf_bat_popup_1010_count = tom_inf_bat_penal_1010_count }
+	set_variable = { tom_inf_bat_popup_1020_count = tom_inf_bat_penal_1020_count }
+	set_variable = { tom_inf_bat_popup_1021_count = tom_inf_bat_penal_1021_count }
+	
+	set_variable = { tom_inf_bat_popup_1100_count = tom_inf_bat_penal_1100_count }
+	set_variable = { tom_inf_bat_popup_1101_count = tom_inf_bat_penal_1101_count }
+	set_variable = { tom_inf_bat_popup_1102_count = tom_inf_bat_penal_1102_count }
+	set_variable = { tom_inf_bat_popup_1110_count = tom_inf_bat_penal_1110_count }
+	set_variable = { tom_inf_bat_popup_1111_count = tom_inf_bat_penal_1111_count }
+	set_variable = { tom_inf_bat_popup_1112_count = tom_inf_bat_penal_1112_count }
+	set_variable = { tom_inf_bat_popup_1113_count = tom_inf_bat_penal_1113_count }
+	set_variable = { tom_inf_bat_popup_1120_count = tom_inf_bat_penal_1120_count }
+	set_variable = { tom_inf_bat_popup_1121_count = tom_inf_bat_penal_1121_count }
+	set_variable = { tom_inf_bat_popup_1122_count = tom_inf_bat_penal_1122_count }
+	set_variable = { tom_inf_bat_popup_1130_count = tom_inf_bat_penal_1130_count }
+	
+	set_variable = { tom_inf_bat_popup_1200_count = tom_inf_bat_penal_1200_count }
+	set_variable = { tom_inf_bat_popup_1201_count = tom_inf_bat_penal_1201_count }
+	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_penal_1210_count }
+	set_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_penal_1211_count }
+	set_variable = { tom_inf_bat_popup_1212_count = tom_inf_bat_penal_1212_count }
+	set_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_penal_1220_count }
+	set_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_penal_1221_count }
+	set_variable = { tom_inf_bat_popup_1222_count = tom_inf_bat_penal_1222_count }
+	set_variable = { tom_inf_bat_popup_1223_count = tom_inf_bat_penal_1223_count }
+	set_variable = { tom_inf_bat_popup_1230_count = tom_inf_bat_penal_1230_count }
+	set_variable = { tom_inf_bat_popup_1240_count = tom_inf_bat_penal_1240_count }
+	
+	
+	set_variable = { tom_inf_bat_popup_18_max = tom_inf_bat_penal_18_max }
+	set_variable = { tom_inf_bat_popup_11_max = tom_inf_bat_penal_11_max }
+	set_variable = { tom_inf_bat_popup_12_max = tom_inf_bat_penal_12_max }
+	
+	set_variable = { tom_inf_bat_popup_1800_max = tom_inf_bat_penal_1800_max }
+	set_variable = { tom_inf_bat_popup_1001_max = tom_inf_bat_penal_1001_max }
+	set_variable = { tom_inf_bat_popup_1002_max = tom_inf_bat_penal_1002_max }
+	set_variable = { tom_inf_bat_popup_1003_max = tom_inf_bat_penal_1003_max }
+	set_variable = { tom_inf_bat_popup_1010_max = tom_inf_bat_penal_1010_max }
+	set_variable = { tom_inf_bat_popup_1020_max = tom_inf_bat_penal_1020_max }
+	set_variable = { tom_inf_bat_popup_1021_max = tom_inf_bat_penal_1021_max }
+	
+	set_variable = { tom_inf_bat_popup_1800_min = tom_inf_bat_penal_1800_min }
+	set_variable = { tom_inf_bat_popup_1001_min = tom_inf_bat_penal_1001_min }
+	set_variable = { tom_inf_bat_popup_1002_min = tom_inf_bat_penal_1002_min }
+	set_variable = { tom_inf_bat_popup_1003_min = tom_inf_bat_penal_1003_min }
+	set_variable = { tom_inf_bat_popup_1010_min = tom_inf_bat_penal_1010_min }
+	set_variable = { tom_inf_bat_popup_1020_min = tom_inf_bat_penal_1020_min }
+	set_variable = { tom_inf_bat_popup_1021_min = tom_inf_bat_penal_1021_min }
+	
+	set_variable = { tom_inf_bat_popup_1100_min = tom_inf_bat_penal_1100_min }
+	set_variable = { tom_inf_bat_popup_1101_min = tom_inf_bat_penal_1101_min }
+	set_variable = { tom_inf_bat_popup_1102_min = tom_inf_bat_penal_1102_min }
+	set_variable = { tom_inf_bat_popup_1110_min = tom_inf_bat_penal_1110_min }
+	set_variable = { tom_inf_bat_popup_1111_min = tom_inf_bat_penal_1111_min }
+	set_variable = { tom_inf_bat_popup_1112_min = tom_inf_bat_penal_1112_min }
+	set_variable = { tom_inf_bat_popup_1113_min = tom_inf_bat_penal_1113_min }
+	set_variable = { tom_inf_bat_popup_1120_min = tom_inf_bat_penal_1120_min }
+	set_variable = { tom_inf_bat_popup_1121_min = tom_inf_bat_penal_1121_min }
+	set_variable = { tom_inf_bat_popup_1122_min = tom_inf_bat_penal_1122_min }
+	set_variable = { tom_inf_bat_popup_1130_min = tom_inf_bat_penal_1130_min }
+	set_variable = { tom_inf_bat_popup_1200_min = tom_inf_bat_penal_1200_min }
+	set_variable = { tom_inf_bat_popup_1201_min = tom_inf_bat_penal_1201_min }
+	set_variable = { tom_inf_bat_popup_1210_min = tom_inf_bat_penal_1210_min }
+	set_variable = { tom_inf_bat_popup_1211_min = tom_inf_bat_penal_1211_min }
+	set_variable = { tom_inf_bat_popup_1212_min = tom_inf_bat_penal_1212_min }
+	set_variable = { tom_inf_bat_popup_1220_min = tom_inf_bat_penal_1220_min }
+	set_variable = { tom_inf_bat_popup_1221_min = tom_inf_bat_penal_1221_min }
+	set_variable = { tom_inf_bat_popup_1222_min = tom_inf_bat_penal_1222_min }
+	set_variable = { tom_inf_bat_popup_1223_min = tom_inf_bat_penal_1223_min }
+	set_variable = { tom_inf_bat_popup_1230_min = tom_inf_bat_penal_1230_min }
+	set_variable = { tom_inf_bat_popup_1240_min = tom_inf_bat_penal_1240_min }
+}
+
+
+tom_inf_bat_save_designer_penal_effect = {
+	if = {
+		limit = {
+			OR = {
+				tom_inf_save_button_increase_penal_trigger = yes
+				tom_inf_save_button_decrease_penal_trigger = yes
+			}
+		}
+		tom_inf_bat_add_effect_penal = yes
+		tom_inf_bat_remove_effect_penal = yes
+		
+		if = {
+			limit = {
+				check_variable = { tom_inf_bat_popup_platoon_count_org > tom_inf_bat_penal_platoon_count_org }
+			}
+			tom_inf_bat_increase_platoon_org_penal = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { tom_inf_bat_popup_platoon_count_org < tom_inf_bat_penal_platoon_count_org }
+			}
+			tom_inf_bat_decrease_platoon_org_penal = yes
+		}
+		
+		clear_array = tom_inf_bat_penal_base_stats_array
+		clear_array = tom_inf_bat_penal_combat_stats_array
+		clear_array = tom_inf_bat_penal_equipment_stats_array_1
+		clear_array = tom_inf_bat_penal_equipment_stats_array_2_type
+		clear_array = tom_inf_bat_penal_equipment_stats_array_2_count
+		
+		clear_array = tom_inf_bat_penal_terrain_bonus_array
+		clear_array = tom_inf_bat_penal_terrain_movement_array
+		clear_array = tom_inf_bat_penal_terrain_attack_array
+		clear_array = tom_inf_bat_penal_terrain_defense_array
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_base_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_base_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_combat_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_combat_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_1
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_equipment_stats_array_1 = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_type
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_equipment_stats_array_2_type = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_count
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_equipment_stats_array_2_count = temp_v }
+		}
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_bonus_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_terrain_bonus_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_movement_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_terrain_movement_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_attack_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_terrain_attack_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_defense_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_penal_terrain_defense_array = temp_v }
+		}
+	}
+	
+	tom_inf_bat_update_support_penal_effect = yes
+	
+	clear_array = tom_inf_battalion_penal_company_array
+	clear_array = tom_inf_battalion_penal_platoon_array
+	
+	for_each_loop = {
+		array = tom_inf_battalion_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_penal_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_penal_platoon_array = temp_v }
+	}
+	
+	set_variable = { tom_inf_bat_penal_18_count = tom_inf_bat_popup_18_count }
+	set_variable = { tom_inf_bat_penal_11_count = tom_inf_bat_popup_11_count }
+	set_variable = { tom_inf_bat_penal_12_count = tom_inf_bat_popup_12_count }
+	
+	set_variable = { tom_inf_bat_penal_1800_count = tom_inf_bat_popup_1800_count }
+	set_variable = { tom_inf_bat_penal_1001_count = tom_inf_bat_popup_1001_count }
+	set_variable = { tom_inf_bat_penal_1002_count = tom_inf_bat_popup_1002_count }
+	set_variable = { tom_inf_bat_penal_1003_count = tom_inf_bat_popup_1003_count }
+	set_variable = { tom_inf_bat_penal_1010_count = tom_inf_bat_popup_1010_count }
+	set_variable = { tom_inf_bat_penal_1020_count = tom_inf_bat_popup_1020_count }
+	set_variable = { tom_inf_bat_penal_1021_count = tom_inf_bat_popup_1021_count }
+	
+	set_variable = { tom_inf_bat_penal_1100_count = tom_inf_bat_popup_1100_count }
+	set_variable = { tom_inf_bat_penal_1101_count = tom_inf_bat_popup_1101_count }
+	set_variable = { tom_inf_bat_penal_1102_count = tom_inf_bat_popup_1102_count }
+	set_variable = { tom_inf_bat_penal_1110_count = tom_inf_bat_popup_1110_count }
+	set_variable = { tom_inf_bat_penal_1111_count = tom_inf_bat_popup_1111_count }
+	set_variable = { tom_inf_bat_penal_1112_count = tom_inf_bat_popup_1112_count }
+	set_variable = { tom_inf_bat_penal_1113_count = tom_inf_bat_popup_1113_count }
+	set_variable = { tom_inf_bat_penal_1120_count = tom_inf_bat_popup_1120_count }
+	set_variable = { tom_inf_bat_penal_1121_count = tom_inf_bat_popup_1121_count }
+	set_variable = { tom_inf_bat_penal_1122_count = tom_inf_bat_popup_1122_count }
+	set_variable = { tom_inf_bat_penal_1130_count = tom_inf_bat_popup_1130_count }
+	
+	set_variable = { tom_inf_bat_penal_1200_count = tom_inf_bat_popup_1200_count }
+	set_variable = { tom_inf_bat_penal_1201_count = tom_inf_bat_popup_1201_count }
+	set_variable = { tom_inf_bat_penal_1210_count = tom_inf_bat_popup_1210_count }
+	set_variable = { tom_inf_bat_penal_1211_count = tom_inf_bat_popup_1211_count }
+	set_variable = { tom_inf_bat_penal_1212_count = tom_inf_bat_popup_1212_count }
+	set_variable = { tom_inf_bat_penal_1220_count = tom_inf_bat_popup_1220_count }
+	set_variable = { tom_inf_bat_penal_1221_count = tom_inf_bat_popup_1221_count }
+	set_variable = { tom_inf_bat_penal_1222_count = tom_inf_bat_popup_1222_count }
+	set_variable = { tom_inf_bat_penal_1223_count = tom_inf_bat_popup_1223_count }
+	set_variable = { tom_inf_bat_penal_1230_count = tom_inf_bat_popup_1230_count }
+	set_variable = { tom_inf_bat_penal_1240_count = tom_inf_bat_popup_1240_count }
+	
+	set_variable = { tom_inf_bat_penal_1100_min = tom_inf_bat_popup_1100_min }
+	set_variable = { tom_inf_bat_penal_1101_min = tom_inf_bat_popup_1101_min }
+	set_variable = { tom_inf_bat_penal_1102_min = tom_inf_bat_popup_1102_min }
+	set_variable = { tom_inf_bat_penal_1110_min = tom_inf_bat_popup_1110_min }
+	set_variable = { tom_inf_bat_penal_1120_min = tom_inf_bat_popup_1120_min }
+	set_variable = { tom_inf_bat_penal_1122_min = tom_inf_bat_popup_1122_min }
+	
+	tom_inf_bat_set_doctrine_variables_penal_effect = yes
+}
+
+tom_inf_bat_set_doctrine_variables_penal_effect = {
+	set_temp_variable = { doctrine_bonus_support = 0 }
+	set_temp_variable = { doctrine_bonus_all = 0 }
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1001
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1001_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1001_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1001_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1002
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1002_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1002_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1002_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1003
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1003_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1003_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1003_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1010
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1010_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1010_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1010_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1020
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1020_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1020_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1020_count }
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1021
+		}
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1021_count }
+		add_to_temp_variable = { doctrine_bonus_support = tom_inf_bat_popup_1021_count }
+	}
+	else = {
+		add_to_temp_variable = { doctrine_bonus_all = tom_inf_bat_popup_1021_count }
+	}
+	
+	set_variable = { tom_inf_doctrine_mastery_support_penal = doctrine_bonus_support }
+	set_variable = { tom_inf_doctrine_mastery_all_penal = doctrine_bonus_all }
+}
+
+tom_inf_bat_open_support_penal_effect = {
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_penal_1001
+		}
+		set_country_flag = tom_inf_bat_support_1001
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_penal_1002
+		}
+		set_country_flag = tom_inf_bat_support_1002
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_penal_1003
+		}
+		set_country_flag = tom_inf_bat_support_1003
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_penal_1010
+		}
+		set_country_flag = tom_inf_bat_support_1010
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_penal_1020
+		}
+		set_country_flag = tom_inf_bat_support_1020
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_penal_1021
+		}
+		set_country_flag = tom_inf_bat_support_1021
+	}
+}
+
+tom_inf_bat_update_support_penal_effect = {
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1001
+		}
+		set_country_flag = tom_inf_bat_support_penal_1001
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1002
+		}
+		set_country_flag = tom_inf_bat_support_penal_1002
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1003
+		}
+		set_country_flag = tom_inf_bat_support_penal_1003
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1010
+		}
+		set_country_flag = tom_inf_bat_support_penal_1010
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1020
+		}
+		set_country_flag = tom_inf_bat_support_penal_1020
+	}
+	if = {
+		limit = {
+			has_country_flag = tom_inf_bat_support_1021
+		}
+		set_country_flag = tom_inf_bat_support_penal_1021
+	}
+}

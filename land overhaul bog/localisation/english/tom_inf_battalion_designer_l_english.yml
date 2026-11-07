@@ -60,6 +60,9 @@
  tom_inf_company_13:0 "Motorized Rifle Company"
  tom_inf_company_14:0 "Mechanized Rifle Company"
  tom_inf_company_15:0 "Cavalry Company"
+ tom_inf_company_16:0 "Armed Citizen Company"
+ tom_inf_company_17:0 "Irregular Rifle Company"
+ tom_inf_company_18:0 "Penal Rifle Company"
  tom_inf_company_20:0 "Mountaineer Company"
  tom_inf_company_21:0 "Airborne Company"
  tom_inf_company_22:0 "Marine Company"
@@ -68,6 +71,8 @@
  tom_inf_company_30:0 "Mechanized Mountaineer Company"
  tom_inf_company_32:0 "Mechanized Marine Company"
  tom_inf_company_34:0 "Mechanized Ranger Company"
+ tom_inf_company_35:0 "Bicycle Rifle Company"
+ tom_inf_company_36:0 "Camelry Company"
  
  tom_inf_platoon_1000:0 "Rifle Platoon"
  tom_inf_platoon_1001:0 "Line LMG"
@@ -104,6 +109,9 @@
  tom_inf_platoon_1300:0 "Motorized Rifle Platoon"
  tom_inf_platoon_1400:0 "Mechanized Rifle Platoon"
  tom_inf_platoon_1500:0 "Mounted Rifle Platoon"
+ tom_inf_platoon_1600:0 "Citizen Rifle Platoon"
+ tom_inf_platoon_1700:0 "Irregular Rifle Platoon"
+ tom_inf_platoon_1800:0 "Penal Rifle Platoon"
  
  tom_inf_platoon_2000:0 "Mountaineer Platoon"
  tom_inf_platoon_2100:0 "Paratrooper Platoon"
@@ -114,6 +122,8 @@
  tom_inf_platoon_3000:0 "Mechanized Mountaineer Platoon"
  tom_inf_platoon_3200:0 "Mechanized Marine Platoon"
  tom_inf_platoon_3400:0 "Mechanized Ranger Platoon"
+ tom_inf_platoon_3500:0 "Bicycle Rifle Platoon"
+ tom_inf_platoon_3600:0 "Camel Mounted Platoon"
  
  
  tom_inf_company_10_desc:0 "-- Rank and File Infantry Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
@@ -122,6 +132,9 @@
  tom_inf_company_13_desc:0 "-- Infantry who are transported by Trucks, dismounting to engage --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_14_desc:0 "-- Infantry who are transported by APCs, dismounting to engage --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_15_desc:0 "-- Mounted Soldier Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
+ tom_inf_company_16_desc:0 "-- Armed Citizens fighting for the nation's cause --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
+ tom_inf_company_17_desc:0 "-- Infantry specializing in asymmetric warfare --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
+ tom_inf_company_18_desc:0 "-- Convicts and Deserters serving their sentence on the front --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_20_desc:0 "-- Specialized Mountain Infantry Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_21_desc:0 "-- Specialized Airborne Infantry Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_22_desc:0 "-- Specialized Marine Infantry Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
@@ -130,6 +143,8 @@
  tom_inf_company_30_desc:0 "-- Mountaineers who are transported by APCs, dismounting to engage --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_32_desc:0 "-- Marines who are transported by APCs, dismounting to engage --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_34_desc:0 "-- Rangers who are transported by APCs, dismounting to engage --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
+ tom_inf_company_35_desc:0 "-- Bicycle-Mounted Soldier Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
+ tom_inf_company_36_desc:0 "-- Camel-Mounted Soldier Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  
  tom_inf_platoon_1000_desc:0 "-- Rank and File Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1000_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!"
  tom_inf_platoon_1001_desc:0 "-- Light MGs issued to frontline Troops --\n\nMax Amount: §Y4§!\nMin Amount: §Y[?tom_inf_bat_popup_1001_min]§!\nMutually Exclusive: §Y$tom_inf_platoon_1100$§!\n\n[tom_inf_platoon_stats_loc]LMG Equipment: §Y4§!"
@@ -163,9 +178,13 @@
  tom_inf_platoon_1230_desc:0 "-- Field Medics offering first-aid treatment --\n\nMax Amount: §Y1§!\nMin Amount: §Y[?tom_inf_bat_popup_1230_min]§!\nUnlocked by: §Y$tech_field_hospital$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y8§!"
  tom_inf_platoon_1240_desc:0 "-- Signal Section coordinating internally and externally --\n\nMax Amount: §Y1§!\nMin Amount: §Y[?tom_inf_bat_popup_1240_min]§!\nUnlocked by: §Y$tech_signal_company$§!\n\n[tom_inf_platoon_stats_loc]Radio Equipment: §Y6§!\nSupport Equipment: §Y6§!"
  
- tom_inf_platoon_1300_desc:0 "-- Truck-Carried Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1300_min]§!\nResets Left: §Y[?tom_inf_bat_resets_left_1300^tom_inf_bat_popup_1300_count]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nMotorized Equipment: §Y4§!"
- tom_inf_platoon_1400_desc:0 "-- APC-Carried Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1400_min]§!\nResets Left: §Y[?tom_inf_bat_resets_left_1400^tom_inf_bat_popup_1400_count]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nMechanized Equipment: §Y4§!"
- tom_inf_platoon_1500_desc:0 "-- Cavalry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1500_min]§!\nResets Left: §Y[?tom_inf_bat_resets_left_1500^tom_inf_bat_popup_1500_count]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nHorse: §Y4§!"
+ tom_inf_platoon_1300_desc:0 "-- Truck-Carried Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1300_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nMotorized Equipment: §Y4§!"
+ tom_inf_platoon_1400_desc:0 "-- APC-Carried Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1400_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nMechanized Equipment: §Y4§!"
+ tom_inf_platoon_1500_desc:0 "-- Cavalry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1500_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nHorse: §Y4§!"
+ tom_inf_platoon_1600_desc:0 "-- Militia Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1600_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!"
+ tom_inf_platoon_1700_desc:0 "-- Irregular Rifle Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1700_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y9§!"
+ tom_inf_platoon_1800_desc:0 "-- Penal Rifle Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1800_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y9§!"
+ 
  
  tom_inf_platoon_2000_desc:0 "-- Light Mountain Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_2000_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y15§!"
  tom_inf_platoon_2100_desc:0 "-- Light Airborne Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_2100_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y15§!"
@@ -176,6 +195,8 @@
  tom_inf_platoon_3000_desc:0 "-- APC-Carried Mountain Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3000_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y15§!\nMechanized Equipment: §Y4§!"
  tom_inf_platoon_3200_desc:0 "-- APC-Carried Marine Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3200_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y15§!\nMechanized Equipment: §Y4§!"
  tom_inf_platoon_3400_desc:0 "-- APC-Carried Forest Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3400_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y15§!\nMechanized Equipment: §Y4§!"
+ tom_inf_platoon_3500_desc:0 "-- Bicycle Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3500_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nSupport Equipment: §Y1§!"
+ tom_inf_platoon_3600_desc:0 "-- Camelry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3600_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nHorse: §Y80§!"
  
  
  tom_inf_platoon_1000_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
@@ -220,6 +241,9 @@
  tom_inf_platoon_1300_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
  tom_inf_platoon_1400_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
  tom_inf_platoon_1500_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
+ tom_inf_platoon_1600_stats:0 "Organization: §G+2.5§!\nHP: §G+10%§!\n\n"
+ tom_inf_platoon_1700_stats:0 "Organization: §G+2.5§!\nHP: §G+10%§!\n\n"
+ tom_inf_platoon_1800_stats:0 "Organization: §G+3.0§!\nHP: §G+10%§!\n\n"
  
  tom_inf_platoon_2000_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
  tom_inf_platoon_2100_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
@@ -230,6 +254,8 @@
  tom_inf_platoon_3000_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
  tom_inf_platoon_3200_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
  tom_inf_platoon_3400_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
+ tom_inf_platoon_3500_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
+ tom_inf_platoon_3600_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
  
  tom_inf_platoon_equipment_stats:0 "Adds the Stats from: "
  tom_inf_platoon_line_stats:0 "Land Doctrine Mastery Gain: §G+1%§!\n\n"

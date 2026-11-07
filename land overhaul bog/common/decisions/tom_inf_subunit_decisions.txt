@@ -52,7 +52,12 @@ political_actions = {
 		cost = 50
 		
 		remove_effect = {
-			unlock_subunit = irregular_infantry
+			if = {
+				limit = {
+					NOT = { has_tech = irregular_tech }
+				}
+				set_technology = { irregular_tech = 1 }
+			}
 			
 			division_template = {
 				name = "Irregulars"
