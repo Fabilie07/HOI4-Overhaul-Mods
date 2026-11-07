@@ -245,6 +245,8 @@ tom_inf_subunit_unavailable_trigger = {
 				has_country_flag = tom_inf_bat_current_mountaineers_mechanized
 				has_country_flag = tom_inf_bat_current_amphibious_mechanized
 				has_country_flag = tom_inf_bat_current_rangers_mechanized
+				has_country_flag = tom_inf_bat_current_bicycle
+				has_country_flag = tom_inf_bat_current_camelry
 			}
 		}
 		AND = {
@@ -259,6 +261,8 @@ tom_inf_subunit_unavailable_trigger = {
 				has_country_flag = tom_inf_bat_current_mountaineers_mechanized
 				has_country_flag = tom_inf_bat_current_amphibious_mechanized
 				has_country_flag = tom_inf_bat_current_rangers_mechanized
+				has_country_flag = tom_inf_bat_current_bicycle
+				has_country_flag = tom_inf_bat_current_camelry
 			}
 		}
 		AND = {
