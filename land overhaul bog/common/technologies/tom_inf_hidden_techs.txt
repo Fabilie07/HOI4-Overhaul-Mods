@@ -52,51 +52,6 @@ technologies = {
 		}
 	}
 	
-	tom_inf_trickleback_tech = {
-		# No longer aptly named, since Trickleback was changed in 1.19.4
-		# But I'm too lazy to change the name here and in on_actions
-		allow = {
-			always = no
-		}
-		
-		infantry = {
-			experience_loss_factor = 1
-		}
-		motorized = {
-			experience_loss_factor = 1
-		}
-		mechanized = {
-			experience_loss_factor = 1
-		}
-		cavalry = {
-			experience_loss_factor = 1
-		}
-		mountaineers = {
-			experience_loss_factor = 1
-		}
-		paratrooper = {
-			experience_loss_factor = 1
-		}
-		marine = {
-			experience_loss_factor = 1
-		}
-		marine_commando = {
-			experience_loss_factor = 1
-		}
-		ranger_battalion = {
-			experience_loss_factor = 1
-		}
-		mountaineers_mechanized = {
-			experience_loss_factor = 1
-		}
-		amphibious_mechanized = {
-			experience_loss_factor = 1
-		}
-		rangers_mechanized = {
-			experience_loss_factor = 1
-		}
-	}
-	
 	
 	### SPECIAL FORCES ####
 	tom_inf_spf_upgrade_marines = {

@@ -15,3 +15,14 @@ flamethrower_chassis
 at_rifle_chassis
 at_rocket_chassis
 radio_equipment
+
+militia
+irregular_infantry
+penal_battalion
+mountaineer
+paratrooper
+marine
+marine_commando
+mountaineers_mechanized
+amphibious_mechanized
+rangers_mechanized

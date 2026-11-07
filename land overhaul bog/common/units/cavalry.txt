@@ -38,9 +38,6 @@ sub_units = {
 		weight = 0.5
 		
 		supply_consumption = 0.02
-		
-		# Is removed by Hidden Technology, needed for Battalion Designer to work correctly
-		experience_loss_factor = -1
 
 		#Offensive Abilities
 		suppression = 2
@@ -106,7 +103,7 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		maximum_speed = 0.4
+		maximum_speed = 2.2
 		training_time = 160		
 		weight = 0.6
 		
