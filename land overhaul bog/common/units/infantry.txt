@@ -45,7 +45,7 @@ sub_units = {
 		weight = 0.5
 		
 		supply_consumption = 0
-		own_equipment_fuel_consumption_mult = 0.0
+		own_equipment_fuel_consumption_mult = 0.25
 		
 		transport = infantry_equipment
 		
@@ -91,7 +91,10 @@ sub_units = {
 		suppression = 2
 		weight = 0.5
 		
-		supply_consumption = 0.02
+		supply_consumption = 0
+		own_equipment_fuel_consumption_mult = 0.25
+		
+		transport = infantry_equipment
 	
 		need = {
 			infantry_equipment = 90
@@ -278,7 +281,10 @@ sub_units = {
 		suppression = 0.5 #1.5 -> Not for suppression roles
 		weight = 0.5
 		
-		supply_consumption = 0.05 #0.07 -> Don't need that much supply, and they have lower HP
+		supply_consumption = 0 #0.07 -> Don't need that much supply, and they have lower HP
+		own_equipment_fuel_consumption_mult = 0.25
+		
+		transport = infantry_equipment
 	
 		need = {
 			infantry_equipment = 81 #100 -> Same ratio as regular Infantry			
@@ -320,7 +326,10 @@ sub_units = {
 		suppression = 1.5 # reg inf 1.5
 		weight = 0.5
 		
-		supply_consumption = 0.04 # reg inf  0.06
+		supply_consumption = 0 # reg inf  0.06
+		own_equipment_fuel_consumption_mult = 0.25
+		
+		transport = infantry_equipment
 
 		# generally not as drilled in modern warfare as regular troops 
 		soft_attack = -0.05
@@ -388,7 +397,10 @@ sub_units = {
 		suppression = 1.5
 		weight = 0.5
 		
-		supply_consumption = 0.06
+		supply_consumption = 0
+		own_equipment_fuel_consumption_mult = 0.25
+		
+		transport = infantry_equipment
 	
 		need = {
 			infantry_equipment = 90
