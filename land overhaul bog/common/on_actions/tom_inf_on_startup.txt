@@ -33,6 +33,7 @@ on_actions = {
 				tom_inf_bat_add_battalion_flag_effect = yes
 				
 				tom_inf_bat_startup_effect_stat_arrays = yes
+				tom_inf_bat_startup_effect_overplatoon_arrays = yes
 				
 				add_dynamic_modifier = { modifier = tom_inf_support_composition }
 			}

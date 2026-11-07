@@ -218,3 +218,69 @@ tom_inf_bat_startup_effect_stat_arrays = {
 	add_to_array = { tom_inf_battalion_equipment_stats_array_1 = 0 }
 	add_to_array = { tom_inf_battalion_equipment_stats_array_1 = 0 }
 }
+
+tom_inf_bat_startup_effect_overplatoon_arrays = {
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 3 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 3 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 3 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 3 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 6 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 6 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 6 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 6 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_org = 9 }
+	
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 0 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+	add_to_array = { tom_inf_battalion_overplatoon_malus_soft = 10 }
+}
