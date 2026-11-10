@@ -68,7 +68,7 @@ tom_inf_bat_startup_effect_light_tank = {
 	set_variable = { tom_inf_bat_light_tank_3812_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_1220_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_1221_count = 0 }
-	set_variable = { tom_inf_bat_light_tank_1222_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_3822_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_3830_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_3840_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_3850_count = 0 }
@@ -175,7 +175,7 @@ tom_inf_bat_open_subunit_counts_light_tank_effect = {
 	set_variable = { tom_inf_bat_popup_3812_count = tom_inf_bat_light_tank_3812_count }
 	set_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_light_tank_1220_count }
 	set_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_light_tank_1221_count }
-	set_variable = { tom_inf_bat_popup_1222_count = tom_inf_bat_light_tank_1222_count }
+	set_variable = { tom_inf_bat_popup_3822_count = tom_inf_bat_light_tank_3822_count }
 	set_variable = { tom_inf_bat_popup_3830_count = tom_inf_bat_light_tank_3830_count }
 	set_variable = { tom_inf_bat_popup_3840_count = tom_inf_bat_light_tank_3840_count }
 	set_variable = { tom_inf_bat_popup_3850_count = tom_inf_bat_light_tank_3850_count }
@@ -303,7 +303,7 @@ tom_inf_bat_save_designer_light_tank_effect = {
 	set_variable = { tom_inf_bat_light_tank_3812_count = tom_inf_bat_popup_3812_count }
 	set_variable = { tom_inf_bat_light_tank_1220_count = tom_inf_bat_popup_1220_count }
 	set_variable = { tom_inf_bat_light_tank_1221_count = tom_inf_bat_popup_1221_count }
-	set_variable = { tom_inf_bat_light_tank_1222_count = tom_inf_bat_popup_1222_count }
+	set_variable = { tom_inf_bat_light_tank_3822_count = tom_inf_bat_popup_3822_count }
 	set_variable = { tom_inf_bat_light_tank_3830_count = tom_inf_bat_popup_3830_count }
 	set_variable = { tom_inf_bat_light_tank_3840_count = tom_inf_bat_popup_3840_count }
 	set_variable = { tom_inf_bat_light_tank_3850_count = tom_inf_bat_popup_3850_count }

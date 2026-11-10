@@ -539,20 +539,20 @@ tom_inf_bat_add_effect_light_tank = {
 	# Armored Car Recon
 	if = {
 		limit = {
-			check_variable = { tom_inf_bat_popup_1222_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_1222_1 }
+			check_variable = { tom_inf_bat_popup_3822_count > 0 }
+			NOT = { has_country_flag = tom_inf_bat_light_tank_3822_1 }
 		}
-		set_country_flag = tom_inf_bat_light_tank_1222_1
+		set_country_flag = tom_inf_bat_light_tank_3822_1
 		add_unit_bonus = {
 			light_armor = {
 				need = {
 					armored_car_equipment = 4
+					infantry_equipment = 8
 				}
-				soft_attack = -0.35
-				hard_attack = -0.3
-				breakthrough = -0.5
-				armor_value = -0.6
-				hardness = -1
+				soft_attack = -0.1
+				hard_attack = -0.1
+				breakthrough = -0.15
+				armor_value = -0.2
 				
 				plains = {
 					movement = 0.1
@@ -1167,20 +1167,20 @@ tom_inf_bat_remove_effect_light_tank = {
 	# Armored Car Recon
 	if = {
 		limit = {
-			check_variable = { tom_inf_bat_popup_1222_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_1222_1
+			check_variable = { tom_inf_bat_popup_3822_count < 1 }
+			has_country_flag = tom_inf_bat_light_tank_3822_1
 		}
-		clr_country_flag = tom_inf_bat_light_tank_1222_1
+		clr_country_flag = tom_inf_bat_light_tank_3822_1
 		add_unit_bonus = {
 			light_armor = {
 				need = {
 					armored_car_equipment = -4
+					infantry_equipment = -8
 				}
-				soft_attack = 0.35
-				hard_attack = 0.3
-				breakthrough = 0.5
-				armor_value = 0.6
-				hardness = 1
+				soft_attack = 0.1
+				hard_attack = 0.1
+				breakthrough = 0.15
+				armor_value = 0.2
 				
 				plains = {
 					movement = -0.1

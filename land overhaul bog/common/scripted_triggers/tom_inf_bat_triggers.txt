@@ -1069,6 +1069,15 @@ tom_inf_platoon_icon_trigger = {
 	else_if = {
 		limit = {
 			OR = {
+				check_variable = { platoon_value = 3822 }
+				check_variable = { v = 3822 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 20 }
+	}
+	else_if = {
+		limit = {
+			OR = {
 				check_variable = { platoon_value = 3830 }
 				check_variable = { v = 3830 }
 			}

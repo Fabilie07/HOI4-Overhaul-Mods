@@ -1017,6 +1017,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			check_variable = { v = 3822 }
+		}
+		localization_key = tom_inf_platoon_3822
+	}
+	text = {
+		trigger = {
 			check_variable = { v = 3830 }
 		}
 		localization_key = tom_inf_platoon_3830
@@ -1485,6 +1491,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			check_variable = { v = 3822 }
+		}
+		localization_key = tom_inf_platoon_3822_desc
+	}
+	text = {
+		trigger = {
 			check_variable = { v = 3830 }
 		}
 		localization_key = tom_inf_platoon_3830_desc
@@ -1863,6 +1875,12 @@ defined_text = {
 			check_variable = { v = 3812 }
 		}
 		localization_key = tom_inf_platoon_3812_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3822 }
+		}
+		localization_key = tom_inf_platoon_3822_stats
 	}
 	text = {
 		trigger = {
