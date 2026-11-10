@@ -73,6 +73,10 @@
  tom_inf_company_34:0 "Mechanized Ranger Company"
  tom_inf_company_35:0 "Bicycle Rifle Company"
  tom_inf_company_36:0 "Camelry Company"
+ tom_inf_company_37:0 "Mobile Service Company"
+ tom_inf_company_38:0 "Motorized Service Company"
+ tom_inf_company_40:0 "Light Tank Company"
+ tom_inf_company_41:0 "Medium Tank Company"
  
  tom_inf_platoon_1000:0 "Rifle Platoon"
  tom_inf_platoon_1001:0 "Line LMG"
@@ -125,6 +129,15 @@
  tom_inf_platoon_3500:0 "Bicycle Rifle Platoon"
  tom_inf_platoon_3600:0 "Camel Mounted Platoon"
  
+ tom_inf_platoon_3812:0 "Mechanized Flamethrower Section"
+ tom_inf_platoon_3830:0 "Motorized Field Hospital Section"
+ tom_inf_platoon_3840:0 "Motorized Signal Section"
+ tom_inf_platoon_3850:0 "Maintenance & Workshop"
+ 
+ tom_inf_platoon_4000:0 "Light Tank Platoon"
+ tom_inf_platoon_4001:0 "Medium Tank Platoon"
+ tom_inf_platoon_4010:0 "Maintenance Section"
+ 
  
  tom_inf_company_10_desc:0 "-- Rank and File Infantry Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_11_desc:0 "-- Specialized Fire Support Platoons --\n\nMax Amount: §Y1§!"
@@ -145,6 +158,10 @@
  tom_inf_company_34_desc:0 "-- Rangers who are transported by APCs, dismounting to engage --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_35_desc:0 "-- Bicycle-Mounted Soldier Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_36_desc:0 "-- Camel-Mounted Soldier Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
+ tom_inf_company_37_desc:0 "-- Mobile Support Platoons offering various Services --\n\nMax Amount: §Y1§!"
+ tom_inf_company_38_desc:0 "-- Motorized Support Platoons offering various Services --\n\nMax Amount: §Y1§!"
+ tom_inf_company_40_desc:0 "-- Light Tank Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!"
+ tom_inf_company_41_desc:0 "-- Medium Tank Company --\n\nMax Amount: §Y1§!"
  
  tom_inf_platoon_1000_desc:0 "-- Rank and File Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1000_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!"
  tom_inf_platoon_1001_desc:0 "-- Light MGs issued to frontline Troops --\n\nMax Amount: §Y4§!\nMin Amount: §Y[?tom_inf_bat_popup_1001_min]§!\nMutually Exclusive: §Y$tom_inf_platoon_1100$§!\n\n[tom_inf_platoon_stats_loc]LMG Equipment: §Y4§!"
@@ -197,6 +214,14 @@
  tom_inf_platoon_3400_desc:0 "-- APC-Carried Forest Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3400_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y15§!\nMechanized Equipment: §Y4§!"
  tom_inf_platoon_3500_desc:0 "-- Bicycle Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3500_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nSupport Equipment: §Y1§!"
  tom_inf_platoon_3600_desc:0 "-- Camelry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3600_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nHorse: §Y80§!"
+ 
+ tom_inf_platoon_3812_desc:0 "-- Mechanized Flamethrowers for clearing tight spaces --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$tech_engineers$§!\n\n[tom_inf_platoon_stats_loc]Mechanized Equipment: §Y8§!\nFlamethrower Equipment: §Y8§!"
+ tom_inf_platoon_3830_desc:0 "-- Field Medics offering first-aid treatment --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$tech_field_hospital$§!\n\n[tom_inf_platoon_stats_loc]Motorized Equipment: §Y8§!\nSupport Equipment: §Y8§!"
+ tom_inf_platoon_3840_desc:0 "-- Motorized Signal Section coordinating internally and externally --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$tech_signal_company$§!\n\n[tom_inf_platoon_stats_loc]Motorized Equipment: §Y8§!\nRadio Equipment: §Y6§!\nSupport Equipment: §Y6§!"
+ 
+ tom_inf_platoon_4000_desc:0 "-- Light Tank Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_4000_min]§!\n\n[tom_inf_platoon_stats_loc]Light Tank: §Y5§!"
+ tom_inf_platoon_4001_desc:0 "-- Medium Tank Platoon --\n\nMax Amount: §Y4§!\n\n[tom_inf_platoon_stats_loc]Medium Tank: §Y5§!"
+ tom_inf_platoon_4010_desc:0 "-- Maintenance Section --\n\nMax Amount: §Y4§!\n\n[tom_inf_platoon_stats_loc]Motorized Equipment: §Y2§!\nSupport Equipment: §Y1§!"
  
  
  tom_inf_platoon_1000_stats:0 "Organization: §G+3.0§!\nHP: §G+12%§!\n\n"
@@ -260,7 +285,15 @@
  tom_inf_platoon_equipment_stats:0 "Adds the Stats from: "
  tom_inf_platoon_line_stats:0 "Land Doctrine Mastery Gain: §G+1%§!\n\n"
  tom_inf_platoon_support_stats:0 "Artillery & Combat Support Doctrine Mastery Gain: §G+6%§!\n\n"
-
+ 
+ tom_inf_platoon_3812_stats:0 "$tom_inf_platoon_equipment_stats$§Y$flamethrower_chassis$§!, §Y$mechanized_equipment$§!\nDefense: §R-15%§!\nBreakthrough: §R-10%§!\nArmor: §R-15%§!\nHardness: §R-20%§!\n§YFort:§!\n  Attack: §G+25%§!\n  Defense & Breakthrough: §G+10%§!\n§YRiver:§!\n  Attack: §G+15%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+15%§!\n\n"
+ tom_inf_platoon_3830_stats:0 "HP: §G+10%§!\nRecovery Rate: §G+10%§!\nTrickleback & War Support Protection: §G+2%§!\nExp Loss: §G-2%§!\n\n"
+ tom_inf_platoon_3840_stats:0 "Organization: §G+5§!\nInitiative: §G+2%§!\n\n"
+ 
+ tom_inf_platoon_4000_stats:0 "Organization: §G+2.0§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_4001_stats:0 "Organization: §G+2.0§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_4001_stats_equipment:0 "$tom_inf_platoon_equipment_stats$§Y$medium_tank_chassis$§!\nOrganization: §G+2.0§!\nHP: §G+0.2§!\nSoft Attack: §R-50%§!\nHard Attack: §R-50%§!\nPiercing: §R-50%§!\nBreakthrough: §R-50%§!\nDefense: §R-50%§!\nFuel Consumption: §G-50%§!\n\n"
+ tom_inf_platoon_4010_stats:0 "HP: §G+0.5§!\nRecovery Rate: §G+0.1§!\n\n"
 
  debug_current_tt:0 "Current: [tom_inf_bat_current_loc]"
  

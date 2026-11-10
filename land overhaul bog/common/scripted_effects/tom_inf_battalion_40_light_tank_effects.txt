@@ -1,0 +1,312 @@
+
+tom_inf_bat_startup_effect_light_tank = {
+	# Set light_tank Battalion Arrays to Start Values
+	resize_array = { tom_inf_bat_light_tank_base_stats_array = 11 }
+	resize_array = { tom_inf_bat_light_tank_combat_stats_array = 11 }
+	resize_array = { tom_inf_bat_light_tank_equipment_stats_array_1 = 2 }
+	add_to_array = { tom_inf_bat_light_tank_equipment_stats_array_2_type = token:light_tank_chassis }
+	add_to_array = { tom_inf_bat_light_tank_equipment_stats_array_2_count = 45 }
+	
+	add_to_array = { tom_inf_bat_light_tank_companies_array = 40 }
+	add_to_array = { tom_inf_bat_light_tank_companies_array = 41 }
+	add_to_array = { tom_inf_bat_light_tank_companies_array = 38 }
+	
+	# Company IDs
+	add_to_array = { tom_inf_battalion_light_tank_company_array = 40 }
+	add_to_array = { tom_inf_battalion_light_tank_company_array = 40 }
+	add_to_array = { tom_inf_battalion_light_tank_company_array = 40 }
+	add_to_array = { tom_inf_battalion_light_tank_company_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_company_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_company_array = 0 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 4000 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_light_tank_platoon_array = 0 }
+	
+	set_variable = { tom_inf_bat_light_tank_40_count = 3 }
+	set_variable = { tom_inf_bat_light_tank_41_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_38_count = 0 }
+	
+	set_variable = { tom_inf_bat_light_tank_4000_count = 9 }
+	set_variable = { tom_inf_bat_light_tank_4001_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_4010_count = 0 }
+	
+	set_variable = { tom_inf_bat_light_tank_1210_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_1211_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_3812_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_1220_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_1221_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_1222_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_3830_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_3840_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_3850_count = 0 }
+	
+	
+	set_variable = { tom_inf_bat_light_tank_40_max = 4 }
+	set_variable = { tom_inf_bat_light_tank_41_max = 1 }
+	set_variable = { tom_inf_bat_light_tank_38_max = 1 }
+	
+	set_variable = { tom_inf_bat_light_tank_4000_max = 16 }
+	set_variable = { tom_inf_bat_light_tank_4001_max = 4 }
+	set_variable = { tom_inf_bat_light_tank_4010_max = 4 }
+	
+	set_variable = { tom_inf_bat_light_tank_4000_min = 4 }
+	
+	set_variable = { tom_inf_bat_light_tank_platoon_count_org = 9 }
+	
+	set_country_flag = tom_inf_bat_light_tank_4000_5
+	set_country_flag = tom_inf_bat_light_tank_4000_6
+	set_country_flag = tom_inf_bat_light_tank_4000_7
+	set_country_flag = tom_inf_bat_light_tank_4000_8
+	set_country_flag = tom_inf_bat_light_tank_4000_9
+}
+
+
+tom_inf_bat_open_designer_light_tank_effect = {
+	for_each_loop = {
+		array = tom_inf_battalion_light_tank_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_light_tank_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_platoon_array = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_base_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_base_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_combat_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_combat_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_equipment_stats_array_1
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_1 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_equipment_stats_array_2_type
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_needed = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_terrain_bonus_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_bonus_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_terrain_movement_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_movement_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_terrain_attack_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_attack_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_light_tank_terrain_defense_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_defense_array = temp_v }
+	}
+	
+	tom_inf_bat_open_subunit_counts_light_tank_effect = yes	
+}
+
+tom_inf_bat_open_subunit_counts_light_tank_effect = {
+	set_variable = { tom_inf_bat_popup_40_count = tom_inf_bat_light_tank_40_count }
+	set_variable = { tom_inf_bat_popup_41_count = tom_inf_bat_light_tank_41_count }
+	set_variable = { tom_inf_bat_popup_38_count = tom_inf_bat_light_tank_38_count }
+	
+	set_variable = { tom_inf_bat_popup_4000_count = tom_inf_bat_light_tank_4000_count }
+	set_variable = { tom_inf_bat_popup_4001_count = tom_inf_bat_light_tank_4001_count }
+	set_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_light_tank_4010_count }
+	
+	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_light_tank_1210_count }
+	set_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_light_tank_1211_count }
+	set_variable = { tom_inf_bat_popup_3812_count = tom_inf_bat_light_tank_3812_count }
+	set_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_light_tank_1220_count }
+	set_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_light_tank_1221_count }
+	set_variable = { tom_inf_bat_popup_1222_count = tom_inf_bat_light_tank_1222_count }
+	set_variable = { tom_inf_bat_popup_3830_count = tom_inf_bat_light_tank_3830_count }
+	set_variable = { tom_inf_bat_popup_3840_count = tom_inf_bat_light_tank_3840_count }
+	set_variable = { tom_inf_bat_popup_3850_count = tom_inf_bat_light_tank_3850_count }
+	
+	
+	set_variable = { tom_inf_bat_popup_40_max = tom_inf_bat_light_tank_40_max }
+	set_variable = { tom_inf_bat_popup_41_max = tom_inf_bat_light_tank_41_max }
+	set_variable = { tom_inf_bat_popup_38_max = tom_inf_bat_light_tank_38_max }
+	
+	set_variable = { tom_inf_bat_popup_4000_max = tom_inf_bat_light_tank_4000_max }
+	set_variable = { tom_inf_bat_popup_4001_max = tom_inf_bat_light_tank_4001_max }
+	set_variable = { tom_inf_bat_popup_4010_max = tom_inf_bat_light_tank_4010_max }
+	
+	set_variable = { tom_inf_bat_popup_4000_min = tom_inf_bat_light_tank_4000_min }
+}
+
+
+tom_inf_bat_save_designer_light_tank_effect = {
+	if = {
+		limit = {
+			OR = {
+				tom_inf_save_button_increase_light_tank_trigger = yes
+				tom_inf_save_button_decrease_light_tank_trigger = yes
+			}
+		}
+		tom_inf_bat_add_effect_light_tank = yes
+		tom_inf_bat_remove_effect_light_tank = yes
+		
+		if = {
+			limit = {
+				check_variable = { tom_inf_bat_popup_platoon_count_org > tom_inf_bat_light_tank_platoon_count_org }
+			}
+			tom_inf_bat_increase_platoon_org_light_tank = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { tom_inf_bat_popup_platoon_count_org < tom_inf_bat_light_tank_platoon_count_org }
+			}
+			tom_inf_bat_decrease_platoon_org_light_tank = yes
+		}
+		
+		clear_array = tom_inf_bat_light_tank_base_stats_array
+		clear_array = tom_inf_bat_light_tank_combat_stats_array
+		clear_array = tom_inf_bat_light_tank_equipment_stats_array_1
+		clear_array = tom_inf_bat_light_tank_equipment_stats_array_2_type
+		clear_array = tom_inf_bat_light_tank_equipment_stats_array_2_count
+		
+		clear_array = tom_inf_bat_light_tank_terrain_bonus_array
+		clear_array = tom_inf_bat_light_tank_terrain_movement_array
+		clear_array = tom_inf_bat_light_tank_terrain_attack_array
+		clear_array = tom_inf_bat_light_tank_terrain_defense_array
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_base_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_base_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_combat_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_combat_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_1
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_equipment_stats_array_1 = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_type
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_equipment_stats_array_2_type = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_count
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_equipment_stats_array_2_count = temp_v }
+		}
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_bonus_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_terrain_bonus_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_movement_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_terrain_movement_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_attack_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_terrain_attack_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_defense_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_light_tank_terrain_defense_array = temp_v }
+		}
+	}
+	
+	clear_array = tom_inf_battalion_light_tank_company_array
+	clear_array = tom_inf_battalion_light_tank_platoon_array
+	
+	for_each_loop = {
+		array = tom_inf_battalion_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_light_tank_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_light_tank_platoon_array = temp_v }
+	}
+	
+	set_variable = { tom_inf_bat_light_tank_40_count = tom_inf_bat_popup_40_count }
+	set_variable = { tom_inf_bat_light_tank_41_count = tom_inf_bat_popup_41_count }
+	set_variable = { tom_inf_bat_light_tank_38_count = tom_inf_bat_popup_38_count }
+	
+	set_variable = { tom_inf_bat_light_tank_4000_count = tom_inf_bat_popup_4000_count }
+	set_variable = { tom_inf_bat_light_tank_4001_count = tom_inf_bat_popup_4001_count }
+	set_variable = { tom_inf_bat_light_tank_4010_count = tom_inf_bat_popup_4010_count }
+	
+	set_variable = { tom_inf_bat_light_tank_1210_count = tom_inf_bat_popup_1210_count }
+	set_variable = { tom_inf_bat_light_tank_1211_count = tom_inf_bat_popup_1211_count }
+	set_variable = { tom_inf_bat_light_tank_3812_count = tom_inf_bat_popup_3812_count }
+	set_variable = { tom_inf_bat_light_tank_1220_count = tom_inf_bat_popup_1220_count }
+	set_variable = { tom_inf_bat_light_tank_1221_count = tom_inf_bat_popup_1221_count }
+	set_variable = { tom_inf_bat_light_tank_1222_count = tom_inf_bat_popup_1222_count }
+	set_variable = { tom_inf_bat_light_tank_3830_count = tom_inf_bat_popup_3830_count }
+	set_variable = { tom_inf_bat_light_tank_3840_count = tom_inf_bat_popup_3840_count }
+	set_variable = { tom_inf_bat_light_tank_3850_count = tom_inf_bat_popup_3850_count }
+	
+	set_variable = { tom_inf_bat_light_tank_4000_min = tom_inf_bat_popup_4000_min }
+}

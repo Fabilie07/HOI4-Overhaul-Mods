@@ -27,6 +27,7 @@ on_actions = {
 				tom_inf_bat_startup_effect_rangers_mechanized = yes
 				tom_inf_bat_startup_effect_bicycle = yes
 				tom_inf_bat_startup_effect_camelry = yes
+				tom_inf_bat_startup_effect_light_tank = yes
 				
 				tom_inf_bat_startup_effect_company_arrays = yes
 				

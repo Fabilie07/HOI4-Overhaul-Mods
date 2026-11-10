@@ -24,107 +24,38 @@ BATTALION IDs:
 25: Bicycle Infantry
 26: Camelry
 
+40: Light Tank
+42: Medium Tank
+44: Heavy Tank
+46: Modern Tank
+47: Armored Car
 
-COMPANIES ALLOWED:
-Infantry:
-	Empty
-	Rifle
-	Support
-	Service
+50: Artillery
+51: Motorized Artillery
+52: Rocket Artillery
+53: Motorized Rocket Artillery
+54: Light SPG
+55: Medium SPG
+56: Heavy SPG
+57: Modern SPG
 
-Motorized:
-	Empty
-	Motorized Rifle
-	Support
-	Service
+60: Anti Tank
+61: Motorized Anti Tank
+64: Light Tank Destroyer
+65: Medium Tank Destroyer
+66: Heavy Tank Destroyer
+67: Modern Tank Destroyer
 
-Mechanized:
-	Empty
-	Mechanized Rifle
-	Support
-	Service
+70: Anti Air
+71: Motorized Anti Air
+74: Light SPAA
+75: Medium SPAA
+76: Heavy SPAA
+77: Modern SPAA
 
-Cavalry:
-	Empty
-	Mechanized Rifle
-	Support
-	Service
-
-Militia:
-	Empty
-	Rifle
-	Support
-	Service
-	
-Irregulars:
-	Empty
-	Rifle
-	Support
-	Service
-
-Penal Battalion:
-	Empty
-	Rifle
-	Support
-	Service
-
-Mountaineer:
-	Empty
-	Mountaineer
-	Support
-	Service
-
-Paratrooper:
-	Empty
-	Paratrooper
-	Service
-
-Marine:
-	Empty
-	Marine
-	Support
-	Service
-
-Marine Commando:
-	Empty
-	Marine
-	Service
-
-Ranger:
-	Empty
-	Ranger
-	Support
-	Service
-
-Mechanized Mountaineers:
-	Empty
-	Mechanized Mountaineer
-	Support
-	Service
-
-Amphibious Mechanized:
-	Empty
-	Amtrak
-	Support
-	Service
-
-Mechanized Rangers:
-	Empty
-	Mechanized Rangers
-	Support
-	Service
-
-Bicycle Infantry:
-	Empty
-	Rifle
-	Support
-	Service
-
-Camelry:
-	Empty
-	Rifle
-	Support
-	Service
+80: Light Tank Amphibious
+81: Medium Tank Amphibious
+82: Heavy Tank Amphibious
 
 COMPANY IDs:
 0: Empty
@@ -150,6 +81,46 @@ COMPANY IDs:
 34: Mechanized Rangers
 35: Bicycle Infantry
 36: Camelry
+37: Mobile Service
+38: Motorized Service
+
+40: Light Tank
+41: Medium Tank (Light)
+42: Medium Tank
+43: Light Tank (Medium)
+44: Heavy Tank
+45: Medium Tank (Heavy)
+46: Modern Tank
+47: Armored Car
+
+50: Artillery
+51: Motorized Artillery
+52: Rocket Artillery
+53: Motorized Rocket Artillery
+54: Light SPG
+55: Medium SPG
+56: Heavy SPG
+57: Modern SPG
+59: Artillery Service
+
+60: Anti Tank
+61: Motorized Anti Tank
+64: Light Tank Destroyer
+65: Medium Tank Destroyer
+66: Heavy Tank Destroyer
+67: Modern Tank Destroyer
+
+70: Anti Air
+71: Motorized Anti Air
+74: Light SPAA
+75: Medium SPAA
+76: Heavy SPAA
+77: Modern SPAA
+79: AA Service
+
+80: Light Tank Amphibious
+81: Medium Tank Amphibious
+82: Heavy Tank Amphibious
 
 
 PLATOON IDs: #Platoon ID: Company ID + Identifier
@@ -307,6 +278,34 @@ PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 39: Bicycle Infantry
 40: Camelry
 41: Elephantry
+
+42: Mechanized Flamethrower
+
+43: Light Tank
+44: Light SPAA
+45: Light SPG
+46: Light Tank Destroyer
+47: Light Tank Amphibious
+
+48: Medium Tank
+49: Medium SPAA
+50: Medium SPG
+51: Medium Tank Destroyer
+52: Medium Tank Amphibious
+
+53: Heavy Tank
+54: Heavy SPAA
+55: Heavy SPG
+56: Heavy Tank Destroyer
+57: Heavy Tank Amphibious
+
+58: Modern Tank
+59: Modern SPAA
+60: Modern SPG
+61: Modern Tank Destroyer
+
+62: Armored Car
+63: Maintenance
 
 
 Terrain IDs: # Necessary for visual depicition of Terrain Boni

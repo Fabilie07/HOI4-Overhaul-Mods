@@ -239,6 +239,12 @@ defined_text = {
 		}
 		localization_key = camelry
 	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_light_tank
+		}
+		localization_key = light_armor
+	}
 }
 
 defined_text = {
@@ -576,6 +582,12 @@ defined_text = {
 		localization_key = "Camelry"
 	}
 	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_light_tank
+		}
+		localization_key = "Light Tank"
+	}
+	text = {
 		localization_key = "Error"
 	}
 }
@@ -702,6 +714,30 @@ defined_text = {
 			check_variable = { v = 36 }
 		}
 		localization_key = tom_inf_company_36
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 37 }
+		}
+		localization_key = tom_inf_company_37
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 38 }
+		}
+		localization_key = tom_inf_company_38
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 40 }
+		}
+		localization_key = tom_inf_company_40
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 41 }
+		}
+		localization_key = tom_inf_company_41
 	}
 	text = {
 		trigger = {
@@ -973,6 +1009,48 @@ defined_text = {
 		}
 		localization_key = tom_inf_platoon_3600
 	}
+	text = {
+		trigger = {
+			check_variable = { v = 3812 }
+		}
+		localization_key = tom_inf_platoon_3812
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3830 }
+		}
+		localization_key = tom_inf_platoon_3830
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3840 }
+		}
+		localization_key = tom_inf_platoon_3840
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3850 }
+		}
+		localization_key = tom_inf_platoon_3850
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4000 }
+		}
+		localization_key = tom_inf_platoon_4000
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4001 }
+		}
+		localization_key = tom_inf_platoon_4001
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4010 }
+		}
+		localization_key = tom_inf_platoon_4010
+	}
 }
 
 
@@ -1104,6 +1182,30 @@ defined_text = {
 			check_variable = { v = 36 }
 		}
 		localization_key = tom_inf_company_36_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 37 }
+		}
+		localization_key = tom_inf_company_37_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 38 }
+		}
+		localization_key = tom_inf_company_38_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 40 }
+		}
+		localization_key = tom_inf_company_40_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 41 }
+		}
+		localization_key = tom_inf_company_41_desc
 	}
 	text = {
 		trigger = {
@@ -1374,6 +1476,48 @@ defined_text = {
 			check_variable = { v = 3600 }
 		}
 		localization_key = tom_inf_platoon_3600_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3812 }
+		}
+		localization_key = tom_inf_platoon_3812_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3830 }
+		}
+		localization_key = tom_inf_platoon_3830_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3840 }
+		}
+		localization_key = tom_inf_platoon_3840_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3850 }
+		}
+		localization_key = tom_inf_platoon_3850_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4000 }
+		}
+		localization_key = tom_inf_platoon_4000_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4001 }
+		}
+		localization_key = tom_inf_platoon_4001_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4010 }
+		}
+		localization_key = tom_inf_platoon_4010_desc
 	}
 }
 
@@ -1713,5 +1857,54 @@ defined_text = {
 			check_variable = { v = 3600 }
 		}
 		localization_key = tom_inf_platoon_3600_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3812 }
+		}
+		localization_key = tom_inf_platoon_3812_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3830 }
+		}
+		localization_key = tom_inf_platoon_3830_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3840 }
+		}
+		localization_key = tom_inf_platoon_3840_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3850 }
+		}
+		localization_key = tom_inf_platoon_3850_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4000 }
+		}
+		localization_key = tom_inf_platoon_4000_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4001 }
+			check_variable = { tom_inf_bat_popup_4001_count > 0 }
+		}
+		localization_key = tom_inf_platoon_4001_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4001 }
+		}
+		localization_key = tom_inf_platoon_4001_stats_equipment
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4010 }
+		}
+		localization_key = tom_inf_platoon_4010_stats
 	}
 }
