@@ -206,7 +206,7 @@ tom_inf_bat_startup_effect_company_arrays = {
 	add_to_array = { tom_inf_bat_38_platoons_array = 3812 }
 	add_to_array = { tom_inf_bat_38_platoons_array = 1220 }
 	add_to_array = { tom_inf_bat_38_platoons_array = 1221 }
-	add_to_array = { tom_inf_bat_38_platoons_array = 1222 }
+	add_to_array = { tom_inf_bat_38_platoons_array = 3822 }
 	add_to_array = { tom_inf_bat_38_platoons_array = 3830 }
 	add_to_array = { tom_inf_bat_38_platoons_array = 3840 }
 	add_to_array = { tom_inf_bat_38_platoons_array = 3850 }

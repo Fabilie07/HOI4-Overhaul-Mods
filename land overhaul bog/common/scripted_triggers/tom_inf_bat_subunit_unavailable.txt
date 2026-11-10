@@ -314,6 +314,7 @@ tom_inf_subunit_unavailable_trigger = {
 				check_variable = { tom_inf_bat_popup_1220_count > 0 }
 				check_variable = { tom_inf_bat_popup_1221_count > 0 }
 				check_variable = { tom_inf_bat_popup_1222_count > 0 }
+				check_variable = { tom_inf_bat_popup_3822_count > 0 }
 				NOT = { has_tech = tech_recon }
 			}
 		}
@@ -323,6 +324,7 @@ tom_inf_subunit_unavailable_trigger = {
 				check_variable = { tom_inf_bat_popup_1220_count > 0 }
 				check_variable = { tom_inf_bat_popup_1221_count > 0 }
 				check_variable = { tom_inf_bat_popup_1222_count > 0 }
+				check_variable = { tom_inf_bat_popup_3822_count > 0 }
 				NOT = { has_tech = tech_recon }
 				NOT = { has_tech = tech_trucks }
 			}
@@ -333,6 +335,7 @@ tom_inf_subunit_unavailable_trigger = {
 				check_variable = { tom_inf_bat_popup_1220_count > 0 }
 				check_variable = { tom_inf_bat_popup_1221_count > 0 }
 				check_variable = { tom_inf_bat_popup_1222_count > 0 }
+				check_variable = { tom_inf_bat_popup_3822_count > 0 }
 				NOT = { has_tech = tech_recon }
 				NOT = { has_tech = armored_car1 }
 			}
@@ -440,6 +443,16 @@ tom_inf_subunit_unavailable_trigger = {
 			check_variable = { v = 3812 }
 			OR = {
 				check_variable = { tom_inf_bat_popup_3812_count > 0 }
+				NOT = { has_tech = tech_engineers }
+			}
+		}
+		
+		AND = {
+			check_variable = { v = 3822 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_1220_count > 0 }
+				check_variable = { tom_inf_bat_popup_1221_count > 0 }
+				check_variable = { tom_inf_bat_popup_3822_count > 0 }
 				NOT = { has_tech = tech_engineers }
 			}
 		}
