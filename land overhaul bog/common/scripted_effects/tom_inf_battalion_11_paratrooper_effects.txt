@@ -102,12 +102,6 @@ tom_inf_bat_startup_effect_paratrooper = {
 	set_variable = { tom_inf_bat_paratrooper_2100_min = 4 }
 	
 	set_variable = { tom_inf_bat_paratrooper_platoon_count_org = 9 }
-	
-	set_country_flag = tom_inf_bat_paratrooper_2100_5
-	set_country_flag = tom_inf_bat_paratrooper_2100_6
-	set_country_flag = tom_inf_bat_paratrooper_2100_7
-	set_country_flag = tom_inf_bat_paratrooper_2100_8
-	set_country_flag = tom_inf_bat_paratrooper_2100_9
 }
 
 

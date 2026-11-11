@@ -23,6 +23,7 @@ mountaineer
 paratrooper
 marine
 marine_commando
+ranger_battalion
 mountaineers_mechanized
 amphibious_mechanized
 rangers_mechanized

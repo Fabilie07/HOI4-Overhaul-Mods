@@ -103,12 +103,6 @@ tom_inf_bat_startup_effect_marine_commando = {
 	
 	set_variable = { tom_inf_bat_marine_commando_platoon_count_org = 9 }
 	
-	set_country_flag = tom_inf_bat_marine_commando_2300_5
-	set_country_flag = tom_inf_bat_marine_commando_2300_6
-	set_country_flag = tom_inf_bat_marine_commando_2300_7
-	set_country_flag = tom_inf_bat_marine_commando_2300_8
-	set_country_flag = tom_inf_bat_marine_commando_2300_9
-	
 	add_to_array = { tom_inf_bat_marine_commando_terrain_bonus_array = 7 }
 	add_to_array = { tom_inf_bat_marine_commando_terrain_movement_array = 0 }
 	add_to_array = { tom_inf_bat_marine_commando_terrain_attack_array = 30 }

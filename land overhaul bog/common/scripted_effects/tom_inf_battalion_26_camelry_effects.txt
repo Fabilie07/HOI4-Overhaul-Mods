@@ -108,12 +108,6 @@ tom_inf_bat_startup_effect_camelry = {
 	
 	set_variable = { tom_inf_bat_camelry_platoon_count_org = 9 }
 	
-	set_country_flag = tom_inf_bat_camelry_3600_5
-	set_country_flag = tom_inf_bat_camelry_3600_6
-	set_country_flag = tom_inf_bat_camelry_3600_7
-	set_country_flag = tom_inf_bat_camelry_3600_8
-	set_country_flag = tom_inf_bat_camelry_3600_9
-	
 	add_to_array = { tom_inf_bat_camelry_terrain_bonus_array = 1 }
 	add_to_array = { tom_inf_bat_camelry_terrain_movement_array = 0 }
 	add_to_array = { tom_inf_bat_camelry_terrain_attack_array = -5 }

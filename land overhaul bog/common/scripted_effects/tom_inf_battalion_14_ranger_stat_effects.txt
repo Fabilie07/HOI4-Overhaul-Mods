@@ -3,217 +3,26 @@ tom_inf_bat_add_effect_ranger = {
 	
 	### PLATOONS
 	# Rifle
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 4 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_5 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_5
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_2400_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_2400_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				max_organisation = 3
-				max_strength = 0.12
+				max_strength = 3
 				need = {
-					infantry_equipment = 15
+					infantry_equipment = 10
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 5 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_6 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_6
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 6 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_7 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_7
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 7 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_8 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_8
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 8 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_9 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_9
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 9 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_10 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_10
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 10 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_11 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_11
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 11 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_12 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_12
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 12 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_13 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_13
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 13 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_14 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_14
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 14 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_15 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_15
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count > 15 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_2400_16 }
-		}
-		set_country_flag = tom_inf_bat_ranger_2400_16
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = 3
-				max_strength = 0.12
-				need = {
-					infantry_equipment = 15
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# LMG
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1001_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1001_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1001_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1001_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -221,64 +30,23 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1001_2 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1001_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = 0.04
-				need = {
-					lmg_chassis = 4
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 0 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					breakthrough = 0.04
 				}
 			}
 		}
-	}
-	
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1001_3 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1001_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = 0.04
-				need = {
-					lmg_chassis = 4
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1001_4 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1001_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = 0.04
-				need = {
-					lmg_chassis = 4
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# MMG
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1002_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1002_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1002_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1002_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -286,66 +54,24 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1002_2 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1002_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = 0.02
-				defense = 0.02
-				need = {
-					mmg_chassis = 3
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 0 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					breakthrough = 0.02
+					defense = 0.02
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1002_3 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1002_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = 0.02
-				defense = 0.02
-				need = {
-					mmg_chassis = 3
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1002_4 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1002_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = 0.02
-				defense = 0.02
-				need = {
-					mmg_chassis = 3
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# HMG
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1003_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1003_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1003_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1003_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -353,63 +79,23 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1003_2 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1003_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				defense = 0.04
-				need = {
-					hmg_chassis = 2
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 0 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					defense = 0.04
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1003_3 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1003_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				defense = 0.04
-				need = {
-					hmg_chassis = 2
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1003_4 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1003_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				defense = 0.04
-				need = {
-					hmg_chassis = 2
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Mortar
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1010_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1010_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1010_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1010_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -417,63 +103,23 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1010_2 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1010_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				soft_attack = 0.04
-				need = {
-					mortar_chassis = 3
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 0 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					soft_attack = 0.04
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1010_3 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1010_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				soft_attack = 0.04
-				need = {
-					mortar_chassis = 3
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1010_4 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1010_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				soft_attack = 0.04
-				need = {
-					mortar_chassis = 3
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 
 	# AT Rifle
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1020_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1020_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1020_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1020_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -481,63 +127,23 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1020_2 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1020_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = 0.05
-				need = {
-					at_rifle_chassis = 2
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 0 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					hard_attack = 0.05
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1020_3 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1020_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = 0.05
-				need = {
-					at_rifle_chassis = 2
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1020_4 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1020_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = 0.05
-				need = {
-					at_rifle_chassis = 2
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# AT Gun
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1121_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1121_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1121_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1121_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1121_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				supply_consumption = 0.02
@@ -548,15 +154,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# AT Rocket
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1021_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1021_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1021_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1021_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -564,63 +169,23 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1021_2 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1021_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = 0.1
-				need = {
-					at_rocket_chassis = 2
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 0 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					hard_attack = 0.1
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1021_3 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1021_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = 0.1
-				need = {
-					at_rocket_chassis = 2
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1021_4 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1021_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = 0.1
-				need = {
-					at_rocket_chassis = 2
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# AA Gun
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1130_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1130_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1130_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1130_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1130_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				supply_consumption = 0.02
@@ -633,15 +198,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Truck
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1200_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1200_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1200_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1200_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				maximum_speed = 0.1
@@ -660,15 +224,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Mechanized
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1201_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1201_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1201_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1201_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				maximum_speed = 0.1
@@ -685,15 +248,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1210_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1210_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1210_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1210_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1210_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				entrenchment = 0.1
@@ -728,15 +290,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Assault Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1211_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1211_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1211_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1211_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1211_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				breakthrough = 0.05
@@ -769,15 +330,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Flamethrower
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1212_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1212_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1212_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1212_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1212_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -799,15 +359,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Cav Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1220_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1220_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1220_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1220_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1220_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -828,15 +387,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Mot Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1221_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1221_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1221_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1221_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1221_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -861,15 +419,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Armored Car Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1222_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1222_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1222_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1222_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1222_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -892,15 +449,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Sniper
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1223_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1223_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1223_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1223_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1223_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				defense = 0.1
@@ -925,15 +481,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Field Hospital
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1230_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1230_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1230_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1230_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1230_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				max_strength = 0.1
@@ -945,15 +500,14 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Signal
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1240_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_ranger_1240_1 }
-		}
-		set_country_flag = tom_inf_bat_ranger_1240_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1240_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1240_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				initiative = 0.02
@@ -964,6 +518,8 @@ tom_inf_bat_add_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 }
 
@@ -971,217 +527,26 @@ tom_inf_bat_add_effect_ranger = {
 tom_inf_bat_remove_effect_ranger = {
 	### PLATOONS
 	# Rifle
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 5 }
-			has_country_flag = tom_inf_bat_ranger_2400_5
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_5
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_2400_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_2400_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				max_organisation = -3
-				max_strength = -0.12
+				max_strength = -3
 				need = {
-					infantry_equipment = -15
+					infantry_equipment = -10
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 6 }
-			has_country_flag = tom_inf_bat_ranger_2400_6
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_6
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 7 }
-			has_country_flag = tom_inf_bat_ranger_2400_7
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_7
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 8 }
-			has_country_flag = tom_inf_bat_ranger_2400_8
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_8
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 9 }
-			has_country_flag = tom_inf_bat_ranger_2400_9
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_9
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 10 }
-			has_country_flag = tom_inf_bat_ranger_2400_10
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_10
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 11 }
-			has_country_flag = tom_inf_bat_ranger_2400_11
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_11
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 12 }
-			has_country_flag = tom_inf_bat_ranger_2400_12
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_12
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 13 }
-			has_country_flag = tom_inf_bat_ranger_2400_13
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_13
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 14 }
-			has_country_flag = tom_inf_bat_ranger_2400_14
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_14
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 15 }
-			has_country_flag = tom_inf_bat_ranger_2400_15
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_15
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_2400_count < 16 }
-			has_country_flag = tom_inf_bat_ranger_2400_16
-		}
-		clr_country_flag = tom_inf_bat_ranger_2400_16
-		add_unit_bonus = {
-			ranger_battalion = {
-				max_organisation = -3
-				max_strength = -0.12
-				need = {
-					infantry_equipment = -15
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# LMG
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1001_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1001_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1001_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1001_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1189,63 +554,23 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count < 2 }
-			has_country_flag = tom_inf_bat_ranger_1001_2
-		}
-		clr_country_flag = tom_inf_bat_ranger_1001_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = -0.04
-				need = {
-					lmg_chassis = -4
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 1 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					breakthrough = -0.04
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count < 3 }
-			has_country_flag = tom_inf_bat_ranger_1001_3
-		}
-		clr_country_flag = tom_inf_bat_ranger_1001_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = -0.04
-				need = {
-					lmg_chassis = -4
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1001_count < 4 }
-			has_country_flag = tom_inf_bat_ranger_1001_4
-		}
-		clr_country_flag = tom_inf_bat_ranger_1001_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = -0.04
-				need = {
-					lmg_chassis = -4
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# MMG
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1002_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1002_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1002_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1002_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1253,66 +578,24 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count < 2 }
-			has_country_flag = tom_inf_bat_ranger_1002_2
-		}
-		clr_country_flag = tom_inf_bat_ranger_1002_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = -0.02
-				defense = -0.02
-				need = {
-					mmg_chassis = -3
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 1 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					breakthrough = -0.02
+					defense = -0.02
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count < 3 }
-			has_country_flag = tom_inf_bat_ranger_1002_3
-		}
-		clr_country_flag = tom_inf_bat_ranger_1002_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = -0.02
-				defense = -0.02
-				need = {
-					mmg_chassis = -3
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1002_count < 4 }
-			has_country_flag = tom_inf_bat_ranger_1002_4
-		}
-		clr_country_flag = tom_inf_bat_ranger_1002_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				breakthrough = -0.02
-				defense = -0.02
-				need = {
-					mmg_chassis = -3
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# HMG
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1003_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1003_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1003_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1003_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1320,63 +603,23 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count < 2 }
-			has_country_flag = tom_inf_bat_ranger_1003_2
-		}
-		clr_country_flag = tom_inf_bat_ranger_1003_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				defense = -0.04
-				need = {
-					hmg_chassis = -2
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 1 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					defense = -0.04
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count < 3 }
-			has_country_flag = tom_inf_bat_ranger_1003_3
-		}
-		clr_country_flag = tom_inf_bat_ranger_1003_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				defense = -0.04
-				need = {
-					hmg_chassis = -2
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1003_count < 4 }
-			has_country_flag = tom_inf_bat_ranger_1003_4
-		}
-		clr_country_flag = tom_inf_bat_ranger_1003_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				defense = -0.04
-				need = {
-					hmg_chassis = -2
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Mortar
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1010_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1010_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1010_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1010_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1384,63 +627,23 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count < 2 }
-			has_country_flag = tom_inf_bat_ranger_1010_2
-		}
-		clr_country_flag = tom_inf_bat_ranger_1010_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				soft_attack = -0.04
-				need = {
-					mortar_chassis = -3
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 1 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					soft_attack = -0.04
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count < 3 }
-			has_country_flag = tom_inf_bat_ranger_1010_3
-		}
-		clr_country_flag = tom_inf_bat_ranger_1010_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				soft_attack = -0.04
-				need = {
-					mortar_chassis = -3
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1010_count < 4 }
-			has_country_flag = tom_inf_bat_ranger_1010_4
-		}
-		clr_country_flag = tom_inf_bat_ranger_1010_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				soft_attack = -0.04
-				need = {
-					mortar_chassis = -3
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 
 	# AT Rifle
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1020_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1020_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1020_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1020_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1448,63 +651,23 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count < 2 }
-			has_country_flag = tom_inf_bat_ranger_1020_2
-		}
-		clr_country_flag = tom_inf_bat_ranger_1020_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = -0.05
-				need = {
-					at_rifle_chassis = -2
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 1 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					hard_attack = -0.05
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count < 3 }
-			has_country_flag = tom_inf_bat_ranger_1020_3
-		}
-		clr_country_flag = tom_inf_bat_ranger_1020_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = -0.05
-				need = {
-					at_rifle_chassis = -2
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1020_count < 4 }
-			has_country_flag = tom_inf_bat_ranger_1020_4
-		}
-		clr_country_flag = tom_inf_bat_ranger_1020_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = -0.05
-				need = {
-					at_rifle_chassis = -2
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# AT Gun
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1121_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1121_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1121_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1121_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1121_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				supply_consumption = -0.02
@@ -1515,15 +678,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# AT Rocket
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1021_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1021_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1021_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1021_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1531,63 +693,23 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count < 2 }
-			has_country_flag = tom_inf_bat_ranger_1021_2
-		}
-		clr_country_flag = tom_inf_bat_ranger_1021_2
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = -0.1
-				need = {
-					at_rocket_chassis = -2
+		
+		if = {
+			limit = { check_variable = { platoon_difference > 1 } }
+			add_unit_bonus = {
+				ranger_battalion = {
+					hard_attack = -0.1
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count < 3 }
-			has_country_flag = tom_inf_bat_ranger_1021_3
-		}
-		clr_country_flag = tom_inf_bat_ranger_1021_3
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = -0.1
-				need = {
-					at_rocket_chassis = -2
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1021_count < 4 }
-			has_country_flag = tom_inf_bat_ranger_1021_4
-		}
-		clr_country_flag = tom_inf_bat_ranger_1021_4
-		add_unit_bonus = {
-			ranger_battalion = {
-				hard_attack = -0.1
-				need = {
-					at_rocket_chassis = -2
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# AA Gun
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1130_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1130_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1130_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1130_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1130_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				supply_consumption = -0.02
@@ -1600,15 +722,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Truck
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1200_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1200_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1200_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1200_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1200_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				maximum_speed = -0.1
@@ -1627,15 +748,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Mechanized
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1201_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1201_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1201_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1201_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1201_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				maximum_speed = -0.1
@@ -1652,15 +772,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1210_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1210_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1210_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1210_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1210_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				entrenchment = -0.1
@@ -1695,15 +814,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Assault Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1211_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1211_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1211_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1211_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1211_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				breakthrough = -0.05
@@ -1736,15 +854,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Flamethrower
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1212_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1212_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1212_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1212_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1212_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1766,15 +883,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Cav Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1220_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1220_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1220_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1220_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1220_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1795,15 +911,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Mot Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1221_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1221_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1221_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1221_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1221_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1828,15 +943,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Armored Car Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1222_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1222_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1222_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1222_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1222_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				need = {
@@ -1859,15 +973,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Sniper
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1223_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1223_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1223_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1223_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1223_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				defense = -0.1
@@ -1892,15 +1005,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Field Hospital
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1230_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1230_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1230_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1230_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1230_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				max_strength = -0.1
@@ -1912,15 +1024,14 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Signal
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1240_count < 1 }
-			has_country_flag = tom_inf_bat_ranger_1240_1
-		}
-		clr_country_flag = tom_inf_bat_ranger_1240_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_ranger_1240_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1240_count } }
 		add_unit_bonus = {
 			ranger_battalion = {
 				initiative = -0.02
@@ -1931,6 +1042,8 @@ tom_inf_bat_remove_effect_ranger = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 }
 

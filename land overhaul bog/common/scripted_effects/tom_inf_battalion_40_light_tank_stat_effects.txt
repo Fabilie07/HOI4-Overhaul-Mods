@@ -3,12 +3,9 @@ tom_inf_bat_add_effect_light_tank = {
 	
 	### PLATOONS
 	# Light Tank
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 4 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_5 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_5
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_4000_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_4000_count } }
 		add_unit_bonus = {
 			light_armor = {
 				max_organisation = 2
@@ -18,225 +15,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 5 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_6 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_6
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 6 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_7 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_7
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 7 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_8 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_8
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 8 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_9 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_9
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 9 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_10 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_10
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 10 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_11 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_11
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 11 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_12 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_12
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 12 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_13 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_13
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 13 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_14 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_14
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 14 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_15 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_15
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count > 15 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4000_16 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4000_16
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					light_tank_chassis = 5
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Medium Tank
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4001_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4001_1
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				soft_attack = -0.5
-				hard_attack = -0.5
-				ap_attack = -0.5
-				breakthrough = -0.5
-				defense = -0.5
-				fuel_consumption = -0.5
-				need = {
-					medium_tank_chassis = 5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4001_2 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4001_2
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_4001_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_4001_count } }
 		add_unit_bonus = {
 			light_armor = {
 				max_organisation = 2
@@ -246,49 +32,29 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4001_3 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4001_3
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					medium_tank_chassis = 5
+		
+		if = {
+			limit = { check_variable = { platoon_difference = 0 } }
+			add_unit_bonus = {
+				light_armor = {
+					soft_attack = -0.5
+					hard_attack = -0.5
+					ap_attack = -0.5
+					breakthrough = -0.5
+					defense = -0.5
+					fuel_consumption = -0.5
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4001_4 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4001_4
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = 2
-				max_strength = 0.2
-				need = {
-					medium_tank_chassis = 5
-				}
-			}
-		}
-	}
+
 	
 	# Maintenance
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4010_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4010_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_4010_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_4010_count } }
 		add_unit_bonus = {
 			light_armor = {
 				max_strength = 0.5
@@ -299,69 +65,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count > 1 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4010_2 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4010_2
-		add_unit_bonus = {
-			light_armor = {
-				max_strength = 0.5
-				default_morale = 0.1
-				need = {
-					motorized_equipment = 2
-					support_equipment = 1
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count > 2 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4010_3 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4010_3
-		add_unit_bonus = {
-			light_armor = {
-				max_strength = 0.5
-				default_morale = 0.1
-				need = {
-					motorized_equipment = 2
-					support_equipment = 1
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count > 3 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_4010_4 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_4010_4
-		add_unit_bonus = {
-			light_armor = {
-				max_strength = 0.5
-				default_morale = 0.1
-				need = {
-					motorized_equipment = 2
-					support_equipment = 1
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1210_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_1210_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_1210_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1210_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1210_count } }
 		add_unit_bonus = {
 			light_armor = {
 				entrenchment = 0.1
@@ -396,15 +107,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Assault Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1211_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_1211_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_1211_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1211_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1211_count } }
 		add_unit_bonus = {
 			light_armor = {
 				breakthrough = 0.05
@@ -437,15 +147,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Flamethrower
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3812_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_3812_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_3812_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3812_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3812_count } }
 		add_unit_bonus = {
 			light_armor = {
 				hardness = -0.2
@@ -472,15 +181,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Cav Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1220_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_1220_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_1220_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1220_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1220_count } }
 		add_unit_bonus = {
 			light_armor = {
 				need = {
@@ -501,15 +209,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Mot Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1221_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_1221_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_1221_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1221_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1221_count } }
 		add_unit_bonus = {
 			light_armor = {
 				need = {
@@ -534,15 +241,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Armored Car Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3822_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_3822_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_3822_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3822_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3822_count } }
 		add_unit_bonus = {
 			light_armor = {
 				need = {
@@ -565,15 +271,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Field Hospital
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3230_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_3230_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_3230_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3830_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3830_count } }
 		add_unit_bonus = {
 			light_armor = {
 				max_strength = 0.1
@@ -586,18 +291,17 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Signal
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3240_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_3240_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_3240_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3840_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3840_count } }
 		add_unit_bonus = {
 			light_armor = {
-				initiative = 0.02
+				minitiative = 0.02
 				max_organisation = 5
 				need = {
 					motorized_equipment = 8
@@ -606,15 +310,14 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
 	# Central Maintenance
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3250_count > 0 }
-			NOT = { has_country_flag = tom_inf_bat_light_tank_3250_1 }
-		}
-		set_country_flag = tom_inf_bat_light_tank_3250_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3850_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3850_count } }
 		add_unit_bonus = {
 			light_armor = {
 				reliability_factor = 0.02
@@ -624,6 +327,8 @@ tom_inf_bat_add_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 }
 
@@ -631,12 +336,9 @@ tom_inf_bat_add_effect_light_tank = {
 tom_inf_bat_remove_effect_light_tank = {
 	### PLATOONS
 	# Light Tank
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 5 }
-			has_country_flag = tom_inf_bat_light_tank_4000_5
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_5
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_4000_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_4000_count } }
 		add_unit_bonus = {
 			light_armor = {
 				max_organisation = -2
@@ -646,277 +348,46 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 6 }
-			has_country_flag = tom_inf_bat_light_tank_4000_6
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_6
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 7 }
-			has_country_flag = tom_inf_bat_light_tank_4000_7
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_7
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 8 }
-			has_country_flag = tom_inf_bat_light_tank_4000_8
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_8
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 9 }
-			has_country_flag = tom_inf_bat_light_tank_4000_9
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_9
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 10 }
-			has_country_flag = tom_inf_bat_light_tank_4000_10
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_10
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 11 }
-			has_country_flag = tom_inf_bat_light_tank_4000_11
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_11
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 12 }
-			has_country_flag = tom_inf_bat_light_tank_4000_12
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_12
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 13 }
-			has_country_flag = tom_inf_bat_light_tank_4000_13
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_13
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 14 }
-			has_country_flag = tom_inf_bat_light_tank_4000_14
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_14
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 15 }
-			has_country_flag = tom_inf_bat_light_tank_4000_15
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_15
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4000_count < 16 }
-			has_country_flag = tom_inf_bat_light_tank_4000_16
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4000_16
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					light_tank_chassis = -5
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Medium Tank
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_4001_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4001_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_4001_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_4001_count } }
 		add_unit_bonus = {
 			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				soft_attack = 0.5
-				hard_attack = 0.5
-				ap_attack = 0.5
-				breakthrough = 0.5
-				defense = 0.5
-				fuel_consumption = 0.5
+				max_organisation = 2
+				max_strength = 0.2
 				need = {
-					medium_tank_chassis = -5
+					medium_tank_chassis = 5
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count < 2 }
-			has_country_flag = tom_inf_bat_light_tank_4001_2
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4001_2
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					medium_tank_chassis = -5
+		
+		if = {
+			limit = { check_variable = { platoon_difference = 1 } }
+			add_unit_bonus = {
+				light_armor = {
+					soft_attack = -0.5
+					hard_attack = -0.5
+					ap_attack = -0.5
+					breakthrough = -0.5
+					defense = -0.5
+					fuel_consumption = -0.5
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count < 3 }
-			has_country_flag = tom_inf_bat_light_tank_4001_3
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4001_3
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					medium_tank_chassis = -5
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4001_count < 4 }
-			has_country_flag = tom_inf_bat_light_tank_4001_4
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4001_4
-		add_unit_bonus = {
-			light_armor = {
-				max_organisation = -2
-				max_strength = -0.2
-				need = {
-					medium_tank_chassis = -5
-				}
-			}
-		}
-	}
+
 	
 	# Maintenance
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_4010_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4010_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_4010_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_4010_count } }
 		add_unit_bonus = {
 			light_armor = {
 				max_strength = -0.5
@@ -927,69 +398,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count < 2 }
-			has_country_flag = tom_inf_bat_light_tank_4010_2
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4010_2
-		add_unit_bonus = {
-			light_armor = {
-				max_strength = -0.5
-				default_morale = -0.1
-				need = {
-					motorized_equipment = -2
-					support_equipment = -1
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count < 3 }
-			has_country_flag = tom_inf_bat_light_tank_4010_3
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4010_3
-		add_unit_bonus = {
-			light_armor = {
-				max_strength = -0.5
-				default_morale = -0.1
-				need = {
-					motorized_equipment = -2
-					support_equipment = -1
-				}
-			}
-		}
-	}
-	
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_4010_count < 4 }
-			has_country_flag = tom_inf_bat_light_tank_4010_4
-		}
-		clr_country_flag = tom_inf_bat_light_tank_4010_4
-		add_unit_bonus = {
-			light_armor = {
-				max_strength = -0.5
-				default_morale = -0.1
-				need = {
-					motorized_equipment = -2
-					support_equipment = -1
-				}
-			}
-		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1210_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_1210_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_1210_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1210_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1210_count } }
 		add_unit_bonus = {
 			light_armor = {
 				entrenchment = -0.1
@@ -1024,15 +440,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Assault Engineer
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1211_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_1211_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_1211_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1211_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1211_count } }
 		add_unit_bonus = {
 			light_armor = {
 				breakthrough = -0.05
@@ -1065,15 +480,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Flamethrower
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3812_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_3812_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_3812_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3812_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3812_count } }
 		add_unit_bonus = {
 			light_armor = {
 				hardness = 0.2
@@ -1100,15 +514,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Cav Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1220_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_1220_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_1220_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1220_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1220_count } }
 		add_unit_bonus = {
 			light_armor = {
 				need = {
@@ -1129,15 +542,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Mot Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_1221_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_1221_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_1221_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1221_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1221_count } }
 		add_unit_bonus = {
 			light_armor = {
 				need = {
@@ -1162,15 +574,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Armored Car Recon
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3822_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_3822_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_3822_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3822_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3822_count } }
 		add_unit_bonus = {
 			light_armor = {
 				need = {
@@ -1193,15 +604,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Field Hospital
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3230_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_3230_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_3230_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3830_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3830_count } }
 		add_unit_bonus = {
 			light_armor = {
 				max_strength = -0.1
@@ -1214,18 +624,17 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Signal
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3240_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_3240_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_3240_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3840_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3840_count } }
 		add_unit_bonus = {
 			light_armor = {
-				initiative = -0.02
+				minitiative = -0.02
 				max_organisation = -5
 				need = {
 					motorized_equipment = -8
@@ -1234,15 +643,14 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
 	# Central Maintenance
-	if = {
-		limit = {
-			check_variable = { tom_inf_bat_popup_3250_count < 1 }
-			has_country_flag = tom_inf_bat_light_tank_3250_1
-		}
-		clr_country_flag = tom_inf_bat_light_tank_3250_1
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3850_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3850_count } }
 		add_unit_bonus = {
 			light_armor = {
 				reliability_factor = -0.02
@@ -1252,6 +660,8 @@ tom_inf_bat_remove_effect_light_tank = {
 				}
 			}
 		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
 	}
 }
 

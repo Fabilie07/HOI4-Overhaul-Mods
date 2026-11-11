@@ -1887,7 +1887,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1300 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1300_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -1933,7 +1933,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1400 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1400_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -1979,7 +1979,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1500 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1500_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2025,7 +2025,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1600 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1600_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 10 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 2.5 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 2.5 }
 		
 		if = {
@@ -2052,7 +2052,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1700 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1700_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 10 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 2.5 }
 		
 		if = {
@@ -2079,7 +2079,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 1800 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1800_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 10 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 2 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2106,7 +2106,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 2000 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2000_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2133,7 +2133,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 2100 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2100_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2160,7 +2160,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 2200 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2200_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2187,7 +2187,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 2300 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2300_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2214,7 +2214,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 2400 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2400_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2241,7 +2241,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 3000 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3000_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2287,7 +2287,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 3200 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3200_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2333,7 +2333,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 3400 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3400_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2379,7 +2379,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 3500 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3500_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2425,7 +2425,7 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 3600 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3600_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 3 }
 		
 		if = {
@@ -2857,7 +2857,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1000 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1000_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3669,7 +3669,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1300 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1300_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3695,7 +3695,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1400 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1400_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3721,7 +3721,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1500 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1500_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3747,7 +3747,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1600 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1600_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -10 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -2.5 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -2.5 }
 		
 		for_each_loop = {
@@ -3765,7 +3765,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1700 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1700_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -10 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -2.5 }
 		
 		for_each_loop = {
@@ -3783,7 +3783,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 1800 }
 		}
 		add_to_variable = { tom_inf_bat_popup_1800_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -10 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -2 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		
 		for_each_loop = {
@@ -3801,7 +3801,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 2000 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2000_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3818,7 +3818,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 2100 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2100_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3835,7 +3835,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 2200 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2200_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3852,7 +3852,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 2300 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2300_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3869,7 +3869,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 2400 }
 		}
 		add_to_variable = { tom_inf_bat_popup_2400_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3886,7 +3886,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 3000 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3000_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3912,7 +3912,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 3200 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3200_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3938,7 +3938,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 3400 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3400_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
@@ -3964,7 +3964,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 3500 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3500_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		
 		for_each_loop = {
@@ -3992,7 +3992,7 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 3600 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3600_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -12 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -3 }
 		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -3 }
 		
 		for_each_loop = {

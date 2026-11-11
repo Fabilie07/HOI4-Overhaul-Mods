@@ -107,12 +107,6 @@ tom_inf_bat_startup_effect_infantry = {
 	set_variable = { tom_inf_bat_infantry_1000_min = 4 }
 	
 	set_variable = { tom_inf_bat_infantry_platoon_count_org = 9 }
-	
-	set_country_flag = tom_inf_bat_infantry_1000_5
-	set_country_flag = tom_inf_bat_infantry_1000_6
-	set_country_flag = tom_inf_bat_infantry_1000_7
-	set_country_flag = tom_inf_bat_infantry_1000_8
-	set_country_flag = tom_inf_bat_infantry_1000_9
 }
 
 

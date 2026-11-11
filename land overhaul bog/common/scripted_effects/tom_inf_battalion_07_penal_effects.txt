@@ -107,12 +107,6 @@ tom_inf_bat_startup_effect_penal = {
 	set_variable = { tom_inf_bat_penal_1800_min = 4 }
 	
 	set_variable = { tom_inf_bat_penal_platoon_count_org = 9 }
-	
-	set_country_flag = tom_inf_bat_penal_1800_5
-	set_country_flag = tom_inf_bat_penal_1800_6
-	set_country_flag = tom_inf_bat_penal_1800_7
-	set_country_flag = tom_inf_bat_penal_1800_8
-	set_country_flag = tom_inf_bat_penal_1800_9
 }
 
 

@@ -85,12 +85,6 @@ tom_inf_bat_startup_effect_light_tank = {
 	set_variable = { tom_inf_bat_light_tank_4000_min = 4 }
 	
 	set_variable = { tom_inf_bat_light_tank_platoon_count_org = 9 }
-	
-	set_country_flag = tom_inf_bat_light_tank_4000_5
-	set_country_flag = tom_inf_bat_light_tank_4000_6
-	set_country_flag = tom_inf_bat_light_tank_4000_7
-	set_country_flag = tom_inf_bat_light_tank_4000_8
-	set_country_flag = tom_inf_bat_light_tank_4000_9
 }
 
 
