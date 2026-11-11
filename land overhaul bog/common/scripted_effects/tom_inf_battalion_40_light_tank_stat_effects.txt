@@ -301,7 +301,7 @@ tom_inf_bat_add_effect_light_tank = {
 		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3840_count } }
 		add_unit_bonus = {
 			light_armor = {
-				minitiative = 0.02
+				initiative = 0.02
 				max_organisation = 5
 				need = {
 					motorized_equipment = 8
@@ -634,7 +634,7 @@ tom_inf_bat_remove_effect_light_tank = {
 		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3840_count } }
 		add_unit_bonus = {
 			light_armor = {
-				minitiative = -0.02
+				initiative = -0.02
 				max_organisation = -5
 				need = {
 					motorized_equipment = -8
