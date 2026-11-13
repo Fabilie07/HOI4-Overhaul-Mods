@@ -1,3 +1,4 @@
 sub_unit_categories = {
 	armored_signal
+	category_fire_support
 }

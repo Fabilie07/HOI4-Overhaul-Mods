@@ -58,51 +58,6 @@ sub_units = {
 		can_be_parachuted = yes
 	}
 	
-	light_fire_support_div = {
-		abbreviation = "FSC"
-		sprite = infantry
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = no
-		affects_speed = no
-		is_artillery_brigade = no
-
-		type = {
-			armor
-			support
-		}
-		
-		group = support
-		
-		categories = {
-			category_support_battalions
-			category_army
-		}
-
-		regimental = no
-		combat_width = 0
-
-		need = {
-			lmg_chassis = 45
-		}
-		manpower = 300
-		training_time = 90
-		max_organisation = 0
-		default_morale = 0.2
-		max_strength = 0.4
-		weight = 0.1
-		
-		supply_consumption = 0.02
-
-		# Support buffs (equipment balanced around Battalion Size)
-		soft_attack = 1.0
-		breakthrough = 3.0
-		defense = 3.0
-
-		can_be_parachuted = yes
-	}
-	
 	light_fire_support = {
 		abbreviation = "FSC"
 		sprite = infantry
@@ -125,6 +80,7 @@ sub_units = {
 			category_support_battalions
 			category_regimental_support_battalions
 			category_army
+			category_fire_support
 		}
 
 		divisional = no
@@ -172,6 +128,7 @@ sub_units = {
 			category_support_battalions
 			category_regimental_support_battalions
 			category_army
+			category_fire_support
 		}
 
 		divisional = no
@@ -219,6 +176,7 @@ sub_units = {
 			category_support_battalions
 			category_regimental_support_battalions
 			category_army
+			category_fire_support
 		}
 
 		divisional = no
@@ -266,6 +224,7 @@ sub_units = {
 			category_support_battalions
 			category_regimental_support_battalions
 			category_army
+			category_fire_support
 		}
 
 		divisional = no
@@ -314,6 +273,7 @@ sub_units = {
 			category_support_battalions
 			category_regimental_support_battalions
 			category_army
+			category_fire_support
 		}
 
 		divisional = no
@@ -362,6 +322,7 @@ sub_units = {
 			category_support_battalions
 			category_regimental_support_battalions
 			category_army
+			category_fire_support
 		}
 
 		divisional = no

@@ -639,6 +639,11 @@ technologies = {
 			ap_attack = 0.2
 		}
 		
+		category_fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
+		
 		path = {
 			leads_to_tech = infantry_at2
 			research_cost_coeff = 1
@@ -683,6 +688,11 @@ technologies = {
 		
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
+		
+		category_fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
 		
 		path = {
 			leads_to_tech = infantry_at3
@@ -732,6 +742,11 @@ technologies = {
 			ap_attack = 0.1
 		}
 		
+		category_fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
+		
 		path = {
 			leads_to_tech = infantry_at4
 			research_cost_coeff = 1
@@ -761,6 +776,11 @@ technologies = {
 		
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
+		
+		category_fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
+		}
 		
 		path = {
 			leads_to_tech = infantry_at5
@@ -797,6 +817,11 @@ technologies = {
 		category_cavalry = {
 			hard_attack = 0.05
 			ap_attack = 0.1
+		}
+		
+		category_fire_support = {
+			hard_attack = 0.15
+			ap_attack = 0.5
 		}
 
 		research_cost = 1.5
@@ -1053,17 +1078,10 @@ technologies = {
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+		category_fire_support = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.1
 		}
 		
 		enable_equipment_modules = {
@@ -1142,17 +1160,10 @@ technologies = {
 			inf_rifle_grenade
 		}
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+		category_fire_support = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1210,17 +1221,10 @@ technologies = {
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+		category_fire_support = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1260,17 +1264,10 @@ technologies = {
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+		category_fire_support = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1327,17 +1324,10 @@ technologies = {
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+		category_fire_support = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1375,17 +1365,10 @@ technologies = {
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+		category_fire_support = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -1424,17 +1407,10 @@ technologies = {
 		show_equipment_icon = yes
 		force_use_small_tech_layout = yes
 
-		category_light_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_cavalry = {
-			defense = 0.04
-			breakthrough = 0.04
-		}
-		category_vehicle_infantry = {
-			defense = 0.04
-			breakthrough = 0.04
+		category_fire_support = {
+			defense = 0.2
+			breakthrough = 0.2
+			soft_attack = 0.1
 		}
 		
 		research_cost = 1.5

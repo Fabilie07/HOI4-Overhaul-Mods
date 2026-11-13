@@ -1,5 +1,7 @@
 ﻿l_english:
 
+ category_fire_support:0 "Regimental MG Support"
+
  mountaineers_mechanized:0 "Mechanized Mountaineers"
  mountaineers_mechanized_desc:0 "Special Forces trained to use APCs in the harsh environment of mountains."
  
