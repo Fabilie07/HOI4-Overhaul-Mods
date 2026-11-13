@@ -63,8 +63,7 @@ tom_inf_bat_startup_effect_light_tank = {
 	set_variable = { tom_inf_bat_light_tank_4001_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_4010_count = 0 }
 	
-	set_variable = { tom_inf_bat_light_tank_1210_count = 0 }
-	set_variable = { tom_inf_bat_light_tank_1211_count = 0 }
+	set_variable = { tom_inf_bat_light_tank_3810_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_3812_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_1220_count = 0 }
 	set_variable = { tom_inf_bat_light_tank_1221_count = 0 }
@@ -164,8 +163,7 @@ tom_inf_bat_open_subunit_counts_light_tank_effect = {
 	set_variable = { tom_inf_bat_popup_4001_count = tom_inf_bat_light_tank_4001_count }
 	set_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_light_tank_4010_count }
 	
-	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_light_tank_1210_count }
-	set_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_light_tank_1211_count }
+	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_light_tank_3810_count }
 	set_variable = { tom_inf_bat_popup_3812_count = tom_inf_bat_light_tank_3812_count }
 	set_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_light_tank_1220_count }
 	set_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_light_tank_1221_count }
@@ -292,8 +290,7 @@ tom_inf_bat_save_designer_light_tank_effect = {
 	set_variable = { tom_inf_bat_light_tank_4001_count = tom_inf_bat_popup_4001_count }
 	set_variable = { tom_inf_bat_light_tank_4010_count = tom_inf_bat_popup_4010_count }
 	
-	set_variable = { tom_inf_bat_light_tank_1210_count = tom_inf_bat_popup_1210_count }
-	set_variable = { tom_inf_bat_light_tank_1211_count = tom_inf_bat_popup_1211_count }
+	set_variable = { tom_inf_bat_light_tank_1210_count = tom_inf_bat_popup_3810_count }
 	set_variable = { tom_inf_bat_light_tank_3812_count = tom_inf_bat_popup_3812_count }
 	set_variable = { tom_inf_bat_light_tank_1220_count = tom_inf_bat_popup_1220_count }
 	set_variable = { tom_inf_bat_light_tank_1221_count = tom_inf_bat_popup_1221_count }

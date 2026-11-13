@@ -1060,6 +1060,15 @@ tom_inf_platoon_icon_trigger = {
 	else_if = {
 		limit = {
 			OR = {
+				check_variable = { platoon_value = 3810 }
+				check_variable = { v = 3810 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 64 }
+	}
+	else_if = {
+		limit = {
+			OR = {
 				check_variable = { platoon_value = 3812 }
 				check_variable = { v = 3812 }
 			}
@@ -1082,7 +1091,7 @@ tom_inf_platoon_icon_trigger = {
 				check_variable = { v = 3830 }
 			}
 		}
-		set_temp_variable = { platoon_icon_frame = 22 }
+		set_temp_variable = { platoon_icon_frame = 65 }
 	}
 	else_if = {
 		limit = {
@@ -1091,7 +1100,7 @@ tom_inf_platoon_icon_trigger = {
 				check_variable = { v = 3840 }
 			}
 		}
-		set_temp_variable = { platoon_icon_frame = 23 }
+		set_temp_variable = { platoon_icon_frame = 66 }
 	}
 	else_if = {
 		limit = {

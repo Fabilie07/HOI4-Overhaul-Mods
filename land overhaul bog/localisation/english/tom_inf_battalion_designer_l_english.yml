@@ -129,6 +129,7 @@
  tom_inf_platoon_3500:0 "Bicycle Rifle Platoon"
  tom_inf_platoon_3600:0 "Camel Mounted Platoon"
  
+ tom_inf_platoon_3810:0 "Armored Support Platoon"
  tom_inf_platoon_3812:0 "Motorized Flamethrower Section"
  tom_inf_platoon_3822:0 "Armored Car Recon Section"
  tom_inf_platoon_3830:0 "Motorized Field Hospital Section"
@@ -215,6 +216,7 @@
  tom_inf_platoon_3500_desc:0 "-- Bicycle Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3500_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nSupport Equipment: §Y1§!"
  tom_inf_platoon_3600_desc:0 "-- Camelry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_3600_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!\nHorse: §Y80§!"
  
+ tom_inf_platoon_3810_desc:0 "-- Armored Engineering Vehicles clearing the way for and recovering Tanks --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$sp_land_military_engineering_vehicles$§!\n\n[tom_inf_platoon_stats_loc]Armored Support Vehicle: §Y5§!"
  tom_inf_platoon_3812_desc:0 "-- Motorized Flamethrowers for clearing tight spaces --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$tech_engineers$ & Early Trucks§!\n\n[tom_inf_platoon_stats_loc]Motorized Equipment: §Y8§!\nFlamethrower Equipment: §Y8§!"
  tom_inf_platoon_3822_desc:0 "-- Armored Car Reconnaisance finding and engaging Enemies --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_1220$, $tom_inf_platoon_1221$§!\nUnlocked by: §Y$tech_recon$ & $armored_car1$§!\n\n[tom_inf_platoon_stats_loc]Armored Car Equipment: §Y4§!\nInfantry Equipment: §Y8§!"
  tom_inf_platoon_3830_desc:0 "-- Field Medics offering first-aid treatment --\n\nMax Amount: §Y1§!\nUnlocked by: §Y$tech_field_hospital$§!\n\n[tom_inf_platoon_stats_loc]Motorized Equipment: §Y8§!\nSupport Equipment: §Y8§!"
@@ -284,6 +286,7 @@
  tom_inf_platoon_3500_stats:0 "Organization: §G+3.0§!\nHP: §G+3.0§!\n\n"
  tom_inf_platoon_3600_stats:0 "Organization: §G+3.0§!\nHP: §G+3.0§!\n\n"
  
+ tom_inf_platoon_3810_stats:0 "HP: §G+2.0§!\n§YRiver:§!\n  Defense & Breakthrough: §G+20%§!\n  Movement: §G+10%§!\n§YFort:§!\n  Attack: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n§YForest, Jungle:§!\n  Defense & Breakthrough: §G+20%§!\n§YHills, Jungle:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_3812_stats:0 "$tom_inf_platoon_equipment_stats$§Y$flamethrower_chassis$§!\n§YFort:§!\n  Attack: §G+25%§!\n  Defense & Breakthrough: §G+10%§!\n§YRiver:§!\n  Attack: §G+15%§!\n  Defense & Breakthrough: §G+10%§!\n§YAmphibious:§!\n  Attack: §G+15%§!\n\n"
  tom_inf_platoon_3822_stats:0 "Soft Attack: §R-10%§!\nHard Attack: §R-10%§!\nBreakthrough: §R-15%§!\nArmor: §R-20%§!\n§YPlains, Desert:§!\n  Movement: §G+10%§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_3830_stats:0 "HP: §G+10%§!\nRecovery Rate: §G+10%§!\nTrickleback & War Support Protection: §G+2%§!\nExp Loss: §G-2%§!\n\n"

@@ -69,15 +69,15 @@ tom_inf_bat_add_effect_light_tank = {
 		add_to_temp_variable = { platoon_difference = 1 }
 	}
 	
-	# Engineer
-	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1210_count }
+	# Armored Engineer
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3810_count }
 	while_loop_effect = {
-		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1210_count } }
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3810_count } }
 		add_unit_bonus = {
 			light_armor = {
-				entrenchment = 0.1
+				max_strength = 2
 				need = {
-					support_equipment = 8
+					armored_support_vehicle = 5
 				}
 				
 				forest = {
@@ -104,46 +104,6 @@ tom_inf_bat_add_effect_light_tank = {
 				river = {
 					defence = 0.2
 					movement = 0.1
-				}
-			}
-		}
-		
-		add_to_temp_variable = { platoon_difference = 1 }
-	}
-	
-	# Assault Engineer
-	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1211_count }
-	while_loop_effect = {
-		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1211_count } }
-		add_unit_bonus = {
-			light_armor = {
-				breakthrough = 0.05
-				need = {
-					support_equipment = 10
-				}
-
-				hills = {
-					defence = 0.1
-				}
-				
-				marsh = {
-					defence = 0.1
-					attack = 0.1
-				}
-
-				fort = {
-					attack = 0.2
-					defence = 0.2
-				}
-
-				river = {
-					defence = 0.2
-					attack = 0.1
-					movement = 0.2
-				}
-
-				amphibious = {
-					attack = 0.1
 				}
 			}
 		}
@@ -398,15 +358,15 @@ tom_inf_bat_remove_effect_light_tank = {
 		add_to_temp_variable = { platoon_difference = -1 }
 	}
 	
-	# Engineer
-	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1210_count }
+	# Armored Engineer
+	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_3810_count }
 	while_loop_effect = {
-		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1210_count } }
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3810_count } }
 		add_unit_bonus = {
 			light_armor = {
-				entrenchment = -0.1
+				max_strength = -2
 				need = {
-					support_equipment = -8
+					armored_support_vehicle = -5
 				}
 				
 				forest = {
@@ -433,46 +393,6 @@ tom_inf_bat_remove_effect_light_tank = {
 				river = {
 					defence = -0.2
 					movement = -0.1
-				}
-			}
-		}
-		
-		add_to_temp_variable = { platoon_difference = -1 }
-	}
-	
-	# Assault Engineer
-	set_temp_variable = { platoon_difference = tom_inf_bat_light_tank_1211_count }
-	while_loop_effect = {
-		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1211_count } }
-		add_unit_bonus = {
-			light_armor = {
-				breakthrough = -0.05
-				need = {
-					support_equipment = -10
-				}
-
-				hills = {
-					defence = -0.1
-				}
-				
-				marsh = {
-					defence = -0.1
-					attack = -0.1
-				}
-
-				fort = {
-					attack = -0.2
-					defence = -0.2
-				}
-
-				river = {
-					defence = -0.2
-					attack = -0.1
-					movement = -0.2
-				}
-
-				amphibious = {
-					attack = -0.1
 				}
 			}
 		}
