@@ -121,6 +121,34 @@ tom_inf_save_button_click_effect = {
 		
 		tom_inf_bat_save_designer_camelry_effect = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_light_tank
+		}
+		
+		tom_inf_bat_save_designer_light_tank_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_medium_tank
+		}
+		
+		tom_inf_bat_save_designer_medium_tank_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_heavy_tank
+		}
+		
+		tom_inf_bat_save_designer_heavy_tank_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_modern_tank
+		}
+		
+		tom_inf_bat_save_designer_modern_tank_effect = yes
+	}
 	
 	tom_inf_update_doctrine_variables_effect = yes
 	tom_inf_bat_close_designer_effect = yes
@@ -262,6 +290,22 @@ tom_inf_compute_equipment_cost_effect = {
 				limit = { has_country_flag = tom_inf_bat_current_camelry }
 				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@camelry }
 			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_light_tank }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@light_armor }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_medium_tank }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@medium_armor }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_heavy_tank }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@heavy_armor }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_modern_tank }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@modern_armor }
+			}
 			
 			add_to_array = { tom_inf_bat_needed_equipment_type_array = temp_equipment_archetype }
 			add_to_array = { tom_inf_bat_needed_equipment_count_array = temp_equipment_after }
@@ -304,6 +348,22 @@ tom_inf_compute_temp_equipment_has = {
 	else_if = {
 		limit = { check_variable = { temp_equipment_archetype = token:armored_car_equipment } }
 		set_temp_variable = { temp_equipment_has = num_equipment@armored_car_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:light_tank_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@light_tank_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:medium_tank_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@medium_tank_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:heavy_tank_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@heavy_tank_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:modern_tank_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@modern_tank_chassis }
 	}
 	else_if = {
 		limit = { check_variable = { temp_equipment_archetype = token:lmg_chassis } }

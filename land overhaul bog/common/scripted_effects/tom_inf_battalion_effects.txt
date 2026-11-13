@@ -2471,25 +2471,22 @@ tom_inf_battalion_platoon_add_effect = {
 			check_variable = { v = 3812 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3812_count = 1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^3 = -15 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = -10 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^5 = -15 }
 		if = {
 			limit = {
-				is_in_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:mechanized_equipment }
+				is_in_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:motorized_equipment }
 			}
 			for_each_loop = {
 				array = tom_inf_bat_popup_equipment_stats_array_2_type
 				value = unimportant
 				index = equipment_index
 				if = {
-					limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:mechanized_equipment } }
+					limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:motorized_equipment } }
 					add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = 8 }
 				}
 			}
 		}
 		else = {
-			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:mechanized_equipment }
+			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:motorized_equipment }
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 8 }
 		}
 		
@@ -4020,16 +4017,13 @@ tom_inf_battalion_platoon_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 3812 }
 		}
 		add_to_variable = { tom_inf_bat_popup_3812_count = -1 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^3 = 15 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^4 = 10 }
-		add_to_variable = { tom_inf_bat_popup_combat_stats_array^5 = 15 }
 		
 		for_each_loop = {
 			array = tom_inf_bat_popup_equipment_stats_array_2_type
 			value = unimportant
 			index = equipment_index
 			if = {
-				limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:mechanized_equipment } }
+				limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:motorized_equipment } }
 				add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = -8 }
 			}
 		}

@@ -157,12 +157,8 @@ tom_inf_bat_add_effect_light_tank = {
 		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3812_count } }
 		add_unit_bonus = {
 			light_armor = {
-				hardness = -0.2
-				breakthrough = -0.1
-				defense = -0.15
-				armor_value = -0.15
 				need = {
-					mechanized_equipment = 8
+					motorized_equipment = 8
 					flamethrower_chassis = 8
 				}
 
@@ -490,12 +486,8 @@ tom_inf_bat_remove_effect_light_tank = {
 		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3812_count } }
 		add_unit_bonus = {
 			light_armor = {
-				hardness = 0.2
-				breakthrough = 0.1
-				defense = 0.15
-				armor_value = 0.15
 				need = {
-					mechanized_equipment = -8
+					motorized_equipment = -8
 					flamethrower_chassis = -8
 				}
 
