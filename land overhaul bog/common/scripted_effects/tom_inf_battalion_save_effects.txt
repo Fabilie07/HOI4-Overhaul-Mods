@@ -397,4 +397,8 @@ tom_inf_compute_temp_equipment_has = {
 		limit = { check_variable = { temp_equipment_archetype = token:radio_equipment } }
 		set_temp_variable = { temp_equipment_has = num_equipment@radio_equipment }
 	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:armored_support_vehicle } }
+		set_temp_variable = { temp_equipment_has = num_equipment@armored_support_vehicle }
+	}
 }

@@ -741,6 +741,30 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			check_variable = { v = 42 }
+		}
+		localization_key = tom_inf_company_42
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 43 }
+		}
+		localization_key = tom_inf_company_43
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 44 }
+		}
+		localization_key = tom_inf_company_44
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 45 }
+		}
+		localization_key = tom_inf_company_45
+	}
+	text = {
+		trigger = {
 			check_variable = { v = 1000 }
 		}
 		localization_key = tom_inf_platoon_1000
@@ -1063,6 +1087,30 @@ defined_text = {
 		}
 		localization_key = tom_inf_platoon_4010
 	}
+	text = {
+		trigger = {
+			check_variable = { v = 4200 }
+		}
+		localization_key = tom_inf_platoon_4200
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4201 }
+		}
+		localization_key = tom_inf_platoon_4201
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4400 }
+		}
+		localization_key = tom_inf_platoon_4400
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4401 }
+		}
+		localization_key = tom_inf_platoon_4401
+	}
 }
 
 
@@ -1218,6 +1266,30 @@ defined_text = {
 			check_variable = { v = 41 }
 		}
 		localization_key = tom_inf_company_41_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 42 }
+		}
+		localization_key = tom_inf_company_42_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 43 }
+		}
+		localization_key = tom_inf_company_43_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 44 }
+		}
+		localization_key = tom_inf_company_44_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 45 }
+		}
+		localization_key = tom_inf_company_45_desc
 	}
 	text = {
 		trigger = {
@@ -1542,6 +1614,30 @@ defined_text = {
 			check_variable = { v = 4010 }
 		}
 		localization_key = tom_inf_platoon_4010_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4200 }
+		}
+		localization_key = tom_inf_platoon_4200_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4201 }
+		}
+		localization_key = tom_inf_platoon_4201_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4400 }
+		}
+		localization_key = tom_inf_platoon_4400_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4401 }
+		}
+		localization_key = tom_inf_platoon_4401_desc
 	}
 }
 
@@ -1942,5 +2038,43 @@ defined_text = {
 			check_variable = { v = 4010 }
 		}
 		localization_key = tom_inf_platoon_4010_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4200 }
+		}
+		localization_key = tom_inf_platoon_4200_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4201 }
+			check_variable = { tom_inf_bat_popup_4201_count > 0 }
+		}
+		localization_key = tom_inf_platoon_4201_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4201 }
+		}
+		localization_key = tom_inf_platoon_4201_stats_equipment
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4400 }
+		}
+		localization_key = tom_inf_platoon_4400_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4401 }
+			check_variable = { tom_inf_bat_popup_4401_count > 0 }
+		}
+		localization_key = tom_inf_platoon_4401_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4401 }
+		}
+		localization_key = tom_inf_platoon_4401_stats_equipment
 	}
 }

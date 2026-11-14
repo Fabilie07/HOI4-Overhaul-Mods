@@ -119,6 +119,26 @@ tom_inf_subunit_unavailable_trigger = {
 			check_variable = { v = 41 }
 			check_variable = { tom_inf_bat_popup_41_count = tom_inf_bat_popup_41_max }
 		}
+		
+		AND = {
+			check_variable = { v = 42 }
+			check_variable = { tom_inf_bat_popup_42_count = tom_inf_bat_popup_42_max }
+		}
+		
+		AND = {
+			check_variable = { v = 43 }
+			check_variable = { tom_inf_bat_popup_43_count = tom_inf_bat_popup_43_max }
+		}
+		
+		AND = {
+			check_variable = { v = 44 }
+			check_variable = { tom_inf_bat_popup_44_count = tom_inf_bat_popup_44_max }
+		}
+		
+		AND = {
+			check_variable = { v = 45 }
+			check_variable = { tom_inf_bat_popup_45_count = tom_inf_bat_popup_45_max }
+		}
 	
 		AND = {
 			check_variable = { v = 1000 }
@@ -506,6 +526,26 @@ tom_inf_subunit_unavailable_trigger = {
 			check_variable = { v = 4010 }
 			check_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_popup_4010_max }
 		}
+		
+		AND = {
+			check_variable = { v = 4200 }
+			check_variable = { tom_inf_bat_popup_4200_count = tom_inf_bat_popup_4200_max }
+		}
+		
+		AND = {
+			check_variable = { v = 4201 }
+			check_variable = { tom_inf_bat_popup_4201_count = tom_inf_bat_popup_4201_max }
+		}
+		
+		AND = {
+			check_variable = { v = 4400 }
+			check_variable = { tom_inf_bat_popup_4400_count = tom_inf_bat_popup_4400_max }
+		}
+		
+		AND = {
+			check_variable = { v = 4401 }
+			check_variable = { tom_inf_bat_popup_4401_count = tom_inf_bat_popup_4401_max }
+		}
 	}
 }
 
@@ -582,5 +622,13 @@ tom_inf_remove_unavailable_trigger = {
 	AND = {
 		check_variable = { tom_inf_bat_current_value = 4000 }
 		check_variable = { tom_inf_bat_popup_4000_count = tom_inf_bat_popup_4000_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 4200 }
+		check_variable = { tom_inf_bat_popup_4200_count = tom_inf_bat_popup_4200_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 4400 }
+		check_variable = { tom_inf_bat_popup_4400_count = tom_inf_bat_popup_4400_min }
 	}
 }

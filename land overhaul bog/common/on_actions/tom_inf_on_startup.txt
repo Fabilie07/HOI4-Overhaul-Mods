@@ -28,6 +28,8 @@ on_actions = {
 				tom_inf_bat_startup_effect_bicycle = yes
 				tom_inf_bat_startup_effect_camelry = yes
 				tom_inf_bat_startup_effect_light_tank = yes
+				tom_inf_bat_startup_effect_medium_tank = yes
+				tom_inf_bat_startup_effect_heavy_tank = yes
 				
 				tom_inf_bat_startup_effect_company_arrays = yes
 				

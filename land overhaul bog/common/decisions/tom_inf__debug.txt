@@ -18,4 +18,26 @@ debug_decisions = {
 			}
 		}
 	}
+	
+	tom_inf_test_fuel_consumption = {
+		complete_effect = {
+			add_unit_bonus = {
+				heavy_armor = {
+					fuel_consumption = -0.5
+				}
+			}
+		}
+	}
+	
+	tom_inf_test_fuel_consumption_equipment = {
+		complete_effect = {
+			add_unit_bonus = {
+				heavy_armor = {
+					need = {
+						light_tank_chassis = 1
+					}
+				}
+			}
+		}
+	}
 }

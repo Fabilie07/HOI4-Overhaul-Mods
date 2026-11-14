@@ -1,0 +1,646 @@
+tom_inf_bat_add_effect_medium_tank = {
+	# Adds necessary stats after saving a larger Battalion.
+	
+	### PLATOONS
+	# Medium Tank
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_4200_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_4200_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_organisation = 2
+				max_strength = 0.2
+				need = {
+					medium_tank_chassis = 5
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Light Tank
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_4201_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_4201_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_organisation = 2
+				max_strength = 0.2
+				need = {
+					light_tank_chassis = 5
+				}
+			}
+		}
+		
+		if = {
+			limit = { check_variable = { platoon_difference = 0 } }
+			add_unit_bonus = {
+				medium_armor = {
+					soft_attack = -0.4
+					hard_attack = -0.4
+					ap_attack = -0.4
+					breakthrough = -0.4
+					defense = -0.4
+					fuel_consumption = -0.5
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+
+	
+	# Maintenance
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_4010_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_4010_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_strength = 0.5
+				default_morale = 0.1
+				need = {
+					motorized_equipment = 2
+					support_equipment = 1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Armored Engineer
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3810_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3810_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_strength = 2
+				need = {
+					armored_support_vehicle = 5
+				}
+				
+				forest = {
+					defence = 0.2
+				}
+
+				hills = {
+					defence = 0.1
+				}
+
+				jungle = {
+					defence = 0.2
+				}
+
+				marsh = {
+					defence = 0.1
+				}
+
+				fort = {
+					attack = 0.1
+					defence = 0.1
+				}
+
+				river = {
+					defence = 0.2
+					movement = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Flamethrower
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3812_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3812_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					motorized_equipment = 8
+					flamethrower_chassis = 8
+				}
+
+				fort = {
+					attack = 0.25
+					defence = 0.1
+				}
+
+				river = {
+					defence = 0.1
+					attack = 0.15
+				}
+
+				amphibious = {
+					attack = 0.15
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Cav Recon
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_1220_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1220_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					tom_inf_horse = 20
+					infantry_equipment = 8
+				}
+				
+				forest = {
+					movement = 0.1
+				}
+
+				jungle = {
+					movement = 0.1
+				}
+
+				mountain = {
+					movement = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Mot Recon
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_1221_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_1221_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					motorized_equipment = 4
+					infantry_equipment = 8
+				}
+				
+				plains = {
+					movement = 0.1
+				}
+
+				hills = {
+					movement = 0.1
+				}
+
+				desert = {
+					movement = 0.1
+				}
+				
+				urban = {
+					movement = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Armored Car Recon
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3822_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3822_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					armored_car_equipment = 4
+					infantry_equipment = 8
+				}
+				soft_attack = -0.1
+				hard_attack = -0.1
+				breakthrough = -0.15
+				armor_value = -0.2
+				
+				plains = {
+					movement = 0.1
+					defence = 0.1
+				}
+
+				desert = {
+					movement = 0.1
+					defence = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Field Hospital
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3830_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3830_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_strength = 0.1
+				default_morale = 0.1
+				casualty_trickleback = 0.02
+				experience_loss_factor = -0.02
+				need = {
+					motorized_equipment = 8
+					support_equipment = 8
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Signal
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3840_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3840_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				initiative = 0.02
+				max_organisation = 5
+				need = {
+					motorized_equipment = 8
+					radio_equipment = 6
+					support_equipment = 6
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Central Maintenance
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3850_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_3850_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				reliability_factor = 0.02
+				need = {
+					motorized_equipment = 8
+					support_equipment = 4
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+}
+
+
+tom_inf_bat_remove_effect_medium_tank = {
+	### PLATOONS
+	# Medium Tank
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_4200_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_4200_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_organisation = -2
+				max_strength = -0.2
+				need = {
+					medium_tank_chassis = -5
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Light Tank
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_4201_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_4201_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_organisation = -2
+				max_strength = -0.2
+				need = {
+					light_tank_chassis = -5
+				}
+			}
+		}
+		
+		if = {
+			limit = { check_variable = { platoon_difference = 1 } }
+			add_unit_bonus = {
+				medium_armor = {
+					soft_attack = 0.4
+					hard_attack = 0.4
+					ap_attack = 0.4
+					breakthrough = 0.4
+					defense = 0.4
+					fuel_consumption = 0.5
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+
+	
+	# Maintenance
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_4010_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_4010_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_strength = -0.5
+				default_morale = -0.1
+				need = {
+					motorized_equipment = -2
+					support_equipment = -1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Armored Engineer
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3810_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3810_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_strength = -2
+				need = {
+					armored_support_vehicle = -5
+				}
+				
+				forest = {
+					defence = -0.2
+				}
+
+				hills = {
+					defence = -0.1
+				}
+
+				jungle = {
+					defence = -0.2
+				}
+
+				marsh = {
+					defence = -0.1
+				}
+
+				fort = {
+					attack = -0.1
+					defence = -0.1
+				}
+
+				river = {
+					defence = -0.2
+					movement = -0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Flamethrower
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3812_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3812_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					motorized_equipment = -8
+					flamethrower_chassis = -8
+				}
+
+				fort = {
+					attack = -0.25
+					defence = -0.1
+				}
+
+				river = {
+					defence = -0.1
+					attack = -0.15
+				}
+
+				amphibious = {
+					attack = -0.15
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Cav Recon
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_1220_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1220_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					tom_inf_horse = -20
+					infantry_equipment = -8
+				}
+				
+				forest = {
+					movement = -0.1
+				}
+
+				jungle = {
+					movement = -0.1
+				}
+
+				mountain = {
+					movement = -0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Mot Recon
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_1221_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_1221_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					motorized_equipment = -4
+					infantry_equipment = -8
+				}
+				
+				plains = {
+					movement = -0.1
+				}
+
+				hills = {
+					movement = -0.1
+				}
+
+				desert = {
+					movement = -0.1
+				}
+				
+				urban = {
+					movement = -0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Armored Car Recon
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3822_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3822_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				need = {
+					armored_car_equipment = -4
+					infantry_equipment = -8
+				}
+				soft_attack = 0.1
+				hard_attack = 0.1
+				breakthrough = 0.15
+				armor_value = 0.2
+				
+				plains = {
+					movement = -0.1
+					defence = -0.1
+				}
+
+				desert = {
+					movement = -0.1
+					defence = -0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Field Hospital
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3830_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3830_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				max_strength = -0.1
+				default_morale = -0.1
+				casualty_trickleback = -0.02
+				experience_loss_factor = 0.02
+				need = {
+					motorized_equipment = -8
+					support_equipment = -8
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Signal
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3840_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3840_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				initiative = -0.02
+				max_organisation = -5
+				need = {
+					motorized_equipment = -8
+					radio_equipment = -6
+					support_equipment = -6
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Central Maintenance
+	set_temp_variable = { platoon_difference = tom_inf_bat_medium_tank_3850_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_3850_count } }
+		add_unit_bonus = {
+			medium_armor = {
+				reliability_factor = -0.02
+				need = {
+					motorized_equipment = -8
+					support_equipment = -4
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+}
+
+tom_inf_bat_increase_platoon_org_medium_tank = {
+	while_loop_effect = {
+		limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org < tom_inf_bat_popup_platoon_count_org } }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org > 19 } }
+			add_unit_bonus = {
+				medium_armor = {
+					max_organisation = -9
+					soft_attack = -0.1
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org > 15 } }
+			add_unit_bonus = {
+				medium_armor = {
+					max_organisation = -6
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org > 11 } }
+			add_unit_bonus = {
+				medium_armor = {
+					max_organisation = -3
+				}
+			}
+		}
+		
+		add_to_variable = { tom_inf_bat_medium_tank_platoon_count_org = 1 }
+	}
+}
+
+tom_inf_bat_decrease_platoon_org_medium_tank = {
+	while_loop_effect = {
+		limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org > tom_inf_bat_popup_platoon_count_org } }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org > 20 } }
+			add_unit_bonus = {
+				medium_armor = {
+					max_organisation = 9
+					soft_attack = 0.1
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org > 16 } }
+			add_unit_bonus = {
+				medium_armor = {
+					max_organisation = 6
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_medium_tank_platoon_count_org > 12 } }
+			add_unit_bonus = {
+				medium_armor = {
+					max_organisation = 3
+				}
+			}
+		}
+		
+		add_to_variable = { tom_inf_bat_medium_tank_platoon_count_org = -1 }
+	}
+}
