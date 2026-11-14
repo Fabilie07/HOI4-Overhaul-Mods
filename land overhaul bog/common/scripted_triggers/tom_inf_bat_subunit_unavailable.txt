@@ -440,10 +440,19 @@ tom_inf_subunit_unavailable_trigger = {
 		}
 		
 		AND = {
+			check_variable = { v = 3810 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_3810_count > 0 }
+				NOT = { is_special_project_completed = sp_land_military_engineering_vehicles }
+			}
+		}
+		
+		AND = {
 			check_variable = { v = 3812 }
 			OR = {
 				check_variable = { tom_inf_bat_popup_3812_count > 0 }
 				NOT = { has_tech = tech_engineers }
+				NOT = { has_tech = tech_trucks }
 			}
 		}
 		
@@ -479,6 +488,7 @@ tom_inf_subunit_unavailable_trigger = {
 			OR = {
 				check_variable = { tom_inf_bat_popup_3850_count > 0 }
 				NOT = { has_tech = tech_maintenance_company }
+				NOT = { has_tech = tech_trucks }
 			}
 		}
 		
