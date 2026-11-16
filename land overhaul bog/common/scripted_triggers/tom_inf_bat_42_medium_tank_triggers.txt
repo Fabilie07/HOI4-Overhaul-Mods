@@ -5,7 +5,7 @@ tom_inf_save_button_instant_click_medium_tank_trigger = {
 	
 	check_variable = { tom_inf_bat_popup_4200_count = tom_inf_bat_medium_tank_4200_count }
 	check_variable = { tom_inf_bat_popup_4201_count = tom_inf_bat_medium_tank_4201_count }
-	check_variable = { tom_inf_bat_popup_4210_count = tom_inf_bat_medium_tank_4210_count }
+	check_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_medium_tank_4010_count }
 	
 	check_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_medium_tank_1210_count }
 	check_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_medium_tank_1211_count }
@@ -26,7 +26,7 @@ tom_inf_save_button_increase_medium_tank_trigger = {
 
 		check_variable = { tom_inf_bat_popup_4200_count > tom_inf_bat_medium_tank_4200_count }
 		check_variable = { tom_inf_bat_popup_4201_count > tom_inf_bat_medium_tank_4201_count }
-		check_variable = { tom_inf_bat_popup_4210_count > tom_inf_bat_medium_tank_4210_count }
+		check_variable = { tom_inf_bat_popup_4010_count > tom_inf_bat_medium_tank_4010_count }
 
 		check_variable = { tom_inf_bat_popup_1210_count > tom_inf_bat_medium_tank_1210_count }
 		check_variable = { tom_inf_bat_popup_1211_count > tom_inf_bat_medium_tank_1211_count }
@@ -48,7 +48,7 @@ tom_inf_save_button_decrease_medium_tank_trigger = {
 
 		check_variable = { tom_inf_bat_popup_4200_count < tom_inf_bat_medium_tank_4200_count }
 		check_variable = { tom_inf_bat_popup_4201_count < tom_inf_bat_medium_tank_4201_count }
-		check_variable = { tom_inf_bat_popup_4210_count < tom_inf_bat_medium_tank_4210_count }
+		check_variable = { tom_inf_bat_popup_4010_count < tom_inf_bat_medium_tank_4010_count }
 
 		check_variable = { tom_inf_bat_popup_1210_count < tom_inf_bat_medium_tank_1210_count }
 		check_variable = { tom_inf_bat_popup_1211_count < tom_inf_bat_medium_tank_1211_count }

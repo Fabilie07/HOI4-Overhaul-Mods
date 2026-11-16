@@ -23,7 +23,7 @@ debug_decisions = {
 		complete_effect = {
 			add_unit_bonus = {
 				heavy_armor = {
-					fuel_consumption = -0.5
+					fuel_consumption = -0.4
 				}
 			}
 		}

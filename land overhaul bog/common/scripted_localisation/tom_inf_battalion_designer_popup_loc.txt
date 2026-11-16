@@ -245,6 +245,18 @@ defined_text = {
 		}
 		localization_key = light_armor
 	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_medium_tank
+		}
+		localization_key = medium_armor
+	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_heavy_tank
+		}
+		localization_key = heavy_armor
+	}
 }
 
 defined_text = {
