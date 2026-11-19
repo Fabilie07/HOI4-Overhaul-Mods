@@ -31,6 +31,7 @@ on_actions = {
 				tom_inf_bat_startup_effect_medium_tank = yes
 				tom_inf_bat_startup_effect_heavy_tank = yes
 				tom_inf_bat_startup_effect_modern_tank = yes
+				tom_inf_bat_startup_effect_armored_car = yes
 				
 				tom_inf_bat_startup_effect_company_arrays = yes
 				

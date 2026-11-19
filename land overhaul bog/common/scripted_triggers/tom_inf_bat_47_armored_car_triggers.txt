@@ -1,0 +1,54 @@
+tom_inf_save_button_instant_click_armored_car_trigger = {
+	check_variable = { tom_inf_bat_popup_47_count = tom_inf_bat_armored_car_47_count }
+	check_variable = { tom_inf_bat_popup_38_count = tom_inf_bat_armored_car_38_count }
+	
+	check_variable = { tom_inf_bat_popup_4700_count = tom_inf_bat_armored_car_4700_count }
+	check_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_armored_car_4010_count }
+	
+	check_variable = { tom_inf_bat_popup_3810_count = tom_inf_bat_armored_car_3810_count }
+	check_variable = { tom_inf_bat_popup_3812_count = tom_inf_bat_armored_car_3812_count }
+	check_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_armored_car_1220_count }
+	check_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_armored_car_1221_count }
+	check_variable = { tom_inf_bat_popup_3822_count = tom_inf_bat_armored_car_3822_count }
+	check_variable = { tom_inf_bat_popup_3830_count = tom_inf_bat_armored_car_3830_count }
+	check_variable = { tom_inf_bat_popup_3840_count = tom_inf_bat_armored_car_3840_count }
+	check_variable = { tom_inf_bat_popup_3850_count = tom_inf_bat_armored_car_3850_count }
+}
+
+tom_inf_save_button_increase_armored_car_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_47_count > tom_inf_bat_armored_car_47_count }
+		check_variable = { tom_inf_bat_popup_38_count > tom_inf_bat_armored_car_38_count }
+
+		check_variable = { tom_inf_bat_popup_4700_count > tom_inf_bat_armored_car_4700_count }
+		check_variable = { tom_inf_bat_popup_4010_count > tom_inf_bat_armored_car_4010_count }
+
+		check_variable = { tom_inf_bat_popup_3810_count > tom_inf_bat_armored_car_3810_count }
+		check_variable = { tom_inf_bat_popup_3812_count > tom_inf_bat_armored_car_3812_count }
+		check_variable = { tom_inf_bat_popup_1220_count > tom_inf_bat_armored_car_1220_count }
+		check_variable = { tom_inf_bat_popup_1221_count > tom_inf_bat_armored_car_1221_count }
+		check_variable = { tom_inf_bat_popup_3822_count > tom_inf_bat_armored_car_3822_count }
+		check_variable = { tom_inf_bat_popup_3830_count > tom_inf_bat_armored_car_3830_count }
+		check_variable = { tom_inf_bat_popup_3840_count > tom_inf_bat_armored_car_3840_count }
+		check_variable = { tom_inf_bat_popup_3850_count > tom_inf_bat_armored_car_3850_count }
+	}
+}
+
+tom_inf_save_button_decrease_armored_car_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_47_count < tom_inf_bat_armored_car_47_count }
+		check_variable = { tom_inf_bat_popup_38_count < tom_inf_bat_armored_car_38_count }
+
+		check_variable = { tom_inf_bat_popup_4700_count < tom_inf_bat_armored_car_4700_count }
+		check_variable = { tom_inf_bat_popup_4010_count < tom_inf_bat_armored_car_4010_count }
+
+		check_variable = { tom_inf_bat_popup_3810_count < tom_inf_bat_armored_car_3810_count }
+		check_variable = { tom_inf_bat_popup_3812_count < tom_inf_bat_armored_car_3812_count }
+		check_variable = { tom_inf_bat_popup_1220_count < tom_inf_bat_armored_car_1220_count }
+		check_variable = { tom_inf_bat_popup_1221_count < tom_inf_bat_armored_car_1221_count }
+		check_variable = { tom_inf_bat_popup_3822_count < tom_inf_bat_armored_car_3822_count }
+		check_variable = { tom_inf_bat_popup_3830_count < tom_inf_bat_armored_car_3830_count }
+		check_variable = { tom_inf_bat_popup_3840_count < tom_inf_bat_armored_car_3840_count }
+		check_variable = { tom_inf_bat_popup_3850_count < tom_inf_bat_armored_car_3850_count }
+	}
+}

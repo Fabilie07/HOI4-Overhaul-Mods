@@ -263,6 +263,12 @@ defined_text = {
 		}
 		localization_key = modern_armor
 	}
+	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_armored_car
+		}
+		localization_key = armored_car
+	}
 }
 
 defined_text = {
@@ -624,6 +630,12 @@ defined_text = {
 		localization_key = "Modern Tank"
 	}
 	text = {
+		trigger = {
+			has_country_flag = tom_inf_bat_current_armored_car
+		}
+		localization_key = "Armored Car"
+	}
+	text = {
 		localization_key = "Error"
 	}
 }
@@ -804,6 +816,12 @@ defined_text = {
 			check_variable = { v = 46 }
 		}
 		localization_key = tom_inf_company_46
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 47 }
+		}
+		localization_key = tom_inf_company_47
 	}
 	text = {
 		trigger = {
@@ -1159,6 +1177,12 @@ defined_text = {
 		}
 		localization_key = tom_inf_platoon_4600
 	}
+	text = {
+		trigger = {
+			check_variable = { v = 4700 }
+		}
+		localization_key = tom_inf_platoon_4700
+	}
 }
 
 
@@ -1344,6 +1368,12 @@ defined_text = {
 			check_variable = { v = 46 }
 		}
 		localization_key = tom_inf_company_46_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 47 }
+		}
+		localization_key = tom_inf_company_47_desc
 	}
 	text = {
 		trigger = {
@@ -1698,6 +1728,12 @@ defined_text = {
 			check_variable = { v = 4600 }
 		}
 		localization_key = tom_inf_platoon_4600_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4700 }
+		}
+		localization_key = tom_inf_platoon_4700_desc
 	}
 }
 
@@ -2142,5 +2178,11 @@ defined_text = {
 			check_variable = { v = 4600 }
 		}
 		localization_key = tom_inf_platoon_4600_stats
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 4700 }
+		}
+		localization_key = tom_inf_platoon_4700_stats
 	}
 }

@@ -82,6 +82,7 @@
  tom_inf_company_44:0 "Heavy Tank Company"
  tom_inf_company_45:0 "Medium Tank Company"
  tom_inf_company_46:0 "Modern Tank Company"
+ tom_inf_company_47:0 "Armored Car Company"
  
  tom_inf_platoon_1000:0 "Rifle Platoon"
  tom_inf_platoon_1001:0 "Line LMG"
@@ -153,6 +154,8 @@
  
  tom_inf_platoon_4600:0 "Modern Tank Platoon"
  
+ tom_inf_platoon_4700:0 "Armored Car Platoon"
+ 
  
  tom_inf_company_10_desc:0 "-- Rank and File Infantry Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_11_desc:0 "-- Specialized Fire Support Platoons --\n\nMax Amount: §Y1§!"
@@ -182,6 +185,7 @@
  tom_inf_company_44_desc:0 "-- Heavy Tank Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!"
  tom_inf_company_45_desc:0 "-- Medium Tank Company --\n\nMax Amount: §Y1§!"
  tom_inf_company_46_desc:0 "-- Modern Tank Company --\n\nMax Amount: §Y1§!"
+ tom_inf_company_47_desc:0 "-- Armored Car Company --\n\nMax Amount: §Y1§!"
  
  tom_inf_platoon_1000_desc:0 "-- Rank and File Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1000_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!"
  tom_inf_platoon_1001_desc:0 "-- Light MGs issued to frontline Troops --\n\nMax Amount: §Y4§!\nMutually Exclusive: §Y$tom_inf_platoon_1100$§!\n\n[tom_inf_platoon_stats_loc]LMG Equipment: §Y4§!"
@@ -252,6 +256,8 @@
  tom_inf_platoon_4401_desc:0 "-- Medium Tank Platoon --\n\nMax Amount: §Y4§!\n\n[tom_inf_platoon_stats_loc]Medium Tank: §Y5§!"
  
  tom_inf_platoon_4600_desc:0 "-- Modern Tank Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_4600_min]§!\n\n[tom_inf_platoon_stats_loc]Modern Tank: §Y5§!"
+ 
+ tom_inf_platoon_4700_desc:0 "-- Armored Car Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_4700_min]§!\n\n[tom_inf_platoon_stats_loc]Armored Car: §Y4§!"
  
  
  tom_inf_platoon_1000_stats:0 "Organization: §G+3.0§!\nHP: §G+3§!\n\n"
@@ -333,6 +339,8 @@
  tom_inf_platoon_4401_stats_equipment:0 "$tom_inf_platoon_equipment_stats$§Y$medium_tank_chassis$§!\nOrganization: §G+2.0§!\nHP: §G+0.2§!\nSoft Attack: §R-35%§!\nHard Attack: §R-35%§!\nPiercing: §R-35%§!\nBreakthrough: §R-35%§!\nDefense: §R-35%§!\nFuel Consumption: §G-50%§!\n\n"
  
  tom_inf_platoon_4600_stats:0 "Organization: §G+2.0§!\nHP: §G+0.2§!\n\n"
+ 
+ tom_inf_platoon_4700_stats:0 "Organization: §G+2.0§!\nHP: §G+0.2§!\n\n"
  
  tom_inf_platoon_equipment_stats:0 "Adds the Stats from: "
  tom_inf_platoon_line_stats:0 "Land Doctrine Mastery Gain: §G+1%§!\n\n"

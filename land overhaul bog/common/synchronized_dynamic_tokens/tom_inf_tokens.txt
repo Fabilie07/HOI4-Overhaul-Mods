@@ -32,3 +32,4 @@ rangers_mechanized
 light_armor
 medium_armor
 modern_armor
+armored_car

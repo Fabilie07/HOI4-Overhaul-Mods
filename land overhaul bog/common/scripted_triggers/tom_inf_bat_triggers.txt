@@ -127,6 +127,12 @@ tom_inf_save_button_instant_click_trigger = {
 		}
 		tom_inf_save_button_instant_click_modern_tank_trigger = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_armored_car
+		}
+		tom_inf_save_button_instant_click_armored_car_trigger = yes
+	}
 }
 
 tom_inf_battalion_minimum_size_trigger = {
@@ -255,6 +261,12 @@ tom_inf_battalion_minimum_size_trigger = {
 			has_country_flag = tom_inf_bat_current_modern_tank
 		}
 		check_variable = { tom_inf_bat_popup_4600_count > 3 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_armored_car
+		}
+		check_variable = { tom_inf_bat_popup_4700_count > 3 }
 	}
 }
 
@@ -386,6 +398,12 @@ tom_inf_save_button_increase_trigger = {
 		}
 		tom_inf_save_button_increase_modern_tank_trigger = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_armored_car
+		}
+		tom_inf_save_button_increase_armored_car_trigger = yes
+	}
 }
 
 tom_inf_save_button_decrease_trigger = {
@@ -515,6 +533,12 @@ tom_inf_save_button_decrease_trigger = {
 			has_country_flag = tom_inf_bat_current_modern_tank
 		}
 		tom_inf_save_button_decrease_modern_tank_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_armored_car
+		}
+		tom_inf_save_button_decrease_armored_car_trigger = yes
 	}
 }
 
@@ -794,6 +818,15 @@ tom_inf_company_icon_trigger = {
 			}
 		}
 		set_temp_variable = { company_icon_frame = 58 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 47 }
+				check_variable = { v = 47 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 62 }
 	}
 	else_if = {
 		limit = {
@@ -1299,6 +1332,15 @@ tom_inf_platoon_icon_trigger = {
 			}
 		}
 		set_temp_variable = { platoon_icon_frame = 58 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 4700 }
+				check_variable = { v = 4700 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 62 }
 	}
 	else_if = {
 		limit = {

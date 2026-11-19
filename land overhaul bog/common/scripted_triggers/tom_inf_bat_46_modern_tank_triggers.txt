@@ -2,7 +2,7 @@ tom_inf_save_button_instant_click_modern_tank_trigger = {
 	check_variable = { tom_inf_bat_popup_46_count = tom_inf_bat_modern_tank_46_count }
 	check_variable = { tom_inf_bat_popup_38_count = tom_inf_bat_modern_tank_38_count }
 	
-	check_variable = { tom_inf_bat_popup_4200_count = tom_inf_bat_modern_tank_4200_count }
+	check_variable = { tom_inf_bat_popup_4600_count = tom_inf_bat_modern_tank_4600_count }
 	check_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_modern_tank_4010_count }
 	
 	check_variable = { tom_inf_bat_popup_3810_count = tom_inf_bat_modern_tank_3810_count }

@@ -333,6 +333,9 @@ PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 
 62: Armored Car
 63: Maintenance
+64: Armored Support
+65: Motorized Hospital
+66: Motorized Signal
 
 
 Terrain IDs: # Necessary for visual depicition of Terrain Boni

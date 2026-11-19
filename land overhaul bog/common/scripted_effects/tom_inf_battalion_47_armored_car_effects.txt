@@ -1,0 +1,292 @@
+
+tom_inf_bat_startup_effect_armored_car = {
+	# Set armored_car Battalion Arrays to Start Values
+	resize_array = { tom_inf_bat_armored_car_base_stats_array = 11 }
+	resize_array = { tom_inf_bat_armored_car_combat_stats_array = 11 }
+	resize_array = { tom_inf_bat_armored_car_equipment_stats_array_1 = 2 }
+	add_to_array = { tom_inf_bat_armored_car_equipment_stats_array_2_type = token:armored_car_equipment }
+	add_to_array = { tom_inf_bat_armored_car_equipment_stats_array_2_count = 36 }
+	
+	add_to_array = { tom_inf_bat_armored_car_companies_array = 47 }
+	add_to_array = { tom_inf_bat_armored_car_companies_array = 38 }
+	
+	# Company IDs
+	add_to_array = { tom_inf_battalion_armored_car_company_array = 47 }
+	add_to_array = { tom_inf_battalion_armored_car_company_array = 47 }
+	add_to_array = { tom_inf_battalion_armored_car_company_array = 47 }
+	add_to_array = { tom_inf_battalion_armored_car_company_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_company_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_company_array = 0 }
+	
+	# Platoon IDs
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 4700 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	add_to_array = { tom_inf_battalion_armored_car_platoon_array = 0 }
+	
+	set_variable = { tom_inf_bat_armored_car_47_count = 3 }
+	set_variable = { tom_inf_bat_armored_car_38_count = 0 }
+	
+	set_variable = { tom_inf_bat_armored_car_4600_count = 9 }
+	set_variable = { tom_inf_bat_armored_car_4010_count = 0 }
+	
+	set_variable = { tom_inf_bat_armored_car_3810_count = 0 }
+	set_variable = { tom_inf_bat_armored_car_3812_count = 0 }
+	set_variable = { tom_inf_bat_armored_car_1220_count = 0 }
+	set_variable = { tom_inf_bat_armored_car_1221_count = 0 }
+	set_variable = { tom_inf_bat_armored_car_3822_count = 0 }
+	set_variable = { tom_inf_bat_armored_car_3830_count = 0 }
+	set_variable = { tom_inf_bat_armored_car_3840_count = 0 }
+	set_variable = { tom_inf_bat_armored_car_3850_count = 0 }
+	
+	
+	set_variable = { tom_inf_bat_armored_car_47_max = 4 }
+	set_variable = { tom_inf_bat_armored_car_38_max = 1 }
+	
+	set_variable = { tom_inf_bat_armored_car_4700_max = 16 }
+	set_variable = { tom_inf_bat_armored_car_4010_max = 4 }
+	
+	set_variable = { tom_inf_bat_armored_car_4700_min = 4 }
+	
+	set_variable = { tom_inf_bat_armored_car_platoon_count_org = 9 }
+}
+
+
+tom_inf_bat_open_designer_armored_car_effect = {
+	for_each_loop = {
+		array = tom_inf_battalion_armored_car_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_armored_car_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_platoon_array = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_base_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_base_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_combat_stats_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_combat_stats_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_equipment_stats_array_1
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_1 = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_equipment_stats_array_2_type
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_equipment_stats_array_2_count
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_needed = temp_v }
+	}
+	
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_terrain_bonus_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_bonus_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_terrain_movement_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_movement_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_terrain_attack_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_attack_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_bat_armored_car_terrain_defense_array
+		value = temp_v
+		add_to_array = { tom_inf_bat_popup_terrain_defense_array = temp_v }
+	}
+	
+	tom_inf_bat_open_subunit_counts_armored_car_effect = yes	
+}
+
+tom_inf_bat_open_subunit_counts_armored_car_effect = {
+	set_variable = { tom_inf_bat_popup_47_count = tom_inf_bat_armored_car_47_count }
+	set_variable = { tom_inf_bat_popup_38_count = tom_inf_bat_armored_car_38_count }
+	
+	set_variable = { tom_inf_bat_popup_4700_count = tom_inf_bat_armored_car_4700_count }
+	set_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_armored_car_4010_count }
+	
+	set_variable = { tom_inf_bat_popup_3810_count = tom_inf_bat_armored_car_3810_count }
+	set_variable = { tom_inf_bat_popup_3812_count = tom_inf_bat_armored_car_3812_count }
+	set_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_armored_car_1220_count }
+	set_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_armored_car_1221_count }
+	set_variable = { tom_inf_bat_popup_3822_count = tom_inf_bat_armored_car_3822_count }
+	set_variable = { tom_inf_bat_popup_3830_count = tom_inf_bat_armored_car_3830_count }
+	set_variable = { tom_inf_bat_popup_3840_count = tom_inf_bat_armored_car_3840_count }
+	set_variable = { tom_inf_bat_popup_3850_count = tom_inf_bat_armored_car_3850_count }
+	
+	
+	set_variable = { tom_inf_bat_popup_47_max = tom_inf_bat_armored_car_47_max }
+	set_variable = { tom_inf_bat_popup_38_max = tom_inf_bat_armored_car_38_max }
+	
+	set_variable = { tom_inf_bat_popup_4700_max = tom_inf_bat_armored_car_4700_max }
+	set_variable = { tom_inf_bat_popup_4010_max = tom_inf_bat_armored_car_4010_max }
+	
+	set_variable = { tom_inf_bat_popup_4700_min = tom_inf_bat_armored_car_4700_min }
+}
+
+
+tom_inf_bat_save_designer_armored_car_effect = {
+	if = {
+		limit = {
+			OR = {
+				tom_inf_save_button_increase_armored_car_trigger = yes
+				tom_inf_save_button_decrease_armored_car_trigger = yes
+			}
+		}
+		tom_inf_bat_add_effect_armored_car = yes
+		tom_inf_bat_remove_effect_armored_car = yes
+		
+		if = {
+			limit = {
+				check_variable = { tom_inf_bat_popup_platoon_count_org > tom_inf_bat_armored_car_platoon_count_org }
+			}
+			tom_inf_bat_increase_platoon_org_armored_car = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { tom_inf_bat_popup_platoon_count_org < tom_inf_bat_armored_car_platoon_count_org }
+			}
+			tom_inf_bat_decrease_platoon_org_armored_car = yes
+		}
+		
+		clear_array = tom_inf_bat_armored_car_base_stats_array
+		clear_array = tom_inf_bat_armored_car_combat_stats_array
+		clear_array = tom_inf_bat_armored_car_equipment_stats_array_1
+		clear_array = tom_inf_bat_armored_car_equipment_stats_array_2_type
+		clear_array = tom_inf_bat_armored_car_equipment_stats_array_2_count
+		
+		clear_array = tom_inf_bat_armored_car_terrain_bonus_array
+		clear_array = tom_inf_bat_armored_car_terrain_movement_array
+		clear_array = tom_inf_bat_armored_car_terrain_attack_array
+		clear_array = tom_inf_bat_armored_car_terrain_defense_array
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_base_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_base_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_combat_stats_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_combat_stats_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_1
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_equipment_stats_array_1 = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_type
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_equipment_stats_array_2_type = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_count
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_equipment_stats_array_2_count = temp_v }
+		}
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_bonus_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_terrain_bonus_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_movement_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_terrain_movement_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_attack_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_terrain_attack_array = temp_v }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_popup_terrain_defense_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_armored_car_terrain_defense_array = temp_v }
+		}
+	}
+	
+	clear_array = tom_inf_battalion_armored_car_company_array
+	clear_array = tom_inf_battalion_armored_car_platoon_array
+	
+	for_each_loop = {
+		array = tom_inf_battalion_company_array
+		value = temp_v # Avoid any potential name overlap
+		add_to_array = { tom_inf_battalion_armored_car_company_array = temp_v }
+	}
+	for_each_loop = {
+		array = tom_inf_battalion_platoon_array
+		value = temp_v
+		add_to_array = { tom_inf_battalion_armored_car_platoon_array = temp_v }
+	}
+	
+	set_variable = { tom_inf_bat_armored_car_47_count = tom_inf_bat_popup_47_count }
+	set_variable = { tom_inf_bat_armored_car_38_count = tom_inf_bat_popup_38_count }
+	
+	set_variable = { tom_inf_bat_armored_car_4700_count = tom_inf_bat_popup_4700_count }
+	set_variable = { tom_inf_bat_armored_car_4010_count = tom_inf_bat_popup_4010_count }
+	
+	set_variable = { tom_inf_bat_armored_car_3810_count = tom_inf_bat_popup_3810_count }
+	set_variable = { tom_inf_bat_armored_car_3812_count = tom_inf_bat_popup_3812_count }
+	set_variable = { tom_inf_bat_armored_car_1220_count = tom_inf_bat_popup_1220_count }
+	set_variable = { tom_inf_bat_armored_car_1221_count = tom_inf_bat_popup_1221_count }
+	set_variable = { tom_inf_bat_armored_car_3822_count = tom_inf_bat_popup_3822_count }
+	set_variable = { tom_inf_bat_armored_car_3830_count = tom_inf_bat_popup_3830_count }
+	set_variable = { tom_inf_bat_armored_car_3840_count = tom_inf_bat_popup_3840_count }
+	set_variable = { tom_inf_bat_armored_car_3850_count = tom_inf_bat_popup_3850_count }
+	
+	set_variable = { tom_inf_bat_armored_car_4700_min = tom_inf_bat_popup_4700_min }
+}

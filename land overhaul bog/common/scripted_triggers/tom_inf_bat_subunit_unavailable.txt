@@ -144,6 +144,11 @@ tom_inf_subunit_unavailable_trigger = {
 			check_variable = { v = 46 }
 			check_variable = { tom_inf_bat_popup_46_count = tom_inf_bat_popup_46_max }
 		}
+		
+		AND = {
+			check_variable = { v = 47 }
+			check_variable = { tom_inf_bat_popup_46_count = tom_inf_bat_popup_47_max }
+		}
 	
 		AND = {
 			check_variable = { v = 1000 }
@@ -488,6 +493,7 @@ tom_inf_subunit_unavailable_trigger = {
 				check_variable = { tom_inf_bat_popup_3822_count > 0 }
 				NOT = { has_tech = tech_recon }
 				NOT = { has_tech = armored_car1 }
+				has_country_flag = tom_inf_bat_current_armored_car
 			}
 		}
 		
@@ -555,6 +561,11 @@ tom_inf_subunit_unavailable_trigger = {
 		AND = {
 			check_variable = { v = 4600 }
 			check_variable = { tom_inf_bat_popup_4600_count = tom_inf_bat_popup_4600_max }
+		}
+		
+		AND = {
+			check_variable = { v = 4700 }
+			check_variable = { tom_inf_bat_popup_4700_count = tom_inf_bat_popup_4700_max }
 		}
 	}
 }
@@ -644,5 +655,9 @@ tom_inf_remove_unavailable_trigger = {
 	AND = {
 		check_variable = { tom_inf_bat_current_value = 4600 }
 		check_variable = { tom_inf_bat_popup_4600_count = tom_inf_bat_popup_4600_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 4700 }
+		check_variable = { tom_inf_bat_popup_4700_count = tom_inf_bat_popup_4700_min }
 	}
 }
