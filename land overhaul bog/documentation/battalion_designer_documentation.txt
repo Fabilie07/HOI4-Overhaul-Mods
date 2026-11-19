@@ -218,6 +218,33 @@ All else: Empty Add
 # Camelry:
 3600: Camelry Rifle
 
+# Motorized Service
+3810: Armored Support
+3812: Motorized Flamethrower
+3822: Armored Car Recon
+3830: Motorized Hospital
+3840: Motorized Signal
+3850: Maintenance
+
+# Light Tank
+4000: Light Tank
+4001: Medium Tank (Light)
+4010: Maintenance
+
+# Medium Tank
+4200: Medium Tank
+4201: Light Tank (Medium)
+
+# Heavy Tank
+4400: Heavy Tank
+4401: Medium Tank (Heavy)
+
+# Modern Tank
+4600: Modern Tank
+
+# Armored Car
+4700: Armored Car
+
 
 PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 1: Empty Add

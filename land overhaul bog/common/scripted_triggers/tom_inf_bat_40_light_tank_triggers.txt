@@ -7,8 +7,7 @@ tom_inf_save_button_instant_click_light_tank_trigger = {
 	check_variable = { tom_inf_bat_popup_4001_count = tom_inf_bat_light_tank_4001_count }
 	check_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_light_tank_4010_count }
 	
-	check_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_light_tank_1210_count }
-	check_variable = { tom_inf_bat_popup_1211_count = tom_inf_bat_light_tank_1211_count }
+	check_variable = { tom_inf_bat_popup_3810_count = tom_inf_bat_light_tank_3810_count }
 	check_variable = { tom_inf_bat_popup_3812_count = tom_inf_bat_light_tank_3812_count }
 	check_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_light_tank_1220_count }
 	check_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_light_tank_1221_count }
@@ -28,8 +27,7 @@ tom_inf_save_button_increase_light_tank_trigger = {
 		check_variable = { tom_inf_bat_popup_4001_count > tom_inf_bat_light_tank_4001_count }
 		check_variable = { tom_inf_bat_popup_4010_count > tom_inf_bat_light_tank_4010_count }
 
-		check_variable = { tom_inf_bat_popup_1210_count > tom_inf_bat_light_tank_1210_count }
-		check_variable = { tom_inf_bat_popup_1211_count > tom_inf_bat_light_tank_1211_count }
+		check_variable = { tom_inf_bat_popup_3810_count > tom_inf_bat_light_tank_3810_count }
 		check_variable = { tom_inf_bat_popup_3812_count > tom_inf_bat_light_tank_3812_count }
 		check_variable = { tom_inf_bat_popup_1220_count > tom_inf_bat_light_tank_1220_count }
 		check_variable = { tom_inf_bat_popup_1221_count > tom_inf_bat_light_tank_1221_count }
@@ -50,8 +48,7 @@ tom_inf_save_button_decrease_light_tank_trigger = {
 		check_variable = { tom_inf_bat_popup_4001_count < tom_inf_bat_light_tank_4001_count }
 		check_variable = { tom_inf_bat_popup_4010_count < tom_inf_bat_light_tank_4010_count }
 
-		check_variable = { tom_inf_bat_popup_1210_count < tom_inf_bat_light_tank_1210_count }
-		check_variable = { tom_inf_bat_popup_1211_count < tom_inf_bat_light_tank_1211_count }
+		check_variable = { tom_inf_bat_popup_3810_count < tom_inf_bat_light_tank_3810_count }
 		check_variable = { tom_inf_bat_popup_3812_count < tom_inf_bat_light_tank_3812_count }
 		check_variable = { tom_inf_bat_popup_1220_count < tom_inf_bat_light_tank_1220_count }
 		check_variable = { tom_inf_bat_popup_1221_count < tom_inf_bat_light_tank_1221_count }

@@ -1,6 +1,7 @@
 infantry_equipment
 sniper_chassis
 support_equipment
+armored_support_vehicle
 tom_inf_horse
 motorized_equipment
 mechanized_equipment
@@ -15,6 +16,7 @@ flamethrower_chassis
 at_rifle_chassis
 at_rocket_chassis
 radio_equipment
+modern_tank_chassis
 
 militia
 irregular_infantry
@@ -27,3 +29,6 @@ ranger_battalion
 mountaineers_mechanized
 amphibious_mechanized
 rangers_mechanized
+light_armor
+medium_armor
+modern_armor

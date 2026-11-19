@@ -163,7 +163,7 @@ tom_inf_bat_open_subunit_counts_medium_tank_effect = {
 	set_variable = { tom_inf_bat_popup_4201_count = tom_inf_bat_medium_tank_4201_count }
 	set_variable = { tom_inf_bat_popup_4010_count = tom_inf_bat_medium_tank_4010_count }
 	
-	set_variable = { tom_inf_bat_popup_1210_count = tom_inf_bat_medium_tank_3810_count }
+	set_variable = { tom_inf_bat_popup_3810_count = tom_inf_bat_medium_tank_3810_count }
 	set_variable = { tom_inf_bat_popup_3812_count = tom_inf_bat_medium_tank_3812_count }
 	set_variable = { tom_inf_bat_popup_1220_count = tom_inf_bat_medium_tank_1220_count }
 	set_variable = { tom_inf_bat_popup_1221_count = tom_inf_bat_medium_tank_1221_count }
@@ -290,7 +290,7 @@ tom_inf_bat_save_designer_medium_tank_effect = {
 	set_variable = { tom_inf_bat_medium_tank_4201_count = tom_inf_bat_popup_4201_count }
 	set_variable = { tom_inf_bat_medium_tank_4010_count = tom_inf_bat_popup_4010_count }
 	
-	set_variable = { tom_inf_bat_medium_tank_1210_count = tom_inf_bat_popup_3810_count }
+	set_variable = { tom_inf_bat_medium_tank_3810_count = tom_inf_bat_popup_3810_count }
 	set_variable = { tom_inf_bat_medium_tank_3812_count = tom_inf_bat_popup_3812_count }
 	set_variable = { tom_inf_bat_medium_tank_1220_count = tom_inf_bat_popup_1220_count }
 	set_variable = { tom_inf_bat_medium_tank_1221_count = tom_inf_bat_popup_1221_count }

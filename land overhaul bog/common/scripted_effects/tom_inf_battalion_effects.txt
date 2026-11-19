@@ -142,6 +142,13 @@ tom_inf_bat_open_designer_effect = {
 		
 		tom_inf_bat_open_designer_heavy_tank_effect = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_modern_tank
+		}
+		
+		tom_inf_bat_open_designer_modern_tank_effect = yes
+	}
 
 	tom_inf_bat_compute_platoon_count = yes
 }
@@ -404,6 +411,17 @@ tom_inf_company_reference_effect = {
 		
 		for_each_loop = {
 			array = tom_inf_bat_heavy_tank_companies_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_temp_slot_add_array = temp_v }
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_modern_tank
+		}
+		
+		for_each_loop = {
+			array = tom_inf_bat_modern_tank_companies_array
 			value = temp_v
 			add_to_array = { tom_inf_bat_temp_slot_add_array = temp_v }
 		}
@@ -694,6 +712,16 @@ tom_inf_company_platoon_reference_effect = {
 		}
 		for_each_loop = {
 			array = tom_inf_bat_45_platoons_array
+			value = temp_v
+			add_to_array = { tom_inf_bat_temp_slot_add_array = temp_v }
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_battalion_company_array^company_index = 46 }
+		}
+		for_each_loop = {
+			array = tom_inf_bat_46_platoons_array
 			value = temp_v
 			add_to_array = { tom_inf_bat_temp_slot_add_array = temp_v }
 		}
@@ -3099,6 +3127,33 @@ tom_inf_battalion_platoon_add_effect = {
 			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 5 }
 		}
 	}
+	else_if = {
+		limit = {
+			check_variable = { v = 4600 }
+		}
+		add_to_variable = { tom_inf_bat_popup_4600_count = 1 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = 0.2 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = 2 }
+		
+		if = {
+			limit = {
+				is_in_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:modern_tank_chassis }
+			}
+			for_each_loop = {
+				array = tom_inf_bat_popup_equipment_stats_array_2_type
+				value = unimportant # Name conflicts again...
+				index = equipment_index
+				if = {
+					limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:modern_tank_chassis } }
+					add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = 5 }
+				}
+			}
+		}
+		else = {
+			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_type = token:modern_tank_chassis }
+			add_to_array = { tom_inf_bat_popup_equipment_stats_array_2_count = 5 }
+		}
+	}
 }
 
 tom_inf_battalion_platoon_remove_effect = {
@@ -4644,6 +4699,24 @@ tom_inf_battalion_platoon_remove_effect = {
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_current_value = 4600 }
+		}
+		add_to_variable = { tom_inf_bat_popup_4600_count = -1 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^1 = -0.2 }
+		add_to_variable = { tom_inf_bat_popup_base_stats_array^2 = -2 }
+		
+		for_each_loop = {
+			array = tom_inf_bat_popup_equipment_stats_array_2_type
+			value = unimportant
+			index = equipment_index
+			if = {
+				limit = { check_variable = { tom_inf_bat_popup_equipment_stats_array_2_type^equipment_index = token:modern_tank_chassis } }
+				add_to_variable = { tom_inf_bat_popup_equipment_stats_array_2_count^equipment_index = -5 }
+			}
+		}
+	}
 	
 	tom_inf_bat_remove_empty_equipment_effect = yes
 }
@@ -4803,6 +4876,36 @@ tom_inf_battalion_company_add_effect = {
 			check_variable = { v = 41 }
 		}
 		add_to_variable = { tom_inf_bat_popup_41_count = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 42 }
+		}
+		add_to_variable = { tom_inf_bat_popup_42_count = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 43 }
+		}
+		add_to_variable = { tom_inf_bat_popup_43_count = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 44 }
+		}
+		add_to_variable = { tom_inf_bat_popup_44_count = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 45 }
+		}
+		add_to_variable = { tom_inf_bat_popup_45_count = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 46 }
+		}
+		add_to_variable = { tom_inf_bat_popup_46_count = 1 }
 	}
 }
 
@@ -4983,6 +5086,12 @@ tom_inf_battalion_company_remove_effect = {
 			check_variable = { tom_inf_bat_current_value = 45 }
 		}
 		add_to_variable = { tom_inf_bat_popup_45_count = -1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { tom_inf_bat_current_value = 46 }
+		}
+		add_to_variable = { tom_inf_bat_popup_46_count = -1 }
 	}
 	
 	tom_inf_bat_clear_company_row_effect = yes
@@ -5948,6 +6057,13 @@ tom_inf_bat_add_battalion_flag_effect = {
 		set_country_flag = tom_inf_bat_current_heavy_tank
 		set_variable = { tom_inf_battalion_frame = 53 }
 	}
+	else_if = {
+		limit = {
+			check_variable = { current_bat_id = 46 }
+		}
+		set_country_flag = tom_inf_bat_current_modern_tank
+		set_variable = { tom_inf_battalion_frame = 58 }
+	}
 	
 	tom_inf_bat_left_icon_effect = yes
 	tom_inf_bat_right_icon_effect = yes
@@ -6107,6 +6223,12 @@ tom_inf_bat_left_icon_effect = {
 			check_variable = { current_bat_id = 44 }
 		}
 		set_variable = { tom_inf_battalion_frame_left = 53 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { current_bat_id = 46 }
+		}
+		set_variable = { tom_inf_battalion_frame_left = 58 }
 	}
 }
 
@@ -6268,6 +6390,12 @@ tom_inf_bat_right_icon_effect = {
 		}
 		set_variable = { tom_inf_battalion_frame_right = 53 }
 	}
+	else_if = {
+		limit = {
+			check_variable = { current_bat_id = 46 }
+		}
+		set_variable = { tom_inf_battalion_frame_right = 58 }
+	}
 }
 
 tom_inf_bat_clear_battalion_flag_effect = {
@@ -6291,4 +6419,5 @@ tom_inf_bat_clear_battalion_flag_effect = {
 	clr_country_flag = tom_inf_bat_current_light_tank
 	clr_country_flag = tom_inf_bat_current_medium_tank
 	clr_country_flag = tom_inf_bat_current_heavy_tank
+	clr_country_flag = tom_inf_bat_current_modern_tank
 }

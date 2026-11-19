@@ -232,6 +232,8 @@ tom_inf_bat_startup_effect_company_arrays = {
 	
 	add_to_array = { tom_inf_bat_45_platoons_array = 4401 }
 	add_to_array = { tom_inf_bat_45_platoons_array = 4010 }
+	
+	add_to_array = { tom_inf_bat_46_platoons_array = 4600 }
 }
 
 tom_inf_bat_startup_effect_stat_arrays = {
