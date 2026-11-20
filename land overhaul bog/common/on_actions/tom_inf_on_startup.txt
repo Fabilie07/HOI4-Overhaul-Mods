@@ -10,28 +10,8 @@ on_actions = {
 	
 		effect = {			
 			every_country = {		
-				tom_inf_bat_startup_effect_infantry = yes
-				tom_inf_bat_startup_effect_motorized = yes
-				tom_inf_bat_startup_effect_mechanized = yes
-				tom_inf_bat_startup_effect_cavalry = yes
-				tom_inf_bat_startup_effect_militia = yes
-				tom_inf_bat_startup_effect_irregulars = yes
-				tom_inf_bat_startup_effect_penal = yes
-				tom_inf_bat_startup_effect_mountaineer = yes
-				tom_inf_bat_startup_effect_paratrooper = yes
-				tom_inf_bat_startup_effect_marine = yes
-				tom_inf_bat_startup_effect_marine_commando = yes
-				tom_inf_bat_startup_effect_ranger = yes
-				tom_inf_bat_startup_effect_mountaineers_mechanized = yes
-				tom_inf_bat_startup_effect_amphibious_mechanized = yes
-				tom_inf_bat_startup_effect_rangers_mechanized = yes
-				tom_inf_bat_startup_effect_bicycle = yes
-				tom_inf_bat_startup_effect_camelry = yes
-				tom_inf_bat_startup_effect_light_tank = yes
-				tom_inf_bat_startup_effect_medium_tank = yes
-				tom_inf_bat_startup_effect_heavy_tank = yes
-				tom_inf_bat_startup_effect_modern_tank = yes
-				tom_inf_bat_startup_effect_armored_car = yes
+				tom_inf_bat_startup_effect_subunits = yes
+				tom_inf_bat_add_subunit_effect = yes
 				
 				tom_inf_bat_startup_effect_company_arrays = yes
 				

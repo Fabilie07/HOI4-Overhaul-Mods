@@ -6502,6 +6502,157 @@ tom_inf_bat_right_icon_effect = {
 	}
 }
 
+tom_inf_bat_add_subunit_effect = {
+	if = {
+		limit = { NOT = { is_in_array = { tom_inf_bat_array = 1 } } }
+		add_to_array = { tom_inf_bat_array = 1 }
+	}
+	if = {
+		limit = {
+			has_tech = motorised_infantry
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 2 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 2 }
+	}
+	if = {
+		limit = {
+			has_tech = mechanised_infantry
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 3 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 3 }
+	}
+	if = {
+		limit = { NOT = { is_in_array = { tom_inf_bat_mobile_array = 4 } } }
+		add_to_array = { tom_inf_bat_mobile_array = 4 }
+	}
+	if = {
+		limit = {
+			has_tech = militia_tech
+			NOT = { is_in_array = { tom_inf_bat_array = 5 } }
+		}
+		add_to_array = { tom_inf_bat_array = 5 }
+	}
+	if = {
+		limit = {
+			has_tech = irregular_tech
+			NOT = { is_in_array = { tom_inf_bat_array = 6 } }
+		}
+		add_to_array = { tom_inf_bat_array = 6 }
+	}
+	if = {
+		limit = {
+			has_tech = penal_infantry
+			NOT = { is_in_array = { tom_inf_bat_array = 7 } }
+		}
+		add_to_array = { tom_inf_bat_array = 7 }
+	}
+	if = {
+		limit = {
+			has_tech = tech_mountaineers
+			NOT = { is_in_array = { tom_inf_bat_array = 10 } }
+		}
+		add_to_array = { tom_inf_bat_array = 10 }
+	}
+	if = {
+		limit = {
+			has_tech = paratroopers
+			NOT = { is_in_array = { tom_inf_bat_array = 11 } }
+		}
+		add_to_array = { tom_inf_bat_array = 11 }
+	}
+	if = {
+		limit = {
+			has_tech = marines
+			NOT = { is_in_array = { tom_inf_bat_array = 12 } }
+		}
+		add_to_array = { tom_inf_bat_array = 12 }
+	}
+	if = {
+		limit = {
+			has_tech = marines
+			NOT = { is_in_array = { tom_inf_bat_array = 13 } }
+		}
+		add_to_array = { tom_inf_bat_array = 13 }
+	}
+	if = {
+		limit = {
+			has_tech = rangers_tech
+			NOT = { is_in_array = { tom_inf_bat_array = 14 } }
+		}
+		add_to_array = { tom_inf_bat_array = 14 }
+	}
+	if = {
+		limit = {
+			has_tech = tech_mountaineers3
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 20 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 20 }
+	}
+	if = {
+		limit = {
+			has_tech = amphibious_mechanized_infantry
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 22 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 22 }
+	}
+	if = {
+		limit = {
+			has_tech = rangers_tech3
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 24 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 24 }
+	}
+	if = {
+		limit = {
+			has_tech = bicycle_infantry
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 25 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 25 }
+	}
+	if = {
+		limit = {
+			has_tech = camelry
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 26 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 26 }
+	}
+	if = {
+		limit = {
+			has_tech = gwtank_chassis
+			NOT = { is_in_array = { tom_inf_bat_armor_array = 40 } }
+		}
+		add_to_array = { tom_inf_bat_armor_array = 40 }
+	}
+	if = {
+		limit = {
+			has_tech = gwtank_chassis
+			NOT = { is_in_array = { tom_inf_bat_armor_array = 42 } }
+		}
+		add_to_array = { tom_inf_bat_armor_array = 42 }
+	}
+	if = {
+		limit = {
+			has_tech = gwtank_chassis
+			NOT = { is_in_array = { tom_inf_bat_armor_array = 44 } }
+		}
+		add_to_array = { tom_inf_bat_armor_array = 44 }
+	}
+	if = {
+		limit = {
+			has_tech = main_battle_tank_chassis
+			NOT = { is_in_array = { tom_inf_bat_armor_array = 46 } }
+		}
+		add_to_array = { tom_inf_bat_armor_array = 46 }
+	}
+	if = {
+		limit = {
+			has_tech = armored_car1
+			NOT = { is_in_array = { tom_inf_bat_mobile_array = 47 } }
+		}
+		add_to_array = { tom_inf_bat_mobile_array = 47 }
+	}
+}
+
 tom_inf_bat_clear_battalion_flag_effect = {
 	clr_country_flag = tom_inf_bat_current_infantry
 	clr_country_flag = tom_inf_bat_current_motorized
