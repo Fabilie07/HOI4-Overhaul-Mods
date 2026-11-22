@@ -195,8 +195,6 @@ equipments = {
 		
 		#Misc Abilities
 		reliability = 0.9
-		
-		initiative = 0.1
 
 		#Defensive Abilities
 		defense = 0
@@ -233,7 +231,8 @@ equipments = {
 		archetype = radio_equipment
 		parent = radio_equipment_0
 		
-		initiative = 0.15
+		defense = 2
+		breakthrough = 2
 		build_cost_ic = 0.32
 	}
 	
@@ -242,7 +241,8 @@ equipments = {
 		archetype = radio_equipment
 		parent = radio_equipment_1
 		
-		initiative = 0.2
+		defense = 4
+		breakthrough = 4
 		build_cost_ic = 0.35
 	}
 }
