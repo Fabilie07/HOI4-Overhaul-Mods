@@ -21,6 +21,7 @@ tom_inf_bat_startup_effect_subunits = {
 	tom_inf_bat_startup_effect_heavy_tank = yes
 	tom_inf_bat_startup_effect_modern_tank = yes
 	tom_inf_bat_startup_effect_armored_car = yes
+	tom_inf_bat_startup_effect_artillery = yes
 }
 
 tom_inf_bat_startup_effect_company_arrays = {	
@@ -215,6 +216,17 @@ tom_inf_bat_startup_effect_company_arrays = {
 	
 	add_to_array = { tom_inf_bat_47_platoons_array = 4700 }
 	add_to_array = { tom_inf_bat_47_platoons_array = 4010 }
+	
+	add_to_array = { tom_inf_bat_50_platoons_array = 5000 }
+	
+	add_to_array = { tom_inf_bat_59_platoons_array = 5900 }
+	add_to_array = { tom_inf_bat_59_platoons_array = 5910 }
+	add_to_array = { tom_inf_bat_59_platoons_array = 5911 }
+	add_to_array = { tom_inf_bat_59_platoons_array = 5920 }
+	add_to_array = { tom_inf_bat_59_platoons_array = 5921 }
+	add_to_array = { tom_inf_bat_59_platoons_array = 5922 }
+	add_to_array = { tom_inf_bat_59_platoons_array = 5923 }
+	add_to_array = { tom_inf_bat_59_platoons_array = 5924 }
 }
 
 tom_inf_bat_startup_effect_stat_arrays = {

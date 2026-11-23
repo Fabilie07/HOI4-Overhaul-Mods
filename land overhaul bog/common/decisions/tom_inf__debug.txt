@@ -19,6 +19,16 @@ debug_decisions = {
 		}
 	}
 	
+	tom_inf_test_negative_org = {
+		complete_effect = {
+			add_unit_bonus = {
+				artillery_brigade = {
+					max_organisation = -10
+				}
+			}
+		}
+	}
+	
 	tom_inf_test_fuel_consumption = {
 		complete_effect = {
 			add_unit_bonus = {
