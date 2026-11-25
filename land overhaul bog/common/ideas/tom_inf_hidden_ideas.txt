@@ -1,0 +1,15 @@
+ideas = {
+	hidden_ideas = {
+		tom_inf_artillery_cost_increase = {
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			equipment_bonus = {
+				artillery = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+			}
+		}
+	}
+}

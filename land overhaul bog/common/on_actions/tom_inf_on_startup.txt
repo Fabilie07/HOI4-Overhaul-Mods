@@ -39,6 +39,10 @@ on_actions = {
 				limit = { has_template_containing_unit = irregular_infantry }
 				set_technology = { irregular_tech = 1 popup = no }
 			}
+			
+			every_country = {
+				add_ideas = tom_inf_artillery_cost_increase
+			}
 		}
 		
 		effect = {

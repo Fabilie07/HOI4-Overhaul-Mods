@@ -4,21 +4,6 @@ technologies = {
 			always = no
 		}
 		
-		artillery = {
-			need = {
-				tom_inf_horse = 24
-			}
-		}
-		rocket_artillery = {
-			need = {
-				tom_inf_horse = 24
-			}
-		}
-		super_heavy_artillery = {
-			need = {
-				tom_inf_horse = 24
-			}
-		}
 		anti_tank = {
 			need = {
 				tom_inf_horse = 24
@@ -29,17 +14,7 @@ technologies = {
 				tom_inf_horse = 20
 			}
 		}
-		
-		artillery_brigade = {
-			need = {
-				tom_inf_horse = 48
-			}
-		}
-		rocket_artillery_brigade = {
-			need = {
-				tom_inf_horse = 48
-			}
-		}
+
 		anti_tank_brigade = {
 			need = {
 				tom_inf_horse = 36

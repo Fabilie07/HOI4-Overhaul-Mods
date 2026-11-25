@@ -34,28 +34,30 @@ BATTALION IDs:
 51: Motorized Artillery
 52: Rocket Artillery
 53: Motorized Rocket Artillery
-54: Light SPG
-55: Medium SPG
-56: Heavy SPG
-57: Modern SPG
+54: Truck-Mounted Rocket Artillery
 
-60: Anti Tank
-61: Motorized Anti Tank
-64: Light Tank Destroyer
-65: Medium Tank Destroyer
-66: Heavy Tank Destroyer
-67: Modern Tank Destroyer
+60: Light SPG
+62: Medium SPG
+64: Heavy SPG
+66: Modern SPG
 
-70: Anti Air
-71: Motorized Anti Air
-74: Light SPAA
-75: Medium SPAA
-76: Heavy SPAA
-77: Modern SPAA
+70: Anti Tank
+71: Motorized Anti Tank
+74: Light Tank Destroyer
+75: Medium Tank Destroyer
+76: Heavy Tank Destroyer
+77: Modern Tank Destroyer
 
-80: Light Tank Amphibious
-81: Medium Tank Amphibious
-82: Heavy Tank Amphibious
+80: Anti Air
+81: Motorized Anti Air
+84: Light SPAA
+85: Medium SPAA
+86: Heavy SPAA
+87: Modern SPAA
+
+90: Light Tank Amphibious
+91: Medium Tank Amphibious
+92: Heavy Tank Amphibious
 
 COMPANY IDs:
 0: Empty

@@ -30,6 +30,7 @@ sub_units = {
 
 		need = {
 			artillery_equipment = 12
+			tom_inf_horse = 24
 		}
 		manpower = 300
 		training_time = 120
@@ -81,6 +82,7 @@ sub_units = {
 
 		need = {
 			rocket_artillery_equipment = 12
+			tom_inf_horse = 24
 		}
 
 		manpower = 300
