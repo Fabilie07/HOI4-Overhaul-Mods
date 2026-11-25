@@ -5475,7 +5475,7 @@ tom_inf_battalion_platoon_remove_effect = {
 		tom_inf_bat_add_terrain_modifier_effect = yes
 	}
 	
-	tom_inf_bat_remove_empty_equipment_effect = yes
+	tom_inf_bat_clear_equipment_effect = yes
 }
 
 tom_inf_battalion_company_add_effect = {
@@ -6171,26 +6171,6 @@ tom_inf_bat_add_terrain_modifier_effect = {
 	set_temp_variable = { temp_terrain_movement = 0 }
 	set_temp_variable = { temp_terrain_attack = 0 }
 	set_temp_variable = { temp_terrain_defense = 0 }
-}
-
-tom_inf_bat_remove_empty_equipment_effect = {
-	for_each_loop = {
-		array = tom_inf_bat_popup_equipment_stats_array_2_count
-		value = array_value
-		index = array_index
-		if = {
-			limit = { check_variable = { array_value = 0 } }
-			remove_from_array = {
-				array = tom_inf_bat_popup_equipment_stats_array_2_type
-				index = array_index
-			}
-			remove_from_array = {
-				array = tom_inf_bat_popup_equipment_stats_array_2_count
-				index = array_index
-			}
-			log = "index removed: [?array_index]"
-		}
-	}
 }
 
 tom_inf_bat_clear_equipment_effect = {
