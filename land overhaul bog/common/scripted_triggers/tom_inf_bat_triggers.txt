@@ -139,6 +139,30 @@ tom_inf_save_button_instant_click_trigger = {
 		}
 		tom_inf_save_button_instant_click_artillery_trigger = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_artillery
+		}
+		tom_inf_save_button_instant_click_motorized_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rocket_artillery
+		}
+		tom_inf_save_button_instant_click_rocket_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_rocket_artillery
+		}
+		tom_inf_save_button_instant_click_motorized_rocket_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_truck_rocket_artillery
+		}
+		tom_inf_save_button_instant_click_truck_rocket_artillery_trigger = yes
+	}
 }
 
 tom_inf_battalion_minimum_size_trigger = {
@@ -279,6 +303,30 @@ tom_inf_battalion_minimum_size_trigger = {
 			has_country_flag = tom_inf_bat_current_artillery
 		}
 		check_variable = { tom_inf_bat_popup_5000_count > 5 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_artillery
+		}
+		check_variable = { tom_inf_bat_popup_5100_count > 5 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rocket_artillery
+		}
+		check_variable = { tom_inf_bat_popup_5200_count > 5 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_rocket_artillery
+		}
+		check_variable = { tom_inf_bat_popup_5300_count > 5 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_truck_rocket_artillery
+		}
+		check_variable = { tom_inf_bat_popup_5400_count > 5 }
 	}
 }
 
@@ -422,6 +470,24 @@ tom_inf_save_button_increase_trigger = {
 		}
 		tom_inf_save_button_increase_artillery_trigger = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_artillery
+		}
+		tom_inf_save_button_increase_motorized_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rocket_artillery
+		}
+		tom_inf_save_button_increase_rocket_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_rocket_artillery
+		}
+		tom_inf_save_button_increase_motorized_rocket_artillery_trigger = yes
+	}
 }
 
 tom_inf_save_button_decrease_trigger = {
@@ -563,6 +629,30 @@ tom_inf_save_button_decrease_trigger = {
 			has_country_flag = tom_inf_bat_current_artillery
 		}
 		tom_inf_save_button_decrease_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_artillery
+		}
+		tom_inf_save_button_decrease_motorized_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_rocket_artillery
+		}
+		tom_inf_save_button_decrease_rocket_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_motorized_rocket_artillery
+		}
+		tom_inf_save_button_decrease_motorized_rocket_artillery_trigger = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_truck_rocket_artillery
+		}
+		tom_inf_save_button_decrease_truck_rocket_artillery_trigger = yes
 	}
 }
 
@@ -860,6 +950,42 @@ tom_inf_company_icon_trigger = {
 			}
 		}
 		set_temp_variable = { company_icon_frame = 7 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 51 }
+				check_variable = { v = 51 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 75 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 52 }
+				check_variable = { v = 52 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 35 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 53 }
+				check_variable = { v = 53 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 76 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { company_value = 54 }
+				check_variable = { v = 54 }
+			}
+		}
+		set_temp_variable = { company_icon_frame = 77 }
 	}
 	else_if = {
 		limit = {
@@ -1392,6 +1518,42 @@ tom_inf_platoon_icon_trigger = {
 			}
 		}
 		set_temp_variable = { platoon_icon_frame = 7 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 5100 }
+				check_variable = { v = 5100 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 75 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 5200 }
+				check_variable = { v = 5200 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 35 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 5300 }
+				check_variable = { v = 5300 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 76 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				check_variable = { platoon_value = 5400 }
+				check_variable = { v = 5400 }
+			}
+		}
+		set_temp_variable = { platoon_icon_frame = 77 }
 	}
 	else_if = {
 		limit = {

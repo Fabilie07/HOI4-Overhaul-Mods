@@ -84,6 +84,10 @@
  tom_inf_company_46:0 "Modern Tank Company"
  tom_inf_company_47:0 "Armored Car Company"
  tom_inf_company_50:0 "Field Artillery Battery"
+ tom_inf_company_51:0 "Motorized Field Artillery Battery"
+ tom_inf_company_52:0 "Rocket Artillery Battery"
+ tom_inf_company_53:0 "Motorized Rocket Artillery Battery"
+ tom_inf_company_54:0 "Rocket Truck Battery"
  tom_inf_company_59:0 "HQ Battery"
  
  tom_inf_platoon_1000:0 "Rifle Platoon"
@@ -159,6 +163,10 @@
  tom_inf_platoon_4700:0 "Armored Car Platoon"
  
  tom_inf_platoon_5000:0 "Artillery Section"
+ tom_inf_platoon_5100:0 "Motorized Artillery Section"
+ tom_inf_platoon_5200:0 "Rocket Artillery Section"
+ tom_inf_platoon_5300:0 "Motorized Rocket Artillery Section"
+ tom_inf_platoon_5400:0 "Rocket Truck Section"
  
  tom_inf_platoon_5900:0 "Fire Control Platoon"
  tom_inf_platoon_5910:0 "Survey Platoon"
@@ -200,6 +208,10 @@
  tom_inf_company_46_desc:0 "-- Modern Tank Company --\n\nMax Amount: §Y4§!"
  tom_inf_company_47_desc:0 "-- Armored Car Company --\n\nMax Amount: §Y4§!"
  tom_inf_company_50_desc:0 "-- Artillery Battery --\n\nMax Amount: §Y4§!"
+ tom_inf_company_51_desc:0 "-- Mobile Artillery Battery --\n\nMax Amount: §Y4§!"
+ tom_inf_company_52_desc:0 "-- Rocket Artillery Battery --\n\nMax Amount: §Y4§!"
+ tom_inf_company_53_desc:0 "-- Mobile Rocket Artillery Battery --\n\nMax Amount: §Y4§!"
+ tom_inf_company_54_desc:0 "-- Truck-Mounted Rocket Artillery Battery --\n\nMax Amount: §Y4§!"
  tom_inf_company_59_desc:0 "-- Services and Control --\n\nMax Amount: §Y1§!"
  
  tom_inf_platoon_1000_desc:0 "-- Rank and File Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1000_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!"
@@ -275,15 +287,19 @@
  tom_inf_platoon_4700_desc:0 "-- Armored Car Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_4700_min]§!\n\n[tom_inf_platoon_stats_loc]Armored Car: §Y4§!"
  
  tom_inf_platoon_5000_desc:0 "-- Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_5000_min]§!\n\n[tom_inf_platoon_stats_loc]Artillery: §Y1§!\nHorse: §Y2§!"
+ tom_inf_platoon_5100_desc:0 "-- Truck-Towed Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_5100_min]§!\n\n[tom_inf_platoon_stats_loc]Artillery: §Y1§!\nMotorized Equipment: §Y1§!"
+ tom_inf_platoon_5200_desc:0 "-- Rocket Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_5200_min]§!\n\n[tom_inf_platoon_stats_loc]Rocket Artillery: §Y1§!\nHorse: §Y2§!"
+ tom_inf_platoon_5300_desc:0 "-- Truck-Towed Rocket Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_5300_min]§!\n\n[tom_inf_platoon_stats_loc]Rocket Artillery: §Y1§!\nMotorized Equipment: §Y1§!"
+ tom_inf_platoon_5400_desc:0 "-- Truck-Mounted Rocket Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_5400_min]§!\n\n[tom_inf_platoon_stats_loc]Motorized Rocket Artillery: §Y1§!"
  
  tom_inf_platoon_5900_desc:0 "-- Calculates and relays firing angles and timing --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y4§!"
- tom_inf_platoon_5910_desc:0 "-- Updates maps and finds suitable firing positions --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y2§!"
- tom_inf_platoon_5911_desc:0 "-- Updates maps and finds suitable firing positions --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Truck: §Y4§!\nSupport Equipment: §Y2§!"
- tom_inf_platoon_5920_desc:0 "-- Calculates enemy Artillery positions by triangulating muzzle flashes --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y4§!"
+ tom_inf_platoon_5910_desc:0 "-- Updates maps and finds suitable firing positions --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3911$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y2§!"
+ tom_inf_platoon_5911_desc:0 "-- Updates maps and finds suitable firing positions --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3910$§!\n\n[tom_inf_platoon_stats_loc]Truck: §Y4§!\nSupport Equipment: §Y2§!"
+ tom_inf_platoon_5920_desc:0 "-- Calculates enemy Artillery positions by triangulating muzzle flashes --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3922$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y4§!"
  tom_inf_platoon_5921_desc:0 "-- Uses microphones to locate enemy Artillery by their muzzle blasts --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y4§!"
- tom_inf_platoon_5922_desc:0 "-- Detects enemy Artillery shells and where they're fired from --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!"
- tom_inf_platoon_5923_desc:0 "-- Spots targets and corrects fire from a stationary Blimp --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!"
- tom_inf_platoon_5924_desc:0 "-- Spots targets and corrects fire from a Spotting Aircraft --\n\nMax Amount: §Y1§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!\nRadio Equipment: §Y2§!"
+ tom_inf_platoon_5922_desc:0 "-- Detects enemy Artillery shells and where they're fired from --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3920$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!"
+ tom_inf_platoon_5923_desc:0 "-- Spots targets and corrects fire from a stationary Blimp --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3924$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!"
+ tom_inf_platoon_5924_desc:0 "-- Spots targets and corrects fire from a Spotting Aircraft --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3923$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!\nRadio Equipment: §Y2§!"
  
  
  tom_inf_platoon_1000_stats:0 "Organization: §G+3.0§!\nHP: §G+3§!\n\n"
@@ -369,6 +385,10 @@
  tom_inf_platoon_4700_stats:0 "Organization: §G+2.0§!\nHP: §G+0.2§!\n\n"
  
  tom_inf_platoon_5000_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_5100_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_5200_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_5300_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_5400_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
  
  tom_inf_platoon_5900_stats:0 "Soft Attack: §G+6%§!\nOrganization: §G+5.0§!\n\n"
  tom_inf_platoon_5910_stats:0 "§YHills, Mountain:§!\n  Movement: §G+20%§!\n  Attack: §G+10%§!\n§YForest, Jungle:§!\n  Movement: §G+20%§!\n  Attack: §G+5%§!\n\n"

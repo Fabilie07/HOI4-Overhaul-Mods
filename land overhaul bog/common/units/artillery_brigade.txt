@@ -39,6 +39,7 @@ sub_units = {
 		supply_consumption = 0.21
 		
 		transport = artillery_equipment
+		own_equipment_fuel_consumption_mult = 0.25
 
 		#Line artillery bonuses
 		# soft_attack = 0.25
@@ -201,6 +202,7 @@ sub_units = {
 		supply_consumption = 0.22
 		
 		transport = rocket_artillery_equipment
+		own_equipment_fuel_consumption_mult = 0.25
 		
 		forest = {
 			attack = -0.2
@@ -356,6 +358,7 @@ sub_units = {
 
 		
 		supply_consumption = 0.25
+		transport = motorized_rocket_equipment
 		
 		forest = {
 			attack = -0.1

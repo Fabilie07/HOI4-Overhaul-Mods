@@ -156,6 +156,26 @@ tom_inf_subunit_unavailable_trigger = {
 		}
 		
 		AND = {
+			check_variable = { v = 51 }
+			check_variable = { tom_inf_bat_popup_51_count = tom_inf_bat_popup_51_max }
+		}
+		
+		AND = {
+			check_variable = { v = 52 }
+			check_variable = { tom_inf_bat_popup_52_count = tom_inf_bat_popup_52_max }
+		}
+		
+		AND = {
+			check_variable = { v = 53 }
+			check_variable = { tom_inf_bat_popup_53_count = tom_inf_bat_popup_53_max }
+		}
+		
+		AND = {
+			check_variable = { v = 54 }
+			check_variable = { tom_inf_bat_popup_54_count = tom_inf_bat_popup_54_max }
+		}
+		
+		AND = {
 			check_variable = { v = 59 }
 			check_variable = { tom_inf_bat_popup_59_count = tom_inf_bat_popup_59_max }
 		}
@@ -584,18 +604,42 @@ tom_inf_subunit_unavailable_trigger = {
 		}
 		
 		AND = {
+			check_variable = { v = 5100 }
+			check_variable = { tom_inf_bat_popup_5100_count = tom_inf_bat_popup_5100_max }
+		}
+		
+		AND = {
+			check_variable = { v = 5200 }
+			check_variable = { tom_inf_bat_popup_5200_count = tom_inf_bat_popup_5200_max }
+		}
+		
+		AND = {
+			check_variable = { v = 5300 }
+			check_variable = { tom_inf_bat_popup_5300_count = tom_inf_bat_popup_5300_max }
+		}
+		
+		AND = {
+			check_variable = { v = 5400 }
+			check_variable = { tom_inf_bat_popup_5400_count = tom_inf_bat_popup_5400_max }
+		}
+		
+		AND = {
 			check_variable = { v = 5900 }
 			check_variable = { tom_inf_bat_popup_5900_count > 0 }
 		}
 		
 		AND = {
 			check_variable = { v = 5910 }
-			check_variable = { tom_inf_bat_popup_5910_count > 0 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_5910_count > 0 }
+				check_variable = { tom_inf_bat_popup_5911_count > 0 }
+			}
 		}
 		
 		AND = {
 			check_variable = { v = 5911 }
 			OR = {
+				check_variable = { tom_inf_bat_popup_5910_count > 0 }
 				check_variable = { tom_inf_bat_popup_5911_count > 0 }
 				NOT = { has_tech = tech_trucks }
 			}
@@ -603,7 +647,10 @@ tom_inf_subunit_unavailable_trigger = {
 		
 		AND = {
 			check_variable = { v = 5920 }
-			check_variable = { tom_inf_bat_popup_5920_count > 0 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_5920_count > 0 }
+				check_variable = { tom_inf_bat_popup_5922_count > 0 }
+			}
 		}
 		
 		AND = {
@@ -614,6 +661,7 @@ tom_inf_subunit_unavailable_trigger = {
 		AND = {
 			check_variable = { v = 5922 }
 			OR = {
+				check_variable = { tom_inf_bat_popup_5920_count > 0 }
 				check_variable = { tom_inf_bat_popup_5922_count > 0 }
 				NOT = { has_tech = centimetric_radar }
 			}
@@ -621,12 +669,16 @@ tom_inf_subunit_unavailable_trigger = {
 		
 		AND = {
 			check_variable = { v = 5923 }
-			check_variable = { tom_inf_bat_popup_5923_count > 0 }
+			OR = {
+				check_variable = { tom_inf_bat_popup_5923_count > 0 }
+				check_variable = { tom_inf_bat_popup_5924_count > 0 }
+			}
 		}
 		
 		AND = {
 			check_variable = { v = 5924 }
 			OR = {
+				check_variable = { tom_inf_bat_popup_5923_count > 0 }
 				check_variable = { tom_inf_bat_popup_5924_count > 0 }
 				NOT = { has_tech = photo_reconnaisance }
 			}
@@ -727,5 +779,21 @@ tom_inf_remove_unavailable_trigger = {
 	AND = {
 		check_variable = { tom_inf_bat_current_value = 5000 }
 		check_variable = { tom_inf_bat_popup_5000_count = tom_inf_bat_popup_5000_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 5100 }
+		check_variable = { tom_inf_bat_popup_5100_count = tom_inf_bat_popup_5100_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 5200 }
+		check_variable = { tom_inf_bat_popup_5200_count = tom_inf_bat_popup_5200_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 5300 }
+		check_variable = { tom_inf_bat_popup_5300_count = tom_inf_bat_popup_5300_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 5400 }
+		check_variable = { tom_inf_bat_popup_5400_count = tom_inf_bat_popup_5400_min }
 	}
 }

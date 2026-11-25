@@ -342,6 +342,21 @@ PLATOON GUI IDs: # The Frame of STRIP_subunit_slot_icon
 65: Motorized Hospital
 66: Motorized Signal
 
+67: Observation
+68: Balloon Observation
+69: Aircraft Observation
+70: Survey
+71: Motorized Survey
+72: Fire Direction
+73: Sound Observation
+74: Radar Observation
+
+75: Motorized Artillery
+76: Motorized Rocket Artillery
+77: Truck-Mounted Rocket Artillery
+78: Motorized Anti Tank
+79: Motorized Anti Air
+
 
 Terrain IDs: # Necessary for visual depicition of Terrain Boni
 1: Forest
