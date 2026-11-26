@@ -28,7 +28,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			light_tank_artillery_chassis = 50
+			light_tank_artillery_chassis = 12
 		}
 		manpower = 500
 		max_organisation = 10
@@ -40,7 +40,8 @@ sub_units = {
 
 		soft_attack = 0.6
 		ap_attack = -0.2
-		armor_value = -0.1
+		breakthrough = -0.5
+		armor_value = -0.5
 
 		suppression = 1.25
 
@@ -99,7 +100,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			medium_tank_artillery_chassis = 50
+			medium_tank_artillery_chassis = 12
 		}
 		manpower = 500
 		max_organisation = 2
@@ -111,7 +112,8 @@ sub_units = {
 
 		soft_attack = 0.5
 		ap_attack = -0.2
-		armor_value = -0.1
+		breakthrough = -0.4
+		armor_value = -0.5
 
 		suppression = 1.5
 
@@ -175,7 +177,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			heavy_tank_artillery_chassis = 50
+			heavy_tank_artillery_chassis = 12
 		}
 		manpower = 500
 		max_organisation = 0
@@ -186,7 +188,8 @@ sub_units = {
 
 		soft_attack = 0.4
 		ap_attack = -0.2
-		armor_value = -0.1
+		breakthrough = -0.3
+		armor_value = -0.5
 
 		suppression = 1.5
 
@@ -250,7 +253,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			modern_tank_artillery_chassis = 50
+			modern_tank_artillery_chassis = 12
 		}
 		manpower = 500
 		max_organisation = 0
@@ -262,7 +265,8 @@ sub_units = {
 		
 		soft_attack = 0.5
 		ap_attack = -0.2
-		armor_value = -0.1
+		breakthrough = -0.35
+		armor_value = -0.5
 
 		suppression = 1.5
 
@@ -324,7 +328,7 @@ sub_units = {
 		combat_width = 4
 
 		need = {
-			super_heavy_tank_artillery_chassis = 20
+			super_heavy_tank_artillery_chassis = 12
 		}
 		manpower = 500
 		max_organisation = 0
@@ -337,9 +341,7 @@ sub_units = {
 		soft_attack = 0.8
 		hard_attack = 0.5
 		ap_attack = -0.2
-		breakthrough = 0.5
 		defense = 0.5
-		armor_value = 0.4
 		
 		suppression = 1.75
 

@@ -191,6 +191,34 @@ tom_inf_save_button_click_effect = {
 		
 		tom_inf_bat_save_designer_truck_rocket_artillery_effect = yes
 	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_light_spg
+		}
+		
+		tom_inf_bat_save_designer_light_spg_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_medium_spg
+		}
+		
+		tom_inf_bat_save_designer_medium_spg_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_heavy_spg
+		}
+		
+		tom_inf_bat_save_designer_heavy_spg_effect = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = tom_inf_bat_current_modern_spg
+		}
+		
+		tom_inf_bat_save_designer_modern_spg_effect = yes
+	}
 	
 	tom_inf_update_doctrine_variables_effect = yes
 	tom_inf_bat_close_designer_effect = yes
@@ -372,6 +400,22 @@ tom_inf_compute_equipment_cost_effect = {
 				limit = { has_country_flag = tom_inf_bat_current_truck_rocket_artillery }
 				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@motorized_rocket_brigade }
 			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_light_spg }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@light_sp_artillery_brigade }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_medium_spg }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@medium_sp_artillery_brigade }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_heavy_spg }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@heavy_sp_artillery_brigade }
+			}
+			else_if = {
+				limit = { has_country_flag = tom_inf_bat_current_modern_spg }
+				multiply_temp_variable = { temp_equipment_after = num_battalions_with_type@modern_sp_artillery_brigade }
+			}
 			
 			add_to_array = { tom_inf_bat_needed_equipment_type_array = temp_equipment_archetype }
 			add_to_array = { tom_inf_bat_needed_equipment_count_array = temp_equipment_after }
@@ -478,5 +522,21 @@ tom_inf_compute_temp_equipment_has = {
 	else_if = {
 		limit = { check_variable = { temp_equipment_archetype = token:motorized_rocket_equipment } }
 		set_temp_variable = { temp_equipment_has = num_equipment@motorized_rocket_equipment }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:light_tank_artillery_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@light_tank_artillery_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:medium_tank_artillery_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@medium_tank_artillery_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:heavy_tank_artillery_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@heavy_tank_artillery_chassis }
+	}
+	else_if = {
+		limit = { check_variable = { temp_equipment_archetype = token:modern_tank_artillery_chassis } }
+		set_temp_variable = { temp_equipment_has = num_equipment@modern_tank_artillery_chassis }
 	}
 }

@@ -179,6 +179,26 @@ tom_inf_subunit_unavailable_trigger = {
 			check_variable = { v = 59 }
 			check_variable = { tom_inf_bat_popup_59_count = tom_inf_bat_popup_59_max }
 		}
+		
+		AND = {
+			check_variable = { v = 60 }
+			check_variable = { tom_inf_bat_popup_60_count = tom_inf_bat_popup_60_max }
+		}
+		
+		AND = {
+			check_variable = { v = 62 }
+			check_variable = { tom_inf_bat_popup_62_count = tom_inf_bat_popup_62_max }
+		}
+		
+		AND = {
+			check_variable = { v = 64 }
+			check_variable = { tom_inf_bat_popup_64_count = tom_inf_bat_popup_64_max }
+		}
+		
+		AND = {
+			check_variable = { v = 66 }
+			check_variable = { tom_inf_bat_popup_66_count = tom_inf_bat_popup_66_max }
+		}
 	
 		AND = {
 			check_variable = { v = 1000 }
@@ -683,6 +703,26 @@ tom_inf_subunit_unavailable_trigger = {
 				NOT = { has_tech = photo_reconnaisance }
 			}
 		}
+		
+		AND = {
+			check_variable = { v = 6000 }
+			check_variable = { tom_inf_bat_popup_6000_count = tom_inf_bat_popup_6000_max }
+		}
+		
+		AND = {
+			check_variable = { v = 6200 }
+			check_variable = { tom_inf_bat_popup_6200_count = tom_inf_bat_popup_6200_max }
+		}
+		
+		AND = {
+			check_variable = { v = 6400 }
+			check_variable = { tom_inf_bat_popup_6400_count = tom_inf_bat_popup_6400_max }
+		}
+		
+		AND = {
+			check_variable = { v = 6600 }
+			check_variable = { tom_inf_bat_popup_6600_count = tom_inf_bat_popup_6600_max }
+		}
 	}
 }
 
@@ -795,5 +835,21 @@ tom_inf_remove_unavailable_trigger = {
 	AND = {
 		check_variable = { tom_inf_bat_current_value = 5400 }
 		check_variable = { tom_inf_bat_popup_5400_count = tom_inf_bat_popup_5400_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 6000 }
+		check_variable = { tom_inf_bat_popup_6000_count = tom_inf_bat_popup_6000_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 6200 }
+		check_variable = { tom_inf_bat_popup_6200_count = tom_inf_bat_popup_6200_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 6400 }
+		check_variable = { tom_inf_bat_popup_6400_count = tom_inf_bat_popup_6400_min }
+	}
+	AND = {
+		check_variable = { tom_inf_bat_current_value = 6600 }
+		check_variable = { tom_inf_bat_popup_6600_count = tom_inf_bat_popup_6600_min }
 	}
 }

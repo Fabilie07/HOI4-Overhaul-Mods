@@ -1,0 +1,51 @@
+tom_inf_save_button_instant_click_heavy_spg_trigger = {
+	check_variable = { tom_inf_bat_popup_64_count = tom_inf_bat_heavy_spg_64_count }
+	check_variable = { tom_inf_bat_popup_59_count = tom_inf_bat_heavy_spg_59_count }
+	
+	check_variable = { tom_inf_bat_popup_6400_count = tom_inf_bat_heavy_spg_6400_count }
+	
+	check_variable = { tom_inf_bat_popup_5900_count = tom_inf_bat_heavy_spg_5900_count }
+	check_variable = { tom_inf_bat_popup_5910_count = tom_inf_bat_heavy_spg_5910_count }
+	check_variable = { tom_inf_bat_popup_5911_count = tom_inf_bat_heavy_spg_5911_count }
+	check_variable = { tom_inf_bat_popup_5920_count = tom_inf_bat_heavy_spg_5920_count }
+	check_variable = { tom_inf_bat_popup_5921_count = tom_inf_bat_heavy_spg_5921_count }
+	check_variable = { tom_inf_bat_popup_5922_count = tom_inf_bat_heavy_spg_5922_count }
+	check_variable = { tom_inf_bat_popup_5923_count = tom_inf_bat_heavy_spg_5923_count }
+	check_variable = { tom_inf_bat_popup_5924_count = tom_inf_bat_heavy_spg_5924_count }
+}
+
+tom_inf_save_button_increase_heavy_spg_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_64_count > tom_inf_bat_heavy_spg_64_count }
+		check_variable = { tom_inf_bat_popup_59_count > tom_inf_bat_heavy_spg_59_count }
+
+		check_variable = { tom_inf_bat_popup_6400_count > tom_inf_bat_heavy_spg_6400_count }
+	
+		check_variable = { tom_inf_bat_popup_5900_count > tom_inf_bat_heavy_spg_5900_count }
+		check_variable = { tom_inf_bat_popup_5910_count > tom_inf_bat_heavy_spg_5910_count }
+		check_variable = { tom_inf_bat_popup_5911_count > tom_inf_bat_heavy_spg_5911_count }
+		check_variable = { tom_inf_bat_popup_5920_count > tom_inf_bat_heavy_spg_5920_count }
+		check_variable = { tom_inf_bat_popup_5921_count > tom_inf_bat_heavy_spg_5921_count }
+		check_variable = { tom_inf_bat_popup_5922_count > tom_inf_bat_heavy_spg_5922_count }
+		check_variable = { tom_inf_bat_popup_5923_count > tom_inf_bat_heavy_spg_5923_count }
+		check_variable = { tom_inf_bat_popup_5924_count > tom_inf_bat_heavy_spg_5924_count }
+	}
+}
+
+tom_inf_save_button_decrease_heavy_spg_trigger = {
+	OR = {
+		check_variable = { tom_inf_bat_popup_64_count < tom_inf_bat_heavy_spg_64_count }
+		check_variable = { tom_inf_bat_popup_59_count < tom_inf_bat_heavy_spg_59_count }
+
+		check_variable = { tom_inf_bat_popup_6400_count < tom_inf_bat_heavy_spg_6400_count }
+	
+		check_variable = { tom_inf_bat_popup_5900_count < tom_inf_bat_heavy_spg_5900_count }
+		check_variable = { tom_inf_bat_popup_5910_count < tom_inf_bat_heavy_spg_5910_count }
+		check_variable = { tom_inf_bat_popup_5911_count < tom_inf_bat_heavy_spg_5911_count }
+		check_variable = { tom_inf_bat_popup_5920_count < tom_inf_bat_heavy_spg_5920_count }
+		check_variable = { tom_inf_bat_popup_5921_count < tom_inf_bat_heavy_spg_5921_count }
+		check_variable = { tom_inf_bat_popup_5922_count < tom_inf_bat_heavy_spg_5922_count }
+		check_variable = { tom_inf_bat_popup_5923_count < tom_inf_bat_heavy_spg_5923_count }
+		check_variable = { tom_inf_bat_popup_5924_count < tom_inf_bat_heavy_spg_5924_count }
+	}
+}

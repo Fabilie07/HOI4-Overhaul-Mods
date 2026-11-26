@@ -1,0 +1,532 @@
+tom_inf_bat_add_effect_heavy_spg = {
+	# Adds necessary stats after saving a larger Battalion.
+	
+	### PLATOONS
+	# heavy SPG
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_6400_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_6400_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				soft_attack = 0.05
+				max_strength = 0.2
+				need = {
+					heavy_tank_artillery_chassis = 1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Fire Direction
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5900_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5900_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_organisation = 5
+				soft_attack = 0.06
+				need = {
+					support_equipment = 4
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Survey
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5910_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5910_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				need = {
+					support_equipment = 2
+				}
+				
+				hills = {
+					attack = 0.1
+					movement = 0.2
+				}
+				
+				forest = {
+					attack = 0.05
+					movement = 0.2
+				}
+
+				jungle = {
+					attack = 0.05
+					movement = 0.2
+				}
+
+				mountain = {
+					attack = 0.1
+					movement = 0.2
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Mot Survey
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5911_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5911_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				need = {
+					motorized_equipment = 4
+					support_equipment = 2
+				}
+				
+				hills = {
+					attack = 0.2
+					movement = 0.3
+				}
+				
+				forest = {
+					attack = 0.1
+					movement = 0.1
+				}
+
+				jungle = {
+					attack = 0.1
+					movement = 0.1
+				}
+
+				mountain = {
+					attack = 0.2
+					movement = 0.3
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Flash Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5920_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5920_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_strength = 1
+				defense = 0.1
+				need = {
+					support_equipment = 4
+				}
+				
+				plains = {
+					defence = 0.1
+				}
+				
+				hills = {
+					defence = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Sound Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5921_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5921_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				soft_attack = 0.04
+				breakthrough = 0.1
+				need = {
+					support_equipment = 4
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Radar Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5922_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5922_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_strength = 2
+				defense = 0.1
+				need = {
+					support_equipment = 6
+				}
+				
+				forest = {
+					defence = 0.1
+				}
+				
+				plains = {
+					defence = 0.1
+				}
+				
+				hills = {
+					defence = 0.1
+				}
+				
+				jungle = {
+					defence = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Balloon Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5923_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5923_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_strength = 1
+				defense = 0.15
+				need = {
+					support_equipment = 6
+				}
+				
+				urban = {
+					attack = 0.05
+					defence = 0.1
+				}
+				
+				fort = {
+					attack = 0.05
+					defence = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+	
+	# Aircraft Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5924_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference < tom_inf_bat_popup_5924_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				soft_attack = 0.05
+				need = {
+					support_equipment = 6
+					radio_equipment = 2
+				}
+				
+				plains = {
+					movement = 0.15
+				}
+				
+				desert = {
+					movement = 0.15
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = 1 }
+	}
+}
+
+
+tom_inf_bat_remove_effect_heavy_spg = {
+	### PLATOONS
+	# heavy SPG
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_6400_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_6400_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				soft_attack = -0.05
+				max_strength = -0.2
+				need = {
+					heavy_tank_artillery_chassis = -1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Fire Direction
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5900_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5900_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_organisation = -5
+				soft_attack = -0.06
+				need = {
+					support_equipment = -4
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Survey
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5910_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5910_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				need = {
+					support_equipment = -2
+				}
+				
+				hills = {
+					attack = -0.1
+				}
+				
+				forest = {
+					attack = -0.05
+				}
+
+				jungle = {
+					attack = -0.05
+				}
+
+				mountain = {
+					attack = -0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Mot Survey
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5911_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5911_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				need = {
+					motorized_equipment = -4
+					support_equipment = -2
+				}
+				
+				hills = {
+					attack = -0.2
+				}
+				
+				forest = {
+					attack = -0.1
+				}
+
+				jungle = {
+					attack = -0.1
+				}
+
+				mountain = {
+					attack = -0.2
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Flash Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5920_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5920_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_strength = -1
+				defense = -0.1
+				need = {
+					support_equipment = -4
+				}
+				
+				plains = {
+					defence = -0.1
+				}
+				
+				hills = {
+					defence = -0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Sound Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5921_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5921_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				soft_attack = -0.04
+				breakthrough = -0.1
+				need = {
+					support_equipment = -4
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Radar Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5922_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5922_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_strength = -2
+				defense = -0.1
+				need = {
+					support_equipment = -6
+				}
+				
+				forest = {
+					defence = 0.1
+				}
+				
+				plains = {
+					defence = -0.1
+				}
+				
+				hills = {
+					defence = -0.1
+				}
+				
+				jungle = {
+					defence = 0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Balloon Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5923_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5923_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				max_strength = -1
+				defense = -0.15
+				need = {
+					support_equipment = -6
+				}
+				
+				urban = {
+					attack = -0.05
+					defence = -0.1
+				}
+				
+				fort = {
+					attack = -0.05
+					defence = -0.1
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+	
+	# Aircraft Observation Section
+	set_temp_variable = { platoon_difference = tom_inf_bat_heavy_spg_5924_count }
+	while_loop_effect = {
+		limit = { check_variable = { platoon_difference > tom_inf_bat_popup_5924_count } }
+		add_unit_bonus = {
+			heavy_sp_artillery_brigade = {
+				soft_attack = -0.05
+				need = {
+					support_equipment = -6
+					radio_equipment = -2
+				}
+				
+				plains = {
+					movement = -0.15
+				}
+				
+				desert = {
+					movement = -0.15
+				}
+			}
+		}
+		
+		add_to_temp_variable = { platoon_difference = -1 }
+	}
+}
+
+tom_inf_bat_increase_platoon_org_heavy_spg = {
+	while_loop_effect = {
+		limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org < tom_inf_bat_popup_platoon_count_org } }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org > 19 } }
+			add_unit_bonus = {
+				heavy_sp_artillery_brigade = {
+					max_organisation = -9
+					soft_attack = -0.1
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org > 15 } }
+			add_unit_bonus = {
+				heavy_sp_artillery_brigade = {
+					max_organisation = -6
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org > 11 } }
+			add_unit_bonus = {
+				heavy_sp_artillery_brigade = {
+					max_organisation = -3
+				}
+			}
+		}
+		
+		add_to_variable = { tom_inf_bat_heavy_spg_platoon_count_org = 1 }
+	}
+}
+
+tom_inf_bat_decrease_platoon_org_heavy_spg = {
+	while_loop_effect = {
+		limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org > tom_inf_bat_popup_platoon_count_org } }
+		
+		if = {
+			limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org > 20 } }
+			add_unit_bonus = {
+				heavy_sp_artillery_brigade = {
+					max_organisation = 9
+					soft_attack = 0.1
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org > 16 } }
+			add_unit_bonus = {
+				heavy_sp_artillery_brigade = {
+					max_organisation = 6
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { tom_inf_bat_heavy_spg_platoon_count_org > 12 } }
+			add_unit_bonus = {
+				heavy_sp_artillery_brigade = {
+					max_organisation = 3
+				}
+			}
+		}
+		
+		add_to_variable = { tom_inf_bat_heavy_spg_platoon_count_org = -1 }
+	}
+}

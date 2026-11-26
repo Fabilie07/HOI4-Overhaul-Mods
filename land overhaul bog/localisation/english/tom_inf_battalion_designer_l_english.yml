@@ -89,6 +89,10 @@
  tom_inf_company_53:0 "Motorized Rocket Artillery Battery"
  tom_inf_company_54:0 "Rocket Truck Battery"
  tom_inf_company_59:0 "HQ Battery"
+ tom_inf_company_60:0 "Light SPG Battery"
+ tom_inf_company_62:0 "Medium SPG Battery"
+ tom_inf_company_64:0 "Heavy SPG Battery"
+ tom_inf_company_66:0 "Modern SPG Battery"
  
  tom_inf_platoon_1000:0 "Rifle Platoon"
  tom_inf_platoon_1001:0 "Line LMG"
@@ -177,6 +181,11 @@
  tom_inf_platoon_5923:0 "Balloon Observation Platoon"
  tom_inf_platoon_5924:0 "Aircraft Observation Platoon"
  
+ tom_inf_platoon_6000:0 "Light SPG Section"
+ tom_inf_platoon_6200:0 "Medium SPG Section"
+ tom_inf_platoon_6400:0 "Heavy SPG Section"
+ tom_inf_platoon_6600:0 "Modern SPG Section"
+ 
  
  tom_inf_company_10_desc:0 "-- Rank and File Infantry Company --\n\nMax Amount: §Y4§!\nMin Amount: §Y1§!\n\nIncreases the size of Support Platoons that can be used as Frontline Platoons as well"
  tom_inf_company_11_desc:0 "-- Specialized Fire Support Platoons --\n\nMax Amount: §Y1§!"
@@ -213,6 +222,10 @@
  tom_inf_company_53_desc:0 "-- Mobile Rocket Artillery Battery --\n\nMax Amount: §Y4§!"
  tom_inf_company_54_desc:0 "-- Truck-Mounted Rocket Artillery Battery --\n\nMax Amount: §Y4§!"
  tom_inf_company_59_desc:0 "-- Services and Control --\n\nMax Amount: §Y1§!"
+ tom_inf_company_60_desc:0 "-- Light Self-Propelled Artillery Battery --\n\nMax Amount: §Y4§!"
+ tom_inf_company_62_desc:0 "-- Medium Self-Propelled Artillery Battery --\n\nMax Amount: §Y4§!"
+ tom_inf_company_64_desc:0 "-- Heavy Self-Propelled Artillery Battery --\n\nMax Amount: §Y4§!"
+ tom_inf_company_66_desc:0 "-- Modern Self-Propelled Artillery Battery --\n\nMax Amount: §Y4§!"
  
  tom_inf_platoon_1000_desc:0 "-- Rank and File Infantry Platoon --\n\nMax Amount: §Y16§!\nMin Amount: §Y[?tom_inf_bat_popup_1000_min]§!\n\n[tom_inf_platoon_stats_loc]Infantry Equipment: §Y10§!"
  tom_inf_platoon_1001_desc:0 "-- Light MGs issued to frontline Troops --\n\nMax Amount: §Y4§!\nMutually Exclusive: §Y$tom_inf_platoon_1100$§!\n\n[tom_inf_platoon_stats_loc]LMG Equipment: §Y4§!"
@@ -300,6 +313,11 @@
  tom_inf_platoon_5922_desc:0 "-- Detects enemy Artillery shells and where they're fired from --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3920$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!"
  tom_inf_platoon_5923_desc:0 "-- Spots targets and corrects fire from a stationary Blimp --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3924$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!"
  tom_inf_platoon_5924_desc:0 "-- Spots targets and corrects fire from a Spotting Aircraft --\n\nMax Amount: §Y1§!\nMutually Exclusive: §Y$tom_inf_platoon_3923$§!\n\n[tom_inf_platoon_stats_loc]Support Equipment: §Y6§!\nRadio Equipment: §Y2§!"
+ 
+ tom_inf_platoon_6000_desc:0 "-- Light Self-Propelled Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_6000_min]§!\n\n[tom_inf_platoon_stats_loc]Light SP Artillery: §Y1§!"
+ tom_inf_platoon_6200_desc:0 "-- Medium Self-Propelled Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_6000_min]§!\n\n[tom_inf_platoon_stats_loc]Medium SP Artillery: §Y1§!"
+ tom_inf_platoon_6400_desc:0 "-- Heavy Self-Propelled Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_6000_min]§!\n\n[tom_inf_platoon_stats_loc]Heavy SP Artillery: §Y1§!"
+ tom_inf_platoon_6600_desc:0 "-- Modern Self-Propelled Artillery Section --\n\nMax Amount: §Y24§!\nMin Amount: §Y[?tom_inf_bat_popup_6000_min]§!\n\n[tom_inf_platoon_stats_loc]Modern SP Artillery: §Y1§!"
  
  
  tom_inf_platoon_1000_stats:0 "Organization: §G+3.0§!\nHP: §G+3§!\n\n"
@@ -398,6 +416,11 @@
  tom_inf_platoon_5922_stats:0 "HP: §G+2.0§!\nDefense: §G+10%§!\n§YHills, Plains, Forest, Jungle:§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_5923_stats:0 "HP: §G+1.0§!\nDefense: §G+15%§!\n§YUrban, Fort:§!\n  Attack: §G+5%§!\n  Defense & Breakthrough: §G+10%§!\n\n"
  tom_inf_platoon_5924_stats:0 "Soft Attack: §G+5%§!\n§YPlains, Desert:§!\n  Movement: §G+15%§!\n\n"
+ 
+ tom_inf_platoon_6000_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_6200_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_6400_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
+ tom_inf_platoon_6600_stats:0 "Soft Attack: §G+5%§!\nHP: §G+0.2§!\n\n"
  
  tom_inf_platoon_equipment_stats:0 "Adds the Stats from: "
  tom_inf_platoon_line_stats:0 "Land Doctrine Mastery Gain: §G+1%§!\n\n"
